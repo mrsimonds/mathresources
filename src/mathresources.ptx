@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portlant Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+
+    <docinfo>
+        <!-- <brandlogo url="http://mathbook.pugetsound.edu" source="images/book-cover-google-art-project.jpg" /> -->
+
+        <!-- <initialism>SA</initialism> -->
+
+        <!-- <cross-references text="global" /> -->
+
+        <latex-preamble>
+            <package>cancel</package>
+        </latex-preamble>
+
+        <macros>
+        \newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+        </macros>
+
+        <latex-image-preamble>
+        \usepackage{pgfplots}
+        </latex-image-preamble>
+    </docinfo>
+
+    <article xml:id="math-resources">
+        <title>PCC SLC Math Resources</title>
+
+        <frontmatter xml:id="index">
+            <titlepage>
+                <author>
+                    <personname>Steve Simonds</personname>
+                    <department>Department of Mathematics</department>
+                    <institution>Portland Community College</institution>
+                    <email>ssimonds@pcc.edu</email>
+                </author>
+
+                <!-- Can set date manually or use the "today" element -->
+                <date><today /></date>
+            </titlepage>
+        </frontmatter>
+
+        <section>
+            <title>Slope</title>
+            <introduction>
+                <p>Slope: <m>m=\dfrac{\text{rise}}{\text{run}}</m></p>
+
+                <figure>
+                    <caption>Introduction to Slope 2</caption>
+                    <video youtube="FlibOQZ8VJM" />
+                </figure>
+
+                <p>The activities are stated below the interactive tool.  Get out pencil and paper <mdash/> you're going to need them!</p>
+            </introduction>
+
+            <subsection>
+                <title>Activities and Problems</title>
+
+                <desmos desmos="sij2bn7tmc" />
+
+                <exercise>
+                    <webwork>
+                        <statement>
+                            <p>Use the slider labeled <m>m</m> to set the slope to <m>3</m>. Suppose that the run along the slope triangle was <m>2</m>. What would the rise then be? Use the sliders labeled <m>x_1</m> and <m>x_2</m> to adjust the run to <m>2</m>. Is the rise what you expected it to be? <var name="6" width="10" /></p>
+                        </statement>
+                    </webwork>
+                </exercise>
+            </subsection>
+
+        </section>
+
+    </article>
+</mathbook>
