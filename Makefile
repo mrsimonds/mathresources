@@ -87,6 +87,13 @@ IMGOUT     = $(OUTPUT)/images
 # of PCC's server in a nontrivial capacity.    <alex.jordan@pcc.edu>
 SERVER = https://webwork.pcc.edu
 
+# make all the image files in svg format
+images:
+	install -d $(OUTPUT)
+	install -d $(IMGOUT)
+	-rm $(IMGOUT)/*.svg
+	$(MB)/script/mbx -c latex-image -f svg -d $(IMGOUT) $(MAINFILE)
+
 # Make the HTML output
 html:
 	install -d $(OUTPUT)
@@ -98,8 +105,9 @@ html:
 	-rm $(HTML)/knowl/*.html
 	-rm $(HTML)/images/*
 	cp -a $(IMGSRC) $(HTML)
+	cp -a $(IMGOUT) $(HTML)
 	cd $(HTML); \
-	xsltproc --stringparam webwork.server $(SERVER) $(PRJXSL)/math-resources-html.xsl $(MAINFILE)
+	xsltproc --xinclude --stringparam webwork.server $(SERVER) $(PRJXSL)/math-resources-html.xsl $(MAINFILE)
 
 ###########
 # Utilities

@@ -27,11 +27,115 @@
         </macros>
 
         <latex-image-preamble>
-        \usepackage{pgfplots}
+            <![CDATA[
+                \usepackage{pgfplots}
+
+                \colorlet{firstcolor}{red}
+                \colorlet{secondcolor}{blue}
+                \colorlet{thirdcolor}{gray}
+
+                % curve, dot, and graph custom styles
+                \pgfplotsset{primarycurve/.style   = {color=firstcolor,  mark=none, line width=1pt, {Kite}-{Kite}, solid}}         % primary style for curves
+                \pgfplotsset{secondarycurve/.style = {color=secondcolor, mark=none, line width=1pt, {Kite}-{Kite}, dashdotted}}    % secondary style for curves
+                \pgfplotsset{tertiarycurve/.style  = {color=thirdcolor, mark=none, line width=1pt, {Kite}-{Kite}, dashdotdotted}} % tertiary style for curves
+                \pgfplotsset{asymptote/.style      = {color=gray, mark=none, line width=1pt, <->, dashed}}
+                \tikzset{guideline/.style          = {color=gray, mark=none, line width=1pt, -}}
+                \pgfplotsset{soliddot/.style       = {color=firstcolor,  mark=*, only marks}}
+                \pgfplotsset{hollowdot/.style      = {color=firstcolor,  mark=*, only marks, fill=yellow!30}} %this color is set to match axis background/.style
+                \pgfplotsset{blankgraph/.style     = {xmin=-10, xmax=10,
+                                              ymin=-10, ymax=10,
+                                              axis line style={-, draw opacity=0 },
+                                              axis lines=box,
+                                              major tick length=0mm,
+                                              xtick={-10,-9,...,10},
+                                              ytick={-10,-9,...,10},
+                                              grid=major,
+                                              grid style={solid,gray!40},
+                                              xticklabels={,,},
+                                              yticklabels={,,},
+                                              minor xtick=,
+                                              minor ytick=,
+                                              xlabel={},ylabel={},
+                                              width=0.75\textwidth,}}
+                \pgfplotsset{numberline/.style     = {xmin=-10,xmax=10,
+                                              minor xtick={-11,-10,...,11},
+                                              xtick={-10,-5,...,10},
+                                              axis y line=none,
+                                              y=15pt,
+                                              axis lines=middle,
+                                              enlarge x limits,
+                                              grid=none,
+                                              clip=false,
+                                              axis background/.style={},
+                                              after end axis/.code={
+                                                \path (axis cs:0,0)
+                                                node [anchor=north,yshift=-0.075cm] {\footnotesize 0};
+                                              },
+                                              every axis x label/.style={at={(current axis.right of origin)},anchor=north},
+                                              }}
+                \pgfplotsset{openinterval/.style={color=firstcolor,mark=none,ultra thick,{Parenthesis}-{Parenthesis}}}
+                \pgfplotsset{openclosedinterval/.style={color=firstcolor,mark=none,ultra thick,{Parenthesis}-{Bracket}}}
+                \pgfplotsset{closedinterval/.style={color=firstcolor,mark=none,ultra thick,{Bracket}-{Bracket}}}
+                \pgfplotsset{closedopeninterval/.style={color=firstcolor,mark=none,ultra thick,{Bracket}-{Parenthesis}}}
+                \pgfplotsset{infiniteopeninterval/.style={color=firstcolor,mark=none,ultra thick,{Kite}-{Parenthesis}}}
+                \pgfplotsset{openinfiniteinterval/.style={color=firstcolor,mark=none,ultra thick,{Parenthesis}-{Kite}}}
+                \pgfplotsset{infiniteclosedinterval/.style={color=firstcolor,mark=none,ultra thick,{Kite}-{Bracket}}}
+                \pgfplotsset{closedinfiniteinterval/.style={color=firstcolor,mark=none,ultra thick,{Bracket}-{Kite}}}
+                \pgfplotsset{interval/.style= {ultra thick, -}}
+
+                % cycle list of plot styles for graphs with multiple plots
+                \pgfplotscreateplotcyclelist{pccstylelist}{%
+                    primarycurve\\%
+                    secondarycurve\\%
+                    tertiarycurve\\%
+                }
+
+                \pgfplotsset{every axis/.append style={
+                    axis x line=middle,    % put the x axis in the middle
+                    axis y line=middle,    % put the y axis in the middle
+                    axis line style={<->}, % arrows on the axis
+                    scaled ticks=false,
+                    tick label style={/pgf/number format/fixed},
+                    xlabel={$x$},          % default put x on x-axis
+                    ylabel={$y$},          % default put y on y-axis
+                    xmin = -7,xmax = 7,    % most graphs have this window
+                    domain = -7:7,
+                    ymin = -7,ymax = 7,    % most graphs have this window
+                    xtick = {-6,-4,...,6},       % fix ticks
+                    %extra x ticks={-6, -4, -2},
+                    %extra x tick labels={$-6\phantom{-}$, $-4\phantom{-}$, $-2\phantom{-}$},
+                    ytick = {-6,-4,...,6}, % fix ticks
+                    yticklabel style={inner sep=0.333ex},
+                    minor xtick = {-7,-6,...,7}, % fix ticks
+                    minor ytick = {-7,-6,...,7}, % fix ticks
+                    scale only axis,       % don't factor in axis and tick labels for width= and height=
+                    cycle list name=pccstylelist,
+                    tick label style={font=\footnotesize},
+                    %label style={font=\scriptsize},
+                    legend cell align=left,
+                    %legend style={font=\scriptsize},
+                    width = {ifthenelse(.9\linewidth>.45\textwidth,0.45\textwidth,.9\linewidth)},
+                    grid = both,
+                    grid style = {solid,gray!40},
+                    axis background/.style={fill=yellow!30},
+                    %every node near coord/.append style={
+                    %    font=\scriptsize
+                    %},
+                }}
+
+                % arrow style
+                \tikzset{>=stealth}
+
+                % framing the graphs
+                \pgfplotsset{framed/.style={axis background/.style ={draw=gray}}}
+                % next line is a bit more colorful
+                %\pgfplotsset{framed/.style={axis background/.style ={draw=gray,fill=yellow!20,rounded corners=3ex}}}
+
+            ]]>
         </latex-image-preamble>
     </docinfo>
 
-    <article xml:id="math-resources">
+    <book xml:id="math-resources">
         <title>PCC SLC Math Resources</title>
 
         <frontmatter xml:id="index">
@@ -48,34 +152,8 @@
             </titlepage>
         </frontmatter>
 
-        <section>
-            <title>Slope</title>
-            <introduction>
-                <p>Slope: <m>m=\dfrac{\text{rise}}{\text{run}}</m></p>
+        <xi:include href="./desmos-activities.ptx" />
+        <xi:include href="./complete-lessons.ptx" />
 
-                <figure>
-                    <caption>Introduction to Slope 2</caption>
-                    <video youtube="FlibOQZ8VJM" />
-                </figure>
-
-                <p>The activities are stated below the interactive tool.  Get out pencil and paper <mdash/> you're going to need them!</p>
-            </introduction>
-
-            <subsection>
-                <title>Activities and Problems</title>
-
-                <desmos desmos="sij2bn7tmc" />
-
-                <exercise>
-                    <webwork>
-                        <statement>
-                            <p>Use the slider labeled <m>m</m> to set the slope to <m>3</m>. Suppose that the run along the slope triangle was <m>2</m>. What would the rise then be? Use the sliders labeled <m>x_1</m> and <m>x_2</m> to adjust the run to <m>2</m>. Is the rise what you expected it to be? <var name="6" width="10" /></p>
-                        </statement>
-                    </webwork>
-                </exercise>
-            </subsection>
-
-        </section>
-
-    </article>
+    </book>
 </mathbook>
