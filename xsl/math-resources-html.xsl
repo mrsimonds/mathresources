@@ -3,6 +3,7 @@
 
 <xsl:import href="../../mathbook/xsl/mathbook-html.xsl" />
 
+<xsl:param name="html.css.file" select="'mathbook-1.css'" />
 <xsl:param name="html.knowl.webwork.inline" select="'no'" />
 <xsl:param name="html.knowl.exercise.inline" select="'no'" />
 

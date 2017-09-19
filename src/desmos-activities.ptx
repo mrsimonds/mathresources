@@ -12,7 +12,16 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Desmos Activities</title>
 
-    <xi:include href="./desmos-slope.ptx" />
-    <xi:include href="./desmos-next-activity.ptx" />
+    <xi:include href="./desmos-linear-equations-line-standard.ptx" />
+    <xi:include href="./desmos-linear-equations-line-slope-intercept.ptx" />
+    <xi:include href="./desmos-linear-equations-line-point-slope.ptx" />
+    <xi:include href="./desmos-parabolas-standard-form.ptx" />
+    <xi:include href="./desmos-abs-value-eq-in-v-up.ptx" />
+    <xi:include href="./desmos-abs-value-eq-in-v-down.ptx" />
+    <xi:include href="./desmos-graph-trans-curves.ptx" />
+    <xi:include href="./desmos-graph-trans-points.ptx" />
+    <xi:include href="./desmos-function-composition.ptx" />
+    <xi:include href="./desmos-sine-wave.ptx" />
+    
 
 </chapter>
