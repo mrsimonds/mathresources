@@ -14,4 +14,189 @@
 
     <desmos desmos="07ocpqryir" />
 
+<exercises>
+    <title>Activities and Problems</title>
+    
+      <exercisegroup>
+        <introduction>
+          <p>Explorations and questions about the slope of a line.</p>
+        </introduction>
+
+          <exercise>
+            <title>WeBWorK Exercise</title>
+              <webwork>
+                <statement>
+                  <p>
+                    Use the slider labeled <m>m</m> to set the slope to <m>3</m>.
+                    Suppose that the run along the slope triangle was <m>2</m>.
+                    What would the rise then be? Use the sliders labeled
+                    <m>x_1</m> and <m>x_2</m> to adjust the run to <m>2</m>.
+                    Is the rise what you expected it to be? <var name="6" width="10" />
+                   </p>
+                 </statement>
+               </webwork>
+          </exercise>
+        
+          <exercise>
+            <title>WeBWorK Exercise</title>
+              <webwork>
+                <statement>
+                  <p>
+                    Use the slider labeled <m>m</m> to set the slope to <m>\frac{1}{2}</m>.
+                    What would the run of the line be if the rise was <m>4</m>? Use the sliders labeled
+                    <m>x_1</m> and <m>x_2</m> to adjust the rise to <m>4</m>.
+                    Is the run what you expected it to be? <var name="8" width="10" />
+                  </p>
+                </statement>
+              </webwork>
+          </exercise>
+           
+          <exercise>
+           <title>WeBWorK Exercise</title>
+             <webwork>
+               <statement>
+                 <p>
+                   Use the slider labeled <m>m</m> to set the slope to <m>-1</m>.
+                   What would the run of the line be if the rise was <m>-3</m>? Use the sliders labeled
+                   <m>x_1</m> and <m>x_2</m> to adjust the rise to <m>-3</m>.
+                   Is the run what you expected it to be? <var name="3" width="10" />
+                 </p>
+               </statement>
+             </webwork>
+          </exercise>
+          
+          <exercise>
+           <title>WeBWorK Exercise</title>
+             <webwork>
+               <statement>
+                 <p>
+                   Use the slider labeled <m>m</m> to set the slope to <m>-4</m>.
+                   What would the rise of the line be if the run was <m>-2</m>? Use the sliders labeled
+                   <m>x_1</m> and <m>x_2</m> to adjust the run to <m>-2</m>.  
+                   (Recall that the run is defined as <m>x_2-x_1</m>, so if the run is negative,
+                   the point labeled <m>(x_1,y_1)</m> must be to the right of the point
+                   labeled <m>(x_2,y_2)</m>.) Is the run what you expected it to be? <var name="8" width="10" />
+                 </p>
+               </statement>
+             </webwork>
+          </exercise>
+    
+          <exercise>
+            <title>Open-Ended Question</title>
+              <statement>
+                <p>
+                  Adjust the sliders so that <m>m=\frac{1}{2}</m>, <m>x_1=-2</m>, and <m>x_2=3</m>.
+                  Click the arrow to the left of the slider labeled <m>b</m>.  Watch the slope triangle
+                  as the line moves up and down.  Stop the motion by clicking the pause button to the
+                  left of the slider.  Other than moving up and down (along with the line), in what
+                  way does the slope triangle change (kind of a trick question).  Can you think
+                  of something that must be ture about two lines if and if the lines are parallel? 
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  Other than moving the slope triangle up and down, changing the vertical position of the line has no effect upon the slope triangle.  One implication of this is that two (non-vertical) lines are
+                  parallel if and only if they have equal slope.
+                </p>
+              </solution>
+          </exercise>
+
+          <exercise>
+            <title>Open-Ended Question</title>
+              <statement>
+                <p>
+                  Adjust the slider labeled <m>b</m> so that the line crosses the <m>y</m>-axis 
+                  somewhere close to the origin.  Use the slider labeled <m>m</m> to manually change the slope.
+                  What is true about all lines with positive slope that is distinct from all lines with negative slope?
+                  What is true about a line when its slope is zero?  Change the value of <m>b</m> and confirm your
+                  conjecture about positive, negative, and zero slopes. 
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  All lines with positive slope increase (go upward) from left-to-right whereas all lines with negative slope decrease (go downward) from left-to-right.  All lines with a slope of zero are horizontal.  
+                  Although you can't verify it with the Desmo graph, vertical lines have no slope (sometimes stated as an undefined slope).
+                </p>
+              </solution>
+          </exercise>
+
+                   <exercise>
+            <title>WeBWorK Exercise</title>
+              <webwork>
+                <statement>
+                  <p>
+                    Use the slider labeled <m>m</m> to set the slope to <m>3</m>.
+                    Suppose that the run along the slope triangle was <m>2</m>.
+                    What would the rise then be? Use the sliders labeled
+                    <m>x_1</m> and <m>x_2</m> to adjust the run to <m>2</m>.
+                    Is the rise what you expected it to be? <var name="6" width="10" />
+                  </p>
+                </statement>
+              </webwork>
+          </exercise>
+
+          <exercise>
+            <title>WeBWorK Exercise</title>
+              <webwork>
+                <statement>
+                  <p>
+                    Use the formula <m>\frac{y_2-y_1}{x_2-x_1}</m> to determine the slope of the line
+                    that passes through the points <m>(3,7)</m> and <m>(5,11)</m>
+                  </p>. <var name="2" width="10" />
+                </statement>
+              </webwork>
+          </exercise>
+
+          <exercise>
+            <title>WeBWorK Exercise</title>
+              <webwork>
+                <statement>
+                  <p>
+                    Use the formula <m>\frac{y_2-y_1}{x_2-x_1}</m> to determine the slope of the line
+                    that passes through the points <m>(-3,2)</m> and <m>(1,-5)</m>
+                  </p>. <var name="-1.75" width="10" />
+                </statement>
+              </webwork>
+          </exercise> 
+
+          <exercise>
+            <title>WeBWorK Exercise</title>
+              <webwork>
+                <statement>
+                  <p>
+                    Determine the slope of the line shown in <xref ref="determine-slope">Figure</xref>
+                  </p>. <var name="-1.75" width="10" />
+                </statement>
+              </webwork>
+          </exercise>
+
+          <figure xml:id="determine-slope">
+            <caption></caption>
+              <image>
+                <description>plain text</description>
+                  <latex-image-code>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                      \begin{axis}
+                        \addplot+[domain=-3:4,<->] {1.5x+2};
+                      \end{axis}
+                    \end{tikzpicture}
+                    ]]>
+                  </latex-image-code>
+              </image>
+          </figure> 
+
+      </exercisegroup>
+
+      <exercisegroup>
+        <introduction>
+          <p>Explorations and questions about the equation of a line</p>
+        </introduction>
+
+          
+      </exercisegroup>
+	    
+  </exercises>
+
+
 </section>

@@ -16,7 +16,7 @@
 
         <!-- <initialism>SA</initialism> -->
 
-        <!-- <cross-references text="global" /> -->
+        <cross-references text="global" />
 
         <latex-preamble>
             <package>cancel</package>

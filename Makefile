@@ -107,7 +107,7 @@ html:
 	cp -a $(IMGSRC) $(HTML)
 	cp -a $(IMGOUT) $(HTML)
 	cd $(HTML); \
-	xsltproc --xinclude --stringparam webwork.server $(SERVER) $(PRJXSL)/math-resources-html.xsl $(MAINFILE)
+	xsltproc --xinclude --stringparam html.knowl.exercise.sectional yes --stringparam webwork.server $(SERVER) $(PRJXSL)/math-resources-html.xsl $(MAINFILE)
 
 ###########
 # Utilities

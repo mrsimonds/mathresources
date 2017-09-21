@@ -13,6 +13,7 @@
     <title>Desmos Activities</title>
 
     <xi:include href="./desmos-linear-equations-line-standard.ptx" />
+    <xi:include href="./desmos-slope-warmer.ptx" />
     <xi:include href="./desmos-linear-equations-line-slope-intercept.ptx" />
     <xi:include href="./desmos-linear-equations-line-point-slope.ptx" />
     <xi:include href="./desmos-parabolas-standard-form.ptx" />
@@ -22,6 +23,8 @@
     <xi:include href="./desmos-graph-trans-points.ptx" />
     <xi:include href="./desmos-function-composition.ptx" />
     <xi:include href="./desmos-sine-wave.ptx" />
+ 
+    
     
 
 </chapter>

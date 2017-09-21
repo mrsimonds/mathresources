@@ -10,8 +10,31 @@
 <!-- ********************************************************************* -->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-    <title>Pre-slope activity</title>
+    <title>The unit circle and the sine function</title>
 
-    <p>This activity is only available at <url href="https://student.desmos.com?prepopulateCode=3ffm3">Desmos student activities</url>.</p>
+    <desmos desmos="9kpxr92mvs" />
+
+    <figure xml:id="some-relevant-name">
+        <caption></caption>
+        <image>
+            <description>plain text</description>
+            <latex-image-code>
+                <![CDATA[
+                \begin{tikzpicture}
+                    \begin{axis}
+                        \addplot+[domain=-1:1,<->] {x};
+                    \end{axis}
+                \end{tikzpicture}
+                ]]>
+            </latex-image-code>
+        </image>
+    </figure>
+
+
+    <p>Later, refer to <xref ref="some-relevant-name">Figure</xref> would make something.</p>
+
+
+
+
 
 </section>
