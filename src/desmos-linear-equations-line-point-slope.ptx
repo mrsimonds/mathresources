@@ -12,7 +12,135 @@
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Equation of a line: point-slope form</title>
 
-    <desmos desmos="l4xdooyrx1" />
+    <desmos desmos="cmtaxm8hql" />
+
+    <exercises>
+    <title>Activities and Problems</title>
+    
+          <exercise>
+            <title>An opportunity to use point-slope to determine the equation of a line</title>
+                <statement>
+                  <p>
+                    Use the equation <m>y-y_1=m(x-x_1)</m> to determine the equation of the line that passes through
+                    the point <m>(-3,2)</m> with a slope of <m>-\frac{5}{2}</m>.  Express the equation in 
+                    slope-intercept form (<m>y=mx+b</m>).  Use the Desmos graph to check your answer.
+                   </p>
+                 </statement>
+                 <solution>
+                  <p>
+                    We have <m>x_1=-3</m>, <m>y_1=2</m>, and <m>m=-\frac{5}{2}</m>.  Plugging these values into the
+                    point-slope equation gives us <m>y-2=-\frac{5}{2}(x-(-3))</m>.  Solving for <m>y</m> we see
+                    that the slope-intercept equation of the line is <m>y=-\frac{5}{2}x-\frac{11}{2}</m>.
+                  </p>
+                </solution>
+          </exercise>
+
+          <exercise>
+            <title>An opportunity to use point-slope to determine the equation of a line</title>
+                <statement>
+                  <sidebyside widths="67% 27%" margins="0%">
+                    <p>
+                      Use the equation <m>y-y_1=m(x-x_1)</m> to determine the equation of the line that passes through
+                      the points shown in  <xref ref="table-4-1">Table</xref>.  Express the equation in 
+                      slope-intercept form, <m>y=mx+b</m>.  Use the Desmos graph to check your answer.
+                    </p>
+
+                    <table xml:id="table-4-1">
+                      <caption></caption>
+                        <tabular>
+                          <col halign="center" />
+                          <col halign="center"/>
+                          <row bottom="medium">
+                            <cell>
+                              <line><m>x</m></line>
+                            </cell>
+                            <cell>
+                              <line><m>y</m></line>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell><m>-1</m></cell>
+                            <cell><m>6</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>4</m></cell>
+                            <cell><m>1</m></cell>
+                          </row>
+                        </tabular>
+                      </table>
+                    </sidebyside> 
+                  </statement>
+                  <solution>
+                    <p>
+                      We begin by using the formula <m>\frac{y_2-y_1}{x_2-x_1}</m> to determine that the slope of the line is <m>-1</m>.  Then making the substitutions <m>x_1=-1</m>, <m>y_1=6</m>, and <m>m=-1</m> in the point-slope equation and solving for <m>y</m>, we determine that the slope-intercept equation of
+                      the line is <m>y=-x+5</m>.  Note that we also could have found the equation making the substitutions
+                      <m>x_1=4</m> and <m>y_1=1</m>.
+                    </p>
+                  </solution>
+          </exercise>
+
+          <exercise>
+            <title>An opportunity to use point-slope to determine the equation of a line</title>
+                <statement>
+                  <sidebyside widths="67% 27%" margins="0%">
+                    <p>
+                      Use the equation <m>y-y_1=m(x-x_1)</m> to determine the equation of the line that passes through
+                      the points shown in  <xref ref="table-4-2">Table</xref>.  Express the equation in 
+                      slope-intercept form, <m>y=mx+b</m>.  Use the Desmos graph to check your answer.
+                    </p>
+
+                    <table xml:id="table-4-2">
+                      <caption></caption>
+                        <tabular>
+                          <col halign="center" />
+                          <col halign="center"/>
+                          <row bottom="medium">
+                            <cell>
+                              <line><m>x</m></line>
+                            </cell>
+                            <cell>
+                              <line><m>y</m></line>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell><m>-2</m></cell>
+                            <cell><m>-7</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>\frac{1}{2}</m></cell>
+                            <cell><m>-2</m></cell>
+                          </row>
+                        </tabular>
+                      </table>
+                    </sidebyside> 
+                  </statement>
+                  <solution>
+                    <p>
+                      We begin by using the formula <m>\frac{y_2-y_1}{x_2-x_1}</m> to determine that the slope of the line is <m>2</m>.  Then making the substitutions <m>x_1=-2</m>, <m>y_1=-7</m>, and <m>m=2</m> in the point-slope equation and solving for <m>y</m>, we determine that the slope-intercept equation of
+                      the line is <m>y=2x-3</m>.
+                    </p>
+                  </solution>
+          </exercise>
+
+          <exercise>
+            <title>An opportunity to consider strategies for determining the equation of a line</title>
+                <statement>
+                  <p>
+                    Explain why it would be somewhat inefficient to use point-slope to determine an equation
+                    of the line that passes through the points <m>(0,3)</m> and <m>(-2,6)</m>.
+                   </p>
+                 </statement>
+                 <solution>
+                  <p>
+                    Since we're given the <m>y</m>-intercept, <m>(0,3)</m>, once we calculate the slope to be 
+                    <m>-\frac{3}{2}</m>, we can use slope-intercept to simply write down the equation
+                    <m>y=-\frac{3}{2}x+3</m>.
+                  </p>
+                </solution>
+          </exercise>
+
+
+</exercises>
 
      
 </section>

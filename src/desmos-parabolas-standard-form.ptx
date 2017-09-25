@@ -14,4 +14,156 @@
 
     <desmos desmos="52eldo1x0f" />
 
+    <exercises>
+    <title>Activities and Problems</title>
+    
+      <p>The following activities and problems are based upon equations of form <m>y=ax^2+bx+c</m>, <m>a\neq0</m>.
+      </p>
+
+          <exercise>
+            <title>An activity focused on the effect of the constant <m>c</m> in the standard parobolic equation</title>
+                <statement>
+                  <p>
+                    Without changing the value of either <m>a</m> or <m>b</m>, slide the value of <m>c</m> back and forth and note the effect is has on the position of the parabola.  Focus specifically on the position relative to the 
+                    <m>y</m>-axis.
+                  </p>
+                  <p>
+                    Next, set the value of <m>c</m> to 3 and leave it there.  Slide the values of <m>a</m> and <m>b</m> back and forth.  There are all sorts of things that change when you do this, but one thing remains constant.  What is the property that remains constant?  (Again, focus your attention on the <m>y</m>-axis.)
+                  </p>
+                  <p>
+                    What's the value of <m>x</m> for every point on the <m>y</m>-axis?  What's the value of <m>y</m> in the equation <m>y=ax^2+bx+c</m> when <m>x</m> is replaced with that value?  Do you see the connection between the value of <m>c</m> and the position of the parabola?
+                  </p>
+                </statement>
+                <solution>
+                  <p>
+                    The value of <m>x</m> at every point on the <m>y</m>-axis is <m>0</m>, so when <m>x=0</m>, <m>y=c</m> in the equation <m>y=ax^2+bx+c</m>.  This means that regardless of the values of <m>a</m> and <m>b</m>, the <m>y</m>-intercept for the parabola is the point <m>(0,c)</m>. 
+                  </p>
+                </solution>
+          </exercise>
+
+          <exercise>
+            <title>An activity focused on the effect of the constant <m>a</m> in the standard parobolic equation</title>
+                <statement>
+                  <p>
+                    Set the value of <m>b</m> to <m>0</m> and the value of <m>c</m> to <m>1</m>.  Slide the value of <m>a</m> back and forth.  What is always true about the parabola when the value of <m>a</m> is positive?  What about when the value of <m>a</m> is negative?  What happens when the value of <m>a</m> is set to <m>0</m>?  On the last question, do you see why things go awry when <m>a=0</m> (based upon the equation <m>y=ax^2+bx+c</m>)?
+                  </p>
+                  <p>
+                    Next, chose any values for <m>b</m> and <m>c</m> that you like.  Again, slide the value of <m>a</m> back and forth.  Is the effect of <m>a</m> being positive, negative, or zero any different? 
+                  </p>
+                </statement>
+                <solution>
+                  <p>
+                    Regardless of the values of <m>b</m> and <m>c</m>, when <m>a</m> is positive, the parabola opens upward and when <m>a</m> is negative the parabola opens downward.  When <m>a=0</m>, the equation <m>y=ax^2+bx+c</m> simplifies to the linear equation <m>y=bx+c</m> and the curve changes from a parabola to a line. 
+                  </p>
+                </solution>
+          </exercise>
+
+           <exercise>
+            <title>An activity focused on the effect of the constant <m>b</m> in the standard parobolic equation</title>
+              <statement>
+                <p>
+                  The effect opun the parabola of the value of <m>b</m> is a little more indirect.  If you keep the values of <m>a</m> and <m>c</m> fixed and slide the value of <m>b</m> back and forth, you can see the position of the parabola move, but there doesn't appear to be any direct correlation between the value of <m>b</m> and the position of the parabola (in, say, the way that <m>(0,c)</m> is always the <m>y</m>-intercept). This is because the value of <m>a</m> plays a role in the effect of <m>b</m>.  Specifically, the <m>x</m>-coordinate of the vertex is always <m>-\frac{b}{2a}</m>
+                </p>
+                <p>
+                  Click the circle it the Desmos graph that lies to the left of "show the vertex."  For each of the parabolic equations given below, state the values of <m>a</m>, <m>b</m>, and <m>c</m>.   Then use the formula 
+                  <m>x=-\frac{b}{2a}</m> to determine the <m>x</m>-coordinate of the vertex of the parabola.  Check your answer in the Desmos graph by setting <m>a</m>, <m>b</m>, and <m>c</m> to the appropriate values.
+                </p>
+                  <ol>
+                  <li><m>y=2x^2+6x+3</m></li>
+                  <li><m>y=x^2-3x</m></li>
+                  <li><m>y=-x^2-4x-2</m></li>
+                  <li><m>y=-3x^2+6x+2</m></li>
+                  </ol>
+                <p>
+                </p>
+                <p>
+                  For each of the parabolic equations given below, determine the <m>x</m>-coordinate of the vertex and then use the formula <m>y=ax^2+bx+c</m> to determine the corresponding <m>y</m>-coordinate.  Use the Desmos graph to check each answer.
+                </p>
+                  <ol>
+                  <li><m>y=-2x^2-4x+1</m></li>
+                  <li><m>y=x^2-6x+5</m></li>
+                  <li><m>y=-x^2-3x-1</m></li>
+                  <li><m>y=\frac{1}{2}x^2-x-\frac{3}{2}</m></li>
+                  </ol>
+              </statement>
+              <solution>
+                <ol>
+                  <li>The <m>x</m>-coordinate of the vertex is <m>-\frac{3}{2}</m>.</li>
+                  <li>The <m>x</m>-coordinate of the vertex is <m>\frac{3}{2}</m>.</li>
+                  <li>The <m>x</m>-coordinate of the vertex is <m>-2</m>.</li>
+                  <li>The <m>x</m>-coordinate of the vertex is <m>1</m>.</li>
+                </ol>
+                <p>
+                </p>
+                <ol>
+                  <li>The vertex is <m>(-1,3)</m>.</li>
+                  <li>The vertex is <m>(3,-4)</m>.</li>
+                  <li>The vertex is <m>(-\frac{3}{2},\frac{5}{4})</m>.</li>
+                  <li>The vertex is <m>(1,-2)</m>.</li>
+                </ol>
+              </solution>
+          </exercise>
+
+          <exercise>
+            <title>An activity focused on the <m>x</m>-intercepts of the parabola</title>
+              <statement>
+                <p>
+                  The <m>x</m>-intercepts are the points on the parabola where the <m>y</m>-coordinates are zero; consequently, the <m>x</m>-coordinates of the <m>x</m>-intercepts are determined by solving the equation <m>ax^2+bx+c=0</m>.  In the Desmos graph, deactivate "show the vertex" by clicking the circle to its left and activate "show the x-intercepts" by clicking the circle to its left.
+                </p>
+                <p>
+                  For each parabolic equation given below, state the values of <m>a</m>, <m>b</m>, and <m>c</m>.  Next, solve the equation <m>ax^2+bx+c=0</m> to determine the <m>x</m>-coordinate(s) of the <m>x</m>-intercept(s).  (Note:  Each of the equations can be solved by factoring the non-zero side of the equation and applying the zero-product principle.)  Finally, state each <m>x</m>-intercept as an ordered pair and check your answer using the Desmos graph.
+                </p>
+                <ol>
+                  <li><m>y=x^2-3x-4</m></li>
+                  <li><m>y=x^2-6x</m></li>
+                  <li><m>y=x^2-4x+4</m></li>
+                  <li><m>y=2x^2-3x-2</m></li>
+                </ol>
+                <p>
+                </p>
+                <p> 
+                  Recall that not all quadratic equations have real number solutions.  We can use the discriminant, <m>b^2-4ac</m>, to make that determination for the equation <m>ax^2+bx+c=0</m>.  When the discriminant is negative, the equation has no real number solutions.  When the disciminant is zero the equation has exactly one real number solution and when the discriminant is positive the equation has exactly two real number solutions.  For each parabolic equation, <m>y=ax^2+bx+c</m>, given below, determine the discriminant for the corresponding quadratic equation <m>ax^2+bx+c=0</m> and state the number of real number solutions the quadration equation has.  Finally, use the Desmos graph to graph each parabola and state and make note of the number of <m>x</m>-intercepts.  What is the correlation between the value of the discriminant (negative, zero, positive) and the number of <m>x</m>-intercepts on the parabola?
+                </p>
+                <ol>
+                  <li><m>y=x^2+3x+4</m></li>
+                  <li><m>y=x^2+3x-4</m></li>
+                  <li><m>y=4x^2-4x+1</m></li>
+                  <li><m>y=3x^2+6x+4</m></li>
+                  <li><m>y=3x^2+6x-4</m></li>
+                  <li><m>y=x^2-9</m></li>
+                  <li><m>y=-x^2-6</m></li>
+                  <li><m>y=x^2+2x+1</m></li>
+                </ol>
+              </statement>
+              <solution>
+                <ol>
+                  <li>The <m>x</m>-intercepts are <m>(4,0)</m> and <m>(-1,0)</m>.</li>
+                  <li>The <m>x</m>-intercepts are <m>(0,0)</m> and <m>(6,0)</m>.</li>
+                  <li>The only <m>x</m>-intercept is <m>(2,0)</m>.</li>
+                  <li>The <m>x</m>-intercepts are <m>(-\frac{1}{2},0)</m> and <m>(2,0)</m></li>
+                </ol>
+                <p>
+                </p>
+                <ol>
+                  <li>The value of the disciminant is <m>-7</m>.  The parabola has no <m>x</m>-intercepts.</li>
+                  <li>The value of the disciminant is <m>25</m>.  The parabola has two <m>x</m>-intercepts.</li>
+                  <li>The value of the disciminant is <m>0</m>.  The parabola has only one <m>x</m>-intercept.</li>
+                  <li>The value of the disciminant is <m>-12</m>.  The parabola has no <m>x</m>-intercepts.</li>
+                  <li>The value of the disciminant is <m>84</m>.  The parabola has two <m>x</m>-intercepts.</li>
+                  <li>The value of the disciminant is <m>36</m>.  The parabola has two <m>x</m>-intercepts.</li>
+                  <li>The value of the disciminant is <m>-24</m>.  The parabola has no <m>x</m>-intercepts.</li>
+                  <li>The value of the disciminant is <m>0</m>.  The parabola has only one <m>x</m>-intercept.</li>
+                </ol>
+                <p>
+                </p>
+                <p>
+                  When the discriminant is positive, the parabola has two <m>x</m>-intercepts.  When the dscriminant is zero the parabola has only one <m>x</m>-intercept, and when the discriminant is negative the parabola has no <m>x</m>-intercepts.
+                </p>
+              </solution>
+            </exercise>
+
+
+
+</exercises>
+
 </section>

@@ -14,12 +14,94 @@
 
     <desmos desmos="sij2bn7tmc" />
 
+  <exercises>
+    <title>Activities and Problems</title>
 
     <exercise>
-        <webwork>
+        <title>A question about the intercepts of a line</title>
             <statement>
-                <p>Use the slider labeled <m>m</m> to set the slope to <m>3</m>. Suppose that the run along the slope triangle was <m>2</m>. What would the rise then be? Use the sliders labeled <m>x_1</m> and <m>x_2</m> to adjust the run to <m>2</m>. Is the rise what you expected it to be? <var name="6" width="10" /></p>
+                <p>
+                  Determine, by hand, the <m>x</m>-intercept and <m>y</m>-intercept of the line with equation
+                  <m>2x-3y=6</m>.  Remember to state the intercepts as ordered pairs.  Check you answer by
+                  using the desmos sliders to set <m>a</m> to <m>2</m>, <m>b</m> to <m>-3</m>, and <m>c</m> 
+                  to <m>6</m>.
+                </p>
             </statement>
-        </webwork>
+            <solution>
+              <p>
+                To determine the <m>x</m>-intercept (where the line crosses the <m>x</m>-axis), we replace <m>y</m>
+                with <m>0</m> and solve for <m>x</m>.  Solving <m>2x-3(0)=6</m> results in <m>3</m>, so the 
+                <m>x</m>-intercept is <m>(3,0)</m>.
+              </p>
+              <p>
+                To determine the <m>y</m>-intercept (where the line crosses the <m>y</m>-axis), we replace <m>x</m>
+                with <m>0</m> and solve for <m>y</m>.  Solving <m>2(0)-y=6</m> results in <m>-2</m>, so the 
+                <m>y</m>-intercept is <m>(0,-2)</m>.
+              </p>
+            </solution>
     </exercise>
+
+      <exercise>
+        <title>A question about the intercepts of a line</title>
+            <statement>
+                <p>
+                  Determine, by hand, the <m>x</m>-intercept and <m>y</m>-intercept of the line with equation
+                  <m>4x+y=4</m>.  Remember to state the intercepts as ordered pairs.  Check you answer by
+                  using the desmos sliders to set <m>a</m> to <m>4</m>, <m>b</m> to <m>1</m>, and <m>c</m> 
+                  to <m>4</m>.
+                </p>
+            </statement>
+            <solution>
+              <p>
+                The <m>x</m>-intercept is <m>(1,0)</m> and the <m>y</m>-intercept is <m>(0,4)</m>      
+              </p>
+            </solution>
+    </exercise>
+
+    <exercise>
+        <title>A question about the intercepts of a line</title>
+            <statement>
+                <p>
+                  Determine, by hand, the <m>x</m>-intercept and <m>y</m>-intercept of the line with equation
+                  <m>-x-4y=10</m>.  Remember to state the intercepts as ordered pairs.  Check you answer by
+                  using the desmos sliders to set <m>a</m> to <m>-1</m>, <m>b</m> to <m>-4</m>, and <m>c</m> 
+                  to <m>10</m>.
+                </p>
+            </statement>
+            <solution>
+              <p>
+                The <m>x</m>-intercept is <m>(-10,0)</m> and the <m>y</m>-intercept is <m>(0,-\frac{5}{2})</m>      
+              </p>
+            </solution>
+    </exercise>
+
+    <exercise>
+        <title>An activity about lines whose equations can be expressed in the form <m>y=c</m></title>
+            <statement>
+                <p>
+                  Set the value of <m>a</m> to <m>0</m> and the value of <m>b</m> to <m>1</m>.  Note that this results in equations of form <m>y=c</m>.  Slide the value of <m>c</m> back and forth.  What do all lines whose equations can be expressed in the form <m>y=c</m> have in common?
+                </p>
+            </statement>
+            <solution>
+              <p>
+                Every line whose equation can be expressed in the form <m>y=c</m> is horizontal.      
+              </p>
+            </solution>
+    </exercise>
+
+    <exercise>
+        <title>An activity about lines whose equations can be expressed in the form <m>x=c</m></title>
+            <statement>
+                <p>
+                  Set the value of <m>a</m> to <m>1</m> and the value of <m>b</m> to <m>0</m>.  Note that this results in equations of form <m>x=c</m>.  Slide the value of <m>c</m> back and forth.  What do all lines whose equations can be expressed in the form <m>x=c</m> have in common?
+                </p>
+            </statement>
+            <solution>
+              <p>
+                Every line whose equation can be expressed in the form <m>x=c</m> is vertical.      
+              </p>
+            </solution>
+    </exercise>
+
+  </exercises>
 </section>
