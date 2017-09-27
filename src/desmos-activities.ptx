@@ -17,6 +17,7 @@
     <xi:include href="./desmos-linear-equations-line-slope-intercept.ptx" />
     <xi:include href="./desmos-linear-equations-line-point-slope.ptx" />
     <xi:include href="./desmos-parabolas-standard-form.ptx" />
+    <xi:include href="./desmos-parabolas-vertex-form.ptx" />
     <xi:include href="./desmos-abs-value-eq-in-v-up.ptx" />
     <xi:include href="./desmos-abs-value-eq-in-v-down.ptx" />
     <xi:include href="./desmos-graph-trans-curves.ptx" />
