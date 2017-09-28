@@ -140,6 +140,9 @@
                 <li>Use the Desmos activity to verify that <m>y=(x-h)^2+k</m> indeed graphs to the same parabola as did the standard form of the equation.</li>
                 <li>By hand, expand and simplify the right side of the vertex form of the equation and confirm that it does in fact simplify to the right side of the standard form equation.</li>
               </ol>
+              <p>
+              </p>
+              <sidebyside widths="40% 50%" margins="0%">
               <table xml:id="table-6-2" halign="left">
                 <caption></caption>
                   <tabular>
@@ -175,6 +178,9 @@
                           </row>
                         </tabular>
                       </table>
+                      <p>
+                      </p>
+                    </sidebyside>
             </statement>
             <solution>
               <p>

@@ -10,16 +10,19 @@
 <!-- ********************************************************************* -->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-    <title>Equation of a line: slope-intercept form</title>
+    <title>Slope and the slope-intercept form of linear equations</title>
 
     <desmos desmos="07ocpqryir" />
-
+    
 <exercises>
     <title>Activities and Problems</title>
     
           <exercise>
             <title>An activity related to slope</title>
                 <statement>
+                  <p>
+                    Recall that one equation for slope is <m>m=\frac{\text{rise}}{\text{run}}</m>.
+                  </p>
                   <p>
                     Use the slider labeled <m>m</m> to set the slope to <m>3</m>.
                     Suppose that the run along the slope triangle was <m>2</m>.
@@ -38,77 +41,112 @@
         
           <exercise>
             <title>An activity related to slope</title>
-                <statement>
+              <statement>
+                <sidebyside widths="73% 27%" margins="0%">
                   <p>
-                    Use the slider labeled <m>m</m> to set the slope to <m>\frac{1}{2}</m>.
-                    What would the run of the line be if the rise was <m>4</m>? Use the sliders labeled
-                    <m>x_1</m> and <m>x_2</m> to adjust the rise to <m>4</m>.
-                    Is the run what you expected it to be? 
+                    Two of the three elements of the slope equation <m>m=\frac{\text{rise}}{\text{run}}</m> are stated in each row of <xref ref="table-slope-1">Table</xref>.  Find the missing element for each row and check your result with the Desmos graph.
                   </p>
+                  <table xml:id="table-slope-1" halign="left">
+                  <caption></caption>
+                  <tabular>                    
+                    <col halign="center"/>
+                    <col halign="center"/>
+                    <col halign="center"/>
+                          <row bottom="medium">
+                            <cell>
+                              <line><m>slope</m>  </line>
+                            </cell>
+                            <cell>
+                              <line>rise</line>
+                            </cell>
+                            <cell>
+                              <line>run</line>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell><m></m></cell>
+                            <cell><m>25</m></cell>
+                            <cell><m>-5</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>4</m></cell>
+                            <cell><m></m></cell>
+                            <cell><m>-2</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>8</m></cell>
+                            <cell><m>4</m></cell>
+                            <cell><m></m></cell>
+                          </row>
+                          <row>
+                            <cell><m>-2</m></cell>
+                            <cell><m>-2</m></cell>
+                            <cell><m></m></cell>
+                          </row>
+
+                          <row>
+                            <cell><m>-6</m></cell>
+                            <cell><m></m></cell>
+                            <cell><m>\frac{1}{3}</m></cell>
+                          </row>
+                        </tabular>
+                      </table>
+                    </sidebyside>
                 </statement>
                 <solution>
-                  <p>
-                    The run would be <m>8</m>.
-                  </p>
+                  <sidebyside widths="30% 70%" margins="0%">
+                  <table xml:id="table-slope-1A" halign="left">
+                  <caption></caption>
+                  <tabular>                    
+                    <col halign="center"/>
+                    <col halign="center"/>
+                    <col halign="center"/>
+                          <row bottom="medium">
+                            <cell>
+                              <line><m>slope</m>  </line>
+                            </cell>
+                            <cell>
+                              <line>rise</line>
+                            </cell>
+                            <cell>
+                              <line>run</line>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell><m>-5</m></cell>
+                            <cell><m>25</m></cell>
+                            <cell><m>-5</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>4</m></cell>
+                            <cell><m>-8</m></cell>
+                            <cell><m>-2</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>8</m></cell>
+                            <cell><m>4</m></cell>
+                            <cell><m>\frac{1}{2}</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>-2</m></cell>
+                            <cell><m>-2</m></cell>
+                            <cell><m>1</m></cell>
+                          </row>
+
+                          <row>
+                            <cell><m>-6</m></cell>
+                            <cell><m>-2</m></cell>
+                            <cell><m>\frac{1}{3}</m></cell>
+                          </row>
+                        </tabular>
+                      </table>
+                      <p>
+                      </p>
+                  </sidebyside>
                 </solution>
+               
           </exercise>
            
-          <exercise>
-           <title>An activity related to slope</title>
-                <statement>
-                  <p>
-                    Use the slider labeled <m>m</m> to set the slope to <m>-1</m>.
-                    What would the run of the line be if the rise was <m>-3</m>? Use the sliders labeled
-                    <m>x_1</m> and <m>x_2</m> to adjust the rise to <m>-3</m>.
-                    Is the run what you expected it to be? 
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The run would be <m>3</m>.
-                  </p>
-                </solution>
-          </exercise>
-          
-          <exercise>
-           <title>An activity related to slope</title>
-               <statement>
-                 <p>
-                   Use the slider labeled <m>m</m> to set the slope to <m>-4</m>.
-                   What would the rise of the line be if the run was <m>-2</m>? Use the sliders labeled
-                   <m>x_1</m> and <m>x_2</m> to adjust the run to <m>-2</m>.  
-                   (Recall that the run is defined as <m>x_2-x_1</m>, so if the run is negative,
-                   the point labeled <m>(x_1,y_1)</m> must be to the right of the point
-                   labeled <m>(x_2,y_2)</m>.) Is the rise what you expected it to be? 
-                 </p>
-               </statement>
-               <solution>
-                  <p>
-                    The rise would be <m>8</m>.
-                  </p>
-                </solution>
-          </exercise>
-    
-          <exercise>
-            <title>An activity related to slope</title>
-              <statement>
-                <p>
-                  Adjust the sliders so that <m>m=\frac{1}{2}</m>, <m>x_1=-2</m>, and <m>x_2=3</m>.
-                  Click the arrow to the left of the slider labeled <m>b</m>.  Watch the slope triangle
-                  as the line moves up and down.  Stop the motion by clicking the pause button to the
-                  left of the slider.  Other than moving up and down (along with the line), in what
-                  way does the slope triangle change (kind of a trick question).  Can you think
-                  of something that must be ture about two lines if and only if the lines are parallel? 
-                </p>
-              </statement>
-              <solution>
-                <p>
-                  Other than moving the slope triangle up and down, changing the vertical position of the line has no effect upon the slope triangle.  One implication of this is that two (non-vertical) lines are
-                  parallel if and only if they have equal slope.
-                </p>
-              </solution>
-          </exercise>
-
           <exercise>
             <title>An activity related to slope</title>
               <statement>
@@ -131,45 +169,110 @@
           <exercise>
             <title>A question about slope</title>
                 <statement>
-                  <p>
-                    Use the formula <m>\frac{y_2-y_1}{x_2-x_1}</m> to determine the slope of the line
-                    that passes through the points <m>(3,7)</m> and <m>(5,11)</m>.
-                  </p>
-                </statement>
+                  <sidebyside widths="67% 27%" margins="0%">
+                    <p>
+                    For each row in <xref ref="table-slope-points">Table</xref>, use the formula <m>\frac{y_2-y_1}{x_2-x_1}</m> to determine the slope of the line that passes through the two given points.
+                    </p>
+                    
+                    <table xml:id="table-slope-points">
+                      <caption></caption>
+                        <tabular>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <row bottom="medium">
+                            <cell>
+                              <line><m>(x_1,y_1)</m></line>
+                            </cell>
+                            <cell>
+                              <line><m>(x_2,y_2)</m></line>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell><m>(5,11)</m></cell>
+                            <cell><m>(3,7)</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>(3,7)</m></cell>
+                            <cell><m>(5,11)</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>(-3,2)</m></cell>
+                            <cell><m>(1,-5)</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>(1,-5)</m></cell>
+                            <cell><m>(-3,2)</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>(\frac{3}{2},\frac{1}{3})</m></cell>
+                            <cell><m>(4,-\frac{8}{3})</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>(4,-\frac{8}{3})</m></cell>
+                            <cell><m>(\frac{3}{2},\frac{1}{3})</m></cell>
+                          </row>
+                        </tabular>
+                      </table>
+                    </sidebyside> 
+                  </statement>
                 <solution>
-                  <p>
-                    <m>m=\frac{11-7}{5-3}=2</m>
-                  </p>
-                  <p>
-                    Note that you can also evaluate the slope using:
-                  </p>
-                  <p>
-                    <m>m=\frac{7-11}{3-5}=2</m> 
-                  </p>     
-                  <p>
-                    The slope is <m>2</m>.
-                  </p>
+                  <sidebyside widths="30% 70%" margins="0%">
+                  <table xml:id="table-slope-points-Ans">
+                      <caption></caption>
+                        <tabular>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <row bottom="medium">
+                            <cell>
+                              <line><m>(x_1,y_1)</m></line>
+                            </cell>
+                            <cell>
+                              <line><m>(x_2,y_2)</m></line>
+                            </cell>
+                            <cell>
+                              slope
+                            </cell>
+                          </row>
+                          <row>
+                            <cell><m>(5,11)</m></cell>
+                            <cell><m>(3,7)</m></cell>
+                            <cell><m>-2</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>(3,7)</m></cell>
+                            <cell><m>(5,11)</m></cell>
+                            <cell><m>-2</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>(-3,2)</m></cell>
+                            <cell><m>(1,-5)</m></cell>
+                            <cell><m>-\frac{7}{4}</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>(1,-5)</m></cell>
+                            <cell><m>(-3,2)</m></cell>
+                            <cell><m>-\frac{7}{4}</m></cell>}
+                          </row>
+                          <row>
+                            <cell><m>(\frac{3}{2},\frac{1}{3})</m></cell>
+                            <cell><m>(4,-\frac{8}{3})</m></cell>
+                            <cell><m>-\frac{6}{5}</m></cell>}
+                          </row>
+                          <row>
+                            <cell><m>(4,-\frac{8}{3})</m></cell>
+                            <cell><m>(\frac{3}{2},\frac{1}{3})</m></cell>
+                            <cell><m>-\frac{6}{5}</m></cell>
+                          </row>
+                        </tabular>
+                      </table>
+                      <p>
+                      </p>
+                    </sidebyside>
                 </solution>
           </exercise>
 
-          <exercise>
-            <title>A question about slope</title>
-                <statement>
-                  <p>
-                    Use the formula <m>\frac{y_2-y_1}{x_2-x_1}</m> to determine the slope of the line
-                    that passes through the points <m>(-3,2)</m> and <m>(1,-5)</m>.
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    <m>m=\frac{-5-2}{1-(-3)}=-\frac{7}{4}</m>
-                  </p>
-                  <p>
-                    The slope is <m>-\frac{7}{4}</m>.
-                  </p>
-                </solution>
-          </exercise> 
-
+          
           <exercise>
             <title>A question about slope</title>
                 <statement>
@@ -315,9 +418,21 @@
           <exercise>
             <title>A question about the slope-intercept form of the equation of a line</title>
                 <statement>
+                  <p>
+                    Suppose that we were asked to determine the slope-intercept equation of the line that passes through the points <m>(3,-2)</m> and <m>(-5,2)</m>.  What approach might we take? 
+                  </p>
+                  <p>
+                      We could begin by using the formula <m>m=\frac{y_2-y_1}{x_2-x_1}</m> to determine that the slope
+                      of the line is <m>-\frac{1}{2}</m>.
+                    </p>
+                    <p>
+                      We don't directly know the <m>y</m>-intercept of the line, but from the slope we know
+                      that the equation of the line is <m>y=-\frac{1}{2}x+b</m> where <m>b</m> is the 
+                      <m>y</m>-coordinate of the <m>y</m>-intercept.  So we could substitute the coordinates of the ordered pair <m>(3,-2)</m> into that equation which would give us <m>-2=(-\frac{1}{2})(3)+b</m>, and solving for <m>b</m> we would get <m>-\frac{1}{2}</m>, so the slope-intercept equation for the line is <m>y=-\frac{1}{2}x-\frac{1}{2}</m>.  Note that we could also have used the ordered pair <m>(-5,2)</m> to determine the value of <m>b</m>.
+                    </p>
                   <sidebyside widths="67% 27%" margins="0%">
                     <p>
-                      Determine the slope-intercept equation for the line that passes through 
+                      Now it's your turn.  Determine the slope-intercept equation for the line that passes through 
                       the points shown in <xref ref="table-3-1">Table</xref>.
                     </p>
 
@@ -354,8 +469,7 @@
                     <p>
                       We don't directly know the <m>y</m>-intercept of the line, but from the slope we know
                       that the equation of the line is <m>y=-3x+b</m> where <m>b</m> is the 
-                      <m>y</m>-coordinate of the <m>y</m>-intercept.  Plugging the ordered pair <m>(2,-7)</m> into
-                      that equation gives us <m>-7=(-3)(2)+b</m>, and solving for <m>b</m> we get
+                      <m>y</m>-coordinate of the <m>y</m>-intercept.  Substituting the coordinates of the ordered pair <m>(2,-7)</m> into that equation gives us <m>-7=(-3)(2)+b</m>, and solving for <m>b</m> we get
                       <m>-1</m>, so the slope-intercept equation for the line is <m>y=-3x-1</m>.  Note that we could also have used the ordered pair <m>(-3,8)</m> to determine the
                       value of <m>b</m>.
                     </p>
@@ -404,12 +518,52 @@
                     <p>
                       We don't directly know the <m>y</m>-intercept of the line, but from the slope we know
                       that the equation of the line is <m>y=-\frac{1}{2}x+b</m> where <m>b</m> is the 
-                      <m>y</m>-coordinate of the <m>y</m>-intercept.  Plugging the ordered pair <m>(5,1)</m> into
-                      that equation gives us <m>1=-\frac{1}{2}(5)+b</m>, and solving for <m>b</m> we get
+                      <m>y</m>-coordinate of the <m>y</m>-intercept.  Substituting the coordinates of the ordered pair <m>(5,1)</m> into that equation gives us <m>1=-\frac{1}{2}(5)+b</m>, and solving for <m>b</m> we get
                       <m>b=\frac{7}{2}</m>, so the slope-intercept equation for the line is <m>y=-\frac{1}{2}x+\frac{7}{2}</m>.  Note that we could also have used the ordered pair <m>(-3,5)</m> to determine the
                       value of <m>b</m>.
                     </p>
                  </solution>
+          </exercise> 
+
+           <exercise>
+            <title>A question about the slope-intercept form of the equation of a line</title>
+                <statement>
+                  <sidebyside widths="67% 27%" margins="0%">
+                    <p>
+                      Determine the slope-intercept equation for the line that passes through 
+                      the points shown in <xref ref="table-slope-2">Table</xref>.
+                    </p>
+
+                    <table xml:id="table-slope-2">
+                      <caption></caption>
+                        <tabular>
+                          <col halign="center" />
+                          <col halign="center"/>
+                          <row bottom="medium">
+                            <cell>
+                              <line><m>x</m></line>
+                            </cell>
+                            <cell>
+                              <line><m>y</m></line>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell><m>\frac{1}{2}</m></cell>
+                            <cell><m>5</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>-\frac{3}{2}</m></cell>
+                            <cell><m>-3</m></cell>
+                          </row>
+                        </tabular>
+                      </table>
+                    </sidebyside> 
+                  </statement>
+                  <solution>
+                    <p>
+                      The equation of the line is <m>y=4x+3</m>.
+                    </p>
+                  </solution>
           </exercise> 
 
            <exercise>
