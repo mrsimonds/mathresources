@@ -12,7 +12,7 @@
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Slope and the slope-intercept form of linear equations</title>
 
-    <desmos desmos="07ocpqryir" />
+    <desmos desmos="jbaagrgo8m" />
     
 <exercises>
     <title>Activities and Problems</title>
@@ -26,9 +26,8 @@
                   <p>
                     Use the slider labeled <m>m</m> to set the slope to <m>3</m>.
                     Suppose that the run along the slope triangle was <m>2</m>.
-                    What would the rise then be? Use the sliders labeled
-                    <m>x_1</m> and <m>x_2</m> to adjust the run to <m>2</m>.
-                    Is the rise what you expected it to be? 
+                    What would the rise then be? Use the slider labeled
+                    <m>n</m> to adjust the run to <m>2</m>.  If necessary, adjust the value of <m>x_1</m> so that you can see the slope triangle. Is the rise what you expected it to be? 
                    </p>
                  </statement>
                  <solution>

@@ -62,7 +62,7 @@
             <title>An activity focused on the effect of the constant <m>b</m> in the standard parobolic equation</title>
               <statement>
                 <p>
-                  The effect opun the parabola of the value of <m>b</m> is a little more indirect.  If you keep the values of <m>a</m> and <m>c</m> fixed and slide the value of <m>b</m> back and forth, you can see the position of the parabola move, but there doesn't appear to be any direct correlation between the value of <m>b</m> and the position of the parabola (in, say, the way that <m>(0,c)</m> is always the <m>y</m>-intercept). This is because the value of <m>a</m> plays a role in the effect of <m>b</m>.  Specifically, the <m>x</m>-coordinate of the vertex is always <m>-\frac{b}{2a}</m>
+                  The effect upon the parabola of the value of <m>b</m> is a little more indirect.  If you keep the values of <m>a</m> and <m>c</m> fixed and slide the value of <m>b</m> back and forth, you can see the position of the parabola move, but there doesn't appear to be any direct correlation between the value of <m>b</m> and the position of the parabola (in, say, the way that <m>(0,c)</m> is always the <m>y</m>-intercept). This is because the value of <m>a</m> plays a role in the effect of <m>b</m>.  Specifically, the <m>x</m>-coordinate of the vertex is always <m>-\frac{b}{2a}</m>
                 </p>
                 <p>
                   Click the circle it the Desmos graph that lies to the left of "show the vertex."  For each of the parabolic equations given below, state the values of <m>a</m>, <m>b</m>, and <m>c</m>.   Then use the formula 
@@ -79,7 +79,7 @@
                 <p>
                   For each of the parabolic equations given below, determine the <m>x</m>-coordinate of the vertex and then use the formula <m>y=ax^2+bx+c</m> to determine the corresponding <m>y</m>-coordinate.  Use the Desmos graph to check each answer.
                 </p>
-                  <ol>
+                  <ol label="i">
                   <li><m>y=-2x^2-4x+1</m></li>
                   <li><m>y=x^2-6x+5</m></li>
                   <li><m>y=-x^2-3x-1</m></li>
@@ -95,7 +95,7 @@
                 </ol>
                 <p>
                 </p>
-                <ol>
+                <ol label="i">
                   <li>The vertex is <m>(-1,3)</m>.</li>
                   <li>The vertex is <m>(3,-4)</m>.</li>
                   <li>The vertex is <m>(-\frac{3}{2},\frac{5}{4})</m>.</li>

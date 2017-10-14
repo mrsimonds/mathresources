@@ -12,7 +12,7 @@
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Equation of a parabola: vertex form</title>
 
-    <desmos desmos="snrrepchml" />
+    <desmos desmos="s4nzzwlet9" />
 
     <exercises>
     <title>Activities and Problems</title>
@@ -257,7 +257,7 @@
                   <mrow>y\amp=x^2-10x+32</mrow>
                   <mrow>y\amp=(x^2-10x)+32</mrow>
                   <mrow>y\amp=(x^2-10x+25)+32-25</mrow>
-                  <mrow>y\amp==(x-5)^2+7</mrow>
+                  <mrow>y\amp=(x-5)^2+7</mrow>
                 </md>
                 <p>
                   The vertex of the parabola lies at the point <m>(5,7)</m>.
