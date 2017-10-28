@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portlant Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<appendix xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="chapter-textbook-aligned-videos">
+  <title>Textbook Aligned Instructional Videos</title>
+
+  <section xml:id="section-textbook-aligned-videos">
+    <title>ORCCA</title>
+    <p><dl>
+      <li>
+        <title>Section 1.1</title>
+        <p><xref ref="video-addition-with-signed-numbers" text="title"/></p>
+        <p><xref ref="video-subtraction-with-signed-numbers" text="title"/></p>
+      </li>
+      <li>
+        <title>Section 1.2</title>
+        <p><xref ref="video-multiplying-and-dividing-fractions" text="title"/></p>
+        <p><xref ref="video-multiplying-and-dividing-fractions-your-turn" text="title"/></p>
+      </li>
+    </dl></p>
+  </section>
+
+
+</appendix>

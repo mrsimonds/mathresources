@@ -2,14 +2,14 @@
 
 <!-- ********************************************************************* -->
 <!-- Copyright 2017                                                        -->
-<!-- Portlant Community College                                            -->
+<!-- Portland Community College                                            -->
 <!--                                                                       -->
 <!-- Author                                                                -->
 <!-- Steve Simonds                                                         -->
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-desmos-linear-equations-line-standard">
     <title>Equation of a line: standard form</title>
 
     <desmos desmos="sxiigruazn" />
@@ -23,7 +23,7 @@
                 <p>
                   Determine, by hand, the <m>x</m>-intercept and <m>y</m>-intercept of the line with equation
                   <m>2x-3y=6</m>.  Remember to state the intercepts as ordered pairs.  Check you answer by
-                  using the desmos sliders to set <m>a</m> to <m>2</m>, <m>b</m> to <m>-3</m>, and <m>c</m> 
+                  using the Desmos sliders to set <m>a</m> to <m>2</m>, <m>b</m> to <m>-3</m>, and <m>c</m> 
                   to <m>6</m>.
                 </p>
             </statement>

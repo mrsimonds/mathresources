@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-rules-of-exponents">
+    <title>Rules of exponents</title>
+
+    <exercises>
+    <title>Examples and Exercises</title>
+      <exercise>
+      <title>Examples of the Product Rule for Exponents</title>
+        <statement>
+          <p>
+            Consider the product <m>x^2x^4</m>.  The expression <m>x^2</m> contains <m>2</m> factors of <m>x</m> while the factor of <m>x^4</m> contains <m>4</m> factors of <m>x</m>, so altogether the expression <m>x^2x^4</m> contains <m>6</m> factors of <m>x</m>.  Note that <m>6</m> comes from summing <m>2</m> and <m>4</m>.  Writing this out using exponent notation we have:
+            <md>
+              <mrow>x^2x^4\amp=x^{2+4}</mrow>
+              <mrow>\amp=x^6</mrow>
+            </md>
+            From the above example we can infer the following rule:
+          </p>
+          <p>
+            The Product Rule for Exponents: <m>x^mx^n=x^{m+n}</m>
+          </p>
+          <p>
+            Note that this rule only applies to exponential expressions with a common base (the thing being raised to a power).  For example, 
+            <md>
+              <mrow>t^6t^{19}\amp=t^{6+19}</mrow>
+              <mrow>\amp=t^{25}</mrow>
+            </md>
+            On the other hand, there is no way to combine the exponents in the expression <m>x^6y^{19}</m>.
+          </p>
+          <p>
+            When simplifying products containing exponential expressions, you want to group like factors together.  For example:
+            <md>
+              <mrow>(x^3y^8)(x^{11}y^4)\amp=(x^3x^{11})(y^8y^4)</mrow>
+              <mrow>\amp=x^{3+11}y^{8+4}</mrow>
+              <mrow>\amp=x^{14}y^{12}</mrow>
+            </md>
+            Let's make sure that the final result makes sense.  In terms of <m>x</m>, we started with <m>3</m> factors and another <m>11</m> factors, so it makes sense that we ended up with <m>14</m> factors.  As for <m>y</m>, we started with <m>8</m> factors and another <m>4</m> factors, so there are indeed <m>12</m> factors in all.
+          </p>
+          <p>
+            While you may very well be able to just count factors in your head without writing out the rule, I suggest that you write out the rule, at least at first.  Down the road you will likely encounter negative exponents and even fractional exponents, and when you get there counting factors won't work.  The good news is that the rules of exponents stay the same, no matter how bizarre the exponents become.  So if you do forget a rule, you can recreate the rule using small positive exponents and then apply that rule to your strange exponents.
+          </p>
+        </statement>
+      </exercise>  
+
+      <exercise>
+        <title>Practice exercises using the Product Rule for Exponents</title>
+        <statement>
+          <p>
+            Simplify each of the following expressions.  The expression is not simplified unless each variable appears only once and there is only one constant factor.  As noted in the examples, I suggest that you write out the Product Rule for Exponents step to help you internalize it.  When you get to more complicated examples, you'll probably want to just add appropriate exponents in you head.
+            <ol cols="3">
+              <li><m>x^2x^5</m></li>
+              <li><m>a^3a</m></li>
+              <li><m>y^3y^3</m></li>
+              <li><m>w^{27}w^{42}</m></li>
+              <li><m>x^{44}x^{17}</m></li>
+              <li><m>(a^4b^2)(a^7b)</m></li>
+              <li><m>(3x^6)(-2x^5)</m></li>
+              <li><m>(4y^{12})(\frac{y^{12}}{4})</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  x^2x^5\amp=x^{2+5}\\
+                  \amp=x^7
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  a^3a\amp=a^3a^1\\
+                  \amp=a^{3+1}\\
+                  \amp=a^4
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  y^3y^3\amp=y^{3+3}\\
+                  \amp=y^6
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  w^{27}w^{42}\amp=w^{27+42}\\
+                  \amp=w^{69}
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  x^{44}x^{17}\amp=x^{44+17}\\
+                  \amp=x^{61}
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (a^4b^2)(a^7b)\amp=a^{4+7}b^{2+1}\\
+                  \amp=a^{11}b^3
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (3x^6)(-2x^5)\amp=(3 \cdot -2)x^{6+5}\\
+                  \amp=-6x^{11}
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (4y^{12})(\frac{y^{12}}{4})\amp=(4 \cdot \frac{1}{4})y^{12+12}\\
+                  \amp=1 \cdot y^{24}\\
+                  \amp=y^{24}
+                  \end{aligned}
+                </m>
+              </li>
+
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Examples of the Power to a Power Rule for Exponents</title>
+        <statement>
+          <p>
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises using the Power to a Power Rule for Exponents</title>
+        <statement>
+          <p>
+            Simplify each of the following expressions.
+            <ol cols="3">
+              <li><m>(x^2)^3</m></li>
+              <li><m>(t^4)^2</m></li>
+              <li><m>(w^3)^2</m></li>
+              <li><m>(w^{20})^4</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (x^2)^3\amp=x^{2 \times 3}\\
+                  \amp=x^6
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (t^4)^2\amp=t^{4 \times 2}\\
+                  \amp=t^8
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (w^3)^2\amp=w^{3 \times 2}\\
+                  \amp=w^6
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (w^{20})^4\amp=w^{20 \times 4}\\
+                  \amp=w^{80}
+                  \end{aligned}
+                </m>
+              </li>
+
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Examples of the Product to a Power Rule for Exponents</title>
+        <statement>
+          <p>
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises using the Product to a Power Rule for Exponents</title>
+        <statement>
+          <p>
+            Simplify each of the following expressions.
+            <ol cols="3">
+              <li><m>(ab)^4</m></li>
+              <li><m>(2x)^3</m></li>
+              <li><m>(-3t)^4</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><m>(ab)^4=a^4b^4</m></li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (2x)^3\amp=2^3a^3\\
+                  \amp=8a^3
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (-3t)^4\amp=(-3)^4t^4\\
+                  \amp=81t^4
+                  \end{aligned}
+                </m>
+              </li>
+
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises where you need to use two or more rules of exponents</title>
+        <statement>
+          <p>
+            Simplify each of the following expressions.
+            <ol cols="3">
+              <li><m>(4x^5)^3</m></li>
+              <li><m>(-2w^2)^4</m></li>
+              <li><m>(3t^{12})(-t^{64})</m></li>
+              <li><m>(\frac{1}{2}r^7)^5</m></li>
+              <li><m>(-2s^4t)^7</m></li>
+              <li><m>(-x^2y^4)^2</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (4x^5)^3\amp=4^3(x^5)^3\\
+                  \amp=64x^{15}
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (-2w^2)^4\amp=(-2)^4(w^2)^4\\
+                  \amp=16w^8
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li><m>(3t^{12})(-t^{64})=-3t^{76}</m></li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (\frac{1}{2}r^7)^5\amp=(\frac{1}{2})^5(r^7)^5\\
+                  \amp=\frac{1}{32}r^{35}
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (-2s^4t)^7\amp=(-2)^7(s^4)^7t^7\\
+                  \amp=-128s^{28}t^7
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (-x^2y^4)^2\amp=(-1)^2(x^2)^2(y^4)^2\\
+                  \amp=1 \cdot x^4y^8\\
+                  \amp=x^4y^8
+                  \end{aligned}
+                </m>
+              </li>
+
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Examples of the Quotient Rule for Exponents</title>
+        <statement>
+          <p>
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises using the Quotient Rule for Exponents</title>
+        <statement>
+          <p>
+            Simplify each of the following expressions.
+            <ol cols="3">
+              <li><m>\frac{x^5}{x^3}</m></li>
+              <li><m>\frac{2^5}{2^3}</m></li>
+              <li><m>\frac{w^{59}}{w^{36}}</m></li>
+              <li><m>\frac{x^9}{x^9}</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{x^5}{x^3}\amp=x^{5-3}\\
+                  \amp=x^2
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{2^5}{2^3}\amp=\frac{32}{8}\\
+                  \amp=4
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{w^{59}}{w^{36}}\amp=w^{59-36}\\
+                  \amp=w^{23}
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{x^9}{x^9}\amp=x^{9-9}\\
+                  \amp=x^0\\
+                  \amp=1
+                  \end{aligned}
+                </m>
+              </li>
+
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Examples of the Quotient to a Power Rule of Exponents</title>
+        <statement>
+          <p>
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises using the rules of exponents</title>
+          <statement>
+            <p>
+              Simplify each of the following.
+              <ol cols="3">
+                <li><m>(\frac{x}{y})^3</m></li>
+                <li><m>(\frac{2}{t})^4</m></li>
+                <li><m>(\frac{x^8}{x^5})^7</m></li>
+                <li><m>(-\frac{3z^5}{xy^2})^4</m></li>
+                <li><m>(\frac{2^{11}x^4}{y^{77}z^{12}})^0</m></li>
+              </ol>
+              <p>
+              </p>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <ol>
+
+                <li><m>(\frac{x}{y})^3=\frac{x^3}{y^3}</m></li>
+
+                <li>
+                  <m>
+                    \begin{aligned}[t]
+                    (\frac{2}{t})^4\amp=\frac{2^4}{t^4}\\
+                    \amp=\frac{16}{t^4}
+                    \end{aligned}
+                  </m>
+                </li>
+
+                <li>
+                  <m>
+                    \begin{aligned}[t]
+                    (\frac{x^8}{x^5})^7\amp=(x^3)^7\\
+                    \amp=x^{21}
+                    \end{aligned}
+                  </m>
+                </li>
+
+                <li>
+                  <m>
+                    \begin{aligned}[t]
+                    (-\frac{3z^5}{xy^2})^4\amp=(-1)^4 \cdot \frac{3^4(z^5)^4}{x^4(y^2)^4}\\
+                    \amp=1 \cdot \frac{81z^{20}}{x^4y^8}\\
+                    \amp=\frac{81z^{20}}{x^4y^8}
+                    \end{aligned}
+                  </m>
+                </li>
+
+                <li><m>(\frac{2^{11}x^4}{y^{77}z^{12}})^0=1</m></li>
+
+              </ol>
+            </p>
+          </solution>
+      </exercise>
+
+      <exercise>
+        <title>A note and practice exercises related to negative signs</title>
+        <statement>
+          <p>
+            Unless the negative sign is inside parentheses that have an attached exponent, exponents do not apply to the negative sign.  Put another way, if an exponential expression is preceded by a negative sign, no exponent affects the negative sign unless the negative sign is part of a parenthetical expression.
+          </p>
+          <p>
+            A question for you: which of the following expressions evaluate to negative values?
+            <ol cols="3">
+              <li><m>-2^3</m></li>
+              <li><m>-3^2</m></li>
+              <li><m>-100^{100}</m></li>
+              <li><m>-101^{101}</m></li>
+              <li><m>-1^6</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            All of the expressions evaluate to a negative values.  Because none of the negative signs are in parentheses, none of the exponents have any affect upon the negative signs.
+          </p>
+        </solution>
+      </exercise>
+
+      
+
+    </exercises>
+
+     
+</section>

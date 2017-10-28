@@ -2,15 +2,22 @@
 
 <!-- ********************************************************************* -->
 <!-- Copyright 2017                                                        -->
-<!-- Portlant Community College                                            -->
+<!-- Portland Community College                                            -->
 <!--                                                                       -->
 <!-- Author                                                                -->
 <!-- Steve Simonds                                                         -->
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-    <title>Complete Lessons</title>
-      <xi:include href="./workshop-factoring-trinomials.ptx" />
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-schedule-fall-term-2017">
+    <title>Workshop Schedule Fall Term 2017</title>
 
-</chapter>
+    <p>
+      The schedule will open in a new window.
+    </p>
+    <p>
+       <url href="Fall-2017-Math-Workshop-Flyer-9-28-17.pdf" target="blank">Sylvania Campus Math Workshop Schedule<mdash/>Fall Term 2017</url>
+    </p>
+
+     
+</section>

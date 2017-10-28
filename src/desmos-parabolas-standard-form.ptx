@@ -2,14 +2,14 @@
 
 <!-- ********************************************************************* -->
 <!-- Copyright 2017                                                        -->
-<!-- Portlant Community College                                            -->
+<!-- Portland Community College                                            -->
 <!--                                                                       -->
 <!-- Author                                                                -->
 <!-- Steve Simonds                                                         -->
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-desmos-parabolas-standard-form">
     <title>Equation of a parabola: standard form</title>
 
     <desmos desmos="hgobfdjhko" />
@@ -21,7 +21,7 @@
       </p>
 
           <exercise>
-            <title>An activity focused on the effect of the constant <m>c</m> in the standard parobolic equation</title>
+            <title>An activity focused on the effect of the constant <m>c</m> in the standard parabolic equation</title>
                 <statement>
                   <p>
                     Without changing the value of either <m>a</m> or <m>b</m>, slide the value of <m>c</m> back and forth and note the effect is has on the position of the parabola.  Focus specifically on the position relative to the 
@@ -42,7 +42,7 @@
           </exercise>
 
           <exercise>
-            <title>An activity focused on the effect of the constant <m>a</m> in the standard parobolic equation</title>
+            <title>An activity focused on the effect of the constant <m>a</m> in the standard parabolic equation</title>
                 <statement>
                   <p>
                     Set the value of <m>b</m> to <m>0</m> and the value of <m>c</m> to <m>1</m>.  Slide the value of <m>a</m> back and forth.  What is always true about the parabola when the value of <m>a</m> is positive?  What about when the value of <m>a</m> is negative?  What happens when the value of <m>a</m> is set to <m>0</m>?  On the last question, do you see why things go awry when <m>a=0</m> (based upon the equation <m>y=ax^2+bx+c</m>)?
@@ -59,7 +59,7 @@
           </exercise>
 
            <exercise>
-            <title>An activity focused on the effect of the constant <m>b</m> in the standard parobolic equation</title>
+            <title>An activity focused on the effect of the constant <m>b</m> in the standard parabolic equation</title>
               <statement>
                 <p>
                   The effect upon the parabola of the value of <m>b</m> is a little more indirect.  If you keep the values of <m>a</m> and <m>c</m> fixed and slide the value of <m>b</m> back and forth, you can see the position of the parabola move, but there doesn't appear to be any direct correlation between the value of <m>b</m> and the position of the parabola (in, say, the way that <m>(0,c)</m> is always the <m>y</m>-intercept). This is because the value of <m>a</m> plays a role in the effect of <m>b</m>.  Specifically, the <m>x</m>-coordinate of the vertex is always <m>-\frac{b}{2a}</m>
@@ -122,7 +122,7 @@
                 <p>
                 </p>
                 <p> 
-                  Recall that not all quadratic equations have real number solutions.  We can use the discriminant, <m>b^2-4ac</m>, to make that determination for the equation <m>ax^2+bx+c=0</m>.  When the discriminant is negative, the equation has no real number solutions.  When the disciminant is zero the equation has exactly one real number solution and when the discriminant is positive the equation has exactly two real number solutions.  For each parabolic equation, <m>y=ax^2+bx+c</m>, given below, determine the discriminant for the corresponding quadratic equation <m>ax^2+bx+c=0</m> and state the number of real number solutions the quadration equation has.  Finally, use the Desmos graph to graph each parabola and state and make note of the number of <m>x</m>-intercepts.  What is the correlation between the value of the discriminant (negative, zero, positive) and the number of <m>x</m>-intercepts on the parabola?
+                  Recall that not all quadratic equations have real number solutions.  We can use the discriminant, <m>b^2-4ac</m>, to make that determination for the equation <m>ax^2+bx+c=0</m>.  When the discriminant is negative, the equation has no real number solutions.  When the discriminant is zero the equation has exactly one real number solution and when the discriminant is positive the equation has exactly two real number solutions.  For each parabolic equation, <m>y=ax^2+bx+c</m>, given below, determine the discriminant for the corresponding quadratic equation <m>ax^2+bx+c=0</m> and state the number of real number solutions the quadratic equation has.  Finally, use the Desmos graph to graph each parabola and state and make note of the number of <m>x</m>-intercepts.  What is the correlation between the value of the discriminant (negative, zero, positive) and the number of <m>x</m>-intercepts on the parabola?
                 </p>
                 <ol>
                   <li><m>y=x^2+3x+4</m></li>
@@ -145,19 +145,19 @@
                 <p>
                 </p>
                 <ol>
-                  <li>The value of the disciminant is <m>-7</m>.  The parabola has no <m>x</m>-intercepts.</li>
-                  <li>The value of the disciminant is <m>25</m>.  The parabola has two <m>x</m>-intercepts.</li>
-                  <li>The value of the disciminant is <m>0</m>.  The parabola has only one <m>x</m>-intercept.</li>
-                  <li>The value of the disciminant is <m>-12</m>.  The parabola has no <m>x</m>-intercepts.</li>
-                  <li>The value of the disciminant is <m>84</m>.  The parabola has two <m>x</m>-intercepts.</li>
-                  <li>The value of the disciminant is <m>36</m>.  The parabola has two <m>x</m>-intercepts.</li>
-                  <li>The value of the disciminant is <m>-24</m>.  The parabola has no <m>x</m>-intercepts.</li>
-                  <li>The value of the disciminant is <m>0</m>.  The parabola has only one <m>x</m>-intercept.</li>
+                  <li>The value of the discriminant is <m>-7</m>.  The parabola has no <m>x</m>-intercepts.</li>
+                  <li>The value of the discriminant is <m>25</m>.  The parabola has two <m>x</m>-intercepts.</li>
+                  <li>The value of the discriminant is <m>0</m>.  The parabola has only one <m>x</m>-intercept.</li>
+                  <li>The value of the discriminant is <m>-12</m>.  The parabola has no <m>x</m>-intercepts.</li>
+                  <li>The value of the discriminant is <m>84</m>.  The parabola has two <m>x</m>-intercepts.</li>
+                  <li>The value of the discriminant is <m>36</m>.  The parabola has two <m>x</m>-intercepts.</li>
+                  <li>The value of the discriminant is <m>-24</m>.  The parabola has no <m>x</m>-intercepts.</li>
+                  <li>The value of the discriminant is <m>0</m>.  The parabola has only one <m>x</m>-intercept.</li>
                 </ol>
                 <p>
                 </p>
                 <p>
-                  When the discriminant is positive, the parabola has two <m>x</m>-intercepts.  When the dscriminant is zero the parabola has only one <m>x</m>-intercept, and when the discriminant is negative the parabola has no <m>x</m>-intercepts.
+                  When the discriminant is positive, the parabola has two <m>x</m>-intercepts.  When the discriminant is zero the parabola has only one <m>x</m>-intercept, and when the discriminant is negative the parabola has no <m>x</m>-intercepts.
                 </p>
               </solution>
             </exercise>

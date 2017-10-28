@@ -9,7 +9,7 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-desmos-graph-transformations-curves">
     <title>Graphical transformations: curve tracking</title>
 
     <desmos desmos="0mun4zh7h7" />

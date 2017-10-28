@@ -2,14 +2,14 @@
 
 <!-- ********************************************************************* -->
 <!-- Copyright 2017                                                        -->
-<!-- Portlant Community College                                            -->
+<!-- Portland Community College                                            -->
 <!--                                                                       -->
 <!-- Author                                                                -->
 <!-- Steve Simonds                                                         -->
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-desmos-parabolas-vertex-form">
     <title>Equation of a parabola: vertex form</title>
 
     <desmos desmos="s4nzzwlet9" />
@@ -21,7 +21,7 @@
       </p>
 
           <exercise>
-            <title>An activity focused on the effect of the constants <m>h</m> and <m>k</m> in the standard parobolic equation</title>
+            <title>An activity focused on the effect of the constants <m>h</m> and <m>k</m> in the standard parabolic equation</title>
                 <statement>
                   <sidebyside widths="65% 29%" margins="0%">
                     <p>
@@ -120,13 +120,13 @@
           </exercise>
 
           <exercise>
-            <title>A prepatory activity related to completion of the square: <m>y=(x-h)^2+k</m></title>
+            <title>A preparatory activity related to completion of the square: <m>y=(x-h)^2+k</m></title>
             <statement>
               <p>
-                In the Desmos graph, deactivate both "Show vertex" and "Show axis of symmetry" by clicking on the circles to their lefts (if necessary).  Activate the equation below "Enter a parobolic equation ..." by clicking on the circle to the left of the equation.  Slide the value of <m>a</m> to <m>1</m> and leave it there for this enire activity.
+                In the Desmos graph, deactivate both "Show vertex" and "Show axis of symmetry" by clicking on the circles to their lefts (if necessary).  Activate the equation below "Enter a parabolic equation ..." by clicking on the circle to the left of the equation.  Slide the value of <m>a</m> to <m>1</m> and leave it there for this entire activity.
               </p>
               <p>
-                The standard form equation stated in the Desmos graph is intially <m>y=x^2-6x+4</m>.  Note that the vertx of the resultant parabola is located at the point <m>(3,-5)</m>.  This means that in the vertex form of the equation, <m>h=3</m> and <m>k=-5</m>; use the sliders in the Desmos graph to verify this.
+                The standard form equation stated in the Desmos graph is initially <m>y=x^2-6x+4</m>.  Note that the vertex of the resultant parabola is located at the point <m>(3,-5)</m>.  This means that in the vertex form of the equation, <m>h=3</m> and <m>k=-5</m>; use the sliders in the Desmos graph to verify this.
               </p>
               <p>
                 Because the graphs of <m>y=x^2-6x+4</m> and <m>y=(x-3)^2-5</m> are identical, it must be the case that <m>x^2-6x+4=(x-3)^2-5</m> for all values of <m>x</m>.  The process of manipulating the standard form expression into the vertex form of the expression is called "completing the square."  The value of <m>h</m> in the vertex form equivalent of the equation <m>y=x^2+bx+c</m> is always <m>-\frac{b}{2}</m>
@@ -226,8 +226,8 @@
               </p>
                 <ol label="1">
                   <li>Group the squared and linear terms: <me>y=(x^2+bx)+c</me></li>
-                  <li>Inside the parantheses, add <m>(\frac{b}{2})^2</m> and balance that addition by subtracting <m>(\frac{b}{2})^2</m> outside the parantheses: <me>y=(x^2+bx+(\frac{b}{2})^2)+c-(\frac{b}{2})^2</me></li>
-                  <li>Factor the trinomial expression in the parantheses and combine the numeric terms outside the parantheses: <me>y=(x+\frac{b}{2})^2+(c+(\frac{b}{2})^2)</me></li>
+                  <li>Inside the parentheses, add <m>(\frac{b}{2})^2</m> and balance that addition by subtracting <m>(\frac{b}{2})^2</m> outside the parentheses: <me>y=(x^2+bx+(\frac{b}{2})^2)+c-(\frac{b}{2})^2</me></li>
+                  <li>Factor the trinomial expression in the parentheses and combine the numeric terms outside the parentheses: <me>y=(x+\frac{b}{2})^2+(c+(\frac{b}{2})^2)</me></li>
                 </ol>
                 <p>
                   Let's see a couple of examples with actual numbers.
@@ -300,12 +300,12 @@
                     </md>
                   </li>
                   <li>
-                    Complete the square inside the parantheses and balance the addition outside the parantheses.  Since every term inside the parantheses is multiplied by <m>a</m>, you must multiply what you add inside the parantheses by <m>a</m> to determine the number that is subtracted outside the parantheses.
+                    Complete the square inside the parentheses and balance the addition outside the parentheses.  Since every term inside the parentheses is multiplied by <m>a</m>, you must multiply what you add inside the parentheses by <m>a</m> to determine the number that is subtracted outside the parentheses.
                     <me>y=2(x^2+6x+9)+7-18</me>
                     To reiterate, because we multiplied the additional 9 by 2, we need to subtract by 18 to compensate for the addition.
                   </li>
                   <li>
-                    Factor the trinomal into its perfect square form and state the vertex of the parabola:
+                    Factor the trinomial into its perfect square form and state the vertex of the parabola:
                     <me>y=2(x+3)^2-11</me>
                     The vertex of the parabola lies at the point <m>(-3,-11)</m>. 
                   </li>
@@ -324,12 +324,12 @@
                     </md>
                   </li>
                   <li>
-                    Complete the square inside the parantheses and balance the addition outside the parantheses.  Since every term inside the parantheses is multiplied by <m>a</m>, you must multiply what you add inside the parantheses by <m>a</m> to determine the number that is subtracted outside the parantheses.
+                    Complete the square inside the parentheses and balance the addition outside the parentheses.  Since every term inside the parentheses is multiplied by <m>a</m>, you must multiply what you add inside the parentheses by <m>a</m> to determine the number that is subtracted outside the parentheses.
                     <me>y=-(x^2-4x+4)-7+4</me>
-                    That was a little tricky - at first glance it looks like we added <m>4</m> twice - not good.  But there's a negative sign in front of those parantheses, so while we did indeed add <m>4</m> inside the parantheses, from the big picture perspective we actually subtracted by <m>4</m> which needed to be balanced by adding <m>4</m> outside the parantheses.
+                    That was a little tricky - at first glance it looks like we added <m>4</m> twice - not good.  But there's a negative sign in front of those parentheses, so while we did indeed add <m>4</m> inside the parentheses, from the big picture perspective we actually subtracted by <m>4</m> which needed to be balanced by adding <m>4</m> outside the parentheses.
                   </li>
                   <li>
-                    Factor the trinomal into its perfect square form and state the vertex of the parabola:
+                    Factor the trinomial into its perfect square form and state the vertex of the parabola:
                     <me>y=-(x-2)^2-3</me>
                     The vertex of the parabola lies at the point <m>(2,-3)</m>. 
                   </li>

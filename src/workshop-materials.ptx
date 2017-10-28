@@ -9,17 +9,15 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-sine-function-and-unit-circle">
-    <title>The unit circle and the sine function</title>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="chapter-sylvania-workshop-materials">
+    <title>Sylvania Campus Workshop Materials</title>
 
-    <desmos desmos="9kpxr92mvs" />
-
-   
-
-
-  
-
-
+      <xi:include href="./workshop-schedule-fall-term-2017.ptx" />
+      <xi:include href="./workshop-factoring-trinomials.ptx" />
+      <xi:include href="./workshop-factoring-binomials.ptx" />
+      <xi:include href="./workshop-rules-of-exponents.ptx" /> 
+      <xi:include href="./workshop-negative-exponents-scientific-notation.ptx" />
+      <xi:include href="./workshop-radicals-and-rational-exponents.ptx" />
 
 
-</section>
+</chapter>

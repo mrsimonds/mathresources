@@ -2,14 +2,14 @@
 
 <!-- ********************************************************************* -->
 <!-- Copyright 2017                                                        -->
-<!-- Portlant Community College                                            -->
+<!-- Portland Community College                                            -->
 <!--                                                                       -->
 <!-- Author                                                                -->
 <!-- Steve Simonds                                                         -->
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-desmos-linear-equations-line-point-slope">
     <title>Equation of a line: point-slope form</title>
 
     <desmos desmos="cmtaxm8hql" />

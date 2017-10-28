@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-factoring-special-products">
+    <title>Factoring binomials and a general strategy for factoring polynomials</title>
+
+    <exercises>
+    <title>Examples and Exercises</title>
+    
+          <exercise>
+            <title>Examples of factoring differences of squares</title>
+                <statement>
+                  <p>
+                    A binomial (two term polynomial) of form <m>a^2-b^2</m> always factors into the product
+                    <m>(a+b)(a-b)</m>.  We can confirm this by applying FOIL to the expression <m>(a+b)(a-b)</m>.
+                    <md>
+                      <mrow>(a+b)(a-b)\amp=a^2-ab+ab-b^2</mrow>
+                      <mrow>\amp=a^2-b^2</mrow>
+                    </md>
+                  </p>
+                   <p>
+                    A few simple examples follow.  As always, we can check our result by expanding the factored expression.
+                    <me>x^2-4=(x+2)(x-2)</me><me>y^2-25=(y+5)(y-5)</me><me>36-x^2=(6+x)(6-x)</me>
+                    Now let's consider a few expressions that don't immediately fit the pattern.  Consider 
+                    <m>x^{10}-16</m>.  Hopefully we are quick to see that <m>16</m> is the square of <m>4</m>.  To use our factor pattern successfully, we need to also recognize that <m>x^{10}</m> is a perfect square, as is any even power of <m>x</m>.  The power-to-a-power rule of exponents relates that <m>(x^m)^n=x^{mn}</m>.  So the power of <m>x</m> we square that results in <m>x^{10}</m> must be half of <m>10</m>, i.e. <m>5</m>.  Putting it all together we have: <me>x^{10}-16=(x^5+4)(x^5-4)</me> Similar examples follow.
+                    <me>y^8-9=(y^4+3)(y^4-3)</me><me>x^{46}-1=(x^{23}+1)(x^{23}-1)</me><me>100-w^{12}=(10+w^6)(10-w^6)</me>
+                   </p>
+                  
+                 </statement>
+                </exercise>
+
+          <exercise>
+            <title>Examples of factoring sums and differences of cubes </title>
+                  <statement>
+                  <p>
+                    A binomial (two term polynomial) of form <m>a^3-b^3</m> always factors into the product
+                    <m>(a-b)(a^2+ab+b^2)</m>.  We can confirm this by expanding the expression <m>(a-b)(a^2+ab+b^2)</m>.
+                    <md>
+                      <mrow>(a-b)(a^2+ab+b^2)\amp=a^3+a^2b+ab^2-a^2b-ab^2-b^3</mrow>
+                      <mrow>\amp=a^3-b^3</mrow>
+                    </md>
+                  </p>
+                  <p>
+                    Similarly, a binomial of form <m>a^3+b^3</m> always factors into the product
+                    <m>(a+b)(a^2-ab+b^2)</m>.  We can confirm this by expanding the expression <m>(a+b)(a^2-ab+b^2)</m>.
+                    <md>
+                      <mrow>(a+b)(a^2-ab+b^2)\amp=a^3-a^2b+ab^2+a^2b-ab^2-b^3</mrow>
+                      <mrow>\amp=a^3-b^3</mrow>
+                    </md>
+                  </p>
+                   <p>
+                    Let's consider the binomials <m>8x^3+27</m> and <m>8x^3-27</m>.  In both cases, <m>8x^3</m> corresponds to what is identified in the patterns as <m>a^3</m> and <m>27</m> corresponds to what is identified in the pattern as <m>b</m>.  The resultant expressions for <m>a</m>, <m>b</m>, <m>a^2</m>, and <m>b^2</m> and shown in <xref ref="table-special-products-cubes-1">Table</xref> and the factorizations are shown to the left of the table.
+                   </p> 
+                   <sidebyside widths="80% 20%" margins="0%">
+                    <p>
+                      <md>
+                        <mrow>8x^3+27=(2x+3)(4x^2-6x+9)</mrow>
+                        <mrow></mrow>
+                        <mrow>8x^3-27=(2x-3)(4x^2+6x+9)</mrow>
+                      </md>
+                    </p>
+                    
+
+                    <table xml:id="table-special-products-cubes-1">
+                      <caption></caption>
+                        <tabular>
+                          <col halign="center" />
+                          <col halign="center"/>
+                          <row>
+                            <cell>
+                              <m>a^3=8x^3</m>
+                            </cell>
+                            <cell>
+                              <m>b^3=27</m>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell><m>a=2x</m></cell>
+                            <cell><m>b=3</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>a^2=4x^2</m></cell>
+                            <cell><m>b^2=9</m></cell>
+                          </row>
+                        </tabular>
+                      </table>
+                    </sidebyside> 
+                    <p>
+                      Similar analysis is shown below for the binomials <m>1+64x^{15}</m> and <m>1-64x^{15}</m>.  Note that the power-to-a-power rule of exponents gives us <m>(x^5)^3=x^{(5\times 3)}</m>.
+                    </p>
+
+                   <sidebyside widths="80% 20%" margins="0%">
+                    <p>
+                      <md>
+                        <mrow>1+64x^{15}=(1+4x^5)(1-4x^5+16x^{10})</mrow>
+                        <mrow></mrow>
+                        <mrow>1-64x^{15}=(1-4x^5)(1+4x^5+16x^{10})</mrow>
+                      </md>
+                    </p>
+                    
+
+                    <table xml:id="table-special-products-cubes-2">
+                      <caption></caption>
+                        <tabular>
+                          <col halign="center" />
+                          <col halign="center"/>
+                          <row>
+                            <cell>
+                              <m>a^3=1</m>
+                            </cell>
+                            <cell>
+                              <m>b^3=64x^{15}</m>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell><m>a=1</m></cell>
+                            <cell><m>b=4x^5</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>a^2=1</m></cell>
+                            <cell><m>b^2=16x^{10}</m></cell>
+                          </row>
+                        </tabular>
+                      </table>
+                    </sidebyside>
+
+                  </statement>
+          </exercise>
+
+          <exercise>
+            <title>A cautionary note about sum of squares</title>
+                <statement>
+                  <p>
+                    Unless the expression also happens to be a sum of cubes, sums of squares do not factor - that is, they are prime.                    
+                  </p>
+                  <p>
+                    <m>x^2+4</m> is prime.
+                  </p>
+                  <p>
+                    <m>y^4+25</m> is prime.
+                  </p>
+                  <p>
+                    <m>w^6+4x^2</m> is prime.
+                  </p>
+                  <p>
+                    Many folks would like <m>x^2+4</m> to factor, so much so that they will write <m>x^2+4=(x+2)^2</m>.  Would that it were so.  But alas:
+                    <md>
+                      <mrow>(x+2)^2\amp=(x+2)(x+2)</mrow>
+                      <mrow>\amp=x^2+2x+2x+4</mrow>
+                      <mrow>\amp=x^2+4x+4</mrow>
+                    </md>
+                    In summary, <m>x^2+4\neq (x+2)^2</m>, <m>x^2+4x+4=(x+2)^2</m>.
+                  </p>
+                </statement>
+
+          </exercise>
+
+          <exercise>
+            <title>Practice exercises on factoring binomials</title>
+                <statement>
+                  <p>
+                    <ol>
+                      <li>
+                     <sidebyside widths="80% 20%" margins="0%">
+                      <p>
+                        Use the factor pattern <m>a^2-b^2=(a+b)(a-b)</m> to factor <m>x^{10}-25y^4</m> after first completing the entries in <xref ref="table-special-products-1">Table</xref>
+                      </p>
+                      
+
+                      <table xml:id="table-special-products-1">
+                        <caption></caption>
+                          <tabular>
+                            <col halign="center" />
+                            <col halign="center"/>
+                            <row>
+                              <cell>
+                                <m>a^2=</m>
+                              </cell>
+                              <cell>
+                                <m>b^2=</m>
+                              </cell>
+                            </row>
+                            <row>
+                              <cell><m>a=</m></cell>
+                              <cell><m>b=</m></cell>
+                            </row>
+                          </tabular>
+                        </table>
+                      </sidebyside> 
+                    </li>
+
+                  <li>
+                     <sidebyside widths="80% 20%" margins="0%">
+                      <p>
+                        Use the factor pattern <m>a^3-b^3=(a-b)(a^2+ab+b^2)</m> to factor <m>8x^3-y^6</m> after first completing the entries in <xref ref="table-special-products-2">Table</xref>
+                      </p>
+                      
+
+                      <table xml:id="table-special-products-2">
+                        <caption></caption>
+                          <tabular>
+                            <col halign="center" />
+                            <col halign="center"/>
+                            <row>
+                              <cell>
+                                <m>a^3=</m>
+                              </cell>
+                              <cell>
+                                <m>b^3=</m>
+                              </cell>
+                            </row>
+                            <row>
+                              <cell><m>a=</m></cell>
+                              <cell><m>b=</m></cell>
+                            </row>
+                            <row>
+                              <cell><m>a^2=</m></cell>
+                              <cell><m>b^2=</m></cell>
+                            </row>
+                          </tabular>
+                        </table>
+                      </sidebyside> 
+                    </li>
+
+                  <li>
+                     <sidebyside widths="80% 20%" margins="0%">
+                      <p>
+                        Use the factor pattern <m>a^3+b^3=(a+b)(a^2-ab+b^2)</m> to factor <m>125t^{12}+27x^9</m> after first completing the entries in <xref ref="table-special-products-3">Table</xref>
+                      </p>
+                      
+
+                      <table xml:id="table-special-products-3">
+                        <caption></caption>
+                          <tabular>
+                            <col halign="center" />
+                            <col halign="center"/>
+                            <row>
+                              <cell>
+                                <m>a^3=</m>
+                              </cell>
+                              <cell>
+                                <m>b^3=</m>
+                              </cell>
+                            </row>
+                            <row>
+                              <cell><m>a=</m></cell>
+                              <cell><m>b=</m></cell>
+                            </row>
+                            <row>
+                              <cell><m>a^2=</m></cell>
+                              <cell><m>b^2=</m></cell>
+                            </row>
+                          </tabular>
+                        </table>
+                      </sidebyside> 
+                    </li>
+                  </ol>
+
+                     <p>
+                      Factor each binomial.  Check your result by expanding the factored expression.  If the binomial does not factor, state that it is prime.
+                     <ol label="i" cols="2">
+                      <li><m>36p^2-q^2</m></li>
+                      <li><m>36p^2+q^2</m></li>
+                      <li><m>125+y^3</m></li>
+                      <li><m>8x^3-27y^3</m></li>
+                    </ol>
+                  </p>
+                    <p>
+                    </p>
+                  </p>
+                   </statement>
+                   <solution>
+                    <p>
+                      <ol>
+                        <li>
+                       <sidebyside widths="80% 20%" margins="0%">
+                        <p>
+                          <m>x^{10}-25y^4=(x^5+5y^2)(x^5-5y^2)</m> 
+                        </p>
+                        
+
+                        <table xml:id="table-special-products-1a">
+                          <caption></caption>
+                            <tabular>
+                              <col halign="center" />
+                              <col halign="center"/>
+                              <row>
+                                <cell>
+                                  <m>a^2=x^{10}</m>
+                                </cell>
+                                <cell>
+                                  <m>b^2=25y^4</m>
+                                </cell>
+                              </row>
+                              <row>
+                                <cell><m>a=x^5</m></cell>
+                                <cell><m>b=5y^2</m></cell>
+                              </row>
+                            </tabular>
+                          </table>
+                        </sidebyside> 
+                      </li>
+
+                    <li>
+                       <sidebyside widths="80% 20%" margins="0%">
+                        <p>
+                          <m>8x^3-y^6=(2x-y^2)(4x^2+2xy^2+y^4)</m>
+                        </p>
+                        
+
+                        <table xml:id="table-special-products-2a">
+                          <caption></caption>
+                            <tabular>
+                              <col halign="center" />
+                              <col halign="center"/>
+                              <row>
+                                <cell>
+                                  <m>a^3=8x^3</m>
+                                </cell>
+                                <cell>
+                                  <m>b^3=y^6</m>
+                                </cell>
+                              </row>
+                              <row>
+                                <cell><m>a=2x</m></cell>
+                                <cell><m>b=y^2</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>a^2=4x^2</m></cell>
+                                <cell><m>b^2=y^4</m></cell>
+                              </row>
+                            </tabular>
+                          </table>
+                        </sidebyside> 
+                      </li>
+
+                    <li>
+                        <p>
+                          <m>125t^{12}+27x^9=(5t^4+3x^3)(25t^8+15t^4x^3+16x^6)</m>
+                        </p>
+                        
+                      <sidebyside widths="40% 60%" margins="0%">
+                        <table xml:id="table-special-products-3a">
+                          <caption></caption>
+                            <tabular>
+                              <col halign="center" />
+                              <col halign="center"/>
+                              <row>
+                                <cell>
+                                  <m>a^3=125t^{12}</m>
+                                </cell>
+                                <cell>
+                                  <m>b^3=27x^9</m>
+                                </cell>
+                              </row>
+                              <row>
+                                <cell><m>a=5t^4</m></cell>
+                                <cell><m>b=3x^3</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>a^2=25t^8</m></cell>
+                                <cell><m>b^2=9x^6</m></cell>
+                              </row>
+                            </tabular>
+                          </table>
+                          <p>
+                          </p>
+                        </sidebyside>
+                      </li>
+                    </ol>
+                      <ol label="i">
+
+                        <li>
+                          <p><m>
+                            36p^2-q^2=(6p+q)(6p-q)
+                          </m></p>
+                        </li>
+                            
+                        <li>
+                          <p><m>
+                           36p^2+q^2
+                          </m> is prime</p>
+                        </li>
+                            
+                        <li>
+                          <p><m>
+                           125+y^3=(5+y)(25-5y+y^2)
+                          </m></p>
+                        </li>
+                            
+                        <li>
+                          <p><m>
+                            8x^3-27y^3=(2x-3y)(4x^2+6xy+9y^2)
+                          </m></p>
+                        </li>
+                      </ol>
+                    </p>
+                </solution>
+          </exercise>
+          <exercise>
+            <title>A general strategy for factoring polynomials</title>
+            <statement>
+              <p>
+                A Factor Plan
+                <ol label="1">
+                  <li>
+                    <p>
+                      Always begin by factoring out the Greatest Common Factor of the terms.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      If there's a binomial lurking about, see if it fits one of the following special forms:
+                        <me>a^2-b^2=(a+b)(a-b)</me>
+                        <me>a^3-b^3=(a-b)(a^2+ab+b^2)</me>
+                        <me>a^3+b^3=(a+b)(a^2-ab+b^2)</me>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      If there's a trinomial in the picture, then:
+                      <ul>
+                        <li>
+                          <p>
+                            If the leading coefficient is <m>1</m> and the trinomial is factorable, then:
+                            <me>x^2+bx+c=(x+h)(x+k)</me>
+                            where <m>hk=c</m> and <m>k+k=b</m>
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            If the leading coefficient isn't <m>1</m>, you could try "guess and check."  You could also try the "<m>ac</m>" method. Begin by finding a pair of numbers, <m>h</m> and <m>k</m>, whose product is <m>ac</m> and whose sum is <m>b</m>.  Then rewrite the trinomial in the following form and factor by grouping:<me>ax^2+bx+c=ax^2+hx+kx+c</me>
+                          </p>
+                        </li>
+                      </ul>
+                    </p>
+                  </li>
+                        <li>
+                          <p>
+                            If there's a four-termed polynomial on the table, try factoring by grouping.
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            In each of the above circumstances, check you factorization by expanding the result and making sure that it matches the polynomial you started with.
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            Remember, many (most!) polynomials are prime - they do not factor at all.  This fact is almost surely counter to your experienced reality.  That's because it would counterproductive and mean-spirited to ask students to factor dozens of polynomials, most of which were prime.  Regardless, we have to throw the occasional prime polynomial into the mix to remind you that such things do exist.
+                          </p>
+                        </li>
+                      </ol>
+                   
+                
+              </p>
+              
+            </statement>
+          </exercise>
+
+          <exercise>
+            <title>Practice exercises on factoring a hodge-podge of polynomials</title>
+            <statement>
+              <p>
+                Completely factor each of the following expressions.  Check each result by expanding the factored form.
+              <ol cols="2">
+                <li><m>x^2+19x+48</m></li>
+                <li><m>y^2+47y-48</m></li>
+                <li><m>6x^2-5x-25</m></li>
+                <li><m>125w^6+27z^3</m></li>
+                <li><m>y^2-2y-48</m></li>
+                <li><m>x^2y^4+26xy^2+48</m></li>
+                <li><m>121-9w^4</m></li>
+                <li><m>32w^4-18w^2</m></li>
+                <li><m>3x^2-33x+84</m></li>
+                <li><m>15x^2+45x+15</m></li>
+                <li><m>x^4y^2+9x^2y^2</m></li>
+                <li><m>121+9w^4</m></li>
+              </ol>
+              <p>
+              </p>
+            </p>
+            </statement>
+            <solution>
+              <ol>
+                <li><m>x^2+19x+48=(x+16)(x+3)</m></li>
+                <li><m>y^2+47y-48=(y+48)(y-1)</m></li>
+
+                <li>
+                  <p><m>
+                    \begin{aligned}[t]
+                    6x^2-5x-25\amp=6x^2-15x+10x-25\\
+                    \amp=3x(2x-5)+5(2x-5)\\
+                    \amp=(2x-5)(3x+5)
+                    \end{aligned}
+                  </m></p>
+                </li>
+
+                <li><m>125w^6+27z^3=(5w^2+3z)(25w^4-15w^2z+9z^2)</m></li>
+                <li><m>y^2-2y-48=(y-8)(y+6)</m></li>
+                <li><m>x^2y^4+26xy^2+48=(xy^2+24)(xy^2+2)</m></li>
+                <li><m>121-9w^4=(11+3w^2)(11-3w^2)</m></li>
+
+                <li>
+                  <p><m>
+                    \begin{aligned}[t]
+                    32w^4-18w^2\amp=2w^2(16w^2-9)\\
+                    \amp=2w^2(4w+3)(4w-3)
+                    \end{aligned}
+                  </m></p>
+                </li>
+
+                <li>
+                  <p><m>
+                    \begin{aligned}[t]
+                    3x^2-33x+84\amp=3(x^2-11x+28)\\
+                    \amp=3(x-7)(x-4)
+                    \end{aligned}
+                  </m></p>
+                </li>
+
+                <li><m>15x^2+45x+15=15(x^2+3x+1)</m></li>
+                <li><m>x^4y^2+9x^2y^2=x^2y^2(x^2+9)</m></li>
+                <li><m>121+9w^4</m> is prime</li>
+              </ol>
+            </solution>
+          </exercise>
+
+
+</exercises>
+
+     
+</section>

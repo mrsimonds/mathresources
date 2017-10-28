@@ -146,14 +146,30 @@
                     <institution>Portland Community College</institution>
                     <email>ssimonds@pcc.edu</email>
                 </author>
+                <author>
+                    <personname>Ann Cary (video production)</personname>
+                    <department>Department of Mathematics</department>
+                    <institution>Portland Community College</institution>
+                    <email>ann.cary@pcc.edu</email>
+                </author>
+                <author>
+                    <personname>Scot Leavitt (video production)</personname>
+                    <department>Department of Mathematics</department>
+                    <institution>Portland Community College</institution>
+                    <email>sleavitt@pcc.edu</email>
+                </author>
+
 
                 <!-- Can set date manually or use the "today" element -->
                 <date><today /></date>
             </titlepage>
         </frontmatter>
 
+        <xi:include href="./workshop-materials.ptx" />
         <xi:include href="./desmos-activities.ptx" />
-        <xi:include href="./complete-lessons.ptx" />
+        <xi:include href="./videos.ptx" />
+
+        <xi:include href="./backmatter.ptx" />
 
     </book>
 </mathbook>

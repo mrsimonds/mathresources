@@ -9,7 +9,7 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="chapter-desmos-activities">
     <title>Desmos Activities</title>
 
     <xi:include href="./desmos-linear-equations-line-standard.ptx" />

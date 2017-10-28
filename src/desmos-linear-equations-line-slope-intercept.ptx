@@ -2,14 +2,14 @@
 
 <!-- ********************************************************************* -->
 <!-- Copyright 2017                                                        -->
-<!-- Portlant Community College                                            -->
+<!-- Portland Community College                                            -->
 <!--                                                                       -->
 <!-- Author                                                                -->
 <!-- Steve Simonds                                                         -->
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-desmos-linear-equations-line-point-slope">
     <title>Slope and the slope-intercept form of linear equations</title>
 
     <desmos desmos="jbaagrgo8m" />
@@ -160,7 +160,7 @@
               <solution>
                 <p>
                   All lines with positive slope increase (go upward) from left-to-right whereas all lines with negative slope decrease (go downward) from left-to-right.  All lines with a slope of zero are horizontal.  
-                  Although you can't verify it with the Desmo graph, vertical lines have no slope (sometimes stated as an undefined slope).
+                  Although you can't verify it with the Desmos graph, vertical lines have no slope (sometimes stated as an undefined slope).
                 </p>
               </solution>
           </exercise>

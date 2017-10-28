@@ -9,7 +9,7 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-desmos-abs-value-eq-in-v-down">
     <title>Absolute value equations and inequalities: open down</title>
 
     <desmos desmos="rfpfnh6irs" />

@@ -44,4 +44,28 @@
   </xsl:element>
 </xsl:template>
 
+
+<xsl:template match="video[@youtube]" mode="video-embed">
+    <xsl:param name="width" select="''" />
+    <xsl:param name="height" select="''" />
+    <xsl:param name="autoplay" select="'false'" />
+
+    <xsl:variable name="int-id">
+        <xsl:apply-templates select="." mode="internal-id" />
+    </xsl:variable>
+    <xsl:variable name="source-url">
+        <xsl:apply-templates select="." mode="youtube-embed-url">
+            <xsl:with-param name="autoplay" select="$autoplay" />
+        </xsl:apply-templates>
+    </xsl:variable>
+    <iframe id="{$int-id}"
+            type="text/html"
+            width="{$width}"
+            height="{$height}"
+            frameborder="0"
+            src="{$source-url}"
+            allowFullScreen="" />
+</xsl:template>
+
+
 </xsl:stylesheet>
