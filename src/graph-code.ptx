@@ -18,7 +18,7 @@
         <caption></caption>
         <image>
             <description>plain text</description>
-            <latex-image-code>
+            <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}
                     \begin{axis}
@@ -26,7 +26,7 @@
                     \end{axis}
                 \end{tikzpicture}
                 ]]>
-            </latex-image-code>
+            </latex-image>
         </image>
     </figure>
 
