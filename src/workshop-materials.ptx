@@ -9,15 +9,22 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="chapter-sylvania-workshop-materials">
-    <title>Sylvania Campus Workshop Materials</title>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="better-prepared-workshop-materials">
+    <title>Be Better Prepared - Math Workshop Materials</title>
 
-      <xi:include href="./workshop-schedule-fall-term-2017.ptx" />
-      <xi:include href="./workshop-factoring-trinomials.ptx" />
-      <xi:include href="./workshop-factoring-binomials.ptx" />
+      <xi:include href="./workshop-schedule-winter-term-2018.ptx" />
+      <xi:include href="./workshop-lines.ptx" />
+      <xi:include href="./workshop-systems.ptx" />
       <xi:include href="./workshop-rules-of-exponents.ptx" /> 
-      <xi:include href="./workshop-negative-exponents-scientific-notation.ptx" />
+      <xi:include href="./workshop-scientific-notation.ptx" />
+      <xi:include href="./workshop-factoring.ptx" />
+      <xi:include href="./workshop-rational-expressions.ptx" />
       <xi:include href="./workshop-radicals-and-rational-exponents.ptx" />
+      <xi:include href="./workshop-simplifying-square-roots.ptx" />
+      <xi:include href="./workshop-imaginary-and-complex-numbers.ptx" />
+      <xi:include href="./workshop-quadratic-equations.ptx" />
+      <xi:include href="./workshop-functions-graphical-perspective.ptx" />
+
 
 
 </chapter>

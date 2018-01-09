@@ -1,0 +1,1963 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-lines">
+    <title>Lines</title>
+
+    <exercises>
+      <title>Pretest - what's your current skill set?</title>
+
+      <exercise>
+        <title>The standard form of the equation of a line/Intercepts</title>
+        <statement>
+          <p>
+              Follow this link to see some written examples: <xref ref="workshop-lines-standard-form-examples">Written Examples</xref>.
+          </p>
+          <p>
+          <ol>
+            <li>
+              <sidebyside widths="78% 18%">
+              <p>
+                Complete the entries in <xref ref="table-workshop-lines-preassess-table-1">Table</xref> for the line with equation <m>2x-5y=10</m>.  Also, state the <m>x</m> and <m>y</m> intercepts of the line.
+              </p>
+              <table xml:id="table-workshop-lines-preassess-table-1">
+                          <caption><m>2x-5y=10</m></caption>
+                            <tabular>
+                              <col halign="center" />
+                              <col halign="center"/>
+                              <row bottom="medium">
+                                <cell>
+                                  <line><m>x</m></line>
+                                </cell>
+                                <cell>
+                                  <line><m>y</m></line>
+                                </cell>
+                              </row>
+                              <row>
+                                <cell><m>-10</m></cell>
+                                <cell></cell>
+                              </row>
+                              <row>
+                                <cell><m>-5</m></cell>
+                                <cell></cell>
+                              </row>
+                              <row>
+                                <cell><m>0</m></cell>
+                                <cell></cell>
+                              </row>
+                              <row>
+                                <cell><m>5</m></cell>
+                                <cell></cell>
+                              </row>
+                              <row>
+                                <cell><m>10</m></cell>
+                                <cell></cell>
+                              </row>
+                            </tabular>
+                          </table>
+            </sidebyside>
+          </li>
+
+          <li>
+              <sidebyside widths="78% 18%">
+              <p>
+                Complete the entries in <xref ref="table-workshop-lines-preassess-table-2">Table</xref> for the line with equation <m>-x-7y=3</m>.  Also, state the <m>x</m> and <m>y</m> intercepts of the line.
+              </p>
+              <table xml:id="table-workshop-lines-preassess-table-2">
+                          <caption><m>-x-7y=3</m></caption>
+                            <tabular>
+                              <col halign="center" />
+                              <col halign="center"/>
+                              <row bottom="medium">
+                                <cell>
+                                  <line><m>x</m></line>
+                                </cell>
+                                <cell>
+                                  <line><m>y</m></line>
+                                </cell>
+                              </row>
+                              <row>
+                                <cell><m>2</m></cell>
+                                <cell></cell>
+                              </row>
+                              <row>
+                                <cell></cell>
+                                <cell><m>-3</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>-2</m></cell>
+                                <cell></cell>
+                              </row>
+                              <row>
+                                <cell></cell>
+                                <cell><m>\frac{2}{7}</m></cell>
+                              </row>
+                              <row>
+                                <cell></cell>
+                                <cell><m>-\frac{5}{14}</m></cell>
+                              </row>
+                            </tabular>
+                          </table>
+            </sidebyside>
+          </li>
+
+        </ol>
+      </p>
+        </statement>
+
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+              <sidebyside widths="78% 18%">
+              <p>
+                The <m>x</m>-intercept is <m>(5,0)</m> and the <m>y</m>-intercept is <m>(0,-2)</m>.
+              </p>
+              <table xml:id="table-workshop-lines-preassess-table-1-solution">
+                          <caption><m>2x-5y=10</m></caption>
+                            <tabular>
+                              <col halign="center" />
+                              <col halign="center"/>
+                              <row bottom="medium">
+                                <cell>
+                                  <line><m>x</m></line>
+                                </cell>
+                                <cell>
+                                  <line><m>y</m></line>
+                                </cell>
+                              </row>
+                              <row>
+                                <cell><m>-10</m></cell>
+                                <cell><m>-6</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>-5</m></cell>
+                                <cell><m>-4</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>0</m></cell>
+                                <cell><m>-2</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>5</m></cell>
+                                <cell><m>0</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>10</m></cell>
+                                <cell><m>2</m></cell>
+                              </row>
+                            </tabular>
+                          </table>
+            </sidebyside>
+          </li>
+
+
+              <li>
+              <sidebyside widths="78% 18%">
+              <p>
+                The <m>x</m>-intercept is <m>(-3,0)</m> and the <m>y</m>-intercept is <m>(0,-\frac{3}{7})</m>.
+              </p>
+              <table xml:id="table-workshop-lines-preassess-table-2-solution">
+                          <caption><m>-x-7y=3</m></caption>
+                            <tabular>
+                              <col halign="center" />
+                              <col halign="center"/>
+                              <row bottom="medium">
+                                <cell>
+                                  <line><m>x</m></line>
+                                </cell>
+                                <cell>
+                                  <line><m>y</m></line>
+                                </cell>
+                              </row>
+                              <row>
+                                <cell><m>2</m></cell>
+                                <cell><m>-\frac{5}{7}</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>-24</m></cell>
+                                <cell><m>-3</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>-2</m></cell>
+                                <cell><m>-\frac{1}{7}</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>-5</m></cell>
+                                <cell><m>\frac{2}{7}</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>-\frac{1}{2}</m></cell>
+                                <cell><m>-\frac{5}{14}</m></cell>
+                              </row>
+                            </tabular>
+                          </table>
+            </sidebyside>
+          </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Slope of a line</title>
+        <statement>
+          <p>
+              Follow this link to see some written examples: <xref ref="workshop-lines-slope-examples">Written Examples</xref>.
+          </p>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  Determine the slope of the line that passes through the points <m>(2,-2)</m> and <m>(-4,16)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determine the slope of the line that passes through the points <m>(6,2)</m> and <m>(-6,-8)</m>.
+                </p>
+              </li>
+              <li>
+                <sidebyside widths="47% 47%">
+                  <p>
+                    Determine the slope of the line shown in <xref ref="workshop-lines-preassess-figure-1">Figure</xref>.
+                  </p>
+                  <figure xml:id="workshop-lines-preassess-figure-1">
+                  <caption>Determine the slope of the line</caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-5.3:6.7] {3-(2/3)*x};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+                </sidebyside>
+              </li>
+              <li>
+                <p>
+                  A line with a slope of <m>\frac{4}{5}</m> passes through the point <m>(-4,-7)</m>.  What is the <m>y</m>-coordinate of the point on this line that has an <m>x</m>-coordinate of <m>6</m>?
+                </p>
+              </li>
+              <li>
+                <p>
+                  A line with a slope of <m>-3</m> passes through the point <m>(4,-14)</m>.  What is the <m>y</m>-coordinate of the point that has an <m>x</m>-coordinate of <m>-3</m>?
+                </p>
+              </li>
+              <li>
+                <p>
+                  A line with a slope of <m>-\frac{1}{2}</m> passes through the point <m>(410,27)</m>.  What is the <m>x</m>-coordinate of the point that a <m>y</m>-coordinate of <m>24</m>?
+                </p>
+              </li>
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  The slope is <m>-3</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The slope is <m>\frac{5}{6}</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The slope is <m>-\frac{2}{3}</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The <m>y</m>-coordinate is <m>1</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The <m>y</m>-coordinate is <m>7</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The <m>x</m>-coordinate is <m>416</m>.
+                </p>
+              </li>
+
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>The slope-intercept form of the equation of a line</title>
+        <statement>
+          <p>
+              Follow this link to see some written examples: <xref ref="workshop-lines-slope-intercept-examples">Written Examples</xref>.
+          </p>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  Determine the equation of the line that has a slope of <m>\frac{11}{8}</m> and a <m>y</m>-intercept of <m>(0,-4)</m>.  Write the equation in slope-intercept form.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determine the equation of the line that has a slope of <m>-\frac{1}{3}</m> and an <m>x</m>-intercept of <m>(6,0)</m>.  Write the equation in slope-intercept form.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determine the equation of the line that passes through the points <m>(1,12)</m> and <m>(-3,-8)</m>.  Write the equation in slope-intercept form.
+                </p>
+              </li>
+              <li>
+                <sidebyside widths="47% 47%">
+                  <p>
+                    Determine the equation of the line shown in <xref ref="workshop-lines-preassess-figure-2">Figure</xref>.  Write the equation in slope-intercept form.
+                  </p>
+                  <figure xml:id="workshop-lines-preassess-figure-2">
+                  <caption>Determine the slope of the line</caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-2.4:3.1] {-1+(5/2)*x};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+                </sidebyside>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  The equation is <m>y=\frac{11}{8}x-4</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  The equation is <m>y=-\frac{1}{3}x+2</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The equation is <m>y=5x+7</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The equation is <m>y=\frac{5}{2}x-1</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>The point-slope form of the equation of a line</title>
+        <statement>
+          <p>
+              Follow this link to see some written examples: <xref ref="workshop-lines-point-slope-examples">Written Examples</xref>.
+          </p>
+          <p>
+            What is the point-slope form of the equation of a line that has a slope of <m>m</m> and passes through the point <m>(x_1,y_1)</m>?
+          </p>
+          <p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+          The equation is <m>y-y_1=m(x-x_1)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Parallel lines/Perpendicular lines/Vertical and horizontal lines</title>
+        <statement>
+          <p>
+              Follow this link to see some written examples: <xref ref="workshop-lines-hvpp-examples">Written Examples</xref>.
+          </p>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  What are the equations of the vertical and horizontal lines that pass through the point <m>(9,2)</m>?
+                </p>
+              </li>
+              <li>
+                <p>
+                  What is the slope of any line that is parallel to the line with equation <m>6x-10y=7</m>?
+                </p>
+              </li>
+              <li>
+                <p>
+                  What is the slope of any line that is perpendicular to the line with equation <m>y=-\frac{1}{8}x+11</m>?
+                </p>
+              </li>
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  The vertical line's equation is <m>x=9</m> and the horizontal line's equation is <m>y=2</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The slope is <m>\frac{3}{5}</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The slope is <m>8</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercises>
+
+    <exercises>
+      <title>Videos</title>
+      <exercise>
+        <title>Videos created by Ann Cary and Scot Leavitt.</title>
+        <statment>        
+          <p>The links take you to YouTube Playlists which will open either in a new window or in a Youtube App.
+          <ul>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-fY732-8tex6rx7xNEar3TO" target="blank">The Cartesian coordinate system</url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-e4BPQL-CTfUR7abqP1MlHx" target="blank">Graphing linear equations on the Cartesian coordinate system</url> 
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-f8cnTX8Fv82mnDxfGtuNF6" target="blank">The standard Form of the equation of a line/Intercepts</url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-egOM3nFkifyG8kzF1PA46D" target="blank">Slope of a line</url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-e5tfdgFM8gL44XS1TxKQcf" target="blank">The slope-intercept form of the equation of a line</url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-e3HVQTn7ysJcPB_-5mUO5O" target="blank">The point-slope form of the equation of a line</url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-dAFOej6LZ7akWnP1saiC_w" target="blank">Parallel lines/Perpendicular lines/Vertical and horizontal lines</url>
+            </li>
+          </ul>
+        </p>
+      </statment>
+    </exercise>
+  </exercises>
+
+
+    <exercises>
+      <title>Written Examples</title>
+
+      <exercise xml:id="workshop-lines-standard-form-examples">
+        <title>The standard form of the equation of a line/Intercepts</title>
+        <statement>
+          <p>
+            The standard form of the equation of a line is <m>ax+by=c</m> where <m>a</m>, <m>b</m>, and <m>c</m> represent real numbers.  While either <m>a</m> or <m>b</m> can be zero, they cannot both be zero in the same equation of a line.
+          </p>
+          <p>
+            To determine points on the line, we replace one of the variables in the equation with a number and solve the resultant equation for the other variable.  For example, consider the line with equation <m>3x-4y=24</m>.  If we wanted to determine the point on the line that has an <m>x</m>-coordinate of <m>4</m> we would go through the following process.
+            <md>
+              <mrow>3(4)-4y\amp=24</mrow>
+              <mrow>12-4y\amp=24</mrow>
+              <mrow>12-4y-12\amp=24-12</mrow>
+              <mrow>-4y\amp=12</mrow>
+              <mrow>\frac{-4y}{-4}\amp=\frac{12}{-4}</mrow>
+              <mrow>y\amp=-3</mrow>
+            </md>
+            We now know that the point is <m>(4,-3)</m>.
+          </p>
+          <p>
+            Similarly, if we wanted to know the point on the line that has a <m>y</m>-coordinate of <m>15</m>, we would do the following.
+            <md>
+              <mrow>3x-4(15)\amp=24</mrow>
+              <mrow>3x-60\amp=24</mrow>
+              <mrow>3x-60+60\amp=24+60</mrow>
+              <mrow>3x\amp=84</mrow>
+              <mrow>\frac{3x}{3}\amp=\frac{84}{3}</mrow>
+              <mrow>x\amp=28</mrow>
+            </md>
+            We can conclude that the point is <m>(28,15)</m>.
+          </p>
+          <p>
+            The point on a line with an <m>x</m>-coordinate of zero (if such a point exists) is called the <m>y</m>-intercept of the line.  Similarly, the point with a <m>y</m>-coordinate of zero is called the <m>x</m>-intercept of the line.
+          </p>
+          <sidebyside widths="47% 47%">
+          <p>
+             For example, the <m>y</m>-intercept of the line shown in <xref ref="workshop-lines-examples-figure-1">Figure</xref> is <m>(0,-5)</m>; note that this is the point where the line intersects the <m>y</m>-axis. The <m>x</m>-intercept of the same line is <m>(-2,0)</m>, the point where the line intersects the <m>x</m>-axis.
+          </p>
+            <figure xml:id="workshop-lines-examples-figure-1">
+                  <caption>The <m>x</m> and <m>y</m> intercepts</caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-4.7:.7] {-5+(-5/2)*x};
+                              \addplot[soliddot] coordinates {(-2,0)} node[above right] {(-2,0)};
+                              \addplot[soliddot] coordinates {(0,-5)} node[above right] {(0,-5)};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+          </figure>
+        </sidebyside>
+        <p>
+          Suppose that we were asked to determine the <m>x</m>-intercept of the line with equation <m>-11x+5y=-110</m>.  Since the <m>x</m>-intercept is a point on the <m>x</m>-axis, it must have a <m>y</m>-coordinate of zero.  Replacing <m>y</m> with zero and solving for <m>x</m> results in <m>x=10</m>.  So the <m>x</m>-intercept of the line is the point <m>(10,0)</m>.
+        </p>
+        <p>
+          Suppose that we were asked to determine the <m>y</m>-intercept of the line with equation <m>-11x+5y=-110</m>.  Since the <m>y</m>-intercept is a point on the <m>y</m>-axis, it must have an <m>x</m>-coordinate of zero.  Replacing <m>x</m> with zero and solving for <m>y</m> results in <m>y=-21</m>.  So the <m>y</m>-intercept of the line is the point <m>(0,-21)</m>. 
+        </p>
+        <p>
+          When graphing a line by hand it's useful to have at least three points with which to align your ruler.  Let's consider the line with equation <m>2x-3y=-6</m>.  The <m>x</m>-intercept and <m>y</m>-intercept of this line are, respectively, <m>(3,0)</m> and <m>(0,-2)</m>.  In the next section we discuss the idea of the slope of the line, but we can use the basic idea right now to determine a couple of more points on the line.
+        </p>
+        <sidebyside widths="47% 47%">
+          <p>
+            The line <m>2x-3y=-6</m> in shown in <xref ref="workshop-lines-intercepts-to-slope-figure-1">Figure</xref>.  Note that one way to describe the movement from the <m>y</m>-intercept to the <m>x</m>-intercept is "up <m>2</m>, right <m>3</m>."  If we continue that pattern, starting at the <m>x</m>-intercept, we land at the point <m>(6,2)</m>, which is also on the line.
+          </p>
+          <figure xml:id="workshop-lines-intercepts-to-slope-figure-1">
+                  <caption>The step-like pattern between points on a line</caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-6.7:6.7] {-2+(2/3)*x};
+                              \addplot[soliddot] coordinates {(3,0)};
+                              \addplot[soliddot] coordinates {(0,-2)};
+                              \addplot[soliddot] coordinates {(6,2)} node[above left] {(6,2)};
+                              \addplot[soliddot] coordinates {(-3,-4)} node[above left] {(-3,-4)};
+                              \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(0,-2) (0,0)};
+                              \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(0,0) (3,0)};
+                              \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(3,0) (3,2)};
+                              \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(3,2) (6,2)};
+                              \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(3,0) (3,-2)};
+                              \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(3,-2) (0,-2)};
+                              \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(0,-2) (0,-4)};
+                              \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(0,-4) (-3,-4)};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+          </figure>
+        </sidebyside>
+        <p>
+          Similarly, the movement from the <m>x</m>-intercept to the <m>y</m>-intercept can be described as "down <m>2</m>, left <m>3</m>," and continuing that pattern takes us to the point <m>(-3,-4)</m> which is also a point on the line.  
+        </p>
+        <p>
+          Every line has its on step-like pattern that can be executed either left-to-right or right-to-left.  This phenomenon is the basis for the concept of "slope of a line" and is explored in-depth in the next section.
+        </p>
+        <p>
+          Click here to access some practice exercises: <xref ref="workshop-lines-standard-form-exercises">Practice Exercises</xref>
+        </p>
+
+        </statement>
+      </exercise>
+
+      <exercise xml:id="workshop-lines-slope-examples">
+        <title>Slope of a line</title>
+        <statement>
+          <p>
+            The line with equation <m>2x-3y=-6</m> is shown in both <xref ref="workshop-lines-slope-figure-2">Figure</xref> and 
+            <xref ref="workshop-lines-slope-figure-3">Figure</xref>.  In <xref ref="workshop-lines-slope-figure-2">Figure</xref>, it's illustrated that if we start at a point on the line and move up <m>2</m> spaces and right <m>3</m> spaces, we end up at another point on the line.  Similarly, in <xref ref="workshop-lines-slope-figure-3">Figure</xref>, it's illustrated that if we start at a point on the line and move down <m>2</m> spaces and left <m>3</m> spaces, we end up at another point on the line.
+          </p>
+          <sidebyside widths="47% 47%">
+          <figure xml:id="workshop-lines-slope-figure-2">
+                  <caption>Walking up the steps</caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-6.7:6.7] {-2+(2/3)*x};
+                              \addplot[soliddot] coordinates {(3,0)};
+                              \addplot[soliddot] coordinates {(0,-2)};
+                              \addplot[soliddot] coordinates {(6,2)};
+                              \addplot[soliddot] coordinates {(-3,-4)};
+                              \addplot[soliddot] coordinates {(-6,-6)};
+                              \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(0,-2) (0,0)};
+                              \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(0,0) (3,0)};
+                              \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(3,0) (3,2)};
+                              \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(3,2) (6,2)};
+                              \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(-6,-6) (-6,-4)};
+                              \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(-6,-4) (-3,-4)};
+                              \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(-3,-4) (-3,-2)};
+                              \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(-3,-2) (0,-2)};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+          </figure>
+          <figure xml:id="workshop-lines-slope-figure-3">
+                  <caption>Walking down the steps</caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-6.7:6.7] {-2+(2/3)*x};
+                              \addplot[soliddot] coordinates {(3,0)};
+                              \addplot[soliddot] coordinates {(0,-2)};
+                              \addplot[soliddot] coordinates {(6,2)};
+                              \addplot[soliddot] coordinates {(-3,-4)};
+                              \addplot[soliddot] coordinates {(-6,-6)};
+                              \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(6,2) (6,0)};
+                              \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(6,0) (3,0)};
+                              \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(3,0) (3,-2)};
+                              \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(3,-2) (0,-2)};
+                              \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(0,-2) (0,-4)};
+                              \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(0,-4) (-3,-4)};
+                              \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(-3,-4) (-3,-6)};
+                              \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(-3,-6) (-6,-6)};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+          </figure>
+        </sidebyside>
+        <p>
+          Similar step-like patterns exist for any line that is neither horizontal nor vertical.  The up or down movement between two points on a line is called "the rise" between the two points.  The right or left movement between the two points is called "the run" between the points.  For any given line (that is not vertical), the ratio of the rise to the run between any two points on the line is the same, and this constant ratio is called "the slope of the line."  For reasons nobody really knows, we use the variable <m>m</m> to symbolize slope.  So:
+          <me>\text{The slope of a line is }m=\frac{\text{rise}}{\text{run}}</me>.  
+        </p>
+        <p>
+          Referring again to <xref ref="workshop-lines-slope-figure-2">Figure</xref>, we interpret the upward movement as "a rise of <m>+2</m>" and the rightward movement as "a run of <m>+3</m>."  This gives us:
+          <md>
+            <mrow>m\amp=\frac{\text{rise}}{\text{run}}</mrow>
+            <mrow>\amp=\frac{+2}{+3}</mrow>
+            <mrow>\amp=\frac{2}{3}</mrow>
+          </md>
+        </p>
+        <p>
+          Similarly, referring to <xref ref="workshop-lines-slope-figure-3">Figure</xref>, we interpret the downward movement as "a rise of <m>-2</m>" and the leftward movement as "a run of <m>-3</m>."  This gives us:
+          <md>
+            <mrow>m\amp=\frac{\text{rise}}{\text{run}}</mrow>
+            <mrow>\amp=\frac{-2}{-3}</mrow>
+            <mrow>\amp=\frac{2}{3}</mrow>
+          </md>
+              We are not limited to steps that have a rise of <m>+2</m> or <m>-2</m>.  For example, in <xref ref="workshop-lines-slope-figure-4">Figure</xref> the rise from the point <m>(-6,-6)</m> to the point <m>(6,2)</m> is <m>+8</m> while the run is <m>+12</m>. The slope of the line is thus calculated as follows.
+        </p>
+        <sidebyside widths="47% 47%">
+          <p>
+        
+            <md>
+              <mrow>m\amp=\frac{\text{rise}}{\text{run}}</mrow>
+              <mrow>\amp=\frac{+8}{+12}</mrow>
+              <mrow>\amp=\frac{2}{3}</mrow>
+            </md>
+          </p>
+          <figure xml:id="workshop-lines-slope-figure-4">
+                  <caption>rise<m>=+8</m> and run=<m>+12</m></caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-6.7:6.7] {-2+(2/3)*x};
+                              \addplot[soliddot] coordinates {(6,2)};
+                              \addplot[soliddot] coordinates {(-6,-6)};
+                              \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(-6,-6) (-6,2)};
+                              \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(-6,2) (6,2)};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+          </figure>
+        </sidebyside>
+        
+        <sidebyside widths="47% 47%">
+          <p>
+          This last example illustrates one of the great things about slope: the ratio of the rise to the run from any point on the line to any other point on the line can be used to determine the slope of a given line.
+            <p>
+              For example, let's consider the line shown in <xref ref="workshop-lines-slope-figure-5">Figure</xref>.
+            </p>
+          </p>
+        <figure xml:id="workshop-lines-slope-figure-5">
+                  <caption>Two different rise-to-runs</caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-6.7:6.7] {3-(1/2)*x};
+                              \addplot[soliddot] coordinates {(-6,6)};
+                              \addplot[soliddot] coordinates {(-2,4)};
+                              \addplot[soliddot] coordinates {(4,1)};
+                              \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(4,1) (4,6)};
+                              \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(4,6) (-6,6)};
+                              \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(-6,6) (-6,4)};
+                              \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(-6,4) (-2,4)};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+          </figure>
+      </sidebyside>
+      <p>
+        When we move from the point <m>(-6,6)</m> to the point <m>(-2,4)</m>, there is a rise of <m>-2</m> (negative because the movement is downward) and a run of <m>+4</m> (positive because the movement is rightward).  This gives us:
+        <md>
+          <mrow>m\amp=\frac{\text{rise}}{\text{run}}</mrow>
+          <mrow>\amp=\frac{-2}{+4}</mrow>
+          <mrow>\amp=-\frac{1}{2}</mrow>
+        </md>
+        However, when we move from the point <m>(4,1)</m> to the point <m>(-6,6)</m> the rise is <m>+5</m> (positive because the movement is upward) and the run is <m>-10</m> (negative because the movement is leftward).  Despite this very different pair of rise and run, we get the same slope.
+        <md>
+          <mrow>m\amp=\frac{\text{rise}}{\text{run}}</mrow>
+          <mrow>\amp=\frac{+5}{-10}</mrow>
+          <mrow>\amp=-\frac{1}{2}</mrow>
+        </md>
+      </p>
+      <p>
+        When looking at the graph of a line that passes through points which have integer coordinates, it's fairly easy to determine the rise and the run between two points on the line by counting.  We just have to keep in mind that we count upward or rightward movement as positive whereas we count downward or leftward movement as negative.  When dealing with points that are not presented graphically, it's useful to have a formula that alleviates the need for counting.
+      </p>
+      <p>
+        In <xref ref="workshop-lines-slope-figure-6">Figure</xref> the slope triangle moving from the point <m>(-2,-4)</m> to the point <m>(4,5)</m> is shown.  We can determine, by counting, that the run is <m>6</m> and the rise is <m>9</m>.  The observation we want to make is that the run, <m>6</m>, is the difference between the <m>x</m>-coordinates of the points and the rise is the difference between the <m>y</m>-coordinates.  Specifically:<me>\text{run}=4-(-2) \text{ and rise}=5-(-4)</me>.  If we give the points generic names for the coordinates we can generalize a slope formula.  Let's label the points as stated below.  Note that the names given to the coordinates are subscripted variables that are technically read as (for example) "<m>x</m> sub <m>1</m> <m>y</m> sub <m>1</m>" but in reality are generally read as "<m>x</m> <m>1</m> <m>y</m> <m>1</m>."
+        <me>(-2,-4) \text{ is } (x_1,y_1) \text{ and } (4,5) \text{ is } (x_2,y_2)</me>  This gives us the following slope formula.
+      </p>
+      <sidebyside widths = "47% 47%">
+        <p>
+          <md>
+            <mrow>m\amp=\frac{\text{rise}}{\text{run}}</mrow>
+            <mrow>\amp=\frac{5-(-4)}{4-(-2)}</mrow>
+            <mrow>\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+          </md>
+        </p>
+         <figure xml:id="workshop-lines-slope-figure-6">
+            <caption><m>\text{rise}=y_2-y_1\text{ and run}=x_2-x_1</m></caption>
+              <image>
+              <description>plain text</description>
+              <latex-image>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis}
+                      \addplot[primarycurve,domain=-3.7:5.1] {-1+1.5*x};
+                      \addplot[soliddot] coordinates {(4,5)} node[above left] {($x_2$,$y_2$)};
+                      \addplot[soliddot] coordinates {(-2,-4)} node[above left] {($x_1$,$y_1$)};
+                      \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(-2,-4) (4,-4)};
+                      \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(4,-4) (4,5)};
+                    \end{axis}
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+              </image>
+          </figure>
+      </sidebyside>
+      <p>
+        Let's use the slope formula to determine the slope of the line that passes through the points <m>(9,3)</m> and <m>(5,7)</m>.
+      </p>
+      <p>
+        We begin by deciding which point we'll call <m>(x_1,y_1)</m> and which point we'll call <m>(x_2,y_2)</m>.  As will be demonstrated, we can label the points either way.  Let's first make the following designations.
+        <me>(x_1,y_1) \text{ is } (9,3) \text{ and } (x_2,y_2) \text{ is } (5,7)</me> This gives us the following.
+        <md>
+          <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+          <mrow>\amp=\frac{7-3}{5-9}</mrow>
+          <mrow>\amp=\frac{4}{-4}</mrow>
+          <mrow>\amp=-1</mrow>
+        </md>
+        Let's make sure that we get the same result if we designate the points in the other order.
+        <me>(x_1,y_1) \text{ is } (5,7) \text{ and } (x_2,y_2) \text{ is } (9,3)</me> This gives us the following.
+        <md>
+          <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+          <mrow>\amp=\frac{3-7}{9-5}</mrow>
+          <mrow>\amp\frac{-4}{4}</mrow>
+          <mrow>\amp=-1</mrow>
+        </md>
+      </p>
+      <sidebyside widths="67% 27%">
+        <p>
+          Let's use slope to determine whether or not the points given in <xref ref="table-workshop-lines-examples-same-line">Table</xref> all lie on the same line.
+        </p>
+        <table xml:id="table-workshop-lines-examples-same-line">
+                          <caption>Points from a line?</caption>
+                            <tabular>
+                              <col halign="center" />
+                              <col halign="center"/>
+                              <row bottom="medium">
+                                <cell>
+                                  <line><m>x</m></line>
+                                </cell>
+                                <cell>
+                                  <line><m>y</m></line>
+                                </cell>
+                              </row>
+                              <row>
+                                <cell><m>6</m></cell>
+                                <cell><m>21</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>-2</m></cell>
+                                <cell><m>-11</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>0</m></cell>
+                                <cell><m>-3</m></cell>
+                              </row>
+                            </tabular>
+                          </table>
+      </sidebyside>
+      <p>
+            For any given line, the slope connecting any two points on the line is always the same.  So to make the determination we need to check whether or not the slope is the same regardless of which two points we select.
+          </p>
+          <p>
+            Using the first two points in the table we get the following.
+            <me>(x_1,y_1) \text{ is } (6,21) \text{ and } (x_2,y_2) \text{ is } (-2,-11)</me>
+            <md>
+              <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+              <mrow>\amp=\frac{-11-21}{-2-6}</mrow>
+              <mrow>\amp=\frac{-32}{-8}</mrow>
+              <mrow>\amp=4</mrow>
+            </md>
+          </p>
+          <p>
+            Using the last two points in the table we get the following.
+            <me>(x_1,y_1) \text{ is } (-2,-11) \text{ and } (x_2,y_2) \text{ is } (0,-3)</me>
+            <md>
+              <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+              <mrow>\amp=\frac{-3-(-11)}{0-(-2)}</mrow>
+              <mrow>\amp=\frac{8}{2}</mrow>
+              <mrow>\amp=4</mrow>
+            </md>
+          </p>
+          <p>
+            Using the first and third points in the table we get the following.
+            <me>(x_1,y_1) \text{ is } (6,21) \text{ and } (x_2,y_2) \text{ is } (0,-3)</me>
+            <md>
+              <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+              <mrow>\amp=\frac{-3-21}{0-6}</mrow>
+              <mrow>\amp=\frac{-24}{-6}</mrow>
+              <mrow>\amp=4</mrow>
+            </md>
+          </p>
+          <p>
+            Since the slope is the same regardless of which two points we use, we conclude that the three points do indeed lie on the same line.
+          </p>
+           <p>
+            Click here to access some practice exercises: <xref ref="workshop-lines-slope-exercises">Practice Exercises</xref>
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise xml:id="workshop-lines-slope-intercept-examples">
+        <title>The slope-intercept form of the equation of a line</title>
+        <statement>
+          <p>
+            The standard form of the linear equation in two variables is useful in enabling quick computations of both intercepts.  It is also useful when solving systems of linear equations <mdash/> a topic you may or may not have yet studied.  In many other situations, however, there is a much more powerful form of a linear equation in two variables.  That form is called the slope-intercept form of a linear equation.
+          </p>
+          <p>
+            Consider the line with equation <m>-2x+3y=12</m>.  If we isolate <m>y</m>,we get the equivalent equation <m>y=\frac{2}{3}x+4</m>.  Right away, we get a benefit from this new form of the equation.  Rather than having to replace <m>x</m> or <m>y</m> with a value and solve for the other variable, we have a direct formula into which we can substitute a value for <m>x</m> and subsequently directly evaluate the value of <m>y</m>.  For example, if we let <m>x=3</m>, we can directly calculate <m>y</m>.
+            <md>
+              <mrow>y\amp=\frac{2}{3} \cdot 3+4</mrow>
+              <mrow>\amp=2+4</mrow>
+              <mrow>\amp=6</mrow>
+            </md>
+            This tells us that an ordered pair that satisfies both <m>y=\frac{2}{3}x+4</m> and its parent equation, <m>-2x+3y=12</m>, is <m>(3,6)</m>. 
+          </p>
+          <p>
+             It's no accident that I chose <m>3</m> as my value for <m>x</m>.  I can tell from the coefficient on <m>x</m> in the equation <m>y=\frac{2}{3}x+4</m> that if the value I choose for <m>x</m> is evenly divisible by <m>3</m>, then the resultant value for <m>y</m> will be an integer.  By inference, isolating <m>y</m> in a linear equation with two variables can help identify points on a line where both coordinates of the point are integers.  This can be especially useful when producing a graph of the line.
+          </p>
+            <sidebyside widths="55% 42%">
+              <p>
+                Several ordered pairs that satisfy the equation <m>y=\frac{2}{3}x+4</m> are shown in <xref ref="table-workshop-lines-examples-slope-intercept-1">Table</xref>.  Note that the third ordered pair in the table is the <m>y</m>-intercept of the line.  Also note that as you read from one row to the next, the value of <m>x</m> increases by <m>3</m> and the value of <m>y</m> increases by <m>2</m>.  
+              </p>
+              <table xml:id="table-workshop-lines-examples-slope-intercept-1">
+                <caption><m>y=\frac{2}{3}x+4</m></caption>
+                    <tabular>
+                      <col halign="center" />
+                      <col halign="center"/>
+                        <row bottom="medium">
+                          <cell>
+                            <line><m>x</m></line>
+                          </cell>
+                          <cell>
+                            <line><m>y</m></line>
+                          </cell>
+                        </row>
+                        <row>
+                          <cell><m>-6</m></cell>
+                          <cell><m>0</m></cell>
+                        </row>
+                        <row>
+                          <cell><m>-3</m></cell>
+                          <cell><m>2</m></cell>
+                        </row>
+                        <row>
+                          <cell><m>0</m></cell>
+                          <cell><m>4</m></cell>
+                        </row>
+                        <row>
+                          <cell><m>3</m></cell>
+                          <cell><m>6</m></cell>
+                        </row>
+                        <row>
+                          <cell><m>6</m></cell>
+                          <cell><m>8</m></cell>
+                        </row>
+                        <row>
+                          <cell><m>9</m></cell>
+                          <cell><m>10</m></cell>
+                        </row>
+                      </tabular>
+                    </table>
+                </sidebyside>
+              <p>
+                These values correspond to runs of <m>3</m> and rises of <m>2</m>.  From this we get
+                <md>
+                  <mrow>m\amp=\frac{\text{rise}}{\text{run}}</mrow>
+                  <mrow>\amp=\frac{2}{3}</mrow>
+                </md>
+              </p>
+              <p>
+                Crikey! The coefficient on <m>x</m> in the equation <m>y=\frac{2}{3}x+4</m> is the slope of the line.  That observation coupled with the more apparent fact (via direct substitution) that the <m>y</m>-intercept of the line is <m>(0,4)</m> leads us to the following generalization.
+              </p>
+              <p>
+               The equation of the line with a slope of <m>m</m> and the <m>y</m>-intercept <m>(0,b)</m> can be written as:<me>y=mx+b</me>. An equation of a line in the form <m>y=mx+b</m>, where <m>m</m> is the slope of the line and <m>(0,b)</m> is the <m>y</m>-intercept of the line, is called the slope-intercept form of the equation of the line.
+              </p>
+              <p>
+                For example, when presented with the equation <m>y=-2x+7</m> we can immediately conclude that the slope of the line is <m>-2</m> and that the <m>y</m>-intercept of the line is <m>(0,7)</m>.
+              </p>
+              <sidebyside widths="50% 47%">
+                <p>
+                  Consider the line graphed in <xref ref="workshop-lines-examples-slope-intercept-figure-1">Figure</xref>.  We can see that the <m>y</m>-intercept of the line is <m>(0,2)</m>.  From the indicated slope-triangle we have
+                  <md>
+                    <mrow>m\amp=\frac{\text{rise}}{\text{run}}</mrow>
+                    <mrow>\amp=\frac{-3}{4}</mrow>
+                  </md>.
+                </p>
+                <figure xml:id="workshop-lines-examples-slope-intercept-figure-1">
+                <caption>By observation <m>y=-\frac{3}{4}x+2</m></caption>
+                  <image>
+                  <description>plain text</description>
+                  <latex-image>
+                    <![CDATA[
+                      \begin{tikzpicture}
+                        \begin{axis}
+                          \addplot[primarycurve,domain=-6.1:6.7] {2-.75*x};
+                          \addplot[soliddot] coordinates {(0,2)} node[above right] {(0,2)};
+                          \addplot[soliddot] coordinates {(4,-1)} node[below left] {(4,-1)};
+                          \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(0,2) (4,2)};
+                          \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(4,2) (4,-1)};
+                        \end{axis}
+                      \end{tikzpicture}
+                    ]]>
+                  </latex-image>
+                  </image>
+                </figure>
+              </sidebyside>
+              <p>
+                So we can conclude that the slope-intercept equation for the line is <m>y=-\frac{3}{4}x+2</m>.
+              </p>
+              <sidebyside widths="70% 27%">
+                <p>
+                  Finally, suppose that we were tasked with determining the slope-intercept equation of the line that passes through the two points indicated in <xref ref="table-workshop-lines-examples-slope-intercept-2">Table</xref>.  The first thing we need to determine is the slope of the line.  Letting <m>(x_1,y_1)</m> be <m>(-7,-8)</m> and <m>(x_2,y_2)</m> be <m>(14,1)</m> we have
+                </p>
+                <table xml:id="table-workshop-lines-examples-slope-intercept-2">
+                <caption>Points on a line</caption>
+                    <tabular>
+                      <col halign="center" />
+                      <col halign="center"/>
+                        <row bottom="medium">
+                          <cell>
+                            <line><m>x</m></line>
+                          </cell>
+                          <cell>
+                            <line><m>y</m></line>
+                          </cell>
+                        </row>
+                        <row>
+                          <cell><m>-7</m></cell>
+                          <cell><m>-8</m></cell>
+                        </row>
+                        <row>
+                          <cell><m>14</m></cell>
+                          <cell><m>1</m></cell>
+                        </row>
+                      </tabular>
+                    </table>
+              </sidebyside>
+              <p>
+                <md>
+                  <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+                  <mrow>\amp=\frac{1-(-8)}{14-(-7))}</mrow>
+                  <mrow>\amp=\frac{9}{21}</mrow>
+                  <mrow>\amp=\frac{3}{7}</mrow>
+                </md>
+                So we now know that the equation of the line is <m>y=\frac{3}{7}x+b</m> where <m>(0,b)</m> is the unknown <m>y</m>-intercept of the line.  We can use the ordered pair <m>(14,1)</m> to determine the value of <m>b</m>.
+              </p>
+              <p>
+                Letting <m>x=14</m> and <m>y=1</m> in the equation <m>y=\frac{3}{7}x+b</m> we have the following.
+                <md>
+                  <mrow>1\amp=\frac{3}{7} \cdot 14+b</mrow>
+                  <mrow>1\amp=6+b</mrow>
+                  <mrow>-5\amp=b</mrow>
+                </md>
+                So we can conclude that the slope-intercept equation of the line is <m>y=\frac{3}{7}x+(-5)</m> which we simplify to<me>y=\frac{3}{7}x-5</me>.
+              </p>
+              <p>
+                Click here to access some practice exercises: <xref ref="workshop-lines-slope-intercept-exercises">Practice Exercises</xref>
+              </p>
+        </statement>
+      </exercise>
+
+      <exercise xml:id="workshop-lines-point-slope-examples">
+        <title>The point-slope form of the equation of a line</title>
+        <statement>
+          <p>
+            Consider the following slope equation.<me>m=\frac{y_2-y_1}{x_2-x_1}</me>.  If we multiply both sides of the equation by <m>x_2-x_1</m> the resultant equation is <m>m(x_2-x_1)=y_2-y_1</m> which is equivalent to <me>y_2-y_1=m(x_2-x_1)</me>.
+            In the original form of the slope-equation, both <m>(x_1,y_1)</m> and <m>(x_2,y_2)</m> are specific (and distinct) points on the line.  In the new form of the equation, it is useful to still consider <m>(x_1,y_1)</m> as a specific point on the line, but it is beneficial to think of <m>(x_2,y_2)</m> as the variable (movable) point <m>(x,y)</m>.  
+          </p>
+          <p>
+            The resultant equation is called the point-slope form of the equation of the line.  The point-slope form can be useful when determining the equation of a line.  Specifically, if a non-vertical line has a slope of <m>m</m> and the line passes through the point <m>(x_1,y_1)</m>, then the equation of the line can be determined using the point-slope template
+            <me>y-y_1=m(x-x_1)</me>.
+          </p>
+          <p>
+            For example, let's determine the equation of the line that passes through the points <m>(-5,20)</m> and <m>(15,12)</m>.
+          </p>
+          <p>
+            We begin by determining the slope of the line.  Let <m>(x_1,y_1)</m> be the ordered pair <m>(-5,20)</m> and <m>(x_2,y_2)</m> be the point <m>(15,12)</m>.  We determine the slope as follows.
+            <md>
+              <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+              <mrow>\amp=\frac{12-20}{15-(-5)}</mrow>
+              <mrow>\amp=\frac{-8}{20}</mrow>
+              <mrow>\amp=-\frac{2}{5}</mrow>
+            </md>
+            Using that slope along with the ordered pair <m>(-5,20)</m> in the point slope-slope equation we determine the equation of the line as follows.
+            <md>
+              <mrow>y-y_1\amp=m(x-x_1)</mrow>
+              <mrow>y-20\amp=-\frac{2}{5}(x-(-5))</mrow>
+            </md>
+            It is most common to state the equation of a line in slope-intercept form, so to that end let's pick up where we left off.
+            <md>
+              <mrow>y-20\amp=-\frac{2}{5}(x+5)</mrow>
+              <mrow>y-20\amp=-\frac{2}{5}x-2</mrow>
+              <mrow>y\amp=-\frac{2}{5}x+18</mrow>
+            </md>
+            So we conclude that the slope-intercept equation of the line that passes through the points <m>(-5,20)</m> and <m>(15,12)</m> is<me>y=-\frac{2}{5}x+18</me>.
+          </p>
+           <p>
+            Click here to access some practice exercises: <xref ref="workshop-lines-point-slope-exercises">Practice Exercises</xref>
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise xml:id="workshop-lines-hvpp-examples">
+        <title>Parallel lines/Perpendicular lines/Vertical and horizontal lines</title>
+        <statement>
+          <p>
+            Two non-vertical lines are parallel if and only if they have the same slope.  This fact is fairly intuitive in that two lines that don't both ascend or both descend at equal rates will inevitably intersect (as will two lines, one of which ascends and the other of which descends).
+          </p>
+          <p>
+            A less intuitive, but equally true, fact is that two lines, neither of which is vertical, are perpendicular if and only if they have opposite reciprocal slopes.  For example, if a line has a slope of <m>-\frac{9}{11}</m>, than any line perpendicular to that line has a slope of <m>\frac{11}{9}</m>
+          </p>
+          <p>
+            Let's determine the slope-intercept equation of the line that passes through the point <m>(9,-2)</m> and is parallel to the line with equation <m>x-3y=14</m>.
+          </p>
+          <p>
+            We begin by determining the slope of the line <m>x-3y=14</m>.  We can do that by writing the equation in slope-intercept form, which essentially entails isolating <m>y</m>.  You should confirm that the slope-intercept equation is<me>y=\frac{1}{3}x-\frac{14}{3}</me>.  From this we can identify that the slope of the line <m>x-3y=14 </m> is <m>\frac{1}{3}</m>.  Since the line whose equation we seek is parallel to <m>x-3y=14</m>, and parallel lines have equal slope, the slope of the line we seek is also <m>\frac{1}{3}</m>.  
+          </p>
+          <p>
+            The line we are tasked to identify has a slope of <m>\frac{1}{3}</m> and passes through the point <m>(9,-2)</m>.  Using this information in the point-slope form of the linear equation and simplifying the result, the slope-intercept equation for the line is determined as follows. 
+            <md>
+              <mrow>y-y_1=m(x-x_1)</mrow>
+              <mrow>y-(-2)=\frac{1}{3}(x-9)</mrow>
+              <mrow>y+2=\frac{1}{3}x-3</mrow>
+              <mrow>y=\frac{1}{3}-5</mrow>
+            </md>
+          </p>
+          <p>
+            Let's see another example.  
+          </p>
+          <sidebyside widths="67% 27%">
+            <p>
+              Let's determine the slope-intercept equation of the line that passes through the point <m>(-8,16)</m> that is perpendicular to the line that passes through the points shown in <xref ref="table-workshop-lines-examples-hvpp">Table</xref>.
+            </p>
+             <table xml:id="table-workshop-lines-examples-hvpp">
+                <caption>Points on a line</caption>
+                    <tabular>
+                      <col halign="center" />
+                      <col halign="center"/>
+                        <row bottom="medium">
+                          <cell>
+                            <line><m>x</m></line>
+                          </cell>
+                          <cell>
+                            <line><m>y</m></line>
+                          </cell>
+                        </row>
+                        <row>
+                          <cell><m>-4</m></cell>
+                          <cell><m>7</m></cell>
+                        </row>
+                        <row>
+                          <cell><m>10</m></cell>
+                          <cell><m>-5</m></cell>
+                        </row>
+                      </tabular>
+                    </table>
+          </sidebyside>
+          <p>
+            We begin by determining the slope of the line that passes through the points shown in <xref ref="table-workshop-lines-examples-hvpp">Table</xref>.  Letting <m>(x_1,y_1)</m> be the ordered pair <m>(-4,7)</m> and <m>(x_2,y_2)</m> be the ordered <m>(10,-5)</m>, we calculate the slope as follows.
+            <md>
+              <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+              <mrow>\amp=\frac{-5-7}{10-(-4)}</mrow>
+              <mrow>\amp=\frac{-12}{14}</mrow>
+              <mrow>\amp=-\frac{6}{7}</mrow>
+            </md>
+            Since the line we seek is perpendicular to a line with a slope of <m>-\frac{6}{7}</m>, and perpendicular lines have opposite reciprocal slopes, the line we seek has a slope of <m>\frac{7}{6}</m>.
+          </p>
+          <p>
+            Using the slope of <m>\frac{7}{6}</m> and the ordered pair <m>(-8,16)</m>, we determine the slope intercept equation of the line we seek as follows.
+            <md>
+              <mrow>y-y_1=m(x-x_1)</mrow>
+              <mrow>y-16=\frac{7}{6}(x-(-8))</mrow>
+              <mrow>y-16=\frac{7}{6}(x+8)</mrow>
+              <mrow>y-16=\frac{7}{6}x+\frac{28}{3}</mrow>
+              <mrow>y=\frac{7}{6}x+\frac{76}{3}</mrow>
+            </md>
+          </p>
+          <p>
+            Let's move onto the topic of horizontal and vertical lines.
+          </p>
+          <p>
+            The equation of a horizontal line can be determined in the same manner as any other non-vertical line, although once that's done a generalization can greatly simplify the process.
+          </p>
+          <sidebyside widths="50% 47%">
+            <p>
+              Let's consider the horizontal line shown in <xref ref="workshop-lines-examples-hvpp-horizontal">Figure</xref>.  Let <m>(x_1,y_1)</m> be the ordered pair <m>(-4,-3)</m> and <m>(x_2,y_2)</m> be the ordered pair <m>(2,-3)</m>.  We calculate the slope below.              
+            </p>
+            <figure xml:id="workshop-lines-examples-hvpp-horizontal">
+                <caption>A horizontal line</caption>
+                  <image>
+                  <description>plain text</description>
+                  <latex-image>
+                    <![CDATA[
+                      \begin{tikzpicture}
+                        \begin{axis}
+                          \addplot[primarycurve,domain=-6.7:6.7] {-3};
+                          \addplot[soliddot] coordinates {(-4,-3)} node[below right] {(-4,-3)};
+                          \addplot[soliddot] coordinates {(2,-3)} node[below right] {(2,-3)};
+                        \end{axis}
+                      \end{tikzpicture}
+                    ]]>
+                  </latex-image>
+                  </image>
+                </figure>
+          </sidebyside>
+          <p>
+            <md>
+              <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+              <mrow>\amp=\frac{-3-(-3)}{2-(-4)}</mrow>
+              <mrow>\amp=\frac{0}{6}</mrow>
+              <mrow>\amp=0</mrow>
+            </md>
+          </p>
+          <p>
+            By observation, the <m>y</m>-intercept of the line is <m>(0,-3)</m>.  That coupled with the slope of <m>0</m> gives us the following.
+            <md>
+              <mrow>y\amp=mx+b</mrow>
+              <mrow>y\amp=0 \cdot x+(-3)</mrow>
+              <mrow>y\amp=-3</mrow>
+            </md>
+          </p>
+          <p>
+            Now that we have the equation <m>y=-3</m>, an appropriate response might be "d'oh!"  By observation, the defining property of the points on the line is that the <m>y</m>-coordinates are all <m>-3</m>
+          </p>
+          <p>
+            In general, all horizontal lines have a slope of <m>0</m>. In addition, a horizontal line has an equation of form <m>y=k</m> where <m>k</m> is the <m>y</m>-coordinate common to every point on the line.
+          </p>
+          <sidebyside widths="50% 47%">
+            <p>
+              Now consider the vertical line shown in <xref ref="workshop-lines-examples-hvpp-vertical">Figure</xref>.  When we try to calculate the slope of the line, things go amok.  For example:
+              <md>
+                <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+                <mrow>\amp=\frac{5-(-3)}{2-2}</mrow>
+                <mrow>\amp=\frac{8}{0}</mrow>
+              </md>              
+            </p>
+            <figure xml:id="workshop-lines-examples-hvpp-vertical">
+                <caption>A vertical line</caption>
+                  <image>
+                  <description>plain text</description>
+                  <latex-image>
+                    <![CDATA[
+                      \begin{tikzpicture}
+                        \begin{axis}
+                          \addplot[interval,red,ultra think,{Stealth}-{Stealth}] coordinates {(2,-6.7) (2,6.7)};
+                          \addplot[soliddot] coordinates {(2,-3)} node[right] {(2,-3)};
+                          \addplot[soliddot] coordinates {(2,5)} node[right] {(2,5)};
+                        \end{axis}
+                      \end{tikzpicture}
+                    ]]>
+                  </latex-image>
+                  </image>
+                </figure>
+          </sidebyside>
+          <p>
+            There's a phrase we attach to the last expression <mdash/>uh oh!  Division by <m>0</m> is never a good thing.  Division by zero is always the result when one applies the slope formula to a vertical line, and for that reason we say that a vertical line has no slope, or that the slope is undefined.
+          </p>
+          <p>
+            We can see in <xref ref="workshop-lines-examples-hvpp-vertical">Figure</xref> that every point on the line has an <m>x</m>-coordinate of <m>2</m>, so the equation of the line must be <m>x=2</m>.  In general, vertical lines have equations of form <m>x=h</m>, where <m>h</m> is the <m>x</m>-coordinate of every point on the line 
+          </p>
+          <p>
+            So, unlike determining equations of non-vertical, non-horizontal lines, determining the equation of a horizontal or vertical line is simply a matter of writing down the equation.
+          </p>
+          <p>
+            For example, if asked to determine the equations for horizontal and vertical lines that pass through the point <m>(-3,7)</m>, an appropriate response would be as follows.
+          </p>
+          <p>
+            The horizontal line has equation <m>y=7</m> and the vertical line has equation <m>x=-3</m>.
+          </p>
+          <p>
+            If, in the moment, you can't remember which equation form is horizontal and which form is vertical, just sketch the line and ask yourself "which coordinate is always the same, <m>x</m> or <m>y</m>?"
+          </p>
+          <p>
+            Click here to access some practice exercises: <xref ref="workshop-lines-hvpp-exercises">Practice Exercises</xref>
+          </p>
+        </statement>
+      </exercise>
+
+    </exercises>
+
+    <exercises>
+      <title>Practice Exercises</title>
+
+      <exercise xml:id="workshop-lines-standard-form-exercises">
+        <title>The standard form of the equation of a line/Intercepts</title>
+        <statement>
+          <p>
+          <ol>
+            <li>
+              <sidebyside widths="78% 18%">
+              <p>
+                Complete the entries in <xref ref="table-workshop-lines-exercises-table-1">Table</xref> for the line with equation <m>3x-y=6</m>.  Also, state the <m>x</m> and <m>y</m> intercepts of the line.
+              </p>
+              <table xml:id="table-workshop-lines-exercises-table-1">
+                          <caption><m>3x-y=6</m></caption>
+                            <tabular>
+                              <col halign="center" />
+                              <col halign="center"/>
+                              <row bottom="medium">
+                                <cell>
+                                  <line><m>x</m></line>
+                                </cell>
+                                <cell>
+                                  <line><m>y</m></line>
+                                </cell>
+                              </row>
+                              <row>
+                                <cell><m>-1</m></cell>
+                                <cell></cell>
+                              </row>
+                              <row>
+                                <cell><m>2</m></cell>
+                                <cell></cell>
+                              </row>
+                              <row>
+                                <cell><m>5</m></cell>
+                                <cell></cell>
+                              </row>
+                              <row>
+                                <cell><m>8</m></cell>
+                                <cell></cell>
+                              </row>
+                              <row>
+                                <cell><m>11</m></cell>
+                                <cell></cell>
+                              </row>
+                            </tabular>
+                          </table>
+            </sidebyside>
+          </li>
+
+          <li>
+              <sidebyside widths="78% 18%">
+              <p>
+                Complete the entries in <xref ref="table-workshop-lines-exercises-table-2">Table</xref> for the line with equation <m>7x+4y=-8</m>.  Also, state the <m>x</m> and <m>y</m> intercepts of the line.
+              </p>
+              <table xml:id="table-workshop-lines-exercises-table-2">
+                          <caption><m>7x+4y=-8</m></caption>
+                            <tabular>
+                              <col halign="center" />
+                              <col halign="center"/>
+                              <row bottom="medium">
+                                <cell>
+                                  <line><m>x</m></line>
+                                </cell>
+                                <cell>
+                                  <line><m>y</m></line>
+                                </cell>
+                              </row>
+                              <row>
+                                <cell><m>2</m></cell>
+                                <cell></cell>
+                              </row>
+                              <row>
+                                <cell></cell>
+                                <cell><m>5</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>-2</m></cell>
+                                <cell></cell>
+                              </row>
+                              <row>
+                                <cell><m>\frac{4}{7}</m></cell>
+                                <cell></cell>
+                              </row>
+                              <row>
+                                <cell></cell>
+                                <cell><m>-\frac{5}{4}</m></cell>
+                              </row>
+                            </tabular>
+                          </table>
+            </sidebyside>
+          </li>
+
+        </ol>
+      </p>
+        </statement>
+
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+              <sidebyside widths="78% 18%">
+              <p>
+                The <m>x</m>-intercept is <m>(2,0)</m> and the <m>y</m>-intercept is <m>(0,-6)</m>.
+              </p>
+              <table xml:id="table-workshop-lines-exercises-table-1-solution">
+                          <caption><m>3x-y=6</m></caption>
+                            <tabular>
+                              <col halign="center" />
+                              <col halign="center"/>
+                              <row bottom="medium">
+                                <cell>
+                                  <line><m>x</m></line>
+                                </cell>
+                                <cell>
+                                  <line><m>y</m></line>
+                                </cell>
+                              </row>
+                              <row>
+                                <cell><m>-1</m></cell>
+                                <cell><m>-9</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>2</m></cell>
+                                <cell><m>0</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>5</m></cell>
+                                <cell><m>9</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>8</m></cell>
+                                <cell><m>18</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>11</m></cell>
+                                <cell><m>27</m></cell>
+                              </row>
+                            </tabular>
+                          </table>
+            </sidebyside>
+          </li>
+
+
+              <li>
+              <sidebyside widths="78% 18%">
+              <p>
+                The <m>x</m>-intercept is <m>(-\frac{8}{7},0)</m> and the <m>y</m>-intercept is <m>(0,-2)</m>.
+              </p>
+              <table xml:id="table-workshop-lines-exercises-table-2-solution">
+                          <caption><m>7x+4y=-8</m></caption>
+                            <tabular>
+                              <col halign="center" />
+                              <col halign="center"/>
+                              <row bottom="medium">
+                                <cell>
+                                  <line><m>x</m></line>
+                                </cell>
+                                <cell>
+                                  <line><m>y</m></line>
+                                </cell>
+                              </row>
+                              <row>
+                                <cell><m>2</m></cell>
+                                <cell><m>-\frac{11}{2}</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>-4</m></cell>
+                                <cell><m>5</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>-2</m></cell>
+                                <cell><m>\frac{3}{2}</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>\frac{4}{7}</m></cell>
+                                <cell><m>-3</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>-\frac{3}{7}</m></cell>
+                                <cell><m>-\frac{5}{4}</m></cell>
+                              </row>
+                            </tabular>
+                          </table>
+            </sidebyside>
+          </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise xml:id="workshop-lines-slope-exercises">
+        <title>Slope of a line</title>
+        <statement>
+          <p>
+            <ol>
+              <li>
+                <sidebyside widths="47% 47%">
+                  <p>
+                    Determine the slope of the line that is graphed in <xref ref="workshop-lines-exercises-slope-graph">Figure</xref>
+                  </p>
+                  <figure xml:id="workshop-lines-exercises-slope-graph">
+                  <caption>Determine the slope</caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-6.7:6.7] {2-(1/3*x};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+                  </figure>
+                </sidebyside>
+              </li>
+              <li>
+                <p>
+                  Determine the slope of the line that passes through the points <m>(11,-2)</m> and <m>(-3,5)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determine the slope of the line that passes through the points <m>(\frac{3}{2},-\frac{3}{2})</m> and <m>(-\frac{11}{5},17)</m>.
+                </p>
+              </li>
+              <li>
+                <sidebyside widths="67% 27%">
+                  <p>
+                    Determine whether or not the points listed in <xref ref="workshop-lines-exercises-slope-table">Table</xref> all lie on the same line.
+                  </p>
+                  <table xml:id="workshop-lines-exercises-slope-table">
+                          <caption>Points from a line?</caption>
+                            <tabular>
+                              <col halign="center" />
+                              <col halign="center"/>
+                              <row bottom="medium">
+                                <cell>
+                                  <line><m>x</m></line>
+                                </cell>
+                                <cell>
+                                  <line><m>y</m></line>
+                                </cell>
+                              </row>
+                              <row>
+                                <cell><m>-6</m></cell>
+                                <cell><m>8</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>-10</m></cell>
+                                <cell><m>10</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>20</m></cell>
+                                <cell><m>-6</m></cell>
+                              </row>
+                              
+                            </tabular>
+                          </table>
+                        </sidebyside>
+                      </li>
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+        <solution>
+          <ol>
+            <li>
+              <p>
+                The slope is <m>-\frac{1}{3}</m>.
+              </p>
+            </li>
+            <li><p>
+                Let's designate the points as follows.
+                <me>(x_1,y_1) \text{ is } (11,-2) \text{ and } (x_2,y_2) \text{ is } (-3,5)</me>
+                The slope is calculated thus.
+                <md>
+                  <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+                  <mrow>\amp=\frac{5-(-2)}{-3-11}</mrow>
+                  <mrow>\amp=\frac{7}{-14}</mrow>
+                  <mrow>\amp=-\frac{1}{2}</mrow>
+                </md>
+              </p>
+            </li>
+            <li>
+              <p>
+                Let's designate the points as follows.
+                <me>(x_1,y_1) \text{ is } (\frac{3}{2},-\frac{3}{2}) \text{ and } (x_2,y_2) \text{ is } (-\frac{11}{5},17)</me>
+                The slope is calculated thus.
+                <md>
+                  <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+                  <mrow>\amp=\frac{17-(-\frac{3}{2})}{-\frac{11}{5}-\frac{3}{2}}</mrow>
+                  <mrow>\amp=\frac{\frac{34}{2}+\frac{3}{2}}{-\frac{22}{10}-\frac{15}{10}}</mrow>
+                  <mrow>\amp=\frac{\frac{37}{2}}{-\frac{37}{10}}</mrow>
+                  <mrow>\amp=\frac{37}{2} \cdot -\frac{10}{37}</mrow>
+                  <mrow>\amp=-5</mrow>
+                </md>
+              </p>
+            </li>
+            <li>
+              <p>
+                We begin by calculating the slope between the first two points in the table.
+                <me>(x_1,y_1) \text{ is } (-6,8) \text{ and } (x_2,y_2) \text{ is } (-10,10)</me>
+                <md>
+                  <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+                  <mrow>\amp=\frac{10-8}{-10-(-6)}</mrow>
+                  <mrow>\amp=\frac{2}{-4}</mrow>
+                  <mrow>\amp=-\frac{1}{2}</mrow>
+                </md>
+              </p>
+              <p>
+                Next, let's calculate the slope between the last two points in the table.
+                <me>(x_1,y_1) \text{ is } (-10,10) \text{ and } (x_2,y_2) \text{ is } (20,-6)</me>
+                <md>
+                  <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+                  <mrow>\amp=\frac{-6-10}{20-(-10)}</mrow>
+                  <mrow>\amp=\frac{-16}{30}</mrow>
+                  <mrow>\amp=-\frac{8}{15}</mrow>
+                </md>
+              </p>
+              <p>
+                Since the slope is not the same between different pairs of points in the table, we conclude that the points do not all lie on the same line.
+              </p>
+            </li>
+          </ol>
+        </solution>
+      </exercise>
+
+      <exercise xml:id="workshop-lines-slope-intercept-exercises">
+        <title>The slope-intercept form of the equation of a line</title>
+        <statement>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  Determine the slope and <m>y</m>-intercept of the line with equation <m>2x-7y=21</m>.
+                </p>
+              </li>
+              <li>
+                <sidebyside widths="47% 47%">
+                  <p>
+                    Determine the slope-intercept equation or the line shown in <xref ref="workshop-lines-exercises-slope-intercept-graph">Figure</xref>.
+                  </p>
+                  <figure xml:id="workshop-lines-exercises-slope-intercept-graph">
+                  <caption>Determine the equation of the line</caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-1.8:4.8] {-3+2*x};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+                  </figure>
+                </sidebyside>
+              </li>
+              <li>
+                <p>
+                  Determine the slope-intercept equation of the line that passes through the points <m>(-9,7)</m> and <m>(18,-5)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determine the slope-intercept equation of the line that passes through the points <m>(-11,8)</m> and <m>(-19,8)</m>.
+                </p>
+              </li>
+            </ol>
+              <p>
+              </p>
+          </p>
+        </statement>
+        <solution>
+          <ol>
+            <li>
+              <p>
+                We begin by isolating <m>y</m> in the equation <m>2x-7y=21</m>.
+                <md>
+                  <mrow>2x-7y\amp=21</mrow>
+                  <mrow>2x-7y-2x\amp=21-2x</mrow>
+                  <mrow>-7y\amp=-2x+21</mrow>
+                  <mrow>-\frac{1}{7} \cdot (7y)\amp=-\frac{1}{7} \cdot (-2x+21)</mrow> 
+                  <mrow>y=\frac{2}{7}-3</mrow>
+                </md>
+                Now that the equation is in the form <m>y=mx+b</m>, we can see that the slope of the line is <m>\frac{2}{7}</m> and that the <m>y</m>-intercept is <m>(0,-3)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The equation of the line is <m>y=2x-3</m>.
+              </p>
+            </li> 
+            <li>
+              <p>
+                We begin by determining the slope of the line.
+                <me>(x_1,y_1) \text{ is } (-9,7) \text{ and } (x_2,y_2) \text{ is } (18,-5)</me>
+                <md>
+                  <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+                  <mrow>\amp=\frac{-5-7}{18-(-9)}</mrow>
+                  <mrow>\amp=\frac{-12}{27}</mrow>
+                  <mrow>\amp=-\frac{4}{9}</mrow>
+                </md>
+                We now know that the equation has form <m>y=-\frac{4}{9}x+b</m>. Let's use the point <m>(-9,7)</m> to determine <m>b</m>.
+                <md>
+                  <mrow>7\amp=-\frac{4}{9} \cdot -9+b</mrow>
+                  <mrow>7\amp=4+b</mrow>
+                  <mrow>3\amp=b</mrow>
+                </md>
+                So the equation of the line is <m>y=-\frac{4}{9}x+3</m>.  (Both ordered pairs check in the equation.)
+              </p>
+            </li>
+            <li>
+              <p>
+                We begin by determining the slope of the line.
+                <me>(x_1,y_1) \text{ is } (-11,8) \text{ and } (x_2,y_2) \text{ is } (-19,8)</me>
+                <md>
+                  <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+                  <mrow>\amp=\frac{8-8}{-19-(-11)}</mrow>
+                  <mrow>\amp=\frac{0}{-8}</mrow>
+                  <mrow>\amp=0</mrow>
+                </md>
+                We now know that the equation has form <m>y=0x+b</m>. We can use the point <m>(-11,8)</m> to determine <m>b</m>.
+                <md>
+                  <mrow>8\amp=0 \cdot -11+b</mrow>
+                  <mrow>8\amp=0+b</mrow>
+                  <mrow>8\amp=b</mrow>
+                </md>
+                So the equation of the line is <m>y=0x+8</m> or, simplified, just <m>y=8</m>.  Looking again at the two points ... makes sense!
+              </p>
+            </li>
+          </ol>
+        </solution>
+      </exercise>
+
+      <exercise xml:id="workshop-lines-point-slope-exercises">
+        <title>The point-slope form of the equation of a line</title>
+        <statement>
+          <p>
+            Use the point-slope form of the equation of the line to determine the equation of the line that passes through each of the following pairs of points.  In each case state the equation in slope-intercept form.
+            <ol>
+              <li>
+                <p>
+                  <m>(1,-5)</m> and <m>(-2,-32)</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>(36,-1)</m> and <m>(-12,19)</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>(5,-6)</m> and <m>(-7,-2)</m>
+                </p>
+              </li>
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+        <solution>
+          <ol>
+            <li>
+              <p>
+                We begin by determining the slope of the line.
+                <me>(x_1,y_1) \text{ is } (1,-5) \text{ and } (x_2,y_2) \text{ is } (-2,-32)</me>
+                <md>
+                  <mrow>m\amp=\frac{y_2-y_1}{x_1-x_1}</mrow>
+                  <mrow>\amp=\frac{-32-(-5)}{-2-1}</mrow>
+                  <mrow>\amp=\frac{-27}{-3}</mrow>
+                  <mrow>\amp=9</mrow>
+                </md>
+                We can use the slope of <m>9</m> along with the ordered pair <m>(1,-5)</m> in the equation <m>y-y_1=m(x-x_1)</m> to determine the equation of the line.
+                <md>
+                  <mrow>y-(-5)\amp=9(x-1)</mrow>
+                  <mrow>y+5\amp=9x-9</mrow>
+                  <mrow>y\amp=9x-14</mrow>
+                </md>
+                The equation of the line is <m>y=9x-14</m>.  Both points check.
+              </p>
+            </li>
+            <li>
+              <p>
+                We begin by determining the slope of the line.
+                <me>(x_1,y_1) \text{ is } (36,-1) \text{ and } (x_2,y_2) \text{ is } (-12,19)</me>
+                <md>
+                  <mrow>m\amp=\frac{y_2-y_1}{x_1-x_1}</mrow>
+                  <mrow>\amp=\frac{19-(-1)}{-12-36}</mrow>
+                  <mrow>\amp=\frac{20}{-48}</mrow>
+                  <mrow>\amp=-\frac{5}{12}</mrow>
+                </md>
+                We can use the slope of <m>-\frac{5}{12}</m> along with the ordered pair <m>(36,-1)</m> in the equation <m>y-y_1=m(x-x_1)</m> to determine the equation of the line.
+                <md>
+                  <mrow>y-(-1)\amp=-\frac{5}{12}(x-36)</mrow>
+                  <mrow>y+1\amp=-\frac{5}{12}x+15</mrow>
+                  <mrow>y\amp=-\frac{5}{12}+14</mrow>
+                </md>
+                So the equation of the line is <m>y=-\frac{5}{12}x+14</m>.  Checks.
+              </p>
+            </li>
+            <li>
+              <p>
+                We begin by determining the slope of the line.
+                <me>(x_1,y_1) \text{ is } (5,-6) \text{ and } (x_2,y_2) \text{ is } (-7,-2)</me>
+                <md>
+                  <mrow>m\amp=\frac{y_2-y_1}{x_1-x_1}</mrow>
+                  <mrow>\amp=\frac{-2-(-6)}{-7-5}</mrow>
+                  <mrow>\amp=\frac{4}{-12}</mrow>
+                  <mrow>\amp=-\frac{1}{3}</mrow>
+                </md>
+                We can use the slope of <m>-\frac{1}{3}</m> along with the ordered pair <m>(5,-6)</m> in the equation <m>y-y_1=m(x-x_1)</m> to determine the equation of the line.
+                <md>
+                  <mrow>y-(-6)\amp=-\frac{1}{3}(x-5)</mrow>
+                  <mrow>y+6\amp=-\frac{1}{3}x+\frac{5}{3}</mrow>
+                  <mrow>y\amp=-\frac{1}{3}x+\frac{5}{3}-\frac{18}{3}</mrow>
+                  <mrow>y\amp=-\frac{1}{3}x-\frac{13}{3}</mrow>
+                </md>
+                So the equation of the line seems to be <m>y=-\frac{1}{3}x-\frac{13}{3}</m>.  Hmmm ... let's check the point <m>(-7,-2)</m>.
+                <md>
+                  <mrow>-2\amp=-\frac{1}{3} \cdot -7-\frac{13}{3}?</mrow>
+                  <mrow>-2\amp=\frac{7}{3}-\frac{13}{3}?</mrow>
+                  <mrow>-2\amp=-\frac{6}{3} \checkmark</mrow>
+                </md>
+                Well I'll be darned, the equation of the line really is <m>y=-\frac{1}{3}x-\frac{13}{3}</m>.
+              </p>
+            </li>
+          </ol>
+        </solution>
+      </exercise>
+
+      <exercise xml:id="workshop-lines-hvpp-exercises">
+        <title>Parallel lines/Perpendicular lines/Vertical and horizontal lines</title>
+        <statement>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  State the equations of the vertical and horizontal lines that pass through the point <m>(-7,25)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  What are the slopes of lines that are parallel to the line with equation <m>-6x+8y=12</m>?  What are the slopes of lines perpendicular to those lines?
+                </p>
+              </li>
+              <li>
+                <sidebyside widths="47% 47%">
+                  <p>
+                    Determine the equations of the lines that pass through the point <m>(3,5)</m> and are, respectively, parallel to and perpendicular to the line graphed in <xref ref="workshop-lines-exercises-perpendicular-graph">Figure</xref>.  State each equation in slope-intercept form.
+                  </p>
+                  <figure xml:id="workshop-lines-exercises-perpendicular-graph">
+                    <caption>Determine the equation of ...</caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-6.7:6.7] {-(1/2)*x};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+                    </figure>
+                </sidebyside>
+              </li>
+              <li>
+                <p>
+                  Determine the equation of the line that passes through the point <m>(9,-2)</m> and is perpendicular to the line with equation <m>y=14</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determine the equation of the line that passes through the point <m>(-3,14)</m> and is perpendicular to the line with equation <m>12x-4y=18</m>.   State equation in slope-intercept form.
+                </p>
+              </li>
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+        <solution>
+          <ol>
+            <li>
+              <p>
+                The equation of the vertical line is <m>y=25</m> and the equation of the horizontal line is <m>x=-7</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                We begin by writing the equation <m>-6x+8y=12</m> in slope-intercept form.
+                <md>
+                  <mrow>-6x+8y\amp=12</mrow>
+                  <mrow>8y\amp=6x+12</mrow>
+                  <mrow>\frac{1}{8} \cdot (8y) \amp=\frac{1}{8} \cdot (6x+12)</mrow>
+                  <mrow>y\amp=\frac{3}{4}x+\frac{3}{2}</mrow>
+                </md>
+              </p>
+              <p>
+                We can tell from the last equation that the slope of the line <m>-6x+8y=12</m> is <m>\frac{3}{4}</m>.  So lines parallel to <m>-6x+8y=12</m> all have slopes of <m>\frac{3}{4}</m> and lines perpendicular to those lines have slopes of <m>-\frac{4}{3}</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The line graphed in <xref ref="workshop-lines-exercises-perpendicular-graph">Figure</xref> has a slope of <m>-\frac{1}{2}</m> so lines parallel to that line have slopes of <m>-\frac{1}{2}</m> and lines perpendicular to it have slopes of <m>2</m>.
+              </p>
+              <p>
+              </p>
+              <p>
+                Using the slope of <m>-\frac{1}{2}</m> and the ordered pair <m>(3,5)</m> in the equation <m>y-y_1=m(x-x_1)</m> we derive the equation of the described parallel line as follows.
+                <md>
+                  <mrow>y-5\amp=-\frac{1}{2}(x-3)</mrow>
+                  <mrow>y-5\amp=-\frac{1}{2}x+\frac{3}{2}</mrow>
+                  <mrow>y\amp=-\frac{1}{2}x+\frac{13}{2}</mrow>
+                </md>
+              </p>
+              <p>
+                Using the slope of <m>2</m> and the ordered pair <m>(3,5)</m> in the equation <m>y-y_1=m(x-x_1)</m> we derive the equation of the described perpendicular line as follows.
+                <md>
+                  <mrow>y-5\amp=2(x-3)</mrow>
+                  <mrow>y-5\amp=2x-6</mrow>
+                  <mrow>y\amp=2x-1</mrow>
+                </md>
+              </p>
+              <sidebyside widths="47% 47%">
+                <p>
+                  The two new lines are shown in <xref ref="workshop-lines-exercises-perpendicular-graph-solution">Figure</xref> along with the given line.  They are indeed parallel to or perpendicular to the given line.
+                </p>
+                <figure xml:id="workshop-lines-exercises-perpendicular-graph-solution">
+                    <caption>Visual check</caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}[axis equal image]
+                                \addplot[primarycurve,domain=-0.2:6.7,color=blue] {(13/2)-(1/2)*x};
+                                \addplot[primarycurve,domain=-6.7:6.7] {-(1/2)*x};
+                                \addplot[primarycurve,domain=-2.8:3.8,color=gray] {-1+2*x};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+                    </figure>
+              </sidebyside>
+            </li>
+            <li>
+              <p>
+                The line <m>y=14</m> is horizontal, so any line perpendicular to it is vertical.  Hence, the line that passes through the point <m>(9,-2)</m> and is perpendicular to the line <m>y=14</m> has the equation <m>x=9</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                We begin by writing the equation <m>12x-4y=18</m> in slope-intercept form.
+                <md>
+                  <mrow>12x-4y\amp=18</mrow>
+                  <mrow>-4y\amp=-12x+18</mrow>
+                  <mrow>-\frac{1}{4} \cdot (-4y)\amp=-\frac{1}{4} \cdot (-12x+18)</mrow>
+                  <mrow>y\amp=3x-\frac{9}{2}</mrow>
+                </md>
+              </p>
+              <p>
+                We can tell from the last equation that the slope of the line <m>12x-4y=18</m> is <m>3</m>.  So any line perpendicular to <m>12x-4y=18</m> has a slope of <m>-\frac{1}{3}</m>.  Using the new slope along with the ordered pair <m>(-3,14)</m> in the point-slope equation we derive the equation of the requested line thus:
+                <md>
+                  <mrow>y-y_1\amp=m(x-x_1)</mrow>
+                  <mrow>y-14\amp=-\frac{1}{3}(x-(-3))</mrow>
+                  <mrow>y-14\amp=-\frac{1}{3}x-1</mrow>
+                  <mrow>y\amp=-\frac{1}{3}x+13</mrow>
+                </md>
+              </p>
+            </li>
+          </ol>
+        </solution>
+      </exercise>
+
+    </exercises>
+
+</section>

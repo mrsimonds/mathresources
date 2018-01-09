@@ -9,7 +9,7 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-desmos-linear-equations-line-point-slope">
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-desmos-linear-equations-line-slope-intercept">
     <title>Slope and the slope-intercept form of linear equations</title>
 
     <desmos desmos="jbaagrgo8m" />

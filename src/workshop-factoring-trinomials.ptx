@@ -13,17 +13,17 @@
     <title>Factoring trinomials</title>
 
     <exercises>
-    <title>Examples and Exercises</title>
+    <title>Written Examples</title>
     
           <exercise>
-            <title>Examples of factoring trinomials with leading coefficients of <m>1</m></title>
+            <title>Factoring trinomials with leading coefficients of <m>1</m></title>
                 <statement>
                   <p>
                     Factoring a trinomial of form <m>x^2+bx+c</m>, where <m>b</m> and <m>c</m> are integers, is essentially the reversal of a FOIL process.  For this reason, we can develop a strategy by investigating a FOIL expansion.  Let's expand <m>(x+4)(x+6)</m>.                   
                    </p>
                    <md>
                     <mrow>(x+4)(x+6)\amp=x^2+6x+4x+24</mrow>
-                    <mrow>\amp=x^2+10x+40</mrow>
+                    <mrow>\amp=x^2+10x+24</mrow>
                   </md>
                   <p>
                     Let's observe that the linear coefficient, <m>10</m>, is the sum of <m>4</m> and <m>6</m> whereas the constant term, <m>24</m>, is the product of <m>4</m> and <m>6</m>.  Since we expanded <m>(x+4)(x+6)</m>, we can infer that finding the constants in a factorization of trinomials of form <m>x^2+bx+c</m> is dependent upon determining two numbers that sum to <m>b</m> and multiply to <m>c</m>.
@@ -92,44 +92,7 @@
                 </exercise>
 
           <exercise>
-            <title>Practice exercises on factoring trinomials with leading coefficients of <m>1</m> </title>
-                  <statement>
-                    <p>
-                      Factor each trinomial.  Check your answer by expanding the factorization.  If the trinomial cannot be factored, state that it is prime.
-                    <ol cols="2">
-                      <li><m>x^2+6x+5</m></li>
-                      <li><m>t^2-6t+8</m></li>
-                      <li><m>x^2+8x+4</m></li>
-                      <li><m>y^2-14y-32</m></li>
-                      <li><m>x^2+6x-20</m></li>
-                      <li><m>x^2+15x-100</m></li>
-                      <li><m>w^2-18w+45</m></li>
-                      <li><m>x^2+21x+80</m></li>
-                      <li><m>b^2-9b-400</m></li>
-                    </ol>
-                  <p></p></p>
-                    
-                  
-                  </statement>
-                  <solution>
-                    <p>
-                     <ol>
-                      <li><m>x^2+6x+5=(x+2)(x+3)</m></li>
-                      <li><m>t^2-6t+8=(t-2)(t-4)</m></li>
-                      <li><m>x^2+8x+4</m> is prime.</li>
-                      <li><m>y^2-14y-32=(y-16)(y+2)</m></li>
-                      <li><m>x^2+6x-20</m> is prime.</li>
-                      <li><m>x^2+15x-100=(x+20)(x-5)</m></li>
-                      <li><m>w^2-18w+45=(w-15)(w-3)</m></li>
-                      <li><m>x^2+21x+80</m> is prime</li>
-                      <li><m>b^2-9b-400=(b-25)(b+16)</m></li>
-                    </ol>
-                  </p>
-                  </solution>
-          </exercise>
-
-          <exercise>
-            <title>Examples of factoring by grouping</title>
+            <title>Factoring by grouping</title>
                 <statement>
                   <p>
                     The expressions that are factored in this set of examples are not trinomials - they all have one too many terms.  The reason we are exploring this skill is that it is a useful process when factoring trinomials where the leading coefficients isn't <m>1</m>.
@@ -169,11 +132,96 @@
                   Before closing, let's note that <m>7w^2-2w+7w-2</m> simplifies to <m>7w^2+5w-2</m>.  This gives us some insight into how the factoring by grouping process will be useful when factoring trinomials where the leading coefficient isn't <m>1</m>.
                 </p>
                 </statement>
-
           </exercise>
 
           <exercise>
-            <title>Practice exercises on factoring by grouping</title>
+            <title>Factoring trinomials where the leading coefficients are not <m>1</m></title>
+            <statement>
+              <p>
+                When factoring trinomials it is important to first look for factors common to all three terms.  While we won't lead with an example of this type, it's always good to remind ourselves of this.  Some of the problems in the your next problem set are all but impossible to resolve if you omit this step.
+              </p>
+              <p>
+                That said, our first few examples are going to deal with trinomials of form <m>ax^2+bx+c</m> where 
+                <m>a\neq1</m>.  We are going to use what is known as the <m>ac</m>-method to factor.  The initial task is to determine two factors of the product <m>ac</m> that sum to <m>b</m>.  We will then rewrite the expression using that factor pair to split the linear term into two terms and factor the result by grouping.  Hopefully that will make more sense when you see some examples!
+              </p>
+              <p>
+                Let's start by factoring <m>6x^2+7x-5</m>.  Our initial task is to find a factor pair of <m>-30</m> <m>(ac)</m> that sums to <m>7</m>.  The pair that works is <m>-3</m> and <m>10</m>.  Let's precede with the strategy outlined above.
+              </p>
+              <p>
+                <md>
+                  <mrow>6x^2+7x-5\amp=6x^2-3x+10x-5</mrow>
+                  <mrow>\amp=3x(2x-1)+5(2x-1)</mrow>
+                  <mrow>\amp=(2x-1)(3x+5)</mrow>
+                </md>
+              </p>
+              <p>
+                Let's now factor <m>3x^2+16xy-12y^2</m>.  Our first objective is to determine two factors of <m>-36</m> that sum to <m>16</m>.  The pair that works is <m>18</m> and <m>-2</m>.  Proceeding to our factoring by grouping we have:
+                <md>
+                  <mrow>3x^2+16xy-12y^2\amp=3x^2+18xy-2xy-12y^2</mrow>
+                  <mrow>\amp=3x(x+6y)-2y(x+6y)</mrow>
+                  <mrow>\amp=(x+6y)(3x-2y)</mrow>
+                </md>
+              </p>
+              <p>
+                Let's try one more:  <m>24w^4-42w^3z+9w^2z^2</m>.  The first thing we should notice is that there are common factors to all three terms.  Three evenly divides into each term, and each term contains at least two factors of <m>w</m>, so we can factor <m>3w^2</m> for the expression.  
+                <me>24w^4-42w^3z+9w^2z^2=3w^2(8w^2-14wz+3z^2)</me> 
+              </p>
+              <p>
+                Turning our attention to the expression in the last set of parentheses, we need to determine a factor pair of 24 that sums to -14.  The factor pair is <m>-12</m> and <m>-2</m>.  This gives us:
+                <md>
+                  <mrow>24w^4-42w^3z+9w^2z^2\amp=3w^2(8w^2-14wz+3z^2)</mrow>
+                  <mrow>\amp=3w^2(8w^2-12wz-2wz+3z^2)</mrow>
+                  <mrow>\amp=3w^2[4w(2w-3z)-z(2w-3z)]</mrow>
+                  <mrow>\amp=3w^2(2w-3z)(4w-z)</mrow>
+                </md>
+              </p>
+            </statement>
+          </exercise>
+
+</exercises>
+
+<exercises>
+    <title>Practice Exercises</title>
+    
+          <exercise>
+            <title>Factoring trinomials with leading coefficients of <m>1</m> </title>
+                  <statement>
+                    <p>
+                      Factor each trinomial.  Check your answer by expanding the factorization.  If the trinomial cannot be factored, state that it is prime.
+                    <ol cols="2">
+                      <li><m>x^2+6x+5</m></li>
+                      <li><m>t^2-6t+8</m></li>
+                      <li><m>x^2+8x+4</m></li>
+                      <li><m>y^2-14y-32</m></li>
+                      <li><m>x^2+6x-20</m></li>
+                      <li><m>x^2+15x-100</m></li>
+                      <li><m>w^2-18w+45</m></li>
+                      <li><m>x^2+21x+80</m></li>
+                      <li><m>b^2-9b-400</m></li>
+                    </ol>
+                  <p></p></p>
+                    
+                  
+                  </statement>
+                  <solution>
+                    <p>
+                     <ol>
+                      <li><m>x^2+6x+5=(x+2)(x+3)</m></li>
+                      <li><m>t^2-6t+8=(t-2)(t-4)</m></li>
+                      <li><m>x^2+8x+4</m> is prime.</li>
+                      <li><m>y^2-14y-32=(y-16)(y+2)</m></li>
+                      <li><m>x^2+6x-20</m> is prime.</li>
+                      <li><m>x^2+15x-100=(x+20)(x-5)</m></li>
+                      <li><m>w^2-18w+45=(w-15)(w-3)</m></li>
+                      <li><m>x^2+21x+80</m> is prime</li>
+                      <li><m>b^2-9b-400=(b-25)(b+16)</m></li>
+                    </ol>
+                  </p>
+                  </solution>
+          </exercise>
+
+          <exercise>
+            <title>Factoring by grouping</title>
                 <statement>
                   <p>
                     Factor each of the following expressions.  Check each result using the FOIL technique.
@@ -267,52 +315,9 @@
                   </ol></p>
                 </solution>
           </exercise>
+         
           <exercise>
-            <title>Examples of factoring trinomials where the leading coefficients are not <m>1</m></title>
-            <statement>
-              <p>
-                When factoring trinomials it is important to first look for factors common to all three terms.  While we won't lead with an example of this type, it's always good to remind ourselves of this.  Some of the problems in the your next problem set are all but impossible to resolve if you omit this step.
-              </p>
-              <p>
-                That said, our first few examples are going to deal with trinomials of form <m>ax^2+bx+c</m> where 
-                <m>a\neq1</m>.  We are going to use what is known as the <m>ac</m>-method to factor.  The initial task is to determine two factors of the product <m>ac</m> that sum to <m>b</m>.  We will then rewrite the expression using that factor pair to split the linear term into two terms and factor the result by grouping.  Hopefully that will make more sense when you see some examples!
-              </p>
-              <p>
-                Let's start by factoring <m>6x^2+7x-5</m>.  Our initial task is to find a factor pair of <m>-30</m> <m>(ac)</m> that sums to <m>7</m>.  The pair that works is <m>-3</m> and <m>10</m>.  Let's precede with the strategy outlined above.
-              </p>
-              <p>
-                <md>
-                  <mrow>6x^2+7x-5\amp=6x^2-3x+10x-5</mrow>
-                  <mrow>\amp=3x(2x-1)+5(2x-1)</mrow>
-                  <mrow>\amp=(2x-1)(3x+5)</mrow>
-                </md>
-              </p>
-              <p>
-                Let's now factor <m>3x^2+16xy-12y^2</m>.  Our first objective is to determine two factors of <m>-36</m> that sum to <m>16</m>.  The pair that works is <m>18</m> and <m>-2</m>.  Proceeding to our factoring by grouping we have:
-                <md>
-                  <mrow>3x^2+16xy-12y^2\amp=3x^2+18xy-2xy-12y^2</mrow>
-                  <mrow>\amp=3x(x+6y)-2y(x+6y)</mrow>
-                  <mrow>\amp=(x+6y)(3x-2y)</mrow>
-                </md>
-              </p>
-              <p>
-                Let's try one more:  <m>24w^4-42w^3z+9w^2z^2</m>.  The first thing we should notice is that there are common factors to all three terms.  Three evenly divides into each term, and each term contains at least two factors of <m>w</m>, so we can factor <m>3w^2</m> for the expression.  
-                <me>24w^4-42w^3z+9w^2z^2=3w^2(8w^2-14wz+3z^2)</me> 
-              </p>
-              <p>
-                Turning our attention to the expression in the last set of parentheses, we need to determine a factor pair of 24 that sums to -14.  The factor pair is <m>-12</m> and <m>-2</m>.  This gives us:
-                <md>
-                  <mrow>24w^4-42w^3z+9w^2z^2\amp=3w^2(8w^2-14wz+3z^2)</mrow>
-                  <mrow>\amp=3w^2(8w^2-12wz-2wz+3z^2)</mrow>
-                  <mrow>\amp=3w^2[4w(2w-3z)-z(2w-3z)]</mrow>
-                  <mrow>\amp=3w^2(2w-3z)(4w-z)</mrow>
-                </md>
-              </p>
-            </statement>
-          </exercise>
-
-          <exercise>
-            <title>Practice exercises of factoring trinomials where the leading coefficients are not <m>1</m></title>
+            <title>Factoring trinomials where the leading coefficients are not <m>1</m></title>
             <statement>
               <p>
                 Completely factor each of the following expressions.  Check each result by expanding the factored form.
@@ -412,7 +417,6 @@
             </p>
             </solution>
           </exercise>
-
 
 </exercises>
 

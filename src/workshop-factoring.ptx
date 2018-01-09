@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-factoring">
+    <title>Factoring</title>
+
+    <exercises>
+      <title>Pretest - what's your current skill set?</title>
+      
+        <exercise>
+          <title>Greatest common factor</title>
+          <statement>
+            <p>
+              Follow this link to see some written examples: <xref ref="exercise-factoring-GCF-examples">Written Examples</xref>.
+            </p>
+            <p>
+              Factor the greatest common factor from each polynomial.
+              <ol>
+                <li><m>4x^2-10xy+16x^2y^2</m></li>
+                <li><m>-12a^2b^3c^4+18ab^3c^5-60ab^2c^4</m></li>
+                <li><m>45x^7y^11+75x^6y^12+15x^6y^9</m></li>
+              </ol>
+                <p>
+                </p>
+            </p>
+          </statement>
+          <solution>
+             <p>
+              <ol>
+                <li><m>4x^2-10xy+16x^2y^2=2x(2x-5y+8xy^2)</m></li>
+                <li><m>-12a^2b^3c^4+18ab^3c^5-60ab^2c^4=-6ab^2c^4(2ab-3bc+10)</m></li>
+                <li><m>45x^7y^{11}-75x^6y^{12}+15x^6y^9=15x^6y^9(3xy^2-5y^3+1)</m></li>
+              </ol>
+            </p>
+          </solution>
+
+        </exercise>
+
+        <exercise>
+          <title>Factoring trinomials with leading coefficients of <m>1</m></title>
+          <statement>
+            <p>
+              Follow this link to see some written examples: <xref ref="exercise-factoring-trinomials-leading-coefficient-one-examples">Written Examples</xref>.
+            </p>.
+            <p>
+              Factor each trinomial.
+              <ol>
+                <li><m>x^2-10x-24</m></li>
+                <li><m>x^2+11x+30</m></li>
+                <li><m>y^2-12y+36</m></li>
+                <li><m>w^2+12w+20</m></li>
+                <li><m>w^2+21w+80</m></li>
+              </ol>
+              <p>
+              </p>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <ol>
+                <li><m>x^2-10x-24=(x-12)(x+2)</m></li>
+                <li><m>x^2+11x+30=(x+6)(x+5)</m></li>
+                <li><m>y^2-12y+36=(y-6)(y-6)</m></li>
+                <li><m>w^2+12w+20</m> is prime.</li>
+                <li><m>w^2+21w+80=(w+15)(w+6)</m></li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <title>Factoring by grouping</title>
+          <statement>
+            <p>
+              Follow this link to see some written examples: <xref ref="exercise-factoring-grouping-examples">Written Examples</xref>.
+            </p>
+            <p>
+              Factor each polynomial by grouping.
+              <ol>
+                <li><m>x^2y+4x-3xy^2-12y</m></li>
+                <li><m>12x^2+8x-21x-14</m></li>
+                <li><m>4a^2b-8ab^2+a-2b</m></li>
+              </ol>
+              <p>
+              </p>
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              <ol>
+                <li><m>x^2y+4x-3xy^2-12y=(xy+4)(x-3y)</m></li>
+                <li><m>12x^2+8x-21x-14=(3x+2)(4x-7)</m></li>
+                <li><m>4a^2b-8ab^2+a-2b=(a-2b)(4ab+1)</m></li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <title>Factoring trinomials where the leading coefficients are not <m>1</m></title>
+          <statement>
+            <p>
+              Follow this link to see some written examples: <xref ref="exercise-factoring-trinomials-leading-coefficient-not-one-examples">Written Examples</xref>.
+            </p>
+            <p>
+              Factor each trinomial.
+              <ol>
+                <li><m>4x^2-17x-15</m></li>
+                <li><m>6x^2+17x+5</m></li>
+                <li><m>2x^2+5x-4</m></li>
+                <li><m>3x^2-10x-8</m></li>
+                <li><m>16x^2-x+1</m></li>
+              </ol>
+              <p>
+              </p>
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              <ol>
+                <li><m>4x^2-17x-15=(4x+3)(x-5)</m></li>
+                <li><m>6x^2+17x+5=(2x+5)(3x+1)</m></li>
+                <li><m>2x^2+5x-4</m> is prime.</li>
+                <li><m>3x^2-10x-8=(x-4)(3x+2)</m></li>
+                <li><m>16x^2-8x+1=(4x-1)(4x-1)</m></li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <title>Factoring binomials</title>
+          <statement>
+            <p>
+              Follow this link to see some written examples of difference of squares: <xref ref="exercise-factoring-difference-of-squares-examples">Written Examples</xref>.
+            </p>
+            <p>
+              Follow this link to see some written examples of sum and difference of cubes: <xref ref="exercise-factoring-sum-difference-of-cubes-examples">Written Examples</xref>.
+            </p>
+            <p>
+              Follow this link to read about sum of squares: <xref ref="exercise-factoring-sum-of-squares-examples">Written Examples</xref>.
+            </p>
+            <p>
+              Factor each binomial.
+              <ol>
+                <li><m>x^3+8</m></li>
+                <li><m>w^2-64</m></li>
+                <li><m>y^2+49</m></li>
+                <li><m>1-27x^3</m></li>
+                <li><m>100-9y^{10}</m></li>
+              </ol>
+              <p>
+              </p>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <ol>
+                <li><m>x^3+8=(x+2)(x^2-2x+4)</m></li>
+                <li><m>w^2-64=(w-8)(w+8)</m></li>
+                <li><m>y^2+49</m> is prime.</li>
+                <li><m>1-27x^3=(1-3x)(1+3x+9x^2)</m></li>
+                <li><m>100-9y^{10}=(10-3y^5)(10+3y^5)</m></li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <title>General factoring</title>
+          <statement>
+            <p>
+              Follow this link to see a factor plan: <xref ref="exercise-factoring-general-strategy-examples">Written Examples</xref>.
+            </p>
+            <p>
+              Completely factor each polynomial.
+              <ol>
+                <li><m>w^2-3w-88</m></li>
+                <li><m>3x^2-54x+240</m></li>
+                <li><m>3x^2-11x-20</m></li>
+                <li><m>3x^3-81y^{15}</m></li>
+                <li><m>4x^2-16y^{12}</m></li>
+                <li><m>4x^2+16y^{12}</m></li>
+                <li><m>20x^2-3xy-2y^2</m></li>
+                <li><m>1+125w^9</m></li>
+                <li><m>xy^4+6x^2y^3-40x^3y^2</m></li>
+
+              </ol>
+              <p>
+              </p>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <ol>
+                <li><m>w^2-3w-88=(w-11)(w+8)</m></li>
+                <li><m>3x^2-54x+240=3(x-10)(x-2)</m></li>
+                <li><m>3x^2-11x-20=(3x+4)(x-5)</m></li>
+                <li><m>3x^3-81y^{15}=3(x-3y^5)(x^2+3xy^5+9y^{10})</m></li>
+                <li><m>4x^2-16y^{12}=4(x-2y^6)(x+2y^6)</m></li>
+                <li><m>4x^2+16y^{12}=4(x^2+4y^{12})</m></li>
+                <li><m>20x^2-3xy-2y^2=(4x+y)(5x-2y)</m></li>
+                <li><m>1+125w^9=(1+5w^3)(1-5w^3+25w^6)</m></li>
+                <li><m>xy^4+6x^2y^3-40x^3y^2=xy^2(y-4x)(y+10x)</m></li>
+              </ol>
+            </p>
+          </solution>
+
+        </exercise>
+
+
+    </exercises>
+
+    <exercises>
+    <title>Written Examples</title>
+
+          <exercise xml:id="exercise-factoring-GCF-examples">
+            <title>Greatest common factor</title>
+            <statement>
+              <P>
+                Factoring a polynomial is the reverse action to expanding the product of two or more polynomials.  For example, using the FOIL expansion we know that <me>(x-3)(x+7)=x^2+4x-21</me>.  So if we were asked to factor <m>x^2+4x-21</m>, the correct response would be 
+                <me>x^2+4x-21=(x-3)(x+7)</me>. 
+              </P>
+              <p>
+                The process used to determine the factored form of a given polynomial is dependent upon the nature of the polynomial.  For example, the strategies used for trinomials (polynomials with three terms) are completely different than the strategies used for binomials (polynomials with two terms).
+              </p>
+              <p>
+                One thing that is common to all factorizations is that the first step is to identify the Greatest Common Factor (GCF) of the terms in the polynomial and if the GCF is not <m>1</m> proceed to factor out the GCF. 
+              </p>
+              <p>
+                For example, we can see that <m>2</m> is a factor of both terms of the expression <m>2x+10</m>, so the first step in factoring <m>2x+10</m> is to "take out" the factor of <m>2</m>.  (Side note:  the author prefers the phrase "take out the factor" over the phrase "factor out the factor"; using the word "factor" as both a verb and a noun in the same sentence just seems wrong.)  Back to factoring:
+                <me>2x+10=2(x+5)</me>.
+              </p>
+              <p>
+                Determining the GCF for variable factors is fairly straight forward.  A strategy follows.
+                <ol label="1">
+                  <li>
+                    Any variable that appears in every term is in the GCF and only variables that occur in every term are in the GCF.
+                  </li>
+                  <li>
+                    The exponent on any given variable in the GCF is the smallest exponent that occurs on the variable in any given term.  When making this determination, we need to recognize that an expression such as "<m>x</m>" can be regarded as having an exponent of <m>1</m>.
+                 </li>
+               </ol>
+              </p>
+              <p>
+                Let's determine and take out the GCF of the expression <me>x^3y^3z^7+x^4y-x^7yz</me>.  The variables that occur in all three terms are <m>x</m> and <m>y</m>.  The smallest exponent on <m>x</m> is <m>3</m> and the smallest exponent on <m>y</m> is (the hidden) <m>1</m>, so the GCF is <m>x^3y</m>.  Taking out the GCF we have <me>x^3y^3z^7+x^4y-x^7yz=x^3y(y^2z^7+x-x^4z)</me>.
+              </p> 
+              <p>
+                The thought process I used to determine the factor <m>(y^2z^7+x-x^4z)</m> is outlined below.
+                <ol label="1">
+                  <li>
+                    I took out three factors of <m>x</m> and one factor of <m>y</m> from the first term, <m>x^3y^3z^7</m>.  So what was left behind were no factors of <m>x</m>, two factors of <m>y</m>, and all seven factors of <m>z</m>.
+                  </li>
+                  <li>
+                    I took out three factors of <m>x</m> and one factor of <m>y</m> from the middle term, <m>x^4y</m>, so all that was left behind was a single factor of <m>x</m>.
+                  </li>
+                  <li>
+                    I took out three factors of <m>x</m> and one factor of <m>y</m> from the last term, <m>x^7yz</m>, so I left behind four factors <m>x</m> and the lone factor of <m>z</m>.
+                  </li>
+                </ol>
+                  One of the great things about factor problems is that you can always check your answer by expansion.  That is, you can confirm the equality <me>x^3y(y^2z^7+x-x^4z)=x^3y^3z^7+x^4y-x^7yz</me>.
+              </p>
+              <p>
+                When it comes to determining the GCF of the coefficients of the terms, the numbers are usually small enough that you can just "figure it out."  Remember that your goal is to determine the greatest integer that evenly divides into each coefficient.  When we say "evenly divide" we mean that there is no remainder after the division is performed. Once you think you have determined the GCF, take it out (along with relevant variable factors) and make sure that there are no remaining common factors to each of the coefficients.
+              </p>
+              <p>
+                There are some tools you can use to help you determine if certain integers evenly divide into a given integer.   
+              </p>
+              <p>
+                Each of the following statements are "if and only if" statements which I find easier to remember if they are simply stated in the affirmative.  For example, instead of saying "an integer is evenly divisible by <m>2</m> if and only if ends in an even digit" I say "any integer that ends in an even digit is evenly divisible by <m>2</m>."  In addition to that rule, we have the following.
+                <ul>
+                  <li>
+                    If <m>3</m> evenly divides into the sum of the digits, then <m>3</m> evenly divides into the original number.  For example, I know that <m>3</m> evenly divides into <m>11,874</m> because <m>1+1+8+7+4=21</m> and <m>3</m> evenly divides into <m>21</m>.  Conversely, I know that <m>3</m> does not evenly divide into <m>2,437</m> because <m>2+4+3+7=16</m> and <m>3</m> does not evenly divide into <m>16</m>.
+                  </li>
+                  <li>
+                    If <m>4</m> evenly divides into the the last two digits of the number, then it evenly divides into the entire number.  For example, <m>4</m> evenly divides in <m>1,302,824</m> but <m>4</m> does not evenly divide into <m>226,734</m>.
+                  </li>
+                  <li>
+                    Numbers that end in <m>0</m> or <m>5</m> are evenly divisible by <m>5</m>.
+                  </li>
+                  <li>
+                    If <m>9</m> evenly divides into the sum of the digits, then <m>9</m> evenly divides into the original number.  For example, I know that <m>9</m> evenly divides into <m>41,274</m> because <m>4+1+2+7+4=18</m> and <m>9</m> evenly divides into <m>18</m>.  Conversely, I know that <m>9</m> does not evenly divide into <m>11,874</m> because <m>1+1+8+7+4=21</m> and <m>9</m> does not evenly divide into <m>21</m>.
+                  </li>
+                </ul>
+              </p>
+              <p>
+                While there are tricks for other numbers, most people find them too cumbersome to remember.  If you're good at remembering rules, you might try searching for them online.
+              </p>
+              <p>
+                When the first term of the polynomial has a negative coefficient, we tend to factor the negative sign along with the GCF.  For example, it would be standard to factor <m>-12x^2y+24x^2+18x^3</m> as follows. <me>-12x^2y+24x^2+18x^3=-6x^2(2y-4-3x)</me>.
+                One final note.  A very common mistake is to write out too few terms when factoring an expression where the GCF happens to be a term of the original expression.  For example, consider the polynomial <m>6x^3+8x^2+2x</m>.  Hopefully you recognize that the GCF of the terms is <m>2x</m>.  With that, a common error is to write <me>6x^3+8x^2+2x=2x(3x^2+4x)</me>.  One way to recognize that can't be correct is to expand the proposed factorization.  <me>2x(3x^2+4x)=6x^3+8x^2</me>  Uh oh - we're missing a term - where's "<m>+2x</m>"?  We forgot to save a place for it!  Whenever you take out the GCF, the expression left behind in parentheses needs to have as many terms as the original polynomial.  In this case, we forgot a term of <m>+1</m> so that the last term in the expansion is <m>+2x</m>.  That is:
+                <me>6x^3+4x^2+2x=2x(3x^2+4x+1)</me>.
+              </p>
+
+
+              <p>
+                Click here to access some practice exercises: <xref ref="exercise-factoring-GCF-exercises">Practice Exercises</xref>
+              </p>
+            </statement>
+          </exercise>
+    
+          <exercise xml:id="exercise-factoring-trinomials-leading-coefficient-one-examples">
+            <title>Factoring trinomials with leading coefficients of <m>1</m></title>
+                <statement>
+                  <p>
+                    Factoring a trinomial of form <m>x^2+bx+c</m>, where <m>b</m> and <m>c</m> are integers, is essentially the reversal of a FOIL process.  For this reason, we can develop a strategy by investigating a FOIL expansion.  Let's expand <m>(x+4)(x+6)</m>.                   
+                   </p>
+                   <md>
+                    <mrow>(x+4)(x+6)\amp=x^2+6x+4x+24</mrow>
+                    <mrow>\amp=x^2+10x+24</mrow>
+                  </md>
+                  <p>
+                    Let's observe that the linear coefficient, <m>10</m>, is the sum of <m>4</m> and <m>6</m> whereas the constant term, <m>24</m>, is the product of <m>4</m> and <m>6</m>.  Since we expanded <m>(x+4)(x+6)</m>, we can infer that finding the constants in a factorization of trinomials of form <m>x^2+bx+c</m> is dependent upon determining two numbers that sum to <m>b</m> and multiply to <m>c</m>.
+                  </p>
+                    From the factor pairs and sums shown in <xref ref="table-trinomial-1">Table</xref>, we can infer the following factorizations. 
+                  <p>
+
+                  </p>
+                  <sidebyside widths="50% 50%" margins="0%">
+                    <p>
+                    <md>
+                      <mrow>x^2+7x+6\amp=(x+1)(x+6)</mrow>
+                      <mrow>x^2+5x+6\amp=(x+2)(x+3)</mrow>
+                      <mrow>x^2-7x+6\amp=(x-1)(x-6)</mrow>
+                      <mrow>x^2-5x+6\amp=(x-2)(x-3)</mrow>
+                    </md> 
+                    </p>
+                    
+
+                    <table xml:id="table-trinomial-1">
+                      <caption>Factor pairs of <m>6</m></caption>
+                        <tabular>
+                          <col halign="center" />
+                          <col halign="center"/>
+                          <row bottom="medium">
+                            <cell>
+                              <line>factors</line>
+                            </cell>
+                            <cell>
+                              <line>sum</line>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell><m>1,6</m></cell>
+                            <cell><m>7</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>2,3</m></cell>
+                            <cell><m>5</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>-1,-6</m></cell>
+                            <cell><m>-7</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>-2,-3</m></cell>
+                            <cell><m>-5</m></cell>
+                          </row>
+                        </tabular>
+                      </table>
+                    </sidebyside> 
+                    <p>
+                      Just as noteworthy, since the factor pairs shown in <xref ref="table-trinomial-1">Table</xref> form an exhaustive list, we cannot factor any trinomial of form <m>x^2+bx+6</m> where b is not one of the four numbers shown in the sum column.  Such trinomials are said to be prime.  For example, <m>x^2+3x+6</m> is prime.
+                    </p>
+                    <p>
+                    Let's factor <m>x^2-8x+15</m>.  Our first task is to determine a factor pair that multiplies to <m>15</m> and adds to <m>-8</m>.  Since the product is positive and the sum is negative, we are searching for two negative numbers.  The pair that works is <m>-3</m> and <m>-5</m>.  This gives us:
+                    <me>x^2-8x+15=(x-3)(x-5)</me>.
+                    </p>
+                    <p>
+                      Now let's factor <m>w^2-4w-12</m>.  Since our factor pair needs to multiply to a negative value <m>(-12)</m>, one the numbers in the pair must be positive and the other negative.  Let's note that <m>6</m> and <m>2</m> multiply to 12 and have a difference of <m>4</m>.  This can be helpful in determining that the factor pair that multiplies to <m>-12</m> and adds to <m>-4</m> is <m>-6</m> and <m>2</m>.  This gives us <me>w^2-4w-12=(w-6)(w+2)</me>. 
+                    </p> 
+                    <p>
+                      We also could have written the factorization in the reverse order: <me>w^2-4w-12=(w+2)(w-6)</me>.
+                    </p>
+                    <p>
+                      Click here to access some practice exercises: <xref ref="exercise-factoring-trinomials-leading-coefficient-one-exercises">Practice Exercises</xref>
+                    </p>
+                 </statement>
+                </exercise>
+
+          <exercise xml:id="exercise-factoring-grouping-examples">
+            <title>Factoring by grouping</title>
+                <statement>
+                  <p>
+                    The expressions that are factored in this set of examples are not trinomials - they all have one too many terms.  The reason we are exploring this skill is that it is a useful process when factoring trinomials where the leading coefficients isn't <m>1</m>.
+                  </p>
+                  <p>
+                  Let's consider the expression <m>10xy+15x-6y^2-9y</m>.  The factoring by grouping method begins by considering only the first two terms and factoring from them any and all common factors.  In this case we could factor out <m>5x</m> leaving the residual factor <m>(2y+3)</m>.  We now consider the final two terms.  Our goal is to factor out something that also leaves the residual factor <m>(2y+3)</m>.  While it's true that we could factor out <m>3y</m>, that would leave behind <m>(-2y-3)</m>.  What we want to factor out is <m>-3y</m> so that the residual factor is the desired <m>(2y+3)</m>.  Altogether, then, the first step in the process is:<me>10xy+15x-6xy-9y=5x(2y+3)-3y(2y+3)</me>.
+                </p>
+                <p>
+                  The expression now has two terms, with the terms delineated by the subtraction sign.  Each of the terms has a factor of <m>(2y+3)</m>.  Just like we can factor, say, <m>z</m> from the expression 
+                  <m>5xz-3yz</m> resulting in <m>z(5x-3y)</m>, we can factor <m>(2y+3)</m> for the expression
+                  <m>5x(2y+3)-3y(2y+3)</m> resulting in <m>(2y+3)(5x-3y)</m>.
+                </p>
+                <p>
+                  Let's see the process in total:
+                
+                <md>
+                  <mrow>10xy+15x-6y^2-9y\amp=5x(2y+3)-3y(2y+3)</mrow>
+                  <mrow>\amp=(2y+3)(5x-3y)</mrow>
+                </md>
+              </p>
+                <p>
+                  We can use FOIL to check our result.
+                </p>
+                <p>
+                  Let's factor <m>6x^2y-4x^2+12y-8</m>.  We begin by observing that <m>2x^2</m> can be factored from the first two terms while <m>4</m> can be factored from the final two terms.  Heads up!  One of the most common errors made during this process is to forget to put a plus sign in front of the factor of <m>4</m>.  Written correctly, our factorization process is:
+                  <md>
+                    <mrow>6x^2y-4x^2+12y-8\amp=2x^2(3y-2)+4(3y-2)</mrow>
+                    <mrow>\amp=(3y-2)(2x^2+4)</mrow>
+                  </md>
+                </p>
+                <p>
+                  One more example.  Let's factor <m>7w^2-2w+7w-2</m>.  We can see that <m>w</m> can be factored from the first two terms, but there seems to be nothing that can be factored from the final two terms.  When we factor <m>w</m> from the first two terms, the residual factor is <m>(7w-2)</m> which contains the two terms at the rear of our original expression.  The resolution of our dilemma, then, is to factor <m>1</m> away from the final two terms.  We need to remember to put a plus sign in from of that factor of <m>1</m>.  Going through the complete process we have:
+                  <md>
+                    <mrow>7w^2-2w+7w-2\amp=w(7w-2)+1(7w-2)</mrow>
+                    <mrow>\amp=(7w-2)(w+1)</mrow>
+                  </md> 
+                  Before closing, let's note that <m>7w^2-2w+7w-2</m> simplifies to <m>7w^2+5w-2</m>.  This gives us some insight into how the factoring by grouping process will be useful when factoring trinomials where the leading coefficient isn't <m>1</m>.
+                </p>
+                <p>
+                  Click here to access some practice exercises: <xref ref="exercise-factoring-grouping-exercises">Practice Exercises</xref>
+                </p>
+                </statement>
+          </exercise>
+
+          <exercise xml:id="exercise-factoring-trinomials-leading-coefficient-not-one-examples">
+            <title>Factoring trinomials where the leading coefficients are not <m>1</m></title>
+            <statement>
+              <p>
+                When factoring trinomials it is important to first look for factors common to all three terms.  While we won't lead with an example of this type, it's always good to remind ourselves of this.  Some of the problems in the your next problem set are all but impossible to resolve if you omit this step.
+              </p>
+              <p>
+                That said, our first few examples are going to deal with trinomials of form <m>ax^2+bx+c</m> where 
+                <m>a\neq1</m>.  We are going to use what is known as the <m>ac</m>-method to factor.  The initial task is to determine two factors of the product <m>ac</m> that sum to <m>b</m>.  We will then rewrite the expression using that factor pair to split the linear term into two terms and factor the result by grouping.  Hopefully that will make more sense when you see some examples!
+              </p>
+              <p>
+                Let's start by factoring <m>6x^2+7x-5</m>.  Our initial task is to find a factor pair of <m>-30</m> <m>(ac)</m> that sums to <m>7</m>.  The pair that works is <m>-3</m> and <m>10</m>.  Let's precede with the strategy outlined above.
+              </p>
+              <p>
+                <md>
+                  <mrow>6x^2+7x-5\amp=6x^2-3x+10x-5</mrow>
+                  <mrow>\amp=3x(2x-1)+5(2x-1)</mrow>
+                  <mrow>\amp=(2x-1)(3x+5)</mrow>
+                </md>
+              </p>
+              <p>
+                Let's now factor <m>3x^2+16xy-12y^2</m>.  Our first objective is to determine two factors of <m>-36</m> that sum to <m>16</m>.  The pair that works is <m>18</m> and <m>-2</m>.  Proceeding to our factoring by grouping we have:
+                <md>
+                  <mrow>3x^2+16xy-12y^2\amp=3x^2+18xy-2xy-12y^2</mrow>
+                  <mrow>\amp=3x(x+6y)-2y(x+6y)</mrow>
+                  <mrow>\amp=(x+6y)(3x-2y)</mrow>
+                </md>
+              </p>
+              <p>
+                Let's try one more:  <m>24w^4-42w^3z+9w^2z^2</m>.  The first thing we should notice is that there are common factors to all three terms.  Three evenly divides into each term, and each term contains at least two factors of <m>w</m>, so we can factor <m>3w^2</m> for the expression.  
+                <me>24w^4-42w^3z+9w^2z^2=3w^2(8w^2-14wz+3z^2)</me> 
+              </p>
+              <p>
+                Turning our attention to the expression in the last set of parentheses, we need to determine a factor pair of 24 that sums to -14.  The factor pair is <m>-12</m> and <m>-2</m>.  This gives us:
+                <md>
+                  <mrow>24w^4-42w^3z+9w^2z^2\amp=3w^2(8w^2-14wz+3z^2)</mrow>
+                  <mrow>\amp=3w^2(8w^2-12wz-2wz+3z^2)</mrow>
+                  <mrow>\amp=3w^2[4w(2w-3z)-z(2w-3z)]</mrow>
+                  <mrow>\amp=3w^2(2w-3z)(4w-z)</mrow>
+                </md>
+              </p>
+                <p>
+                  Click here to access some practice exercises: <xref ref="exercise-factoring-trinomials-leading-coefficient-not-one-exercises">Practice Exercises</xref>
+                </p>
+            </statement>
+          </exercise>
+
+          <exercise xml:id="exercise-factoring-difference-of-squares-examples">
+            <title>Factoring differences of squares</title>
+                <statement>
+                  <p>
+                    A binomial (two term polynomial) of form <m>a^2-b^2</m> always factors into the product
+                    <m>(a+b)(a-b)</m>.  We can confirm this by applying FOIL to the expression <m>(a+b)(a-b)</m>.
+                    <md>
+                      <mrow>(a+b)(a-b)\amp=a^2-ab+ab-b^2</mrow>
+                      <mrow>\amp=a^2-b^2</mrow>
+                    </md>
+                  </p>
+                   <p>
+                    A few simple examples follow.  As always, we can check our result by expanding the factored expression.
+                    <me>x^2-4=(x+2)(x-2)</me><me>y^2-25=(y+5)(y-5)</me><me>36-x^2=(6+x)(6-x)</me>
+                    Now let's consider a few expressions that don't immediately fit the pattern.  Consider 
+                    <m>x^{10}-16</m>.  Hopefully we are quick to see that <m>16</m> is the square of <m>4</m>.  To use our factor pattern successfully, we need to also recognize that <m>x^{10}</m> is a perfect square, as is any even power of <m>x</m>.  The power-to-a-power rule of exponents relates that <m>(x^m)^n=x^{mn}</m>.  So the power of <m>x</m> we square that results in <m>x^{10}</m> must be half of <m>10</m>, i.e. <m>5</m>.  Putting it all together we have: <me>x^{10}-16=(x^5+4)(x^5-4)</me> Similar examples follow.
+                    <me>y^8-9=(y^4+3)(y^4-3)</me><me>x^{46}-1=(x^{23}+1)(x^{23}-1)</me><me>100-w^{12}=(10+w^6)(10-w^6)</me>
+                   </p>
+                <p>
+                  Click here to access some practice exercises: <xref ref="exercise-factoring-binomials-exercises">Practice Exercises</xref>
+                </p>
+                  
+                 </statement>
+                </exercise>
+
+          <exercise xml:id="exercise-factoring-sum-difference-of-cubes-examples">
+            <title>Factoring sums and differences of cubes </title>
+                  <statement>
+                  <p>
+                    A binomial (two term polynomial) of form <m>a^3-b^3</m> always factors into the product
+                    <m>(a-b)(a^2+ab+b^2)</m>.  We can confirm this by expanding the expression <m>(a-b)(a^2+ab+b^2)</m>.
+                    <md>
+                      <mrow>(a-b)(a^2+ab+b^2)\amp=a^3+a^2b+ab^2-a^2b-ab^2-b^3</mrow>
+                      <mrow>\amp=a^3-b^3</mrow>
+                    </md>
+                  </p>
+                  <p>
+                    Similarly, a binomial of form <m>a^3+b^3</m> always factors into the product
+                    <m>(a+b)(a^2-ab+b^2)</m>.  We can confirm this by expanding the expression <m>(a+b)(a^2-ab+b^2)</m>.
+                    <md>
+                      <mrow>(a+b)(a^2-ab+b^2)\amp=a^3-a^2b+ab^2+a^2b-ab^2-b^3</mrow>
+                      <mrow>\amp=a^3-b^3</mrow>
+                    </md>
+                  </p>
+                   <p>
+                    Let's consider the binomials <m>8x^3+27</m> and <m>8x^3-27</m>.  In both cases, <m>8x^3</m> corresponds to what is identified in the patterns as <m>a^3</m> and <m>27</m> corresponds to what is identified in the pattern as <m>b</m>.  The resultant expressions for <m>a</m>, <m>b</m>, <m>a^2</m>, and <m>b^2</m> and shown in <xref ref="table-special-products-cubes-1">Table</xref> and the factorizations are shown to the left of the table.
+                   </p> 
+                   <sidebyside widths="70% 30%" margins="0%">
+                    <p>
+                      <md>
+                        <mrow>8x^3+27=(2x+3)(4x^2-6x+9)</mrow>
+                        <mrow></mrow>
+                        <mrow>8x^3-27=(2x-3)(4x^2+6x+9)</mrow>
+                      </md>
+                    </p>
+                    
+
+                    <table xml:id="table-special-products-cubes-1">
+                      <caption></caption>
+                        <tabular>
+                          <col halign="center" />
+                          <col halign="center"/>
+                          <row>
+                            <cell>
+                              <m>a^3=8x^3</m>
+                            </cell>
+                            <cell>
+                              <m>b^3=27</m>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell><m>a=2x</m></cell>
+                            <cell><m>b=3</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>a^2=4x^2</m></cell>
+                            <cell><m>b^2=9</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>ab=6x</m></cell>
+                          </row>
+                        </tabular>
+                      </table>
+                    </sidebyside> 
+                    <p>
+                      Similar analysis is shown below for the binomials <m>1+64x^{15}</m> and <m>1-64x^{15}</m>.  Note that the power-to-a-power rule of exponents gives us <m>(x^5)^3=x^{(5\times 3)}</m>.
+                    </p>
+
+                   <sidebyside widths="70% 30%" margins="0%">
+                    <p>
+                      <md>
+                        <mrow>1+64x^{15}=(1+4x^5)(1-4x^5+16x^{10})</mrow>
+                        <mrow></mrow>
+                        <mrow>1-64x^{15}=(1-4x^5)(1+4x^5+16x^{10})</mrow>
+                      </md>
+                    </p>
+                    
+
+                    <table xml:id="table-special-products-cubes-2">
+                      <caption></caption>
+                        <tabular>
+                          <col halign="center" />
+                          <col halign="center"/>
+                          <row>
+                            <cell>
+                              <m>a^3=1</m>
+                            </cell>
+                            <cell>
+                              <m>b^3=64x^{15}</m>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell><m>a=1</m></cell>
+                            <cell><m>b=4x^5</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>a^2=1</m></cell>
+                            <cell><m>b^2=16x^{10}</m></cell>
+                          </row>
+                          <row>
+                            <cell><m>ab=4x^5</m></cell>
+                          </row>
+                        </tabular>
+                      </table>
+                    </sidebyside>
+
+                    <p>
+                      Click here to access some practice exercises: <xref ref="exercise-factoring-binomials-exercises">Practice Exercises</xref>
+                    </p>
+
+                  </statement>
+          </exercise>
+
+          <exercise xml:id="exercise-factoring-sum-of-squares-examples">
+            <title>A cautionary note about sums of squares</title>
+                <statement>
+                  <p>
+                    Unless the expression also happens to be a sum of cubes, sums of squares do not factor - that is, they are prime.                    
+                  </p>
+                  <p>
+                    <m>x^2+4</m> is prime.
+                  </p>
+                  <p>
+                    <m>y^4+25</m> is prime.
+                  </p>
+                  <p>
+                    <m>w^6+4x^2</m> is prime.
+                  </p>
+                  <p>
+                    Many folks would like <m>x^2+4</m> to factor, so much so that they will write <m>x^2+4=(x+2)^2</m>.  Would that it were so.  But alas:
+                    <md>
+                      <mrow>(x+2)^2\amp=(x+2)(x+2)</mrow>
+                      <mrow>\amp=x^2+2x+2x+4</mrow>
+                      <mrow>\amp=x^2+4x+4</mrow>
+                    </md>
+                    In summary, <m>x^2+4\neq (x+2)^2</m>, <m>x^2+4x+4=(x+2)^2</m>.
+                  </p>
+                </statement>
+
+          </exercise>
+
+          <exercise xml:id="exercise-factoring-general-strategy-examples">
+            <title>A general strategy for factoring polynomials</title>
+            <statement>
+              <p>
+                A Factor Plan
+                <ol label="1">
+                  <li>
+                    <p>
+                      Always begin by factoring out the Greatest Common Factor of the terms.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      If there's a binomial lurking about, see if it fits one of the following special forms:
+                        <me>a^2-b^2=(a+b)(a-b)</me>
+                        <me>a^3-b^3=(a-b)(a^2+ab+b^2)</me>
+                        <me>a^3+b^3=(a+b)(a^2-ab+b^2)</me>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      If there's a trinomial in the picture, then:
+                      <ul>
+                        <li>
+                          <p>
+                            If the leading coefficient is <m>1</m> and the trinomial is factorable, then:
+                            <me>x^2+bx+c=(x+h)(x+k)</me>
+                            where <m>hk=c</m> and <m>h+k=b</m>
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            If the leading coefficient isn't <m>1</m>, you could try "guess and check."  You could also try the "<m>ac</m>" method. Begin by finding a pair of numbers, <m>h</m> and <m>k</m>, whose product is <m>ac</m> and whose sum is <m>b</m>.  Then rewrite the trinomial in the following form and factor by grouping:<me>ax^2+bx+c=ax^2+hx+kx+c</me>
+                          </p>
+                        </li>
+                      </ul>
+                    </p>
+                  </li>
+                        <li>
+                          <p>
+                            If there's a four-termed polynomial on the table, try factoring by grouping.
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            In each of the above circumstances, check you factorization by expanding the result and making sure that it matches the polynomial you started with.
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            Remember, many (most!) polynomials are prime - they do not factor at all.  This fact is almost surely counter to your experienced reality.  That's because it would counterproductive and mean-spirited to ask students to factor dozens of polynomials, most of which were prime.  Regardless, we have to throw the occasional prime polynomial into the mix to remind you that such things do exist.
+                          </p>
+                        </li>
+                      </ol>
+                   
+                
+              </p>
+                <p>
+                  Click here to access some practice exercises: <xref ref="exercise-factoring-general-strategy-exercises">Practice Exercises</xref>
+                </p>
+              
+            </statement>
+          </exercise>
+
+</exercises>
+
+<exercises>
+    <title>Practice Exercises</title>
+
+          <exercise xml:id="exercise-factoring-GCF-exercises">
+            <title>Greatest common factor</title>
+            <statement>
+              <P>
+                Factor the greatest common factor from each expression.
+                <ol>
+                  <li><m>12x^5-21x^4-24x^2+3x</m></li>
+                  <li><m>-4x^2y^3-44x^3y^2+4x^2y^2</m></li>
+                  <li><m>63a^8b^{12}c^5+108a^6b^9c-135a^6b^4c</m></li>
+                </ol>
+                <p>
+                </p>
+              </P>
+            </statement>
+            <solution>
+              <P>
+                Factor the greatest common factor from each expression.
+                <ol>
+                  <li><m>12x^5-21x^4-24x^2+3x=3x(4x^4-7x^3-8x+1)</m></li>
+                  <li><m>-4x^2y^3-44x^3y^2+4x^2y^2=-4x^2y^2(y+11x-1)</m></li>
+                  <li><m>63a^8b^{12}c^5+108a^6b^9c-135a^6b^4c=9a^6b^4c(7a^2b^8c^4+12b^5-15)</m></li>
+                </ol>
+              </P>
+            </solution>
+          </exercise>
+    
+          <exercise xml:id="exercise-factoring-trinomials-leading-coefficient-one-exercises">
+            <title>Factoring trinomials with leading coefficients of <m>1</m> </title>
+                  <statement>
+                    <p>
+                      Factor each trinomial.  Check your answer by expanding the factorization.  If the trinomial cannot be factored, state that it is prime.
+                    <ol cols="2">
+                      <li><m>x^2+6x+5</m></li>
+                      <li><m>t^2-6t+8</m></li>
+                      <li><m>x^2+8x+4</m></li>
+                      <li><m>y^2-14y-32</m></li>
+                      <li><m>x^2+6x-20</m></li>
+                      <li><m>x^2+15x-100</m></li>
+                      <li><m>w^2-18w+45</m></li>
+                      <li><m>x^2+21x+80</m></li>
+                      <li><m>b^2-9b-400</m></li>
+                    </ol>
+                  <p></p></p>
+                    
+                  
+                  </statement>
+                  <solution>
+                    <p>
+                     <ol>
+                      <li><m>x^2+6x+5=(x+2)(x+3)</m></li>
+                      <li><m>t^2-6t+8=(t-2)(t-4)</m></li>
+                      <li><m>x^2+8x+4</m> is prime.</li>
+                      <li><m>y^2-14y-32=(y-16)(y+2)</m></li>
+                      <li><m>x^2+6x-20</m> is prime.</li>
+                      <li><m>x^2+15x-100=(x+20)(x-5)</m></li>
+                      <li><m>w^2-18w+45=(w-15)(w-3)</m></li>
+                      <li><m>x^2+21x+80</m> is prime</li>
+                      <li><m>b^2-9b-400=(b-25)(b+16)</m></li>
+                    </ol>
+                  </p>
+                  </solution>
+          </exercise>
+
+          <exercise xml:id="exercise-factoring-grouping-exercises">
+            <title>Factoring by grouping</title>
+                <statement>
+                  <p>
+                    Factor each of the following expressions.  Check each result using the FOIL technique.
+                   <ol cols="2">
+                    <li><m>x^2+5x-3x-15</m></li>
+                    <li><m>8x+50+4xy+25y</m></li>
+                    <li><m>4a^2+10a-10a-25</m></li>
+                    <li><m>w^2-6wz-7wz+42z^2</m></li>
+                    <li><m>xy+5y-2x-10</m></li>
+                    <li><m>x^2-11x-9x+99</m></li>
+                    <li><m>3x^2-12x+7x-28</m></li>
+                    <li><m>4y^2-36xy-7xy+63x^2</m></li>
+                   </ol>
+                 <p></p></p>
+                 </statement>
+                 <solution>
+                  <p><ol>
+
+                    <li>
+                      <p><m>
+                        \begin{aligned}[t]
+                        x^2+5x-3x-15\amp=x(x+5)-3(x+5)\\
+                        \amp=(x+5)(x-3)
+                        \end{aligned}
+                      </m></p>
+                    </li>
+                        
+                    <li>
+                      <p><m>
+                        \begin{aligned}[t]
+                        8x+50+4xy+25y\amp=2(4x+25)+y(4x+25)\\
+                        \amp=(4x+25)(2+y)
+                        \end{aligned}
+                      </m></p>
+                    </li>
+                        
+                    <li>
+                      <p><m>
+                        \begin{aligned}[t]
+                        4a^2+10a-10a-25\amp=2a(2a+5)-5(2a+5)\\
+                        \amp=(2a+5)(2a-5)
+                        \end{aligned}
+                      </m></p>
+                    </li>
+                        
+                    <li>
+                      <p><m>
+                        \begin{aligned}[t]
+                        w^2-6wz-7wz+42z^2\amp=w(w-6z)-7z(w-6z)\\
+                        \amp=(w-6z)(w-7z)
+                        \end{aligned}
+                      </m></p>
+                    </li>
+                        
+                    <li>
+                      <p><m>
+                        \begin{aligned}[t]
+                        xy+5y-2x-10\amp=y(x+5)-2(x+5)\\
+                        \amp=(x+5)(y-2)
+                        \end{aligned}
+                      </m></p>
+                    </li>
+                        
+                    <li>
+                      <p><m>
+                        \begin{aligned}[t]
+                        x^2-11x-9x+99\amp=x(x-11)-9(x-11)\\
+                        \amp=(x-11)(x-9)
+                        \end{aligned}
+                      </m></p>
+                    </li>
+                    
+                     <li>
+                      <p><m>
+                        \begin{aligned}[t]
+                        3x^2-12x+7x-28\amp=3x(x-4)+7(x-4)\\
+                        \amp=(x-4)(3x+7)
+                        \end{aligned}
+                      </m></p>
+                    </li>
+                      
+                    <li>
+                      <p><m>
+                        \begin{aligned}[t]
+                        4y^2-36xy-7xy+63x^2\amp=4y(y-9x)-7x(y-9x)\\
+                        \amp=(y-9x)(4y-7x)
+                        \end{aligned}
+                      </m></p>
+                    </li>
+                
+                  </ol></p>
+                </solution>
+          </exercise>
+         
+          <exercise xml:id="exercise-factoring-trinomials-leading-coefficient-not-one-exercises">
+            <title>Factoring trinomials where the leading coefficients are not <m>1</m></title>
+            <statement>
+              <p>
+                Completely factor each of the following expressions.  Check each result by expanding the factored form.
+              
+              <ol cols="2">
+                <li><m>4x^2-11x+6</m></li>
+                <li><m>5x^2-2x-7</m></li>
+                <li><m>8x^2-14x+3</m></li>
+                <li><m>4x^2y-20xy+24y</m></li>
+                <li><m>36x^2-48xy+15y^2</m></li>
+                <li><m>-9t^8+90xt^4-216x^2</m></li>
+                <li><m>9x^6-25x^3y^2-6y^4</m></li>
+                <li><m>14x^2y^5+56x^2y^4+420x^2y^3</m></li>
+              </ol>
+              <p>
+              </p>
+            </p>
+            </statement>
+            <solution>
+              <p>
+              <ol>
+                <li>
+                  <p><m>
+                    \begin{aligned}[t]
+                    4x^2-11x+6\amp=4x^2-8x-3x+6\\
+                    \amp=4x(x-2)-3(x-2)\\
+                    \amp=(x-2)(4x-3)
+                    \end{aligned}
+                  </m></p>
+                </li>
+
+                <li>
+                  <p><m>
+                    \begin{aligned}[t]
+                    5x^2-2x-7\amp=5x^2-7x+5x-7\\
+                    \amp=x(5x-7)+1(5x-7\\
+                    \amp=(5x-7)(x+1)
+                    \end{aligned}
+                  </m></p>
+                </li>
+
+                <li>
+                  <p><m>
+                    \begin{aligned}[t]
+                    8x^2-14x+3\amp=8x^2-12x-2x+3\\
+                    \amp=4x(2x-3)-1(2x-3)\\
+                    \amp=(2x-3)(4x-1)
+                    \end{aligned}
+                  </m></p>
+                </li>
+                
+                <li>
+                  <p><m>
+                    \begin{aligned}[t]
+                    4x^2y-20xy+24y\amp=4y(x^2-5x+6)\\
+                    \amp=4y(x-3)(x-2)
+                    \end{aligned}
+                  </m></p>
+                </li>
+                
+                 <li>
+                  <p><m>
+                    \begin{aligned}[t]
+                    36x^2-48xy+15y^2\amp=3(12x^2-16xy+5y^2)\\
+                    \amp=3(12x^2-10xy-6xy+5y^2\\
+                    \amp=3[2x(6x-5y)-y(6x-5)]\\
+                    \amp=3(6x-5y)(2x-y)
+                    \end{aligned}
+                  </m></p>
+                </li>
+                
+                 <li>
+                  <p><m>
+                    \begin{aligned}[t]
+                    -9t^8+90xt^4-216x^2\amp=-9(t^8-10xt^4+24x^2)\\
+                    \amp=-9(t^8-4xt^4-6xt^4+24x^2)\\
+                    \amp=-9[t^4(t^4-4x)-6x(t^4-4x)]\\
+                    \amp=-9(t^4-4x)(t^4-6x)
+                    \end{aligned}
+                  </m></p>
+                </li>
+                
+                 <li>
+                  <p><m>
+                    \begin{aligned}[t]
+                    9x^6-25x^3y^2-6y^4\amp=9x^6-27x^3y^2+2x^3y^2-6y^4\\
+                    \amp=9x^3(x^3-3y^2)+2y^2(x^3-3y^2)\\
+                    \amp=(x^3-3y^2)(9x^3+2y^2)
+                    \end{aligned}
+                  </m></p>
+                </li>
+                
+                <li>
+                    <m>14x^2y^5+56x^2y^4+420x^2y^3=14x^2y^3(y^2+4y+30)</m>
+                </li>
+              </ol>
+            </p>
+            </solution>
+          </exercise>
+
+          <exercise xml:id="exercise-factoring-binomials-exercises">
+            <title>Factoring binomials</title>
+                <statement>
+                  <p>
+                    <ol>
+                      <li>
+                     <sidebyside widths="70% 30%" margins="0%">
+                      <p>
+                        Use the factor pattern <m>a^2-b^2=(a+b)(a-b)</m> to factor <m>x^{10}-25y^4</m> after first completing the entries in <xref ref="table-special-products-1">Table</xref>
+                      </p>
+                      
+
+                      <table xml:id="table-special-products-1">
+                        <caption></caption>
+                          <tabular>
+                            <col halign="center" />
+                            <col halign="center"/>
+                            <row>
+                              <cell>
+                                <m>a^2=</m>
+                              </cell>
+                              <cell>
+                                <m>b^2=</m>
+                              </cell>
+                            </row>
+                            <row>
+                              <cell><m>a=</m></cell>
+                              <cell><m>b=</m></cell>
+                            </row>
+                          </tabular>
+                        </table>
+                      </sidebyside> 
+                    </li>
+
+                  <li>
+                     <sidebyside widths="80% 20%" margins="0%">
+                      <p>
+                        Use the factor pattern <m>a^3-b^3=(a-b)(a^2+ab+b^2)</m> to factor <m>8x^3-y^6</m> after first completing the entries in <xref ref="table-special-products-2">Table</xref>
+                      </p>
+                      
+
+                      <table xml:id="table-special-products-2">
+                        <caption></caption>
+                          <tabular>
+                            <col halign="center" />
+                            <col halign="center"/>
+                            <row>
+                              <cell>
+                                <m>a^3=</m>
+                              </cell>
+                              <cell>
+                                <m>b^3=</m>
+                              </cell>
+                            </row>
+                            <row>
+                              <cell><m>a=</m></cell>
+                              <cell><m>b=</m></cell>
+                            </row>
+                            <row>
+                              <cell><m>a^2=</m></cell>
+                              <cell><m>b^2=</m></cell>
+                            </row>
+                            <row>
+                              <cell><m>ab=</m></cell>
+                            </row>
+                          </tabular>
+                        </table>
+                      </sidebyside> 
+                    </li>
+
+                  <li>
+                     <sidebyside widths="80% 20%" margins="0%">
+                      <p>
+                        Use the factor pattern <m>a^3+b^3=(a+b)(a^2-ab+b^2)</m> to factor <m>125t^{12}+27x^9</m> after first completing the entries in <xref ref="table-special-products-3">Table</xref>
+                      </p>
+                      
+
+                      <table xml:id="table-special-products-3">
+                        <caption></caption>
+                          <tabular>
+                            <col halign="center" />
+                            <col halign="center"/>
+                            <row>
+                              <cell>
+                                <m>a^3=</m>
+                              </cell>
+                              <cell>
+                                <m>b^3=</m>
+                              </cell>
+                            </row>
+                            <row>
+                              <cell><m>a=</m></cell>
+                              <cell><m>b=</m></cell>
+                            </row>
+                            <row>
+                              <cell><m>a^2=</m></cell>
+                              <cell><m>b^2=</m></cell>
+                            </row>
+                            <row>
+                              <cell><m>ab=</m></cell>
+                            </row>
+                          </tabular>
+                        </table>
+                      </sidebyside> 
+                    </li>
+                  </ol>
+
+                     <p>
+                      Factor each binomial.  Check your result by expanding the factored expression.  If the binomial does not factor, state that it is prime.
+                     <ol label="i" cols="2">
+                      <li><m>36p^2-q^2</m></li>
+                      <li><m>36p^2+q^2</m></li>
+                      <li><m>125+y^3</m></li>
+                      <li><m>8x^3-27y^3</m></li>
+                    </ol>
+                  </p>
+                    <p>
+                    </p>
+                  </p>
+                   </statement>
+                   <solution>
+                    <p>
+                      <ol>
+                        <li>
+                       <sidebyside widths="70% 30%" margins="0%">
+                        <p>
+                          <m>x^{10}-25y^4=(x^5+5y^2)(x^5-5y^2)</m> 
+                        </p>
+                        
+
+                        <table xml:id="table-special-products-1a">
+                          <caption></caption>
+                            <tabular>
+                              <col halign="center" />
+                              <col halign="center"/>
+                              <row>
+                                <cell>
+                                  <m>a^2=x^{10}</m>
+                                </cell>
+                                <cell>
+                                  <m>b^2=25y^4</m>
+                                </cell>
+                              </row>
+                              <row>
+                                <cell><m>a=x^5</m></cell>
+                                <cell><m>b=5y^2</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>ab=5x^5y^2</m></cell>
+                              </row>
+                            </tabular>
+                          </table>
+                        </sidebyside> 
+                      </li>
+
+                    <li>
+                       <sidebyside widths="70% 30%" margins="0%">
+                        <p>
+                          <m>8x^3-y^6=(2x-y^2)(4x^2+2xy^2+y^4)</m>
+                        </p>
+                        
+
+                        <table xml:id="table-special-products-2a">
+                          <caption></caption>
+                            <tabular>
+                              <col halign="center" />
+                              <col halign="center"/>
+                              <row>
+                                <cell>
+                                  <m>a^3=8x^3</m>
+                                </cell>
+                                <cell>
+                                  <m>b^3=y^6</m>
+                                </cell>
+                              </row>
+                              <row>
+                                <cell><m>a=2x</m></cell>
+                                <cell><m>b=y^2</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>a^2=4x^2</m></cell>
+                                <cell><m>b^2=y^4</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>ab=2xy^2</m></cell>
+                              </row>
+                            </tabular>
+                          </table>
+                        </sidebyside> 
+                      </li>
+
+                    <li>
+                        <p>
+                          <m>125t^{12}+27x^9=(5t^4+3x^3)(25t^8-15t^4x^3+9x^6)</m>
+                        </p>
+                        
+                      <sidebyside widths="40% 60%" margins="0%">
+                        <table xml:id="table-special-products-3a">
+                          <caption></caption>
+                            <tabular>
+                              <col halign="center" />
+                              <col halign="center"/>
+                              <row>
+                                <cell>
+                                  <m>a^3=125t^{12}</m>
+                                </cell>
+                                <cell>
+                                  <m>b^3=27x^9</m>
+                                </cell>
+                              </row>
+                              <row>
+                                <cell><m>a=5t^4</m></cell>
+                                <cell><m>b=3x^3</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>a^2=25t^8</m></cell>
+                                <cell><m>b^2=9x^6</m></cell>
+                              </row>
+                              <row>
+                                <cell><m>ab=15t^4x^3</m></cell>
+                              </row>
+                            </tabular>
+                          </table>
+                          <p>
+                          </p>
+                        </sidebyside>
+                      </li>
+                    </ol>
+                      <ol label="i">
+
+                        <li>
+                          <p><m>
+                            36p^2-q^2=(6p+q)(6p-q)
+                          </m></p>
+                        </li>
+                            
+                        <li>
+                          <p><m>
+                           36p^2+q^2
+                          </m> is prime</p>
+                        </li>
+                            
+                        <li>
+                          <p><m>
+                           125+y^3=(5+y)(25-5y+y^2)
+                          </m></p>
+                        </li>
+                            
+                        <li>
+                          <p><m>
+                            8x^3-27y^3=(2x-3y)(4x^2+6xy+9y^2)
+                          </m></p>
+                        </li>
+                      </ol>
+                    </p>
+                </solution>
+          </exercise>
+        
+          <exercise xml:id="exercise-factoring-general-strategy-exercises">
+            <title>Factoring a hodge-podge of polynomials</title>
+            <statement>
+              <p>
+                Completely factor each of the following expressions.  Check each result by expanding the factored form.
+              <ol cols="2">
+                <li><m>x^2+19x+48</m></li>
+                <li><m>y^2+47y-48</m></li>
+                <li><m>6x^2-5x-25</m></li>
+                <li><m>125w^6+27z^3</m></li>
+                <li><m>y^2-2y-48</m></li>
+                <li><m>x^2y^4+26xy^2+48</m></li>
+                <li><m>121-9w^4</m></li>
+                <li><m>32w^4-18w^2</m></li>
+                <li><m>3x^2-33x+84</m></li>
+                <li><m>15x^2+45x+15</m></li>
+                <li><m>x^4y^2+9x^2y^2</m></li>
+                <li><m>121+9w^4</m></li>
+              </ol>
+              <p>
+              </p>
+            </p>
+            </statement>
+            <solution>
+              <ol>
+                <li><m>x^2+19x+48=(x+16)(x+3)</m></li>
+                <li><m>y^2+47y-48=(y+48)(y-1)</m></li>
+
+                <li>
+                  <p><m>
+                    \begin{aligned}[t]
+                    6x^2-5x-25\amp=6x^2-15x+10x-25\\
+                    \amp=3x(2x-5)+5(2x-5)\\
+                    \amp=(2x-5)(3x+5)
+                    \end{aligned}
+                  </m></p>
+                </li>
+
+                <li><m>125w^6+27z^3=(5w^2+3z)(25w^4-15w^2z+9z^2)</m></li>
+                <li><m>y^2-2y-48=(y-8)(y+6)</m></li>
+                <li><m>x^2y^4+26xy^2+48=(xy^2+24)(xy^2+2)</m></li>
+                <li><m>121-9w^4=(11+3w^2)(11-3w^2)</m></li>
+
+                <li>
+                  <p><m>
+                    \begin{aligned}[t]
+                    32w^4-18w^2\amp=2w^2(16w^2-9)\\
+                    \amp=2w^2(4w+3)(4w-3)
+                    \end{aligned}
+                  </m></p>
+                </li>
+
+                <li>
+                  <p><m>
+                    \begin{aligned}[t]
+                    3x^2-33x+84\amp=3(x^2-11x+28)\\
+                    \amp=3(x-7)(x-4)
+                    \end{aligned}
+                  </m></p>
+                </li>
+
+                <li><m>15x^2+45x+15=15(x^2+3x+1)</m></li>
+                <li><m>x^4y^2+9x^2y^2=x^2y^2(x^2+9)</m></li>
+                <li><m>121+9w^4</m> is prime</li>
+              </ol>
+            </solution>
+          </exercise>
+
+</exercises>
+
+     
+</section>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-systems">
+    <title>Systems of linear equations</title>
+
+    <exercises>
+      <title>Pretest - what's your current skill set?</title>
+      <exercise xml:id="workshop-systems-introduction-to-linear-systems-pretest">
+        <title>Introduction/Solving by graphing</title>
+        <section>
+        </section>
+      </exercise>
+
+<!--       <exercise xml:id="workshop-systems-introduction-to-subsitution-pretest">
+        <title>Introduction to solving by substitution</title>
+        <section>
+        </section>
+      </exercise>
+
+      <exercise xml:id="workshop-systems-fractions-in-substitution-pretest">
+        <title>Working with fractions while solving by substitution</title>
+        <section>
+        </section>
+      </exercise>
+
+      <exercise xml:id="workshop-systems-elimination-pretest">
+        <title>Solving by elimination</title>
+        <section>
+        </section>
+      </exercise>
+
+      <exercise xml:id="workshop-systems-mixture-applications-pretest">
+        <title>Applications: percents/mixtures</title>
+        <section>
+        </section>
+      </exercise>
+
+      <exercise xml:id="workshop-systems-distance-pretest">
+        <title>Applications: D=rt/getting "the job" done</title>
+        <section>
+        </section>
+      </exercise> -->
+    </exercises>
+
+    <exercises>  
+      <title>Written Examples</title>
+
+<!--       <exercise xml:id="workshop-systems-introduction-to-linear-systems-examples">
+        <title>Introduction/Solving by graphing</title>
+        <section>
+        </section>
+      </exercise>
+
+      <exercise xml:id="workshop-systems-introduction-to-subsitution-examples">
+        <title>Introduction to solving by substitution</title>
+        <section>
+        </section>
+      </exercise>
+
+      <exercise xml:id="workshop-systems-fractions-in-substitution-examples">
+        <title>Working with fractions while solving by substitution</title>
+        <section>
+        </section>
+      </exercise>
+
+      <exercise xml:id="workshop-systems-elimination-examples">
+        <title>Solving by elimination</title>
+        <section>
+        </section>
+      </exercise>
+
+      <exercise xml:id="workshop-systems-mixture-applications-examples">
+        <title>Applications: percents/mixtures</title>
+        <section>
+        </section>
+      </exercise>
+
+      <exercise xml:id="workshop-systems-distance-examples">
+        <title>Applications: D=rt/getting "the job" done</title>
+        <section>
+        </section>
+      </exercise> -->
+
+        
+
+    </exercises>
+
+    <exercises>
+      <title>Practice Exercises</title>
+
+<!--       <exercise xml:id="workshop-systems-introduction-to-linear-systems-exercises">
+        <title>Introduction/Solving by graphing</title>
+        <section>
+        </section>
+       </exercise>
+
+      <exercise xml:id="workshop-systems-introduction-to-subsitution-exercises">
+        <title>Introduction to solving by substitution</title>
+        <section>
+        </section>
+      </exercise>
+
+      <exercise xml:id="workshop-systems-fractions-in-substitution-exercises">
+        <title>Working with fractions while solving by substitution</title>
+        <section>
+        </section>
+      </exercise>
+
+      <exercise xml:id="workshop-systems-elimination-exercises">
+        <title>Solving by elimination</title>
+        <section>
+        </section>
+      </exercise>
+
+      <exercise xml:id="workshop-systems-mixture-applications-exercises">
+        <title>Applications: percents/mixtures</title>
+        <section>
+        </section>
+      </exercise>
+
+      <exercise xml:id="workshop-systems-distance-exercises">
+        <title>Applications: D=rt/getting "the job" done</title>
+        <section>
+        </section>
+      </exercise> -->
+
+    </exercises>
+
+         
+    </section>
