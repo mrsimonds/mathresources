@@ -213,8 +213,8 @@
           When there is repeated division between rational expression, every divisor ends up being reciprocated when the expression is rewritten as a product.  The is a result of the fact that operations are performed left-to-right.  An example follows.
          <md>
             <mrow>\amp\frac{x-3}{x-7} \div \frac{x+8}{x-12} \div \frac{x+8}{x-7}</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} =(\frac{x-3}{x-7} \div \frac{x+8}{x-12}) \div \frac{x+8}{x-7}</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} =(\frac{x-3}{x-7} \cdot \frac{x-12}{x+8}) \div \frac{x+8}{x-7}, x \neq 12</mrow>
+            <mrow>\amp \phantom{={}} \phantom{={}} =\left(\frac{x-3}{x-7} \div \frac{x+8}{x-12}\right) \div \frac{x+8}{x-7}</mrow>
+            <mrow>\amp \phantom{={}} \phantom{={}} =\left(\frac{x-3}{x-7} \cdot \frac{x-12}{x+8}\right) \div \frac{x+8}{x-7}, x \neq 12</mrow>
             <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x-3)(x-12)}{(x-7)(x+8)} \div \frac{x+8}{x-7}, x \neq 12</mrow>
             <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x-3)(x-12)}{(x-7)(x+8)} \cdot \frac{x-7}{x+8}, x \neq 12</mrow>
             <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x-3)(x-12)(x-7)}{(x-7)(x+8)(x+8)}, x \neq 12</mrow>

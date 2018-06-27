@@ -561,7 +561,7 @@
               <md>
                 <mrow>r(t)\amp=s(t)</mrow>
                 <mrow>\frac{5}{7}t-3\amp=\frac{2}{3}t+\frac{11}{21}</mrow>
-                <mrow>\multiplyleft{21}(\frac{5}{7}t-3)\amp=\multiplyleft{21}(\frac{2}{3}t+\frac{11}{21})</mrow>
+                <mrow>\multiplyleft{21}\left(\frac{5}{7}t-3\right)\amp=\multiplyleft{21}\left(\frac{2}{3}t+\frac{11}{21}\right)</mrow>
                 <mrow>15t-63\amp=14t+11</mrow>
                 <mrow>15t-63\addright{63}\amp=14t+11\addright{63}</mrow>
                 <mrow>15t\amp=14t+74</mrow>
@@ -951,7 +951,7 @@
             <mrow>\divideunder{-15x}{-15} \amp\leq \divideunder{-3}{-15}</mrow>
             <mrow>x \amp\leq \frac{1}{5}</mrow>          
           </md>
-          So the domain of <m>f</m> is <m>(-\infty,\frac{1}{5}]</m> which can also be written as <m>\{x \mid x \leq \frac{1}{5}\}</m>.
+          So the domain of <m>f</m> is <m>\left(-\infty,\frac{1}{5}\right]</m> which can also be written as <m>\{x \mid x \leq \frac{1}{5}\}</m>.
         </p>
         <p></p>
         <b>
@@ -1389,7 +1389,7 @@
             <ol>
               <li>
                 <p>
-                  The domain of <m>r</m> is <m>(-\infty,\frac{1}{2}]</m>.
+                  The domain of <m>r</m> is <m>\left(-\infty,\frac{1}{2}\right]</m>.
                 </p>
               </li>
               <li>
@@ -1911,7 +1911,7 @@
           <p>
             <md>
               <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
-              <mrow>\amp=f(\highlight{\frac{5-3x}{7}})</mrow>
+              <mrow>\amp=f\left(\highlight{\frac{5-3x}{7}}\right)</mrow>
               <mrow>\amp=\frac{5-\frac{7}{1} \cdot \highlight{\frac{5-3x}{7}}}{3}</mrow>
               <mrow>\amp=\frac{5-(5-3x)}{3}</mrow>
               <mrow>\amp=\frac{5-5+3x}{3}</mrow>
@@ -2016,8 +2016,8 @@
                   We are given <m>f(x)=2x+6</m> and <m>g(x)=\frac{x-8}{2x+1}</m>. The composite function formulas are derived below.
                   <md>
                     <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
-                    <mrow>\amp=f(\highlight{\frac{x-8}{2x+1}})</mrow>
-                    <mrow>\amp=2(\highlight{\frac{x-8}{2x+1}})+6</mrow>
+                    <mrow>\amp=f\left(\highlight{\frac{x-8}{2x+1}}\right)</mrow>
+                    <mrow>\amp=2\left(\highlight{\frac{x-8}{2x+1}}\right)+6</mrow>
                     <mrow>\amp=\frac{2}{1} \cdot \frac{x-8}{2x+1}+\frac{6}{1} \cdot \frac{2x+1}{2x+1}</mrow>
                     <mrow>\amp=\frac{2x-16}{2x+1}+\frac{12x+6}{2x+1}</mrow>
                     <mrow>\amp=\frac{2x-16+12x+6}{2x+1}</mrow>
@@ -2060,7 +2060,7 @@
                   We are given <m>f(x)=\frac{1}{x}</m> and <m>g(x)=\frac{x-4}{x+5}</m>. The composite function formulas are derived below.
                   <md>
                     <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
-                    <mrow>\amp=f(\highlight{\frac{x-4}{x+5}})</mrow>
+                    <mrow>\amp=f\left(\highlight{\frac{x-4}{x+5}}\right)</mrow>
                     <mrow>\amp=\frac{1}{\highlight{\frac{x-4}{x+5}}}</mrow>
                     <mrow>\amp=\frac{\frac{1}{1}}{\frac{x-4}{x+5}}</mrow>
                     <mrow>\amp=\frac{1}{1} \cdot \frac{x+5}{x-4}</mrow>
@@ -2068,7 +2068,7 @@
                   </md>
                   <md>
                     <mrow>(g \circ f)(x)\amp=g(\highlightr{f(x)})</mrow>
-                    <mrow>\amp=g(\highlightr{\frac{1}{x}})</mrow>
+                    <mrow>\amp=g\left(\highlightr{\frac{1}{x}}\right)</mrow>
                     <mrow>\amp=\frac{\highlightr{\frac{1}{x}}-4}{\highlightr{\frac{1}{x}}+5}</mrow>
                     <mrow>\amp=\frac{\frac{1}{x}-\frac{4x}{x}}{\frac{1}{x}+\frac{5x}{x}}</mrow>
                     <mrow>\amp=\frac{\frac{1-4x}{x}}{\frac{1+5x}{x}}</mrow>
@@ -2083,8 +2083,8 @@
                   We are given <m>f(x)=6-5x</m> and <m>g(x)=\frac{6-x}{5}</m>. The composite function formulas are derived below.
                   <md>
                     <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
-                    <mrow>\amp=f(\highlight{\frac{6-x}{5}})</mrow>
-                    <mrow>\amp=6-5(\highlight{\frac{6-x}{5}})</mrow>
+                    <mrow>\amp=f\mathopen{}\left(\highlight{\frac{6-x}{5}}\right)\mathclose{}</mrow>
+                    <mrow>\amp=6-5\left(\highlight{\frac{6-x}{5}}\right)</mrow>
                     <mrow>\amp=6-\frac{5}{1} \cdot \frac{6-x}{5}</mrow>
                     <mrow>\amp=6-\frac{5(6-x)}{5}</mrow>
                     <mrow>\amp=6-(6-x)</mrow>
@@ -2428,11 +2428,11 @@
           <p>
             We begin by deriving the difference quotient for <m>f(x)=\frac{1}{2}x^2+2x-3</m>.
             <md>
-              <mrow>\frac{\highlight{f(x+h)}-\highlightr{f(x)}}{h}\amp=\frac{\highlight{(\frac{1}{2}(x+h)^2+2(x+h)-3)}-\highlightr{(\frac{1}{2}x^2+2x-3)}}{h}</mrow>
+              <mrow>\frac{\highlight{f(x+h)}-\highlightr{f(x)}}{h}\amp=\frac{\highlight{\left(\frac{1}{2}(x+h\right)^2+2(x+h)-3)}-\highlightr{\left(\frac{1}{2}x^2+2x-3\right)}}{h}</mrow>
               <mrow>\amp=\frac{\frac{1}{2}(x^2+2xh+h^2)+2x+2h-3-\frac{1}{2}x^2-2x+3}{h}</mrow>
               <mrow>\amp=\frac{\frac{1}{2}x^2+xh+\frac{1}{2}h^2+2h-\frac{1}{2}x^2}{h}</mrow>
               <mrow>\amp=\frac{xh+\frac{1}{2}h^2+2h}{h}</mrow>
-              <mrow>\amp=\frac{h \cdot (x+\frac{1}{2}h+2)}{h}</mrow>
+              <mrow>\amp=\frac{h \cdot \left(x+\frac{1}{2}h+2\right)}{h}</mrow>
               <mrow>\amp=x+2+\frac{1}{2}h,\,\,h \neq 0</mrow>
             </md>
             We now find the slope of the indicated secant line by letting <m>x=-2</m> and <m>h=4</m> (the left-most of the two <m>x</m>-coordinates and the run between the two indicated points). The calculation follows.
@@ -2847,7 +2847,7 @@
         </p>
         <sidebyside widths="47% 47%">
           <p>
-            The solution set is <m>(-6,-1) \cup [\frac{1}{2},\infty)</m>.
+            The solution set is <m>(-6,-1) \cup \left[\frac{1}{2},\infty\right)</m>.
           </p>
           <figure xml:id="workshop-functions-exercises-piecewise-graph-1-2b">
             <caption><m>g(x) \le 3</m></caption>

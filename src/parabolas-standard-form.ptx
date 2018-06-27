@@ -397,11 +397,11 @@
                 </md>
                 We use the given equation to derive the <m>y</m>-coordinate of the vertex.
                 <md>
-                  <mrow>y\amp=\left(\highlight{-\frac{9}{2}}\right)^2+9(\highlight{-\frac{9}{2}})+20</mrow>
+                  <mrow>y\amp=\left\left(\highlight{-\frac{9}{2}}\right\right)^2+9\left(\highlight{-\frac{9}{2}}\right)+20</mrow>
                   <mrow>\amp=\frac{81}{4}-\frac{81}{2}+20</mrow>
                   <mrow>\amp=-\frac{1}{4}</mrow>
                 </md>
-                So the vertex of the parabola is <m>(-\frac{9}{2},-\frac{1}{4})</m> and the axis of symmetry is the vertical line with equation <m>x=-\frac{9}{2}</m>.
+                So the vertex of the parabola is <m>\left(-\frac{9}{2},-\frac{1}{4}\right)</m> and the axis of symmetry is the vertical line with equation <m>x=-\frac{9}{2}</m>.
                 Because the value of <m>a</m> is positive, we know that the parabola is concave up.
                 The <m>x</m> intercepts have <m>y</m>-coordinates of zero, so we determine the <m>x</m>-coordinates by solving the equation <m>x^2+9x+20=0</m>.
                 <md>
@@ -433,11 +433,11 @@
                 </md>
                 We use the given equation to derive the <m>y</m>-coordinate of the vertex.
                 <md>
-                  <mrow>y\amp=4(\highlight{\frac{1}{2}})^2-4(\highlight{\frac{1}{2}})-15</mrow>  
+                  <mrow>y\amp=4\left(\highlight{\frac{1}{2}}\right)^2-4\left(\highlight{\frac{1}{2}}\right)-15</mrow>  
                   <mrow>\amp=1-2-15</mrow>
                   <mrow>\amp=-16</mrow>
                 </md>
-                So the vertex of the parabola is <m>(\frac{1}{2},-16)</m> and the axis of symmetry is the vertical line with equation <m>x=\frac{1}{2}</m>.
+                So the vertex of the parabola is <m>\left(\frac{1}{2},-16\right)</m> and the axis of symmetry is the vertical line with equation <m>x=\frac{1}{2}</m>.
                 Because the value of <m>a</m> is positive, we know that the parabola is concave up.
                 The <m>x</m> intercepts have <m>y</m>-coordinates of zero, so we determine the <m>x</m>-coordinates by solving the equation <m>4x^2-4x-15=0</m>.
                 <md>
@@ -453,7 +453,7 @@
                   <mrow>\divideunder{2x}{2}\amp=\divideunder{-3}{2} \amp\amp\text{ or }\amp \divideunder{2x}{2}\amp=\divideunder{5}{2}</mrow>
                   <mrow>x\amp=-\frac{3}{2} \amp\amp\text{ or }\amp x\amp=\frac{5}{2}</mrow>                  
                 </md>
-                So the <m>x</m>-intercepts of the parabola are <m>(-\frac{3}{2},0)</m> and <m>(\frac{5}{2},0)</m>.
+                So the <m>x</m>-intercepts of the parabola are <m>\left(-\frac{3}{2},0\right)</m> and <m>\left(\frac{5}{2},0\right)</m>.
                 The <m>y</m>-intercept of the parabola is the point on the parabola with an <m>x</m>-coordinate of zero.  That point is <m>(0,-15)</m>.
             </p>
           </solution>
@@ -473,11 +473,11 @@
                 </md>
                 We use the given equation to derive the <m>y</m>-coordinate of the vertex.
                 <md>
-                  <mrow>y\amp=-(\highlight{\frac{3}{2}})^2+3(\highlight{\frac{3}{2}})-10</mrow>
+                  <mrow>y\amp=-\left(\highlight{\frac{3}{2}}\right)^2+3\left(\highlight{\frac{3}{2}}\right)-10</mrow>
                   <mrow>\amp=-\frac{9}{4}+\frac{9}{2}-10</mrow>
                   <mrow>\amp=-\frac{31}{4}</mrow>
                 </md>
-                So the vertex of the parabola is <m>(\frac{3}{2},-\frac{31}{4})</m> and the axis of symmetry is the vertical line with equation <m>x=\frac{3}{2}</m>.
+                So the vertex of the parabola is <m>\left(\frac{3}{2},-\frac{31}{4}\right)</m> and the axis of symmetry is the vertical line with equation <m>x=\frac{3}{2}</m>.
                 Because the value of <m>a</m> is negative, we know that the parabola is concave down.  Since the parabola opens down and the vertex is below the <m>x</m>-axis, the parabola cannot possibly have any <m>x</m>-intercepts.  This is verified by the negative value of the discriminant.
                 <md>
                   <mrow>b^2-4ac\amp=3^2-4 \cdot -1 \cdot -10</mrow>
@@ -518,7 +518,7 @@
                   <mrow>\amp=\frac{2(-2 \pm \sqrt{10})}{4}</mrow>
                   <mrow>\amp=\frac{-2 \pm \sqrt{10}}{2}</mrow>
                 </md>
-                So the <m>x</m>-intercepts of the parabola are <m>(\frac{-2-\sqrt{10}}{2},0)</m> and <m>(\frac{-2+\sqrt{10}}{2},0)</m>.
+                So the <m>x</m>-intercepts of the parabola are <m>\left(\frac{-2-\sqrt{10}}{2},0\right)</m> and <m>\left(\frac{-2+\sqrt{10}}{2},0\right)</m>.
                 The <m>y</m>-intercept of the parabola is the point on the parabola with an <m>x</m>-coordinate of zero.  That point is <m>(0,-3)</m>.
             </p>
           </solution>

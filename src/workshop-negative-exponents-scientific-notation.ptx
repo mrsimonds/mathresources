@@ -252,7 +252,7 @@
                   <me>\frac{1}{x^{-n}}=x^n</me>
                 </p>
                 <p>
-                  <me>(\frac{a}{b})^n=(\frac{b}{a})^{-n}</me>
+                  <me>\left(\frac{a}{b}\right)^n=\left(\frac{b}{a}\right)^{-n}</me>
                 </p>
               </sidebyside>
             </p>
@@ -274,7 +274,7 @@
                 </p>
                 <p>
                   <md>
-                    <mrow>(\frac{4}{5})^{-2}\amp=(\frac{5}{4})^2</mrow>
+                    <mrow>\left(\frac{4}{5}\right)^{-2}\amp=\left(\frac{5}{4}\right)^2</mrow>
                     <mrow>\amp=\frac{25}{16}</mrow>
                   </md>
                 </p>
@@ -291,19 +291,19 @@
                 <ol cols="3">
                   <li><m>\frac{1}{3^{-2}}</m></li>
                   <li><m>-2^{-3}</m></li>
-                  <li><m>(\frac{2}{5})^{-2}</m></li>
-                  <li><m>(\frac{1}{4})^{-3}</m></li>
+                  <li><m>\left(\frac{2}{5}\right)^{-2}</m></li>
+                  <li><m>\left(\frac{1}{4}\right)^{-3}</m></li>
                   <li><m>-4^2</m></li>
                   <li><m>4^{-2}</m></li>
                   <li><m>-4^{-2}</m></li>
                   <li><m>(-4)^{-2}</m></li>
-                  <li><m>(\frac{1}{3})^{-3}</m></li>
+                  <li><m>\left(\frac{1}{3}\right)^{-3}</m></li>
                   <li><m>-7^{-1}</m></li>
                   <li><m>\frac{10^{-5}}{10^{-8}}</m></li>
                   <li><m>\frac{1}{2^{-8}}</m></li>
-                  <li><m>(-\frac{2}{3})^{-4}</m></li>
+                  <li><m>\left(-\frac{2}{3}\right)^{-4}</m></li>
                   <li><m>-4^0-4^{-2}</m></li>
-                  <li><m>(\frac{5}{4})^{-2}</m></li>
+                  <li><m>\left(\frac{5}{4}\right)^{-2}</m></li>
                   <li><m>\frac{4}{3^{-2}}</m></li>
                 </ol>
                 <p></p>
@@ -329,14 +329,14 @@
 
                   <li><m>
                     \begin{aligned}[t]
-                    (\frac{2}{5})^{-2}\amp=(\frac{5}{2})^2\\
+                    \left(\frac{2}{5}\right)^{-2}\amp=\left(\frac{5}{2}\right)^2\\
                     \amp=\frac{25}{4}
                     \end{aligned}
                   </m></li>
 
                   <li><m>
                     \begin{aligned}[t]
-                    (\frac{1}{4})^{-3}\amp=(\frac{4}{1})^3\\
+                    \left(\frac{1}{4}\right)^{-3}\amp=\left(\frac{4}{1}\right)^3\\
                     \amp=64
                     \end{aligned}
                   </m></li>
@@ -366,7 +366,7 @@
 
                   <li><m>
                     \begin{aligned}[t]
-                    (\frac{1}{3})^{-3}\amp=(\frac{3}{1})^3\\
+                    \left(\frac{1}{3}\right)^{-3}\amp=\left(\frac{3}{1}\right)^3\\
                     \amp=27
                     \end{aligned}
                   </m></li>
@@ -390,7 +390,7 @@
 
                   <li><m>
                     \begin{aligned}[t]
-                    (-\frac{2}{3})^{-4}\amp=(-\frac{3}{2})^4\\
+                    \left(-\frac{2}{3}\right)^{-4}\amp=\left(-\frac{3}{2}\right)^4\\
                     \amp=\frac{81}{16}
                     \end{aligned}
                   </m></li>
@@ -405,7 +405,7 @@
 
                   <li><m>
                     \begin{aligned}[t]
-                    (\frac{5}{4})^{-2}\amp=(\frac{4}{5})^2\\
+                    \left(\frac{5}{4}\right)^{-2}\amp=\left(\frac{4}{5}\right)^2\\
                     \amp=\frac{16}{25}
                     \end{aligned}
                   </m></li>
@@ -553,12 +553,12 @@
               <p>
                 Let's see one more example <mdash/> one where we need to employ "step 3" of the outlined process.
                 <md>
-                  <mrow>\frac{4 \times 10^3}{8 \times 10^{10}}\amp=(\frac{4}{8}) \times \frac{10^3}{10^{10}}</mrow>
+                  <mrow>\frac{4 \times 10^3}{8 \times 10^{10}}\amp=\left(\frac{4}{8}\right) \times \frac{10^3}{10^{10}}</mrow>
                   <mrow>\amp=0.5 \times 10^{-7}</mrow>
                 </md>
                 Note that we aren't quite finished.  The number before the multiplication sign needs to be between <m>1</m> and <m>10</m>, so we need to move the decimal point one digit to the right.  To balance that act, we need to decrease the exponent on <m>10</m> by one.  Putting it all together we have:
                 <md>
-                  <mrow>\frac{4 \times 10^3}{8 \times 10^{10}}\amp=(\frac{4}{8}) \times \frac{10^3}{10^{10}}</mrow>
+                  <mrow>\frac{4 \times 10^3}{8 \times 10^{10}}\amp=\left(\frac{4}{8}\right) \times \frac{10^3}{10^{10}}</mrow>
                   <mrow>\amp=0.5 \times 10^{-7}</mrow>
                   <mrow>\amp=5 \times 10^{-8}</mrow>
                 </md>               
@@ -669,7 +669,7 @@
                 </li>
                 <li>
                   <p>
-                    (<m>1.08\times10^{12}</m> m)(<m>\frac{1}{1.61\times10^3}</m> mi/m)<m>=2.99\times10^8</m> mi.
+                    (<m>1.08\times10^{12}</m> m)\left(<m>\frac{1}{1.61\times10^3}</m> mi/m\right)<m>=2.99\times10^8</m> mi.
                   </p>
                   <p>
                     Light travels approximately <m>6.71\times10^8</m> miles in one hour.  For reference, that's a little less than the average distance between Earth and Saturn which in turn is roughly 8.5 times the average distance between Earth and the sun.

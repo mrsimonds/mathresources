@@ -98,12 +98,12 @@
               <p>
                 Let's see one more example <mdash/> one where we need to employ "step 3" of the outlined process.
                 <md>
-                  <mrow>\frac{4 \times 10^3}{8 \times 10^{10}}\amp=(\frac{4}{8}) \times \frac{10^3}{10^{10}}</mrow>
+                  <mrow>\frac{4 \times 10^3}{8 \times 10^{10}}\amp=\left(\frac{4}{8}\right) \times \frac{10^3}{10^{10}}</mrow>
                   <mrow>\amp=0.5 \times 10^{-7}</mrow>
                 </md>
                 Note that we aren't quite finished.  The number before the multiplication sign needs to be between <m>1</m> and <m>10</m>, so we need to move the decimal point one digit to the right.  To balance that act, we need to decrease the exponent on <m>10</m> by one.  Putting it all together we have:
                 <md>
-                  <mrow>\frac{4 \times 10^3}{8 \times 10^{10}}\amp=(\frac{4}{8}) \times \frac{10^3}{10^{10}}</mrow>
+                  <mrow>\frac{4 \times 10^3}{8 \times 10^{10}}\amp=\left(\frac{4}{8}\right) \times \frac{10^3}{10^{10}}</mrow>
                   <mrow>\amp=0.5 \times 10^{-7}</mrow>
                   <mrow>\amp=5 \times 10^{-8}</mrow>
                 </md>               
@@ -265,7 +265,7 @@
                 </li>
                 <li>
                   <p>
-                    (<m>1.08\times10^{12}</m> m)(<m>\frac{1}{1.61\times10^3}</m> mi/m)<m>=2.99\times10^8</m> mi.
+                    (<m>1.08\times10^{12}</m> m)\left(<m>\frac{1}{1.61\times10^3}</m> mi/m\right)<m>=2.99\times10^8</m> mi.
                   </p>
                   <p>
                     Light travels approximately <m>6.71\times10^8</m> miles in one hour.  For reference, that's a little less than the average distance between Earth and Saturn which in turn is roughly 8.5 times the average distance between Earth and the sun.

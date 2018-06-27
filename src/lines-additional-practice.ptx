@@ -170,7 +170,7 @@
             <sidebyside widths="78% 18%" margins="0%">
 
               <p>
-                The <m>x</m>-intercept is <m>(-3,0)</m> and the <m>y</m>-intercept is <m>(0,-\frac{3}{7})</m>.
+                The <m>x</m>-intercept is <m>(-3,0)</m> and the <m>y</m>-intercept is <m>\left(0,-\frac{3}{7}\right)</m>.
               </p>
 
               <table xml:id="lines-ap-table-2-solution">

@@ -434,18 +434,18 @@
 
           <statement>
             <p>
-              Determine the slope of the line that passes through the points <m>(\frac{3}{2},-\frac{3}{2})</m> and <m>(-\frac{11}{5},17)</m>.
+              Determine the slope of the line that passes through the points <m>\left(\frac{3}{2},-\frac{3}{2}\right)</m> and <m>\left(-\frac{11}{5},17\right)</m>.
             </p>
           </statement>
 
           <solution>
             <p>
               Let's designate the points as follows.
-              <me>(x_1,y_1) \text{ is } (\frac{3}{2},-\frac{3}{2}) \text{ and } (x_2,y_2) \text{ is } (-\frac{11}{5},17)</me>
+              <me>(x_1,y_1) \text{ is } \left(\frac{3}{2},-\frac{3}{2}\right) \text{ and } (x_2,y_2) \text{ is } \left(-\frac{11}{5},17\right)</me>
               Then:
               <md>
                 <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
-                <mrow>\amp=\frac{17-(-\frac{3}{2})}{-\frac{11}{5}-\frac{3}{2}}</mrow>
+                <mrow>\amp=\frac{17-\left(-\frac{3}{2}\right)}{-\frac{11}{5}-\frac{3}{2}}</mrow>
                 <mrow>\amp=\frac{\frac{34}{2}+\frac{3}{2}}{-\frac{22}{10}-\frac{15}{10}}</mrow>
                 <mrow>\amp=\frac{\frac{37}{2}}{-\frac{37}{10}}</mrow>
                 <mrow>\amp=\frac{37}{2} \cdot -\frac{10}{37}</mrow>

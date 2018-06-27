@@ -19,10 +19,10 @@
                 Write the squared and linear terms in a set of parentheses with space to add another number inside the parentheses.
               </li>
               <li>
-                Inside the parentheses, add <m>(\frac{b}{2})^2</m>.  Subtract that same number outside the parentheses.
+                Inside the parentheses, add <m>\left(\frac{b}{2}\right)^2</m>.  Subtract that same number outside the parentheses.
               </li>
               <li>
-                The trinomial in the parentheses now factors as <m>(x+\frac{b}{2})^2</m>.  Note that if <m>b</m> is a negative number, then the operation between <m>x</m> and the the number in the factored expression is ultimately subtraction.  Go ahead and factor the trinomial in the parentheses and at the same time combine the numbers outside of the parentheses.
+                The trinomial in the parentheses now factors as <m>\left(x+\frac{b}{2}\right)^2</m>.  Note that if <m>b</m> is a negative number, then the operation between <m>x</m> and the the number in the factored expression is ultimately subtraction.  Go ahead and factor the trinomial in the parentheses and at the same time combine the numbers outside of the parentheses.
               </li>
             </ol>
           </p>
@@ -36,7 +36,7 @@
               <p>
                 The number which completes the square is determined as follows.
                 <md>
-                  <mrow>(\frac{b}{2})^2\amp=(\frac{-16}{2})^2</mrow>
+                  <mrow>\left(\frac{b}{2}\right)^2\amp=\left(\frac{-16}{2}\right)^2</mrow>
                   <mrow>\amp=(-8)^2</mrow>
                   <mrow>\amp=64</mrow>
                 </md>
@@ -60,16 +60,16 @@
               <p>
                 The number which completes the square is determined as follows.
                 <md>
-                  <mrow>(\frac{b}{2})^2\amp=(\frac{9}{2})^2</mrow>
+                  <mrow>\left(\frac{b}{2}\right)^2\amp=\left(\frac{9}{2}\right)^2</mrow>
                   <mrow>\amp=\frac{81}{4}</mrow>
                 </md>
                 Let's go ahead and complete the square.
                 <md>
                   <mrow>y\amp=x^2+9x+21</mrow>
-                  <mrow>y\amp=(x^2+9x+\frac{81}{4})+21-\frac{81}{4}</mrow>
-                  <mrow>y\amp=(x+\frac{9}{2})^2+\frac{3}{4}</mrow>
+                  <mrow>y\amp=\left(x^2+9x+\frac{81}{4}\right)+21-\frac{81}{4}</mrow>
+                  <mrow>y\amp=\left(x+\frac{9}{2}\right)^2+\frac{3}{4}</mrow>
                 </md>
-                The vertex of the parabola is <m>(-\frac{9}{2},\frac{3}{4})</m>.
+                The vertex of the parabola is <m>\left(-\frac{9}{2},\frac{3}{4}\right)</m>.
               </p>
             </solution>
           </example>
@@ -77,13 +77,13 @@
             When the value of <m>a</m> in the equation <m>y=ax^2+bx+c</m> is not one, the process of completing the square is quite a bit more complicated.  The steps are as follows.
             <ol label="1">
               <li>
-                Factor <m>a</m> away from both the squared term and the linear term, leaving enough room in the parentheses to add another number.  he form  of the equation is now <m>y=a(x^2+\frac{b}{a})+c</m>
+                Factor <m>a</m> away from both the squared term and the linear term, leaving enough room in the parentheses to add another number.  he form  of the equation is now <m>y=a\left(x^2+\frac{b}{a}\right)+c</m>
               </li>
               <li>
-                Add <m>(\frac{b}{2a})^2</m> inside the parentheses.  Add or subtract what is necessary to balance this action.  Remember, since the number was added inside the parentheses, it is multiplied by <m>a</m>, so the amount you added was actual <m>a \cdot (\frac{b}{2a})^2</m> which must be subtracted outside the parentheses.  What's tricky is that if <m>a</m> is negative, you actually end up adding both inside and outside the parentheses.  Just make sure that your net addition is zero.
+                Add <m>\left(\frac{b}{2a}\right)^2</m> inside the parentheses.  Add or subtract what is necessary to balance this action.  Remember, since the number was added inside the parentheses, it is multiplied by <m>a</m>, so the amount you added was actual <m>a \cdot \left(\frac{b}{2a}\right)^2</m> which must be subtracted outside the parentheses.  What's tricky is that if <m>a</m> is negative, you actually end up adding both inside and outside the parentheses.  Just make sure that your net addition is zero.
               </li>
               <li>
-                The trinomial inside the parentheses now factors to <m>(x+\frac{b}{2a})^2</m>.  Note that if <m>b</m> is a negative number, then the operation between <m>x</m> and the the number in the factored expression is ultimately subtraction.  Go ahead and factor the trinomial in the parentheses and at the same time combine the numbers outside of the parentheses.
+                The trinomial inside the parentheses now factors to <m>\left(x+\frac{b}{2a}\right)^2</m>.  Note that if <m>b</m> is a negative number, then the operation between <m>x</m> and the the number in the factored expression is ultimately subtraction.  Go ahead and factor the trinomial in the parentheses and at the same time combine the numbers outside of the parentheses.
               </li>
             </ol>
           </p>
@@ -102,7 +102,7 @@
                 </md>
                 The number which completes the square is determined as follows.
                 <md>
-                  <mrow>(\frac{-6}{2})\amp=(-3)^2</mrow>
+                  <mrow>\left(\frac{-6}{2}\right)\amp=(-3)^2</mrow>
                   <mrow>\amp=9</mrow>
                 </md>
                 Because everything inside the parentheses is multiplied by <m>2</m>, we need to compensate for the addition of <m>9</m> inside the parentheses by subtracting 18 outside the parentheses so that the net addition is zero..  The process in total is shown below.
@@ -130,7 +130,7 @@
                 </md>
                 The number which completes the square is determined as follows.
                 <md>
-                  <mrow>(\frac{8}{2})\amp=4^2</mrow>
+                  <mrow>\left(\frac{8}{2}\right)\amp=4^2</mrow>
                   <mrow>\amp=16</mrow>
                 </md>
                 Because everything inside the parentheses is multiplied by <m>-3</m>, we need to compensate for the addition of <m>16</m> inside the parentheses by adding <m>48</m> outside the parentheses so that the net addition is zero.  The process in total is shown below.
@@ -157,15 +157,15 @@
                   <mrow>y\amp=-1 \cdot (x^2-5x)</mrow>
                 </md>
                 The number which completes the square is determined as follows.
-                <me>(\frac{-5}{2})^2=\frac{25}{4}</me>
+                <me>\left(\frac{-5}{2}\right)^2=\frac{25}{4}</me>
                 Because everything inside the parentheses is multiplied by <m>-1</m>, we need to compensate for the addition of <m>\frac{25}{4}</m> inside the parentheses by adding <m>\frac{25}{4}</m> again outside the parentheses so that the net addition is zero.  The process in total is shown below.
                 <md>
                   <mrow>y\amp=-x^2+5x</mrow>
                   <mrow>y\amp=-1 \cdot (x^2-5x)</mrow>
-                  <mrow>y\amp=-1 \cdot (x^2-5x\addright{\frac{25}{4}})\addright{\frac{25}{4}}</mrow>
-                  <mrow>y\amp=-(x-\frac{5}{2})^2+\frac{25}{4}</mrow>
+                  <mrow>y\amp=-1 \cdot \left(x^2-5x\addright{\frac{25}{4}}\right)\addright{\frac{25}{4}}</mrow>
+                  <mrow>y\amp=-\left(x-\frac{5}{2}\right)^2+\frac{25}{4}</mrow>
                 </md>
-                The vertex of the parabola is the point <m>(\frac{5}{2},\frac{25}{4})</m>.
+                The vertex of the parabola is the point <m>\left(\frac{5}{2},\frac{25}{4}\right)</m>.
               </p>
             </solution>
           </example>
@@ -204,10 +204,10 @@
                     We begin by completing the square to determine the graphing form of the equation.
                     <md>
                       <mrow>y\amp=x^2+9x+\frac{77}{4}</mrow>
-                      <mrow>y\amp=(x^2+9x\addright{\frac{81}{4}})+\frac{77}{4}\subtractright{\frac{81}{4}}</mrow>
-                      <mrow>y\amp=(x+\frac{9}{2})-1</mrow>
+                      <mrow>y\amp=\left(x^2+9x\addright{\frac{81}{4}}\right)+\frac{77}{4}\subtractright{\frac{81}{4}}</mrow>
+                      <mrow>y\amp=\left(x+\frac{9}{2}\right)-1</mrow>
                     </md>
-                    The vertex of the parabola is <m>(-\frac{9}{2},-1)</m>
+                    The vertex of the parabola is <m>\left(-\frac{9}{2},-1\right)</m>
                   </p>
                 </solution>
               </exercise>

@@ -291,7 +291,7 @@
             <solution>
               <sidebyside widths="78% 18%" margins="0%">
                 <p>
-                  The <m>x</m>-intercept is <m>(-\frac{8}{7},0)</m> and the <m>y</m>-intercept is <m>(0,-2)</m>.
+                  The <m>x</m>-intercept is <m>\left(-\frac{8}{7},0\right)</m> and the <m>y</m>-intercept is <m>(0,-2)</m>.
                 </p>
 
                 <table xml:id="table-workshop-lines-exercises-table-2-solution">

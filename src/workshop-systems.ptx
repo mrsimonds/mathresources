@@ -471,16 +471,16 @@
             So the solution has an <m>x</m>-coordinate of <m>\frac{11}{6}</m>.  Let's substitute that value for <m>x</m> in the equation <m>y=-2x+3</m> and simplify to determine the <m>y</m>-coordinate of the solution.
             <md>
               <mrow>y\amp=-2\highlight{x}+3</mrow>
-              <mrow>y\amp=-2(\highlight{\frac{11}{6}})+3</mrow>
+              <mrow>y\amp=-2\left(\highlight{\frac{11}{6}}\right)+3</mrow>
               <mrow>y\amp=-\frac{11}{3}+\frac{9}{3}</mrow>
               <mrow>y\amp=-\frac{2}{3}</mrow>
             </md>
-            So the solution to the system of equations is the ordered pair <m>(\frac{11}{6},-\frac{2}{3})</m>.  Let's verify.
+            So the solution to the system of equations is the ordered pair <m>\left(\frac{11}{6},-\frac{2}{3}\right)</m>.  Let's verify.
             <me>
               \left\{
                 \begin{aligned}
-                  2(\highlight{\frac{11}{6}})-5(\highlightr{-\frac{2}{3}})\amp=7\,?\\
-                  2(\highlight{\frac{11}{6}})+(\highlightr{-\frac{2}{3}})\amp=3\,?\\
+                  2\left(\highlight{\frac{11}{6}}\right)-5\left(\highlightr{-\frac{2}{3}}\right)\amp=7\,?\\
+                  2\left(\highlight{\frac{11}{6}}\right)+\left(\highlightr{-\frac{2}{3}}\right)\amp=3\,?\\
                 \end{aligned}
               \right.
             </me>
@@ -663,7 +663,7 @@
             Because <m>y</m> is already isolated in the second equation, let's run with that and substitute <m>-\frac{2}{5}x+5</m> for <m>y</m> in the first equation.
             <md>
               <mrow>4x+10\highlight{y}\amp=24</mrow>
-              <mrow>4x+10(\highlight{-\frac{2}{5}x+5})\amp=24</mrow>
+              <mrow>4x+10\left(\highlight{-\frac{2}{5}x+5}\right)\amp=24</mrow>
               <mrow>4x-4x+50\amp=24</mrow>
               <mrow>50\amp=24</mrow>
             </md>
@@ -834,7 +834,7 @@
                   </me>
                   We begin by substituting <m>\frac{3}{4}x-2</m> for <m>y</m> in the equation <m>3x-4y=8</m>.  We the (attempt) to solve he resultant eqaution for <m>x</m>.
                   <md>
-                    <mrow>3x-4(\substitute{\frac{3}{4}x-2})\amp=8</mrow>
+                    <mrow>3x-4\left(\substitute{\frac{3}{4}x-2}\right)\amp=8</mrow>
                     <mrow>3x-3x+8\amp=8</mrow>
                     <mrow>8\amp=8</mrow>
                   </md>
@@ -863,7 +863,7 @@
                   </me>
                   We can begin by substituting <m>-\frac{1}{3}y+3</m> for <m>x</m> in the equation <m>y=-3x+7</m>.  We then (attempt) to solve the resultant equation for <m>y</m>.
                   <md>
-                    <mrow>y\amp=-3(\substitute{-\frac{1}{3}y+3})+7</mrow>
+                    <mrow>y\amp=-3\left(\substitute{-\frac{1}{3}y+3}\right)+7</mrow>
                     <mrow>y\amp=y-9+7</mrow>
                     <mrow>y\amp=y-2</mrow>
                     <mrow>y\subtractright{y}\amp=y-2\subtractright{y}</mrow>
@@ -1004,9 +1004,9 @@
             We can substitute <m>\frac{5}{3}x+\frac{4}{3}</m> for <m>y</m> in the second original equation and solve the resultant equation for <m>x</m>.
             <md>
               <mrow>6x-7\highlight{y}\amp=2</mrow>
-              <mrow>6x-7(\highlight{\frac{5}{3}x+\frac{4}{3}})\amp=2</mrow>
+              <mrow>6x-7\left(\highlight{\frac{5}{3}x+\frac{4}{3}}\right)\amp=2</mrow>
               <mrow>6x-\frac{35}{3}x-\frac{28}{3}\amp=2</mrow>
-              <mrow>\multiplyleft{3}(6x-\frac{35}{3}x-\frac{28}{3})\amp=\multiplyleft{3}2\,\highlight{\text{ (clearing away the fractions)}}</mrow>
+              <mrow>\multiplyleft{3}\left(6x-\frac{35}{3}x-\frac{28}{3}\right)\amp=\multiplyleft{3}2\,\highlight{\text{ (clearing away the fractions)}}</mrow>
               <mrow>18x-35x-28\amp=6</mrow>
               <mrow>-17x-28\amp=6</mrow>
               <mrow>-17x-28\addright{28}\amp=6\addright{28}</mrow>
@@ -1056,8 +1056,8 @@
             <me>
               \left\{
                 \begin{aligned}
-                  \multiplyleft{28}(\frac{5}{2}x-\frac{3}{7}y)\amp=\multiplyleft{28}\frac{71}{28}\\
-                  \multiplyleft{18}(-\frac{7}{9}x+\frac{2}{3}y)\amp=\multiplyleft{18}-\frac{43}{18}\\
+                  \multiplyleft{28}\left(\frac{5}{2}x-\frac{3}{7}y\right)\amp=\multiplyleft{28}\frac{71}{28}\\
+                  \multiplyleft{18}\left(-\frac{7}{9}x+\frac{2}{3}y\right)\amp=\multiplyleft{18}-\frac{43}{18}\\
                 \end{aligned}
               \right.
             </me>     
@@ -1080,7 +1080,7 @@
             Let's go ahead and substitute <m>\frac{7}{6}x-\frac{43}{12}</m> for <m>y</m> in the equation <m>70x-12y=71</m> and solve the resultant equation for <m>x</m>.
             <md>
               <mrow>70x-12\highlight{y}\amp=71</mrow>
-              <mrow>70x-12(\highlight{\frac{7}{6}x-\frac{43}{12}})\amp=71</mrow>
+              <mrow>70x-12\left(\highlight{\frac{7}{6}x-\frac{43}{12}}\right)\amp=71</mrow>
               <mrow>70x-14x+43\amp=71</mrow>
               <mrow>56x+43\amp=71</mrow>
               <mrow>56x+43\subtractright{43}\amp=71\subtractright{43}</mrow>
@@ -1090,17 +1090,17 @@
             </md>
             Let's substitute <m>\frac{1}{2}</m> for <m>x</m> in the equation <m>y=\frac{7}{6}x-\frac{43}{12}</m> and solve the resultant equation for <m>y</m>.
             <md>
-              <mrow>y\amp=\frac{7}{6}(\highlight{\frac{1}{2}})-\frac{43}{12}</mrow>
+              <mrow>y\amp=\frac{7}{6}\left(\highlight{\frac{1}{2}}\right)-\frac{43}{12}</mrow>
               <mrow>y\amp=\frac{7}{12}-\frac{43}{12}</mrow>
               <mrow>y\amp=-\frac{36}{12}</mrow>
               <mrow>y\amp=-3</mrow>
             </md>
-            Our proposed solution is <m>(\frac{1}{2},-3)</m> which is pretty clean, so probably correct.  Never-the-less, we need to check it in the original system.    
+            Our proposed solution is <m>\left(\frac{1}{2},-3\right)</m> which is pretty clean, so probably correct.  Never-the-less, we need to check it in the original system.    
             <me>
               \left\{
                 \begin{aligned}
-                  \frac{5}{2}(\highlight{\frac{1}{2}})-\frac{3}{7}(\highlightr{-3})\amp=\frac{71}{28}\,?\\
-                  -\frac{7}{9}(\highlight{\frac{1}{2}})+\frac{2}{3}(\highlightr{-3})\amp=-\frac{43}{18}\,?\\
+                  \frac{5}{2}\left(\highlight{\frac{1}{2}}\right)-\frac{3}{7}(\highlightr{-3})\amp=\frac{71}{28}\,?\\
+                  -\frac{7}{9}\left(\highlight{\frac{1}{2}}\right)+\frac{2}{3}(\highlightr{-3})\amp=-\frac{43}{18}\,?\\
                 \end{aligned}
               \right.
             </me>    
@@ -1128,7 +1128,7 @@
                 \end{aligned}
               \right.
             </me>
-            The solution to the given system of equations is the ordered pair <m>(\frac{1}{2},-3)</m>.
+            The solution to the given system of equations is the ordered pair <m>\left(\frac{1}{2},-3\right)</m>.
           </p>
           <p>Criminy.</p>
         </statement>
@@ -1220,12 +1220,12 @@
                     </me>
                     Since <m>x</m> is already isolated in the first equation, let's go ahead and substitute <m>\frac{2}{5}y-2</m> for <m>x</m> in the second equation.
                     <md>
-                      <mrow>-(\substitute{\frac{2}{5}y-2})+3y\amp=28</mrow>
+                      <mrow>-\left(\substitute{\frac{2}{5}y-2}\right)+3y\amp=28</mrow>
                       <mrow>-\frac{2}{5}y+2+3y\amp=28</mrow>
                     </md>
                     Before going any further, we can clear away the fraction by multiplying both sides of the equation by <m>5</m>.
                     <md>
-                      <mrow>\multiplyleft{5}(-\frac{2}{5}y+2+3y)\amp=\multiplyleft{5}28</mrow>
+                      <mrow>\multiplyleft{5}\left(-\frac{2}{5}y+2+3y\right)\amp=\multiplyleft{5}28</mrow>
                       <mrow>-2y+10+15y\amp=140</mrow>
                       <mrow>13y+10\amp=140</mrow>
                       <mrow>13y+10\subtractright{10}\amp=140\subtractright{10}</mrow>
@@ -1264,12 +1264,12 @@
                     </md>
                     We can now substitute <m>-9+\frac{4}{3}y</m> for <m>x</m> in the equation <m>5x-3y=-34</m>.
                     <md>
-                      <mrow>5(\substitute{-9+\frac{4}{3}y})-3y\amp=-34</mrow>
+                      <mrow>5\left(\substitute{-9+\frac{4}{3}y}\right)-3y\amp=-34</mrow>
                       <mrow>-45+\frac{20}{3}y-3y\amp=-34</mrow>
                     </md>
                     Before proceeding any further, let's clear away the fraction by multiplying both sides of the equation by <m>3</m>.
                     <md>
-                      <mrow>\multiplyleft{3}(-45+\frac{20}{3}y-3y)\amp=\multiplyleft{3}-34</mrow>
+                      <mrow>\multiplyleft{3}\left(-45+\frac{20}{3}y-3y\right)\amp=\multiplyleft{3}-34</mrow>
                       <mrow>-135+20y-9y\amp=-102</mrow>
                       <mrow>-135+11y\amp=-102</mrow>
                       <mrow>-135+11y\addright{135}\amp=-102\addright{135}</mrow>
@@ -1302,8 +1302,8 @@
                     <me>
                       \left\{
                         \begin{aligned}
-                          \multiplyleft{6}(\frac{5}{2}x-\frac{4}{3}y)\amp=\multiplyleft{6}-33\\
-                          \multiplyleft{15}(-\frac{1}{5}x+\frac{2}{3}y)\amp=\multiplyleft{15}6\\
+                          \multiplyleft{6}\left(\frac{5}{2}x-\frac{4}{3}y\right)\amp=\multiplyleft{6}-33\\
+                          \multiplyleft{15}\left(-\frac{1}{5}x+\frac{2}{3}y\right)\amp=\multiplyleft{15}6\\
                         \end{aligned}
                       \right.
                     </me>
@@ -1326,7 +1326,7 @@
                     </md>
                     Let's go ahead and substitute <m>-30+\frac{10}{3}y</m> for <m>x</m> in the equation <m>15x-8y=-198</m>.
                     <md>
-                      <mrow>15(\substitute{-30+\frac{10}{3}y})-8y\amp=-198</mrow>
+                      <mrow>15\left(\substitute{-30+\frac{10}{3}y}\right)-8y\amp=-198</mrow>
                       <mrow>-450+50y-8y\amp=-198</mrow>
                       <mrow>-450+42y\amp=-198</mrow>
                       <mrow>-450+42y\addright{450}\amp=-198\addright{450}</mrow>
@@ -1364,14 +1364,14 @@
                     We can now substitute <m>-1+\frac{1}{3}x</m> for <m>y</m> in the first equation.  Before doing that, let's clear away the fractions from the first equation by multiplying both sides of the equation by the LCD of all of the fractions in the equation which is <m>4</m>.
                     <md>
                       <mrow>\frac{3}{4}x-\frac{5}{2}y\amp=\frac{7}{4}</mrow>
-                      <mrow>\multiplyleft{4}(\frac{3}{4}x-\frac{5}{2}y)\amp=\multiplyleft{4}\frac{7}{4}</mrow>
+                      <mrow>\multiplyleft{4}\left(\frac{3}{4}x-\frac{5}{2}y\right)\amp=\multiplyleft{4}\frac{7}{4}</mrow>
                       <mrow>3x-10y\amp=7</mrow>
-                      <mrow>3x-10(\substitute{-1+\frac{1}{3}x})\amp=7</mrow>
+                      <mrow>3x-10\left(\substitute{-1+\frac{1}{3}x}\right)\amp=7</mrow>
                       <mrow>3x+10-\frac{10}{3}x\amp=7</mrow>
                     </md>
                     Before proceeding any further, let's clear away the fraction by multiplying both sides of the equation by <m>3</m>.
                     <md>
-                      <mrow>\multiplyleft{3}(3x+10-\frac{10}{3}x)\amp=\multiplyleft{3}7</mrow>
+                      <mrow>\multiplyleft{3}\left(3x+10-\frac{10}{3}x\right)\amp=\multiplyleft{3}7</mrow>
                       <mrow>9x+30-10x\amp=21</mrow>
                       <mrow>-x+30\amp=21</mrow>
                       <mrow>-x+30\subtractright{30}\amp=21\subtractright{30}</mrow>
@@ -1437,12 +1437,12 @@
                     Breath ... let's substitute <m>\frac{13}{4}+\frac{7}{4}y</m> for <m>x</m> in the second given equation.
                     <md>
                       <mrow>6\substitute{x}+14y\amp=9</mrow>
-                      <mrow>6(\substitute{\frac{13}{4}+\frac{7}{4}y})+14y\amp=9</mrow>
+                      <mrow>6\left(\substitute{\frac{13}{4}+\frac{7}{4}y}\right)+14y\amp=9</mrow>
                       <mrow>\frac{39}{2}+\frac{21}{2}y+14y\amp=9</mrow>
                     </md>
                     Let's clear away the fractions by multiplying both sides of the equation by <m>2</m> and then solve for <m>y</m>.
                     <md>
-                      <mrow>\multiplyleft{2}(\frac{39}{2}+\frac{21}{2}y+14y)\amp=\multiplyleft{2}9</mrow>
+                      <mrow>\multiplyleft{2}\left(\frac{39}{2}+\frac{21}{2}y+14y\right)\amp=\multiplyleft{2}9</mrow>
                       <mrow>39+21y+28y\amp=18</mrow>
                       <mrow>49y+39\amp=18</mrow>
                       <mrow>49y+39\subtractright{39}\amp=18\subtractright{39}</mrow>
@@ -1456,7 +1456,7 @@
                       <mrow>x\amp=\frac{13}{4}-\frac{3}{4}</mrow>
                       <mrow>x\amp=\frac{5}{2}</mrow>
                     </md>
-                    Alrighty, then.  The solution to the given system is the ordered pair <m>(\frac{5}{2},-\frac{3}{7})</m>.  This unlikely outcome is verified below.
+                    Alrighty, then.  The solution to the given system is the ordered pair <m>\left(\frac{5}{2},-\frac{3}{7}\right)</m>.  This unlikely outcome is verified below.
 
                     <me>
                       \left\{
@@ -1530,7 +1530,7 @@
             <ol>
               <li><p>The solution is <m>(3,-6)</m>.</p></li>
               <li><p>The solution is <m>(6,-35)</m>.</p></li>
-              <li><p>The solution is <m>(\frac{20}{13},\frac{41}{13})</m>.</p></li>
+              <li><p>The solution is <m>\left(\frac{20}{13},\frac{41}{13}\right)</m>.</p></li>
             </ol>
           </p>
         </solution>
@@ -1843,8 +1843,8 @@
             <me>
               \left\{
                 \begin{aligned}
-                  \multiplyleft{15}(\frac{x}{3}-\frac{2y}{5})\amp=\multiplyleft{15}-\frac{9}{5}\\
-                  \multiplyleft{4}(\frac{3x}{2}+\frac{3y}{4})\amp=\multiplyleft{4}-3\\
+                  \multiplyleft{15}\left(\frac{x}{3}-\frac{2y}{5}\right)\amp=\multiplyleft{15}-\frac{9}{5}\\
+                  \multiplyleft{4}\left(\frac{3x}{2}+\frac{3y}{4}\right)\amp=\multiplyleft{4}-3\\
                 \end{aligned}
               \right.
             </me>     
@@ -2123,8 +2123,8 @@
                   <me>
                     \left\{
                       \begin{aligned}
-                        \multiplyleft{4}(\frac{3}{2}x-\frac{5}{4}y)\amp=\multiplyleft{4}-40\\
-                        \multiplyleft{20}(-\frac{2}{5}x+\frac{3}{4}y)\amp=\multiplyleft{20}14\\
+                        \multiplyleft{4}\left(\frac{3}{2}x-\frac{5}{4}y\right)\amp=\multiplyleft{4}-40\\
+                        \multiplyleft{20}\left(-\frac{2}{5}x+\frac{3}{4}y\right)\amp=\multiplyleft{20}14\\
                       \end{aligned}
                     \right.
                   </me>
@@ -2207,7 +2207,7 @@
                     \left\{
                       \begin{aligned}
                         2x+y\amp=2\\
-                        \multiplyleft{-2}(x-\frac{1}{7}y)\amp=\multiplyleft{-2}-8\\
+                        \multiplyleft{-2}\left(x-\frac{1}{7}y\right)\amp=\multiplyleft{-2}-8\\
                       \end{aligned}
                     \right.
                   </me>
@@ -2692,7 +2692,7 @@
                         </md>
                         So we conclude that Monica should purchase <m>6\,\sfrac{2}{3}</m> pounds of Jolly Joy Beans and <m>5\,\sfrac{1}{3}</m> pounds of Benny Beans (so that she purchases a total of 12 pounds of beans).  We can check to make sure that this will result in 6 lbs of red beans.
                         <md>
-                          <mrow>.70(\substitute{\frac{20}{3}})+.25(\substitute{\frac{16}{3}})\amp=\frac{14}{3}+\frac{4}{3}</mrow>
+                          <mrow>.70\left(\substitute{\frac{20}{3}}\right)+.25\left(\substitute{\frac{16}{3}}\right)\amp=\frac{14}{3}+\frac{4}{3}</mrow>
                           <mrow>\amp=\frac{18}{3}</mrow>
                           <mrow>\amp=6\,\checkmark</mrow>
                         </md>
@@ -2830,7 +2830,7 @@
             In the equation <m>D=rt</m>,  <m>D</m> represents distance,  <m>r</m> represents rate (speed), and  <m>t</m> represents time.  For example, if you drive at a constant speed of 65 mph for 2 hours, then the total distance covered over those hours is determined as follows.
             <md>
               <mrow>D\amp=rt</mrow>
-              <mrow>\amp=(65\,\frac{\text{miles}}{\text{hr}})(2\,\text{hr})</mrow>
+              <mrow>\amp=\left(65\,\frac{\text{miles}}{\text{hr}}\right)(2\,\text{hr})</mrow>
               <mrow>\amp=110\,\text{miles}</mrow>
             </md>
             Similarly, the amount of time it takes to drive 175 miles at a constant rate of 70 mph is calculated below.
@@ -2839,7 +2839,7 @@
               <mrow>\amp=\frac{175\,\text{miles}}{70\frac{\text{miles}}{\text{hr}}}</mrow>
               <mrow>\amp=2.5\,\text{hr}</mrow>
             </md>
-             The equation <m>D=rt</m> and its variations (e.g. <m>t=\frac{D}{r}</m>) frequently come into play when solving applications involving moving objects.  Let's see a couple of examples.
+             The equation <m>D=rt</m> and its variations \left(e.g. <m>t=\frac{D}{r}</m>\right) frequently come into play when solving applications involving moving objects.  Let's see a couple of examples.
           </p>
           <p>Example</p>
           <p>
@@ -2917,7 +2917,7 @@
             So Chao maintained a constant speed of 62 mph and seeing as Elyse maintained a constant speed that was 9 mph greater than Chao's, her constant speed was 71 mph.  Let's make sure that our conclusion makes sense.
           </p>
           <p>
-            The distance traveled in 15 minutes at a speed of 62 mph is: <me>(62\,\frac{\text{miles}}{\text{hr}})(.25\,\text{hr})=15.5\,\text{miles}</me>.  The distance traveled in 15 minutes at a speed of 71 mph is: <me>(71\,\frac{\text{miles}}{\text{hr}})(.25\,\text{hr})=17.75\,\text{miles}</me>.<me>15.5\,\text{miles}+17.75\,\text{miles}=33.25\,\text{miles}\,\checkmark</me>
+            The distance traveled in 15 minutes at a speed of 62 mph is: <me>\left(62\,\frac{\text{miles}}{\text{hr}}\right)(.25\,\text{hr})=15.5\,\text{miles}</me>.  The distance traveled in 15 minutes at a speed of 71 mph is: <me>\left(71\,\frac{\text{miles}}{\text{hr}}\right)(.25\,\text{hr})=17.75\,\text{miles}</me>.<me>15.5\,\text{miles}+17.75\,\text{miles}=33.25\,\text{miles}\,\checkmark</me>
           </p>
           <p>Example</p>
           <p>
@@ -3052,9 +3052,9 @@
               <mrow>y\amp=7</mrow>
             </md>
             Before stating a conclusion, let's make sure that our answers make sense.  When going upstream, the speed of the boat relative to the land is the difference of the two speeds, i.e. 10 mph.
-            <me>(10\,\frac{\text{miles}}{\text{hr}})(2\,\text{hr})=20 \,\text{miles}\,\checkmark</me>
+            <me>\left(10\,\frac{\text{miles}}{\text{hr}}\right)(2\,\text{hr})=20 \,\text{miles}\,\checkmark</me>
             When going downstream, the speed of the boat relative to the land is the sum of the two speeds, i.e. 24 mph.
-            <me>(24\,\frac{\text{miles}}{\text{hr}})(\frac{5}{6}\,\text{hr})=20 \,\text{miles}\,\checkmark</me>
+            <me>\left(24\,\frac{\text{miles}}{\text{hr}}\right)\left(\frac{5}{6}\,\text{hr}\right)=20 \,\text{miles}\,\checkmark</me>
             So the (still water) cruising speed of the boat was 17 mph and the speed of the current was 7 mph.
           </p>
         </statement>

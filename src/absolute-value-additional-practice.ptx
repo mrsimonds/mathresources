@@ -107,7 +107,7 @@
                 </statement>
                 <solution>
                   <p>
-                    The solution set is <m>[-\frac{21}{2},\frac{7}{2}]</m>.
+                    The solution set is <m>\left[-\frac{21}{2},\frac{7}{2}\right]</m>.
                   </p>
                 </solution>
               </exercise>
@@ -224,7 +224,7 @@
                 </statement>
                 <solution>
                   <p>
-                    The solution set is <m>(-\infty,-4] \cup [\frac{34}{5},\infty)</m>.
+                    The solution set is <m>(-\infty,-4] \cup \left[\frac{34}{5},\infty\right)</m>.
                   </p>
                 </solution>
               </exercise>
@@ -237,7 +237,7 @@
                 </statement>
                 <solution>
                   <p>
-                    The solution set is <m>(-\infty,-\frac{1}{2}) \cup (-\frac{1}{2},\infty)</m>.
+                    The solution set is <m>\left(-\infty,-\frac{1}{2}\right) \cup \left(-\frac{1}{2},\infty\right)</m>.
                   </p>
                 </solution>
               </exercise>
@@ -250,7 +250,7 @@
                 </statement>
                 <solution>
                   <p>
-                    The solution set is <m>(-\infty,-\frac{5}{2}) \cup (\frac{19}{2},\infty)</m>.
+                    The solution set is <m>\left(-\infty,-\frac{5}{2}\right) \cup \left(\frac{19}{2},\infty\right)</m>.
                   </p>
                 </solution>
               </exercise>
@@ -328,7 +328,7 @@
                 </statement>
                 <solution>
                   <p>
-                    The solution set is <m>(-\frac{7}{2},\frac{1}{2})</m>.
+                    The solution set is <m>\left(-\frac{7}{2},\frac{1}{2}\right)</m>.
                   </p>
                 </solution>
               </exercise>

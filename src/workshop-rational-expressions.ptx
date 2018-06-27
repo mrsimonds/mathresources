@@ -507,8 +507,8 @@
             When there is repeated division between rational expression, every divisor ends up being reciprocated when the expression is rewritten as a product.  The is a result of the fact that operations are performed left-to-right.  An example follows.
            <md>
               <mrow>\amp\frac{x-3}{x-7} \div \frac{x+8}{x-12} \div \frac{x+8}{x-7}</mrow>
-              <mrow>\amp \phantom{={}} \phantom{={}} =(\frac{x-3}{x-7} \div \frac{x+8}{x-12}) \div \frac{x+8}{x-7}</mrow>
-              <mrow>\amp \phantom{={}} \phantom{={}} =(\frac{x-3}{x-7} \cdot \frac{x-12}{x+8}) \div \frac{x+8}{x-7}, x \neq 12</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\left(\frac{x-3}{x-7} \div \frac{x+8}{x-12}\right) \div \frac{x+8}{x-7}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\left(\frac{x-3}{x-7} \cdot \frac{x-12}{x+8}\right) \div \frac{x+8}{x-7}, x \neq 12</mrow>
               <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x-3)(x-12)}{(x-7)(x+8)} \div \frac{x+8}{x-7}, x \neq 12</mrow>
               <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x-3)(x-12)}{(x-7)(x+8)} \cdot \frac{x-7}{x+8}, x \neq 12</mrow>
               <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x-3)(x-12)(x-7)}{(x-7)(x+8)(x+8)}, x \neq 12</mrow>
@@ -1534,7 +1534,7 @@
           </md>
           We now multiply both sides of the equation by the LCD, <m>(x+2)(x-2)</m>.  We then distribute, simplify each term, and solve the resultant equation.
           <md>
-            <mrow>\multiplyleft{\frac{(x+2)(x-2)}{1}}(\frac{5}{x+2}+\frac{2x}{(x+2)(x-2)})\amp=\multiplyleft{\frac{(x+2)(x-2)}{1}}\frac{3}{x-2}</mrow>
+            <mrow>\multiplyleft{\frac{(x+2)(x-2)}{1}}\left(\frac{5}{x+2}+\frac{2x}{(x+2\right)(x-2)})\amp=\multiplyleft{\frac{(x+2)(x-2)}{1}}\frac{3}{x-2}</mrow>
             <mrow>\frac{5(x+2)(x-2)}{x+2}+\frac{2x \cdot (x+2)(x-2)}{(x+2)(x-2)}\amp=\frac{3(x+2)(x-2)}{x-2}</mrow>
             <mrow>5(x-2)+2x\amp=3(x+2)</mrow>
             <mrow>5x-10+2x\amp=3x+6</mrow>
@@ -1558,7 +1558,7 @@
           </md>
            We now multiply both sides of the equation by the LCD, <m>(x-3)(x+2)</m>.  We then distribute, simplify each term, and solve the resultant equation.
            <md>
-            <mrow>\multiplyleft{\frac{(x-3)(x+2)}{1}} \frac{3}{x-3}\amp=\multiplyleft{\frac{(x-3)(x+2)}{1}} (\frac{5x}{(x-3)(x+2)}-\frac{5}{x+2})</mrow>
+            <mrow>\multiplyleft{\frac{(x-3)(x+2)}{1}} \frac{3}{x-3}\amp=\multiplyleft{\frac{(x-3)(x+2)}{1}} \left(\frac{5x}{(x-3\right)(x+2)}-\frac{5}{x+2})</mrow>
             <mrow>\frac{3(x-3)(x+2)}{x-3}\amp=\frac{5x \cdot (x-3)(x+2)}{(x-3)(x+2)}-\frac{5(x-3)(x+2)}{x+2}</mrow>
             <mrow>3(x+2)\amp=5x-5(x-3)</mrow>
             <mrow>3x+6\amp=5x-5x+15</mrow>
@@ -1578,7 +1578,7 @@
           We begin by multiplying both sides of the equation by the only denominator in the equation, <m>x</m>. We then distribute, simplify each term, and solve the resultant equation.
           <md>
             <mrow>\frac{24}{x}-x\amp=5</mrow>
-            <mrow>\multiplyleft{\frac{x}{1}} (\frac{24}{x}-x\amp)=\multiplyleft{\frac{x}{1}} 5</mrow>
+            <mrow>\multiplyleft{\frac{x}{1}} \left(\frac{24}{x}-x\amp\right)=\multiplyleft{\frac{x}{1}} 5</mrow>
             <mrow>\frac{24x}{x}-\frac{x^2}{1}\amp=\frac{5x}{1}</mrow>
             <mrow>24-x^2\amp=5x</mrow>
             <mrow>24-x^2\subtractright{24}\addright{x^2} \amp=5x\subtractright{24}\addright{x^2} </mrow>
@@ -1617,7 +1617,7 @@
                 <md>
                   <mrow>\frac{3}{x+4}-1\amp=\frac{2}{5x+20}</mrow>
                   <mrow>\frac{3}{x+4}-1\amp=\frac{2}{5(x+4)}</mrow>
-                  <mrow>\multiplyleft{\frac{5(x+4)}{1}}(\frac{3}{x+4}-1)\amp=\multiplyleft{\frac{5(x+4)}{1}}\frac{2}{5(x+4)}</mrow>
+                  <mrow>\multiplyleft{\frac{5(x+4)}{1}}\left(\frac{3}{x+4}-1\right)\amp=\multiplyleft{\frac{5(x+4)}{1}}\frac{2}{5(x+4)}</mrow>
                   <mrow>\frac{15(x+4)}{x+4}-\frac{5(x+4)}{1}\amp=\frac{10(x+4)}{5(x+4)}</mrow>
                   <mrow>15-5(x+4)\amp=2</mrow>
                   <mrow>15-5x-20\amp=2</mrow>
@@ -1655,7 +1655,7 @@
                 <md>
                   <mrow>\frac{4}{x^2+2x}-\frac{3}{x}\amp=\frac{x}{x+2}</mrow>
                   <mrow>\frac{4}{x \cdot (x+2)}-\frac{3}{x}\amp=\frac{x}{x+2}</mrow>
-                  <mrow>\multiplyleft{\frac{x \cdot (x+2)}{1}} (\frac{4}{x \cdot (x+2)}-\frac{3}{x})\amp=\multiplyleft{\frac{x \cdot (x+2)}{1}} \frac{x}{x+2}</mrow>
+                  <mrow>\multiplyleft{\frac{x \cdot (x+2)}{1}} \left(\frac{4}{x \cdot (x+2\right)}-\frac{3}{x})\amp=\multiplyleft{\frac{x \cdot (x+2)}{1}} \frac{x}{x+2}</mrow>
                   <mrow>\frac{4x \cdot (x+2)}{x \cdot (x+2)}-\frac{3x \cdot (x+2)}{x}\amp=\frac{x^2(x+2)}{x+2}</mrow>
                   <mrow>4-3(x+2)\amp=x^2</mrow>
                   <mrow>4-3x-6\amp=x^2</mrow>
@@ -1677,7 +1677,7 @@
                 <md>
                   <mrow>\frac{6}{x^2-6x+9}-\frac{x}{x-3}+\frac{2x-4}{3x-9}\amp=0</mrow>
                   <mrow>\frac{6}{(x-3)^{2}}-\frac{x}{x-3}+\frac{2x-4}{3(x-3)}\amp=0</mrow>
-                  <mrow>\multiplyleft{\frac{3(x-3)^{2}}{1}}(\frac{6}{(x-3)^{2}}-\frac{x}{x-3}+\frac{2x-4}{3(x-3)})\amp=\multiplyleft{\frac{3(x-3)^{2}}{1}}0</mrow>
+                  <mrow>\multiplyleft{\frac{3(x-3)^{2}}{1}}\left(\frac{6}{(x-3\right)^{2}}-\frac{x}{x-3}+\frac{2x-4}{3(x-3)})\amp=\multiplyleft{\frac{3(x-3)^{2}}{1}}0</mrow>
                   <mrow>\frac{18(x-3)^2}{(x-3)^2}-\frac{3x \cdot (x-3)^2}{x-3}+\frac{3(x-3)^2(2x-4)}{3(x-3)}\amp=0</mrow>
                   <mrow>18-3x \cdot (x-3)+(x-3)(2x-4)\amp=0</mrow>
                   <mrow>18-3x^2+9x+2x^2-4x-6x+12\amp=0</mrow>
@@ -1815,7 +1815,7 @@
             <m>2 \times 13 \times 16t</m> which simplifies to <m>416t</m>.  We need to multiply both sides of the equation by the LCD, distribute, simplify each term, and solve the resultant equation.
             <md>
               <mrow>\frac{1}{26}+\frac{1}{32}\amp=\frac{40}{t}</mrow>
-              <mrow>\multiplyleft{\frac{416t}{1}} (\frac{1}{26}+\frac{1}{32})\amp=\multiplyleft{\frac{416t}{1}} \frac{40}{t}</mrow>
+              <mrow>\multiplyleft{\frac{416t}{1}} \left(\frac{1}{26}+\frac{1}{32}\right)\amp=\multiplyleft{\frac{416t}{1}} \frac{40}{t}</mrow>
               <mrow>\frac{416t}{26}+\frac{416t}{32}\amp=\frac{16640t}t</mrow>
               <mrow>16t+13t\amp=16640</mrow>
               <mrow>29t\amp=16640</mrow>
@@ -1895,7 +1895,7 @@
             The equation we need to solve comes from the fact that you spent a total of two on the river, so the two time expressions need to sum to two.  Let's write and solve that equation.
             <md>
               <mrow>\frac{7}{7.8-x}+\frac{7}{7.8+x}\amp=2</mrow>
-              <mrow>\multiplyleft{\frac{(7.8-x)(7.8+x)}{1}} (\frac{7}{7.8-x}+\frac{7}{7.8+x})\amp=\multiplyleft{(7.8-x)(7.8+x)} 2</mrow>
+              <mrow>\multiplyleft{\frac{(7.8-x)(7.8+x)}{1}} \left(\frac{7}{7.8-x}+\frac{7}{7.8+x}\right)\amp=\multiplyleft{(7.8-x)(7.8+x)} 2</mrow>
               <mrow>\frac{7(7.8-x)(7.8+x)}{7.8-x}+\frac{7(7.8-x)(7.8+x)}{7.8+x}\amp=2(7.8-x)(7.8+x)</mrow>
               <mrow>7(7.8+x)+7(7.8-x)\amp=2(60.84-x^2)</mrow>
               <mrow>54.6+7x+54.6-7x\amp=121.68-2x^2</mrow>
@@ -1992,7 +1992,7 @@
                       Because Yoshi spent a total of 2.5 hours on the river, the sum of the two time expressions needs to total 2.5.  Lets state and solve that equation.
                       <md>
                         <mrow>\frac{12}{10-x}+\frac{12}{10-x}\amp=2.5</mrow>
-                        <mrow>\multiplyleft{(10-x)(10+x)}(\frac{12}{10-x}+\frac{12}{10-x})\amp=\multiplyleft{(10-x)(10+x)}2.5</mrow>
+                        <mrow>\multiplyleft{(10-x)(10+x)}\left(\frac{12}{10-x}+\frac{12}{10-x}\right)\amp=\multiplyleft{(10-x)(10+x)}2.5</mrow>
                         <mrow>12(10+x)+12(10-x)\amp=2.5(10-x)(10+x)</mrow>
                         <mrow>120+12x+120-12x\amp=2.5(100-x^2)</mrow>
                         <mrow>240\amp=250-2.5x^2</mrow>

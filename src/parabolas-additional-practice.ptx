@@ -81,7 +81,7 @@
                 </statement>
                 <solution>
                   <p>
-                    The vertex of the parabola is <m>(\frac{7}{4},\frac{17}{8})</m>.  The axis of symmetry is the line with equation <m>x=\frac{7}{4}</m>. The parabola is concave down.  The <m>x</m>-intercepts are <m>(\frac{7-\sqrt{17}}{4},0)</m> and <m>(\frac{7+\sqrt{17}}{4},0)</m>.  The <m>y</m>-intercept is <m>(0,-4)</m>.
+                    The vertex of the parabola is <m>\left(\frac{7}{4},\frac{17}{8}\right)</m>.  The axis of symmetry is the line with equation <m>x=\frac{7}{4}</m>. The parabola is concave down.  The <m>x</m>-intercepts are <m>\left(\frac{7-\sqrt{17}}{4},0\right)</m> and <m>\left(\frac{7+\sqrt{17}}{4},0\right)</m>.  The <m>y</m>-intercept is <m>(0,-4)</m>.
                   </p>
                 </solution>
               </exercise>
@@ -415,7 +415,7 @@
                     </statement>
                     <solution>
                       <p>
-                        The graphing form of the equation is <m>y=(x-\frac{5}{2})^2-\frac{33}{4}</m>.  The vertex of the parabola is <m>(\frac{5}{2},-\frac{33}{4})</m>.
+                        The graphing form of the equation is <m>y=\left(x-\frac{5}{2}\right)^2-\frac{33}{4}</m>.  The vertex of the parabola is <m>\left(\frac{5}{2},-\frac{33}{4}\right)</m>.
                       </p>
                     </solution>
                   </exercise>
@@ -454,7 +454,7 @@
                     </statement>
                     <solution>
                       <p>
-                        The graphing form of the equation is <m>y=-2(x-\frac{11}{4})^2+\frac{121}{8}</m>.  The vertex of the parabola is <m>(\frac{11}{4},\frac{121}{8})</m>.
+                        The graphing form of the equation is <m>y=-2\left(x-\frac{11}{4}\right)^2+\frac{121}{8}</m>.  The vertex of the parabola is <m>\left(\frac{11}{4},\frac{121}{8}\right)</m>.
                       </p>
                     </solution>
                   </exercise>

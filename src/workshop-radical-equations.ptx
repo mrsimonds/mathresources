@@ -74,7 +74,7 @@
             We would begin by dividing both sides of the equation by <m>3</m>, but doing so would introduce an unnecessary fraction to the right-side of the equation.  I think we'd be better off just squaring both sides of the equation as is.  We need to be mindful, however, that both factors on the left-side of the equation need to be squared.
             <md>
               <mrow>3\sqrt{\frac{x+7}{2}}\amp=5</mrow>
-              <mrow>\highlight{(}3\sqrt{\frac{x+7}{2}}\highlight{)^2}\amp=\highlight{(}5\highlight{)^2}</mrow>
+              <mrow>\highlight{\left(}3\sqrt{\frac{x+7}{2}}\highlight{\right)^2}\amp=\highlight{(}5\highlight{)^2}</mrow>
               <mrow>9 \cdot \frac{x+7}{2}\amp=25</mrow>
               <mrow>\frac{9x+63}{2}\amp=25</mrow>
               <mrow>\multiplyleft{2}\frac{9x+63}{2}\amp=\multiplyleft{2}25\text{ (clearing the fraction)}</mrow>

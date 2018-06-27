@@ -300,7 +300,7 @@
               <li>
               <sidebyside widths="78% 18%">
               <p>
-                The <m>x</m>-intercept is <m>(-\frac{8}{7},0)</m> and the <m>y</m>-intercept is <m>(0,-2)</m>.
+                The <m>x</m>-intercept is <m>\left(-\frac{8}{7},0\right)</m> and the <m>y</m>-intercept is <m>(0,-2)</m>.
               </p>
               <table xml:id="table-workshop-lines-exercises-table-2-solution">
                           <caption><m>7x+4y=-8</m></caption>
@@ -490,7 +490,7 @@
               <li>
               <sidebyside widths="78% 18%">
               <p>
-                The <m>x</m>-intercept is <m>(-3,0)</m> and the <m>y</m>-intercept is <m>(0,-\frac{3}{7})</m>.
+                The <m>x</m>-intercept is <m>(-3,0)</m> and the <m>y</m>-intercept is <m>\left(0,-\frac{3}{7}\right)</m>.
               </p>
               <table xml:id="table-workshop-lines-preassess-table-2-solution">
                           <caption><m>-x-7y=3</m></caption>
@@ -860,7 +860,7 @@
               </li>
               <li>
                 <p>
-                  Determine the slope of the line that passes through the points <m>(\frac{3}{2},-\frac{3}{2})</m> and <m>(-\frac{11}{5},17)</m>.
+                  Determine the slope of the line that passes through the points <m>\left(\frac{3}{2},-\frac{3}{2}\right)</m> and <m>\left(-\frac{11}{5},17\right)</m>.
                 </p>
               </li>
               <li>
@@ -925,11 +925,11 @@
             <li>
               <p>
                 Let's designate the points as follows.
-                <me>(x_1,y_1) \text{ is } (\frac{3}{2},-\frac{3}{2}) \text{ and } (x_2,y_2) \text{ is } (-\frac{11}{5},17)</me>
+                <me>(x_1,y_1) \text{ is } \left(\frac{3}{2},-\frac{3}{2}\right) \text{ and } (x_2,y_2) \text{ is } \left(-\frac{11}{5},17\right)</me>
                 The slope is calculated thus.
                 <md>
                   <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
-                  <mrow>\amp=\frac{17-(-\frac{3}{2})}{-\frac{11}{5}-\frac{3}{2}}</mrow>
+                  <mrow>\amp=\frac{17-\left(-\frac{3}{2}\right)}{-\frac{11}{5}-\frac{3}{2}}</mrow>
                   <mrow>\amp=\frac{\frac{34}{2}+\frac{3}{2}}{-\frac{22}{10}-\frac{15}{10}}</mrow>
                   <mrow>\amp=\frac{\frac{37}{2}}{-\frac{37}{10}}</mrow>
                   <mrow>\amp=\frac{37}{2} \cdot -\frac{10}{37}</mrow>

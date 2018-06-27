@@ -106,7 +106,7 @@
                 We begin by isolating the absolute value expression.  We'll first multiply through both sides if the inequality by <m>6</m> to clear away all of the fractions.
                 <md>
                   <mrow>\frac{\abs{5x+10}}{3}-\frac{15}{2} \amp\ge \frac{5}{3}</mrow>
-                  <mrow>\multiplyleft{6}(\frac{\abs{5x+10}}{3}-\frac{15}{2}) \amp\ge \multiplyleft{6}\frac{5}{2}</mrow>
+                  <mrow>\multiplyleft{6}\left(\frac{\abs{5x+10}}{3}-\frac{15}{2}\right) \amp\ge \multiplyleft{6}\frac{5}{2}</mrow>
                   <mrow>2\abs{5x+10}-45 \amp\ge 15</mrow>
                   <mrow>2\abs{5x+10}-45\addright{45} \amp\ge 15\addright{45}</mrow>
                   <mrow>2\abs{5x+10} \amp\ge 60</mrow>
@@ -285,7 +285,7 @@
                       <mrow>\divideunder{-2x}{-2} \amp\ge \divideunder{-17}{-2} \amp\amp\text{or}\amp \divideunder{-2x}{-2} \amp\le \divideunder{1}{-2}</mrow>
                       <mrow>x \amp\ge \frac{17}{2} \amp\amp\text{or}\amp x \amp\le -\frac{1}{2}</mrow>
                     </md>
-                    The solution set to the given inequality is <m>(-\infty,-\frac{1}{2}] \cup [\frac{17}{2},\infty)</m>.
+                    The solution set to the given inequality is <m>\left(-\infty,-\frac{1}{2}\right] \cup \left[\frac{17}{2},\infty\right)</m>.
                   </p>
                 </solution>
               </exercise>

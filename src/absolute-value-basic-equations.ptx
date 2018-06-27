@@ -267,7 +267,7 @@
               <mrow>\divideunder{-21}{3} \amp\lt \divideunder{3x}{3} \amp\amp\lt \divideunder{7}{3}</mrow>
               <mrow>-7 \amp\lt x \amp\amp\lt \frac{7}{3}</mrow>
             </md> 
-            The solution set to the give inequality is <m>[-7,\frac{7}{3}]</m>.
+            The solution set to the give inequality is <m>\left[-7,\frac{7}{3}\right]</m>.
           </p>
           <p>Example</p>
           <p></p>
@@ -337,7 +337,7 @@
                   <mrow>\multiplyleft{-\frac{2}{3}}-9 \amp\ge \multiplyleft{-\frac{2}{3}}-\frac{3x}{2} \amp\amp\ge \multiplyleft{-\frac{2}{3}}29</mrow>
                   <mrow>6 \amp\ge x \amp\amp\ge -\frac{58}{3}</mrow>
                 </md>
-                The solution set is <m>[-\frac{58}{3},6]</m>.
+                The solution set is <m>\left[-\frac{58}{3},6\right]</m>.
               </li>
               <li>
                 We are tasked with finding the solution set to <m>\abs{4x+5} \lt 25</m>.  We begin by writing an equivalent compound inequality that does not include an absolute value expression.  We then solve that compound inequality.
@@ -348,7 +348,7 @@
                   <mrow>\divideunder{-30}{4} \amp\le \divideunder{4x}{4} \amp\amp\le \divideunder{20}{4}</mrow>
                   <mrow>-\frac{15}{2} \amp\le x \amp\amp\le 5</mrow>
                 </md>
-                The solution set is <m>[-\frac{15}{2},5]</m>.
+                The solution set is <m>\left[-\frac{15}{2},5\right]</m>.
               </li>
               <li>
                 We are tasked with finding the solution set to <m>\abs{-9x} \le 63</m>.  We begin by writing an equivalent compound inequality that does not include an absolute value expression.  We then solve that compound inequality.
@@ -386,7 +386,7 @@
         <solution>
           <p>
             <ol>
-              <li>The solution set is <m>[-\frac{21}{2},\frac{7}{2}]</m>.</li>
+              <li>The solution set is <m>\left[-\frac{21}{2},\frac{7}{2}\right]</m>.</li>
               <li>The solution set is <m>(-12,32)</m>.</li>
               <li>The solution set is <m>\emptyset</m>.</li>
               <li>The solution set is <m>[-24,12]</m>.</li>
@@ -453,7 +453,7 @@
               <mrow>\divideunder{3x}{3} \amp\lt \divideunder{-13}{3} \amp\amp\text{or}\amp \divideunder{3x}{3}\amp\gt \divideunder{9}{3}</mrow>
               <mrow>x \amp\lt -\frac{13}{3} \amp\amp\text{or}\amp x \amp\gt 3</mrow>
             </md>
-            The solution set to the given inequality is <m>(-\infty,-\frac{13}{3}) \cup (3,\infty)</m>.
+            The solution set to the given inequality is <m>\left(-\infty,-\frac{13}{3}\right) \cup (3,\infty)</m>.
           </p>
           <p>Example</p>
           <p></p>
@@ -532,7 +532,7 @@
                   <mrow>\divideunder{-9x}{-9} \amp\gt \divideunder{-97}{-9} \amp\amp\text{or}\amp \divideunder{-9x}{-9} \amp\lt \divideunder{69}{-9}</mrow>
                   <mrow>x \amp\gt \frac{97}{9} \amp\amp\text{or}\amp x \amp\lt -\frac{23}{3}</mrow>
                 </md>
-                The solution set is <m>(-\infty,-\frac{23}{3}) \cup (\frac{97}{9},\infty)</m>.
+                The solution set is <m>\left(-\infty,-\frac{23}{3}\right) \cup \left(\frac{97}{9},\infty\right)</m>.
               </li>
               <li>
                 Our charge is to determine the solution set to the inequality <m>\abs{4x+15} \ge -10</m>.  We begin by observing that every number has an absolute value that is greater than (or equal to) <m>-10</m>.  So we conclude by noting that every value of <m>x</m> is a solution to the given inequality and that the solution set to the inequality is <m>(-\infty,\infty)</m>.
@@ -546,7 +546,7 @@
                   <mrow>\divideunder{3x}{3} \amp\lt \divideunder {4}{3} \amp\amp\text{or}\amp \divideunder{3x}{3} \amp\gt \divideunder{32}{3}</mrow>
                   <mrow>x \amp\lt \frac{4}{3} \amp\amp\text{or}\amp x \amp\gt \frac{32}{3}</mrow>
                 </md>
-                The solution set is <m>(-\infty,\frac{4}{3}) \cup (\frac{32}{3},\infty)</m>.
+                The solution set is <m>\left(-\infty,\frac{4}{3}\right) \cup \left(\frac{32}{3},\infty\right)</m>.
               </li>
             </ol>
           </p>
@@ -575,9 +575,9 @@
               <li>The solution set is <m>(-\infty,\infty)</m>.</li>
               <li>The solution set is <m>(-\infty,-24] \cup [-7,\infty)</m>.</li>
               <li>The solution set is <m>(-\infty,-28) \cup (56,\infty)</m>.</li>
-              <li>The solution set is <m>(-\infty,-4] \cup [\frac{34}{5},\infty)</m>.</li>
-              <li>The solution set is <m>(-\infty,-\frac{1}{2}) \cup (-\frac{1}{2},\infty)</m>.</li>
-              <li>The solution set is <m>(-\infty,-\frac{5}{2}) \cup (\frac{19}{2},\infty)</m>.</li>
+              <li>The solution set is <m>(-\infty,-4] \cup \left[\frac{34}{5},\infty\right)</m>.</li>
+              <li>The solution set is <m>\left(-\infty,-\frac{1}{2}\right) \cup \left(-\frac{1}{2},\infty\right)</m>.</li>
+              <li>The solution set is <m>\left(-\infty,-\frac{5}{2}\right) \cup \left(\frac{19}{2},\infty\right)</m>.</li>
             </ol>
           </p>
         </solution>
@@ -667,7 +667,7 @@
             We begin by isolating the absolute value expression.  We'll first multiply through both sides if the inequality by <m>6</m> to clear away all of the fractions.
             <md>
               <mrow>\frac{\abs{5x+10}}{3}-\frac{15}{2} \amp\ge \frac{5}{3}</mrow>
-              <mrow>\multiplyleft{6}(\frac{\abs{5x+10}}{3}-\frac{15}{2}) \amp\ge \multiplyleft{6}\frac{5}{2}</mrow>
+              <mrow>\multiplyleft{6}\left(\frac{\abs{5x+10}}{3}-\frac{15}{2}\right) \amp\ge \multiplyleft{6}\frac{5}{2}</mrow>
               <mrow>2\abs{5x+10}-45 \amp\ge 15</mrow>
               <mrow>2\abs{5x+10}-45\addright{45} \amp\ge 15\addright{45}</mrow>
               <mrow>2\abs{5x+10} \amp\ge 60</mrow>
@@ -801,7 +801,7 @@
                   <mrow>\divideunder{-2x}{-2} \amp\ge \divideunder{-17}{-2} \amp\amp\text{or}\amp \divideunder{-2x}{-2} \amp\le \divideunder{1}{-2}</mrow>
                   <mrow>x \amp\ge \frac{17}{2} \amp\amp\text{or}\amp x \amp\le -\frac{1}{2}</mrow>
                 </md>
-                The solution set to the given inequality is <m>(-\infty,-\frac{1}{2}] \cup [\frac{17}{2},\infty)</m>.
+                The solution set to the given inequality is <m>\left(-\infty,-\frac{1}{2}\right] \cup \left[\frac{17}{2},\infty\right)</m>.
               </li>
             </ol>
             <p></p>
@@ -833,7 +833,7 @@
               <li>The solution set is <m>[-14,16]</m>.</li>
               <li>The solution set is <m>(-4,4)</m>.</li>
               <li>The solution set is <m>\emptyset</m>.</li>
-              <li>The solution set is <m>(-\frac{7}{2},\frac{1}{2})</m>.</li>
+              <li>The solution set is <m>\left(-\frac{7}{2},\frac{1}{2}\right)</m>.</li>
             </ol>
           </p>
         </solution>
