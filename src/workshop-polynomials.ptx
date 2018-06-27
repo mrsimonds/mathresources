@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-polynomials">
+    <title>Polynomials</title>
+
+    <exercises>
+      <title>Videos</title>
+      <exercise>
+        <title>Videos created by Ann Cary and Scot Leavitt.</title>
+        <statment>        
+          <p>The links take you to YouTube Playlists which will open either in a new window or in a Youtube App.
+          <ul>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-ef9FnOLhpBG_Z0sQd6-7s-" target="blank">Addition and subtraction of polynomials</url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-f68uz_9tWNiLf9GRkurveh" target="blank">Multiplication of polynomials</url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-cl21nlu-cPnDREmZnzNvOg" target="blank">Special cases of polynomial multiplication</url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-dvZk2B452d9mN6V6DIHx_s" target="blank">Division of polynomials by monomials</url>
+            </li>
+          </ul>
+        </p>
+      </statment>
+    </exercise>
+  </exercises>
+
+  <exercises>
+      <title>Terminology Related to Polynomials</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
+        <statement>
+          <p>
+            A polynomial term is an expression that can be written as the product of a constant and variables raised to whole number powers.  The constant factor is called the coefficient of the term and the sum of the exponents is called the degree of the term.
+          </p>
+          <p>
+            For example, consider <me>15x^6</me>.  The coefficient of the term is the constant factor <m>15</m> and the degree of the term is equal to the exponent, <m>6</m>.
+          </p>
+          <p>
+            Now consider <me>-x^5y^3</me>.  The expression could be written as <me>-1 \cdot x^5y^3</me>, so the coefficient is <m>-1</m>.  The degree is equal to the sum of the two exponents, <m>8</m>.
+          </p>
+          <p>
+             Let's consider the expressions <m>6x</m> and <m>15</m>.
+           </p>
+           <p>
+            The first expression could be written as <me>6x^1</me>, so it is a polynomial term and the degree is <m>1</m>.  Polynomial terms with a degree of one are called linear terms.
+          </p>
+          <p>
+            The second expression would be written as <me>15x^0</me>, so it is a polynomial term and the degree is <m>0</m>.  Polynomial terms with a degree of zero are called constant terms.
+          </p>
+          <p>
+            A single polynomial term or an expression that can be written as the sum of two or more polynomial terms is called a polynomial.  A polynomial with only one term is further called a monomial.  A polynomial with exactly two terms is called a binomial, and a polynomial with exactly three terms is called a trinomial.  We do not have common clarifying names for polynomials that contain more than three terms.
+          </p>
+          <p>
+            It is important to remember that the terms of a polynomial are added.  Because of this, terms proceeded by a subtraction sign are always negative (assuming that nobody is trying to trick you by successive subtraction/negation signs).  For example, consider <me>4x-7</me>.  This is a binomial, and the terms are the linear term <m>4x</m> and the constant term <m>-7</m>.  The reason the constant term is negative is because we define a polynomial with more than one term as the sum of polynomial terms, so we have to think about <m>4x-7</m> as the sum <me>4x+(-7)</me> to correctly identify the terms.
+          </p>
+          <p>
+            The greatest degree of any one term in a polynomial is also called the degree of the polynomial.  For example, consider the trinomial <me>x^4-5x^2-6</me>.  The terms of the trinomial are<me>x^4,\,-5x^2,\text{ and}-6</me>and the degrees of the terms are, respectively, <m>4</m>, <m>2</m>, and <m>0</m>.  So the degree of the trinomial is also <m>4</m>, the greatest degree of any one term of the trinomial.
+          </p>
+          <p>
+            The term with greatest degree is called the leading term of a polynomial and its coefficient is called the leading coefficient of the polynomial.  One reason such a term is called the leading term is that absent a compelling reason to do otherwise, we tend to write the terms of a polynomial in descending order of degree.  For example, consider the polynomial<me>3x+x^3+4-x^2</me>.  The leading term of the polynomial is <m>x^3</m> and the leading coefficient is one (because the term could be written as <m>1 \cdot x^3</m>). It seems peculiar to refer to the second term as the leading term, but this is a manifestation of the peculiar order in which the terms are written.  If we listed the terms in order of decreasing degree (which is the norm), it would seem quite natural to refer to <m>x^3</m> as the leading term.  To wit:
+            <me>x^3-x^2+3x+4</me>.
+            When there are more than one variable in some or all of the terms we try to maintain alphabetic order unless other issues (such as listing the terms in order of decreasing degree) trump alphabetization.
+          </p>
+          <p>
+            For any given term, we almost always list the variables in alphabetical order <mdash/> this is helpful in identifying common terms, a topic discussed in the next section.  So, for example, it is simply not cool to write <m>15yx</m>, we want to stay alphabetical and write <m>15xy</m>.  Exponents play no role in this decision.  If the factors of the term were <m>x^4</m>, <m>y^2</m>, and <m>z^8</m>, we would write the term as <m>x^4y^2z^8</m> without hesitation.  Again, this has to do with an important skill that will be discussed in the next section.
+          </p>
+          <p>
+            Sometimes a polynomial with more than one variable will have more than one leading term.  For example, consider <me>x^2+xy+y^2</me>.  The degree of each of the terms is two (the middle term's degree coming from the sum of the unwritten exponents of <m>1</m>).  So all of the terms are leading terms.  Notice that I chose to write the terms and factors in alphabetical order <mdash/> that's just what we do.
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+        <statement>
+          <p>
+            <ol>
+              <li>
+                Identify the degree, the leading term, the leading coefficient, the linear term(s), and the constant term for the following polynomial.
+                <me>-4x^{6}+3x^{4}+7x^3+x-10</me>
+              </li>
+              <li>
+                Identify the degree, the leading term, the leading coefficient, the linear term(s), and the constant term for the following polynomial.
+                <me>3-4x+3x^2-10x^3-12x^4</me>
+              </li>
+              <li>
+                Identify the degree, the leading term, the leading coefficient, the linear term(s), and the constant term for the following polynomial.
+                <me>4x^2+x^2y^2+4y^2</me>
+              </li>
+              <li>Identify each of the following as a trinomial, binomial, monomial, or not any of those type of polynomial.
+                <me>5x^3-3x</me>
+                <me>1+x^2-9x^4</me>
+                <me>x^2y^2+6</me>
+                <me>5x^3-7x^2-8x-14</me>
+                <me>x^4y^7z^8</me>
+              </li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                The degree is <m>6</m>, the leading term is <m>-4x^6</m>, the leading coefficient is <m>-4</m>, the linear term is <m>x</m>, and the constant term is <m>-10</m>.
+              </li>
+              <li>
+                The degree is <m>4</m>, the leading term is <m>-12x^4</m>, the leading coefficient is <m>-12</m>, the linear term is <m>-4x</m>, and the constant term is <m>3</m>.
+              </li>
+              <li>
+                The degree is <m>4</m>, the leading term is <m>x^2y^2</m>, the leading coefficient is <m>1</m>, there are neither any linear terms nor a constant term.
+              </li>
+              <li>
+                <me>5x^3-3x\text{ is a binomial}</me>
+                <me>1+x^2-9x^4\text{ is a trinomial}</me>
+                <me>x^2y^2+6\text{ is a binomial}</me>
+                <me>5x^3-7x^2-8x-14\text{ is not a trinomial, binomial, or monomial}</me>
+                <me>x^4y^7z^8\text{ is a monomial}</me>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+        <statement>
+          <p>
+            <ol>
+              <li>
+                Identify the degree, the leading term, the leading coefficient, the linear term(s), and the constant term for the following polynomial.
+                <me>-2+8x+4x^3-x^4</me>
+              </li>
+              <li>
+                Identify the degree, the leading term, the leading coefficient, the linear term(s), and the constant term for the following polynomial.
+                <me>4x+12xy-8y</me>
+              </li>
+              <li>
+                Identify each of the following as a trinomial, binomial, monomial, or not any of those type of polynomial.
+                <me>7xy</me>
+                <me>3x^3-2x^2+x-1</me>
+                <me>x^2y^2+6</me>
+                <me>-x^3+7x^2+8x</me>
+              </li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                The degree is <m>4</m>, the leading term is <m>-x^4</m>, the leading coefficient is <m>-1</m>, the linear term is <m>8x</m>, and the constant term is <m>-2</m>.
+              </li>
+              <li>
+                The degree is <m>2</m>, the leading term is <m>12xy</m>, the leading coefficient is <m>12</m>, the linear terms are <m>4x</m> and <m>-8y</m>, and there are no constant terms.
+              </li>
+              <li>
+                <me>7xy\text{ is a monomial}</me>
+                <me>3x^3-2x^2+x-1\text{ is not a trinomial, binomial, or monomial}</me>
+                <me>x^2y^2+6\text{ is a binomial}</me>
+                <me>-x^3+7x^2+8x\text{ is a trinomial}</me>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercises>
+
+    <exercises>
+      <title>Addition and Subtraction of Polynomials</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
+        <statement>
+          <p>
+            I am going to begin this discussion with a backwards analogy <mdash/> that is, I'm going to state the analogy before I tell you what it is an analogy for.  Here's the analogy:
+          </p>
+          <p>
+            Bill and Todd are moving in together.  Bill and Todd each really like framed photos of dogs.  Bill brings to the new apartment <m>7</m> framed photos with only one dog in them and <m>4</m> framed photos with two dogs in them.  Todd brings to the apartment <m>2</m> framed photos that have only one dog in them and <m>10</m> framed photos that have two dogs in them.  Here's a question for you: between the two of them, how many framed photos have only one dog in them and how many framed photos have two dogs in them?
+          </p> 
+          <p>
+            That situation is any analogy for this algebra problem:  Determine the following sum:<me>(7x+4x^2)+(2x+10x^2)</me>.  In the analogy, <m>x</m> is representing a picture with only one dog in it and <m>x^2</m> is representing a picture that has two dogs in it.  Between Bill and Todd, they have a total of <m>9</m> photos with only one dog in them and a total of <m>14</m> photos that have two dogs in them.  Similarly, the algebraic sum is simplified as follows.<me>(7x+4x^2)+(2x+10x^2)=9x+14x^2</me>.  In the photo scenario, we are basically just counting like objects by adding the number of photos of one dog (<m>7+2)</m> and then adding the number of photos with two dogs (<m>4+10</m>).  We are doing the same thing in the algebraic scenario, in this case the two types of objects are <m>x</m> and <m>x^2</m>, and we are adding the coefficients on each type of object. 
+          </p>
+          <p>
+            <m>7x</m> and <m>2x</m> are called like terms as are <m>4x^2</m> and <m>10x^2</m>.  Like polynomial terms are terms that have the exact same variables, and any variable that appears has the same exponent in all of the like terms.  Because we don't write the exponent on linear or constant terms, it is clarifying to state that all constant terms are like terms with all other constant terms and all linear terms of a given variable are like terms of every other linear term of the same variable.  Lets see some examples.
+          </p>
+          <p>Example</p>
+          <p></p>
+          <p>
+            State the like terms of the following expression. <me>(5x^3+3x^2-2y^2-x+6y-3)+(7x^2+6y^2-3y+10)</me>
+          </p>
+          <p>Solution</p>
+          <p>
+            The following pairs are the like terms.<me>3x^2\text{ and }7x^2</me><me>-2y^2\text{ and }6y^2</me><me>6y\text{ and }-3y</me><me>-3\text{ and }10</me>
+            When adding polynomials, only the like terms can actually be combined into a single term, and the coefficient on the single term is the sum of the coefficients of the original terms.  For example, we can combine the terms in the expression <m>-3x^4+8x^4</m> as follows.
+            <md>
+              <mrow>-3x^4+8x^4\amp=(-3+8)x^4</mrow>
+              <mrow>\amp=5x^4</mrow>
+            </md>
+            Notice that the first line in the last simplification is simply the distributive property written in reverse.  That is, instead of distributing <m>x^4</m> through the sum <m>-3+8</m>, we are "undoing" the distribution.  The actual math expression for the undoing of distribution is "factoring".  For now, the addition of coefficients of like terms is the only sort of factoring we will be doing I only mentioned factoring because it is technically what we're doing, it is the mathematical justification for the legitimacy of the process.  It is also the reason why we can't combine something like <m>3x+7x^2</m> into a single polynomial term.  Consider the following (in each case I am applying the distributive property).
+            <md>
+              <mrow>(3+7)x\amp=3x+7x</mrow>
+              <mrow>(3+7)x^2\amp=3x^2+7x^2</mrow>
+              <mrow>(3+7)x^3\amp=3x^3+7x^3</mrow>
+            </md>
+            There simply is no way to distribute a power of <m>x</m> through a sum of integers and come up with <m>3x+7x^2</m>, so we  cannot combine <m>3x+7x^2</m> into a single polynomial term.
+          </p>
+          <p>
+            I may have occurred to you that you have been combining like terms ever since you learned how to solve linear equations.  Consider the following.
+            <md>
+              <mrow>2x-5\amp=8x-19</mrow>
+              <mrow>2x-5\addright{5}\amp=8x+19\addright{5}</mrow> 
+              <mrow>2x\amp=8x+24</mrow>
+              <mrow>2x\subtractright{8x}\amp=8x+24\subtractright{8x}</mrow>
+              <mrow>-6x\amp=24</mrow>
+              <mrow>\divideunder{-6x}{-6}\amp=\divideunder{24}{-6}</mrow>
+              <mrow>x\amp=-4</mrow>
+            </md>
+            In the second step shown above we are combining the like constant terms <m>-5</m> and <m>5</m> as well as the like constant terms <m>19</m> and <m>5</m>.  In the fourth line we are combining the like linear terms <m>2x</m> and <m>-8x</m> as well as the like linear terms <m>8x</m> and <m>-8x</m>.  I mention this in part to highlight the fact that we don't actually write out the edition of the coefficients when combining linear terms <mdash/> we do the addition or subtraction in our head (or perhaps on scratch paper or calculator).  After one more example, I will adopt that strategy when combining all polynomial terms.
+          </p>
+          <p>Let's see one more example where the step of adding the coefficients is explicitly shown.  Let's add the following two polynomials.
+            <me>-7x^2+3y^2+4x-2 \text{ and }4x^2-4x+6y-12</me>
+            The addition and simplification follow.
+            <md>
+              <mrow>\amp(-7x^2+3y^2+4x-2)+(4x^2-4x+6y-12)</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =(-7+4)x^2+3y^2+(4-4)x +6y+(-2-12)</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =-3x^2+3y^2+6y-14</mrow>
+            </md>
+            Sometimes we will multiply one or more polynomial by a constant before combining the polynomials.  For example, let's simplify the following expression. <me>-2(4x^2-6x+2)+5(7x^2-x+2)</me>
+            We begin by distributing the factor of <m>-2</m> to each term of the first polynomial and the factor of <m>5</m> to each term of the second polynomial.  As with the addition of coefficients, we generally do this mentally.  In this one example I am going to show the distribution to help ensure that you understand the process.  I will, however, add the coefficients of like terms in my head.
+            <md>
+              <mrow>\amp-2(4x^2-6x+2)+5(7x^2-x+2)</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =(-2) \cdot 4x^2+(-2) \cdot -6x+(-2) \cdot 2+5 \cdot 7x^2 +5 \cdot -x+5 \cdot 2</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =-8x^2+12x+(-4)+35x^2+(-5x)+10</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =8x^2+12x-4+35x^2-5x+10</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =27x^2+7x+6</mrow>
+            </md>
+            Let's see an example showing only the steps that are usually written out.  We'll simplify the following.
+            <me>3(8x^2+3xy-12y^2)+7(x^2-xy+4y^2)</me>
+            The standard process follow.
+            <md>
+              <mrow>\amp3(8x^2+3xy-12y^2)+7(x^2-xy+4y^2)</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =24x^2+9xy-36y^2+7x^2-7xy+28y^2</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =31x^2+2xy-8y^2</mrow>
+            </md>
+            Now consider the following.  <me>(7x-8)-6(12x-4)</me>  In order to simplify we want to view the subtraction of <m>6</m> as addition of <m>-6</m>.   That is, we need to distribute <m>-6</m> through the second polynomial.  I'll show the actual process this time to help you understand my words.
+            <md>
+              <mrow>(7x-8)-6(12x-4)\amp=(7x-8)+(-6)(12x-4)</mrow>
+              <mrow>\amp=7x-8+(-6) \cdot 12x +(-6) \cdot -4</mrow>
+              <mrow>\amp=7x-8+(-72x)+24</mrow>
+              <mrow>\amp=7x-8-72x+24</mrow>
+              <mrow>\amp=-65x+16</mrow>
+            </md>
+            Notice on the second line of the last example the final two terms are, in order, negative and positive.  This is the reverse of the signs on the original expression <m>12x-4</m>.  One repercussion of distributing a negative value though an expression is that all of the signs in the result are the reverse of their initial status.  That is, addition becomes subtraction and subtraction becomes addition.  Let's see another example.  Let's simplify the following.  <me>4(w^2-5w)-3(-2w^2-7w+8)</me>  The process and result follow.
+            <md>
+              <mrow>\amp4(w^2-5w)-3(-2w^2-7w+8)</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =4w^2-20w+6w^2+21w-24</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =10w^2+w-24</mrow>
+            </md>
+            Let's see one final example.  Let's simplify the following.  <me>4(-y^2+3y-8)-(4y^2-7y-8)</me>What's new here is that we are actually subtracting a polynomial.  One way we could think about this is as follows. <me>4(-y^2+3y-8)+(-1)(4y^2-7y-8)</me>
+            So we can think of the subtraction as a distribution of <m>-1</m> through the second polynomial.  But the sole effect of such a distribution will be the reversal of all of the signs.  In other words, the only thing that will change is that addition will become subtraction and subtraction will become addition.  Let's go ahead and do it.
+            <md>
+              <mrow>\amp4(-y^2+3y-8)-(4y^2-7y-8)</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =-4y^2+12y-32-4y^2+7y+8</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =-8y^2+19y-24</mrow>
+            </md>
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+        <statement>
+          <p>
+            Combine and completely simplify each of the following expressions.
+            <ol>
+              <li><m>(-3x^3+4x^2-7x+5)-(2x^2-5x+4)</m></li>
+              <li><m>2(9x^2-3xy+9y^2)+(x^2+xy+y^2)</m></li>
+              <li><m>-3(x^3-4x-1)-6(3x^2+2x-5)</m></li>
+              <li><m>-(-7x^2+2x)+(10x^2+6x-4)</m></li>
+              <li><m>4(-x^3-5x^2+7x-2)-2(-2x^3+4x^2-x+1)</m></li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \amp(-3x^3+4x^2-7x+5)-(2x^2-5x+4)\\
+                  \amp \phantom{={}} \phantom{={}} =-3x^3+4x^2-7x+5-2x^2+5x-4\\
+                  \amp \phantom{={}} \phantom{={}} =-3x^3+2x^2-2x+1
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \amp2(9x^2-3xy+9y^2)+(x^2+xy+y^2)\\
+                  \amp \phantom{={}} \phantom{={}} =18x^2-6xy+18y^2+x^2+xy+y^2\\
+                  \amp \phantom{={}} \phantom{={}} =19x^2-5xy+19y^2
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \amp-3(x^3-4x-1)-6(3x^2+2x-5)\\
+                  \amp \phantom{={}} \phantom{={}} =-3x^3+12x+3-18x^2-12x+30\\
+                  \amp \phantom{={}} \phantom{={}} =-3x^3-18x^2+33
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \amp-(-7x^2+2x)+(10x^2+6x-4)\\
+                  \amp \phantom{={}} \phantom{={}} =7x^2-2x+10x^2+6x-4\\
+                  \amp \phantom{={}} \phantom{={}} =17x^2+4x-4
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \amp4(-x^3-5x^2+7x-2)-2(-2x^3+4x^2-x+1)\\
+                  \amp \phantom{={}} \phantom{={}} =-4x^3-20x^2+28x-8+4x^3-8x^2+2x-2\\
+                  \amp \phantom{={}} \phantom{={}} =-28x^2+30x-10
+                  \end{aligned}
+                </m>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+        <statement>
+          <p>
+            Combine and completely simplify each of the following expressions.
+            <ol>
+              <li><m>(-3x^2+5x+4)-(-8x^2-4x+7)</m></li>
+              <li><m>2(x^4-3x^3+2x-4)+(6x^4-5x^2-4x+8)</m></li>
+              <li><m>-(-3x^2+6x-3)-2(x^2-7x+4)</m></li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><m>(-3x^2+5x+4)-(-8x^2-4x+7)=5x^2+9x-3</m></li>
+              <li><m>2(x^4-3x^3+2x-4)+(6x^4-5x^2-4x+8)=8x^4-6x^3-5x^2</m></li>
+              <li><m>-(-3x^2+6x-3)-2(x^2-7x+4)=x^2+8x-5</m></li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercises>
+
+    <exercises>
+      <title>Multiplication of Polynomials</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
+        <statement>
+          <p>
+            Multiplication of polynomials entails four steps:
+            <ol label="1">
+              <li>distribution: <m>a(x+y)=a \cdot x+a \cdot y</m> and <m>(x+y) \cdot a=x \cdot a+y \cdot a</m></li>
+              <li>multiplication of coefficients</li>
+              <li>addition of exponents: <m>x^mx^n=x^{m+n}</m></li>
+              <li>combination of like terms</li>
+            </ol>
+            Let's start with an example where we distribute a monomial through a trinomial.  Let's simplify the following.  <me>4x^2(3x^2-8x+2)</me>
+            We begin by distributing the factor of <m>4x^2</m> to every term in the parentheses.  
+            <md>
+              <mrow>\highlight{4x^2}(3x^2-8x+2)\amp=\highlight{4x^2} \cdot 3x^2+\highlight{4x^2} \cdot -8x +\highlight{4x^2} \cdot 2</mrow>
+              <mrow>\amp=12x^4-32x+8x^2</mrow>
+            </md>
+            As detailed in the four steps, the exponents in the first two terms of the final result came from adding the exponents of the variable factors in the product.  Also, the new coefficients came from the product of the original coefficients.  Let's see a similar example, but this time let's write the monomial on the right side of the product.
+            <me>(-y^5+4y^3+7y) \cdot -3y^2</me>
+            The process and result are shown below.
+            <md>
+              <mrow>(-y^5+4y^3+7y) \cdot \highlight{-3y^2}\amp=-y^5 \cdot \highlight{-3y^2}+4y^3 \cdot \highlight{-3y^2}+7y \cdot \highlight{-3y^2}</mrow>
+              <mrow>\amp=3y^7-12y^5-21y^3</mrow>
+            </md>
+            In general we don't write out the distribution step when multiplying by a monomial.  If the process is new to you or if you're a bit rusty, you might want to write out that step a few times until you gain confidence.  But you should have a goal of being able to execute the procedure successfully without writing out that step.  For example, suppose we were asked to simplify the following expression.
+            <me>8w^4(3w^3-2w^2+2w+11)</me>  The only work that would be expected to be shown is a statement of the simplification in the following manner.  <me>8w^4(3w^3-2w^2+2w+11)=24w^7-16w^6+16w^5+88w</me>
+          </p>
+          <p>
+            We are now moving on to he process of multiplying two binomials.  You may have heard the use of the term FOIL in a mathematical context.  That term is associated with the product of two binomials.  We're not going to begin with that approach, but I wanted to acknowledge it so that if you think that's how we multiply two binomials, you're right, we're just going to derive the process before we use it.
+          </p>
+          <p>
+            Consider the following two expressions.  
+            <me>(x+7) \cdot \highlight{y} \text{  and  } (x+7)\highlight{(}\highlightg{x}\highlight{-}\highlightr{5}\highlight{)}</me>
+            In the same way that we can distribute <m>y</m> through the expression <m>(x+7)</m> in the product on the left, we can distribute the binomial <m>(x-5)</m> through the expression <m>(x+7)</m> in the product on the right.  Let's do it.
+            <me>(x+7) \cdot \highlight{y}=x\highlight{y}+7\highlight{y} \text{  and  } (x+7)\highlight{(}\highlightg{x}\highlight{-}\highlightr{5}\highlight{)}=x\highlight{(}\highlightg{x}\highlight{-}\highlightr{5}\highlight{)}+7\highlight{(}\highlightg{x}\highlight{-}\highlightr{5}\highlight{)}</me> 
+            We are done with the product on the left, but there is unfinished business in the product on the right.  To wit, we still need to distribute <m>x</m> and <m>7</m> through <m>(x-5)</m> and then combine any and all like terms.  Let's finish the process.
+            <md>
+              <mrow>(x+7)\highlight{(}\highlightg{x}\highlight{-}\highlightr{5}\highlight{)}\amp=x\highlight{(}\highlightg{x}\highlight{-}\highlightr{5}\highlight{)}+7\highlight{(}\highlightg{x}\highlight{-}\highlightr{5}\highlight{)}</mrow>
+              <mrow>\amp=x \cdot \highlightg{x}+x \cdot \highlightr{-5}+7 \cdot \highlightg{x} +7 \cdot \highlightr{-5}</mrow>
+              <mrow>\amp=x^2-5x+7x-35</mrow>
+              <mrow>\amp=x^2+2x-35</mrow>
+            </md>
+            Let's go through that process again for the product <m>(y+8)(y+3)</m>.
+            <md>
+              <mrow>(\highlightb{y}+\highlight{8})(\highlightg{y}+\highlightr{3})\amp=\highlightb{y} \cdot (\highlightg{y}+\highlightr{3})+\highlight{8} \cdot (\highlightg{y}+\highlightr{3})</mrow>
+              <mrow>\amp=\highlightb{y} \cdot \highlightg{y}+\highlightb{y} \cdot \highlightr{3}+\highlight{8} \cdot \highlightg{y}+\highlight{8} \cdot \highlightr{3}</mrow>
+              <mrow>\amp=y^2+3y+8y+24</mrow>
+              <mrow>\amp=y^2+11y+24</mrow>
+            </md>
+            There is one equivalence in the last example towards which we want to shift our focus.  Specifically, let's focus on the following equivalence.
+            <me>(\highlightb{y}+\highlight{8})(\highlightg{y}+\highlightr{3})=\highlightb{y} \cdot \highlightg{y}+\highlightb{y} \cdot \highlightr{3}+\highlight{8} \cdot \highlightg{y}+\highlight{8} \cdot \highlightr{3}</me>
+            The equation illustrates the aforementioned process called FOIL.  The term applies to the product of two binomials (and only the product of two binomials).  The letters in the acronym stand for First, Outside, Inside, and Last.  More specifically:
+          </p>
+          <p>
+            When multiplying two binomials, you need to find the sum of the following four terms.
+            <ul>
+              <li>the product of the First terms of the two binomial</li>
+              <li>the product of the Outer terms of the two binomials</li>
+              <li>the product of the Inner terms of the two binomials</li>
+              <li>the product of the Last terms of the two binomial</li>
+            </ul>
+            Let's apply the FOIL process to the product <m>(2x+5)(x+3)</m>.
+            <md>
+              <mrow>(\highlightb{2x}+\highlight{5})(\highlightg{x}+\highlightr{3})\amp=
+                (\overbrace{\highlightb{2x} \stackrel{}{\cdot} \highlightg{x}}^{\text{F}}) + 
+                (\overbrace{\highlightb{2x} \stackrel{}{\cdot} \highlightr{3}}^{\text{O}}) + 
+                (\overbrace{\highlight{5}  \stackrel{}{\cdot} \highlightg{x}}^{\text{I}}) + 
+                (\overbrace{\highlight{5}  \stackrel{}{\cdot} \highlightr{3}}^{\text{L}})</mrow>
+              <mrow>\amp=2x^2+6x+5x+15</mrow>
+              <mrow>\amp=2x^2+11x+15</mrow>
+            </md>
+            Let's expand <m>(w-7)(w+4)</m> showing the work in the manner we would normally write our work.
+            <md>
+              <mrow>(w-7)(w+4)\amp=w^2+4w-7w-28</mrow>
+              <mrow>\amp=w^2-3w+28</mrow>
+            </md>
+            Now let's turn our attention to a special product called "the product of conjugates."  Conjugates are pairs of binomials whose only difference are the operators.  In one expression the operation is addition and in the other expression the operation is subtraction.  Generically, we refer to conjugates as <m>(a+b)</m> and <m>(a-b)</m>.  Let's see what happens when we multiply those two expressions.
+            <md>
+              <mrow>(a+b)(a-b)\amp=a^2-ab+ab-b^2</mrow>
+              <mrow>\amp=a^2-b^2</mrow>
+            </md>
+            The remarkable thing that occurred is that the two linear terms in the expansion added to zero, leaving behind the binomial <m>a^2-b^2</m>.  The product of conjugates is the only product of binomials of form <m>(ax \pm h)(bx \pm k)</m> that expands and simplifies to another binomial.  In all other cases the expansion and simplification of <m>(ax \pm h)(bx \pm k)</m> results in a trinomial.
+          </p>
+          <p>
+            Because the linear terms always add to zero when we multiply conjugates, we frequently jump directly from <m>(a+b)(a-b)</m> or <m>(a-b)(a+b)</m> to <m>a^2-b^2</m>.  Three examples are shown below.
+            <me>(x-4)(x+4)=x^2-16</me>
+            <me>(3x+7y)(3x-7y)=9x^2-49y^2</me>
+            <me>(5+y^3)(5-y^3)=25-y^6</me>
+            Let's shift our attention to one of the most common errors made in mathematics.  It involves the square of a binomial.  Consider the following. <me>(x+y)^2</me>  For some folks, it is very tempting to just distribute the exponent to <m>x</m> and <m>y</m>.  So tempting, in fact, that they do it!  The problem is that exponents do not distribute over addition.  Exponents distribute over multiplication and division.  The only operations that distribute over addition and subtraction are multiplication and division.  Let's see what the expansion and simplification of <m>(x+y)^2</m> looks like when executed correctly.
+            <md>
+              <mrow>(x+y)^2\amp=(\highlightb{x}+\highlight{y})(\highlightg{x}+\highlightr{y})</mrow>
+              <mrow>\amp=\highlightb{x} \cdot \highlightg{x}+\highlightb{x} \cdot \highlightr{y}+\highlight{y} \cdot \highlightg{x}+\highlight{y} \cdot \highlightr{y}</mrow>
+              <mrow>\amp=x^2+xy+xy+y^2</mrow>
+              <mrow>\amp=x^2+2xy+y^2</mrow>
+            </md>
+            Ah!  If we just distribute the exponent to <m>x</m> and <m>y</m>, we miss the two products of <m>xy</m>.  OI-vey!
+            For most folks the described error can be avoided by routinely making the first statement of the expansion process the writing out of two occurrences of the factor side by side.  For example, let's expand <m>(5x-4)^2</m>.
+            <md>
+              <mrow>(5x-4)^2\amp=(5x-4)(5x-4)</mrow>
+              <mrow>\amp=25x^2-20x-20x+16</mrow>
+              <mrow>\amp=25x^2-40x+16</mrow>
+            </md>
+            As you know, polynomials are not limited to two terms.  For example, consider the following product.
+            <me>(x+3)(x^2+7x+2)</me>
+            We can begin the expansion process by distributing <m>(x^2+7x+2)</m> to both terms of the binomial <m>(x+3)</m>.
+            <md>
+              <mrow>(\highlightg{x}+\highlightr{3})\highlight{(x^2+7x+2)}\amp=\highlightg{x} \cdot \highlight{(x^2+7x+2)}
+              +\highlightr{3} \cdot \highlight{(x^2+7x+2)}</mrow>
+              <mrow>\amp=\highlightg{x} \cdot \highlight{x^2}+\highlightg{x} \cdot \highlight{7x}+\highlightg{x} \cdot \highlight{2}+\highlightr{3} \cdot \highlight{x^2}+\highlightr{3} \cdot \highlight{7x}+\highlightr{3} \cdot \highlight{2}</mrow>
+              <mrow>\amp=x^3+7x^2+2x+3x^2+21x+6</mrow>
+              <mrow>\amp=x^3+10x^2+23x+6</mrow>
+            </md>
+            Once again, we should turn our focus to one specific equivalence in the last expansion.
+            <me>(\highlightg{x}+\highlightr{3})\highlight{(x^2+7x+2)}=\highlightg{x} \cdot \highlight{x^2}+\highlightg{x} \cdot \highlight{7x}+\highlightg{x} \cdot \highlight{2}+\highlightr{3} \cdot \highlight{x^2}+\highlightr{3} \cdot \highlight{7x}+\highlightr{3} \cdot \highlight{2}</me>
+            What we what to focus is the fact that every term of the binomial <m>x+3</m> was multiplied with every term of the trinomial <m>x^2+7x+2</m>.  Let's apply that observation to the expansion of <m>(3y-1)(y^2+4y-8)</m>.
+            <md>
+              <mrow>(\highlightg{3y}\highlightr{-1})\highlight{(y^2+4y-8)}\amp=\highlightg{3y} \cdot \highlight{y^2}+\highlightg{3y} \cdot \highlight{4y}+\highlightg{3y} \cdot \highlight{-8}-\highlightr{1} \cdot \highlight{y^2}-\highlightr{1} \cdot \highlight{4y}-\highlightr{1} \cdot \highlight{-8}</mrow>
+              <mrow>\amp=3y^3+12y^2-24y-y^2-4y+8</mrow>
+              <mrow>\amp=3y^3+11y^2-28y+8</mrow>
+            </md>
+            When employing the strategy of multiplying all terms of the polynomial on the left with all terms of the polynomial on the right, we need to be very deliberate in our process.  I always distribute the fist term in the left polynomial to each term of the right polynomial, then the second term of the left polynomial to each term of the right polynomial, etc.  Let's employ that strategy to the expansion of <m>(x^2-9x+4)(2x^2+x-4)</m>.
+            <md>
+              <mrow>\amp(\highlightg{x^2}\highlightr{-9x}+\highlightb{4})\highlight{(2x^2+x-4)}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}}=\highlightg{x^2} \cdot \highlight{2x^2}+\highlightg{x^2} \cdot \highlight{x}+\highlightg{x^2} \cdot \highlight{-4}-\highlightr{9x} \cdot \highlight{2x^2}-\highlightr{9x} \cdot \highlight{x}-\highlightr{9x} \cdot \highlight{-4}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}}+\highlightb{4} \cdot \highlight{2x^2}+\highlightb{4} \cdot \highlight{x}+\highlightb{4} \cdot \highlight{-4}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}}=2x^4+x^3-4x^2-18x^3-9x^2+36x+8x^2+4x-16</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}}=2x^4-17x^3-5x^2+40x-16</mrow>
+            </md>
+          </p> 
+        </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+        <statement>
+          <p>
+            Completely expand and simplify each product.
+            <ol>
+              <li><m>(x+3)(x-14)</m></li>
+              <li><m>(3y+1)(2y-4)</m></li>
+              <li><m>(9x-2)(x^2+4x-1)</m></li>
+              <li><m>-3x^2(4x^2-6x+5)</m></li>
+              <li><m>(4x+5y)(4x-5y)</m></li>
+              <li><m>(3x+5)^2</m></li>
+              <li><m>(x+3)(x-7)(x-2)</m></li>
+              <li><m>(x^4+8y^2)(-3x^4+5y^2)</m></li>
+              <li><m>(3-7w^7)^2</m></li>
+              <li><m>(x+4)^3</m></li>
+              <li><m>(3x^2-4)(x^2-x+6)</m></li>
+              <li><m>-x(-x^3-4x^2+2x+3)</m></li>
+              <li><m>(5y+2)^2</m></li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (x+3)(x-14)\amp=x^2-14x+3x-42\\
+                  \amp=x^2-11x-42
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (3y+1)(2y-4)\amp=6y^2-12y+2y-4\\
+                  \amp=6y^2-10y-4
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (9x-2)(x^2+4x-1)\amp=9x^3+36x^2-9x-2x^2-8x+2\\
+                  \amp=9x^3+34x^2-17x+2
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+                <m>
+                  -3x^2(4x^2-6x+5)=-12x^4+18x^3-15x^2
+                </m>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (4x+5y)(4x-5y)\amp=16x^2-20xy+20xy-25y^2\\
+                  \amp=16x^2-25y^2
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (3x+5)^2\amp=(3x+5)(3x+5)\\
+                  \amp=9x^2+15x+15x+25\\
+                  \amp=9x^2+30x+25
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (x+3)(x-7)(x-2)\amp=(x^2-7x+3x-21)(x-2)\\
+                  \amp=(x^2-4x-21)(x-2)\\
+                  \amp=x^3-2x^2-4x^2+8x-21x+42\\
+                  \amp=x^3-6x^2-13x+42
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (x^4+8y^2)(-3x^4+5y^2)\amp=-3x^8+5x^4y^2-24x^4y^2+40y^4\\
+                  \amp=-3x^8-19x^4y^2+40y^4
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (3-7w^7)^2\amp=(3-7w^7)(3-7w^7)\\
+                  \amp=9-21w^{7}-21w^{7}+49w^{14}\\
+                  \amp=9-42w^7+49w^{14}
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (x+4)^3\amp=(x+4)(x+4)(x+4)\\
+                  \amp=(x^2+4x+4x+16)(x+4)\\
+                  \amp=(x^2+8x+16)(x+4)\\
+                  \amp=x^3+4x^2+8x^2+32x+16x+64\\
+                  \amp=x^3+12x^2+48x+64
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (3x^2-4)(x^2-x+6)\amp=3x^4-3x^3+18x^2-4x^2+4x-24\\
+                  \amp=3x^4-3x^3+14x^2+4x-24
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+                <m>
+                  -x(-x^3-4x^2+2x+3)=x^4+4x^3-2x^2-3x
+                </m>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (5y+2)^2\amp=(5y+2)(5y+2)\\
+                  \amp=25y^2+10y+10y+4\\
+                  \amp=25y^2+20y+4
+                  \end{aligned}
+                </m>
+              </li>
+            </ol>
+        </p>
+      </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+        <statement>
+          <p>
+            Completely expand and simplify each product.
+            <ol>
+              <li><m>(4x+3)(2x-9)</m></li>
+              <li><m>(2x-9)^2</m></li>
+              <li><m>x(x+8)(x-8)</m></li>
+              <li><m>(-x^2y^4+2xy)(3x^2y^4-5xy)</m></li>
+              <li><m>(x+4)(x^2-7x+3)</m></li>
+              <li><m>(x^3+3x^2-x-4)(x-3)</m></li>
+              <li><m>(y+5)^3</m></li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><m>(4x+3)(2x-9)=8x^2-30x-27</m></li>
+              <li><m>(2x-9)^2=4x^2-36x+81</m></li>
+              <li><m>x(x+8)(x-8)=x^3-64x</m></li>
+              <li><m>(-x^2y^4+2xy)(3x^2y^4-5xy)=-3x^4y^8+11x^3y^5-10x^2y^2</m></li>
+              <li><m>(x+4)(x^2-7x+3)=x^3-3x^2-25x+12</m></li>
+              <li><m>(x^3+3x^2-x-4)(x-3)=x^4-10x^2-x+12</m></li>
+              <li><m>(y+5)^3=y^3+15y^2+75y+125</m></li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercises>
+
+    <exercises>
+      <title>Division of Polynomials by Monomials</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
+        <statement>
+          <p>
+            When adding or subtracting fractions that have a common denominator, we simply add or subtract the numerators over that denominator.  For example: <me>\frac{12x^2}{3}-\frac{42x}{3}+\frac{15}{3}=\frac{12x^2-42x+5}{3}</me>.
+            Because of the reflexive property of equality, the above equation can be stated in reverse.  In this case, the reverse statement is actually the more useful form of the equation because each of the fractions of form <m>\frac{\text{monomial}}{\text{monomial}}</m> reduce.  That is:
+            <md>
+              <mrow>\frac{12x^2-42x+5}{3}\amp=\frac{12x^2}{3}-\frac{42x}{3}+\frac{15}{3}</mrow>
+              <mrow>\amp=4x^2-14x+5</mrow>
+            </md>
+            The reduction process just illustrated is an example of division of a polynomial by a monomial.  The process has two steps.
+            <ol label="1">
+              <li>Distribute the denominator to each term in the numerator.</li>
+              <li>Reduce each resultant term, using the exponent rule <m>\frac{x^m}{x^n}=x^{m-n}</m> where appropriate.</li>
+            </ol>
+            For example, let's perform the division <m>\frac{-21y^4-35y^3+70y^2}{7y^2}</m>.
+            <md>
+              <mrow>\frac{-21y^4-35y^3+70y^2}{7y^2}\amp=\frac{-21y^4}{7y^2}-\frac{35y^3}{7y^2}+\frac{70y^2}{7y^2}</mrow>
+              <mrow>\amp=-3y^2-5y+10</mrow>
+            </md>
+            This is a one act, one scene, one line topic, so we will conclude with one more example.   Let's perform the division
+            <m>\frac{4x^5y^3-2x^4y^4-22x^3y^5}{-2x^2y^2}</m>
+            <md>
+              <mrow>\frac{4x^5y^3-2x^4y^4-22x^3y^5}{-2x^2y^2}\amp=\frac{4x^5y^3}{-2x^2y^2}-\frac{2x^4y^4}{-2x^2y^2}-\frac{22x^3y^5}{-2x^2y^2}</mrow>
+              <mrow>\amp=-2x^3y+x^2y^2+11xy^3</mrow>
+            </md>
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+        <statement>
+          <p>
+            Perform each division and simplify each result.
+            <ol>
+              <li><m>\frac{3x^3-5x^2+7x}{x}</m></li>
+              <li><m>\frac{-12x^3y+21x^2y-15xy}{-3xy}</m></li>
+              <li><m>\frac{14y^{12}-18y^7}{-y^5}</m></li>
+              <li><m>\frac{2x^6y^3-4x^5y^2+10x^4y+2x^3}{2x^3}</m></li>
+              <li><m>\frac{(x^2+3x)(x^2-7x)}{x^2}</m></li>
+              <li><m>\frac{(2w^6+6w^4)(2w^6-6w^4)}{4w^5}</m></li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{3x^3-5x^2+7x}{x}\amp=\frac{3x^3}{x}-\frac{5x^2}{x}+\frac{7x}{x}\\
+                  \amp=3x^2-5x+7
+                  \end{aligned}
+                </m></li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{-12x^3y+21x^2y-15xy}{-3xy}\amp=\frac{-12x^3y}{-3xy}+\frac{21x^2y}{-3xy}-\frac{15xy}{-3xy}\\
+                  \amp=4x^2-7x+5
+                  \end{aligned}
+                </m></li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{14y^{12}-18y^7}{-y^5}\amp=\frac{14y^{12}}{-y^5}-\frac{18y^7}{-y^5}\\
+                  \amp=-14y^7+18y^2
+                  \end{aligned}
+                </m></li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{2x^6y^3-4x^5y^2+10x^4y+2x^3}{2x^3}\amp=\frac{2x^6y^3}{2x^3}-\frac{4x^5y^2}{2x^3}+\frac{10x^4y}{2x^3}+\frac{2x^3}{2x^3}\\
+                  \amp=x^3y^3-2x^2y^2+5xy+1
+                  \end{aligned}
+                </m></li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{(x^2+3x)(x^2-7x)}{x^2}\amp=\frac{x^4-7x^3+3x^3-21x^2}{x^2}\\
+                  \amp=\frac{x^4-4x^3-21x^2}{x^2}\\
+                  \amp=\frac{x^4}{x^2}-\frac{4x^3}{x^2}-\frac{21x^2}{x^2}\\
+                  \amp=x^2-4x-21
+                  \end{aligned}
+                </m></li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{(2w^6+6w^4)(2w^6-6w^4)}{4w^5}\amp=\frac{4w^{12}-12w^{10}+12w^{10}-36w^8}{4w^5}\\
+                  \amp=\frac{4w^{12}-36w^8}{4w^5}\\
+                  \amp=\frac{4w^{12}}{4w^5}-\frac{36w^8}{4w^5}\\
+                  \amp=w^7-9w^3
+                  \end{aligned}
+                </m></li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+        <statement>
+          <p>
+            Perform each division and simplify each result.
+            <ol>
+              <li><m>\frac{-3x^2+15x-3}{-3}</m></li>
+              <li><m>\frac{42x^5y^8-54x^4y^6+18x^3y^4}{6xy^4}</m></li>
+              <li><m>\frac{(xy+3x)(xy-3x)}{-x^2}</m></li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><m>\frac{-3x^2+15x-3}{-3}=x^2-5x+1</m></li>
+              <li><m>\frac{42x^5y^8-54x^4y^6+18x^3y^4}{6xy^4}=7x^4y^4-9x^3y^2+3x^2</m></li>
+              <li><m>\frac{(xy+3x)(xy-3x)}{-x^2}=-y^2+9</m></li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercises>
+         
+    </section>

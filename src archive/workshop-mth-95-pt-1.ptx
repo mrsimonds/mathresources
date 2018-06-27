@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-mth-95-pt-1">
+    <title>Math 95 Practice Test 1</title>
+
+    <exercises>
+      <title>Click on any title to access the problems in that problem set.  The solution links appear at the bottom of each problem set.</title>
+
+      <exercise>
+        <title>Basic function notation</title>
+        <statement>
+          <p>
+            <bold>Problem Set 1</bold>            
+          </p> 
+          <p>
+            Determine each of the stated function values.
+            <ol>
+              <li>Determine <m>g(7)</m> where <m>g(t)=8-4t</m>.</li>
+              <li>Determine <m>f(-3)</m> where <m>f(x)=-x^2+5x+12</m>.</li>
+              <li>Determine <m>h(33)</m> where <m>h(x)=-\sqrt{\frac{x-25}{2}}</m>.</li>
+              <li>Determine <m>t(22)</m> where <m>t(x)=17</m>.</li>
+              <li>Determine <m>y(-6)</m> where <m>y(t)=\abs{-9-t}+3</m>.</li>
+              <li>Determine <m>z(-1)</m> where <m>z(x)=\frac{x+6}{x^2+1}</m>.</li>
+              <li>Determine <m>k(4)</m> where <m>k(t)=3\sqrt{21-t^2}</m>.</li>
+            </ol>
+          </p>
+          <p>
+            <bold>Problem Set 2</bold>
+          </p>
+          <p>
+            Determine the solution set for each of the following equations.
+            <ol>
+              <li>Solve <m>f(x)=12</m> where <m>f(x)=4-x</m>.</li>
+              <li>Solve <m>h(t)=100</m> where <m>h(t)=t^2-21</m>.</li>
+              <li>Solve <m>p(x)=-14</m> where <m>p(x)=6-\abs{x}</m>.</li>
+              <li>Solve <m>w(y)=10</m> where <m>w(y)=y^2-y-2</m>.</li>
+              <li>Solve <m>r(t)=s(t)</m> where <m>r(t)=\frac{5}{7}t-3</m> and <m>s(t)=\frac{2}{3}t+\frac{11}{21}</m>.</li>
+              <li>Solve <m>g(x)=y(x)</m> where <m>q(x)=6-4x^2</m> and <m>y(x)=(3-x)(8+4x)</m>.</li>
+            </ol>
+          </p>
+         
+      </statement>
+      <solution>
+        <p>
+          <bold>Problem Set 1</bold>
+          <ol>
+            <li>
+              <m>
+                \begin{aligned}[t]
+                g(\highlight{7})\amp=8-4(\highlight{7})\\
+                \amp=8-28\\
+                \amp=-20
+                \end{aligned}
+              </m>
+            </li>
+            <li>
+              <m>
+                \begin{aligned}[t]
+                f(\highlight{-3})\amp=-(\highlight{-3})^2+5(\highlight{-3})+12\\
+                \amp=-9-15+12\\
+                \amp=-12
+                \end{aligned}
+              </m>
+            </li>
+            <li>
+              <m>
+                \begin{aligned}[t]
+                h(\highlight{33})\amp=-\sqrt{\frac{\highlight{33}-25}{2}}\\
+                \amp=-\sqrt{\frac{8}{2}}\\
+                \amp=-\sqrt{4}\\
+                \amp=-2
+                \end{aligned}
+              </m>
+            </li>
+            <li>
+              <m>
+                \begin{aligned}[t]
+                t(\highlight{22})\amp=17\\
+                \end{aligned}
+              </m>
+            </li>
+            <li>
+              <m>
+                \begin{aligned}[t]
+                y(\highlight{-6})\amp=\abs{-9-(\highlight{-6})}+3\\
+                \amp=\abs{-3}+3\\
+                \amp=3+3\\
+                \amp=6
+                \end{aligned}
+              </m>
+            </li>
+            <li>
+              <m>
+                \begin{aligned}[t]
+                z(\highlight{-1})\amp=\frac{\highlight{-1}+6}{(\highlight{-1})^2+1}\\
+                \amp=\frac{5}{2}
+                \end{aligned}
+              </m>
+            </li>
+            <li>
+              <m>
+                \begin{aligned}[t]
+                k(\highlight{4})\amp=3\sqrt{21-\highlight{4}^2}\\
+                \amp=3\sqrt{21-16}\\
+                \amp=3\sqrt{5}
+                \end{aligned}
+              </m>
+            </li>
+          </ol>
+        </p>
+        <p>
+          Problem Set 2
+          <ol>
+            <li>
+              Solve <m>f(x)=12</m> where <m>f(x)=4-x</m>.
+              <md>
+                <mrow>f(x)\amp=12</mrow>
+                <mrow>4-x\amp=12</mrow>
+                <mrow>4-x\subtractright{4}\amp=12\subtractright{4}</mrow>
+                <mrow>-x\amp=8</mrow>
+                <mrow>\multiplyleft{-1}-x\amp=\multiplyleft{-1}8</mrow>
+                <mrow>x\amp=-8</mrow>
+              </md>
+              The solution set is <m>\{-8\}</m>.
+            </li>
+            <li>
+              Solve <m>h(t)=100</m> where <m>h(t)=t^2-21</m>.
+              <md>
+                <mrow>h(t)\amp=100</mrow>
+                <mrow>t^2-21\amp=100</mrow>
+                <mrow>t^2-21\addright{21}\amp=100\addright{21}</mrow>
+                <mrow>t^2\amp=121</mrow>
+                <mrow>t\amp=\pm\sqrt{121}</mrow>
+                <mrow>t\amp=\pm 11</mrow>
+              </md>
+              The solution set is <m>\{-11,11\}</m>.
+            </li>
+            <li>
+              Solve <m>p(x)=-14</m> where <m>p(x)=6-\abs{x}</m>.
+              <md>
+                <mrow>p(x)\amp=-14</mrow>
+                <mrow>6-\abs{x}\amp=-14</mrow>
+                <mrow>6-\abs{x}\subtractright{6}\amp=-14\subtractright{6}</mrow>
+                <mrow>-\abs{x}\amp=-20</mrow>
+                <mrow>\multiplyleft{-1}-\abs{x}\amp=\multiplyleft{-1}-20</mrow>
+                <mrow>\abs{x}\amp=20</mrow>
+                <mrow>x\amp=\pm 20</mrow>
+              </md>
+              The solution set is <m>\{-20,20\}</m>.
+            </li>
+            <li>
+              Solve <m>w(y)=10</m> where <m>w(y)=y^2-y-2</m>.
+              <md>
+                <mrow>w(y)\amp=10</mrow>
+                <mrow>y^2-y-2\amp=10</mrow>
+                <mrow>y^2-y-2\subtractright{10}\amp=10\subtractright{10}</mrow>
+                <mrow>y^2-y-12\amp=0</mrow>
+                <mrow>(y-4)(y+3)\amp=0</mrow>
+              </md>
+              <md>
+                <mrow>y-4\amp=0\amp\amp\text{ or }\amp y+3\amp=0</mrow>
+                <mrow>y-4\addright{4}\amp=0\addright{4}\amp\amp\text{ or }\amp y+3\subtractright{3}\amp=0\subtractright{3}</mrow>
+                <mrow>y\amp=4\amp\amp\text{ or }\amp y\amp=-3</mrow>
+              </md>
+              The solution set is <m>\{-3,4\}</m>.
+            </li>
+            <li>
+              Solve <m>r(t)=s(t)</m> where <m>r(t)=\frac{5}{7}t-3</m> and <m>s(t)=\frac{2}{3}t+\frac{11}{21}</m>.
+              <md>
+                <mrow>r(t)\amp=s(t)</mrow>
+                <mrow>\frac{5}{7}t-3\amp=\frac{2}{3}t+\frac{11}{21}</mrow>
+                <mrow>\multiplyleft{21}(\frac{5}{7}t-3)\amp=\multiplyleft{21}(\frac{2}{3}t+\frac{11}{21})</mrow>
+                <mrow>15t-63\amp=14t+11</mrow>
+                <mrow>15t-63\addright{63}\amp=14t+11\addright{63}</mrow>
+                <mrow>15t\amp=14t+74</mrow>
+                <mrow>15t\subtractright{14t}\amp=14t+74\subtractright{14t}</mrow>
+                <mrow>t\amp=74</mrow>
+              </md>
+              The solution set is <m>\{74\}</m>.
+            </li>
+            <li>
+              Solve <m>g(x)=y(x)</m> where <m>q(x)=6-4x^2</m> and <m>y(x)=(3-x)(8+4x)</m>.
+              <md>
+                <mrow>g(x)\amp=y(x)</mrow>
+                <mrow>6-4x^2\amp=(3-x)(8+4x)</mrow>
+                <mrow>6-4x^2\amp=24+4x-4x^2</mrow>
+                <mrow>6-4x^2\addright{4x^2}\amp=24+4x-4x^2\addright{4x^2}</mrow>
+                <mrow>6\amp=24+4x</mrow>
+                <mrow>6\subtractright{24}\amp=24+4x\subtractright{24}</mrow>
+                <mrow>-18\amp=4x</mrow>
+                <mrow>\divideunder{-18}{4}\amp=\divideunder{4x}{4}</mrow>
+                <mrow>-\frac{9}{2}\amp=x</mrow>
+              </md>
+              The solution set is <m>\{-\frac{9}{2}\}</m>.
+            </li>
+            </ol>
+        </p>
+
+        <p>
+          <bold>Problem Set 3</bold>
+          <ol>
+            <li><m>f(4)=2</m></li>
+            <li><m>f(2)=2</m></li>
+            <li><m>f(5)</m> is not defined.</li>
+            <li><m>f(1)=5</m></li>
+          </ol>
+        </p>
+        <p>
+          <ol label="i">
+            <li>The solution set is <m>\{-1,3\}</m>.</li>
+            <li>The solution set is <m>\{-4,-2,0,2,4\}</m>.</li>
+            <li>The solution set is <m>\emptyset</m>.</li>
+            <li>The solution set is <m>\{-3,1\}</m></li>
+          </ol>
+        </p>
+
+
+      </solution>
+
+    </exercise>
+
+
+      <exercise>
+        <title>Advanced function notation</title>
+        <statement>
+          <p>
+            <ol>
+              <li>
+                Simplify <m>f(x-7)</m> for the function <m>f(x)=3x+12</m>.
+              </li>
+              <li>
+                Simplify <m>g(x)+9</m> for the function <m>g(x)=14-7x</m>.
+              </li>
+              <li>
+                Simplify <m>h(5-2t)</m> for the function <m>h(t)=\sqrt{3-t^2}</m>.
+              </li>
+              <li>
+                Simplify <m>k(x+4)+3</m> for the function <m>k(x)=2x^2-3</m>.
+              </li>
+              <li>
+                Simplify <m>r(\sqrt{t-4})</m> for the function <m>r(t)=3-7t^2</m>.
+              </li>
+              <li>
+                Simplify <m>y(t+5)-y(t-3)</m> for the function <m>y(t)=3t-16</m>.
+              </li>
+              <li>
+                Simplify <m>w(x-2)+w(2-x)+2</m> for the function <m>w(x)=5-x</m>.
+              </li>
+              <li>
+                Simplify <m>s(t-8)</m> for the function <m>s(t)=\frac{t+8}{t}</m>.
+              </li>
+              <li>
+                Simplify <m>3u(2x)</m> for the function <m>u(x)=-x^2</m>.
+              </li>
+              <li>
+                Simplify <m>\frac{1}{2}h(2t-7)-8</m> for the function <m>h(t)=8t-12</m>.
+              </li>
+            </ol>
+          </p>   
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                Simplify <m>f(x-7)</m> for the function <m>f(x)=3x+12</m>.
+                <md>
+                  <mrow>f(\highlight{x-7})\amp=3(\highlight{x-7})+12</mrow>
+                  <mrow>\amp=3x-21+12</mrow>
+                  <mrow>\amp=3x-9</mrow>
+                </md>
+              </li>
+              <li>
+                Simplify <m>g(x)+9</m> for the function <m>g(x)=14-7x</m>.
+                <md>
+                  <mrow>g(x)\highlightr{+9}\amp=14-7x\highlightr{+9}</mrow>
+                  <mrow>\amp=23-7x</mrow>
+                </md>
+              </li>
+              <li>
+                Simplify <m>h(5-2t)</m> for the function <m>h(t)=\sqrt{3-t^2}</m>.
+                <md>
+                  <mrow>h(\highlight{5-2t})\amp=\sqrt{3-(\highlight{5-2t})^2}</mrow>
+                  <mrow>\amp=\sqrt{3-(5-2t)(5-2t)}</mrow>
+                  <mrow>\amp=\sqrt{3-(25-20t+4t^2)}</mrow>
+                  <mrow>\amp=\sqrt{3-25+20t-4t^2}</mrow>
+                  <mrow>\amp=\sqrt{-4t^2+20t-22}</mrow>
+                </md>
+              </li>
+              <li>
+                Simplify <m>k(x+4)+3</m> for the function <m>k(x)=2x^2-3</m>.
+                <md>
+                  <mrow>k(\highlight{x+4})\highlightr{+3}\amp=2(\highlight{x+4})^2-3\highlightr{+3}</mrow>
+                  <mrow>\amp=2(x+4)(x+4)</mrow>
+                  <mrow>\amp=2(x^2+8x+16)</mrow>
+                  <mrow>\amp=2x^2+16x+32</mrow>
+                </md>
+              </li>
+              <li>
+                Simplify <m>r(\sqrt{t-4})</m> for the function <m>r(t)=3-7t^2</m>.
+                <md>
+                  <mrow>r(\highlight{\sqrt{t-4}})\amp=3-7(\highlight{\sqrt{t-4}})^2</mrow>
+                  <mrow>\amp=3-7(t-4)</mrow>
+                  <mrow>\amp=3-7t+28</mrow>
+                  <mrow>\amp=31-7t</mrow>
+                </md>
+              </li>
+              <li>
+                Simplify <m>y(t+5)-y(t-3)</m> for the function <m>y(t)=3t-16</m>.
+                <md>
+                  <mrow>y(\highlight{t+5})-y(\highlightb{t-3})\amp=(3(\highlight{t+5})-16)-(3(\highlightb{t-3})-16)</mrow>
+                  <mrow>\amp=3t+15-16-(3t-9-16)</mrow>
+                  <mrow>\amp=3t-1-(3t-25)</mrow>
+                  <mrow>\amp=3t-1-3t+25</mrow>
+                  <mrow>\amp=24</mrow>
+                </md>
+              </li>
+              <li>
+                Simplify <m>w(x-2)+w(2-x)+2</m> for the function <m>w(x)=5-x</m>.
+                <md>
+                  <mrow>w(\highlight{x-2})+w(\highlightb{2-x})\highlightr{+2}\amp=(5-(\highlight{x-2}))+(5-(\highlightb{2-x}))\highlightr{+2}</mrow>
+                  <mrow>\amp=5-x+2+5-2+x+2</mrow>
+                  <mrow>\amp=12</mrow>
+                </md>
+              </li>
+              <li>
+                Simplify <m>s(t-8)</m> for the function <m>s(t)=\frac{t+8}{t}</m>.
+                <md>
+                  <mrow>s(\highlight{t-8})\amp=\frac{\highlight{t-8}+8}{\highlight{t-8}}</mrow>
+                  <mrow>\amp=\frac{t}{t-8}</mrow>
+                </md>
+              </li>
+              <li>
+                Simplify <m>3u(2x)</m> for the function <m>u(x)=-x^2</m>.
+                <md>
+                  <mrow>\highlightg{3}u(\highlight{2x})\amp=\highlightg{3\cdot}-(\highlight{2x})^2</mrow>
+                  <mrow>\amp=-3 \cdot 4x^2</mrow>
+                  <mrow>\amp=-12x^2</mrow>
+                </md>
+              </li>
+              <li>
+                Simplify <m>\frac{1}{2}h(2t-7)-8</m> for the function <m>h(t)=8t-12</m>.
+                <md>
+                  <mrow>\highlightg{\frac{1}{2}}h(\highlight{2t-7})\highlightr{-8}\amp=\highlightg{\frac{1}{2}}(8(\highlight{2t-7})-12)\highlightr{-8}</mrow>
+                  <mrow>\amp=\frac{1}{2}(16t-56)-20</mrow>
+                  <mrow>\amp=8t-28-20</mrow>
+                  <mrow>\amp=8t-48</mrow>
+                </md>
+              </li>
+            </ol>
+          </p> 
+        </solution>
+      </exercise>
+
+  
+      
+      <exercise>
+        <title>Domain of a function</title>
+        <statement>
+          
+          <p>
+            Determine the domain of each of the following functions.  Where possible, state the domain using interval notation.
+            <ol>
+              <li><m>y(x)=\sqrt{15-x}</m></li>
+              <li><m>f(t)=\sqrt[3]{t^2-9}</m></li>
+              <li><m>w(x)=\frac{x-7}{x-12}</m></li>
+              <li><m>g(x)=\frac{x+3}{x^2+8x+15}</m></li>
+              <li><m>r(t)=t^2-3t+9</m></li>
+              <li><m>k(t)=\frac{t^2+16}{t^2+16}</m></li>
+            </ol>
+          </p>
+          
+
+        </statement>
+
+        <solution>
+          <p>
+          
+            <ol>
+              <li>
+                <p>
+                  To determine the domain of <m>y(x)=\sqrt{15-x}</m>, we begin by noting that we cannot take the square root of a negative number (at least over the real numbers).  This gives us the following.
+                  <md>
+                    <mrow>15-x \amp\ge 0</mrow> 
+                    <mrow>15-x\subtractright{15} \amp\ge 0\subtractright{15}</mrow>
+                    <mrow>-x \amp\ge -15</mrow>
+                    <mrow>\multiplyleft{-1}-x \amp\le \multiplyleft{-1}-15</mrow>
+                    <mrow>x \amp\le 15</mrow>
+                  </md>
+                </p>
+                <p>
+                  The domain of <m>y</m> is <m>(-\infty,15)</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  To determine the domain of <m>f(t)=\sqrt[3]{t^2-9}</m>, we begin by noting that the polynomial expression <m>t^2-9</m> is defined for all real numbers as is the cube root function.  So the domain of <m>f</m> is <m>(-\infty,\infty)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  To determine the domain of <m>w(x)=\frac{x-7}{x-12}</m>, we begin by noting that we cannot divide by zero.  This gives us the following.
+                  <md>
+                    <mrow>x-12 \amp\ne 0</mrow>
+                    <mrow>x-12\addright{12} \amp\ne 0\addright{12}</mrow>
+                    <mrow>x \amp\ne 12</mrow>
+                  </md>
+                </p>
+                <p>
+                  The domain of <m>w</m> is <m>(-\infty,12) \cup (12,\infty)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  To determine the domain of <m>g(x)=\frac{x+3}{x^2+8x+15}</m>, we begin by noting that we cannot divide by zero.  This gives us the following.
+                  <md>
+                    <mrow>x^2+8x+15 \amp\ne 0</mrow>
+                    <mrow>(x+3)(x+5) \amp\ne 0</mrow>
+                  </md>
+                  <md>
+                    <mrow>x+3 \amp\ne 0 \amp\amp\text{ and }\amp x+5 \amp\ne 0</mrow>
+                    <mrow>x+3\subtractright{3} \amp\ne 0\subtractright{3} \amp\amp\text{ and }\amp x+5\subtractright{5} \amp\ne 0\subtractright{5}</mrow>
+                    <mrow>x \amp\ne -3 \amp\amp\text{ and }\amp x \amp\ne -5</mrow>
+                  </md>
+                </p>
+                <p>
+                  The domain of <m>g</m> is <m>(-\infty,-5) \cup (-5,-3) \cup (-3,\infty)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  To determine the domain of <m>r(t)=t^2-3t+9</m>, we begin by noting that <m>r</m> is a polynomial function and polynomial functions are defined for all real numbers. So the domain of <m>r</m> is <m>(-\infty,\infty)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  To determine the domain of <m>k(t)=\frac{t^2+16}{t^2+16}</m>, we begin by noting that we cannot divide by zero.  But <m>t^2+16</m> is positive for all real number values of <m>t</m>, so no value of <m>t</m> will cause division by zero.  So the domain of <m>k</m> is <m>(-\infty,\infty)</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+          
+
+    <exercise>
+      <title>Solving inequalities involving functions presented in graphical form</title>
+      <statement>
+        <p>Problem Set 1</p>
+        <sidebyside widths="50% 50%">
+       
+        <p>
+          Determine the solution set to each of the following inequalities based upon the function <m>k</m> shown in <xref ref="workshop-mth-95-pt-1-piecewise-graph-2-2">Figure</xref>.  State the solution set using both set-builder notation and interval notation.
+          <ol>
+            <li><m>k(x) \geq 1</m></li>
+            <li><m>k(x) \leq 4</m></li>
+            <li><m>k(x) \gt 5</m></li>
+            <li><m>k(x) \lt 6</m></li>
+          </ol>
+          <p>
+          </p>
+        </p>
+        <p>
+        <figure xml:id="workshop-mth-95-pt-1-piecewise-graph-2-2">
+                  <caption><m>y=k(x)</m></caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-3.5:0,smooth,{Stealth}-] {3*x+4};
+                              \addplot[primarycurve,domain=2:6.4,smooth,-{Stealth}] {-(x-3)^2+5};
+                              \addplot[hollowdot] coordinates {(0,4)};
+                              \addplot[soliddot] coordinates {(0,-3)};
+                              \addplot[hollowdot] coordinates {(2,4)};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+        </figure>
+      </p>
+    </sidebyside>
+
+<p>Problem Set 2</p>
+        <sidebyside widths="50% 50%">
+       
+        <p>
+          Determine the solution set to each of the following inequalities based upon the functions <m>f</m> (piecewise-linear) and <m>g</m> (parabolic) shown in <xref ref="workshop-mth-95-pt-1-ineq-graph-2-2">Figure</xref>.  State the solution set using both set-builder notation and interval notation.
+          <ol>
+            <li><m>f(x) \geq g(x)</m></li>
+            <li><m>g(x) \gt f(x)</m></li>
+          </ol>
+          <p>
+          </p>
+        </p>
+        <p>
+        <figure xml:id="workshop-mth-95-pt-1-ineq-graph-2-2">
+                  <caption><m>y=f(x)</m> and <m>y=g(x)</m></caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-6.98:2,smooth,{Stealth}-] {5-(2-x)};
+                              \addplot[primarycurve,domain=2:6.98,smooth,-{Stealth}] {5-(x-2)};
+                              \addplot[primarycurve,domain=-6.95:1.68,smooth,blue] {0.5*(x+3)^2-4};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+        </figure>
+      </p>
+    </sidebyside>
+
+      </statement>
+      <solution>
+        
+        <p>
+          Problem Set 1
+          <ol>
+            <li>
+              <p>
+                The solution set is <m>\{x \mid -1 \leq x \lt 0 \text{ or } 2 \lt x \leq 5\}</m>.
+              </p>
+              <p>
+                The solution set is <m>[-1,0) \cup (2,5]</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The solution set is <m>\{x \mid x \leq 0 \text{ or } x \geq 4\}</m>.
+              </p>
+              <p>
+                The solution set is <m>(-\infty,0] \cup [4,\infty)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The solution set is <m>\{\}</m>.
+              </p>
+              <p>
+                The solution set is <m>\emptyset</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The solution set is <m>\{x \mid x \leq 0 \text{ or } x \gt 2\}</m>.
+              </p>
+              <p>
+                The solution set is <m>(-\infty,0] \cup (2,\infty)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+        <p>
+          Problem Set 2
+          <ol>
+            <li>
+              <p>
+                The solution set is <m>\{x \mid -5 \leq x \leq 1\}</m>.
+              </p>
+              <p>
+                The solution set is <m>[-5,1]</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The solution set is <m>\{x \mid x \lt -5 \text{ or } x \gt 1\}</m>.
+              </p>
+              <p>
+                The solution set is <m>(-\infty,-5) \cup (1,\infty)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+        
+      </solution>
+    </exercise>
+
+    <exercise>
+      <title>Compound Inequalities</title>
+      <statement>
+        <p>
+          Determine the solution set to each of the following compound inequalities.  State each solution set using interval notation.
+          <ol>
+            <li><m>2t-7 \gt 11 \text{ or } 3-t \lt 6</m></li>
+            <li><m>-\frac{4}{5}x+\frac{3}{2} \leq 1 \text{ or } 2x-7 \lt -15</m></li>
+            <li><m>7 \leq 4y+1 \lt 13</m></li>
+            <li><m>14 \gt 2-3x \gt 11</m></li> 
+          </ol>
+          <p></p>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                We are tasked to solve <m>2t-7 \gt 11 \text{ or } 3-t \lt 6</m>.  Let's do so.
+                <md>
+                  <mrow>2t-7 \amp\gt 11 \amp\amp\text{ or }\amp 3-t \amp\lt 6</mrow>
+                  <mrow>2t-7\addright{7} \amp\gt 11\addright{7} \amp\amp\text{ or }\amp 3-t\subtractright{3} \amp\lt 6\subtractright{3}</mrow>
+                  <mrow>2t \amp\gt 18 \amp\amp\text{ or }\amp -t \amp\lt 3</mrow>
+                  <mrow>\divideunder{2t}{2} \amp\gt \divideunder{18}{2} \amp\amp\text{ or }\amp \multiplyleft{-1}-t \amp\gt \multiplyleft{-1}3</mrow>
+                  <mrow>t \amp\gt 9 \amp\amp\text{ or }\amp t \amp\gt -3</mrow>
+                </md>
+                Since the first set is completely contained within the second, the solution set is the second set, <m>(-3,\infty)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                We are tasked to solve <m>-\frac{4}{5}x+\frac{3}{2} \leq 1 \text{ or } 2x-7 \lt -15</m>.  We begin by clearing the fraction from the first inequality.
+                <md>
+                  <mrow>-\frac{4}{5}x+\frac{3}{2} \amp\leq 1</mrow>
+                  <mrow>\multiplyleft{10}(-\frac{4}{5}x+\frac{3}{2}x) \amp\leq \multiplyleft{10}1</mrow>
+                  <mrow>-8x+15 \amp\leq 10</mrow>
+                </md>
+                We now solve both inequalities.
+                <md>
+                  <mrow>-8x+15 \amp\leq 10 \amp\amp\text{ or }\amp 2x-7 \amp\lt -15</mrow>
+                  <mrow>-8x+15\subtractright{15} \amp\leq 10\subtractright{15} \amp\amp\text{ or }\amp 2x-7\addright{7} \amp\lt -15\addright{7}</mrow>
+                  <mrow>-8x \amp\leq -5 \amp\amp\text{ or }\amp 2x \amp\lt -8</mrow>
+                  <mrow>\divideunder{-8x}{-8} \amp\geq \divideunder{-5}{-8} \amp\amp\text{ or }\amp \divideunder{2x}{2} \amp\lt \divideunder{-8}{2}</mrow>
+                  <mrow>x \amp\geq \frac{5}{8} \amp\amp\text{ or }\amp x \amp\lt -4</mrow>
+                </md>
+                The solution set is <m>(-\infty,-4) \cup [\frac{5}{8}\infty)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                We are tasked to solve <m>7 \leq 4y+1 \lt 13</m>.  Let's do so.
+                <md alignment="alignat">
+                  <mrow>7 \amp\leq 4y+1 \amp\amp\lt 13</mrow>
+                  <mrow>7\subtractright{1} \amp\leq 4y+1\subtractright{1} \amp\amp\lt 13\subtractright{1}</mrow>
+                  <mrow>6 \amp\leq 4y \amp\amp\lt 12</mrow>
+                  <mrow>\divideunder{6}{4} \amp\leq \divideunder{4y}{4} \amp\amp\lt \divideunder{12}{4}</mrow>
+                  <mrow>\frac{3}{2} \amp\leq y \amp\amp\lt 3</mrow>
+                </md>
+                The solution set is <m>[\frac{3}{2},3)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                We are tasked to solve <m>14 \gt 2-3x \gt 11</m>.  Let's do so.
+                <md alignment="alignat">
+                  <mrow>14 \amp\gt 2-3x \amp\amp\gt 11</mrow>
+                  <mrow>14\subtractright{2} \amp\gt 2-3x\subtractright{2} \amp\amp\gt 11\subtractright{2}</mrow>
+                  <mrow>12 \amp\gt -3x \amp\amp\gt 9</mrow>
+                  <mrow>\divideunder{12}{-3} \amp\lt \divideunder{-3x}{-3} \amp\amp\lt \divideunder{9}{-3}</mrow>
+                  <mrow>-4 \amp\lt x \amp\amp\lt -3</mrow>
+                </md>
+                The solution set is <m>(-4,-3)</m>.
+              </p>
+            </li> 
+          </ol>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise xml:id="workshop-abs-value-general-exercises">
+        <title>Absolute Value Equations and Inequalities</title>
+        <statement>
+          <p>
+            Determine the solution set to each equation or inequality.  Express the solutions sets to the inequalities using interval notation (where possible).
+            <ol>
+              <li><m>-3+\abs{5-x}=-2</m></li>
+              <li><m>2\abs{\frac{x}{3}}-12 \le -6</m></li>
+              <li><m>5-6\abs{2x+1}=17</m></li>
+              <li><m>\abs{y-9}=\abs{12-2y}</m></li>
+              <li><m>-\abs{\frac{8-2x}{3}}+15 \le 12</m></li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  Our opportunity, not to be passed, is to determine the solution set for <m>2\abs{3x}-12 \le -6</m>.  We begin by isolating the absolute value expression.
+                  <md>
+                    <mrow>2\abs{\frac{x}{3}}-12 \amp\le -6</mrow>
+                    <mrow>2\abs{\frac{x}{3}}-12\addright{12} \amp\le -6\addright{12}</mrow>
+                    <mrow>2\abs{\frac{x}{3}} \amp\le 6</mrow>
+                    <mrow>\divideunder{2\abs{\frac{x}{3}}}{2} \amp\le \divideunder{6}{2}</mrow>
+                    <mrow>\abs{\frac{x}{3}} \amp\le 3</mrow>
+                  </md>
+                  We now write and solve an equivalent compound equality that does not include an absolute value expression.
+                  <md alignment="alignat">
+                    <mrow>-3 \amp\le \frac{x}{3} \amp \amp\le 3</mrow>
+                    <mrow>\multiplyleft{3}-3 \amp\le \multiplyleft{3}\frac{x}{3} \amp \amp\le \multiplyleft{3}3</mrow>
+                    <mrow>-9 \amp\le x \amp \amp\le 9</mrow>
+                  </md>
+                  The solution set to the given inequality is <m>[-9,9]</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Our opportunity, which we will surely seize, is to determine the solution set for <m>5-6\abs{2x+1}=17</m>.  We begin by isolating the absolute value expression.
+                  <md>
+                    <mrow>5-6\abs{2x+1}\amp=17</mrow>
+                    <mrow>5-6\abs{2x+1}\subtractright{5}\amp=17\subtractright{5}</mrow>
+                    <mrow>-6\abs{2x+1}\amp=12</mrow>
+                    <mrow>\divideunder{-6\abs{2x+1}}{-6}\amp=\divideunder{12}{-6}</mrow>
+                    <mrow>\abs{2x+1}\amp=-2</mrow>
+                  </md>
+                  We observe that there are no numbers whose absolute value is <m>-2</m> and conclude that the given equation has no solutions.
+                </p>
+              </li>
+              <li>
+                <p>
+                  We have the pleasure of determining the solution set for <m>\abs{y-9}=\abs{12-2y}</m>.  We begin by observing that the only way the two absolute value expressions can be equal is if the expressions inside the absolute value bars are either equal or opposites.  This give us the following.
+                  <md>
+                    <mrow>y-9\amp=12-2y \amp\amp\text{ or }\amp y-9\amp=-(12-2y)</mrow>
+                    <mrow>y-9\amp=12-2y \amp\amp\text{ or }\amp y-9\amp=-12+2y</mrow>
+                    <mrow>y-9\addright{9}\amp=12-2y\addright{9} \amp\amp\text{ or }\amp y-9\addright{9}\amp=-12+2y\addright{9}</mrow>
+                    <mrow>y\amp=21-2y \amp\amp\text{ or }\amp y\amp=-3+2y</mrow>
+                    <mrow>y\addright{2y}\amp=21-2y\addright{2y} \amp\amp\text{ or }\amp y\subtractright{2y}\amp=-3+2y\subtractright{2y}</mrow>
+                    <mrow>3y\amp=21 \amp\amp\text{ or }\amp -y\amp=-3</mrow>
+                    <mrow>\divideunder{3y}{3}\amp=\divideunder{21}{3} \amp\amp\text{ or }\amp \multiplyleft{-1}-y\amp=\multiplyleft{-1}-3</mrow>
+                    <mrow>y\amp=7 \amp\amp\text{ or }\amp y\amp=3</mrow>
+                  </md>
+                  The solution set is <m>\{3,7\}</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                 Let's determine the solution set for <m>-\abs{\frac{8-2x}{3}}+15 \le 12</m>.  We begin by isolating the absolute value expression.
+                  <md>
+                    <mrow>-\abs{\frac{8-2x}{3}}+15 \amp\le 12</mrow>
+                    <mrow>-\abs{\frac{8-2x}{3}}+15\subtractright{15} \amp\le 12\subtractright{15}</mrow>
+                    <mrow>-\abs{\frac{8-2x}{3}} \amp\le -3</mrow>
+                    <mrow>\multiplyleft{-1}-\abs{\frac{8-2x}{3}} \amp\ge \multiplyleft{-1}-3</mrow>
+                    <mrow>\abs{\frac{8-2x}{3}} \amp\ge 3</mrow>
+                  </md>
+                  We now write and solve an equivalent compound inequality that does not include an absolute value expression
+                  <md>
+                    <mrow>\frac{8-2x}{3} \amp\le -3 \amp\amp\text{or}\amp \frac{8-2x}{3} \amp\ge 3</mrow>
+                    <mrow>\multiplyleft{3}\frac{8-2x}{3} \amp\le \multiplyleft{3}-3 \amp\amp\text{or}\amp \multiplyleft{3}\frac{8-2x}{3} \amp\ge \multiplyleft{3}3</mrow>
+                    <mrow>8-2x \amp\le -9 \amp\amp\text{or}\amp 8-2x \amp\ge 9</mrow>
+                    <mrow>8-2x\subtractright{8} \amp\le -9\subtractright{8} \amp\amp\text{or}\amp 8-2x\subtractright{8} \amp\ge 9\subtractright{8}</mrow>
+                    <mrow>-2x \amp\le -17 \amp\amp\text{or}\amp -2x \amp\ge 1</mrow>
+                    <mrow>\divideunder{-2x}{-2} \amp\ge \divideunder{-17}{-2} \amp\amp\text{or}\amp \divideunder{-2x}{-2} \amp\le \divideunder{1}{-2}</mrow>
+                    <mrow>x \amp\ge \frac{17}{2} \amp\amp\text{or}\amp x \amp\le -\frac{1}{2}</mrow>
+                  </md>
+                  The solution set to the given inequality is <m>(-\infty,-\frac{1}{2}] \cup [\frac{17}{2},\infty)</m>.
+                </p>
+              </li>
+            </ol>
+            <p></p>
+          </p>
+        </solution>
+      </exercise>     
+
+      <exercise>
+        <title>Application Problems</title>
+        <statement>
+          <p>
+            Problem 1
+          </p>
+          <p>
+            Between January 1, 2010 and January 1, 2016, the city population of Portland rose from 583,776 to 639,863.  Assume that the population grew at a linear rate and will continue to do so throughout the decade.  Determine the formula for the population of Portland, <m>P(t)</m>, where <m>t</m> represents the number of years that have elapsed sine January 1, 2010.  Then determine and interpret the value of <m>P(9.5)</m>.  You may use a calculator while working this problem.
+          </p>
+          <p></p>
+          <p>
+            Problem 2
+          </p>
+          <sidebyside widths="50% 50%">
+       
+            <p>
+              The curve shown in <xref ref="workshop-mth-95-pt-1-whiff">Figure</xref> shows the vertical displacement (in feet), <m>v(t)</m>, between the floor and a basketball <m>t</m> seconds after the ball was thrown at the basket in a last second shot of desperation.  Answer each of the following questions in relation to this function.
+              <p>
+              </p>
+              </p>
+              <p>
+              <figure xml:id="workshop-mth-95-pt-1-whiff">
+                        <caption><m>y=v(t)</m> (Whiff!)</caption>
+                          <image>
+                            <description>plain text</description>
+                              <latex-image>
+                                <![CDATA[
+                                \begin{tikzpicture}
+                                  \begin{axis}[xmin=-0.2,xmax=4,
+                                               ymin=-10,ymax=80,
+                                               xtick={0,0.5,1,1.5,2,2.5,3,3.5},
+                                               ytick={0,10,20,30,40,50,60,70},
+                                               minor xtick={},
+                                               minor ytick={},
+                                               xlabel={$t$},
+                                               ylabel={$y$}]
+                                    \addplot[primarycurve,domain=-0:3.78,smooth,-] {-16*x^2+60*x+8};                            
+                                    \addplot[soliddot,color=black] coordinates {(3.78,6.2)} node[above left] {(3.78,6.2)};                            
+                                    \addplot[soliddot,color=black] coordinates {(1.9,64)} node[above left] {(1.9,64)};                                    
+                                  \end{axis}
+                                \end{tikzpicture}
+                                ]]>
+                              </latex-image>
+                          </image>
+              </figure>
+            </p>
+          </sidebyside>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  State the practical significance of the vertex of the parabola.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Approximate the solution set to <m>v(t) \geq 30</m> and state the contextual significance of the solution.
+                </p>
+              </li>
+              <li>
+                <p>
+                  State the contextual significance of the endpoint <m>(3.78,6.2)</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+          <p>Problem 3</p>
+          <p>
+            Determine the formula for <m>S(x)</m> where <m>S(x)</m> converts <m>x</m> square inches to square feet.  Then evaluate <m>S(48)</m> and state the practical significance of the value.  Note that there are twelve inches in one foot.
+          </p>
+          <p></p>
+        </statement>
+        <solution>
+          <p>Problem 1</p>
+          <p>
+            The population of Portland grew by 56,607 people over a course of 6 years which gives us the following slope.
+            <md>
+              <mrow>m\amp=\frac{56,607 \,\text{people}}{6 \,\text{yr}}</mrow>
+              <mrow>\amp\approx 9,348 \,\frac{\text{people}}{\text{yr}}</mrow> 
+            </md>
+            The population on January 1, 2010 is the <m>y</m>-coordinate of the <m>y</m>-intercept, so using the linear form <m>y=mt+b</m> we have the following.
+            <me>P(t)=9,348t+583,776</me>
+            We can now evaluate <m>P(9.5)</m>.
+            <md>
+              <mrow>P(\highlight{9.5})\amp=9,348(\highlight{9.5})+583,776</mrow>
+              <mrow>\amp= 672,582</mrow>
+            </md>
+            Assuming this last figure to be contextually exact, this tells us that the population of Portland halfway through 2019 wil be 672,582.
+          </p>
+          <p>
+          </p>
+          <p>Problem 2</p>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  The vertex tells us that <m>1.9</m> seconds after the ball was thrown, the vertical displacement between the ball and the floor was <m>64</m> feet and that this was the greatest vertical displacement between the ball and the floor.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The solution set to <m>v(t) \geq 30</m> is approximately <m>[.4,3.3]</m>.  Assuming the endpoints to be exact, this tells us that the vertical displacement between the ball and the floor was at least 30 feet from <m>.4</m> seconds after the ball was thrown until 3.3. seconds after the ball was thrown.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The endpoint <m>(3.78,6.2)</m> tells us that (presumably) someone caught the ball <m>6.2</m> feet above the floor <m>3.78</m> seconds after the ball was thrown.
+                </p>
+              </li>
+            </ol>
+          </p>
+          <p>
+          </p>
+          <p>Problem 3</p>
+          <p>
+            We begin by making the following observation.
+            <md>
+              <mrow>1 \,\text{ft}^2 \amp= (1 \,\text{ft}) \,\times (1 \text{ft})</mrow>
+              <mrow>\amp= (12 \,\text{in}) \times (12 \,\text{in})</mrow>
+              <mrow>\amp=144 \,\text{in}^2</mrow>
+            </md>
+            So, if we wanted to convert, say, <m>288 \,\text{in}^2</m> to square feet, we could make the following calculation.
+            <me>(288 \,\text{in}^2) \times \frac{1 \,\text{ft}^2}{144 \,\text{in}^2}=2 \,\text{ft}</me>
+            From this, we can infer that <me>S(x)=\frac{x}{144}</me>.  Now we have the following.
+            <md>
+              <mrow>S(48)\amp=\frac{48}{144}</mrow>
+              <mrow>\amp=\frac{1}{3}</mrow>
+            </md>
+            The function value just determined tells us that <m>48</m> square inches is equivalent to one-third square feet.
+          </p>
+        </solution>
+      </exercise>
+    </exercises>
+
+         
+    </section>

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="lines-special-lines">
+    <title>Parallel Lines, Perpendicular Lines, Horizontal and Vertical Lines</title>
+
+    <p>
+      Two non-vertical lines are parallel if and only if they have the same slope.  This fact is fairly intuitive in that two lines that don't both ascend or both descend at equal rates will inevitably intersect (as will two lines, one of which ascends and the other of which descends).
+    </p>
+    <p>
+      A less intuitive, but equally true, fact is that two lines, neither of which is vertical, are perpendicular if and only if they have opposite reciprocal slopes.  For example, if a line has a slope of <m>-\frac{9}{11}</m>, than any line perpendicular to that line has a slope of <m>\frac{11}{9}</m>
+    </p>
+
+    <example>
+
+      <statement>
+        <p>
+          Determine the slope-intercept equation of the line that passes through the point <m>(9,-2)</m> and is parallel to the line with equation <m>x-3y=14</m>.
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          We begin by determining the slope of the line <m>x-3y=14</m>.  We can do that by writing the equation in slope-intercept form, which essentially entails isolating <m>y</m>.
+          <md>
+            <mrow>x-3y\amp=14</mrow>
+            <mrow>x-3y\subtractright{x}\amp=14\subtractright{x}</mrow>
+            <mrow>-3y\amp=-x+14</mrow>
+            <mrow>\multiplyleft{-\frac{1}{3}}-3y\amp=\multiplyleft{-\frac{1}{3}}(-x+14)</mrow>
+            <mrow>y=\frac{1}{3}x-\frac{14}{3}</mrow>
+          </md>
+          From the equation <m>y=\frac{1}{3}x-\frac{14}{3}</m> we can identify that the slope of the line <m>x-3y=14 </m> is <m>\frac{1}{3}</m>.  Since the line whose equation we seek is parallel to <m>x-3y=14</m>, and parallel lines have equal slope, the slope of the line we seek is also <m>\frac{1}{3}</m>.  
+        </p>
+        <p>
+          The line we are tasked to identify has a slope of <m>\frac{1}{3}</m> and passes through the point <m>(9,-2)</m>.  Using this information in the point-slope form of the linear equation and simplifying the result, the slope-intercept equation for the line is determined as follows. 
+          <md>
+            <mrow>y-y_1=m(x-x_1)</mrow>
+            <mrow>y-(-2)=\frac{1}{3}(x-9)</mrow>
+            <mrow>y+2=\frac{1}{3}x-3</mrow>
+            <mrow>y+2\subtractright{2}=\frac{1}{3}x-3\subtractright{2}</mrow>
+            <mrow>y=\frac{1}{3}-5</mrow>
+          </md>
+        </p>
+      </solution>
+
+    </example>
+
+    <example>
+
+      <statement>
+        <sidebyside widths="67% 27%" margins="0%">
+
+          <p>
+            Let's determine the slope-intercept equation of the line that passes through the point <m>(-8,16)</m> that is perpendicular to the line that passes through the points shown in <xref ref="lines-perpendicular-table-1">Table</xref>.
+          </p>
+
+          <table xml:id="lines-perpendicular-table-1">
+            <caption>Points on a line</caption>
+            <tabular>
+              <col halign="center" />
+              <col halign="center"/>
+                <row bottom="medium">
+                  <cell>
+                    <line><m>x</m></line>
+                  </cell>
+                  <cell>
+                    <line><m>y</m></line>
+                  </cell>
+                </row>
+                <row>
+                  <cell><m>-4</m></cell>
+                  <cell><m>7</m></cell>
+                </row>
+                <row>
+                  <cell><m>10</m></cell>
+                  <cell><m>-5</m></cell>
+                </row>
+            </tabular>
+          </table>
+        </sidebyside>
+
+      </statement>
+
+      <solution>
+        <p>
+          We begin by determining the slope of the line that passes through the points shown in <xref ref="lines-perpendicular-table-1">Table</xref>.  Letting <m>(x_1,y_1)</m> be the ordered pair <m>(-4,7)</m> and <m>(x_2,y_2)</m> be the ordered <m>(10,-5)</m>, we calculate the slope as follows.
+          <md>
+            <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+            <mrow>\amp=\frac{-5-7}{10-(-4)}</mrow>
+            <mrow>\amp=\frac{-12}{14}</mrow>
+            <mrow>\amp=-\frac{6}{7}</mrow>
+          </md>
+          Since the line we seek is perpendicular to a line with a slope of <m>-\frac{6}{7}</m>, and perpendicular lines have opposite reciprocal slopes, the line we seek has a slope of <m>\frac{7}{6}</m>.
+        </p>
+        <p>
+          Using the slope of <m>\frac{7}{6}</m> and the ordered pair <m>(-8,16)</m>, we determine the slope intercept equation of the line we seek as follows.
+          <md>
+            <mrow>y-y_1=m(x-x_1)</mrow>
+            <mrow>y-16=\frac{7}{6}(x-(-8))</mrow>
+            <mrow>y-16=\frac{7}{6}(x+8)</mrow>
+            <mrow>y-16=\frac{7}{6}x+\frac{28}{3}</mrow>
+            <mrow>y-16\addright{16}=\frac{7}{6}x+\frac{28}{3}\addright{\frac{48}{3}}</mrow>
+            <mrow>y=\frac{7}{6}x+\frac{76}{3}</mrow>
+          </md>
+        </p>
+      </solution>
+
+    </example>
+      <p>
+        Let's move on to the topic of horizontal and vertical lines.
+      </p>
+      <p>
+        The equation of a horizontal line can be determined in the same manner as any other non-vertical line, although once that's done a generalization can greatly simplify the process.
+      </p>
+
+      <sidebyside widths="50% 47%" margibs="0%">
+
+        <p>
+          Let's consider the horizontal line shown in <xref ref="lines-horizontal-figure-1">Figure</xref>.  Let <m>(x_1,y_1)</m> be the ordered pair <m>(-4,-3)</m> and <m>(x_2,y_2)</m> be the ordered pair <m>(2,-3)</m>.  We calculate the slope below.              
+        </p>
+
+        <figure xml:id="lines-horizontal-figure-1">
+          <caption>A horizontal line</caption>
+          <image>
+          <description>plain text</description>
+          <latex-image>
+            <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}
+                  \addplot[primarycurve,domain=-6.7:6.7] {-3};
+                  \addplot[soliddot] coordinates {(-4,-3)} node[below right] {(-4,-3)};
+                  \addplot[soliddot] coordinates {(2,-3)} node[below right] {(2,-3)};
+                \end{axis}
+              \end{tikzpicture}
+            ]]>
+          </latex-image>
+          </image>
+        </figure>
+
+    </sidebyside>
+
+    <p>
+      <md>
+        <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+        <mrow>\amp=\frac{-3-(-3)}{2-(-4)}</mrow>
+        <mrow>\amp=\frac{0}{6}</mrow>
+        <mrow>\amp=0</mrow>
+      </md>
+    </p>
+    <p>
+      By observation, the <m>y</m>-intercept of the line is <m>(0,-3)</m>.  That coupled with the slope of <m>0</m> gives us the following.
+      <md>
+        <mrow>y\amp=mx+b</mrow>
+        <mrow>y\amp=0 \cdot x+(-3)</mrow>
+        <mrow>y\amp=-3</mrow>
+      </md>
+    </p>
+    <p>
+      Now that we have the equation <m>y=-3</m>, an appropriate response might be "d'oh!"  By observation, the defining property of the points on the line is that the <m>y</m>-coordinates are all <m>-3</m>
+    </p>
+    <p>
+      In general, all horizontal lines have a slope of <m>0</m>. In addition, a horizontal line has an equation of form <m>y=k</m> where <m>k</m> is the <m>y</m>-coordinate common to every point on the line.
+    </p>
+
+    <sidebyside widths="50% 47%" margins="0%">
+
+      <p>
+        Now consider the vertical line shown in <xref ref="lines-vertical-figure-1">Figure</xref>.  When we try to calculate the slope of the line, things go amok.  For example:
+        <md>
+          <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+          <mrow>\amp=\frac{5-(-3)}{2-2}</mrow>
+          <mrow>\amp=\frac{8}{0}</mrow>
+        </md>              
+      </p>
+
+      <figure xml:id="lines-vertical-figure-1">
+        <caption>A vertical line</caption>
+        <image>
+          <description>plain text</description>
+          <latex-image>
+            <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}
+                  \addplot[interval,red,ultra think,{Stealth}-{Stealth}] coordinates {(2,-6.7) (2,6.7)};
+                  \addplot[soliddot] coordinates {(2,-3)} node[right] {(2,-3)};
+                  \addplot[soliddot] coordinates {(2,5)} node[right] {(2,5)};
+                \end{axis}
+              \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+          
+    </sidebyside>
+
+    <p>
+      There's a phrase we attach to the last expression <mdash/>uh oh!  Division by <m>0</m> is never a good thing.  Division by zero is always the result when one applies the slope formula to a vertical line, and for that reason we say that a vertical line has no slope, or that the slope is undefined.
+    </p>
+    <p>
+      We can see in <xref ref="lines-vertical-figure-1">Figure</xref> that every point on the line has an <m>x</m>-coordinate of <m>2</m>, so the equation of the line must be <m>x=2</m>.  In general, vertical lines have equations of form <m>x=h</m>, where <m>h</m> is the <m>x</m>-coordinate of every point on the line 
+    </p>
+    <p>
+      So, unlike determining equations of non-vertical, non-horizontal lines, determining the equation of a horizontal or vertical line is simply a matter of writing down the equation.
+    </p>
+    <p>
+      For example, if asked to determine the equations for horizontal and vertical lines that pass through the point <m>(-3,7)</m>, an appropriate response would be as follows.
+    </p>
+    <p>
+      The horizontal line has equation <m>y=7</m> and the vertical line has equation <m>x=-3</m>.
+    </p>
+    <p>
+      If, in the moment, you can't remember which equation form is horizontal and which form is vertical, just sketch the line and ask yourself "which coordinate is always the same, <m>x</m> or <m>y</m>?"
+    </p>
+        
+    <exercises>
+
+      <exercise>
+
+        <statement>
+          <p>
+            State the equations of the vertical and horizontal lines that pass through the point <m>(-7,25)</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            The equation of the vertical line is <m>y=25</m> and the equation of the horizontal line is <m>x=-7</m>
+          </p>
+        </solution>
+
+      </exercise>
+
+      <exercise>
+
+        <statement>
+          <p>
+            What are the slopes of lines that are parallel to the line with equation <m>-6x+8y=12</m>?  What are the slopes of lines perpendicular to those lines?
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            We begin by writing the equation <m>-6x+8y=12</m> in slope-intercept form.
+            <md>
+              <mrow>-6x+8y\amp=12</mrow>
+              <mrow>-6x+8y\addright{6x}\amp=12\addright{6x}</mrow>
+              <mrow>8y\amp=6x+12</mrow>
+              <mrow>\multiplyleft{\frac{1}{8}}(8y) \amp=\multiplyleft{\frac{1}{8}}(6x+12)</mrow>
+              <mrow>y\amp=\frac{3}{4}x+\frac{3}{2}</mrow>
+            </md>
+          </p>
+          <p>
+            We can tell from the last equation that the slope of the line <m>-6x+8y=12</m> is <m>\frac{3}{4}</m>.  So lines parallel to <m>-6x+8y=12</m> all have slopes of <m>\frac{3}{4}</m> and lines perpendicular to those lines have slopes of <m>-\frac{4}{3}</m>.
+          </p>
+        </solution>
+
+      </exercise>
+
+      <exercise>
+
+        <statement>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Determine the equations of the lines that pass through the point <m>(3,5)</m> and are, respectively, parallel to and perpendicular to the line graphed in <xref ref="lines-pp-exercise-figure-1">Figure</xref>.  State each equation in slope-intercept form.
+            </p>
+
+            <figure xml:id="lines-pp-exercise-figure-1">
+            <caption>Determine the equation of ...</caption>
+              <image>
+              <description>plain text</description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis}
+                      \addplot[primarycurve,domain=-6.7:6.7] {-(1/2)*x};
+                    \end{axis}
+                  \end{tikzpicture}
+                  ]]>
+                </latex-image>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </statement>
+
+      <solution>
+        <p>
+          The line graphed in <xref ref="lines-pp-exercise-figure-1">Figure</xref> has a slope of <m>-\frac{1}{2}</m> so lines parallel to that line have slopes of <m>-\frac{1}{2}</m> and lines perpendicular to it have slopes of <m>2</m>.
+        </p>
+        <p>
+        </p>
+        <p>
+          Using the slope of <m>-\frac{1}{2}</m> and the ordered pair <m>(3,5)</m> in the equation <m>y-y_1=m(x-x_1)</m> we derive the equation of the described parallel line as follows.
+          <md>
+            <mrow>y-5\amp=-\frac{1}{2}(x-3)</mrow>
+            <mrow>y-5\amp=-\frac{1}{2}x+\frac{3}{2}</mrow>
+            <mrow>y-5\addright{5}\amp=-\frac{1}{2}x+\frac{3}{2}\addright{\frac{10}{2}}</mrow>
+            <mrow>y\amp=-\frac{1}{2}x+\frac{13}{2}</mrow>
+          </md>
+        </p>
+        <p>
+          Using the slope of <m>2</m> and the ordered pair <m>(3,5)</m> in the equation <m>y-y_1=m(x-x_1)</m> we derive the equation of the described perpendicular line as follows.
+          <md>
+            <mrow>y-5\amp=2(x-3)</mrow>
+            <mrow>y-5\amp=2x-6</mrow>
+            <mrow>y-5\addright{5}\amp=2x-6\addright{5}</mrow>
+            <mrow>y\amp=2x-1</mrow>
+          </md>
+        </p>
+
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            The two new lines are shown in <xref ref="lines-pp-figure-1-solution">Figure</xref> along with the given line.  They are indeed parallel to or perpendicular to the given line.
+          </p>
+
+          <figure xml:id="lines-pp-figure-1-solution">
+          <caption>Visual check</caption>
+            <image>
+              <description>plain text</description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis}[axis equal image]
+                    \addplot[primarycurve,domain=-0.2:6.7,color=blue] {(13/2)-(1/2)*x};
+                    \addplot[primarycurve,domain=-6.7:6.7] {-(1/2)*x};
+                    \addplot[primarycurve,domain=-2.8:3.8,color=gray] {-1+2*x};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </solution>
+
+    </exercise>
+
+      <exercise>
+
+        <statement>
+          <p>
+            Determine the equation of the line that passes through the point <m>(9,-2)</m> and is perpendicular to the line with equation <m>y=14</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            The line <m>y=14</m> is horizontal, so any line perpendicular to it is vertical.  Hence, the line that passes through the point <m>(9,-2)</m> and is perpendicular to the line <m>y=14</m> has the equation <m>x=9</m>.
+          </p>
+        </solution>
+
+      </exercise>
+
+      <exercise>
+
+        <statement>
+          <p>
+            Determine the equation of the line that passes through the point <m>(-3,14)</m> and is perpendicular to the line with equation <m>12x-4y=18</m>.   State equation in slope-intercept form.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            We begin by writing the equation <m>12x-4y=18</m> in slope-intercept form.
+            <md>
+              <mrow>12x-4y\amp=18</mrow>
+              <mrow>12x-4y\subtractright{12x}\amp=18\subtractright{12x}</mrow>
+              <mrow>-4y\amp=-12x+18</mrow>
+              <mrow>\multiplyleft{-\frac{1}{4}}(-4y)\amp=\multiplyleft{-\frac{1}{4}}(-12x+18)</mrow>
+              <mrow>y\amp=3x-\frac{9}{2}</mrow>
+            </md>
+          </p>
+          <p>
+            We can tell from the last equation that the slope of the line <m>12x-4y=18</m> is <m>3</m>.  So any line perpendicular to <m>12x-4y=18</m> has a slope of <m>-\frac{1}{3}</m>.  Using the new slope along with the ordered pair <m>(-3,14)</m> in the point-slope equation we derive the equation of the requested line thus:
+            <md>
+              <mrow>y-y_1\amp=m(x-x_1)</mrow>
+              <mrow>y-14\amp=-\frac{1}{3}(x-(-3))</mrow>
+              <mrow>y-14\amp=-\frac{1}{3}x-1</mrow>
+              <mrow>y-14\addright{14}\amp=-\frac{1}{3}x-1\addright{14}</mrow>
+              <mrow>y\amp=-\frac{1}{3}x+13</mrow>
+            </md>
+          </p>
+        </solution>
+
+      </exercise>
+
+    </exercises>
+
+  </section>

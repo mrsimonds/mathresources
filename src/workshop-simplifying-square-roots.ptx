@@ -12,275 +12,16 @@
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-simplifying-expressions-containing-square-roots">
     <title>Simplifying expressions containing square roots</title>
 
+    <exercises>
+    <title>Pretest - what's your current skill set?</title>
+
+        
+  </exercises>
+
   <exercises>
     <title>Written Examples</title>
 
-    <exercise>
-      <title>Simplifying square roots by factoring out perfect squares</title>
-      <statement>
-        <p>
-          Expressions containing square roots can frequently be simplified if we identify the largest perfect square that divides evenly into the radicand (the number or expression under the radical sign).  In this context the phrase "perfect squares" refers to the squares of the positive integers, the first few of which are <m>1</m>, <m>4</m>, <m>9</m>, <m>16</m>, <m>25</m>, etc.  If you don't know the perfect squares at least through <m>121</m>, the practice problems associated with this lesson will be easier if you write them out.
-        </p>
-        <p>
-          The process of simplifying square roots is reliant upon the following rule.
-          <me>\sqrt{a \cdot b}=\sqrt{a} \cdot \sqrt{b} \text{, } a \geq 0 \text{ and } b \geq 0</me>
-          The process entails writing the original expression as the product of two square roots, one of which simplifies to an integer.
-        </p>
-        <p>
-          Consider <m>\sqrt{28}</m>.  There are several factor pairs of <m>28</m>, but we are looking for a pair where one of the two numbers is a perfect square.  The only pair that fits the bill is <m>4</m> and <m>7</m>.  What follows are the steps entailed in simplifying the square root.
-          <md>
-            <mrow>\sqrt{28}\amp=\sqrt{4 \cdot 7}</mrow>
-            <mrow>\amp=\sqrt{4} \cdot \sqrt{7}</mrow>
-            <mrow>\amp=2\sqrt{7}</mrow>
-          </md>
-        </p>
-        Several more examples are shown below.
-        <sidebyside widths="33% 33% 33%" margins="0%">
-          <p>
-            <md>
-              <mrow>\sqrt{75}\amp=\sqrt{25 \cdot 3}</mrow>
-              <mrow>\amp=\sqrt{25} \cdot \sqrt{3}</mrow>
-              <mrow>\amp=5\sqrt{3}</mrow>
-            </md>
-          </p>
-          <p>
-            <md>
-              <mrow>\sqrt{40}\amp=\sqrt{4 \cdot 10}</mrow>
-              <mrow>\amp=\sqrt{4} \cdot \sqrt{10}</mrow>
-              <mrow>\amp=2\sqrt{10}</mrow>
-            </md>
-          </p>
-          <p>
-            <md>
-              <mrow>\sqrt{98}\amp=\sqrt{49 \cdot 2}</mrow>
-              <mrow>\amp=\sqrt{49} \cdot \sqrt{2}</mrow>
-              <mrow>\amp=7\sqrt{2}</mrow>
-            </md>
-          </p>
-        </sidebyside>
-        <p>
-          For a square root expression to be fully simplified, we need to identify the greatest perfect square that divides evenly into the radicand.  Consider, for example, <m>\sqrt{48}</m>.  The work below is correct, but the square root is not fully simplified <mdash/> can you see why?
-          <md>
-            <mrow>\sqrt{48}\amp=\sqrt{4 \cdot 12}</mrow>
-            <mrow>\amp=\sqrt{4} \cdot \sqrt{12}</mrow>
-            <mrow>\amp=2\sqrt{12}</mrow>
-          </md>
-          The issue is that <m>12</m> still has another perfect square factor of <m>4</m>.  While we succeeded in finding a perfect square that evenly divides into <m>48</m>, we did not succeed in identifying the largest perfect square that evenly divides into <m>48</m>.  The correct simplification follows.
-          <md>
-            <mrow>\sqrt{48}\amp=\sqrt{16 \cdot 3}</mrow>
-            <mrow>\amp=\sqrt{16} \cdot \sqrt{3}</mrow>
-            <mrow>\amp=4\sqrt{3}</mrow>
-          </md>
-        </p>
-        <p>
-          Sometimes the original expression contains factors other than the square root expression.  We need to be careful to carry those factors along as we simplify the square root factor.  Several examples follow.
-        </p>
-        <sidebyside widths="50% 50%" margins="0%">
-            <p>
-              <md>
-                <mrow>8\sqrt{63}\amp=8 \cdot \sqrt{9 \cdot 7}</mrow>
-                <mrow>\amp=8 \cdot \sqrt{9} \cdot \sqrt{7}</mrow>
-                <mrow>\amp=8 \cdot 3 \cdot \sqrt{7}</mrow>
-                <mrow>\amp=24\sqrt{7}</mrow>
-              </md>
-            </p>
-            <p>
-              <md>
-                <mrow>-\frac{2\sqrt{108}}{3}\amp=-\frac{2 \cdot \sqrt{36 \cdot 3}}{3}</mrow>
-                <mrow>\amp=-\frac{2 \cdot \sqrt{36} \cdot \sqrt{3}}{3}</mrow>
-                <mrow>\amp=-\frac{2 \cdot 6 \cdot \sqrt{3}}{3}</mrow>
-                <mrow>\amp=-\frac{12 \cdot \sqrt{3}}{3}</mrow>
-                <mrow>\amp=-4\sqrt{3}</mrow>
-              </md>
-            </p>
-        </sidebyside>
-        <p>
-          <md>
-            <mrow>\frac{\sqrt{90}}{12}\amp=\frac{\sqrt{9 \cdot 10}}{12}</mrow>
-            <mrow>\amp=\frac{\sqrt{9} \cdot \sqrt{10}}{12}</mrow>
-            <mrow>\amp=\frac{3 \cdot \sqrt{10}}{12}</mrow>
-            <mrow>\amp=\frac{\sqrt{10}}{4}</mrow>
-          </md>
-        </p>
-      </statement>
-    </exercise>
-
     
-    <exercise>
-      <title>Rationalizing monomial square root denominators</title>
-      <statement>
-        <p>
-          Traditionally, expressions containing square roots in the denominator are not considered simplified.  There are two common types of expressions that arise where square roots naturally occur in the denominator.  In this section we deal with expressions where the denominator is a monomial (one term) and in the final section we deal we expressions where the denominator is a binomial (two terms).
-        </p>
-        <p>
-          Let's consider <m>\frac{1}{\sqrt{2}}</m>.  We need to determine a legitimate maneuver that will result in the square root factor taking up residence outside of the denominator of the fraction.  If we multiply the denominator by <m>\sqrt{2}</m>, the resultant product in the denominator will be <m>2</m>.  Of course, multiplying anything by <m>\sqrt{2}</m> does not result in an equivalent expression unless some sort of balancing act is performed simultaneously.  In this case the balancing act is to also multiply the numerator by <m>\sqrt{2}</m>.  To wit:
-          <md>
-            <mrow>\frac{1}{\sqrt{2}}\amp=\frac{1}{\sqrt{2}} \cdot \frac{\sqrt{2}}{\sqrt{2}}</mrow>
-            <mrow>\amp=\frac{\sqrt{2}}{2}</mrow>
-          </md>
-          Now it may not seem to you that the expression <m>\frac{\sqrt{2}}{2}</m> is any simpler than the expression <m>\frac{1}{\sqrt{2}}</m>, and in a sense you are correct in that assertion.  As math folks, though, we find use in rewriting the expression with the square root in the numerator.  On pay-off is that it can help us identifying square root terms that can be combined (see next section).  Historically, rewriting the expression with the radical in the numerator dramatically simplified any attendant arithmetic.  Consider that <m>\sqrt{2}</m> is approximately <m>1.414</m>.  Which would you rather compute by hand: <m>\frac{1.414}{2}</m> or <m>\frac{1}{1.414}</m>?  If it's not apparent to you, try both.
-        </p>
-        <p>
-          Finally, it is frequently the case that clearing the square root away from the denominator results in a simpler expression in all senses of the term.  Let's make one small tweak to the last example.
-          <md>
-            <mrow>\frac{2}{\sqrt{2}}\amp=\frac{2}{\sqrt{2}} \cdot \frac{\sqrt{2}}{\sqrt{2}}</mrow>
-            <mrow>\amp=\frac{2 \cdot \sqrt{2}}{2}</mrow>
-            <mrow>\amp=\sqrt{2}</mrow>
-          </md>
-        </p>
-        <p>
-          When the original radicand contains a prefect square factor, we need to be sure that we remember to factor that from the radical.  We also need to make sure to remember to carry along any other factors and completely simplify the resultant expression.  several examples follow.
-        </p>
-        <sidebyside widths="50% 50%" margins="0%">
-          <p>
-            <md>
-              <mrow>\frac{4}{\sqrt{12}}\amp=\frac{4}{\sqrt{12}} \cdot \frac{\sqrt{12}}{\sqrt{12}}</mrow>
-              <mrow>\amp=\frac{4 \cdot \sqrt{12}}{12}</mrow>
-              <mrow>\amp=\frac{4 \cdot 2 \cdot \sqrt{3}}{12}</mrow>
-              <mrow>\amp=\frac{2\sqrt{3}}{3}</mrow>
-            </md>
-          </p>
-          <p>
-            <md>
-              <mrow>\frac{1}{\sqrt{500}}\amp=\frac{1}{\sqrt{500}} \cdot \frac{\sqrt{500}}{\sqrt{500}}</mrow>
-              <mrow>\amp=\frac{\sqrt{500}}{500}</mrow>
-              <mrow>\amp=\frac{10 \cdot \sqrt{5}}{500}</mrow>
-              <mrow>\amp=\frac{\sqrt{5}}{50}</mrow>
-            </md>
-          </p>
-        </sidebyside>
-        <sidebyside widths="50% 50%" margins="0%">
-          <p>
-            <md>
-              <mrow>-\frac{4}{\sqrt{44}}\amp=-\frac{4}{\sqrt{44}} \cdot \frac{\sqrt{44}}{\sqrt{44}}</mrow>
-              <mrow>\amp=-\frac{4 \cdot \sqrt{44}}{44}</mrow>
-              <mrow>\amp=-\frac{4 \cdot 2 \cdot \sqrt{11}}{44}</mrow>
-              <mrow>\amp=-\frac{2\sqrt{11}}{11}</mrow>
-            </md>
-          </p>
-          <p>
-            <md>
-              <mrow>\frac{1}{2\sqrt{128}}\amp=\frac{1}{2 \cdot \sqrt{128}} \cdot \frac{\sqrt{128}}{\sqrt{128}}</mrow>
-              <mrow>\amp=\frac{\sqrt{128}}{2 \cdot 128}</mrow>
-              <mrow>\amp=\frac{8 \cdot \sqrt{2}}{256}</mrow>
-              <mrow>\amp=\frac{\sqrt{2}}{32}</mrow>
-            </md>
-          </p>
-        </sidebyside>
-      </statement>
-    </exercise>
-
-  
-    <exercise>
-      <title>Combining square root expressions</title>
-      <statement>
-        <p>
-          Combining square roots expressions is similar to combining other like terms.  For example, two square roots of three added to five square roots of three results in seven square roots of three.  Symbolically:
-          <me>5\sqrt{3}+2\sqrt{3}=7\sqrt{3}</me>
-          Something that is radically differently about combing square roots, however, is that it is not always immediately apparent what terms are in fact like terms.  For example, at first glance you might think that <m>/sqrt{5}</m> and <m>\sqrt{20}</m> cannot be combined, but in fact they can.  Specifically:
-          <md>
-            <mrow>\sqrt{5}+\sqrt{20}\amp=\sqrt{5}+2\sqrt{5}</mrow>
-            <mrow>\amp=3\sqrt{5}</mrow>
-          </md>
-          The last example illustrates a key step when simplifying expressions that contain several terms with square root factors.  Each and every term must first be simplified, including rationalizing denominators, and then any and all like terms must be combined  After all of the terms have been simplified, the like terms are the terms that contain exactly the same square root factors.  Several examples follow.
-        </p>
-          <p>
-            Example
-            <md>
-              <mrow>4\sqrt{12}+\frac{9}{\sqrt{3}}\amp=4 \cdot 2 \sqrt{3}+\frac{9}{\sqrt{3}} \cdot \frac{\sqrt{3}}{\sqrt{3}}</mrow>
-              <mrow>\amp=8\sqrt{3}+\frac{9 \cdot \sqrt{3}}{3}</mrow>
-              <mrow>\amp=8\sqrt{3}+3\sqrt{3}</mrow>
-              <mrow>\amp=11\sqrt{3}</mrow>
-            </md>
-          </p>
-          <p>
-            Example
-            <md>
-              <mrow>5\sqrt{81}-2\sqrt{18}\amp=5 \cdot 9-2 \cdot 3 \cdot \sqrt{2}</mrow>
-              <mrow>\amp=45-6\sqrt{2}</mrow>
-            </md>
-          </p>
-          <p>
-            Example
-            <md>
-              <mrow>\frac{14}{\sqrt{98}}-\frac{\sqrt{32}}{2}\amp=\frac{14}{\sqrt{98}} \cdot \frac{\sqrt{98}}{\sqrt{98}}-\frac{4 \cdot \sqrt{2}}{2}</mrow>
-              <mrow>\amp=\frac{14 \cdot \sqrt{98}}{98}-2\sqrt{2}</mrow>
-              <mrow>\amp=\frac{14 \cdot 7 \cdot \sqrt{2}}{98}-2\sqrt{2}</mrow>
-              <mrow>\amp=\sqrt{2}-2\sqrt{2}</mrow>
-              <mrow>\amp=-\sqrt{2}</mrow>
-            </md>
-          </p>
-          <p>
-            Example
-            <md>
-              <mrow>\sqrt{50}+\sqrt{20}-\sqrt{125}+\sqrt{8}\amp=5\sqrt{2}+2\sqrt{5}-5\sqrt{5}+2\sqrt{2}</mrow>
-              <mrow>\amp=7{\sqrt{2}}-3\sqrt{5}</mrow>
-            </md>
-          </p>
-      </statement>
-    </exercise>
-
-    <exercise>
-      <title>Rationalizing binomial denominators containing square root expressions</title>
-
-      <statement>
-        <p>
-          The expressions <m>a+b</m> and <m>a-b</m> are called conjugates; collectively they form a conjugate pair.  They have the special property that when you expand their product, the result is a binomial.  Specifically:
-          <me>(a+b)(a-b)=a^2-b^2</me>
-          That pair type is the only product of binomials that does not result in a trinomial.  
-        </p>
-        <p>
-          When one or both terms of a conjugate pair is a square root, something special happens when you multiply the pair <mdash/> the square root(s) square away.  For example:
-          <md>
-            <mrow>(3+\sqrt{5})(3-\sqrt{5})\amp=3^2-(\sqrt{5})^2</mrow>
-            <mrow>\amp=9-5</mrow>
-            <mrow>\amp=4</mrow>
-          </md>
-        </p>
-        <p>
-          We can use this squaring away of the square root to rationalize denominators that are binomials where one or both terms is a square root.  We multiply the denominator by its conjugate and balance that action by also multiplying the numerator by the conjugate of the denominator.  We then simplify the result.  When the numerator is an integer, you want to avoid distribution until you've simplified the denominator as there will frequently be common factors that emerge.  Several examples follow.
-        </p>
-        <p>
-          Example
-          <md>
-            <mrow>\frac{3}{3+\sqrt{3}}\amp=\frac{3}{3+\sqrt{3}} \cdot \frac{3-\sqrt{3}}{3-\sqrt{3}}</mrow>
-            <mrow>\amp=\frac{3(3-\sqrt{3})}{9-3}</mrow>
-            <mrow>\amp=\frac{3(3-\sqrt{3})}{6}</mrow>
-            <mrow>\amp=\frac{3-\sqrt{3}}{2}</mrow>
-          </md>
-        </p>
-        <p>
-          Example
-          <md>
-            <mrow>\frac{50}{4-\sqrt{21}}\amp=\frac{50}{4-\sqrt{21}} \cdot \frac{4+\sqrt{21}}{4+\sqrt{21}}</mrow>
-            <mrow>\amp=\frac{50(4+\sqrt{21})}{16-21}</mrow>
-            <mrow>\amp=\frac{50(4+\sqrt{21})}{-5}</mrow>
-            <mrow>\amp=-10(4+\sqrt{21})</mrow>
-          </md>
-        </p>
-        <p>
-          Example
-          <md>
-            <mrow>\frac{2+\sqrt{6}}{2-\sqrt{6}}\amp=\frac{2+\sqrt{6}}{2-\sqrt{6}} \cdot \frac{2+\sqrt{6}}{2+\sqrt{6}}</mrow>
-            <mrow>\amp=\frac{4+2\sqrt{6}+2\sqrt{6}+6}{4-6}</mrow>
-            <mrow>\amp=\frac{10+4\sqrt{6}}{-2}</mrow>
-            <mrow>\amp=\frac{2(5+2\sqrt{6})}{-2}</mrow>
-            <mrow>\amp=-(5+2\sqrt{6})</mrow>
-            <mrow>\amp=-5-2\sqrt{6}</mrow>
-          </md>
-        </p>
-        <p>
-          Example
-          <md>
-            <mrow>\frac{\sqrt{11}-\sqrt{10}}{\sqrt{11}+\sqrt{10}}\amp=\frac{\sqrt{11}-\sqrt{10}}{\sqrt{11}+\sqrt{10}} \cdot \frac{\sqrt{11}-\sqrt{10}}{\sqrt{11}-\sqrt{10}}</mrow>
-            <mrow>\amp=\frac{11-\sqrt{110}-\sqrt{110}+10}{11-10}</mrow>
-            <mrow>\amp=\frac{21-2\sqrt{110}}{1}</mrow>
-            <mrow>\amp=21-2\sqrt{110}</mrow>
-          </md>
-        </p>
-      </statement>
-
-    </exercise>
 
        
   </exercises>
@@ -288,7 +29,7 @@
  <exercises>
     <title>Practice Exercises</title>
 
-     <exercise>
+     <exercise xml:id="workshop-radicals-and-rat-exp-simplify-sq-rt-exercises">
       <title>Simplifying square roots by factoring out perfect squares</title>
       <statement>
         <p>
@@ -380,7 +121,7 @@
     </exercise>
 
  
-    <exercise>
+    <exercise xml:id="workshop-radicals-and-rat-exp-mono-sq-rt-exercises">
       <title>Rationalizing monomial square root denominators</title>
       <statement>
         <p>
@@ -467,7 +208,7 @@
       </solution>
     </exercise>
 
-     <exercise>
+     <exercise xml:id="workshop-radicals-and-rat-exp-add-sq-rt-exercises">
       <title>Combining square root expressions</title>
       <statement>
         <p>
@@ -556,7 +297,7 @@
     </exercise>
 
 
-    <exercise>
+    <exercise xml:id="workshop-radicals-and-rat-exp-rat-bi-den-exercises">
       <title>Rationalizing binomial denominators containing square root expressions</title>
 
       <statement>
@@ -636,7 +377,6 @@
 
         </ol>
       </solution>
-
     </exercise>
 
    

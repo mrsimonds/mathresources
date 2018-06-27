@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="parabolas-vertex-form">
+    <title>Vertex Form</title>
+        <p>
+          The graphing form of the equation of a parabola is <me>y=a(x-h)^2+k</me> where <m>a</m>, <m>h</m>, and <m>k</m> are all real numbers, <m>a \ne 0</m>.
+        </p> 
+        <p>
+          When written in graphing form, we can infer the vertex of the parabola directly from the equation, it is the point <m>(h,k)</m>.  This fact is actually somewhat intuitive.  No matter what values you choose for <m>x</m>, the smallest value you'll ever get for the expression <m>(x-h)^2</m> is zero, and that will occur when <m>x=h</m>.  So if <m>a</m> is positive, the expression <m>a(x-h)^2+k</m> will have its least value when <m>x=h</m> and if the value of <m>a</m> is negative, the expression <m>a(x-h)^2+k</m> will have its greatest value when <m>x=h</m>.  So for any non-zero value of <m>a</m>, the parabola will have either its lowest point or its highest point when <m>x=h</m>.  That low or high point is precisely the vertex.  The fact that the <m>y</m>-coordinate has a value of <m>k</m> when <m>x=h</m> comes directly from substitution.
+          <md>
+            <mrow>y\amp=a(\highlight{h}-h)^2+k</mrow>
+            <mrow>\amp=a(0)^2+k</mrow>
+            <mrow>\amp=k</mrow>
+          </md>
+          For example, given the equation <me>y=\frac{1}{2}(x-3)^2-7</me> we know immediately that the vertex of the parabola is the point <m>(3,-7)</m>.  Sometimes folks get a little uncertain about the sign of the value <m>h</m>.  If you start second guessing yourself, try to remember that <m>h</m> is the value that causes <m>(x-h)^2</m> to equal zero.  In the last equation that gives us the following.
+          <md>
+            <mrow>x-3\amp=0</mrow>
+            <mrow>x-3\addright{3}\amp=0\addright{3}</mrow>
+            <mrow>x\amp=3</mrow>
+          </md>
+          Direct substitution gives us the <m>y</m>-coordinate when <m>x=3</m>.
+          <md>
+            <mrow>y\amp=\frac{1}{2}(\highlight{3}-3)^2-7</mrow>
+            <mrow>\amp=\frac{1}{2}(0)^2-7</mrow>
+            <mrow>\amp=-7</mrow>
+          </md>
+          The other information about the parabola is determined in the same way that it was determined when we worked with the standard form of the equation.  To summarize:
+        </p>      
+        <p>
+          When presented with an equation of form <m>y=a(x-h)^2+k</m>, <m>a \ne 0</m>, the equation graphs to a parabola with the following properties.
+          <ul>
+            <li>
+              The vertex of the parabola is the point <m>(h,k)</m>.
+            </li>
+            <li>
+              The axis of symmetry for the parabola is the vertical line with equation <m>x=h</m>.
+            </li>
+            <li>
+              The parabola is concave up (opens upward) when <m>a \gt 0</m> and the parabola is concave down (opens downward) when <m>a \lt 0</m>.
+            </li>
+            <li>
+              If there are <m>x</m>-intercept(s) on the parabola, the <m>x</m>-coordinates of those (or that) point(s) are the real number solutions to the equation <m>a(x-h)^2+k=0</m>.  When that equation has no real number solutions, the parabola has no <m>x</m>-intercepts.
+            </li>
+            <li>
+              The <m>y</m>-coordinate of the <m>y</m>-intercept is determined by replacing <m>x</m> with zero in the equation <m>y=a(x-h)^2+k</m>.
+            </li>
+          </ul>
+        </p>  
+        <example xml:id="parabolas-graphing-form-ex-1">
+          <statement>
+            <p>
+              Determine the vertex, axis of symmetry, concavity, and all intercepts for the parabola with equation <me>y=-2(x+6)^2+8</me>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The vertex is the point <m>(-6,8)</m> and the axis of symmetry is the vertical line with equation <m>x=-6</m>.  Note that <m>(x+6)^2</m> is equivalent to <m>(x-(\highlight{-6}))</m>, which is another way of seeing that the <m>x</m>-coordinate of the vertex is <m>-6</m>.
+            </p>
+            <p>
+              Because the value of <m>a</m>, <m>-2</m>, is negative, we know that the parabola is concave down.
+            </p>
+            <p>
+              To determine the <m>x</m>-coordinates of the <m>x</m>-intercepts, we need to solve the equation <m>-2(x+6)^2+8=0</m>.  Because of the form of this equation, by far the fastest route to solution is the square root method.
+              <md>
+                <mrow>-2(x+6)^2+8\amp=0</mrow>
+                <mrow>-2(x+6)^2+8\subtractright{8}\amp=0\subtractright{8}</mrow>
+                <mrow>-2(x+6)^2\amp=-8</mrow>
+                <mrow>\divideunder{-2(x+6)^2}{-2}\amp=\divideunder{-8}{-2}</mrow>
+                <mrow>(x+6)^2\amp=4</mrow>
+                <mrow>x+6\amp=\pm\sqrt{4}</mrow>
+                <mrow>x+6\amp=\pm 2</mrow>
+              </md>
+              <md>
+                <mrow>x+6\amp=-2 \amp\amp\text{ or }\amp x+6\amp=2</mrow> 
+                <mrow>x+6\subtractright{6}\amp=-2\subtractright{6} \amp\amp\text{ or }\amp x+6\subtractright{6}\amp=2\subtractright{6}</mrow> 
+                <mrow>x\amp=-8 \amp\amp\text{ or }\amp x\amp=-4</mrow> 
+              </md>
+              The <m>x</m>-intercepts on the parabola are <m>(-8,0)</m> and <m>(-4,0)</m>.  Note that the parabola having its an axis of symmetry with equation <m>x=-6</m> is consistent with these intercepts <mdash/> their <m>x</m>-coordinates are equidistant from <m>x=-6</m>.
+            </p>
+            <p>
+              The value of the <m>y</m>-coordinate of the <m>y</m>-intercept is determined as follows.
+              <md>
+                <mrow>y\amp=-2(\highlight{0}+6)^2+8</mrow>
+                <mrow>y\amp=-2 \cdot 36 +8</mrow>
+                <mrow>y\amp=-72+8</mrow>
+                <mrow>y\amp=-64</mrow>
+              </md>
+              The <m>y</m>-intercept of the parabola is <m>(0,-64)</m>. 
+            </p>
+          </solution>
+        </example>
+        <example xml:id="parabolas-vertex-form-ex-2">
+          <statement>
+            <p>
+              Determine the vertex, axis of symmetry, concavity, and all intercepts for the parabola with equation <me>y=\frac{2}{3}(x-4)^2+1</me>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The vertex is the point <m>(4,1)</m> and the axis of symmetry is the vertical line with equation <m>x=4</m>.  
+            </p>
+            <p>
+              Because the value of <m>a</m>, <m>\frac{2}{3}</m>, is positive, the parabola is concave up.
+            </p>
+            <p>
+              To determine the <m>x</m>-coordinates of the <m>x</m>-intercepts, we need to solve the equation <m>\frac{2}{3}(x-4)^2+1=0</m>.  Because of the form of this equation, by far the fastest route to solution is the square root method.
+              <md>
+                <mrow>\frac{2}{3}(x-4)^2+1\amp=0</mrow>
+                <mrow>\frac{2}{3}(x-4)^2+1\subtractright{1}\amp=0\subtractright{1}</mrow>
+                <mrow>\frac{2}{3}(x-4)^2\amp=-1</mrow>
+                <mrow>\multiplyleft{\frac{3}{2}}\frac{2}{3}(x-4)^2\amp=\multiplyleft{\frac{3}{2}}-1</mrow>
+                <mrow>(x-4)^2\amp=-\frac{3}{2}</mrow>
+                <mrow>x-4\amp=\pm\sqrt{-\frac{3}{2}}</mrow>
+              </md>
+              Because <m>\sqrt{-\frac{3}{2}}</m> is not a real number, the parabola has no <m>x</m>-intercepts.  Note that this is consistent with the fact that the parabola opens upward and the vertex of the parabola is above the <m>x</m>-axis.
+            </p>
+            <p>
+              The value of the <m>y</m>-coordinate of the <m>y</m>-intercept is determined as follows.
+              <md>
+                <mrow>y\amp=\frac{2}{3}(\highlight{0}-4)^2+1</mrow>
+                <mrow>y\amp=\frac{2}{3}(16)-4</mrow>
+                <mrow>y\amp=\frac{32}{3}-\frac{12}{3}</mrow>
+                <mrow>y\amp=\frac{20}{3}</mrow>
+              </md>
+              The <m>y</m>-intercept of the parabola is <m>(0,\frac{20}{3})</m>. 
+            </p>
+          </solution>
+        </example>
+        <example xml:id="parabolas-vertex-form-ex-3">
+          <statement>
+            <sidebyside widths="47% 47%" margins="0%">
+              <p>
+                Determine an equation that would produce the parabola shown in <xref ref="workshop-parabolas-determine-examples">Figure</xref>.  State the equation in both graphing form and standard form.
+              </p>
+               <figure xml:id="workshop-parabolas-determine-examples">
+                      <caption>Determine equations for the parabola</caption>
+                        <image>
+                          <description>plain text</description>
+                            <latex-image>
+                              <![CDATA[
+                              \begin{tikzpicture}
+                                \begin{axis}
+                                  \addplot[primarycurve,domain=-6.13:2.13] {-.75*(x+2)^2+6};                              
+                                  \addplot[soliddot] coordinates {(-2,6)} node[left] {(-2,6)};                              
+                                  \addplot[soliddot] coordinates {(2,-6)} node[above right] {(2,-6)};
+                                \end{axis}
+                              \end{tikzpicture}
+                              ]]>
+                            </latex-image>
+                        </image>
+              </figure>
+            </sidebyside>
+          </statement>
+          <solution>
+          <p>
+            From the vertex of the parabola, <m>(-2,6)</m>, we know that the graphing form of the equation of the parabola is <me>y=a(x+2)^2+6</me> for some unknown value of <m>a</m>.  We can use the ordered pair <m>(2,-6)</m> to determine the value of <m>a</m>.  Note that the presence of the point <m>(2,-6)</m> on the parabola tells us that the value of <m>y</m> is <m>-6</m> when the value of <m>x</m> is <m>2</m>.
+            <md>
+              <mrow>\highlightr{y}\amp=a(\highlight{x}+2)^2+6</mrow>
+              <mrow>\highlightr{-6}\amp=a(\highlight{2}+2)^2+6</mrow>
+              <mrow>-6\amp=16a+6</mrow>
+              <mrow>-6\subtractright{6}\amp=16a+6\subtractright{6}</mrow>
+              <mrow>-12\amp=16a</mrow>
+              <mrow>\divideunder{-12}{16}\amp=\divideunder{16a}{16}</mrow>
+              <mrow>-\frac{3}{4}\amp=a</mrow>
+            </md>
+            So we now know that the graphing form of the the equation for the parabola is <me>y=\frac{3}{4}(x+2)^2+6</me>.  We need to expand the right side of the equation to determine the standard form of the equation.
+            <md>
+              <mrow>y\amp=\frac{3}{4}(x+2)^2+6</mrow>
+              <mrow>y\amp=\frac{3}{4}(x+2)(x+2)+6</mrow>
+              <mrow>y\amp=\frac{3}{4}(x^2+4x+4)+6</mrow>
+              <mrow>y\amp=\frac{3}{4}x^2+3x+3+6</mrow>
+              <mrow>y\amp=\frac{3}{4}x^2+3x+9</mrow>
+            </md>
+            The standard form of the equation for the parabola is <me>y=\frac{3}{4}x^2+3x+9</me>.
+          </p>
+        </solution>
+      </example>
+
+      <exercises>
+
+        <exercisegroup>
+          <introduction>
+            <p>
+              For each equation, state the vertex, axis of symmetry, concavity, and all intercepts of the parabola.
+            </p>
+          </introduction>
+
+              <exercise>
+                <statement>
+                  <m>y=2(x-3)^2-12</m>
+                </statement>
+                <solution>
+                  <p>
+                    The equation <m>y=2(x-3)^2-12</m> is already in the graphing form <m>y=a(x-h)^2+k</m>, so we can see straight away that <m>a=2</m>, <m>h=3</m>, and <m>k=-12</m>.  This tells us that the vertex of the parabola is <m>(3,-12)</m> and that the axis of symmetry is <m>x=3</m>.  Because <m>a</m> is positive, we also know that the parabola is concave up.  To determine the <m>y</m>-intercept, we need to determine the value of <m>y</m> when the value of <m>x</m> is zero.
+                    <md>
+                      <mrow>y\amp=2(\highlight{0}-3)^2-12</mrow>
+                      <mrow>\amp=2(-3)^2-12</mrow>
+                      <mrow>\amp=6</mrow>
+                    </md>
+                    So the <m>y</m>-intercept is <m>(0,6)</m>.  To determine the <m>x</m>-intercepts, we need to find the points that have a <m>y</m>-coordinate of zero.
+                    <md>
+                      <mrow>2(x-3)^2-12\amp=0</mrow>
+                      <mrow>2(x-3)^2-12\addright{12}\amp=0\addright{12}</mrow>
+                      <mrow>2(x-3)^2\amp=12</mrow>
+                      <mrow>\divideunder{2(x-3)^2}{2}\amp=\divideunder{12}{2}</mrow>
+                      <mrow>(x-3)^2\amp=6</mrow>
+                      <mrow>x-3\amp=\pm\sqrt{6}</mrow>
+                      <mrow>x-3\addright{3}\amp=\pm\sqrt{6}\addright{3}</mrow>
+                      <mrow>x\amp=3\pm\sqrt{6}</mrow>
+                    </md>
+                    So, the <m>x</m>-intercepts are <m>(3-\sqrt{6},0)</m> and <m>(3-\sqrt{6},0)</m>.
+                  </p>
+                </solution>
+              </exercise>
+
+              <exercise>
+                <statement>
+                  <m>y=-(x+5)^2</m>
+                </statement>
+                <solution>
+                  <p>
+                    The equation <m>y=-(x+5)^2</m> is already in the graphing form <m>y=a(x-h)^2+k</m>, so we can see straight away that <m>a=-1</m>, <m>h=-5</m>, and <m>k=0</m>.  This tells us that the vertex of the parabola is <m>(-5,0)</m> and that the axis of symmetry is <m>x=-5</m>.  Because <m>a</m> is negative, we also know that the parabola is concave down.  To determine the <m>y</m>-intercept, we need to determine the value of <m>y</m> when the value of <m>x</m> is zero.
+                    <md>
+                      <mrow>y\amp=-(\highlight{0}+5)^2</mrow>
+                      <mrow>\amp=-(5)^2</mrow>
+                      <mrow>\amp=-25</mrow>
+                    </md>
+                    So the <m>y</m>-intercept is <m>(0,-25)</m>.  To determine the <m>x</m>-intercepts, we need to find the points that have a <m>y</m>-coordinate of zero.
+                    <md>
+                      <mrow>-(x+5)^2\amp=0</mrow>
+                      <mrow>x+5\amp=0</mrow>
+                      <mrow>x+5\subtractright{5}\amp=0\subtractright{5}</mrow>
+                      <mrow>x\amp=-5</mrow>
+                    </md>
+                    So, the only <m>x</m>-intercept is <m>(-5,0)</m>.
+                  </p>
+                </solution>
+              </exercise>
+
+              <exercise>
+                <statement>
+                  <m>y=-4x^2+3</m>
+                </statement>
+                <solution>
+                  <p>
+                    The equation <m>y=-4x^2+3</m> is already in the graphing form <m>y=a(x-h)^2+k</m>, so we can see straight away that <m>a=-4</m>, <m>h=0</m>, and <m>k=3</m>.  This tells us that the vertex of the parabola is <m>(0,3)</m> and that the axis of symmetry is <m>x=0</m> (i.e. the <m>y</m>-axis).  Because <m>a</m> is negative, we also know that the parabola is concave down.  To determine the <m>y</m>-intercept, we need to determine the value of <m>y</m> when the value of <m>x</m> is zero.
+                    <md>
+                      <mrow>y\amp=-4 \cdot (\highlight{0})^2+3</mrow>
+                      <mrow>\amp=3</mrow>
+                    </md>
+                    So the <m>y</m>-intercept is <m>(0,3)</m>.  To determine the <m>x</m>-intercepts, we need to find the points that have a <m>y</m>-coordinate of zero.
+                    <md>
+                      <mrow>-4x^2+3\amp=0</mrow>
+                      <mrow>-4x^2+3\subtractright{3}\amp=0\subtractright{3}</mrow>
+                      <mrow>-4x^2\amp=-3</mrow>
+                      <mrow>\divideunder{-4x^2}{-4}\amp=\divideunder{-3}{-4}</mrow>
+                      <mrow>x^2\amp=\frac{3}{4}</mrow>
+                      <mrow>x\amp=\pm\sqrt{\frac{3}{4}}</mrow>
+                      <mrow>x\amp=\pm\frac{\sqrt{3}}{2}</mrow>
+                    </md>
+                    So, the <m>x</m>-intercepts are <m>(-\frac{\sqrt{3}}{2},0)</m> and <m>(\frac{\sqrt{3}}{2},0)</m>.
+                  </p>
+                </solution>
+              </exercise>
+
+              <exercise>
+                <statement>
+                  <m>y=3(x-1)^2+4</m>
+                </statement>
+                <solution>
+                  <p>
+                    The equation <m>y=3(x-1)^2+4</m> is already in the graphing form <m>y=a(x-h)^2+k</m>, so we can see straight away that <m>a=3</m>, <m>h=1</m>, and <m>k=4</m>.  This tells us that the vertex of the parabola is <m>(1,4)</m> and that the axis of symmetry is <m>x=1</m>.  Because <m>a</m> is positive, we also know that the parabola is concave up.  To determine the <m>y</m>-intercept, we need to determine the value of <m>y</m> when the value of <m>x</m> is zero.
+                    <md>
+                      <mrow>y\amp=3(\highlight{0}-1)^2+4</mrow>
+                      <mrow>\amp=3(-1)^2+4</mrow>
+                      <mrow>\amp=7</mrow>
+                    </md>
+                    So the <m>y</m>-intercept is <m>(0,7)</m>.  To determine the <m>x</m>-intercepts, we need to find the points that have a <m>y</m>-coordinate of zero.
+                    <md>
+                      <mrow>3(x-1)^2+4\amp=0</mrow>
+                      <mrow>3(x-1)^2+4\subtractright{4}\amp=0\subtractright{4}</mrow>
+                      <mrow>3(x-1)^2\amp=-4</mrow>
+                      <mrow>\divideunder{3(x-1)^2}{3}\amp=\divideunder{-4}{3}</mrow>
+                      <mrow>(x-1)^2\amp=-\frac{4}{3}</mrow>
+                      <mrow>x-1=\pm\sqrt{-\frac{4}{3}}</mrow>
+                    </md>
+                    Because the square roots of negative numbers are not real numbers, this parabola has no <m>x</m>-intercepts.  This is concistent with the fact that the parabola opens upward and that its vertex is already above the <m>x</m>-axis. 
+                  </p>
+                </solution>
+              </exercise>
+
+              <exercise>
+                <statement>
+                  <m>y=5(x+6)^2-44</m>
+                </statement>
+                <solution>
+                  <p>
+                    The equation <m>y=5(x+6)^2-44</m> is already in the graphing form <m>y=a(x-h)^2+k</m>, so we can see straight away that <m>a=5</m>, <m>h=-6</m>, and <m>k=-44</m>.  This tells us that the vertex of the parabola is <m>(-6,-44)</m> and that the axis of symmetry is <m>x=-6</m>.  Because <m>a</m> is positive, we also know that the parabola is concave up.  To determine the <m>y</m>-intercept, we need to determine the value of <m>y</m> when the value of <m>x</m> is zero.
+                    <md>
+                      <mrow>y\amp=5(\highlight{0}+6)^2-44</mrow>
+                      <mrow>\amp=5(6)^2-44</mrow>
+                      <mrow>\amp=136</mrow>
+                    </md>
+                    So the <m>y</m>-intercept is <m>(0,136)</m>.  To determine the <m>x</m>-intercepts, we need to find the points that have a <m>y</m>-coordinate of zero.
+                    <md>
+                      <mrow>5(x+6)^2-44\amp=0</mrow>
+                      <mrow>5(x+6)^2-44\addright{44}\amp=0\addright{44}</mrow>
+                      <mrow>5(x+6)^2\amp=44</mrow>
+                      <mrow>\divideunder{5(x+6)^2}{5}\amp=\divideunder{44}{5}</mrow>
+                      <mrow>(x+6)^2\amp=\frac{44}{5}</mrow>
+                      <mrow>x+6\amp=\pm\sqrt{\frac{44}{5}}</mrow>
+                      <mrow>x+6\amp=\pm\frac{\sqrt{44}}{\sqrt{5}}</mrow>
+                      <mrow>x+6\amp=\pm\frac{\sqrt{44}}{\sqrt{5}} \cdot \frac{\sqrt{5}}{\sqrt{5}}</mrow>
+                      <mrow>x+6\amp=\pm\frac{\sqrt{44} \cdot \sqrt{5}}{5}</mrow>
+                      <mrow>x+6\amp=\pm\frac{\sqrt{4 \cdot 11} \cdot \sqrt{5}}{5}</mrow>
+                      <mrow>x+6\amp=\pm\frac{\sqrt{4} \cdot \sqrt{11} \cdot \sqrt{5}}{5}</mrow>
+                      <mrow>x+6\amp=\pm\frac{2 \cdot \sqrt{11} \sqrt{5}}{5}</mrow>
+                      <mrow>x+6\amp=\pm\frac{2\sqrt{55}}{5}</mrow>
+                      <mrow>x+6\subtractright{6}\amp=\pm\frac{2\sqrt{55}}{5}\subtractright{6}</mrow>
+                      <mrow>x\amp=-6\pm\frac{2\sqrt{55}}{5}</mrow>
+                      <mrow>x\amp=\frac{-30\pm 2\sqrt{55}}{5}</mrow>
+                    </md>
+                    So, the <m>x</m>-intercepts are <m>(\frac{-30-2\sqrt{55}}{5},0)</m> and <m>(\frac{-30+2\sqrt{55}}{5},0)</m>
+                  </p>
+                </solution>
+              </exercise>
+
+            </exercisegroup>
+
+            <exercisegroup>
+              <introduction>
+                <p>
+                  For each graph, determine an equation that would produce the parabola.  State the equation in both graphing form and standard form.
+                </p>
+              </introduction>
+
+              <exercise>
+                <statement>
+                  <p>
+                    <figure xml:id="parabolas-PS2-figure-1-exercises">
+                            <caption>Determine equations for the parabola</caption>
+                              <image>
+                                <description>plain text</description>
+                                  <latex-image>
+                                    <![CDATA[
+                                    \begin{tikzpicture}
+                                      \begin{axis}
+                                        \addplot[primarycurve,domain=-3.23:6.98] {(1/3)*(x-3)^2-6};                              
+                                        \addplot[soliddot] coordinates {(3,-6)} node[above] {(3,-6)};                              
+                                        \addplot[soliddot] coordinates {(0,-3)} node[above right] {(0,-3)};
+                                      \end{axis}
+                                    \end{tikzpicture}
+                                    ]]>
+                                  </latex-image>
+                              </image>
+                    </figure>
+                  </p>
+                </statement>
+                <solution>
+                  <p>
+                    The vertex of the parabola shown in <xref ref="parabolas-PS2-figure-2-exercises">Figure</xref> is <m>(3,-6)</m>.  This tells us that the graphing form of the equation has form <m>y=a(x-3)^2-6</m> for some undetermined value of <m>a</m>.  We can use the ordered pair <m>(\highlightr{0},\highlight{-3})</m> in that equation to determine the value of <m>a</m>.
+                    <md>
+                      <mrow>\highlight{-3}\amp=a(\highlightr{0}-3)^2-6</mrow>
+                      <mrow>-3\amp=9a-6</mrow>
+                      <mrow>-3\addright{6}\amp=9a-6\addright{6}</mrow>
+                      <mrow>3\amp=9a</mrow>
+                      <mrow>\divideunder{3}{9}\amp=\divideunder{9a}{9}</mrow>
+                      <mrow>\frac{1}{3}\amp=a</mrow>
+                    </md>
+                    So the graphing form of the equation of the parabola is <me>y=\frac{1}{3}(x-3)^2-6</me>.
+                    To get the standard for of the equation, we simply need to expand and simplify the graphing form of the equation.
+                    <md>
+                      <mrow>y\amp=\frac{1}{3}(x-3)^2-6</mrow>
+                      <mrow>y\amp=\frac{1}{3}(x-3)(x-3)-6</mrow>
+                      <mrow>y\amp=\frac{1}{3}(x^2-6x+9)-6</mrow>
+                      <mrow>y\amp=\frac{1}{3}x^2-2x+3-6</mrow>
+                      <mrow>y\amp=\frac{1}{3}x^2-2x-3</mrow>
+                    </md>
+                    So the standard for of the equation is <me>y=\frac{1}{3}x^2-2x-3</me>.
+                  </p>
+                </solution>
+              </exercise>
+
+              <exercise>
+                <statement>
+                  <p>
+                   <figure xml:id="parabolas-PS2-figure-2-exercises">
+                          <caption>Determine equations for the parabola</caption>
+                            <image>
+                              <description>plain text</description>
+                                <latex-image>
+                                  <![CDATA[
+                                  \begin{tikzpicture}
+                                    \begin{axis}
+                                      \addplot[primarycurve,domain=-3.44:3.44] {-1*x^2+5};                              
+                                      \addplot[soliddot] coordinates {(0,5)} node[above right] {(0,5)};                              
+                                      \addplot[soliddot] coordinates {(2,1)} node[above right] {(2,1)};
+                                    \end{axis}
+                                  \end{tikzpicture}
+                                  ]]>
+                                </latex-image>
+                            </image>
+                  </figure>
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  The vertex of the parabola shown in <xref ref="parabolas-PS2-figure-2-exercises">Figure</xref> is <m>(0,5)</m>.  This tells us that the graphing form of the equation has form <m>y=a(x-0)^2+5</m> or merely <m>y=ax^2+5</m> for some undetermined value of <m>a</m>.  We can use the ordered pair <m>(\highlightr{2},\highlight{1})</m> in that equation to determine the value of <m>a</m>.
+                  <md>
+                    <mrow>\highlight{1}\amp=(\highlightr{2})^2+5</mrow>
+                    <mrow>1\amp=4a+5</mrow>
+                    <mrow>1\subtractright{5}\amp=4a+5\subtractright{5}</mrow>
+                    <mrow>-4\amp=4a</mrow>
+                    <mrow>\divideunder{-4}{4}\amp=\divideunder{4a}{4}</mrow>
+                    <mrow>-1\amp=a</mrow>
+                  </md>
+                  So the graphing form of the equation of the parabola is <m>y=-1 \cdot x^2+5</m> or simply <me>y=-x^2+5</me>. We'll note that the last stated equation is also the standard form of the equation of the parabola. 
+                </p>
+              </solution>
+            </exercise>
+
+            <exercise>
+              <statement>
+                <p>
+                 <figure xml:id="workshop-parabolas-PS2-figure-3-exercises">
+                        <caption>Determine equations for the parabola</caption>
+                          <image>
+                            <description>plain text</description>
+                              <latex-image>
+                                <![CDATA[
+                                \begin{tikzpicture}
+                                  \begin{axis}
+                                    \addplot[primarycurve,domain=-4.8:0.8] {(x+2)^2-1};                              
+                                    \addplot[soliddot] coordinates {(-2,-1)} node[below left] {(-2,-1)};                              
+                                    \addplot[soliddot] coordinates {(0,3)} node[below right] {(0,3)};
+                                  \end{axis}
+                                \end{tikzpicture}
+                                ]]>
+                              </latex-image>
+                          </image>
+                </figure>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The vertex of the parabola shown in <xref ref="parabolas-PS2-figure-2-exercises">Figure</xref> is <m>(-2,-1)</m>.  This tells us that the graphing form of the equation has form <m>y=a(x+2)^2-1</m> for some undetermined value of <m>a</m>.  We can use the ordered pair <m>(\highlightr{0},\highlight{3})</m> in that equation to determine the value of <m>a</m>.
+                <md>
+                  <mrow>\highlight{3}\amp=a(\highlightr{0}+2)^2-1</mrow>
+                  <mrow>3\amp=4a-1</mrow>
+                  <mrow>3\addright{1}\amp=4a-1\addright{1}</mrow>
+                  <mrow>4\amp=4a</mrow>
+                  <mrow>\divideunder{4}{4}\amp=\divideunder{4a}{4}</mrow>
+                  <mrow>1\amp=a</mrow>
+                </md>
+                So the graphing form of the equation of the parabola is <m>y=1 \cdot (x+2)^2-1</m> or simply <me>y=(x+2)^2-1</me>.
+                To get the standard for of the equation, we simply need to expand and simplify the graphing form of the equation.
+                <md>
+                  <mrow>y\amp=(x+2)^2-1</mrow>
+                  <mrow>y\amp=(x+2)(x+2)-1</mrow>
+                  <mrow>y\amp=x^2+4x+4-1</mrow>
+                  <mrow>y\amp=x^2+4x+3</mrow>
+                </md>
+                So the standard for of the equation is <me>y=x^2+4x+3</me>.
+              </p>
+            </solution>
+          </exercise>
+
+        </exercisegroup>
+
+      </exercises>
+    </section>

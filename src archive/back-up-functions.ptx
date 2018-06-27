@@ -1,0 +1,2818 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-functions">
+    <title>Functions</title>
+
+    <exercises>  
+      <title>Written Examples</title>
+
+      <exercise xml:id="workshop-functions-introduction-function-notation-examples">
+        <title>Introduction to function notation</title>
+        <statement>
+        <p>
+          A function is a set of ordered pairs with the property that no two points in the set share the same first coordinate.  Specifically, if the function is a set of points of form <m>(x,y)</m>, we say that <m>y</m> is a function of <m>x</m>, and if the name of the function is <m>f</m>, we write <m>y=f(x)</m>.  The symbols <m>y=f(x)</m> are read aloud as "<m>y</m> equals <m>f</m> of <m>x</m>" or "<m>y</m> equals <m>f</m> at <m>x</m>."  The <m>y</m>-coordinate of he point is called the function value at the <m>x</m>-coordinate of the point.
+        </p>
+        <sidebyside widths="60% 40%">
+          <p>
+            Consider the function, <m>f</m>, that consists of the ordered pairs shown in <xref ref="table-functions-graphs-examples-example-1">Table</xref>.  From the given ordered we know each of the following function values.
+            <md>
+              <mrow>f(0)\amp=7</mrow>
+              <mrow>f(1)\amp=-3</mrow>
+              <mrow>f(2)\amp=11</mrow>
+              <mrow>f(3)\amp=7</mrow>
+            </md>
+          </p>
+            <table xml:id="table-functions-graphs-examples-example-1">
+              <caption>The ordered pairs in <m>f</m></caption>
+              <tabular>
+                <col halign="center" />
+                <col halign="center" />
+                <row bottom="medium">
+                  <cell><line><m>x</m></line></cell>
+                  <cell><line><m>y</m></line></cell>
+                </row>
+                <row>
+                  <cell><m>0</m></cell>
+                  <cell><m>7</m></cell>
+                </row>
+                <row>
+                  <cell><m>1</m></cell>
+                  <cell><m>-3</m></cell>
+                </row>
+                <row>
+                  <cell><m>2</m></cell>
+                  <cell><m>11</m></cell>
+                </row>
+                <row>
+                  <cell><m>3</m></cell>
+                  <cell><m>7</m></cell>
+                </row>
+              </tabular>
+            </table>
+        </sidebyside>
+        <p>
+          Using words, we say that the value of <m>f</m> at <m>0</m> is <m>7</m>, the value of <m>f</m> at <m>1</m> is <m>-3</m>, the value of <m>f</m> at <m>2</m> is <m>11</m>, and the value of <m>f</m> at <m>3</m> is <m>7</m>.
+        </p>
+        <sidebyside widths="50% 50%">
+          <p>
+            Consider the function, <m>g</m>, shown in <xref ref="workshop-functions-examples-abs-value">Figure</xref>.  From the points (ordered pairs) that have been stated, we can infer the following function values.
+            <md>
+              <mrow>g(-4)\amp=2</mrow>
+              <mrow>g(1)\amp=3</mrow>
+              <mrow>g(5)\amp=-1</mrow>
+            </md>
+          </p>
+            <figure xml:id="workshop-functions-examples-abs-value">
+                  <caption><m>y=g(x)</m></caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-6.5:-2,smooth,{Stealth}-] {2*x+10};
+                              \addplot[primarycurve,domain=-2:5,smooth,-] {4-x};
+                              \addplot[soliddot] coordinates {(5,-1)} node[below] {(5,-1)};
+                              \addplot[soliddot] coordinates {(1,3)} node[above right] {(1,3)};
+                              \addplot[soliddot] coordinates {(-4,2)} node[above left] {(-4,2)};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+        </figure>
+        </sidebyside>
+        <p>
+          If we were asked to evaluate the function at <m>4</m>, we would first locate the point with an <m>x</m>-coordinate of <m>4</m>.  Then the function value would be the corresponding <m>y</m>-coordinate.  In this case the relevant point is <m>(4,0)</m> and we would report the function value by writing <m>f(4)=0</m>. 
+        </p>
+        
+          <p>
+            Now suppose that we were asked to solve the equation <m>g(x)=4</m>.  Just like any other equation with the variable <m>x</m>, we are looking for all values that we could substitute for <m>x</m> that would result in a true statement.  In words, the equation <m>g(x)=4</m> could be stated as "determine the values of <m>x</m> for which the value of the function<m>g</m> is <m>2</m>."  Since the function value corresponds the to the <m>y</m>-coordinate, we can further refine the charge as follows: "locate the points on the curve <m>y=g(x)</m> with <m>y</m>-coordinates equal to <m>4</m>, then the solutions to <m>g(x)=4</m> are the <m>x</m>-coordinates of those points"
+          </p>
+          <sidebyside widths="50% 50%">
+            <p>
+              In <xref ref="workshop-functions-examples-abs-value-solve-1">Figure</xref> I've added the line <m>y=4</m> to a graph of <m>y=g(x)</m>.  We can see that the line intersects the function <m>g</m> at the points <m>(-3,4)</m> and <m>(0,4)</m>, so the solutions to the equation <m>g(x)=4</m> are <m>-3</m> and <m>4</m>.  Similarly, if we drew the line <m>y=1</m>, we see that is would intersect <m>g</m> at the points <m>(-4.5,1)</m> and <m>(3,1)</m>, so the solutions to the equation <m>g(x)=1</m> are <m>-4.5</m> and <m>1</m>.
+            </p>
+            <figure xml:id="workshop-functions-examples-abs-value-solve-1">
+                  <caption><m>y=g(x)</m></caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-6.5:-2,smooth,{Stealth}-] {2*x+10};
+                              \addplot[primarycurve,domain=-2:5,smooth,-] {4-x};
+                              \addplot[secondarycurve,domain=-6.8:6.8,blue,thick,{Stealth}-{Stealth}] {4};
+                              \addplot[soliddot,color=black] coordinates {(0,4)} node[above right] {(0,4)};
+                              \addplot[soliddot,color=black] coordinates {(-3,4)} node[above left] {(-3,4)};
+                              \addplot[soliddot] coordinates {(5,-1)};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+        </figure>
+        </sidebyside>
+        <sidebyside widths="75% 25%">
+          <p>
+            Let's consider the equation <m>g(x)=-8</m>.  We can't draw the line <m>y=-8</m> onto <xref ref="workshop-functions-solve-equation-table">Table</xref>, nor can we see a point with an <m>y</m>-coordinate of <m>10</m>,so we'll have to take a different tact.  The arrow on the left side of <m>g</m> implies that <m>g</m> continues forever in the leftward direction with the same slope.  So one strategy we can employ is to use that slope to make a table for <m>g</m> until we find the point that has a <m>y</m>-coordinate of <m>-8</m>.  I've done that in <xref ref="workshop-functions-solve-equation-table">Table</xref>, and we can see that the relevant ordered pair is <m>(-8,-9)</m>.  From this we know that the solution to the equation <m>g(x)=-8</m> is <m>-9</m>.
+          </p>
+          <table xml:id="workshop-functions-solve-equation-table">
+              <caption><m>y=g(x)</m></caption>
+              <tabular>
+                <col halign="center" />
+                <col halign="center" />
+                <row bottom="medium">
+                  <cell><line><m>x</m></line></cell>
+                  <cell><line><m>y</m></line></cell>
+                </row>
+                <row>
+                  <cell><m>-4</m></cell>
+                  <cell><m>2</m></cell>
+                </row>
+                <row>
+                  <cell><m>-5</m></cell>
+                  <cell><m>0</m></cell>
+                </row>
+                <row>
+                  <cell><m>-6</m></cell>
+                  <cell><m>-2</m></cell>
+                </row>
+                <row>
+                  <cell><m>-7</m></cell>
+                  <cell><m>-4</m></cell>
+                </row>
+                <row>
+                  <cell><m>-8</m></cell>
+                  <cell><m>-6</m></cell>
+                </row>
+                <row>
+                  <cell><m>-9</m></cell>
+                  <cell><m>-8</m></cell>
+                </row>
+              </tabular>
+            </table>
+        </sidebyside>
+          <p>
+            Functions are frequently described by a function formula.  For example, consider <me>f(x)=x^2-8</me>.  Suppose that we want to determine the value of <m>f</m> when <m>x</m> has a value of <m>-3</m>.  To make this determination we need to replace <m>x</m> with <m>-3</m> on both sides of the equation and then simplify the expression on the right-side of the equation (AKA "do the math").  Let's do it.
+            <md>
+              <mrow>f(\highlight{x})\amp=\highlight{x}^2-\highlight{x}-8</mrow>
+              <mrow>f(\highlight{-3})\amp=(\highlight{-3})^2-(\highlight{-3})-8</mrow>
+              <mrow>\amp=9+3-8</mrow>
+              <mrow>\amp=4</mrow>
+            </md>
+            So the value of <m>f</m> at <m>-3</m> is <m>4</m>.
+          </p>
+          <p>
+            Let's see several more examples.
+          </p>
+          <p>Example</p>
+          <p>
+            Determine the value of <m>g(x)=\sqrt{9-2x}</m> at <m>-8</m>.
+          </p>
+          <p>
+            Solution
+            <md>
+              <mrow>g(\highlight{x})\amp=\sqrt{9-2\highlight{x}}</mrow>
+              <mrow>g(\highlight{-8})\amp=\sqrt{9-2(\highlight{-8})}</mrow>
+              <mrow>\amp=\sqrt{9+16}</mrow>
+              <mrow>\amp=\sqrt{25}</mrow>
+              <mrow>\amp=5</mrow>
+            </md>
+            The value of <m>g</m> at <m>-8</m> is <m>5</m>.
+          </p>
+          <p>Example</p>
+          <p>
+            Let <m>f(x)=8-5x</m>.  Determine the value(s) of <m>x</m> where <m>f</m> has a value of <m>53</m>.
+          </p>
+          <p>Solution</p>
+          <p>
+            In this example we are being told that <me>f(x)=53</me> and being asked to determine the value of <m>x</m> when this happens.  That is, we are being asked to solve the equation <me>8-5x=53</me>.  Let's get to solving.
+            <md>
+              <mrow>8-5x\amp=53</mrow>
+              <mrow>8-5x\subtractright{8}\amp=53\subtractright{8}</mrow>
+              <mrow>-5x\amp=45</mrow>
+              <mrow>\divideunder{-5x}{-5}\amp=\divideunder{45}{-5}</mrow>
+              <mrow>x\amp=-9</mrow>
+            </md>
+            The function, <m>f</m>, has a value of <m>53</m> when the value of <m>x</m> is <m>-9</m>
+          </p>
+          <p>Example</p>
+          <p>
+            Determine the values of <m>g(5)</m> and <m>g(3)</m> where <m>g(x)=\frac{x+12}{x^2-4x+3}</m>.
+          </p>
+          <p>
+            Solution
+            <md>
+              <mrow>g(\highlight{x})\amp=\frac{\highlight{x}+12}{\highlight{x}^2-4\highlight{x}+3}</mrow>
+              <mrow>g(\highlight{5})\amp=\frac{\highlight{5}+12}{\highlight{5}^2-4(\highlight{5})+3}</mrow>
+              <mrow>\amp=\frac{17}{25-20+3}</mrow>
+              <mrow>\amp=\frac{17}{8}</mrow>
+            </md>
+            <md>
+              <mrow>g(\highlight{x})\amp=\frac{\highlight{x}+12}{\highlight{x}^2-4\highlight{x}+3}</mrow>
+              <mrow>g(\highlight{3})\amp=\frac{\highlight{3}+12}{\highlight{3}^2-4(\highlight{3})+3}</mrow>
+              <mrow>\amp=\frac{15}{9-12+3}</mrow>
+              <mrow>\amp=\frac{15}{0}</mrow>
+            </md>
+            In the parlance of Scooby Doo, Rut Roh! Division by zero never leads to good results.  Put another way, no number is equal to <m>\frac{15}{0}</m>.  When an error like this arises, we say that the function value is "undefined."  Or we might say that the function value "does not exist." Any way we put it, <m>g(3)</m> is a non-thing (in this problem).
+          </p> 
+          <p>Example</p>
+          <p>
+            Let <m>h(t)=\frac{2t+1}{t-6}</m>.  Determine each of the following.
+            <ol>
+              <li>
+                <p>
+                  The value(s) of <m>t</m> where the value of <m>h</m> is equal to <m>\frac{7}{2}</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The value of <m>h</m> when the value of <m>t</m> is <m>5</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Any and all values of <m>t</m> where the function is undefined.
+                </p>
+              </li>
+            </ol>
+          </p>
+          <p>
+            Solution
+            <ol>
+              <li>
+                <p>
+                  We are being asked to determine where <m>h(t)=\frac{7}{2}</m>.  To do so, we need to set the formula for <m>h(t)</m> equal to <m>\frac{7}{2}</m> and solve the resultant equation for <m>t</m>.
+                  <md>
+                    <mrow>\frac{2t+1}{t-6}\amp=\frac{7}{2}</mrow>
+                    <mrow>2(2t+1)\amp=7(t-6)\,\,\,\,\text{(I cross-multiplied.)}</mrow>
+                    <mrow>4t+2\amp=7t-42</mrow>
+                    <mrow>4t+2\subtractright{2}-\subtractright{7t}\amp=7t-42\subtractright{2}-\subtractright{7t}</mrow>
+                    <mrow>-3t\amp=40</mrow>
+                    <mrow>\divideunder{-3t}{-3}\amp=\divideunder{-44}{-3}</mrow>
+                    <mrow>t\amp=\frac{44}{3}</mrow>
+                  </md>
+                  The value of <m>h</m> is <m>\frac{7}{2}</m> when the value of <m>t</m> is <m>\frac{44}{3}</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  We are being asked to determine <m>h(5)</m>.
+                  <md>
+                    <mrow>h(\highlight{t})\amp=\frac{2\highlight{t}+1}{\highlight{t}-6}</mrow>
+                    <mrow>h(\highlight{5})\amp=\frac{2(\highlight{5})+1}{\highlight{5}-6}</mrow>
+                    <mrow>\amp=\frac{11}{-1}</mrow>
+                    <mrow>\amp=-11</mrow>
+                  </md>
+                  The value of <m>h</m> at <m>5</m> is <m>11</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  We are essentially asked to determine what values of <m>t</m> will make the formula <me>\frac{2t+1}{t-6}</me> go kablooey.  This will only occur if we try to force division by zero, which in turn will only occur if we replace <m>t</m> with <m>6</m>.  So the only value where <m>h</m> is undefined is <m>6</m>.
+                </p>
+                <p></p>
+                <p>
+                  This idea of determining where a function is or is not defined is explored in more detail in the section titled "Domain and Range".
+                </p>
+              </li>
+            </ol>
+          </p>
+          <p>
+            Click here to access some practice problems related to elementary function notation: 
+            <xref ref="workshop-functions-introduction-function-notation-exercises">Practice problems</xref>
+          </p>   
+        </statement>
+      </exercise>
+
+      <exercise xml:id="workshop-functions-domain-and-range-examples">
+        <title>Domain and Range</title>
+        <statement>
+        <p>
+          When <m>y</m> is a function of <m>x</m>, the set of all <m>x</m>-coordinates in the set is called the domain of the function and the set of all <m>y</m>-coordinates is called the range of the function.
+        </p>
+         <sidebyside widths="75% 25%">
+          <p>
+            For example, the domain of the function <m>f</m> whose ordered pairs are shown in <xref ref="workshop-functions-examples-domain-table">Table</xref> is <m>\{-1,3,6,-7,2,-5\}</m>.  The range of <m>f</m> is <m>\{7,-1,4,0\}</m>.  Notice that <m>7</m> was listed only once in the range even though it is the <m>y</m>-coordinate of more than one point in the set.  Either <m>7</m> is an element of the range or it is not <mdash/> it can't be be an element multiple times (even though it can be the <m>y</m>-coordinate of multiple ordered pairs in the function).
+          </p>
+          <table xml:id="workshop-functions-examples-domain-table">
+              <caption><m>y=f(x)</m></caption>
+              <tabular>
+                <col halign="center" />
+                <col halign="center" />
+                <row bottom="medium">
+                  <cell><line><m>x</m></line></cell>
+                  <cell><line><m>y</m></line></cell>
+                </row>
+                <row>
+                  <cell><m>-1</m></cell>
+                  <cell><m>7</m></cell>
+                </row>
+                <row>
+                  <cell><m>3</m></cell>
+                  <cell><m>-1</m></cell>
+                </row>
+                <row>
+                  <cell><m>6</m></cell>
+                  <cell><m>7</m></cell>
+                </row>
+                <row>
+                  <cell><m>-7</m></cell>
+                  <cell><m>4</m></cell>
+                </row>
+                <row>
+                  <cell><m>2</m></cell>
+                  <cell><m>7</m></cell>
+                </row>
+                <row>
+                  <cell><m>-5</m></cell>
+                  <cell><m>0</m></cell>
+                </row>
+              </tabular>
+            </table>
+        </sidebyside>
+        <p>
+          The function <m>f</m> described in <xref ref="workshop-functions-examples-domain-table">Table</xref> is called a discrete function.  A discrete function is a function where both the domain and range can be listed as distinct elements in a set.  This is in comparison to a continuous function like a line. The domain of a linear function is all real numbers, and it's not possible to write every real number in a list. 
+        </p>
+        <p>
+          Discrete functions are very common in real life.  For example, suppose that are taking a psychology class.  Consider all of the students present the first day of class.  We could define a function where the <m>x</m>-coordinates are made up the students' ages and the <m>y</m>-coordinates are made up by the corresponding student's credit-load. In this case, the domain of the function would be the set of all of the students' ages and the range would be the set of all of the students' credit-loads.  This type of function is frequently analyzed in the field of statistics.
+        </p>
+        <p>
+          In early algebra classes and in calculus classes it is much more common to work with (mostly) continuous functions.  While there is a formal definition for a continuous function, it relies upon a context not encountered until calculus.  An informal way to describe a continuous function is to note that it is a function that can be drawn without lifting your pencil off of the paper (for sticklers, and not drawing any open circles in the process).  Sometimes a function is not continuous everywhere, but does have distinct regions where it is continuous.
+        </p>
+        <sidebyside widths="50% 50%">
+          <p>
+            Consider the function, <m>g</m>, shown in <xref ref="workshop-functions-examples-dom-range-1-1">Figure</xref>.  We can see that the function has points for all <m>x</m>-coordinates between <m>-2</m> and <m>4</m>.  The open circle at the point <m>(-2,-3)</m> indicates that the point is not on the function, so <m>-2</m> is not a part of the domain.  The solid dot at the point <m>(4,3)</m> indicates that the point is a part of the function, so <m>4</m> is in the domain.
+          </p>
+            <figure xml:id="workshop-functions-examples-dom-range-1-1">
+                  <caption><m>y=g(x)</m></caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-2:4,smooth,-] {.5*x^2-5};
+                              \addplot[hollowdot,fill=yellow!30] coordinates {(-2,-3)} node[below left] {(-2,-3)};
+                              \addplot[soliddot] coordinates {(4,3)} node[above right] {(4,3)};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+        </figure>
+        </sidebyside>
+
+        <p>
+          We can state the domain using interval notation. In that format the domain is <m>(-2,4]</m>.  Recall that a parenthesis indicates that the endpoint is not included in the set whereas a square bracket indicates that the end point is included in the set.
+        </p>
+        <p>
+          We can also state the domain using set builder notation.  In that format the domain is <m>\{x \mid -2 \lt x\leq 4\}</m>.
+        </p>
+        <sidebyside widths="50% 50%">
+          <p>
+            When working with a function that is continuous, we can think of the domain as the shadow that the function casts upon the <m>x</m>-axis and the range the shadow cast upon the <m>y</m>-axis. In <xref ref="workshop-functions-examples-dom-range-1-2">Figure</xref> I've added these two shadows.  From the shadow cast upon the <m>y</m>-axis, we can see that the range of <m>g</m> is <m>[-5,3]</m>.  Stated with set-builder notation, the range is <m>\{y \mid -5 \leq y \leq 3\}</m>.
+          </p>
+            <figure xml:id="workshop-functions-examples-dom-range-1-2">
+                  <caption><m>y=g(x)</m></caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-2:4,smooth,-] {.5*x^2-5};
+                              \addplot[hollowdot,fill=yellow!30] coordinates {(-2,-3)} node[below left] {(-2,-3)};
+                              \addplot[soliddot] coordinates {(4,3)} node[above right] {(4,3)};
+                                \addplot[primarycurve,domain=-2:4,blue,ultra thick,(-{Bracket}] {0};
+                                \addplot[interval,brown,ultra thick,{Bracket}-{Bracket}] coordinates {(0,-5) (0,3)};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+        </figure>
+        </sidebyside>
+        <sidebyside widths="50% 50%">
+          <p>
+            Let's now consider the function <m>h</m> shown in <xref ref="workshop-functions-examples-dom-range-2">Figure</xref>.  From the shadows cast upon the axes we can deduce the the domain of the function is <m>(-\infty,-3] \cup (4,\infty)</m> and that the range is <m>(-\infty,-5) \cup [1,\infty)</m>.  
+          </p>
+            <figure xml:id="workshop-functions-examples-dom-range-2">
+                  <caption><m>y=h(x)</m></caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-6.9:-3,smooth,{Stealth}-] {-x-2};
+                              \addplot[primarycurve,domain=4:6.9,smooth,-{Stealth}] {-.5*x-3};
+                              \addplot[soliddot] coordinates {(-3,1)} node[above] {(-3,1)};
+                              \addplot[hollowdot,fill=yellow!30] coordinates {(4,-5)} node[above right] {(4,-5)};
+                                \addplot[primarycurve,domain=-6.9:-3,blue,ultra thick,{Stealth}-{Bracket}] {0};
+                                \addplot[primarycurve,domain=4:6.9,blue,ultra thick,(-{Stealth}] {0};
+                                \addplot[interval,brown,ultra thick,{Bracket}-{Stealth}] coordinates {(0,1) (0,6.9)};
+                                \addplot[interval,brown,ultra thick,{Stealth}-)] coordinates {(0,-6.9) (0,-5)};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+        </figure>
+        </sidebyside>
+        <p>
+          Recall that beginning an interval with the symbols "<m>(,-\infty</m>" signifies that the interval has no left-hand endpoint and ending an interval with the symbols "<m>\infty,)</m>" signifies that the interval has no right-hand endpoint.  The symbol "<m>\cup</m>" is read "union" and it indicates that the set in total includes both intervals on either side of the union symbol.
+        </p>
+        <p>
+          Using set builder notation, the domain of <m>h</m> is <m>\{x \mid x \leq -3 \,\text{or}\, x \gt 4\}</m> and the range is <m>\{y \mid y \lt -5 \,\text{or}\, y \geq 1\}</m>.  The same domain applies to a function whose formula is the absolute value of a polynomial function.
+        </p>
+        <p>
+          We now turn our attention to determining the domains of functions where we are presented with a formula for the function.  For now we will restrict our discussion to three types of function: polynomial functions, radical functions, and rational functions.
+        </p>
+        <p>
+          We begin with polynomial functions, because they are the easiest type of function to determine the domain.  Unless otherwise restricted, the domain of any polynomial function, including linear and quadratic functions, is the set of all real numbers, which we write as <m>(-\infty,\infty)</m> or <m>\{x \mid x \in \mathbb{R}\}</m>.  The same is true for a function where the formula is the absolute value of a polynomial function.
+        </p>
+        <p>
+          When determining the domain of a radical function, the first thing that needs to be considered is the index of the radical.  For now, let's assume that the radicand (the expression under the radical symbol) is a polynomial function.
+        </p>
+        <p>
+          If the index is odd, the domain of the function is again all real numbers.  That's because the odd root of a real number is itself always a real number.
+        </p>
+        <p>
+          On the other hand, if the index of the radicand is even, the radicand cannot be negative because the even root of a negative number is not a real number.
+        </p>
+        <p>Example</p>
+        <p>
+          Determine the domains of the functions <m>f(x)=\sqrt{3-15x}</m> and <m>g(x)=\sqrt[3]{3-15x}</m>.
+        </p>
+        <p>Solution</p>
+        <p>
+          The radicand of the square root function cannot be negative.  We can determine the domain be setting the radicand greater than or equal to zero and solving the resultant inequality.
+          <md>
+            <mrow>3-15x \amp\geq 0</mrow>
+            <mrow>3-15x\subtractright{3} \amp\geq 0\subtractright{3}</mrow>
+            <mrow>-15x \amp\geq -3</mrow>
+            <mrow>\divideunder{-15x}{-15} \amp\leq \divideunder{-3}{-15}</mrow>
+            <mrow>x \amp\leq \frac{1}{5}</mrow>          
+          </md>
+          So the domain of <m>f</m> is <m>(-\infty,\frac{1}{5}]</m> which can also be written as <m>\{x \mid x \leq \frac{1}{5}\}</m>.
+        </p>
+        <p></p>
+        <b>
+          Because the formula for <m>g</m> is an odd root of a polynomial function, the domain of <m>g</m> is <m>(-\infty,\infty)</m> which can also be written as <m>\{x \mid x \in \mathbb{R}\}</m>.
+        </b>
+        <p>
+          Finally, let's turn our attention to rational functions.  A rational function is a function that can be expressed as a polynomial over a polynomial.  Because the domain of any polynomial function is all real numbers, no matter what the value of <m>x</m>, the rational function will produce numbers in both the numerator and the denominator.  Most of the time we can then just divide the two number.  There's a problem, however, when the number in the denominator turns out to be zero.  Division by zero is not defined in any context, so the value that led to such division is not a part of the domain of the function.
+        </p>
+        <p>Example</p>
+        <p>
+          Determine the domain of each of the following functions.
+          <ol>
+            <li><m>g(x)=\frac{5}{x-9}</m></li>
+            <li><m>l(t)=\frac{t-3}{t^2+7t-70}</m></li>
+            <li><m>f(t)=\frac{t^2-16}{t^2+16}</m></li>
+            <li><m>k(x)=\frac{x^2+4}{x^2+4x}</m></li>
+          </ol>
+        </p>
+        <p>Solution</p>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The denominator of the expression <m>\frac{5}{x-9}</m> cannot equal zero.
+                <md>
+                  <mrow>x-9 \amp\neq 0</mrow>
+                  <mrow>x-9\addright{9} \amp\neq 0\addright{9}</mrow>
+                  <mrow>x \amp\neq 9</mrow>
+                </md>
+                The domain of <m>g</m> is <m>(-\infty,9) \cup (9,\infty)</m> which can also be written as <m>\{x \mid x \neq 9\}</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The denominator of the expression <m>\frac{t-3}{t^2+7t-70}</m> cannot equal zero.
+                <md>
+                  <mrow>t^2+7t-70 \amp\neq 0</mrow>
+                  <mrow>(t+10)(t-3) \amp\neq 0</mrow>
+                </md>
+                <md>
+                  <mrow>t+10 \amp\neq 0 \amp\amp\text{ and }\amp t-3 \amp\neq 0</mrow>
+                  <mrow>t+10\subtractright{10} \amp\neq 0\subtractright{10} \amp\amp\text{ and }\amp t-3\addright{3} \amp\neq 0\addright{3}</mrow>
+                  <mrow>t \amp\neq -10 \amp\amp\text{ and }\amp t \amp\neq 3</mrow>
+                </md> 
+                The domain of <m>l</m> is <m>(-\infty,-10) \cup (-10,3) \cup (3,\infty)</m> which can also be written as <m>\{x \mid x \neq -10 \,\text{and}\, x \neq 3\}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                The denominator of the expression <m>\frac{t^2-16}{t^2+16}</m> cannot equal zero.
+                <md>
+                  <mrow>t^2+16 \amp\neq 0</mrow>
+                  <mrow>t^2+16\subtractright{16} \amp\neq 0\subtractright{16}</mrow>
+                  <mrow>t^2 \amp\neq -16</mrow>
+                </md>
+                The last inequality is an identity, that is, it is true for any real number value of <m>t</m>.  So the domain of <m>f</m> is <m>(-\infty,\infty)</m> which can also be written as <m>\{x \mid x \in \mathbb{R}\}</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The denominator of the expression <m>\frac{x^2+4}{x^2+4x}</m> cannot equal zero.
+                <md>
+                  <mrow>x^2+4x \amp\neq 0</mrow>
+                  <mrow>x \dot (x+4) \amp\neq 0</mrow>
+                </md>
+                <md>
+                  <mrow>x+4 \amp\neq 0 \amp\amp\text{ and }\amp x \neq 0</mrow>
+                  <mrow>x+4\subtractright{4} \amp\neq 0\subtractright{4} \amp\amp\text{ and }\amp x \neq 0</mrow>
+                  <mrow>x \amp\neq -4 \amp\amp\text{ and }\amp x \neq 0</mrow>
+                </md>
+                The domain of <m>k</m> is <m>(-\infty,-4) \cup (-4,0) \cup (0,\infty)</m> which can also be written as <m>\{x \mid x \neq -4 \,\text{and}\, x \neq 0\}</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+
+
+          <p>
+            Click here to access some practice problems related to domain and range: 
+            <xref ref="workshop-functions-domain-and-range-exercises">Practice problems</xref>
+          </p>   
+        </statement>
+      </exercise>
+
+      <exercise xml:id="workshop-functions-advanced-function-notation-examples">
+        <title>Advanced function notation</title>
+        <statement>
+          <p>
+            Sometimes it is useful to evaluate a function at a variable expression.  One such time is when determining "the difference quotient" of a given function.  The difference quotient is discussed in detail an aptly titled link of this section.  For now, let's just note that its construction requires one to evaluate a function at an input of the variable expression "<m>x+h</m>."
+          </p>
+          <p>
+            For example, consider the function <me>f(x)=7x-5</me>.  To evaluate the function at "<m>x+h</m>" we need to replace each occurrence of <m>x</m> with the expression "<m>x+h</m>".  Because <m>x</m> is multiplied by <m>7</m> on the right side of the equation, we will need to write "<m>x+h</m>" in parentheses to indicate the entire expression needs to be multiplied by <m>7</m>.  Let's go ahead and perform the operation.
+            <md>
+              <mrow>f(\highlight{x})\amp=7\highlight{x}-5</mrow>
+              <mrow>f(\highlight{x+h})\amp=7(\highlight{x+h})-5</mrow>
+              <mrow>\amp=7x+7h-5</mrow>
+            </md>  
+          </p>
+          <p>Example</p>
+          <p>
+            Determine <m>f(x+h)</m> for each of the following functions.  Make sure that you completely simplify each expression.
+            <ol>
+              <li><m>f(x)=x^2-x</m></li>
+              <li><m>f(x)=3-\sqrt{9x^2+4}</m></li>
+              <li><m>f(x)=\frac{x+7}{2x+7}</m></li>
+            </ol>
+          </p>
+          <p>Solution</p>
+          <p>
+            <ol>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  f(\highlight{x})\amp=\highlight{x}^2-\highlight{x}\\
+                  f(\highlight{x+h})\amp=(\highlight{x+h})^2-(\highlight{x+h})\\
+                  \amp=(x+h)(x+h)-x-h\\
+                  \amp=x^2+2xh+h^2-x-h
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  f(\highlight{x})\amp=3-\sqrt{9\highlight{x}^2+4}\\
+                  f(\highlight{x+h})\amp=3-\sqrt{9(\highlight{x+h})^2+4}\\
+                  \amp=3-\sqrt{9(x+h)(x+h)+4}\\
+                  \amp=3-\sqrt{9(x^2+2xh+h^2)+4}\\
+                  \amp=3-\sqrt{9x^2+18xh+9h^2+4}
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  f(\highlight{x})\amp=\frac{\highlight{x}+7}{2\highlight{x}+7}\\
+                  f(\highlight{x+h})\amp=\frac{\highlight{x+h}+7}{2(\highlight{x+h})+7}\\
+                  \amp=\frac{x+h+7}{2x+2h+7}
+                  \end{aligned}
+                </m>
+              </li>
+            </ol>
+          </p>
+          <p>
+            Of course, "<m>x+h</m>" isn't the only variable expression that we use as an input for a function.  Let's see several other examples.
+          </p>
+          <p>Example</p>
+          <p>
+            Evaluate and simplify each of the indicated expressions.
+            <ol>
+              <li>
+                <p>
+                  Evaluate <m>g(x^2+3)</m> for the function <m>g(x)=x^2+3x-2</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Evaluate <m>h(\abs{x+10})</m> for the function <m>h(x)=3+\abs{5x-3}</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Evaluate <m>k(5-t)</m> for the function <m>k(t)=\sqrt[3]{t^2-10t+25}</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+          <p>Solution</p>
+          <p>
+            <ol>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  g(\highlight{x})\amp=\highlight{x}^2+3\highlight{x}-2\\
+                  g(\highlight{x^2+3})\amp=(\highlight{x^2+3})^2+3(\highlight{x^2+3})-2\\
+                  \amp=(x^2+3)(x^2+3)+3x^2+9-2\\
+                  \amp=x^4+6x^2+9+3x^2+7\\
+                  \amp=x^4+9x^2+16
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  h(\highlight{x})\amp=3+\abs{5\highlight{x}-3}\\
+                  h(\highlight{\abs{x+10}})\amp=3+\abs{5\highlight{\abs{x+10}}-3}\\
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  k(\highlight{t})\amp=\sqrt[3]{\highlight{t}^2-10\highlight{t}+25}\\
+                  k(\highlight{5-t})\amp=\sqrt[3]{(\highlight{5-t})^2-10(\highlight{5-t})+25}\\
+                  \amp=\sqrt[3]{(5-t)(5-t)-50+10t+25}\\
+                  \amp=\sqrt[3]{25-10t+t^2+10t-25}\\
+                  \amp=\sqrt[3]{t^2}
+                  \end{aligned}
+                </m>
+              </li>
+            </ol>
+          </p>
+          <p>
+            In later classes you will learn how to modify function formulas to produce specific changes to the graph of the function.  Sometimes this will entail making changes to the function formula rather than the expression input.  For example, adding <m>3</m> to a function formula moves the function curve upward by three units.  Consider <me>f(x)=2x^2-9x-8</me>.  Adding three to the function formula results in the following.
+            <md>
+              <mrow>f(x)\highlightr{+3}\amp=2x^2-9x-8\highlightr{+3}</mrow>
+              <mrow>\amp=2x^2-9x-5</mrow>
+            </md>
+          </p>
+          <p>
+            Frequently we make changes to both the expression input and the function formula.  Let's close with several examples of those types of expressions.
+          </p>
+          <p>Example</p>
+          <p>
+            Evaluate and simplify each of the indicated expressions.
+            <ol>
+              <li>
+                <p>
+                  Evaluate <m>g(t-5)-7</m> for the function <m>g(t)=-2t+6</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Evaluate <m>-f(5t+3)+4</m> for the function <m>f(t)=-t-11</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Evaluate <m>k(x-7)-k(7-x)</m> for the function <m>k(x)=6x-9</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Evaluate <m>5h(3x)+6</m> for the function <m>h(x)=2x^2-8x+4</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+          <p>Solution</p>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  Evaluate <m>g(t-5)-7</m> for the function <m>g(t)=-2t+6</m>.
+                </p>
+                <md>
+                  <mrow>g(\highlight{t-5}){\highlightr{-7}}\amp=-2(\highlight{t-5})+6\highlightr{-7}</mrow>
+                  <mrow>\amp=-2t+10-1</mrow>
+                  <mrow>\amp=-2t+9</mrow>
+                </md>
+              </li>
+              <li>
+                <p>
+                  Evaluate <m>-f(5t+3)+4</m> for the function <m>f(t)=-t-11</m>.
+                </p>
+                <md>
+                  <mrow>\highlightr{-}f(\highlight{5t+3})\highlightr{+4}\amp=\highlightr{-}(-(\highlight{5t+3})-11)\highlightr{+4}</mrow>
+                  <mrow>\amp=-(-5t-3-11)+4</mrow>
+                  <mrow>\amp=5t+3+11+4</mrow>
+                  <mrow>\amp=5t+18</mrow>
+                </md>
+              </li>
+              <li>
+                <p>
+                  Evaluate <m>k(x-7)-k(7-x)</m> for the function <m>k(x)=6x-9</m>.
+                </p>
+                <md>
+                  <mrow>k(\highlight{x-7})-k(\highlightb{7-x})\amp=(6(\highlight{x-7})-9)-(6(\highlightb{7-x})-9)</mrow>
+                  <mrow>\amp=6x-42-9-(42-6x-9)</mrow>
+                  <mrow>\amp=6x-42-9-42+6x+9</mrow>
+                  <mrow>\amp=12x-84</mrow>
+                </md>
+              </li>
+              <li>
+                <p>
+                  Evaluate <m>5h(3x)+6</m> for the function <m>h(x)=2x^2-8x+4</m>.
+                </p>
+                <md>
+                  <mrow>\highlightr{5}h(\highlight{3x})\highlightr{+6}\amp=\highlightr{5} \cdot (2(\highlight{3x})^2-8(\highlight{3x})+4)\highlightr{+6}</mrow>
+                  <mrow>\amp=5 \cdot (9x^2-24x+4)+6</mrow>
+                  <mrow>\amp=90x^2-120x+20+6</mrow>
+                  <mrow>\amp=90x^2-120x+26</mrow>
+                </md>
+              </li>
+            </ol>
+          </p>
+          <p>
+            Click here to access some practice problems related to advanced function notation: 
+            <xref ref="workshop-functions-advanced-function-notation-exercises">Practice problems</xref>
+          </p>   
+        </statement>
+      </exercise>
+
+      <exercise xml:id="workshop-functions-function-composition-examples">
+        <title>Function composition</title>
+        <statement>
+          <p>
+            The symbols <m>(f \circ g)(x)</m> are read as "<m>f</m> composed with <m>g</m> at <m>x</m>" or "<m>f</m> composed with <m>g</m> of <m>x</m>."  The meaning of the symbols follows.  <me>(f \circ g)(x)=f(g(x))</me>.  For example, suppose that <me>f(x)=2x+7\,\,\text{and}\,\,g(x)=3x-8</me>.Then we would evaluate <m>(f \circ g)(5)</m> as follows.
+            <md>
+              <mrow>(f \circ g)(5)\amp=f(\highlight{g(5)})</mrow>
+              <mrow>\amp=f(\highlight{3 \cdot 5-8})</mrow>
+              <mrow>\amp=f(\highlight{7})</mrow>
+              <mrow>\amp=2 \cdot \highlight{7}+7</mrow>
+              <mrow>\amp=21</mrow>
+            </md>
+            The function <m>f</m> does not need to come first in the composition.  Using the same two functions as the last example, let's evaluate <m>(g \circ f)(-4)</m>.
+            <md>
+              <mrow>(g \circ f)(-4)\amp=g(\highlight{f(-4)})</mrow>
+              <mrow>\amp=g(\highlight{2 \cdot -4+7})</mrow>
+              <mrow>\amp=g(\highlight{-1})</mrow>
+              <mrow>\amp=3 \cdot \highlight{-1} -8</mrow>
+              <mrow>\amp=-11</mrow>
+            </md>
+            We can even compose a function with itself.  For example, let's evaluate <m>(h \circ h)(9)</m> where <m>h(x)=x^2-71</m>.
+            <md>
+              <mrow>(h \circ h)(9)\amp=h(\highlight{h(9)})</mrow>
+              <mrow>\amp=h(\highlight{9^2-71})</mrow>
+              <mrow>\amp=h(\highlight{10})</mrow>
+              <mrow>\amp=\highlight{10}^2-71</mrow>
+              <mrow>\amp=29</mrow>
+            </md>
+            In most cases, when working with function composition we are more interested in the function formula than in any one specific function value.  Finding the formula for the composition of two functions is very similar to some of the advanced function notation discussed in the last section.  
+          </p>
+          <p>Example</p>
+          <p>
+            Determine <m>(f \circ g)(x)</m>, <m>(g \circ f)(x)</m>, <m>(f \circ f)(x)</m>, and <m>(g \circ g)(x)</m> where <me>f(x)=x^2+3x\,\,\text{and}\,\,g(x)=4-x^2</me>
+          </p>
+          <p>Solution</p>
+          <p>
+            <md>
+              <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+              <mrow>\amp=f(\highlight{4-x^2})</mrow>
+              <mrow>\amp=(\highlight{4-x^2})^2+3(\highlight{4-x^2})</mrow>
+              <mrow>\amp=(4-x^2)(4-x^2)+12-3x^2</mrow>
+              <mrow>\amp=16-8x^2+x^4+12-3x^2</mrow>
+              <mrow>\amp=x^4-11x^2+28</mrow>
+            </md>
+            <md>
+              <mrow>(g \circ f)(x)\amp=g(\highlight{f(x)})</mrow>
+              <mrow>\amp=g(\highlight{x^2+3x})</mrow>
+              <mrow>\amp=4-(\highlight{x^2+3x})^2</mrow>
+              <mrow>\amp=4-(x^2+3x)(x^2+3x)</mrow>
+              <mrow>\amp=4-(x^4+3x^3+3x^3+9x^2)</mrow>
+              <mrow>\amp=4-x^4-3x^3-3x^3-9x^2</mrow>
+              <mrow>\amp=-x^4-6x^3-9x^2+4</mrow>
+            </md>
+            <md>
+              <mrow>(f \circ f)(x)\amp=f(\highlight{f(x)})</mrow>
+              <mrow>\amp=f(\highlight{x^2+3x})</mrow>
+              <mrow>\amp=(\highlight{x^2+3x})^2+3(\highlight{x^2+3x})</mrow>
+              <mrow>\amp=(x^2+3x)(x^2+3x)+3x^2+9x</mrow>
+              <mrow>\amp=x^4+3x^3+3x^3+9x^2+3x^2+9x</mrow>
+              <mrow>\amp=x^4+6x^3+12x^2+9x</mrow>
+            </md>
+            <md>
+              <mrow>(g \circ g)(x)\amp=g(\highlight{g(x)})</mrow>
+              <mrow>\amp=g(\highlight{4-x^2})</mrow>
+              <mrow>\amp=4-(\highlight{4-x^2})^2</mrow>
+              <mrow>\amp=4-(4-x^2)(4-x^2)</mrow>
+              <mrow>\amp=4-(16-8x^2+x^4)</mrow>
+              <mrow>\amp=4-16+8x^2-x^4</mrow>
+              <mrow>\amp=-x^4+8x^2-12</mrow>
+            </md>
+          </p>
+          <p>Example</p>
+          <p>
+            Determine both <m>(f \circ g)(x)</m> and <m>(g \circ f)(x)</m> where <me>f(x)=\frac{5-7x}{3}\,\,\text{and}\,\,g(x)=\frac{5-3x}{7}</me>.
+          </p>
+          <p>Solution</p>
+          <p>
+            <md>
+              <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+              <mrow>\amp=f(\highlight{\frac{5-3x}{7}})</mrow>
+              <mrow>\amp=\frac{5-\frac{7}{1} \cdot \highlight{\frac{5-3x}{7}}}{3}</mrow>
+              <mrow>\amp=\frac{5-(5-3x)}{3}</mrow>
+              <mrow>\amp=\frac{5-5+3x}{3}</mrow>
+              <mrow>\amp=\frac{3x}{3}</mrow>
+              <mrow>\amp=t</mrow>
+            </md>
+            <md>
+              <mrow>(g \circ f)(x)\amp=g(\highlight{f(x)})</mrow>
+              <mrow>\amp=\frac{5-\frac{3}{1} \cdot \highlight{\frac{5-7x}{3}}}{7}</mrow>
+              <mrow>\amp=\frac{5-(5-7x)}{7}</mrow>
+              <mrow>\amp=\frac{5-5+7x}{7}</mrow>
+              <mrow>\amp=\frac{7x}{7}</mrow>
+              <mrow>\amp=x</mrow>
+            </md>
+          </p>
+          <p>
+            In the last example, the functions <m>f</m> and <m>g</m> are called inverse functions.  Two functions are inverses of one another when the result of applying them in succession, in either order, is that the value input  (from the domain) is returned at the end of the composition. That is, <m>f</m> and <m>g</m> are inverse functions if and only if
+            <me>(f \circ g)(x)=x\,\,\text{and}\,\,(g \circ f)(x)=x</me> for all <m>x</m> in the appropriate domain.
+          </p>
+          <p>
+            Click here to access some practice problems related to function composition: 
+            <xref ref="workshop-functions-function-composition-exercises">Practice problems</xref>
+          </p>   
+        </statement>
+      </exercise>
+
+      <exercise xml:id="workshop-functions-the-difference-quotient-examples">
+        <title>The difference quotient</title>
+        <statement>
+          <p>
+            The difference quotient is a new expression created from a template and a given function formula. The template for the difference quotient of the function <m>y=f(x)</m> is <me>\frac{f(x+h)-f(x)}{h}</me>.  It will be discussed later why this is an important expression.  For now, lets just get familiar the algebra associated with difference quotient.
+          </p>
+          <p>Example</p>
+          <p>
+            Determine the difference quotient for the function <m>f(x)=8x-7</m>.  Make sure that your expression is fully simplified.
+          </p>
+          <p>Solution</p>
+          <p>
+            The difference quotient for <m>f(x)=8x-7</m> follows.
+            <md>
+              <mrow>\frac{\highlight{f(x+h)}-\highlightr{f(x)}}{x}\amp=\frac{(\highlight{8(x+h)-7})-(\highlightr{8x-7})}{h}</mrow>
+              <mrow>\amp=\frac{8x+8h-7-8x+7}{h}</mrow>
+              <mrow>\amp=\frac{8h}{8}</mrow>
+              <mrow>\amp=8,\,\,h \neq 0</mrow>
+            </md>
+          </p>
+          <p>Example</p>
+          <p>
+            Determine the difference quotient for the function <m>g(t)=6t-t^2</m>.  Make sure that your expression is fully simplified.
+          </p>
+          <p>Solution</p>
+          <p>
+            The difference quotient for <m>g(t)=6t-t^2</m> follows.
+            <md>
+              <mrow>\frac{\highlight{g(t+h)}-\highlightr{g(t)}}{h}\amp=\frac{(\highlight{6(t+h)-(t+h)^2})-(\highlightr{6t-t^2})}{h}</mrow>
+              <mrow>\amp=\frac{6t+6h-(t+h)(t+h)-6t+t^2}{h}</mrow>
+              <mrow>\amp=\frac{6h-(t^2+2th+h^2)+t^2}{h}</mrow>
+              <mrow>\amp=\frac{6h-t^2-2th-h^2+t^2}{h}</mrow>
+              <mrow>\amp=\frac{6h-2th-h^2}{h}</mrow>
+              <mrow>\amp=\frac{h \cdot (6-2t-h)}{h}</mrow>
+              <mrow>\amp=-2t+6-h,\,\,h \neq 0</mrow>
+            </md>
+          </p>
+          <p>Example</p>
+          <p>
+            Determine the difference quotient for the function <m>m(x)=157</m>.  Make sure that your expression is completely simplified.
+          </p>
+          <p>Solution</p>
+          <p>
+            The difference quotient for the function <m>m(x)=157</m> follows.
+            <md>
+              <mrow>\frac{\highlight{m(x+h)}-\highlightr{m(x)}}{h}\amp=\frac{\highlight{157}-\highlightr{157}}{h}</mrow>
+              <mrow>\amp=\frac{0}{h}</mrow>
+              <mrow>\amp=0,\,\,h \neq 0</mrow>
+            </md>
+          </p>
+          <p>Example</p>
+          <p>
+            Determine the difference quotient for the function <m>w(x)=\frac{5}{x-3}</m>.  Make sure that your expression is fully simplified.
+          </p>
+          <p>Solution</p>
+          <p>
+            The difference quotient for <m>w(x)=\frac{5}{x-3}</m> follows.
+            <md>
+              <mrow>\frac{\highlight{w(x+h)}-\highlightr{w(x)}}{h}\amp=\frac{\highlight{\frac{5}{x+h-3}}-\highlightr{\frac{5}{x-3}}}{h}</mrow>
+              <mrow>\amp=\frac{\frac{5}{x+h-3} \cdot \highlightb{\frac{x-3}{x-3}}-\frac{5}{x-3} \cdot \highlightb{\frac{x+h-3}{x+h-3}}}{\frac{h}{1}}</mrow>
+              <mrow>\amp=\frac{5(x-3)-5(x+h-3)}{(x-3)(x+h-3)} \cdot \frac{1}{h}</mrow>
+              <mrow>\amp=\frac{5x-15-5x-5h+15}{(x-3)(x+h-3)h}</mrow>
+              <mrow>\amp=\frac{-5 \cdot h}{(x-3)(x+h-3) \cdot h}</mrow>
+              <mrow>\amp=-\frac{5}{(x-3)(x+h-3)},\,\, h \neq 0</mrow>
+            </md>
+          </p>
+          <p>
+            Let's turn our attention now to the geometric significance of the difference quotient.
+          </p>
+          <p>
+            A secant line for the graph of the function <m>y=f(x)</m> is a line that connects two points on the curve.  If you're thinking "gee, it's pretty easy to be a secant line" you're correct in that thought.  For example, consider a function that graphs to a parabola.  With one exception, any non-vertical line that intersects the parabola once intersects the parabola a second time as well.  So with one exception, any non-vertical line that intersects a parabola is a secant line for the parabola.  The only exception is the horizontal line that intersects the vertex.
+          </p>
+          <p>
+            It turns out that the difference quotient is the slope of a secant line to <m>f</m>. Specifically, it is the slope of the line connecting the point <m>(x,f(x))</m> with the point <m>(x+h,f(x+h))</m>.
+          </p>
+          <p>
+            To understand this, consider <m>y=f(x)</m>.  Let <m>x_1=x</m> and <m>x_2=x+h</m>.  Let's now apply the classic slope-formula.
+            <md>
+              <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+              <mrow>\amp=\frac{f(x_2)-f(x_1)}{x_2-x_1}</mrow>
+              <mrow>\amp=\frac{f(x+h)-f(x)}{(x+h)-x}</mrow>
+              <mrow>\amp=\frac{f(x+h)-f(x)}{h}</mrow>
+            </md>
+          </p>
+          <p>
+            Click here to access some practice problems related to difference quotients: 
+            <xref ref="workshop-functions-the-difference-quotient-exercises">Practice problems</xref>
+          </p>   
+        </statement>
+      </exercise>
+
+     
+    <exercise xml:id="workshop-functions-graph-eq-ieq-examples">
+      <title>Solving inequalities involving functions presented in graphical form</title>
+      <statement>
+        <p>
+          When solving inequalities involving functions that are presented in graphical form, we follow a two-step process.  We first use the function to identify the points on the curve whose <m>-y</m>-coordinates satisfy the property implied by the inequality statement.  We then identify the <m>x</m>-coordinates of those points, which collectively make up the solution set to the inequality.
+        </p>
+        <sidebyside widths="50% 50%">
+            <p>
+               In <xref ref="workshop-functions-examples-abs-value-inequality-1">Figure</xref>, I've indicated all of the points on the function named <m>g</m> that have <m>y</m>-coordinates greater than or equal to <m>1</m>.  I've also marked off the portion of the <m>x</m>-axis over which these points lie.  Since the <m>y</m>-coordinates of the points are the values of <m>g(x)</m>, we can infer from this that the solution set to the inequality <m>g(x) \geq 1</m> is  <m>[-4.5,3]</m>.
+            </p>
+            <figure xml:id="workshop-functions-examples-abs-value-inequality-1">
+                  <caption><m>y=g(x)</m></caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-6.5:-2,smooth,{Stealth}-] {2*x+10};
+                              \addplot[primarycurve,domain=-2:5,smooth,-] {4-x};
+                              \addplot[secondarycurve,domain=-6.8:6.8,gray,thick,{Stealth}-{Stealth}] {1};
+                              \addplot[soliddot,color=blue] coordinates {(-4.5,1)};
+                              \addplot[soliddot,color=blue] coordinates {(3,1)};
+                              \addplot[soliddot] coordinates {(5,-1)};
+                              \addplot[primarycurve,domain=-4.5:-2,smooth,blue,ultra thick,-] {2*x+10};
+                              \addplot[primarycurve,domain=-2:3,smooth,blue,ultra thick,-] {4-x};
+                              \addplot[primarycurve,domain=-4.5:3,smooth,blue,ultra thick,{Bracket}-{Bracket}] {0};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+        </figure>
+        </sidebyside>
+        <sidebyside widths="50% 50%">
+            <p>
+               In <xref ref="workshop-functions-examples-abs-value-inequality-2">Figure</xref>, I've indicated all of the points on the function named <m>g</m> that have <m>y</m>-coordinates less than to <m>44</m>.  I've also marked off the portion of the <m>x</m>-axis over which these points lie.  Since the <m>y</m>-coordinates of the points are the values of <m>g(x)</m>, we can infer from this that the solution set to the inequality <m>g(x) \lt 4</m> is  <m>(-\infty,-3) \cup (0,6]</m>.
+            </p>
+            <figure xml:id="workshop-functions-examples-abs-value-inequality-2">
+                  <caption><m>y=g(x)</m></caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-6.5:-2,smooth,{Stealth}-] {2*x+10};
+                              \addplot[primarycurve,domain=-2:5,smooth,-] {4-x};
+                              \addplot[secondarycurve,domain=-6.8:6.8,gray,thick,{Stealth}-{Stealth}] {4};
+                              \addplot[hollowdot,color=blue,fill=yellow!30] coordinates {(-3,4)};
+                              \addplot[hollowdot,color=blue,fill=yellow!30] coordinates {(0,4)};
+                              \addplot[soliddot,color=blue] coordinates {(5,-1)};
+                              \addplot[primarycurve,domain=-6.5:-3,smooth,blue,ultra thick,{Stealth}-] {2*x+10};
+                              \addplot[primarycurve,domain=0:5,smooth,blue,ultra thick,-] {4-x};
+                              \addplot[primarycurve,domain=0:5,smooth,blue,ultra thick,(-{Bracket}] {0};
+                              \addplot[primarycurve,domain=-6.8:-3,smooth,blue,ultra thick,{Stealth}-)] {0};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+        </figure>
+        </sidebyside>
+          <p>
+            Click here to access some practice problems related to graphical equations and inequalities: 
+            <xref ref="workshop-functions-graph-eq-ieq-exercises">Practice problems</xref>
+          </p>   
+      </statement>
+    </exercise>
+  </exercises>
+
+
+    <exercises>
+      <title>Practice Exercises (with step-by-step solutions)</title>
+
+      <exercise xml:id="workshop-functions-introduction-function-notation-exercises">
+        <title>Introduction to function notation</title>
+        <statement>
+          <p>
+            <bold>Problem Set 1</bold>            
+          </p> 
+          <p>
+            Determine each of the stated function values.
+            <ol>
+              <li>Determine <m>g(7)</m> where <m>g(t)=8-4t</m>.</li>
+              <li>Determine <m>f(-3)</m> where <m>f(x)=-x^2+5x+12</m>.</li>
+              <li>Determine <m>h(33)</m> where <m>h(x)=-\sqrt{\frac{x-25}{2}}</m>.</li>
+              <li>Determine <m>t(22)</m> where <m>t(x)=17</m>.</li>
+              <li>Determine <m>y(-6)</m> where <m>y(t)=\abs{-9-t}+3</m>.</li>
+              <li>Determine <m>z(-1)</m> where <m>z(x)=\frac{x+6}{x^2+1}</m>.</li>
+              <li>Determine <m>k(4)</m> where <m>k(t)=3\sqrt{21-t^2}</m>.</li>
+            </ol>
+          </p>
+          <p>
+            <bold>Problem Set 2</bold>
+          </p>
+          <p>
+            Determine the solution set for each of the following equations.
+            <ol>
+              <li>Solve <m>f(x)=12</m> where <m>f(x)=4-x</m>.</li>
+              <li>Solve <m>h(t)=100</m> where <m>h(t)=t^2-21</m>.</li>
+              <li>Solve <m>p(x)=-14</m> where <m>p(x)=6-\abs{x}</m>.</li>
+              <li>Solve <m>w(y)=10</m> where <m>w(y)=y^2-y-2</m>.</li>
+              <li>Solve <m>r(t)=s(t)</m> where <m>r(t)=\frac{5}{7}t-3</m> and <m>s(t)=\frac{2}{3}t+\frac{11}{21}</m>.</li>
+              <li>Solve <m>g(x)=y(x)</m> where <m>q(x)=6-4x^2</m> and <m>y(x)=(3-x)(8+4x)</m>.</li>
+            </ol>
+          </p>
+          <p>
+            <bold>Problem set 3</bold>
+          </p>
+          <p>
+            Determine each of the following function values based upon the function <m>f</m> shown in <xref ref="workshop-functions-exercises-sineish-graph-1">Figure</xref>. 
+            <ol>
+              <li><m>f(4)</m></li>
+              <li><m>f(2)</m></li>
+              <li><m>f(5)</m></li>
+              <li><m>f(1)</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            Determine the solution set to each of the following equations based upon the function <m>f</m> shown in <xref ref="workshop-functions-exercises-sineish-graph-1">Figure</xref>. 
+            <ol label="i">
+              <li><m>f(x)=-1</m></li>
+              <li><m>f(x)=2</m></li>
+              <li><m>f(x)=-3</m></li>
+              <li><m>f(x)=5</m></li>
+            </ol>
+            </p>
+            <figure xml:id="workshop-functions-exercises-sineish-graph-1">
+                    <caption><m>y=f(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-4:5,smooth,-] {2+3*sin(pi*deg(x)/2)};
+                                \addplot[soliddot] coordinates {(-4,2)};
+                                \addplot[hollowdot] coordinates {(5,5)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+          </sidebyside>
+          <p>
+            <bold>Problem Set 4</bold>
+          </p>
+          <p>
+            Determine each of the following function values based upon the function <m>g</m> shown in <xref ref="workshop-functions-exercises-piecewise-graph-1-1">Figure</xref>. 
+            <ol>
+              <li><m>g(-1)</m></li>
+              <li><m>g(2)</m></li>
+              <li><m>g(6)</m></li>
+              <li><m>g(-6)</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            Determine the solution set to each of the following equations based upon the function <m>g</m> shown in <xref ref="workshop-functions-exercises-piecewise-graph-1-1">Figure</xref>. 
+            <ol label="i">
+              <li><m>g(x)=-2</m></li>
+              <li><m>g(x)=3</m></li>
+              <li><m>g(x)=-6</m></li>
+              <li><m>g(x)=-10</m></li>
+            </ol>
+          </p>
+            <figure xml:id="workshop-functions-exercises-piecewise-graph-1-1">
+                    <caption><m>y=g(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-6:-1,smooth,-] {(x+4)^2-6};
+                                \addplot[primarycurve,domain=-1:5.26,smooth,-{Stealth}] {-2*x+4};
+                                \addplot[hollowdot] coordinates {(-6,-2)};
+                                \addplot[hollowdot] coordinates {(-1,3)};
+                                \addplot[soliddot] coordinates {(-1,6)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+          </sidebyside>
+          
+
+
+      </statement>
+      <solution>
+        <p>
+          <bold>Problem Set 1</bold>
+          <ol>
+            <li>
+              <m>
+                \begin{aligned}[t]
+                g(\highlight{7})\amp=8-4(\highlight{7})\\
+                \amp=8-28\\
+                \amp=-20
+                \end{aligned}
+              </m>
+            </li>
+            <li>
+              <m>
+                \begin{aligned}[t]
+                f(\highlight{-3})\amp=-(\highlight{-3})^2+5(\highlight{-3})+12\\
+                \amp=-9-15+12\\
+                \amp=-12
+                \end{aligned}
+              </m>
+            </li>
+            <li>
+              <m>
+                \begin{aligned}[t]
+                h(\highlight{33})\amp=-\sqrt{\frac{\highlight{33}-25}{2}}\\
+                \amp=-\sqrt{\frac{8}{2}}\\
+                \amp=-\sqrt{4}\\
+                \amp=-2
+                \end{aligned}
+              </m>
+            </li>
+            <li>
+              <m>
+                \begin{aligned}[t]
+                t(\highlight{22})\amp=17\\
+                \end{aligned}
+              </m>
+            </li>
+            <li>
+              <m>
+                \begin{aligned}[t]
+                y(\highlight{-6})\amp=\abs{-9-(\highlight{-6})}+3\\
+                \amp=\abs{-3}+3\\
+                \amp=3+3\\
+                \amp=6
+                \end{aligned}
+              </m>
+            </li>
+            <li>
+              <m>
+                \begin{aligned}[t]
+                z(\highlight{-1})\amp=\frac{\highlight{-1}+6}{(\highlight{-1})^2+1}\\
+                \amp=\frac{5}{2}
+                \end{aligned}
+              </m>
+            </li>
+            <li>
+              <m>
+                \begin{aligned}[t]
+                k(\highlight{4})\amp=3\sqrt{21-\highlight{4}^2}\\
+                \amp=3\sqrt{21-16}\\
+                \amp=3\sqrt{5}
+                \end{aligned}
+              </m>
+            </li>
+          </ol>
+        </p>
+        <p>
+          Problem Set 2
+          <ol>
+            <li>
+              Solve <m>f(x)=12</m> where <m>f(x)=4-x</m>.
+              <md>
+                <mrow>f(x)\amp=12</mrow>
+                <mrow>4-x\amp=12</mrow>
+                <mrow>4-x\subtractright{4}\amp=12\subtractright{4}</mrow>
+                <mrow>-x\amp=8</mrow>
+                <mrow>\multiplyleft{-1}-x\amp=\multiplyleft{-1}8</mrow>
+                <mrow>x\amp=-8</mrow>
+              </md>
+              The solution set is <m>\{-8\}</m>.
+            </li>
+            <li>
+              Solve <m>h(t)=100</m> where <m>h(t)=t^2-21</m>.
+              <md>
+                <mrow>h(t)\amp=100</mrow>
+                <mrow>t^2-21\amp=100</mrow>
+                <mrow>t^2-21\addright{21}\amp=100\addright{21}</mrow>
+                <mrow>t^2\amp=121</mrow>
+                <mrow>t\amp=\pm\sqrt{121}</mrow>
+                <mrow>t\amp=\pm 11</mrow>
+              </md>
+              The solution set is <m>\{-11,11\}</m>.
+            </li>
+            <li>
+              Solve <m>p(x)=-14</m> where <m>p(x)=6-\abs{x}</m>.
+              <md>
+                <mrow>p(x)\amp=-14</mrow>
+                <mrow>6-\abs{x}\amp=-14</mrow>
+                <mrow>6-\abs{x}\subtractright{6}\amp=-14\subtractright{6}</mrow>
+                <mrow>-\abs{x}\amp=-20</mrow>
+                <mrow>\multiplyleft{-1}-\abs{x}\amp=\multiplyleft{-1}-20</mrow>
+                <mrow>\abs{x}\amp=20</mrow>
+                <mrow>x\amp=\pm 20</mrow>
+              </md>
+              The solution set is <m>\{-20,20\}</m>.
+            </li>
+            <li>
+              Solve <m>w(y)=10</m> where <m>w(y)=y^2-y-2</m>.
+              <md>
+                <mrow>w(y)\amp=10</mrow>
+                <mrow>y^2-y-2\amp=10</mrow>
+                <mrow>y^2-y-2\subtractright{10}\amp=10\subtractright{10}</mrow>
+                <mrow>y^2-y-12\amp=0</mrow>
+                <mrow>(y-4)(y+3)\amp=0</mrow>
+              </md>
+              <md>
+                <mrow>y-4\amp=0\amp\amp\text{ or }\amp y+3\amp=0</mrow>
+                <mrow>y-4\addright{4}\amp=0\addright{4}\amp\amp\text{ or }\amp y+3\subtractright{3}\amp=0\subtractright{3}</mrow>
+                <mrow>y\amp=4\amp\amp\text{ or }\amp y\amp=-3</mrow>
+              </md>
+              The solution set is <m>\{-3,4\}</m>.
+            </li>
+            <li>
+              Solve <m>r(t)=s(t)</m> where <m>r(t)=\frac{5}{7}t-3</m> and <m>s(t)=\frac{2}{3}t+\frac{11}{21}</m>.
+              <md>
+                <mrow>r(t)\amp=s(t)</mrow>
+                <mrow>\frac{5}{7}t-3\amp=\frac{2}{3}t+\frac{11}{21}</mrow>
+                <mrow>\multiplyleft{21}(\frac{5}{7}t-3)\amp=\multiplyleft{21}(\frac{2}{3}t+\frac{11}{21})</mrow>
+                <mrow>15t-63\amp=14t+11</mrow>
+                <mrow>15t-63\addright{63}\amp=14t+11\addright{63}</mrow>
+                <mrow>15t\amp=14t+74</mrow>
+                <mrow>15t\subtractright{14t}\amp=14t+74\subtractright{14t}</mrow>
+                <mrow>t\amp=74</mrow>
+              </md>
+              The solution set is <m>\{74\}</m>.
+            </li>
+            <li>
+              Solve <m>g(x)=y(x)</m> where <m>q(x)=6-4x^2</m> and <m>y(x)=(3-x)(8+4x)</m>.
+              <md>
+                <mrow>g(x)\amp=y(x)</mrow>
+                <mrow>6-4x^2\amp=(3-x)(8+4x)</mrow>
+                <mrow>6-4x^2\amp=24+4x-4x^2</mrow>
+                <mrow>6-4x^2\addright{4x^2}\amp=24+4x-4x^2\addright{4x^2}</mrow>
+                <mrow>6\amp=24+4x</mrow>
+                <mrow>6\subtractright{24}\amp=24+4x\subtractright{24}</mrow>
+                <mrow>-18\amp=4x</mrow>
+                <mrow>\divideunder{-18}{4}\amp=\divideunder{4x}{4}</mrow>
+                <mrow>-\frac{9}{2}\amp=x</mrow>
+              </md>
+              The solution set is <m>\{-\frac{9}{2}\}</m>.
+            </li>
+            </ol>
+        </p>
+
+        <p>
+          <bold>Problem Set 3</bold>
+          <ol>
+            <li><m>f(4)=2</m></li>
+            <li><m>f(2)=2</m></li>
+            <li><m>f(5)</m> is not defined.</li>
+            <li><m>f(1)=5</m></li>
+          </ol>
+        </p>
+        <p>
+          <ol label="i">
+            <li>The solution set is <m>\{-1,3\}</m>.</li>
+            <li>The solution set is <m>\{-4,-2,0,2,4\}</m>.</li>
+            <li>The solution set is <m>\emptyset</m>.</li>
+            <li>The solution set is <m>\{-3,1\}</m></li>
+          </ol>
+        </p>
+
+        <p>
+          <bold>Problem Set 4</bold>
+          <ol>
+            <li><m>g(-1)=6</m></li>
+            <li><m>g(2)=0</m></li>
+            <li><m>g(6)=-8</m></li>
+            <li><m>g(-6)</m> is not defined.</li>
+          </ol>
+        </p>
+        <p>
+          <ol label="i">
+            <li>The solution set is <m>\{-2,3\}</m>.</li>
+            <li>The solution set is <m>\{\frac{1}{2}\}</m>.</li>
+            <li>The solution set is <m>\{-4,5\}</m></li>
+            <li>The solution set is <m>\{7\}</m>.</li>
+          </ol>
+        </p>
+
+
+      </solution>
+
+    </exercise>
+  
+      
+      <exercise xml:id="workshop-functions-domain-and-range-exercises">
+        <title>Domain and Range</title>
+        <statement>
+          <p>
+            Problem 1
+          </p>
+          <p>
+            Determine the domain of each of the following functions.  Where possible, state the domain using interval notation.
+            <ol>
+              <li><m>y(x)=\sqrt{15-x}</m></li>
+              <li><m>f(t)=\sqrt[3]{t^2-9}</m></li>
+              <li><m>w(x)=\frac{x-7}{x-12}</m></li>
+              <li><m>g(x)=\frac{x+3}{x^2+8x+15}</m></li>
+              <li><m>r(t)=t^2-3t+9</m></li>
+              <li><m>k(t)=\frac{t^2+16}{t^2+16}</m></li>
+            </ol>
+          </p>
+          <p>
+            Problem 2
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            Determine the domain and range of the function <m>f</m> shown in <xref ref="workshop-functions-exercises-sineish-graph-3">Figure</xref>. State the domain and range using interval notation.
+            
+          </p>
+          <p>       
+          <figure xml:id="workshop-functions-exercises-sineish-graph-3">
+                    <caption><m>y=f(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-4:5,smooth,-] {2+3*sin(pi*deg(x)/2)};
+                                \addplot[soliddot] coordinates {(-4,2)};
+                                \addplot[hollowdot] coordinates {(5,5)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+        </p>
+      </sidebyside>
+          <p>
+            <bold>Problem 3</bold>
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            Determine the domain and range of the function <m>g</m> shown in <xref ref="workshop-functions-exercises-piecewise-graph-1-3">Figure</xref>. State the domain and range using interval notation.
+            
+          </p>
+          <p>        
+          <figure xml:id="workshop-functions-exercises-piecewise-graph-1-3">
+                    <caption><m>y=g(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-6:-1,smooth,-] {(x+4)^2-6};
+                                \addplot[primarycurve,domain=-1:5.26,smooth,-{Stealth}] {-2*x+4};
+                                \addplot[hollowdot] coordinates {(-6,-2)};
+                                \addplot[hollowdot] coordinates {(-1,3)};
+                                \addplot[soliddot] coordinates {(-1,6)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+        </p>
+      </sidebyside>
+
+          <p>
+            <bold>Problem 4</bold>
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            Determine the domain and range of the function <m>k</m> shown in <xref ref="workshop-functions-exercises-piecewise-graph-2-3">Figure</xref>.  State the domain and range using interval notation.
+            
+          </p>
+          <p>        
+          <figure xml:id="workshop-functions-exercises-piecewise-graph-2-3">
+                    <caption><m>y=k(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-3.5:0,smooth,{Stealth}-] {3*x+4};
+                                \addplot[primarycurve,domain=2:6.4,smooth,-{Stealth}] {-(x-3)^2+5};
+                                \addplot[hollowdot] coordinates {(0,4)};
+                                \addplot[soliddot] coordinates {(0,-3)};
+                                \addplot[hollowdot] coordinates {(2,4)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+        </p>
+      </sidebyside>
+
+
+        </statement>
+
+        <solution>
+          <p>
+            Problem 1
+            <ol>
+              <li>
+                <p>
+                  To determine the domain of <m>y(x)=\sqrt{15-x}</m>, we begin by noting that we cannot take the square root of a negative number (at least over the real numbers).  This gives us the following.
+                  <md>
+                    <mrow>15-x \amp\ge 0</mrow> 
+                    <mrow>15-x\subtractright{15} \amp\ge 0\subtractright{15}</mrow>
+                    <mrow>-x \amp\ge -15</mrow>
+                    <mrow>\multiplyleft{-1}-x \amp\le \multiplyleft{-1}-15</mrow>
+                    <mrow>x \amp\le 15</mrow>
+                  </md>
+                </p>
+                <p>
+                  The domain of <m>y</m> is <m>(-\infty,15)</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  To determine the domain of <m>f(t)=\sqrt[3]{t^2-9}</m>, we begin by noting that the polynomial expression <m>t^2-9</m> is defined for all real numbers as is the cube root function.  So the domain of <m>f</m> is <m>(-\infty,\infty)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  To determine the domain of <m>w(x)=\frac{x-7}{x-12}</m>, we begin by noting that we cannot divide by zero.  This gives us the following.
+                  <md>
+                    <mrow>x-12 \amp\ne 0</mrow>
+                    <mrow>x-12\addright{12} \amp\ne 0\addright{12}</mrow>
+                    <mrow>x \amp\ne 12</mrow>
+                  </md>
+                </p>
+                <p>
+                  The domain of <m>w</m> is <m>(-\infty,12) \cup (12,\infty)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  To determine the domain of <m>g(x)=\frac{x+3}{x^2+8x+15}</m>, we begin by noting that we cannot divide by zero.  This gives us the following.
+                  <md>
+                    <mrow>x^2+8x+15 \amp\ne 0</mrow>
+                    <mrow>(x+3)(x+5) \amp\ne 0</mrow>
+                  </md>
+                  <md>
+                    <mrow>x+3 \amp\ne 0 \amp\amp\text{ and }\amp x+5 \amp\ne 0</mrow>
+                    <mrow>x+3\subtractright{3} \amp\ne 0\subtractright{3} \amp\amp\text{ and }\amp x+5\subtractright{5} \amp\ne 0\subtractright{5}</mrow>
+                    <mrow>x \amp\ne -3 \amp\amp\text{ and }\amp x \amp\ne -5</mrow>
+                  </md>
+                </p>
+                <p>
+                  The domain of <m>g</m> is <m>(-\infty,-5) \cup (-5,-3) \cup (-3,\infty)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  To determine the domain of <m>r(t)=t^2-3t+9</m>, we begin by noting that <m>r</m> is a polynomial function and polynomial functions are defined for all real numbers. So the domain of <m>r</m> is <m>(-\infty,\infty)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  To determine the domain of <m>k(t)=\frac{t^2+16}{t^2+16}</m>, we begin by noting that we cannot divide by zero.  But <m>t^2+16</m> is positive for all real number values of <m>t</m>, so no value of <m>t</m> will cause division by zero.  So the domain of <m>k</m> is <m>(-\infty,\infty)</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+          <p>
+            Problem 2
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            The domain is <m>[-4,5),</m>.  The range is <m>[-1,5]</m>. 
+            
+          </p>
+          <p>       
+          <figure xml:id="workshop-functions-exercises-sineish-graph-3-key">
+                    <caption><m>y=f(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-4:5,smooth,-] {2+3*sin(pi*deg(x)/2)};
+                                \addplot[soliddot] coordinates {(-4,2)};
+                                \addplot[hollowdot] coordinates {(5,5)};
+                                \addplot[primarycurve,domain=-4:5,blue,ultra thick,[-)] {0};
+                                \addplot[closedinterval,brown,ultra thick] coordinates {(0,-1) (0,5)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+        </p>
+        </sidebyside>
+          <p>
+            <bold>Problem 3</bold>
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            The domain is <m>(-6,\infty)</m>.  The range is <m>(-\infty,6]</m>. 
+            
+          </p>
+          <p>
+          
+          <figure xml:id="workshop-functions-exercises-piecewise-graph-1-3-key">
+                    <caption><m>y=g(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-6:-1,smooth,-] {(x+4)^2-6};
+                                \addplot[primarycurve,domain=-1:5.26,smooth,-{Stealth}] {-2*x+4};
+                                \addplot[hollowdot] coordinates {(-6,-2)};
+                                \addplot[hollowdot] coordinates {(-1,3)};
+                                \addplot[soliddot] coordinates {(-1,6)}; 
+                                \addplot[primarycurve,domain=-6:6.5,blue,ultra thick,(-{Stealth}] {0};
+                                \addplot[interval,brown,ultra thick,{Stealth}-{Bracket}] coordinates {(0,-6.5) (0,6)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+        </p>
+      </sidebyside>
+
+          <p>
+            <bold>Problem 4</bold>
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            The domain is <m>(-\infty,0] \cup (2,\infty)</m>.  The range is <m>(-\infty,6]</m>.
+            
+          </p>
+          <p>        
+          <figure xml:id="workshop-functions-exercises-piecewise-graph-2-3-key">
+                    <caption><m>y=k(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-3.5:0,smooth,{Stealth}-] {3*x+4};
+                                \addplot[primarycurve,domain=2:6.4,smooth,-{Stealth}] {-(x-3)^2+5};
+                                \addplot[hollowdot] coordinates {(0,4)};
+                                \addplot[soliddot] coordinates {(0,-3)};
+                                \addplot[hollowdot] coordinates {(2,4)};
+                                \addplot[interval,blue,ultra thick,{Stealth}-{Bracket}] coordinates {(-6.5,0) (0,0)};
+                                \addplot[interval,blue,ultra think,(-{Stealth}] coordinates {(2,0) (6.5,0)};
+                                \addplot[interval,brown,ultra thick,{Stealth}-{Bracket}] coordinates {(0,-6.5) (0,5)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+        </p>
+      </sidebyside>
+
+
+      </solution>
+      </exercise>
+
+      <exercise xml:id="workshop-functions-advanced-function-notation-exercises">
+        <title>Advanced function notation</title>
+        <statement>
+          <p>
+            <ol>
+              <li>
+                Simplify <m>f(x-7)</m> for the function <m>f(x)=3x+12</m>.
+              </li>
+              <li>
+                Simplify <m>g(x)+9</m> for the function <m>g(x)=14-7x</m>.
+              </li>
+              <li>
+                Simplify <m>h(5-2t)</m> for the function <m>h(t)=\sqrt{3-t^2}</m>.
+              </li>
+              <li>
+                Simplify <m>k(x+4)+3</m> for the function <m>k(x)=2x^2-3</m>.
+              </li>
+              <li>
+                Simplify <m>r(\sqrt{t-4})</m> for the function <m>r(t)=3-7t^2</m>.
+              </li>
+              <li>
+                Simplify <m>y(t+5)-y(t-3)</m> for the function <m>y(t)=3t-16</m>.
+              </li>
+              <li>
+                Simplify <m>w(x-2)+w(2-x)+2</m> for the function <m>w(x)=5-x</m>.
+              </li>
+              <li>
+                Simplify <m>s(t-8)</m> for the function <m>s(t)=\frac{t+8}{t}</m>.
+              </li>
+              <li>
+                Simplify <m>3u(2x)</m> for the function <m>u(x)=-x^2</m>.
+              </li>
+              <li>
+                Simplify <m>\frac{1}{2}h(2t-7)-8</m> for the function <m>h(t)=8t-12</m>.
+              </li>
+            </ol>
+          </p>   
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                Simplify <m>f(x-7)</m> for the function <m>f(x)=3x+12</m>.
+                <md>
+                  <mrow>f(\highlight{x-7})\amp=3(\highlight{x-7})+12</mrow>
+                  <mrow>\amp=3x-21+12</mrow>
+                  <mrow>\amp=3x-9</mrow>
+                </md>
+              </li>
+              <li>
+                Simplify <m>g(x)+9</m> for the function <m>g(x)=14-7x</m>.
+                <md>
+                  <mrow>g(x)\highlightr{+9}\amp=14-7x\highlightr{+9}</mrow>
+                  <mrow>\amp=23-7x</mrow>
+                </md>
+              </li>
+              <li>
+                Simplify <m>h(5-2t)</m> for the function <m>h(t)=\sqrt{3-t^2}</m>.
+                <md>
+                  <mrow>h(\highlight{5-2t})\amp=\sqrt{3-(\highlight{5-2t})^2}</mrow>
+                  <mrow>\amp=\sqrt{3-(5-2t)(5-2t)}</mrow>
+                  <mrow>\amp=\sqrt{3-(25-20t+4t^2)}</mrow>
+                  <mrow>\amp=\sqrt{3-25+20t-4t^2}</mrow>
+                  <mrow>\amp=\sqrt{-4t^2+20t-22}</mrow>
+                </md>
+              </li>
+              <li>
+                Simplify <m>k(x+4)+3</m> for the function <m>k(x)=2x^2-3</m>.
+                <md>
+                  <mrow>k(\highlight{x+4})\highlightr{+3}\amp=2(\highlight{x+4})^2-3\highlightr{+3}</mrow>
+                  <mrow>\amp=2(x+4)(x+4)</mrow>
+                  <mrow>\amp=2(x^2+8x+16)</mrow>
+                  <mrow>\amp=2x^2+16x+32</mrow>
+                </md>
+              </li>
+              <li>
+                Simplify <m>r(\sqrt{t-4})</m> for the function <m>r(t)=3-7t^2</m>.
+                <md>
+                  <mrow>r(\highlight{\sqrt{t-4}})\amp=3-7(\highlight{\sqrt{t-4}})^2</mrow>
+                  <mrow>\amp=3-7(t-4)</mrow>
+                  <mrow>\amp=3-7t+28</mrow>
+                  <mrow>\amp=31-7t</mrow>
+                </md>
+              </li>
+              <li>
+                Simplify <m>y(t+5)-y(t-3)</m> for the function <m>y(t)=3t-16</m>.
+                <md>
+                  <mrow>y(\highlight{t+5})-y(\highlightb{t-3})\amp=(3(\highlight{t+5})-16)-(3(\highlightb{t-3})-16)</mrow>
+                  <mrow>\amp=3t+15-16-(3t-9-16)</mrow>
+                  <mrow>\amp=3t-1-(3t-25)</mrow>
+                  <mrow>\amp=3t-1-3t+25</mrow>
+                  <mrow>\amp=24</mrow>
+                </md>
+              </li>
+              <li>
+                Simplify <m>w(x-2)+w(2-x)+2</m> for the function <m>w(x)=5-x</m>.
+                <md>
+                  <mrow>w(\highlight{x-2})+w(\highlightb{2-x})\highlightr{+2}\amp=(5-(\highlight{x-2}))+(5-(\highlightb{2-x}))\highlightr{+2}</mrow>
+                  <mrow>\amp=5-x+2+5-2+x+2</mrow>
+                  <mrow>\amp=12</mrow>
+                </md>
+              </li>
+              <li>
+                Simplify <m>s(t-8)</m> for the function <m>s(t)=\frac{t+8}{t}</m>.
+                <md>
+                  <mrow>s(\highlight{t-8})\amp=\frac{\highlight{t-8}+8}{\highlight{t-8}}</mrow>
+                  <mrow>\amp=\frac{t}{t-8}</mrow>
+                </md>
+              </li>
+              <li>
+                Simplify <m>3u(2x)</m> for the function <m>u(x)=-x^2</m>.
+                <md>
+                  <mrow>\highlightg{3}u(\highlight{2x})\amp=\highlightg{3\cdot}-(\highlight{2x})^2</mrow>
+                  <mrow>\amp=-3 \cdot 4x^2</mrow>
+                  <mrow>\amp=-12x^2</mrow>
+                </md>
+              </li>
+              <li>
+                Simplify <m>\frac{1}{2}h(2t-7)-8</m> for the function <m>h(t)=8t-12</m>.
+                <md>
+                  <mrow>\highlightg{\frac{1}{2}}h(\highlight{2t-7})\highlightr{-8}\amp=\highlightg{\frac{1}{2}}(8(\highlight{2t-7})-12)\highlightr{-8}</mrow>
+                  <mrow>\amp=\frac{1}{2}(16t-56)-20</mrow>
+                  <mrow>\amp=8t-28-20</mrow>
+                  <mrow>\amp=8t-48</mrow>
+                </md>
+              </li>
+            </ol>
+          </p> 
+        </solution>
+      </exercise>
+
+      <exercise xml:id="workshop-functions-function-composition-exercises">
+        <title>Function composition</title>
+        <statement>
+          <p>
+            Determine both <m>(f \circ g)(x)</m> and <m>(g \circ f)(x)</m> for each of the following function pairs.  Completely simplify each expression.
+            <ol>
+              <li><m>f(x)=2x-7</m> and <m>g(x)=8-x</m></li>
+              <li><m>f(x)=x^2+7x</m> and <m>g(x)=3x+1</m></li>
+              <li><m>f(x)=\sqrt{x+4}</m> and <m>g(x)=-3x^2</m></li>
+              <li><m>f(x)=2x+6</m> and <m>g(x)=\frac{x-8}{2x+1}</m></li>
+              <li><m>f(x)=x^2+3</m> and <m>g(x)=2x^2+3x</m></li>
+              <li><m>f(x)=\frac{1}{x}</m> and <m>g(x)=\frac{x-4}{x+5}</m></li>
+              <li><m>f(x)=6-5x</m> and <m>g(x)=\frac{6-x}{5}</m></li>
+              <li><m>f(x)=x^2-16</m> and <m>g(x)=\sqrt{x+16}</m></li>
+            </ol>
+            <p></p>
+          </p>   
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  We are given <m>f(x)=2x-7</m> and <m>g(x)=8-x</m>. The composite function formulas are derived below.
+                  <md>
+                    <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+                    <mrow>\amp=f(\highlight{8-x})</mrow>
+                    <mrow>\amp=2(\highlight{8-x})-7</mrow>
+                    <mrow>\amp=16-2x-7</mrow>
+                    <mrow>\amp=9-2x</mrow>
+                  </md>
+                  <md>
+                    <mrow>(g \circ f)(x)\amp=g(\highlightr{f(x)})</mrow>
+                    <mrow>\amp=g(\highlightr{2x-7})</mrow>
+                    <mrow>\amp=8-(\highlightr{2x-7})</mrow>
+                    <mrow>\amp=8-2x+7</mrow>
+                    <mrow>\amp=15-2x</mrow>
+                  </md>
+                </p>
+              </li>
+              <li>
+                <p>
+                  We are given <m>f(x)=x^2+7x</m> and <m>g(x)=3x+1</m>. The composite function formulas are derived below.
+                  <md>
+                    <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+                    <mrow>\amp=f(\highlight{3x+1})</mrow>
+                    <mrow>\amp=(\highlight{3x+1})^2+7(\highlight{3x+1})</mrow>
+                    <mrow>\amp=(3x+1)(3x+1)+7(3x+1)</mrow>
+                    <mrow>\amp=9x^2+3x+3x+1+21x+7</mrow>
+                    <mrow>\amp=9x^2+27x+8</mrow>
+                  </md>
+                  <md>
+                    <mrow>(g \circ f)(x)\amp=g(\highlightr{f(x)})</mrow>
+                    <mrow>\amp=g(\highlightr{x^2+7x})</mrow>
+                    <mrow>\amp=3(\highlightr{x^2+7x})+1</mrow>
+                    <mrow>\amp=3x^2+21x+1</mrow>
+                  </md>
+                </p>
+              </li>
+              <li>
+                <p>
+                  We are given <m>f(x)=\sqrt{x+4}</m> and <m>g(x)=-3x^2</m>. The composite function formulas are derived below.
+                  <md>
+                    <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+                    <mrow>\amp=f(\highlight{-3x^2})</mrow>
+                    <mrow>\amp=\sqrt{-3x^2+4}</mrow>
+                  </md>
+                  <md>
+                    <mrow>(g \circ f)(x)\amp=g(\highlightr{f(x)})</mrow>
+                    <mrow>\amp=g(\highlightr{\sqrt{x+4}})</mrow>
+                    <mrow>\amp=-3(\highlightr{\sqrt{x+4}})^2</mrow>
+                    <mrow>\amp=-3(x+4)</mrow>
+                    <mrow>\amp=-3x-12</mrow>
+                  </md>
+                </p>
+              </li>
+              <li>
+                <p>
+                  We are given <m>f(x)=2x+6</m> and <m>g(x)=\frac{x-8}{2x+1}</m>. The composite function formulas are derived below.
+                  <md>
+                    <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+                    <mrow>\amp=f(\highlight{\frac{x-8}{2x+1}})</mrow>
+                    <mrow>\amp=2(\highlight{\frac{x-8}{2x+1}})+6</mrow>
+                    <mrow>\amp=\frac{2}{1} \cdot \frac{x-8}{2x+1}+\frac{6}{1} \cdot \frac{2x+1}{2x+1}</mrow>
+                    <mrow>\amp=\frac{2x-16}{2x+1}+\frac{12x+6}{2x+1}</mrow>
+                    <mrow>\amp=\frac{2x-16+12x+6}{2x+1}</mrow>
+                    <mrow>\amp=\frac{14x-10}{2x+1}</mrow>
+                  </md>
+                  <md>
+                    <mrow>(g \circ f)(x)\amp=g(\highlightr{f(x)})</mrow>
+                    <mrow>\amp=g(\highlightr{2x+6})</mrow>
+                    <mrow>\amp=\frac{\highlightr{2x+6}-8}{2(\highlightr{2x+6})+1}</mrow>
+                    <mrow>\amp=\frac{2x-2}{4x+12+1}</mrow>
+                    <mrow>\amp=\frac{2x-2}{4x+13}</mrow>
+                  </md>
+                </p>
+              </li>
+              <li>
+                <p>
+                  We are given <m>f(x)=x^2+3</m> and <m>g(x)=2x^2+3x</m>. The composite function formulas are derived below.
+                  <md>
+                    <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+                    <mrow>\amp=f(\highlight{2x^2+3x})</mrow>
+                    <mrow>\amp=(\highlight{2x^2+3x})^2+3</mrow>
+                    <mrow>\amp=(2x^2+3x)(2x^2+3x)+3</mrow>
+                    <mrow>\amp=4x^4+6x^3+6x^3+9x^2+3</mrow>
+                    <mrow>\amp=4x^4+12x^3+9x^2+3</mrow>
+                  </md>
+                  <md>
+                    <mrow>(g \circ f)(x)\amp=g(\highlightr{f(x)})</mrow>
+                    <mrow>\amp=g(\highlightr{x^2+3})</mrow>
+                    <mrow>\amp=2(\highlightr{x^2+3})^2+3(\highlightr{x^2+3})</mrow>
+                    <mrow>\amp=2(x^2+3)(x^2+3)+3x^2+9</mrow>
+                    <mrow>\amp=2(x^4+3x^2+3x^2+9)+3x^2+9</mrow>
+                    <mrow>\amp=2(x^4+6x^2+9)+3x^2+9</mrow>
+                    <mrow>\amp=2x^4+12x^2+18+3x^2+9</mrow>
+                    <mrow>\amp=2x^4+15x^2+27</mrow>
+                  </md>
+                </p>
+              </li>
+              <li>
+                <p>
+                  We are given <m>f(x)=\frac{1}{x}</m> and <m>g(x)=\frac{x-4}{x+5}</m>. The composite function formulas are derived below.
+                  <md>
+                    <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+                    <mrow>\amp=f(\highlight{\frac{x-4}{x+5}})</mrow>
+                    <mrow>\amp=\frac{1}{\highlight{\frac{x-4}{x+5}}}</mrow>
+                    <mrow>\amp=\frac{\frac{1}{1}}{\frac{x-4}{x+5}}</mrow>
+                    <mrow>\amp=\frac{1}{1} \cdot \frac{x+5}{x-4}</mrow>
+                    <mrow>\amp=\frac{x+5}{x-4}</mrow>
+                  </md>
+                  <md>
+                    <mrow>(g \circ f)(x)\amp=g(\highlightr{f(x)})</mrow>
+                    <mrow>\amp=g(\highlightr{\frac{1}{x}})</mrow>
+                    <mrow>\amp=\frac{\highlightr{\frac{1}{x}}-4}{\highlightr{\frac{1}{x}}+5}</mrow>
+                    <mrow>\amp=\frac{\frac{1}{x}-\frac{4x}{x}}{\frac{1}{x}+\frac{5x}{x}}</mrow>
+                    <mrow>\amp=\frac{\frac{1-4x}{x}}{\frac{1+5x}{x}}</mrow>
+                    <mrow>\amp=\frac{1-4x}{x} \cdot \frac{x}{1+5x}</mrow>
+                    <mrow>\amp=\frac{x \cdot (1-4x)}{x \cdot (1+5x)}</mrow>
+                    <mrow>\amp=\frac{1-4x}{1+5x}</mrow>
+                  </md>
+                </p>
+              </li>
+              <li>
+                <p>
+                  We are given <m>f(x)=6-5x</m> and <m>g(x)=\frac{6-x}{5}</m>. The composite function formulas are derived below.
+                  <md>
+                    <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+                    <mrow>\amp=f(\highlight{\frac{6-x}{5}})</mrow>
+                    <mrow>\amp=6-5(\highlight{\frac{6-x}{5}})</mrow>
+                    <mrow>\amp=6-\frac{5}{1} \cdot \frac{6-x}{5}</mrow>
+                    <mrow>\amp=6-\frac{5(6-x)}{5}</mrow>
+                    <mrow>\amp=6-(6-x)</mrow>
+                    <mrow>\amp=6-6+x</mrow>
+                    <mrow>\amp=x</mrow>
+                  </md>
+                  <md>
+                    <mrow>(g \circ f)(x)\amp=g(\highlightr{f(x)})</mrow>
+                    <mrow>\amp=g(\highlightr{6-5x})</mrow>
+                    <mrow>\amp=\frac{6-(\highlightr{6-5x})}{5}</mrow>
+                    <mrow>\amp=\frac{6-6+5x}{5}</mrow>
+                    <mrow>\amp=\frac{5x}{5}</mrow>
+                    <mrow>\amp=x</mrow>
+                  </md>
+                </p>
+              </li>
+              <li>
+                <p>
+                  We are given <m>f(x)=x^2-16</m> and <m>g(x)=\sqrt{x+16}</m>. The composite function formulas are derived below.
+                  <md>
+                    <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+                    <mrow>\amp=f(\highlight{\sqrt{x+16}})</mrow>
+                    <mrow>\amp=(\highlight{\sqrt{x+16}})^2-16</mrow>
+                    <mrow>\amp=x+16-16</mrow>
+                    <mrow>\amp=x</mrow>
+                  </md>
+                  <md>
+                    <mrow>(g \circ f)(x)\amp=g(\highlightr{f(x)})</mrow>
+                    <mrow>\amp=g(\highlightr{x^2-16})</mrow>
+                    <mrow>\amp=\sqrt{\highlightr{x^2-16}+16}</mrow>
+                    <mrow>\amp=\sqrt{x^2}</mrow>
+                    <mrow>\amp=\abs{x}</mrow>
+                  </md>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise xml:id="workshop-functions-the-difference-quotient-exercises">
+        <title>The difference quotient</title>
+        <statement>
+          <p>Problem Set 1</p>
+          <p>
+            Determine the difference quotient for each of the following functions.  Make sure that you completely simplify each expression.
+            <ol>
+              <li><m>f(x)=7x-8</m></li>
+              <li><m>g(x)=x^2-3x+2</m></li>
+              <li><m>g(t)=5-t^2</m></li>
+              <li><m>k(x)=12</m></li>
+              <li><m>r(t)=\frac{3}{t+4}</m></li>
+              <li><m>y(x)=\frac{1}{7-2x}</m></li>
+            </ol>
+          <p>
+            Problem 2
+          </p>
+          <sidebyside widths="47% 47%">
+          <p>
+            The function <m>f(x)=\frac{1}{2}x^2+2x-3</m> is shown in <xref ref="workshop-functions-exercises-difference-quotient">Figure</xref> along with the secant line connecting the points <m>(-2,-5)</m> and <m>(2,3)</m>.  Determine the difference quotient of <m>f</m> and then use that to determine the slope of the indicated secant line.
+          </p>
+          <p>       
+          <figure xml:id="workshop-functions-exercises-difference-quotient">
+                    <caption><m>f(x)=\frac{1}{2}x^2+2x-3</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-6.85:2.85,smooth] {2*x+.5*x^2-3};
+                                \addplot[primarycurve,domain=-2.95:3.95,smooth,blue] {2*x-1};
+                                \addplot[soliddot] coordinates {(-2,-5)};
+                                \addplot[soliddot] coordinates {(2,3)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+        </p>
+      </sidebyside>
+          </p>   
+        </statement>
+        <solution>
+          <p>Problem Set 1</p>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  The difference quotient for the function <m>f(x)=7x-8</m> is derived below.
+                  <md>
+                    <mrow>\frac{\highlight{f(x+h)}-\highlightr{f(x)}}{h}\amp=\frac{\highlight{(7(x+h)-8)}-\highlightr{(7x-8)}}{h}</mrow>
+                    <mrow>\amp=\frac{7x+7h-8-7x+8}{h}</mrow>
+                    <mrow>\amp=\frac{7h}{h}</mrow>
+                    <mrow>\amp=7,\,\,h \neq 0</mrow>
+                  </md>              
+                </p>
+              </li>
+              <li>
+                <p>
+                  The difference quotient for the function <m>g(x)=x^2-3x+2</m> is derived below.
+                  <md>
+                    <mrow>\frac{\highlight{g(x+h)}-\highlightr{g(x)}}{h}\amp=\frac{\highlight{((x+h)^2-3(x+h)+2)}-\highlightr{(x^2-3x+2)}}{h}</mrow>
+                    <mrow>\amp=\frac{x^2+2xh+h^2-3x-3h+2-x^2+3x-2}{h}</mrow>
+                    <mrow>\amp=\frac{2xh-3h+h^2}{h}</mrow>
+                    <mrow>\amp=\frac{h \cdot (2x-3+h)}{h}</mrow>
+                    <mrow>\amp=2x-3+h,\,\,h \neq 0</mrow>
+                  </md>              
+                </p>
+              </li>
+              <li>
+                <p>
+                  The difference quotient for the function <m>g(t)=5-t^2</m> is derived below.
+                  <md>
+                    <mrow>\frac{\highlight{g(t+h)}-\highlightr{g(t)}}{h}\amp=\frac{\highlight{(5-(t+h)^2)}-\highlightr{(5-t^2)}}{h}</mrow>
+                    <mrow>\amp=\frac{5-(t^2+2th+h^2)-5+t^2}{h}</mrow>
+                    <mrow>\amp=\frac{5-t^2-2th-h^2-5+t^2}{h}</mrow>
+                    <mrow>\amp=\frac{-2th-h^2}{h}</mrow>
+                    <mrow>\amp=\frac{h \cdot (-2t-h)}{h}</mrow>
+                    <mrow>\amp=-2t-h,\,\,h \neq 0</mrow>
+                  </md>              
+                </p>
+              </li>
+              <li>
+                <p>
+                  The difference quotient for the function <m>k(x)=12</m> is derived below.
+                  <md>
+                    <mrow>\frac{\highlight{k(x+h)}-\highlightr{k(x)}}{h}\amp=\frac{\highlight{12}-\highlightr{12}}{h}</mrow>
+                    <mrow>\amp=\frac{0}{h}</mrow>
+                    <mrow>\amp=0,\,\,h \neq 0</mrow>
+                  </md>              
+                </p>
+              </li>
+              <li>
+                <p>
+                  The difference quotient for the function <m>r(t)=\frac{3}{t+4}</m> is derived below.
+                  <md>
+                    <mrow>\frac{\highlight{r(t+h)}-\highlightr{r(t)}}{h}\amp=\frac{\highlight{\frac{3}{t+h+4}}-\highlightr{\frac{3}{t+4}}}{h}</mrow>
+                    <mrow>\amp=\frac{\frac{3}{t+h+4} \cdot \highlightg{\frac{t+4}{t+4}}-\frac{3}{t+4} \cdot \highlightb{\frac{t+h+4}{t+h+4}}}{h}</mrow>
+                    <mrow>\amp=\frac{\frac{3t+12-3t-3h-12}{(t+4)(t+h+4)}}{\frac{h}{1}}</mrow>
+                    <mrow>\amp=\frac{-3h}{(t+4)(t+h+4)} \cdot \frac{1}{h}</mrow>
+                    <mrow>\amp=\frac{-3 \cdot h}{(t+4)(t+h+4) \cdot h}</mrow>
+                    <mrow>\amp=-\frac{3}{(t+4)(t+4+h)},\,\, h \neq 0</mrow>
+                  </md>              
+                </p>
+              </li>
+              <li>
+                <p>
+                  The difference quotient for the function <m>y(x)=\frac{1}{7-2x}</m> is derived below.
+                  <md>
+                    <mrow>\frac{\highlight{y(x+h)}-\highlightr{y(x)}}{h}\amp=\frac{\highlight{\frac{1}{7-2(x+h)}}-\highlightr{\frac{1}{7-2x}}}{h}</mrow>
+                    <mrow>\amp=\frac{\frac{1}{7-2x-2h}-\frac{1}{7-2x}}{h}</mrow>
+                    <mrow>\amp=\frac{\frac{1}{7-2x-2h} \cdot \highlightg{\frac{7-2x}{7-2x}}-\frac{1}{7-2x} \cdot \highlightb{\frac{7-2x-2h}{7-2x-2h}}}{h}</mrow>
+                    <mrow>\amp=\frac{\frac{7-2x-7+2x+2h}{(7-2x-2h)(7-2x)}}{h}</mrow>
+                    <mrow>\amp=\frac{\frac{2h}{(7-2x-2h)(7-2x)}}{\frac{h}{1}}</mrow>
+                    <mrow>\amp=\frac{2h}{(7-2x-2h)(7-2x)} \cdot \frac{1}{h}</mrow>
+                    <mrow>\amp=\frac{2 \cdot h}{(7-2x-2h)(7-2x) \cdot h}</mrow>
+                    <mrow>\amp=\frac{2}{(7-2x-2h)(7-2x)},\,h\neq 0</mrow>
+                  </md>              
+                </p>
+              </li>
+            </ol>
+          </p>
+          <p>Problem 2</p>
+          <p>
+            We begin by deriving the difference quotient for <m>f(x)=\frac{1}{2}x^2+2x-3</m>.
+            <md>
+              <mrow>\frac{\highlight{f(x+h)}-\highlightr{f(x)}}{h}\amp=\frac{\highlight{(\frac{1}{2}(x+h)^2+2(x+h)-3)}-\highlightr{(\frac{1}{2}x^2+2x-3)}}{h}</mrow>
+              <mrow>\amp=\frac{\frac{1}{2}(x^2+2xh+h^2)+2x+2h-3-\frac{1}{2}x^2-2x+3}{h}</mrow>
+              <mrow>\amp=\frac{\frac{1}{2}x^2+xh+\frac{1}{2}h^2+2h-\frac{1}{2}x^2}{h}</mrow>
+              <mrow>\amp=\frac{xh+\frac{1}{2}h^2+2h}{h}</mrow>
+              <mrow>\amp=\frac{h \cdot (x+\frac{1}{2}h+2)}{h}</mrow>
+              <mrow>\amp=x+2+\frac{1}{2}h,\,\,h \neq 0</mrow>
+            </md>
+            We now find the slope of the indicated secant line by letting <m>x=-2</m> and <m>h=4</m> (the run between the two indicated points). The calculation follows.
+            <md>
+              <mrow>m\amp=-2+2+\frac{1}{2} \cdot 4</mrow>
+              <mrow>\amp=2</mrow>
+            </md>
+            A slope of <m>2</m> is confirmed by looking at the <m>\frac{\text{rise}}{\text{run}}</m> between the two points.
+          </p>   
+        </solution>
+      </exercise>
+
+
+    <exercise xml:id="workshop-functions-graph-eq-ieq-exercises">
+      <title>Solving inequalities involving functions presented in graphical form</title>
+      <statement>
+        <p>
+          Problem Set 1
+        </p>
+        <sidebyside widths="50% 50%">
+        
+        <p>
+          Determine the solution set to each of the following equations based upon the function <m>f</m> shown in <xref ref="workshop-functions-exercises-sineish-graph-2">Figure</xref>. State the solution set using both set-builder notation and interval notation.
+          <ol>
+            <li><m>f(x) \lt 2</m></li>
+            <li><m>f(x) \geq 2</m></li>
+            <li><m>f(x) \lt -1</m></li>
+            <li><m>f(x) \leq 5</m></li>
+          </ol>
+        </p>
+        <p>
+        <figure xml:id="workshop-functions-exercises-sineish-graph-2">
+                  <caption><m>y=f(x)</m></caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-4:5,smooth,-] {2+3*sin(pi*deg(x)/2)};
+                              \addplot[soliddot] coordinates {(-4,2)};
+                              \addplot[hollowdot] coordinates {(5,5)};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+        </figure>
+      </p>
+    </sidebyside>
+        <p>
+          <bold>Problem Set 2</bold>
+        </p>
+        <sidebyside widths="50% 50%">
+        
+        <p>
+          Determine the solution set to each of the following inequalities based upon the function <m>g</m> shown in <xref ref="workshop-functions-exercises-piecewise-graph-1-2">Figure</xref>. State the solution set using both set-builder notation and interval notation.
+          <ol>
+            <li><m>g(x) \geq -2</m></li>
+            <li><m>g(x) \leq 3</m></li>
+            <li><m>g(x) \lt -6</m></li>
+            <li><m>g(x) \gt -6</m></li>
+          </ol>
+        </p>
+        <p>
+        <figure xml:id="workshop-functions-exercises-piecewise-graph-1-2">
+                  <caption><m>y=g(x)</m></caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-6:-1,smooth,-] {(x+4)^2-6};
+                              \addplot[primarycurve,domain=-1:5.26,smooth,-{Stealth}] {-2*x+4};
+                              \addplot[hollowdot] coordinates {(-6,-2)};
+                              \addplot[hollowdot] coordinates {(-1,3)};
+                              \addplot[soliddot] coordinates {(-1,6)};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+        </figure>
+      </p>
+    </sidebyside>
+
+        <p>
+          <bold>Problem Set 3</bold>
+        </p>
+        <sidebyside widths="50% 50%">
+       
+        <p>
+          Determine the solution set to each of the following inequalities based upon the function <m>k</m> shown in <xref ref="workshop-functions-exercises-piecewise-graph-2-2">Figure</xref>.  State the solution set using both set-builder notation and interval notation.
+          <ol>
+            <li><m>k(x) \geq 1</m></li>
+            <li><m>k(x) \leq 4</m></li>
+            <li><m>k(x) \gt 5</m></li>
+            <li><m>k(x) \lt 6</m></li>
+          </ol>
+          <p>
+          </p>
+        </p>
+        <p>
+        <figure xml:id="workshop-functions-exercises-piecewise-graph-2-2">
+                  <caption><m>y=k(x)</m></caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-3.5:0,smooth,{Stealth}-] {3*x+4};
+                              \addplot[primarycurve,domain=2:6.4,smooth,-{Stealth}] {-(x-3)^2+5};
+                              \addplot[hollowdot] coordinates {(0,4)};
+                              \addplot[soliddot] coordinates {(0,-3)};
+                              \addplot[hollowdot] coordinates {(2,4)};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+        </figure>
+      </p>
+    </sidebyside>
+    <p>Problem Set 4</p>
+        <sidebyside widths="50% 50%">
+       
+        <p>
+          Determine the solution set to each of the following inequalities based upon the functions <m>f</m> (piecewise-linear) and <m>g</m> (parabolic) shown in <xref ref="workshop-functions-ineq-graph-2-2">Figure</xref>.  State the solution set using both set-builder notation and interval notation.
+          <ol>
+            <li><m>f(x) \geq g(x)</m></li>
+            <li><m>g(x) \gt f(x)</m></li>
+          </ol>
+          <p>
+          </p>
+        </p>
+        <p>
+        <figure xml:id="workshop-functions-ineq-graph-2-2">
+                  <caption><m>\highlightr{y=f(x)}</m> and <m>\highlight{y=g(x)}</m></caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-6.98:2,smooth,{Stealth}-] {5-(2-x)};
+                              \addplot[primarycurve,domain=2:6.98,smooth,-{Stealth}] {5-(x-2)};
+                              \addplot[primarycurve,domain=-6.95:1.68,smooth,blue] {0.5*(x+3)^2-4};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+        </figure>
+      </p>
+    </sidebyside>
+
+
+      </statement>
+      <solution>
+        <p>
+          Problem Set 1
+          <ol>
+            <li>
+              <p>
+                The solution set is <m>\{x \mid -2 \lt x \lt 0 \text{ or } 2 \lt x \lt 4\}</m>.
+              </p>
+              <p>
+                The solution set is <m>(-2,0) \cup (2,4)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The solution set is <m>\{x \mid -4 \leq x \leq -2 \text{ or } 0 \leq x \leq 2 \text{ or } 4 \leq x \lt 5\}</m>.
+              </p>
+              <p>
+                The solution set is <m>[-4,-2] \cup [0,2] \cup [4,6)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The solution set is <m>\{\}</m>.
+              </p>
+              <p>
+                The solution set is <m>\emptyset</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The solution set is <m>\{x \mid -4 \leq x \lt 5\}</m>.
+              </p>
+              <p>
+                The solution set is <m>[-4,5)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+        <p>
+          Problem Set 2
+          <ol>
+            <li>
+              <p>
+                The solution set is <m>\{-2 \leq x \leq 3\}</m>.
+              </p>
+              <p>
+                The solution set is <m>[-2,3]</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The solution set is <m>\{x \mid -6 \lt x \lt 2 \text{ or } x \geq \frac{1}{2}\}</m>.
+              </p>
+              <p>
+                The solution set is <m>(-6,-2) \cup [\frac{1}{2},\infty)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The solution set is <m>x \mid x \gt 5\}</m>.
+              </p>
+              <p>
+                The solution set is <m>(5,\infty)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The solution set is <m>\{x \mid -6 \lt x \lt -4 \text{ or } -4 \lt x \lt 5\}</m>.
+              </p>
+              <p>
+                The solution set is <m>(-6,-4) \cup (-4,5)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+        <p>
+          Problem Set 3
+          <ol>
+            <li>
+              <p>
+                The solution set is <m>\{x \mid -1 \leq x \lt 0 \text{ or } 2 \lt x \leq 5\}</m>.
+              </p>
+              <p>
+                The solution set is <m>[-1,0) \cup (2,5]</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The solution set is <m>\{x \mid x \leq 0 \text{ or } x \geq 4\}</m>.
+              </p>
+              <p>
+                The solution set is <m>(-\infty,0] \cup [4,\infty)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The solution set is <m>\{\}</m>.
+              </p>
+              <p>
+                The solution set is <m>\emptyset</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The solution set is <m>\{x \mid x \leq 0 \text{ or } x \gt 2\}</m>.
+              </p>
+              <p>
+                The solution set is <m>(-\infty,0] \cup (2,\infty)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+        <p>
+          Problem Set 2
+          <ol>
+            <li>
+              <p>
+                The solution set is <m>\{x \mid -5 \leq x \leq 1\}</m>.
+              </p>
+              <p>
+                The solution set is <m>[-5,1]</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The solution set is <m>\{x \mid x \lt -5 \text{ or } x \gt 1\}</m>.
+              </p>
+              <p>
+                The solution set is <m>(-\infty,-5) \cup (1,\infty)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+        
+      </solution>
+    </exercise>
+
+    </exercises>
+
+    <exercises>
+      <title>Workshop Materials (with short answers)</title>
+
+      <exercise xml:id="workshop-functions-introduction-function-notation-workshop">
+        <title>Introduction to function notation</title>
+        <statement>
+          <p>
+            Follow this link to read an introduction to function notation: <xref ref ="workshop-functions-introduction-function-notation-examples">Written Examples</xref>
+          </p>
+          <p>Problem Set 1</p>
+          <p>
+            As directed, determine either the specified function value or determine the solution set to the stated equation.
+            <ol>
+              <li>
+                <p>
+                  Determine <m>k(9)</m> where <m>k(x)=3+4x-x^2</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determine <m>y(-3)</m> where <m>y(t)=5-x-x^3</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determine the solution set to <m>m(x)=5</m> where <m>m(x)=3x-7</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determine the solution set to <m>p(t)=-3</m> where <m>p(t)=t^2-7t-47</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determine <m>f(11)</m> where <m>f(x)=\frac{x-4}{x+3}</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determine the solution set to <m>w(t)=6</m> where <m>w(t)=\sqrt{3t-9}</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determine <m>w(6)</m> where <m>w(t)=\sqrt{3t-9}</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determine the solution set to <m>q(x)=12</m> where <m>q(x)=3+\abs{x-1}</m>.
+                </p>
+              </li>
+            </ol>
+          </p>  
+          <p>
+            <bold>Problem Set 2</bold>
+          </p>
+          <p>
+            Determine each of the following function values based upon the function <m>k</m> shown in <xref ref="workshop-functions-exercises-piecewise-graph-2-1">Figure</xref>. 
+            <ol>
+              <li><m>k(2)</m></li>
+              <li><m>k(0)</m></li>
+              <li><m>k(4)</m></li>
+              <li><m>k(-3)</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            Determine the solution set to each of the following equations based upon the function <m>k</m> shown in <xref ref="workshop-functions-exercises-piecewise-graph-2-1">Figure</xref>. 
+            <ol label="i">
+              <li><m>k(x)=1</m></li>
+              <li><m>k(x)=4</m></li>
+              <li><m>k(x)=5</m></li>
+              <li><m>k(x)=6</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+          <figure xml:id="workshop-functions-exercises-piecewise-graph-2-1">
+                    <caption><m>y=k(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-3.5:0,smooth,{Stealth}-] {3*x+4};
+                                \addplot[primarycurve,domain=2:6.4,smooth,-{Stealth}] {-(x-3)^2+5};
+                                \addplot[hollowdot] coordinates {(0,4)};
+                                \addplot[soliddot] coordinates {(0,-3)};
+                                \addplot[hollowdot] coordinates {(2,4)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+         </sidebyside>
+ 
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><m>k(9)=-42</m></li>
+              <li><m>y(-3)=35</m></li>
+              <li>
+                <p>
+                  The solution set is <m>\{4\}</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The solution set is <m>\{-4,11\}</m>.
+                </p>
+              </li>
+              <li><m>f(11)=\frac{1}{2}</m></li>
+              <li>
+                <p>
+                  The solution set is <m>\{15\}</m>.
+                </p>
+              </li>
+              <li><m>w(6)=3</m></li>
+              <li>
+                <p>
+                  The solution set is <m>\{-8,10\}</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        <p>
+          <bold>Problem Set 2</bold>
+          <ol>
+            <li><m>k(2)</m> is undefined.</li>
+            <li><m>k(0)-3</m></li>
+            <li><m>k(4)=4</m></li>
+            <li><m>k(-3)=-5</m></li>
+          </ol>
+        </p>
+        <p>
+          <ol label="i">
+            <li>The solution set is <m>\{-1,5\}</m>.</li>
+            <li>The solution set is <m>\{4\}</m>.</li>
+            <li>The solution set is <m>\{3\}</m>.</li>
+            <li>The solution set is <m>\emptyset</m>.</li>
+          </ol>
+        </p>
+        </solution>
+      </exercise>
+
+      <exercise xml:id="workshop-functions-domain-and-range-workshop">
+        <title>Domain and Range</title>
+        <statement>
+          <p>
+            Follow this link to read about domain and range: <xref ref ="workshop-functions-domain-and-range-examples">Written Examples</xref>
+          </p>
+          <p>Problem Set 1</p>
+          <p>
+            Determine the domain of each of the following functions.  State each domain using interval notation.
+            <ol>
+              <li><m>r(x)=4-\sqrt{8-16x}</m></li>
+              <li><m>w(t)=\sqrt[5]{6t+42}</m></li>
+              <li><m>f(x)=2x^2-7x+8</m></li>
+              <li><m>q(x)=\frac{y-9}{y+10}</m></li>
+              <li><m>q(t)=\frac{\sqrt{t-12}}{t-3}</m></li>
+              <li><m>y(x)=\frac{x^2-5x+6}{x^2-8x+12}</m></li>
+            </ol>
+          </p><p>
+            <bold>Problem 2</bold>
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            Determine the domain and range of the function <m>g</m> shown in <xref ref="workshop-functions-domain-1">Figure</xref>.  State the domain and range using interval notation.
+            
+          </p>
+          <p>        
+          <figure xml:id="workshop-functions-domain-1">
+                    <caption><m>y=g(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-6.9:1,smooth,{Stealth}-] {-.3*(x+2)^2+5};
+                                \addplot[hollowdot] coordinates {(1,2.3)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+        </p>
+      </sidebyside>
+        <p>
+            <bold>Problem 3</bold>
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            Determine the domain and range of the function <m>z</m> shown in <xref ref="workshop-functions-domain-2">Figure</xref>.  State the domain and range using interval notation.
+            
+          </p>
+          <p>        
+          <figure xml:id="workshop-functions-domain-2">
+                    <caption><m>y=z(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-5:0,smooth,-] {(3/5)*x+4};
+                                \addplot[primarycurve,domain=3:6,smooth,-] {-x+5};
+                                \addplot[hollowdot] coordinates {(-5,1)};
+                                \addplot[soliddot] coordinates {(0,4)};
+                                \addplot[hollowdot] coordinates {(3,2)};
+                                \addplot[hollowdot] coordinates {(6,-1)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+        </p>
+      </sidebyside>
+        </statement>
+        <solution>
+          <p>Problem Set 1</p>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  The domain of <m>r</m> is <m>(-\infty,\frac{1}{2}]</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The domain of <m>w</m> is <m>(-\infty,\infty)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The domain of <m>f</m> is <m>(-\infty,\infty)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The domain of <m>g</m> is <m>(-\infty,-10) \cup (-10,\infty)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The domain of <m>q</m> is <m>[12,\infty)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The domain of <m>y</m> is <m>(-\infty,2) \cup (2,6) \cup (6,\infty)</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+          <p>Problem 2</p>
+          <p>
+            The domain of <m>g</m> is <m>(-\infty,1)</m>and the range is <m>(-\infty,5]</m>.
+          </p>
+          <p>Problem 3</p>
+          <p>
+            The domain of <m>z</m> is <m>(-5,1] \cup (3,6)</m>and the range is <m>(-1,4]</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise xml:id="workshop-functions-advanced-function-notation-workshop">
+        <title>Advanced function notation</title>
+        <statement>
+          <p>
+            Follow this link to read about advanced function notation: <xref ref ="workshop-functions-advanced-function-notation-examples">Written Examples</xref>
+          </p>
+          <p>
+            Evaluate and simplify each indicated expression.
+            <ol>
+              <li>
+                <p>
+                  Determine <m>f(x+3)</m> for the function <m>f(x)=x^2-x</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determine <m>g(-x)+5</m> for the function <m>g(x)=2x^3-3x^2-6x+2</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determine <m>3g(4t)</m> for the function <m>\sqrt{t-7}</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determine <m>-2y(t)-7</m> for the function <m>y(t)=-5t^2-11t+3</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determine <m>3r(4t-3)</m> for the function <m>r(t)=\frac{3t-5}{t+4}</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Determine <m>\frac{w(y+5)-w(y-5)}{2}</m> for the function <m>w(y)=4y-7</m>.
+                </p>
+              </li>
+            </ol>
+            <p></p>
+          </p>   
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><m>f(x+3)=x^2+5x+6</m></li>
+              <li><m>g(-x)+5=-2x^3-3x^2+6x+7</m></li>
+              <li><m>3g(4t)=3\sqrt{4t-7}</m></li>
+              <li><m>-2y(t)-7=10t^2+22t-13</m></li>
+              <li><m>3r(4t-3)=\frac{36t-42}{4t+1}</m></li>
+              <li><m>\frac{w(y+5)-w(y-5)}{2}=20</m></li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise xml:id="workshop-functions-function-composition-workshop">
+        <title>Function composition</title>
+        <statement>
+          <p>
+            Follow this link to read about function composition: <xref ref ="workshop-functions-function-composition-examples">Written Examples</xref>
+          </p>
+          <p>
+            Evaluate and simplify each indicated expression.
+            <ol>
+              <li>
+                <p>
+                  Evaluate and simplify  <m>(f \circ f)(x)</m> where <m>f(x)=7-x</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Evaluate and simplify <m>(g \circ f)(x)</m> where <m>f(x)=3x+9</m> and <m>g(x)=5-x^2</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  EEvaluate and simplify <m>(f \circ g)(4)</m> where <m>f(x)=3x+9</m> and <m>g(x)=5-x^2</m>. 
+                </p>
+              </li>
+              <li>
+                <p>
+                  Evaluate and simplify <m>(g \circ g)(8)</m> where <m>g(t)=\frac{3}{t+1}</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Evaluate and simplify <m>(k \circ h)(t)</m> where <m>h(t)=\frac{9t+2}{6}</m> and <m>k(t)=\frac{6t-2}{9}</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><m>(f \circ f)(x)=x</m></li>
+              <li><m>(g \circ f)(x)=-9x^2-54x-76</m></li>
+              <li><m>(f \circ g)(4)=-24</m></li>
+              <li><m>(g \circ g)(8)=\frac{9}{4}</m></li>
+              <li><m>(k \circ h)(t)=t</m></li>
+            </ol>
+            <p></p>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise xml:id="workshop-functions-the-difference-quotient-workshop">
+        <title>The difference quotient</title>
+          <statement>
+            <p>
+              Follow this link to read about the difference quotient: <xref ref ="workshop-functions-the-difference-quotient-examples">Written Examples</xref>
+            </p>
+            <p>
+              Determine the difference quotient for each of the following function.  Make sure that you completely simplify each expression.
+              <ol>
+                <li><m>f(x)=3x+7</m></li>
+                <li><m>g(x)=x^2-5x+1</m></li>
+                <li><m>k(t)=3-2t^2</m></li>
+                <li><m>s(t)=-\frac{3}{2t}</m></li>
+              </ol>
+              <p></p>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    The difference quotient is <m>\frac{f(x+h)-f(x)}{h}=3,\,\,h \neq 0</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    The difference quotient is <m>\frac{g(x+h)-g(x)}{h}=2x+h-5,\,\, h \neq 0</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    The difference quotient is <m>\frac{k(t+h)-k(t)}{h}=-4t-2h,\,\, h \neq 0</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    The difference quotient is <m>\frac{s(t+h)-s(t)}{h}=\frac{3}{2t^2+2th},\,\, h \neq 0</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+      </exercise>
+
+      
+    </exercises>
+
+         
+    </section>

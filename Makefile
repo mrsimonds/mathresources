@@ -70,6 +70,7 @@ RNG = $(MB)/schema/pretext.rng
 # These paths are subdirectories of
 # the project
 SRC        = $(PRJ)/src
+CSS	   = $(PRJ)/style/css
 OUTPUT     = $(PRJ)/output
 IMGSRC     = $(SRC)/images
 PRJXSL     = $(PRJ)/xsl
@@ -99,6 +100,7 @@ html:
 	install -d $(OUTPUT)
 	install -d $(HTML)
 	install -d $(HTML)/images
+	install -d $(HTML)/css
 	install -d $(IMGOUT)
 	install -d $(IMGSRC)
 	-rm $(HTML)/*.html
@@ -106,8 +108,9 @@ html:
 	-rm $(HTML)/images/*
 	cp -a $(IMGSRC) $(HTML)
 	cp -a $(IMGOUT) $(HTML)
+	cp -a $(CSS) $(HTML)
 	cd $(HTML); \
-	xsltproc --xinclude --stringparam html.knowl.list yes --stringparam html.knowl.exercise.sectional yes --stringparam webwork.server $(SERVER) $(PRJXSL)/math-resources-html.xsl $(MAINFILE)
+	xsltproc --xinclude --stringparam html.knowl.example no --stringparam html.knowl.list yes --stringparam webwork.server $(SERVER) $(PRJXSL)/math-resources-html.xsl $(MAINFILE)
 
 ###########
 # Utilities

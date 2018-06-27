@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="lines-slope">
+    <title>Slope of a Line</title>
+    <p>
+      The line with equation <m>2x-3y=-6</m> is shown in both <xref ref="lines-slope-figure-1">Figure</xref> and 
+      <xref ref="lines-slope-figure-2">Figure</xref>.  In <xref ref="lines-slope-figure-1">Figure</xref>, it's illustrated that if we start at a point on the line and move up <m>2</m> spaces and right <m>3</m> spaces, we end up at another point on the line.  Similarly, in <xref ref="lines-slope-figure-2">Figure</xref>, it's illustrated that if we start at a point on the line and move down <m>2</m> spaces and left <m>3</m> spaces, we end up at another point on the line.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <figure xml:id="lines-slope-figure-1">
+        <caption>Walking up the steps</caption>
+        <image>
+          <description>plain text</description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}
+                \addplot[primarycurve,domain=-6.7:6.7] {-2+(2/3)*x};
+                \addplot[soliddot] coordinates {(3,0)};
+                \addplot[soliddot] coordinates {(0,-2)};
+                \addplot[soliddot] coordinates {(6,2)};
+                \addplot[soliddot] coordinates {(-3,-4)};
+                \addplot[soliddot] coordinates {(-6,-6)};
+                \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(0,-2) (0,0)};
+                \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(0,0) (3,0)};
+                \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(3,0) (3,2)};
+                \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(3,2) (6,2)};
+                \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(-6,-6) (-6,-4)};
+                \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(-6,-4) (-3,-4)};
+                \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(-3,-4) (-3,-2)};
+                \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(-3,-2) (0,-2)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+      <figure xml:id="lines-slope-figure-2">
+        <caption>Walking down the steps</caption>
+        <image>
+          <description>plain text</description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}
+                \addplot[primarycurve,domain=-6.7:6.7] {-2+(2/3)*x};
+                \addplot[soliddot] coordinates {(3,0)};
+                \addplot[soliddot] coordinates {(0,-2)};
+                \addplot[soliddot] coordinates {(6,2)};
+                \addplot[soliddot] coordinates {(-3,-4)};
+                \addplot[soliddot] coordinates {(-6,-6)};
+                              \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(6,2) (6,0)};
+                \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(6,0) (3,0)};
+                \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(3,0) (3,-2)};
+                \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(3,-2) (0,-2)};
+                \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(0,-2) (0,-4)};
+                \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(0,-4) (-3,-4)};
+                \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(-3,-4) (-3,-6)};
+                \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(-3,-6) (-6,-6)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+    </sidebyside>
+
+    <p>
+      Similar step-like patterns exist for any line that is neither horizontal nor vertical.  The up or down movement between two points on a line is called "the rise" between the two points.  The right or left movement between the two points is called "the run" between the points.  For any given line (that is not vertical), the ratio of the rise to the run between any two points on the line is the same, and this constant ratio is called "the slope of the line."  For reasons nobody really knows, we use the variable <m>m</m> to symbolize slope.  So:
+      <me>\text{The slope of a line is }m=\frac{\text{rise}}{\text{run}}</me>.  
+    </p>
+    <p>
+      Referring again to <xref ref="lines-slope-figure-1">Figure</xref>, we interpret the upward movement as "a rise of <m>+2</m>" and the rightward movement as "a run of <m>+3</m>."  This gives us:
+      <md>
+        <mrow>m\amp=\frac{\text{rise}}{\text{run}}</mrow>
+        <mrow>\amp=\frac{+2}{+3}</mrow>
+        <mrow>\amp=\frac{2}{3}</mrow>
+      </md>
+    </p>
+    <p>
+      Similarly, referring to <xref ref="lines-slope-figure-2">Figure</xref>, we interpret the downward movement as "a rise of <m>-2</m>" and the leftward movement as "a run of <m>-3</m>."  This gives us:
+      <md>
+        <mrow>m\amp=\frac{\text{rise}}{\text{run}}</mrow>
+        <mrow>\amp=\frac{-2}{-3}</mrow>
+        <mrow>\amp=\frac{2}{3}</mrow>
+      </md>
+      We are not limited to steps that have a rise of <m>+2</m> or <m>-2</m>.  For example, in <xref ref="lines-slope-figure-3">Figure</xref> the rise from the point <m>(-6,-6)</m> to the point <m>(6,2)</m> is <m>+8</m> while the run is <m>+12</m>. The slope of the line is thus calculated as follows.
+    </p>
+
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        <md>
+          <mrow>m\amp=\frac{\text{rise}}{\text{run}}</mrow>
+          <mrow>\amp=\frac{+8}{+12}</mrow>
+          <mrow>\amp=\frac{2}{3}</mrow>
+        </md>
+      </p>
+
+      <figure xml:id="lines-slope-figure-3">
+        <caption>rise<m>=+8</m> and run=<m>+12</m></caption>
+        <image>
+          <description>plain text</description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}
+                \addplot[primarycurve,domain=-6.7:6.7] {-2+(2/3)*x};
+                \addplot[soliddot] coordinates {(6,2)};
+                \addplot[soliddot] coordinates {(-6,-6)};
+                \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(-6,-6) (-6,2)};
+                \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(-6,2) (6,2)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+        
+    <sidebyside widths="47% 47%" margins="0%">
+
+       <p>
+         This last example illustrates one of the great things about slope: the ratio of the rise to the run from any point on the line to any other point on the line can be used to determine the slope of a given line.
+           <p>
+             For example, let's consider the line shown in <xref ref="lines-slope-figure-4">Figure</xref>.
+            </p>
+       </p>
+
+       <figure xml:id="lines-slope-figure-4">
+         <caption>Two different rise-to-runs</caption>
+         <image>
+           <description>plain text</description>
+             <latex-image>
+               <![CDATA[
+                \begin{tikzpicture}
+                \begin{axis}
+                  \addplot[primarycurve,domain=-6.7:6.7] {3-(1/2)*x};
+                  \addplot[soliddot] coordinates {(-6,6)};
+                  \addplot[soliddot] coordinates {(-2,4)};
+                  \addplot[soliddot] coordinates {(4,1)};
+                  \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(4,1) (4,6)};
+                  \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(4,6) (-6,6)};
+                  \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(-6,6) (-6,4)};
+                  \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(-6,4) (-2,4)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+      </figure>
+
+    </sidebyside>
+
+    <p>
+      When we move from the point <m>(-6,6)</m> to the point <m>(-2,4)</m>, there is a rise of <m>-2</m> (negative because the movement is downward) and a run of <m>+4</m> (positive because the movement is rightward).  This gives us:
+      <md>
+        <mrow>m\amp=\frac{\text{rise}}{\text{run}}</mrow>
+        <mrow>\amp=\frac{-2}{+4}</mrow>
+        <mrow>\amp=-\frac{1}{2}</mrow>
+      </md>
+      However, when we move from the point <m>(4,1)</m> to the point <m>(-6,6)</m> the rise is <m>+5</m> (positive because the movement is upward)and the run is <m>-10</m> (negative because the movement is leftward).  Despite this very different pair of rise and run, we get the sameslope.
+      <md>
+        <mrow>m\amp=\frac{\text{rise}}{\text{run}}</mrow>
+        <mrow>\amp=\frac{+5}{-10}</mrow>
+        <mrow>\amp=-\frac{1}{2}</mrow>
+      </md>
+    </p>
+    <p>
+      When looking at the graph of a line that passes through points which have integer coordinates, it's fairly easy to determine the rise and the run between two points on the line by counting.  We just have to keep in mind that we count upward or rightward movement as positive whereas we count downward or leftward movement as negative.  When dealing with points that are not presented graphically, it's useful to have a formula that alleviates the need for counting.
+    </p>
+    <p>
+      In <xref ref="lines-slope-figure-5">Figure</xref> the slope triangle moving from the point <m>(-2,-4)</m> to the point <m>(4,5)</m> is shown.  We can determine, by counting, that the run is <m>6</m> and the rise is <m>9</m>.  The observation we want to make is that the run, <m>6</m>, is the difference between the <m>x</m>-coordinates of the points and the rise is the difference between the <m>y</m>-coordinates.  Specifically:<me>\text{run}=4-(-2) \text{ and rise}=5-(-4)</me>.  If we give the points generic names for the coordinates we can generalize a slope formula.  Let's label the points as stated below.  Note that the names given to the coordinates are subscripted variables that are technically read as (for example) "<m>x</m> sub <m>1</m> <m>y</m> sub <m>1</m>" but in reality are generally read as "<m>x</m> <m>1</m> <m>y</m> <m>1</m>."
+      <me>(-2,-4) \text{ is } (x_1,y_1) \text{ and } (4,5) \text{ is } (x_2,y_2)</me>  This gives us the following slope formula.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        <md>
+          <mrow>m\amp=\frac{\text{rise}}{\text{run}}</mrow>
+          <mrow>\amp=\frac{5-(-4)}{4-(-2)}</mrow>
+          <mrow>\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+        </md>
+      </p>
+
+      <figure xml:id="lines-slope-figure-5">
+        <caption><m>\text{rise}=y_2-y_1\text{ and run}=x_2-x_1</m></caption>
+        <image>
+          <description>plain text</description>
+          <latex-image>
+            <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}
+                  \addplot[primarycurve,domain=-3.7:5.1] {-1+1.5*x};
+                  \addplot[soliddot] coordinates {(4,5)} node[above left] {($x_2$,$y_2$)};
+                  \addplot[soliddot] coordinates {(-2,-4)} node[above left] {($x_1$,$y_1$)};
+                  \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(-2,-4) (4,-4)};
+                  \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(4,-4) (4,5)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+      </figure>
+
+    </sidebyside>
+
+    <example xml:id="lines-slope-ex-1">
+
+      <statement>
+        <p>
+          Determine the slope of the line that passes through the points <m>(9,3)</m> and <m>(5,7)</m>.
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          We begin by deciding which point we'll call <m>(x_1,y_1)</m> and which point we'll call <m>(x_2,y_2)</m>.  As will be demonstrated, we can label the points either way.  Let's first make the following designations.
+          <me>(x_1,y_1) \text{ is } (9,3) \text{ and } (x_2,y_2) \text{ is } (5,7)</me> This gives us the following.
+          <md>
+            <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+            <mrow>\amp=\frac{7-3}{5-9}</mrow>
+            <mrow>\amp=\frac{4}{-4}</mrow>
+            <mrow>\amp=-1</mrow>
+          </md>
+          Let's make sure that we get the same result if we designate the points in the other order.
+          <me>(x_1,y_1) \text{ is } (5,7) \text{ and } (x_2,y_2) \text{ is } (9,3)</me> This gives us the following.
+          <md>
+            <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+            <mrow>\amp=\frac{3-7}{9-5}</mrow>
+            <mrow>\amp\frac{-4}{4}</mrow>
+            <mrow>\amp=-1</mrow>
+          </md>
+        </p>
+      </solution>
+
+    </example>
+
+    <example xml:id="lines-slope-ex-2">
+
+      <statement>
+
+        <sidebyside widths="67% 27%" margins="0%">
+
+          <p>
+            Use the concept of slope to determine whether or not the points given in <xref ref="lines-slope-same-line">Table</xref> all lie on the same line.
+          </p>
+
+          <table xml:id="lines-slope-same-line">
+            <caption>Points from a line?</caption>
+            <tabular>
+              <col halign="center" />
+              <col halign="center"/>
+              <row bottom="medium">
+                <cell>
+                  <line><m>x</m></line>
+                </cell>
+                <cell>
+                  <line><m>y</m></line>
+                </cell>
+              </row>
+              <row>
+                <cell><m>6</m></cell>
+                <cell><m>21</m></cell>
+              </row>
+              <row>
+                <cell><m>-2</m></cell>
+                <cell><m>-11</m></cell>
+              </row>
+              <row>
+                <cell><m>0</m></cell>
+                <cell><m>-3</m></cell>
+              </row>
+            </tabular>
+          </table>
+
+        </sidebyside>
+
+      </statement>
+
+      <solution>
+        <p>
+          For any given line, the slope connecting any two points on the line is always the same.  So to make the determination we need to check whether or not the slope is the same regardless of which two points we select.
+        </p>
+        <p>
+          Using the first two points in the table we get the following.
+          <me>(x_1,y_1) \text{ is } (6,21) \text{ and } (x_2,y_2) \text{ is } (-2,-11)</me>
+          <md>
+            <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+            <mrow>\amp=\frac{-11-21}{-2-6}</mrow>
+            <mrow>\amp=\frac{-32}{-8}</mrow>
+            <mrow>\amp=4</mrow>
+          </md>
+        </p>
+        <p>
+          Using the last two points in the table we get the following.
+          <me>(x_1,y_1) \text{ is } (-2,-11) \text{ and } (x_2,y_2) \text{ is } (0,-3)</me>
+          <md>
+            <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+            <mrow>\amp=\frac{-3-(-11)}{0-(-2)}</mrow>
+            <mrow>\amp=\frac{8}{2}</mrow>
+            <mrow>\amp=4</mrow>
+          </md>
+        </p>
+        <p>
+          Using the first and third points in the table we get the following.
+          <me>(x_1,y_1) \text{ is } (6,21) \text{ and } (x_2,y_2) \text{ is } (0,-3)</me>
+          <md>
+            <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+            <mrow>\amp=\frac{-3-21}{0-6}</mrow>
+            <mrow>\amp=\frac{-24}{-6}</mrow>
+            <mrow>\amp=4</mrow>
+          </md>
+        </p>
+        <p>
+          Since the slope is the same regardless of which two points we use, we conclude that the three points do indeed lie on the same line.
+        </p>
+      </solution>
+
+    </example>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Determine the slope of each described line.
+          </p>
+        </introduction>
+
+        <exercise>
+
+          <statement>
+            <sidebyside widths="47% 47%" margins="0%">
+
+              <p>
+                Determine the slope of the line that is graphed in <xref ref="lines-slope-exercises-figure-1">Figure</xref>.
+              </p>
+
+              <figure xml:id="lines-slope-exercises-figure-1">
+                <caption>Determine the slope</caption>
+                <image>
+                  <description>plain text</description>
+                  <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                      \begin{axis}
+                        \addplot[primarycurve,domain=-6.7:6.7] {2-(1/3*x};
+                      \end{axis}
+                    \end{tikzpicture}
+                    ]]>
+                  </latex-image>
+                </image>
+              </figure>
+
+            </sidebyside>
+          </statement>
+
+          <solution>
+            <sidebyside widths="47% 47%" margins="0%">
+
+              <p>
+                <md>
+                  <mrow>m\amp=\frac{\text{rise}}{\text{run}}</mrow>
+                  <mrow>\amp=\frac{-2}{6}</mrow>
+                  <mrow>\amp=-\frac{1}{3}</mrow>
+                </md>
+                The slope is <m>-\frac{1}{3}</m>
+              </p>
+
+              <figure xml:id="lines-slope-exercises-figure-1-sol">
+                <caption>rise=<m>-2</m> and run=<m>6</m></caption>
+                <image>
+                  <description>plain text</description>
+                  <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                      \begin{axis}
+                        \addplot[primarycurve,domain=-6.7:6.7] {2-(1/3*x};
+                        \addplot[soliddot] coordinates {(-3,3)};
+                        \addplot[soliddot] coordinates {(3,1)};
+                        \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(-3,3) (-3,1)};
+                        \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(-3,1) (3,1)};
+                      \end{axis}
+                    \end{tikzpicture}
+                    ]]>
+                  </latex-image>
+                </image>
+              </figure>
+
+            </sidebyside>
+          </solution>
+
+        </exercise>
+
+        <exercise>
+
+          <statement>
+            <p>
+              Determine the slope of the line that passes through the points <m>(11,-2)</m> and <m>(-3,5)</m>.
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              Let's designate the points as follows.
+              <me>(x_1,y_1) \text{ is } (11,-2) \text{ and } (x_2,y_2) \text{ is } (-3,5)</me>
+              Then:
+              <md>
+                <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+                <mrow>\amp=\frac{5-(-2)}{-3-11}</mrow>
+                <mrow>\amp=\frac{7}{-14}</mrow>
+                <mrow>\amp=-\frac{1}{2}</mrow>
+              </md>
+              The slope of the line is <m>-\frac{1}{2}</m>.
+            </p>
+          </solution>
+
+        </exercise>
+
+        <exercise>
+
+          <statement>
+            <p>
+              Determine the slope of the line that passes through the points <m>(\frac{3}{2},-\frac{3}{2})</m> and <m>(-\frac{11}{5},17)</m>.
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              Let's designate the points as follows.
+              <me>(x_1,y_1) \text{ is } (\frac{3}{2},-\frac{3}{2}) \text{ and } (x_2,y_2) \text{ is } (-\frac{11}{5},17)</me>
+              Then:
+              <md>
+                <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+                <mrow>\amp=\frac{17-(-\frac{3}{2})}{-\frac{11}{5}-\frac{3}{2}}</mrow>
+                <mrow>\amp=\frac{\frac{34}{2}+\frac{3}{2}}{-\frac{22}{10}-\frac{15}{10}}</mrow>
+                <mrow>\amp=\frac{\frac{37}{2}}{-\frac{37}{10}}</mrow>
+                <mrow>\amp=\frac{37}{2} \cdot -\frac{10}{37}</mrow>
+                <mrow>\amp=-5</mrow>
+              </md>
+              The slope of the line is <m>-5</m>.
+            </p>
+          </solution>
+
+        </exercise>
+
+      </exercisegroup>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Refer to <xref ref="lines-slope-ex-2">Example</xref> if you need help getting started on the next problem.
+          </p>
+        </introduction>
+
+      <exercise>
+
+        <statement>
+          <sidebyside widths="67% 27%" margins="0%">
+
+            <p>
+              Determine whether or not the points listed in <xref ref="lines-exercises-slope-table">Table</xref> all lie on the same line.
+            </p>
+
+            <table xml:id="lines-exercises-slope-table">
+              <caption>Points from a line?</caption>
+              <tabular>
+                <col halign="center" />
+                <col halign="center"/>
+                <row bottom="medium">
+                  <cell>
+                    <line><m>x</m></line>
+                  </cell>
+                  <cell>
+                    <line><m>y</m></line>
+                  </cell>
+                </row>
+                <row>
+                  <cell><m>-6</m></cell>
+                  <cell><m>8</m></cell>
+                </row>
+                  <row>
+                    <cell><m>-10</m></cell>
+                    <cell><m>10</m></cell>
+                  </row>
+                  <row>
+                    <cell><m>20</m></cell>
+                    <cell><m>-6</m></cell>
+                  </row> 
+                </tabular>
+              </table>
+
+            </sidebyside>
+          </statement>
+
+          <solution>
+            <p>
+              We begin by calculating the slope between the first two points in the table.
+              <me>(x_1,y_1) \text{ is } (-6,8) \text{ and } (x_2,y_2) \text{ is } (-10,10)</me>
+              <md>
+                <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+                <mrow>\amp=\frac{10-8}{-10-(-6)}</mrow>
+                <mrow>\amp=\frac{2}{-4}</mrow>
+                <mrow>\amp=-\frac{1}{2}</mrow>
+              </md>
+            </p>
+            <p>
+              Next, let's calculate the slope between the last two points in the table.
+              <me>(x_1,y_1) \text{ is } (-10,10) \text{ and } (x_2,y_2) \text{ is } (20,-6)</me>
+              <md>
+                <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+                <mrow>\amp=\frac{-6-10}{20-(-10)}</mrow>
+                <mrow>\amp=\frac{-16}{30}</mrow>
+                <mrow>\amp=-\frac{8}{15}</mrow>
+              </md>
+            </p>
+            <p>
+              Since the slope is not the same between different pairs of points in the table, we conclude that the points do not all lie on the same line.
+            </p>
+          </solution>
+
+        </exercise>
+
+      </exercisegroup>
+
+    </exercises>
+
+  </section>

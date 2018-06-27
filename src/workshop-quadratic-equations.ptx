@@ -9,18 +9,355 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-quadratics-zero-principle-and-square-root-method">
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-quadratic-equations">
     <title>Quadratic equations</title>
 
     <exercises>
-      <title>Pretest - what's your current skill set?</title>
+      <title>Videos</title>
+      <exercise>
+        <title>Videos created by Ann Cary and Scot Leavitt.</title>
+        <statment>        
+          <p>The links take you to YouTube Playlists which will open either in a new window or in a Youtube App.
+          <ul>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-eVVT6gBsJq_o7NFyUGC8BY" target="blank">Solving quadratic equations by factoring</url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-fBul1o0Y4RxNEI5C1mE2lz" target="blank">Solving quadratic equations by using a square root</url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-e22-Ev-CeAYps78s4qREon" target="blank">The quadratic formula</url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-c189pInY_ddsbonNff6axR" target="blank">Complex solutions to quadratic equations</url>
+            </li>
+          </ul>
+        </p>
+      </statment>
+    </exercise>
+  </exercises>
 
-    <exercise>
-        <title>Solving quadratic equations using the zero-product property</title>
+    <exercises>
+      <title>Solving Quadratic Equations using the Zero-Product Property</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
         <statement>
           <p>
-            Follow this link to see some examples: <xref ref="workshop-quadratic-equations-zero-product-property-examples">Written Examples</xref>.
+            When the product of two numbers is zero, at least one of the numbers in the product must be zero.  This is a property unique to zero; e.g., when two numbers multiply to, say, ten, not only is it not the case that one of the two numbers need be ten, the only restriction on the two numbers at all is that neither be zero.
           </p>
+          <p>
+            When solving an equation of form: <me>ab=0</me>, the next step in the process is to state:<me>a=0\text{  or  }b=0</me>.  We then soleve the two new equations separately and state our solutions, or solution set.  For example:
+            <md>
+              <mrow>(4x+7)(2x-9)=0</mrow>
+            </md>
+            <md>
+              <mrow>4x+7\amp=0\amp\amp\text{or}\amp 2x-9\amp=0</mrow>
+              <mrow>4x+7\subtractright{7}\amp=0\subtractright{7}\amp\amp\text{or}\amp 2x-9\addright{9}\amp=0\addright{9}</mrow>
+              <mrow>4x\amp=-7\amp\amp\text{or}\amp 2x\amp=9</mrow>
+            <mrow>\divideunder{4x}{4}\amp=\divideunder{-7}{4}\amp\amp\text{or}\amp \divideunder{2x}{2}\amp=\divideunder{9}{2}</mrow>
+              <mrow>x\amp=-\frac{7}{4}\amp\amp\text{or}\amp x\amp=\frac{9}{2}</mrow>
+            </md>
+          </p>
+          <p>
+            The solutions are <m>-\frac{7}{4}</m> and <m>\frac{9}{2}</m>. The solution set is <m>\{-\frac{7}{4}, \frac{9}{2}\}</m>.
+          </p>
+          <p>
+            We frequently have to perform some preliminary steps before invoking the zero-product property.  Specifically:
+          </p>
+          <p>
+            <ol label="1">
+              <li>Completely expand both sides of the equation.</li>
+              <li>Add and/or subtract to/from both sides of the equation so that one side of the equation is zero.  The next step will be easier if make sure that the second degree term (<m>ax^2</m>) has a positive coefficient.</li>
+              <li>Factor the non-zero side of the equation.</li>
+              <li>We are now set to invoke the zero-product property.</li>
+            </ol>
+            <p></p>
+          </p>
+          <p>
+            Several examples follow.
+          </p>
+
+          <p>
+            Example: Use the zero-product property to solve <m>4x^2=4x+15</m>.
+            <md>
+              <mrow>4x^2\amp=4x+15</mrow>
+              <mrow>4x^2\subtractright{4x}\subtractright{15}\amp=4x+15\subtractright{4x}\subtractright{15}</mrow>
+              <mrow>4x^2-4x-15\amp=0</mrow>
+              <mrow>4x^2-10x+6x-15\amp=0</mrow>
+              <mrow>2x(2x-5)+3(2x-5)\amp=0</mrow>
+              <mrow>(2x-5)(2x+3)\amp=0</mrow>
+            </md>
+            <md>
+              <mrow>2x-5\amp=0\amp\amp\text{or}\amp 2x+3\amp=0</mrow>
+              <mrow>2x-5\addright{5}\amp=0\addright{5}\amp\amp\text{or}\amp 2x+3\subtractright{3}\amp=0\subtractright{3}</mrow>
+              <mrow>2x\amp=5\amp\amp\text{or}\amp 2x\amp=-3</mrow>
+              <mrow>\divideunder{2x}{2}\amp=\divideunder{5}{2}\amp\amp\text{or}\amp \divideunder{2x}{2}\amp=\divideunder{-3}{2}</mrow>
+              <mrow>x\amp=\frac{5}{2}\amp\amp\text{or}\amp x\amp=-\frac{3}{2}</mrow>
+            </md>
+            <p>
+              The solutions are <m>\frac{5}{2}</m> and <m>-\frac{3}{2}</m>. The solution set is <m>\{\frac{5}{2}, -\frac{3}{2}\}</m>.
+            </p>
+          </p>
+
+          <p>
+            Example: Use the zero-product property to solve <m>(x+6)(x-2)=-16</m>.
+            <md>
+              <mrow>(x+6)(x-2)\amp=-16</mrow>
+              <mrow>x^2+4x-12\amp=-16</mrow>
+              <mrow>x^2+4x+4\amp=0</mrow>
+              <mrow>(x+2)(x+2)\amp=0</mrow>
+              <mrow>x+2=0</mrow>
+              <mrow>x+2\subtractright{2}=0\subtractright{2}</mrow>
+              <mrow>x=-2</mrow>
+            </md>
+            <p>
+              The solution is <m>-2</m>. The solution set is <m>\{-2\}</m>.
+            </p>
+          </p>
+
+         <p>
+            Example: Use the zero-product property to solve <m>(x+4)(4x-5)=(7x+10)(3x-2)</m>.
+            <md>
+              <mrow>(x+4)(4x-5)\amp=(7x+10)(3x-2)</mrow>
+              <mrow>4x^2+11x-20\amp=21x^2+16x-20</mrow>
+              <mrow>4x^2+11x-20\subtractright{4x^2}\subtractright{11x}\addright{20}\amp=21x^2+16x-20\subtractright{4x^2}\subtractright{11x}\addright{20}</mrow>
+              <mrow>0\amp=17x^2+5x</mrow>
+              <mrow>0\amp=x(17x+5)</mrow>
+            </md>
+            <md>
+              <mrow>x\amp=0\amp\amp\text{or}\amp 17x+5\amp=0</mrow>
+              <mrow>x\amp=0\amp\amp\text{or}\amp 17x+5\subtractright{5}\amp=0\subtractright{5}</mrow>
+              <mrow>x\amp=0\amp\amp\text{or}\amp 17x\amp=-5</mrow>
+              <mrow>x\amp=0\amp\amp\text{or}\amp \divideunder{17x}{17}\amp=\divideunder{-5}{17}</mrow>
+              <mrow>x\amp=0\amp\amp\text{or}\amp x\amp=-\frac{5}{17}</mrow>
+            </md>
+            <p>
+              The solutions are <m>0</m> and <m>-\frac{5}{17}</m>. The solution set is <m>\{0, -\frac{5}{17}\}</m>.
+            </p>
+          </p>
+
+          <p>
+            Example: Use the zero-product property to solve <m>2-x^2=(2-x)^2</m>.
+            <md>
+              <mrow>2-x^2\amp=(2-x)^2</mrow>
+              <mrow>2-x^2\amp=(2-x)(2-x)</mrow>
+              <mrow>2-x^2\amp=4-4x+x^2</mrow>
+              <mrow>2-x^2\subtractright{2}\addright{x^2}\amp=4-4x+x^2\subtractright{2}\addright{x^2}</mrow>
+              <mrow>0\amp=2x^2-4x+2</mrow>
+              <mrow>\multiplyleft{\frac{1}{2}}0\amp=\multiplyleft{\frac{1}{2}}(2x^2-4x+2)</mrow>
+              <mrow>0\amp=x^2-2x+1</mrow>
+              <mrow>0\amp=(x-1)(x-1)</mrow>
+              <mrow>x-1\amp=0</mrow>
+              <mrow>x-1\addright{1}\amp=0\addright{1}</mrow>
+              <mrow>x\amp=1</mrow>
+            </md>
+          </p>
+          <p>
+            The solution is <m>1</m>. The solution set is <m>\{1\}</m>.
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+        <statement>
+          <p>
+            Use the zero-product property to solve each quadratic equation.  State the solutions to each equation as well as the solution set to each equation.
+            <ol>
+              <li><m>(3x+8)(5x-7)=0</m></li>
+              <li><m>x(x-6)=0</m></li>
+              <li><m>x(x-3)=10</m></li>
+              <li><m>x^2+12x=-36</m></li>
+              <li><m>4t(8t+9)=5</m></li>
+              <li><m>2y^2=y</m></li>
+              <li><m>(w-10)(w+1)=-10</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+                <p>
+                  We begin by setting each of the factors from the left side of the equation equal to zero.
+                <md>
+                  <mrow>(3x+8)(5x-7)\amp=0</mrow>
+                </md>
+                <md>
+                  <mrow>3x+8\amp=0 \amp\amp\text{or}\amp 5x-7\amp= 0</mrow>
+                  <mrow>3x+8\subtractright{8}\amp=0\subtractright{8} \amp\amp\text{or}\amp 5x-7\addright{7}\amp= 0\addright{7}</mrow>
+                  <mrow>3x\amp=-8 \amp\amp\text{or}\amp 5x\amp=7</mrow>
+                  <mrow>\divideunder{3x}{3}\amp=\divideunder{-8}{3} \amp\amp\text{or}\amp \divideunder{5x}{5}\amp=\divideunder{7}{5}</mrow>
+                  <mrow>x\amp=-\frac{8}{3} \amp\amp\text{or}\amp x\amp=\frac{7}{5}</mrow>
+                </md>
+                </p>
+                <p>
+                  The solutions are <m>-\frac{8}{3}</m> and <m>\frac{7}{5}</m>.
+                </p>
+                <p>
+                  The solution set is <m>\{-\frac{8}{3}, \frac{7}{5}\}</m>.
+                </p>
+                <me></me>
+              </li>
+
+              <li>
+                <p>
+                  We begin by setting each of the factors from the left side of the equation equal to zero.
+                <md>
+                  <mrow>x(x-6)\amp=0</mrow>
+                </md>
+                <md>
+                  <mrow>x\amp=0 \amp\amp\text{or}\amp x-6\amp=0</mrow>
+                  <mrow>x\amp=0 \amp\amp\text{or}\amp x-6\addright{6}\amp=0\addright{6}</mrow>
+                  <mrow>x\amp=0 \amp\amp\text{or}\amp x\amp=6</mrow>
+                </md>
+                </p>
+                <p>
+                  The solutions are <m>0</m> and <m>6</m>.
+                </p>
+                <p>
+                  The solution set is <m>\{0, 6\}</m>.
+                </p>
+                <me></me>
+              </li>
+
+              <li>
+                <p>
+                  We begin by making the right side of the equation zero and then factoring the left side of the equation.
+                <md>
+                  <mrow>x(x-3)\amp=10</mrow>
+                  <mrow>x(x-3)\subtractright{10}\amp=10\subtractright{10}</mrow>
+                  <mrow>x^2-3x-10\amp=0</mrow>
+                  <mrow>(x-5)(x+2)\amp=0</mrow>
+                </md>
+                <md>
+                  <mrow>x-5\amp=0 \amp\amp\text{or}\amp x+2\amp=0</mrow>
+                  <mrow>x-5\addright{5}\amp=0\addright{5} \amp\amp\text{or}\amp x+2\subtractright{2}\amp=0\subtractright{2}</mrow>
+                  <mrow>x\amp=5 \amp\amp\text{or}\amp x\amp=-2</mrow>
+                </md>
+                </p>
+                <p>
+                  The solutions are <m>5</m> and <m>-2</m>.
+                </p>
+                <p>
+                  The solution set is <m>\{5, -2\}</m>.
+                </p>
+                <me></me>
+              </li>
+
+              <li>
+                <p>
+                  We begin by making the right side of the equation zero and then factoring the left side of the equation.
+                <md>
+                  <mrow>x^2+12x\amp=-36</mrow>
+                  <mrow>x^2+12x\addright{36}\amp=-36\addright{36}</mrow>
+                  <mrow>x^2+12x+36\amp=0</mrow>
+                  <mrow>(x+6)(x+6)\amp=0</mrow>
+                  <mrow>x+6\amp=0</mrow>
+                  <mrow>x+6\subtractright{6}\amp=0\subtractright{6}</mrow>
+                  <mrow>x\amp=-6</mrow>
+                </md>
+                </p>
+                <p>
+                  The solution is <m>-6</m>.
+                </p>
+                <p>
+                  The solution set is <m>\{-6\}</m>.
+                </p>
+                <me></me>
+              </li>
+
+              <li>
+                <p>
+                  We begin by expanding the left side of the equation, making the right side of the equation zero, and then factoring the left side of the equation.
+                <md>
+                  <mrow>4t(8t+9)\amp=5</mrow>
+                  <mrow>32t^2+36t\amp=5</mrow>
+                  <mrow>32t^2+36t\subtractright{5}\amp=5\subtractright{5}</mrow>
+                  <mrow>32t^2+36t-5\amp=0</mrow>
+                  <mrow>32t^2+40t-4t-5\amp=0</mrow>
+                  <mrow>8t(4t+5)-1 \cdot (4t+5)\amp=0</mrow>
+                  <mrow>(4t+5)(8t-1)\amp=0</mrow>
+                </md>
+                <md>
+                  <mrow>4t+5\amp=0 \amp\amp\text{or}\amp 8t-1\amp=0</mrow>
+                  <mrow>4t+5\subtractright{5}\amp=0\subtractright{5} \amp\amp\text{or}\amp 8t-1\addright{1}\amp=0\addright{1}</mrow>
+                  <mrow>4t\amp=-5 \amp\amp\text{or}\amp 8t\amp=1</mrow>
+                  <mrow>\divideunder{4t}{4}\amp=-\divideunder{5}{4} \amp\amp\text{or}\amp \divideunder{8t}{8}\amp=\divideunder{1}{8}</mrow>
+                  <mrow>t\amp=-\frac{5}{4} \amp\amp\text{ or }\amp t\amp=\frac{1}{8}</mrow>
+                </md>
+                </p>
+                <p>
+                  The solutions are <m>-\frac{5}{4}</m> and <m>\frac{1}{8}</m>.
+                </p>
+                <p>
+                  The solution set is <m>\{-\frac{5}{4}, \frac{1}{8}\}</m>.
+                </p>
+                <me></me>
+              </li>
+
+              <li>
+                <p>
+                  We begin by making the right side of the equation zero and then factoring the left side of the equation.
+                <md>
+                  <mrow>2y^2\amp=y</mrow>
+                  <mrow>2y^2\subtractright{y}\amp=y\subtractright{y}</mrow>
+                  <mrow>2y^2-y\amp=0</mrow>
+                  <mrow>y(2y-1)\amp=0</mrow>
+                </md>
+                <md>
+                  <mrow>y\amp=0 \amp\amp\text{or}\amp 2y-1\amp=0</mrow>
+                  <mrow>y\amp=0 \amp\amp\text{or}\amp 2y-1\addright{1}\amp=0\addright{1}</mrow>
+                  <mrow>y\amp=0 \amp\amp\text{or}\amp 2y\amp=1</mrow>
+                  <mrow>y\amp=0 \amp\amp\text{or}\amp \divideunder{2y}{2}\amp=\divideunder{1}{2}</mrow>
+                  <mrow>y\amp=0 \amp\amp\text{or}\amp y\amp=\frac{1}{2}</mrow>
+                </md>
+                </p>
+                <p>
+                  The solutions are <m>0</m> and <m>\frac{1}{2}</m>.
+                </p>
+                <p>
+                  The solution set is <m>\{0, \frac{1}{2}\}</m>.
+                </p>
+                <me></me>
+              </li>
+
+              <li>
+                <p>
+                  We begin by expanding the left side of the equation, making the right side of the equation zero, and then factoring the left side of the equation.
+                <md>
+                  <mrow>(w-10)(w+1)\amp=-10</mrow>
+                  <mrow>w^2-9w-10\amp=-10</mrow>
+                  <mrow>w^2-9w-10\addright{10}\amp=-10\addright{10}</mrow>
+                  <mrow>w^2-9w\amp=0</mrow>
+                  <mrow>w(w-9)\amp=0</mrow>
+                </md>
+                <md>
+                  <mrow>w\amp=0 \amp\amp\text{or}\amp w-9\amp=0</mrow>
+                  <mrow>w\amp=0 \amp\amp\text{or}\amp w-9\addright{9}\amp=0\addright{9}</mrow>
+                  <mrow>w\amp=0 \amp\amp\text{or}\amp w\amp=9</mrow>
+                </md>
+                </p>
+                <p>
+                  The solutions are <m>0</m> and <m>9</m>.
+                </p>
+                <p>
+                  The solution set is <m>\{0, 9\}</m>.
+                </p>
+              </li>
+
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+        <statement>
           <p>
             Use the zero-product property to solve each quadratic equation.
             <ol>
@@ -73,12 +410,318 @@
         </solution>
       </exercise>
 
+    </exercises>
+    <exercises>
+      <title>Solving Quadratic Equations using the Square Root Method</title>
+
       <exercise>
-        <title>Solving quadratic equations using the square root method</title>
+        <title>Explanation and examples</title>
         <statement>
           <p>
-            Follow this link to see some examples: <xref ref="workshop-quadratic-equations-square-root-method-examples">Written Examples</xref>.
-          </p> 
+            If <m>k</m> is a positive number and <m>u^2=k</m>, then:<me>u=\sqrt{k}\text{ or } u=-\sqrt{k}</me>.  The latter set of equations is frequently abbreviate as <me>u= \pm \sqrt{k}</me> which is read aloud as "<m>u</m> is equal to plus or minus the square root of <m>k</m>."
+          </p>
+          <p>
+            For example, if <m>x^2=64</m>, then <m>x= \pm \sqrt{64}</m> which, of course, simplifies to <m>x= \pm 8</m>.  So the original equation has two solutions: <m>-8</m> and <m>8</m>.
+          </p>
+          <p>
+            Another example follows.  Solve <m>(3x+5)^2=16</m>.
+          </p>
+          <p>
+            <md>
+              <mrow>(3x+5)^2\amp=16</mrow>
+              <mrow>3x+5\amp=\pm \sqrt{16}</mrow>
+              <mrow>3x+5\amp=\pm 4</mrow>
+            </md>
+            <md>
+              <mrow>3x+5\amp=-4\amp\amp\text{or}\amp 3x+5\amp=4</mrow>
+              <mrow>3x+5\subtractright{5}\amp=-4\subtractright{5}\amp\amp\text{or}\amp 3x+5\subtractright{5}\amp=4\subtractright{5}</mrow>
+              <mrow>3x\amp=-9\amp\amp\text{or}\amp 3x\amp=-1</mrow>
+              <mrow>\divideunder{3x}{3}\amp=\divideunder{-9}{3}\amp\amp\text{or}\amp \divideunder{3x}{3}\amp=\divideunder{-1}{3}</mrow>
+              <mrow>x\amp=-3\amp\amp\text{or}\amp x\amp=-\frac{1}{3}</mrow>
+            </md>
+          </p>
+          <p>
+            The solutions are <m>-3</m> and <m>-\frac{1}{3}</m>.  The solution set is <m>\{-3, -\frac{1}{3}\}</m>.
+          </p>
+          <p>
+            We frequently have to do some preliminary work to have an equation of form <m>u^2=k</m>.  The process involves completing the square.  Completing the square entails adding a number to an expression of form <m>x^2+bx</m> so that the resultant trinomial factors into a perfect square.  The number that complete the square is always the square of half of <m>b</m>.
+          </p>
+          <p>
+            For example, the number that completes the square for <m>x^2+10x</m> is <m>5^2</m> which is <m>25</m>.  Note:
+            <md>
+              <mrow>x^2+10x+25\amp=(x+5)(x+5)</mrow>
+              <mrow>\amp=(x+5)^2</mrow>
+            </md>
+          </p>
+          <p>
+            The steps followed when using the square root method are listed below.
+            <p>
+              <ol label="1">
+                <li>Perform any and all manipulations so that the equation has the form <m>x^2+bx=c</m>.</li>
+                <li>Complete the square by adding <m>(\frac{b}{2})^2</m>.  Note that to keep the equation in balance <m>(\frac{b}{2})^2</m> also needs to be added to the other side of the equation.</li>
+                <li>Factor the non-constant side of the equation.  The equation should now have form <m>u^2=k</m>.</li>
+                <li>If the constant, <m>k</m>, is negative, then the equation has no solution.  If <m>k</m> is zero, then the equation has one solution which is determined by solving <m>u=0</m>.  Step 5 is written under the assumption that <m>k</m> is a positive number.</li>
+                <li>Invoke the square root property, i.e. <m>u=\pm \sqrt{k}</m>.  If <m>k</m> is a perfect square, you need to write out and solve two equations.
+                <me>u=-\sqrt{k}\text{ or }u=\sqrt{k}</me>.  If <m>k</m> is not a perfect square, you may solve for <m>u</m> maintaining the plus/minus sign.  Make sure to simplify the square root should it simplify.</li>
+                <li>State your solutions and/or solution set.</li>
+              </ol>
+            </p>
+            <p>
+            </p>
+            Several examples follow.
+          </p>
+
+          <p>
+            Example: Solve <m>x^2-6x-7=0</m> by the square root method after first completing the square.
+            <md>
+              <mrow>x^2-6x-7\amp=0</mrow>
+              <mrow>x^2-6x-7\addright{7}\amp=0\addright{7}</mrow>
+              <mrow>x^2-6x\amp=7</mrow>
+              <mrow>x^2-6x\addright{9}\amp=7\addright{9}\text{   (completing the square)}</mrow>
+              <mrow>(x-3)^2\amp=16</mrow>
+              <mrow>x-3\amp=\pm \sqrt{16}</mrow>
+              <mrow>x-3\amp=\pm 4</mrow>
+            </md>
+            <md>
+              <mrow>x-3\addright{3}\amp=-4\addright{3}\amp\amp\text{or}\amp x-3\addright{3}\amp=4\addright{3}</mrow>
+              <mrow>x\amp=-1\amp\amp\text{or}\amp x\amp=7</mrow>
+            </md>
+          </p>
+          <p>
+            The solutions are <m>-1</m> and <m>7</m>.  The solution set is <m>\{-1, 7\}</m>.
+          </p>
+
+          <p>
+            Example: Solve <m>(2x-1)(2x+1)=7-32x</m> by the square root method after first completing the square.
+            <md>
+              <mrow>(2x-1)(2x+1)\amp=7-32x</mrow>
+              <mrow>4x^2-1\amp=7-32x</mrow>
+              <mrow>4x^2-1\addright{32x}\addright{1}\amp=7-32x\addright{32x}\addright{1}</mrow>
+              <mrow>4x^2+32x\amp=8</mrow>
+              <mrow>\multiplyleft{\frac{1}{4}}(4x^2+32x)\amp=\multiplyleft{\frac{1}{4}}8</mrow>
+              <mrow>x^2+8x\amp=2</mrow>
+              <mrow>x^2+8x\addright{16}\amp=2\addright{16}\text{   (completing the square)}</mrow>
+              <mrow>(x+4)^2\amp=18</mrow>
+              <mrow>x+4\amp=\pm \sqrt{18}</mrow>
+              <mrow>x+4\amp=\pm 3\sqrt{2}</mrow>
+              <mrow>x+4\amp\subtractright{4}=\pm 3\sqrt{2}\subtractright{4}</mrow>
+              <mrow>x\amp=-4\pm 3\sqrt{2}</mrow>
+            </md>
+          </p>
+          <p>
+            The solutions are <m>-4-3\sqrt{2}</m> and <m>-4+3\sqrt{2}</m>.  
+          </p>
+          <p>
+            The solutions set is <m>\{-4-3\sqrt{2}, -4+3\sqrt{2}\}</m>.
+          </p>
+
+          <p>
+            Example: Solve <m>x^2+9x+25=0</m> by the square root method after first completing the square.
+            <md>
+              <mrow>x^2+9x+25\amp=0</mrow>
+              <mrow>x^2+9x+25\subtractright{25}\amp=0\subtractright{25}</mrow>
+              <mrow>x^2+9x\amp=-25</mrow>
+              <mrow>x^2+9x\addright{\frac{81}{4}}\amp=-25\addright{\frac{81}{4}}\text{   (completing the square)}</mrow>
+              <mrow>(x+\frac{9}{2})^2\amp=-\frac{19}{4}</mrow>
+            </md>
+          </p>
+          <p>
+            The equation has no real number solutions.
+          </p>
+          <p>
+            Over the real numbers, the solution set is <m>\emptyset</m>.
+          </p>
+
+          <p>
+            Example: Solve <m>4x^2-28x=-11</m> by the square root method after first completing the square.
+            <md>
+              <mrow>4x^2-28x\amp=-11</mrow>
+              <mrow>\multiplyleft{\frac{1}{4}}(4x^2-28x)\amp=\multiplyleft{\frac{1}{4}}-11</mrow>
+              <mrow>x^2-7x\amp=-\frac{11}{4}</mrow>
+              <mrow>x^2-7x\addright{\frac{49}{4}}\amp=-\frac{11}{4}\addright{\frac{49}{4}}\text{   (completing the square)}</mrow>
+              <mrow>(x-\frac{7}{2})^2\amp=\frac{38}{4}</mrow>
+              <mrow>x-\frac{7}{2}\amp=\pm \sqrt{\frac{38}{4}}</mrow>
+              <mrow>x-\frac{7}{2}\amp=\pm \frac{\sqrt{38}}{2}</mrow>
+              <mrow>x-\frac{7}{2}\addright{\frac{7}{2}}\amp=\pm \frac{\sqrt{38}}{2}\addright{\frac{7}{2}}</mrow>
+              <mrow>x\amp=\frac{7}{2} \pm \frac{\sqrt{38}}{2}</mrow>
+              <mrow>x\amp=\frac{7 \pm \sqrt{38}}{2}</mrow>
+            </md>
+          </p>
+          <p>
+            The solutions are <m>\frac{7-\sqrt{38}}{2}</m> and <m>\frac{7+\sqrt{38}}{2}</m>.
+          </p>
+          <p>
+            The solution set is <m>\{\frac{7-\sqrt{38}}{2}, \frac{7+\sqrt{38}}{2}\}</m>.
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+        <statement>
+          <p>
+            Use the square root method to solve each of the following quadratic equations over the real numbers.  Make sure that all solutions are completely simplified.  State the solutions to each equation as well as the solution set to each equation.
+            <ol>
+              <li><m>(2t-1)^2=9</m></li>
+              <li><m>(3x-2)^2=72</m></li>
+              <li><m>x^2-8x+16=12</m></li>
+              <li><m>y^2+20y+80=0</m></li>
+              <li><m>x^2+4x+7=0</m></li>
+              <li><m>w^2-7w+7=0</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+                <p>We start by applying the square root property.
+                  <md>
+                    <mrow>(2t-1)^2\amp=9</mrow>
+                    <mrow>2t-1\amp=\pm \sqrt{9}</mrow>
+                    <mrow>2t-1\amp=\pm 3</mrow>
+                  </md>
+                  <md>
+                    <mrow>2t-1\amp =-3\amp\amp\text{ or }\amp 2t-1\amp=3</mrow>
+                    <mrow>2t-1\addright{1}\amp =-3\addright{1}\amp\amp\text{ or }\amp 2t-1\addright{1}\amp=3\addright{1}</mrow>
+                    <mrow>2t\amp =-2\amp\amp\text{ or }\amp 2t\amp=4</mrow>
+                    <mrow>\divideunder{2t}{2}\amp =\divideunder{-2}{2}\amp\amp\text{ or }\amp \divideunder{2t}{2}\amp=\divideunder{4}{2}</mrow>
+                    <mrow>t\amp =-1\amp\amp\text{ or }\amp t\amp=2</mrow>
+                  </md>
+                  </p>
+                  <p>
+                    The solutions are <m>-1</m> and <m>2</m>.  
+                  </p>
+                  <p>
+                    The solution set is <m>\{-1, 2\}</m>.
+                  </p>
+                  <me></me>
+              </li>
+
+              <li>
+                <p>We start by applying the square root property.
+                <md>
+                  <mrow>(3x-2)^2\amp=72</mrow>
+                  <mrow>3x-2\amp=\pm \sqrt{72}</mrow>
+                  <mrow>3x-2\amp=\pm \sqrt{36 \cdot 2}</mrow>
+                  <mrow>3x-2\amp=\pm 6\sqrt{2}</mrow>
+                  <mrow>3x-2\addright{2}\amp=\pm 6\sqrt{2}\addright{2}</mrow>
+                  <mrow>3x\amp=2\pm 6\sqrt{2}</mrow>
+                  <mrow>\multiplyleft{\frac{1}{3}}3x\amp=\multiplyleft{\frac{1}{3}}(2\pm 6\sqrt{2})</mrow>
+                  <mrow>x\amp=\frac{2\pm 6\sqrt{2}}{3}</mrow>
+                </md>
+                </p>
+                <p>
+                  The solutions are <m>\frac{2-6\sqrt{2}}{3}</m> and <m>\frac{2+6\sqrt{2}}{3}</m>. 
+                </p>
+                <p>
+                  The solution set is <m>\{\frac{2-6\sqrt{2}}{3}, \frac{2+6\sqrt{2}}{3}\}</m>.
+                </p>
+                <me></me>
+              </li>
+
+              <li>
+                <p>
+                    We start by factoring the perfect-square trinomial <m>x^2-8x+16</m>.
+                <md>
+                  <mrow>x^2-8x+16\amp=12</mrow>
+                  <mrow>(x-4)^2\amp=12</mrow>
+                  <mrow>x-4\amp=\pm \sqrt{12}</mrow>
+                  <mrow>x-4\amp=\pm \sqrt{4 \cdot 3}</mrow>
+                  <mrow>x-4\amp=\pm 2\sqrt{3}</mrow>
+                  <mrow>x-4\addright{4}\amp=\pm 2\sqrt{3}\addright{4}</mrow>
+                  <mrow>x\amp=4\pm 2\sqrt{3}</mrow>
+                </md>
+                </p>
+                <p>
+                  The solutions are <m>4-2\sqrt{3}</m> and <m>4+2\sqrt{3}</m>.
+                </p>
+                <p>  
+                  The solution set is <m>\{4-2\sqrt{3}, 4+2\sqrt{3}\}</m>.
+                </p>
+                <me></me>
+              </li>
+
+              <li>
+                <p>
+                  We start by moving the constant term to the right side of the equation and then completing the square on the left side of the equation.
+                <md>
+                  <mrow>y^2+20y+80\amp=0</mrow>
+                  <mrow>y^2+20y+80\subtractright{80}\amp=0\subtractright{80}</mrow>
+                  <mrow>y^2+20y\amp=-80</mrow>
+                  <mrow>y^2+20y+100\amp=-80+100</mrow>
+                  <mrow>(y+10)^2\amp=20</mrow>
+                  <mrow>y+10\amp=\pm \sqrt{20}</mrow>
+                  <mrow>y+10\amp=\pm \sqrt{4 \cdot 5}</mrow>
+                  <mrow>y+10\amp=\pm 2\sqrt{5}</mrow>
+                  <mrow>y+10\subtractright{10}\amp=\pm 2\sqrt{5}\subtractright{10}</mrow>
+                  <mrow>y\amp=-10\pm 2\sqrt{5}</mrow>
+                </md>
+                </p>
+                <p>
+                  The solutions are <m>-10-2\sqrt{5}</m> and <m>-10+2\sqrt{5}</m>.
+                </p>
+                <p>  
+                  The solution set is <m>\{10-2\sqrt{5}, -10+2\sqrt{5}\}</m>.
+                </p>
+                <me></me>
+              </li>
+
+              <li>
+                <p>We start by moving the constant term to the right side of the equation and then completing the square on the left side of the equation.
+                <md>
+                  <mrow>x^2+4x+7\amp=0</mrow>
+                  <mrow>x^2+4x+7\subtractright{7}\amp=0\subtractright{7}</mrow>
+                  <mrow>x^2+4x\amp=-7</mrow>
+                  <mrow>x^2+4x\addright{4}\amp=-7\addright{4}\text{ (completing the square)}</mrow>
+                  <mrow>(x+2)^2\amp=-3</mrow>
+                </md>
+                </p>
+                <p>
+                  The equation <m>x^2+4x+7=0</m> has no real number solutions.
+                </p>
+                <p>  
+                  Over the real numbers the solutions set is <m>\emptyset</m>.
+                </p>
+                <me></me>
+              </li>
+
+              <li>
+                <p>
+                  We start by moving the constant term to the right side of the equation and then completing the square on the left side of the equation.
+                <md>
+                  <mrow>w^2-7w+7\amp=0</mrow>
+                  <mrow>w^2-7w+7\subtractright{7}\amp=0\subtractright{7}</mrow>
+                  <mrow>w^2-7w\amp=-7</mrow>
+                  <mrow>w^2-7w\addright{\frac{49}{4}}\amp=-7\addright{\frac{49}{4}}\text{ (completing the square)}</mrow>
+                  <mrow>(w-\frac{7}{2})^2\amp=\frac{21}{4}</mrow>
+                  <mrow>w-\frac{7}{2}\amp=\pm \sqrt{\frac{21}{4}}</mrow>
+                  <mrow>w-\frac{7}{2}\amp=\pm \frac{\sqrt{21}}{2}</mrow>
+                  <mrow>w-\frac{7}{2}\addright{\frac{7}{2}}\amp=\pm \frac{\sqrt{21}}{2}\addright{\frac{7}{2}}</mrow>
+                  <mrow>w\amp=\frac{7}{2}\pm \frac{\sqrt{21}}{2}</mrow>
+                  <mrow>w\amp=\frac{7\pm \sqrt{21}}{2}</mrow>
+                </md>
+                </p>
+                <p>
+                  The solutions are <m>\frac{7-\sqrt{21}}{2}</m> and <m>\frac{7+\sqrt{21}}{2}</m>.
+                </p>
+                <p>  
+                  The solution set is <m>\{\frac{7-\sqrt{21}}{2}, \frac{7+\sqrt{21}}{2}\}</m>.
+                </p>
+              </li>
+
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+        <statement>
           <p>
             Use the square root method to solve each of the following quadratic equations. Make sure that all solutions are completely simplified.  Note that for some of the equations you will need to first complete the square. 
             <ol>
@@ -120,477 +763,18 @@
           </p>
         </solution>
       </exercise>
-       <exercise>
-      <title>Using the quadratic formula</title>
-      <statement>
-        <p>
-          Follow this link to see some examples: <xref ref="workshop-quadratic-equations-quadratic-formula-examples">Written Examples</xref>.
-        </p>
-        <p>
-          Use the quadratic formula to solve each of the following equations over the real numbers.  
-          <ol>
-            <li><m>2x^2+8x-5=0</m></li>
-            <li><m>t^2-15t=100</m></li>
-            <li><m>-x^2+4x+3=0</m></li>
-            <li><m>x(3x-5)=-6</m></li>
-          </ol>
-          <p>
-          </p>
-        </p>
-      </statement>
 
-      <solution>
-        <p>
-          <ol>
-            <li>
-              <p>
-                The solutions are <m>\frac{-4-\sqrt{26}}{2}</m> and <m>\frac{-4+\sqrt{26}}{2}</m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                The solutions are <m>-5</m> and <m>20</m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                The solutions are <m>2-\sqrt{7}</m> and <m>2+\sqrt{7}</m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                The equation has no real number solutions,
-              </p>
-            </li>
-            
-          </ol>
-        </p>
-      </solution>
-    </exercise>
-
-    <exercise>
-      <title>Complex number solutions to quadratic equations</title>
-      <statement>
-        <p>
-          Follow this link to see some examples: <xref ref="workshop-quadratic-equations-complex-solutions-examples">Written Examples</xref>.
-        </p>
-        <p>
-          Use the square root method to solve each of the following equations.  Make sure that all solutions have been completely simplified.   Note that for one of the equations you will need to first complete the square.
-          <ol>
-            <li><m>(x-7)^2=-1</m></li>
-            <li><m>(2x-9)^2=-48</m></li>
-            <li><m>-2w^2+12w-24=0</m></li>
-          </ol>
-          <p>
-          </p>
-        </p>
-        <p>
-          Use the quadratic formula to solve each of the following equations.  Make sure that all solutions have been completely simplified.  State both the solutions and the solution set.
-          <ol label="i">
-            <li><m>6x^2+1=2x</m></li>
-            <li><m>y^2-18y+97=0</m></li>
-          </ol>
-          <p>
-          </p>
-        </p>
-      </statement>
-
-      <solution>
-        <p>
-          <ol>
-            <li>
-              <p>
-                The solutions are <m>7-i</m> and <m>7+i</m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                The solutions are <m>\frac{9}{2}-2\sqrt{3}i</m> and <m>\frac{9}{2}-2\sqrt{3}i</m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                The solutions are <m>3-\sqrt{3}i</m> and <m>3+\sqrt{3}i</m>.
-              </p>
-            </li>
-          </ol>
-          <ol label="i">
-            <li>
-              <p>
-                The solutions are <m>\frac{1}{6}-\frac{\sqrt{5}}{6}i</m> and <m>\frac{1}{6}+\frac{\sqrt{5}}{6}i</m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                The solutions are <m>9-4i</m> and <m>9+4i</m>.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </solution>
-    </exercise>
-
-      <exercise>
-      <title>The discriminant and the nature of solutions to quadratic equations</title>
-      <statement>
-        <p>
-          Follow this link to see some examples: <xref ref="workshop-quadratic-equations-discriminant-examples">Written Examples</xref>.
-        </p>
-        <p>
-          For each equation, use the value of the discriminant to determine the nature of the solution.  That's all - do not find the actual solutions.
-          <ol>
-            <li><m>12x^2+4x+3=0</m></li>
-            <li><m>-x^2+4x+4=0</m></li>
-            <li><m>-49+14x-x^2=0</m></li>
-          </ol>
-          <p>
-          </p>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <ol>
-            <li>
-              <p>
-                The equation has two complex number solutions with non-zero imaginary coefficients.
-              </p>
-            </li>
-            <li>
-              <p>
-                The equations has two real number solutions.
-              </p>
-            </li>
-            <li>
-              <p>
-                The equation has one real number solution.
-              </p>
-            </li>
-
-          </ol>
-        </p>
-      </solution>
-    </exercise>
-
-     
-  </exercises>
+    </exercises>
 
     <exercises>
-      <title>Written Examples</title>
+      <title>Solving Quadratic Equations using the Quadratic Formula</title>
 
-      <exercise xml:id="workshop-quadratic-equations-zero-product-property-examples">
-        <title>Solving quadratic equations using the zero-product property</title>
-        <statement>
-          <p>
-            When the product of two numbers is zero, at least one of the numbers in the product must be zero.  This is a property unique to zero; e.g., when two numbers multiply to, say, ten, not only is it not the case that one of the two numbers need be ten, the only restriction on the two numbers at all is that neither be zero.
-          </p>
-          <p>
-            When solving an equation of form: <me>ab=0</me>, the next step in the process is to state:<me>a=0\text{  or  }b=0</me>.  We then soleve the two new equations separately and state our solutions, or solution set.  For example:
-            <md>
-              <mrow>(4x+7)(2x-9)=0</mrow>
-            </md>
-            <md>
-              <mrow>4x+7\amp=0\amp\amp\text{or}\amp 2x-9\amp=0</mrow>
-              <mrow>4x\amp=-7\amp\amp\text{or}\amp 2x\amp=9</mrow>
-              <mrow>x\amp=-\frac{7}{4}\amp\amp\text{or}\amp x\amp=\frac{9}{2}</mrow>
-            </md>
-          </p>
-          <p>
-            The solutions are <m>-\frac{7}{4}</m> and <m>\frac{9}{2}</m>. The solution set is <m>\{-\frac{7}{4}, \frac{9}{2}\}</m>.
-          </p>
-          <p>
-            We frequently have to perform some preliminary steps before invoking the zero-product property.  Specifically:
-          </p>
-          <p>
-            <ol label="1">
-              <li>Completely expand both sides of the equation.</li>
-              <li>Add and/or subtract to/from both sides of the equation so that one side of the equation is zero.  The next step will be easier if make sure that the second degree term (<m>ax^2</m>) has a positive coefficient.</li>
-              <li>Factor the non-zero side of the equation.</li>
-              <li>We are now set to invoke the zero-product property.</li>
-            </ol>
-            <p></p>
-          </p>
-          <p>
-            Several examples follow.
-          </p>
-
-          <p>
-            Example
-            <md>
-              <mrow>4x^2\amp=4x+15</mrow>
-              <mrow>4x^2-4x-15\amp=0</mrow>
-              <mrow>4x^2-10x+6x-15\amp=0</mrow>
-              <mrow>2x(2x-5)+3(2x-5)\amp=0</mrow>
-              <mrow>(2x-5)(2x+3)\amp=0</mrow>
-            </md>
-            <md>
-              <mrow>2x-5\amp=0\amp\amp\text{or}\amp 2x+3\amp=0</mrow>
-              <mrow>2x\amp=5\amp\amp\text{or}\amp 2x\amp=-3</mrow>
-              <mrow>x\amp=\frac{5}{2}\amp\amp\text{or}\amp x\amp=-\frac{3}{2}</mrow>
-            </md>
-            <p>
-              The solutions are <m>\frac{5}{2}</m> and <m>-\frac{3}{2}</m>. The solution set is <m>\{\frac{5}{2}, -\frac{3}{2}\}</m>.
-            </p>
-          </p>
-
-          <p>
-            Example
-            <md>
-              <mrow>(x+6)(x-2)\amp=-16</mrow>
-              <mrow>x^2+4x-12\amp=-16</mrow>
-              <mrow>x^2+4x+4\amp=0</mrow>
-              <mrow>(x+2)(x+2)\amp=0</mrow>
-              <mrow>x+2=0</mrow>
-              <mrow>x=-2</mrow>
-            </md>
-            <p>
-              The solution is <m>-2</m>. The solution set is <m>\{-2\}</m>.
-            </p>
-          </p>
-
-         <p>
-            Example
-            <md>
-              <mrow>(x+4)(4x-5)\amp=(7x+10)(3x-2)</mrow>
-              <mrow>4x^2+11x-20\amp=21x^2+16x-20</mrow>
-              <mrow>0\amp=17x^2+5x</mrow>
-              <mrow>0\amp=x(17x+5)</mrow>
-            </md>
-            <md>
-              <mrow>x\amp=0\amp\amp\text{or}\amp 17x+5\amp=0</mrow>
-              <mrow>x\amp=0\amp\amp\text{or}\amp 17x\amp=-5</mrow>
-              <mrow>x\amp=0\amp\amp\text{or}\amp x\amp=-\frac{5}{17}</mrow>
-            </md>
-            <p>
-              The solutions are <m>0</m> and <m>-\frac{5}{17}</m>. The solution set is <m>\{0, -\frac{5}{17}\}</m>.
-            </p>
-          </p>
-
-          <p>
-            Example
-            <md>
-              <mrow>2-x^2\amp=(2-x)^2</mrow>
-              <mrow>2-x^2\amp=(2-x)(2-x)</mrow>
-              <mrow>2-x^2\amp=4-4x+x^2</mrow>
-              <mrow>0\amp=2x^2-4x+2</mrow>
-              <mrow>\frac{1}{2} \cdot 0\amp=\frac{1}{2} \cdot (2x^2-4x+2)</mrow>
-              <mrow>0\amp=x^2-2x+1</mrow>
-              <mrow>0\amp=(x-1)(x-1)</mrow>
-              <mrow>x-1\amp=0</mrow>
-              <mrow>x\amp=1</mrow>
-            </md>
-            <p>
-              The solution is <m>1</m>. The solution set is <m>\{1\}</m>.
-            </p>
-            <p>
-              Click here to access some practice problems: <xref ref="workshop-quadratic-equations-zero-product-property-exercises">Practice Exercises</xref>.
-            </p>
-          </p>
-
-
-
-        </statement>
-      </exercise>
-
-      <exercise xml:id="workshop-quadratic-equations-square-root-method-examples">
-        <title>Solving quadratic equations using the square root method</title>
-        <statement>
-          <p>
-            If <m>k</m> is a positive number and <m>u^2=k</m>, then:<me>u=\sqrt{k}\text{ or } u=-\sqrt{k}</me>.  The latter set of equations is frequently abbreviate as <me>u= \pm \sqrt{k}</me> which is read aloud as "<m>u</m> is equal to plus or minus the square root of <m>k</m>."
-          </p>
-          <p>
-            For example, if <m>x^2=64</m>, then <m>x= \pm \sqrt{64}</m> which, of course, simplifies to <m>x= \pm 8</m>.  So the original equation has two solutions: <m>-8</m> and <m>8</m>.
-          </p>
-          <p>
-            Another example follows.
-          </p>
-          <p>
-            <md>
-              <mrow>(3x+5)^2\amp=16</mrow>
-              <mrow>3x+5\amp=\pm \sqrt{16}</mrow>
-              <mrow>3x+5\amp=\pm 4</mrow>
-            </md>
-            <md>
-              <mrow>3x+5\amp=-4\amp\amp\text{or}\amp 3x+5\amp=4</mrow>
-              <mrow>3x\amp=-9\amp\amp\text{or}\amp 3x\amp=-1</mrow>
-              <mrow>x\amp=-3\amp\amp\text{or}\amp x\amp=-\frac{1}{3}</mrow>
-            </md>
-          </p>
-          <p>
-            The solutions are <m>-3</m> and <m>-\frac{1}{3}</m>.  The solution set is <m>\{-3, -\frac{1}{3}\}</m>.
-          </p>
-          <p>
-            We frequently have to do some preliminary work to have an equation of form <m>u^2=k</m>.  The process involves completing the square.  Completing the square entails adding a number to an expression of form <m>x^2+bx</m> so that the resultant trinomial factors into a perfect square.  The number that complete the square is always the square of half of <m>b</m>.
-          </p>
-          <p>
-            For example, the number that completes the square for <m>x^2+10x</m> is <m>5^2</m> which is <m>25</m>.  Note:
-            <md>
-              <mrow>x^2+10x+25\amp=(x+5)(x+5)</mrow>
-              <mrow>\amp=(x+5)^2</mrow>
-            </md>
-          </p>
-          <p>
-            The steps followed when using the square root method are listed below.
-            <p>
-              <ol label="1">
-                <li>Perform any and all manipulations so that the equation has the form <m>x^2+bx=c</m>.</li>
-                <li>Complete the square by adding <m>(\frac{b}{2})^2</m>.  Note that to keep the equation in balance <m>(\frac{b}{2})^2</m> also needs to be added to the other side of the equation.</li>
-                <li>Factor the non-constant side of the equation.  The equation should now have form <m>u^2=k</m>.</li>
-                <li>If the constant, <m>k</m>, is negative, then the equation has no solution.  If <m>k</m> is zero, then the equation has one solution which is determined by solving <m>u=0</m>.  Step 5 is written under the assumption that <m>k</m> is a positive number.</li>
-                <li>Invoke the square root property, i.e. <m>u=\pm \sqrt{k}</m>.  If <m>k</m> is a perfect square, you need to write out and solve two equations.
-                <me>u=-\sqrt{k}\text{ or }u=\sqrt{k}</me>.  If <m>k</m> is not a perfect square, you may solve for <m>u</m> maintaining the plus/minus sign.  Make sure to simplify the square root should it simplify.</li>
-                <li>State your solutions and/or solution set.</li>
-              </ol>
-            </p>
-            <p>
-            </p>
-            Several examples follow.
-          </p>
-
-          <p>
-            Example
-            <md>
-              <mrow>x^2-6x-7\amp=0</mrow>
-              <mrow>x^2-6x\amp=7</mrow>
-              <mrow>x^2-6x+9\amp=7+9</mrow>
-              <mrow>(x-3)^2\amp=16</mrow>
-              <mrow>x-3\amp=\pm \sqrt{16}</mrow>
-              <mrow>x-3\amp=\pm 4</mrow>
-            </md>
-            <md>
-              <mrow>x-3\amp=-4\amp\amp\text{or}\amp x-3\amp=4</mrow>
-              <mrow>x\amp=-1\amp\amp\text{or}\amp x\amp=7</mrow>
-            </md>
-          </p>
-          <p>
-            The solutions are <m>-1</m> and <m>7</m>.  The solution set is <m>\{-1, 7\}</m>.
-          </p>
-
-          <p>
-            Example
-            <md>
-              <mrow>(2x-1)(2x+1)\amp=7-32x</mrow>
-              <mrow>4x^2-1\amp=7-32x</mrow>
-              <mrow>4x^2+32x\amp=8</mrow>
-              <mrow>\frac{1}{4} \cdot (4x^2+32x)\amp=\frac{1}{4} \cdot 8</mrow>
-              <mrow>x^2+8x\amp=2</mrow>
-              <mrow>x^2+8x+16\amp=2+16</mrow>
-              <mrow>(x+4)^2\amp=18</mrow>
-              <mrow>x+4\amp=\pm \sqrt{18}</mrow>
-              <mrow>x+4\amp=\pm 3\sqrt{2}</mrow>
-              <mrow>x\amp=-4\pm 3\sqrt{2}</mrow>
-            </md>
-          </p>
-          <p>
-            The solutions are <m>-4-3\sqrt{2}</m> and <m>-4+3\sqrt{2}</m>.  
-          </p>
-          <p>
-            The solutions set is <m>\{-4-3\sqrt{2}, -4+3\sqrt{2}\}</m>.
-          </p>
-
-          <p>
-            Example
-            <md>
-              <mrow>x^2+9x+25\amp=0</mrow>
-              <mrow>x^2+9x\amp=-25</mrow>
-              <mrow>x^2+9x+\frac{81}{4}\amp=-25+\frac{81}{4}</mrow>
-              <mrow>(x+\frac{9}{2})^2\amp=-\frac{19}{4}</mrow>
-            </md>
-          </p>
-          <p>
-            The equation has no real number solutions.
-          </p>
-          <p>
-            Over the real numbers, the solution set is <m>\emptyset</m>.
-          </p>
-
-          <p>
-            Example
-            <md>
-              <mrow>4x^2-28x\amp=-11</mrow>
-              <mrow>\frac{1}{4} \cdot (4x^2-28x)\amp=\frac{1}{4} \cdot -11</mrow>
-              <mrow>x^2-7x\amp=-\frac{11}{4}</mrow>
-              <mrow>x^2-7x+\frac{49}{4}\amp=-\frac{11}{4}+\frac{49}{4}</mrow>
-              <mrow>(x-\frac{7}{2})^2\amp=\frac{38}{4}</mrow>
-              <mrow>x-\frac{7}{2}\amp=\pm \sqrt{\frac{38}{4}}</mrow>
-              <mrow>x-\frac{7}{2}\amp=\pm \frac{\sqrt{38}}{2}</mrow>
-              <mrow>x\amp=\frac{7}{2} \pm \frac{\sqrt{38}}{2}</mrow>
-              <mrow>x\amp=\frac{7 \pm \sqrt{38}}{2}</mrow>
-            </md>
-          </p>
-          <p>
-            The solutions are <m>\frac{7-\sqrt{38}}{2}</m> and <m>\frac{7+\sqrt{38}}{2}</m>.
-          </p>
-          <p>
-            The solution set is <m>\{\frac{7-\sqrt{38}}{2}, \frac{7+\sqrt{38}}{2}\}</m>.
-          </p>
-            <p>
-              Click here to access some practice problems: <xref ref="workshop-quadratic-equations-square-root-method-exercises">Practice Exercises</xref>.
-            </p>
-
-        </statement>
-      </exercise>
-
-
-     <exercise>
-      <title>Derivation of the quadratic formula</title>
+      <exercise>
+        <title>Explanation and examples</title>
       <statement>
         <p>
-          The solutions to a quadratic equation of form <me>ax^2+bx+c=0</me> can be found using the formula<me>x=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</me>.  The solution equation is called the quadratic formula.
+          As derived in the next section, it can be shown that the solutions to a quadratic equation written in the form <me>ax^2+bx+c=0</me> can be determined using the formula <me>x=\frac{-b \pm \sqrt{b^2-4ac}}{2a}.</me>  The last equation is called the quadratic formula.
         </p>
-        <p>
-          For example, let's use the quadratic formula to solve the equation <me>x^2-4x-32=0</me>.  We begin by identifying the constants <m>a</m>, <m>b</m>, and <m>c</m>.<me>a=1, b=-4, c=-32</me>.  We now replace the constants in the quadratic formula with their respective values and simplify the result.
-        <md>
-          <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
-          <mrow>x\amp=\frac{-(-4) \pm \sqrt{(-4)^2-4 \cdot 1 \cdot -32}}{2 \cdot 1}</mrow>
-          <mrow>x\amp=\frac{4 \pm \sqrt{144}}{2}</mrow>
-          <mrow>x\amp=\frac{4 \pm 12}{2}</mrow>
-        </md>
-          The symbol "<m>\pm</m>" is read "plus or minus" and implies that there are two solutions - one when the symbol is executed as subtraction and another when the symbol is executed as addition.  Picking up where we left off.
-          <md>
-            <mrow>x\amp=\frac{4-12}{2}\amp\amp\text{or}\amp x\amp=\frac{4+12}{2}</mrow>
-            <mrow>x\amp=-4\amp\amp\text{or}\amp x\amp=8</mrow>
-          </md>
-          So the solutions to the equation are <m>-4</m> and <m>8</m> and the solution set is <m>\{-4, 8\}</m>.
-        </p>
-        <p>
-          As just demonstrated, one can use the quadratic formula without having an understanding of its origin.  The remainder of this section is devoted to the derivation of the quadratic formula.  If you'd rather just get on with using it, go ahead to the next section.
-        </p>
-        <p>
-          The derivation of the quadratic equation relies on the process of completing the square.  We being with the equation<me>ax^2+bx+c=0, a \neq 0</me>.
-          Before completing the square we need to isolate the constant and divide both sides by <m>a</m> so that the coefficient on the squared term is <m>1</m>.
-          <md>
-            <mrow>ax^2+bx+c\amp=0</mrow>
-            <mrow>ax^2+bx\amp=-c</mrow>
-            <mrow>\frac{1}{a} \cdot (ax^2+bx)\amp=\frac{1}{a} \cdot -c</mrow>
-            <mrow>x^2+\frac{b}{a}x\amp=-\frac{c}{a}</mrow>
-          </md>
-          We now complete the square on the left side of the equation by adding the square of half the linear coefficient.  This action is balanced by adding the same expression to the right side of the equation.  We'll then go ahead and combine the terms on the right side of the equation.
-          <md>
-            <mrow>x^2+\frac{b}{a}x+(\frac{b}{2a})^2\amp=-\frac{c}{a}+(\frac{b}{2a})^2</mrow>
-            <mrow>x^2+\frac{b}{a}x+\frac{b^2}{4a^2}\amp=-\frac{c}{a}+\frac{b^2}{4a^2}</mrow>
-            <mrow>x^2+\frac{b}{a}x+\frac{b^2}{4a^2}\amp=-\frac{c}{a} \cdot \frac{4a}{4a}+\frac{b^2}{4a^2}</mrow>
-            <mrow>x^2+\frac{b}{a}x+\frac{b^2}{4a^2}\amp=-\frac{4ac}{4a^2}+\frac{b^2}{4a^2}</mrow>
-            <mrow>x^2+\frac{b}{a}x+\frac{b^2}{4a^2}\amp=\frac{-4ac+b^2}{4a^2}</mrow>
-            <mrow>x^2+\frac{b}{a}x+\frac{b^2}{4a^2}\amp=\frac{b^2-4ac}{4a^2}</mrow>
-          </md>
-          We now factor the left side into its perfect square and complete the derivation using the square root method.  Note that when we simplify <m>\sqrt{4a^2}</m> we can simply state <m>2a</m>.  It's true that we don't know whether <m>a</m> is a positive number or a negative number, but when we extract the roots we introduce the <m>\pm</m> sign, so we will have two roots, one positive and one negative, regardless of whether <m>a</m> is positive or negative (assuming that <m>b^2-4ac \neq 0</m>).  If <m>b^2-4ac=0</m>, then <m>\frac{b^2-4ac}{4a^2}=\frac{0}{2a}=0</m> whether <m>a</m> is positive or negative.
-          <md>
-            <mrow>x^2+\frac{b}{a}x+\frac{b^2}{4a^2}\amp=\frac{b^2-4ac}{4a^2}</mrow>
-            <mrow>(x+\frac{b}{2a})^2\amp=\frac{b^2-4ac}{4a^2}</mrow>
-            <mrow>x+\frac{b}{2a}\amp=\pm \sqrt{\frac{b^2-4ac}{4a^2}}</mrow>
-            <mrow>x+\frac{b}{2a}\amp=\pm \frac{\sqrt{b^2-4ac}}{2a}</mrow>
-            <mrow>x\amp=-\frac{b}{2a}\pm \frac{\sqrt{b^2-4ac}}{2a}</mrow>
-            <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
-          </md>
-        </p>
-
-
-      </statement>
-    </exercise>
-
-    <exercise xml:id="workshop-quadratic-equations-quadratic-formula-examples">
-      <title>Using the quadratic formula</title>
-      <statement>
         <p>
           Let's use the quadratic formula to solve the equation <m>2x^2-5x=7</m>.
         </p>
@@ -600,6 +784,7 @@
             <p>
               <md>
                 <mrow>2x^2-5x\amp=7</mrow>
+                <mrow>2x^2-5x\subtractright{7}\amp=7\subtractright{7}</mrow>
                 <mrow>2x^2-5x-7\amp=0</mrow>
               </md>
             </p>
@@ -670,655 +855,65 @@
         <p>
           Difficult as it may be to believe, there are real life applications where numbers with imaginary parts (square roots of negative numbers) are meaningful.  Because of this, we do need to examine some equations where the solutions are complex numbers with imaginary parts.  We do this in the next section.
         </p>
-            <p>
-              Click here to access some practice problems: <xref ref="workshop-quadratic-equations-quadratic-formula-exercises">Practice Exercises</xref>.
-            </p>
       </statement>
-    </exercise>
-
-     <exercise xml:id="workshop-quadratic-equations-complex-solutions-examples">
-      <title>Complex number solutions to quadratic equations</title>
-      <statement>
-        <p>
-          Let's solve the quadratic equation <m>4x^2-12x+25=0</m>.  The equation is already in standard form, so we can state the values of <m>a</m>, <m>b</m>, and <m>c</m> and proceed with the quadratic formula.
-          <sidebyside widths="60% 40%">
-            <p>
-              <m>
-                4x^2-12x+25=0
-              </m>
-            </p>
-            <p>
-              <m>
-                a=4, b=-12, c=25
-              </m>
-            </p>
-          </sidebyside>
-          <md>
-            <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
-            <mrow>x\amp=\frac{-(-12) \pm \sqrt{(-12)^2-4 \cdot 4 \cdot 25}}{2 \cdot 4}</mrow>
-            <mrow>x\amp=\frac{12 \pm \sqrt{-256}}{8}</mrow>
-          </md>
-          If we were only concerned with real number solutions we could state our conclusion now, because <m>\sqrt{-256}</m> is not a real number.  However, let's assume that we our also interested in solutions that include imaginary parts and proceed.  In our stated solutions we want the real part of each number separate from the imaginary part, so we will simplify towards that end.
-          <md>
-            <mrow>x\amp=\frac{12 \pm \sqrt{-256}}{8}</mrow>
-            <mrow>x\amp=\frac{12 \pm 16i}{8}</mrow>
-            <mrow>x\amp=\frac{12}{8} \pm \frac{16}{8}i</mrow>
-            <mrow>x\amp=\frac{3}{2} \pm 2i</mrow>
-          </md>
-          <p>
-            The solutions are <m>\frac{3}{2}-2i</m> and <m>\frac{3}{2}+2i</m>.
-          </p>
-          <p>
-            The solution set is <m>\{\frac{3}{2}-2i,\frac{3}{2}+2i\}</m>.
-          </p>
-        </p>
-        <p>
-          Let's see another example.
-        </p>
-        <p>
-          Use the quadratic formula to solve <m>x(2x-5)=4(x^2+3)</m>.
-        </p>
-        <p>
-          We need to manipulate the equation into standard form before we state the values of <m>a</m>, <m>b</m>, and <m>c</m>.  I prefer that <m>a</m> is a positive number, so after I expand both sides I am going to move all the terms to the right side of the equation.
-          <sidebyside widths="60% 40%">
-            <p>
-              <md>
-                <mrow>x(2x-5)=4(x^2+3)</mrow>
-                <mrow>2x^2-5x=4x^2+12</mrow>
-                <mrow>0=2x^2+5x+12</mrow>
-              </md>
-            </p>
-            <p>
-              <md>
-                <mrow></mrow>
-                <mrow></mrow>
-                <mrow>a=2, b=5, c=12</mrow>
-              </md>
-            </p>
-          </sidebyside>
-          <md>
-            <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
-            <mrow>x\amp=\frac{-5 \pm \sqrt{5^2-4 \cdot 2 \cdot 12}}{2 \cdot 2}</mrow>
-            <mrow>x\amp=\frac{-5 \pm \sqrt{-71}}{4}</mrow>
-            <mrow>x\amp=\frac{-5 \pm \sqrt{71}i}{4}</mrow>
-            <mrow>x\amp=-\frac{5}{4} \pm \frac{\sqrt{71}}{4}i</mrow>
-          </md>
-        </p>
-        <p>
-          The solutions are <m>-\frac{5}{4}-\frac{\sqrt{71}}{4}i</m> and <m>-\frac{5}{4}+\frac{\sqrt{71}}{4}i</m>.
-        </p>
-        <p>
-          The solution set is <m>\{-\frac{5}{4}-\frac{\sqrt{71}}{4}i,-\frac{5}{4}+\frac{\sqrt{71}}{4}i\}</m>.
-        </p>
-            <p>
-              Click here to access some practice problems: <xref ref="workshop-quadratic-equations-complex-solutions-exercises">Practice Exercises</xref>.
-            </p>
-      </statement>
-    </exercise>
-
-    <exercise xml:id="workshop-quadratic-equations-discriminant-examples">
-      <title>The discriminant and the nature of solutions to quadratic equations</title>
-      <statement>
-        <p>
-          There are times when we are concerned about the nature of the solutions to a quadratic equation rather than the precise solutions themselves.  For example, when the equation <m>ax^2+bx+c=0</m> has two, one, or zero real number solutions, we know that the graph of <m>y=ax^2+bx+c</m> has, respectively, two, one, or zero <m>x</m>-intercepts.
-        </p>
-        <p>
-          Consider the quadratic formula.<me>x=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</me>Because <m>\sqrt{b^2-4ac}</m> is the expression that is both added and subtracted, and it the part of the expression that can be an imaginary number, it is our focus when determining the nature of the solution set.  We can narrow our focus even further, because the nature is determined by the value of <m>b^2-4ac</m>.  When that value is positive, the equation will have two real number solutions.  When the value is zero there will be one real number solution, and when the value is negative there will be two complex number solutions each with non-zero imaginary coefficients.
-        </p>
-        <p>
-          Because the expression <m>b^2-4ac</m> plays the key role in the nature of the solution set to a quadratic equation, it is given a name.  The expression is called the determinant.  Let's consider three examples.
-        </p>
-        <p>
-          Example
-        </p>
-        <p>
-          For the equation <m>x^2-4x-7=0</m>, <m>a=1</m>, <m>b=-4</m>, and <m>c=-7</m>.  The discriminant is derived below.
-          <md>
-            <mrow>b^2-4ac\amp=(-4)^2-4 \cdot 1\cdot -7</mrow>
-            <mrow>\amp=44</mrow>
-          </md>
-          Because <m>b^2-4a \gt 0</m>, we know that the equation <m>x^2-4x-7=0</m> has two real number solutions and that the graph of <m>y=x^2-4-7</m> has two <m>x</m>-intercepts.
-        </p>
-        <p>
-          Example
-        </p>
-        <p>
-          For the equation <m>2x^2-6x+9=0</m>, <m>a=2</m>, <m>b=-6</m>, and <m>c=9</m>.  The discriminant is derived below.
-          <md>
-            <mrow>b^2-4ac\amp=(-6)^2-4 \cdot 2 \cdot 9</mrow>
-            <mrow>\amp=-36</mrow>
-          </md>
-          Because <m>b^2-4ac \lt 0</m>, we know that the equation <m>2x^2-6x+9=0</m> has no real number solutions and that the graph of <m>y=2x^2-6x+9</m> has no <m>x</m>-intercepts.  The equation <m>2x^2-6x+9=0</m> has two complex number solutions, each of which has a non-zero imaginary coefficient.
-        </p>
-        <p>
-          Example
-        </p>
-        <p>
-          For the equation <m>4x^2-12x+9=0</m>, <m>a=4</m>, <m>b=-12</m>, and <m>c=9</m>.  The discriminant is derived below.
-          <md>
-            <mrow>b^2-4ac\amp=(-12)^2-4 \cdot 4 \cdot 9</mrow>
-            <mrow>\amp=0</mrow>
-          </md>
-          Because <m>b^2-4ac=0</m>, we know that the equation <m>4x^2-12x+9=0</m> has exactly one real number solution and that the graph of <m>y=4x^2-12x+9</m> has exactly one <m>x</m>-intercept.  
-        </p>
-            <p>
-              Click here to access some practice problems: <xref ref="workshop-quadratic-equations-discriminant-exercises">Practice Exercises</xref>.
-            </p>
-
-      </statement>
-    </exercise>
+      </exercise>
 
       <exercise>
-        <title>Application problems involving quadratic equations</title>
-        <statement>
-          <p>
-            Example
-          </p>
-          <p>
-            You may be familiar with the Pythagorean Theorem:  If the legs of a right triangle have lengths of <m>a</m> and <m>b</m> while the hypotenuse has a length of <m>c</m>, then <me>a^2+b^2=c^2</me>.
-          </p>
-          <p>
-            Suppose that we have a right triangle where one leg is <m>1</m> inch longer than the other leg and the hypotenuse is <m>1</m> inch longer than the longer leg.  Let's determine the length of each side of the triangle.
-          </p>
-          <p>
-            Let <m>x</m> represent the length (in) of the shorter leg of the triangle.  Then the length (in) of the longer leg is represented by <m>x+1</m> and the length (in) of the hypotenuse is represented by <m>x+2</m>. 
-          </p>
-
-          <figure xml:id="Pythagereon-example-square-root-method">
-                                <caption>Variable Diagram</caption>
-                                <image width="60%">
-                                    <description></description>
-                                        <latex-image>
-                                            <![CDATA[
-                                                \begin{tikzpicture}
-                                                    \coordinate (A) at (0,3);
-                                                    \coordinate (B) at (0,0);
-                                                    \coordinate (C) at (4,0);
-                                                    \draw (A)--(B)--(C)--cycle;
-                                                    \tkzLabelSegment[left](B,A){$x$}
-                                                    \tkzLabelSegment[below](B,C){$x+1$}
-                                                    \tkzLabelSegment[sloped](C,A){$x+2$}
-                                                    \tkzMarkRightAngle(A,B,C)
-
-                                                \end{tikzpicture}
-                                            ]]>
-                                    </latex-image>
-                                </image>
-                            </figure>
-
-          <p> 
-            Applying the Pythagorean Theorem we have <me>x^2+(x+1)^2=(x+2)^2</me>.
-          </p>
-          <p>
-            We begin solving the equation by expanding all expressions in the equation.
-            <md>
-              <mrow>x^2+(x+1)^2\amp=(x+2)^2</mrow>
-              <mrow>x^2+x^2+2x+1\amp=x^2+4x+4</mrow>
-              <mrow>2x^2+2x+1\amp=x^2+4x+4</mrow>
-              <mrow>x^2-2x-3\amp=0</mrow>
-              <mrow>(x-3)(x+1)\amp=0</mrow>
-            </md>
-            <md>
-              <mrow>x-3\amp=0\amp\amp\text{or}\amp x+1\amp=0</mrow>
-              <mrow>x\amp=3\amp\amp\text{or}\amp x\amp=-1</mrow>
-            </md>
-            Since a length cannot be negative, we reject the negative solution.  So the lengths of the triangle are <m>3</m> inches, <m>4</m> inches, and <m>5</m> inches.
-          </p>
-          <p>
-            Example
-          </p>
-          <p>
-            The area formula for a trapezoid is <me>\text{Area}=\frac{1}{2}(b_1+b_2)h</me> where <m>b_1</m> and <m>b_2</m> are the lengths of the parallel sides of the trapezoid (called bases) and <m>h</m> is the perpendicular length between the two bases (called the height). 
-          </p>
-
-                            <figure xml:id="trapezoid-example-square-root-method" width="50%">
-                                <caption>A Trapezoid</caption>
-                                <image width="60%">
-                                    <description></description>
-                                        <latex-image>
-                                            <![CDATA[
-                                                \begin{tikzpicture}
-                                                    \coordinate (A) at (0,0);
-                                                    \coordinate (B) at (6,0);
-                                                    \coordinate (C) at (5,3);
-                                                    \coordinate (D) at (2,3);
-                                                    \coordinate (E) at (2,0);
-                                                    \draw (A)--(B)--(C)--(D)--cycle;
-                                                    \draw[dashed] (D)--(E);
-                                                    \tkzLabelSegment[below](B,A){$b_2$}
-                                                    \tkzLabelSegment[above](C,D){$b_1$}
-                                                    \tkzLabelSegment[right](D,E){$h$}
-
-                                                \end{tikzpicture}
-                                            ]]>
-                                    </latex-image>
-                                </image>
-                            </figure>
-
-          <p>
-            Suppose that we have a trapezoid where the length of one of the bases is twice the length of the other base and the height is five inches shorter than the longer base.  Suppose further that the area of the trapezoid is <m>132</m> <m>\text{in}^2</m>.  Let's determine the length of each of the bases and the height.
-          </p>
-          <p>
-            Let's define <m>x</m> to be the length (in) of the shorter base.  Then the length (in) of the longer base is represented by <m>2x</m> and the length (in) of the height is represented by <m>2x-5</m>.  
-          </p>
-
-                            <figure xml:id="trapezoid-example-variable-diagram-square-root-method" width="50%">
-                                <caption>Variable diagram</caption>
-                                <image width="60%">
-                                    <description></description>
-                                        <latex-image>
-                                            <![CDATA[
-                                                \begin{tikzpicture}
-                                                    \coordinate (A) at (0,0);
-                                                    \coordinate (B) at (6,0);
-                                                    \coordinate (C) at (5,3);
-                                                    \coordinate (D) at (2,3);
-                                                    \coordinate (E) at (2,0);
-                                                    \draw (A)--(B)--(C)--(D)--cycle;
-                                                    \draw[dashed] (D)--(E);
-                                                    \tkzLabelSegment[below](B,A){$b_2=2x$}
-                                                    \tkzLabelSegment[above](C,D){$b_1=x$}
-                                                    \tkzLabelSegment[right](D,E){$h=2x-5$}
-
-                                                \end{tikzpicture}
-                                            ]]>
-                                    </latex-image>
-                                </image>
-                            </figure>
-
-          <p>
-            Using the area formula for a trapezoid we have:
-            <me>\frac{1}{2}(x+2x)(2x-5)=132</me>.
-          </p>
-          <p>
-            We begin solving the equation by clearing the fraction and expanding the left side of the equation.
-            <md>
-              <mrow>\frac{1}{2}(x+2x)(2x-5)\amp=132</mrow>
-              <mrow>2 \cdot \frac{1}{2}(3x)(2x-5)\amp=2 \cdot 132</mrow>
-              <mrow>(3x)(2x-5)\amp=264</mrow>
-              <mrow>6x^2-15x\amp=264</mrow>
-              <mrow>6x^2-15x-264\amp=0</mrow>
-              <mrow>3(2x^2-5x-88)\amp=0</mrow>
-              <mrow>3(2x^2-16x+11x-88)\amp=0</mrow>
-              <mrow>3[2x(x-8)+11(x-8)]\amp=0</mrow>
-              <mrow>3(x-8)(2x+11)\amp=0</mrow>
-            </md>
-            <md>
-              <mrow>x-8\amp=0\amp\amp\text{or}\amp 2x+11\amp=0</mrow>
-              <mrow>x\amp=8\amp\amp\text{or}\amp 2x\amp=-11</mrow>
-              <mrow>x\amp=8\amp\amp\text{or}\amp x\amp=-\frac{11}{2}</mrow>
-            </md>
-          </p>
-          <p>
-            Since length cannot be negative, we reject the negative solution. So the lengths of the two bases are <m>8</m> inches and <m>16</m> inches while the length of the height is <m>11</m> inches.
-          </p>
-          <p>
-            Example
-          </p>
-          <p>
-            If an object is dropped from a height (feet) of <m>h</m>, then the distance between the object and the ground after <m>t</m> seconds can be approximated by the function <m>f(t)=-16t^2+h</m>.  Let's use this information to approximate the amount of time it takes an object to reach the ground after being dropped from a height of <m>500</m> feet.
-          </p>
-          <p>
-            Our distance function is <m>f(t)=-16t^2+500</m>.  When the object reaches the ground the value of <m>f</m> is <m>0</m>.  So the equation we need to solve is <me>-16t^2-500=0</me>.
-          </p>
-          <p>
-            We can quickly determine the solution by isolating <m>t^2</m> and employing the square root method.
-            <md>
-              <mrow>-16t^2-500\amp=0</mrow>
-              <mrow>-16t^2\amp=-500</mrow>
-              <mrow>t^2\amp=\frac{125}{4}</mrow>
-              <mrow>t\amp=\pm \sqrt{\frac{125}{4}}</mrow>
-              <mrow>t\amp=\pm \frac{5\sqrt{5}}{2}</mrow>
-            </md>
-            Since the object cannot reach the ground before it has been released, we reject the negative solution.  Using a calculator we have:
-            <me>\frac{5\sqrt{5}}{2}\approx 5.59</me>.  So it takes about 5.59 seconds for the object to reach the ground after its release.
-          </p>
-            <p>
-              Click here to access some practice problems: <xref ref="workshop-quadratic-equations-applications-exercises">Practice Exercises</xref>.
-            </p>
-        </statement>
+        <title>Derivation of the quadratic formula</title>
+      <statement>
+        <p>
+          The solutions to a quadratic equation of form <me>ax^2+bx+c=0</me> can be found using the formula<me>x=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</me>.  The solution equation is called the quadratic formula.  For example, let's use the quadratic formula to solve the equation <me>x^2-4x-32=0</me>.  We begin by identifying the constants <m>a</m>, <m>b</m>, and <m>c</m>.<me>a=1, b=-4, c=-32</me>.  We now replace the constants in the quadratic formula with their respective values and simplify the result.
+        <md>
+          <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+          <mrow>x\amp=\frac{-(-4) \pm \sqrt{(-4)^2-4 \cdot 1 \cdot -32}}{2 \cdot 1}</mrow>
+          <mrow>x\amp=\frac{4 \pm \sqrt{144}}{2}</mrow>
+          <mrow>x\amp=\frac{4 \pm 12}{2}</mrow>
+        </md>
+          The symbol "<m>\pm</m>" is read "plus or minus" and implies that there are two solutions - one when the symbol is executed as subtraction and another when the symbol is executed as addition.  Picking up where we left off.
+          <md>
+            <mrow>x\amp=\frac{4-12}{2}\amp\amp\text{or}\amp x\amp=\frac{4+12}{2}</mrow>
+            <mrow>x\amp=-4\amp\amp\text{or}\amp x\amp=8</mrow>
+          </md>
+          So the solutions to the equation are <m>-4</m> and <m>8</m> and the solution set is <m>\{-4, 8\}</m>.
+        </p>
+        <p>
+          As just demonstrated, one can use the quadratic formula without having an understanding of its origin.  The remainder of this section is devoted to the derivation of the quadratic formula.  If you'd rather just get on with using it, go ahead to the next section.
+        </p>
+        <p>
+          The derivation of the quadratic equation relies on the process of completing the square.  We being with the equation<me>ax^2+bx+c=0, a \neq 0</me>.
+          Before completing the square we need to isolate the constant and divide both sides by <m>a</m> so that the coefficient on the squared term is <m>1</m>.
+          <md>
+            <mrow>ax^2+bx+c\amp=0</mrow>
+            <mrow>ax^2+bx+c\subtractright{c}\amp=0\subtractright{c}</mrow>
+            <mrow>ax^2+bx\amp=-c</mrow>
+            <mrow>\multiplyleft{\frac{1}{a}}(ax^2+bx)\amp=\multiplyleft{\frac{1}{a}}-c</mrow>
+            <mrow>x^2+\frac{b}{a}x\amp=-\frac{c}{a}</mrow>
+          </md>
+          We now complete the square on the left side of the equation by adding the square of half the linear coefficient.  This action is balanced by adding the same expression to the right side of the equation.  We'll then go ahead and combine the terms on the right side of the equation.
+          <md>
+            <mrow>x^2+\frac{b}{a}x\addright{(\frac{b}{2a})^2}\amp=-\frac{c}{a}\addright{(\frac{b}{2a})^2}</mrow>
+            <mrow>x^2+\frac{b}{a}x+\frac{b^2}{4a^2}\amp=-\frac{c}{a}+\frac{b^2}{4a^2}</mrow>
+            <mrow>x^2+\frac{b}{a}x+\frac{b^2}{4a^2}\amp=-\frac{c}{a} \highlight{\cdot \frac{4a}{4a}}+\frac{b^2}{4a^2}</mrow>
+            <mrow>x^2+\frac{b}{a}x+\frac{b^2}{4a^2}\amp=-\frac{4ac}{4a^2}+\frac{b^2}{4a^2}</mrow>
+            <mrow>x^2+\frac{b}{a}x+\frac{b^2}{4a^2}\amp=\frac{-4ac+b^2}{4a^2}</mrow>
+            <mrow>x^2+\frac{b}{a}x+\frac{b^2}{4a^2}\amp=\frac{b^2-4ac}{4a^2}</mrow>
+          </md>
+          We now factor the left side into its perfect square and complete the derivation using the square root method.  Note that when we simplify <m>\sqrt{4a^2}</m> we can simply state <m>2a</m>.  It's true that we don't know whether <m>a</m> is a positive number or a negative number, but when we extract the roots we introduce the <m>\pm</m> sign, so we will have two roots, one positive and one negative, regardless of whether <m>a</m> is positive or negative (assuming that <m>b^2-4ac \neq 0</m>).  If <m>b^2-4ac=0</m>, then <m>\frac{b^2-4ac}{4a^2}=\frac{0}{2a}=0</m> whether <m>a</m> is positive or negative.
+          <md>
+            <mrow>x^2+\frac{b}{a}x+\frac{b^2}{4a^2}\amp=\frac{b^2-4ac}{4a^2}</mrow>
+            <mrow>(x+\frac{b}{2a})^2\amp=\frac{b^2-4ac}{4a^2}</mrow>
+            <mrow>x+\frac{b}{2a}\amp=\pm \sqrt{\frac{b^2-4ac}{4a^2}}</mrow>
+            <mrow>x+\frac{b}{2a}\amp=\pm \frac{\sqrt{b^2-4ac}}{2a}</mrow>
+            <mrow>x+\frac{b}{2a}\subtractright{\frac{b}{2a}}\amp=\pm \frac{\sqrt{b^2-4ac}}{2a}\subtractright{\frac{b}{2a}}</mrow>
+            <mrow>x\amp=-\frac{b}{2a}\pm \frac{\sqrt{b^2-4ac}}{2a}</mrow>
+            <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+          </md>
+        </p>
+      </statement>
       </exercise>
 
-  </exercises>
-
-  <exercises>
-      <title>Practice Exercises</title>
-
-    <exercise xml:id="workshop-quadratic-equations-zero-product-property-exercises">
-        <title>Solving quadratic equations using the zero-product property</title>
-        <statement>
-          <p>
-            Use the zero-product property to solve each quadratic equation.  State the solutions to each equation as well as the solution set to each equation.
-            <ol>
-              <li><m>(3x+8)(5x-7)=0</m></li>
-              <li><m>x(x-6)=0</m></li>
-              <li><m>x(x-3)=10</m></li>
-              <li><m>x^2+12x=-36</m></li>
-              <li><m>4t(8t+9)=5</m></li>
-              <li><m>2y^2=y</m></li>
-              <li><m>(w-10)(w+1)=-10</m></li>
-            </ol>
-            <p>
-            </p>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <ol>
-
-              <li>
-                <p>
-                  We begin by setting each of the factors from the left side of the equation equal to zero.
-                <md>
-                  <mrow>(3x+8)(5x-7)\amp=0</mrow>
-                </md>
-                <md>
-                  <mrow>3x+8\amp=0 \amp\amp\text{or}\amp 5x-7\amp= 0</mrow>
-                  <mrow>3x\amp=-8 \amp\amp\text{or}\amp 5x\amp=7</mrow>
-                  <mrow>x\amp=-\frac{8}{3} \amp\amp\text{or}\amp x\amp=\frac{7}{5}</mrow>
-                </md>
-                </p>
-                <p>
-                  The solutions are <m>-\frac{8}{3}</m> and <m>\frac{7}{5}</m>.
-                </p>
-                <p>
-                  The solution set is <m>\{-\frac{8}{3}, \frac{7}{5}\}</m>.
-                </p>
-                <me></me>
-              </li>
-
-              <li>
-                <p>
-                  We begin by setting each of the factors from the left side of the equation equal to zero.
-                <md>
-                  <mrow>x(x-6)\amp=0</mrow>
-                </md>
-                <md>
-                  <mrow>x\amp=0 \amp\amp\text{or}\amp x-6\amp=0</mrow>
-                  <mrow>x\amp=0 \amp\amp\text{or}\amp x\amp=6</mrow>
-                </md>
-                </p>
-                <p>
-                  The solutions are <m>0</m> and <m>6</m>.
-                </p>
-                <p>
-                  The solution set is <m>\{0, 6\}</m>.
-                </p>
-                <me></me>
-              </li>
-
-              <li>
-                <p>
-                  We begin by making the right side of the equation zero and then factoring the left side of the equation.
-                <md>
-                  <mrow>x(x-3)\amp=10</mrow>
-                  <mrow>x^2-3x-10\amp=0</mrow>
-                  <mrow>(x-5)(x+2)\amp=0</mrow>
-                </md>
-                <md>
-                  <mrow>x-5\amp=0 \amp\amp\text{or}\amp x+2\amp=0</mrow>
-                  <mrow>x\amp=5 \amp\amp\text{or}\amp x\amp=-2</mrow>
-                </md>
-                </p>
-                <p>
-                  The solutions are <m>5</m> and <m>-2</m>.
-                </p>
-                <p>
-                  The solution set is <m>\{5, -2\}</m>.
-                </p>
-                <me></me>
-              </li>
-
-              <li>
-                <p>
-                  We begin by making the right side of the equation zero and then factoring the left side of the equation.
-                <md>
-                  <mrow>x^2+12x\amp=-36</mrow>
-                  <mrow>x^2+12x+36\amp=0</mrow>
-                  <mrow>(x+6)(x+6)\amp=0</mrow>
-                  <mrow>x+6\amp=0</mrow>
-                  <mrow>x\amp=-6</mrow>
-                </md>
-                </p>
-                <p>
-                  The solution is <m>-6</m>.
-                </p>
-                <p>
-                  The solution set is <m>\{-6\}</m>.
-                </p>
-                <me></me>
-              </li>
-
-              <li>
-                <p>
-                  We begin by expanding the left side of the equation, making the right side of the equation zero, and then factoring the left side of the equation.
-                <md>
-                  <mrow>4t(8t+9)\amp=5</mrow>
-                  <mrow>32t^2+36t\amp=5</mrow>
-                  <mrow>32t^2+36t-5\amp=0</mrow>
-                  <mrow>32t^2+40t-4t-5\amp=0</mrow>
-                  <mrow>8t(4t+5)-1 \cdot (4t+5)\amp=0</mrow>
-                  <mrow>(4t+5)(8t-1)\amp=0</mrow>
-                </md>
-                <md>
-                  <mrow>4t+5\amp=0 \amp\amp\text{or}\amp 8t-1\amp=0</mrow>
-                  <mrow>4t\amp=-5 \amp\amp\text{or}\amp 8t\amp=1</mrow>
-                  <mrow>t\amp=-\frac{5}{4} \amp\amp\text{ or }\amp t\amp=\frac{1}{8}</mrow>
-                </md>
-                </p>
-                <p>
-                  The solutions are <m>-\frac{5}{4}</m> and <m>\frac{1}{8}</m>.
-                </p>
-                <p>
-                  The solution set is <m>\{-\frac{5}{4}, \frac{1}{8}\}</m>.
-                </p>
-                <me></me>
-              </li>
-
-              <li>
-                <p>
-                  We begin by making the right side of the equation zero and then factoring the left side of the equation.
-                <md>
-                  <mrow>2y^2\amp=y</mrow>
-                  <mrow>2y^2-y\amp=0</mrow>
-                  <mrow>y(2y-1)\amp=0</mrow>
-                </md>
-                <md>
-                  <mrow>y\amp=0 \amp\amp\text{or}\amp 2y-1\amp=0</mrow>
-                  <mrow>y\amp=0 \amp\amp\text{or}\amp y\amp=\frac{1}{2}</mrow>
-                </md>
-                </p>
-                <p>
-                  The solutions are <m>0</m> and <m>\frac{1}{2}</m>.
-                </p>
-                <p>
-                  The solution set is <m>\{0, \frac{1}{2}\}</m>.
-                </p>
-                <me></me>
-              </li>
-
-              <li>
-                <p>
-                  We begin by expanding the left side of the equation, making the right side of the equation zero, and then factoring the left side of the equation.
-                <md>
-                  <mrow>(w-10)(w+1)\amp=-10</mrow>
-                  <mrow>w^2-9w-10\amp=-10</mrow>
-                  <mrow>w^2-9w\amp=0</mrow>
-                  <mrow>w(w-9)\amp=0</mrow>
-                </md>
-                <md>
-                  <mrow>w\amp=0 \amp\amp\text{or}\amp w-9\amp=0</mrow>
-                  <mrow>w\amp=0 \amp\amp\text{or}\amp w\amp=9</mrow>
-                </md>
-                </p>
-                <p>
-                  The solutions are <m>0</m> and <m>9</m>.
-                </p>
-                <p>
-                  The solution set is <m>\{0, 9\}</m>.
-                </p>
-              </li>
-
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-
-      <exercise xml:id="workshop-quadratic-equations-square-root-method-exercises">
-        <title>Solving quadratic equations using the square root method</title>
-        <statement>
-          <p>
-            Use the square root method to solve each of the following quadratic equations.  Make sure that all solutions are completely simplified.  State the solutions to each equation as well as the solution set to each equation.
-            <ol>
-              <li><m>(2t-1)^2=9</m></li>
-              <li><m>(3x-2)^2=72</m></li>
-              <li><m>x^2-8x+16=12</m></li>
-              <li><m>y^2+20y+80=0</m></li>
-              <li><m>x^2+4x+7=0</m></li>
-              <li><m>w^2-7w+7=0</m></li>
-            </ol>
-            <p>
-            </p>
-          </p>
-        </statement>
-
-        <solution>
-          <p>
-            <ol>
-
-              <li>
-                <p>We start by applying the square root property.
-                  <md>
-                    <mrow>(2t-1)^2\amp=9</mrow>
-                    <mrow>2t-1\amp=\pm \sqrt{9}</mrow>
-                    <mrow>2t-1\amp=\pm 3</mrow>
-                  </md>
-                  <md>
-                    <mrow>2t-1\amp =-3\amp\amp\text{ or }\amp 2t-1\amp=3</mrow>
-                    <mrow>2t\amp =-2\amp\amp\text{ or }\amp 2t\amp=4</mrow>
-                    <mrow>t\amp =-1\amp\amp\text{ or }\amp t\amp=2</mrow>
-                  </md>
-                  </p>
-                  <p>
-                    The solutions are <m>-1</m> and <m>2</m>.  
-                  </p>
-                  <p>
-                    The solution set is <m>\{-1, 2\}</m>.
-                  </p>
-                  <me></me>
-              </li>
-
-              <li>
-                <p>We start by applying the square root property.
-                <md>
-                  <mrow>(3x-2)^2\amp=72</mrow>
-                  <mrow>3x-2\amp=\pm \sqrt{72}</mrow>
-                  <mrow>3x-2\amp=\pm \sqrt{36 \cdot 2}</mrow>
-                  <mrow>3x-2\amp=\pm 6\sqrt{2}</mrow>
-                  <mrow>3x\amp=2\pm 6\sqrt{2}</mrow>
-                  <mrow>x\amp=\frac{2\pm 6\sqrt{2}}{3}</mrow>
-                </md>
-                </p>
-                <p>
-                  The solutions are <m>\frac{2-6\sqrt{3}}{3}</m> and <m>\frac{2+6\sqrt{2}}{3}</m>. 
-                </p>
-                <p>
-                  The solution set is <m>\{\frac{2-6\sqrt{3}}{3}, \frac{2+6\sqrt{2}}{3}\}</m>.
-                </p>
-                <me></me>
-              </li>
-
-              <li>
-                <p>
-                    We start by factoring the perfect-square trinomial <m>x^2-8x+16</m>.
-                <md>
-                  <mrow>x^2-8x+16\amp=12</mrow>
-                  <mrow>(x-4)^2\amp=12</mrow>
-                  <mrow>x-4\amp=\pm \sqrt{12}</mrow>
-                  <mrow>x-4\amp=\pm \sqrt{4 \cdot 3}</mrow>
-                  <mrow>x-4\amp=\pm 2\sqrt{3}</mrow>
-                  <mrow>x\amp=4\pm 2\sqrt{3}</mrow>
-                </md>
-                </p>
-                <p>
-                  The solutions are <m>4-2\sqrt{3}</m> and <m>4+2\sqrt{3}</m>.
-                </p>
-                <p>  
-                  The solution set is <m>\{4-2\sqrt{3}, 4+2\sqrt{3}\}</m>.
-                </p>
-                <me></me>
-              </li>
-
-              <li>
-                <p>
-                  We start by moving the constant term to the right side of the equation and then completing the square on the left side of the equation.
-                <md>
-                  <mrow>y^2+20y+80\amp=0</mrow>
-                  <mrow>y^2+20y\amp=-80</mrow>
-                  <mrow>y^2+20y+100\amp=-80+100</mrow>
-                  <mrow>(y+10)^2\amp=20</mrow>
-                  <mrow>y+10\amp=\pm \sqrt{20}</mrow>
-                  <mrow>y+10\amp=\pm \sqrt{4 \cdot 5}</mrow>
-                  <mrow>y+10\amp=\pm 2\sqrt{5}</mrow>
-                  <mrow>y\amp=-10\pm 2\sqrt{5}</mrow>
-                </md>
-                </p>
-                <p>
-                  The solutions are <m>-10-2\sqrt{5}</m> and <m>-10+2\sqrt{5}</m>.
-                </p>
-                <p>  
-                  The solution set is <m>\{10-2\sqrt{5}, -10+2\sqrt{5}\}</m>.
-                </p>
-                <me></me>
-              </li>
-
-              <li>
-                <p>We start by moving the constant term to the right side of the equation and then completing the square on the left side of the equation.
-                <md>
-                  <mrow>x^2+4x+7\amp=0</mrow>
-                  <mrow>x^2+4x\amp=-7</mrow>
-                  <mrow>x^2+4x+4\amp=-7+4</mrow>
-                  <mrow>(x+2)^2\amp=-3</mrow>
-                </md>
-                </p>
-                <p>
-                  The equation <m>x^2+4x+7</m> has no real number solutions.
-                </p>
-                <p>  
-                  Over the real numbers the solutions set is <m>\emptyset</m>.
-                </p>
-                <me></me>
-              </li>
-
-              <li>
-                <p>
-                  We start by moving the constant term to the right side of the equation and then completing the square on the left side of the equation.
-                <md>
-                  <mrow>w^2-7w+7\amp=0</mrow>
-                  <mrow>w^2-7w\amp=-7</mrow>
-                  <mrow>w^2-7w+\frac{49}{4}\amp=-7+\frac{49}{4}</mrow>
-                  <mrow>(w-\frac{7}{2})^2\amp=\frac{21}{4}</mrow>
-                  <mrow>w-\frac{7}{2}\amp=\pm \sqrt{\frac{21}{4}}</mrow>
-                  <mrow>w-\frac{7}{2}\amp=\pm \frac{\sqrt{21}}{2}</mrow>
-                  <mrow>w\amp=\frac{7}{2}\pm \frac{\sqrt{21}}{2}</mrow>
-                  <mrow>w\amp=\frac{7\pm \sqrt{21}}{2}</mrow>
-                </md>
-                </p>
-                <p>
-                  The solutions are <m>\frac{7-\sqrt{21}}{2}</m> and <m>\frac{7+\sqrt{21}}{2}</m>.
-                </p>
-                <p>  
-                  The solution set is <m>\{\frac{7-\sqrt{21}}{2}, \frac{7+\sqrt{21}}{2}\}</m>.
-                </p>
-              </li>
-
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-
-       <exercise xml:id="workshop-quadratic-equations-quadratic-formula-exercises">
-      <title>Using the quadratic formula</title>
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
       <statement>
         <p>
           Use the quadratic formula to solve each of the following equations over the real numbers.  For each equation state both the solutions and the solution set.
@@ -1370,6 +965,7 @@
                 <p>
                   <md>
                     <mrow>t^2+10t\amp=39</mrow>
+                    <mrow>t^2+10t\subtractright{39}\amp=39\subtractright{39}</mrow>
                     <mrow>t^2+10t-39\amp=0</mrow>
                   </md>
                 </p>
@@ -1425,6 +1021,7 @@
                   <md>
                     <mrow>2x(3x+5)\amp=5</mrow>
                     <mrow>6x^2-10x\amp=5</mrow>
+                    <mrow>6x^2-10x\subtractright{5}\amp=5\subtractright{5}</mrow>
                     <mrow>6x^2-10x-5\amp=0</mrow>
                   </md>
                 </p>
@@ -1454,14 +1051,14 @@
 
              <li>
               <p>
-                We need to make one side of the equation zero before we can apply the quadratic formula.  We choose to make the left side of the equation zero so that the squared term has a positive coefficient.  Note that we can divide out a factor of five from both sides of the equation before applying the quadratic formula.  Making this choice makes the numbers we're working with much more managable.
+                We need to make one side of the equation zero before we can apply the quadratic formula.  We choose to make the left side of the equation zero so that the squared term has a positive coefficient.  Note that we can divide out a factor of five from both sides of the equation before applying the quadratic formula.  Making this choice makes the numbers we're working with much more manageable.
               </p>
               <sidebyside widths="60% 40%">
                 <p>
                   <md>
-                    <mrow>1-4x^2\amp=x^2+10x+6</mrow>
+                    <mrow>1-4x^2\subtractright{1}\addright{4x^2}\amp=x^2+10x+6\subtractright{1}\addright{4x^2}</mrow>
                     <mrow>0\amp=5x^2+10x+5</mrow>
-                    <mrow>\frac{1}{5} \cdot 0\amp=\frac{1}{5} \cdot (5x^2+10x+5)</mrow>
+                    <mrow>\multiplyleft{\frac{1}{5}}0\amp=\multiplyleft{\frac{1}{5}}(5x^2+10x+5)</mrow>
                     <mrow>0\amp=x^2+2x+1</mrow>
                   </md>
                 </p>
@@ -1488,13 +1085,140 @@
           </ol>
         </p>
       </solution>
-    </exercise>
+      </exercise>
 
-    <exercise xml:id="workshop-quadratic-equations-complex-solutions-exercises">
-      <title>Complex number solutions to quadratic equations</title>
+      <exercise>
+        <title>Question bank with short answers</title>
       <statement>
         <p>
-          Use the square root method to solve each of the following equations.  Make sure that all solutions have been completely simplified.  State both the solutions and the solution set.
+          Use the quadratic formula to solve each of the following equations over the real numbers.  
+          <ol>
+            <li><m>2x^2+8x-5=0</m></li>
+            <li><m>t^2-15t=100</m></li>
+            <li><m>-x^2+4x+3=0</m></li>
+            <li><m>x(3x-5)=-6</m></li>
+          </ol>
+          <p>
+          </p>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The solutions are <m>\frac{-4-\sqrt{26}}{2}</m> and <m>\frac{-4+\sqrt{26}}{2}</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The solutions are <m>-5</m> and <m>20</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The solutions are <m>2-\sqrt{7}</m> and <m>2+\sqrt{7}</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The equation has no real number solutions,
+              </p>
+            </li>
+            
+          </ol>
+        </p>
+      </solution>
+      </exercise>
+
+    </exercises>
+    <exercises>
+      <title>Complex Number Solutions to Quadratic Equations</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
+      <statement>
+        <p>
+          Let's solve the quadratic equation <m>4x^2-12x+25=0</m>.  The equation is already in standard form, so we can state the values of <m>a</m>, <m>b</m>, and <m>c</m> and proceed with the quadratic formula.
+          <sidebyside widths="60% 40%">
+            <p>
+              <m>
+                4x^2-12x+25=0
+              </m>
+            </p>
+            <p>
+              <m>
+                a=4, b=-12, c=25
+              </m>
+            </p>
+          </sidebyside>
+          <md>
+            <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+            <mrow>x\amp=\frac{-(-12) \pm \sqrt{(-12)^2-4 \cdot 4 \cdot 25}}{2 \cdot 4}</mrow>
+            <mrow>x\amp=\frac{12 \pm \sqrt{-256}}{8}</mrow>
+          </md>
+          If we were only concerned with real number solutions we could state our conclusion now, because <m>\sqrt{-256}</m> is not a real number.  However, let's assume that we our also interested in solutions that include imaginary parts and proceed.  In our stated solutions we want the real part of each number separate from the imaginary part, so we will simplify towards that end.
+          <md>
+            <mrow>x\amp=\frac{12 \pm \sqrt{-256}}{8}</mrow>
+            <mrow>x\amp=\frac{12 \pm 16i}{8}</mrow>
+            <mrow>x\amp=\frac{12}{8} \pm \frac{16}{8}i</mrow>
+            <mrow>x\amp=\frac{3}{2} \pm 2i</mrow>
+          </md>
+          <p>
+            The solutions are <m>\frac{3}{2}-2i</m> and <m>\frac{3}{2}+2i</m>.
+          </p>
+          <p>
+            The solution set is <m>\{\frac{3}{2}-2i,\frac{3}{2}+2i\}</m>.
+          </p>
+        </p>
+        <p>
+          Let's see another example.
+        </p>
+        <p>
+          Use the quadratic formula to solve <m>x(2x-5)=4(x^2+3)</m>.
+        </p>
+        <p>
+          We need to manipulate the equation into standard form before we state the values of <m>a</m>, <m>b</m>, and <m>c</m>.  I prefer that <m>a</m> is a positive number, so after I expand both sides I am going to move all the terms to the right side of the equation.
+          <sidebyside widths="60% 40%">
+            <p>
+              <md>
+                <mrow>x(2x-5)=4(x^2+3)</mrow>
+                <mrow>2x^2-5x=4x^2+12</mrow>
+                <mrow>2x^2-5x\subtractright{2x^2}\addright{5x}=4x^2+12\subtractright{2x^2}\addright{5x}</mrow>
+                <mrow>0=2x^2+5x+12</mrow>
+              </md>
+            </p>
+            <p>
+              <md>
+                <mrow></mrow>
+                <mrow></mrow>
+                <mrow>a=2, b=5, c=12</mrow>
+              </md>
+            </p>
+          </sidebyside>
+          <md>
+            <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+            <mrow>x\amp=\frac{-5 \pm \sqrt{5^2-4 \cdot 2 \cdot 12}}{2 \cdot 2}</mrow>
+            <mrow>x\amp=\frac{-5 \pm \sqrt{-71}}{4}</mrow>
+            <mrow>x\amp=\frac{-5 \pm \sqrt{71}i}{4}</mrow>
+            <mrow>x\amp=-\frac{5}{4} \pm \frac{\sqrt{71}}{4}i</mrow>
+          </md>
+        </p>
+        <p>
+          The solutions are <m>-\frac{5}{4}-\frac{\sqrt{71}}{4}i</m> and <m>-\frac{5}{4}+\frac{\sqrt{71}}{4}i</m>.
+        </p>
+        <p>
+          The solution set is <m>\{-\frac{5}{4}-\frac{\sqrt{71}}{4}i,-\frac{5}{4}+\frac{\sqrt{71}}{4}i\}</m>.
+        </p>
+      </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+      <statement>
+        <p>
+          Use the square root method to solve each of the following equations over the complex numbers.  Make sure that all solutions have been completely simplified.  State both the solutions and the solution set.
           <ol>
             <li><m>(x+6)^2=-9</m></li>
             <li><m>(3x-8)^2=-20</m></li>
@@ -1505,10 +1229,10 @@
           </p>
         </p>
         <p>
-          Use the quadratic formula to solve each of the following equations.  Make sure that all solutions have been completely simplified.  State both the solutions and the solution set.
+          Use the quadratic formula to solve each of the following equations over the complex numbers.  Make sure that all solutions have been completely simplified.  State both the solutions and the solution set.
           <ol label="i">
             <li><m>4x^2+2x+1=0</m></li>
-            <li><m>2t^2-3t+5=0</m></li>
+            <li><m>t^2-3t+5=0</m></li>
             <li><m>3x^2+16=0</m></li>
             <li><m>y^2-4y+9=0</m></li>
           </ol>
@@ -1529,6 +1253,7 @@
                 <mrow>(x+6)^2\amp=-9</mrow>
                 <mrow>x+6\amp=\pm \sqrt{-9}</mrow>
                 <mrow>x+6\amp=\pm 3i</mrow>
+                <mrow>x+6\subtractright{6}\amp=\pm 3i\subtractright{6}</mrow>
                 <mrow>x\amp=-6\pm 3i</mrow>
               </md>
               <p>
@@ -1547,7 +1272,9 @@
                 <mrow>(3x-8)^2\amp=-20</mrow>
                 <mrow>3x-8\amp=\pm \sqrt{-20}</mrow>
                 <mrow>3x-8\amp=\pm 2\sqrt{5}i</mrow>
+                <mrow>3x-8\addright{8}\amp=\pm 2\sqrt{5}i\addright{8}</mrow>
                 <mrow>3x\amp=8\pm 2\sqrt{5}i</mrow>
+                <mrow>\multiplyleft{\frac{1}{3}}3x\amp=\multiplyleft{\frac{1}{3}}(8\pm 2\sqrt{5}i)</mrow>
                 <mrow>x\amp=\frac{8\pm 2\sqrt{5}i}{3}</mrow>
                 <mrow>x\amp=\frac{8}{3} \pm \frac{2\sqrt{5}}{3}i</mrow>
               </md>
@@ -1566,10 +1293,11 @@
                 <md>
                   <mrow>x^2-12x+52\amp=0</mrow>
                   <mrow>x^2-12x\amp=-52</mrow>
-                  <mrow>x^2-12x+36\amp=-52+36</mrow>
+                  <mrow>x^2-12x\addright{36}\amp=-52\addright{36}\text{ (completing the square)}</mrow>
                   <mrow>(x-6)^2\amp=-16</mrow>
                   <mrow>x-6\amp=\sqrt{-16}</mrow>
                   <mrow>x-6\amp=4i</mrow>
+                  <mrow>x-6\addright{6}\amp=4i\addright{6}</mrow>
                   <mrow>x\amp=6\pm 4i</mrow>
                 </md>
                 <p>
@@ -1586,13 +1314,15 @@
               </p>
                 <md>
                   <mrow>3w^2-12w+24\amp=0</mrow>
-                  <mrow>\frac{1}{3} \cdot (3w^2-12w+24)\amp=\frac{1}{3} \cdot 0</mrow>
+                  <mrow>\multiplyleft{\frac{1}{3}}(3w^2-12w+24)\amp=\multiplyleft{\frac{1}{3}}0</mrow>
                   <mrow>w^2-4w+8\amp=0</mrow>
+                  <mrow>w^2-4w+8\subtractright{8}\amp=0\subtractright{8}</mrow>
                   <mrow>w^2-4w\amp=-8</mrow>
-                  <mrow>w^2-4w+4\amp=-8+4</mrow>
+                  <mrow>w^2-4w\addright{4}\amp=-8\addright{4}\text{ (completing the square)}</mrow>
                   <mrow>(w-2)^2\amp=-4</mrow>
                   <mrow>w-2\amp=\pm \sqrt{-4}</mrow>
                   <mrow>w-2\amp=2i</mrow>
+                  <mrow>w-2\addright{2}\amp=2i\addright{2}</mrow>
                   <mrow>w\amp=2\pm 2i</mrow>
                 </md>
                 <p>
@@ -1707,10 +1437,121 @@
           </ol>
         </p>
       </solution>
-    </exercise>
+      </exercise>
 
-      <exercise xml:id="workshop-quadratic-equations-discriminant-exercises">
-      <title>The discriminant and the nature of solutions to quadratic equations</title>
+      <exercise>
+        <title>Question bank with short answers</title>
+      <statement>
+        <p>
+          Use the square root method to solve each of the following equations.  Make sure that all solutions have been completely simplified.   Note that for one of the equations you will need to first complete the square.
+          <ol>
+            <li><m>(x-7)^2=-1</m></li>
+            <li><m>(2x-9)^2=-48</m></li>
+            <li><m>-2w^2+12w-24=0</m></li>
+          </ol>
+          <p>
+          </p>
+        </p>
+        <p>
+          Use the quadratic formula to solve each of the following equations.  Make sure that all solutions have been completely simplified.  State both the solutions and the solution set.
+          <ol label="i">
+            <li><m>6x^2+1=2x</m></li>
+            <li><m>y^2-18y+97=0</m></li>
+          </ol>
+          <p>
+          </p>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The solutions are <m>7-i</m> and <m>7+i</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The solutions are <m>\frac{9}{2}-2\sqrt{3}i</m> and <m>\frac{9}{2}-2\sqrt{3}i</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The solutions are <m>3-\sqrt{3}i</m> and <m>3+\sqrt{3}i</m>.
+              </p>
+            </li>
+          </ol>
+          <ol label="i">
+            <li>
+              <p>
+                The solutions are <m>\frac{1}{6}-\frac{\sqrt{5}}{6}i</m> and <m>\frac{1}{6}+\frac{\sqrt{5}}{6}i</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The solutions are <m>9-4i</m> and <m>9+4i</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+      </exercise>
+
+    </exercises>
+    <exercises>
+      <title>The Discriminant and the Nature of Solutions to Quadratic Equations</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
+      <statement>
+        <p>
+          There are times when we are concerned about the nature of the solutions to a quadratic equation rather than the precise solutions themselves.  For example, when the equation <m>ax^2+bx+c=0</m> has two, one, or zero real number solutions, we know that the graph of <m>y=ax^2+bx+c</m> has, respectively, two, one, or zero <m>x</m>-intercepts.
+        </p>
+        <p>
+          Consider the quadratic formula.<me>x=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</me>Because <m>\sqrt{b^2-4ac}</m> is the expression that is both added and subtracted, and it the part of the expression that can be an imaginary number, it is our focus when determining the nature of the solution set.  We can narrow our focus even further, because the nature is determined by the value of <m>b^2-4ac</m>.  When that value is positive, the equation will have two real number solutions.  When the value is zero there will be one real number solution, and when the value is negative there will be two complex number solutions each with non-zero imaginary coefficients.
+        </p>
+        <p>
+          Because the expression <m>b^2-4ac</m> plays the key role in the nature of the solution set to a quadratic equation, it is given a name.  The expression is called the determinant.  Let's consider three examples.
+        </p>
+        <p>
+          Example
+        </p>
+        <p>
+          For the equation <m>x^2-4x-7=0</m>, <m>a=1</m>, <m>b=-4</m>, and <m>c=-7</m>.  The discriminant is derived below.
+          <md>
+            <mrow>b^2-4ac\amp=(-4)^2-4 \cdot 1\cdot -7</mrow>
+            <mrow>\amp=44</mrow>
+          </md>
+          Because <m>b^2-4a \gt 0</m>, we know that the equation <m>x^2-4x-7=0</m> has two real number solutions and that the graph of <m>y=x^2-4-7</m> has two <m>x</m>-intercepts.
+        </p>
+        <p>
+          Example
+        </p>
+        <p>
+          For the equation <m>2x^2-6x+9=0</m>, <m>a=2</m>, <m>b=-6</m>, and <m>c=9</m>.  The discriminant is derived below.
+          <md>
+            <mrow>b^2-4ac\amp=(-6)^2-4 \cdot 2 \cdot 9</mrow>
+            <mrow>\amp=-36</mrow>
+          </md>
+          Because <m>b^2-4ac \lt 0</m>, we know that the equation <m>2x^2-6x+9=0</m> has no real number solutions and that the graph of <m>y=2x^2-6x+9</m> has no <m>x</m>-intercepts.  The equation <m>2x^2-6x+9=0</m> has two complex number solutions, each of which has a non-zero imaginary coefficient.
+        </p>
+        <p>
+          Example
+        </p>
+        <p>
+          For the equation <m>4x^2-12x+9=0</m>, <m>a=4</m>, <m>b=-12</m>, and <m>c=9</m>.  The discriminant is derived below.
+          <md>
+            <mrow>b^2-4ac\amp=(-12)^2-4 \cdot 4 \cdot 9</mrow>
+            <mrow>\amp=0</mrow>
+          </md>
+          Because <m>b^2-4ac=0</m>, we know that the equation <m>4x^2-12x+9=0</m> has exactly one real number solution and that the graph of <m>y=4x^2-12x+9</m> has exactly one <m>x</m>-intercept.  
+        </p>
+      </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
       <statement>
         <p>
           For each equation, use the value of the discriminant to determine the nature of the solution.  That's all - do not find the actual solutions.
@@ -1830,10 +1671,226 @@
           </ol>
         </p>
       </solution>
-    </exercise>
+      </exercise>
 
-      <exercise xml:id="workshop-quadratic-equations-applications-exercises">
-        <title>Application problems involving quadratic equations</title>
+      <exercise>
+        <title>Question bank with short answers</title>
+      <statement>
+        <p>
+          For each equation, use the value of the discriminant to determine the nature of the solution.  That's all - do not find the actual solutions.
+          <ol>
+            <li><m>12x^2+4x+3=0</m></li>
+            <li><m>-x^2+4x+4=0</m></li>
+            <li><m>-49+14x-x^2=0</m></li>
+          </ol>
+          <p>
+          </p>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The equation has two complex number solutions with non-zero imaginary coefficients.
+              </p>
+            </li>
+            <li>
+              <p>
+                The equations has two real number solutions.
+              </p>
+            </li>
+            <li>
+              <p>
+                The equation has one real number solution.
+              </p>
+            </li>
+
+          </ol>
+        </p>
+      </solution>
+      </exercise>
+
+    </exercises>
+    <exercises>
+      <title>Application Problems involving Quadratic Equations</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
+        <statement>
+          <p>
+            Example
+          </p>
+          <p>
+            You may be familiar with the Pythagorean Theorem:  If the legs of a right triangle have lengths of <m>a</m> and <m>b</m> while the hypotenuse has a length of <m>c</m>, then <me>a^2+b^2=c^2</me>.
+          </p>
+          <p>
+            Suppose that we have a right triangle where one leg is <m>1</m> inch longer than the other leg and the hypotenuse is <m>1</m> inch longer than the longer leg.  Let's determine the length of each side of the triangle.
+          </p>
+          <p>
+            Let <m>x</m> represent the length (in) of the shorter leg of the triangle.  Then the length (in) of the longer leg is represented by <m>x+1</m> and the length (in) of the hypotenuse is represented by <m>x+2</m>. 
+          </p>
+
+          <figure xml:id="Pythagereon-example-square-root-method">
+                                <caption>Variable Diagram</caption>
+                                <image width="60%">
+                                    <description></description>
+                                        <latex-image>
+                                            <![CDATA[
+                                                \begin{tikzpicture}
+                                                    \coordinate (A) at (0,3);
+                                                    \coordinate (B) at (0,0);
+                                                    \coordinate (C) at (4,0);
+                                                    \draw (A)--(B)--(C)--cycle;
+                                                    \tkzLabelSegment[left](B,A){$x$}
+                                                    \tkzLabelSegment[below](B,C){$x+1$}
+                                                    \tkzLabelSegment[sloped](C,A){$x+2$}
+                                                    \tkzMarkRightAngle(A,B,C)
+
+                                                \end{tikzpicture}
+                                            ]]>
+                                    </latex-image>
+                                </image>
+                            </figure>
+
+          <p> 
+            Applying the Pythagorean Theorem we have <me>x^2+(x+1)^2=(x+2)^2</me>.
+          </p>
+          <p>
+            We begin solving the equation by expanding all expressions in the equation.
+            <md>
+              <mrow>x^2+(x+1)^2\amp=(x+2)^2</mrow>
+              <mrow>x^2+x^2+2x+1\amp=x^2+4x+4</mrow>
+              <mrow>2x^2+2x+1\amp=x^2+4x+4</mrow>
+              <mrow>2x^2+2x+1\subtractright{x^2}\subtractright{4x}\subtractright{4}\amp=x^2+4x+4\subtractright{x^2}\subtractright{4x}\subtractright{4}</mrow>
+              <mrow>x^2-2x-3\amp=0</mrow>
+              <mrow>(x-3)(x+1)\amp=0</mrow>
+            </md>
+            <md>
+              <mrow>x-3\addright{3}\amp=0\addright{3}\amp\amp\text{or}\amp x+1\subtractright{1}\amp=0\subtractright{1}</mrow>
+              <mrow>x\amp=3\amp\amp\text{or}\amp x\amp=-1</mrow>
+            </md>
+            Since a length cannot be negative, we reject the negative solution.  So the lengths of the triangle are <m>3</m> inches, <m>4</m> inches, and <m>5</m> inches.
+          </p>
+          <p>
+            Example
+          </p>
+          <p>
+            The area formula for a trapezoid is <me>\text{Area}=\frac{1}{2}(b_1+b_2)h</me> where <m>b_1</m> and <m>b_2</m> are the lengths of the parallel sides of the trapezoid (called bases) and <m>h</m> is the perpendicular length between the two bases (called the height). 
+          </p>
+
+                            <figure xml:id="trapezoid-example-square-root-method" width="50%">
+                                <caption>A Trapezoid</caption>
+                                <image width="60%">
+                                    <description></description>
+                                        <latex-image>
+                                            <![CDATA[
+                                                \begin{tikzpicture}
+                                                    \coordinate (A) at (0,0);
+                                                    \coordinate (B) at (6,0);
+                                                    \coordinate (C) at (5,3);
+                                                    \coordinate (D) at (2,3);
+                                                    \coordinate (E) at (2,0);
+                                                    \draw (A)--(B)--(C)--(D)--cycle;
+                                                    \draw[dashed] (D)--(E);
+                                                    \tkzLabelSegment[below](B,A){$b_2$}
+                                                    \tkzLabelSegment[above](C,D){$b_1$}
+                                                    \tkzLabelSegment[right](D,E){$h$}
+
+                                                \end{tikzpicture}
+                                            ]]>
+                                    </latex-image>
+                                </image>
+                            </figure>
+
+          <p>
+            Suppose that we have a trapezoid where the length of one of the bases is twice the length of the other base and the height is five inches shorter than the longer base.  Suppose further that the area of the trapezoid is <m>132</m> <m>\text{in}^2</m>.  Let's determine the length of each of the bases and the height.
+          </p>
+          <p>
+            Let's define <m>x</m> to be the length (in) of the shorter base.  Then the length (in) of the longer base is represented by <m>2x</m> and the length (in) of the height is represented by <m>2x-5</m>.  
+          </p>
+
+                            <figure xml:id="trapezoid-example-variable-diagram-square-root-method" width="50%">
+                                <caption>Variable diagram</caption>
+                                <image width="60%">
+                                    <description></description>
+                                        <latex-image>
+                                            <![CDATA[
+                                                \begin{tikzpicture}
+                                                    \coordinate (A) at (0,0);
+                                                    \coordinate (B) at (6,0);
+                                                    \coordinate (C) at (5,3);
+                                                    \coordinate (D) at (2,3);
+                                                    \coordinate (E) at (2,0);
+                                                    \draw (A)--(B)--(C)--(D)--cycle;
+                                                    \draw[dashed] (D)--(E);
+                                                    \tkzLabelSegment[below](B,A){$b_2=2x$}
+                                                    \tkzLabelSegment[above](C,D){$b_1=x$}
+                                                    \tkzLabelSegment[right](D,E){$h=2x-5$}
+
+                                                \end{tikzpicture}
+                                            ]]>
+                                    </latex-image>
+                                </image>
+                            </figure>
+
+          <p>
+            Using the area formula for a trapezoid we have:
+            <me>\frac{1}{2}(x+2x)(2x-5)=132</me>.
+          </p>
+          <p>
+            We begin solving the equation by clearing the fraction and expanding the left side of the equation.
+            <md>
+              <mrow>\frac{1}{2}(x+2x)(2x-5)\amp=132</mrow>
+              <mrow>\multiplyleft{2}\frac{1}{2}(3x)(2x-5)\amp=\multiplyleft{2}132</mrow>
+              <mrow>(3x)(2x-5)\amp=264</mrow>
+              <mrow>6x^2-15x\amp=264</mrow>
+              <mrow>6x^2-15x\subtractright{264}\amp=264\subtractright{264}</mrow>
+              <mrow>6x^2-15x-264\amp=0</mrow>
+              <mrow>3(2x^2-5x-88)\amp=0</mrow>
+              <mrow>3(2x^2-16x+11x-88)\amp=0</mrow>
+              <mrow>3[2x(x-8)+11(x-8)]\amp=0</mrow>
+              <mrow>3(x-8)(2x+11)\amp=0</mrow>
+            </md>
+            <md>
+              <mrow>x-8\amp=0\amp\amp\text{or}\amp 2x+11\amp=0</mrow>
+              <mrow>x-8\addright{8}\amp=0\addright{8}\amp\amp\text{or}\amp 2x+11\subtractright{11}\amp=0\subtractright{11}</mrow>
+              <mrow>x\amp=8\amp\amp\text{or}\amp 2x\amp=-11</mrow>
+              <mrow>x\amp=8\amp\amp\text{or}\amp \divideunder{2x}{2}\amp=\divideunder{-11}{2}</mrow>
+              <mrow>x\amp=8\amp\amp\text{or}\amp x\amp=-\frac{11}{2}</mrow>
+            </md>
+          </p>
+          <p>
+            Since length cannot be negative, we reject the negative solution. So the lengths of the two bases are <m>8</m> inches and <m>16</m> inches while the length of the height is <m>11</m> inches.
+          </p>
+          <p>
+            Example
+          </p>
+          <p>
+            If an object is dropped from a height (feet) of <m>h</m>, then the distance between the object and the ground after <m>t</m> seconds can be approximated by the function <m>f(t)=-16t^2+h</m>.  Let's use this information to approximate the amount of time it takes an object to reach the ground after being dropped from a height of <m>500</m> feet.
+          </p>
+          <p>
+            Our distance function is <m>f(t)=-16t^2+500</m>.  When the object reaches the ground the value of <m>f</m> is <m>0</m>.  So the equation we need to solve is <me>-16t^2+500=0</me>.
+          </p>
+          <p>
+            We can quickly determine the solution by isolating <m>t^2</m> and employing the square root method.
+            <md>
+              <mrow>-16t^2+500\amp=0</mrow>
+              <mrow>-16t^2+500\subtractright{500}\amp=0\subtractright{500}</mrow>
+              <mrow>-16t^2\amp=-500</mrow>
+              <mrow>\divideunder{-16t^2}{-16}\amp=\divideunder{-500}{-16}</mrow>
+              <mrow>t^2\amp=\frac{125}{4}</mrow>
+              <mrow>t\amp=\pm \sqrt{\frac{125}{4}}</mrow>
+              <mrow>t\amp=\pm \frac{5\sqrt{5}}{2}</mrow>
+            </md>
+            Since the object cannot reach the ground before it has been released, we reject the negative solution.  Using a calculator we have:
+            <me>\frac{5\sqrt{5}}{2}\approx 5.59</me>.  So it takes about 5.59 seconds for the object to reach the ground after its release.
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
         <statement>
           <p>
             <ol>
@@ -1865,12 +1922,18 @@
                 <md>
                   <mrow>h(t)\amp=0</mrow>
                   <mrow>-16t^2+88t+168\amp=0</mrow>
-                  <mrow>-\frac{1}{8} \cdot (-16t^2+88t+168)\amp=-\frac{1}{8} \cdot 0</mrow>
+                  <mrow>\multiplyleft{-\frac{1}{8}}(-16t^2+88t+168)\amp=\multiplyleft{-\frac{1}{8}}0</mrow>
                   <mrow>2t^2-11t-21\amp=0</mrow>
                   <mrow>2t^2-14t+3t-21\amp=0</mrow>
                   <mrow>2t(t-7)+3(t-7)\amp=0</mrow>
                   <mrow>(t-7)(2t+3)\amp=0</mrow>
-                  <mrow>t=7\text{ or }t\amp=-3/2</mrow>
+                </md>
+                <md>
+                  <mrow>t-7\amp=0\amp\amp\text{ or }\amp 2t+3\amp=0</mrow>
+                  <mrow>t-7\addright{7}\amp=0\addright{7}\amp\amp\text{ or }\amp 2t+3\subtractright{3}\amp=0\subtractright{3}</mrow>                  
+                  <mrow>t\amp=7\amp\amp\text{ or }\amp 2t\amp=-3</mrow>
+                  <mrow>t\amp=7\amp\amp\text{ or }\amp \divideunder{2t}{2}\amp=\divideunder{-3}{2}</mrow>
+                  <mrow>t\amp=7\amp\amp\text{ or }\amp t\amp=-\frac{3}{2}</mrow>
                 </md>
                 Since the bean bag can't reach the ground before it is shot, we reject the negative solution.  So we see that it takes seven seconds from release before the bean bag hits the ground.
                 <me></me>
@@ -1921,8 +1984,10 @@
                   <mrow>(x+4)^2\amp=484</mrow>
                   <mrow>x+4\amp=\pm \sqrt{484}</mrow>
                   <mrow>x+4\amp=\pm 22</mrow>
+                  <mrow>x+4\subtractright{4}\amp=\pm 22\subtractright{4}</mrow>
                   <mrow>x=-4\amp\pm 22</mrow>
                 </md> 
+                <me>x=-26\text{ or }x=18</me>
                 Since the length of a side cannot be negative, we reject the negative solution.  So the smaller square has sides of length <m>18</m> m and its area is <m>324\text{ m}^2</m>.
                 <me></me>
               </li>
@@ -1960,9 +2025,14 @@
                   <mrow>x^2+(x+7)^2\amp=(x+8)^2</mrow>
                   <mrow>x^2+x^2+14x+49\amp=x^2+16x+64</mrow>
                   <mrow>2x^2+14x+49\amp=x^2+16x+64</mrow>
+                  <mrow>2x^2+14x+49\subtractright{x^2}\subtractright{16x}\subtractright{64}\amp=x^2+16x+64\subtractright{x^2}\subtractright{16x}\subtractright{64}</mrow>
                   <mrow>x^2-2x-15\amp=0</mrow>
                   <mrow>(x-5)(x+3)\amp=0</mrow>
-                  <mrow>x=5\text{ or }x\amp=-3</mrow>
+                </md>
+                <md>
+                  <mrow>x-5\amp=0 \amp\amp\text{ or }\amp x+3\amp=0</mrow>
+                  <mrow>x-5\addright{5}\amp=0\addright{5} \amp\amp\text{ or }\amp x+3\subtractright{3}\amp=0\subtractright{3}</mrow>
+                  <mrow>x\amp=5 \amp\amp\text{ or }\amp x\amp=-3</mrow>
                 </md>
                 Since a length can't be negative, we reject the negative solution.  So the shorter leg of the triangle has a length of <m>5</m> cm and the lengths of the other two sides are <m>12</m> cm and <m>13</m> cm.
               </p>
@@ -1973,8 +2043,11 @@
         </solution>
       </exercise>
 
-  </exercises>
-   
+      <exercise>
+        <title>Question bank with short answers</title>
+      </exercise>
+
+    </exercises>
 
      
 </section>

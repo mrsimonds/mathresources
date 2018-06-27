@@ -12,11 +12,974 @@
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-radicals-and-rational-exponents">
     <title>Radicals and rational exponents</title>
 
-    <exercises>
-      <title>Written Examples</title>
 
-     <exercise>
-      <title>Converting between radical notation and rational exponent notation</title>
+    <exercises>
+      <title>Videos</title>
+      <exercise>
+        <title>Videos created by Ann Cary and Scot Leavitt.</title>
+        <statment>        
+          <p>The links take you to YouTube Playlists which will open either in a new window or in a Youtube App.
+          <ul>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-ex0-JuRQ4P920Qz1x5LwUO" target="blank">Square root properties</url>
+            </li>
+          </ul>
+        </p>
+      </statment>
+    </exercise>
+  </exercises>
+
+   <exercises>
+      <title>Simplifying square roots by factoring out perfect squares</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
+      <statement>
+        <p>
+          Expressions containing square roots can frequently be simplified if we identify the largest perfect square that divides evenly into the radicand (the number or expression under the radical sign).  In this context the phrase "perfect squares" refers to the squares of the positive integers, the first few of which are <m>1</m>, <m>4</m>, <m>9</m>, <m>16</m>, <m>25</m>, etc.  If you don't know the perfect squares at least through <m>121</m>, the practice problems associated with this lesson will be easier if you write them out.
+        </p>
+        <p>
+          The process of simplifying square roots is reliant upon the following rule.
+          <me>\sqrt{a \cdot b}=\sqrt{a} \cdot \sqrt{b} \text{, } a \geq 0 \text{ and } b \geq 0</me>
+          The process entails writing the original expression as the product of two square roots, one of which simplifies to an integer.
+        </p>
+        <p>
+          Consider <m>\sqrt{28}</m>.  There are several factor pairs of <m>28</m>, but we are looking for a pair where one of the two numbers is a perfect square.  The only pair that fits the bill is <m>4</m> and <m>7</m>.  What follows are the steps entailed in simplifying the square root.
+          <md>
+            <mrow>\sqrt{28}\amp=\sqrt{\highlightr{4} \cdot \highlight{7}}</mrow>
+            <mrow>\amp=\highlightr{\sqrt{4}} \cdot \highlight{\sqrt{7}}</mrow>
+            <mrow>\amp=\highlightr{2}\highlight{\sqrt{7}}</mrow>
+          </md>
+        </p>
+        Several more examples are shown below.
+        <sidebyside widths="33% 33% 33%" margins="0%">
+          <p>
+            <md>
+              <mrow>\sqrt{75}\amp=\sqrt{\highlightr{25} \cdot \highlight{3}}</mrow>
+              <mrow>\amp=\highlightr{\sqrt{25}} \cdot \highlight{\sqrt{3}}</mrow>
+              <mrow>\amp=\highlightr{5}\highlight{\sqrt{3}}</mrow>
+            </md>
+          </p>
+          <p>
+            <md>
+              <mrow>\sqrt{40}\amp=\sqrt{\highlightr{4} \cdot \highlight{10}}</mrow>
+              <mrow>\amp=\highlightr{\sqrt{4}} \cdot \highlight{\sqrt{10}}</mrow>
+              <mrow>\amp=\highlightr{2}\highlight{\sqrt{10}}</mrow>
+            </md>
+          </p>
+          <p>
+            <md>
+              <mrow>\sqrt{98}\amp=\sqrt{\highlightr{49} \cdot \highlight{2}}</mrow>
+              <mrow>\amp=\highlightr{\sqrt{49}} \cdot \highlight{\sqrt{2}}</mrow>
+              <mrow>\amp=\highlightr{7}\highlight{\sqrt{2}}</mrow>
+            </md>
+          </p>
+        </sidebyside>
+        <p>
+          For a square root expression to be fully simplified, we need to identify the greatest perfect square that divides evenly into the radicand.  Consider, for example, <m>\sqrt{48}</m>.  The work below is correct, but the square root is not fully simplified <mdash/> can you see why?
+          <md>
+            <mrow>\sqrt{48}\amp=\sqrt{\highlightr{4} \cdot \highlight{12}}</mrow>
+            <mrow>\amp=\highlightr{\sqrt{4}} \cdot \highlight{\sqrt{12}}</mrow>
+            <mrow>\amp=\highlightr{2}\highlight{\sqrt{12}}</mrow>
+          </md>
+          The issue is that <m>12</m> still has another perfect square factor of <m>4</m>.  While we succeeded in finding a perfect square that evenly divides into <m>48</m>, we did not succeed in identifying the largest perfect square that evenly divides into <m>48</m>.  The correct simplification follows.
+          <md>
+            <mrow>\sqrt{48}\amp=\sqrt{\highlightr{16} \cdot \highlight{3}}</mrow>
+            <mrow>\amp=\highlightr{\sqrt{16}} \cdot \highlight{\sqrt{3}}</mrow>
+            <mrow>\amp=\highlightr{4}\highlight{\sqrt{3}}</mrow>
+          </md>
+        </p>
+        <p>
+          Sometimes the original expression contains factors other than the square root expression.  We need to be careful to carry those factors along as we simplify the square root factor.  Several examples follow.
+        </p>
+        <sidebyside widths="50% 50%" margins="0%">
+            <p>
+              <md>
+                <mrow>8\sqrt{63}\amp=8 \cdot \sqrt{\highlightr{9} \cdot \highlight{7}}</mrow>
+                <mrow>\amp=8 \cdot \highlightr{\sqrt{9}} \cdot \highlight{\sqrt{7}}</mrow>
+                <mrow>\amp=8 \cdot \highlightr{3} \cdot \highlight{\sqrt{7}}</mrow>
+                <mrow>\amp=24\sqrt{7}</mrow>
+              </md>
+            </p>
+            <p>
+              <md>
+                <mrow>-\frac{2\sqrt{108}}{3}\amp=-\frac{2 \cdot \sqrt{\highlightr{36} \cdot \highlight{3}}}{3}</mrow>
+                <mrow>\amp=-\frac{2 \cdot \highlightr{\sqrt{36}} \cdot \highlight{\sqrt{3}}}{3}</mrow>
+                <mrow>\amp=-\frac{2 \cdot \highlightr{6} \cdot \highlight{\sqrt{3}}}{3}</mrow>
+                <mrow>\amp=-\frac{12 \cdot \sqrt{3}}{3}</mrow>
+                <mrow>\amp=-4\sqrt{3}</mrow>
+              </md>
+            </p>
+        </sidebyside>
+        <p>
+          <md>
+            <mrow>\frac{\sqrt{90}}{12}\amp=\frac{\sqrt{\highlightr{9} \cdot \highlight{10}}}{12}</mrow>
+            <mrow>\amp=\frac{\highlightr{\sqrt{9}} \cdot \highlight{\sqrt{10}}}{12}</mrow>
+            <mrow>\amp=\frac{\highlightr{3} \cdot \highlight{\sqrt{10}}}{12}</mrow>
+            <mrow>\amp=\frac{\sqrt{10}}{4}</mrow>
+          </md>
+        </p>
+      </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+      <statement>
+        <p>
+          Simplify each square root expression.
+          <ol cols="3">
+            <li><m>\sqrt{50}</m></li>
+            <li><m>\sqrt{20}</m></li>
+            <li><m>\sqrt{27}</m></li>
+            <li><m>5\sqrt{72}</m></li>
+            <li><m>\frac{\sqrt{8}}{2}</m></li>
+            <li><m>-9\sqrt{12}</m></li>
+          </ol>
+          <p>
+          </p>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          <ol cols="2">
+
+            <li>
+              <m>
+                \begin{aligned}[t]
+                \sqrt{50}\amp=\sqrt{\highlightr{25} \cdot \highlight{2}}\\
+                \amp=\highlightr{\sqrt{25}} \cdot \highlight{\sqrt{2}}\\
+                \amp=\highlightr{5}\highlight{\sqrt{2}}
+                \end{aligned}
+              </m>
+            </li>
+
+            <li>
+              <m>
+                \begin{aligned}[t]
+                \sqrt{20}\amp=\sqrt{\highlightr{4} \cdot \highlight{5}}\\
+                \amp=\highlightr{\sqrt{4}} \cdot \highlight{\sqrt{5}}\\
+                \amp=\highlightr{2}\highlight{\sqrt{5}}
+                \end{aligned}
+              </m>
+            </li>
+
+            <li>
+              <m>
+                \begin{aligned}[t]
+                \sqrt{27}\amp=\sqrt{\highlightr{9} \cdot \highlight{3}}\\
+                \amp=\highlightr{\sqrt{9}} \cdot \highlight{\sqrt{3}}\\
+                \amp=\highlightr{3}\highlight{\sqrt{3}}
+                \end{aligned}
+              </m>
+            </li>
+
+            <li>
+              <m>
+                \begin{aligned}[t]
+                5\sqrt{72}\amp=5 \cdot \sqrt{\highlightr{36} \cdot \highlight{2}}\\
+                \amp=5 \cdot \highlightr{\sqrt{36}} \cdot \highlight{\sqrt{2}}\\
+                \amp=5 \cdot \highlightr{6} \cdot \highlight{\sqrt{2}}\\
+                \amp=30\sqrt{2}
+                \end{aligned}
+              </m>
+            </li>
+
+            <li>
+              <m>
+                \begin{aligned}[t]
+                \frac{\sqrt{8}}{2}\amp=\frac{\sqrt{\highlightr{4} \cdot \highlight{2}}}{2}\\
+                \amp=\frac{\highlightr{\sqrt{4}} \cdot \highlight{\sqrt{2}}}{2}\\
+                \amp=\frac{\highlightr{2} \cdot \highlight{\sqrt{2}}}{2}\\
+                \amp=\sqrt{2}
+                \end{aligned}
+              </m>
+            </li>
+
+            <li>
+              <m>
+                \begin{aligned}[t]
+                -9\sqrt{12}\amp=-9 \cdot \sqrt{\highlightr{4} \cdot \highlight{3}}\\
+                \amp=-9\highlightr{\sqrt{4}} \cdot \highlight{\sqrt{3}}\\
+                \amp=-9 \cdot \highlightr{2} \cdot \highlight{\sqrt{3}}\\
+                \amp=-18\sqrt{3}
+                \end{aligned}
+              </m>
+            </li>
+
+          </ol>
+        </p>
+      </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+        <statement>
+          <p>
+            Simplify each square root expression.
+            <ol>
+              <li><m>\sqrt{28}</m></li>
+              <li><m>\sqrt{98}</m></li>
+              <li><m>-\sqrt{800}</m></li>
+              <li><m>5\sqrt{125}</m></li>
+              <li><m>\frac{\sqrt{32}}{8}</m></li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><m>\sqrt{28}=2\sqrt{7}</m></li>
+              <li><m>\sqrt{98}=7\sqrt{2}</m></li>
+              <li><m>-\sqrt{800}=-20\sqrt{2}</m></li>
+              <li><m>5\sqrt{125}=25\sqrt{5}</m></li>
+              <li><m>\frac{\sqrt{32}}{8}=\frac{\sqrt{2}}{2}</m></li>
+            </ol>
+            <p></p>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercises>
+
+     <exercises>
+      <title>Rationalizing Monomial Square Root Denominators</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
+      <statement>
+        <p>
+          Traditionally, expressions containing square roots in the denominator are not considered simplified.  There are two common types of expressions that arise where square roots naturally occur in the denominator.  In this section we deal with expressions where the denominator is a monomial (one term) and in the final section we deal we expressions where the denominator is a binomial (two terms).
+        </p>
+        <p>
+          Let's consider <m>\frac{1}{\sqrt{2}}</m>.  We need to determine a legitimate maneuver that will result in the square root factor taking up residence outside of the denominator of the fraction.  If we multiply the denominator by <m>\sqrt{2}</m>, the resultant product in the denominator will be <m>2</m>.  Of course, multiplying anything by <m>\sqrt{2}</m> does not result in an equivalent expression unless some sort of balancing act is performed simultaneously.  In this case the balancing act is to also multiply the numerator by <m>\sqrt{2}</m>.  To wit:
+          <md>
+            <mrow>\frac{1}{\sqrt{2}}\amp=\frac{1}{\sqrt{2}} \cdot \frac{\sqrt{2}}{\sqrt{2}}</mrow>
+            <mrow>\amp=\frac{\sqrt{2}}{2}</mrow>
+          </md>
+          Now it may not seem to you that the expression <m>\frac{\sqrt{2}}{2}</m> is any simpler than the expression <m>\frac{1}{\sqrt{2}}</m>, and in a sense you are correct in that assertion.  As math folks, though, we find use in rewriting the expression with the square root in the numerator.  On pay-off is that it can help us identifying square root terms that can be combined (see next section).  Historically, rewriting the expression with the radical in the numerator dramatically simplified any attendant arithmetic.  Consider that <m>\sqrt{2}</m> is approximately <m>1.414</m>.  Which would you rather compute by hand: <m>\frac{1.414}{2}</m> or <m>\frac{1}{1.414}</m>?  If it's not apparent to you, try both.
+        </p>
+        <p>
+          Finally, it is frequently the case that clearing the square root away from the denominator results in a simpler expression in all senses of the term.  Let's make one small tweak to the last example.
+          <md>
+            <mrow>\frac{2}{\sqrt{2}}\amp=\frac{2}{\sqrt{2}} \cdot \frac{\sqrt{2}}{\sqrt{2}}</mrow>
+            <mrow>\amp=\frac{2 \cdot \sqrt{2}}{2}</mrow>
+            <mrow>\amp=\sqrt{2}</mrow>
+          </md>
+        </p>
+        <p>
+          When the original radicand contains a prefect square factor, we need to be sure that we remember to factor that from the radical.  We also need to make sure to remember to carry along any other factors and completely simplify the resultant expression.  Several examples follow.
+        </p>
+          <p>
+            Example:
+          </p>
+          <p>
+            Rationalize the denominator and simplify the result for the expression<m>\frac{4}{\sqrt{12}}</m>.
+          </p>
+          <p>
+            We begin by multiplying both the numerator and denominator of the expression by <m>\sqrt{12}</m>.  We then simplify <m>\sqrt{12}</m> and then reduce the resultant fraction.
+            <md>
+              <mrow>\frac{4}{\sqrt{12}}\amp=\frac{4}{\sqrt{12}} \cdot \highlight{\frac{\sqrt{12}}{\sqrt{12}}}</mrow>
+              <mrow>\amp=\frac{4 \cdot \highlight{\sqrt{12}}}{12}</mrow>
+              <mrow>\amp=\frac{4 \cdot \highlight{2\sqrt{3}}}{12}</mrow>
+              <mrow>\amp=\frac{2\sqrt{3}}{3}</mrow>
+            </md>
+          </p>
+          <p>
+            Example:
+          </p>
+          <p>
+            Rationalize the denominator and simplify the result for the expression<m>\frac{1}{\sqrt{500}}</m>.
+          </p>
+          <p>
+            We begin by multiplying both the numerator and denominator of the expression by <m>\sqrt{500}</m>.  We then simplify <m>\sqrt{500}</m> and then reduce the resultant fraction.
+            <md>
+              <mrow>\frac{1}{\sqrt{500}}\amp=\frac{1}{\sqrt{500}} \cdot \highlight{\frac{\sqrt{500}}{\sqrt{500}}}</mrow>
+              <mrow>\amp=\frac{\highlight{\sqrt{500}}}{500}</mrow>
+              <mrow>\amp=\frac{\highlight{10\sqrt{5}}}{500}</mrow>
+              <mrow>\amp=\frac{\sqrt{5}}{50}</mrow>
+            </md>
+          </p>
+          <p>
+            Example:
+          </p>
+          <p>
+            Rationalize the denominator and simplify the result for the expression<m>-\frac{4}{\sqrt{44}}</m>.
+          </p>
+          <p>
+            We begin by multiplying both the numerator and denominator of the expression by <m>\sqrt{44}</m>.  We then simplify <m>\sqrt{44}</m> and then reduce the resultant fraction.
+            <md>
+              <mrow>-\frac{4}{\sqrt{44}}\amp=-\frac{4}{\sqrt{44}} \cdot \highlight{\frac{\sqrt{44}}{\sqrt{44}}}</mrow>
+              <mrow>\amp=-\frac{4 \cdot \highlight{\sqrt{44}}}{44}</mrow>
+              <mrow>\amp=-\frac{4 \cdot \highlight{2\sqrt{11}}}{44}</mrow>
+              <mrow>\amp=-\frac{2\sqrt{11}}{11}</mrow>
+            </md>
+          </p>
+          <p>
+            Example:
+          </p>
+          <p>
+            Rationalize the denominator and simplify the result for the expression<m>\frac{1}{2\sqrt{128}}</m>.
+          </p>
+          <p>
+            We begin by multiplying both the numerator and denominator of the expression by <m>\sqrt{128}</m>.  We then simplify <m>\sqrt{128}</m> and then reduce the resultant fraction.
+            <md>
+              <mrow>\frac{1}{2\sqrt{128}}\amp=\frac{1}{2 \cdot \sqrt{128}} \cdot \highlight{\frac{\sqrt{128}}{\sqrt{128}}}</mrow>
+              <mrow>\amp=\frac{\highlight{\sqrt{128}}}{2 \cdot 128}</mrow>
+              <mrow>\amp=\frac{\highlight{8\sqrt{2}}}{256}</mrow>
+              <mrow>\amp=\frac{\sqrt{2}}{32}</mrow>
+            </md>
+          </p>
+      </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+      <statement>
+        <p>
+          Rationalize each denominator.  Completely simplify each result.
+          <ol cols="3">
+            <li><m>\frac{7}{\sqrt{7}}</m></li>
+            <li><m>\frac{30}{\sqrt{10}}</m></li>
+            <li><m>\frac{1}{\sqrt{20}}</m></li>
+            <li><m>\frac{25}{\sqrt{50}}</m></li>
+            <li><m>\frac{1}{6\sqrt{3}}</m></li>
+            <li><m>\frac{121}{11\sqrt{11}}</m></li>
+          </ol>
+          <p>
+          </p>
+        </p>
+      </statement>
+      <solution>
+        <ol>
+
+          <li>
+            We begin by multiplying both the numerator and the denominator of the expression by <m>\sqrt{7}</m>. We then reduce the resultant fraction.
+            <md>
+              <mrow>\frac{7}{\sqrt{7}}\amp=\frac{7}{\sqrt{7}} \cdot \highlight{\frac{\sqrt{7}}{\sqrt{7}}}</mrow>
+              <mrow>\amp=\frac{7\sqrt{7}}{7}</mrow>
+              <mrow>\amp=\sqrt{7}</mrow>
+            </md>
+          </li>
+
+          <li>
+            We begin by multiplying both the numerator and the denominator of the expression by <m>\sqrt{10}</m>. We then reduce the resultant fraction.
+            <md>
+              <mrow>\frac{30}{\sqrt{10}}\amp=\frac{30}{\sqrt{10}} \cdot \highlight{\frac{\sqrt{10}}{\sqrt{10}}}</mrow>
+              <mrow>\amp=\frac{30\sqrt{10}}{10}</mrow>
+              <mrow>\amp=3\sqrt{10}</mrow>
+            </md>
+          </li>
+
+          <li>
+            We begin by multiplying both the numerator and the denominator of the expression by <m>\sqrt{20}</m>. We then simplify <m>\sqrt{20}</m> and reduce the resultant fraction.
+            <md>
+              <mrow>\frac{1}{\sqrt{20}}\amp=\frac{1}{\sqrt{20}} \cdot \highlight{\frac{\sqrt{20}}{\sqrt{20}}}</mrow>
+              <mrow>\amp=\frac{\highlight{\sqrt{20}}}{20}</mrow>
+              <mrow>\amp=\frac{\highlight{2\sqrt{5}}}{20}</mrow>
+              <mrow>\amp=\frac{\sqrt{5}}{10}</mrow>
+            </md>
+          </li>
+
+          <li>
+            We begin by multiplying both the numerator and the denominator of the expression by <m>\sqrt{50}</m>. We then reduce the resultant fraction and simplify <m>\sqrt{50}</m>.
+            <md>
+              <mrow>\frac{25}{\sqrt{50}}\amp=\frac{25}{\sqrt{50}} \cdot \highlight{\frac{\sqrt{50}}{\sqrt{50}}}</mrow>
+              <mrow>\amp=\frac{25\sqrt{50}}{50}</mrow>
+              <mrow>\amp=\frac{\highlight{\sqrt{50}}}{2}</mrow>
+              <mrow>\amp=\frac{\highlight{5\sqrt{2}}}{2}</mrow>
+            </md>
+          </li>
+
+          <li>
+            We begin by multiplying both the numerator and the denominator of the expression by <m>\sqrt{3}</m>. We then reduce the resultant fraction.
+            <md>
+              <mrow>\frac{1}{6\sqrt{3}}\amp=\frac{1}{6\sqrt{3}} \cdot \highlight{\frac{\sqrt{3}}{\sqrt{3}}}</mrow>
+              <mrow>\amp=\frac{\sqrt{3}}{6 \cdot 3}</mrow>
+              <mrow>\amp=\frac{\sqrt{3}}{18}</mrow>
+            </md>
+          </li>
+
+          <li>
+            We begin by multiplying both the numerator and the denominator of the expression by <m>\sqrt{11}</m>. We then reduce the resultant fraction.
+            <md>
+              <mrow>\frac{121}{11\sqrt{11}}\amp=\frac{121}{11\sqrt{11}} \cdot \highlight{\frac{\sqrt{11}}{\sqrt{11}}}</mrow>
+              <mrow>\amp=\frac{121\sqrt{11}}{11 \cdot 11}</mrow>
+              <mrow>\amp=\sqrt{11}</mrow>
+            </md>
+          </li>
+        </ol>
+      </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+        <statement>
+          <p>
+            Rationalize each denominator.  Completely simplify each result.
+            <ol>
+              <li><m>\frac{6}{\sqrt{3}}</m></li>
+              <li><m>\frac{4}{\sqrt{8}}</m></li>
+              <li><m>-\frac{2}{\sqrt{48}}</m></li>
+              <li><m>-\frac{7}{3\sqrt{63}}</m></li>
+              <li><m>\frac{3}{25\sqrt{200}}</m></li>
+              <li><m>\frac{12}{\sqrt{288}}</m></li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><m>\frac{6}{\sqrt{3}}=2\sqrt{3}</m></li>
+              <li><m>\frac{4}{\sqrt{8}}=\sqrt{2}</m></li>
+              <li><m>-\frac{2}{\sqrt{48}}=-\frac{\sqrt{3}}{6}</m></li>
+              <li><m>-\frac{7}{3\sqrt{63}}=-\frac{\sqrt{7}}{9}</m></li>
+              <li><m>\frac{3}{25\sqrt{200}}=\frac{3\sqrt{2}}{500}</m></li>
+              <li><m>\frac{12}{\sqrt{288}}=\frac{\sqrt{2}}{2}</m></li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercises>
+
+     <exercises>
+      <title>Combining Square Root Expressions</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
+      <statement>
+        <p>
+          Combining square roots expressions is similar to combining other like terms.  For example, two square roots of three added to five square roots of three results in seven square roots of three.  Symbolically:
+          <me>5\sqrt{3}+2\sqrt{3}=7\sqrt{3}</me>
+          Something that is radically differently about combing square roots, however, is that it is not always immediately apparent what terms are in fact like terms.  For example, at first glance you might think that <m>/sqrt{5}</m> and <m>\sqrt{20}</m> cannot be combined, but in fact they can.  Specifically:
+          <md>
+            <mrow>\sqrt{5}+\sqrt{20}\amp=\sqrt{5}+2\sqrt{5}</mrow>
+            <mrow>\amp=3\sqrt{5}</mrow>
+          </md>
+          The last example illustrates a key step when simplifying expressions that contain several terms with square root factors.  Each and every term must first be simplified, including rationalizing denominators, and then any and all like terms must be combined  After all of the terms have been simplified, the like terms are the terms that contain exactly the same square root factors.  Several examples follow.
+        </p>
+          <p>
+            Example: Simplify <m>4\sqrt{12}+\frac{9}{\sqrt{3}}</m>.
+          </p>
+          <p>
+            We begin by simplifying <m>\sqrt{12}</m> and rationalizing the denominator in the expression <m>\frac{9}{\sqrt{3}}</m>.  We then further simplify each term and finally combine the like terms.
+            <md>
+              <mrow>4\highlightr{\sqrt{12}}+\frac{9}{\sqrt{3}}\amp=4 \cdot \highlightr{2 \sqrt{3}}+\frac{9}{\sqrt{3}} \cdot \highlight{\frac{\sqrt{3}}{\sqrt{3}}}</mrow>
+              <mrow>\amp=8\sqrt{3}+\frac{9 \cdot \sqrt{3}}{3}</mrow>
+              <mrow>\amp=8\sqrt{3}+3\sqrt{3}</mrow>
+              <mrow>\amp=11\sqrt{3}</mrow>
+            </md>
+          </p>
+          <p>
+            Example: Simplify <m>5\sqrt{81}-2\sqrt{18}</m>.
+          </p>
+          <p>
+            We begin by simplifying <m>\sqrt{81}</m> and <m>\sqrt{18}</m>.  We then further simplify each term.  We take no further actions because there are no like terms.
+            <md>
+              <mrow>5\highlightr{\sqrt{81}}-2\highlight{\sqrt{18}}\amp=5 \cdot \highlightr{9}-2 \cdot \highlight{3  \sqrt{2}}</mrow>
+              <mrow>\amp=45-6\sqrt{2}</mrow>
+            </md>
+          </p>
+          <p>
+            Example: Simplify <m>\frac{14}{\sqrt{98}}-\frac{\sqrt{32}}{2}</m>.
+          </p>
+          <p>
+            We begin by simplifying <m>\sqrt{32}</m> and rationalizing the denominator in the expression <m>\frac{14}{\sqrt{98}}</m>.  We then further simplify each term and finally combine the like terms.
+            <md>
+              <mrow>\frac{14}{\sqrt{98}}-\frac{\highlightr{\sqrt{32}}}{2}\amp=\frac{14}{\sqrt{98}} \cdot \highlight{\frac{\sqrt{98}}{\sqrt{98}}}-\frac{\highlightr{4  \sqrt{2}}}{2}</mrow>
+              <mrow>\amp=\frac{14 \cdot \highlight{\sqrt{98}}}{98}-2\sqrt{2}</mrow>
+              <mrow>\amp=\frac{14 \cdot \highlight{7 \cdot \sqrt{2}}}{98}-2\sqrt{2}</mrow>
+              <mrow>\amp=\sqrt{2}-2\sqrt{2}</mrow>
+              <mrow>\amp=-\sqrt{2}</mrow>
+            </md>
+          </p>
+          <p>
+            Example: Simplify <m>\sqrt{50}+\sqrt{20}-\sqrt{125}+\sqrt{8}</m>.
+          </p>
+          <p>
+            We begin by simplifying all four square roots expressions.  We the combine the like terms.
+            <md>
+              <mrow>\sqrt{50}+\sqrt{20}-\sqrt{125}+\sqrt{8}\amp=5\sqrt{2}+2\sqrt{5}-5\sqrt{5}+2\sqrt{2}</mrow>
+              <mrow>\amp=7{\sqrt{2}}-3\sqrt{5}</mrow>
+            </md>
+          </p>
+        <p>
+          Example: Expand and simplify <m>(4+\sqrt{12})^2</m>.
+        </p>
+        <p>
+          We begin by writing the expression as the product of two factors.  We then expand that expression, simplify <m>\sqrt{12}</m>, and combine the like terms.
+          <md>
+            <mrow>(4+\sqrt{12})^2\amp=(4+\sqrt{12})(4+\sqrt{12})</mrow>
+            <mrow>\amp=16+4\highlightr{\sqrt{12}}+4\highlightr{\sqrt{12}}+12</mrow>
+            <mrow>\amp=16+4 \cdot \highlightr{2\sqrt{3}}+4 \cdot \highlightr{2\sqrt{3}}+12</mrow>
+            <mrow>\amp=16+8\sqrt{3}+8\sqrt{3}+12</mrow>
+            <mrow>\amp=28+16\sqrt{3}</mrow>
+          </md>
+        </p>
+        <p>
+          Example: Expand and simplify <m>(7-\sqrt{24})(7+\sqrt{24})</m>.
+        </p>
+        <p>
+          We begin by expanding the product.  We then combine the like terms.  Note that there is no need to simplify the radical expressions since they sum to zero.
+          <md>
+            <mrow>(7-\sqrt{24})(7+\sqrt{24})\amp=49+7\sqrt{24}-7\sqrt{24}-24</mrow>
+            <mrow>\amp=25</mrow>
+          </md>
+        </p>
+      </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+      <title>Combining square root expressions</title>
+      <statement>
+        <p>
+          Combine all like terms after first simplifying each term containing a square root.
+          <ol cols="2">
+            <li><m>\sqrt{2}+\sqrt{8}</m></li>
+            <li><m>\sqrt{9}+\sqrt{18}</m></li>
+            <li><m>4\sqrt{8}-7\sqrt{18}</m></li>
+            <li><m>(\sqrt{6}+\sqrt{2})^2</m></li>
+            <li><m>(\sqrt{8}+2)(\sqrt{8}-2)</m></li>
+            <li><m>5\sqrt{12}+\frac{6}{\sqrt{3}}</m></li>
+            <li><m>\frac{2}{\sqrt{6}}-4\sqrt{8}+2\sqrt{150}+\frac{1}{\sqrt{18}}</m></li>
+            <p>
+            </p>
+          </ol>
+          <p>
+          </p>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+
+            <li>
+              We begin by simplifying <m>\sqrt{8}</m>.  We then combine like terms.
+              <md>
+                <mrow>\sqrt{2}+\highlightr{\sqrt{8}}\amp=\sqrt{2}+\highlightr{2\sqrt{2}}</mrow>
+                <mrow>\amp=3\sqrt{2}</mrow>
+              </md>
+            </li>
+
+            <li>
+              We begin by simplifying <m>\sqrt{18}</m>.  We take no further actions because there are no like terms.
+              <md>
+                <mrow>\sqrt{9}+\highlightr{\sqrt{18}}=3+\highlightr{3\sqrt{2}}</mrow>
+              </md>
+            </li>
+
+            <li>
+              We begin by simplifying <m>\sqrt{8}</m> and <m>\sqrt{18}</m>.  We then further simplify the terms and finally combine the like terms.
+              <md>
+                <mrow>4\highlightr{\sqrt{8}}-7\highlight{\sqrt{18}}\amp=4 \cdot \highlightr{2\sqrt{2}}-7 \cdot \highlight{3\sqrt{2}}</mrow>
+                <mrow>\amp=8\sqrt{2}-21\sqrt{2}</mrow>
+                <mrow>\amp=-13\sqrt{2}</mrow>
+              </md>
+            </li>
+
+           
+
+            <li>
+              We begin by expanding the product.  We then simplify <m>\sqrt{12}</m> and finally we combine the like terms.
+              <md>
+                <mrow>(\sqrt{6}+\sqrt{2})^2\amp=(\sqrt{6}+\sqrt{2})(\sqrt{6}+\sqrt{2})</mrow>
+                <mrow>\amp=6+\highlightr{\sqrt{12}}+\highlightr{\sqrt{12}}+2</mrow>
+                <mrow>\amp=6+\highlightr{2\sqrt{3}}+\highlightr{2\sqrt{3}}+2</mrow>
+                <mrow>\amp=8+4\sqrt{3}</mrow>
+              </md>
+            </li>
+
+            <li>
+              We begin by expanding the product and we then combine the like terms.  Note that there is no reason to simplify the radical terms since they sum to zero.
+              <md>
+                <mrow>(\sqrt{8}+2)(\sqrt{8}-2)\amp=8-2\sqrt{8}+2\sqrt{8}-4</mrow>
+                <mrow>\amp=4</mrow>
+              </md>
+            </li>
+
+            <li>
+              We begin by simplifying <m>\sqrt{12}</m> and rationalizing the denominator in the expression <m>\frac{6}{\sqrt{3}}</m>.  We then further simplify the terms and finally combine the like terms.
+              <md>
+                <mrow>5\highlightr{\sqrt{12}}+\frac{6}{\sqrt{3}}\amp=5 \cdot \highlightr{2\sqrt{3}}+\frac{6}{\sqrt{3}} \cdot \highlight{\frac{\sqrt{3}}{\sqrt{3}}}</mrow>
+                <mrow>\amp=10\sqrt{3}+\frac{6\sqrt{3}}{3}</mrow>
+                <mrow>\amp=10\sqrt{3}+2\sqrt{3}</mrow>
+                <mrow>\amp=12\sqrt{3}</mrow>
+              </md>
+            </li>
+            <li>
+              We begin by simplifying <m>\sqrt{8}</m> and <m>\sqrt{150}</m> and rationalizing the denominators in the expressions <m>\frac{2}{\sqrt{6}}</m> and <m>\frac{1}{\sqrt{18}}</m>.  We then further simplify each term and finally combine the like terms.
+              <md>
+                <mrow>\amp \frac{2}{\sqrt{6}}-4\highlightr{\sqrt{8}}+2\highlightb{\sqrt{150}}+\frac{1}{\sqrt{18}}</mrow>
+                <mrow>\amp \phantom{={}} \phantom{={}} =\frac{2}{\sqrt{6}}\highlight{\cdot\frac{\sqrt{6}}{\sqrt{6}}}-4 \cdot \highlightr{2\sqrt{2}}+2 \cdot \highlightb{5\sqrt{6}}+\frac{1}{\sqrt{18}}\highlight{\cdot\frac{\sqrt{18}}{\sqrt{18}}}</mrow>
+                <mrow>\amp \phantom{={}} \phantom{={}} =\frac{2\sqrt{6}}{6}-8\sqrt{2}+10\sqrt{6}+\frac{\highlight{\sqrt{18}}}{18}</mrow>
+                <mrow>\amp \phantom{={}} \phantom{={}} =\frac{\sqrt{6}}{3}-8\sqrt{2}+10\sqrt{6}+\frac{\highlight{3\sqrt{2}}}{18}</mrow>
+                <mrow>\amp \phantom{={}} \phantom{={}} =\highlightr{\frac{\sqrt{6}}{3}}\highlight{-8\sqrt{2}}\highlightr{+10\sqrt{6}}\highlight{+\frac{\sqrt{2}}{6}}</mrow>
+                <mrow>\amp \phantom{={}} \phantom{={}} =\highlightr{\frac{\sqrt{6}}{3}+10\sqrt{6}}\highlight{+\frac{\sqrt{2}}{6}-8\sqrt{2}}</mrow>
+                <mrow>\amp \phantom{={}} \phantom{={}} =\highlightr{\frac{\sqrt{6}}{3}+\frac{30\sqrt{6}}{3}}\highlight{+\frac{\sqrt{2}}{6}-\frac{48\sqrt{2}}{6}}</mrow>
+                <mrow>\amp \phantom{={}} \phantom{={}} =\highlightr{\frac{31\sqrt{6}}{3}}-\highlight{\frac{47\sqrt{2}}{6}}</mrow>
+              </md>
+            </li>
+          
+          </ol>
+        </p>
+      </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+        <statement>
+          <p>
+            Combine all like terms after first simplifying each term containing a square root.
+            <ol>
+              <li><m>2\sqrt{8}-\sqrt{32}</m></li>
+              <li><m>\sqrt{80}+3\sqrt{20}</m></li>
+              <li><m>3\sqrt{18}-2\sqrt{24}</m></li>
+              <li><m>(2+\sqrt{7})^2</m></li>
+              <li><m>(6-\sqrt{20})(6+\sqrt{20})</m></li>
+              <li><m>(\sqrt{8}+3)(\sqrt{8}-3)</m></li>
+              <li><m>(1-\sqrt{72})^2</m></li>
+              <li><m>\frac{6}{\sqrt{2}}-5\sqrt{18}</m></li>
+              <li><m>\frac{2}{\sqrt{125}}+\sqrt{500}</m></li>
+              <li><m>\frac{30}{\sqrt{20}}+\frac{12}{\sqrt{45}}</m></li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><m>2\sqrt{8}-\sqrt{32}=0</m></li>
+              <li><m>\sqrt{80}+3\sqrt{20}=10\sqrt{5}</m></li>
+              <li><m>3\sqrt{18}-2\sqrt{24}=9\sqrt{2}-4\sqrt{3}</m></li>
+              <li><m>(2+\sqrt{7})^2=11+4\sqrt{7}</m></li>
+              <li><m>(6-\sqrt{20})(6+\sqrt{20})=16</m></li>
+              <li><m>(\sqrt{8}+3)(\sqrt{8}-3)=-1</m></li>
+              <li><m>(1-\sqrt{72})^2=73-12\sqrt{2}</m></li>
+              <li><m>\frac{6}{\sqrt{2}}-5\sqrt{18}=-12\sqrt{2}</m></li>
+              <li><m>\frac{2}{\sqrt{125}}+\sqrt{500}=\frac{252\sqrt{5}}{25}</m></li>
+              <li><m>\frac{30}{\sqrt{20}}+\frac{12}{\sqrt{45}}=\frac{19\sqrt{5}}{5}</m></li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercises>
+
+     <exercises>
+      <title>Rationalizing Binomial Denominators that include Square Root Expressions</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
+      <statement>
+        <p>
+          The expressions <m>a+b</m> and <m>a-b</m> are called conjugates; collectively they form a conjugate pair.  They have the special property that when you expand their product, the result is a binomial.  Specifically:
+          <me>(a+b)(a-b)=a^2-b^2</me>
+          That pair type is the only product of binomials that does not result in a trinomial.  
+        </p>
+        <p>
+          When one or both terms of a conjugate pair is a square root, something special happens when you multiply the pair <mdash/> the square root(s) square away.  For example:
+          <md>
+            <mrow>(3+\sqrt{5})(3-\sqrt{5})\amp=3^2-(\sqrt{5})^2</mrow>
+            <mrow>\amp=9-5</mrow>
+            <mrow>\amp=4</mrow>
+          </md>
+        </p>
+        <p>
+          We can use this squaring away of the square root to rationalize denominators that are binomials where one or both terms is a square root.  We multiply the denominator by its conjugate and balance that action by also multiplying the numerator by the conjugate of the denominator.  We then simplify the result.  When the numerator is an integer, you want to avoid distribution until you've simplified the denominator as there will frequently be common factors that emerge.  Several examples follow.
+        </p>
+        <p>
+          Example:Rationalize the denominator and simply the result for the expression <m>\frac{3}{3+\sqrt{3}}</m>.
+        </p>
+        <p>
+          We begin by multiplying both the numerator of the expression by the conjugate of the denominator of the expression.  We then simplify the result.
+          <md>
+            <mrow>\frac{3}{3+\sqrt{3}}\amp=\frac{3}{3+\sqrt{3}} \cdot \highlight{\frac{3-\sqrt{3}}{3-\sqrt{3}}}</mrow>
+            <mrow>\amp=\frac{3(3-\sqrt{3})}{9-3}</mrow>
+            <mrow>\amp=\frac{3(3-\sqrt{3})}{6}</mrow>
+            <mrow>\amp=\frac{3-\sqrt{3}}{2}</mrow>
+          </md>
+        </p>
+        <p>
+          Example:Rationalize the denominator and simply the result for the expression <m>\frac{50}{4-\sqrt{21}}</m>.
+        </p>
+        <p>
+          We begin by multiplying both the numerator of the expression by the conjugate of the denominator of the expression.  We then simplify the result.
+          <md>
+            <mrow>\frac{50}{4-\sqrt{21}}\amp=\frac{50}{4-\sqrt{21}} \cdot \highlight{\frac{4+\sqrt{21}}{4+\sqrt{21}}}</mrow>
+            <mrow>\amp=\frac{50(4+\sqrt{21})}{16-21}</mrow>
+            <mrow>\amp=\frac{50(4+\sqrt{21})}{-5}</mrow>
+            <mrow>\amp=-10(4+\sqrt{21})</mrow>
+          </md>
+        </p>
+        <p>
+          Example:Rationalize the denominator and simply the result for the expression <m>\frac{2+\sqrt{6}}{2-\sqrt{6}}</m>.
+        </p>
+        <p>
+          We begin by multiplying both the numerator of the expression by the conjugate of the denominator of the expression.  We then simplify the result.
+          <md>
+            <mrow>\frac{2+\sqrt{6}}{2-\sqrt{6}}\amp=\frac{2+\sqrt{6}}{2-\sqrt{6}} \cdot \highlight{\frac{2+\sqrt{6}}{2+\sqrt{6}}}</mrow>
+            <mrow>\amp=\frac{4+2\sqrt{6}+2\sqrt{6}+6}{4-6}</mrow>
+            <mrow>\amp=\frac{10+4\sqrt{6}}{-2}</mrow>
+            <mrow>\amp=\frac{2(5+2\sqrt{6})}{-2}</mrow>
+            <mrow>\amp=-(5+2\sqrt{6})</mrow>
+            <mrow>\amp=-5-2\sqrt{6}</mrow>
+          </md>
+        </p>
+        <p>
+          Example:Rationalize the denominator and simply the result for the expression <m>\frac{\sqrt{11}-\sqrt{10}}{\sqrt{11}+\sqrt{10}}</m>.
+        </p>
+        <p>
+          We begin by multiplying both the numerator of the expression by the conjugate of the denominator of the expression.  We then simplify the result.
+          <md>
+            <mrow>\frac{\sqrt{11}-\sqrt{10}}{\sqrt{11}+\sqrt{10}}\amp=\frac{\sqrt{11}-\sqrt{10}}{\sqrt{11}+\sqrt{10}} \cdot \highlight{\frac{\sqrt{11}-\sqrt{10}}{\sqrt{11}-\sqrt{10}}}</mrow>
+            <mrow>\amp=\frac{11-\sqrt{110}-\sqrt{110}+10}{11-10}</mrow>
+            <mrow>\amp=\frac{21-2\sqrt{110}}{1}</mrow>
+            <mrow>\amp=21-2\sqrt{110}</mrow>
+          </md>
+        </p>
+      </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+      <statement>
+        <p>
+          Rationalize each denominator.  Completely simplify each result.
+          <ol cols="2">
+            <li><m>\frac{7}{3-\sqrt{2}}</m></li>
+            <li><m>\frac{5}{\sqrt{7}+\sqrt{2}}</m></li>
+            <li><m>\frac{8}{\sqrt{12}+4}</m></li>
+            <li><m>\frac{\sqrt{3}+\sqrt{2}}{\sqrt{3}-\sqrt{2}}</m></li>
+            <li><m>\frac{\sqrt{8}}{\sqrt{2}+\sqrt{3}}</m></li>
+          </ol>
+          <p>
+          </p>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          <ol>
+
+            <li>
+              We begin by multiplying both the numerator and the denominator of the expression by the conjugate of the denominator of the expression.  We the simplify the resultant expression.
+              <md>
+                <mrow>\frac{7}{3-\sqrt{2}}\amp=\frac{7}{3-\sqrt{2}} \cdot \highlight{\frac{3+\sqrt{2}}{3+\sqrt{2}}}</mrow>
+                <mrow>\amp=\frac{7(3+\sqrt{2})}{9-2}</mrow>
+                <mrow>\amp=\frac{7(3+\sqrt{2})}{7}</mrow>
+                <mrow>\amp=3+\sqrt{2}</mrow>
+              </md>            
+            </li>
+
+             <li>
+              We begin by multiplying both the numerator and the denominator of the expression by the conjugate of the denominator of the expression.  We the simplify the resultant expression.
+              <md>
+                <mrow>\frac{5}{\sqrt{7}+\sqrt{2}}\amp=\frac{5}{\sqrt{7}+\sqrt{2}} \cdot \highlight{\frac{\sqrt{7}-\sqrt{2}}{\sqrt{7}-\sqrt{2}}}</mrow>
+                <mrow>\amp=\frac{5(\sqrt{7}-\sqrt{2})}{7-2}</mrow>
+                <mrow>\amp=\frac{5(\sqrt{7}-\sqrt{2})}{5}</mrow>
+                <mrow>\amp=\sqrt{7}-\sqrt{2}</mrow>
+              </md>            
+            </li>
+
+             <li>
+              We begin by multiplying both the numerator and the denominator of the expression by the conjugate of the denominator of the expression.  We the simplify the resultant expression.
+              <md>
+                <mrow>\frac{8}{\sqrt{12}+4}\amp=\frac{8}{\sqrt{12}+4} \cdot \highlight{\frac{\sqrt{12}-4}{\sqrt{12}-4}}</mrow>
+                <mrow>\amp=\frac{8(\sqrt{12}-4)}{12-16}</mrow>
+                <mrow>\amp=\frac{8(\sqrt{12}-4)}{-4}</mrow>
+                <mrow>\amp=-2(\sqrt{12}-4)</mrow>
+                <mrow>\amp=-2(2\sqrt{3}-4)</mrow>
+                <mrow>\amp=-4\sqrt{3}+16</mrow>
+              </md>            
+            </li>
+
+             <li>
+              We begin by multiplying both the numerator and the denominator of the expression by the conjugate of the denominator of the expression.  We the simplify the resultant expression.
+              <md>
+                <mrow>\frac{\sqrt{3}+\sqrt{2}}{\sqrt{3}-\sqrt{2}}\amp=\frac{\sqrt{3}+\sqrt{2}}{\sqrt{3}-\sqrt{2}} \cdot \highlight{\frac{\sqrt{3}+\sqrt{2}}{\sqrt{3}+\sqrt{2}}}</mrow>
+                <mrow>\amp=\frac{3+\sqrt{6}+\sqrt{6}+2}{3-2}</mrow>
+                <mrow>\amp=5+2\sqrt{6}</mrow>
+              </md>            
+            </li>
+
+             <li>
+              We begin by multiplying both the numerator and the denominator of the expression by the conjugate of the denominator of the expression.  We the simplify the resultant expression.
+              <md>
+                <mrow>\frac{\sqrt{8}}{\sqrt{2}+\sqrt{3}}\amp=\frac{\sqrt{8}}{\sqrt{2}+\sqrt{3}} \cdot \highlight{\frac{\sqrt{2}-\sqrt{3}}{\sqrt{2}-\sqrt{3}}}</mrow>
+                <mrow>\amp=\frac{\sqrt{8}(\sqrt{2}-\sqrt{3})}{2-3}</mrow>
+                <mrow>\amp=\frac{\sqrt{16}-\sqrt{24}}{-1}</mrow>
+                <mrow>\amp=-(4-2\sqrt{6})</mrow>
+                <mrow>\amp=-4+2\sqrt{6}</mrow>
+              </md>            
+            </li>
+
+          </ol>
+        </p>
+      </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title> <statement>
+          <p>
+            Rationalize each denominator.  Completely simplify each result.
+            <ol>
+              <li><m>\frac{2}{\sqrt{6}-\sqrt{2}}</m></li>
+              <li><m>\frac{10}{\sqrt{6}-4}</m></li>
+              <li><m>\frac{\sqrt{5}+\sqrt{3}}{\sqrt{5}-\sqrt{3}}</m></li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><m>\frac{2}{\sqrt{6}-\sqrt{2}}=\frac{\sqrt{6}+\sqrt{2}}{2}</m></li>
+              <li><m>\frac{10}{\sqrt{6}-4}=-4-\sqrt{6}</m></li>
+              <li><m>\frac{\sqrt{5}+\sqrt{3}}{\sqrt{5}-\sqrt{3}}=4+\sqrt{15}</m></li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercises>
+
+     <exercises>
+      <title>Radicals with Indices Greater than Two</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
+      <statement>
+        <p>
+          The expression <me>\sqrt[n]{x}</me> is called a radical expression with an index of <m>n</m>.  It is generally read as "the (<m>n^{th}</m>-root) of <m>x</m>."  We usually restrict the index to integers greater than or equal to two.
+        </p>
+        <p>
+          If <m>n</m> is an odd positive integer, then <me>\sqrt[n]{x}=y \text{ if and only if } y^n=x</me>.  For example, <me>\sqrt[3]{8}=2 \text{ because } 2^3=8</me>. If <m>n</m> is a even positive integer and <m>x</m> is a positive real number, then <me>\sqrt[n]{x}=y \text{ if and only if } y \text{ is the positive number such that } y^n=x</me>.  For example, both <m>(-3)^4=81</m> and <m>3^4=81</m>, but <m>\sqrt[4]{81}</m> has the positive value of <m>3</m>.  If we want to refer to the negative fourth-root of <m>81</m>, we need to write a negative sign in front of the radical sign.  In summary,
+          <me>\sqrt[4]{81}=4 \text{  and  } -\sqrt[4]{81}=-3</me>.
+          When no index of a radical expression is written, we assume that the index is two and we call the radical a square root.
+        </p>
+        <p>
+          When the index of a radical expression is three, it's not incorrect to refer to the radical as a third root, but it's more common to refer to the radical as a cube root.  No other indexed-radical has a special name.
+        </p>
+        <p>
+          If the index, <m>n</m>, is odd, the <m>\sqrt[n]{x}</m> has a real number value for all real number values of <m>x</m>.  Furthermore, 
+          <m>\sqrt[n]{x}</m> is negative if <m>x</m> is negative, <m>\sqrt[n]{x}</m> is zero if <m>x</m> is zero, and <m>\sqrt[n]{x}</m> is positive if <m>x</m> is positive.  For example,<me>\sqrt[3]{-27}=-3 \text{,  } \sqrt[3]{0}=0 \text{, and  } \sqrt[3]{27}=3</me>.
+          If the index, <m>n</m>, is even, the <m>\sqrt[n]{x}</m> has a real number value if and only if <m>x</m> is a non-negative real number. There are always two real number even roots of a positive real number, and <m>\sqrt[n]{x}</m> represents the positive root whereas <m>-\sqrt[n]{x}</m> represents the negative root.  For example, <me>\sqrt[4]{16}=2 \text{  and  } -\sqrt[4]{16}=-2</me>.  Also, <me>\sqrt[4]{-16} \text{ is not a real number.}</me>
+          If <m>n</m> is an odd positive integer, then it is always the case that 
+          <me>\sqrt[n]{x \cdot y}=\sqrt[n]{x} \cdot \sqrt[n]{y}</me>.  For example,
+          <md>
+            <mrow>\sqrt[5]{32 \cdot -243}\amp=\sqrt[5]{32} \cdot \sqrt[5]{-243}</mrow>
+            <mrow>\amp=2\cdot -3</mrow>
+            <mrow>\amp=-6</mrow>
+          </md>
+          However, If <m>n</m> is an even positive integer, then, over the real numbers it is only the case that 
+          <me>\sqrt[n]{x \cdot y}=\sqrt[n]{x} \cdot \sqrt[n]{y}</me>
+          when neither <m>x</m> nor <m>y</m> are negative.  For example,
+          <me>\sqrt[4]{-81 \cdot 625} \neq \sqrt[4]{-81} \sqrt[4]{625}</me> because neither of the fourth-roots of negative numbers exist (as real numbers).  However,
+          <md>
+            <mrow>\sqrt[4]{81 \cdot 625} \amp= \sqrt[4]{81} \sqrt[4]{625}</mrow>
+            <mrow>\amp=4 \cdot 5</mrow>
+            <mrow>\amp=20</mrow>
+          </md>
+        </p>
+      </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+      <statement>
+        <p>
+          Simplify each radical expression.
+          <ol>
+            <li><m>\sqrt[4]{81}</m></li>
+            <li><m>3\sqrt[3]{-27}</m></li>
+            <li><m>\frac{\sqrt[5]{32}}{8}</m></li>
+            <li><m>\sqrt[3]{-125 \cdot 64}</m></li>
+            <li><m>-\sqrt[7]{-128}</m></li>
+          </ol>
+          <p></p>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li><m>\sqrt[4]{81}=3</m></li>
+            <li>
+              <m>
+                \begin{aligned}[t]
+                3\sqrt[3]{-27}\amp=3 \cdot -3\\
+                \amp=-9
+                \end{aligned}
+              </m>
+            </li>
+            <li>
+              <m>
+                \begin{aligned}[t]
+                \frac{\sqrt[5]{32}}{8}\amp=\frac{2}{8}\\
+                \amp=\frac{1}{4}
+                \end{aligned}
+              </m>
+            </li>
+            <li>
+              <m>
+                \begin{aligned}[t]
+                \sqrt[3]{-125 \cdot 64}\amp=\sqrt[3]{-125} \cdot \sqrt[3]{64}\\
+                \amp=-5 \cdot 4\\
+                \amp=-20
+                \end{aligned}
+              </m>
+            </li>
+            <li>
+              <m>
+                \begin{aligned}[t]
+                -\sqrt[7]{-128}\amp=-(-2)\\
+                \amp=2
+                \end{aligned}
+              </m>
+            </li>
+          </ol>
+        </p>
+      </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+        <statement>
+          <p>
+            Simplify each radical expression.
+            <ol>
+              <li><m>\sqrt[3]{64}</m></li>
+              <li><m>-\sqrt[4]{625}</m></li>
+              <li><m>-\sqrt[5]{-243}</m></li>
+              <li><m>3\sqrt[6]{64}</m></li>
+              <li><m>2\sqrt[3]{-343}</m></li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><m>\sqrt[3]{64}=4</m></li>
+              <li><m>-\sqrt[4]{625}=-5</m></li>
+              <li><m>-\sqrt[5]{-243}=3</m></li>
+              <li><m>3\sqrt[6]{64}=6</m></li>
+              <li><m>2\sqrt[3]{-343}=-14</m></li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercises>
+
+     <exercises>
+      <title>Converting Between Radical Notations and Rational Exponent Notation</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
       <statement>
         <p>
           The power to a power rule of exponents states that <m>(x^m)^n=x^{mn}</m>.  This rule is fairly intuitive when both exponents are positive.  For example, in the expression <m>(x^4)^3</m> there are three factors of <m>x^4</m>, each of which contains four factors of <m>x</m>, so all together there are four factors of <m>x</m>, three times, i.e. <m>3 \cdot 4</m> factor of <m>x</m>.
@@ -46,10 +1009,94 @@
           </p>
         </sidebyside>
       </statement>
-    </exercise>
+      </exercise>
 
-    <exercise>
-      <title>Evaluating expressions that include rational exponents</title>
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+      <statement>
+        <p>
+          Convert each exponential expression to a radical expression and each radical expression to an exponential expression.  When converting to a rational exponent, reduce the exponent if possible.  Assume that all variables represent positive values.
+          <ol cols="3">
+            <li><m>x^{1/3}</m></li>
+            <li><m>y^{5/4}</m></li>
+            <li><m>z^{2/5}</m></li>
+            <li><m>\sqrt[11]{x^5}</m></li>
+            <li><m>\sqrt[4]{y^{20}}</m></li>
+            <li><m>\sqrt[15]{t^3}</m></li>
+          </ol>
+          <p>
+          </p>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          <ol cols="2">
+            <li><m>x^{1/3}=\sqrt[3]{x}</m></li>
+            <li><m>y^{5/4}=\sqrt[4]{y^5}</m></li>
+            <li><m>z^{2/5}=\sqrt[5]{z^2}</m></li>
+            <li><m>\sqrt[11]{x^5}=x^{5/11}</m></li>
+
+            <li>
+              <m>
+                \begin{aligned}[t]
+                \sqrt[4]{y^{20}}\amp=y^{20/4}\\
+                \amp=y^5
+                \end{aligned}
+              </m>            
+            </li>
+
+            <li>
+              <m>
+                \begin{aligned}[t]
+                \sqrt[15]{t^3}\amp=t^{3/15}\\
+                \amp=t^{1/5}
+                \end{aligned}
+              </m>            
+            </li>
+
+          </ol>
+        </p>
+      </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+      <statement>
+        <p>
+          Convert each exponential expression to a radical expression and each radical expression to an exponential expression.   When converting to a rational exponent, reduce the exponent if possible. Assume that all variables represent positive values.
+          <ol>
+            <li><m>x^{6/17}</m></li>
+            <li><m>x^{5/2}</m></li>
+            <li><m>y^{1/7}</m></li>
+            <li><m>\sqrt[8]{y^5}</m></li>
+            <li><m>\sqrt{w^{24}}</m></li>
+            <li><m>\sqrt[14]{t^{21}}</m></li>
+          </ol>         
+          <p></p>
+        </p>
+      </statement>
+      <solution>
+       <p>
+        <ol>
+            <li><m>x^{6/17}=\sqrt[17]{x^6}</m></li>
+            <li><m>x^{5/2}=\sqrt{x^5}</m></li>
+            <li><m>y^{1/7}=\sqrt[7]{y}</m></li>
+            <li><m>\sqrt[8]{y^5}=y^{5/8}</m></li>
+            <li><m>\sqrt{w^{24}}=w^{12}</m></li>
+            <li><m>\sqrt[14]{t^{21}}=t^{3/2}</m></li>
+          </ol>   
+        </p>
+      </solution>
+      </exercise>
+
+    </exercises>
+
+     <exercises>
+      <title>Evaluating Expressions that include Rational Exponents</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
       <statement>
         <p>
           As long as both the numerator and denominator of a rational exponent are fairly small positive numbers, it is fairly easy to evaluate expressions that include rational exponents using the rule <m>x^{m/n}=\sqrt[n]{x^m}</m>.  For example:
@@ -110,10 +1157,129 @@
         </md>
       </p>
       </statement>
-    </exercise>
+      </exercise>
 
-    <exercise>
-      <title>Using rational exponents to simplify radical expressions</title>
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+      <statement>
+        <p>
+          Determine the value of each expression.
+          <ol cols="3">
+            <li><m>4^{1/2}</m></li>
+            <li><m>27^{-1/3}</m></li>
+            <li><m>(\frac{4}{9})^{-1/2}</m></li>
+            <li><m>8^{7/3}</m></li>
+            <li><m>100^{5/2}</m></li>
+            <li><m>16^{-9/4}</m></li>
+          </ol>
+          <p>
+          </p>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          <ol cols="2">
+
+            <li>
+              <m>
+                \begin{aligned}[t]
+                4^{1/2}\amp=\sqrt{4}\\
+                \amp=2
+                \end{aligned}
+              </m>            
+            </li>
+
+            <li>
+              <m>
+                \begin{aligned}[t]
+                27^{-1/3}\amp=\frac{1}{27^{1/3}}\\
+                \amp=\frac{1}{\sqrt[3]{27}}\\
+                \amp=\frac{1}{3}
+                \end{aligned}
+              </m>            
+            </li>
+
+            <li>
+              <m>
+                \begin{aligned}[t]
+                (\frac{4}{9})^{-1/2}\amp=(\frac{9}{4})^{1/2}\\
+                \amp=\sqrt{\frac{9}{4}}\\
+                \amp=\frac{3}{2}
+                \end{aligned}
+              </m>            
+            </li>
+
+            <li>
+              <m>
+                \begin{aligned}[t]
+                8^{7/3}\amp=(\sqrt[3]{8})^7\\
+                \amp=2^7\\
+                \amp=128
+                \end{aligned}
+              </m>            
+            </li>
+
+            <li>
+              <m>
+                \begin{aligned}[t]
+                100^{5/2}\amp=(\sqrt{100})^5\\
+                \amp=10^5\\
+                \amp=100,000
+                \end{aligned}
+              </m>            
+            </li>
+
+            <li>
+              <m>
+                \begin{aligned}[t]
+                16^{-9/4}\amp=\frac{1}{16^{9/4}}\\
+                \amp=\frac{1}{(\sqrt[4]{16})^9}\\
+                \amp=\frac{1}{2^9}\\
+                \amp=\frac{1}{512}
+                \end{aligned}
+              </m>            
+            </li>
+
+          </ol>
+        </p>
+      </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+      <statement>
+        <p>
+          Determine the value of each expression.
+          <ol>
+            <li><m>27^{4/3}</m></li>
+            <li><m>25^{3/2}</m></li>
+            <li><m>16^{-3/4}</m></li>
+            <li><m>32^{-3/5}</m></li>
+          </ol>          
+          <p>
+          </p>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li><m>27^{4/3}=81</m></li>
+            <li><m>25^{3/2}=125</m></li>
+            <li><m>16^{-3/4}=\frac{1}{8}</m></li>
+            <li><m>32^{-3/5}=\frac{1}{8}</m></li>
+          </ol>   
+        </p>      
+      </solution>
+      </exercise>
+
+    </exercises>
+
+     <exercises>
+      <title>Using Rational Exponents to Simplify Radical Expressions</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
       <statement>
         <p>
           Sometimes radical expressions can be simplified after first rewriting the expressions using rational exponents and applying the appropriate rules of exponents.  If the resultant expression still has a rational exponent, it is standard to convert back to radical notation.  Several examples follow.
@@ -145,150 +1311,10 @@
           </p>
         </sidebyside>
       </statement>
-    </exercise>
+      </exercise>
 
-  </exercises>
-
-  <exercises>
-      <title>Practice Exercises</title>
-
-    <exercise>
-      <title>Converting between radical notation and rational exponent notation</title>
-      <statement>
-        <p>
-          Convert each exponent expression to a radical expression and each radical expression to an exponent expression.  Assume that all variables represent positive values.
-          <ol cols="3">
-            <li><m>x^{1/3}</m></li>
-            <li><m>y^{5/4}</m></li>
-            <li><m>z^{2/5}</m></li>
-            <li><m>\sqrt[11]{x^5}</m></li>
-            <li><m>\sqrt[4]{y^{20}}</m></li>
-            <li><m>\sqrt[15]{t^3}</m></li>
-          </ol>
-          <p>
-          </p>
-        </p>
-      </statement>
-
-      <solution>
-        <p>
-          <ol cols="2">
-            <li><m>x^{1/3}=\sqrt[3]{x}</m></li>
-            <li><m>y^{5/4}=\sqrt[4]{y^5}</m></li>
-            <li><m>z^{2/5}=\sqrt[5]{z^2}</m></li>
-            <li><m>\sqrt[11]{x^5}=x^{5/11}</m></li>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \sqrt[4]{y^{20}}\amp=y^{20/4}\\
-                \amp=y^5
-                \end{aligned}
-              </m>            
-            </li>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \sqrt[15]{t^3}\amp=t^{3/15}\\
-                \amp=t^{1/5}
-                \end{aligned}
-              </m>            
-            </li>
-
-          </ol>
-        </p>
-      </solution>
-
-    </exercise>
-
-    <exercise>
-      <title>Evaluating expressions that include rational exponents</title>
-      <statement>
-        <p>
-          Determine the value of each expression.
-          <ol cols="3">
-            <li><m>4^{1/2}</m></li>
-            <li><m>27^{-1/3}</m></li>
-            <li><m>(\frac{4}{9})^{-1/2}</m></li>
-            <li><m>8^{7/3}</m></li>
-            <li><m>100^{5/2}</m></li>
-            <li><m>16^{-9/4}</m></li>
-          </ol>
-          <p>
-          </p>
-        </p>
-      </statement>
-
-      <solution>
-        <ol cols="2">
-
-          <li>
-            <m>
-              \begin{aligned}[t]
-              4^{1/2}\amp=\sqrt{4}\\
-              \amp=2
-              \end{aligned}
-            </m>            
-          </li>
-
-          <li>
-            <m>
-              \begin{aligned}[t]
-              27^{-1/3}\amp=\frac{1}{27^{1/3}}\\
-              \amp=\frac{1}{\sqrt[3]{27}}\\
-              \amp=\frac{1}{3}
-              \end{aligned}
-            </m>            
-          </li>
-
-          <li>
-            <m>
-              \begin{aligned}[t]
-              (\frac{4}{9})^{-1/2}\amp=(\frac{9}{4})^{1/2}\\
-              \amp=\sqrt{\frac{9}{4}}\\
-              \amp=\frac{3}{2}
-              \end{aligned}
-            </m>            
-          </li>
-
-          <li>
-            <m>
-              \begin{aligned}[t]
-              8^{7/3}\amp=(\sqrt[3]{8})^7\\
-              \amp=2^7\\
-              \amp=128
-              \end{aligned}
-            </m>            
-          </li>
-
-          <li>
-            <m>
-              \begin{aligned}[t]
-              100^{5/2}\amp=(\sqrt{100})^5\\
-              \amp=10^5\\
-              \amp=100,000
-              \end{aligned}
-            </m>            
-          </li>
-
-          <li>
-            <m>
-              \begin{aligned}[t]
-              16^{-9/4}\amp=\frac{1}{16^{9/4}}\\
-              \amp=\frac{1}{(\sqrt[4]{16})^9}\\
-              \amp=\frac{1}{2^9}\\
-              \amp=\frac{1}{512}
-              \end{aligned}
-            </m>            
-          </li>
-
-        </ol>
-      </solution>
-    </exercise>
-
-    <exercise>
-      <title>Using rational exponents to simplify radical expressions</title>
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
       <statement>
         <p>
           Simplify each radical expression after first rewriting the expression in exponential form.  Assume that all variables represent positive values.
@@ -397,10 +1423,34 @@
           </ol>
         </p>
       </solution>
-    </exercise>
+      </exercise>
 
-  </exercises>
-   
+      <exercise>
+        <title>Question bank with short answers</title>
+      <statement>
+        <p>
+          Simplify each radical expression after first rewriting the expression in exponential form.  Assume that all variables represent positive values.
+          <ol>
+            <li><m>\sqrt[4]{x^{10}}</m></li>
+            <li><m>\sqrt{x}\sqrt[6]{x}</m></li>
+            <li><m>\sqrt[3]{x^6y^7}</m></li>
+            <li><m>\sqrt{\sqrt[4]{y^{24}}}</m></li>
+          </ol>
+          <p>
+          </p>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li><m>\sqrt[4]{x^{10}}=\sqrt{x^5}</m></li>
+            <li><m>\sqrt{x}\sqrt[6]{x}=\sqrt[3]{x^2}</m></li>
+            <li><m>\sqrt[3]{x^6y^7}=x^2y^2\sqrt[3]{y}</m></li>
+            <li><m>\sqrt{\sqrt[4]{y^{24}}}=y^3</m></li>
+          </ol>
+        </p>
+      </solution>
+      </exercise>
 
-     
+    </exercises>
 </section>

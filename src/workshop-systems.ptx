@@ -13,127 +13,3231 @@
     <title>Systems of linear equations</title>
 
     <exercises>
-      <title>Pretest - what's your current skill set?</title>
-      <exercise xml:id="workshop-systems-introduction-to-linear-systems-pretest">
-        <title>Introduction/Solving by graphing</title>
-        <section>
-        </section>
-      </exercise>
+      <title>Videos</title>
+      <exercise>
+        <title>Videos created by Ann Cary and Scot Leavitt.</title>
+        <statment>        
+          <p>The links take you to YouTube Playlists which will open either in a new window or in a Youtube App.
+          <ul>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-cVXXDS3q3MLeYAC9rz4TGX" target="blank">Solving systems of equations by graphing</url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-f-72s-L0ZpS4K8B86jMm1i" target="blank">Solving systems of equations by substitution</url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-db09h4ugJEcflfcwm94aNB" target="blank">Solving systems of equations by variable elimination</url>
+            </li>
+          </ul>
+        </p>
+      </statment>
+    </exercise>
+  </exercises>
 
-<!--       <exercise xml:id="workshop-systems-introduction-to-subsitution-pretest">
-        <title>Introduction to solving by substitution</title>
-        <section>
-        </section>
-      </exercise>
+  <exercises>
+    <title>Introduction/Solving Systems using Graphing</title>
 
-      <exercise xml:id="workshop-systems-fractions-in-substitution-pretest">
-        <title>Working with fractions while solving by substitution</title>
-        <section>
-        </section>
-      </exercise>
+    <exercise>
+      <title>Explanation and examples</title>
+        <statement>
+          <p>
+            A linear equation in <m>x</m> and <m>y</m> is an equation that can be written in the form <m>ax+by=c</m> where <m>a</m>, <m>b</m>, and <m>c</m> are constants, and not both <m>a</m> and <m>b</m> are <m>0</m>.  When graphed, a linear equation produces a line consisting of all of the ordered pairs that satisfy the equation (make the two sides of the equation have equal value).
+          </p>
+          <p>
+            A linear system of equations in two variables is a collection of two or more linear equations with those two variables.  Solving a system of linear equations in two variables entails determining what ordered pairs, if any, satisfy every equation in the system.  With the advent of graphing technology, one efficient way of determining the solution set to a system of linear equations is by graphing the line associated with every equation in the system and analyzing the result.
+          </p>
+          <p>
+            Consider the following system of equations.  Please note that the large left brace is the symbol we use to indicate that the two equations form a system <mdash/> that we are looking for ordered pairs that satisfy both equations in the system.
+            <me>
+              \left\{
+                \begin{aligned}
+                3x-2y\amp=-8\\
+                2x-y\amp=-6\\
+                \end{aligned}
+              \right.
+              </me>
+              If we were going to graph these two lines by hand, there would be value in manipulating the equations into slope-intercept from.  Let's go ahead and do that.
+            </p>
+            <sidebyside widths="47% 47%">
+              <p>
+                <md>
+                  <mrow>3x-2y\amp=-8</mrow>
+                  <mrow>3x-2y\subtractright{3x}\amp=-8\subtractright{3x}</mrow>
+                  <mrow>-2y\amp=-3x-8</mrow>
+                  <mrow>\multiplyleft{-\frac{1}{2}}(-2y)\amp=\multiplyleft{-\frac{1}{2}}(-3x-8)</mrow>
+                  <mrow>y\amp=\frac{3}{2}x+4</mrow>
+                </md>
+              </p>
+              <p>
+                <md>
+                  <mrow>2x-y\amp=-6</mrow>
+                  <mrow>2x-y\subtractright{2x}\amp=-6\subtractright{2x}</mrow>
+                  <mrow>-y\amp=-2x-6</mrow>
+                  <mrow>\multiplyleft{(-y)}\amp=\multiplyleft{(-2x-6)}</mrow>
+                  <mrow>y\amp=2x+6</mrow>
+                </md>
+              </p>
+            </sidebyside>
+            <p>
+              From the slope-intercept form of the line with equation <m>3x-2x=-8</m>, we can see that the line has a <m>y</m>-intercept of <m>(0,4)</m> and a slope of <m>\frac{3}{2}</m>.
+            </p>
+            <p>
+              From the slope-intercept form of the line with equation <m>2x-y=-6</m>, we can see that the line has a <m>y</m>-intercept of <m>(0,6)</m> and a slope of <m>2</m>.
+            </p>
+            <sidebyside widths="47% 47%">
+              <p>
+                As seen in <xref ref="workshop-systems-graphing-examples-1">Figure</xref>, the two lines intersect at the point <m>(-4,-2)</m>.  So the solution to the given system of equations is the ordered pair <m>(-4,-2)</m>.
+              </p>
+              <figure xml:id="workshop-systems-graphing-examples-1">
+                <caption><m>3x-2y=-8</m> and <m>2x-y=-6</m></caption>
+                  <image>
+                    <description>plain text</description>
+                      <latex-image>
+                        <![CDATA[
+                        \begin{tikzpicture}
+                          \begin{axis}
+                            \addplot[primarycurve,domain=-6.9:1.9] {1.5*x+4};
+                            \addplot[primarycurve,domain=-6.4:0.4,color=blue] {2*x+6};                             
+                            \addplot[soliddot,color=black] coordinates {(-4,-2)} node[below right] {(-4,-2)};
+                          \end{axis}
+                        \end{tikzpicture}
+                        ]]>
+                      </latex-image>
+                  </image>
+              </figure>
+            </sidebyside>
+            <p>
+              When solving a system of two linear equations with two unknowns, there are three possible outcomes for the nature of the solution.  The most common outcome is that there is exactly one ordered pair that satisfies both equations.  This outcome is illustrated by the intersecting lines shown in <xref ref="workshop-systems-graphing-examples-2">Figure</xref>  Another possible outcome is that no ordered pair satisfies both equations.  This outcome is illustrated by the parallel lines shown in <xref ref="workshop-systems-graphing-examples-3">Figure</xref>.  The third possible outcome is that the two equations are equivalent <mdash/> that they are two manifestations of the equation for the same line.  In this case, every point on the line satisfies both equations in the system.  This outcome is illustrated by the single line shown in <xref ref="workshop-systems-graphing-examples-4">Figure</xref>.
+            </p>
+            <sidebyside widths="31% 31% 31%">
+              <figure xml:id="workshop-systems-graphing-examples-2">
+                <caption><m>2x+y=3</m> and <m>x-2y=8</m></caption>
+                  <image>
+                    <description>plain text</description>
+                      <latex-image>
+                        <![CDATA[
+                        \begin{tikzpicture}
+                          \begin{axis}
+                            \addplot[primarycurve,domain=-1.9:4.9] {3-2*x};
+                            \addplot[primarycurve,domain=-5.8:6.9,color=blue] {.5*x-4};                             
+                            \addplot[soliddot,color=black] coordinates {(2.8,-2.6)} node[below right] {(2.8,-2.6)};
+                          \end{axis}
+                        \end{tikzpicture}
+                        ]]>
+                      </latex-image>
+                  </image>
+              </figure>
+              <figure xml:id="workshop-systems-graphing-examples-3">
+                <caption><m>x-y=3</m> and <m>-x+y=1</m></caption>
+                  <image>
+                    <description>plain text</description>
+                      <latex-image>
+                        <![CDATA[
+                        \begin{tikzpicture}
+                          \begin{axis}
+                            \addplot[primarycurve,domain=-3.9:6.9] {x-3};
+                            \addplot[primarycurve,domain=-6.9:5.9,color=blue] {x+1};   
+                          \end{axis}
+                        \end{tikzpicture}
+                        ]]>
+                      </latex-image>
+                  </image>
+              </figure>
+              <figure xml:id="workshop-systems-graphing-examples-4">
+                <caption><m>2x+3y=6</m> and <m>y=-\frac{2}{3}x+2</m></caption>
+                  <image>
+                    <description>plain text</description>
+                      <latex-image>
+                        <![CDATA[
+                        \begin{tikzpicture}
+                          \begin{axis}
+                            \addplot[primarycurve,domain=-6.9:6.9] {-2*x/3+2};
+                            \addplot[secondarycurve,domain=-6.9:6.9] {-2*x/3+2};  
+                          \end{axis}
+                        \end{tikzpicture}
+                        ]]>
+                      </latex-image>
+                  </image>
+              </figure>
+            </sidebyside>
+            <p>
+              When there is at least one ordered pair that satisfies both equations in the system, the system is said to be consistent.  When there are no ordered pairs that satisfy both equations in the system, the system is said to be inconsistent.
+            </p>
+            <p>
+              When there is exactly one or zero ordered pairs that satisfy both equations in the system, the equations in the system are said to be independent.  When there is more than one ordered pair that satisfies both equations in the system, the equations are said to be dependent.
+            </p>
+            <sidebyside widths="31% 31% 31%">
+              <figure xml:id="workshop-systems-graphing-examples-5">
+                <caption>Consistent System; Independent Equations</caption>
+                  <image>
+                    <description>plain text</description>
+                      <latex-image>
+                        <![CDATA[
+                        \begin{tikzpicture}
+                          \begin{axis}
+                            \addplot[primarycurve,domain=-1.9:4.9] {3-2*x};
+                            \addplot[primarycurve,domain=-5.8:6.9,color=blue] {.5*x-4};                             
+                            \addplot[soliddot,color=black] coordinates {(2.8,-2.6)} node[below right] {(2.8,-2.6)};
+                          \end{axis}
+                        \end{tikzpicture}
+                        ]]>
+                      </latex-image>
+                  </image>
+              </figure>
+              <figure xml:id="workshop-systems-graphing-examples-6">
+                <caption>Inconsistent System; Independent Equations</caption>
+                  <image>
+                    <description>plain text</description>
+                      <latex-image>
+                        <![CDATA[
+                        \begin{tikzpicture}
+                          \begin{axis}
+                            \addplot[primarycurve,domain=-3.9:6.9] {x-3};
+                            \addplot[primarycurve,domain=-6.9:5.9,color=blue] {x+1};   
+                          \end{axis}
+                        \end{tikzpicture}
+                        ]]>
+                      </latex-image>
+                  </image>
+              </figure><figure xml:id="workshop-systems-graphing-examples-7">
+                <caption>Consistent System; Dependent Equations</caption>
+                  <image>
+                    <description>plain text</description>
+                      <latex-image>
+                        <![CDATA[
+                        \begin{tikzpicture}
+                          \begin{axis}
+                            \addplot[primarycurve,domain=-6.9:6.9] {-2*x/3+2};
+                            \addplot[secondarycurve,domain=-6.9:6.9] {-2*x/3+2};  
+                          \end{axis}
+                        \end{tikzpicture}
+                        ]]>
+                      </latex-image>
+                  </image>
+              </figure>
+            </sidebyside>
+        </statement>
+    </exercise>
 
-      <exercise xml:id="workshop-systems-elimination-pretest">
-        <title>Solving by elimination</title>
-        <section>
-        </section>
-      </exercise>
+    <exercise>
+      <title>Practice exercises with detailed solutions</title>
+        <statement>
+          <p>
+            Solve each system of equations by graphing.
+            <ol>
 
-      <exercise xml:id="workshop-systems-mixture-applications-pretest">
-        <title>Applications: percents/mixtures</title>
-        <section>
-        </section>
-      </exercise>
+              <li>
+                <m>
+                    \left\{
+                      \begin{aligned}
+                        y\amp=\frac{2}{3}x-4\\
+                        y\amp=-2x+4\\
+                      \end{aligned}
+                    \right.
+                  </m>
+              </li>
 
-      <exercise xml:id="workshop-systems-distance-pretest">
-        <title>Applications: D=rt/getting "the job" done</title>
-        <section>
-        </section>
-      </exercise> -->
-    </exercises>
+              <li>
+                <m>
+                    \left\{
+                      \begin{aligned}
+                        x+2y\amp=-5\\
+                        -x+2y\amp=1\\
+                      \end{aligned}
+                    \right.
+                  </m>
+              </li>
 
-    <exercises>  
-      <title>Written Examples</title>
+              <li>
+                <m>
+                    \left\{
+                      \begin{aligned}
+                        5x-4y\amp=8\\
+                        y\amp=\frac{5}{4}x+3\\
+                      \end{aligned}
+                    \right.
+                  </m>
+              </li>
 
-<!--       <exercise xml:id="workshop-systems-introduction-to-linear-systems-examples">
-        <title>Introduction/Solving by graphing</title>
-        <section>
-        </section>
-      </exercise>
+          </ol>
+          <p>
+          </p>
+        </p>
 
-      <exercise xml:id="workshop-systems-introduction-to-subsitution-examples">
-        <title>Introduction to solving by substitution</title>
-        <section>
-        </section>
-      </exercise>
+        </statement>
 
-      <exercise xml:id="workshop-systems-fractions-in-substitution-examples">
-        <title>Working with fractions while solving by substitution</title>
-        <section>
-        </section>
-      </exercise>
+        <solution>
+          <ol>
 
-      <exercise xml:id="workshop-systems-elimination-examples">
-        <title>Solving by elimination</title>
-        <section>
-        </section>
-      </exercise>
+            <li>
+              <sidebyside widths="47% 47%">
+                <p>
+                  The solution to the given system of equations is the ordered pair <m>(3,-2)</m>.
+                </p>
+                <figure xml:id="workshop-systems-graphing-exercises-1">
+                  <caption><m>y=\frac{2}{3}x-4</m> and <m>y=-2x+4</m></caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-4.3:6.7] {(2/3)*x-4};
+                              \addplot[primarycurve,domain=-1.3:5.3,color=blue] {-2*x+4};
+                              \addplot[soliddot,color=purple] coordinates {(3,-2)} node[right] {(3,-2)};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+              </sidebyside>
+            </li>
 
-      <exercise xml:id="workshop-systems-mixture-applications-examples">
-        <title>Applications: percents/mixtures</title>
-        <section>
-        </section>
-      </exercise>
+            <li>
+              <sidebyside widths="47% 47%">
+                <p>
+                  The solution to the given system of equations is the ordered pair <m>(-3,-1)</m>.
+                </p>
+                <figure xml:id="workshop-systems-graphing-exercises-2">
+                  <caption><m>x+2y=-5</m> and <m>-x+2y=1</m></caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-6.7:6.7] {-.5*x-2.5};
+                              \addplot[primarycurve,domain=-6.7:6.7,color=blue] {.5*x+.5};
+                              \addplot[soliddot,color=purple] coordinates {(-3,-1)} node[below] {(-3,-1)};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+              </sidebyside>
+            </li>
 
-      <exercise xml:id="workshop-systems-distance-examples">
-        <title>Applications: D=rt/getting "the job" done</title>
-        <section>
-        </section>
-      </exercise> -->
+            <li>
+              <sidebyside widths="47% 47%">
+                <p>
+                  The given system of equations has no solutions, it is inconsistent.
+                </p>
+                <figure xml:id="workshop-systems-graphing-exercises-3">
+                  <caption><m>5x-4y=8</m> and <m>y=\frac{5}{4}x+3</m></caption>
+                    <image>
+                      <description>plain text</description>
+                        <latex-image>
+                          <![CDATA[
+                          \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-3.7:6.7] {1.25*x-2};
+                              \addplot[primarycurve,domain=-6.7:2.7,color=blue] {1.25*x+3};
+                            \end{axis}
+                          \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+              </sidebyside>
+            </li>
 
-        
+          </ol>
+        </solution>
+    </exercise>
 
-    </exercises>
+    <exercise>
+      <title>Question bank with short answers</title>
+        <statement>
+          <p>
+            Determine the solution to each system of equations after first graphing each line in the system.
+            <ol>
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      y\amp=\frac{3}{2}x-7\\
+                      y\amp=-2x+7\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      2x-y\amp=-11\\
+                      -4x+3y\amp=21\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      y\amp=-\frac{1}{3}x+4\\
+                      2x+6y\amp=12\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><p>The solution is <m>(4,-1)</m>.</p></li>
+              <li><p>The solution is <m>(-6,-1)</m>.</p></li>
+              <li><p>There are no solutions to the given system of equations.</p></li>
+            </ol>
+          </p>
+        </solution>
+    </exercise>
 
-    <exercises>
-      <title>Practice Exercises</title>
+  </exercises>
 
-<!--       <exercise xml:id="workshop-systems-introduction-to-linear-systems-exercises">
-        <title>Introduction/Solving by graphing</title>
-        <section>
-        </section>
-       </exercise>
+  <exercises>
+    <title>Solving Systems using Substitution</title>
 
-      <exercise xml:id="workshop-systems-introduction-to-subsitution-exercises">
-        <title>Introduction to solving by substitution</title>
-        <section>
-        </section>
-      </exercise>
+    <exercise>
+      <title>Explanation and examples</title>
+        <statement>
+          <sidebyside widths="47% 47%">
+            <p>
+              Consider the linear system of equations stated below.
+              <me>
+                \left\{
+                  \begin{aligned}
+                    2x-5y\amp=7\\
+                    2x+y\amp=3\\
+                  \end{aligned}
+                \right.
+              </me>
+              </p>
+              <figure xml:id="workshop-systems-substitution-examples-1">
+                <caption><m>2x-5y=7</m> and <m>2x+y=3</m></caption>
+                  <image>
+                    <description>plain text</description>
+                      <latex-image>
+                        <![CDATA[
+                        \begin{tikzpicture}
+                          \begin{axis}
+                            \addplot[primarycurve,domain=-6.9:6.9] {2*x/5-7/5};
+                            \addplot[primarycurve,domain=-1.9:4.9,color=blue] {3-2*x};  
+                          \end{axis}
+                        \end{tikzpicture}
+                        ]]>
+                      </latex-image>
+                  </image>
+              </figure>
+           </sidebyside>
+           <p>
+            The system is graphed <xref ref="workshop-systems-substitution-examples-1">Figure</xref>. The system is clearly consistent, but there is no way to visually determine the exact solution based upon the graph.  If we were working with graphing technology, the software could undoubtedly determine the exact solution, but dependent upon the decimal form of the coordinates of the points, we may only be able to recognize an approximation of the solution.
+          </p>
+          <p>
+            Surely people were able to determine the solution to that system before the advent of graphing technology.  Indeed they were.  There actually are several processes for determining the solution to linear systems of two equations with two unknowns.  In this section we are going to explore one of those processes, the process of substitution.
+          </p>
+          <p>
+            Referring again to 
+            <me>
+              \left\{
+                \begin{aligned}
+                  2x-5y\amp=7\\
+                  2x+y\amp=3\\
+                \end{aligned}
+              \right.
+            </me>
+            we can see that we could easily isolate <m>y</m> the second equation.  Let's go ahead and do that.
+            <md>
+              <mrow>2x+y\amp=3</mrow>
+              <mrow>2x+y\subtractright{2x}\amp=3\subtractright{2x}</mrow>
+              <mrow>y\amp=-2x+3</mrow>
+            </md>
+            Since the solution to the system must satisfy both equations in the system, it's got to be the case that the <m>y</m>-coordinate is equal to <m>-2x+3</m>.  We can use that fact to reduce the number of variables in the first equation to one by substituting the expression <m>-2x+3</m> for <m>y</m>. We can then solve the resultant equation for <m>x</m>.  Let's go ahead and do that.
+            <md>
+              <mrow>2x-5\highlight{y}\amp=7</mrow>
+              <mrow>2x-5(\highlight{-2x+3})\amp=7</mrow>
+              <mrow>2x+10x-15\amp=7</mrow>
+              <mrow>12x-15\amp=7</mrow>
+              <mrow>12x-15\addright{15}\amp=7\addright{15}</mrow>
+              <mrow>12x\amp=22</mrow>
+              <mrow>\divideunder{12x}{12}\amp=\divideunder{22}{12}</mrow>
+              <mrow>x\amp=\frac{11}{6}</mrow>
+            </md>
+            So the solution has an <m>x</m>-coordinate of <m>\frac{11}{6}</m>.  Let's substitute that value for <m>x</m> in the equation <m>y=-2x+3</m> and simplify to determine the <m>y</m>-coordinate of the solution.
+            <md>
+              <mrow>y\amp=-2\highlight{x}+3</mrow>
+              <mrow>y\amp=-2(\highlight{\frac{11}{6}})+3</mrow>
+              <mrow>y\amp=-\frac{11}{3}+\frac{9}{3}</mrow>
+              <mrow>y\amp=-\frac{2}{3}</mrow>
+            </md>
+            So the solution to the system of equations is the ordered pair <m>(\frac{11}{6},-\frac{2}{3})</m>.  Let's verify.
+            <me>
+              \left\{
+                \begin{aligned}
+                  2(\highlight{\frac{11}{6}})-5(\highlightr{-\frac{2}{3}})\amp=7\,?\\
+                  2(\highlight{\frac{11}{6}})+(\highlightr{-\frac{2}{3}})\amp=3\,?\\
+                \end{aligned}
+              \right.
+            </me>
+            <me>
+              \left\{
+                \begin{aligned}
+                  \frac{11}{3}+\frac{10}{3}\amp=7\,?\\
+                  \frac{11}{3}-\frac{2}{3}\amp=3\,?\\
+                \end{aligned}
+              \right.
+            </me>
+            <me>
+              \left\{
+                \begin{aligned}
+                  \frac{21}{3}\amp=7\,\checkmark\\
+                  \frac{9}{3}\amp=3\,\checkmark\\
+                \end{aligned}
+              \right.
+            </me>
+            The usual process of using substitution to solve a system of two linear equations with two unknowns is outlined below.  This is the process used when exactly one ordered pair satisfies the system.  Some of the steps are different in other situations <mdash/> those situations will be discussed later.
+            <ol label="1">
+              <li>
+                Isolate one of the variables in one of the equations.  If you can, choose a variable and equation that will not result in unnecessary fractions.
+              </li>
+              <li>
+                Substitute the expression on the other side of the isolated variable for that variable in the other equation.
+              </li>
+              <li>
+                You now have an equation with only one variable.  Go ahead and solve that equation for the remaining variable.
+              </li>
+              <li>
+                Substitute the value you determined in step 3 into the equation you found in step 1 to determine the value of the variable you isolated in step 1.
+              </li>
+              <li>
+                Check your solution in both equations, and assuming it is correct, state your solution.  If the solution is not correct, find your mistake and/or rework the problem from scratch.
+              </li>
+            </ol>
+            Let's see the steps in action.
+          </p>
+          <p>Example</p>
+          <p>
+            Determine the solution to the system stated below.
+            <me>
+              \left\{
+                \begin{aligned}
+                  3x-4y\amp=-17\\
+                  2x+4y\amp=2\\
+                \end{aligned}
+              \right.
+            </me>
+          </p>
+            <p>Step 1</p>
+            <p>
+              We need isolate one of the variables in one of the equations.  I choose to isolate <m>x</m> in the second equation, because any other choice will lead to unnecessary fractions.
+              <md>
+                <mrow>2x+4y\amp=2</mrow>
+                <mrow>2x+4y\subtractright{4y}\amp=2\subtractright{4y}</mrow>
+                <mrow>2x\amp=-4y+2</mrow>
+                <mrow>\multiplyleft{\frac{1}{2}}2x\amp=\multiplyleft{\frac{1}{2}}(-4y+2)</mrow>
+                <mrow>x\amp=-2y+1</mrow>
+              </md>
+            </p>
+            <p>Steps 2 and 3</p>
+            <p>
+              We now substitute the expression <m>-2y+1</m> for <m>x</m> in the first equation stated in the system.  We then go ahead and solve that equation for <m>y</m>.
+              <md>
+                <mrow>3\highlight{x}-4y\amp=-17</mrow>
+                <mrow>3(\highlight{-2y+1})-4y\amp=-17</mrow>
+                <mrow>-6y+3-4y\amp=-17</mrow>
+                <mrow>-10y+3\amp=-17</mrow>
+                <mrow>-10y+3\subtractright{3}\amp=-17\subtractright{3}</mrow>
+                <mrow>-10y\amp=-20</mrow>
+                <mrow>\divideunder{-10y}{-10}\amp=\divideunder{-20}{-10}</mrow>
+                <mrow>y\amp=2</mrow>
+              </md>
+            </p>
+            <p>Step 4</p>
+            <p>
+              We now substitute <m>2</m> for <m>y</m> in the equation <m>x=-2y+1</m> to determine the value of <m>x</m>.
+              <md>
+                <mrow>x\amp=-2(\highlight{2})+1</mrow>
+                <mrow>x\amp=-3</mrow>
+              </md> 
+            </p>
+            <p>Step 5</p>
+            <p>
+              We now check our solution and state our conclusion.
+              <me>
+                \left\{
+                  \begin{aligned}
+                    3(\highlight{-3})-4(\highlightr{2})\amp=-17\,?\\
+                    2(\highlight{-3})+4(\highlightr{2})\amp=2\,?\\
+                  \end{aligned}
+                \right.
+              </me>
+              <me>
+                \left\{
+                  \begin{aligned}
+                    -9-8\amp=-17\,\checkmark\\
+                    -6+8\amp=2\,\checkmark\\
+                  \end{aligned}
+                \right.
+              </me>
+              The solution to the stated system of equations is the ordered pair <m>(-3,2)</m>.
+            </p>
+            <p>
+              We now turn our attention to the manner in which we recognize that a linear system of two equations has no solutions or an "infinite number" of solutions, the latter case occurring when the two equations are equivalent.  The process begins as if we were trying to find the unique ordered pair that satisfies the system.  The signal that we are in an usual situation occurs in step 3 of that process.  Let's see how.
+              <ol label="1">
+              <li>
+                Isolate one of the variables in one of the equations.  If you can, choose a variable and equation that will not result in unnecessary fractions.
+              </li>
+              <li>
+                Substitute the expression on the other side of the isolated variable for that variable in the other equation.
+              </li>
+              <li>
+                You now have an equation with only one variable.  Go ahead and try to solve that equation for the remaining variable.  The thing that indicates that something unusual is afoot is when the variable disappears.  If that occurs, and what is left behind is a false statement (called a contradiction) such as <m>2=5</m>, you can conclude that there are no ordered pairs that satisfy both equations in the system. If the variable disappears and you are left with an equation that is always true (called an identity) such as <m>7=7</m>, you can conclude that the two equations in the system are different representations of the same line, and as such every ordered pair that falls on that line is a solution to the system.
+              </li>  
+            </ol>
+            The easiest way to check that either of these two solution types is correct is to manipulate both equations from the system into slope-intercept form.  If the two equations really share no common ordered pairs, the two corresponding lines will have the same slope but different <m>y</m>-intercepts.  If the two equations are equivalent, then the slope-intercept forms of their equations will be identical.
+          </p>
+          <p>Example</p>
+          <p>
+            Use the method of substitution to determined all solutions to the following system of equations.            
+            <me>
+              \left\{
+                \begin{aligned}
+                  2x-6y\amp=12\\
+                  -x+3y\amp=-6\\
+                \end{aligned}
+              \right.
+            </me>
+            We begin by isolating <m>x</m> in the second equation from the system.
+            <md>
+              <mrow>-x+3y\amp=-6</mrow>
+              <mrow>-x+3y\subtractright{3y}\amp=-6\subtractright{3y}</mrow>
+              <mrow>-x\amp=-3y-6</mrow>
+              <mrow>\multiplyleft{-1}-x\amp=\multiplyleft{-1}(-3y-6)</mrow>
+              <mrow>x\amp=3y+6</mrow>
+            </md>
+            We now substitute <m>3y+6</m> for <m>x</m> in the first equation in the system.
+            <md>
+              <mrow>2\highlight{x}-6y\amp=12</mrow> 
+              <mrow>2(\highlight{3y+6})-6y\amp=12</mrow>
+              <mrow>6y+12-6y\amp=12</mrow>
+              <mrow>12\amp=12</mrow>
+            </md>
+            We've arrived at an identity, so we conclude that the two equations in the system are two representations of the same line, and that every ordered pair that falls on that line is a solution to the system of equations.  We can check by manipulating both equations into slope-intercept form and making sure that the two results are identical.
+            <sidebyside widths="47% 47%">
+              <p>
+                <md>
+                  <mrow>2x-6y\amp=12</mrow>
+                  <mrow>2x-6y\subtractright{2x}\amp=12\subtractright{2x}</mrow>
+                  <mrow>-6y\amp=-2x+12</mrow>
+                  <mrow>\multiplyleft{-\frac{1}{6}}-6y\amp=\multiplyleft{-\frac{1}{6}}(-2x+12)</mrow>
+                  <mrow>y\amp=\frac{1}{3}x-2</mrow>
+                </md>
+              </p>
+              <p>
+                <md>
+                  <mrow>-x+3y\amp=-6</mrow>
+                  <mrow>-x+3y\addright{x}\amp=-6\addright{x}</mrow>
+                  <mrow>3y\amp=x-6</mrow>
+                  <mrow>\multiplyleft{\frac{1}{3}}3y\amp=\multiplyleft{\frac{1}{3}}(x-6)</mrow>
+                  <mrow>y\amp=\frac{1}{3}x-2</mrow>
+                </md>
+              </p>
+            </sidebyside>
+            Because the slope-intercept forms of the two equations are identical, we can safely conclude that the system does indeed have an "infinite number" of solutions, specifically every ordered pair on the line <m>y=\frac{1}{3}x-2</m>.
+          </p><p>Example</p>
+          <p>
+            Use the method of substitution to determined all solutions to the following system of equations.            
+            <me>
+              \left\{
+                \begin{aligned}
+                  4x+10y\amp=24\\
+                  y\amp=-\frac{2}{5}x+5\\
+                \end{aligned}
+              \right.
+            </me>
+            Because <m>y</m> is already isolated in the second equation, let's run with that and substitute <m>-\frac{2}{5}x+5</m> for <m>y</m> in the first equation.
+            <md>
+              <mrow>4x+10\highlight{y}\amp=24</mrow>
+              <mrow>4x+10(\highlight{-\frac{2}{5}x+5})\amp=24</mrow>
+              <mrow>4x-4x+50\amp=24</mrow>
+              <mrow>50\amp=24</mrow>
+            </md>
+            We've arrived at the contradiction <m>50=24</m>; no matter what values we assign to <m>x</m> and <m>y</m>, we cannot force <m>50</m> and <m>24</m> to be equal.  As such, it must be the case that there are no ordered pairs that satisfy both equations in the system.  We can check by manipulating the first equation into slope-intercept form and seeing that the slope of the line is <m>-\frac{2}{5}</m> but that the <m>y</m>-intercept is not <m>(0,5)</m> (as it is for the second equation).
+            <md>
+              <mrow>4x+10y\amp=24</mrow>
+              <mrow>4x+10y\subtractright{4x}\amp=24\subtractright{4x}</mrow>
+              <mrow>10y\amp=-4x+24</mrow>
+              <mrow>\multiplyleft{\frac{1}{10}}10y\amp=\multiplyleft{\frac{1}{10}}(-4x+24)</mrow>
+              <mrow>y\amp=-\frac{2}{5}x+\frac{12}{5}</mrow>
+            </md>
+            So we can see that if we graphed the two lines in the system, they would be parallel lines (same slope, different <m>y</m>-intercepts), so we are correct in our conclusion that the solution sets for the two equations share no common ordered pairs.
+          </p>
+        </statement>
+    </exercise>
 
-      <exercise xml:id="workshop-systems-fractions-in-substitution-exercises">
-        <title>Working with fractions while solving by substitution</title>
-        <section>
-        </section>
-      </exercise>
+    <exercise>
+      <title>Practice exercises with detailed solutions</title>
+        <statement>
+          <p>
+            Use the substitution method to determine the solution to each of the following systems of linear equations.
+            <ol>
 
-      <exercise xml:id="workshop-systems-elimination-exercises">
-        <title>Solving by elimination</title>
-        <section>
-        </section>
-      </exercise>
+              <li>
+                <m>
+                    \left\{
+                      \begin{aligned}
+                        3x-4y\amp=32\\
+                        x\amp=2y+14\\
+                      \end{aligned}
+                    \right.
+                  </m>
+              </li>
 
-      <exercise xml:id="workshop-systems-mixture-applications-exercises">
-        <title>Applications: percents/mixtures</title>
-        <section>
-        </section>
-      </exercise>
+              <li>
+                <m>
+                    \left\{
+                      \begin{aligned}
+                        -x-3y\amp=11\\
+                        2x+5y\amp=-18\\
+                      \end{aligned}
+                    \right.
+                  </m>
+              </li>
 
-      <exercise xml:id="workshop-systems-distance-exercises">
-        <title>Applications: D=rt/getting "the job" done</title>
-        <section>
-        </section>
-      </exercise> -->
+              <li>
+                <m>
+                    \left\{
+                      \begin{aligned}
+                        3x-4y\amp=8\\
+                        y\amp=\frac{3}{4}x-2\\
+                      \end{aligned}
+                    \right.
+                  </m>
+              </li>
 
-    </exercises>
+              <li>
+                <m>
+                    \left\{
+                      \begin{aligned}
+                        y\amp=-3x+7\\
+                        x\amp=-\frac{1}{3}y+3\\
+                      \end{aligned}
+                    \right.
+                  </m>
+              </li>
+
+              <li>
+                <m>
+                    \left\{
+                      \begin{aligned}
+                        -2x+7y\amp=69\\
+                        6x+2y\amp=0\\
+                      \end{aligned}
+                    \right.
+                  </m>
+              </li>
+
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+                <p>
+                  We were asked to solve the following system.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        3x-4y\amp=32\\
+                        x\amp=2y+14\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  We begin by substituting the expression <m>2y+14</m> for <m>x</m> in the equation <m>3x-4y=32</m>.  We then solve the resultant equation for <m>y</m>.
+                  <md>
+                    <mrow>3(\substitute{2y+14})-4y\amp=32</mrow>
+                    <mrow>6y+42-4y\amp=32</mrow>
+                    <mrow>2y+42\amp=32</mrow>
+                    <mrow>2y+42 \subtractright{42}\amp=32 \subtractright{42}</mrow>
+                    <mrow>2y\amp=-10</mrow>
+                    <mrow>\divideunder{2y}{2}\amp=\divideunder{-10}{2}</mrow>
+                    <mrow>y\amp=-5</mrow>
+                  </md>
+
+                  We can now substitute the value of <m>-5</m> for <m>y</m> in the equation <m>x=2y+14</m> to determine the value of <m>x</m>.
+                  <md>
+                    <mrow>x\amp=2(\substitute{-5})+14</mrow>
+                    <mrow>x\amp=4</mrow>
+                  </md>
+                  We conclude by stating that the solution to the given system of equations is the ordered pair <m>(4,-5)</m> (which checks in both equations).
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  We were asked to solve the following system of equations.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        -x-3y\amp=11\\
+                        2x+5y\amp=-18\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  To avoid fractions, we begin by solving the first equation for <m>x</m>.
+                  <md>
+                    <mrow>-x-3y\amp=11</mrow>
+                    <mrow>-x-3y\addright{3y}\amp=11\addright{3y}</mrow>
+                    <mrow>-x\amp=11+3y</mrow>
+                    <mrow>\multiplyleft{-1}-x\amp=\multiplyleft{-1}(11+3y)</mrow>
+                    <mrow>x\amp=-11-3y</mrow>
+                  </md>
+                  We can now substitute <m>-11-3y</m> for <m>x</m> in the equation <m>2x+5y=-18</m>. We then solve the resultant equation for <m>y</m>.
+                  <md>
+                    <mrow>2(\substitute{-11-3y})+5y\amp=-18</mrow>
+                    <mrow>-22-6y+5y\amp=-18</mrow>
+                    <mrow>-22-y\amp=-18</mrow>
+                    <mrow>-322-y\addright{22}\amp=-18\addright{22}</mrow>
+                    <mrow>-y\amp=4</mrow>
+                    <mrow>\multiplyleft{-1}-x\amp=\multiplyleft{-1}4</mrow>
+                    <mrow>y\amp=-4</mrow>
+                  </md>
+                  We can now substitute the value of <m>-4</m> for <m>y</m> in the equation <m>x=-11-3y</m> to determine the value of <m>x</m>.
+                  <md>
+                    <mrow>x\amp=-11-3(\substitute{-4})</mrow>
+                    <mrow>x\amp=1</mrow>
+                  </md>
+                  We conclude by stating that the solution to the given system of equations is the ordered pair <m>(1,-4)</m> (which checks in both equations).
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Our goal is to solve the following system of equations.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        3x-4y\amp=8\\
+                        y\amp=\frac{3}{4}x-2\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  We begin by substituting <m>\frac{3}{4}x-2</m> for <m>y</m> in the equation <m>3x-4y=8</m>.  We the (attempt) to solve he resultant eqaution for <m>x</m>.
+                  <md>
+                    <mrow>3x-4(\substitute{\frac{3}{4}x-2})\amp=8</mrow>
+                    <mrow>3x-3x+8\amp=8</mrow>
+                    <mrow>8\amp=8</mrow>
+                  </md>
+                  The last equation is an identity, it is true regardless of the values of <m>x</m> and <m>y</m>.  This means that the two original equations are equivalent <mdash/> they represent the same line.  We can check this by isolating <m>y</m> in the equation <m>3x-4y=8</m>.
+                  <md>
+                    <mrow>3x-4y\amp=8</mrow>
+                    <mrow>3x-4y\subtractright{3x}\amp=8\subtractright{3x}</mrow>
+                    <mrow>-4y\amp=8-3x</mrow>
+                    <mrow>\multiplyleft{-\frac{1}{4}}4y\amp=\multiplyleft{-\frac{1}{4}}(8-3x)</mrow>
+                    <mrow>y\amp=-2+\frac{3}{4}x</mrow>
+                  </md>
+                  This last equation is clearly equivalent to <m>y=\frac{3}{4}x-2</m>, so we are correct in our assertion that both equations in the original system represent the same line.  We conclude that every point that lies on the line <m>y=\frac{3}{4}x-2</m> is a solution to the given system.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  We were tasked to solve the following system of equations.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        y\amp=-3x+7\\
+                        x\amp=-\frac{1}{3}y+3\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  We can begin by substituting <m>-\frac{1}{3}y+3</m> for <m>x</m> in the equation <m>y=-3x+7</m>.  We then (attempt) to solve the resultant equation for <m>y</m>.
+                  <md>
+                    <mrow>y\amp=-3(\substitute{-\frac{1}{3}y+3})+7</mrow>
+                    <mrow>y\amp=y-9+7</mrow>
+                    <mrow>y\amp=y-2</mrow>
+                    <mrow>y\subtractright{y}\amp=y-2\subtractright{y}</mrow>
+                    <mrow>0\amp=-2</mrow>
+                  </md>
+                  The last equation is a contradiction, there are no values we can assign to <m>x</m> and <m>y</m> that will make <m>0</m> and <m>-2</m> equal!  This is an indication that there are no solutions to the given system.  We can check this by isolating <m>y</m> in the equation <m>x=-\frac{1}{3}y+3</m>.
+                  <md>
+                    <mrow>x\amp=-\frac{1}{3}y+3</mrow>
+                    <mrow>x\subtractright{3}\amp=-\frac{1}{3}y+3\subtractright{3}</mrow>
+                    <mrow>x-3\amp=-\frac{1}{3}y</mrow>
+                    <mrow>\multiplyleft{-3}(x-3)\amp=\multiplyleft{-3}-\frac{1}{3}y</mrow>
+                    <mrow>-3x+9\amp=y</mrow>
+                  </md>
+                  The last equation, <m>y=-3x+9</m>, graphs to a line that is parallel to the line that results from graphing <m>y=-3x+7</m> (the other equation in the given system).  This confirms that there is no point that lies on both lines.  The given system has no solutions, it is inconsistent.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  We were presented with the opportunity to solve the following system of equations.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        -2x+7y\amp=69\\
+                        6x+2y\amp=0\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  To avoid introducing unnecessary fractions, we solve the equation <m>6x+2y=0</m> for <m>y</m>.
+                  <md>
+                    <mrow>6x+2y\amp=0</mrow>
+                    <mrow>6x+2y\subtractright{6x}\amp=0\subtractright{6x}</mrow>
+                    <mrow>2y\amp=-6x</mrow>
+                    <mrow>\divideunder{2y}{2}\amp=\divideunder{-6x}{2}</mrow>
+                    <mrow>y\amp=-3x</mrow>
+                  </md>
+                  We now substitute <m>-3x</m> for <m>y</m> in the equation <m>-2x+7y=69</m> and solve the resultant equation for <m>x</m>.
+                  <md>
+                    <mrow>-2x+7(\substitute{-3x})\amp=69</mrow>
+                    <mrow>-2x-21x\amp=69</mrow>
+                    <mrow>-23x\amp=69</mrow>
+                    <mrow>\divideunder{-23x}{-23}\amp=\divideunder{69}{-23}</mrow>
+                    <mrow>x\amp=-3</mrow>
+                  </md>
+                  Now we substitute <m>-3</m> for <m>x</m> in the equation <m>y=-3x</m> to determine the value of <m>y</m>.
+                  <md>
+                    <mrow>y\amp=-3(\substitute{-3})</mrow>
+                    <mrow>y\amp=9</mrow>
+                  </md>
+                  We conclude that the solution to the given system of equations is the ordered pair <m>(-3,9)</m> (which checks in both equations).
+                </p>
+              </li>
+
+            </ol>
+            <p>
+            </p>
+          </p>
+        </solution>
+    </exercise>
+
+    <exercise>
+      <title>Question bank with short answers</title>
+        <statement>
+          <p>
+            Use the method of substitution so solve each of the following system of equations.
+            <ol>
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      x\amp=\frac{2}{5}y-14\\
+                      3x+5y\amp=20\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      y\amp=-\frac{7}{3}x+{5}{6}\\
+                      14x+6y\amp=5\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      3x-y\amp=23\\
+                      -2x-11y\amp=8\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><p>The solution is <m>(-10,10)</m>.</p></li>
+              <li><p>The two equations grah to the same line.  Every point on that line is a solution to the system of equations.</p></li>
+              <li><p>The solution is <m>(7,-2)</m>.</p></li>
+            </ol>
+          </p>
+        </solution>
+    </exercise>
+
+  </exercises>
+
+  <exercises>
+    <title>Fractions - Sometimes They Cannot be Avoided</title>
+
+    <exercise>
+      <title>Explanation and examples</title>
+        <statement>
+          <p>
+            Sometimes there is no avoiding fractions when applying the method of substitution to a linear system of equations.  For eaxmple, consider the following system of equations.       
+            <me>
+              \left\{
+                \begin{aligned}
+                  -5x+3y\amp=4\\
+                  6x-7y\amp=2\\
+                \end{aligned}
+              \right.
+            </me>
+            No matter which variable we isolate, the expression on the other side of the equation will contain fractions.  Fortunately, once we've made the substitution we can clear away the fractions before proceeding to the solution.  Since there are no "good" choices, let's go ahead and solve the first equation for <m>y</m>.
+            <md>
+              <mrow>-5x+3y\amp=4</mrow>
+              <mrow>-5x+3y\addright{5x}\amp=4\addright{5x}</mrow>
+              <mrow>3y\amp=5x+4</mrow>
+              <mrow>\multiplyleft{\frac{1}{3}}3y\amp=\multiplyleft{\frac{1}{3}}(5x+4)</mrow>
+              <mrow>y\amp=\frac{5}{3}x+\frac{4}{3}</mrow>
+            </md>
+            We can substitute <m>\frac{5}{3}x+\frac{4}{3}</m> for <m>y</m> in the second original equation and solve the resultant equation for <m>x</m>.
+            <md>
+              <mrow>6x-7\highlight{y}\amp=2</mrow>
+              <mrow>6x-7(\highlight{\frac{5}{3}x+\frac{4}{3}})\amp=2</mrow>
+              <mrow>6x-\frac{35}{3}x-\frac{28}{3}\amp=2</mrow>
+              <mrow>\multiplyleft{3}(6x-\frac{35}{3}x-\frac{28}{3})\amp=\multiplyleft{3}2\,\highlight{\text{ (clearing away the fractions)}}</mrow>
+              <mrow>18x-35x-28\amp=6</mrow>
+              <mrow>-17x-28\amp=6</mrow>
+              <mrow>-17x-28\addright{28}\amp=6\addright{28}</mrow>
+              <mrow>-17x\amp=34</mrow>
+              <mrow>\divideunder{-17x}{-17}\amp=\divideunder{34}{-17}</mrow>
+              <mrow>x\amp=-2</mrow>
+            </md>
+            Let's substitute <m>-2</m> for <m>x</m> in the equation <m>y=\frac{5}{3}x+\frac{4}{3}</m> and solve for <m>y</m>.
+            <md>
+              <mrow>y\amp=\frac{5}{3}(\highlight{-2})+\frac{4}{3}</mrow>
+              <mrow>y\amp=\frac{-6}{3}</mrow>
+              <mrow>y\amp=-2</mrow>
+            </md>
+            Our proposed solution is <m>(-2,-2)</m>.  Let's check in the original system.      
+            <me>
+              \left\{
+                \begin{aligned}
+                  -5(\highlight{-2})+3(\highlightr{-2})\amp=4\,?\\
+                  6(\highlight{-2})-7(\highlightr{-2})\amp=2\,?\\
+                \end{aligned}
+              \right.
+            </me>      
+            <me>
+              \left\{
+                \begin{aligned}
+                  10-6\amp=4\,\checkmark\\
+                  -12+14\amp=2\,\checkmark\\
+                \end{aligned}
+              \right.
+            </me>
+            The solution to the given system of equations is the ordered pair <m>(-2,-2)</m>.
+          </p>
+          <p>
+            Example: Use the method of substitution to solve the following system of equations.      
+            <me>
+              \left\{
+                \begin{aligned}
+                  \frac{5}{2}x-\frac{3}{7}y\amp=\frac{71}{28}\\
+                  -\frac{7}{9}x+\frac{2}{3}y\amp=-\frac{43}{18}\\
+                \end{aligned}
+              \right.
+            </me>
+          </p>
+          <p>Solution</p>
+          <p>
+            Good grief.  Let's start by clearing away the fractions, noting that <m>28</m> is the LCD of the fractions in the first equation and <m>18</m> is the LCD of the fractions in the second equation.     
+            <me>
+              \left\{
+                \begin{aligned}
+                  \multiplyleft{28}(\frac{5}{2}x-\frac{3}{7}y)\amp=\multiplyleft{28}\frac{71}{28}\\
+                  \multiplyleft{18}(-\frac{7}{9}x+\frac{2}{3}y)\amp=\multiplyleft{18}-\frac{43}{18}\\
+                \end{aligned}
+              \right.
+            </me>     
+            <me>
+              \left\{
+                \begin{aligned}
+                  70x-12y\amp=71\\
+                  -14x+12y\amp=-43\\
+                \end{aligned}
+              \right.
+            </me>
+            Consideration of our choices for variable isolation does not bring good cheer.  Let's keep the fractions as reasonable as possible and solve the second equation for <m>y</m>. 
+            <md>
+              <mrow>-14x+12y\amp=-43</mrow>
+              <mrow>-14x+12y\addright{14x}\amp=-43\addright{14x}</mrow>
+              <mrow>12y\amp=14x-43</mrow>
+              <mrow>\multiplyleft{\frac{1}{12}}12y\amp=\multiplyleft{\frac{1}{12}}(14x-43)</mrow>
+              <mrow>y\amp=\frac{7}{6}x-\frac{43}{12}</mrow>
+            </md>
+            Let's go ahead and substitute <m>\frac{7}{6}x-\frac{43}{12}</m> for <m>y</m> in the equation <m>70x-12y=71</m> and solve the resultant equation for <m>x</m>.
+            <md>
+              <mrow>70x-12\highlight{y}\amp=71</mrow>
+              <mrow>70x-12(\highlight{\frac{7}{6}x-\frac{43}{12}})\amp=71</mrow>
+              <mrow>70x-14x+43\amp=71</mrow>
+              <mrow>56x+43\amp=71</mrow>
+              <mrow>56x+43\subtractright{43}\amp=71\subtractright{43}</mrow>
+              <mrow>56x\amp=28</mrow>
+              <mrow>\divideunder{56x}{56}\amp=\divideunder{28}{56}</mrow>
+              <mrow>x\amp=\frac{1}{2}</mrow>
+            </md>
+            Let's substitute <m>\frac{1}{2}</m> for <m>x</m> in the equation <m>y=\frac{7}{6}x-\frac{43}{12}</m> and solve the resultant equation for <m>y</m>.
+            <md>
+              <mrow>y\amp=\frac{7}{6}(\highlight{\frac{1}{2}})-\frac{43}{12}</mrow>
+              <mrow>y\amp=\frac{7}{12}-\frac{43}{12}</mrow>
+              <mrow>y\amp=-\frac{36}{12}</mrow>
+              <mrow>y\amp=-3</mrow>
+            </md>
+            Our proposed solution is <m>(\frac{1}{2},-3)</m> which is pretty clean, so probably correct.  Never-the-less, we need to check it in the original system.    
+            <me>
+              \left\{
+                \begin{aligned}
+                  \frac{5}{2}(\highlight{\frac{1}{2}})-\frac{3}{7}(\highlightr{-3})\amp=\frac{71}{28}\,?\\
+                  -\frac{7}{9}(\highlight{\frac{1}{2}})+\frac{2}{3}(\highlightr{-3})\amp=-\frac{43}{18}\,?\\
+                \end{aligned}
+              \right.
+            </me>    
+            <me>
+              \left\{
+                \begin{aligned}
+                  \frac{5}{4}+\frac{9}{7}\amp=\frac{71}{28}\,?\\
+                  -\frac{7}{18}-2\amp=-\frac{43}{18}\,?\\
+                \end{aligned}
+              \right.
+            </me>
+            <me>
+              \left\{
+                \begin{aligned}
+                  \frac{5}{4} \cdot \highlight{\frac{7}{7}}+\frac{9}{7} \cdot \highlight{\frac{4}{4}}\amp=\frac{71}{28}\,?\\
+                  -\frac{7}{18}-\frac{2}{1} \cdot \highlight{\frac{18}{18}}\amp=-\frac{43}{18}\,?\\
+                \end{aligned}
+              \right.
+            </me>
+            <me>
+              \left\{
+                \begin{aligned}
+                  \frac{35}{28}+\frac{36}{28}\amp=\frac{71}{28}\,\checkmark\\
+                  -\frac{7}{18}-\frac{36}{18}\amp=-\frac{43}{18}\,\checkmark\\
+                \end{aligned}
+              \right.
+            </me>
+            The solution to the given system of equations is the ordered pair <m>(\frac{1}{2},-3)</m>.
+          </p>
+          <p>Criminy.</p>
+        </statement>
+    </exercise>
+
+    <exercise>
+      <title>Practice exercises with detailed solutions</title>
+        <statement>
+          <p>
+            Use the substitution method to determine the solution to each of the following systems of linear equations.
+            <ol>
+
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      x\amp=\frac{2}{5}y-2\\
+                      -x+3y\amp=28\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      -3x+4y\amp=27\\
+                      5x-3y\amp=-34\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      \frac{5}{2}x-\frac{4}{3}y\amp=-33\\
+                      -\frac{1}{5}x+\frac{2}{3}y\amp=6\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      \frac{3}{4}x-\frac{5}{2}y\amp=\frac{7}{4}\\
+                      -\frac{1}{3}x+y\amp=-1\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      -4x+7y\amp=-13\\
+                      6x+14y\amp=9\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+
+            <ol>
+
+                <li>
+                  <p>
+                    Our challenge is to solve the following system of equations.
+                    <me>
+                      \left\{
+                        \begin{aligned}
+                          x\amp=\frac{2}{5}y-2\\
+                          -x+3y\amp=28\\
+                        \end{aligned}
+                      \right.
+                    </me>
+                    Since <m>x</m> is already isolated in the first equation, let's go ahead and substitute <m>\frac{2}{5}y-2</m> for <m>x</m> in the second equation.
+                    <md>
+                      <mrow>-(\substitute{\frac{2}{5}y-2})+3y\amp=28</mrow>
+                      <mrow>-\frac{2}{5}y+2+3y\amp=28</mrow>
+                    </md>
+                    Before going any further, we can clear away the fraction by multiplying both sides of the equation by <m>5</m>.
+                    <md>
+                      <mrow>\multiplyleft{5}(-\frac{2}{5}y+2+3y)\amp=\multiplyleft{5}28</mrow>
+                      <mrow>-2y+10+15y\amp=140</mrow>
+                      <mrow>13y+10\amp=140</mrow>
+                      <mrow>13y+10\subtractright{10}\amp=140\subtractright{10}</mrow>
+                      <mrow>13y\amp=130</mrow>
+                      <mrow>\divideunder{13y}{13}\amp=\divideunder{130}{13}</mrow>
+                      <mrow>y\amp=10</mrow>
+                    </md>
+                    Now that we know that the value of <m>y</m> is <m>10</m>, we can substitute <m>10</m> for <m>y</m> in the equation <m>x=\frac{2}{5}y-2</m> to determine the value of <m>x</m>.
+                    <md>
+                      <mrow>x\amp=\frac{2}{5} \cdot \substitute{10}-2</mrow>
+                      <mrow>x\amp=4-2</mrow>
+                      <mrow>x\amp=2</mrow>
+                    </md>
+                    So the solution to the given system of equations is the ordered pair <m>(2,10)</m>.  The reader should verify the solution in both equations (as the author did on his own).
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    We have the opportunity to solve the following system of equations.  Let's take advantage.
+                    <me>
+                      \left\{
+                        \begin{aligned}
+                          -3x+4y\amp=27\\
+                          5x-3y\amp=-34\\
+                        \end{aligned}
+                      \right.
+                    </me>
+                    Regardless of which variable we isolate, there are going to be fractions in the resultant equation.  We'll have one fewer fraction if we isolate <m>x</m> in the first equation, so let's do that.
+                    <md>
+                      <mrow>-3x+4y\amp=27</mrow>
+                      <mrow>-3x+4y\subtractright{4y}\amp=27\subtractright{4y}</mrow>
+                      <mrow>-3x\amp=27-4y</mrow>
+                      <mrow>\multiplyleft{-\frac{1}{3}}(-3x)\amp=\multiplyleft{-\frac{1}{3}}(27-4y)</mrow>
+                      <mrow>x\amp=-9+\frac{4}{3}y</mrow>
+                    </md>
+                    We can now substitute <m>-9+\frac{4}{3}y</m> for <m>x</m> in the equation <m>5x-3y=-34</m>.
+                    <md>
+                      <mrow>5(\substitute{-9+\frac{4}{3}y})-3y\amp=-34</mrow>
+                      <mrow>-45+\frac{20}{3}y-3y\amp=-34</mrow>
+                    </md>
+                    Before proceeding any further, let's clear away the fraction by multiplying both sides of the equation by <m>3</m>.
+                    <md>
+                      <mrow>\multiplyleft{3}(-45+\frac{20}{3}y-3y)\amp=\multiplyleft{3}-34</mrow>
+                      <mrow>-135+20y-9y\amp=-102</mrow>
+                      <mrow>-135+11y\amp=-102</mrow>
+                      <mrow>-135+11y\addright{135}\amp=-102\addright{135}</mrow>
+                      <mrow>11y\amp=33</mrow>
+                      <mrow>\divideunder{11y}{11}\amp=\divideunder{33}{11}</mrow>
+                      <mrow>y\amp=3</mrow>
+                    </md>
+                    Knowing that <m>y=3</m>, let's substitute <m>3</m> for <m>y</m> in the equation <m>x=-9+\frac{4}{3}y</m> to determine the value of <m>x</m>.
+                    <md>
+                      <mrow>x\amp=-9+\frac{4}{3} \cdot \substitute{3}</mrow>
+                      <mrow>x\amp=-9+4</mrow>
+                      <mrow>x\amp=-5</mrow>
+                    </md>
+                    So the solution to the given system of equations is the ordered pair <m>(-5,3)</m>.  The author has verified the solution, as should the reader.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Time to roll up our sleeves, because we're going to tackle the following system of equations.
+                    <me>
+                      \left\{
+                        \begin{aligned}
+                          \frac{5}{2}x-\frac{4}{3}y\amp=-33\\
+                          -\frac{1}{5}x+\frac{2}{3}y\amp=6\\
+                        \end{aligned}
+                      \right.
+                    </me>
+                    Once we get over the shock of all the fractions, let's focus on eliminating them.  The LCD of the fractions in the first equation is <m>6</m> and the LCD of the fractions in the second equations is <m>15</m>, so we can clear the fractions in the first equation by multiplying both sides by <m>6</m> and we can clear the fractions from the second equation by multiplying both sides by <m>15</m>.
+                    <me>
+                      \left\{
+                        \begin{aligned}
+                          \multiplyleft{6}(\frac{5}{2}x-\frac{4}{3}y)\amp=\multiplyleft{6}-33\\
+                          \multiplyleft{15}(-\frac{1}{5}x+\frac{2}{3}y)\amp=\multiplyleft{15}6\\
+                        \end{aligned}
+                      \right.
+                    </me>
+                    This results in the following system of equations.
+                    <me>
+                      \left\{
+                        \begin{aligned}
+                          15x-8y\amp=-198\\
+                          -3x+10y\amp=90\\
+                        \end{aligned}
+                      \right.
+                    </me>
+                    Regardless of the variable we isolate, the resultant equation will have fractions.  As far as fractions go, thirds are relatively friendly, so let's isolate <m>x</m> in the second equation.
+                    <md>
+                      <mrow>-3x+10y\amp=90</mrow>
+                      <mrow>-3x+10y\subtractright{10y}\amp=90\subtractright{10y}</mrow>
+                      <mrow>-3x\amp=90-10y</mrow>
+                      <mrow>\multiplyleft{-\frac{1}{3}}(-3x)\amp=\multiplyleft{-\frac{1}{3}}(90-10y)</mrow>
+                      <mrow>x\amp=-30+\frac{10}{3}y</mrow>
+                    </md>
+                    Let's go ahead and substitute <m>-30+\frac{10}{3}y</m> for <m>x</m> in the equation <m>15x-8y=-198</m>.
+                    <md>
+                      <mrow>15(\substitute{-30+\frac{10}{3}y})-8y\amp=-198</mrow>
+                      <mrow>-450+50y-8y\amp=-198</mrow>
+                      <mrow>-450+42y\amp=-198</mrow>
+                      <mrow>-450+42y\addright{450}\amp=-198\addright{450}</mrow>
+                      <mrow>42y\amp=252</mrow>
+                      <mrow>\divideunder{42y}{42}\amp=\divideunder{252}{42}</mrow>
+                      <mrow>y\amp=6</mrow>
+                    </md>
+                    Let's now substitute <m>6</m> for <m>y</m> in the equation <m>x=-30+\frac{10}{3}y</m> to determine the value of <m>x</m>.
+                    <md>
+                      <mrow>x\amp=-30+\frac{10}{3}\multiplyright{6}</mrow>
+                      <mrow>x\amp=-30+20</mrow>
+                      <mrow>x\amp=-10</mrow>.
+                    </md>
+                    The solution to the given system is the ordered pair <m>(-10,6)</m> which the author is confident the reader will verify.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Grab a cup of coffee, because we're going to solve the following system of equations.
+                    <me>
+                      \left\{
+                        \begin{aligned}
+                          \frac{3}{4}x-\frac{5}{2}y\amp=\frac{7}{4}\\
+                          -\frac{1}{3}x+y\amp=-1\\
+                        \end{aligned}
+                      \right.
+                    </me>
+                    Our first instinct might be to clear away all of the fractions, but that's probably not the best option.  While we definitely want to clear the fractions from the first equation, a better option for the second equation is probably to just go ahead and isolate <m>y</m>.  We begin with the second action.
+                    <md>
+                      <mrow>-\frac{1}{3}x+y\amp=-1</mrow>
+                      <mrow>-\frac{1}{3}x+y\addright{\frac{1}{3}x}\amp=-1\addright{\frac{1}{3}x}</mrow>
+                      <mrow>y\amp=-1+\frac{1}{3}x</mrow>
+                    </md>
+                    We can now substitute <m>-1+\frac{1}{3}x</m> for <m>y</m> in the first equation.  Before doing that, let's clear away the fractions from the first equation by multiplying both sides of the equation by the LCD of all of the fractions in the equation which is <m>4</m>.
+                    <md>
+                      <mrow>\frac{3}{4}x-\frac{5}{2}y\amp=\frac{7}{4}</mrow>
+                      <mrow>\multiplyleft{4}(\frac{3}{4}x-\frac{5}{2}y)\amp=\multiplyleft{4}\frac{7}{4}</mrow>
+                      <mrow>3x-10y\amp=7</mrow>
+                      <mrow>3x-10(\substitute{-1+\frac{1}{3}x})\amp=7</mrow>
+                      <mrow>3x+10-\frac{10}{3}x\amp=7</mrow>
+                    </md>
+                    Before proceeding any further, let's clear away the fraction by multiplying both sides of the equation by <m>3</m>.
+                    <md>
+                      <mrow>\multiplyleft{3}(3x+10-\frac{10}{3}x)\amp=\multiplyleft{3}7</mrow>
+                      <mrow>9x+30-10x\amp=21</mrow>
+                      <mrow>-x+30\amp=21</mrow>
+                      <mrow>-x+30\subtractright{30}\amp=21\subtractright{30}</mrow>
+                      <mrow>-x\amp=-9</mrow>
+                      <mrow>\multiplyleft{-1}-x\amp=\multiplyleft{-1}-9</mrow>
+                      <mrow>x\amp=9</mrow>
+                    </md>
+                    We can now determine the value for <m>y</m> after replacing <m>x</m> with <m>9</m> in the equation <m>y=-1+\frac{1}{3}x</m>.
+                    <md>
+                      <mrow>y\amp=-1+\frac{1}{3} \cdot \substitute{9}</mrow>
+                      <mrow>y\amp=-1+3</mrow>
+                      <mrow>y\amp=2</mrow>
+                    </md>
+                    The solution to the given system of equations is the ordered pair <m>(9,2)</m>.  The solution is verified below.
+                    <me>
+                      \left\{
+                        \begin{aligned}
+                          \frac{3}{4}\multiplyright{9}-\frac{5}{2}\multiplyright{2}\amp=\frac{7}{4}\,?\\
+                          -\frac{1}{3}\multiplyright{9}+\substitute{2}\amp=-1\,?\\
+                        \end{aligned}
+                      \right.
+                    </me>
+
+                    <me>
+                      \left\{
+                        \begin{aligned}
+                          \frac{27}{4}-5\amp=\frac{7}{4}\,?\\
+                          -3+2\amp=-1\,\checkmark\\
+                        \end{aligned}
+                      \right.
+                    </me>
+
+                    <me>
+                      \left\{
+                        \begin{aligned}
+                          \frac{27}{4}-\frac{20}{4}\amp=\frac{7}{4}\,\checkmark\\
+                          -1\amp=-1\,\checkmark\\
+                        \end{aligned}
+                      \right.
+                    </me>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    We finish this workout by solving the following system of equations.
+                    <me>
+                      \left\{
+                        \begin{aligned}
+                          -4x+7y\amp=-13\\
+                          6x+14y\amp=9\\
+                        \end{aligned}
+                      \right.
+                    </me>
+                    No avoiding fractions, but at least we can work with quarters.  Let's solve the first equation for <m>x</m>.
+                    <md>
+                      <mrow>-4x+7y\amp=-13</mrow>
+                      <mrow>-4x+7y\subtractright{7y}\amp=-13\subtractright{7y}</mrow>
+                      <mrow>-4x\amp=-13-7y</mrow>
+                      <mrow>\multiplyleft{-\frac{1}{4}}(-4x)\amp=\multiplyleft{-\frac{1}{4}}(-13-7y)</mrow>
+                      <mrow>x\amp=\frac{13}{4}+\frac{7}{4}y</mrow>
+                    </md>
+                    Breath ... let's substitute <m>\frac{13}{4}+\frac{7}{4}y</m> for <m>x</m> in the second given equation.
+                    <md>
+                      <mrow>6\substitute{x}+14y\amp=9</mrow>
+                      <mrow>6(\substitute{\frac{13}{4}+\frac{7}{4}y})+14y\amp=9</mrow>
+                      <mrow>\frac{39}{2}+\frac{21}{2}y+14y\amp=9</mrow>
+                    </md>
+                    Let's clear away the fractions by multiplying both sides of the equation by <m>2</m> and then solve for <m>y</m>.
+                    <md>
+                      <mrow>\multiplyleft{2}(\frac{39}{2}+\frac{21}{2}y+14y)\amp=\multiplyleft{2}9</mrow>
+                      <mrow>39+21y+28y\amp=18</mrow>
+                      <mrow>49y+39\amp=18</mrow>
+                      <mrow>49y+39\subtractright{39}\amp=18\subtractright{39}</mrow>
+                      <mrow>49y\amp=-21</mrow>
+                      <mrow>\divideunder{49y}{49}\amp=\divideunder{-21}{49}</mrow>
+                      <mrow>y\amp=-\frac{3}{7}</mrow>
+                    </md>
+                    Oh my.  Exhale.  Let's carry on.  Replacing <m>y</m> with <m>-\frac{3}{7}</m> in the equation <m>x=\frac{13}{4}+\frac{7}{4}y</m> will led to the value of <m>x</m>.
+                    <md>
+                      <mrow>x\amp=\frac{13}{4}+\frac{7}{4}\multiplyright{-\frac{3}{7}}</mrow>
+                      <mrow>x\amp=\frac{13}{4}-\frac{3}{4}</mrow>
+                      <mrow>x\amp=\frac{5}{2}</mrow>
+                    </md>
+                    Alrighty, then.  The solution to the given system is the ordered pair <m>(\frac{5}{2},-\frac{3}{7})</m>.  This unlikely outcome is verified below.
+
+                    <me>
+                      \left\{
+                        \begin{aligned}
+                          -4\multiplyright{\frac{5}{2}}+7\multiplyright{-\frac{3}{7}}\amp=-13\,?\\
+                          6\multiplyright{\frac{5}{2}}+14\multiplyright{-\frac{3}{7}}\amp=9\,?\\
+                        \end{aligned}
+                      \right.
+                    </me>
+
+                    <me>
+                      \left\{
+                        \begin{aligned}
+                          -10-3\amp=-13\,\checkmark\\
+                          15-6\amp=9\,\checkmark\\
+                        \end{aligned}
+                      \right.
+                    </me>
+
+                    Crikey.
+                  </p>
+                </li>
+
+              </ol>
+            </p>
+        </solution>
+    </exercise>
+
+    <exercise>
+      <title>Question bank with short answers</title>
+        <statement>
+          <p>
+            Use the method of substitution so solve each of the following system of equations.
+            <ol>
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      5x+7y\amp=-27\\
+                      -2x+3y\amp=-24\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      \frac{1}{3}x-\frac{2}{7}y\amp=12\\
+                      \frac{3}{2}x+\frac{3}{5}y\amp=-12\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      4x-y\amp=3\\
+                      -3x+4y\amp=8\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><p>The solution is <m>(3,-6)</m>.</p></li>
+              <li><p>The solution is <m>(6,-35)</m>.</p></li>
+              <li><p>The solution is <m>(\frac{20}{13},\frac{41}{13})</m>.</p></li>
+            </ol>
+          </p>
+        </solution>
+    </exercise>
+
+  </exercises>
+
+  <exercises>
+    <title>Solving Systems using Variable Elimination</title>
+
+    <exercise>
+      <title>Explanation and examples</title>
+        <statement>
+          <p>
+            Consider the following system of equations.          
+            <me>
+              \left\{
+                \begin{aligned}
+                  3x-2y\amp=-4\\
+                  -4x+2y\amp=-2\\
+                \end{aligned}
+              \right.
+            </me>
+            We could solve the system by graphing or by using the method of substitution.  There are many other options, however, and we are going to exploit one of the additional options <mdash/> we are going to use the elimination method (sometimes referred to as the addition method).
+          </p>
+          <p>
+            Let's assume that there is only one ordered pair that satisfies both equations in the system.  We we replace <m>x</m> and <m>y</m> with the coordinates of that ordered pair, the first equation becomes <m>-4=-4</m> and the second equation becomes <m>-2=-2</m>.  Note that if we add the respective sides of those equations, we arrive at another true statement, namely <m>-6=-6</m>.  This phenomenon extends to solving the system <mdash/> whatever ordered pair(s) satisfies both equations in the system will also solve the equation that results from adding the respective sides of the equations.  For the system under consideration, that is a mighty useful fact, because the action will (temporarily) eliminate <m>y</m> from the system and we can solve the resultant equations for <m>x</m>.  We can then substitute that value for <m>x</m> in either of the original equations to determine the value of <m>y</m>.  Let's see that plan in action.
+          </p>
+          <p>
+            Consider the following system of equations.          
+            <me>
+              \left\{
+                \begin{aligned}
+                  3x-2y\amp=-4\\
+                  -4x+2y\amp=-2\\
+                \end{aligned}
+              \right.
+            </me>
+            We begin by adding the left sides of the equations together and equating that to the sum of the right sides of the equations.  The result is
+            <me>-x=-6</me>.
+            We then solve that equation for <m>x</m>.
+            <md>
+              <mrow>-x\amp=-6</mrow>
+              <mrow>\multiplyleft{-1}-x\amp=\multiplyleft{-1}-6</mrow>
+              <mrow>x\amp=6</mrow>
+            </md>
+            Let's go ahead and substitute <m>6</m> for <m>x</m> in the second original equation and solve for <m>y</m>.
+            <md>
+              <mrow>-4\highlight{x}+2y\amp=-2</mrow>
+              <mrow>-4(\highlight{6})+2y\amp=-2</mrow>
+              <mrow>-24+2y\amp=-2</mrow>
+              <mrow>-24+2y\addright{24}\amp=-2\addright{24}</mrow>
+              <mrow>2y\amp=22</mrow>
+              <mrow>\divideunder{2y}{2}\amp=\divideunder{22}{2}</mrow>
+              <mrow>y\amp=11</mrow>
+            </md>
+            Let's check are apparent solution, <m>(6,11)</m>, in the given system.         
+            <me>
+              \left\{
+                \begin{aligned}
+                  3(\highlight{6})-2(\highlightr{11})\amp=-4\,?\\
+                  -4(\highlight{6})+2(\highlightr{11})\amp=-2\,?\\
+                \end{aligned}
+              \right.
+            </me>         
+            <me>
+              \left\{
+                \begin{aligned}
+                  18-22\amp=-4\,\checkmark\\
+                  -24+22\amp=-2\,\checkmark\\
+                \end{aligned}
+              \right.
+            </me>
+            The solution to the given system of equations is the ordered pair <m>(6,11)</m>.
+          </p>
+          <p>
+            Now let's consider the following system of equations.          
+            <me>
+              \left\{
+                \begin{aligned}
+                  2x+3y\amp=23\\
+                  6x-5y\amp=-1\\
+                \end{aligned}
+              \right.
+            </me>
+            As given, equating the sums of the respective sides of the two equations will not eliminate either <m>x</m> or <m>y</m>.  However we could multiply both sides of one of the equations by the same value so that when the sides of the new equation are added to the sides of the other equation one of the variables is eliminated.  For example, if we multiply both sides of the first equation by <m>-3</m>, the resultant coefficient on <m>x</m> will be <m>-6</m>, and when the respective sides of that equation and the original second equation are added, <m>x</m> will be eliminated.  Let's go ahead and do that.        
+            <me>
+              \left\{
+                \begin{aligned}
+                  2x+3y\amp=23\\
+                  6x-5y\amp=-1\\
+                \end{aligned}
+              \right.
+            </me>        
+            <me>
+              \left\{
+                \begin{aligned}
+                  \multiplyleft{-3}(2x+3y)\amp=\multiplyleft{-3}23\\
+                  6x-5y\amp=-1\\
+                \end{aligned}
+              \right.
+            </me>        
+            <me>
+              \left\{
+                \begin{aligned}
+                  -6x-9y\amp=-69\\
+                  6x-5y\amp=-1\\
+                \end{aligned}
+              \right.
+            </me>
+            Equating the sums of the respective sides of the equation results in the following equation.
+            <me>-14y=-70</me>
+            Solving for <m>y</m> we have the following.
+            <md>
+              <mrow>-14y\amp=-70</mrow>              
+              <mrow>\divideunder{-14y}{-14}\amp=\divideunder{-70}{-14}</mrow>
+              <mrow>y\amp=5</mrow>
+            </md>
+            Let's go ahead and substitute <m>5</m> for <m>y</m> in the second original equation and solve the result for <m>x</m>.
+            <md>
+              <mrow>6x-5\highlight{y}\amp=-1</mrow>
+              <mrow>6x-5(\highlight{5})\amp=-1</mrow>
+              <mrow>6x-25\amp=-1</mrow>
+              <mrow>6x-25\addright{25}\amp=-1\addright{25}</mrow>
+              <mrow>6x\amp=24</mrow>
+              <mrow>\divideunder{6x}{6}\amp=\divideunder{24}{6}</mrow>
+              <mrow>x\amp=4</mrow>
+            </md>
+            So our apparent solution is <m>(4,5)</m>.  Let's go ahead and check in the given system of equations.
+            <me>
+              \left\{
+                \begin{aligned}
+                  2(\highlight{4})+3(\highlightr{5})\amp=23\,?\\
+                  6(\highlight{4})-5(\highlightr{5})\amp=-1\,?\\
+                \end{aligned}
+              \right.
+            </me>  
+            <me>
+              \left\{
+                \begin{aligned}
+                  8+15\amp=23\,\checkmark\\
+                  24-25\amp=-1\,\checkmark\\
+                \end{aligned}
+              \right.
+            </me> 
+            The solution to the given system of equations is the ordered pair <m>(4,5)</m>. 
+          </p>
+          <p>
+            Assuming that a system of two equations with two unknowns has exactly one ordered pair in its solution set, the process for determining that solution is outlined below.  The outline is followed by a note specifying how you recognize that there are no solutions or an "infinite number" of solutions while going through the elimination process. 
+            <ol label="1">
+              <li>
+                Before proceeding to the next step, both equations should be written in standard form (<m>ax+by=c</m>).  Rearrange the terms as necessary so that this is the case.
+              </li>
+              <li>
+                If there are like terms in the two equations with opposite coefficients (same absolute value, opposite signs), go ahead and add the respective sides of the two equations so that the variable associated with those terms is eliminated.  If no such terms exist, multiply both sides of one equation by a number, and perhaps both sides of the other equation by a different number, so that one of the variables does have opposite coefficients in the two equations.  Then add the two respective sides of the new system so that the variable with opposite coefficients is eliminated.
+              </li>
+              <li>
+                Solve the equation that emerges from step 2 for the remaining variable.
+              </li>
+              <li>
+                Substitute the value determined in step 3 into either of the original equations and solve for the remaining variable.
+              </li>
+              <li>
+                Check your proposed solution in both of the original equations.  Assuming it is correct, state your conclusion.  If the solution is not correct, find your mistake and/or rework the problem from scratch.
+              </li>
+            </ol>
+            Systems that either have no solutions or an "infinite number of solutions" reveal their nature when you execute step 2 of the process.  In either case, both variables sum to zero while performing the step.  If the system has no solutions, you are left with a contradiction (a false statement such as <m>0=2</m>).  If the system has an "infinite number" of solutions, you are left with an identity (a true statement such as <m>5=5</m>).
+          </p>
+          <p>Example:  Use the elimination method to solve the following system of equations.     
+            <me>
+              \left\{
+                \begin{aligned}
+                  4x+5y\amp=16\\
+                  -5x+3y\amp=17\\
+                \end{aligned}
+              \right.
+            </me>   
+          </p>
+          <p>Solution</p>
+          <p>
+            Neither variable has opposite coefficients in the two equations, and there is no way of establishing opposite coefficients that doesn't lead to fractions if we only multiply both sides of only one of the equations by a constant.  Because the coefficients on <m>x</m> already have opposite signs, I'm choosing to eliminate <m>x</m> by multiplying both sides of the first equation by <m>5</m> and both sides of the second equation by <m>4</m>.  Note that I could have chosen to eliminate <m>y</m> by, say, multiplying both sides of the first equation by <m>-3</m> and both sides of the second equation by <m>5</m>. 
+            <me>
+              \left\{
+                \begin{aligned}
+                  4x+5y\amp=16\\
+                  -5x+3y\amp=17\\
+                \end{aligned}
+              \right.
+            </me>    
+            <me>
+              \left\{
+                \begin{aligned}
+                  \multiplyleft{5}(4x+5y)\amp=\multiplyleft{5}16\\
+                  \multiplyleft{4}(-5x+3y)\amp=\multiplyleft{4}17\\
+                \end{aligned}
+              \right.
+            </me>  
+            <me>
+              \left\{
+                \begin{aligned}
+                  20x+25y\amp=80\\
+                  -20x+12y\amp=68\\
+                \end{aligned}
+              \right.
+            </me>  
+            Adding the respective sides of both equations results in <m>37y=148</m>. We solve for <m>y</m> below.
+            <md>
+              <mrow>37y\amp=148</mrow>
+              <mrow>\divideunder{37y}{37}\amp=\divideunder{148}{37}</mrow>
+              <mrow>y\amp=4</mrow>
+            </md>
+            Let's go ahead and substitute <m>4</m> for <m>y</m> in the equation <m>4x+5y=20</m> and solve the resultant equation for <m>x</m>.
+            <md>
+              <mrow>4x+5\highlight{x}\amp=16</mrow>
+              <mrow>4x+5(\highlight{4})\amp=16</mrow>
+              <mrow>4x+20\amp=16</mrow>
+              <mrow>4x+20\subtractright{20}\amp=16\subtractright{20}</mrow>
+              <mrow>4x\amp=-4</mrow>
+              <mrow>\divideunder{4x}{4}\amp=\divideunder{-4}{4}</mrow>
+              <mrow>x\amp=-1</mrow>
+            </md>
+            So our proposed solution is the ordered pair <m>(-1,4)</m>.  Let's go ahead and check that in both of the original equations of the given system.
+            <me>
+              \left\{
+                \begin{aligned}
+                  4(\highlight{-1})+5(\highlightr{4})\amp=16\,?\\
+                  -5(\highlight{-1})+3(\highlightr{4})\amp=17\,?\\
+                \end{aligned}
+              \right.
+            </me>
+            <me>
+              \left\{
+                \begin{aligned}
+                  -4+20\amp=16\,\checkmark\\
+                  5+12\amp=17\,\checkmark\\
+                \end{aligned}
+              \right.
+            </me> 
+            The solution to the given system of equations is the ordered pair <m>(-1,4)</m>.       
+          </p> 
+          <p>Example:  Use the elimination method to solve the following system of equations.     
+            <me>
+              \left\{
+                \begin{aligned}
+                  y\amp=3x-8\\
+                  -6x+2y\amp=17\\
+                \end{aligned}
+              \right.
+            </me>   
+          </p>
+          <p>Solution</p>
+          <p>
+            We begin by manipulating the first equation into standard form.  
+            <me>
+              \left\{
+                \begin{aligned}
+                  y\amp=3x-8\\
+                  -6x+2y\amp=17\\
+                \end{aligned}
+              \right.
+            </me>     
+            <me>
+              \left\{
+                \begin{aligned}
+                  y\subtractright{3x}\amp=3x-8\subtractright{3x}\\
+                  -6x+2y\amp=17\\
+                \end{aligned}
+              \right.
+            </me>     
+            <me>
+              \left\{
+                \begin{aligned}
+                  -3x+y\amp=-8\\
+                  -6x+2y\amp=17\\
+                \end{aligned}
+              \right.
+            </me> 
+            We now observe that we can eliminate <m>y</m> from the system by multiplying both sides of the first equation by <m>-2</m> and then adding the respective sides of the two equations.   
+            <me>
+              \left\{
+                \begin{aligned}
+                  \multiplyleft{-2}(-3x+y)\amp=\multiplyleft{-2}-8\\
+                  -6x+2y\amp=17\\
+                \end{aligned}
+              \right.
+            </me>  
+            <me>
+              \left\{
+                \begin{aligned}
+                  6x-2y\amp=-8\\
+                  -6x+2y\amp=17\\
+                \end{aligned}
+              \right.
+            </me> 
+            Adding the respective sides of the equations results in the contradiction <m>0=9</m>.  As such, there are no ordered pairs that satisfy both equations in the system.
+          </p>
+          <p>Example:  Use the elimination method to solve the following system of equations.     
+            <me>
+              \left\{
+                \begin{aligned}
+                  \frac{x}{3}-\frac{2y}{5}\amp=-\frac{9}{5}\\
+                  \frac{3x}{2}+\frac{3y}{4}\amp=-3\\
+                \end{aligned}
+              \right.
+            </me>   
+          </p>
+          <p>Solution</p>
+          <p>
+            Before we even think about creating opposite coefficients, let's clear away the fractions by multiplying both sides of the first equation by <m>15</m> (the LCM of <m>3</m> and <m>5</m>) and both sides of the second equation by <m>4</m> (the LCM of <m>2</m> and <m>4</m>).    
+            <me>
+              \left\{
+                \begin{aligned}
+                  \multiplyleft{15}(\frac{x}{3}-\frac{2y}{5})\amp=\multiplyleft{15}-\frac{9}{5}\\
+                  \multiplyleft{4}(\frac{3x}{2}+\frac{3y}{4})\amp=\multiplyleft{4}-3\\
+                \end{aligned}
+              \right.
+            </me>     
+            <me>
+              \left\{
+                \begin{aligned}
+                  5x-6y\amp=-27\\
+                  6x+3y\amp=-12\\
+                \end{aligned}
+              \right.
+            </me>
+            We can now eliminate <m>y</m> from the system by multiplying both sides of the second equation by <m>2</m> and adding the respective sides of the two equations.      
+            <me>
+              \left\{
+                \begin{aligned}
+                  5x-6y\amp=-27\\
+                  \multiplyleft{2}(6x+3y)\amp=\multiplyleft{2}-12\\
+                \end{aligned}
+              \right.
+            </me>      
+            <me>
+              \left\{
+                \begin{aligned}
+                  5x-6y\amp=-27\\
+                  12x+6y\amp=-24\\
+                \end{aligned}
+              \right.
+            </me>
+            Summing the respective sides of the equations results in <m>17x=-51</m> which we solve below.
+            <md>
+              <mrow>17x\amp=-51</mrow>   
+              <mrow>\divideunder{17x}{17}\amp=\divideunder{-51}{17}</mrow>
+              <mrow>x\amp=-3</mrow>
+            </md>
+            Let's substitute <m>-3</m> for <m>x</m> in the equation <m>6x+3y=-12</m> and solve the resultant equation for <m>y</m>.  Note that we don't need to use one of the original equations to find the value of <m>y</m>, but we do need to use the original equations when we check our solution.
+            <md>
+              <mrow>6\highlight{x}+3y\amp=-12</mrow>
+              <mrow>6(\highlight{-3})+3y\amp=-12</mrow>
+              <mrow>-18+3y\amp=-12</mrow>
+              <mrow>-18+3y\addright{18}\amp=-12\addright{18}</mrow>
+              <mrow>3y\amp=6</mrow>
+              <mrow>\divideunder{3y}{3}\amp=\divideunder{6}{3}</mrow>
+              <mrow>y\amp=2</mrow>
+            </md>
+            Our proposed solution is the ordered pair <m>(-3,2)</m>.  Let's check the solution in the given system.  
+            <me>
+              \left\{
+                \begin{aligned}
+                  \frac{\highlight{-3}}{3}-\frac{2(\highlightr{2})}{5}\amp=-\frac{9}{5}\,?\\
+                  \frac{3(\highlight{-3})}{2}+\frac{3(\highlightr{2})}{4}\amp=-3\,?\\
+                \end{aligned}
+              \right.
+            </me>     
+            <me>
+              \left\{
+                \begin{aligned}
+                  -1-\frac{4}{5}\amp=-\frac{9}{5}\,?\\
+                  -\frac{9}{2}+\frac{6}{4}\amp=-3\,?\\
+                \end{aligned}
+              \right.
+            </me>     
+            <me>
+              \left\{
+                \begin{aligned}
+                  -\frac{5}{5}-\frac{4}{5}\amp=-\frac{9}{5}\,?\\
+                  -\frac{9}{2}+\frac{3}{2}\amp=-3\,?\\
+                \end{aligned}
+              \right.
+            </me>   
+            <me>
+              \left\{
+                \begin{aligned}
+                  -\frac{9}{5}\amp=-\frac{9}{5}\,\checkmark\\
+                  -\frac{6}{2}\amp=-3\,\checkmark\\
+                \end{aligned}
+              \right.
+            </me>  
+            The solution to the given system of equations is the ordered pair <m>(-3,2)</m>.           
+          </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+      <title>Practice exercises with detailed solutions</title>
+        <statement>
+          <p>
+            Use the elimination method to determine the solution to each of the following systems of linear equations.
+            <ol>
+
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      3x-4y\amp=4\\
+                      5x+4y\amp=28\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      -3x-y\amp=2\\
+                      6x-4y\amp=44\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      3x-7y\amp=19\\
+                      5x+3y\amp=17\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      \frac{3}{2}x-\frac{5}{4}y\amp=-40\\
+                      -\frac{2}{5}x+\frac{3}{4}y\amp=14\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      y\amp=-2x+2\\
+                      x\amp=\frac{1}{7}y-8\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+                <p>
+                  Our task is to use the elimination method to solve the following system of equations.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        3x-4y\amp=4\\
+                        5x+4y\amp=28\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  We can eliminate <m>y</m> from the system by adding the respective sides of the equations.  The result is the equation
+                  <me>8x=32</me>.
+                  Dividing both sides of the equation by <m>8</m> leaves us with <me>x=4</me>.
+                  We can replace <m>x</m> with <m>4</m> in the equation <m>3x-4y=4</m> and solve the resultant equation to determine the value of <m>y</m>.
+                  <md>
+                    <mrow>3(\substitute{4})-4y\amp=4</mrow>
+                    <mrow>12-4y\amp=4</mrow>
+                    <mrow>12-4y\subtractright{12}\amp=4\subtractright{12}</mrow>
+                    <mrow>-4y\amp=-8</mrow>
+                    <mrow>\divideunder{-4y}{-4}\amp=\divideunder{-8}{-4}</mrow>
+                    <mrow>y\amp=2</mrow>
+                  </md>
+                  The solution to the given system of equations is the ordered pair <m>(4,2)</m>.  The reader should verify that the ordered pair satisfies both of the original equations (as did the author <ellipsis /> thrice!).
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Our task is to use the elimination method to solve the following system of equations.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        -3x-y\amp=2\\
+                        6x-4y\amp=44\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  Let's begin by multiplying both sides of the first equation by <m>2</m> so that the result added to the second equation eliminates <m>x</m> from the system.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        \multiplyleft{2}(-3x-y)\amp=\multiplyleft{2}2\\
+                        6x-4y\amp=44\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  The system is now:
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        -6x-2y\amp=4\\
+                        6x-4y\amp=44\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  Adding the respective sides of the equation results in <me>-6y=48</me>.  Dividing both sides of that equation by <m>-6</m> results in <me>y=-8</me>.  We can substitute <m>-8</m> for <m>y</m> in the equation <m>6x-4y=44</m> and solve the resultant equation to determine the value of <m>x</m>.
+                  <md>
+                    <mrow>6x-4(\substitute{-8})\amp=44</mrow>
+                    <mrow>6x+32\amp=44</mrow>
+                    <mrow>6x=32\subtractright{32}\amp=44\subtractright{32}</mrow>
+                    <mrow>6x\amp=12</mrow>
+                    <mrow>\divideunder{6x}{6}\amp=\divideunder{12}{6}</mrow>
+                    <mrow>x\amp=2</mrow>
+                  </md>
+                  The solution to the given system of equations is the ordered pair <m>(2,-8)</m>.  As always, the reader should verify that the ordered pair satisfies both of the original equations stated in the system.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Our task is to use the elimination method to solve the following system of equations.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        3x-7y\amp=19\\
+                        5x+3y\amp=17\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  We begin by making the observation that if we multiply both sides of the of the first equation by <m>3</m>and both sides of the second equation by <m>7</m>, then <m>y</m> will be eliminated from the sum of the respective sides.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        \multiplyleft{3}(3x-7y)\amp=\multiplyleft{3}19\\
+                        \multiplyleft{7}(5x+3y)\amp=\multiplyleft{7}17\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        9x-21y\amp=57\\
+                        33x+21y\amp=119\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  Adding the respective sides of the last system results in the equation <m>44x=176</m> and dividing both sides of that equation by <m>44</m> gives us <m>x=4</m>.  We can now substitute <m>4</m> for <m>x</m> in the equation <m>5x+3y=17</m> and solve the resultant equation for <m>y</m>.
+                  <md>
+                    <mrow>5(\substitute{4})+3y\amp=17</mrow>
+                    <mrow>20+3y\amp=17</mrow>
+                    <mrow>20+3y\subtractright{20}\amp=17\subtractright{20}</mrow>
+                    <mrow>3y\amp=-3</mrow>
+                    <mrow>\divideunder{3y}{3}\amp=\divideunder{-3}{3}</mrow>
+                    <mrow>y\amp=-1</mrow>
+                  </md>   
+                  The solution to the given system of equations is the ordered pair <m>(4,-1)</m>.  I am confident that the reader will verify the validity of the solution in both of the given equations.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Our task is to use the elimination method to solve the following system of equations.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        \frac{3}{2}x-\frac{5}{4}y\amp=-40\\
+                        -\frac{2}{5}x+\frac{3}{4}y\amp=14\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  It would probably be best to not even think about variable-elimination until we clear away the fractions from the system.  We shall do the clearing by multiplying both sides of the first equation by <m>4</m> and both sides of the second equation by <m>20</m>.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        \multiplyleft{4}(\frac{3}{2}x-\frac{5}{4}y)\amp=\multiplyleft{4}-40\\
+                        \multiplyleft{20}(-\frac{2}{5}x+\frac{3}{4}y)\amp=\multiplyleft{20}14\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        6x-5y\amp=-160\\
+                        -8x+15y\amp=280\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  We can eliminate <m>y</m> from the system by multiplying both sides of the first equation by <m>3</m> and adding the respective sides of the first equation to the sides of the second equation.  With a plan in hand, let's proceed.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        \multiplyleft{3}(6x-5y)\amp=\multiplyleft{3}-160\\
+                        -8x+15y\amp=280\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        18x-15y\amp=-480\\
+                        -8x+15y\amp=280\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  Adding the respective sides of the latest system results in <m>10x=-200</m> and dividing both sides of the equation by <m>10</m> reveals <m>x=-20</m>.  We can substitute <m>x</m> with <m>-20</m> in the equation <m>6x-5y=-160</m> and solve the result for <m>x</m>.
+                  <md>
+                    <mrow>6(\substitute{-20})-5y\amp-160</mrow>
+                    <mrow>-120-5y\amp=-160</mrow>
+                    <mrow>-120-5y\addright{120}\amp=-160\addright{120}</mrow>
+                    <mrow>-5y\amp=-40</mrow>
+                    <mrow>\divideunder{-5y}{-5}\amp=\divideunder{-40}{-5}</mrow>
+                    <mrow>y\amp=8</mrow>
+                  </md>
+                  The solution to the given system of equations is the ordered pair <m>(-20,8)</m>.  The solution is valid as the reader should confirm in the original (fraction-laden) system.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Our task is to use the elimination method to solve the following system of equations.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        y\amp=-2x+2\\
+                        x\amp=\frac{1}{7}y-8\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  The first thing we need to do is rewrite the system with both equations written in the form <m>ax+by=c</m>.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        y\amp=-2x+2\\
+                        x\amp=\frac{1}{7}y-8\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        \addleft{2x}y\amp=\substitute{2x}-2x+2\\
+                        x\subtractright{\frac{1}{7}y}\amp=\frac{1}{7}y-8\subtractright{\frac{1}{7}y}\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        2x+y\amp=2\\
+                        x-\frac{1}{7}y\amp=-8\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  We could now clear the fraction from the second equation, but the author is choosing instead to multiply both sides of the second equation (as is) by <m>-2</m> with the goal of <m>x</m>-elimination in mind.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        2x+y\amp=2\\
+                        \multiplyleft{-2}(x-\frac{1}{7}y)\amp=\multiplyleft{-2}-8\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        2x+y\amp=2\\
+                        -2x+\frac{2}{7}y\amp=16\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  Adding the respective sides of the two equations results in <m>\frac{9}{7}y=18</m> and multiplying both sides of that equation by <m>\frac{7}{9}</m> leaves us with <m>y=14</m>.  We now substitute <m>14</m> for <m>y</m> in the equation <m>x=\frac{1}{7}y-8</m> to determine the value of <m>x</m>.
+                  <md>
+                    <mrow>x\amp=\frac{1}{7}\multiplyright{14}-8</mrow>
+                    <mrow>x\amp=2-8</mrow>
+                    <mrow>x\amp=-6</mrow>
+                  </md>
+                  The solution to the given system of equations is the ordered pair <m>(-6,14)</m> which the reader will surely confirm.
+                </p>
+              </li>
+
+            </ol>
+          </p>
+
+        </solution>
+    </exercise>
+
+    <exercise>
+      <title>Question bank with short answers</title>
+        <statement>
+          <p>
+            Use the elimination method to determine the solution to each system of equations.
+            <ol>
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      2x-5y\amp=49\\
+                      -2x-5y\amp=1\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      -4x+\frac{3}{2}y\amp=-22\\
+                      3x+5y\amp=41\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      y\amp=\frac{4}{3}x+4\\
+                      4x-3y\amp=21\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><p>The solution is <m>(12,-5)</m>.</p></li>
+              <li><p>The solution is <m>(7,4)</m>.</p></li>
+              <li><p>There are no solutions to the given system of equations.</p></li>
+            </ol>
+          </p>
+        </solution>
+    </exercise>
+
+  </exercises>
+
+  <exercises>
+    <title>Applications: Percents/Mixtures</title>
+
+    <exercise>
+      <title>Explanation and examples</title>
+        <statement>
+          <p>
+            When presented with an application problem with two unknowns, it can be helpful to arrange the information in a table from which we can infer two equations.  Let's see a couple of examples. 
+          </p>
+          <p>Example</p>
+          <p>
+            Mohamed has his retirement money invested in two accounts, one "safe" and the other highly speculative.  At the beginning of 2017 the two accounts combined had a total of $27,872.00.  Over the course of the year the safe account earned 2.5% interest while the speculative account grew by 43%.  Mohamed made no deposits to nor withdrawals from either account over the course of the year.  At the end of the year the total balance between the two accounts was $35,944.26.  How much did Mohamed have invested in each account at the beginning of 2017?  Assume that the start of the year the amount in each account was a whole dollar amount.
+          </p>
+          <p>Solution</p>
+          <p>
+            Let's begin by defining <m>x</m> to be the amount ($) that Mohamed had invested in the safe account at the beginning of 2017 and <m>y</m> the amount he had invested in the speculative account at the beginning of 2017.  Let's also note that the total growth in the balance of the two accounts over the course of 2017 was $8,072.26 (the difference between $34,966.26 and $27,872.00).  The information we know about the accounts is summarized in <xref ref="workshop-systems-table-Mohamed-examples">Table</xref>.
+          </p>
+          <p>
+          <table xml:id="workshop-systems-table-Mohamed-examples">
+                      <caption>Mohamed's Retirement Accounts</caption>
+                        <tabular>
+                          <col halign="left"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <row>
+                            <cell>
+                            </cell>
+                            <cell>
+                              <line>Safe Account</line>
+                            </cell>
+                            <cell>
+                              <line>Speculative Account</line>
+                            </cell>
+                            <cell>
+                              <line>Total</line>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              Amount at start of 2017 ($)
+                            </cell>
+                            <cell>
+                              <m>x</m>
+                            </cell>
+                            <cell>
+                              <m>y</m>
+                            </cell>
+                            <cell>
+                              <m>27,872.00</m>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              Annual Growth ($)
+                            </cell>
+                            <cell>
+                              <m>.025x</m>
+                            </cell>
+                            <cell>
+                              <m>.43y</m>
+                            </cell>
+                            <cell>
+                              <m>8,072.26</m>
+                            </cell>
+                          </row>
+                        </tabular>
+                      </table>
+                    </p>
+          <p></p>
+          <p>
+            In each row of the table, the amounts in the safe and speculative accounts sum to to the total amount.  That leads to the following sustem of equations.
+            <me>
+              \left\{
+                \begin{aligned}
+                  x+y\amp=27,872\\
+                  .025x+.43y\amp=8,072.26\\
+                \end{aligned}
+              \right.
+            </me>
+            We can eliminate <m>x</m> from the system by multiplying both sides of the first equation by <m>-.025</m> and then summing the respective sides of the two equations in the resultant system.
+            <me>
+              \left\{
+                \begin{aligned}
+                  \multiplyleft{-.025}{x+y}\amp=\multiplyleft{-.025}27,872\\
+                  .025x+.43y\amp=8,072.26\\
+                \end{aligned}
+              \right.
+            </me>
+            <me>
+              \left\{
+                \begin{aligned}
+                  -.025x-.025y\amp=-696.8\\
+                  .025x+.43y\amp=8,072.26\\
+                \end{aligned}
+              \right.
+            </me>
+            Let's equate the sums of the respective sides of the equations and solve the resultant equation for <m>y</m>.
+            <md>
+              <mrow>.405y\amp=7375.46</mrow>
+              <mrow>\divideunder{.405y}{.405}\amp=\divideunder{7375.46}{.405}</mrow>
+              <mrow>y\amp \approx 18,211</mrow>
+            </md>
+            Substituting <m>18,211</m> for <m>y</m> in the equation <m>x+y=27,872</m> will enable us to determine the value for <m>x</m>.
+            <md>
+              <mrow>x+\highlight{18,211}\amp=27,872</mrow>
+              <mrow>x+18,211\subtractright{18,211}\amp=27,872\subtractright{18,211}</mrow>
+              <mrow>x\amp=9661</mrow>
+            </md>
+            Let's check the values for <m>x</m> and <m>y</m> in the growth equation.
+            <md>
+              <mrow>.025(\highlight{9661})+.43(\highlightr{18211})\amp=8072.26\,?</mrow>
+              <mrow>241.53+7830.73\amp=8072.26\,?</mrow>
+              <mrow>8072.26\amp=8072.26\,\checkmark</mrow>
+            </md>
+            At the beginning of 2017, Mohamed had $9,611.00 invested in the safe account and $18,211.00 invested in the speculative account. 
+          </p>
+          <p>Example</p>
+          <p>
+            Jim and Jim are lab partners in chemistry class.  The two Jim's are tasked with the creation of 3 liters of a solution that is 35.2% acid and 64.8% water.  They have two solutions to work with.  One of the existing solutions is 40% acid (and 60% water) while the other is 28% acid (and 72% water).  How much of each solution should the Jim's use in their mixture?
+          </p>
+          <p>Solution (pun unavoidable)</p>
+          <p>
+            Let's define <m>x</m> to be the amount (liters) of 40% acid solution that should be used and <m>y</m> be the amount (liters) of 28% acid solution that should be used.  Let's note that the amount of acid in the final solution is 35.3% of 3 liters which is 1.056 liters.  The information in the problem is summarized in <xref ref="workshop-systems-table-Jims-examples">Table</xref>.
+          </p>
+          <p>
+                      <table xml:id="workshop-systems-table-Jims-examples">
+                      <caption>Jim and Jim are fixin' to do some mixin'</caption>
+                        <tabular>
+                          <col halign="left"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <row>
+                            <cell>
+                            </cell>
+                            <cell>
+                              <line>40% acid</line>
+                            </cell>
+                            <cell>
+                              <line>28% acid</line>
+                            </cell>
+                            <cell>
+                              <line>New solution (35.2% acid)</line>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              Total amount of solution (l)
+                            </cell>
+                            <cell>
+                              <m>x</m>
+                            </cell>
+                            <cell>
+                              <m>y</m>
+                            </cell>
+                            <cell>
+                              <m>2</m>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              Amount of acid in solution (l)
+                            </cell>
+                            <cell>
+                              <m>.40x</m>
+                            </cell>
+                            <cell>
+                              <m>.28y</m>
+                            </cell>
+                            <cell>
+                              <m>1.056</m>
+                            </cell>
+                          </row>
+                        </tabular>
+                      </table>
+          </p>
+          <p></p>
+          <p>
+            In both rows of the table, the amounts of the two existing solutions need to sum to the amount in the new solution.  This leads to the following system of equations.
+            <me>
+              \left\{
+                \begin{aligned}
+                  x+y\amp=3\\
+                  .40x+.28y\amp=1.056\\
+                \end{aligned}
+              \right.
+            </me>
+            From the first equation we can see that <m>y=3-x</m>.  Let's substitute <m>3-x</m> for <m>y</m> in the second equation and solve the resultant equation for <m>x</m>.
+            <md>
+              <mrow>.40x+.28\highlight{y}\amp=1.056</mrow>
+              <mrow>.40x+.28(\highlight{3-x})\amp=1.056</mrow>
+              <mrow>.40x+.84-.28x\amp=1.056</mrow>
+              <mrow>.12x+.84\amp=1.056</mrow>
+              <mrow>.12x+.84\subtractright{.84}\amp=1.056\subtractright{.84}</mrow>
+              <mrow>.12\amp=.216</mrow>
+              <mrow>\divideunder{.12}{.12}\amp=\divideunder{.216}{.12}</mrow>
+              <mrow>x\amp=1.8</mrow>
+            </md>
+            Since the two amounts sum to 3, it must be the case that <m>y=1.2</m>.  Let's check the values in the acid equation.
+            <md>
+              <mrow>.40(\highlight{1.8})+.28(\highlightr{1.2})\amp=1.056\,?</mrow>
+              <mrow>.72+.336\amp=1.056\,?</mrow>
+              <mrow>1.056\amp=1.056\,\checkmark</mrow>
+            </md>
+            The two Jim's need to mix 1.8 liters of the  40% acid solution with 1.2 liters of the 28% solution.
+          </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+      <title>Practice exercises with detailed solutions</title>
+        <statement>
+          <p>
+            <ol>
+
+              <li>
+                At the beginning of 1982, Francisco had $10,000 invested in two accounts - a savings account and a stock market account.  Over the course of the year, the savings account balance grew by 8%, while the stock market account lost 5%.  At the end of the year the two account balances totaled $10,345.  How much did Francisco have invested in each account at the beginning of 1982? Assume that no money was deposited to or withdrawn from either account over the course of the year.
+              </li>
+
+              <li>
+                Jolly Joy Jelly Beans are red and green.  The candy is sold from bulk bins and in general, 70% of the beans (by weight) are red while the other 30% are green.  Benny Jonesing Jelly Beans are also red and green and are also sold from bulk bins. In general, 25% of Benny Beans (by weight) are red while the other 75% are green.  Monica wants to purchase 12 lbs of Jelly beans, but she wants the red and green beans to be evenly distributed, each making up 50% of the mix.  How many pounds of each type of candy should Monica purchase to achieve her goal?  Assume that each percentage stated in the problem is exact.
+              </li>
+
+              <li>
+                Calvin is in Chemistry 201 lab.  Calvin's instructor want him to prepare two liters of a solution that is 30% HCl (hydrochloric acid).  Calvin has two mixtures to work with, one of which is 20% HCl and the other of which is 45% HCl.  How many liters of each of the existent mixtures should Calvin use to achieve his goal of 2 l of solution, 30% of which is HCl?
+              </li>
+
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+                <p>
+                  Let <m>x</m> represent the amount ($) Francisco had invested in the savings account at the beginning of of 1982 and <m>y</m> represent the amount Francisco had invested in the stock market account at the beginning of 1982.  The information given in the problem is summarized in 
+                  <xref ref="workshop-systems-table-Jaimon-exercises">Table</xref>.
+                </p>
+
+                <table xml:id="workshop-systems-table-Jaimon-exercises">
+                      <caption>Francisco's Investment Accounts</caption>
+                        <tabular>
+                          <col halign="left"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <row>
+                            <cell>
+                            </cell>
+                            <cell>
+                              <line>Savings Account</line>
+                            </cell>
+                            <cell>
+                              <line>Stock Account</line>
+                            </cell>
+                            <cell>
+                              <line>Total</line>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              Amount invested ($)
+                            </cell>
+                            <cell>
+                              <m>x</m>
+                            </cell>
+                            <cell>
+                              <m>y</m>
+                            </cell>
+                            <cell>
+                              <m>10,000</m>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              Interest earned ($)
+                            </cell>
+                            <cell>
+                              <m>.08x</m>
+                            </cell>
+                            <cell>
+                              <m>-.05y</m>
+                            </cell>
+                            <cell>
+                              <m>345</m>
+                            </cell>
+                          </row>
+                        </tabular>
+                      </table>
+                      <p></p>
+                      <p>
+                        In both the investment and interest rows, the individual amounts from the two accounts must sum to the total.  This gives us the following system of equations.
+                        <me>
+                          \left\{
+                            \begin{aligned}
+                              x+y\amp=10,000\\
+                              .08x-.05y\amp=345\\
+                            \end{aligned}
+                          \right.
+                        </me>
+                        Solving the first equation for <m>y</m> we have <m>y=10,000-x</m>.  So we can substitute <m>10,000-x</m> for <m>y</m> in the interest equation and solve for <m>x</m>.
+                        <md>
+                          <mrow>.08x-.05(\substitute{10,000-x})\amp=345</mrow>
+                          <mrow>.08x-500+.05x\amp=345</mrow>
+                          <mrow>.13x-500\amp=345</mrow>
+                          <mrow>.13x-500\addright{500}\amp=345{\addright{500}}</mrow>
+                          <mrow>.13x\amp=845</mrow>
+                          <mrow>\divideunder{.13x}{.13}\amp=\divideunder{845}{.13}</mrow>
+                          <mrow>x\amp=6500</mrow>
+                        </md>
+                        So Francisco had $6500 in the savings account at the beginning of 1982 leaving $3500 that he had invested in the stock market account at the beginning of 1982.  Let's confirm the result with the interest equation.
+                        <md>
+                          <mrow>.08(\substitute{6500})-.05(\substitute{3500})\amp=520-175</mrow>
+                          <mrow>\amp=345\,\checkmark</mrow>
+                        </md>
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        Let <m>x</m> represent the number of pounds of Jolly Joy Beans that Monica should purchase and <m>y</m> represent the number of pounds of Benny Beans she should buy.
+                      </p>
+                      <p></p>
+                      <p>
+                        We can solve the problem two different ways - by focusing on her goal that 50% of the beans are red or by focusing on her goal that 50% of the beans are green.  Below I focus on the goal of 50% red beans.  You should also work the problem focusing on the goal that 50% of the beans are green and see that you get the same result.  The information given in the problems is summarized in <xref ref="workshop-systems-table-jelly-beans-exercises">Table</xref>
+                      </p>
+                       <table xml:id="workshop-systems-table-jelly-beans-exercises">
+                      <caption>Monica's Accounting of Jelly Beans</caption>
+                        <tabular>
+                          <col halign="left"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <row>
+                            <cell>
+                            </cell>
+                            <cell>
+                              <line>Jolly Joy Beans</line>
+                            </cell>
+                            <cell>
+                              <line>Benny Beans</line>
+                            </cell>
+                            <cell>
+                              <line>Total</line>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              # of lbs purchased
+                            </cell>
+                            <cell>
+                              <m>x</m>
+                            </cell>
+                            <cell>
+                              <m>y</m>
+                            </cell>
+                            <cell>
+                              <m>12</m>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              # of lbs of red beans
+                            </cell>
+                            <cell>
+                              <m>.70x</m>
+                            </cell>
+                            <cell>
+                              <m>.25y</m>
+                            </cell>
+                            <cell>
+                              <m>6</m>
+                            </cell>
+                          </row>
+                        </tabular>
+                      </table>
+                      <p></p>
+                      <p>
+                        In both variable rows of <xref ref="workshop-systems-table-jelly-beans-exercises">Table</xref>, the sum of the two individual purchases needs to equal the total purchase.  This gives us the following system of equations.
+                        <me>
+                          \left\{
+                            \begin{aligned}
+                              x+y\amp=12\\
+                              .70x+.25y\amp=6\\
+                            \end{aligned}
+                          \right.
+                        </me>
+                        From the first equation we have <m>y=12-x</m> which we use to make a substitution in the second equation.
+                        <md>
+                          <mrow>.70x+.25\substitute{y}\amp=6</mrow>
+                          <mrow>.70x+.25(\substitute{12-x})\amp=6</mrow>
+                          <mrow>.70x+3-.25x\amp=6</mrow>
+                          <mrow>.45x+3\amp=6</mrow>
+                          <mrow>.45x+3\subtractright{3}\amp=6\subtractright{3}</mrow>
+                          <mrow>.45x\amp=3</mrow>
+                          <mrow>\divideunder{.45x}{.45}\amp=\divideunder{3}{.45}</mrow>
+                          <mrow>x\amp=6\,\sfrac{2}{3}</mrow>
+                        </md>
+                        So we conclude that Monica should purchase <m>6\,\sfrac{2}{3}</m> pounds of Jolly Joy Beans and <m>5\,\sfrac{1}{3}</m> pounds of Benny Beans (so that she purchases a total of 12 pounds of beans).  We can check to make sure that this will result in 6 lbs of red beans.
+                        <md>
+                          <mrow>.70(\substitute{\frac{20}{3}})+.25(\substitute{\frac{16}{3}})\amp=\frac{14}{3}+\frac{4}{3}</mrow>
+                          <mrow>\amp=\frac{18}{3}</mrow>
+                          <mrow>\amp=6\,\checkmark</mrow>
+                        </md>
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        Let <m>x</m> represent the amount (liters) of 20% solutions Calvin should use and <m>y</m> represent the amount (liters) of 45% HCl solution Calvin should use.  The information given in the problem is summarized in <xref ref="workshop-systems-table-hcl-exercises">Table</xref>.  The figure of <m>.60</m> in the table comes from the fact that there are two liters of new solution and 30% of that solutions is HCl; <m>30</m>% of <m>2</m> is <m>.60</m>.
+                      </p>
+                      <p>
+                      <table xml:id="workshop-systems-table-hcl-exercises">
+                      <caption>Calvin has Chemistry to do</caption>
+                        <tabular>
+                          <col halign="left"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <row>
+                            <cell>
+                            </cell>
+                            <cell>
+                              <line>20% HCl</line>
+                            </cell>
+                            <cell>
+                              <line>45% HCl</line>
+                            </cell>
+                            <cell>
+                              <line>New solution (30% HCl)</line>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              Total amount of solution (l)
+                            </cell>
+                            <cell>
+                              <m>x</m>
+                            </cell>
+                            <cell>
+                              <m>y</m>
+                            </cell>
+                            <cell>
+                              <m>2</m>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              Amount of HCl in solution (l)
+                            </cell>
+                            <cell>
+                              <m>.20x</m>
+                            </cell>
+                            <cell>
+                              <m>.45y</m>
+                            </cell>
+                            <cell>
+                              <m>.60</m>
+                            </cell>
+                          </row>
+                        </tabular>
+                      </table>
+                      </p>
+                      <p></p>
+                      <p>
+                        In both rows of <xref ref="workshop-systems-table-hcl-exercises">Table</xref>, the amounts contributed by the 20% HCl solution and the 45% HCl solution need to total to the amount of 30% solution.  This gives us the following system of equations.
+                        <me>
+                          \left\{
+                            \begin{aligned}
+                              x+y\amp=2\\
+                              .20x+.45y\amp=.60\\
+                            \end{aligned}
+                          \right.
+                        </me>
+                        Solving the first equation for <m>y</m> we have <m>y=2-x</m>.  So we can substitute <m>2-x</m> for <m>y</m> in the HCl equation and solve for <m>x</m>.
+                        <md>
+                          <mrow>.20x+.45(\substitute{2-x})\amp=.60</mrow>
+                          <mrow>.20x+.90-.45x\amp=.60</mrow>
+                          <mrow>-.25x+.90\amp=.60</mrow>
+                          <mrow>-.25x+.90\subtractright{.90}\amp=.60\subtractright{.90}</mrow>
+                          <mrow>-.25x\amp=-.30</mrow>
+                          <mrow>\divideunder{-.25x}{-.25}\amp=\divideunder{-.30}{-.25}</mrow>
+                          <mrow>x\amp=1.2</mrow>
+                        </md>
+                        So, Calvin should use <m>1.2</m> liters of the 20% HCl solution and <m>0.8</m> liters of the 45% solution.  We can check our result with the HCl equation.
+                        <md>
+                          <mrow>0.2(\substitute{1.2})+0.45(\substitute{0.8})\amp=0.24+036</mrow>
+                          <mrow>\amp=0.6\,\checkmark</mrow>
+                        </md>
+                      </p>
+
+                    </li>
+            </ol>
+          </p>
+        </solution>
+    </exercise>
+
+    <exercise>
+      <title>Question bank with short answers</title>
+        <statement> 
+          <p>
+            <ol>
+              <li>
+                At the start of the year Nguyen had $15,000 invested in two separate IRA accounts - one a traditional IRA, the other a Roth IRA.  Over the course of the year, the traditional IRA balance grew by 21% and the the Roth IRA balance grew by 17%.  Nguyen made no deposits to nor withdraws from either account over the course of the year.  At the end of the year the total balance of the two accounts was $17,718.  How much did Nguyen have invested in each account at the beginning of the year?
+              </li>
+              <li>
+                Jamal is tasked with creating an acidic solution in his Chemistry lab.  He needs to make 3 liters of a solution that is 35% Sulfuric acid and 65% water.  He has two previously made solutions to work with.  One is 20% acid and 80% water, the other is 40% acid and 60% water.  How much of each of the preexisting solutions should Jamal use to create his new solution?
+              </li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                At the beginning of the year Nguyen had $42,00 invested in the traditional IRA and $10,800 invested in the Roth IRA.
+              </li>
+              <li>
+                Jamal needs to mix <m>.75</m> liters of the 20% acid solution with 2.25 liters of the 40% acid solution.
+              </li>
+            </ol>
+          </p>
+        </solution>
+    </exercise>
+
+  </exercises>
+
+  <exercises>
+    <title>Applications: <m>D=r \cdot t</m></title>
+
+    <exercise>
+      <title>Explanation and examples</title>
+        <statement>
+          <p>
+            In the equation <m>D=rt</m>,  <m>D</m> represents distance,  <m>r</m> represents rate (speed), and  <m>t</m> represents time.  For example, if you drive at a constant speed of 65 mph for 2 hours, then the total distance covered over those hours is determined as follows.
+            <md>
+              <mrow>D\amp=rt</mrow>
+              <mrow>\amp=(65\,\frac{\text{miles}}{\text{hr}})(2\,\text{hr})</mrow>
+              <mrow>\amp=110\,\text{miles}</mrow>
+            </md>
+            Similarly, the amount of time it takes to drive 175 miles at a constant rate of 70 mph is calculated below.
+            <md>
+              <mrow>t\amp=\frac{D}{r}</mrow>
+              <mrow>\amp=\frac{175\,\text{miles}}{70\frac{\text{miles}}{\text{hr}}}</mrow>
+              <mrow>\amp=2.5\,\text{hr}</mrow>
+            </md>
+             The equation <m>D=rt</m> and its variations (e.g. <m>t=\frac{D}{r}</m>) frequently come into play when solving applications involving moving objects.  Let's see a couple of examples.
+          </p>
+          <p>Example</p>
+          <p>
+            Chao and Elyse are in separate cars both driving on I-65.  At noon one day Elyse (driving north) passes Chao (driving south).  For the next 15 minutes each car maintains the exact speed they were traveling at noon.  By 12:15 pm that day the distance (along the highway) between the two cars was 33.75 miles.  During those 15 minutes Elyse's constant speed was 9 mph faster than Chao's constant speed.  Determine the constant speeds that  were maintained by the two drivers over those 15 minutes.
+          </p>
+          <p>Solution</p>
+          <p>
+            Let <m>x</m> represent the constant speed (mph) maintained by Elyse and <m>y</m> represent the constant speed (mph) maintained by Chao.  Some of the information relevant to solution is shown in <xref ref="workshop-systems-Elyse-and-Chao-examples">Table</xref>.  In each row of the table, the expression found in the Distance column was determined using <m>D=rt</m>.
+          </p>
+          <p>
+                      <table xml:id="workshop-systems-Elyse-and-Chao-examples">
+                      <caption>Elyse passes Chao</caption>
+                        <tabular>
+                          <col halign="left"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <row>
+                            <cell>
+                            </cell>
+                            <cell>
+                              <line>Rate (mph)</line>
+                            </cell>
+                            <cell>
+                              <line>Time (hr)</line>
+                            </cell>
+                            <cell>
+                              <line>Distance (miles)</line>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              Elyse
+                            </cell>
+                            <cell>
+                              <m>x</m>
+                            </cell>
+                            <cell>
+                              <m>.25</m>
+                            </cell>
+                            <cell>
+                              <m>.25y</m>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              Chao
+                            </cell>
+                            <cell>
+                              <m>y</m>
+                            </cell>
+                            <cell>
+                              <m>.25</m>
+                            </cell>
+                            <cell>
+                              <m>.25y</m>
+                            </cell>
+                          </row>
+                        </tabular>
+                      </table>
+          </p>
+          <p></p>
+          <p>
+            The fact that Elyse's constant speed was 9 mph greater than Chao gives us <me>x=y+9</me>.  The fact that that the distance betweens the two cars was 33.75 miles after 15 minutes gives us <me>.25x+.25y=33.75</me>.  Let's substitute <m>y+9</m> for <m>x</m> in the second equation and then solve for <m>y</m>.
+            <md>
+              <mrow>.25\highlight{x}+.25y\amp=33.75</mrow>
+              <mrow>.25(\highlight{y+9})+.25y\amp=33.75</mrow>
+              <mrow>.25y+2.25+.25y\amp=33.75</mrow>
+              <mrow>.5y+2.25\amp=33.75</mrow>
+              <mrow>.5y+2.25\subtractright{2.25}\amp=33.75\subtractright{2.25}</mrow>
+              <mrow>.5y\amp=31.5</mrow>
+              <mrow>\multiplyleft{2}.5y\amp=\multiplyleft{2}31.5</mrow>
+              <mrow>y\amp=62</mrow>
+            </md>
+            So Chao maintained a constant speed of 62 mph and seeing as Elyse maintained a constant speed that was 9 mph greater than Chao's, her constant speed was 71 mph.  Let's make sure that our conclusion makes sense.
+          </p>
+          <p>
+            The distance traveled in 15 minutes at a speed of 62 mph is: <me>(62\,\frac{\text{miles}}{\text{hr}})(.25\,\text{hr})=15.5\,\text{miles}</me>.  The distance traveled in 15 minutes at a speed of 71 mph is: <me>(71\,\frac{\text{miles}}{\text{hr}})(.25\,\text{hr})=17.75\,\text{miles}</me>.<me>15.5\,\text{miles}+17.75\,\text{miles}=33.25\,\text{miles}\,\checkmark</me>
+          </p>
+          <p>Example</p>
+          <p>
+            When moving along a river, a boat's speed relative to the land is determined by both the speed at which it would be moving in still water and the speed of the current.  While moving downstream (with the current), the two speeds are added.  While moving upstream (against the current), the speed of the current is subtracted from the speed the boat would maintain in still water.
+          </p>
+          <p>
+            One afternoon Cisco took his fishing boat out on the Willamette.  He set the boat's motor to a constant (still water) cruising speed and motored 20 miles upstream before turning around and motoring the same 20 miles back downstream.  The trip upstream took 2 hours to complete while the trip back downstream took only 50 minutes.  Assuming that both the (still water) cruising speed and the speed of the current were constant the entire trip, determine both of those speeds.
+          </p>
+          <p>Solution</p>
+          <p>
+            Define <m>x</m> to be the (still water) cruising speed (mph) of the boat and <m>y</m> to be the speed of the current.  The information from the problem is summarized in <xref ref="workshop-systems-Cisco-examples">Table</xref>.
+          </p>
+          <p>
+                      <table xml:id="workshop-systems-Cisco-examples">
+                      <caption>Cisco goes fishing</caption>
+                        <tabular>
+                          <col halign="left"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <row>
+                            <cell>
+                            </cell>
+                            <cell>
+                              <line>Rate (mph)</line>
+                            </cell>
+                            <cell>
+                              <line>Time (hr)</line>
+                            </cell>
+                            <cell>
+                              <line>Distance (miles)</line>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              Upstream
+                            </cell>
+                            <cell>
+                              <m>x-y</m>
+                            </cell>
+                            <cell>
+                              <m>2</m>
+                            </cell>
+                            <cell>
+                              <m>20</m>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              Downstream
+                            </cell>
+                            <cell>
+                              <m>x+y</m>
+                            </cell>
+                            <cell>
+                              <m>\frac{5}{6}</m>
+                            </cell>
+                            <cell>
+                              <m>20</m>
+                            </cell>
+                          </row>
+                        </tabular>
+                      </table>
+          </p>
+          <p></p>
+          <p>
+            Our two equations come from the fact that in each row of the table the distance is equal to the product of the rate and time.  Specifically:
+            <me>
+              \left\{
+                \begin{aligned}
+                  2(x-y)\amp=20\\
+                  \frac{5}{6}(x+y)\amp=20\\
+                \end{aligned}
+              \right.
+            </me>
+          We'll begin solving our system by clearing away the fraction in the second equation and distributing the constant factors in both equations.
+            <me>
+              \left\{
+                \begin{aligned}
+                  2(x-y)\amp=20\\
+                  \multiplyleft{6}\frac{5}{6}(x+y)\amp=\multiplyleft{6}20\\
+                \end{aligned}
+              \right.
+            </me>
+            <me>
+              \left\{
+                \begin{aligned}
+                  2(x-y)\amp=20\\
+                  5(x+y)\amp=120\\
+                \end{aligned}
+              \right.
+            </me>
+            <me>
+              \left\{
+                \begin{aligned}
+                  2x-2y\amp=20\\
+                  5x+5y\amp=120\\
+                \end{aligned}
+              \right.
+            </me>
+            Let's eliminate <m>y</m> from the system by multiplying both sides of the first equation by <m>5</m> and both sides of the second equation by <m>2</m> and then summing the respective sides of the two equations.
+            <me>
+              \left\{
+                \begin{aligned}
+                  \multiplyleft{5}(2x-2y)\amp=\multiplyleft{5}20\\
+                  \multiplyleft{2}(5x+5y)\amp=\multiplyleft{2}120\\
+                \end{aligned}
+              \right.
+            </me>
+            <me>
+              \left\{
+                \begin{aligned}
+                  10x-10y\amp=100\\
+                  10x+10y\amp=240\\
+                \end{aligned}
+              \right.
+            </me>
+            Equating the sums of the respective sides we get <m>20x=340</m>.  Let's solve that.
+            <md>
+              <mrow>20x\amp=340</mrow>
+              <mrow>\divideunder{20x}{20}\amp=\divideunder{340}{20}</mrow>
+              <mrow>x\amp=17</mrow>
+            </md>
+            Let's substitute <m>17</m> for <m>x</m> in the equation <m>2x-2y=20</m> and solve the resultant equation for <m>y</m>.
+            <md>
+              <mrow>2\highlight{x}-2y\amp=20</mrow>
+              <mrow>2(\highlight{17})-2y\amp=20</mrow>
+              <mrow>34-2y\amp=20</mrow>
+              <mrow>34-2y\subtractright{34}\amp=20\subtractright{34}</mrow>
+              <mrow>-2y\amp=-14</mrow>
+              <mrow>\divideunder{-2y}{-2}\amp=\divideunder{-14}{-2}</mrow>
+              <mrow>y\amp=7</mrow>
+            </md>
+            Before stating a conclusion, let's make sure that our answers make sense.  When going upstream, the speed of the boat relative to the land is the difference of the two speeds, i.e. 10 mph.
+            <me>(10\,\frac{\text{miles}}{\text{hr}})(2\,\text{hr})=20 \,\text{miles}\,\checkmark</me>
+            When going downstream, the speed of the boat relative to the land is the sum of the two speeds, i.e. 24 mph.
+            <me>(24\,\frac{\text{miles}}{\text{hr}})(\frac{5}{6}\,\text{hr})=20 \,\text{miles}\,\checkmark</me>
+            So the (still water) cruising speed of the boat was 17 mph and the speed of the current was 7 mph.
+          </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+      <title>Practice exercises with detailed solutions</title>
+        <statement>
+          <p>
+            <ol>
+
+              <li>
+                Two cars are moving toward each other on a straight and flat east-west highway through th Great Plains of Canada.  Because the highway is so straight and flat, with the cruise controls engaged each car is able to maintain constant speed for two hours  At the start of the two hours the cars are 324 km apart and they cross past each other at the end of the two hours.  During the two hours period the constant speed of the westbound car is 18 km/hr greater than the constant speed of the eastbound car.  Determine the constant speed of each of the cars.
+              </li>
+
+              <li>
+                The jet-stream produces a steady wind that blows high in the atmosphere from the west to the east.  The wind is powerful enough that it increases the speed of an eastbound flight and decreases the speed of a westbound flight.  For example, if the jet-stream wind is 80 mi/hr and a plane's speed relative to the ground would be 400 mi/hr in still air, then its seed relative to the ground when flying east is 480 mi/hr while its speed when flying west is 320 mi/hr.
+
+                Hoda works as a pilot for Richfolks Air.  She flies a root between Seattle and Denver.  During the flight she usually maintains maximum airspeed (the speed the plane would fly in perfectly still air) for 1200 miles of the flight.  One particular Tuesday the wind produced by the jet-stream was constant the entire day.  On that day the mentioned 1200 mile stretch from Seattle to Denver (eastbound) took 2 hours to complete while the same 1200 mile stretch from Denver to Seattle (westbound) took 2 hours and 40 minutes to complete.  Determine the airspeed and wind speed on that day. 
+              </li>
+              
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+                <p>
+                  Let <m>x</m> represent the constant speed (km/hr) of the westbound car and <m>y</m> represent the constant speed (km/hr) of the eastbound car.  Since both cars travel for two hours, the distances traveled over the two hours are <m>2x</m> and <m>2y</m>.  Between the two cars, a total of 324 km are traversed over those two hours, which gives us the first equation in the system that models the problem.
+                  <me>2x+2y=324</me>
+                  We are told that the westbound car moves at a rate that is 18 km/hr greater than the rate at which the eastbound car moves.  This gives us the second equation in the system. <me>x=y+18</me>.
+                  We begin solving the system by substituting <m>y+18</m> for <m>x</m> in the distance equation.
+                  <md>
+                    <mrow>2\substitute{x}+2y\amp=324</mrow>
+                    <mrow>2(\substitute{y+18})+2y\amp=324</mrow>
+                    <mrow>2y+36+2y\amp=324</mrow>
+                    <mrow>4y+36\amp=324</mrow>
+                    <mrow>4y+36\subtractright{36}\amp=324\subtractright{36}</mrow>
+                    <mrow>4y\amp=288</mrow>
+                    <mrow>\divideunder{4y}{4}\amp=\divideunder{288}{4}</mrow>
+                    <mrow>y\amp=72</mrow>
+                  </md>
+                  So the slower car (eastbound) travels at the rate of <m>72</m> km/hr and the faster car (westbound) travels at <m>90</m> km/hr.  In two hours the cars travel, respectively, <m>144</m> km and <m>180</m> km, and sure enough, <m>144+188=324</m> <m>\checkmark</m>.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Define <m>x</m> to be the constant speed (mi/hr) of the jet in still air and <m>y</m> to be the constant speed (mi/hr) of the wind.  The information stated in the problem is summarized in <xref ref="workshop-systems-table-jet-stream-exercises">Table</xref>.  Note that 40 minutes is two-thirds of an hour.
+                </p>
+                <p></p>
+                  <table xml:id="workshop-systems-table-jet-stream-exercises">
+                      <caption></caption>
+                        <tabular>
+                          <col halign="left"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <row>
+                            <cell>
+                            </cell>
+                            <cell>
+                              <line>rate (mi/hr)</line>
+                            </cell>
+                            <cell>
+                              <line>time (hr)</line>
+                            </cell>
+                            <cell>
+                              <line>distance (mi)</line>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              Eastbound flight
+                            </cell>
+                            <cell>
+                              <m>x+y</m>
+                            </cell>
+                            <cell>
+                              <m>2</m>
+                            </cell>
+                            <cell>
+                              <m>1200</m>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              Westbound flight
+                            </cell>
+                            <cell>
+                              <m>x-y</m>
+                            </cell>
+                            <cell>
+                              <m>\frac{8}{3}</m>
+                            </cell>
+                            <cell>
+                              <m>1200</m>
+                            </cell>
+                          </row>
+                        </tabular>
+                      </table>
+                      <p></p>
+                      <p>
+                      Applying the formula "<m>D=r \times t</m>" to both rows of the table, we derive our system of equations.
+                      <me>
+                        \left\{
+                          \begin{aligned}
+                            2(x+y)\amp=1200\\
+                            \frac{8}{3}(x-y)\amp=1200\\
+                          \end{aligned}
+                        \right.
+                      </me>
+                      We can begin finding our solution by isolating <m>y</m> in the first equation.
+                      <md>
+                        <mrow>2(x+y)\amp=1200</mrow>
+                        <mrow>2x+2y\amp=1200</mrow>
+                        <mrow>2x+2y\subtractright{2x}\amp=1200\subtractright{2x}</mrow>
+                        <mrow>2y\amp=1200-2x</mrow>
+                        <mrow>\multiplyleft{\frac{1}{2}}2y\amp=\multiplyleft{\frac{1}{2}}(1200-2x)</mrow>
+                        <mrow>y\amp=600-x</mrow>
+                      </md>
+                      We can now substitute <m>600-x</m> for <m>y</m> in the second equation and solve the resultant equation for <m>x</m>.
+                      <md>
+                        <mrow>\frac{8}{3}(x-(600-x))\amp=1200</mrow>
+                        <mrow>\frac{8}{3}(x-600+x)\amp=1200</mrow>
+                        <mrow>\frac{8}{3}(2x-600)\amp=1200</mrow>
+                        <mrow>\frac{16}{3}x-1600\amp=1200</mrow>
+                        <mrow>\frac{16}{3}x-1600\addright{1600}\amp=1200\addright{1600}</mrow>
+                        <mrow>\frac{16}{3}x\amp=2800</mrow>
+                        <mrow>\multiplyleft{\frac{3}{16}}\frac{16}{3}x\amp=\multiplyleft{\frac{3}{16}}2800</mrow>
+                        <mrow>x\amp=525</mrow>
+                      </md>
+                      We can use the equation <m>y=600-x</m> to determine that the value of <m>y</m> is <m>75</m>.  
+                    </p>
+                    <p></p>
+                    <p>
+                      So the speed of Hoda's jet in still air is <m>525</m> mi/hr and the wind speed is <m>75</m> mi/hr.
+                    </p>
+                  </li>
+
+            </ol>
+          </p>
+        </solution>
+    </exercise>
+
+    <exercise>
+      <title>Question bank with short answers</title>
+        <statement>
+          <p>
+            <ol>
+              <li>
+                While on route, there are two speeds associated with a jet.  One is the airspeed - the speed the jet would fly relative to the ground if there were no wind.  The other is is the ground speed - the speed the jet actually moves relative to the ground.  The wind due to the jet stream increases the ground speed of eastbound flights and decreases the ground speed of west bound flights,  For example, if the airspeed is 400 mph and the wind speed is 50 mph, then the actual ground speed of an eastbound flight is 450 mph and the ground speed of a west bound flight is 350 mph.  (This is a simplification of the specific impact of the jet stream, but reflective of the general concept.)
+                One afternoon two 747s are flying between San Francisco and Denver, one headed west (to San Francisco), the other headed east (to Denver).  For 2.5 hours the two planes maintained the same constant airspeed.  Over that period the eastbound flight traveled 1665 miles while the westbound flight only traveled 1185 miles.  Determine the airspeed and wind speed for those 2.5 hours.
+              </li>
+              <li>
+                Olivia and her wife Jackie like to go running at the local high school track.  On average, Jackie maintains a pace that is 30% greater than the pace maintained by Olivia.  Over a thirty minute period, Jackie runs .825 miles farther than Olivia.  Determine the speed (mi/hr) of each runner, assuming that they each maintain a constant speed for the entire thirty minute period.  
+              </li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                The airspeed is 570 mph and the wind speed is 96 mph.
+              </li>
+              <li>
+                Jackie's constant speed is 7.15 mi/hr and Olivia's constant speed is 5.5 mi/hr.
+              </li>
+            </ol>
+          </p>
+        </solution>
+    </exercise>
+
+  </exercises>
+
+    
+
+    
 
          
     </section>

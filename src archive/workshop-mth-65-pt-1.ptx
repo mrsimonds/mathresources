@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-mth-65-pt-1">
+    <title>MTH 65 Practice Test 1</title>
+
+
+    <exercises>
+      <title>Click the question type to access the questions and solutions</title>
+
+      <exercise>
+        <title>Solving Systems of Linear Equations by graphing</title>
+        <statement>
+          <p>
+            Solve each system of equations by graphing.
+            <ol>
+
+              <li>
+                <m>
+                    \left\{
+                      \begin{aligned}
+                        y\amp=\frac{2}{3}x-4\\
+                        y\amp=-2x+4\\
+                      \end{aligned}
+                    \right.
+                  </m>
+              </li>
+
+              <li>
+                <m>
+                    \left\{
+                      \begin{aligned}
+                        5x-4y\amp=8\\
+                        y\amp=\frac{5}{4}x+3\\
+                      \end{aligned}
+                    \right.
+                  </m>
+              </li>
+
+          </ol>
+          <p>
+          </p>
+        </p>
+
+        </statement>
+
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+                <sidebyside widths="47% 47%">
+                  <p>
+                    The solution to the given system of equations is the ordered pair <m>(3,-2)</m>.
+                  </p>
+                  <figure xml:id="workshop-mth-65-pt-1-exercises-1">
+                    <caption><m>y=\frac{2}{3}x-4</m> and <m>y=-2x+4</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-4.3:6.7] {(2/3)*x-4};
+                                \addplot[primarycurve,domain=-1.3:5.3,color=blue] {-2*x+4};
+                                \addplot[soliddot,color=purple] coordinates {(3,-2)} node[right] {(3,-2)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+                  </figure>
+                </sidebyside>
+              </li>
+
+              <li>
+                <sidebyside widths="47% 47%">
+                  <p>
+                    The given system of equations has no solutions, it is inconsistent,
+                  </p>
+                  <figure xml:id="workshop-mth-65-pt-1-exercises-3">
+                    <caption><m>5x-4y=8</m> and <m>y=\frac{5}{4}x+3</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-3.7:6.7] {1.25*x-2};
+                                \addplot[primarycurve,domain=-6.7:2.7,color=blue] {1.25*x+3};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+                  </figure>
+                </sidebyside>
+              </li>
+
+            </ol>
+          </p>
+        </solution>
+
+       </exercise>
+
+      <exercise>
+        <title>Solving Systems of Linear Equations by Substitution</title>
+        <statement>
+          <p>
+            Use the substitution method to determine the solution to each of the following systems of linear equations.
+            <ol>
+
+              <li>
+                <m>
+                    \left\{
+                      \begin{aligned}
+                        3x-4y\amp=32\\
+                        x\amp=2y+14\\
+                      \end{aligned}
+                    \right.
+                  </m>
+              </li>
+
+              <li>
+                <m>
+                    \left\{
+                      \begin{aligned}
+                        -2x+7y\amp=69\\
+                        6x+2y\amp=0\\
+                      \end{aligned}
+                    \right.
+                  </m>
+              </li>
+
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+                <p>
+                  We were asked to solve the following system.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        3x-4y\amp=32\\
+                        x\amp=2y+14\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  We begin by substituting the expression <m>2y+14</m> for <m>x</m> in the equation <m>3x-4y=32</m>.  We then solve the resultant equation for <m>y</m>.
+                  <md>
+                    <mrow>3(\substitute{2y+14})-4y\amp=32</mrow>
+                    <mrow>6y+42-4y\amp=32</mrow>
+                    <mrow>2y+42\amp=32</mrow>
+                    <mrow>2y+42 \subtractright{42}\amp=32 \subtractright{42}</mrow>
+                    <mrow>2y\amp=-10</mrow>
+                    <mrow>\divideunder{2y}{2}\amp=\divideunder{-10}{2}</mrow>
+                    <mrow>y\amp=-5</mrow>
+                  </md>
+
+                  We can now substitute the value of <m>-5</m> for <m>y</m> in the equation <m>x=2y+14</m> to determine the value of <m>x</m>.
+                  <md>
+                    <mrow>x\amp=2(\substitute{-5})+14</mrow>
+                    <mrow>x\amp=4</mrow>
+                  </md>
+                  We conclude by stating that the solution to the given system of equations is the ordered pair <m>(4,-5)</m> (which checks in both equations).
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  We were presented with the opportunity to solve the following system of equations.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        -2x+7y\amp=69\\
+                        6x+2y\amp=0\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  To avoid introducing unnecessary fractions, we solve the equation <m>6x+2y=0</m> for <m>y</m>.
+                  <md>
+                    <mrow>6x+2y\amp=0</mrow>
+                    <mrow>6x+2y\subtractright{6x}\amp=0\subtractright{6x}</mrow>
+                    <mrow>2y\amp=-6x</mrow>
+                    <mrow>\divideunder{2y}{2}\amp=\divideunder{-6x}{2}</mrow>
+                    <mrow>y\amp=-3x</mrow>
+                  </md>
+                  We now substitute <m>-3x</m> for <m>y</m> in the equation <m>-2x+7y=69</m> and solve the resultant equation for <m>x</m>.
+                  <md>
+                    <mrow>-2x+7(\substitute{-3x})\amp=69</mrow>
+                    <mrow>-2x-21x\amp=69</mrow>
+                    <mrow>-23x\amp=69</mrow>
+                    <mrow>\divideunder{-23x}{-23}\amp=\divideunder{69}{-23}</mrow>
+                    <mrow>x\amp=-3</mrow>
+                  </md>
+                  Now we substitute <m>-3</m> for <m>x</m> in the equation <m>y=-3x</m> to determine the value of <m>y</m>.
+                  <md>
+                    <mrow>y\amp=-3(\substitute{-3})</mrow>
+                    <mrow>y\amp=9</mrow>
+                  </md>
+                  We conclude that the solution to the given system of equations is the ordered pair <m>(-3,9)</m> (which checks in both equations).
+                </p>
+              </li>
+
+            </ol>
+            <p>
+            </p>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Solving Systems of Linear Equations by elimination</title>
+        <statement>
+          <p>
+            Use the elimination method to determine the solution to each of the following systems of linear equations.
+            <ol>
+
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      3x-4y\amp=4\\
+                      5x+4y\amp=28\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      3x-7y\amp=19\\
+                      5x+3y\amp=17\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </li>
+
+              
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+                <p>
+                  Our task is to use the elimination method to solve the following system of equations.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        3x-4y\amp=4\\
+                        5x+4y\amp=28\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  We can eliminate <m>y</m> from the system by adding the respective sides of the equations.  The result is the equation
+                  <me>8x=32</me>.
+                  Dividing both sides of the equation by <m>8</m> leaves us with <me>x=4</me>.
+                  We can replace <m>x</m> with <m>4</m> in the equation <m>3x-4y=4</m> and solve the resultant equation to determine the value of <m>y</m>.
+                  <md>
+                    <mrow>3(\substitute{4})-4y\amp=4</mrow>
+                    <mrow>12-4y\amp=4</mrow>
+                    <mrow>12-4y\subtractright{12}\amp=4\subtractright{12}</mrow>
+                    <mrow>-4y\amp=-8</mrow>
+                    <mrow>\divideunder{-4y}{-4}\amp=\divideunder{-8}{-4}</mrow>
+                    <mrow>y\amp=2</mrow>
+                  </md>
+                  The solution to the given system of equations is the ordered pair <m>(4,2)</m>.  The reader should verify that the ordered pair satisfies both of the original equations (as did the author <ellipsis /> thrice!).
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Our task is to use the elimination method to solve the following system of equations.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        3x-7y\amp=19\\
+                        5x+3y\amp=17\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  We begin by making the observation that if we multiply both sides of the of the first equation by <m>3</m>and both sides of the second equation by <m>7</m>, then <m>y</m> will be eliminated from the sum of the respective sides.
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        \multiplyleft{3}(3x-7y)\amp=\multiplyleft{3}19\\
+                        \multiplyleft{7}(5x+3y)\amp=\multiplyleft{7}17\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  <me>
+                    \left\{
+                      \begin{aligned}
+                        9x-21y\amp=57\\
+                        33x+21y\amp=119\\
+                      \end{aligned}
+                    \right.
+                  </me>
+                  Adding the respective sides of the last system results in the equation <m>44x=176</m> and dividing both sides of that equation by <m>44</m> gives us <m>x=4</m>.  We can now substitute <m>4</m> for <m>x</m> in the equation <m>5x+3y=17</m> and solve the resultant equation for <m>y</m>.
+                  <md>
+                    <mrow>5(\substitute{4})+3y\amp=17</mrow>
+                    <mrow>20+3y\amp=17</mrow>
+                    <mrow>20+3y\subtractright{20}\amp=17\subtractright{20}</mrow>
+                    <mrow>3y\amp=-3</mrow>
+                    <mrow>\divideunder{3y}{3}\amp=\divideunder{-3}{3}</mrow>
+                    <mrow>y\amp=-1</mrow>
+                  </md>   
+                  The solution to the given system of equations is the ordered pair <m>(4,-1)</m>.  I am confident that the reader will verify the validity of the solution in both of the given equations.
+                </p>
+              </li>
+
+            </ol>
+          </p>
+
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Applications: percents/mixtures</title>
+        <statement>
+          <p>
+            <ol>
+
+              <li>
+                At the beginning of 1982, Francisco had $10,000 invested in two accounts - a savings account and a stock market account.  Over the course of the year, the savings account balance grew by 8%, while the stock market account lost 5%.  At the end of the year the two account balances totaled $10,345.  How much did Francisco have invested in each account at the beginning of 1982? Assume that no money was deposited to or withdrawn from either account over the course of the year.
+              </li>
+
+              <li>
+                Calvin is in Chemistry 201 lab.  Calvin's instructor want him to prepare two liters of a solution that is 30% HCl (hydrochloric acid).  Calvin has two mixtures to work with, one of which is 20% HCl and the other of which is 45% HCl.  How many liters of each of the existent mixtures should Calvin use to achieve his goal of 2 l of solution, 30% of which is HCl?
+              </li>
+
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+                <p>
+                  Let <m>x</m> represent the amount ($) Francisco had invested in the savings account at the beginning of of 1982 and <m>y</m> represent the amount Francisco had invested in the stock market account at the beginning of 1982.  The information given in the problem is summarized in 
+                  <xref ref="workshop-mth-65-pt-1-Jaimon-exercises">Table</xref>.
+                </p>
+
+                <table xml:id="workshop-mth-65-pt-1-Jaimon-exercises">
+                      <caption>Francisco's Investment Accounts</caption>
+                        <tabular>
+                          <col halign="left"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <row>
+                            <cell>
+                            </cell>
+                            <cell>
+                              <line>Savings Account</line>
+                            </cell>
+                            <cell>
+                              <line>Stock Account</line>
+                            </cell>
+                            <cell>
+                              <line>Total</line>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              Amount invested ($)
+                            </cell>
+                            <cell>
+                              <m>x</m>
+                            </cell>
+                            <cell>
+                              <m>y</m>
+                            </cell>
+                            <cell>
+                              <m>10,000</m>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              Interest earned ($)
+                            </cell>
+                            <cell>
+                              <m>.08x</m>
+                            </cell>
+                            <cell>
+                              <m>-.05y</m>
+                            </cell>
+                            <cell>
+                              <m>345</m>
+                            </cell>
+                          </row>
+                        </tabular>
+                      </table>
+                      <p></p>
+                      <p>
+                        In both the investment and interest rows, the individual amounts from the two accounts must sum to the total.  This gives us the following system of equations.
+                        <me>
+                          \left\{
+                            \begin{aligned}
+                              x+y\amp=10,000\\
+                              .08x-.05y\amp=345\\
+                            \end{aligned}
+                          \right.
+                        </me>
+                        Solving the first equation for <m>y</m> we have <m>y=10,000-x</m>.  So we can substitute <m>10,000-x</m> for <m>y</m> in the interest equation and solve for <m>x</m>.
+                        <md>
+                          <mrow>.08x-.05(\substitute{10,000-x})\amp=345</mrow>
+                          <mrow>.08x-500+.05x\amp=345</mrow>
+                          <mrow>.13x-500\amp=345</mrow>
+                          <mrow>.13x-500\addright{500}\amp=345{\addright{500}}</mrow>
+                          <mrow>.13x\amp=845</mrow>
+                          <mrow>\divideunder{.13x}{.13}\amp=\divideunder{845}{.13}</mrow>
+                          <mrow>x\amp=6500</mrow>
+                        </md>
+                        So Francisco had $6500 in the savings account at the beginning of 1982 leaving $3500 that he had invested in the stock market account at the beginning of 1982.  Let's confirm the result with the interest equation.
+                        <md>
+                          <mrow>.08(\substitute{6500})-.05(\substitute{3500})\amp=520-175</mrow>
+                          <mrow>\amp=345\,\checkmark</mrow>
+                        </md>
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        Let <m>x</m> represent the amount (liters) of 20% solutions Calvin should use and <m>y</m> represent the amount (liters) of 45% HCl solution Calvin should use.  The information given in the problem is summarized in <xref ref="workshop-mth-65-pt-1-table-hcl-exercises">Table</xref>.  The figure of <m>.60</m> in the table comes from the fact that there are two liters of new solution and 30% of that solutions is HCl; <m>30</m>% of <m>2</m> is <m>.60</m>.
+                      </p>
+                      <p>
+                      <table xml:id="workshop-mth-65-pt-1-table-hcl-exercises">
+                      <caption>Calvin has Chemistry to do</caption>
+                        <tabular>
+                          <col halign="left"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <col halign="center"/>
+                          <row>
+                            <cell>
+                            </cell>
+                            <cell>
+                              <line>20% HCl</line>
+                            </cell>
+                            <cell>
+                              <line>45% HCl</line>
+                            </cell>
+                            <cell>
+                              <line>New solution (30% HCl)</line>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              Total amount of solution (l)
+                            </cell>
+                            <cell>
+                              <m>x</m>
+                            </cell>
+                            <cell>
+                              <m>y</m>
+                            </cell>
+                            <cell>
+                              <m>2</m>
+                            </cell>
+                          </row>
+                          <row>
+                            <cell>
+                              Amount of HCl in solution (l)
+                            </cell>
+                            <cell>
+                              <m>.20x</m>
+                            </cell>
+                            <cell>
+                              <m>.45y</m>
+                            </cell>
+                            <cell>
+                              <m>.60</m>
+                            </cell>
+                          </row>
+                        </tabular>
+                      </table>
+                      </p>
+                      <p></p>
+                      <p>
+                        In both rows of <xref ref="workshop-mth-65-pt-1-table-hcl-exercises">Table</xref>, the amounts contributed by the 20% HCl solution and the 45% HCl solution need to total to the amount of 30% solution.  This gives us the following system of equations.
+                        <me>
+                          \left\{
+                            \begin{aligned}
+                              x+y\amp=2\\
+                              .20x+.45y\amp=.60\\
+                            \end{aligned}
+                          \right.
+                        </me>
+                        Solving the first equation for <m>y</m> we have <m>y=2-x</m>.  So we can substitute <m>2-x</m> for <m>y</m> in the HCl equation and solve for <m>x</m>.
+                        <md>
+                          <mrow>.20x+.45(\substitute{2-x})\amp=.60</mrow>
+                          <mrow>.20x+.90-.45x\amp=.60</mrow>
+                          <mrow>-.25x+.90\amp=.60</mrow>
+                          <mrow>-.25x+.90\subtractright{.90}\amp=.60\subtractright{.90}</mrow>
+                          <mrow>-.25x\amp=-.30</mrow>
+                          <mrow>\divideunder{-.25x}{-.25}\amp=\divideunder{-.30}{-.25}</mrow>
+                          <mrow>x\amp=1.2</mrow>
+                        </md>
+                        So, Calvin should use <m>1.2</m> liters of the 20% HCl solution and <m>0.8</m> liters of the 45% solution.  We can check our result with the HCl equation.
+                        <md>
+                          <mrow>0.2(\substitute{1.2})+0.45(\substitute{0.8})\amp=0.24+036</mrow>
+                          <mrow>\amp=0.6\,\checkmark</mrow>
+                        </md>
+                      </p>
+
+                    </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+
+
+      <exercise>
+        <title>Function Notation</title>
+        <statement>
+          <p>
+            <bold>Problem set 1</bold>
+          </p>
+          <p>
+            Determine each of the following function values based upon the function <m>f</m> shown in <xref ref="workshop-mth-65-pt-1-sineish-graph-1">Figure</xref>. 
+            <ol>
+              <li><m>f(4)</m></li>
+              <li><m>f(2)</m></li>
+              <li><m>f(5)</m></li>
+              <li><m>f(1)</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            Determine the solution set to each of the following equations based upon the function <m>f</m> shown in <xref ref="workshop-mth-65-pt-1-sineish-graph-1">Figure</xref>. 
+            <ol label="i">
+              <li><m>f(x)=-1</m></li>
+              <li><m>f(x)=2</m></li>
+              <li><m>f(x)=-3</m></li>
+              <li><m>f(x)=5</m></li>
+            </ol>
+            </p>
+            <figure xml:id="workshop-mth-65-pt-1-sineish-graph-1">
+                    <caption><m>y=f(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-4:5,smooth,-] {2+3*sin(pi*deg(x)/2)};
+                                \addplot[soliddot] coordinates {(-4,2)};
+                                \addplot[hollowdot] coordinates {(5,5)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+          </sidebyside>
+          <p>
+            <bold>Problem Set 2</bold>
+          </p>
+          <p>
+            Determine each of the following function values based upon the function <m>g</m> shown in <xref ref="workshop-mth-65-pt-1-piecewise-graph-1-1">Figure</xref>. 
+            <ol>
+              <li><m>g(-1)</m></li>
+              <li><m>g(2)</m></li>
+              <li><m>g(6)</m></li>
+              <li><m>g(-6)</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            Determine the solution set to each of the following equations based upon the function <m>g</m> shown in <xref ref="workshop-mth-65-pt-1-piecewise-graph-1-1">Figure</xref>. 
+            <ol label="i">
+              <li><m>g(x)=-2</m></li>
+              <li><m>g(x)=3</m></li>
+              <li><m>g(x)=-6</m></li>
+              <li><m>g(x)=-10</m></li>
+            </ol>
+          </p>
+            <figure xml:id="workshop-mth-65-pt-1-piecewise-graph-1-1">
+                    <caption><m>y=g(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-6:-1,smooth,-] {(x+4)^2-6};
+                                \addplot[primarycurve,domain=-1:5.26,smooth,-{Stealth}] {-2*x+4};
+                                \addplot[hollowdot] coordinates {(-6,-2)};
+                                \addplot[hollowdot] coordinates {(-1,3)};
+                                \addplot[soliddot] coordinates {(-1,6)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+          </sidebyside>
+          
+
+          <p>
+            <bold>Problem Set 3 </bold>
+          </p>
+          <p>
+            Determine each of the following function values based upon the function <m>k</m> shown in <xref ref="workshop-mth-65-pt-1-piecewise-graph-2-1">Figure</xref>. 
+            <ol>
+              <li><m>k(2)</m></li>
+              <li><m>k(0)</m></li>
+              <li><m>k(4)</m></li>
+              <li><m>k(-3)</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            Determine the solution set to each of the following equations based upon the function <m>k</m> shown in <xref ref="workshop-mth-65-pt-1-piecewise-graph-2-1">Figure</xref>. 
+            <ol label="i">
+              <li><m>k(x)=1</m></li>
+              <li><m>k(x)=4</m></li>
+              <li><m>k(x)=5</m></li>
+              <li><m>k(x)=6</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+          <figure xml:id="workshop-mth-65-pt-1-piecewise-graph-2-1">
+                    <caption><m>y=k(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-3.5:0,smooth,{Stealth}-] {3*x+4};
+                                \addplot[primarycurve,domain=2:6.4,smooth,-{Stealth}] {-(x-3)^2+5};
+                                \addplot[hollowdot] coordinates {(0,4)};
+                                \addplot[soliddot] coordinates {(0,-3)};
+                                \addplot[hollowdot] coordinates {(2,4)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+         </sidebyside>
+
+
+      </statement>
+      <solution>
+        
+        <p>
+          <bold>Problem Set 1</bold>
+          <ol>
+            <li><m>f(4)=2</m></li>
+            <li><m>f(2)=2</m></li>
+            <li><m>f(5)</m> is not defined.</li>
+            <li><m>f(1)=5</m></li>
+          </ol>
+        </p>
+        <p>
+          <ol label="i">
+            <li>The solution set is <m>\{-1,3\}</m>.</li>
+            <li>The solution set is <m>\{-4,-2,0,2,4\}</m>.</li>
+            <li>The solution set is <m>\emptyset</m>.</li>
+            <li>The solution set is <m>\{-3,1\}</m></li>
+          </ol>
+        </p>
+
+        <p>
+          <bold>Problem Set 2</bold>
+          <ol>
+            <li><m>g(-1)=6</m></li>
+            <li><m>g(2)=0</m></li>
+            <li><m>g(6)=-8</m></li>
+            <li><m>g(-6)</m> is not defined.</li>
+          </ol>
+        </p>
+        <p>
+          <ol label="i">
+            <li>The solution set is <m>\{-2,3\}</m>.</li>
+            <li>The solution set is <m>\{\frac{1}{2}\}</m>.</li>
+            <li>The solution set is <m>\{-4,5\}</m></li>
+            <li>The solution set is <m>\{7\}</m>.</li>
+          </ol>
+        </p>
+
+        <p>
+          <bold>Problem Set 3</bold>
+          <ol>
+            <li><m>k(2)</m> is undefined.</li>
+            <li><m>k(0)-3</m></li>
+            <li><m>k(4)=4</m></li>
+            <li><m>k(-3)=-5</m></li>
+          </ol>
+        </p>
+        <p>
+          <ol label="i">
+            <li>The solution set is <m>\{-1,5\}</m>.</li>
+            <li>The solution set is <m>\{4\}</m>.</li>
+            <li>The solution set is <m>\{3\}</m>.</li>
+            <li>The solution set is <m>\emptyset</m>.</li>
+          </ol>
+        </p>
+
+      </solution>
+
+    </exercise>
+
+
+      <exercise xml:id="workshop-functions-domain-and-range-exercises">
+        <title>Domain and Range</title>
+        <statement>
+          
+          <p>
+            Problem 1
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            Determine the domain and range of the function <m>f</m> shown in <xref ref="workshop-mth-65-pt-1-sineish-graph-3">Figure</xref>. State the domain and range using interval notation.
+            
+          </p>
+          <p>       
+          <figure xml:id="workshop-mth-65-pt-1-sineish-graph-3">
+                    <caption><m>y=f(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-4:5,smooth,-] {2+3*sin(pi*deg(x)/2)};
+                                \addplot[soliddot] coordinates {(-4,2)};
+                                \addplot[hollowdot] coordinates {(5,5)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+        </p>
+      </sidebyside>
+          <p>
+            <bold>Problem 2</bold>
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            Determine the domain and range of the function <m>g</m> shown in <xref ref="workshop-mth-65-pt-1-piecewise-graph-1-3">Figure</xref>. State the domain and range using interval notation.
+            
+          </p>
+          <p>        
+          <figure xml:id="workshop-mth-65-pt-1-piecewise-graph-1-3">
+                    <caption><m>y=g(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-6:-1,smooth,-] {(x+4)^2-6};
+                                \addplot[primarycurve,domain=-1:5.26,smooth,-{Stealth}] {-2*x+4};
+                                \addplot[hollowdot] coordinates {(-6,-2)};
+                                \addplot[hollowdot] coordinates {(-1,3)};
+                                \addplot[soliddot] coordinates {(-1,6)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+        </p>
+      </sidebyside>
+
+          <p>
+            <bold>Problem 3</bold>
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            Determine the domain and range of the function <m>k</m> shown in <xref ref="workshop-mth-65-pt-1-piecewise-graph-2-3-key">Figure</xref>.  State the domain and range using interval notation.
+            
+          </p>
+          <p>        
+          <figure xml:id="workshop-mth-65-pt-1-piecewise-graph-2-3">
+                    <caption><m>y=k(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-3.5:0,smooth,{Stealth}-] {3*x+4};
+                                \addplot[primarycurve,domain=2:6.4,smooth,-{Stealth}] {-(x-3)^2+5};
+                                \addplot[hollowdot] coordinates {(0,4)};
+                                \addplot[soliddot] coordinates {(0,-3)};
+                                \addplot[hollowdot] coordinates {(2,4)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+        </p>
+      </sidebyside>
+
+
+        </statement>
+
+        <solution>
+          
+          <p>
+            Problem 1
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            The domain is <m>[-4,5),</m>.  The range is <m>[-1,5]</m>. 
+            
+          </p>
+          <p>       
+          <figure xml:id="workshop-mth-65-pt-1-sineish-graph-3-key">
+                    <caption><m>y=f(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-4:5,smooth,-] {2+3*sin(pi*deg(x)/2)};
+                                \addplot[soliddot] coordinates {(-4,2)};
+                                \addplot[hollowdot] coordinates {(5,5)};
+                                \addplot[primarycurve,domain=-4:5,blue,ultra thick,[-)] {0};
+                                \addplot[closedinterval,gray,ultra thick] coordinates {(0,-1) (0,5)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+        </p>
+        </sidebyside>
+          <p>
+            <bold>Problem 2</bold>
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            The domain is <m>(-6,\infty)</m>.  The range is <m>(-\infty,6]</m>. 
+            
+          </p>
+          <p>
+          
+          <figure xml:id="workshop-mth-65-pt-1-piecewise-graph-1-3-key">
+                    <caption><m>y=g(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-6:-1,smooth,-] {(x+4)^2-6};
+                                \addplot[primarycurve,domain=-1:5.26,smooth,-{Stealth}] {-2*x+4};
+                                \addplot[hollowdot] coordinates {(-6,-2)};
+                                \addplot[hollowdot] coordinates {(-1,3)};
+                                \addplot[soliddot] coordinates {(-1,6)}; 
+                                \addplot[primarycurve,domain=-6:6.5,blue,ultra thick,(-{Stealth}] {0};
+                                \addplot[interval,gray,ultra thick,{Stealth}-{Bracket}] coordinates {(0,-6.5) (0,6)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+        </p>
+      </sidebyside>
+
+          <p>
+            <bold>Problem 3</bold>
+          </p>
+          <sidebyside widths="50% 50%">
+          <p>
+            The domain is <m>(-\infty,0] \cup (2,\infty)</m>.  The range is <m>(-\infty,6]</m>.
+            
+          </p>
+          <p>        
+          <figure xml:id="workshop-mth-65-pt-1-piecewise-graph-2-3-key">
+                    <caption><m>y=k(x)</m></caption>
+                      <image>
+                        <description>plain text</description>
+                          <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                              \begin{axis}
+                                \addplot[primarycurve,domain=-3.5:0,smooth,{Stealth}-] {3*x+4};
+                                \addplot[primarycurve,domain=2:6.4,smooth,-{Stealth}] {-(x-3)^2+5};
+                                \addplot[hollowdot] coordinates {(0,4)};
+                                \addplot[soliddot] coordinates {(0,-3)};
+                                \addplot[hollowdot] coordinates {(2,4)};
+                                \addplot[interval,blue,ultra thick,{Stealth}-{Bracket}] coordinates {(-6.5,0) (0,0)};
+                                \addplot[interval,blue,ultra think,(-{Stealth}] coordinates {(2,0) (6.5,0)};
+                                \addplot[interval,gray,ultra thick,{Stealth}-{Bracket}] coordinates {(0,-6.5) (0,5)};
+                              \end{axis}
+                            \end{tikzpicture}
+                            ]]>
+                          </latex-image>
+                      </image>
+          </figure>
+        </p>
+      </sidebyside>
+
+
+      </solution>
+      </exercise>
+  
+
+    </exercises>
+
+
+         
+    </section>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="factoring-videos">
+    <title>Videos Created by Ann Cary and Scot Leavitt</title>     
+          <p>The links take you to YouTube Playlists which will open either in a new window or in a Youtube App.
+          <ul>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-dPuberyCYlTysUnhyan6TA" target="blank">Greatest common factor</url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-fl9lK9reavn63xu4Uu1hHT" target="blank">Factoring by grouping</url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-fLNMTmn2iG3E5n-aYciDx0" target="blank">Factoring trinomials with leading coefficients of <m>1</m></url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-fGEM55QCpmQXunxIbtfL69" target="blank">Factoring trinomials where the leading coefficients are not <m>1</m></url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-eKorFL2thBlq6MadwRc0F2" target="blank">Factoring special polynomials</url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-dmLIf3S5QjgZTOq6000psK" target="blank">Factoring strategies</url>
+            </li>
+          </ul>
+        </p>
+</section>

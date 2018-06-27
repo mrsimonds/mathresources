@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="lines-slope-intercept">
+    <title>The Slope-Intercept Form of the Equation of a Line</title>
+
+    <p>
+      The standard form of the linear equation in two variables is useful in enabling quick computations of both intercepts.  It is also useful when solving systems of linear equations <mdash/> a topic you may or may not have yet studied.  In many other situations, however, there is a much more powerful form of a linear equation in two variables.  That form is called the slope-intercept form of a linear equation.
+    </p>
+    <p>
+      Consider the line with equation <m>-2x+3y=12</m>.  If we isolate <m>y</m>,we get the equivalent equation <m>y=\frac{2}{3}x+4</m>.  Right away, we get a benefit from this new form of the equation.  Rather than having to replace <m>x</m> or <m>y</m> with a value and solve for the other variable, we have a direct formula into which we can substitute a value for <m>x</m> and subsequently directly evaluate the value of <m>y</m>.  For example, if we let <m>x=3</m>, we can directly calculate <m>y</m>.
+      <md>
+        <mrow>y\amp=\frac{2}{3} \cdot 3+4</mrow>
+        <mrow>\amp=2+4</mrow>
+        <mrow>\amp=6</mrow>
+      </md>
+      This tells us that an ordered pair that satisfies both <m>y=\frac{2}{3}x+4</m> and its parent equation, <m>-2x+3y=12</m>, is <m>(3,6)</m>. 
+    </p>
+    <p>
+      It's no accident that I chose <m>3</m> as my value for <m>x</m>.  I can tell from the coefficient on <m>x</m> in the equation <m>y=\frac{2}{3}x+4</m> that if the value I choose for <m>x</m> is evenly divisible by <m>3</m>, then the resultant value for <m>y</m> will be an integer.  By inference, isolating <m>y</m> in a linear equation with two variables can help identify points on a line where both coordinates of the point are integers.  This can be especially useful when producing a graph of the line.
+    </p>
+
+    <sidebyside widths="55% 42%" margines="0%">
+
+      <p>
+        Several ordered pairs that satisfy the equation <m>y=\frac{2}{3}x+4</m> are shown in <xref ref="lines-slope-intercept-tabel-1">Table</xref>.  Note that the third ordered pair in the table is the <m>y</m>-intercept of the line.  Also note that as you read from one row to the next, the value of <m>x</m> increases by <m>3</m> and the value of <m>y</m> increases by <m>2</m>.  
+      </p>
+
+      <table xml:id="lines-slope-intercept-tabel-1">
+        <caption><m>y=\frac{2}{3}x+4</m></caption>
+        <tabular>
+          <col halign="center" />
+          <col halign="center"/>
+            <row bottom="medium">
+              <cell>
+                <line><m>x</m></line>
+              </cell>
+              <cell>
+                <line><m>y</m></line>
+              </cell>
+            </row>
+            <row>
+              <cell><m>-6</m></cell>
+              <cell><m>0</m></cell>
+            </row>
+            <row>
+              <cell><m>-3</m></cell>
+              <cell><m>2</m></cell>
+            </row>
+            <row>
+              <cell><m>0</m></cell>
+              <cell><m>4</m></cell>
+            </row>
+            <row>
+              <cell><m>3</m></cell>
+              <cell><m>6</m></cell>
+            </row>
+            <row>
+              <cell><m>6</m></cell>
+              <cell><m>8</m></cell>
+            </row>
+            <row>
+              <cell><m>9</m></cell>
+              <cell><m>10</m></cell>
+            </row>
+          </tabular>
+      </table>
+
+    </sidebyside>
+
+    <p>
+      These values correspond to runs of <m>3</m> and rises of <m>2</m>.  From this we get
+      <md>
+        <mrow>m\amp=\frac{\text{rise}}{\text{run}}</mrow>
+        <mrow>\amp=\frac{2}{3}</mrow>
+      </md>
+    </p>
+    <p>
+      Crikey! The coefficient on <m>x</m> in the equation <m>y=\frac{2}{3}x+4</m> is the slope of the line.  That observation coupled with the more apparent fact (via direct substitution) that the <m>y</m>-intercept of the line is <m>(0,4)</m> leads us to the following generalization.
+    </p>
+    <p>
+      The equation of the line with a slope of <m>m</m> and the <m>y</m>-intercept <m>(0,b)</m> can be written as:<me>y=mx+b</me>. An equation of a line in the form <m>y=mx+b</m>, where <m>m</m> is the slope of the line and <m>(0,b)</m> is the <m>y</m>-intercept of the line, is called the slope-intercept form of the equation of the line.
+    </p>
+    <p>
+      For example, when presented with the equation <m>y=-2x+7</m> we can immediately conclude that the slope of the line is <m>-2</m> and that the <m>y</m>-intercept of the line is <m>(0,7)</m>.
+    </p>
+
+    <sidebyside widths="50% 47%" margins="0%">
+
+      <p>
+        Consider the line graphed in <xref ref="lines-slope-intercept-figure-1">Figure</xref>.  We can see that the <m>y</m>-intercept of the line is <m>(0,2)</m>.  From the indicated slope-triangle we have
+        <md>
+          <mrow>m\amp=\frac{\text{rise}}{\text{run}}</mrow>
+          <mrow>\amp=\frac{-3}{4}</mrow>
+        </md>.
+      </p>
+
+      <figure xml:id="lines-slope-intercept-figure-1">
+        <caption>By observation <m>y=-\frac{3}{4}x+2</m></caption>
+        <image>
+          <description>plain text</description>
+          <latex-image>
+            <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}
+                  \addplot[primarycurve,domain=-6.1:6.7] {2-.75*x};
+                  \addplot[soliddot] coordinates {(0,2)} node[above right] {(0,2)};
+                  \addplot[soliddot] coordinates {(4,-1)} node[below left] {(4,-1)};
+                  \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(0,2) (4,2)};
+                  \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(4,2) (4,-1)};
+                \end{axis}
+              \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+
+    <p>
+      So we can conclude that the slope-intercept equation for the line is <m>y=-\frac{3}{4}x+2</m>.
+    </p>
+
+    <example xml:id="lines-slope-ex-1">
+
+      <statement>
+
+        <sidebyside widths="70% 27%" margins="0%">
+
+          <p>
+            Determine the slope-intercept equation of the line that passes through the two points indicated in <xref ref="lines-slope-intercept-table-2">Table</xref>. 
+          </p>
+
+          <table xml:id="lines-slope-intercept-table-2">
+            <caption>Points on a line</caption>
+            <tabular>
+              <col halign="center" />
+              <col halign="center"/>
+                <row bottom="medium">
+                  <cell>
+                    <line><m>x</m></line>
+                  </cell>
+                  <cell>
+                    <line><m>y</m></line>
+                  </cell>
+                </row>
+                <row>
+                  <cell><m>-7</m></cell>
+                  <cell><m>-8</m></cell>
+                </row>
+                <row>
+                  <cell><m>14</m></cell>
+                  <cell><m>1</m></cell>
+                </row>
+              </tabular>
+          </table>
+
+        </sidebyside>
+      </statement>
+
+      <solution>
+        <p>
+          The first thing we need to determine is the slope of the line.  Letting <m>(x_1,y_1)</m> be <m>(-7,-8)</m> and <m>(x_2,y_2)</m> be <m>(14,1)</m> we have:
+          <md>
+            <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+            <mrow>\amp=\frac{1-(-8)}{14-(-7))}</mrow>
+            <mrow>\amp=\frac{9}{21}</mrow>
+            <mrow>\amp=\frac{3}{7}</mrow>
+          </md>
+          So we now know that the equation of the line is <m>y=\frac{3}{7}x+b</m> where <m>(0,b)</m> is the unknown <m>y</m>-intercept of the line.  We can use the ordered pair <m>(14,1)</m> to determine the value of <m>b</m>.
+        </p>
+        <p>
+          Letting <m>x=14</m> and <m>y=1</m> in the equation <m>y=\frac{3}{7}x+b</m> we have the following.
+          <md>
+            <mrow>1\amp=\frac{3}{7} \cdot 14+b</mrow>
+            <mrow>1\amp=6+b</mrow>
+            <mrow>1\subtractright{6}\amp=6+b\subtractright{6}</mrow>
+            <mrow>-5\amp=b</mrow>
+          </md>
+          So we can conclude that the slope-intercept equation of the line is <m>y=\frac{3}{7}x+(-5)</m> which we simplify to<me>y=\frac{3}{7}x-5</me>.
+        </p>
+      </solution>
+
+    </example>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Determine information about a line given the equation of the line.
+          </p>
+        </introduction>
+
+        <exercise>
+
+          <statement>
+            <p>
+              Determine the slope and <m>y</m>-intercept of the line with equation <m>2x-7y=21</m>.
+            </p>
+            </statement>
+
+          <solution>
+            <p>
+              We begin by isolating <m>y</m> in the equation <m>2x-7y=21</m>.
+              <md>
+                <mrow>2x-7y\amp=21</mrow>
+                <mrow>2x-7y\subtractright{2x}\amp=21\subtractright{2x}</mrow>
+                <mrow>-7y\amp=-2x+21</mrow>
+                <mrow>\multiplyleft{-\frac{1}{7}}(7y)\amp=\multiplyleft{-\frac{1}{7}}(-2x+21)</mrow> 
+                <mrow>y\amp=\frac{2}{7}x-3</mrow>
+              </md>
+                Now that the equation is in the form <m>y=mx+b</m>, we can see that the slope of the line is <m>\frac{2}{7}</m> and that the <m>y</m>-intercept is <m>(0,-3)</m>.
+            </p>
+          </solution>
+
+        </exercise>
+
+        <exercise>
+
+          <statement>
+            <p>
+              Determine the slope and <m>y</m>-intercept of the line with equation <m>x=-\frac{1}{5}y-7</m>.
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              We begin by isolating <m>y</m> in the equation <m>x=-\frac{1}{5}y-7</m>.
+              <md>
+                <mrow>x\amp=-\frac{1}{5}y-7</mrow>
+                <mrow>x\addright{7}\amp=-\frac{1}{5}y-7\addright{7}</mrow>
+                <mrow>x+7\amp=-\frac{1}{5}y</mrow>
+                <mrow>\multiplyleft{-5}(x+7)\amp=\multiplyleft{-5}-\frac{1}{5}y</mrow>
+                <mrow>-5x-35\amp=y</mrow>
+              </md>
+              The last equation is equivalent to the equation <m>y=-5x-35</m>. Now that the equation is in the form <m>y=mx+b</m>, we can see that the slope of the line is <m>-5</m> and that the <m>y</m>-intercept is <m>(0,-35)</m>.
+            </p>
+          </solution>
+
+        </exercise>
+
+      </exercisegroup>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Determine the equation of a line give information about the line.
+          </p>
+        </introduction>
+
+        <exercise>
+
+          <statement>
+
+            <sidebyside widths="47% 47%" margins="0%">
+
+              <p>
+                Determine the slope-intercept equation or the line shown in <xref ref="lines-slope-intercept-exercises-figure-1">Figure</xref>.
+              </p>
+
+              <figure xml:id="lines-slope-intercept-exercises-figure-1">
+                <caption>Determine the equation of the line</caption>
+                  <image>
+                  <description>plain text</description>
+                    <latex-image>
+                      <![CDATA[
+                        \begin{tikzpicture}
+                            \begin{axis}
+                              \addplot[primarycurve,domain=-1.8:4.8] {-3+2*x};
+                            \end{axis}
+                          \end{tikzpicture}
+                        ]]>
+                      </latex-image>
+                    </image>
+                </figure>
+
+              </sidebyside>
+
+            </statement>
+
+            <solution>
+              <p>
+                By inspection, the slope of the line is <m>2</m> and the <m>y</m>-intercept of the line is <m>(0,-3)</m>.  So fitting the form <m>y=mx+b</m>, we know that the equation of the line is <m>y=2x-3</m>.
+              </p>
+            </solution>
+
+          </exercise>
+
+          <exercise>
+
+            <statement>
+              <p>
+                Determine the slope-intercept equation of the line that passes through the points <m>(-9,7)</m> and <m>(18,-5)</m>.
+              </p>
+            </statement>
+
+            <solution>
+              <p>
+                We begin by determining the slope of the line.
+                <me>(x_1,y_1) \text{ is } (-9,7) \text{ and } (x_2,y_2) \text{ is } (18,-5)</me>
+                <md>
+                  <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+                  <mrow>\amp=\frac{-5-7}{18-(-9)}</mrow>
+                  <mrow>\amp=\frac{-12}{27}</mrow>
+                  <mrow>\amp=-\frac{4}{9}</mrow>
+                </md>
+                We now know that the equation has form <m>y=-\frac{4}{9}x+b</m>. Let's use the point <m>(-9,7)</m> to determine <m>b</m>.
+                <md>
+                  <mrow>7\amp=-\frac{4}{9} \cdot -9+b</mrow>
+                  <mrow>7\amp=4+b</mrow>
+                  <mrow>7\subtractright{4}\amp=4+b\subtractright{4}</mrow>
+                  <mrow>3\amp=b</mrow>
+                </md>
+                So the equation of the line is <m>y=-\frac{4}{9}x+3</m>.  (Both ordered pairs check in the equation.)
+              </p>
+            </solution>
+
+          </exercise>
+
+          <exercise>
+
+            <statement>
+              <p>
+                Determine the slope-intercept equation of the line that passes through the points <m>(-11,8)</m> and <m>(-19,8)</m>.
+              </p>
+            </statement>
+
+            <solution>
+              <p>
+                We begin by determining the slope of the line.
+                <me>(x_1,y_1) \text{ is } (-11,8) \text{ and } (x_2,y_2) \text{ is } (-19,8)</me>
+                <md>
+                  <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+                  <mrow>\amp=\frac{8-8}{-19-(-11)}</mrow>
+                  <mrow>\amp=\frac{0}{-8}</mrow>
+                  <mrow>\amp=0</mrow>
+                </md>
+                We now know that the equation has form <m>y=0x+b</m>. We can use the point <m>(-11,8)</m> to determine <m>b</m>.
+                <md>
+                  <mrow>8\amp=0 \cdot -11+b</mrow>
+                  <mrow>8\amp=0+b</mrow>
+                  <mrow>8\amp=b</mrow>
+                </md>
+                So the equation of the line is <m>y=0x+8</m> or, simplified, just <m>y=8</m>.  Looking again at the two points ... makes sense!
+              </p>
+            </solution>
+
+          </exercise>
+
+        </exercisegroup>
+
+      </exercises>
+
+    </section>

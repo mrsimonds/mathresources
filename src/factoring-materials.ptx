@@ -9,15 +9,18 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-schedule-fall-term-2017">
-    <title>Workshop Schedule Fall Term 2017</title>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="factoring-materials">
+    <title>Factoring</title>
 
-    <p>
-      The schedule will open in a new window.
-    </p>
-    <p>
-       <url href="Fall-2017-Math-Workshop-Flyer-9-28-17.pdf" target="blank">Sylvania Campus Math Workshop Schedule<mdash/>Fall Term 2017</url>
-    </p>
+      <xi:include href="./factoring-videos.ptx" />
+      <xi:include href="./factoring-greatest-factor.ptx" />
+      <xi:include href="./factoring-trinomial-leading-coefficient-1.ptx" />
+      <xi:include href="./factoring-by-grouping.ptx" />
+      <xi:include href="./factoring-trinomials-leading-coefficient-not-1.ptx" />
+      <xi:include href="./factoring-binomials.ptx" />
+      <xi:include href="./factoring-plan.ptx" />
+      <xi:include href="./factoring-additional-practice.ptx" />
 
-     
-</section>
+
+
+</chapter>

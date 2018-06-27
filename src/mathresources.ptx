@@ -22,10 +22,115 @@
             <package>cancel</package>
         </latex-preamble>
 
-        <macros>
-        \newcommand{\abs}[1]{\left\lvert#1\right\rvert}
-        </macros>
+    <macros>
+% These macros are automatically generated from the "macros"
+% XML element.  Make permanent edits there.
+%
+%
+%  absolute value
+%  Usage: \abs{x}
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+%
+%
+%  point
+%  Usage: \point{x}{y}
+\newcommand{\point}[2]{\left(#1,#2\right)}
+%
+%
+%  highlight (draw attention to something in math mode)
+%  Usage: \highlight{x}
+\newcommand{\highlight}[1]{{\color{blue}{{#1}}}}
+%
+%
+% highlightred (draw attention to something in math mode)
+%  Usage: \highlightred{x}
+\newcommand{\highlightr}[1]{{\color{red}{{#1}}}}
+%
+%
+% highlightgreen (draw attention to something in math mode)
+%  Usage: \highlightred{x}
+\newcommand{\highlightg}[1]{{\color{green}{{#1}}}}
+%
+%
+% highlightred (draw attention to something in math mode)
+%  Usage: \highlightred{x}
+\newcommand{\highlightp}[1]{{\color{purple}{{#1}}}}
+%
+%
+% highlightbrown (draw attention to something in math mode)
+%  Usage: \highlightred{x}
+\newcommand{\highlightb}[1]{{\color{brown}{{#1}}}}
+%
+% highlightgray (draw attention to something in math mode)
+%  Usage: \highlightray{x}
+\newcommand{\highlighty}[1]{{\color{gray}{{#1}}}}
+%
+%
+%  lowlight (draw attention away from something in math mode)
+%  Usage: \lowlight{x}
+\newcommand{\lowlight}[1]{{\color{lightgray}{#1}}}
+%
+%
+%  attention (draw attention to some element of an expression)
+%  Usage: 2\cdot\attention{3}\cdot x
+\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}
+%
+%
+%  substitute (substitute a value for a variable)
+%  Usage: x+1\amp=2
+%         \substitute{1}+1\amp=2
+\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}
+%
+%
+%  addright (add to the right)
+%  Usage: x-1\addright{1}\amp=1\addright{1}
+\newcommand{\addright}[1]{{\color{blue}{{{}+#1}}}}
+%
+%
+%  addleft (add to the left)
+%  Usage: \addleft{1}x-1\amp=\addleft{1}1
+\newcommand{\addleft}[1]{{\color{blue}{{#1+{}}}}}
+%
+%
+%  subtractright (subtract to the right)
+%  Usage: x+1\subtractright{1}\amp=1\subtractright{1}
+\newcommand{\subtractright}[1]{{\color{blue}{{{}-#1}}}}
 
+%
+%
+%  multiplyright (multiply to the right)
+%  Usage: \frac{x}{2}\multiplyright{2}\amp=1\multiplyright{2}
+%  Usage: \frac{x}{2}\multiplyright[\times]{2}\amp=1\multiplyright[\times]{2}
+%  Usage: \frac{x}{2}\multiplyright[]{2}\amp=1\multiplyright[]{2}
+\newcommand{\multiplyright}[2][\cdot]{{\color{blue}{{{}#1#2}}}}
+%
+%
+%  multiplyleft (multiply to the left)
+%  Usage: \frac{x}{2}\multiplyleft{2}\amp=\multiplyleft{2}1
+%  Usage: \frac{x}{2}\multiplyleft[\times]{2}\amp=\multiplyleft[\times]{2}1
+%  Usage: \frac{x}{2}\multiplyleft[]{2}\amp=\multiplyleft[]{2}1
+\newcommand{\multiplyleft}[2][\cdot]{{\color{blue}{{#2#1{}}}}}
+%
+%
+%  divideunder (divide with a fraction bar)
+%  Usage: \divideunder{2y}{2}\amp=\divideunder{x+2}{2}
+\newcommand{\divideunder}[2]{\frac{#1}{{\color{blue}{{#2}}}}}
+%
+%
+%  dividright (divide with division symbol)
+%  Usage: 2x\divideright{2}\amp=2\divideright{2}
+\newcommand{\divideright}[1]{{\color{blue}{{{}\div#1}}}}
+%
+%
+%Emoji characters
+\newcommand{\apple}{\text{&#x1F34E;}}
+\newcommand{\banana}{\text{&#x1F34C;}}
+\newcommand{\pear}{\text{&#x1F350;}}
+\newcommand{\cat}{\text{&#128049;}}
+\newcommand{\dog}{\text{&#128054;}}
+
+
+    </macros>
         <latex-image-preamble>
             <![CDATA[
                 \usepackage{pgfplots}
@@ -169,10 +274,10 @@
         </frontmatter>
 
         <xi:include href="./workshop-materials.ptx" />
-        <xi:include href="./desmos-activities.ptx" />
-        <xi:include href="./videos.ptx" />
-
-        <xi:include href="./backmatter.ptx" />
+        <xi:include href="./absolute-value-materials.ptx" />
+        <xi:include href="./factoring-materials.ptx" />
+        <xi:include href="./lines-materials.ptx" />
+        <xi:include href="./parabolas-materials.ptx" />
 
     </book>
 </mathbook>

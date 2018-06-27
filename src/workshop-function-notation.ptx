@@ -9,14 +9,14 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-imaginary-and-complex-numbers">
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-function-notation">
     <title>Imaginary numbers and complex numbers</title>
 
-     <exercises>
-      <title>Imaginary Numbers</title>
+    <exercises>
+      <title>Written Examples</title>
 
       <exercise>
-        <title>Explanation and examples</title>
+      <title>Imaginary numbers</title>
         <statement>
           <p>
             When two numbers of the same sign are multiplied the result is always positive, and when zero is multiplied by itself the result is zero. Consequently, there is no real number that when squared results in <m>-1</m>.  However, the fact that a number does not reside on the real number line does not imply that it doesn't exist - the number simply does not reside on the real number line.
@@ -54,132 +54,7 @@
       </exercise>
 
       <exercise>
-        <title>Practice exercises with detailed solutions</title>
-        <statement>
-          <p>
-            Determine each of the following, that is write each of the following in the form <m>bi</m> where <m>b</m> is a real number.  Make sure that <m>b</m> is fully simplified.
-            <ol cols="3">
-              <li><m>-\sqrt{-121}</m></li>
-              <li><m>\sqrt{-25}</m></li>
-              <li><m>\sqrt{-\frac{4}{49}}</m></li>
-              <li><m>\sqrt{-75}</m></li>
-              <li><m>-\sqrt{-80}</m></li>
-              <li><m>\sqrt{-\frac{72}{121}}</m></li>
-              <p>
-              </p>
-            </ol>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <ol>
-
-              <li>
-                <m>
-                  \begin{aligned}[t]
-                    -\sqrt{-121}\amp=-\sqrt{121 \cdot -1}\\
-                    \amp=-\sqrt{121} \cdot \sqrt{-1}\\
-                    \amp=-11i
-                  \end{aligned}
-                </m>
-              </li>
-
-              <li>
-                <m>
-                  \begin{aligned}[t]
-                    \sqrt{-25}\amp=\sqrt{25 \cdot -1}\\
-                    \amp=\sqrt{25} \cdot \sqrt{-1}\\
-                    \amp=5i                  
-                  \end{aligned}
-                </m>
-              </li>
-
-              <li>
-                <m>
-                  \begin{aligned}[t]
-                    \sqrt{-\frac{4}{49}}\amp=\sqrt{\frac{4}{49} \cdot -1}\\
-                    \amp=\sqrt{\frac{4}{49}} \cdot \sqrt{-1}\\
-                    \amp=\frac{2}{7}i                  
-                  \end{aligned}
-                </m>
-              </li>
-
-              <li>
-                <m>
-                  \begin{aligned}[t]
-                    \sqrt{-75}\amp=\sqrt{25 \cdot 3 \cdot -1}\\
-                    \amp=\sqrt{25} \cdot \sqrt{3} \cdot \sqrt{-1}\\
-                    \amp=5\sqrt{3}i                  
-                  \end{aligned}
-                </m>
-              </li>
-
-              <li>
-                <m>
-                  \begin{aligned}[t]
-                    -\sqrt{-80}\amp=-\sqrt{16 \cdot 5 \cdot -1}\\
-                    \amp=-\sqrt{16} \cdot \sqrt{5} \cdot \sqrt{-1}\\
-                    \amp=-4\sqrt{5}i
-                  \end{aligned}
-                </m>
-              </li>
-
-              <li>
-                <m>
-                  \begin{aligned}[t]
-                    \sqrt{-\frac{72}{121}}\amp=\sqrt{\frac{36 \cdot 2}{121} \cdot -1}\\
-                    \amp=\frac{\sqrt{36} \cdot \sqrt{2}}{\sqrt{121}} \cdot \sqrt{-1}\\
-                    \amp=\frac{6\sqrt{2}}{11}i
-                  \end{aligned}
-                </m>
-              </li>
-
-              <p>
-              </p>
-
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-
-      <exercise>
-        <title>Question bank with short answers</title>
-        <statement>
-          <p>
-            Determine each of the following, that is write each of the following in the form <m>bi</m> where <m>b</m> is a real number.  Make sure that <m>b</m> is fully simplified.
-            <ol cols="3">
-              <li><m>\sqrt{-81}</m></li>
-              <li><m>-\sqrt{-144}</m></li>
-              <li><m>\sqrt{-\frac{9}{25}}</m></li>
-              <li><m>-\sqrt{-90}</m></li>
-              <li><m>\sqrt{-325}</m></li>
-              <li><m>\sqrt{-\frac{27}{64}}</m></li>
-              <p>
-              </p>
-            </ol>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <ol>
-              <li><m>\sqrt{-81}=9i</m></li>
-              <li><m>-\sqrt{-144}=-12i</m></li>
-              <li><m>\sqrt{-\frac{9}{25}}=\frac{3}{5}i</m></li>
-              <li><m>-\sqrt{-90}=-3\sqrt{10}i</m></li>
-              <li><m>\sqrt{-325}=5\sqrt{13}i</m></li>
-              <li><m>\sqrt{-\frac{27}{64}}=\frac{3\sqrt{3}}{8}i</m></li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-
-    </exercises>
-
-     <exercises>
-      <title>Arithmetic with Imaginary Numbers</title>
-
-      <exercise>
-        <title>Explanation and examples</title>
+        <title>Arithmetic with imaginary numbers</title>
           <statement>
             <p>
               When multiplying two or more imaginary numbers, you want to use the associative and commutative properties of multiplication that allow you to multiply the real number coefficients followed by the product of the <m>i</m> factors.  Then all occurrences of <m>i^2</m> are replaced by <m>-1</m> and the expression is further simplified.  Several examples are shown below.
@@ -308,10 +183,187 @@
                         </sidebyside>
                       </p>
           </statement>
-      </exercise>
+
+        </exercise>
+
+        <exercise>
+        <title>Complex numbers and arithmetic with complex numbers</title>
+          <statement>
+            <p>
+              The complex number set consists of all real numbers, all imaginary numbers, and all sums and differences of real numbers with imaginary numbers.  So, for example, the real number <m>5</m> and the imaginary number <m>7i</m> are both complex numbers, and so is <m>5+7i</m>.  However, <m>5+7i</m> is neither a real number nor an imaginary number, as it has both a real part and an imaginary part.  
+            </p>
+            <p>
+              When adding or subtracting complex numbers, the real parts are combined into one and the imaginary parts are combined into one.  The sum or difference of the real number and the imaginary number cannot be simplified further, as there is no way to combine the unlike terms into a single whole absent an addition sign or subtraction sign. An example is shown below.  Note that the steps shown are usually just done in ones head <mdash/> they're written out here only to illustrate the meaning of the proceeding words.
+              <md>
+                <mrow>(-6+7i)-(5-10i)\amp=(-6-5)+(7i-(-10i))</mrow>
+                <mrow>\amp=-11+17i</mrow>
+              </md>
+            </p>
+            <p>
+              Multiplying complex numbers is similar to other expansions but with a twist at the end <mdash/> all occurrences of <m>i^2</m> are replaced by <m>-1</m> and the resultant expression is further simplified.  For example, to simplify the product <m>(9+2i)(1-5i)</m> we would begin by employing FOIL in exactly the same manner we would when expanding <m>(9+2x)(1-5x)</m>.  However, once we have expanded the product using FOIL, we have to replace  <m>i^2</m> with <m>-1</m> and further simplify.  The process is shown below.
+              <md>
+                <mrow>(9+2i)(1-5i)\amp=9-45i+2i-10i^2</mrow>
+                <mrow>\amp=9-43i-10(-1)</mrow>
+                <mrow>\amp=9-43i+10</mrow>
+                <mrow>\amp=19-43i</mrow>
+              </md>
+            </p>
+            <p>
+              In a similar vein, we have the following.
+              <md>
+                <mrow>(1+i)^2\amp=(1+i)(1+i)</mrow>
+                <mrow>\amp=1+i+i+i^2</mrow>
+                <mrow>\amp=1+2i+(-1)</mrow>
+                <mrow>\amp=2i</mrow>
+              </md>
+            </p>
+            <p>
+              We can use the last result to help us simplify <m>(1+i)^4</m>.  This is shown below.
+              <md>
+                <mrow>(1+i)^4\amp=((1+i)^2)^2</mrow>
+                <mrow>\amp=(2i)^2</mrow>
+                <mrow>\amp=2^2 \cdot i^2</mrow>
+                <mrow>\amp=4 \cdot -1</mrow>
+                <mrow>\amp=-4</mrow>
+              </md>
+            </p>
+            <p>
+              The fact that <m>(1+i)^4=-4</m> implies that a fourth root of <m>-4</m> is <m>1+i</m>.  So we now not only have square roots of negative numbers, we also have fourth roots of negative numbers!  In fact, the introduction of complex numbers allows us to take any root of any number.  You should keep in mind, however, that while square roots of negative real numbers are imaginary numbers, higher order even roots of real numbers, for example <m>\sqrt[6]{-64}</m>, are complex numbers with both real number parts and imaginary number parts.  In fact, the principle sixth root of <m>-64</m> is <m>\sqrt{3}+i</m>.  That is, <m>(\sqrt{3}+i)^6=-64</m>.  It turns out that there are in fact six sixth roots of <m>-64</m>, but that's a subject for another class (trigonometry).
+            </p>
+            <p>
+              In the last section, we discussed that division by imaginary numbers comes down to rationalizing denominators.  The same is true when we divide by complex numbers that have both real and imaginary parts.  However, in the latter case, because we are dealing with a binomial denominator, we need to multiply the denominator by it's conjugate and balance that action by also multiplying the numerator by the conjugate of the denominator. Both the numerator and the denominator then need to be simplified and the results broken into there real number and imaginary parts,  If the final result has both real number and imaginary parts, it should always be written in the form <m>a+bi</m> where <m>a</m> and <m>b</m> are real numbers.  Several examples are shown below.
+            </p>
+            <p>
+            Example
+              <md>
+                <mrow>\frac{6}{1+3i}\amp=\frac{6}{1+3i} \cdot \highlight{\frac{1-3i}{1-3i}}</mrow>
+                <mrow>\amp=\frac{6-18i}{1-3i+3i-9i^2}</mrow>
+                <mrow>\amp=\frac{6-18i}{1-9(-1)}</mrow>
+                <mrow>\amp=\frac{6-18i}{10}</mrow>
+                <mrow>\amp=\frac{6}{10}-\frac{18}{10}i</mrow>
+                <mrow>\amp=\frac{3}{5}-\frac{9}{5}i</mrow>
+              </md>
+            </p> 
+            <p>
+            Example
+              <md>
+                <mrow>\frac{5i}{1-2i}\amp=\frac{5i}{1-2i} \cdot \highlight{\frac{1+2i}{1+2i}}</mrow>
+                <mrow>\amp=\frac{5i+10i^2}{1+2i-2i-4i^1}</mrow>
+                <mrow>\amp=\frac{5i+10(-1)}{1-4(-1)}</mrow>
+                <mrow>\amp=\frac{5i-10}{5}</mrow>
+                <mrow>\amp=\frac{-10}{5}+\frac{5}{5}i</mrow>
+                <mrow>\amp=-2+i</mrow>
+              </md>
+            </p> 
+            <p>
+            Example
+              <md>
+                <mrow>\frac{-7+4i}{-7-4i}\amp=\frac{-7+4i}{-7-4i} \cdot \highlight{\frac{-7+4i}{-7+4i}}</mrow>
+                <mrow>\amp=\frac{49-28i-28i+16i^2}{49-28i+28i-16i^2}</mrow>
+                <mrow>\amp=\frac{49-56i+16(-1)}{49-16(-1)}</mrow>
+                <mrow>\amp=\frac{33-56i}{65}</mrow>
+                <mrow>\amp=\frac{33}{65}-\frac{56}{65}i</mrow>
+              </md>
+            </p>     
+          </statement>
+        </exercise>
+    
+    </exercises>
+
+    <exercises>
+      <title>Practice Exercise</title>
 
       <exercise>
-        <title>Practice exercises with detailed solutions</title>
+      <title>Imaginary numbers</title>
+        <statement>
+          <p>
+            Determine each of the following, that is write each of the following in the form <m>bi</m> where <m>b</m> is a real number.  Make sure that <m>b</m> is fully simplified.
+            <ol cols="3">
+              <li><m>-\sqrt{-121}</m></li>
+              <li><m>\sqrt{-25}</m></li>
+              <li><m>\sqrt{-\frac{4}{49}}</m></li>
+              <li><m>\sqrt{-75}</m></li>
+              <li><m>-\sqrt{-80}</m></li>
+              <li><m>\sqrt{-\frac{72}{121}}</m></li>
+              <p>
+              </p>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                    -\sqrt{-121}\amp=-\sqrt{121 \cdot -1}\\
+                    \amp=-\sqrt{121} \cdot \sqrt{-1}\\
+                    \amp=-11i
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                    \sqrt{-25}\amp=\sqrt{25 \cdot -1}\\
+                    \amp=\sqrt{25} \cdot \sqrt{-1}\\
+                    \amp=5i                  
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                    \sqrt{-\frac{4}{49}}\amp=\sqrt{\frac{4}{49} \cdot -1}\\
+                    \amp=\sqrt{\frac{4}{49}} \cdot \sqrt{-1}\\
+                    \amp=\frac{2}{7}i                  
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                    \sqrt{-75}\amp=\sqrt{25 \cdot 3 \cdot -1}\\
+                    \amp=\sqrt{25} \cdot \sqrt{3} \cdot \sqrt{-1}\\
+                    \amp=5\sqrt{3}i                  
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                    -\sqrt{-80}\amp=-\sqrt{16 \cdot 5 \cdot -1}\\
+                    \amp=-\sqrt{16} \cdot \sqrt{5} \cdot \sqrt{-1}\\
+                    \amp=-4\sqrt{5}i
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                    \sqrt{-\frac{72}{121}}\amp=\sqrt{\frac{36 \cdot 2}{121} \cdot -1}\\
+                    \amp=\frac{\sqrt{36} \cdot \sqrt{2}}{\sqrt{121}} \cdot \sqrt{-1}\\
+                    \amp=\frac{6\sqrt{2}}{11}i
+                  \end{aligned}
+                </m>
+              </li>
+
+              <p>
+              </p>
+
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+            <exercise>
+        <title>Arithmetic with imaginary numbers</title>
           <statement>
             <p>
               <p>
@@ -458,153 +510,17 @@
                     \end{aligned}
                   </m>
                 </li>
+
+
+
               </ol>
             </p>
           </solution>
 
-      </exercise>
+        </exercise>
 
-      <exercise>
-        <title>Question bank with short answers</title>
-          <statement>
-            <p>
-              <p>
-                Simplify each of the following.  Note that each final result should either be a real number or an imaginary number written in the form <m>bi</m> where <m>b</m> is a real number.
-                <ol cols="3">
-                  <li><m>(7i)(4i)</m></li>
-                  <li><m>(-2i)(\frac{3}{4}i)</m></li>
-                  <li><m>(-i)(-7i)</m></li>
-                  <li><m>\frac{3}{i}</m></li>
-                  <li><m>-\frac{5}{11i}</m></li>
-                  <li><m>(3i)(12i)(\frac{5}{6}i)</m></li>
-                </ol>
-                <p>
-                  <me></me>
-                </p>
-                  Determine each power of <m>i</m>.  Note that your final result should be <m>1</m>, <m>-1</m>, <m>i</m>, or <m>-i</m>.
-                  <ol cols="4" label="i">
-                    <li><m>i^{107}</m></li>
-                    <li><m>i^{7981}</m></li>
-                    <li><m>i^{-15}</m></li>
-                    <li><m>i^{-14}</m></li>
-                  </ol>
-                  <p>
-                    <me></me>
-                  </p>
-              </p>
-            </p>          
-          </statement>
-
-          <solution>
-            <p>
-              <ol>
-                <li><m>(7i)(4i)=-28</m></li>
-                <li><m>(-2i)(\frac{3}{4}i)=\frac{3}{2}</m></li>
-                <li><m>(-i)(-7i)=-7</m></li>
-                <li><m>\frac{3}{i}=-3i</m></li>
-                <li><m>-\frac{5}{11i}=\frac{5}{11}i</m></li>
-                <li><m>(3i)(12i)(\frac{5}{6}i)=-30i</m></li>
-              </ol>
-
-              <ol label="i">
-                <li><m>i^{107}=-i</m></li>
-                <li><m>i^{7981}=i</m></li>
-                <li><m>i^{-15}=i</m></li>
-                <li><m>i^{-14}=-1</m></li>
-              </ol>
-            </p>
-          </solution>
-      </exercise>
-
-    </exercises>
-
-     <exercises>
-      <title>Complex Numbers and Arithmetic with Complex Numbers</title>
-
-      <exercise>
-        <title>Explanation and examples</title>
-          <statement>
-            <p>
-              The complex number set consists of all real numbers, all imaginary numbers, and all sums and differences of real numbers with imaginary numbers.  So, for example, the real number <m>5</m> and the imaginary number <m>7i</m> are both complex numbers, and so is <m>5+7i</m>.  However, <m>5+7i</m> is neither a real number nor an imaginary number, as it has both a real part and an imaginary part.  
-            </p>
-            <p>
-              When adding or subtracting complex numbers, the real parts are combined into one and the imaginary parts are combined into one.  The sum or difference of the real number and the imaginary number cannot be simplified further, as there is no way to combine the unlike terms into a single whole absent an addition sign or subtraction sign. An example is shown below.  Note that the steps shown are usually just done in ones head <mdash/> they're written out here only to illustrate the meaning of the proceeding words.
-              <md>
-                <mrow>(-6+7i)-(5-10i)\amp=(-6-5)+(7i-(-10i))</mrow>
-                <mrow>\amp=-11+17i</mrow>
-              </md>
-            </p>
-            <p>
-              Multiplying complex numbers is similar to other expansions but with a twist at the end <mdash/> all occurrences of <m>i^2</m> are replaced by <m>-1</m> and the resultant expression is further simplified.  For example, to simplify the product <m>(9+2i)(1-5i)</m> we would begin by employing FOIL in exactly the same manner we would when expanding <m>(9+2x)(1-5x)</m>.  However, once we have expanded the product using FOIL, we have to replace  <m>i^2</m> with <m>-1</m> and further simplify.  The process is shown below.
-              <md>
-                <mrow>(9+2i)(1-5i)\amp=9-45i+2i-10i^2</mrow>
-                <mrow>\amp=9-43i-10(-1)</mrow>
-                <mrow>\amp=9-43i+10</mrow>
-                <mrow>\amp=19-43i</mrow>
-              </md>
-            </p>
-            <p>
-              In a similar vein, we have the following.
-              <md>
-                <mrow>(1+i)^2\amp=(1+i)(1+i)</mrow>
-                <mrow>\amp=1+i+i+i^2</mrow>
-                <mrow>\amp=1+2i+(-1)</mrow>
-                <mrow>\amp=2i</mrow>
-              </md>
-            </p>
-            <p>
-              We can use the last result to help us simplify <m>(1+i)^4</m>.  This is shown below.
-              <md>
-                <mrow>(1+i)^4\amp=((1+i)^2)^2</mrow>
-                <mrow>\amp=(2i)^2</mrow>
-                <mrow>\amp=2^2 \cdot i^2</mrow>
-                <mrow>\amp=4 \cdot -1</mrow>
-                <mrow>\amp=-4</mrow>
-              </md>
-            </p>
-            <p>
-              The fact that <m>(1+i)^4=-4</m> implies that a fourth root of <m>-4</m> is <m>1+i</m>.  So we now not only have square roots of negative numbers, we also have fourth roots of negative numbers!  In fact, the introduction of complex numbers allows us to take any root of any number.  You should keep in mind, however, that while square roots of negative real numbers are imaginary numbers, higher order even roots of real numbers, for example <m>\sqrt[6]{-64}</m>, are complex numbers with both real number parts and imaginary number parts.  In fact, the principle sixth root of <m>-64</m> is <m>\sqrt{3}+i</m>.  That is, <m>(\sqrt{3}+i)^6=-64</m>.  It turns out that there are in fact six sixth roots of <m>-64</m>, but that's a subject for another class (trigonometry).
-            </p>
-            <p>
-              In the last section, we discussed that division by imaginary numbers comes down to rationalizing denominators.  The same is true when we divide by complex numbers that have both real and imaginary parts.  However, in the latter case, because we are dealing with a binomial denominator, we need to multiply the denominator by it's conjugate and balance that action by also multiplying the numerator by the conjugate of the denominator. Both the numerator and the denominator then need to be simplified and the results broken into there real number and imaginary parts,  If the final result has both real number and imaginary parts, it should always be written in the form <m>a+bi</m> where <m>a</m> and <m>b</m> are real numbers.  Several examples are shown below.
-            </p>
-            <p>
-            Example
-              <md>
-                <mrow>\frac{6}{1+3i}\amp=\frac{6}{1+3i} \cdot \highlight{\frac{1-3i}{1-3i}}</mrow>
-                <mrow>\amp=\frac{6-18i}{1-3i+3i-9i^2}</mrow>
-                <mrow>\amp=\frac{6-18i}{1-9(-1)}</mrow>
-                <mrow>\amp=\frac{6-18i}{10}</mrow>
-                <mrow>\amp=\frac{6}{10}-\frac{18}{10}i</mrow>
-                <mrow>\amp=\frac{3}{5}-\frac{9}{5}i</mrow>
-              </md>
-            </p> 
-            <p>
-            Example
-              <md>
-                <mrow>\frac{5i}{1-2i}\amp=\frac{5i}{1-2i} \cdot \highlight{\frac{1+2i}{1+2i}}</mrow>
-                <mrow>\amp=\frac{5i+10i^2}{1+2i-2i-4i^1}</mrow>
-                <mrow>\amp=\frac{5i+10(-1)}{1-4(-1)}</mrow>
-                <mrow>\amp=\frac{5i-10}{5}</mrow>
-                <mrow>\amp=\frac{-10}{5}+\frac{5}{5}i</mrow>
-                <mrow>\amp=-2+i</mrow>
-              </md>
-            </p> 
-            <p>
-            Example
-              <md>
-                <mrow>\frac{-7+4i}{-7-4i}\amp=\frac{-7+4i}{-7-4i} \cdot \highlight{\frac{-7+4i}{-7+4i}}</mrow>
-                <mrow>\amp=\frac{49-28i-28i+16i^2}{49-28i+28i-16i^2}</mrow>
-                <mrow>\amp=\frac{49-56i+16(-1)}{49-16(-1)}</mrow>
-                <mrow>\amp=\frac{33-56i}{65}</mrow>
-                <mrow>\amp=\frac{33}{65}-\frac{56}{65}i</mrow>
-              </md>
-            </p>     
-          </statement>
-      </exercise>
-
-      <exercise>
-        <title>Practice exercises with detailed solutions</title>
+        <exercise>
+        <title>Complex numbers and arithmetic with complex numbers</title>
           <statement>
             <p>
               Determine each product or quotient.  Write each result that has both a real number part and a complex number part in standard form (<m>a+bi</m>).
@@ -739,10 +655,99 @@
               </ol>
             </p>
           </solution>
+        </exercise>
+    
+    </exercises>
+
+    <exercises>
+      <title>Workshop Materials</title>
+
+      <exercise>
+      <title>Imaginary numbers</title>
+        <statement>
+          <p>
+            Determine each of the following, that is write each of the following in the form <m>bi</m> where <m>b</m> is a real number.  Make sure that <m>b</m> is fully simplified.
+            <ol cols="3">
+              <li><m>\sqrt{-81}</m></li>
+              <li><m>-\sqrt{-144}</m></li>
+              <li><m>\sqrt{-\frac{9}{25}}</m></li>
+              <li><m>-\sqrt{-90}</m></li>
+              <li><m>\sqrt{-325}</m></li>
+              <li><m>\sqrt{-\frac{27}{64}}</m></li>
+              <p>
+              </p>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><m>\sqrt{-81}=9i</m></li>
+              <li><m>-\sqrt{-144}=-12i</m></li>
+              <li><m>\sqrt{-\frac{9}{25}}=\frac{3}{5}i</m></li>
+              <li><m>-\sqrt{-90}=-3\sqrt{10}i</m></li>
+              <li><m>\sqrt{-325}=5\sqrt{13}i</m></li>
+              <li><m>\sqrt{-\frac{27}{64}}=\frac{3\sqrt{3}}{8}i</m></li>
+            </ol>
+          </p>
+        </solution>
       </exercise>
 
       <exercise>
-        <title>Question bank with short answers</title>
+        <title>Arithmetic with imaginary numbers</title>
+          <statement>
+            <p>
+              <p>
+                Simplify each of the following.  Note that each final result should either be a real number or an imaginary number written in the form <m>bi</m> where <m>b</m> is a real number.
+                <ol cols="3">
+                  <li><m>(7i)(4i)</m></li>
+                  <li><m>(-2i)(\frac{3}{4}i)</m></li>
+                  <li><m>(-i)(-7i)</m></li>
+                  <li><m>\frac{3}{i}</m></li>
+                  <li><m>-\frac{5}{11i}</m></li>
+                  <li><m>(3i)(12i)(\frac{5}{6}i)</m></li>
+                </ol>
+                <p>
+                  <me></me>
+                </p>
+                  Determine each power of <m>i</m>.  Note that your final result should be <m>1</m>, <m>-1</m>, <m>i</m>, or <m>-i</m>.
+                  <ol cols="4" label="i">
+                    <li><m>i^{107}</m></li>
+                    <li><m>i^{7981}</m></li>
+                    <li><m>i^{-15}</m></li>
+                    <li><m>i^{-14}</m></li>
+                  </ol>
+                  <p>
+                    <me></me>
+                  </p>
+              </p>
+            </p>          
+          </statement>
+
+          <solution>
+            <p>
+              <ol>
+                <li><m>(7i)(4i)=-28</m></li>
+                <li><m>(-2i)(\frac{3}{4}i)=\frac{3}{2}</m></li>
+                <li><m>(-i)(-7i)=-7</m></li>
+                <li><m>\frac{3}{i}=-3i</m></li>
+                <li><m>-\frac{5}{11i}=\frac{5}{11}i</m></li>
+                <li><m>(3i)(12i)(\frac{5}{6}i)=-30i</m></li>
+              </ol>
+
+              <ol label="i">
+                <li><m>i^{107}=-i</m></li>
+                <li><m>i^{7981}=i</m></li>
+                <li><m>i^{-15}=i</m></li>
+                <li><m>i^{-14}=-1</m></li>
+              </ol>
+            </p>
+          </solution>
+
+        </exercise>
+
+        <exercise>
+        <title>Complex numbers and arithmetic with complex numbers</title>
           <statement>
             <p>
               Determine each product or quotient.  Write each result that has both a real number part and a complex number part in standard form (<m>a+bi</m>).
@@ -774,7 +779,13 @@
               </ol>
             </p>
           </solution>
-      </exercise>
-
+        </exercise>
+    
     </exercises>
+
+   
+
+   
+
+     
 </section>

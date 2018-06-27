@@ -12,54 +12,7 @@
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-rules-of-exponents">
     <title>Rules of exponents</title>
 
-    <exercises>
-        <title>Pretest - what's your current skill set?</title>
-
-        <exercise>
-          <title>Applying the properties of exponents</title>
-        <statement>
-          <p>
-            Follow this link to find a summary of the properties of exponents: <xref ref ="workshop-exponents-summary-of-properties">Written Examples</xref>
-          </p>
-          <p>
-            Completely simplify each expression.  Your final expression should contain no negative exponents.  Assume that all variables represent positive numbers.
-            <ol cols="3">
-              <li><m>x^8 \cdot x^{21}</m></li>
-              <li><m>(x^7)^{10}</m></li>
-              <li><m>\frac{x^{17}}{x^{11}}</m></li>
-              <li><m>\frac{x^{14}}{x^{23}}</m></li>
-              <li><m>2x^{-31}</m></li>
-              <li><m>\frac{1}{x^{-96}}</m></li>
-              <li><m>-x^{-2}</m></li>
-              <li><m>(x^4y^{-3})^5</m></li>
-              <li><m>\frac{x^4x^{-6}}{5x^{-2}}</m></li>
-              <li><m>(\frac{4x^{-7}}{y^{-2}})^{-6}</m></li>
-              <li><m>(\frac{4x^-1y^{12}z^{-3}}{(x^2y^{-3})^{-6}})^0</m></li>
-              <li><m>\frac{(xy^{-4})^-2}{(3x^{-1})^2}</m></li>
-            </ol>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <ol>
-              <li><m>x^8 \cdot x^{21}=x^{29}</m></li>
-              <li><m>(x^7)^{10}=x^{70}</m></li>
-              <li><m>\frac{x^{17}}{x^{11}}=x^6</m></li>
-              <li><m>\frac{x^{14}}{x^{23}}=\frac{1}{x^9}</m></li>
-              <li><m>2x^{-31}=\frac{2}{x^{31}}</m></li>
-              <li><m>\frac{1}{x^{-96}}=x^{96}</m></li>
-              <li><m>-x^{-2}=-\frac{1}{x^2}</m></li>
-              <li><m>(x^4y^{-3})^5=\frac{x^{20}}{y^{15}}</m></li>
-              <li><m>\frac{x^4x^{-6}}{5x^{-2}}=\frac{1}{5}</m></li>
-              <li><m>(\frac{2x^{-7}}{y^{-2}})^{-6}=\frac{x^{42}}{64y^{12}}</m></li>
-              <li><m>(\frac{4x^-1y^{12}z^{-3}}{(x^2y^{-3})^{-6}})^0=1</m></li>
-              <li><m>\frac{(xy^{-4})^{-2}}{(3x^{-1})^2}=\frac{y^8}{9}</m></li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-    </exercises>
-
+    
     <exercises>
       
     <title>Written Examples</title>
@@ -539,7 +492,7 @@
     </exercises>
 
      <exercises>
-    <title>Practice Exercises</title>
+    <title>Practice Exercises (with step-by-step solutions)</title>
       
       <exercise  xml:id="workshop-exponents-product-rule-exercises">
         <title>The Product Rule for Exponents</title>
@@ -710,7 +663,7 @@
             Simplify each of the following expressions.
             <ol cols="3">
               <li><m>(ab)^4</m></li>
-              <li><m>(2x)^3</m></li>
+              <li><m>(2a)^3</m></li>
               <li><m>(-3t)^4</m></li>
             </ol>
             <p>
@@ -725,7 +678,7 @@
               <li>
                 <m>
                   \begin{aligned}[t]
-                  (2x)^3\amp=2^3a^3\\
+                  (2a)^3\amp=2^3a^3\\
                   \amp=8a^3
                   \end{aligned}
                 </m>
@@ -999,8 +952,8 @@
                       <li>
                         <p><m>
                           \begin{aligned}[t]
-                          4a^{-2}\amp=4\times\frac{1}{a^2}\\
-                          \amp=\frac{4}{a^2}
+                          -4a^{-2}\amp=-4\times\frac{1}{a^2}\\
+                          \amp=-\frac{4}{a^2}
                           \end{aligned}
                         </m></p>
                       </li>
@@ -1200,6 +1153,54 @@
             </solution>
           </exercise>
 
+    </exercises>
+
+    <exercises>
+        <title>Workshop Materials (with short answers)</title>
+
+        <exercise xml:id="workshop-exponents-summary-of-properties-materials">
+          <title>Applying the properties of exponents</title>
+        <statement>
+          <p>
+            Follow this link to find a summary of the properties of exponents: <xref ref ="workshop-exponents-summary-of-properties">Written Examples</xref>
+          </p>
+          <p>
+            Completely simplify each expression.  Your final expression should contain no negative exponents.  Assume that all variables represent positive numbers.
+            <ol cols="3">
+              <li><m>x^8 \cdot x^{21}</m></li>
+              <li><m>(x^7)^{10}</m></li>
+              <li><m>\frac{x^{17}}{x^{11}}</m></li>
+              <li><m>\frac{x^{14}}{x^{23}}</m></li>
+              <li><m>2x^{-31}</m></li>
+              <li><m>\frac{1}{x^{-96}}</m></li>
+              <li><m>-x^{-2}</m></li>
+              <li><m>(x^4y^{-3})^5</m></li>
+              <li><m>\frac{x^4x^{-6}}{5x^{-2}}</m></li>
+              <li><m>(\frac{4x^{-7}}{y^{-2}})^{-6}</m></li>
+              <li><m>(\frac{4x^{-1}y^{12}z^{-3}}{(x^2y^{-3})^{-6}})^0</m></li>
+              <li><m>\frac{(xy^{-4})^{-2}}{(3x^{-1})^2}</m></li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><m>x^8 \cdot x^{21}=x^{29}</m></li>
+              <li><m>(x^7)^{10}=x^{70}</m></li>
+              <li><m>\frac{x^{17}}{x^{11}}=x^6</m></li>
+              <li><m>\frac{x^{14}}{x^{23}}=\frac{1}{x^9}</m></li>
+              <li><m>2x^{-31}=\frac{2}{x^{31}}</m></li>
+              <li><m>\frac{1}{x^{-96}}=x^{96}</m></li>
+              <li><m>-x^{-2}=-\frac{1}{x^2}</m></li>
+              <li><m>(x^4y^{-3})^5=\frac{x^{20}}{y^{15}}</m></li>
+              <li><m>\frac{x^4x^{-6}}{5x^{-2}}=\frac{1}{5}</m></li>
+              <li><m>(\frac{2x^{-7}}{y^{-2}})^{-6}=\frac{x^{42}}{64y^{12}}</m></li>
+              <li><m>(\frac{4x^-1y^{12}z^{-3}}{(x^2y^{-3})^{-6}})^0=1</m></li>
+              <li><m>\frac{(xy^{-4})^{-2}}{(3x^{-1})^2}=\frac{y^8}{9}</m></li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
     </exercises>
 
      

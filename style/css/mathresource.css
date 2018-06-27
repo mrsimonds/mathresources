@@ -1,0 +1,6 @@
+/* set default image max-width to match that of a two-panel sidebyside  */
+/* can be overruled by using a width attribute in the MBX image element */
+
+.paragraphs h5.heading {
+  font-weight: bold;
+}

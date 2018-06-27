@@ -9,15 +9,17 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-schedule-winter-term-2018">
-    <title>Workshop Schedule Winter Term 2018</title>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="lines-materials">
+    <title>Lines</title>
 
-    <p>
-      The schedule will open in a new window.
-    </p>
-    <p>
-       <url href="Be-Better-Prepared-Schedule-201801.pdf" target="blank">Sylvania Campus Math Workshop Schedule<mdash/>Winter Term 2018</url>
-    </p>
+      <xi:include href="./lines-videos.ptx" />
+      <xi:include href="./lines-standard-form.ptx" />
+      <xi:include href="./lines-slope.ptx" />
+      <xi:include href="./lines-slope-intercept.ptx" />
+      <xi:include href="./lines-point-slope.ptx" />
+      <xi:include href="./lines-special-lines.ptx" />
+      <xi:include href="lines-additional-practice.ptx" />
 
-     
-</section>
+
+
+</chapter>

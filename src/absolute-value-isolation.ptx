@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="absolute-value-isolation">
+    <title>Isolating the Absolute Value Expression</title>
+
+     
+          <p>
+            Whether working with an absolute value equation or an absolute value inequality, the first objective is always to isolate the absolute value expression.  The process to follow from that point forward is dependent upon the nature of the equation or inequality, as well as that constant value.  These processes were outlined in the previous three sections.
+          </p>
+          <example xml:is="absolute-value-isolation-ex-1">
+            <statement>
+              <p>
+                Determine the solution set to the equation <m>\abs{\frac{12-2x}{3}}-5=15</m>.
+              </p>
+            </statement>
+            <solution>
+              <p>
+                We begin by isolating the absolute value expression.
+                <md>
+                  <mrow>\abs{\frac{12-2x}{3}}-5\amp=15</mrow>
+                  <mrow>\abs{\frac{12-2x}{3}}-5\addright{5}\amp=15\addright{5}</mrow>
+                  <mrow>\abs{\frac{12-2x}{3}}\amp=20</mrow>
+                </md>
+                Now that we have the absolute value expression isolated, we write and solve two equations that have no absolute value expressions and the collectively are equivalent to the given equation.
+                <md>
+                  <mrow>\frac{12-2x}{3}\amp=-20 \amp\amp\text{or}\amp \frac{12-2x}{3}\amp=20</mrow>
+                  <mrow>\multiplyleft{3}\frac{12-2x}{3} \amp= \multiplyleft{3}-20 \amp\amp\text{or}\amp \multiplyleft{3}\frac{12-2x}{3}\amp=\multiplyleft{3}20</mrow>
+                  <mrow>12-2x\amp=-60 \amp\amp\text{or}\amp 12-2x\amp=60</mrow> 
+                  <mrow>12-2x\subtractright{12}\amp=-60\subtractright{12} \amp\amp\text{or}\amp 12-2x\subtractright{12}\amp=60\subtractright{12}</mrow>
+                  <mrow>-2x\amp=-72 \amp\amp\text{or}\amp -2x\amp=48</mrow>
+                  <mrow>\divideunder{-2x}{-2}\amp=\divideunder{-72}{-2} \amp\amp\text{or}\amp \divideunder{-2x}{-2}\amp=\divideunder{48}{-2}</mrow>
+                  <mrow>x\amp=36 \amp\amp\text{or}\amp=-24</mrow>
+                </md>
+                The solution set to the given equation is <m>\{-24,36\}</m>.
+              </p>
+            </solution>
+          </example>
+
+          <example xml:is="absolute-value-isolation-ex-2">
+            <statement>
+              <p>
+                Determine the solution set to the inequality <m>14-\frac{\abs{2-4x}}{3} \ge 8</m>.  State the solution using interval notation (if possible).
+              </p>
+            </statement>
+            <solution>
+              <p>
+                We begin by isolating the absolute value expression.  We need to keep in mind that any time we multiply or divide both sides of the inequality by a negative number, the direction of the inequality sign reverses.
+                <md>
+                  <mrow>14-\frac{\abs{2-4x}}{3} \amp\ge 8</mrow>
+                  <mrow>14-\frac{\abs{2-4x}}{3}\subtractright{14} \amp\ge 8\subtractright{14}</mrow>
+                  <mrow>-\frac{\abs{2-4x}}{3} \amp\ge -6</mrow>
+                  <mrow>\multiplyleft{-3}-\frac{\abs{2-4x}}{3} \amp\le \multiplyleft{-3}-6</mrow>
+                  <mrow>\abs{2-4x} \amp\le 18</mrow>
+                </md>
+                Note that  we began with a "greater than" inequality, but now that the absolute value expression is isolated we have a "less than" inequality, and that's all that matters at this point in the process.  We need to write and solve a compound inequality (that contains no absolute value expressions) equivalent to the last absolute value inequality.  We then solve that compound inequality.
+                <md alignment="alignat">
+                  <mrow>-18 \amp\le 2-4x \amp\amp\le 18</mrow>
+                  <mrow>-18\subtractright{2} \amp\le 2-4x\subtractright{2} \amp\amp\le 18\subtractright{2}</mrow>
+                  <mrow>-20 \amp\le -4x \amp\amp\le 16</mrow>
+                  <mrow>\divideunder{-20}{-4} \amp\ge \divideunder{-4x}{-4} \amp\amp\ge \divideunder{16}{-4}</mrow>
+                  <mrow>5 \amp\ge x \amp\amp\ge -4</mrow>
+                </md>
+                The solution set to the given inequality is <m>[-4,5]</m>.
+              </p>
+            </solution>
+          </example>
+
+          <example xml:is="absolute-value-isolation-ex-3">
+            <statement>
+            <p>
+              Determine the solution set to the inequality <m>2\abs{88-3x}-12 \gt -20</m>.  State the solution set using interval notation (if possible).
+            </p>
+            </statement>
+            <solution>
+              <p>
+                We begin by isolating the absolute value expression.
+                <md>
+                  <mrow>2\abs{88-3x}-12 \amp\gt -20</mrow>
+                  <mrow>2\abs{88-3x}-12\addright{12} \amp\gt -20\addright{12}</mrow>
+                  <mrow>2\abs{88-3x} \amp\gt -8</mrow>
+                  <mrow>\divideunder{2\abs{88-3x}}{2} \amp\gt \divideunder{-8}{2}</mrow>
+                  <mrow>\abs{88-3x} \amp\gt -4</mrow>
+                </md>
+                Now that the absolute value expression is isolated, our hackles should rise over the existence of a negative constant on the other side of the inequality sign.  There are no numbers whose absolute values are not greater than <m>-4</m>, so the solution set to the given inequality is <m>(-\infty,\infty)</m>.
+              </p>
+            </solution>
+          </example>
+
+          <example xml:is="absolute-value-isolation-ex-4">
+            <statement>
+            <p>
+              Determine the solution set to the inequality <m>\frac{\abs{5x+10}}{3}-\frac{15}{2} \ge \frac{5}{2}</m>.  State the solution set using interval notation (if possible).
+            </p>
+            </statement>
+            <solution>
+              <p>
+                We begin by isolating the absolute value expression.  We'll first multiply through both sides if the inequality by <m>6</m> to clear away all of the fractions.
+                <md>
+                  <mrow>\frac{\abs{5x+10}}{3}-\frac{15}{2} \amp\ge \frac{5}{3}</mrow>
+                  <mrow>\multiplyleft{6}(\frac{\abs{5x+10}}{3}-\frac{15}{2}) \amp\ge \multiplyleft{6}\frac{5}{2}</mrow>
+                  <mrow>2\abs{5x+10}-45 \amp\ge 15</mrow>
+                  <mrow>2\abs{5x+10}-45\addright{45} \amp\ge 15\addright{45}</mrow>
+                  <mrow>2\abs{5x+10} \amp\ge 60</mrow>
+                  <mrow>\divideunder{2\abs{5x+10}}{2} \amp\ge \divideunder{60}{2}</mrow>
+                  <mrow>\abs{5x+10} \amp\ge 30</mrow>
+                </md>
+                We now write and solve a compound inequality that contains no absolute value expressions and that is equivalent to the given equation.
+                <md>
+                  <mrow>5x+10 \amp\le -30 \amp\amp\text{or}\amp 5x+10 \amp\ge 30</mrow>
+                  <mrow>5x+10\subtractright{10} \amp\le -30\subtractright{10} \amp\amp\text{or}\amp 5x+10\subtractright{10} \amp\ge 30\subtractright{10}</mrow>
+                  <mrow>5x \amp\le -40 \amp\amp\text{or}\amp 5x \amp\ge 20</mrow>
+                  <mrow>\divideunder{5x}{5} \amp\le \divideunder{-40}{5} \amp\amp\text{or}\amp \divideunder{5x}{5} \amp\ge \divideunder{20}{5}</mrow>
+                  <mrow>x \amp\le -8 \amp\amp\text{or}\amp x \amp\ge 4</mrow>
+                </md>
+                The solution set to the given inequality is <m>(-\infty,-8] \cup [4,\infty)</m>.
+              </p>
+            </solution>
+          </example>
+
+      <exercises>
+        <exercisegroup>
+          <introduction>
+            <p>
+              Determine the solution set to each equation or inequality.  Express the solution sets to the inequalities using interval notation (where possible).
+            </p>
+          </introduction>
+
+              <exercise>
+                <statement>
+                  <p>
+                    <m>4-\abs{x} \ge -11</m>
+                  </p>
+                </statement>
+                <solution>
+                  <p>
+                    Our opportunity, not to be passed up, is to determine the solution set for <m>4-\abs{x} \ge -11</m>.  We begin by isolating the absolute value expression.
+                    <md>
+                      <mrow>4-\abs{x} \amp\ge -11</mrow>
+                      <mrow>4-\abs{x}\subtractright{4} \amp\ge -11\subtractright{4}</mrow>
+                      <mrow>-\abs{x} \amp\ge -15</mrow>
+                      <mrow>\multiplyleft{-1}-\abs{x} \amp\le \multiplyleft{-1}-15</mrow>
+                      <mrow>\abs{x} \amp\le 15</mrow>
+                    </md>
+                    We now write an equivalent compound inequality that does not include an absolute value expression.
+                    <me>-15 \le x \le 15</me>
+                    The solution set to the given inequality is <m>[-15, 15]</m>.
+                  </p>
+                </solution>
+              </exercise>
+
+              <exercise>
+                <statement>
+                  <p>
+                    <m>-3+\abs{5-x}=-2</m>
+                  </p>
+                </statement>
+                <solution>
+                  <p>
+                    Our opportunity, not to be passed upon, is to determine the solution set for <m>-3+\abs{5-x}=-2</m>.  We begin by isolating the absolute value expression.
+                    <md>
+                      <mrow>-3+\abs{5-x}\amp=-2</mrow>
+                      <mrow>-3+\abs{5-x}\addright{3}\amp=-2\addright{3}</mrow>
+                      <mrow>\abs{5-x}=1</mrow>
+                    </md>
+                    We now write a pair of equivalent equations that do not include absolute value expressions and go on to solve that pair of equations.
+                    <md>
+                      <mrow>5-x\amp=-1 \amp\amp\text{or}\amp 5-x\amp=1</mrow>
+                      <mrow>5-x\subtractright{5}\amp=-1\subtractright{5} \amp\amp\text{or}\amp 5-x\subtractright{5}\amp=1\subtractright{5}</mrow>
+                      <mrow>-x\amp=-6 \amp\amp\text{or}\amp x\amp=-4</mrow>
+                      <mrow>\multiplyleft{-1}-x\amp=\multiplyleft{-1}-6 \amp\amp\text{or}\amp \multiplyleft{-1}-x\amp=\multiplyleft{-1}-4</mrow>
+                      <mrow>x\amp=6 \amp\amp\text{or}\amp x\amp=4</mrow>
+                    </md>
+                    The solution set is <m>\{4,6\}</m>.
+                  </p>
+                </solution>
+              </exercise>
+
+              <exercise>
+                <statement>
+                  <p>
+                    <m>2\abs{\frac{x}{3}}-12 \le -6</m>
+                  </p>
+                </statement>
+                <solution>
+                  <p>
+                    Our opportunity, not to be passed, is to determine the solution set for <m>2\abs{3x}-12 \le -6</m>.  We begin by isolating the absolute value expression.
+                    <md>
+                      <mrow>2\abs{\frac{x}{3}}-12 \amp\le -6</mrow>
+                      <mrow>2\abs{\frac{x}{3}}-12\addright{12} \amp\le -6\addright{12}</mrow>
+                      <mrow>2\abs{\frac{x}{3}} \amp\le 6</mrow>
+                      <mrow>\divideunder{2\abs{\frac{x}{3}}}{2} \amp\le \divideunder{6}{2}</mrow>
+                      <mrow>\abs{\frac{x}{3}} \amp\le 3</mrow>
+                    </md>
+                    We now write and solve an equivalent compound equality that does not include an absolute value expression.
+                    <md alignment="alignat">
+                      <mrow>-3 \amp\le \frac{x}{3} \amp \amp\le 3</mrow>
+                      <mrow>\multiplyleft{3}-3 \amp\le \multiplyleft{3}\frac{x}{3} \amp \amp\le \multiplyleft{3}3</mrow>
+                      <mrow>-9 \amp\le x \amp \amp\le 9</mrow>
+                    </md>
+                    The solution set to the given inequality is <m>[-9,9]</m>.
+                  </p>
+                </solution>
+              </exercise>
+
+              <exercise>
+                <statement>
+                  <p>
+                    <m>5-6\abs{2x+1}=17</m>
+                  </p>
+                </statement>
+                <solution>
+                  <p>
+                    Our opportunity, not to be passed by, is to determine the solution set for <m>5-6\abs{2x+1}=17</m>.  We begin by isolating the absolute value expression.
+                    <md>
+                      <mrow>5-6\abs{2x+1}\amp=17</mrow>
+                      <mrow>5-6\abs{2x+1}\subtractright{5}\amp=17\subtractright{5}</mrow>
+                      <mrow>-6\abs{2x+1}\amp=12</mrow>
+                      <mrow>\divideunder{-6\abs{2x+1}}{-6}\amp=\divideunder{12}{-6}</mrow>
+                      <mrow>\abs{2x+1}\amp=-2</mrow>
+                    </md>
+                    We observe that there are no numbers whose absolute value is <m>-2</m> and conclude that the given equation has no solutions.
+                  </p>
+                </solution>
+              </exercise>
+
+              <exercise>
+                <statement>
+                  <p>
+                    <m>30-\frac{\abs{x+9}}{5} \gt -40</m>
+                  </p>
+                </statement>
+                <solution>
+                  <p>
+                    Our opportunity, not to be passed on, is to determine the solution set for <m>30-\frac{\abs{x+9}}{5} \gt -40</m>.  We begin by isolating the absolute value expression.
+                    <md>
+                      <mrow>30-\frac{\abs{x+9}}{5} \amp\gt -40</mrow>
+                      <mrow>30 -\frac{\abs{x+9}}{5}\subtractright{30} \amp\gt -40\subtractright{30}</mrow>
+                      <mrow>-\frac{\abs{x+9}}{5} \amp\gt -70</mrow>
+                      <mrow>\multiplyleft{-5}-\frac{\abs{x+9}}{5} \amp\lt \multiplyleft{-5}-70</mrow>
+                      <mrow>\abs{x+9} \amp\lt 350</mrow>
+                    </md>
+                    We now write and solve an equivalent compound inequality that does not include an absolute value expression.
+                    <md alignment="alignat">
+                      <mrow>-350 \amp\lt x+9 \amp\amp\lt 350</mrow>
+                      <mrow>-350\subtractright{9} \amp\lt x+9\subtractright{9} \amp\amp\lt 350\subtractright{9}</mrow>
+                      <mrow>-359 \amp\lt x \amp\amp\lt 341</mrow>
+                    </md>
+                    The solution set is <m>(-359,341)</m>.
+                  </p>
+                </solution>
+              </exercise>
+
+              <exercise>
+                <statement>
+                  <p>
+                    <m>-\abs{\frac{8-2x}{3}}+15 \le 12</m>
+                  </p>
+                </statement>
+                <solution>
+                  <p>
+                    Our opportunity, not to be bypassed, is to determine the solution set for <m>-\abs{\frac{8-2x}{3}}+15 \le 12</m>.  We begin by isolating the absolute value expression.
+                    <md>
+                      <mrow>-\abs{\frac{8-2x}{3}}+15 \amp\le 12</mrow>
+                      <mrow>-\abs{\frac{8-2x}{3}}+15\subtractright{15} \amp\le 12\subtractright{15}</mrow>
+                      <mrow>-\abs{\frac{8-2x}{3}} \amp\le -3</mrow>
+                      <mrow>\multiplyleft{-1}-\abs{\frac{8-2x}{3}} \amp\ge \multiplyleft{-1}-3</mrow>
+                      <mrow>\abs{\frac{8-2x}{3}} \amp\ge 3</mrow>
+                    </md>
+                    We now write and solve an equivalent compound inequality that does not include an absolute value expression
+                    <md>
+                      <mrow>\frac{8-2x}{3} \amp\le -3 \amp\amp\text{or}\amp \frac{8-2x}{3} \amp\ge 3</mrow>
+                      <mrow>\multiplyleft{3}\frac{8-2x}{3} \amp\le \multiplyleft{3}-3 \amp\amp\text{or}\amp \multiplyleft{3}\frac{8-2x}{3} \amp\ge \multiplyleft{3}3</mrow>
+                      <mrow>8-2x \amp\le -9 \amp\amp\text{or}\amp 8-2x \amp\ge 9</mrow>
+                      <mrow>8-2x\subtractright{8} \amp\le -9\subtractright{8} \amp\amp\text{or}\amp 8-2x\subtractright{8} \amp\ge 9\subtractright{8}</mrow>
+                      <mrow>-2x \amp\le -17 \amp\amp\text{or}\amp -2x \amp\ge 1</mrow>
+                      <mrow>\divideunder{-2x}{-2} \amp\ge \divideunder{-17}{-2} \amp\amp\text{or}\amp \divideunder{-2x}{-2} \amp\le \divideunder{1}{-2}</mrow>
+                      <mrow>x \amp\ge \frac{17}{2} \amp\amp\text{or}\amp x \amp\le -\frac{1}{2}</mrow>
+                    </md>
+                    The solution set to the given inequality is <m>(-\infty,-\frac{1}{2}] \cup [\frac{17}{2},\infty)</m>.
+                  </p>
+                </solution>
+              </exercise>
+
+            </exercisegroup>
+
+    </exercises>
+
+    </section>

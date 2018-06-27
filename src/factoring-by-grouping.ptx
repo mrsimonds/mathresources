@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="factoring-by-grouping">
+    <title>Factoring by Grouping</title>
+
+      <p>
+        The expressions that are factored in this set of examples are not trinomials - they all have one too many terms.  The reason we are exploring this skill is that it is a useful process when factoring trinomials where the leading coefficients isn't <m>1</m>.
+      </p>
+      <p>
+        Let's consider the expression <m>10xy+15x-6y^2-9y</m>.  The factoring by grouping method begins by considering only the first two terms and factoring from them any and all common factors.  In this case we could factor out <m>5x</m> leaving the residual factor <m>(2y+3)</m>.  We now consider the final two terms.  Our goal is to factor out something that also leaves the residual factor <m>(2y+3)</m>.  While it's true that we could factor out <m>3y</m>, that would leave behind <m>(-2y-3)</m>.  What we want to factor out is <m>-3y</m> so that the residual factor is the desired <m>(2y+3)</m>.  Altogether, then, the first step in the process is:<me>10xy+15x-6xy-9y=\highlightb{5x}\highlight{(2y+3)}\highlightg{-3y}\highlight{(2y+3)}</me>.
+      </p>
+      <p>
+        The expression now has two terms, with the terms delineated by the subtraction sign.  Each of the terms has a factor of <m>(2y+3)</m>.  Just like we can factor (on the right), say, <m>z</m> from the expression 
+        <m>\highlightb{5x}\highlight{z}-\highlightg{3y}\highlight{z}</m> resulting in <m>(\highlightb{5x}\highlightg{-3y})\highlight{z}</m>, we can factor <m>\highlight{(2y+3)}</m> for the expression
+        <m>\highlightb{5x}\highlight{(2y+3)}\highlightg{-3y}\highlight{(2y+3)}</m> resulting in <m>(\highlightb{5x}\highlightg{-3y})\highlight{(2y+3)}</m>.
+      </p>
+      <p>
+        Let's see the process in total:                
+        <md>
+          <mrow>10xy+15x-6y^2-9y\amp=\highlightb{5x}\highlight{(2y+3)}\highlightg{-3y}\highlight{(2y+3)}</mrow>
+          <mrow>\amp=(\highlightb{5x}\highlightg{-3y})\highlight{(2y+3)}</mrow>
+        </md>
+      </p>
+      <p>
+        We can use FOIL to check our result.
+      </p>
+
+      <example xml:id="factoring-by-grouping-ex-1">
+        <statement>
+          <p>
+            Factor <m>6x^2y-4x^2+12y-8</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>  
+            We begin by observing that <m>2x^2</m> can be factored from the first two terms while <m>4</m> can be factored from the final two terms.  Heads up!  One of the most common errors made during this process is to forget to put a plus sign in front of the factor of <m>4</m>.  Written correctly, our factorization process is:
+            <md>
+              <mrow>6x^2y-4x^2+12y-8\amp=\highlightb{2x^2}\highlight{(3y-2)}\highlightg{+4}\highlight{(3y-2)}</mrow>
+              <mrow>\amp=(\highlightb{2x^2}\highlightg{+4})\highlight{(3y-2)}</mrow>
+            </md>
+          </p>
+        </solution>
+      </example>
+
+      <example xml:id="facoring-by-grouping-ex-2">
+        <statement>
+          <p>
+            Factor <m>7w^2-2w+7w-2</m>.
+          </p>
+        </statement>  
+        <solution>
+          <p>
+            We can see that <m>w</m> can be factored from the first two terms, but there seems to be nothing that can be factored from the final two terms.  When we factor <m>w</m> from the first two terms, the residual factor is <m>(7w-2)</m> which contains the two terms at the rear of our original expression.  The resolution of our dilemma, then, is to factor <m>1</m> away from the final two terms.  We need to remember to put a plus sign in from of that factor of <m>1</m>.  Going through the complete process we have:
+            <md>
+              <mrow>7w^2-2w+7w-2\amp=\highlightb{w}\highlight{(7w-2)}\highlightg{+1}\highlight{(7w-2)}</mrow>
+              <mrow>\amp=(\highlightb{w}\highlightg{+1})\highlight{(7w-2)}</mrow>
+            </md> 
+            Before closing, let's note that <m>7w^2-2w+7w-2</m> simplifies to <m>7w^2+5w-2</m>.  This gives us some insight into how the factby grouping process will be useful when factoring trinomials where the leading coefficient isn't <m>1</m>.
+          </p>
+        </solution>
+      </example>
+
+      <exercises>
+        <exercisegroup>
+          <introdution>
+            <p>
+              Factor each of the following expressions.  Check each result using the FOIL technique.
+            </p>
+          </introdution>
+
+            <exercise>
+              <statement>
+                <p>
+                  <m>x^2+5x-3x-15</m>
+                </p>
+              </statement>
+              <solution>
+                <p><m>
+                  \begin{aligned}[t]
+                  x^2+5x-3x-15\amp=\highlightb{x}\highlight{(x+5)}\highlightg{-3}\highlight{(x+5)}\\
+                  \amp=(\highlightb{x}\highlightg{-3})\highlight{(x+5)}
+                  \end{aligned}
+                </m></p>
+              </solution>
+            </exercise>
+
+            <exercise>
+              <statement>
+                <p>
+                  <m>8x+50+4xy+25y</m>
+                </p>
+              </statement>
+              <solution>
+                <p><m>
+                  \begin{aligned}[t]
+                  8x+50+4xy+25y\amp=\highlightb{2}\highlight{(4x+25)}\highlightg{+y}\highlight{(4x+25)}\\
+                  \amp=(\highlightb{2}\highlightg{+y})\highlight{(4x+25)}
+                  \end{aligned}
+                </m></p>
+              </solution>
+            </exercise>
+
+            <exercise>
+              <statement>
+                <p>
+                  <m>4a^2+10a-10a-25</m>
+                </p>
+              </statement>
+              <solution>
+                <p><m>
+                  \begin{aligned}[t]
+                  4a^2+10a-10a-25\amp=\highlightb{2a}\highlight{(2a+5)}\highlightg{-5}\highlight{(2a+5)}\\
+                  \amp=(\highlightb{2a}\highlightg{-5})\highlight{(2a+5)}
+                  \end{aligned}
+                </m></p>
+              </solution>
+            </exercise>
+
+            <exercise>
+              <statement>
+                <p>
+                  <m>w^2-6wz-7wz+42z^2</m>
+                </p>
+              </statement>
+              <solution>
+                <p><m>
+                  \begin{aligned}[t]
+                  w^2-6wz-7wz+42z^2\amp=\highlightb{w}\highlight{(w-6z)}\highlightg{-7z}\highlight{(w-6z)}\\
+                  \amp=(\highlightb{w}\highlightg{-7z})\highlight{(w-6z)}
+                  \end{aligned}
+                </m></p>
+              </solution>
+            </exercise>
+
+            <exercise>
+              <statement>
+                <p>
+                  <m>xy+5y-2x-10</m>
+                </p>
+              </statement>
+              <solution>
+                <p><m>
+                  \begin{aligned}[t]
+                  xy+5y-2x-10\amp=\highlightb{y}\highlight{(x+5)}\highlightg{-2}\highlight{(x+5)}\\
+                  \amp=(\highlightb{y}\highlightg{-2})\highlight{(x+5)}
+                  \end{aligned}
+                </m></p>
+              </solution>
+            </exercise>
+
+            <exercise>
+              <statement>
+                <p>
+                  <m>x^2-11x-9x+99</m>
+                </p>
+              </statement>
+              <solution>
+                <p><m>
+                  \begin{aligned}[t]
+                  x^2-11x-9x+99\amp=\highlightb{x}\highlight{(x-11)}\highlightg{-9}\highlight{(x-11)}\\
+                  \amp=(\highlightb{x}\highlightg{-9})\highlight{(x-11)}
+                  \end{aligned}
+                </m></p>
+              </solution>
+            </exercise>
+
+            <exercise>
+              <statement>
+                <p>
+                  <m>3x^2-12x+7x-28</m>
+                </p>
+              </statement>
+              <solution>
+                <p><m>
+                  \begin{aligned}[t]
+                  3x^2-12x+7x-28\amp=\highlightb{3x}\highlight{(x-4)}\highlightg{+7}\highlight{(x-4)}\\
+                  \amp=(\highlightb{3x}\highlightg{+7})\highlight{(x-4)}
+                  \end{aligned}
+                </m></p>
+              </solution>
+            </exercise>
+
+            <exercise>
+              <statement>
+                <p>
+                  <m>4y^2-36xy-7xy+63x^2</m>
+                </p>
+              </statement>
+              <solution>
+                <p><m>
+                  \begin{aligned}[t]
+                  4y^2-36xy-7xy+63x^2\amp=\highlightb{4y}\highlight{(y-9x)}\highlightg{-7x}\highlight{(y-9x)}\\
+                  \amp=(\highlightb{4y}\highlightg{-7x})\highlight{(y-9x)}
+                  \end{aligned}
+                </m></p>
+              </solution>
+            </exercise>
+
+          </exercisegroup>
+
+        </exercises>
+
+      </section>

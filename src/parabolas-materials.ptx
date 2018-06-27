@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="parabola-materials">
+    <title>Parabolas</title>
+
+      <xi:include href="./parabolas-videos.ptx" />
+      <xi:include href="./parabolas-standard-form.ptx" />
+      <xi:include href="./parabolas-vertex-form.ptx" />
+      <xi:include href="./parabolas-completing-the-square.ptx" />
+      <xi:include href="./parabolas-additional-practice.ptx" />
+
+
+
+</chapter>

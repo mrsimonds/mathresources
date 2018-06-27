@@ -10,17 +10,196 @@
 <!-- ********************************************************************* -->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-rational-expressions">
-    <title>Rational expressions</title>
+    <title>Rational expressions and rational equations</title>
 
     <exercises>
-      <title>Pretest - what's your current skill set?</title>
+      <title>Domains of Rational Functions</title>
 
       <exercise>
-        <title>Domains of rational functions</title>
+        <title>Explanation and examples</title>
         <statement>
           <p>
-            Follow this link to see some written examples: <xref ref="workshop-rational-expressions-domain-examples">Written Examples</xref>.
+            When presented with a formula for a function named <m>f</m>, barring any stated restrictions, the domain of <m>f</m> is the set of all real numbers for which the formula returns a real number.  For example, <m>9</m> is in the domain of the function <m>f(x)=\sqrt{x-5}</m> because the value of <m>f(9)</m> is a real number (specifically <m>2</m>) where as <m>1</m> is not in the domain because when we apply the formula to <m>1</m> the result is <m>\sqrt{-4}</m> which is not a real number.
           </p>
+          <p>
+            A rational function is a function whose formula can be written in the form <m>\frac{p(x)}{q(x)}</m> where <m>p(x)</m> and <m>q(x)</m> are both polynomial functions.  Determining the domain of a rational function essentially boils down to determining the values of <m>x</m> that do not lie in the domain.  The values excluded from the domain are the values that result in division by zero (which leads to an undefined result).
+          </p>
+          <p>
+            To help facilitate identifying the values that cause the denominator to evaluate to zero, we generally completely factor the denominators of rational expressions.  For reasons of simplification, which is discussed in the next section, we also completely factor the numerators of rational expression.
+          </p>
+          <p>
+            Let's determine the domain of the function <m>f(x)=\frac{x+3}{x^2-12x+20}</m>.  We begin by completely factoring the denominator of the rational expression.
+            <md>
+              <mrow>f(x)\amp=\frac{x+3}{x^2-12x+20}</mrow>
+              <mrow>\amp=\frac{x+3}{(x-10)(x-2)}</mrow>          
+            </md>
+            From the factored expression we can see that the value of <m>x</m> can be neither <m>10</m> nor <m>2</m> as either of those values would cause division by <m>0</m>.  Consequently, the domain of <m>f</m> consists of all real numbers other that <m>2</m> and <m>10</m>.  Using set builder notation we express the domain as <m>\{x\mid x \neq 2, x \neq 10\}</m> and using interval notation we express the domain as
+            <m>(-\infty,2) \cup (2,10) \cup (10,\infty)</m>.
+          </p>
+          <p>
+            Let's determine the domain of the function <m>g(t)=\frac{6}{t^2+9t}</m>.  We begin by factoring.
+            <md>
+              <mrow>g(t)\amp=\frac{6}{t^2+9t}</mrow>
+              <mrow>\amp=\frac{6}{t(t+9)}</mrow>
+            </md>
+            The input variable for <m>g</m> is <m>t</m>, so we need to determine the values of <m>t</m> that would result in division by zero.  The two values are <m>0</m> and <m>-9</m>, so those are the two values that are not in the domain of <m>g</m>.  So the domain of <m>g</m>, stated using set builder notation, is <m>\{x \mid x \neq -9, x \neq 0\}</m>.  Using interval notation, the domain of <m>g</m> is expressed as
+            <m>(-\infty,-9) \cup (-9,0) \cup (9,\infty)</m>.
+          </p>
+          <p>
+            One more example.  This example requires the factor formula <m>a^3-b^3=(a-b)(x^2+ab+b^2)</m>.
+          </p>
+          <p>
+            Let's determine the domain of <m>f(x)=\frac{x-2}{x^3-8}</m>.  Factoring we have:
+            <md>
+              <mrow>f(x)\amp=\frac{x-2}{x^3-8}</mrow>
+              <mrow>\amp=\frac{x-2}{(x-2)(x^2+2x+4)}</mrow>
+            </md>
+            If we replace <m>x</m> with <m>2</m>, the resultant expression is <m>\frac{0}{0}</m>, which is just as undefined as any other expression involving division by zero.  So <m>2</m> is not in the domain of <m>f</m>.  It turns out that <m>2</m> is the only value of <m>x</m> that results in division by zero.  The easiest way to see this is to look at the original denominator.  If <m>x^3-8=0</m>, then <m>x^3=8</m>.  The only real number that cubes to <m>8</m> is <m>2</m>, so that is the only number not in the domain of <m>f</m>.  So the domain of <m>f</m> is 
+            <m>\{x \mid x \neq 2\}</m> or, equivalently, <m>(-\infty,2) \cup (2,\infty)</m>.
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+        <statment>
+          <p>
+            Determine the domain of each function.  State each domain using both set builder notation and interval notation.
+            <ol cols="2">
+              <li><m>f(x)=\frac{2x-8}{x^2-16}</m></li>
+              <li><m>g(t)=\frac{t}{t^2+5t-6}</m></li>
+              <li><m>h(x)=\frac{4x+8}{2x^2-8x}+\frac{x-3}{x^2-6x+8}</m></li>
+              <li><m>m(t)=\frac{t+7}{t^2+49}</m></li>
+              <li><m>p(x)=\frac{1}{x^3-8}</m></li>
+              <li><m>r(t)=\frac{t-3}{3-t}-\frac{t-2}{t-3}</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+      </statment>
+      <solution>
+        <p>
+          <ol>
+
+            <li>
+              <p>
+                <m>
+                  \begin{aligned}[t]
+                  f(x)\amp=\frac{2x-8}{x^2-16}\\
+                  \amp=\frac{2x-8}{(x-4)(x+4)}\\
+                  \end{aligned}
+                </m>
+                <me></me>
+              </p>
+              <p>
+              The domain of <m>f</m> is <m>\{x \mid x \neq -4, x \neq 4\}</m>.
+              </p>
+              <p>
+                The domain of <m>f</m> is <m>(-\infty,-4)\cup(-4,4)\cup(4,\infty)</m>.
+                <me></me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>
+                  \begin{aligned}[t]
+                  g(t)\amp=\frac{t}{t^2+5t-6}\\
+                  \amp=\frac{t}{(t-6)(t+1)}
+                  \end{aligned}
+                </m>
+                <me></me>
+              </p>
+              <p>
+                The domain of <m>g</m> is <m>\{t \mid t \neq -1, t \neq 6\}</m>.
+              </p>
+              <p>
+                The domain of <m>g</m> is <m>(-\infty,-1) \cup (-1,6) \cup (6,\infty)</m>.
+                <me></me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>
+                 \begin{aligned}[t]
+                 h(x)\amp=\frac{4x+8}{2x^2-8x}+\frac{x-3}{x^2-6x+8}\\
+                 \amp=\frac{4x+8}{2x(x-4)}+\frac{x-3}{(x-4)(x-2)}
+                  \end{aligned}
+                </m>
+                <me></me>
+              </p>
+              <p>
+                The domain of <m>h</m> is <m>\{x \mid x \neq 0, x \neq 2, x \neq 4\}</m>. 
+              </p>
+              <p>
+                The domain of <m>h</m> is <m>(-\infty,0) \cup (0,2) \cup (2,4) \cup (4,\infty)</m>.
+                <me></me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>
+                 \begin{aligned}[t]
+                 m(t)=\frac{t+7}{t^2+49}
+                 \end{aligned}
+                </m>
+                <me></me>
+              </p>
+              <p>
+                The domain of <m>m</m> is <m>\{t \mid t \in \mathbb{R}\}</m>. 
+              </p>
+              <p>
+                The domain of <m>m</m> is <m>(-\infty,\infty)</m>.
+                <me></me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>
+                 \begin{aligned}[t]
+                 p(x)\amp=\frac{1}{x^3-8}\\
+                 \amp=\frac{1}{(x-2)(x^2+2x+4)}
+                 \end{aligned}
+                </m>
+                <me></me>
+              </p>
+              <p>
+                The domain of <m>p</m> is <m>\{x \mid x \neq 2\}</m>. 
+              </p>
+              <p>
+                The domain of <m>p</m> is <m>(-\infty,2) \cup (2,\infty)</m>.
+                <me></me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>
+                 \begin{aligned}[t]
+                 r(t)=\frac{t-3}{3-t}-\frac{t-2}{t-3}
+                 \end{aligned}
+                </m>
+                <me></me>
+              </p>
+              <p>
+                The domain of <m>r</m> is <m>\{t \mid t \neq 3\}</m>. 
+              </p>
+              <p>
+                The domain of <m>r</m> is <m>(-\infty,3) \cup (3,\infty)</m>.
+                <me></me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+        <statement>
           <p>
             State the domain of each function using interval notation.
             <ol>
@@ -49,12 +228,174 @@
         </solution>
       </exercise>
 
+    </exercises>
+
+    <exercises>
+      <title>Simplifying Rational Expressions</title>
+
       <exercise>
-        <title>Simplifying rational expressions</title>
+        <title>Explanation and examples</title>
         <statement>
           <p>
-            Follow this link to see some examples: <xref ref="workshop-rational-expressions-simplifying-examples">Written Examples</xref>
+            Recall that multiplying fractions entails multiplying the numerators with one another and multiplying the denominators with one another.  For example:
+            <md>
+              <mrow>\frac{2}{7} \cdot \frac{10}{3}\amp=\frac{2 \cdot 10}{7 \cdot 3}</mrow>
+              <mrow>\amp=\frac{20}{21}</mrow>
+            </md>
+            The process of simplifying a rational expression involves employing the multiplication process in reverse, but in a strategic way.  What we want to do is completely factor both the numerator and the denominator of the expression and then look for factors that occur in both the numerator and the denominator.  We can then factor the common factors from the larger expression as fractions that reduce to one, thereby simplifying the original expression.  This will make more sense when seen it in action.
           </p>
+          <p>
+            Let's simplify the expression <m>\frac{x^2+6x-55}{x^2+x-30}</m>.  We begin by factoring both the numerator and the denominator.
+            <me>\frac{x^2+6x-55}{x^2+x-30}=\frac{(x+11)(x-5)}{(x+6)(x-5)}</me>
+            We now see that there is indeed a factor that is common to both the numerator and the denominator, specifically <m>(x-5)</m>.  We can isolate these factors from the other factors in the form of a fraction that reduces to one.  Picking up where we left off:
+            <md>
+               <mrow>\frac{x^2+6x-55}{x^2+x-30}\amp=\frac{(x+11)(x-5)}{(x+6)(x-5)}</mrow>
+               <mrow>\amp=\frac{x-5}{x-5} \cdot \frac{x+11}{x+6}</mrow>
+            </md>
+            So long as the value of <m>x</m> is not <m>5</m>, the expression <m>\frac{x-5}{x-5}</m> simplifies to <m>1</m>.  Let's go ahead and replace <m>\frac{x-5}{x-5}</m> with <m>1</m>, but when we do so we have to state a domain restriction, that the value of <m>x</m> is not allowed to be <m>5</m>.
+            <md>
+               <mrow>\frac{x^2+6x-55}{x^2+x-30}\amp=\frac{(x+11)(x-5)}{(x+6)(x-5)}</mrow>
+               <mrow>\amp=\frac{x-5}{x-5} \cdot \frac{x+11}{x+6}</mrow>
+               <mrow>\amp=1 \cdot \frac{x+11}{x+6}, x \neq 5</mrow>
+               <mrow>\amp=\frac{x+11}{x+6}, x \neq 5</mrow>
+            </md>
+            As a rule we leave out the line with the explicit factor of <m>1</m>.  So a complete simplification would be as follows.
+            <md>
+               <mrow>\frac{x^2+6x-55}{x^2+x-30}\amp=\frac{(x+11)(x-5)}{(x+6)(x-5)}</mrow>
+               <mrow>\amp=\frac{x-5}{x-5} \cdot \frac{x+11}{x+6}</mrow>
+               <mrow>\amp=\frac{x+11}{x+6}, x \neq 5</mrow>
+            </md>
+            Several examples follow.
+          </p>
+          <p>
+            Example
+            <md>
+              <mrow>\frac{t^2+16t+64}{t^2+14t+48}\amp=\frac{(t+8)(t+8)}{(t+8)(t+6)}</mrow>
+              <mrow>\amp=\frac{t+8}{t+8} \cdot \frac{t+8}{t+6}</mrow>
+              <mrow>\amp=\frac{t+8}{t+6}, t \neq -8</mrow>
+            </md>
+          </p>
+          <p>
+            Example
+            <md>
+              <mrow>\frac{x^2-7x}{x^2-15x+56}\amp=\frac{x(x-7)}{(x-8)(x-7)}</mrow>
+              <mrow>\amp=\frac{x-7}{x-7} \cdot \frac{x}{x-8}</mrow>
+              <mrow>\amp=\frac{x}{x-8}, x \neq 7</mrow>
+            </md>
+          </p>
+          <p>
+            Example
+            <md>
+              <mrow>\frac{y^3-36y}{y^3+36y}\amp=\frac{y(y^2-36)}{y(y^2+36)}</mrow>
+              <mrow>\amp=\frac{y(y+6)(y-6)}{y(x^2+36)}</mrow>
+              <mrow>\amp=\frac{y}{y} \cdot \frac{(y+6)(y-6)}{y^2+36}</mrow>
+              <mrow>\amp=\frac{(y+6)(y-6)}{y^2+36}, y \neq 0</mrow>
+            </md>
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+        <statement>
+          <p>
+            Simplify each expression.  Make sure that you state any necessary domain restrictions.
+            <ol cols="2">
+              <li><m>\frac{x-3}{x^2+x-12}</m></li>
+              <li><m>\frac{x^2-5x+4}{x^2+6x-40}</m></li>
+              <li><m>\frac{x^2+7x}{x^2-7x}</m></li>
+              <li><m>\frac{x^4+21x^2}{5x^3+x^7}</m></li>
+              <li><m>\frac{4t^2-9}{2t-3}</m></li>
+              <li><m>\frac{t^2-16}{t^2+16}</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+        <solution>
+          <ol>
+
+            <li>
+              <p>
+                <m>
+                 \begin{aligned}[t]
+                 \frac{x-3}{x^2+x-12}\amp=\frac{x-3}{(x-3)(x+4)}\\
+                 \amp=\frac{x-3}{x-3} \cdot \frac{1}{x+4}\\
+                 \amp=\frac{1}{x+4}, x \neq 3
+                 \end{aligned}
+                </m>
+                <me></me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>
+                 \begin{aligned}[t]
+                 \frac{x^2-5x+4}{x^2+6x-40}\amp=\frac{(x-4)(x-1)}{(x-4)(x+10)}\\
+                 \amp=\frac{x-4}{x-4} \cdot \frac{x-1}{x+10}\\
+                 \amp=\frac{x-1}{x+10}, x \neq 4
+                 \end{aligned}
+                </m>
+                <me></me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>
+                 \begin{aligned}[t]
+                 \frac{x^2+7x}{x^2-7x}\amp=\frac{x(x+7)}{x(x-7)}\\
+                 \amp=\frac{x}{x} \cdot \frac{x+7}{x-7}\\
+                 \amp=\frac{x+7}{x-7}, x \neq 0
+                 \end{aligned}
+                </m>
+                <me></me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>
+                 \begin{aligned}[t]
+                 \frac{x^4+21x^2}{5x^3+x^7}\amp=\frac{x^2(x^2+21)}{x^3(5+x^4)}\\
+                 \amp=\frac{x^2}{x^2} \cdot \frac{x^2+21}{x(5+x^4)}\\
+                 \amp=\frac{x^2+21}{x(5+x^4)}
+                 \end{aligned}
+                </m>
+                <me></me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>
+                 \begin{aligned}[t]
+                 \frac{4t^2-9}{2t-3}\amp=\frac{(2t-3)(2t+3)}{2t-3}\\
+                 \amp=\frac{2t-3}{2t-3} \cdot \frac{2t+3}{1}\\
+                 \amp=2t+3, t \neq \frac{3}{2}
+                 \end{aligned}
+                </m>
+                <me></me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>
+                 \begin{aligned}[t]
+                 \frac{t^2-16}{t^2+16}=\frac{(t-4)(t+4)}{t^2+16}
+                 \end{aligned}
+                </m>
+              </p>
+            </li>
+          </ol>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+        <statement>
           <p>
             Completely simplify each expression.  Make sure that you state any necessary domain restrictions.
             <ol>
@@ -77,15 +418,246 @@
         </solution>
       </exercise>
 
+    </exercises>
+
+    <exercises>
+      <title>Multiplication and Division of Rational Expressions</title>
+
       <exercise>
-        <title>Multiplying and dividing rational expressions</title>
+        <title>Explanation and examples</title>
         <statement>
           <p>
-            Follow this link to see some examples of multiplying rational expressions: <xref ref="workshop-rational-expressions-multiplying-examples">Written Examples</xref>
+            As suggested in the last section, multiplying rational expressions entails writing the numerators of the expression over the product of the denominators of the expression.  We then simplify the result.  Several examples follow.
           </p>
           <p>
-            Follow this link to see some examples of dividing rational expressions: <xref ref="workshop-rational-expressions-dividing-examples">Written Examples</xref>
+            Example
+            <md>
+              <mrow>\frac{x+3}{x-2} \cdot \frac{x^2-4}{x^2+6x+9}\amp=\frac{(x+3)(x^2-4)}{(x-2)(x^2+6x+9)}</mrow>
+              <mrow>\amp=\frac{(x+3)(x+2)(x-2)}{(x-2)(x+3)(x+3)}</mrow>
+              <mrow>\amp=\frac{x+3}{x+3} \cdot \frac{x-2}{x-2} \cdot \frac{x+2}{x+3}</mrow>
+              <mrow>\amp=\frac{x+2}{x+3}, x \neq 2</mrow>
+            </md>
+            Note that we did not need to state the restriction <m>x \neq -3</m> because a factor of <m>(x+3)</m> is still present in the simplified result.
           </p>
+          <p>
+            Example
+            <md>
+              <mrow>\frac{w^3-1}{w^2-1}\amp=\frac{(w-1)(w^2+w+1)}{(w-1)(w+1)}</mrow>
+              <mrow>\amp=\frac{w-1}{w-1} \cdot \frac{w^2+w+1}{w+1}</mrow>
+              <mrow>\amp=\frac{w^2+w+1}{w+1},w \neq 1</mrow>
+            </md>
+          </p>
+          <p>
+            Example
+            <md>
+              <mrow>\frac{10x-35}{5x^2+25x} \cdot \frac{x^2+8x+15}{2x-7}\amp=\frac{(10x-35)(x^2+8x+15)}{(5x^2+25x)(2x-7)}</mrow>
+              <mrow>\amp=\frac{5(2x-7)(x+3)(x+5)}{5x(x+5)(2x-7)}</mrow>
+              <mrow>\amp=\frac{5}{5} \cdot \frac{2x-7}{2x-7} \cdot \frac{x+5}{x+5} \cdot \frac{x+3}{x}</mrow>
+              <mrow>\amp=\frac{x+3}{x}, x \neq \frac{7}{2}, x \neq -5</mrow>
+            </md>
+          </p>
+          <p>
+            Example
+            <md>
+              <mrow>\frac{8}{2x+22} \cdot (x^2+22x+121)\amp=\frac{8}{2x+22} \cdot \frac{x^2+22x+121}{1}</mrow>
+              <mrow>\amp=\frac{8(x^2+22x+121)}{(2x+22) \cdot 1}</mrow>
+              <mrow>\amp=\frac{8(x+11)(x+11)}{2(x+11)}</mrow>
+              <mrow>\amp=\frac{x+11}{x+11} \cdot \frac{8}{2} \cdot \frac{x+11}{1}</mrow>
+              <mrow>\amp=4(x+11), x \neq -11</mrow>
+            </md>
+          </p>
+          <p>
+            Let's move on to division.  Recall that when we divide one fraction by another, we rewrite the quotient as a product after reciprocating the divisor.  That is:
+            <me>\frac{a}{b} \div \frac{c}{d}=\frac{a}{b} \cdot \frac{d}{c}</me>.
+          </p>
+          <p>
+            When working with rational expressions that include division, we always first rewrite the quotient as a product and then simplify the result.  When we convert the quotient to a product, we need to state any domain restrictions in the original divisior that are lost by reciprocating the divisor.  For example:
+            <md>
+              <mrow>\frac{3}{x-10} \div \frac{9}{x-5}\amp=\frac{3}{x-10} \cdot \frac{x-5}{9},x \neq 5</mrow>
+              <mrow>\amp=\frac{3(x-5)}{(x-10) \cdot 9}, x \neq 5</mrow>
+              <mrow>\amp=\frac{3(x-5)}{9(x-10)},x \neq 5</mrow>
+            </md>
+          </p>
+          <p>
+            When presented with a quotient in which one of the expressions is a rational expression but the other expression is a polynomial, it can be useful to write the polynomial as a rational expression with a denominator of <m>1</m>.  Two examples follow.
+          </p>
+          <p>
+            Example
+            <md>
+              <mrow>\amp(x^2+8x+12) \div \frac{x^2+4x-12}{x^2-36}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\frac{x^2+8x+12}{1} \div \frac{x^2+4x-12}{x^2-36}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\frac{x^2+8x+12}{1} \cdot \frac{x^2-36}{x^2+4x-12}, x \neq 6, x \neq -6</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x^2+8x+12)(x^2-36)}{1 \cdot (x^2+4x-12)}, x \neq 6, x \neq -6</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x+6)(x+2)(x+6)(x-6)}{(x+6)(x-2)},x \neq 6</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\frac{x+6}{x+6} \cdot \frac{(x+2)(x+6)(x-6)}{x-2}, x \neq 6</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x+2)(x+6)(x-6)}{x-2}, x \neq 6, x \neq -6</mrow>
+            </md>
+          </p>
+          <p>
+            Example
+            <md>
+              <mrow>\frac{x^2-18x+72}{9x^2-16} \div (9x^2-16x)\amp=\frac{x^2-18x+72}{9x^2-16} \div \frac{9x^2-16x}{1}</mrow>
+              <mrow>\amp=\frac{x^2-18x+72}{9x^2-16} \cdot \frac{1}{9x^2-16x}</mrow>
+              <mrow>\amp=\frac{(x^2-18x+72) \cdot 1}{(9x^2-16)(9x^2-16x)}</mrow>
+              <mrow>\amp=\frac{(x-12)(x-6)}{(3x+4)(3x-4) \cdot x(9x-16)}</mrow>
+              <mrow>\amp=\frac{(x-12)(x-6)}{x(3x+4)(3x-4)(9x-16)}</mrow>
+            </md>
+          </p>
+          <p>
+            When there is repeated division between rational expression, every divisor ends up being reciprocated when the expression is rewritten as a product.  The is a result of the fact that operations are performed left-to-right.  An example follows.
+           <md>
+              <mrow>\amp\frac{x-3}{x-7} \div \frac{x+8}{x-12} \div \frac{x+8}{x-7}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =(\frac{x-3}{x-7} \div \frac{x+8}{x-12}) \div \frac{x+8}{x-7}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =(\frac{x-3}{x-7} \cdot \frac{x-12}{x+8}) \div \frac{x+8}{x-7}, x \neq 12</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x-3)(x-12)}{(x-7)(x+8)} \div \frac{x+8}{x-7}, x \neq 12</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x-3)(x-12)}{(x-7)(x+8)} \cdot \frac{x-7}{x+8}, x \neq 12</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x-3)(x-12)(x-7)}{(x-7)(x+8)(x+8)}, x \neq 12</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\frac{x-7}{x-7} \cdot \frac{(x-3)(x-12)}{(x+8)(x+8)}, x \neq 12</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x-3)(x-12)}{(x+8)^2}, x \neq 12, x \neq 7</mrow>
+            </md>
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+        <statement>
+          <p>
+            Multiply or divide and simplify each result.  Make sure that you state any necessary domain restrictions. 
+            <ol>
+              <li><m>\frac{x-4}{2x+3} \cdot \frac{x-1}{x-4}</m></li>
+              <li><m>\frac{12x+18}{x^2-1} \cdot \frac{x+1}{6x+9}</m></li>
+              <li><m>\frac{4x^2+20x+24}{x^2-25} \cdot \frac{5x+25}{x^2-9}</m></li>
+              <li><m>(x^2+4x+4) \cdot \frac{x+2}{x^2-4}</m></li>
+              <li><m>\frac{x^2-9}{x+1} \div \frac{x+3}{x^2-1}</m></li>
+              <li><m>\frac{x+5}{x^2-6x-7} \cdot \frac{x^2+1}{x^2+11x+30} \div \frac{x-7}{x+1}</m></li>
+              <li><m>\frac{x^2+2x-15}{4x+20} \div (x-3)</m></li>
+              <li><m>\frac{2x}{x-2} \div \frac {x+2}{x} \div \frac{7x}{x^2-4}</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+                <p>
+                  <m>
+                   \begin{aligned}[t]
+                   \frac{x-4}{2x+3} \cdot \frac{x-1}{x-4}\amp=\frac{(x-4)(x-1)}{(2x+3)(x-4)}\\
+                   \amp=\frac{x-4}{x-4} \cdot \frac{x-1}{2x+3}\\
+                   \amp=\frac{x-1}{2x+3}, x \neq 4
+                   \end{aligned}
+                  </m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>
+                   \begin{aligned}[t]
+                   \frac{12x+18}{x^2-1} \cdot \frac{x+1}{6x+9}\amp=\frac{(12x+18)(x+1)}{(x^2-1)(6x+9)}\\
+                   \amp=\frac{6(2x+3)(x+1)}{(x-1)(x+1) \cdot 3(2x+3)}\\
+                   \amp=\frac{x+1}{x+1} \cdot \frac{2x+3}{2x+3} \cdot \frac{6}{3(x-1)}\\
+                   \amp=\frac{2}{x-1}, x \neq -1, x \neq -\frac{3}{2}
+                   \end{aligned}
+                  </m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>
+                   \begin{aligned}[t]
+                   \frac{4x^2+20x+24}{x^2-25} \cdot \frac{5x+25}{x^2-9}\amp=\frac{(4x^2+20x+24)(5x+25)}{(x^2-25)(x^2-9)}\\
+                   \amp=\frac{4(x^2-5x+6) \cdot 5(x+5)}{(x-5)(x+5)(x-3)(x+3)}\\
+                   \amp=\frac{20(x-3)(x-2)(x+5)}{(x-5)(x+5)(x-3)(x+3)}\\
+                   \amp=\frac{x-3}{x-3} \cdot \frac{x+5}{x+5} \cdot \frac{20(x-3)}{(x-5)(x+3)}\\
+                   \amp=\frac{20(x-3)}{(x-5)(x+3)}, x \neq 3, x \neq -5
+                   \end{aligned}
+                  </m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>
+                   \begin{aligned}[t]
+                   (x^2+4x+4) \cdot \frac{x+2}{x^2-4}\amp=\frac{x^2+4x+4}{1} \cdot \frac{x+2}{x^2-4}\\
+                   \amp=\frac{(x^2+4x+4)(x+2)}{x^2-4}\\
+                   \amp=\frac{(x+2)(x+2)(x+2)}{(x+2)(x-2)}\\
+                   \amp=\frac{x+2}{x+2} \cdot \frac{(x+2)(x+2)}{x-2}\\
+                   \amp=\frac{(x+2)^2}{x-2}, x \neq -2
+                   \end{aligned}
+                  </m>
+                  <me></me>
+                </p>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \amp\frac{x^2-9}{x+1} \div \frac{x+3}{x^2-1}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x^2-9}{x+1} \cdot \frac{x^2-1}{x+3}, x \neq 1\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{(x^2-9)(x^2-1)}{(x+1)(x+3)}, x \neq 1\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{(x+3)(x-3)(x+1)(x-1)}{(x+1)(x+3)}, x \neq 1\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x+3}{x+3} \cdot \frac{x+1}{x+1} \cdot \frac{(x-3)(x-1)}{1}, x \neq 1\\
+                  \amp \phantom{={}} \phantom{={}} =(x-3)(x-1), x \neq 1, x \neq -1, x \neq -3
+                  \end{aligned}
+                </m>
+                <me></me>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \amp\frac{x+5}{x^2-6x-7} \cdot \frac{x^2+1}{x^2+11x+30} \div \frac{x-7}{x+1}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x+5}{x^2-6x-7} \cdot \frac{x^2+1}{x^2+11x+30} \cdot \frac{x+1}{x-7}, x \neq -1\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{(x+5)(x^2+1)(x+1)}{(x^2-6x+7)(x^2+11x+30)(x-7)}, x \neq -1\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{(x+5)(x^2+1)(x+1)}{(x-7)(x+1)(x+5)(x+6)(x-7)}, x \neq -1\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x+5}{x+5} \cdot \frac{x+1}{x+1} \cdot \frac{x^2+1}{(x+6)(x-7)}, x \neq -1\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x^2+1}{(x+6)(x-7)}, x \neq -1, x \neq -5
+                  \end{aligned}
+                </m>
+                <me></me>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{x^2+2x-15}{4x+20} \div (x-3)\amp=\frac{x^2+2x-15}{4x+20} \div \frac{x-3}{1}\\
+                  \amp=\frac{x^2+2x-15}{4x+20} \cdot \frac{1}{x-3}\\
+                  \amp=\frac{x^2+2x-15}{(4x+20)(x-3)}\\
+                  \amp=\frac{(x+5)(x-3)}{4(x+5)(x-3)}\\
+                  \amp=\frac{x+5}{x+5} \cdot \frac{x-3}{x-3} \cdot \frac{1}{4}\\
+                  \amp=\frac{1}{4}, x \neq -5, x \neq 3
+                  \end{aligned}
+                </m>
+                <me></me>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \amp\frac{2x}{x-2} \div \frac{x+2}{x} \div \frac{7x}{x^2-4}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{2x}{x-2} \cdot \frac {x}{x+2} \cdot \frac{x^2-4}{7x}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{2x \cdot x \cdot (x^2-4)}{(x-2) \cdot (x+2) \cdot 7x}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{2x^2(x+2)(x-2)}{7x(x-2)(x+2)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x}{x} \cdot \frac{x+2}{x+2} \cdot \frac{x-2}{x-2} \cdot \frac{2x}{7}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{2x}{7}, x \neq 0, x \neq 2, x \neq -2
+                  \end{aligned}
+                </m>
+              </li>
+
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+        <statement>
           <p>
             Multiply or divide as indicated.  Completely simplify each result and state any necessary domain restrictions.
             <ol>
@@ -110,22 +682,537 @@
         </solution>
       </exercise>
 
+    </exercises>
+
+    <exercises>
+      <title>Addition and Subtraction of Rational Expressions</title>
+
       <exercise>
-        <title>Adding and subtracting rational expressions</title>
+        <title>Explanation and examples</title>
         <statement>
           <p>
-            Follow this link for some examples of combining rational expressions that have common denominators: <xref ref="workshop-rational-expressions-combining-common-denominator-examples">Written Examples</xref>
+            Recall that when adding or subtracting fractions that have a common denominator, we add or subtract the numerators over a single occurrence of the denominator.  We then simplify the result (i.e. reduce the resultant fraction <mdash/> if it reduces). Two examples are shown below.
+            <sidebyside widths="50% 50%" margins="0%">
+              <p>
+                <md>
+                  <mrow>\frac{1}{9}+\frac{5}{9}\amp=\frac{1+5}{9}</mrow>
+                  <mrow>\amp=\frac{6}{9}</mrow>
+                  <mrow>\amp=\frac{2}{3}</mrow>
+                </md>
+              </p>
+              <p>
+                <md>
+                  <mrow>\frac{4}{15}-\frac{7}{15}\amp=\frac{4-7}{15}</mrow>
+                  <mrow>\amp=\frac{-3}{15}</mrow>
+                  <mrow>\amp=-\frac{1}{5}</mrow>
+                </md>
+              </p>
+            </sidebyside>
           </p>
           <p>
-            Follow this link for some examples of combining rational expressions with unlike denominators: <xref ref="workshop-rational-expressions-combining-no-common-factors-examples">Written Examples</xref>
+            The same strategy is used when adding or subtracting rational expressions that have a common denominator.  When subtracting a fraction whose numerator has multiple terms, we need to be careful to distribute the subtraction to each term.  Regardless, once the numerators are added or subtracted we need to simplify, factor, and cancel any factors common to the numerator and denominator. Several examples of both addition and subtraction of rational expressions follow.
           </p>
           <p>
-            Follow this link to read a discussion about finding the lowest common denominator: <xref ref="workshop-rational-expressions-combining-common-factors-examples">Written examples</xref>
+            Example
+            <md>
+              <mrow>\frac{x+3}{x-7}+\frac{x-17}{x-7}\amp=\frac{x+3+x-17}{x-7}</mrow>
+              <mrow>\amp=\frac{2x-14}{x-7}</mrow>
+              <mrow>\amp=\frac{2(x-7)}{x-7}</mrow>
+              <mrow>\amp=\frac{x-7}{x-7} \cdot \frac{2}{1}</mrow>
+              <mrow>\amp=2, x \neq 7</mrow>
+            </md>
           </p>
           <p>
-            Follow this link for some examples of combining rational expressions that contain opposite denominators:  <xref ref="workshop-rational-expressions-combining-opposite-factors-examples">Written examples</xref>
+            Example
+            <md>
+              <mrow>\amp\frac{3x^2+8x-2}{(2x+1)(x-3)}-\frac{x^2+15x+2}{(2x-1)(x-3)}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\frac{3x^2+8x-2-x^2-15x-2}{(2x+1)(x-3)}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\frac{2x^2-7x-4}{(2x+1)(x-3)}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\frac{2x^2-8x+x-4}{(2x+1)(x-3)}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\frac{2x(x-4)+1 \cdot (x-4)}{(2x+1)(x-3)}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\frac{(x-4)(2x+1)}{(2x+1)(x-3)}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\frac{2x+1}{2x+1} \cdot \frac{x-4}{x-3}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\frac{x-4}{x-3}, x \neq -\frac{1}{2}</mrow>
+            </md>
           </p>
-          
+          <p>
+            Example
+            <md>
+              <mrow>\frac{x^2+3x-24}{x^2-11x+28}-\frac{20-4x}{x^2-11x+28}\amp=\frac{x^2+3x-24-20+4x}{x^2-11x+28}</mrow>
+              <mrow>\amp=\frac{x^2+7x-44}{x^2-11x+28}</mrow>
+              <mrow>\amp=\frac{(x+11)(x-4)}{(x-7)(x-4)}</mrow>
+              <mrow>\amp=\frac{x-4}{x-4} \cdot \frac{x+11}{x-7}</mrow>
+              <mrow>\amp=\frac{x+11}{x-7}, x \neq 4</mrow>
+            </md>
+          </p>
+          <p>
+            One way of thinking about the fraction <m>\frac{3}{8}</m> is that an object has been broken up into eight pieces of equal size and we have retained three of the eight pieces.  In that sense, the denominator keeps track of the number of pieces (of equal size) that a whole object has broken into and the numerator keeps track of the number of pieces retained.  When interpreting fractions, it is vital that every piece of the whole is the same size as every other piece of the whole (whatever "the whole" has been defined to be).
+          </p>
+          <p>
+            Consider the sum <m>\frac{1}{2}+\frac{1}{3}</m>.  There is a fundamental problem with this sum as currently written, and that is that the pieces of the whole in the first fraction are larger than the pieces of the whole in the second fraction.  For example, let's say that we cut two cakes of equal size, one into two pieces and the other into three pieces.  Half a cake is larger than a third of a similarly sized cake.  If we want to express the sum of <m>\frac{1}{2}</m> and <m>\frac{1}{3}</m> as a single fraction, we first need to cut each of our cakes into equal number of pieces.  That is, we need to establish a common denominator between the two fractions.
+          </p>
+          <p>
+            Thinking about our cakes, if we cut each half into three pieces and each third into two pieces, all of the resultant pieces will be one-sixth of the original cake.  Also, cutting each half into three pieces triples the number of pieces whereas cutting each third into two pieces doubles the number of pieces.  The process is represented by the equation
+            <me>
+              \frac{1}{2}+\frac{1}{3}=\frac{1}{2} \cdot \frac{3}{3}+\frac{1}{3} \cdot \frac{2}{2}.
+            </me>
+            Note that the products in the denominator represent the additional cuts whereas the products in the numerators represent the resultant increase in the number of pieces retained. 
+          </p>
+          <p>
+            After performing the products, both of our cakes have been cut into six pieces of equal size, so we can simply add the number of retained pieces over the denominator of six.  The calculation is completed below.
+            <md>
+              <mrow>\frac{1}{2}+\frac{1}{3}\amp=\frac{1}{2} \cdot \frac{3}{3}+\frac{1}{3} \cdot \frac{2}{2}</mrow>
+              <mrow>\amp=\frac{3}{6}+\frac{2}{6}</mrow>
+              <mrow>\amp=\frac{3+2}{6}</mrow>
+              <mrow>\amp=\frac{5}{6}</mrow>
+            </md>
+          </p>
+          <p>
+            When combining rational expressions we must also first establish common denominators between all of the expressions.  We first factor all denominators and then assess the situation.  The easiest case is when none of the denominators share any factors.  That is the focus of this section.  
+          </p>
+          <p>
+            When the denominators share no common factors, the least common denominator (LCD) is simply the product of every factor the occurs in any given denominator (along with any exponent that occurs on that factor).
+          </p>
+          <p>
+            For example, the LCD in the sum <me>\frac{1}{x-2}+\frac{x+5}{x-3}</me> is <m>(x-2)(x-3)</m>. 
+          </p>
+          <p>
+            Also, the LCD in the difference 
+            <me>\frac{9}{x^2(x+7)}-\frac{11}{x+1}</me> is <m>x^2(x+7)(x+1)</m>.
+          </p>
+          <p>
+            When combining the fractions, we need to assess the situation term-by-term.  For each term we introduce any factor missing from the LCD and balance that action by also introducing the same factors to the numerator.  This is illustrated below.
+            <me>\frac{x}{x-4}+\frac{5}{x+3}=\frac{x}{x-4} \cdot \frac{x+3}{x+3} +\frac{5}{x+3} \cdot \frac{x-4}{x-4}</me>
+          </p>
+          <p>
+            Once the common denominator has been established, we can go ahead and add or subtract the numerators over the common denominator.  We have to be deliberate in this execution.  Specifically:
+          </p>
+          <p>
+            If we want to get the correct answer we must always fully expand the numerator and factor if possible.
+          </p>
+          <p>
+            Put another way:
+          </p>
+          <p>
+            If we start crossing things out before the numerator has been fully expanded (and factored when possible), we will not get the correct answer.
+          </p>
+          <p>
+            Additionally:
+          </p>
+          <p>
+            If we want to get the correct answer we should never expand the denominator, as that action might obscure a common factor to the numerator and denominator.
+          </p>
+          <p>
+            Picking up where we left off in the last example, we complete the addition below.
+          <md>
+            <mrow>\frac{x}{x-4}+\frac{5}{x+3}\amp=\frac{x}{x-4} \cdot \frac{x+3}{x+3} +\frac{5}{x+3} \cdot \frac{x-4}{x-4}</mrow>
+            <mrow>\amp=\frac{x(x+3)+5(x-4)}{(x-4)(x+3)}</mrow>
+            <mrow>\amp=\frac{x^2+3x+5x-20}{(x-4)(x+3)}</mrow>
+            <mrow>\amp=\frac{x^2+8x-20}{(x-4)(x+3)}</mrow>
+            <mrow>\amp=\frac{(x+10)(x-2)}{(x-4)(x+3)}</mrow>
+          </md>
+          </p>
+          <p>
+            Several examples follow.
+          </p>
+
+          <p>
+            Example
+            <md>
+              <mrow>\frac{3}{x}+\frac{5}{x-4}\amp=\frac{3}{x} \cdot \frac{x-4}{x-4}+\frac{5}{x-4} \cdot \frac{x}{x}</mrow>
+              <mrow>\amp=\frac{3(x-4)+5x}{x(x-4)}</mrow>
+              <mrow>\amp=\frac{3x-12+5x}{x(x-4)}</mrow>
+              <mrow>\amp=\frac{8x-12}{x(x-4)}</mrow>
+              <mrow>\amp=\frac{4(2x-3)}{x(x-4)}</mrow>
+            </md>
+          </p>
+
+          <p>
+            Example
+            <md>
+              <mrow>\frac{x+1}{x-3}-\frac{x+2}{x+1}\amp=\frac{x+1}{x-3} \cdot \frac{x+1}{x+1}-\frac{x+2}{x+1} \cdot \frac{x-3}{x-3}</mrow>
+              <mrow>\amp=\frac{(x+1)(x+1)-(x+2)(x-3)}{(x+1)(x-3)}</mrow>
+              <mrow>\amp=\frac{x^2+2x+1-(x^2-x-6)}{(x+1)(x-3)}</mrow>
+              <mrow>\amp=\frac{x^2+2x+1-x^2+x+6}{(x+1)(x-3)}</mrow>
+              <mrow>\amp=\frac{3x+7}{(x+1)(x-3)}</mrow>
+            </md>
+          </p>
+
+          <p>
+            Example
+            <md>
+              <mrow>\frac{x^2}{x-1}+x\amp=\frac{x^2}{x-1}+\frac{x}{1}</mrow>
+              <mrow>\amp=\frac{x^2}{x-1}+\frac{x}{1} \cdot \frac{x-1}{x-1}</mrow>
+              <mrow>\amp=\frac{x^2+x(x-1)}{x-1}</mrow>
+              <mrow>\amp=\frac{x^2+x^2-x}{x-1}</mrow>
+              <mrow>\amp=\frac{2x^2-x}{x-1}</mrow>
+              <mrow>\amp=\frac{x(2x-1)}{x-1}</mrow>
+            </md>
+          </p>
+
+          <p>
+            Example
+            <md>
+              <mrow>\frac{1}{x-7}-\frac{1}{x^2+4}\amp=\frac{1}{x-7} \cdot \frac{x^2+4}{x^2+4}-\frac{1}{x^2+4} \cdot \frac{x-7}{x-7}</mrow>
+              <mrow>\amp=\frac{1 \cdot (x^2+4)-1 \cdot (x-7)}{(x-7)(x^2+4)}</mrow>
+              <mrow>\amp=\frac{x^2+4-x+7}{(x-7)(x^2+4)}</mrow>
+              <mrow>\amp=\frac{x^2-x+11}{(x-7)(x^2+4)}</mrow>
+            </md>
+          </p>
+          <p>
+            The basic strategy for adding and/or subtracting rational expressions always begins with establishing the lowest common denominator of all of the expressions in the sum or difference.  As discussed in the last section, this is extremely straight forward when the denominators have no common factors.  Things get a little more dicey when there a both common factors and non-common factors.  Specifically, it can be tempting to include too many occurrences of a given factor.
+          </p>
+          <p>
+            Consider<me>\frac{3}{(x-4)(x+5)}+\frac{6}{(x-4)(x-2)}</me>.
+            If we simply multiply the two denominators we have<me>(x-4)(x+5)(x-4)(x-2)</me>.  But this expression has one more factor of of <m>(x-4)</m> then is needed in the LCD.  There is no reason to introduce second factors of <m>(x-4)</m> to the denominators - they already have a single occurrence of that factor in common.  We can create common denominators by introducing a factor of <m>(x-2)</m> to the first denominator and a factor of <m>(x+5)</m> to the second denominator.  This will result in a the common denominator:
+            <me>(x-4)(x+5)(x-2)</me>
+          </p>
+          <p>
+            On strategy for establishing the LCD is to start by listing all of the factors in the denominator of the first term.  Then look at the second denominator and add any factors that are present but not yet listed. Repeat that for the third term (if present) and continue until all denominators have been addressed.
+          </p>
+          <p>
+            Let's consider <me>\frac{1}{(x-1)(x-1)(x+3)}-\frac{5}{(x-1)(x-7)(x+3)}+\frac{7}{(x-1)(x-1)(x-1)}</me>.  From the first term we know that the LCD must include
+            <me>(x-1)(x-1)(x+3)</me>.  Looking at the denominator of the second term we see a factor of <m>(x-7)</m> that has been accounted for, so adding that to our "list," the LCD grows to<me>(x-1)(x-1)(x+3)(x-7)</me>.  Finally, comparing the denominator of the third term to our "LCD in progress," we see that two out of three factors of <m>(x-1)</m> have been accounted for, so we need to add one more factor of <m>(x-1)</m> to the LCD.  So our actual LCD is<me>(x-1)^3(x+3)(x+7)</me>.  
+          </p>
+          <p>
+            Another strategy for determining the LCD goes as follows.
+              <p>
+                <ol label="1">
+                  <li>Ignoring exponents, any factor that occurs in at least one denominator occurs in the LCD</li>
+                  <li>For any given factor, the exponent that appears on that factor in the LCD is the largest exponent that appears on the factor in any single denominator</li>
+                </ol>
+              </p>
+              <p>
+            Let's consider <me>\frac{1}{x^2(x-3)^2}-\frac{2}{x^4(x-3)(x+5)^3}-\frac{3}{(x-3)^2(x+5)^7}</me>Ignoring exponents, the factors that occur in at least one denominator are <m>x</m>, <m>(x-3)</m>, and <m>(x+5)</m>.  The largest exponents that occurs on each factor in any one denominator are, respectively, <m>4</m>, <m>2</m>, and <m>7</m>.  So the LCD for the expression is<me>x^4(x-3)^2(x+7)^7</me>.
+          </p>
+          </p>
+          <p>
+            The factors <m>(x-8)</m> and <m>(8-x)</m> are called opposite factors, because when we replace <m>x</m> with any value other than <m>8</m> the factors evaluate to opposite numbers.  For example if we replace <m>x</m> with <m>20</m>, the expressions evaluate to <m>12</m> and <m>-12</m>, respectively.  Because the factors are opposites, it must be the case that <me>(x-8)=-1 \cdot (8-x)</me>.
+          </p>
+          <p>
+            Let's consider the expression <me>\frac{x^2}{x-8}+\frac{64}{8-x}</me>.  At first blush, you might think that the LCD for the expression is <m>(x-8)(8-x)</m>, but that expression contains one too many factors.  We can transform the factor <m>(8-x)</m> into <m>(x-8)</m> by multiplying by <m>-1</m>.  Of course, when we do that we need to balance the action by also multiplying the numerator (<m>64</m>) by <m>-1</m>.  Let's go ahead and simplify the expression.
+            <md>
+              <mrow>\frac{x^2}{x-8}+\frac{64}{8-x}\amp=\frac{x^2}{x-8}+\frac{64}{8-x} \cdot \frac{-1}{-1}</mrow>
+              <mrow>\amp=\frac{x^2}{x-8}+\frac{-64}{x-8}</mrow>
+              <mrow>\amp=\frac{x^2-64}{x-8}</mrow>
+              <mrow>\amp=\frac{(x-8)(x+8)}{x-8}</mrow>
+              <mrow>\amp=\frac{x-8}{x-8} \cdot \frac{x+8}{1}</mrow>
+              <mrow>\amp=x+8,, x \neq 8</mrow>
+            </md>
+          </p>
+          <p>
+            Let's consider the expression <me>\frac{x+1}{x^2-10x+25}-\frac{x-1}{25-x^2}</me>. 
+            We begin by observing that <me>x^2-10x+25=(x-5)(x+5) \text{ and } 25-x^2=(5-x)(5+x)</me>.  We can see that the denominators contain opposite factors, but unraveling the LCD would be a lot easier if the factors were actually identical.  We can force that situation by always making sure that the leading terms of each denominator have positive coefficients.  Recall that the leading term of a polynomial of <m>x</m> is the term that contains the greatest power of <m>x</m>.  In the case of <m>25-x^2</m>, that would be <m>-x^2</m>.  We want the coefficient on that term to be positive, so we'll multiply by <m>-1</m>.  Let's do that (with the requisite balancing action).
+            <md>
+              <mrow>\frac{x+1}{x^2-10x+25}-\frac{x-1}{25-x^2}\amp=\frac{x+1}{x^2-10x+25}-\frac{x-1}{25-x^2} \cdot \frac{-1}{-1}</mrow>
+              <mrow>\amp=\frac{x+1}{x^2-10x+25}-\frac{1-x}{x^2-25}</mrow>
+              <mrow>\amp=\frac{x+1}{(x-5)(x-5)}-\frac{1-x}{(x-5)(x+5)}</mrow>
+            </md>
+            We can now see that the LCD requires two factors of <m>(x-5)</m> and one factor of <m>(x+5)</m>.  Lets' see the simplification process from start to finish.
+            <md>
+              <mrow>\frac{x+1}{x^2-10x+25} \amp -\frac{x-1}{25-x^2}</mrow>
+              <mrow>\amp=\frac{x+1}{x^2-10x+25}-\frac{x-1}{25-x^2} \cdot \frac{-1}{-1}</mrow>
+              <mrow>\amp=\frac{x+1}{x^2-10x+25}-\frac{1-x}{x^2-25}</mrow>
+              <mrow>\amp=\frac{x+1}{(x-5)(x-5)}-\frac{1-x}{(x-5)(x+5)}</mrow>
+              <mrow>\amp=\frac{x+1}{(x-5)(x-5)} \cdot \frac{x+5}{x+5} -\frac{1-x}{(x-5)(x+5)} \cdot \frac{x-5}{x-5}</mrow>
+              <mrow>\amp=\frac{(x+1)(x+5)-(1-x)(x-5)}{(x-5)(x-5)(x+5)}</mrow>
+              <mrow>\amp=\frac{(x^2+6x+5)-(-x^2+6x-5)}{(x-5)(x-5)(x+5)}</mrow>
+              <mrow>\amp=\frac{x^2+6x+5+x^2-6x+5}{(x-5)(x-5)(x+5)}</mrow>
+              <mrow>\amp=\frac{2x^2+10}{(x-5)(x-5)(x+5)}</mrow>
+              <mrow>\amp=\frac{2(x^2+5)}{(x-5)^2(x+5)}</mrow>
+            </md>          
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+        <statement>
+          <p>Problem Set 1</p>
+          <p>
+            Determine the least common denominator for each expression.  That's it - do not actually combine the expressions.
+            <ol label="i">
+              <li><m>\frac{x+4}{(x-6)^2}+\frac{x-2}{(x-6)(x+3)}</m></li>
+              <li><m>\frac{5}{x+2}-\frac{6}{(x+2)^3}</m></li>
+              <li><m>-\frac{x^2+4}{x^2-25}-\frac{x^2-4}{x^2+10x+25}</m></li>
+              <li><m>\frac{3}{a^3bc^2}+\frac{7}{4a^3b}-\frac{5}{6bc^4}</m></li>
+              <li><m>\frac{x+10}{x^3(x-6)^4}+\frac{x+2}{x(x-6)}</m></li>
+            </ol>
+          </p>
+          <p>Problem Set 2</p>
+          <p>
+            Add and/or subtract each set of expressions.  Make sure that you simplify each result.
+            <ol>
+              <li><m>\frac{2x}{x-7}-\frac{14}{x-7}</m></li>
+              <li><m>\frac{x^2}{x^2+4x+4}+\frac{9x+14}{x^2+4x+4}</m></li>
+              <li><m>\frac{2x^2}{x^2-6x-72}-\frac{240-4x}{x^2-6x-72}</m></li>
+              <li><m>\frac{5}{x-2}-\frac{1}{x+7}</m></li>
+              <li><m>\frac{2}{x-2}+\frac{x+3}{x+4}</m></li>
+              <li><m>-\frac{1}{x}+\frac{x+1}{x^2-3x-10}</m></li>
+              <li><m>\frac{x}{x^2+7x+12}-\frac{x}{x-3}</m></li>
+              <li><m>\frac{x}{(2x-1)(x+5)}-\frac{x+1}{(2x-1)(x+16)}</m></li>
+              <li><m>-\frac{1}{x^2+4x-12}+\frac{1}{x^2-7x-6}</m></li>
+              <li><m>\frac{4}{x^2-3x+2}+\frac{4}{x-1}</m></li>
+              <li><m>\frac{x-2}{x^2-5x}+\frac{2x}{x^2-10x+25}</m></li>
+              <li><m>\frac{4}{x^3-4x^2+4x}+\frac{2}{x^2-2x}</m></li>
+              <li><m>\frac{3}{x-7}-\frac{6}{7-x}</m></li>
+              <li><m>\frac{x}{x-9}+\frac{9}{9-x}</m></li>
+              <li><m>\frac{28}{x^2-8x-33}+\frac{2}{11-x}</m></li>
+              <li><m>\frac{x}{x^2-25}+\frac{2}{-x^2+x-20}</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+        <solution>
+          <p>Problem Set 1</p>
+          <p>
+            <ol label="i">
+              <li>The least common denominator is <m>(x-6)^2(x+3)</m>.</li>
+              <li>The least common denominator is <m>(x+2)^3</m>.</li>
+              <li>The least common denominator is <m>(x-5)(x+5)^2</m>.</li>
+              <li>The least common denominator is <m>12a^3bc^4</m>.</li>
+              <li>The least common denominator is <m>x^3(x-6)^4</m>.</li>
+            </ol>
+          </p>
+          <p>Problem Set 2</p>
+          <p>
+            <ol>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{2x}{x-7}-\frac{14}{x-7}\amp=\frac{2x-14}{x-7}\\
+                  \amp=\frac{2(x-7)}{x-7}\\
+                  \amp=2, x \neq 7
+                  \end{aligned}
+                </m>
+                <me></me>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{x^2}{x^2+4x+4}+\frac{9x+14}{x^2+4x+4}\amp=\frac{x^2+9x+14}{x^2+4x+4}\\
+                  \amp=\frac{(x+7)(x+2)}{(x+2)(x+2)}\\
+                  \amp=\frac{x+2}{x+2} \cdot \frac{x+7}{x+2}\\
+                  \amp=\frac{x+7}{x+2}
+                  \end{aligned}
+                </m>
+                <me></me>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{2x^2}{x^2-6x-72}-\frac{240-4x}{x^2-6x-72}\amp=\frac{2x^2-240+4x}{x^2-6x-72}\\
+                  \amp=\frac{2(x^2+2x-120)}{x^2-6x-72}\\
+                  \amp=\frac{2(x+12)(x-10)}{(x+12)(x-6)}\\
+                  \amp=\frac{x+12}{x+12} \cdot \frac{2(x-10)}{x-6}\\
+                  \amp=\frac{2(x-10)}{x-6}, x \neq 12
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+              <m>
+                \begin{aligned}[t]
+                \amp\frac{5}{x-2}-\frac{1}{x+7}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{5}{x-2} \cdot \frac{x+7}{x+7}-\frac{1}{x+7} \cdot \frac{x-2}{x-2}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{5(x+7)-1 \cdot (x-2)}{(x-2)(x+7)}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{5x+35-x+2}{(x-2)(x+7)}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{4x+37}{(x-2)(x+7)}
+                \end{aligned}
+              </m>
+              <me></me>
+            </li>
+
+            <li>
+              <m>
+                \begin{aligned}[t]
+                \amp\frac{2}{x-2}+\frac{x+3}{x+4}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{2}{x-2} \cdot \frac{x+4}{x+4}+\frac{x+3}{x+4} \cdot \frac{x-2}{x-2}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{2(x+4)+(x+3)(x-2)}{(x-2)(x+4)}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{2x+8+x^2-2x+3x-6}{(x-2)(x+4)}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{x^2+3x+2}{(x-2)(x+4)}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{(x+2)(x+1)}{(x-2)(x+4)}
+                \end{aligned}
+              </m>
+              <me></me>
+            </li>
+
+            <li>
+              <m>
+                \begin{aligned}[t]
+                \amp-\frac{1}{x}+\frac{x+1}{x^2-3x-10}\\
+                \amp \phantom{={}} \phantom{={}} =-\frac{1}{x}+\frac{x+1}{(x-5)(x+2)}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{-1}{x} \cdot \frac{(x-5)(x+2)}{(x-5)(x+2)}+\frac{x+1}{(x-5)(x+2)} \cdot \frac{x}{x}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{-1 \cdot (x-5)(x+2)+(x+1) \cdot x}{x(x-5)(x+2)}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{-1 \cdot (x^2-3x-10)+x(x+1)}{x(x-5)(x+2)}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{-x^2+3x+10+x^2+x}{x(x-5)(x+2)}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{4x+10}{x(x-5)(x+2)}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{2(2x+5)}{x(x-5)(x+2)}
+                \end{aligned}
+              </m>
+              <me></me>
+            </li>
+
+            <li>
+              <m>
+                \begin{aligned}[t]
+                \amp\frac{x}{x^2+7x+12}-\frac{x}{x-3}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{x}{(x+4)(x+3)}-\frac{x}{x-3}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{x}{(x+4)(x+3)} \cdot \frac{x-3}{x-3}-\frac{x}{x-3} \cdot \frac{(x+4)(x+3)}{(x+4)(x+3)}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{x(x-3)-x(x+4)(x+3)}{(x+4)(x+3)(x-3)}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{x(x-3)-x(x^2+7x+12)}{(x+4)(x+3)(x-3)}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{x^2-3x-x^3-7x^2-12x}{(x+4)(x+3)(x-3)}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{-x^3-6x^2-15x}{(x+4)(x+3)(x-3)}\\
+                \amp \phantom{={}} \phantom{={}} =\frac{-x(x^2+6x+15)}{(x+4)(x+3)(x-3)}
+                \end{aligned}
+              </m>
+            </li>
+
+            <li>
+                <m>
+                  \begin{aligned}[t]
+                  \amp\frac{x}{(2x-1)(x+5)}-\frac{x+1}{2x-1(x+16)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x}{(2x-1)(x+5)} \cdot \frac{x+16}{x+16} -\frac{x+1}{(2x-1)(x+16)} \cdot \frac{x+5}{x+5}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x(x+16)-(x+1)(x+5)}{(2x-1)(x+5)(x+16)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x^2+16x-(x^2+6x+5)}{(2x-1)(x+5)(x+16)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{10x-5}{(2x-1)(x+5)(x+16)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{5(2x-1)}{(2x-1)(x+5)(x+16)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{2x-1}{2x-1} \cdot \frac{5}{(x+5)(x+16)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{5}{(x+5)(x+16)}, x \neq \frac{1}{2}
+                  \end{aligned}
+                </m>
+                <me></me>
+              </li>
+
+               <li>
+                <m>
+                  \begin{aligned}[t]
+                  \amp\frac{1}{x^2-4x-12}+\frac{1}{x^2-7x-6}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{1}{(x-6)(x+2)}+\frac{1}{(x-6)(x-1)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{1}{(x-6)(x+2)} \cdot \frac{x-1}{x-1} +\frac{1}{(x-6)(x-1)} \cdot \frac{x+2}{x+2}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{1 \cdot (x-1)-1 \cdot (x+2)}{(x-6)(x+2)(x-1)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{-3}{(x-6)(x+2)(x-1)}\\
+                  \amp \phantom{={}} \phantom{={}} =-\frac{3}{(x-6)(x+2)(x-1)}
+                  \end{aligned}
+                </m>
+                <me></me>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \amp\frac{4}{x^2-3x+2}+\frac{4}{x-1}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{4}{(x-2)(x-1)}+\frac{4}{x-1}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{4}{(x-2)(x-1)}+\frac{4}{x-1} \cdot \frac{x-2}{x-2}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{4+4(x-2)}{(x-2)(x-1)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{4+4x-8}{(x-2)(x-1)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{4x-4}{(x-2)(x-1)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{4(x-1)}{(x-2)(x-1)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x-1}{x-1} \cdot \frac{4}{x-2}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{4}{x-2}, x \neq 1
+                  \end{aligned}
+                </m>
+                <me></me>
+              </li>
+
+               <li>
+                <m>
+                  \begin{aligned}[t]
+                  \amp\frac{x-2}{x^2-5x}-\frac{2x}{x^2-10x+25}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x-2}{x(x-5)}-\frac{2x}{(x-5)(x-5)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x-2}{x(x-5)} \cdot \frac{x-5}{x-5} -\frac{2x}{(x-5)(x-5)} \cdot \frac{x}{x}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{(x-2)(x-5)-2x \cdot x}{x(x-5)(x-5)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x^2-7x+10-2x^2}{x(x-5)(x-5)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{-x^2-7x+10}{x(x-5)^2}
+                  \end{aligned}
+                </m>
+                <me></me>
+              </li>
+
+               <li>
+                <m>
+                  \begin{aligned}[t]
+                  \amp\frac{4}{x^3-4x^2+4x}+\frac{2}{x^2-2x}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{4}{x(x^2-4x+4)}+\frac{2}{x(x-2)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{4}{x(x-2)(x-2)}+\frac{2}{x(x-2)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{4}{x(x-2)(x-2)}+\frac{2}{x(x-2)} \cdot \frac{x-2}{x-2}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{4+2(x-2)}{x(x-2)(x-2)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{2x}{x(x-2)(x-2)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x}{x} \cdot \frac{2}{(x-2)(x-2)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{2}{(x-2)^2}, x \neq 0
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{3}{x-7}-\frac{6}{7-x}\amp=\frac{3}{x-7}-\frac{6}{7-x} \cdot \frac{-1}{-1}\\
+                  \amp=\frac{3}{x-7}-\frac{-6}{x-7}\\
+                  \amp=\frac{3+6}{x-7}\\
+                  \amp=\frac{9}{x-7}
+                  \end{aligned}
+                </m>
+                <me></me>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{x}{x-9}+\frac{9}{9-x}\amp=\frac{x}{x-9}+\frac{9}{9-x} \cdot \frac{-1}{-1}\\
+                  \amp=\frac{x}{x-9}+\frac{-9}{x-9}\\
+                  \amp=\frac{x-9}{x-9}\\
+                  \amp=1, x \neq 9
+                  \end{aligned}
+                </m>
+                <me></me>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \amp\frac{28}{x^2-8x-33}+\frac{2}{11-x}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{28}{(x-11)(x+3)}+\frac{2}{11-x}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{28}{(x-11)(x+3)}+\frac{2}{11-x} \cdot \frac{-1}{-1}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{28}{(x-11)(x+3)}+\frac{-2}{x-11}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{28}{(x-11)(x+3)}+\frac{-2}{x-11} \cdot \frac{x+3}{x+3}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{28-2(x+3)}{(x-11)(x+3)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{28-2x-6}{(x-11)(x+3)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{-2x+22}{(x-11)(x+3)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{-2(x-11)}{(x-11)(x+3)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x-11}{x-11} \cdot \frac{-2}{x+3}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{-2}{x+3}, x \neq 11
+                  \end{aligned}
+                </m>
+                <me></me>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \amp\frac{x}{x^2-25}+\frac{2}{-x^2+x-20}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x}{x^2-25}+\frac{2}{-x^2+x-20} \cdot \frac{-1}{-1}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x}{x^2-5}+\frac{-2}{x^2-x+20}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x}{(x+5)(x-5)}+\frac{-2}{(x+4)(x-5)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x}{(x+5)(x-5)} \cdot \frac{x+4}{x+4}+\frac{-2}{(x+4)(x-5)} \cdot \frac{x+5}{x+5}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x(x+4)-2(x+5)}{(x+5)(x+4)(x-5)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x^2+4x-2x-10}{(x+5)(x+4)(x-5)}\\
+                  \amp \phantom{={}} \phantom{={}} =\frac{x^2+2x-10}{(x+5)(x+4)(x-5)}
+                  \end{aligned}
+                </m>
+              </li>
+
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+        <statement>          
           <p>
             Add or subtract as indicated.  Completely simplify each result and state any necessary domain restrictions.
             <ol>
@@ -150,12 +1237,228 @@
         </solution>
       </exercise>
 
+    </exercises>
+
+    <exercises>
+      <title>Complex Fractions</title>
+
       <exercise>
-        <title>Simplifying complex fractions</title>
+        <title>Explanation and examples</title>
         <statement>
           <p>
-            Follow this link to see some examples: <xref ref="workshop-rational-expressions-complex-fractions-examples">Written Examples</xref>
+            A complex fraction is a fraction in which the numerator and/or denominator contains yet another fraction.
           </p>
+          <p>
+            Complex fractions of the following form 
+            <me>\frac{\frac{a}{b}}{\frac{c}{d}} \text{ or } \frac{\frac{a}{b}}{c} \text{ or } \frac{a}{\frac{c}{d}}</me>
+            are the manner in which division of or by fractions is usually communicated in an algebraic setting.  For examples, instead of writing
+            <me>\frac{x+2}{x-7} \div \frac{x+4}{x+12}</me> we would write <me>\frac{\frac{x+2}{x-7}}{\frac{x+4}{x+12}}</me>.
+            Because division by a fraction is equivalent to multiplying by the reciprocal of the fraction, it follows that
+            <me>\frac{\frac{x+2}{x-7}}{\frac{x+4}{x+12}}=\frac{x+2}{x-7} \cdot \frac{x+12}{x+4}</me>.
+          </p>
+          <p>
+            When writing complex fractions, it is vitally important that we are clear which is the main fraction bar (which is done by clearly making it the longest bar).  This importance is made clear by the following two examples.
+            <md>
+              <mrow>\frac{2}{3} \div 7\amp=\frac{2}{3} \div \frac{7}{1}</mrow>
+              <mrow>\amp=\frac{2}{3} \cdot \frac{1}{7}</mrow>
+              <mrow>\amp=\frac{2}{21}</mrow>
+            </md>
+            whereas
+            <md>
+              <mrow>2 \div \frac{3}{7}\amp=\frac{2}{1} \div \frac{3}{7}</mrow>
+              <mrow>\amp=\frac{2}{1} \cdot \frac{7}{3}</mrow>
+              <mrow>\amp=\frac{14}{3}</mrow>
+            </md>
+            The above illustrates that <me>\frac{\frac{2}{3}}{7} \neq \frac{2}{\frac{3}{7}}</me>.
+          </p>
+          <p>
+            If you look carefully at the inequality statement, you might discern another way that we communicate the location of the main fraction bar - the equal sign horizontally aligns with the main fraction bar.
+          </p>
+          <p>
+            There are situations where one frequently encounters complex fractions what include addition or subtraction of fractions in the numerator or denominator.  Encountering these type expressions is a lucky day event, as they are essentially two or even three problems in one!  You get to combine the expressions in the numerator and/or denominator and then proceed to the division.  Because the process can be rather complicated, we generally do not address domain restrictions in these type of exercises.  Several examples follow. 
+          </p>
+          <p>
+            Example
+            <md>
+              <mrow>\frac{\frac{x}{x-5}-\frac{7}{x-5}}{\frac{x-7}{x^2-10x+25}}\amp=\frac{\frac{x-7}{x-5}}{\frac{x-7}{(x-5)(x-5)}}</mrow>
+              <mrow>\amp=\frac{x-7}{x-5} \cdot \frac {(x-5)(x-5)}{x-7}</mrow>
+              <mrow>\amp=\frac{(x-7)(x-5)(x-5)}{(x-5)(x-7)}</mrow>
+              <mrow>\amp=\frac{x-7}{x-7} \cdot \frac{x-5}{x-5} \frac{x-5}{1}</mrow>
+              <mrow>\amp=x-5</mrow>
+            </md>
+          </p>
+          <p>
+            Example
+            <md>
+              <mrow>\frac{\frac{1}{x+6}-\frac{1}{6}}{x}\amp=\frac{\frac{1}{x+6} \cdot \frac{6}{6}-\frac{1}{6} \cdot \frac{x+6}{x+6}}{\frac{x}{1}}</mrow>
+              <mrow>\amp=\frac{6-x-6}{6(x+6)} \cdot \frac{1}{x}</mrow>
+              <mrow>\amp=\frac{-x}{6x(x+6)}</mrow>
+              <mrow>\amp=-\frac{x}{x} \cdot \frac{1}{6(x+6)}</mrow>
+              <mrow>\amp=-\frac{1}{6(x+6)}</mrow>
+            </md>
+          </p>
+          <p>
+            Example
+            <md>
+              <mrow>\frac{\frac{2x}{x-3}-\frac{x}{x+3}}{\frac{x^2-9}{x^2+9}}\amp=\frac{\frac{2x}{x-3} \cdot \frac{x+3}{x+3}-\frac{x}{x+3} \cdot \frac{x-3}{x-3}}{\frac{(x-3)(x+3)}{x^2+9}}</mrow>
+              <mrow>\amp=\frac{\frac{2x^2+6x-x^2+3x}{(x-3)(x+3)}}{\frac{(x-3)(x+3)}{x^2+9}}</mrow>
+              <mrow>\amp=\frac{\frac{x^2+9x}{(x-3)(x+3)}}{\frac{(x-3)(x+3)}{x^2+9}}</mrow>
+              <mrow>\amp=\frac{x(x+9)}{(x-3)(x+3)} \cdot \frac{x^2+9}{(x-3)(x+3)}</mrow>
+              <mrow>\amp=\frac{x(x+9)(x^2+9)}{(x-3)^2(x+3)^2}</mrow>
+            </md>
+          </p>
+          <p>
+            There is an alternate strategy for simplifying complex fractions.  The process goes as follows.
+            <ol label="1">
+              <li>
+                Determine the Lowest Common Denominator of all of the fractions that occur in either the numerator or denominator of the main fraction.
+              </li>
+              <li>
+                Multiply both the numerator and denominator of the main fraction by the LCD found in step 1. It may be helpful to write one or both occurrences of the LCD over 1.
+              </li>
+              <li>
+                Distribute the LCD through both the numerator and denominator.  Term by term, cancel factors that are common to the numerator and denominator.
+              </li>
+              <li>
+                If you were successful in the first three steps, the fraction is no longer complex.  Expand both the numerator and denominator of the resultant fraction.
+              </li>
+              <li>
+                Factor both the numerator and the denominator and cancel any factors common to the numerator and denominator.
+              </li>
+            </ol>
+          </p>
+          <p>
+            Let's try the new strategy to simplify <me>\frac{\frac{3}{x}+\frac{2}{x-1}}{\frac{3}{x}-\frac{2}{x-1}}</me>.  We begin by observing that the LCD of the denominators of the smaller fractions is <m>x(x-1)</m>.  We proceed as follows.
+            <md>
+              <mrow>\frac{\frac{3}{x}+\frac{2}{x-1}}{\frac{3}{x}-\frac{2}{x-1}}\amp=\frac{\frac{3}{x}+\frac{2}{x-1}}{\frac{3}{x}-\frac{2}{x-1}} \cdot \frac{\frac{x(x-1)}{1}}{\frac{x(x-1)}{1}}</mrow>
+              <mrow>\amp=\frac{\frac{3}{x} \cdot \frac{x(x-1)}{1} +\frac{2}{x-1} \cdot \frac{x(x-1)}{1} }{\frac{3}{x} \cdot \frac{x(x-1)}{1} -\frac{2}{x-1} \cdot \frac{x(x-1)}{1} }</mrow>
+              <mrow>\amp=\frac{3(x-1)+2x}{3(x-1)-2x}</mrow>
+              <mrow>\amp=\frac{5x-3}{x-3}</mrow>
+            </md>
+          </p>
+          <p>
+            Let's use the new strategy to simplify <me>\frac{\frac{5}{x+h}-\frac{5}{x}}{h}</me>.  It might be helpful to write the denominator as a fraction to help identify the LCD of the smaller fractions.  <me>\frac{\frac{5}{x+h}-\frac{5}{x}}{\frac{h}{1}}</me>  From this we can see that the LCD of the smaller fractions is <m>x(x+h)</m>.  Let's proceed.
+            <md>
+              <mrow>\frac{\frac{5}{x+h}-\frac{5}{x}}{\frac{h}{1}}\amp=\frac{\frac{5}{x+h}-\frac{5}{x}}{\frac{h}{1}} \cdot \frac{\frac{x(x+h)}{1}}{\frac{x(x+h)}{1}}</mrow>
+              <mrow>\amp=\frac{\frac{5}{x+h} \cdot \frac{x(x+h)}{1} -\frac{5}{x} \cdot \frac{x(x+h)}{1} }{\frac{h}{1} \cdot \frac{x(x+h)}{1} }</mrow>
+              <mrow>\amp=\frac{5x-5(x+h)}{hx(x+h)}</mrow>
+              <mrow>\amp=\frac{-5h}{hx(x+h)}</mrow>
+              <mrow>\amp=-\frac{5}{x(x+h)}</mrow>
+            </md>
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+        <statement>
+          <p>
+            Completely simplify each expression.  You do not need to address any domain restrictions.
+            <ol>
+              <li><m>\frac{\frac{x+3}{x-2}}{\frac{x+3}{x+2}}</m></li>
+              <li><m>\frac{\frac{1}{x-7}}{x-7}</m></li>
+              <li><m>\frac{x-9}{\frac{x^2-7x-18}{x^2+4}}</m></li>
+              <li><m>\frac{\frac{1}{x-10}+\frac{1}{10}}{x}</m></li>
+              <li><m>\frac{\frac{1}{x+5}-\frac{1}{x+4}}{\frac{1}{x+4}+\frac{1}{x+3}}</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+                <p>
+                  Simplification following the "build common denominators" approach.
+                  <md>]
+                    <mrow>\frac{\frac{x+3}{x-2}}{\frac{x+3}{x+2}}\amp=\frac{x+3}{x-2} \cdot \frac{x+2}{x+3}</mrow>
+                    <mrow>\amp=\frac{(x+3)(x+2)}{(x-2)(x+3)}</mrow>
+                    <mrow>\amp=\frac{x+3}{x+3} \cdot \frac{x+2}{x-2}</mrow>
+                    <mrow>\amp=\frac{x+2}{x-2}</mrow>
+                  </md>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Simplification following the "build common denominators" approach.
+                  <md>
+                    <mrow>\frac{\frac{1}{x-7}}{x-7}\amp=\frac{\frac{1}{x-7}}{\frac{x-7}{1}}</mrow>
+                    <mrow>\amp=\frac{1}{x-7} \cdot \frac{1}{x-7}</mrow>
+                    <mrow>\amp=\frac{1}{(x-7)^2}</mrow>
+                  </md>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Simplification following the "build common denominators" approach.
+                  <md>
+                    <mrow>\frac{x-9}{\frac{x^2-7x-18}{x^2+4}}\amp=\frac{\frac{x-9}{1}}{\frac{x^2-7x-18}{x^2+4}}</mrow>
+                    <mrow>\amp=\frac{x-9}{1} \cdot \frac{x^2+4}{x^2-7x-18}</mrow>
+                    <mrow>\amp=\frac{(x-9)(x^2+4)}{x^2-7x-18}</mrow>
+                    <mrow>\amp=\frac{(x-9)(x^2+4)}{(x-9)(x+2)}</mrow>
+                    <mrow>\amp=\frac{x-9}{x-9} \cdot \frac{x^2+4}{x+2}</mrow>
+                    <mrow>\amp=\frac{x^2+4}{x+2}</mrow>
+                  </md>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Simplification following the "build common denominators" approach.
+                  <md>
+                    <mrow>\frac{\frac{1}{x-10}+\frac{1}{10}}{x}\amp=\frac{\frac{1}{x-10} \cdot \frac{10}{10} + \frac{1}{10} \cdot \frac{x-10}{x-10}}{\frac{x}{1}}</mrow>
+                    <mrow>\amp=\frac{10+x-10}{10(x-10)} \cdot \frac{1}{x}</mrow>
+                    <mrow>\amp=\frac{x}{10x(x-10)}</mrow>
+                    <mrow>\amp =\frac{x}{x} \cdot \frac{1}{10(x-10)}</mrow>
+                    <mrow>\amp=\frac{1}{10(x-10)}</mrow>
+                  </md>
+                  Simplification using the "clear away the denominators" approach. 
+                  <md>
+                    <mrow>\frac{\frac{1}{x-10}+\frac{1}{10}}{x}\amp=\frac{\frac{1}{x-10}+\frac{1}{10}}{x} \cdot \frac{\frac{10(x-10)}{1}}{10(x-10)}</mrow>
+                    <mrow>\amp=\frac{\frac{10(x-10)}{x-10}+\frac{10(x-10)}{10}}{10x(x-10)}</mrow>
+                    <mrow>\amp=\frac{10+x-10}{10x(x-10)}</mrow>
+                    <mrow>\amp=\frac{x}{10x(x-10)}</mrow>
+                    <mrow>\amp=\frac{1}{10(x-10)}</mrow>
+                  </md>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Simplification following the "build common denominators" approach.
+                  <md>
+                    <mrow>\frac{\frac{1}{x+5}-\frac{1}{x+4}}{\frac{1}{x+4}+\frac{1}{x+3}}\amp=\frac{\frac{1}{x+5} \cdot \frac{x+4}{x+4} - \frac{1}{x+4} \cdot \frac{x+5}{x+5}}{\frac{1}{x+4} \cdot \frac{x+3}{x+3} + \frac{1}{x+3} \cdot \frac{x+4}{x+4}}</mrow>
+                    <mrow>\amp=\frac{\frac{x+4-x-5}{(x+5)(x+4)}}{\frac{x+3+x+4}{(x+4)(x+3)}}</mrow>
+                    <mrow>\amp=\frac{\frac{-1}{(x+5)(x+4)}}{\frac{2x+7}{(x+4)(x+3)}}</mrow>
+                    <mrow>\amp=\frac{-1}{(x+5)(x+4)} \cdot \frac{(x+4)(x+3)}{2x+7}</mrow>
+                    <mrow>\amp=-\frac{(x+4)(x+3)}{(x+5)(x+4)(2x+7)}</mrow>
+                    <mrow>\amp=\frac{x+4}{x+4} \cdot -\frac{x+3}{(x+5)(2x+7)}</mrow>
+                    <mrow>\amp=-\frac{x+3}{(x+5)(2x+7)}</mrow>
+                  </md>
+                  Simplification using the "clear away the denominators" approach. 
+                  <md>
+                    <mrow>\frac{\frac{1}{x+5}-\frac{1}{x+4}}{\frac{1}{x+4}+\frac{1}{x+3}}\amp=\frac{\frac{1}{x+5}-\frac{1}{x+4}}{\frac{1}{x+4}+\frac{1}{x+3}}\ \cdot \frac{\frac{(x+5)(x+4)(x+3)}{1}}{\frac{(x+5)(x+4)(x+3)}{1}}</mrow>
+                    <mrow>\amp=\frac{\frac{(x+5)(x+4)(x+3)}{x+5}-\frac{(x+5)(x+4)(x+3)}{x+4}}{\frac{(x+5)(x+4)(x+3)}{x+4}+\frac{(x+5)(x+4)(x+3)}{x+3}}</mrow>
+                    <mrow>\amp=\frac{(x+4)\highlight{(x+3)}-(x+5)\highlight{(x+3)}}{\highlightr{(x+5)}(x+3)+\highlightr{(x+5)}(x+4)}</mrow>
+                    <mrow>\amp=\frac{(x+4-x-5)\highlight{(x+3)}}{\highlightr{(x+5)}(x+3+x+4)}</mrow>
+                    <mrow>\amp=\frac{-(x+3)}{(x+5)(2x+7)}</mrow>
+                    <mrow>\amp=-\frac{x+3}{(x+5)(2x+7)}</mrow>
+                  </md>
+                </p>
+              </li>
+
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+        <statement>
           <p>
             Completely simplify each expression.  You do not need to address any domain restrictions.
             <ol>
@@ -182,1450 +1485,717 @@
         </solution>
       </exercise>
 
+    </exercises>
+
+    <exercises>
+      <title>Equations Containing Rational Expressions</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
+      <statement>
+        <p>
+          A rational equation is an equation that contains one or more rational expression. Similar to the addition or subtraction of rational expressions, when solving a rational equation we first identify the least common denominator of all of the fractions present in the equation.  After that, however, the process is very different.  Because we are working with equations, we do not need to establish common denominators amongst the expressions.  Quite the contrary<mdash/>we actually eliminate all of the fractions by multiplying both sides of the equation by the LCD.  When doing so, we need to be careful to distribute the LCD to every term, whether they are fractions or not.
+          </p>
+          <p>
+            While the clearing of fractions leads to a much simplified equation, the new equation sometimes leads to false solutions,  Once we determine the solution(s), we need to make sure that no solution creates a value of <m>0</m> in any of the denominators of the original equation.  If any such solution exists, we reject it due to the fact that division by <m>0</m> is never defined.
+          </p>
+        <p>Example</p>
+        <p>
+          Determine the solution set to the equation <m>\frac{2}{x-5}=\frac{x}{x+4}</m>.
+        </p>
+        <p>
+          We begin by making the observation that the LCD of the fractions in the equation is <m>(x-5)(x+4)</m>.  We need to multiply both sides of the equation by that LCD, simplify each term and solve the resultant equation
+          <md>
+            <mrow>\frac{2}{x-5}\amp=\frac{x}{x+4}</mrow>
+            <mrow>\multiplyleft{\frac{(x-5)(x+4)}{1}}\frac{2}{x-5}\amp=\multiplyleft{\frac{(x-5)(x+4)}{1}}\frac{x}{x+4}</mrow>
+            <mrow>\frac{2(x-5)(x+4)}{x-5}\amp=\frac{x \cdot (x-5)(x+4)}{x+4}</mrow>
+            <mrow>2(x+4)\amp=x \cdot (x-5)</mrow>
+            <mrow>2x+8\amp=x^2-5x</mrow>
+            <mrow>2x+8\subtractright{2x}\subtractright{8}\amp=x^2-5x\subtractright{2x}\subtractright{8}</mrow>
+            <mrow>0\amp=x^2-7x-8</mrow>
+            <mrow>0\amp=(x-8)(x+1)</mrow>
+          </md>
+          <md>
+            <mrow>x-8\amp=0 \amp\amp\text{or}\amp x+1\amp=0</mrow>
+            <mrow>x-8\addright{8}\amp=0\addright{8} \amp\amp\text{or}\amp x+1\subtractright{1}\amp=0\subtractright{1}</mrow>
+            <mrow>x\amp=8 \amp\amp\text{or}\amp x\amp=-1</mrow>
+          </md>
+          Neither <m>8</m> nor <m>-1</m> create any zeros in the denominators of the original equation, so we accept both solutions.  The solution set to the given equation is <m>\{8,-1\}</m>.
+        </p>
+        <p>Example</p>
+        <p>
+          Determine the solution set to the equation <m>\frac{5}{x+2}+\frac{2x}{x^2-4}=\frac{3}{x-2}</m>.
+        </p>
+        <p>
+          We begin by making sure that all of the denominators are fully factored. 
+          <md>
+            <mrow>\frac{5}{x+2}+\frac{2x}{x^2-4}\amp=\frac{3}{x-2}</mrow>
+            <mrow>\frac{5}{x+2}+\frac{2x}{(x+2)(x-2)}\amp=\frac{3}{x-2}</mrow>
+          </md>
+          We now multiply both sides of the equation by the LCD, <m>(x+2)(x-2)</m>.  We then distribute, simplify each term, and solve the resultant equation.
+          <md>
+            <mrow>\multiplyleft{\frac{(x+2)(x-2)}{1}}(\frac{5}{x+2}+\frac{2x}{(x+2)(x-2)})\amp=\multiplyleft{\frac{(x+2)(x-2)}{1}}\frac{3}{x-2}</mrow>
+            <mrow>\frac{5(x+2)(x-2)}{x+2}+\frac{2x \cdot (x+2)(x-2)}{(x+2)(x-2)}\amp=\frac{3(x+2)(x-2)}{x-2}</mrow>
+            <mrow>5(x-2)+2x\amp=3(x+2)</mrow>
+            <mrow>5x-10+2x\amp=3x+6</mrow>
+            <mrow>7x-10\amp=3x+6</mrow>
+            <mrow>7x-10\subtractright{3x}\addright{10}\amp=3x+6\subtractright{3x}\addright{10}</mrow>
+            <mrow>4x\amp=16</mrow>
+            <mrow>\divideunder{4x}{4}\amp=\divideunder{16}{4}</mrow>
+            <mrow>x\amp=4</mrow>
+          </md>
+          The solution, <m>4</m> creates no zeros in any of the denominators of the original equation, so we accept it as a solution.  The solution set to the given equation is <m>\{4\}</m>.
+        </p>
+        <p>Example</p>
+        <p>
+          Determine the solution set to the equation <m>\frac{3}{x-3}=\frac{5x}{x^2-x-6}-\frac{5}{x+2}</m>.
+        </p>
+        <p>
+          We begin by making sure that all of the denominators are fully factored. 
+          <md>
+            <mrow>\frac{3}{x-3}\amp=\frac{5x}{x^2-x-6}-\frac{5}{x+2}</mrow>
+            <mrow>\frac{3}{x-3}\amp=\frac{5x}{(x-3)(x+2)}-\frac{5}{x+2}</mrow>
+          </md>
+           We now multiply both sides of the equation by the LCD, <m>(x-3)(x+2)</m>.  We then distribute, simplify each term, and solve the resultant equation.
+           <md>
+            <mrow>\multiplyleft{\frac{(x-3)(x+2)}{1}} \frac{3}{x-3}\amp=\multiplyleft{\frac{(x-3)(x+2)}{1}} (\frac{5x}{(x-3)(x+2)}-\frac{5}{x+2})</mrow>
+            <mrow>\frac{3(x-3)(x+2)}{x-3}\amp=\frac{5x \cdot (x-3)(x+2)}{(x-3)(x+2)}-\frac{5(x-3)(x+2)}{x+2}</mrow>
+            <mrow>3(x+2)\amp=5x-5(x-3)</mrow>
+            <mrow>3x+6\amp=5x-5x+15</mrow>
+            <mrow>3x+6\amp=15</mrow>
+            <mrow>3x+6\subtractright{6}\amp=15\subtractright{6}</mrow>
+            <mrow>3x\amp=9</mrow>
+            <mrow>\divideunder{3x}{3}\amp=\divideunder{9}{3}</mrow>
+            <mrow>x\amp=3</mrow>
+          </md>
+          The value of <m>3</m> creates a a value of <m>0</m> in at least one of the denominators of the original equation, so we reject <m>3</m> as a solution.  The solution set to the given equation is <m>\emptyset</m>.
+        </p>
+        <p>Example</p>
+        <p>
+          Determine the solution set to the equation <m>\frac{24}{x}-x=5</m>
+        </p>
+        <p>
+          We begin by multiplying both sides of the equation by the only denominator in the equation, <m>x</m>. We then distribute, simplify each term, and solve the resultant equation.
+          <md>
+            <mrow>\frac{24}{x}-x\amp=5</mrow>
+            <mrow>\multiplyleft{\frac{x}{1}} (\frac{24}{x}-x\amp)=\multiplyleft{\frac{x}{1}} 5</mrow>
+            <mrow>\frac{24x}{x}-\frac{x^2}{1}\amp=\frac{5x}{1}</mrow>
+            <mrow>24-x^2\amp=5x</mrow>
+            <mrow>24-x^2\subtractright{24}\addright{x^2} \amp=5x\subtractright{24}\addright{x^2} </mrow>
+            <mrow>0\amp=x^2+5x-24</mrow>
+            <mrow>0\amp=(x+8)(x-3)</mrow>
+          </md>
+          <md>
+            <mrow>x+8\amp=0 \amp\amp\text{or}\amp x-3\amp=0</mrow>
+            <mrow>x+8\subtractright{8}\amp=0\subtractright{8} \amp\amp\text{or}\amp x-3\addright{3}\amp=0\addright{3}</mrow>
+            <mrow>x\amp=-8 \amp\amp\text{or}\amp x\amp=3</mrow>
+          </md>
+          Neither solution creates any zero-denominators in the original equation, so we accept both solutions.  The solution set to the given equation is <m>\{-8,3\}</m>.
+        </p>
+      </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+        <statement>
+          <p>
+            Determine the solution set to each of the following equations.
+            <ol>
+              <li><m>\frac{3}{x+4}-1=\frac{2}{5x+20}</m></li>
+              <li><m>\frac{x}{x+1}=\frac{2}{x^2-1}</m></li>
+              <li><m>\frac{4}{x^2+2x}-\frac{3}{x}=\frac{x}{x+2}</m></li>
+              <li><m>\frac{6}{x^2-6x+9}-\frac{x}{x-3}+\frac{2x-4}{3x-9}=0</m></li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                Determine the solution set to <m>\frac{3}{x+4}-1=\frac{2}{5x+20}</m>.
+                <md>
+                  <mrow>\frac{3}{x+4}-1\amp=\frac{2}{5x+20}</mrow>
+                  <mrow>\frac{3}{x+4}-1\amp=\frac{2}{5(x+4)}</mrow>
+                  <mrow>\multiplyleft{\frac{5(x+4)}{1}}(\frac{3}{x+4}-1)\amp=\multiplyleft{\frac{5(x+4)}{1}}\frac{2}{5(x+4)}</mrow>
+                  <mrow>\frac{15(x+4)}{x+4}-\frac{5(x+4)}{1}\amp=\frac{10(x+4)}{5(x+4)}</mrow>
+                  <mrow>15-5(x+4)\amp=2</mrow>
+                  <mrow>15-5x-20\amp=2</mrow>
+                  <mrow>-5x-5\amp=2</mrow>
+                  <mrow>-5x-5\addright{5}\amp=2\addright{5}</mrow>
+                  <mrow>-5x\amp=7</mrow>
+                  <mrow>\divideunder{-5x}{-5}\amp=\divideunder{7}{-5}</mrow>
+                  <mrow>x\amp=-\frac{7}{5}</mrow>
+                </md>
+                The solution set is <m>\{-\frac{7}{5}\}</m>.
+              </li>
+              <li>
+                Determine the solution set to <m>\frac{x}{x+1}=\frac{2}{x^2-1}</m>.
+                <md>
+                  <mrow>\frac{x}{x+1}\amp=\frac{2}{x^2-1}</mrow>
+                  <mrow>\frac{x}{x+1}\amp=\frac{2}{(x+1)(x-1)}</mrow>
+                  <mrow>\multiplyleft{\frac{(x+1)(x-1)}{1}} \frac{x}{x+1}\amp=\multiplyleft{\frac{(x+1)(x-1)}{1}} \frac{2}{(x+1)(x-1)}</mrow>
+                  <mrow>\frac{x \cdot (x+1)(x-1)}{x+1}\amp=\frac{2(x+1)(x-1)}{(x+1)(x-1)}</mrow>
+                  <mrow>x \cdot (x-1)\amp=2</mrow>
+                  <mrow>x^2-x\amp=2</mrow>
+                  <mrow>x^2-x\subtractright{2}\amp=0\subtractright{2}</mrow>
+                  <mrow>x^2-x-2\amp=0</mrow>
+                  <mrow>(x-2)(x+1)\amp=0</mrow>
+                </md>
+                <md>
+                  <mrow>x-2\amp=0 \amp\amp\text{or}\amp x+1\amp=0</mrow>
+                  <mrow>x-2\addright{2}\amp=0\addright{2} \amp\amp\text{or}\amp x+1\subtractright{1}\amp=0\subtractright{1}</mrow>
+                  <mrow>x\amp=2 \amp\amp\text{or}\amp x\amp=-1</mrow>
+                </md>
+                We reject the solution of <m>-1</m> because it creates a value of <m>0</m> in at least one denominator of the original equation.
+                The solution set is <m>\{2\}</m>.
+              </li>
+              <li>
+                Determine the solution set to <m>\frac{4}{x^2+2x}-\frac{3}{x}=\frac{x}{x+2}</m>.
+                <md>
+                  <mrow>\frac{4}{x^2+2x}-\frac{3}{x}\amp=\frac{x}{x+2}</mrow>
+                  <mrow>\frac{4}{x \cdot (x+2)}-\frac{3}{x}\amp=\frac{x}{x+2}</mrow>
+                  <mrow>\multiplyleft{\frac{x \cdot (x+2)}{1}} (\frac{4}{x \cdot (x+2)}-\frac{3}{x})\amp=\multiplyleft{\frac{x \cdot (x+2)}{1}} \frac{x}{x+2}</mrow>
+                  <mrow>\frac{4x \cdot (x+2)}{x \cdot (x+2)}-\frac{3x \cdot (x+2)}{x}\amp=\frac{x^2(x+2)}{x+2}</mrow>
+                  <mrow>4-3(x+2)\amp=x^2</mrow>
+                  <mrow>4-3x-6\amp=x^2</mrow>
+                  <mrow>-3x-2\amp=x^2</mrow>
+                  <mrow>-3x-2\addright{3x+2}\amp=x^2\addright{3x+2}</mrow>
+                  <mrow>0\amp=x^2+3x+2</mrow>
+                  <mrow>0\amp=(x+2)(x+1)</mrow>
+                </md>
+                <md>
+                  <mrow>x+2\amp=0 \amp\amp\text{or}\amp x+1\amp=0</mrow>
+                  <mrow>x+2\subtractright{2}\amp=0\subtractright{2} \amp\amp\text{or}\amp x+1\subtractright{1}\amp=0\subtractright{1}</mrow>
+                  <mrow>x\amp=-2 \amp\amp\text{or}\amp x\amp=-1</mrow>
+                </md>
+                We reject the solution of <m>-2</m> because it creates a value of <m>0</m> in at least one denominator of the original equation. 
+                The solution set is <m>\{-1\}</m>.
+              </li>
+              <li>
+                Determine the solution set to <m>\frac{6}{x^2-6x+9}-\frac{x}{x-3}+\frac{2x-4}{3x-9}=0</m>.
+                <md>
+                  <mrow>\frac{6}{x^2-6x+9}-\frac{x}{x-3}+\frac{2x-4}{3x-9}\amp=0</mrow>
+                  <mrow>\frac{6}{(x-3)^{2}}-\frac{x}{x-3}+\frac{2x-4}{3(x-3)}\amp=0</mrow>
+                  <mrow>\multiplyleft{\frac{3(x-3)^{2}}{1}}(\frac{6}{(x-3)^{2}}-\frac{x}{x-3}+\frac{2x-4}{3(x-3)})\amp=\multiplyleft{\frac{3(x-3)^{2}}{1}}0</mrow>
+                  <mrow>\frac{18(x-3)^2}{(x-3)^2}-\frac{3x \cdot (x-3)^2}{x-3}+\frac{3(x-3)^2(2x-4)}{3(x-3)}\amp=0</mrow>
+                  <mrow>18-3x \cdot (x-3)+(x-3)(2x-4)\amp=0</mrow>
+                  <mrow>18-3x^2+9x+2x^2-4x-6x+12\amp=0</mrow>
+                  <mrow>-x^2-x+30\amp=0</mrow>
+                  <mrow>\multiplyleft{-1}(-x^2-x+30)\amp=\multiplyleft{-1}0</mrow>
+                  <mrow>x^2+x-30\amp=0</mrow>
+                  <mrow>(x+6)(x-5)\amp=0</mrow>
+                </md>
+                <md>
+                  <mrow>x+6\amp=0 \amp\amp\text{or}\amp x-5\amp=0</mrow>
+                  <mrow>x+6\subtractright{6}\amp=0\subtractright{6} \amp\amp\text{or}\amp x-5\addright{5}\amp=0\addright{5}</mrow>
+                  <mrow>x\amp=-6 \amp\amp\text{or}\amp x\amp=5</mrow>
+                </md>
+                The solution set is <m>\{-6,5\}</m>.
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+        <statement>
+          <p>
+            Determine the solution set to each equation.
+            <ol>
+              <li><m>\frac{3}{2x+1}=\frac{5}{4x-3}</m></li>
+              <li><m>\frac{x}{x+4}+\frac{1}{x-2}=1</m></li>
+              <li><m>\frac{6}{x^2-9x+14}-\frac{4}{x-7}=\frac{3}{x-2}</m></li>
+              <li><m>x-\frac{7x}{x-2}=1-\frac{14}{x-2}</m></li>
+            </ol>
+            <p></p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>The solution set is <m>\{7\}</m>.</li>
+              <li>The solution set is <m>\{4\}</m>.</li>
+              <li>The solution set is <m>\{5\}</m>.</li>
+              <li>The solution set is <m>\{8\}</m>.</li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
 
     </exercises>
 
-
     <exercises>
+      <title>Applications Involving Rational Equations</title>
 
-    <title>Written Examples</title>
+      <exercise>
+        <title>Explanation and examples</title>
+      <statement>
+          <p>Example</p>
+          <p>
+            Joaquin and Abraham co-own a bicycle repair shop.  On average, Joaquin can swap out both tires on a bicycle in <m>26</m> minutes while, on average, it takes Abraham <m>32</m> minutes to complete the same task.  Determine the amount of time it would take the two of them to swap out both tires on 40 bicycles.  Assume that the rate at which they complete the task when they work together is the sum of the rates each owner averages on his on.
+          </p>
+          <p>Solution</p>
+          <p>
+            Let <m>t</m> represent the amount of time it takes them to swap out the tires on <m>40</m> bicycles when they work together.  The information given in the problem is summarized in <xref ref="workshop-rational-equations-Joaquin-and-Abraham-examples">Table</xref>.  In each row, the rate expression was derived using:<me>\text{rate}=\frac{\text{swaps completed}}{\text{time}}</me>.
+          </p>
+          <p></p>
+          <p>
+          <table xml:id="workshop-rational-equations-Joaquin-and-Abraham-examples">
+            <caption>Joaquin and Abraham swap out bicycle tires</caption>
+                      <tabular>
+                        <col halign="left"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                        <row>
+                          <cell>
+                          </cell>
+                          <cell>
+                            <line>rate (swaps/hr)</line>
+                          </cell>
+                          <cell>
+                            <line>time (minutes)</line>
+                          </cell>
+                          <cell>
+                            <line>number of swaps completed</line>
+                          </cell>
+                        </row>
+                        <row>
+                          <cell>
+                            Joaquin alone
+                          </cell>
+                          <cell>
+                            <m>\frac{1}{26}</m>
+                          </cell>
+                          <cell>
+                            <m>26</m>
+                          </cell>
+                          <cell>
+                            <m>1</m>
+                          </cell>
+                        </row>
+                        <row>
+                          <cell>
+                            Abraham alone
+                          </cell>
+                          <cell>
+                            <m>\frac{1}{32}</m>
+                          </cell>
+                          <cell>
+                            <m>32</m>
+                          </cell>
+                          <cell>
+                            <m>1</m>
+                          </cell>
+                        </row>
+                        <row>
+                          <cell>
+                            working together
+                          </cell>
+                          <cell>
+                            <m>\frac{40}{t}</m>
+                          </cell>
+                          <cell>
+                            <m>t</m>
+                          </cell>
+                          <cell>
+                            <m>40</m>
+                          </cell>
+                        </row>
+                      </tabular>
+                    </table>
+          </p>
+          <p></p>
+          <p>        
+            The equation we need to solve comes from the fact that the two individual rates sum to the rate at which they work together.  To wit:
+            <me>\frac{1}{26}+\frac{1}{32}=\frac{40}{t}</me>.
+            We begin solving the equation by noting that <m>26=2 \times 13</m> and <m>32=2 \times 16</m>, so the LCD of the fractions in the equation is 
+            <m>2 \times 13 \times 16t</m> which simplifies to <m>416t</m>.  We need to multiply both sides of the equation by the LCD, distribute, simplify each term, and solve the resultant equation.
+            <md>
+              <mrow>\frac{1}{26}+\frac{1}{32}\amp=\frac{40}{t}</mrow>
+              <mrow>\multiplyleft{\frac{416t}{1}} (\frac{1}{26}+\frac{1}{32})\amp=\multiplyleft{\frac{416t}{1}} \frac{40}{t}</mrow>
+              <mrow>\frac{416t}{26}+\frac{416t}{32}\amp=\frac{16640t}t</mrow>
+              <mrow>16t+13t\amp=16640</mrow>
+              <mrow>29t\amp=16640</mrow>
+              <mrow>\divideunder{29t}{29}\amp=\divideunder{16640}{29}</mrow>
+              <mrow>x \amp\approx 573.8</mrow>
+            </md>
+            That's a whole lot of minutes.  Let's convert <m>573.8</m> minutes to hours to get a better sense of the amount of time we're looking at here.
+            <me>\frac{573.8\text{ minutes}}{1} \times \frac{1\text{ hour}}{60\text{ minutes}} \approx 9.6\text{ hours}</me>
+            So when they work together, it takes Abraham and Joaquin approximately <m>9.6</m> hours to swap out both tires on <m>40</m> bicycles.
+          </p>
+          <p>Example</p>
+          <p>
+            A river craft that would move at a rate of 10 mph in still water, actually moves at the brisk rate 16 mph (relative to the land) when maintaining that same rate of propulsion while traveling downstream in a river whose current is flowing at the rate of <m>6</m> mph<mdash/>the actual rate being the sum of the propulsion rate and the current rate.  Similarly, the actual speed of the craft while traveling upstream in the same current is a mere 4 mph<mdash/>the difference of the two rates.
+          </p>
+          <p>
+            Suppose that one day you and your partner spent two hours canoing, part of the time moving <m>7</m> miles upstream and the remaining time traversing the same <m>7</m> miles downstream.  Suppose that during that time you and your partner somehow managed to paddle at a constant rate of <m>7.8</m> mph (if you had been in still water). Suppose, remarkably, that the rate at which the current flowed was constant the entire time as well.  Determine what that constant current rate must have been.
+          </p>
+            <p>Solution</p>
+          <p>
+            Let <m>x</m> represent the constant rate (mph) at which the current flowed during the canoe trip.  The information given in the problem is summarized in <xref ref="workshop-rational-equations-canoeing-examples">Table</xref>.  In each row, the time expression was derived using:<me>\text{time}=\frac{\text{distance}}{\text{rate}}</me>.
+          </p>
+          <p></p>
+          <p>
+          <table xml:id="workshop-rational-equations-canoeing-examples">
+            <caption>You and a partner go canoeing</caption>
+                      <tabular>
+                        <col halign="left"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                        <row>
+                          <cell>
+                          </cell>
+                          <cell>
+                            <line>rate (miles/hr)</line>
+                          </cell>
+                          <cell>
+                            <line>time (hours)</line>
+                          </cell>
+                          <cell>
+                            <line>distance (miles)</line>
+                          </cell>
+                        </row>
+                        <row>
+                          <cell>
+                            Paddling upstream
+                          </cell>
+                          <cell>
+                            <m>7.8-x</m>
+                          </cell>
+                          <cell>
+                            <m>\frac{7}{7.8-x}</m>
+                          </cell>
+                          <cell>
+                            <m>7</m>
+                          </cell>
+                        </row>
+                        <row>
+                          <cell>
+                            Paddling downstream
+                          </cell>
+                          <cell>
+                            <m>7.8+x</m>
+                          </cell>
+                          <cell>
+                            <m>\frac{7}{7.8+x}</m>
+                          </cell>
+                          <cell>
+                            <m>7</m>
+                          </cell>
+                        </row>
+                      </tabular>
+                    </table>
+          </p>
+          <p></p>
+          <p>        
+            The equation we need to solve comes from the fact that you spent a total of two on the river, so the two time expressions need to sum to two.  Let's write and solve that equation.
+            <md>
+              <mrow>\frac{7}{7.8-x}+\frac{7}{7.8+x}\amp=2</mrow>
+              <mrow>\multiplyleft{\frac{(7.8-x)(7.8+x)}{1}} (\frac{7}{7.8-x}+\frac{7}{7.8+x})\amp=\multiplyleft{(7.8-x)(7.8+x)} 2</mrow>
+              <mrow>\frac{7(7.8-x)(7.8+x)}{7.8-x}+\frac{7(7.8-x)(7.8+x)}{7.8+x}\amp=2(7.8-x)(7.8+x)</mrow>
+              <mrow>7(7.8+x)+7(7.8-x)\amp=2(60.84-x^2)</mrow>
+              <mrow>54.6+7x+54.6-7x\amp=121.68-2x^2</mrow>
+              <mrow>109.2\amp=121.68-2x^2</mrow>
+              <mrow>109.2\subtractright{121.68} \amp=121.68-2x^2\subtractright{121.68} </mrow>
+              <mrow>-12.48\amp=-2x^2</mrow>
+              <mrow>\divideunder{-12.48}{-2}\amp=\divideunder{-2x^2}{-2}</mrow>
+              <mrow>6.24\amp=x^2</mrow>
+              <mrow>\pm\sqrt{6.24}\amp=x</mrow>
+              <mrow>\pm 2.498\amp=x</mrow>
+            </md>
+            We reject the negative solution because, presumably, the river was not flowing in the opposite direction of its natural course.  So we conclude that the river current was flowing at a rate of about <m>2.5</m> mph during your canoeing excursion.
+          </p>
+      </statement>
+      </exercise>
 
-    <exercise xml:id="workshop-rational-expressions-domain-examples">
-      <title>Determining the domain of a rational function</title>
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
       <statement>
         <p>
-          When presented with a formula for a function named <m>f</m>, barring any stated restrictions, the domain of <m>f</m> is the set of all real numbers for which the formula returns a real number.  For example, <m>9</m> is in the domain of the function <m>f(x)=\sqrt{x-5}</m> because the value of <m>f(9)</m> is a real number (specifically <m>2</m>) where as <m>1</m> is not in the domain because when we apply the formula to <m>1</m> the result is <m>\sqrt{-4}</m> which is not a real number.
-        </p>
-        <p>
-          A rational function is a function whose formula can be written in the form <m>\frac{p(x)}{q(x)}</m> where <m>p(x)</m> and <m>q(x)</m> are both polynomial functions.  Determining the domain of a rational function essentially boils down to determining the values of <m>x</m> that do not lie in the domain.  The values excluded from the domain are the values that result in division by zero (which leads to an undefined result).
-        </p>
-        <p>
-          To help facilitate identifying the values that cause the denominator to evaluate to zero, we generally completely factor the denominators of rational expressions.  For reasons of simplification, which is discussed in the next section, we also completely factor the numerators of rational expression.
-        </p>
-        <p>
-          Let's determine the domain of the function <m>f(x)=\frac{x+3}{x^2-12x+20}</m>.  We begin by completely factoring the denominator of the rational expression.
-          <md>
-            <mrow>f(x)\amp=\frac{x+3}{x^2-12x+20}</mrow>
-            <mrow>\amp=\frac{x+3}{(x-10)(x-2)}</mrow>          
-          </md>
-          From the factored expression we can see that the value of <m>x</m> can be neither <m>10</m> nor <m>2</m> as either of those values would cause division by <m>0</m>.  Consequently, the domain of <m>f</m> consists of all real numbers other that <m>2</m> and <m>10</m>.  Using set builder notation we express the domain as <m>\{x\mid x \neq 2, x \neq 10\}</m> and using interval notation we express the domain as
-          <m>(-\infty,2) \cup (2,10) \cup (10,\infty)</m>.
-        </p>
-        <p>
-          Let's determine the domain of the function <m>g(t)=\frac{6}{t^2+9t}</m>.  We begin by factoring.
-          <md>
-            <mrow>g(t)\amp=\frac{6}{t^2+9t}</mrow>
-            <mrow>\amp=\frac{6}{t(t+9)}</mrow>
-          </md>
-          The input variable for <m>g</m> is <m>t</m>, so we need to determine the values of <m>t</m> that would result in division by zero.  The two values are <m>0</m> and <m>-9</m>, so those are the two values that are not in the domain of <m>g</m>.  So the domain of <m>g</m>, stated using set builder notation, is <m>\{x \mid x \neq -9, x \neq 0\}</m>.  Using interval notation, the domain of <m>g</m> is expressed as
-          <m>(-\infty,-9) \cup (-9,0) \cup (9,\infty)</m>.
-        </p>
-        <p>
-          One more example.  This example requires the factor formula <m>a^3-b^3=(a-b)(x^2+ab+b^2)</m>.
-        </p>
-        <p>
-          Let's determine the domain of <m>f(x)=\frac{x-2}{x^3-8}</m>.  Factoring we have:
-          <md>
-            <mrow>f(x)\amp=\frac{x-2}{x^3-8}</mrow>
-            <mrow>\amp=\frac{x-2}{(x-2)(x^2+2x+4)}</mrow>
-          </md>
-          If we replace <m>x</m> with <m>2</m>, the resultant expression is <m>\frac{0}{0}</m>, which is just as undefined as any other expression involving division by zero.  So <m>2</m> is not in the domain of <m>f</m>.  It turns out that <m>2</m> is the only value of <m>x</m> that results in division by zero.  The easiest way to see this is to look at the original denominator.  If <m>x^3-8=0</m>, then <m>x^3=8</m>.  The only real number that cubes to <m>8</m> is <m>2</m>, so that is the only number not in the domain of <m>f</m>.  So the domain of <m>f</m> is 
-          <m>\{x \mid x \neq 2\}</m> or, equivalently, <m>(-\infty,2) \cup (2,\infty)</m>.
-        </p>
-        <p>
-          Click here to access some practice problems: <xref ref="workshop-rational-expressions-domain-exercises">Practice Exercises</xref>
+          <ol>
+            <li>
+              In still water, Yoshi can propel his Kayak at a constant pace of 10 km/hr.  One day he takes his kayak out on a river and spends a total of 2.5 hours paddling 12 kilometers upstream and back downstream (another 12 kilometers).  Assuming that he maintains his paddling pace of 10 km/hr and that the river current's pace was constant throughout the trip, determine the pace of the river current that day.
+            </li>
+            <li>
+              In 2006, Patty was living with her domestic partner Marcie.  They had twin treadmills in their basement, and they liked to spend each day jogging next to one another.  Patty always set her speedometer at a pace that was 2.4 mph faster than that set by Marcie.  Over an equal period of time, Patty would rack up 5.775 miles on her odometer while Marcie would register 3.975 miles on her odometer.  Determine the pace at which each partner jogged.
+            </li>
+            <li>
+              Sylvia owns a business where she assembles complicated IKEA furniture kits for folks.  Working alone, she can, on average, completely assemble two kits in five hours. She recently hired Ali, and working together the two can, on average, assemble thirty-one kits in forty hours. Assuming that their completion rate when they work together is the sum of their individual rates, determine the rate at which Ali assembles kits when he works alone.
+            </li>
+          </ol>
+          <p></p>
         </p>
       </statement>
-    </exercise>
-
-    <exercise xml:id="workshop-rational-expressions-simplifying-examples">
-      <title>Simplifying rational expressions/Domain restrictions</title>
-      <statement>
-        <p>
-          Recall that multiplying fractions entails multiplying the numerators with one another and multiplying the denominators with one another.  For example:
-          <md>
-            <mrow>\frac{2}{7} \cdot \frac{10}{3}\amp=\frac{2 \cdot 10}{7 \cdot 3}</mrow>
-            <mrow>\amp=\frac{20}{21}</mrow>
-          </md>
-          The process of simplifying a rational expression involves employing the multiplication process in reverse, but in a strategic way.  What we want to do is completely factor both the numerator and the denominator of the expression and then look for factors that occur in both the numerator and the denominator.  We can then factor the common factors from the larger expression as fractions that reduce to one, thereby simplifying the original expression.  This will make more sense when seen it in action.
-        </p>
-        <p>
-          Let's simplify the expression <m>\frac{x^2+6x-55}{x^2+x-30}</m>.  We begin by factoring both the numerator and the denominator.
-          <me>\frac{x^2+6x-55}{x^2+x-30}=\frac{(x+11)(x-5)}{(x+6)(x-5)}</me>
-          We now see that there is indeed a factor that is common to both the numerator and the denominator, specifically <m>(x-5)</m>.  We can isolate these factors from the other factors in the form of a fraction that reduces to one.  Picking up where we left off:
-          <md>
-             <mrow>\frac{x^2+6x-55}{x^2+x-30}\amp=\frac{(x+11)(x-5)}{(x+6)(x-5)}</mrow>
-             <mrow>\amp=\frac{x-5}{x-5} \cdot \frac{x+11}{x+6}</mrow>
-          </md>
-          So long as the value of <m>x</m> is not <m>5</m>, the expression <m>\frac{x-5}{x-5}</m> simplifies to <m>1</m>.  Let's go ahead and replace <m>\frac{x-5}{x-5}</m> with <m>1</m>, but when we do so we have to state a domain restriction, that the value of <m>x</m> is not allowed to be <m>5</m>.
-          <md>
-             <mrow>\frac{x^2+6x-55}{x^2+x-30}\amp=\frac{(x+11)(x-5)}{(x+6)(x-5)}</mrow>
-             <mrow>\amp=\frac{x-5}{x-5} \cdot \frac{x+11}{x+6}</mrow>
-             <mrow>\amp=1 \cdot \frac{x+11}{x+6}, x \neq 5</mrow>
-             <mrow>\amp=\frac{x+11}{x+6}, x \neq 5</mrow>
-          </md>
-          As a rule we leave out the line with the explicit factor of <m>1</m>.  So a complete simplification would be as follows.
-          <md>
-             <mrow>\frac{x^2+6x-55}{x^2+x-30}\amp=\frac{(x+11)(x-5)}{(x+6)(x-5)}</mrow>
-             <mrow>\amp=\frac{x-5}{x-5} \cdot \frac{x+11}{x+6}</mrow>
-             <mrow>\amp=\frac{x+11}{x+6}, x \neq 5</mrow>
-          </md>
-          Several examples follow.
-        </p>
-        <p>
-          Example
-          <md>
-            <mrow>\frac{t^2+16t+64}{t^2+14t+48}\amp=\frac{(t+8)(t+8)}{(t+8)(t+6)}</mrow>
-            <mrow>\amp=\frac{t+8}{t+8} \cdot \frac{t+8}{t+6}</mrow>
-            <mrow>\amp=\frac{t+8}{t+6}, t \neq -8</mrow>
-          </md>
-        </p>
-        <p>
-          Example
-          <md>
-            <mrow>\frac{x^2-7x}{x^2-15x+56}\amp=\frac{x(x-7)}{(x-8)(x-7)}</mrow>
-            <mrow>\amp=\frac{x-7}{x-7} \cdot \frac{x}{x-8}</mrow>
-            <mrow>\amp=\frac{x}{x-8}, x \neq 7</mrow>
-          </md>
-        </p>
-        <p>
-          Example
-          <md>
-            <mrow>\frac{y^3-36y}{y^3+36y}\amp=\frac{y(y^2-36)}{y(y^2+36)}</mrow>
-            <mrow>\amp=\frac{y(y+6)(y-6)}{y(x^2+36)}</mrow>
-            <mrow>\amp=\frac{y}{y} \cdot \frac{(y+6)(y-6)}{y^2+36}</mrow>
-            <mrow>\amp=\frac{(y+6)(y-6)}{y^2+36}, y \neq 0</mrow>
-          </md>
-        </p>
-        <p>
-          Click here to access some practice problems: <xref ref="workshop-rational-expressions-simplifying-exercises">Practice Exercises</xref>
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise xml:id="workshop-rational-expressions-multiplying-examples">
-      <title>Multiplying rational expressions</title>
-      <statement>
-        <p>
-          As suggested in the last section, multiplying rational expressions entails writing the numerators of the expression over the product of the denominators of the expression.  We then simplify the result.  Several examples follow.
-        </p>
-        <p>
-          Example
-          <md>
-            <mrow>\frac{x+3}{x-2} \cdot \frac{x^2-4}{x^2+6x+9}\amp=\frac{(x+3)(x^2-4)}{(x-2)(x^2+6x+9)}</mrow>
-            <mrow>\amp=\frac{(x+3)(x+2)(x-2)}{(x-2)(x+3)(x+3)}</mrow>
-            <mrow>\amp=\frac{x+3}{x+3} \cdot \frac{x-2}{x-2} \cdot \frac{x+2}{x+3}</mrow>
-            <mrow>\amp=\frac{x+2}{x+3}, x \neq 2</mrow>
-          </md>
-          Note that we did not need to state the restriction <m>x \neq -3</m> because a factor of <m>(x+3)</m> is still present in the simplified result.
-        </p>
-        <p>
-          Example
-          <md>
-            <mrow>\frac{w^3-1}{w^2-1}\amp=\frac{(w-1)(w^2+w+1)}{(w-1)(w+1)}</mrow>
-            <mrow>\amp=\frac{w-1}{w-1} \cdot \frac{w^2+w+1}{w+1}</mrow>
-            <mrow>\amp=\frac{w^2+w+1}{w+1},w \neq 1</mrow>
-          </md>
-        </p>
-        <p>
-          Example
-          <md>
-            <mrow>\frac{10x-35}{5x^2+25x} \cdot \frac{x^2+8x+15}{2x-7}\amp=\frac{(10x-35)(x^2+8x+15)}{(5x^2+25x)(2x-7)}</mrow>
-            <mrow>\amp=\frac{5(2x-7)(x+3)(x+5)}{5x(x+5)(2x-7)}</mrow>
-            <mrow>\amp=\frac{5}{5} \cdot \frac{2x-7}{2x-7} \cdot \frac{x+5}{x+5} \cdot \frac{x+3}{x}</mrow>
-            <mrow>\amp=\frac{x+3}{x}, x \neq \frac{7}{2}, x \neq -5</mrow>
-          </md>
-        </p>
-        <p>
-          Example
-          <md>
-            <mrow>\frac{8}{2x+22} \cdot (x^2+22x+121)\amp=\frac{8}{2x+22} \cdot \frac{x^2+22x+121}{1}</mrow>
-            <mrow>\amp=\frac{8(x^2+22x+121)}{(2x+22) \cdot 1}</mrow>
-            <mrow>\amp=\frac{8(x+11)(x+11)}{2(x+11)}</mrow>
-            <mrow>\amp=\frac{x+11}{x+11} \cdot \frac{8}{2} \cdot \frac{x+11}{1}</mrow>
-            <mrow>\amp=4(x+11), x \neq -11</mrow>
-          </md>
-        </p>
-        <p>
-          Click here to access some practice problems: <xref ref="workshop-rational-expressions-multiplying-examples">Practice Exercises</xref>
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise xml:id="workshop-rational-expressions-dividing-examples">
-      <title>Dividing rational expressions</title>
-      <statement>
-        <p>
-          Recall that when we divide one fraction by another, we rewrite the quotient as a product after reciprocating the divisor.  That is:
-          <me>\frac{a}{b} \div \frac{c}{d}=\frac{a}{b} \cdot \frac{d}{c}</me>.
-        </p>
-        <p>
-          When working with rational expressions that include division, we always first rewrite the quotient as a product and then simplify the result.  When we convert the quotient to a product, we need to state any domain restrictions in the original divisior that are lost by reciprocating the divisor.  For example:
-          <md>
-            <mrow>\frac{3}{x-10} \div \frac{9}{x-5}\amp=\frac{3}{x-10} \cdot \frac{x-5}{9},x \neq 5</mrow>
-            <mrow>\amp=\frac{3(x-5)}{(x-10) \cdot 9}, x \neq 5</mrow>
-            <mrow>\amp=\frac{3(x-5)}{9(x-10)},x \neq 5</mrow>
-          </md>
-        </p>
-        <p>
-          When presented with a quotient in which one of the expressions is a rational expression but the other expression is a polynomial, it can be useful to write the polynomial as a rational expression with a denominator of <m>1</m>.  Two examples follow.
-        </p>
-        <p>
-          Example
-          <md>
-            <mrow>\amp(x^2+8x+12) \div \frac{x^2+4x-12}{x^2-36}</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} =\frac{x^2+8x+12}{1} \div \frac{x^2+4x-12}{x^2-36}</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} =\frac{x^2+8x+12}{1} \cdot \frac{x^2-36}{x^2+4x-12}, x \neq 6, x \neq -6</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x^2+8x+12)(x^2-36)}{1 \cdot (x^2+4x-12)}, x \neq 6, x \neq -6</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x+6)(x+2)(x+6)(x-6)}{(x+6)(x-2)},x \neq 6</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} =\frac{x+6}{x+6} \cdot \frac{(x+2)(x+6)(x-6)}{x-2}, x \neq 6</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x+2)(x+6)(x-6)}{x-2}, x \neq 6, x \neq -6</mrow>
-          </md>
-        </p>
-        <p>
-          Example
-          <md>
-            <mrow>\frac{x^2-18x+72}{9x^2-16} \div (9x^2-16x)\amp=\frac{x^2-18x+72}{9x^2-16} \div \frac{9x^2-16x}{1}</mrow>
-            <mrow>\amp=\frac{x^2-18x+72}{9x^2-16} \cdot \frac{1}{9x^2-16x}</mrow>
-            <mrow>\amp=\frac{(x^2-18x+72) \cdot 1}{(9x^2-16)(9x^2-16x)}</mrow>
-            <mrow>\amp=\frac{(x-12)(x-6)}{(3x+4)(3x-4) \cdot x(9x-16)}</mrow>
-            <mrow>\amp=\frac{(x-12)(x-6)}{x(3x+4)(3x-4)(9x-16)}</mrow>
-          </md>
-        </p>
-        <p>
-          When there is repeated division between rational expression, every divisor ends up being reciprocated when the expression is rewritten as a product.  The is a result of the fact that operations are performed left-to-right.  An example follows.
-         <md>
-            <mrow>\amp\frac{x-3}{x-7} \div \frac{x+8}{x-12} \div \frac{x+8}{x-7}</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} =(\frac{x-3}{x-7} \div \frac{x+8}{x-12}) \div \frac{x+8}{x-7}</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} =(\frac{x-3}{x-7} \cdot \frac{x-12}{x+8}) \div \frac{x+8}{x-7}, x \neq 12</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x-3)(x-12)}{(x-7)(x+8)} \div \frac{x+8}{x-7}, x \neq 12</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x-3)(x-12)}{(x-7)(x+8)} \cdot \frac{x-7}{x+8}, x \neq 12</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x-3)(x-12)(x-7)}{(x-7)(x+8)(x+8)}, x \neq 12</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} =\frac{x-7}{x-7} \cdot \frac{(x-3)(x-12)}{(x+8)(x+8)}, x \neq 12</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} =\frac{(x-3)(x-12)}{(x+8)^2}, x \neq 12, x \neq 7</mrow>
-          </md>
-        </p>
-        <p>
-          Click here to access some practice problems: <xref ref="workshop-rational-expressions-dividing-exercises">Practice Exercises</xref>
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise xml:id="workshop-rational-expressions-combining-common-denominator-examples">
-      <title>Combining rational expressions that have common denominators</title>
-      <statement>
-        <p>
-          Recall that when adding or subtracting fractions that have a common denominator, we add or subtract the numerators over a single occurrence of the denominator.  We then simplify the result (i.e. reduce the resultant fraction <mdash/> if it reduces). Two examples are shown below.
-          <sidebyside widths="50% 50%" margins="0%">
+      <solution>
+        <ol>
+          <li>
             <p>
-              <md>
-                <mrow>\frac{1}{9}+\frac{5}{9}\amp=\frac{1+5}{9}</mrow>
-                <mrow>\amp=\frac{6}{9}</mrow>
-                <mrow>\amp=\frac{2}{3}</mrow>
-              </md>
-            </p>
-            <p>
-              <md>
-                <mrow>\frac{4}{15}-\frac{7}{15}\amp=\frac{4-7}{15}</mrow>
-                <mrow>\amp=\frac{-3}{15}</mrow>
-                <mrow>\amp=-\frac{1}{5}</mrow>
-              </md>
-            </p>
-          </sidebyside>
-        </p>
-        <p>
-          The same strategy is used when adding or subtracting rational expressions that have a common denominator.  When subtracting a fraction whose numerator has multiple terms, we need to be careful to distribute the subtraction to each term.  Regardless, once the numerators are added or subtracted we need to simplify, factor, and cancel any factors common to the numerator and denominator. Several examples of both addition and subtraction of rational expressions follow.
-        </p>
-        <p>
-          Example
-          <md>
-            <mrow>\frac{x+3}{x-7}+\frac{x-17}{x-7}\amp=\frac{x+3+x-17}{x-7}</mrow>
-            <mrow>\amp=\frac{2x-14}{x-7}</mrow>
-            <mrow>\amp=\frac{2(x-7)}{x-7}</mrow>
-            <mrow>\amp=\frac{x-7}{x-7} \cdot \frac{2}{1}</mrow>
-            <mrow>\amp=2, x \neq 7</mrow>
-          </md>
-        </p>
-        <p>
-          Example
-          <md>
-            <mrow>\amp\frac{3x^2+8x-2}{(2x+1)(x-3)}-\frac{x^2+15x+2}{(2x-1)(x-3)}</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\frac{3x^2+8x-2-x^2-15x-2}{(2x+1)(x-3)}</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\frac{2x^2-7x-4}{(2x+1)(x-3)}</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\frac{2x^2-8x+x-4}{(2x+1)(x-3)}</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\frac{2x(x-4)+1 \cdot (x-4)}{(2x+1)(x-3)}</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\frac{(x-4)(2x+1)}{(2x+1)(x-3)}</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\frac{2x+1}{2x+1} \cdot \frac{x-4}{x-3}</mrow>
-            <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\frac{x-4}{x-3}, x \neq -\frac{1}{2}</mrow>
-          </md>
-        </p>
-        <p>
-          Example
-          <md>
-            <mrow>\frac{x^2+3x-24}{x^2-11x+28}-\frac{20-4x}{x^2-11x+28}\amp=\frac{x^2+3x-24-20+4x}{x^2-11x+28}</mrow>
-            <mrow>\amp=\frac{x^2+7x-44}{x^2-11x+28}</mrow>
-            <mrow>\amp=\frac{(x+11)(x-4)}{(x-7)(x-4)}</mrow>
-            <mrow>\amp=\frac{x-4}{x-4} \cdot \frac{x+11}{x-7}</mrow>
-            <mrow>\amp=\frac{x+11}{x-7}, x \neq 4</mrow>
-          </md>
-        </p>
-        <p>
-          Click here to access some practice problems: <xref ref="workshop-rational-expressions-combining-common-denominator-exercises">Practice Exercises</xref>
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise xml:id="workshop-rational-expressions-combining-no-common-factors-examples">
-      <title>Combining rational expressions that have denominators with no common factors</title>
-      <statement>
-        <p>
-          One way of thinking about the fraction <m>\frac{3}{8}</m> is that an object has been broken up into eight pieces of equal size and we have retained three of the eight pieces.  In that sense, the denominator keeps track of the number of pieces (of equal size) that a whole object has broken into and the numerator keeps track of the number of pieces retained.  When interpreting fractions, it is vital that every piece of the whole is the same size as every other piece of the whole (whatever "the whole" has been defined to be).
-        </p>
-        <p>
-          Consider the sum <m>\frac{1}{2}+\frac{1}{3}</m>.  There is a fundamental problem with this sum as currently written, and that is that the pieces of the whole in the first fraction are larger than the pieces of the whole in the second fraction.  For example, let's say that we cut two cakes of equal size, one into two pieces and the other into three pieces.  Half a cake is larger than a third of a similarly sized cake.  If we want to express the sum of <m>\frac{1}{2}</m> and <m>\frac{1}{3}</m> as a single fraction, we first need to cut each of our cakes into equal number of pieces.  That is, we need to establish a common denominator between the two fractions.
-        </p>
-        <p>
-          Thinking about our cakes, if we cut each half into three pieces and each third into two pieces, all of the resultant pieces will be one-sixth of the original cake.  Also, cutting each half into three pieces triples the number of pieces whereas cutting each third into two pieces doubles the number of pieces.  The process is represented by the equation
-          <me>
-            \frac{1}{2}+\frac{1}{3}=\frac{1}{2} \cdot \frac{3}{3}+\frac{1}{3} \cdot \frac{2}{2}.
-          </me>
-          Note that the products in the denominator represent the additional cuts whereas the products in the numerators represent the resultant increase in the number of pieces retained. 
-        </p>
-        <p>
-          After performing the products, both of our cakes have been cut into six pieces of equal size, so we can simply add the number of retained pieces over the denominator of six.  The calculation is completed below.
-          <md>
-            <mrow>\frac{1}{2}+\frac{1}{3}\amp=\frac{1}{2} \cdot \frac{3}{3}+\frac{1}{3} \cdot \frac{2}{2}</mrow>
-            <mrow>\amp=\frac{3}{6}+\frac{2}{6}</mrow>
-            <mrow>\amp=\frac{3+2}{6}</mrow>
-            <mrow>\amp=\frac{5}{6}</mrow>
-          </md>
-        </p>
-        <p>
-          When combining rational expressions we must also first establish common denominators between all of the expressions.  We first factor all denominators and then assess the situation.  The easiest case is when none of the denominators share any factors.  That is the focus of this section.  
-        </p>
-        <p>
-          When the denominators share no common factors, the least common denominator (LCD) is simply the product of every factor the occurs in any given denominator (along with any exponent that occurs on that factor).
-        </p>
-        <p>
-          For example, the LCD in the sum <me>\frac{1}{x-2}+\frac{x+5}{x-3}</me> is <m>(x-2)(x-3)</m>. 
-        </p>
-        <p>
-          Also, the LCD in the difference 
-          <me>\frac{9}{x^2(x+7)}-\frac{11}{x+1}</me> is <m>x^2(x+7)(x+1)</m>.
-        </p>
-        <p>
-          When combining the fractions, we need to assess the situation term-by-term.  For each term we introduce any factor missing from the LCD and balance that action by also introducing the same factors to the numerator.  This is illustrated below.
-          <me>\frac{x}{x-4}+\frac{5}{x+3}=\frac{x}{x-4} \cdot \frac{x+3}{x+3} +\frac{5}{x+3} \cdot \frac{x-4}{x-4}</me>
-        </p>
-        <p>
-          Once the common denominator has been established, we can go ahead and add or subtract the numerators over the common denominator.  We have to be deliberate in this execution.  Specifically:
-        </p>
-        <p>
-          If we want to get the correct answer we must always fully expand the numerator and factor if possible.
-        </p>
-        <p>
-          Put another way:
-        </p>
-        <p>
-          If we start crossing things out before the numerator has been fully expanded (and factored when possible), we will not get the correct answer.
-        </p>
-        <p>
-          Additionally:
-        </p>
-        <p>
-          If we want to get the correct answer we should never expand the denominator, as that action might obscure a common factor to the numerator and denominator.
-        </p>
-        <p>
-          Picking up where we left off in the last example, we complete the addition below.
-        <md>
-          <mrow>\frac{x}{x-4}+\frac{5}{x+3}\amp=\frac{x}{x-4} \cdot \frac{x+3}{x+3} +\frac{5}{x+3} \cdot \frac{x-4}{x-4}</mrow>
-          <mrow>\amp=\frac{x(x+3)+5(x-4)}{(x-4)(x+3)}</mrow>
-          <mrow>\amp=\frac{x^2+3x+5x-20}{(x-4)(x+3)}</mrow>
-          <mrow>\amp=\frac{x^2+8x-20}{(x-4)(x+3)}</mrow>
-          <mrow>\amp=\frac{(x+10)(x-2)}{(x-4)(x+3)}</mrow>
-        </md>
-        </p>
-        <p>
-          Several examples follow.
-        </p>
-
-        <p>
-          Example
-          <md>
-            <mrow>\frac{3}{x}+\frac{5}{x-4}\amp=\frac{3}{x} \cdot \frac{x-4}{x-4}+\frac{5}{x-4} \cdot \frac{x}{x}</mrow>
-            <mrow>\amp=\frac{3(x-4)+5x}{x(x-4)}</mrow>
-            <mrow>\amp=\frac{3x-12+5x}{x(x-4)}</mrow>
-            <mrow>\amp=\frac{8x-12}{x(x-4)}</mrow>
-            <mrow>\amp=\frac{4(2x-3)}{x(x-4)}</mrow>
-          </md>
-        </p>
-
-        <p>
-          Example
-          <md>
-            <mrow>\frac{x+1}{x-3}-\frac{x+2}{x+1}\amp=\frac{x+1}{x-3} \cdot \frac{x+1}{x+1}-\frac{x+2}{x+1} \cdot \frac{x-3}{x-3}</mrow>
-            <mrow>\amp=\frac{(x+1)(x+1)-(x+2)(x-3)}{(x+1)(x-3)}</mrow>
-            <mrow>\amp=\frac{x^2+2x+1-(x^2-x-6)}{(x+1)(x-3)}</mrow>
-            <mrow>\amp=\frac{x^2+2x+1-x^2+x+6}{(x+1)(x-3)}</mrow>
-            <mrow>\amp=\frac{3x+7}{(x+1)(x-3)}</mrow>
-          </md>
-        </p>
-
-        <p>
-          Example
-          <md>
-            <mrow>\frac{x^2}{x-1}+x\amp=\frac{x^2}{x-1}+\frac{x}{1}</mrow>
-            <mrow>\amp=\frac{x^2}{x-1}+\frac{x}{1} \cdot \frac{x-1}{x-1}</mrow>
-            <mrow>\amp=\frac{x^2+x(x-1)}{x-1}</mrow>
-            <mrow>\amp=\frac{x^2+x^2-x}{x-1}</mrow>
-            <mrow>\amp=\frac{2x^2-x}{x-1}</mrow>
-            <mrow>\amp=\frac{x(2x-1)}{x-1}</mrow>
-          </md>
-        </p>
-
-        <p>
-          Example
-          <md>
-            <mrow>\frac{1}{x-7}-\frac{1}{x^2+4}\amp=\frac{1}{x-7} \cdot \frac{x^2+4}{x^2+4}-\frac{1}{x^2+4} \cdot \frac{x-7}{x-7}</mrow>
-            <mrow>\amp=\frac{1 \cdot (x^2+4)-1 \cdot (x-7)}{(x-7)(x^2+4)}</mrow>
-            <mrow>\amp=\frac{x^2+4-x+7}{(x-7)(x^2+4)}</mrow>
-            <mrow>\amp=\frac{x^2-x+11}{(x-7)(x^2+4)}</mrow>
-          </md>
-        </p>
-        <p>
-          Click here to access some practice problems: <xref ref="workshop-rational-expressions-combining-no-common-factors-exercises">Practice Exercises</xref>
-        </p>
-
-
-
-      </statement>
-    </exercise>
-
-    <exercise xml:id="workshop-rational-expressions-combining-common-factors-examples">
-      <title>Combining rational expressions that have denominators with both common factors and non-common factors</title>
-      <statement>
-        <p>
-          The basic strategy for adding and/or subtracting rational expressions always begins with establishing the lowest common denominator of all of the expressions in the sum or difference.  As discussed in the last section, this is extremely straight forward when the denominators have no common factors.  Things get a little more dicey when there a both common factors and non-common factors.  Specifically, it can be tempting to include too many occurrences of a given factor.
-        </p>
-        <p>
-          Consider<me>\frac{3}{(x-4)(x+5)}+\frac{6}{(x-4)(x-2)}</me>.
-          If we simply multiply the two denominators we have<me>(x-4)(x+5)(x-4)(x-2)</me>.  But this expression has one more factor of of <m>(x-4)</m> then is needed in the LCD.  There is no reason to introduce second factors of <m>(x-4)</m> to the denominators - they already have a single occurrence of that factor in common.  We can create common denominators by introducing a factor of <m>(x-2)</m> to the first denominator and a factor of <m>(x+5)</m> to the second denominator.  This will result in a the common denominator:
-          <me>(x-4)(x+5)(x-2)</me>
-        </p>
-        <p>
-          On strategy for establishing the LCD is to start by listing all of the factors in the denominator of the first term.  Then look at the second denominator and add any factors that are present but not yet listed. Repeat that for the third term (if present) and continue until all denominators have been addressed.
-        </p>
-        <p>
-          Let's consider <me>\frac{1}{(x-1)(x-1)(x+3)}-\frac{5}{(x-1)(x-7)(x+3)}+\frac{7}{(x-1)(x-1)(x-1)}</me>.  From the first term we know that the LCD must include
-          <me>(x-1)(x-1)(x+3)</me>.  Looking at the denominator of the second term we see a factor of <m>(x-7)</m> that has been accounted for, so adding that to our "list," the LCD grows to<me>(x-1)(x-1)(x+3)(x-7)</me>.  Finally, comparing the denominator of the third term to our "LCD in progress," we see that two out of three factors of <m>(x-1)</m> have been accounted for, so we need to add one more factor of <m>(x-1)</m> to the LCD.  So our actual LCD is<me>(x-1)^3(x+3)(x+7)</me>.  
-        </p>
-        <p>
-          Another strategy for determining the LCD goes as follows.
-            <p>
-              <ol label="1">
-                <li>Ignoring exponents, any factor that occurs in at least one denominator occurs in the LCD</li>
-                <li>For any given factor, the exponent that appears on that factor in the LCD is the largest exponent that appears on the factor in any single denominator</li>
+              Define <m>x</m> to be the constant speed (km/hr) of the current. The information stated in the problem is summarized in <xref ref="workshop-rational-equations-Yoshi-exercises">Table</xref>.  In both rows the expression for time was determined by <m>t=\frac{D}{r}</m>.
+              <p></p>
+                <table xml:id="workshop-rational-equations-Yoshi-exercises">
+                    <caption>Yoshi's kayak adventure</caption>
+                      <tabular>
+                        <col halign="left"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                        <row>
+                          <cell>
+                          </cell>
+                          <cell>
+                            <line>rate (km/hr)</line>
+                          </cell>
+                          <cell>
+                            <line>time (hr)</line>
+                          </cell>
+                          <cell>
+                            <line>distance (km)</line>
+                          </cell>
+                        </row>
+                        <row>
+                          <cell>
+                            Upstream
+                          </cell>
+                          <cell>
+                            <m>10-x</m>
+                          </cell>
+                          <cell>
+                            <m>\frac{12}{10-x}</m>
+                          </cell>
+                          <cell>
+                            <m>12</m>
+                          </cell>
+                        </row>
+                        <row>
+                          <cell>
+                            Downstream
+                          </cell>
+                          <cell>
+                            <m>10+x</m>
+                          </cell>
+                          <cell>
+                            <m>\frac{12}{10+x}</m>
+                          </cell>
+                          <cell>
+                            <m>12</m>
+                          </cell>
+                        </row>
+                      </tabular>
+                    </table>
+                    </p>
+                    <p></p>
+                    <p>
+                      Because Yoshi spent a total of 2.5 hours on the river, the sum of the two time expressions needs to total 2.5.  Lets state and solve that equation.
+                      <md>
+                        <mrow>\frac{12}{10-x}+\frac{12}{10-x}\amp=2.5</mrow>
+                        <mrow>\multiplyleft{(10-x)(10+x)}(\frac{12}{10-x}+\frac{12}{10-x})\amp=\multiplyleft{(10-x)(10+x)}2.5</mrow>
+                        <mrow>12(10+x)+12(10-x)\amp=2.5(10-x)(10+x)</mrow>
+                        <mrow>120+12x+120-12x\amp=2.5(100-x^2)</mrow>
+                        <mrow>240\amp=250-2.5x^2</mrow>
+                        <mrow>240\subtractright{250}\amp=250-2.5x^2\subtractright{250}</mrow>
+                        <mrow>-10\amp=-2.5x^2</mrow>
+                        <mrow>\divideunder{-10}{-2.5}\amp=\divideunder{-2.5x^2}{-2.5}</mrow>
+                        <mrow>4\amp=x^2</mrow>
+                        <mrow>\pm2\amp=x</mrow>
+                    </md>
+                    Because the speed of the current cannot be negative, we reject the negative solution.  The speed of the river current that day was 2 km/hr.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Define <m>x</m> to be the pace (mph) of the at which Marcie sets her treadmill. The information stated in the problem is summarized in <xref ref="workshop-rational-equations-Patty-and-Marcie-exercises">Table</xref>.  In both rows the expression for time was determined by <m>t=\frac{D}{r}</m>.
+                    <p></p>
+                  </p>
+                  <p>
+                  <table xml:id="workshop-rational-equations-Patty-and-Marcie-exercises">
+                    <caption>Patty and Marcie jog</caption>
+                      <tabular>
+                        <col halign="left"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                        <row>
+                          <cell>
+                          </cell>
+                          <cell>
+                            <line>rate (mi/hr)</line>
+                          </cell>
+                          <cell>
+                            <line>time (hr)</line>
+                          </cell>
+                          <cell>
+                            <line>distance (mi)</line>
+                          </cell>
+                        </row>
+                        <row>
+                          <cell>
+                            Patty
+                          </cell>
+                          <cell>
+                            <m>x+2.4</m>
+                          </cell>
+                          <cell>
+                            <m>\frac{5.775}{x+2.4}</m>
+                          </cell>
+                          <cell>
+                            <m>5.775</m>
+                          </cell>
+                        </row>
+                        <row>
+                          <cell>
+                            Marcie
+                          </cell>
+                          <cell>
+                            <m>x</m>
+                          </cell>
+                          <cell>
+                            <m>\frac{3.975}{x}</m>
+                          </cell>
+                          <cell>
+                            <m>3.975</m>
+                          </cell>
+                        </row>
+                      </tabular>
+                    </table>
+                    </p>
+                    <p></p>
+                    <p>
+                    Because Patty and Marcie were on their treadmills for an equal period of time, the two time expressions in the table must be equal.  Let's write an equation that reflects that fact and then go ahead and solve that equation.
+                    <md>
+                      <mrow>\frac{5.775}{x+2.4}\amp=\frac{3.975}{x}</mrow>
+                      <mrow>\multiplyleft{x \cdot (x+2.4)}\frac{5.775}{x+2.4}\amp=\multiplyleft{x \cdot (x+2.4)}\frac{3.975}{x}</mrow>
+                      <mrow>5.775x\amp=3.975(x+2.4)</mrow>
+                      <mrow>5.775x\amp=3.975x+9.54</mrow>
+                      <mrow>5.775x\subtractright{3.975x}\amp=3.975x+9.54\subtractright{3.975x}</mrow>
+                      <mrow>1.8x\amp=9.54</mrow>
+                      <mrow>\divideunder{1.8x}{1.8}\amp=\divideunder{9.54}{1.8}</mrow>
+                      <mrow>x\amp=5.3</mrow>
+                    </md>
+                    Marcie set her treadmill to the pace of 5.3 mph while Patty set hers to 7.3 mph.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    We can determine Ali's rate by deducing how long it takes him to complete one kit. Define <m>x</m> to be the time it takes Ali to assemble one kit. The information stated in the problem is summarized in 
+                    <xref ref="workshop-rational-equations-Sylvia-and-Ali-exercises">Table</xref>.    In each row, the expression in the rate column comes from the equation <m>\text{rate}=\frac{\text{# of kits}}{\text{time}}</m>.
+                    <p></p>
+                  </p>
+                  <p>
+                  <table xml:id="workshop-rational-equations-Sylvia-and-Ali-exercises">
+                    <caption>Sylvia and Ali assemble IKEA furniture kits</caption>
+                      <tabular>
+                        <col halign="left"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                        <col halign="center"/>
+                        <row>
+                          <cell>
+                          </cell>
+                          <cell>
+                            <line>rate (kits/hr)</line>
+                          </cell>
+                          <cell>
+                            <line>time (hr)</line>
+                          </cell>
+                          <cell>
+                            <line>number of kits</line>
+                          </cell>
+                        </row>
+                        <row>
+                          <cell>
+                            Sylvia alone
+                          </cell>
+                          <cell>
+                            <m>\frac{2}{5}</m>
+                          </cell>
+                          <cell>
+                            <m>5</m>
+                          </cell>
+                          <cell>
+                            <m>2</m>
+                          </cell>
+                        </row>
+                        <row>
+                          <cell>
+                            Ali alone
+                          </cell>
+                          <cell>
+                            <m>\frac{1}{x}</m>
+                          </cell>
+                          <cell>
+                            <m>x</m>
+                          </cell>
+                          <cell>
+                            <m>1</m>
+                          </cell>
+                        </row>
+                        <row>
+                          <cell>
+                            working together
+                          </cell>
+                          <cell>
+                            <m>\frac{31}{40}</m>
+                          </cell>
+                          <cell>
+                            <m>40</m>
+                          </cell>
+                          <cell>
+                            <m>31</m>
+                          </cell>
+                        </row>
+                      </tabular>
+                    </table>
+                    </p>
+                    <p></p>
+                    <p>
+                    Our equation comes from the fact that the rate at which they work together is the sum of the individual rates.  Let's write an equation that reflects that fact and then solve that equation.
+                    <md>
+                      <mrow>\frac{2}{5}+\frac{1}{x}\amp=\frac{31}{40}</mrow>
+                      <mrow>\multiplyleft{40x}\frac{2}{5}+\frac{1}{x}\amp=\multiplyleft{40x}\frac{31}{40}</mrow>
+                      <mrow>16x+40\amp=31x</mrow>
+                      <mrow>16x+40\subtractright{16x}\amp=40x\subtractright{16x}</mrow>
+                      <mrow>40\amp=24x</mrow>
+                      <mrow>\divideunder{40}{24}\amp=\divideunder{24x}{24}</mrow>
+                      <mrow>\frac{5}{3}\amp=x</mrow>
+                    </md>
+                    Working alone, it takes Ali <m>\frac{5}{3}</m> hours to complete one kit.  So Ali completes <m>\frac{3}{5}</m> of a kit in one hour., making his assemblage rate <m>\frac{3}{5}\,\frac{\text{kits}}{\text{hour}}</m>. In other words, he can assemble three kits every five hours.
+                  </p>
+                </li>
               </ol>
-            </p>
-            <p>
-          Let's consider <me>\frac{1}{x^2(x-3)^2}-\frac{2}{x^4(x-3)(x+5)^3}-\frac{3}{(x-3)^2(x+5)^7}</me>Ignoring exponents, the factors that occur in at least one denominator are <m>x</m>, <m>(x-3)</m>, and <m>(x+5)</m>.  The largest exponents that occurs on each factor in any one denominator are, respectively, <m>4</m>, <m>2</m>, and <m>7</m>.  So the LCD for the expression is<me>x^4(x-3)^2(x+7)^7</me>.
-        </p>
-        </p>
-        <p>
-          Click here to access some practice problems: <xref ref="workshop-rational-expressions-combining-common-factors-exercises">Practice Exercises</xref>
-        </p>
-      </statement>
-    </exercise>
+            </solution>
+      </exercise>
 
-    <exercise xml:id="workshop-rational-expressions-combining-opposite-factors-examples">
-      <title>Combining rational expressions that have denominators that include opposite factors</title>
-      <statement>
-        <p>
-          The factors <m>(x-8)</m> and <m>(8-x)</m> are called opposite factors, because when we replace <m>x</m> with any value other than <m>8</m> the factors evaluate to opposite numbers.  For example if we replace <m>x</m> with <m>20</m>, the expressions evaluate to <m>12</m> and <m>-12</m>, respectively.  Because the factors are opposites, it must be the case that <me>(x-8)=-1 \cdot (8-x)</me>.
-        </p>
-        <p>
-          Let's consider the expression <me>\frac{x^2}{x-8}+\frac{64}{8-x}</me>.  At first blush, you might think that the LCD for the expression is <m>(x-8)(8-x)</m>, but that expression contains one too many factors.  We can transform the factor <m>(8-x)</m> into <m>(x-8)</m> by multiplying by <m>-1</m>.  Of course, when we do that we need to balance the action by also multiplying the numerator (<m>64</m>) by <m>-1</m>.  Let's go ahead and simplify the expression.
-          <md>
-            <mrow>\frac{x^2}{x-8}+\frac{64}{8-x}\amp=\frac{x^2}{x-8}+\frac{64}{8-x} \cdot \frac{-1}{-1}</mrow>
-            <mrow>\amp=\frac{x^2}{x-8}+\frac{-64}{x-8}</mrow>
-            <mrow>\amp=\frac{x^2-64}{x-8}</mrow>
-            <mrow>\amp=\frac{(x-8)(x+8)}{x-8}</mrow>
-            <mrow>\amp=\frac{x-8}{x-8} \cdot \frac{x+8}{1}</mrow>
-            <mrow>\amp=x+8,, x \neq 8</mrow>
-          </md>
-        </p>
-        <p>
-          Let's consider the expression <me>\frac{x+1}{x^2-10x+25}-\frac{x-1}{25-x^2}</me>. 
-          We begin by observing that <me>x^2-10x+25=(x-5)(x+5) \text{ and } 25-x^2=(5-x)(5+x)</me>.  We can see that the denominators contain opposite factors, but unraveling the LCD would be a lot easier if the factors were actually identical.  We can force that situation by always making sure that the leading terms of each denominator have positive coefficients.  Recall that the leading term of a polynomial of <m>x</m> is the term that contains the greatest power of <m>x</m>.  In the case of <m>25-x^2</m>, that would be <m>-x^2</m>.  We want the coefficient on that term to be positive, so we'll multiply by <m>-1</m>.  Let's do that (with the requisite balancing action).
-          <md>
-            <mrow>\frac{x+1}{x^2-10x+25}-\frac{x-1}{25-x^2}\amp=\frac{x+1}{x^2-10x+25}-\frac{x-1}{25-x^2} \cdot \frac{-1}{-1}</mrow>
-            <mrow>\amp=\frac{x+1}{x^2-10x+25}-\frac{1-x}{x^2-25}</mrow>
-            <mrow>\amp=\frac{x+1}{(x-5)(x-5)}-\frac{1-x}{(x-5)(x+5)}</mrow>
-          </md>
-          We can now see that the LCD requires two factors of <m>(x-5)</m> and one factor of <m>(x+5)</m>.  Lets' see the simplification process from start to finish.
-          <md>
-            <mrow>\frac{x+1}{x^2-10x+25} \amp -\frac{x-1}{25-x^2}</mrow>
-            <mrow>\amp=\frac{x+1}{x^2-10x+25}-\frac{x-1}{25-x^2} \cdot \frac{-1}{-1}</mrow>
-            <mrow>\amp=\frac{x+1}{x^2-10x+25}-\frac{1-x}{x^2-25}</mrow>
-            <mrow>\amp=\frac{x+1}{(x-5)(x-5)}-\frac{1-x}{(x-5)(x+5)}</mrow>
-            <mrow>\amp=\frac{x+1}{(x-5)(x-5)} \cdot \frac{x+5}{x+5} -\frac{1-x}{(x-5)(x+5)} \cdot \frac{x-5}{x-5}</mrow>
-            <mrow>\amp=\frac{(x+1)(x+5)-(1-x)(x-5)}{(x-5)(x-5)(x+5)}</mrow>
-            <mrow>\amp=\frac{(x^2+6x+5)-(-x^2+6x-5)}{(x-5)(x-5)(x+5)}</mrow>
-            <mrow>\amp=\frac{x^2+6x+5+x^2-6x+5}{(x-5)(x-5)(x+5)}</mrow>
-            <mrow>\amp=\frac{2x^2+10}{(x-5)(x-5)(x+5)}</mrow>
-            <mrow>\amp=\frac{2(x^2+5)}{(x-5)^2(x+5)}</mrow>
-          </md>          
-        </p>
-        <p>
-          Click here to access some practice problems: <xref ref="workshop-rational-expressions-combining-opposite-factors-exercises">Practice Exercises</xref>
-        </p>
-      </statement>
-    </exercise>
-
-    <exercise xml:id="workshop-rational-expressions-complex-fractions-examples">
-      <title>Simplifying complex fractions</title>
-      <statement>
-        <p>
-          A complex fraction is a fraction in which the numerator and/or denominator contains yet another fraction.
-        </p>
-        <p>
-          Complex fractions of the following form 
-          <me>\frac{\frac{a}{b}}{\frac{c}{d}} \text{ or } \frac{\frac{a}{b}}{c} \text{ or } \frac{a}{\frac{c}{d}}</me>
-          are the manner in which division of or by fractions is usually communicated in an algebraic setting.  For examples, instead of writing
-          <me>\frac{x+2}{x-7} \div \frac{x+4}{x+12}</me> we would write <me>\frac{\frac{x+2}{x-7}}{\frac{x+4}{x+12}}</me>.
-          Because division by a fraction is equivalent to multiplying by the reciprocal of the fraction, it follows that
-          <me>\frac{\frac{x+2}{x-7}}{\frac{x+4}{x+12}}=\frac{x+2}{x-7} \cdot \frac{x+12}{x+4}</me>.
-        </p>
-        <p>
-          When writing complex fractions, it is vitally important that we are clear which is the main fraction bar (which is done by clearly making it the longest bar).  This importance is made clear by the following two examples.
-          <md>
-            <mrow>\frac{2}{3} \div 7\amp=\frac{2}{3} \div \frac{7}{1}</mrow>
-            <mrow>\amp=\frac{2}{3} \cdot \frac{1}{7}</mrow>
-            <mrow>\amp=\frac{2}{21}</mrow>
-          </md>
-          whereas
-          <md>
-            <mrow>2 \div \frac{3}{7}\amp=\frac{2}{1} \div \frac{3}{7}</mrow>
-            <mrow>\amp=\frac{2}{1} \cdot \frac{7}{3}</mrow>
-            <mrow>\amp=\frac{14}{3}</mrow>
-          </md>
-          The above illustrates that <me>\frac{\frac{2}{3}}{7} \neq \frac{2}{\frac{3}{7}}</me>.
-        </p>
-        <p>
-          If you look carefully at the inequality statement, you might discern another way that we communicate the location of the main fraction bar - the equal sign horizontally aligns with the main fraction bar.
-        </p>
-        <p>
-          There are situations where one frequently encounters complex fractions what include addition or subtraction of fractions in the numerator or denominator.  Encountering these type expressions is a lucky day event, as they are essentially two or even three problems in one!  You get to combine the expressions in the numerator and/or denominator and then proceed to the division.  Because the process can be rather complicated, we generally do not address domain restrictions in these type of exercises.  Several examples follow. 
-        </p>
-        <p>
-          Example
-          <md>
-            <mrow>\frac{\frac{x}{x-5}-\frac{7}{x-5}}{\frac{x-7}{x^2-10x+25}}\amp=\frac{\frac{x-7}{x-5}}{\frac{x-7}{(x-5)(x-5)}}</mrow>
-            <mrow>\amp=\frac{x-7}{x-5} \cdot \frac {(x-5)(x-5)}{x-7}</mrow>
-            <mrow>\amp=\frac{(x-7)(x-5)(x-5)}{(x-5)(x-7)}</mrow>
-            <mrow>\amp=\frac{x-7}{x-7} \cdot \frac{x-5}{x-5} \frac{x-5}{1}</mrow>
-            <mrow>\amp=x-5</mrow>
-          </md>
-        </p>
-        <p>
-          Example
-          <md>
-            <mrow>\frac{\frac{1}{x+6}-\frac{1}{6}}{x}\amp=\frac{\frac{1}{x+6} \cdot \frac{6}{6}-\frac{1}{6} \cdot \frac{x+6}{x+6}}{\frac{x}{1}}</mrow>
-            <mrow>\amp=\frac{6-x-6}{6(x+6)} \cdot \frac{1}{x}</mrow>
-            <mrow>\amp=\frac{-x}{6x(x+6)}</mrow>
-            <mrow>\amp=-\frac{x}{x} \cdot \frac{1}{6(x+6)}</mrow>
-            <mrow>\amp=-\frac{1}{6(x+6)}</mrow>
-          </md>
-        </p>
-        <p>
-          Example
-          <md>
-            <mrow>\frac{\frac{2x}{x-3}-\frac{x}{x+3}}{\frac{x^2-9}{x^2+9}}\amp=\frac{\frac{2x}{x-3} \cdot \frac{x+3}{x+3}-\frac{x}{x+3} \cdot \frac{x-3}{x-3}}{\frac{(x-3)(x+3)}{x^2+9}}</mrow>
-            <mrow>\amp=\frac{\frac{2x^2+6x-x^2+3x}{(x-3)(x+3)}}{\frac{(x-3)(x+3)}{x^2+9}}</mrow>
-            <mrow>\amp=\frac{\frac{x^2+9x}{(x-3)(x+3)}}{\frac{(x-3)(x+3)}{x^2+9}}</mrow>
-            <mrow>\amp=\frac{x(x+9)}{(x-3)(x+3)} \cdot \frac{x^2+9}{(x-3)(x+3)}</mrow>
-            <mrow>\amp=\frac{x(x+9)(x^2+9)}{(x-3)^2(x+3)^2}</mrow>
-          </md>
-        </p>
-        <p>
-          There is an alternate strategy for simplifying rational expressions.  The process goes as follows.
-          <ol label="1">
-            <li>
-              Determine the Lowest Common Denominator of all of the fractions that occur in either the numerator or denominator of the main fraction.
-            </li>
-            <li>
-              Multiply both the numerator and denominator of the main fraction by the LCD found in step 1. It may be helpful to write one or both occurrences of the LCD over 1.
-            </li>
-            <li>
-              Distribute the LCD through both the numerator and denominator.  Term by term, cancel factors that are common to the numerator and denominator.
-            </li>
-            <li>
-              If you were successful in the first three steps, the fraction is no longer complex.  Expand both the numerator and denominator of the resultant fraction.
-            </li>
-            <li>
-              Factor both the numerator and the denominator and cancel any factors common to the numerator and denominator.
-            </li>
-          </ol>
-        </p>
-        <p>
-          Click here to access some practice problems: <xref ref="workshop-rational-expressions-complex-fractions-exercises">Practice Exercises</xref>.
-        </p>
-        <p>
-          Let's try the new strategy to simplify <me>\frac{\frac{3}{x}+\frac{2}{x-1}}{\frac{3}{x}-\frac{2}{x-1}}</me>.  We begin by observing that the LCD of the denominators of the smaller fractions is <m>x(x-1)</m>.  We proceed as follows.
-          <md>
-            <mrow>\frac{\frac{3}{x}+\frac{2}{x-1}}{\frac{3}{x}-\frac{2}{x-1}}\amp=\frac{\frac{3}{x}+\frac{2}{x-1}}{\frac{3}{x}-\frac{2}{x-1}} \cdot \frac{\frac{x(x-1)}{1}}{\frac{x(x-1)}{1}}</mrow>
-            <mrow>\amp=\frac{\frac{3}{x} \cdot \frac{x(x-1)}{1} +\frac{2}{x-1} \cdot \frac{x(x-1)}{1} }{\frac{3}{x} \cdot \frac{x(x-1)}{1} -\frac{2}{x-1} \cdot \frac{x(x-1)}{1} }</mrow>
-            <mrow>\amp=\frac{3(x-1)+2x}{3(x-1)-2x}</mrow>
-            <mrow>\amp=\frac{5x-3}{x-3}</mrow>
-          </md>
-        </p>
-        <p>
-          Let's use the new strategy to simplify <me>\frac{\frac{5}{x+h}-\frac{5}{x}}{h}</me>.  It might be helpful to write the denominator as a fraction to help identify the LCD of the smaller fractions.  <me>\frac{\frac{5}{x+h}-\frac{5}{x}}{\frac{h}{1}}</me>  From this we can see that the LCD of the smaller fractions is <m>x(x+h)</m>.  Let's proceed.
-          <md>
-            <mrow>\frac{\frac{5}{x+h}-\frac{5}{x}}{\frac{h}{1}}\amp=\frac{\frac{5}{x+h}-\frac{5}{x}}{\frac{h}{1}} \cdot \frac{\frac{x(x+h)}{1}}{\frac{x(x+h)}{1}}</mrow>
-            <mrow>\amp=\frac{\frac{5}{x+h} \cdot \frac{x(x+h)}{1} -\frac{5}{x} \cdot \frac{x(x+h)}{1} }{\frac{h}{1} \cdot \frac{x(x+h)}{1} }</mrow>
-            <mrow>\amp=\frac{5x-5(x+h)}{hx(x+h)}</mrow>
-            <mrow>\amp=\frac{-5h}{hx(x+h)}</mrow>
-            <mrow>\amp=-\frac{5}{x(x+h)}</mrow>
-          </md>
-        </p>
-      </statement>
-    </exercise>
-
-
-</exercises>
-
-<exercises>
-    <title>Practice Exercises</title>
-
-    <exercise xml:id="workshop-rational-expressions-domain-exercises">
-      <title>Determining the domain of a rational function</title>
-      <statment>
-        <p>
-          Determine the domain of each function.  State each domain using both set builder notation and interval notation.
-          <ol cols="2">
-            <li><m>f(x)=\frac{2x-8}{x^2-16}</m></li>
-            <li><m>g(t)=\frac{t}{t^2+5t-6}</m></li>
-            <li><m>h(x)=\frac{4x+8}{2x^2-8x}+\frac{x-3}{x^2-6x+8}</m></li>
-            <li><m>m(t)=\frac{t+7}{t^2+49}</m></li>
-            <li><m>p(x)=\frac{1}{x^3-8}</m></li>
-            <li><m>r(t)=\frac{t-3}{3-t}-\frac{t-2}{t-3}</m></li>
-          </ol>
+      <exercise>
+        <title>Question bank with short answers</title>
+        <statement>
           <p>
+            <ol>
+
+              <li>
+                Two trains are cruising through the plains of Canada.  One train is westbound and the other eastbound.  They both travel at constant speeds with the westbound train traveling at a rate that is 20 km/hr faster than the rate at which the eastbound train is traveling.  Over a certain period of time, the faster train travels 265 km while the slower train travels only 215 km.  What is the constant speed of each train?
+              </li>
+
+              <li>
+                Trujillo home improvement has been awarded the contract for a small bathroom remodel.  Working alone, Pedro, who has been working for the company for several years, could get the job done in <m>8</m> hours.  Working alone, it would take newly hired Julia <m>12</m> hours to complete the job.  Assuming that they can maintain their individual paces, how long would it take Pedro and Julia to complete the job if they work together?
+              </li>
+            </ol>
+            <p></p>
           </p>
-        </p>
-    </statment>
-    <solution>
-      <p>
-        <ol>
-
-          <li>
-            <p>
-              <m>
-                \begin{aligned}[t]
-                f(x)\amp=\frac{2x-8}{x^2-16}\\
-                \amp=\frac{2x-8}{(x-4)(x+4)}\\
-                \end{aligned}
-              </m>
-              <me></me>
-            </p>
-            <p>
-            The domain of <m>f</m> is <m>\{x \mid x \neq -4, x \neq 4\}</m>.
-            </p>
-            <p>
-              The domain of <m>f</m> is <m>(-\infty,-4)\cup(-4,4)\cup(4,\infty)</m>.
-              <me></me>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>
-                \begin{aligned}[t]
-                g(t)\amp=\frac{t}{t^2+5t-6}\\
-                \amp=\frac{t}{(t-6)(t+1)}
-                \end{aligned}
-              </m>
-              <me></me>
-            </p>
-            <p>
-              The domain of <m>g</m> is <m>\{t \mid t \neq -1, t \neq 6\}</m>.
-            </p>
-            <p>
-              The domain of <m>g</m> is <m>(-\infty,-1) \cup (-1,6) \cup (6,\infty)</m>.
-              <me></me>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>
-               \begin{aligned}[t]
-               h(x)\amp=\frac{4x+8}{2x^2-8x}+\frac{x-3}{x^2-6x+8}\\
-               \amp=\frac{4x+8}{2x(x-4)}+\frac{x-3}{(x-4)(x-2)}
-                \end{aligned}
-              </m>
-              <me></me>
-            </p>
-            <p>
-              The domain of <m>h</m> is <m>\{x \mid x \neq 0, x \neq 2, x \neq 4\}</m>. 
-            </p>
-            <p>
-              The domain of <m>h</m> is <m>(-\infty,0) \cup (0,2) \cup (2,4) \cup (4,\infty)</m>.
-              <me></me>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>
-               \begin{aligned}[t]
-               m(t)=\frac{t+7}{t^2+49}
-               \end{aligned}
-              </m>
-              <me></me>
-            </p>
-            <p>
-              The domain of <m>m</m> is <m>\{t \mid t \in \mathbb{R}\}</m>. 
-            </p>
-            <p>
-              The domain of <m>m</m> is <m>(-\infty,\infty)</m>.
-              <me></me>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>
-               \begin{aligned}[t]
-               p(x)\amp=\frac{1}{x^3-8}\\
-               \amp=\frac{1}{(x-2)(x^2+2x+4)}
-               \end{aligned}
-              </m>
-              <me></me>
-            </p>
-            <p>
-              The domain of <m>p</m> is <m>\{x \mid x \neq 2\}</m>. 
-            </p>
-            <p>
-              The domain of <m>p</m> is <m>(-\infty,2) \cup (2,\infty)</m>.
-              <me></me>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>
-               \begin{aligned}[t]
-               r(t)=\frac{t-3}{3-t}-\frac{t-2}{t-3}
-               \end{aligned}
-              </m>
-              <me></me>
-            </p>
-            <p>
-              The domain of <m>r</m> is <m>\{t \mid t \neq 3\}</m>. 
-            </p>
-            <p>
-              The domain of <m>r</m> is <m>(-\infty,3) \cup (3,\infty)</m>.
-              <me></me>
-            </p>
-          </li>
-
-
-
-
-        </ol>
-      </p>
-    </solution>
-    </exercise>
-
-    <exercise xml:id="workshop-rational-expressions-simplifying-exercises">
-      <title>Simplifying rational expressions/Domain restrictions</title>
-      <statement>
-        <p>
-          Simplify each expression.  Make sure that you state any necessary domain restrictions.
-          <ol cols="2">
-            <li><m>\frac{x-3}{x^2+x-12}</m></li>
-            <li><m>\frac{x^2-5x+4}{x^2+6x-40}</m></li>
-            <li><m>\frac{x^2+7x}{x^2-7x}</m></li>
-            <li><m>\frac{x^4+21x^2}{5x^3+x^7}</m></li>
-            <li><m>\frac{4t^2-9}{2t-3}</m></li>
-            <li><m>\frac{t^2-16}{t^2+16}</m></li>
-          </ol>
+        </statement>
+        <solution>
           <p>
+            <ol>
+              <li>The faster (westbound) train moves at the speed of <m>106</m> km/hr while the slower (eastbound) train moves at a speed of <m>86</m> km/hr.</li>
+              <li>Working together, Pedro and Julia can complete the job in <m>4.8</m> hours.</li>
+            </ol>
           </p>
-        </p>
-      </statement>
-      <solution>
-        <ol>
+        </solution>
+      </exercise>
 
-          <li>
-            <p>
-              <m>
-               \begin{aligned}[t]
-               \frac{x-3}{x^2+x-12}\amp=\frac{x-3}{(x-3)(x+4)}\\
-               \amp=\frac{x-3}{x-3} \cdot \frac{1}{x+4}\\
-               \amp=\frac{1}{x+4}, x \neq 3
-               \end{aligned}
-              </m>
-              <me></me>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>
-               \begin{aligned}[t]
-               \frac{x^2-5x+4}{x^2+6x-40}\amp=\frac{(x-4)(x-1)}{(x-4)(x+10)}\\
-               \amp=\frac{x-4}{x-4} \cdot \frac{x-1}{x+10}\\
-               \amp=\frac{x-1}{x+10}, x \neq 4
-               \end{aligned}
-              </m>
-              <me></me>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>
-               \begin{aligned}[t]
-               \frac{x^2+7x}{x^2-7x}\amp=\frac{x(x+7)}{x(x-7)}\\
-               \amp=\frac{x}{x} \cdot \frac{x+7}{x-7}\\
-               \amp=\frac{x+7}{x-7}, x \neq 0
-               \end{aligned}
-              </m>
-              <me></me>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>
-               \begin{aligned}[t]
-               \frac{x^4+21x^2}{5x^3+x^7}\amp=\frac{x^2(x^2+21)}{x^3(5+x^4)}\\
-               \amp=\frac{x^2}{x^2} \cdot \frac{x^2+21}{x(5+x^4)}\\
-               \amp=\frac{x^2+21}{x(5+x^4)}
-               \end{aligned}
-              </m>
-              <me></me>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>
-               \begin{aligned}[t]
-               \frac{4t^2-9}{2t-3}\amp=\frac{(2t-3)(2t+3)}{2t-3}\\
-               \amp=\frac{2t-3}{2t-3} \cdot \frac{2t+3}{1}\\
-               \amp=2t+3, t \neq \frac{3}{2}
-               \end{aligned}
-              </m>
-              <me></me>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>
-               \begin{aligned}[t]
-               \frac{t^2-16}{t^2+16}=\frac{(t-4)(t+4)}{t^2+16}
-               \end{aligned}
-              </m>
-            </p>
-          </li>
-
-
-
-        </ol>
-      </solution>
-    </exercise>
-
-    <exercise xml:id="workshop-rational-expressions-multiplying-exercises">
-      <title>Multiplying rational expressions</title>
-      <statement>
-        <p>
-          Multiply each expression and simplify each result.  Make sure that you state any necessary domain restrictions. 
-          <ol>
-            <li><m>\frac{x-4}{2x+3} \cdot \frac{x-1}{x-4}</m></li>
-            <li><m>\frac{12x+18}{x^2-1} \cdot \frac{x+1}{6x+9}</m></li>
-            <li><m>\frac{4x^2+20x+24}{x^2-25} \cdot \frac{5x+25}{x^2-9}</m></li>
-            <li><m>(x^2+4x+4) \cdot \frac{x+2}{x^2-4}</m></li>
-          </ol>
-          <p>
-          </p>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <ol>
-
-            <li>
-              <p>
-                <m>
-                 \begin{aligned}[t]
-                 \frac{x-4}{2x+3} \cdot \frac{x-1}{x-4}\amp=\frac{(x-4)(x-1)}{(2x+3)(x-4)}\\
-                 \amp=\frac{x-4}{x-4} \cdot \frac{x-1}{2x+3}\\
-                 \amp=\frac{x-1}{2x+3}, x \neq 4
-                 \end{aligned}
-                </m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>
-                 \begin{aligned}[t]
-                 \frac{12x+18}{x^2-1} \cdot \frac{x+1}{6x+9}\amp=\frac{(12x+18)(x+1)}{(x^2-1)(6x+9)}\\
-                 \amp=\frac{6(2x+3)(x+1)}{(x-1)(x+1) \cdot 3(2x+3)}\\
-                 \amp=\frac{x+1}{x+1} \cdot \frac{2x+3}{2x+3} \cdot \frac{6}{3(x-1)}\\
-                 \amp=\frac{2}{x-1}, x \neq -1, x \neq -\frac{3}{2}
-                 \end{aligned}
-                </m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>
-                 \begin{aligned}[t]
-                 \frac{4x^2+20x+24}{x^2-25} \cdot \frac{5x+25}{x^2-9}\amp=\frac{(4x^2+20x+24)(5x+25)}{(x^2-25)(x^2-9)}\\
-                 \amp=\frac{4(x^2-5x+6) \cdot 5(x+5)}{(x-5)(x+5)(x-3)(x+3)}\\
-                 \amp=\frac{20(x-3)(x-2)(x+5)}{(x-5)(x+5)(x-3)(x+3)}\\
-                 \amp=\frac{x-3}{x-3} \cdot \frac{x+5}{x+5} \cdot \frac{20(x-3)}{(x-5)(x+3)}\\
-                 \amp=\frac{20(x-3)}{(x-5)(x+3)}, x \neq 3, x \neq -5
-                 \end{aligned}
-                </m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>
-                 \begin{aligned}[t]
-                 (x^2+4x+4) \cdot \frac{x+2}{x^2-4}\amp=\frac{x^2+4x+4}{1} \cdot \frac{x+2}{x^2-4}\\
-                 \amp=\frac{(x^2+4x+4)(x+2)}{x^2-4}\\
-                 \amp=\frac{(x+2)(x+2)(x+2)}{(x+2)(x-2)}\\
-                 \amp=\frac{x+2}{x+2} \cdot \frac{(x+2)(x+2)}{x-2}\\
-                 \amp=\frac{(x+2)^2}{x-2}, x \neq -2
-                 \end{aligned}
-                </m>
-                <me></me>
-              </p>
-            </li>
-
-          </ol>
-        </p>
-      </solution>
-    </exercise>
-
-    <exercise xml:id="workshop-rational-expressions-dividing-exercises">
-      <title>Dividing rational expressions</title>
-      <statement>
-        <p>
-           Multiply and/or divide each expression and simplify each result.  Make sure that you state any necessary domain restrictions.
-          <ol cols="2">
-            <li><m>\frac{x^2-9}{x+1} \div \frac{x+3}{x^2-1}</m></li>
-            <li><m>\frac{x+5}{x^2-6x-7} \cdot \frac{x^2+1}{x^2+11x+30} \div \frac{x-7}{x+1}</m></li>
-            <li><m>\frac{x^2+2x-15}{4x+20} \div (x-3)</m></li>
-            <li><m>\frac{2x}{x-2} \div \frac {x+2}{x} \div \frac{7x}{x^2-4}</m></li>
-          </ol>
-          <p>
-          </p>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <ol>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \amp\frac{x^2-9}{x+1} \div \frac{x+3}{x^2-1}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x^2-9}{x+1} \cdot \frac{x^2-1}{x+3}, x \neq 1\\
-                \amp \phantom{={}} \phantom{={}} =\frac{(x^2-9)(x^2-1)}{(x+1)(x+3)}, x \neq 1\\
-                \amp \phantom{={}} \phantom{={}} =\frac{(x+3)(x-3)(x+1)(x-1)}{(x+1)(x+3)}, x \neq 1\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x+3}{x+3} \cdot \frac{x+1}{x+1} \cdot \frac{(x-3)(x-1)}{1}, x \neq 1\\
-                \amp \phantom{={}} \phantom{={}} =(x-3)(x-1), x \neq 1, x \neq -1, x \neq -3
-                \end{aligned}
-              </m>
-              <me></me>
-            </li>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \amp\frac{x+5}{x^2-6x-7} \cdot \frac{x^2+1}{x^2+11x+30} \div \frac{x-7}{x+1}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x+5}{x^2-6x-7} \cdot \frac{x^2+1}{x^2+11x+30} \cdot \frac{x+1}{x-7}, x \neq -1\\
-                \amp \phantom{={}} \phantom{={}} =\frac{(x+5)(x^2+1)(x+1)}{(x^2-6x+7)(x^2+11x+30)(x-7)}, x \neq -1\\
-                \amp \phantom{={}} \phantom{={}} =\frac{(x+5)(x^2+1)(x+1)}{(x+7)(x-1)(x+5)(x+6)(x-7)}, x \neq -1\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x+5}{x+5} \cdot \frac{(x^2+1)(x+1)}{(x-1)(x+6)(x-7)}, x \neq -1\\
-                \amp \phantom{={}} \phantom{={}} =\frac{(x^2+1)(x+1)}{(x-1)(x+6)(x-7)}, x \neq -1, x \neq -5
-                \end{aligned}
-              </m>
-              <me></me>
-            </li>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \frac{x^2+2x-15}{4x+20} \div (x-3)\amp=\frac{x^2+2x-15}{4x+20} \div \frac{x-3}{1}\\
-                \amp=\frac{x^2+2x-15}{4x+20} \cdot \frac{1}{x-3}\\
-                \amp=\frac{x^2+2x-15}{(4x+20)(x-3)}\\
-                \amp=\frac{(x+5)(x-3)}{4(x+5)(x-3)}\\
-                \amp=\frac{x+5}{x+5} \cdot \frac{x-3}{x-3} \cdot \frac{1}{4}\\
-                \amp=\frac{1}{4}, x \neq -5, x \neq 3
-                \end{aligned}
-              </m>
-              <me></me>
-            </li>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \amp\frac{2x}{x-2} \div \frac{x+2}{x} \div \frac{7x}{x^2-4}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{2x}{x-2} \cdot \frac {x}{x+2} \cdot \frac{x^2-4}{7x}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{2x \cdot x \cdot (x^2-4)}{(x-2) \cdot (x+2) \cdot 7x}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{2x^2(x+2)(x-2)}{7x(x-2)(x+2)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x}{x} \cdot \frac{x+2}{x+2} \cdot \frac{x-2}{x-2} \cdot \frac{2x}{7}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{2x}{7}, x \neq 0, x \neq 2, x \neq -2
-                \end{aligned}
-              </m>
-            </li>
-
-          </ol>
-        </p>
-      </solution>
-    </exercise>
-
-    <exercise  xml:id="workshop-rational-expressions-combining-common-denominator-exercises">
-      <title>Combining rational expressions that have common denominators</title>
-      <statement>
-        <p>
-          Add and/or subtract each set of expressions.  Make sure that you simplify each result.
-          <ol>
-            <li><m>\frac{2x}{x-7}-\frac{14}{x-7}</m></li>
-            <li><m>\frac{x^2}{x^2+4x+4}+\frac{9x+14}{x^2+4x+4}</m></li>
-            <li><m>\frac{2x^2}{x^2-6x-72}-\frac{240-4x}{x^2-6x-72}</m></li>
-          </ol>
-          <p>
-          </p>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <ol>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \frac{2x}{x-7}-\frac{14}{x-7}\amp=\frac{2x-14}{x-7}\\
-                \amp=\frac{2(x-7)}{x-7}\\
-                \amp=2, x \neq 7
-                \end{aligned}
-              </m>
-              <me></me>
-            </li>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \frac{x^2}{x^2+4x+4}+\frac{9x+14}{x^2+4x+4}\amp=\frac{x^2+9x+14}{x^2+4x+4}\\
-                \amp=\frac{(x+7)(x+2)}{(x+2)(x+2)}\\
-                \amp=\frac{x+2}{x+2} \cdot \frac{x+7}{x+2}\\
-                \amp=\frac{x+7}{x+2}
-                \end{aligned}
-              </m>
-              <me></me>
-            </li>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \frac{2x^2}{x^2-6x-72}-\frac{240-4x}{x^2-6x-72}\amp=\frac{2x^2-240+4x}{x^2-6x-72}\\
-                \amp=\frac{2(x^2+2x-120)}{x^2-6x-72}\\
-                \amp=\frac{2(x+12)(x-10)}{(x+12)(x-6)}\\
-                \amp=\frac{x+12}{x+12} \cdot \frac{2(x-10)}{x-6}\\
-                \amp=\frac{2(x-10)}{x-6}, x \neq 12
-                \end{aligned}
-              </m>
-            </li>
-
-          </ol>
-        </p>
-      </solution>
-    </exercise>
-
-    <exercise xml:id="workshop-rational-expressions-combining-no-common-factors-exercises">
-      <title>Combining rational expressions that have denominators with no common factors</title>
-      <statement>
-        <p>
-           Add and/or subtract each set of expressions.  Make sure that you simplify each result.
-          <ol>
-            <li><m>\frac{5}{x-2}-\frac{1}{x+7}</m></li>
-            <li><m>\frac{2}{x-2}+\frac{x+3}{x+4}</m></li>
-            <li><m>-\frac{1}{x}+\frac{x+1}{x^2-3x-10}</m></li>
-            <li><m>\frac{x}{x^2+7x+12}-\frac{x}{x-3}</m></li>
-          </ol>
-          <p>
-          </p>
-        </p>
-      </statement>
-      <solution>
-        <ol>
-
-          <li>
-            <m>
-              \begin{aligned}[t]
-              \amp\frac{5}{x-2}-\frac{1}{x+7}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{5}{x-2} \cdot \frac{x+7}{x+7}-\frac{1}{x+7} \cdot \frac{x-2}{x-2}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{5(x+7)-1 \cdot (x-2)}{(x-2)(x+7)}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{5x+35-x+2}{(x-2)(x+7)}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{4x+37}{(x-2)(x+7)}
-              \end{aligned}
-            </m>
-            <me></me>
-          </li>
-
-          <li>
-            <m>
-              \begin{aligned}[t]
-              \amp\frac{2}{x-2}+\frac{x+3}{x+4}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{2}{x-2} \cdot \frac{x+4}{x+4}+\frac{x+3}{x+4} \cdot \frac{x-2}{x-2}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{2(x+4)+(x+3)(x-2)}{(x-2)(x+4)}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{2x+8+x^2-2x+3x-6}{(x-2)(x+4)}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{x^2+3x+2}{(x-2)(x+4)}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{(x+2)(x+1)}{(x-2)(x+4)}
-              \end{aligned}
-            </m>
-            <me></me>
-          </li>
-
-          <li>
-            <m>
-              \begin{aligned}[t]
-              \amp-\frac{1}{x}+\frac{x+1}{x^2-3x-10}\\
-              \amp \phantom{={}} \phantom{={}} =-\frac{1}{x}+\frac{x+1}{(x-5)(x+2)}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{-1}{x} \cdot \frac{(x-5)(x+2)}{(x-5)(x+2)}+\frac{x+1}{(x-5)(x+2)} \cdot \frac{x}{x}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{-1 \cdot (x-5)(x+2)+(x+1) \cdot x}{x(x-5)(x+2)}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{-1 \cdot (x^2-3x-10)+x(x+1)}{x(x-5)(x+2)}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{-x^2+3x+10+x^2+x}{x(x-5)(x+2)}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{4x+10}{x(x-5)(x+2)}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{2(x+5)}{x(x-5)(x+2)}
-              \end{aligned}
-            </m>
-            <me></me>
-          </li>
-
-          <li>
-            <m>
-              \begin{aligned}[t]
-              \amp\frac{x}{x^2+7x+12}-\frac{x}{x-3}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{x}{(x+4)(x+3)}-\frac{x}{x-3}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{x}{(x+4)(x+3)} \cdot \frac{x-3}{x-3}-\frac{x}{x-3} \cdot \frac{(x+4)(x+3)}{(x+4)(x+3)}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{x(x-3)-x(x+4)(x+3)}{(x+4)(x+3)(x-3)}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{x(x-3)-x(x^2+7x+12)}{(x+4)(x+3)(x-3)}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{x^2-3x-x^3-7x^2-12x}{(x+4)(x+3)(x-3)}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{-x^3-6x^2-15x}{(x+4)(x+3)(x-3)}\\
-              \amp \phantom{={}} \phantom{={}} =\frac{-x(x^2+6x+15)}{(x+4)(x+3)(x-3)}
-              \end{aligned}
-            </m>
-          </li>
-
-
-        </ol>
-      </solution>
-    </exercise>
-
-    <exercise xml:id="workshop-rational-expressions-combining-common-factors-exercises">
-      <title>Combining rational expressions that have denominators with both common factors and non-common factors</title>
-      <statement>
-        <p>
-          Determine the least common denominator for each expression.  That's it - do not actually combine the expressions.
-          <ol label="i">
-            <li><m>\frac{x+4}{(x-6)^2}+\frac{x-2}{(x-6)(x+3)}</m></li>
-            <li><m>\frac{5}{x+2}-\frac{6}{(x+2)^3}</m></li>
-            <li><m>-\frac{x^2+4}{x^2-25}-\frac{x^2-4}{x^2+10x+25}</m></li>
-            <li><m>\frac{3}{a^3bc^2}+\frac{7}{4a^3b}-\frac{5}{6bc^4}</m></li>
-            <li><m>\frac{x+10}{x^3(x-6)^4}+\frac{x+2}{x(x-6)}</m></li>
-          </ol>
-        </p>
-        <p>
-           Add and/or subtract each set of expressions.  Make sure that you simplify each result.
-          <ol>
-            <li><m>\frac{x}{(2x-1)(x+5)}-\frac{x+1}{(2x-1)(x+16)}</m></li>
-            <li><m>-\frac{1}{x^2+4x-12}+\frac{1}{x^2-7x-6}</m></li>
-            <li><m>\frac{4}{x^2-3x+2}+\frac{4}{x-1}</m></li>
-            <li><m>\frac{x-2}{x^2-5x}+\frac{2x}{x^2-10x+25}</m></li>
-            <li><m>\frac{4}{x^3-4x^2+4x}+\frac{2}{x^2-2x}</m></li>
-          </ol>
-          <p>
-          </p>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <ol label="i">
-            <li>The least common denominator is <m>(x-6)^2(x+3)</m>.</li>
-            <li>The least common denominator is <m>(x+2)^3</m>.</li>
-            <li>The least common denominator is <m>(x-5)(x+5)^2</m>.</li>
-            <li>The least common denominator is <m>12a^3bc^4</m>.</li>
-            <li>The least common denominator is <m>x^3(x-6)^4</m>.</li>
-          </ol>
-          <ol>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \amp\frac{x}{(2x-1)(x+5)}-\frac{x+1}{2x-1(x+16)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x}{(2x-1)(x+5)} \cdot \frac{x+16}{x+16} -\frac{x+1}{(2x-1)(x+16)} \cdot \frac{x+5}{x+5}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x(x+16)-(x+1)(x+5)}{(2x-1)(x+5)(x+16)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x^2+16x-(x^2+6x+5)}{(2x-1)(x+5)(x+16)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{10x-5}{(2x-1)(x+5)(x+16)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{5(2x-1)}{(2x-1)(x+5)(x+16)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{2x-1}{2x-1} \cdot \frac{5}{(x+5)(x+16)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{5}{(x+5)(x+16)}, x \neq \frac{1}{2}
-                \end{aligned}
-              </m>
-              <me></me>
-            </li>
-
-             <li>
-              <m>
-                \begin{aligned}[t]
-                \amp\frac{1}{x^2-4x-12}+\frac{1}{x^2-7x-6}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{1}{(x-6)(x+2)}+\frac{1}{(x-6)(x-1)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{1}{(x-6)(x+2)} \cdot \frac{x-1}{x-1} +\frac{1}{(x-6)(x-1)} \cdot \frac{x+2}{x+2}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{1 \cdot (x-1)-1 \cdot (x+2)}{(x-6)(x+2)(x-1)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{-3}{(x-6)(x+2)(x-1)}\\
-                \amp \phantom{={}} \phantom{={}} =-\frac{3}{(x-6)(x+2)(x-1)}
-                \end{aligned}
-              </m>
-              <me></me>
-            </li>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \amp\frac{4}{x^2-3x+2}+\frac{4}{x-1}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{4}{(x-2)(x-1)}+\frac{4}{x-1}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{4}{(x-2)(x-1)}+\frac{4}{x-1} \cdot \frac{x-2}{x-2}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{4+4(x-2)}{(x-2)(x-1)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{4+4x-8}{(x-2)(x-1)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{4x-4}{(x-2)(x-1)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{4(x-1)}{(x-2)(x-1)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x-1}{x-1} \cdot \frac{4}{x-2}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{4}{x-2}, x \neq 1
-                \end{aligned}
-              </m>
-              <me></me>
-            </li>
-
-             <li>
-              <m>
-                \begin{aligned}[t]
-                \amp\frac{x-2}{x^2-5x}-\frac{2x}{x^2-10x+25}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x-2}{x(x-5)}-\frac{2x}{(x-5)(x-5)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x-2}{x(x-5)} \cdot \frac{x-5}{x-5} -\frac{2x}{(x-5)(x-5)} \cdot \frac{x}{x}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{(x-2)(x-5)-2x \cdot x}{x(x-5)(x-5)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x^2-7x+10-2x^2}{x(x-5)(x-5)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{-x^2-7x+10}{x(x-5)^2}
-                \end{aligned}
-              </m>
-              <me></me>
-            </li>
-
-             <li>
-              <m>
-                \begin{aligned}[t]
-                \amp\frac{4}{x^3-4x^2+4x}+\frac{2}{x^2-2x}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{4}{x(x^2-4x+4)}+\frac{2}{x(x-2)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{4}{x(x-2)(x-2)}+\frac{2}{x(x-2)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{4}{x(x-2)(x-2)}+\frac{2}{x(x-2)} \cdot \frac{x-2}{x-2}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{4+2(x-2)}{x(x-2)(x-2)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{2x}{x(x-2)(x-2)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x}{x} \cdot \frac{2}{(x-2)(x-2)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{2}{(x-2)^2}, x \neq 0
-                \end{aligned}
-              </m>
-            </li>
-
-          </ol>
-        </p>
-      </solution>
-    </exercise>
-
-    <exercise xml:id="workshop-rational-expressions-combining-opposite-factors-exercises">
-      <title>Combining rational expressions that have denominators that include opposite factors</title>
-      <statement>
-        <p>
-           Add and/or subtract each set of expressions.  Make sure that you simplify each result.
-           <ol>
-            <li><m>\frac{3}{x-7}-\frac{6}{7-x}</m></li>
-            <li><m>\frac{x}{x-9}+\frac{9}{9-x}</m></li>
-            <li><m>\frac{28}{x^2-8x-33}+\frac{2}{11-x}</m></li>
-            <li><m>\frac{x}{x^2-25}+\frac{2}{-x^2+x-20}</m></li>
-          </ol>
-          <p>
-          </p>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <ol>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \frac{3}{x-7}-\frac{6}{7-x}\amp=\frac{3}{x-7}-\frac{6}{7-x} \cdot \frac{-1}{-1}\\
-                \amp=\frac{3}{x-7}-\frac{-6}{x-7}\\
-                \amp=\frac{3+6}{x-7}\\
-                \amp=\frac{9}{x-7}
-                \end{aligned}
-              </m>
-              <me></me>
-            </li>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \frac{x}{x-9}+\frac{9}{9-x}\amp=\frac{x}{x-9}+\frac{9}{9-x} \cdot \frac{-1}{-1}\\
-                \amp=\frac{x}{x-9}+\frac{-9}{x-9}\\
-                \amp=\frac{x-9}{x-9}\\
-                \amp=1, x \neq 9
-                \end{aligned}
-              </m>
-              <me></me>
-            </li>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \amp\frac{28}{x^2-8x-33}+\frac{2}{11-x}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{28}{(x-11)(x+3)}+\frac{2}{11-x}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{28}{(x-11)(x+3)}+\frac{2}{11-x} \cdot \frac{-1}{-1}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{28}{(x-11)(x+3)}+\frac{-2}{x-11}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{28}{(x-11)(x+3)}+\frac{-2}{x-11} \cdot \frac{x+3}{x+3}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{28-2(x+3)}{(x-11)(x+3)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{28-2x-6}{(x-11)(x+3)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{-2x+22}{(x-11)(x+3)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{-2(x-11)}{(x-11)(x+3)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x-11}{x-11} \cdot \frac{-2}{x+3}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{-2}{x+3}, x \neq 11
-                \end{aligned}
-              </m>
-              <me></me>
-            </li>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \amp\frac{x}{x^2-25}+\frac{2}{-x^2+x-20}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x}{x^2-25}+\frac{2}{-x^2+x-20} \cdot \frac{-1}{-1}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x}{x^2-5}+\frac{-2}{x^2-x+20}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x}{(x+5)(x-5)}+\frac{-2}{(x+4)(x-5)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x}{(x+5)(x-5)} \cdot \frac{x+4}{x+4}+\frac{-2}{(x+4)(x-5)} \cdot \frac{x+5}{x+5}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x(x+4)-2(x+5)}{(x+5)(x+4)(x-5)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x^2+4x-2x-10}{(x+5)(x+4)(x-5)}\\
-                \amp \phantom{={}} \phantom{={}} =\frac{x^2+2x-10}{(x+5)(x+4)(x-5)}
-                \end{aligned}
-              </m>
-            </li>
-
-          </ol>
-        </p>
-      </solution>
-    </exercise>
-
-    <exercise xml:id="workshop-rational-expressions-complex-fractions-exercises">
-      <title>Simplifying complex fractions</title>
-      <statement>
-        <p>
-          Completely simplify each expression.  You do not need to address any domain restrictions.
-          <ol>
-            <li><m>\frac{\frac{x+3}{x-2}}{\frac{x+3}{x+2}}</m></li>
-            <li><m>\frac{\frac{1}{x-7}}{x-7}</m></li>
-            <li><m>\frac{x-9}{\frac{x^2-7x-18}{x^2+4}}</m></li>
-            <li><m>\frac{\frac{1}{x-10}+\frac{1}{10}}{x}</m></li>
-            <li><m>\frac{\frac{1}{x+5}-\frac{1}{x+4}}{\frac{1}{x+4}+\frac{1}{x+3}}</m></li>
-          </ol>
-          <p>
-          </p>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <ol>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \frac{\frac{x+3}{x-2}}{\frac{x+3}{x+2}}\amp=\frac{x+3}{x-2} \cdot \frac{x+2}{x+3}\\
-                \amp=\frac{(x+3)(x+2)}{(x-2)(x+3)}\\
-                \amp=\frac{x+3}{x+3} \cdot \frac{x+2}{x-2}\\
-                \amp=\frac{x+2}{x-2}
-                \end{aligned}
-              </m>
-              <me></me>
-            </li>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \frac{\frac{1}{x-7}}{x-7}\amp=\frac{\frac{1}{x-7}}{\frac{x-7}{1}}\\
-                \amp=\frac{1}{x-7} \cdot \frac{1}{x-7}\\
-                \amp=\frac{1}{(x-7)^2}
-                \end{aligned}
-              </m>
-              <me></me>
-            </li>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \frac{x-9}{\frac{x^2-7x-18}{x^2+4}}\amp=\frac{\frac{x-9}{1}}{\frac{x^2-7x-18}{x^2+4}}\\
-                \amp=\frac{x-9}{1} \cdot \frac{x^2+4}{x^2-7x-18}\\
-                \amp=\frac{(x-9)(x^2+4)}{x^2-7x-18}\\
-                \amp=\frac{(x-9)(x^2+4)}{(x-9)(x+2)}\\
-                \amp=\frac{x-9}{x-9} \cdot \frac{x^2+4}{x+2}\\
-                \amp=\frac{x^2+4}{x+2}
-                \end{aligned}
-              </m>
-              <me></me>
-            </li>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \frac{\frac{1}{x-10}+\frac{1}{10}}{x}\amp=\frac{\frac{1}{x-10} \cdot \frac{10}{10} + \frac{1}{10} \cdot \frac{x-10}{x-10}}{\frac{x}{1}}\\
-                \amp=\frac{10+x-10}{10(x-10)} \cdot \frac{1}{x}\\
-                \amp=\frac{x}{10x(x-10)}\\
-                \amp =\frac{x}{x} \cdot \frac{1}{10(x-10)}\\
-                \amp=\frac{1}{10(x-10)}
-                \end{aligned}
-              </m>
-              <me></me>
-            </li>
-
-            <li>
-              <m>
-                \begin{aligned}[t]
-                \frac{\frac{1}{x+5}-\frac{1}{x+4}}{\frac{1}{x+4}+\frac{1}{x+3}}\amp=\frac{\frac{1}{x+5} \cdot \frac{x+4}{x+4} - \frac{1}{x+4} \cdot \frac{x+5}{x+5}}{\frac{1}{x+4} \cdot \frac{x+3}{x+3} + \frac{1}{x+3} \cdot \frac{x+4}{x+4}}\\
-                \amp=\frac{\frac{x+4-x-5}{(x+5)(x+4)}}{\frac{x+3+x+4}{(x+4)(x+3)}}\\
-                \amp=\frac{\frac{-1}{(x+5)(x+4)}}{\frac{2x+7}{(x+4)(x+3)}}\\
-                \amp=\frac{-1}{(x+5)(x+4)} \cdot \frac{(x+4)(x+3)}{2x+7}\\
-                \amp=-\frac{(x+4)(x+3)}{(x+5)(x+4)(2x+7)}\\
-                \amp=\frac{x+4}{x+4} \cdot -\frac{x+3}{(x+5)(2x+7)}\\
-                \amp=-\frac{x+3}{(x+5)(2x+7)}
-                \end{aligned}
-              </m>
-            </li>
-
-          </ol>
-        </p>
-      </solution>
-    </exercise>
-
-</exercises>
-
-     
+    </exercises>
+       
 </section>
