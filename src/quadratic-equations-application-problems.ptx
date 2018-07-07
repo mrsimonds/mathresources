@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="quadratic-equations-application-problems">
+    <title>Applications of Quadratic Equations</title>
+          
+    <example>
+      <statement>
+        <p>
+          You may be familiar with the Pythagorean Theorem:  If the legs of a right triangle have lengths of <m>a</m> and <m>b</m> while the hypotenuse has a length of <m>c</m>, then <me>a^2+b^2=c^2</me>.
+        </p>
+        <p>
+          Suppose that we have a right triangle where one leg is <m>1</m> inch longer than the other leg and the hypotenuse is <m>1</m> inch longer than the longer leg.  Determine the length of each side of the triangle.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let <m>x</m> represent the length (in) of the shorter leg of the triangle.  Then the length (in) of the longer leg is represented by <m>x+1</m> and the length (in) of the hypotenuse is represented by <m>x+2</m>. 
+        </p>
+
+        <figure xml:id="quadratic-equations-applications-figure-1">
+          <caption>Variable Diagram</caption>
+          <image width="60%">
+            <description></description>
+            <latex-image>
+              <![CDATA[
+                \begin{tikzpicture}
+                  \coordinate (A) at (0,3);
+                  \coordinate (B) at (0,0);
+                  \coordinate (C) at (4,0);
+                  \draw (A)--(B)--(C)--cycle;
+                  \tkzLabelSegment[left](B,A){$x$}
+                  \tkzLabelSegment[below](B,C){$x+1$}
+                  \tkzLabelSegment[sloped](C,A){$x+2$}
+                  \tkzMarkRightAngle(A,B,C)
+                \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+
+        <p> 
+          Applying the Pythagorean Theorem we have <me>x^2+(x+1)^2=(x+2)^2</me>.
+        </p>
+        <p>
+          We begin solving the equation by expanding all expressions in the equation.
+          <md>
+            <mrow>x^2+(x+1)^2\amp=(x+2)^2</mrow>
+            <mrow>x^2+x^2+2x+1\amp=x^2+4x+4</mrow>
+            <mrow>2x^2+2x+1\amp=x^2+4x+4</mrow>
+            <mrow>2x^2+2x+1\subtractright{x^2}\subtractright{4x}\subtractright{4}\amp=x^2+4x+4\subtractright{x^2}\subtractright{4x}\subtractright{4}</mrow>
+            <mrow>x^2-2x-3\amp=0</mrow>
+            <mrow>(x-3)(x+1)\amp=0</mrow>
+          </md>
+          <md>
+            <mrow>x-3\addright{3}\amp=0\addright{3}\amp\amp\text{or}\amp x+1\subtractright{1}\amp=0\subtractright{1}</mrow>
+            <mrow>x\amp=3\amp\amp\text{or}\amp x\amp=-1</mrow>
+          </md>
+          Since a length cannot be negative, we reject the negative solution.  So the lengths of the triangle are <m>3</m> inches, <m>4</m> inches, and <m>5</m> inches.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          The area formula for a trapezoid is <me>\text{Area}=\frac{1}{2}(b_1+b_2)h</me> where <m>b_1</m> and <m>b_2</m> are the lengths of the parallel sides of the trapezoid (called bases) and <m>h</m> is the perpendicular length between the two bases (called the height). 
+        </p>
+
+        <figure xml:id="quadratic-equations-applications-figure-2" width="50%">
+          <caption>A Trapezoid</caption>
+          <image width="60%">
+            <description></description>
+            <latex-image>
+              <![CDATA[
+                \begin{tikzpicture}
+                  \coordinate (A) at (0,0);
+                  \coordinate (B) at (6,0);
+                  \coordinate (C) at (5,3);
+                  \coordinate (D) at (2,3);
+                  \coordinate (E) at (2,0);
+                  \draw (A)--(B)--(C)--(D)--cycle;
+                  \draw[dashed] (D)--(E);
+                  \tkzLabelSegment[below](B,A){$b_2$}
+                  \tkzLabelSegment[above](C,D){$b_1$}
+                  \tkzLabelSegment[right](D,E){$h$}
+                \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+
+        <p>
+          Suppose that we have a trapezoid where the length of one of the bases is twice the length of the other base and the height is five inches shorter than the longer base.  Suppose further that the area of the trapezoid is <m>132</m> <m>\text{in}^2</m>.  Let's determine the length of each of the bases and the height.
+        </p>
+      </statement>
+      <solution>
+        <p>
+           Let's define <m>x</m> to be the length (in) of the shorter base.  Then the length (in) of the longer base is represented by <m>2x</m> and the length (in) of the height is represented by <m>2x-5</m>.  
+        </p>
+
+        <figure xml:id="quadratic-equations-applications-figure-3" width="50%">
+          <caption>Variable diagram</caption>
+          <image width="60%">
+            <description></description>
+            <latex-image>
+              <![CDATA[
+                \begin{tikzpicture}
+                  \coordinate (A) at (0,0);
+                  \coordinate (B) at (6,0);
+                  \coordinate (C) at (5,3);
+                  \coordinate (D) at (2,3);
+                  \coordinate (E) at (2,0);
+                  \draw (A)--(B)--(C)--(D)--cycle;
+                  \draw[dashed] (D)--(E);
+                  \tkzLabelSegment[below](B,A){$b_2=2x$}
+                  \tkzLabelSegment[above](C,D){$b_1=x$}
+                  \tkzLabelSegment[right](D,E){$h=2x-5$}
+                \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+
+        <p>
+          Using the area formula for a trapezoid we have:
+          <me>\frac{1}{2}(x+2x)(2x-5)=132</me>.
+        </p>
+        <p>
+          We begin solving the equation by clearing the fraction and expanding the left side of the equation.
+          <md>
+            <mrow>\frac{1}{2}(x+2x)(2x-5)\amp=132</mrow>
+            <mrow>\multiplyleft{2}\frac{1}{2}(3x)(2x-5)\amp=\multiplyleft{2}132</mrow>
+            <mrow>(3x)(2x-5)\amp=264</mrow>
+            <mrow>6x^2-15x\amp=264</mrow>
+            <mrow>6x^2-15x\subtractright{264}\amp=264\subtractright{264}</mrow>
+            <mrow>6x^2-15x-264\amp=0</mrow>
+            <mrow>3(2x^2-5x-88)\amp=0</mrow>
+            <mrow>3(2x^2-16x+11x-88)\amp=0</mrow>
+            <mrow>3[2x(x-8)+11(x-8)]\amp=0</mrow>
+            <mrow>3(x-8)(2x+11)\amp=0</mrow>
+          </md>
+          <md>
+            <mrow>x-8\amp=0\amp\amp\text{or}\amp 2x+11\amp=0</mrow>
+            <mrow>x-8\addright{8}\amp=0\addright{8}\amp\amp\text{or}\amp 2x+11\subtractright{11}\amp=0\subtractright{11}</mrow>
+            <mrow>x\amp=8\amp\amp\text{or}\amp 2x\amp=-11</mrow>
+            <mrow>x\amp=8\amp\amp\text{or}\amp \divideunder{2x}{2}\amp=\divideunder{-11}{2}</mrow>
+            <mrow>x\amp=8\amp\amp\text{or}\amp x\amp=-\frac{11}{2}</mrow>
+          </md>
+        </p>
+        <p>
+          Since length cannot be negative, we reject the negative solution. So the lengths of the two bases are <m>8</m> inches and <m>16</m> inches while the length of the height is <m>11</m> inches.
+        </p>
+      </solution>
+    </example>
+          
+    <example>
+      <statement>
+        <p>
+          If an object is dropped from a height (feet) of <m>h</m>, then the distance between the object and the ground after <m>t</m> seconds can be approximated by the function <m>f(t)=-16t^2+h</m>.  Let's use this information to approximate the amount of time it takes an object to reach the ground after being dropped from a height of <m>500</m> feet.
+        </p>
+      </statement>
+      <solution>
+        <p>
+           Our distance function is <m>f(t)=-16t^2+500</m>.  When the object reaches the ground the value of <m>f</m> is <m>0</m>.  So the equation we need to solve is <me>-16t^2+500=0</me>.
+        </p>
+        <p>
+          We can quickly determine the solution by isolating <m>t^2</m> and employing the square root method.
+          <md>
+            <mrow>-16t^2+500\amp=0</mrow>
+            <mrow>-16t^2+500\subtractright{500}\amp=0\subtractright{500}</mrow>
+            <mrow>-16t^2\amp=-500</mrow>
+            <mrow>\divideunder{-16t^2}{-16}\amp=\divideunder{-500}{-16}</mrow>
+            <mrow>t^2\amp=\frac{125}{4}</mrow>
+            <mrow>t\amp=\pm \sqrt{\frac{125}{4}}</mrow>
+            <mrow>t\amp=\pm \frac{5\sqrt{5}}{2}</mrow>
+          </md>
+          Since the object cannot reach the ground before it has been released, we reject the negative solution.  Using a calculator we have:
+            <me>\frac{5\sqrt{5}}{2}\approx 5.59</me>.  So it takes about 5.59 seconds for the object to reach the ground after its release.
+        </p>
+      </solution>
+    </example>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Questions vary.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              A bean bag is shot into the air from the top of a 168 ft building with an initial upward velocity of <m>88</m> ft/s.  It can shown (using calculus) that the height (ft) of the bag relative to the ground is given by the function <m>h(t)=-16t^2+88t+168</m> where <m>t</m> is the number of seconds that have elapsed since the bean bag was released.  Determine the amount of time it takes for the bean bag to reach the ground upon its release.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We need to determine when the value of <m>h(t)</m> is equal to zero.
+              <md>
+                <mrow>h(t)\amp=0</mrow>
+                <mrow>-16t^2+88t+168\amp=0</mrow>
+                <mrow>\multiplyleft{-\frac{1}{8}}(-16t^2+88t+168)\amp=\multiplyleft{-\frac{1}{8}}0</mrow>
+                <mrow>2t^2-11t-21\amp=0</mrow>
+                <mrow>2t^2-14t+3t-21\amp=0</mrow>
+                <mrow>2t(t-7)+3(t-7)\amp=0</mrow>
+                <mrow>(t-7)(2t+3)\amp=0</mrow>
+              </md>
+              <md>
+                <mrow>t-7\amp=0\amp\amp\text{ or }\amp 2t+3\amp=0</mrow>
+                <mrow>t-7\addright{7}\amp=0\addright{7}\amp\amp\text{ or }\amp 2t+3\subtractright{3}\amp=0\subtractright{3}</mrow>                  
+                <mrow>t\amp=7\amp\amp\text{ or }\amp 2t\amp=-3</mrow>
+                <mrow>t\amp=7\amp\amp\text{ or }\amp \divideunder{2t}{2}\amp=\divideunder{-3}{2}</mrow>
+                <mrow>t\amp=7\amp\amp\text{ or }\amp t\amp=-\frac{3}{2}</mrow>
+              </md>
+              Since the bean bag can't reach the ground before it is shot, we reject the negative solution.  So we see that it takes seven seconds from release before the bean bag hits the ground.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              One square inside another, with a <m>2</m> meter gap between the walls of the smaller square and larger square.  The area of the larger square is <m>484 \text{m}^2</m>.  Determine the perimeter of the smaller square.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Let <m>x</m> represent the length (m) of each of the sides of the smaller square.  Then the length (m) of each side of the larger square is <m>x+4</m> (there are two additional meters of length on both sides of the smaller square).
+            </p>  
+
+            <figure xml:id="quadratic-equations-applications-figure-4" width="50%">
+              <caption>A square inside square</caption>
+              <image width="60%">
+                <description></description>
+                <latex-image>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \coordinate (A) at (0,0);
+                      \coordinate (B) at (0,8);
+                      \coordinate (C) at (8,8);
+                      \coordinate (D) at (8,0);
+                      \coordinate (E) at (2,2);
+                      \coordinate (F) at (2,6);
+                      \coordinate (G) at (6,6);
+                      \coordinate (H) at (6,2);
+                      \coordinate (I) at (4.2,0);
+                      \coordinate (J) at (4.2,2);
+                      \coordinate (K) at (4.2,6);
+                      \coordinate (L) at (4.2,8);
+                      \draw (A)--(B)--(C)--(D)--cycle;
+                      \draw (E)--(F)--(G)--(H)--cycle;
+                      \tkzLabelSegment[right](B,A){$\leftarrow 2$ m $\rightarrow$}
+                      \tkzLabelSegment[sloped](I,J){$\leftarrow 2$ m $\rightarrow$}
+                      \tkzLabelSegment[sloped](K,L){$\leftarrow 2$ m $\rightarrow$}
+                      \tkzLabelSegment[left](C,D){$\leftarrow 2$ m $\rightarrow$}
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+
+            <p>
+              We are given that the area of the larger square is <m>484\text{ m}^2</m> which gives us the following:
+              <md>
+                <mrow>(x+4)^2\amp=484</mrow>
+                <mrow>x+4\amp=\pm \sqrt{484}</mrow>
+                <mrow>x+4\amp=\pm 22</mrow>
+                <mrow>x+4\subtractright{4}\amp=\pm 22\subtractright{4}</mrow>
+                <mrow>x=-4\amp\pm 22</mrow>
+              </md> 
+              <me>x=-26\text{ or }x=18</me>
+              Since the length of a side cannot be negative, we reject the negative solution.  So the smaller square has sides of length <m>18</m> m and its area is <m>324\text{ m}^2</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              One leg of a right triangle is <m>7</m> cm longer than the other and the hypotenuse of the triangle is <m>1</m> cm longer than the longer leg of the triangle.  Determine the length of each side of the triangle.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Let <m>x</m> represent the length (cm) of the shorter leg of the triangle.  Then <m>x+7</m> represents the length of the longer leg and <m>x+8</m> represents the length of the hypotenuse. <me></me>
+            </p>
+
+            <figure xml:id="quadratic-equations-applications-figure-5">
+              <caption>Variable Diagram</caption>
+              <image width="80%">
+                <description></description>
+                <latex-image>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \coordinate (A) at (0,1);
+                      \coordinate (B) at (0,0);
+                      \coordinate (C) at (7,0);
+                      \draw (A)--(B)--(C)--cycle;
+                      \tkzLabelSegment[left](B,A){$x$}
+                      \tkzLabelSegment[below](B,C){$x+7$}
+                      \tkzLabelSegment[sloped](C,A){$x+8$}
+                      \tkzMarkRightAngle(A,B,C)
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+
+            <p>
+              Using the Pythagorean Theorem and solving for <m>x</m> we get the following:
+              <md>
+                <mrow>x^2+(x+7)^2\amp=(x+8)^2</mrow>
+                <mrow>x^2+x^2+14x+49\amp=x^2+16x+64</mrow>
+                <mrow>2x^2+14x+49\amp=x^2+16x+64</mrow>
+                <mrow>2x^2+14x+49\subtractright{x^2}\subtractright{16x}\subtractright{64}\amp=x^2+16x+64\subtractright{x^2}\subtractright{16x}\subtractright{64}</mrow>
+                <mrow>x^2-2x-15\amp=0</mrow>
+                <mrow>(x-5)(x+3)\amp=0</mrow>
+              </md>
+              <md>
+                <mrow>x-5\amp=0 \amp\amp\text{ or }\amp x+3\amp=0</mrow>
+                <mrow>x-5\addright{5}\amp=0\addright{5} \amp\amp\text{ or }\amp x+3\subtractright{3}\amp=0\subtractright{3}</mrow>
+                <mrow>x\amp=5 \amp\amp\text{ or }\amp x\amp=-3</mrow>
+              </md>
+              Since a length can't be negative, we reject the negative solution.  So the shorter leg of the triangle has a length of <m>5</m> cm and the lengths of the other two sides are <m>12</m> cm and <m>13</m> cm.
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+    </exercises>
+
+  </section>

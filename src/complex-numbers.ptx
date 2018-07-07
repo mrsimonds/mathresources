@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="complex-numbers">
+  <title>Complex Numbers</title>
+  <p>
+    The set of complex numbers includes all real numbers, all imaginary numbers, and all sums and differences of real numbers with imaginary numbers.  So, for example, the real number <m>5</m> and the imaginary number <m>7i</m> are both complex numbers, and so is <m>5+7i</m>.  However, <m>5+7i</m> is neither a real number nor an imaginary number, as it has both a real part and an imaginary part.  
+  </p>
+  <p>
+    When adding or subtracting complex numbers, the real parts are combined into one and the imaginary parts are combined into one.  The sum or difference of the real number and the imaginary number cannot be simplified further, as there is no way to combine the unlike terms into a single whole absent an addition sign or subtraction sign. An example is shown below.  Note that the steps shown are usually just done in ones head <mdash/> they're written out here only to illustrate the meaning of the proceeding words.
+    <md>
+      <mrow>(-6+7i)-(5-10i)\amp=(-6-5)+(7i-(-10i))</mrow>
+      <mrow>\amp=-11+17i</mrow>
+    </md>
+  </p>
+  <p>
+    Multiplying complex numbers is similar to other expansions but with a twist at the end <mdash/> all occurrences of <m>i^2</m> are replaced by <m>-1</m> and the resultant expression is further simplified.  For example, to simplify the product <m>(9+2i)(1-5i)</m> we would begin by employing FOIL in exactly the same manner we would when expanding <m>(9+2x)(1-5x)</m>.  However, once we have expanded the product using FOIL, we have to replace  <m>i^2</m> with <m>-1</m> and further simplify.  The process is shown below.
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Simplify <m>(9+2i)(1-5i)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+          <mrow>(9+2i)(1-5i)\amp=9-45i+2i-10i^2</mrow>
+          <mrow>\amp=9-43i-10(-1)</mrow>
+          <mrow>\amp=9-43i+10</mrow>
+          <mrow>\amp=19-43i</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Simplify <m>(1+i)^2</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+          <mrow>(1+i)^2\amp=(1+i)(1+i)</mrow>
+          <mrow>\amp=1+i+i+i^2</mrow>
+          <mrow>\amp=1+2i+(-1)</mrow>
+          <mrow>\amp=2i</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+    <example>
+      <statement>
+        <p>
+          Use the result of the last example to simplify <m>(1+i)^4</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>(1+i)^4\amp=((1+i)^2)^2</mrow>
+            <mrow>\amp=(2i)^2</mrow>
+            <mrow>\amp=2^2 \cdot i^2</mrow>
+            <mrow>\amp=4 \cdot -1</mrow>
+            <mrow>\amp=-4</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      The fact that <m>(1+i)^4=-4</m> implies that a fourth root of <m>-4</m> is <m>1+i</m>.  So we now not only have square roots of negative numbers, we also have fourth roots of negative numbers!  In fact, the introduction of complex numbers allows us to take any root of any number.  You should keep in mind, however, that while square roots of negative real numbers are imaginary numbers, higher order even roots of real numbers, for example <m>\sqrt[6]{-64}</m>, are complex numbers with both real number parts and imaginary number parts.  In fact, the principle sixth root of <m>-64</m> is <m>\sqrt{3}+i</m>.  That is, <m>(\sqrt{3}+i)^6=-64</m>.  It turns out that there are in fact six sixth roots of <m>-64</m>, but that's a subject for another class (trigonometry).
+    </p>
+    <p>
+      In the section covering imaginary numbers, we discussed that division by imaginary numbers comes down to rationalizing denominators.  The same is true when we divide by complex numbers that have both real and imaginary parts.  However, in the latter case, because we are dealing with a binomial denominator, we need to multiply the denominator by it's conjugate and balance that action by also multiplying the numerator by the conjugate of the denominator. Both the numerator and the denominator then need to be simplified and the results broken into there real number and imaginary parts,  If the final result has both real number and imaginary parts, it should always be written in the form <m>a+bi</m> where <m>a</m> and <m>b</m> are real numbers.  Several examples are shown below.
+    </p>
+            
+    <example>
+      <statement>
+        <p>
+          Simplify> <m>\frac{6}{1+3i}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\frac{6}{1+3i}\amp=\frac{6}{1+3i} \cdot \highlight{\frac{1-3i}{1-3i}}</mrow>
+            <mrow>\amp=\frac{6-18i}{1-3i+3i-9i^2}</mrow>
+            <mrow>\amp=\frac{6-18i}{1-9(-1)}</mrow>
+            <mrow>\amp=\frac{6-18i}{10}</mrow>
+            <mrow>\amp=\frac{6}{10}-\frac{18}{10}i</mrow>
+            <mrow>\amp=\frac{3}{5}-\frac{9}{5}i</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Simplify> <m>\frac{5i}{1-2i}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\frac{5i}{1-2i}\amp=\frac{5i}{1-2i} \cdot \highlight{\frac{1+2i}{1+2i}}</mrow>
+            <mrow>\amp=\frac{5i+10i^2}{1+2i-2i-4i^1}</mrow>
+            <mrow>\amp=\frac{5i+10(-1)}{1-4(-1)}</mrow>
+            <mrow>\amp=\frac{5i-10}{5}</mrow>
+            <mrow>\amp=\frac{-10}{5}+\frac{5}{5}i</mrow>
+            <mrow>\amp=-2+i</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Simplify> <m>\frac{-7+4i}{-7-4i}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\frac{-7+4i}{-7-4i}\amp=\frac{-7+4i}{-7-4i} \cdot \highlight{\frac{-7+4i}{-7+4i}}</mrow>
+            <mrow>\amp=\frac{49-28i-28i+16i^2}{49-28i+28i-16i^2}</mrow>
+            <mrow>\amp=\frac{49-56i+16(-1)}{49-16(-1)}</mrow>
+            <mrow>\amp=\frac{33-56i}{65}</mrow>
+            <mrow>\amp=\frac{33}{65}-\frac{56}{65}i</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Determine each product or quotient.  Write each result that has both a real number part and a complex number part in standard form (<m>a+bi</m>).
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(3-7i)(4+9i)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                (3-7i)(4+9i)\amp=12+27i-28i-63i^2\\
+                \amp=12-i-63(-1)\\
+                \amp=12-i+63\\
+                \amp=75-i
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(1+i)^2</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                (1+i)^2\amp=(1+i)(1+i)\\
+                \amp=1+i+i+i^2\\
+                \amp=1+2i+(-1)\\
+                \amp=2i
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(9-2i)(9+2i)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                (9-2i)(9+2i)\amp=81+18i-18i-4i^2\\
+                \amp=81-4(-1)\\
+                \amp=85
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{12}{1+5i}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \frac{12}{1+5i}\amp=\frac{12}{1+5i} \cdot \frac{1-5i}{1-5i}\\
+                \amp=\frac{12-60i}{1-5i+5i-25i^2}\\
+                \amp=\frac{12-60i}{1-25(-1)}\\
+                \amp=\frac{12-60i}{26}\\
+                \amp=\frac{12}{26}-\frac{60}{26}i\\
+                \amp=\frac{6}{13}-\frac{30}{13}i
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{25i}{3-4i}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \frac{25i}{3-4i}\amp=\frac{25i}{3-4i} \cdot \frac{3+4i}{3+4i}\\
+                \amp=\frac{75i+100i^2}{9+12i-12i-16i^2}\\
+                \amp=\frac{75i+100(-1)}{9-16(-1)}\\
+                \amp=\frac{-100+75i}{25}\\
+                \amp=-\frac{100}{25}+\frac{75}{25}i\\
+                \amp=-4+3i
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{2-i}{2+i}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \frac{2-i}{2+i}\amp=\frac{2-i}{2+i} \cdot \frac{2-i}{2-i}\\
+                \amp=\frac{4-2i-2i+i^2}{4-2i+2i-i^2}\\
+                \amp=\frac{4-4i+(-1)}{4-(-1)}\\
+                \amp=\frac{3-4i}{5}\\
+                \amp=\frac{3}{5}-\frac{4}{5}i
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{2+5i}{2-3i}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \frac{2+5i}{2-3i}\amp=\frac{2+5i}{2-3i} \cdot \frac{2+3i}{2+3i}\\
+                \amp=\frac{4+6i+10i+15i^2}{4+6i-6i-9i^2}\\
+                \amp=\frac{4+16i+15(-1)}{4-9(-1)}\\
+                \amp=\frac{-11+16i}{13}\\
+                \amp=-\frac{11}{13}+\frac{16}{13}i
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(1+\sqrt{3}i)^3</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                (1+\sqrt{3}i)^3\amp=(1+\sqrt{3}i)(1+\sqrt{3}i)(1+\sqrt{3}i)\\
+                \amp=(1+\sqrt{3}i+\sqrt{3}i+3i^2)(1+\sqrt{3}i)\\
+                \amp=(1+2\sqrt{3}i+3(-1))(1+\sqrt{3}i)\\
+                \amp=(-2+2\sqrt{3}i)(1+\sqrt{3}i)\\
+                \amp=-2-2\sqrt{3}i+2\sqrt{3}i+2 \cdot 3 \cdot i^2\\
+                \amp=-2+6(-1)\\
+                \amp=-8
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{-1-3i}{-1+3i}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \frac{-1-3i}{-1+3i}\amp=\frac{-1-3i}{-1+3i} \cdot \frac{-1-3i}{-1-3i}\\
+                \amp=\frac{1+3i+3i+9i^2}{1+3i-3i-9i^2}\\
+                \amp=\frac{1+6i+9(-1)}{1-9(-1)}\\
+                \amp=\frac{-8+6i}{10}\\
+                \amp=-\frac{8}{10}+\frac{6}{10}i\\
+                \amp=-\frac{4}{5}+\frac{3}{5}i
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+    </exercises>
+
+  </section>

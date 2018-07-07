@@ -276,8 +276,14 @@
         <xi:include href="./workshop-materials.ptx" />
         <xi:include href="./absolute-value-materials.ptx" />
         <xi:include href="./factoring-materials.ptx" />
+        <xi:include href="./imaginary-and-complex-numbers-materials.ptx" />
         <xi:include href="./lines-materials.ptx" />
         <xi:include href="./parabolas-materials.ptx" />
+        <xi:include href="./polynomials-materials.ptx" />
+        <xi:include href="./quadratic-equations-materials.ptx" />
+        <xi:include href="./radicals-materials.ptx" />
+        <xi:include href="./rationals-materials.ptx" />
+        <xi:include href="./systems-materials.ptx" />
 
     </book>
 </mathbook>

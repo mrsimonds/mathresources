@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="rationals-domains">
+    <title>Domains of Rational Functions</title>
+    <p>
+      When presented with a formula for a function named <m>f</m>, barring any stated restrictions, the domain of <m>f</m> is the set of all real numbers for which the formula returns a real number.  For example, <m>9</m> is in the domain of the function <m>f(x)=\sqrt{x-5}</m> because the value of <m>f(9)</m> is a real number (specifically <m>2</m>) where as <m>1</m> is not in the domain because when we apply the formula to <m>1</m> the result is <m>\sqrt{-4}</m> which is not a real number.
+    </p>
+    <p>
+      A rational function is a function whose formula can be written in the form <m>\frac{p(x)}{q(x)}</m> where <m>p(x)</m> and <m>q(x)</m> are both polynomial functions.  Determining the domain of a rational function essentially boils down to determining the values of <m>x</m> that do not lie in the domain.  The values excluded from the domain are the values that result in division by zero (which leads to an undefined result).
+    </p>
+    <p>
+      To help facilitate identifying the values that cause the denominator to evaluate to zero, we generally completely factor the denominators of rational expressions.  For reasons of simplification, which is discussed in the next section, we also completely factor the numerators of rational expression.
+    </p>
+    <p>
+      Let's determine the domain of the function <m>f(x)=\frac{x+3}{x^2-12x+20}</m>.  We begin by completely factoring the denominator of the rational expression.
+      <md>
+        <mrow>f(x)\amp=\frac{x+3}{x^2-12x+20}</mrow>
+        <mrow>\amp=\frac{x+3}{(x-10)(x-2)}</mrow>          
+      </md>
+      From the factored expression we can see that the value of <m>x</m> can be neither <m>10</m> nor <m>2</m> as either of those values would cause division by <m>0</m>.  Consequently, the domain of <m>f</m> consists of all real numbers other that <m>2</m> and <m>10</m>.  Using set builder notation we express the domain as <m>\{x\mid x \neq 2, x \neq 10\}</m> and using interval notation we express the domain as
+      <m>(-\infty,2) \cup (2,10) \cup (10,\infty)</m>.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine the domain of the function <m>g(t)=\frac{6}{t^2+9t}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by factoring.
+          <md>
+            <mrow>g(t)\amp=\frac{6}{t^2+9t}</mrow>
+            <mrow>\amp=\frac{6}{t(t+9)}</mrow>
+          </md>
+          The input variable for <m>g</m> is <m>t</m>, so we need to determine the values of <m>t</m> that would result in division by zero.  The two values are <m>0</m> and <m>-9</m>, so those are the two values that are not in the domain of <m>g</m>.  So the domain of <m>g</m>, stated using set builder notation, is <m>\{x \mid x \neq -9, x \neq 0\}</m>.  Using interval notation, the domain of <m>g</m> is expressed as
+          <m>(-\infty,-9) \cup (-9,0) \cup (9,\infty)</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the domain of <m>f(x)=\frac{x-2}{x^3-8}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This example requires the factor formula <m>a^3-b^3=(a-b)(x^2+ab+b^2)</m>.
+        </p>
+        <p>
+          Factoring we have:
+          <md>
+            <mrow>f(x)\amp=\frac{x-2}{x^3-8}</mrow>
+            <mrow>\amp=\frac{x-2}{(x-2)(x^2+2x+4)}</mrow>
+          </md>
+          If we replace <m>x</m> with <m>2</m>, the resultant expression is <m>\frac{0}{0}</m>, which is just as undefined as any other expression involving division by zero.  So <m>2</m> is not in the domain of <m>f</m>.  It turns out that <m>2</m> is the only value of <m>x</m> that results in division by zero.  The easiest way to see this is to look at the original denominator.  If <m>x^3-8=0</m>, then <m>x^3=8</m>.  The only real number that cubes to <m>8</m> is <m>2</m>, so that is the only number not in the domain of <m>f</m>.  So the domain of <m>f</m> is 
+          <m>\{x \mid x \neq 2\}</m> or, equivalently, <m>(-\infty,2) \cup (2,\infty)</m>.
+        </p>
+      </solution>
+    </example>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Determine the domain of each function.  State each domain using both set builder notation and interval notation.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>f(x)=\frac{2x-8}{x^2-16}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>f(x)\amp=\frac{2x-8}{x^2-16}</mrow>
+                <mrow>\amp=\frac{2x-8}{(x-4)(x+4)}</mrow>
+              </md>
+            </p>
+            <p>
+              The domain of <m>f</m> is <m>\{x \mid x \neq -4, x \neq 4\}</m>.
+            </p>
+            <p>
+              The domain of <m>f</m> is <m>(-\infty,-4)\cup(-4,4)\cup(4,\infty)</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>g(t)=\frac{t}{t^2-5t-6}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow> g(t)\amp=\frac{t}{t^2-5t-6}</mrow>
+                <mrow> \amp=\frac{t}{(t-6)(t+1)}</mrow>
+              </md>
+            </p>
+            <p>
+              The domain of <m>g</m> is <m>\{t \mid t \neq -1, t \neq 6\}</m>.
+            </p>
+            <p>
+              The domain of <m>g</m> is <m>(-\infty,-1) \cup (-1,6) \cup (6,\infty)</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>h(x)=\frac{4x+8}{2x^2-8x}+\frac{x-3}{x^2-6x+8}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>h(x)\amp=\frac{4x+8}{2x^2-8x}+\frac{x-3}{x^2-6x+8}</mrow>
+                <mrow>\amp=\frac{4x+8}{2x(x-4)}+\frac{x-3}{(x-4)(x-2)}</mrow>
+              </md>
+            </p>
+            <p>
+              The domain of <m>h</m> is <m>\{x \mid x \neq 0, x \neq 2, x \neq 4\}</m>. 
+            </p>
+            <p>
+              The domain of <m>h</m> is <m>(-\infty,0) \cup (0,2) \cup (2,4) \cup (4,\infty)</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>m(t)=\frac{t+7}{t^2+49}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Over the real numbers, <m>t^2+49</m> never equals zero.
+            </p>
+            <p>
+              The domain of <m>m</m> is <m>\{t \mid t \in \mathbb{R}\}</m>. 
+            </p>
+            <p>
+              The domain of <m>m</m> is <m>(-\infty,\infty)</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>p(x)=\frac{1}{x^3-8}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>p(x)\amp=\frac{1}{x^3-8}</mrow>
+                <mrow>\amp=\frac{1}{(x-2)(x^2+2x+4)}</mrow>
+              </md>
+            </p>
+            <p>
+              Note that <m>x^2+2x+4</m> never equals zero over the real numbers.  That can be confirmed with the quadratic formula.
+            </p>
+            <p>
+              The domain of <m>p</m> is <m>\{x \mid x \neq 2\}</m>. 
+            </p>
+            <p>
+              The domain of <m>p</m> is <m>(-\infty,2) \cup (2,\infty)</m>.
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+    </exercises>
+
+  </section>

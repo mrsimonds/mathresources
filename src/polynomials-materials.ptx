@@ -9,11 +9,15 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="better-prepared-workshop-materials">
-    <title>Be Better Prepared - Math Review Materials</title>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="polynomials-materials">
+    <title>Polynomials</title>
 
-      <xi:include href="./workshop-exponents-scientific-notation.ptx" />
-      <xi:include href="./workshop-functions.ptx" />
+      <xi:include href="./polynomials-videos.ptx" />
+      <xi:include href="./polynomials-terminology.ptx" />
+      <xi:include href="./polynomials-addition-and-subtraction.ptx" />
+      <xi:include href="./polynomials-multiplication.ptx" />
+      <xi:include href="./polynomials-division.ptx" />
+      <xi:include href="./polynomials-additional-practice.ptx" />
 
 
 

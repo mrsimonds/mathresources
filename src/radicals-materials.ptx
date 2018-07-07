@@ -9,12 +9,17 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="better-prepared-workshop-materials">
-    <title>Be Better Prepared - Math Review Materials</title>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="rationals-materials">
+    <title>Radicals and Rational Exponents</title>
 
-      <xi:include href="./workshop-exponents-scientific-notation.ptx" />
-      <xi:include href="./workshop-functions.ptx" />
-
+      <xi:include href="./radicals-videos.ptx" />
+      <xi:include href="./radicals-simplifying-square-roots.ptx" />
+      <xi:include href="./radicals-rationalize-monomial-denominators.ptx" />
+      <xi:include href="./radicals-combining-square-roots.ptx" />
+      <xi:include href="./radicals-binomial-denominators.ptx" />
+      <xi:include href="./radicals-greater-indices.ptx" />
+      <xi:include href="./radicals-rational-exponents.ptx" />
+      <xi:include href="./radicals-equations.ptx" />
 
 
 </chapter>

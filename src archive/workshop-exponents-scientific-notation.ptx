@@ -1,0 +1,1395 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-exponents-scientific-notation">
+    <title>Exponents and scientific notation</title>
+
+    <exercises>
+      <title>Videos</title>
+      <exercise>
+        <title>Videos created by Ann Cary and Scot Leavitt.</title>
+        <statment>        
+          <p>The link takes you to YouTube Playlist which will open either in a new window or in a Youtube App.
+          <ul>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-eUYq3sBms_5CaAqWvayULV" target="blank">Exponents and scientific notation</url>
+            </li>
+          </ul>
+        </p>
+      </statment>
+    </exercise>
+  </exercises>
+
+   <exercises>
+      <title>Properties of Exponents</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
+        <statement>
+          <p>
+            Consider the product <m>x^2x^4</m>.  The expression <m>x^2</m> contains <m>2</m> factors of <m>x</m> while the factor of <m>x^4</m> contains <m>4</m> factors of <m>x</m>, so altogether the expression <m>x^2x^4</m> contains <m>6</m> factors of <m>x</m>.  Note that <m>6</m> comes from summing <m>2</m> and <m>4</m>.  Writing this out using exponent notation we have:
+            <md>
+              <mrow>x^2x^4\amp=x^{2+4}</mrow>
+              <mrow>\amp=x^6</mrow>
+            </md>
+            From the above example we can infer the following rule:
+            <me>\text{The Product Rule for Exponents: }x^mx^n=x^{m+n}</me>
+          </p>
+          <p>
+            Note that this rule only applies to exponential expressions with a common base (the thing being raised to a power).  For example, 
+            <md>
+              <mrow>t^6t^{19}\amp=t^{6+19}</mrow>
+              <mrow>\amp=t^{25}</mrow>
+            </md>
+            On the other hand, there is no way to combine the exponents in the expression <m>x^6y^{19}</m>.
+          </p>
+          <p>
+            When simplifying products containing exponential expressions, you want to group like factors together.  For example:
+            <md>
+              <mrow>(x^3y^8)(x^{11}y^4)\amp=(x^3x^{11})(y^8y^4)</mrow>
+              <mrow>\amp=x^{3+11}y^{8+4}</mrow>
+              <mrow>\amp=x^{14}y^{12}</mrow>
+            </md>
+            Let's make sure that the final result makes sense.  In terms of <m>x</m>, we started with <m>3</m> factors and another <m>11</m> factors, so it makes sense that we ended up with <m>14</m> factors.  As for <m>y</m>, we started with <m>8</m> factors and another <m>4</m> factors, so there are indeed <m>12</m> factors in all.
+          </p>
+          <p>
+            While you may very well be able to just count factors in your head without writing out the rule, I suggest that you write out the rule, at least at first.  Down the road you will likely encounter negative exponents and even fractional exponents, and when you get there counting factors won't work.  The good news is that the rules of exponents stay the same, no matter how bizarre the exponents become.  So if you do forget a rule, you can recreate the rule using small positive exponents and then apply that rule to your strange exponents.
+          </p>
+          <p>
+            Consider the expression <m>(x^2)^4</m>.  Inside the parentheses there are two factors of <m>x</m>, and raising that expression to the fourth power results in <m>(x \cdot x)(x \cdot x)(x \cdot x)(x \cdot x)</m>.  So all together there are two factor of <m>x</m>, four times.  That is, there are four times two factors of <m>x</m>.  From this we can infer that when a power of <m>x</m> is raised to yet another power, the two exponents are multiplied.
+            <me>\text{The Power to a Power Rule for Exponents: }(x^m)^n=x^{m \cdot n}</me>
+          </p>
+          <p>
+            For example:
+            <md>
+              <mrow>(2^3)^2\amp=2^{3 \cdot 2}</mrow>
+              <mrow>\amp=2^6</mrow>
+              <mrow>\amp=64</mrow>
+            </md>
+            This is verified by following the order of operations.
+            <md>
+              <mrow>(2^3)^2\amp=8^2</mrow>
+              <mrow>\amp=64</mrow>
+            </md>
+          </p>
+          <p>
+            While it's good practice to write out the product a few times, it's best to get in the habit of simply multiplying the exponents in your head.  Writing out the rule helps with retention, but once you get into multi-step simplification problems, writing out each and every step becomes cumbersome.  Look at each of the simplifications below and verify that the new exponent is the product of the two original exponents.
+          </p>
+          <sidebyside widths="33% 33% 33%" margins="0%">
+            <p>
+              <m>(x^{12})^3=x^{36}</m>
+            </p>
+            <p>
+              <m>(y^3)^7=y^{21}</m>
+            </p>
+            <p>
+              <m>(w^{10})^5=w^{50}</m>
+            </p>
+          </sidebyside>
+          <p>
+            Consider the expression <m>(xy)^3</m>.  The expression is short-hand for <m>(xy)(xy)(xy)</m>, and because multiplication is both commutative and associative, the latter expression is equivalent to <m>(x \cdot x \cdot x)(y \cdot y \cdot y)</m>.  In short:<me>(xy)^3=x^3y^3</me>.  In word, we say that exponents distribute over multiplication.  Similarly, exponents distribute over quotients Symbolically:
+            <me>\text{The Product to a Power Rule of Exponents: }(xy)^n=x^ny^n</me>
+            <me>\text{The Quotient to a Power Rule for Exponents: }\left(\frac{x}{y}\right)^n=\frac{x^n}{y^n}</me>
+            The new rules are supported numerically in the side-by-side examples below.
+          </p>
+            <sidebyside widths="50% 50%" margins="0%">
+              <p>
+                <md>
+                  <mrow>(3 \cdot 4)^2\amp=3^2 \cdot 4^2</mrow>
+                  <mrow>\amp=9 \cdot 16</mrow>
+                  <mrow>\amp=144</mrow>
+                </md>
+              </p>
+              <p>
+                <md>
+                  <mrow>(3 \cdot 4)^2\amp=12^2</mrow>
+                  <mrow>\amp=144</mrow>
+                </md>
+              </p>
+            </sidebyside>
+            <sidebyside widths="50% 50%" margins="0%">
+              <p>
+                <md>
+                  <mrow>\left(\frac{2}{5}\right)^3\amp=\frac{2^3}{5^3}</mrow>
+                  <mrow>\amp=\frac{2 \cdot 2 \cdot 2}{5 \cdot 5 \cdot 5}</mrow>
+                  <mrow>\amp=\frac{8}{125}</mrow>
+                </md>
+              </p>
+              <p>
+                <md>
+                  <mrow>\left(\frac{2}{5}\right)^3\amp=\frac{2}{5} \cdot \frac{2}{5} \cdot \frac{2}{5}</mrow>
+                  <mrow>\amp=\frac{2 \cdot 2 \cdot 2}{5 \cdot 5 \cdot 5}</mrow>
+                  <mrow>\amp=\frac{8}{125}</mrow>
+                </md>
+              </p>
+            </sidebyside>
+
+              <p>
+                In the examples below, both the product (or quotient)to a power rule, <m>(xy)^n=x^ny^n</m> and the power to a power rule, <m>(x^m)^n=x^{mn}</m> are applied.  Please note the the multiplication involved in the power to a power rule was done in "my head." 
+              </p>
+              <sidebyside widths="33% 33% 33%" margins="0%">
+                <p>
+                  <md>
+                    <mrow>(2x^4)^5\amp=2^5(x^4)^5</mrow>
+                    <mrow>\amp=32x^{20}</mrow>
+                  </md>
+                </p>
+                <p>
+                  <md>
+                    <mrow>(-x^4y^2)^6\amp=(-1)^6(x^4)^6(y^2)^6</mrow>
+                    <mrow>\amp=1 \cdot x^{24}y^{12}</mrow>
+                    <mrow>\amp=x^{24}y^{12}</mrow>
+                  </md>
+                </p>
+                <p>
+                  <md>
+                    <mrow>\left(\frac{s^4}{t^7}\right)^4\amp=\frac{(s^4)^4}{(t^7)^4}</mrow>
+                    <mrow>\amp=\frac{s^{16}}{t^{28}}</mrow>
+                  </md>
+                </p>
+              </sidebyside>
+              <p>
+                One of the great things about the rules of exponents is that when multiple rules have to be applied, the rules can be applied in any order you like.  So long as you execute each applicable rule correctly, and resist the urge to make up new rules, you should end up with the correct simplification.  Compare the two paths below.
+              </p>
+              <sidebyside widths="50% 50%" margins="0%">
+                <p>
+                  <md>
+                    <mrow>\left(\frac{x^3x^6}{y^5}\right)^4\amp=\left(\frac{x^9}{y^5}\right)^4</mrow>
+                    <mrow>\amp=\frac{(x^9)^4}{(y^5)^4}</mrow>
+                    <mrow>\amp=\frac{x^{36}}{y^{20}}</mrow>
+                  </md>
+                </p>
+                <p>
+                  <md>
+                    <mrow>\left(\frac{x^3x^6}{y^5}\right)^4\amp=\frac{(x^3)^4(x^6)^4}{(y^5)^4}</mrow>
+                    <mrow>\amp=\frac{x^{12}x^{24}}{y^{20}}</mrow>
+                    <mrow>\amp=\frac{x^{36}}{y^{20}}</mrow>
+                  </md>
+                </p>
+              </sidebyside>
+          <p>
+            Consider the following.
+            <md>
+              <mrow>\frac{x^7}{x^5}\amp=\frac{x \cdot x \cdot x \cdot x \cdot x \cdot x}{x \cdot x \cdot x \cdot x \cdot x}</mrow>
+              <mrow>\amp=\frac{x}{x} \cdot \frac{x}{x} \cdot \frac{x}{x} \cdot \frac{x}{x} \cdot \frac{x}{x} \cdot \frac{x \cdot x}{1}</mrow>
+              <mrow>\amp=1 \cdot 1 \cdot 1 \cdot 1 \cdot 1 \cdot x^2</mrow>
+              <mrow>\amp=x^2</mrow>
+            </md>
+          </p>
+          In words, five of the original seven factors of <m>x</m> that appeared in the numerator divided to one with the five factors of <m>x</m> that appeared in the denominator, leaving behind <m>"7-5"</m> factors of <m>x</m> in the numerator.  From this we infer the following rule.
+          <me>\text{The Quotient Rule for Exponents: }\frac{x^m}{x^n}=x^{m-n}</me>
+          As with the other rules, it's good to write out the step a few times to help with retention, but in the long run you'll want to perform the subtraction in your head. What follows are three examples where the step is shown, followed by two more complicated examples where the calculations (addition, multiplication, or subtraction) were done in my head.
+          <sidebyside widths="33% 33% 33%" margins="0%">
+            <p>
+              <md>
+                <mrow>\frac{w^{76}}{w^{55}}\amp=w^{76-55}</mrow>
+                <mrow>\amp=w^{21}</mrow>
+              </md>
+            </p>
+            <p>
+              <md>
+                <mrow>\frac{a^{12}b^{21}}{a^7b^{11}}\amp=a^{12-7}b^{21-11}</mrow>
+                <mrow>\amp=a^5b^{10}</mrow>
+              </md>
+            </p>
+            <p>
+              <md>
+                <mrow>\frac{3^8}{3^6}\amp=3^{8-6}</mrow>
+                <mrow>\amp=3^2</mrow>
+                <mrow>\amp=9</mrow>
+              </md>
+            </p>
+          </sidebyside>
+          <sidebyside widths="50% 50%" margins="0%">
+            <p>
+              <md>
+                <mrow>\left(\frac{x^5x^{12}}{x^4}\right)^2\amp=\left(\frac{x^{17}}{x^4}\right)^2</mrow>
+                <mrow>\amp=(x^{13})^2</mrow>
+                <mrow>\amp=x^{26}</mrow>
+              </md>
+            </p>
+            <p>
+              <md>
+                <mrow>\frac{(w^3z^5)^2}{(w^2z^2)^3}\amp=\frac{(w^3)^2(z^5)^2}{(w^2)^3(z^2)^3}</mrow>
+                <mrow>\amp=\frac{w^6z^{10}}{w^6z^6}</mrow>
+                <mrow>\amp=z^4</mrow>
+              </md>
+            </p>
+          </sidebyside>
+          <p>
+            One more thing.  Consider <m>\frac{3^4}{3^4}</m>.  That simplifies to <m>\frac{81}{81}</m>, which of course is equal to <m>1</m>.
+            But according to the quotient rule for exponents:
+            <md>
+              <mrow>\frac{3^4}{3^4}\amp=3^{4-4}</mrow>
+              <mrow>\amp=3^0</mrow>
+            </md>
+            Since <m>\frac{3^4}{3^4}</m> simplifies to both <m>3^0</m> and <m>1</m>, it must be the case that <m>3^0=1</m>.  In general:
+            <me>\text{Zero Exponents: }x^0=1, x \neq 0</me>
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+        <statement>
+          <p>
+            Simplify each of the following expressions.  The expression is not simplified unless each variable appears only once and there is only one constant factor. 
+            <ol cols="3">
+              <li><m>x^2x^5</m></li>
+              <li><m>a^3a</m></li>
+              <li><m>y^3y^3</m></li>
+              <li><m>w^{27}w^{42}</m></li>
+              <li><m>x^{44}x^{17}</m></li>
+              <li><m>(a^4b^2)(a^7b)</m></li>
+              <li><m>(3x^6)(-2x^5)</m></li>
+              <li><m>(4y^{12})\left(\frac{y^{12}}{4}\right)</m></li>
+              <li><m>(x^2)^3</m></li>
+              <li><m>(t^4)^2</m></li>
+              <li><m>(w^3)^2</m></li>
+              <li><m>(w^{20})^4</m></li>
+              <li><m>(ab)^4</m></li>
+              <li><m>(2a)^3</m></li>
+              <li><m>(-3t)^4</m></li>
+              <li><m>(4x^5)^3</m></li>
+              <li><m>(-2w^2)^4</m></li>
+              <li><m>(3t^{12})(-t^{64})</m></li>
+              <li><m>\left(\frac{1}{2}r^7\right)^5</m></li>
+              <li><m>(-2s^4t)^7</m></li>
+              <li><m>(-x^2y^4)^2</m></li>
+              <li><m>\frac{x^5}{x^3}</m></li>
+              <li><m>\frac{2^5}{2^3}</m></li>
+              <li><m>\frac{w^{59}}{w^{36}}</m></li>
+              <li><m>\frac{x^9}{x^9}</m></li>
+              <li><m>\left(\frac{x}{y}\right)^3</m></li>
+              <li><m>\left(\frac{2}{t}\right)^4</m></li>
+              <li><m>\left(\frac{x^8}{x^5}\right)^7</m></li>
+              <li><m>\left(-\frac{3z^5}{xy^2}\right)^4</m></li>
+              <li><m>\left(\frac{2^{11}x^4}{y^{77}z^{12}}\right)^0</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  x^2x^5\amp=x^{2+5}\\
+                  \amp=x^7
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  a^3a\amp=a^3a^1\\
+                  \amp=a^{3+1}\\
+                  \amp=a^4
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  y^3y^3\amp=y^{3+3}\\
+                  \amp=y^6
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  w^{27}w^{42}\amp=w^{27+42}\\
+                  \amp=w^{69}
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  x^{44}x^{17}\amp=x^{44+17}\\
+                  \amp=x^{61}
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (a^4b^2)(a^7b)\amp=a^{4+7}b^{2+1}\\
+                  \amp=a^{11}b^3
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (3x^6)(-2x^5)\amp=(3 \cdot -2)x^{6+5}\\
+                  \amp=-6x^{11}
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (4y^{12})\left(\frac{y^{12}}{4}\right)\amp=\left(4 \cdot \frac{1}{4}\right)y^{12+12}\\
+                  \amp=1 \cdot y^{24}\\
+                  \amp=y^{24}
+                  \end{aligned}
+                </m>
+              </li>
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (x^2)^3\amp=x^{2 \times 3}\\
+                  \amp=x^6
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (t^4)^2\amp=t^{4 \times 2}\\
+                  \amp=t^8
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (w^3)^2\amp=w^{3 \times 2}\\
+                  \amp=w^6
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (w^{20})^4\amp=w^{20 \times 4}\\
+                  \amp=w^{80}
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>(ab)^4=a^4b^4</m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (2a)^3\amp=2^3a^3\\
+                  \amp=8a^3
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (-3t)^4\amp=(-3)^4t^4\\
+                  \amp=81t^4
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (4x^5)^3\amp=4^3(x^5)^3\\
+                  \amp=64x^{15}
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (-2w^2)^4\amp=(-2)^4(w^2)^4\\
+                  \amp=16w^8
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li><m>(3t^{12})(-t^{64})=-3t^{76}</m></li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \left(\frac{1}{2}r^7\right)^5\amp=\left(\frac{1}{2}\right)^5(r^7)^5\\
+                  \amp=\frac{1}{32}r^{35}
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (-2s^4t)^7\amp=(-2)^7(s^4)^7t^7\\
+                  \amp=-128s^{28}t^7
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  (-x^2y^4)^2\amp=(-1)^2(x^2)^2(y^4)^2\\
+                  \amp=1 \cdot x^4y^8\\
+                  \amp=x^4y^8
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{x^5}{x^3}\amp=x^{5-3}\\
+                  \amp=x^2
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{2^5}{2^3}\amp=\frac{32}{8}\\
+                  \amp=4
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{w^{59}}{w^{36}}\amp=w^{59-36}\\
+                  \amp=w^{23}
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \frac{x^9}{x^9}\amp=x^{9-9}\\
+                  \amp=x^0\\
+                  \amp=1
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \left(\frac{x}{y}\right)^3=\frac{x^3}{y^3}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \left(\frac{2}{t}\right)^4\amp=\frac{2^4}{t^4}\\
+                  \amp=\frac{16}{t^4}
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \left(\frac{x^8}{x^5}\right)^7\amp=(x^3)^7\\
+                  \amp=x^{21}
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \begin{aligned}[t]
+                  \left(-\frac{3z^5}{xy^2}\right)^4\amp=(-1)^4 \cdot \frac{3^4(z^5)^4}{x^4(y^2)^4}\\
+                  \amp=1 \cdot \frac{81z^{20}}{x^4y^8}\\
+                  \amp=\frac{81z^{20}}{x^4y^8}
+                  \end{aligned}
+                </m>
+              </li>
+
+              <li>
+                <m>
+                  \left(\frac{2^{11}x^4}{y^{77}z^{12}}\right)^0=1
+                </m>
+              </li>
+
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+        <statement>
+          <p>
+            Completely simplify each expression.  Your final expression should contain no negative exponents.  Assume that all variables represent positive numbers.
+            <ol cols="3">
+              <li><m>x^8 \cdot x^{21}</m></li>
+              <li><m>(x^7)^{10}</m></li>
+              <li><m>\frac{x^{17}}{x^{11}}</m></li>
+              <li><m>\frac{x^{14}}{x^{23}}</m></li>
+            </ol>
+            <me></me>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><m>x^8 \cdot x^{21}=x^{29}</m></li>
+              <li><m>(x^7)^{10}=x^{70}</m></li>
+              <li><m>\frac{x^{17}}{x^{11}}=x^6</m></li>
+              <li><m>\frac{x^{14}}{x^{23}}=\frac{1}{x^9}</m></li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercises>
+
+     <exercises>
+      <title>Negative Exponents</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
+        <statement>
+          <p>
+            Recall the quotient rule of exponents:<me>\frac{x^m}{x^n}=x^{m-n}</me>.
+            When you've applied this rule in the past, it is quite possible that there have always been more factors of <m>x</m> in the numerator than in the denominator, or at the very least an equal number of factors in both locations.  In this discussion, we investigate what occurs when there are more factors of <m>x</m> in the denominator than in the numerator.                    
+          </p>
+          <p>
+            Consider the expression <m>\frac{x^2}{x^5}</m>.  We can regroup the factors into the product of three fractions and simplify, specifically:
+            <md>
+              <mrow>\frac{x^2}{x^5}\amp=\frac{x}{x}\cdot\frac{x}{x}\cdot\frac{1}{x^3}</mrow>
+              <mrow>\amp=\frac{1}{x^3}</mrow>
+            </md>
+          </p>
+          <p>
+            On the other hand, if we apply the quotient rule of exponents we get:
+            <md>
+              <mrow>\frac{x^2}{x^5}\amp=x^{2-5}</mrow>
+              <mrow>\amp=x^{-3}</mrow>
+            </md>
+          </p>
+          <p>
+            Employing the transitive property of equality, we must then conclude that:<me>x^{-n}=\frac{1}{x^n}, x\neq0</me>.
+          </p>
+          <p>
+            For example:
+            <md>
+              <mrow>2^{-3}\amp=\frac{1}{2^3}</mrow>
+              <mrow>\amp=\frac{1}{8}</mrow>
+            </md>
+            You can confirm this equivalence on a scientific calculator by showing that both <m>2^{-3}</m> and <m>\frac{1}{8}</m> evaluate to 
+            <m>0.125</m>.
+          </p>
+          <p>
+            One way you could think of a negative exponent is that it's telling you to move the location of the factor - when the move is made, the exponent becomes positive.  So far, the only such move we've discussed is <m>x^{-n}=\frac{1}{x^n}</m>. In this context, let's address one common error made with negative exponents.
+          </p>
+          <p>  
+            When a factor with a negative exponent is preceded by a constant factor, many folks like to move the constant factor right along with the factor that has an exponent.  For example, many folks will write that <m>4x^{-2}</m> is equal to <m>\frac{1}{4x^2}</m>.  Unfortunately this is not correct.  According to Order of Operations (PEMDAS), exponents need to be applied before multiplication is performed.  For example:
+            <md>
+              <mrow>4\times 3^2\amp=4\times 9</mrow>
+              <mrow>\amp=36</mrow>
+            </md>
+            Similarly:
+            <md>
+              <mrow>4\times 3^{-2}\amp=4\times\frac{1}{3^2}</mrow>
+              <mrow>\amp=4\times\frac{1}{9}</mrow>
+              <mrow>\amp=\frac{4}{9}</mrow>
+            </md>
+            and
+            <md>
+            <mrow>4<times/>x^{-2}\amp=4\times\frac{1}{x^2}</mrow>
+            <mrow>\amp=\frac{4}{x^2}</mrow>
+            </md>
+          </p> 
+          <p>
+            We've explored simple expressions of the form <m>x^{-n}</m> and <m>kx^{-n}</m>, where <m>k</m> is a constant.  Now let's explore more complicated expressions, expressions with factors that have negative exponents but the factors appear in various locations of the expressions.  
+          </p>
+          <p>
+            Let's begin with the expression <m>\frac{1}{x^{-3}}</m>.  There is more than one way to determine an equivalent expression with a positive exponent.  I'm going to make the determination by multiplying the expression by <m>1</m>.  Specifically:
+            <md>
+              <mrow>\frac{1}{x^{-3}}\amp=\frac{1}{x^{-3}}\cdot\frac{x^3}{x^3}</mrow>
+              <mrow>\amp=\frac{x^3}{x^0}</mrow>
+              <mrow>\amp=\frac{x^3}{1}</mrow>
+              <mrow>\amp=x^3</mrow>
+            </md>
+          </p>
+          <p>
+            From this one example, we can infer that <m>\frac{1}{x^{-n}}=x^n</m>.  If we express our two rules side by side, we both sides of the equation stated as fractions, We should be able to identify a pattern.
+          </p>
+          <sidebyside widths="50% 50%" margins="0%">
+            <p>
+              <me>\frac{x^{-n}}{1}=\frac{1}{x^n}</me>
+            </p>
+            <p>
+              <me>\frac{1}{x^{-n}}=\frac{x^n}{1}</me>
+            </p>
+          </sidebyside>
+          <p>
+            One way that we can think of a negative exponent is like one of those annoying light switches where sometimes up means the light is on but at other times up means the light is off (dependent upon the position of another switch connected to the same light).  For any given factor in a fractional expression, positioning the factor on one side of the fraction bar corresponds to the factor having a positive exponent and positioning the factor on the other side of the fraction bar corresponds to the factor having a negative exponent.  The catch is that you have to determine the arrangement for each individual factor.  This is established by the exponents present in the original expression.  Regardless of the arrangement, any time a factor with an exponent moves across the fraction bar, the sign on the exponent reverses.
+          </p>
+          <p>
+            Let's consider the expression <m>\frac{x^{-3}}{y^4}</m>.  In this expression, both <m>x</m> and <m>y</m> will have negative exponents when they are in the numerator and positive exponents in the denominator.  When both factors are in the numerator, the remaining denominator is a factor of <m>1</m> which generally is not written.  Below are the four germane equivalent expressions. <me>x^{-3}y^{-4}=\frac{x^{-3}}{y^4}=\frac{y^{-4}}{x^3}=\frac{1}{x^3y^4}</me>
+          </p>
+          <p>
+            While all of the manipulative rules of exponents (e.g., <m>x^mx^n=x^{m+n}</m>) apply equally to both positive and negative exponents, when working with fractional expressions, most people find it easier to begin a simplification process by first rearranging the factors so that all exponents are positive.  Doing so not only simplifies the arithmetic, it also makes it much more intuitive as to the ultimate positioning of any given variable so that its exponent is positive.
+          </p>
+          <p>
+            Consider the expression <m>\frac{x^{-7}}{x^{-3}}</m>.  When we simplify the expression, we have two objectives: only one occurrence of <m>x</m> and no negative exponents.  While it might be obvious to you where the factor <m>x</m> needs to reside, most folks feel more secure making that call after first rearranging the factors so that both exponents are positive.
+            <me>\frac{x^{-7}}{x^{-3}}=\frac{x^3}{x^7}</me>
+            It is now fairly intuitive that there four more factors of <m>x</m> in the denominator than in the numerator.  Putting it all together, we have:
+            <md>
+              <mrow>\frac{x^{-7}}{x^{-3}}\amp=\frac{x^3}{x^7}</mrow>
+              <mrow>\amp=\frac{1}{x^4}</mrow>
+            </md>
+            Note that we can infer a rule of exponents from the last example.  This new rule is shown below along with a rule established in an earlier lesson.
+          </p>
+          <sidebyside widths="50% 50%" margins="0%">
+            <p>
+              <me>\frac{x^m}{x^n}=\frac{x^{m-n}}{1}</me>
+            </p>
+            <p>
+              <me>\frac{x^m}{x^n}=\frac{1}{x^{n-m}}</me>
+            </p>
+          </sidebyside>
+          <p>
+            With our objective being positive exponents, for any given variable we use the rule that results in the variable being positioned on the side of the fraction bar that originally had the greater exponent.  Let's reconsider <m>\frac{x^{-7}}{x^{-3}}</m>.  Because <m>-3</m> is greater that <m>-7</m>, we know that the factor of <m>x</m> will ultimately reside in the denominator of the expression.  Using our new rule we have:
+            <md>
+              <mrow>\frac{x^{-7}}{x^{-3}}\amp=\frac{1}{x^{-3-(-7)}}</mrow>
+              <mrow>\amp=\frac{1}{x^{-3+7}}</mrow>
+              <mrow>\amp=\frac{1}{x^4}</mrow>
+            </md>
+            As mentioned previously, most folks find the entire process easier if they begin by moving factors so that all exponents are positive.  That said, work within your own comfort zone.  The great thing about simplifying expressions using the rules of exponents is that so long as you have a clear goal in mind and you apply the rules correctly (and don't make up your own rules!), you'll eventually arrive at your goal.
+          </p>
+          <p>
+            When simplifying variable expressions that contain negative exponents, you have the choice of first making all exponents positive and then applying the other rules of exponents or rather working with the negative exponents.  When evaluating numerical expressions with negative exponents, you have no such choice<mdash/>you have to start with making the exponents positive and then multiplying together the appropriate number of factors.  The three rules you can use are:
+          </p>
+          <sidebyside widths="33% 33% 33%" margins="0%">
+            <p>
+              <me>x^{-n}=\frac{1}{x^n}</me>
+            </p>
+            <p>
+              <me>\frac{1}{x^{-n}}=x^n</me>
+            </p>
+            <p>
+              <me>\left(\frac{a}{b}\right)^n=\left(\frac{b}{a}\right)^{-n}</me>
+            </p>
+          </sidebyside>
+          <p>
+            Several examples follow.
+          </p>
+          <sidebyside widths="33% 33% 33%" margins="0%">
+            <p>
+              <md>
+                <mrow>5^{-2}\amp=\frac{1}{5^2}</mrow>
+                <mrow>\amp=\frac{1}{25}</mrow>
+              </md>
+            </p>
+            <p>
+              <md>
+                <mrow>\frac{3}{2^{-1}}\amp=3\times 2^1</mrow>
+                <mrow>\amp=3\times 2</mrow>
+                <mrow>\amp=6</mrow>
+              </md>
+            </p>
+            <p>
+              <md>
+                <mrow>\left(\frac{4}{5}\right)^{-2}\amp=\left(\frac{5}{4}\right)^2</mrow>
+                <mrow>\amp=\frac{25}{16}</mrow>
+              </md>
+            </p>
+          </sidebyside>
+        </statement>
+      </exercise>
+
+      <exercise>
+        <title>Summary of the Properties of Exponents</title>
+          <statement>
+            <p>
+              <ul>
+                <li>
+                  <p>
+                    The Product Rule for Exponents:  <me>x^m \cdot x^n=x^{m+n}</me>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    The Power to a Power Rule for Exponents: <me>(x^m)^n=x^{mn}</me>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    The Product to a Power Rule for Exponents: <me>(xy)^n=x^ny^n</me>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    The Quotient to a Power Rule for Exponents: <me>\left(\frac{x}{y}\right)^n=\frac{x^n}{y^n}</me>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    The Quotient Rules for Exponents: <me>\frac{x^m}{x^n}=x^{m-n} \text{ and } \frac{x^m}{x^n}=\frac{1}{x^{n-m}}</me>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Zero Exponent: <me>x^0=1 \text{ for } x \neq 0</me>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Negative Exponents: <me>x^{-n}=\frac{1}{x^n}</me>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Properties if Negative Exponents: <me>\frac{1}{x^{-n}}=x^n \text{ and } \left(\frac{x}{y}\right)^{-n}=\left(\frac{y}{x}\right)^n</me>
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+        <statement>
+                  <p>Problem Set 1</p>
+                  <p>
+                    Completely simplify each expression.  Make sure that your final expression contains no negative exponents.
+                    <ol cols="3">
+                      <li><m>t^{-6}</m></li>
+                      <li><m>2y^{-6}</m></li>
+                      <li><m>-t^{-6}</m></li>
+                      <li><m>-4a^{-2}</m></li>
+                      <li><m>x^{-9}x^5</m></li>
+                      <li><m>\frac{1}{x^{-3}}</m></li>
+                      <li><m>\frac{3y^{-6}}{y^2}</m></li>
+                      <li><m>\frac{x^{-4}}{x^{-9}}</m></li>
+                      <li><m>\frac{1}{4a^{-2}}</m></li>
+                    </ol>
+                    <me></me>
+                  </p>
+                  <p>Problem Set 2</p>
+              <p>
+                Determine the value of each expression.  Your final result should not include any exponents.
+                <ol cols="3">
+                  <li><m>\frac{1}{3^{-2}}</m></li>
+                  <li><m>-2^{-3}</m></li>
+                  <li><m>\left(\frac{2}{5}\right)^{-2}</m></li>
+                  <li><m>\left(\frac{1}{4}\right)^{-3}</m></li>
+                  <li><m>-4^2</m></li>
+                  <li><m>4^{-2}</m></li>
+                  <li><m>-4^{-2}</m></li>
+                  <li><m>(-4)^{-2}</m></li>
+                  <li><m>\left(\frac{1}{3}\right)^{-3}</m></li>
+                  <li><m>-7^{-1}</m></li>
+                  <li><m>\frac{10^{-5}}{10^{-8}}</m></li>
+                  <li><m>\frac{1}{2^{-8}}</m></li>
+                  <li><m>\left(-\frac{2}{3}\right)^{-4}</m></li>
+                  <li><m>-4^0-4^{-2}</m></li>
+                  <li><m>\left(\frac{5}{4}\right)^{-2}</m></li>
+                  <li><m>\frac{4}{3^{-2}}</m></li>
+                </ol>
+              </p>
+              <p></p>
+                </statement>
+                <solution>
+                  <p>Problem Set 1</p>
+                  <p>
+                    <ol>
+                      <li><m>t^{-6}=\frac{1}{t^6}</m></li>
+
+                      <li>
+                        <p><m>
+                          \begin{aligned}[t]
+                          2y^{-6}\amp=2\times\frac{1}{y^6}\\
+                          \amp=\frac{2}{y^6}
+                          \end{aligned}
+                        </m></p>
+                      </li>
+
+                      <li><m>-t^{-6}=-\frac{1}{t^6}</m></li>
+
+                      <li>
+                        <p><m>
+                          \begin{aligned}[t]
+                          -4a^{-2}\amp=-4\times\frac{1}{a^2}\\
+                          \amp=-\frac{4}{a^2}
+                          \end{aligned}
+                        </m></p>
+                      </li>
+
+                      <li>
+                        <p><m>
+                          \begin{aligned}[t]
+                          x^{-9}x^5\amp=x^{-9+5}\\
+                          \amp=x^{-4}\\
+                          \amp=\frac{1}{x^4}
+                          \end{aligned}
+                        </m></p>
+                      </li>
+                      <li>
+                      <m>
+                        \frac{1}{x^{-3}}=x^3
+                      </m>
+                    </li>
+
+                    <li><m>
+                      \begin{aligned}[t]
+                      \frac{3y^{-6}}{y^2}\amp=\frac{3}{y^6y^2}\\
+                      \amp=\frac{3}{y^8}
+                      \end{aligned}
+                    </m></li>
+
+                    <li><m>
+                      \begin{aligned}[t]
+                      \frac{x^{-4}}{x^{-9}}\amp=\frac{x^9}{x^4}\\
+                      \amp=x^5
+                      \end{aligned}
+                    </m></li>
+
+                    <li>
+                      <m>
+                        \frac{1}{4a^{-2}}=\frac{a^2}{4}
+                      </m>
+                    </li>
+                  </ol>
+                </p>
+                <p>Problem Set 2</p>
+              <p>
+                <ol>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    \frac{1}{3^{-2}}\amp=3^2\\
+                    \amp=9
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    -2^{-3}\amp=-\frac{1}{2^3}\\
+                    \amp=-\frac{1}{8}
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    \left(\frac{2}{5}\right)^{-2}\amp=\left(\frac{5}{2}\right)^2\\
+                    \amp=\frac{25}{4}
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    \left(\frac{1}{4}\right)^{-3}\amp=\left(\frac{4}{1}\right)^3\\
+                    \amp=64
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>-4^2=-16</m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    4^{-2}\amp=\frac{1}{4^2}\\
+                    \amp=\frac{1}{16}
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    -4^{-2}\amp=-\frac{1}{4^2}\\
+                    \amp=-\frac{1}{16}
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    (-4)^{-2}\amp=\frac{1}{(-4)^2}\\
+                    \amp=\frac{1}{16}
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    \left(\frac{1}{3}\right)^{-3}\amp=\left(\frac{3}{1}\right)^3\\
+                    \amp=27
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>-7^{-1}=-\frac{1}{7}</m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    \frac{10^{-5}}{10^{-8}}\amp=\frac{10^8}{10^5}\\
+                    \amp=10^3\\
+                    \amp=1,000
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    \frac{1}{2^{-8}}\amp=2^8\\
+                    \amp=256
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    \left(-\frac{2}{3}\right)^{-4}\amp=\left(-\frac{3}{2}\right)^4\\
+                    \amp=\frac{81}{16}
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    -4^0-4^{-2}\amp=-1-\frac{1}{4^2}\\
+                    \amp=-1-\frac{1}{16}\\
+                    \amp=-\frac{17}{16}
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    \left(\frac{5}{4}\right)^{-2}\amp=\left(\frac{4}{5}\right)^2\\
+                    \amp=\frac{16}{25}
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    \frac{4}{3^{-2}}\amp=4\times 3^2\\
+                    \amp=36
+                    \end{aligned}
+                  </m></li>
+
+                </ol>
+              </p>
+            </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+        <statement>
+          <p>
+            Completely simplify each expression.  Your final expression should contain no negative exponents.  Assume that all variables represent positive numbers.
+            <ol cols="3">
+              <li><m>2x^{-31}</m></li>
+              <li><m>\frac{1}{x^{-96}}</m></li>
+              <li><m>-x^{-2}</m></li>
+              <li><m>(x^4y^{-3})^5</m></li>
+              <li><m>\frac{x^4x^{-6}}{5x^{-2}}</m></li>
+              <li><m>\left(\frac{4x^{-7}}{y^{-2}}\right)^{-6}</m></li>
+              <li><m>\left(\frac{4x^{-1}y^{12}z^{-3}}{(x^2y^{-3}\right)^{-6}})^0</m></li>
+              <li><m>\frac{(xy^{-4})^{-2}}{(3x^{-1})^2}</m></li>
+            </ol>
+            <me></me>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li><m>2x^{-31}=\frac{2}{x^{31}}</m></li>
+              <li><m>\frac{1}{x^{-96}}=x^{96}</m></li>
+              <li><m>-x^{-2}=-\frac{1}{x^2}</m></li>
+              <li><m>(x^4y^{-3})^5=\frac{x^{20}}{y^{15}}</m></li>
+              <li><m>\frac{x^4x^{-6}}{5x^{-2}}=\frac{1}{5}</m></li>
+              <li><m>\left(\frac{2x^{-7}}{y^{-2}}\right)^{-6}=\frac{x^{42}}{64y^{12}}</m></li>
+              <li><m>\left(\frac{4x^-1y^{12}z^{-3}}{(x^2y^{-3}\right)^{-6}})^0=1</m></li>
+              <li><m>\frac{(xy^{-4})^{-2}}{(3x^{-1})^2}=\frac{y^8}{9}</m></li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercises>
+
+     <exercises>
+      <title>Scientific Notion</title>
+
+      <exercise>
+        <title>Explanation and examples</title>
+        <statement>
+          <p>
+            Numbers written in scientific notation have the form <m>a \times 10^n</m> where <m>1 \leq \abs a \lt 10</m>.  The value of <m>m</m> is always an integer.  Two simple examples of numbers written using both standard notation and scientific notation are shown below
+          </p>
+          <sidebyside widths=" 50% 50%" margins="0%">
+            <p>
+              <me>-300=-3 \times 10^2</me>
+            </p>
+            <p>
+              <me>0.45=4.5 \times 10^{-1}</me>
+             </p>
+          </sidebyside>
+          <p>
+            The basic concept behind conversion between standard notation and scientific notation is that every action requires an equal but opposite action.  To wit:
+          </p>
+          <p>
+            Moving the decimal point left one digit corresponds to the power of <m>10</m> increasing by one.
+            <me>236.7 \times 10^0=23.67 \times 10^1=2.367 \times 10^2</me>
+          </p>
+          <p>
+            Moving the decimal point right one digit corresponds to the power of <m>10</m> decreasing by one.
+            <me>0.056 \times 10^0=0.56 \times 10^{-1}=5.6 \times 10^{-2}</me>
+          </p>
+          <p>
+            Suppose that we were charged with writing <m>160,000</m> using scientific notation.  Because the number before the multiplication sign needs to be between <m>1</m> and <m>10</m>, we need to move the decimal point from the position found in <m>160000.</m> to the position found in <m>1.60000</m>, which is a leftward shift of five digits.  This means that the power of <m>10</m> needs to be increased by five.
+            <md>
+              <mrow>160,000\amp=160,000 \times 10^0</mrow>
+              <mrow>\amp=1.6 \times 10^5</mrow>
+            </md>
+            Rewriting <m>0.000762</m> requires shifting the decimal point to the right four digits, which corresponds to a decrease of four in the power of ten.
+            <md>
+              <mrow>0.000762\amp=0.000762 \times 10^0</mrow>
+              <mrow>\amp=7.62 \times 10^{-4}</mrow>
+            </md>
+            Now suppose that our objective was to write <m>-3.8 \times 10^{-7}</m> in standard notation.  In order for the number to be written in standard notation, the power of <m>10</m> needs to <m>0</m>.  For example, 
+            <md>
+              <mrow>7 \times 10^0\amp=7 \times 1</mrow>
+              <mrow>\amp=7</mrow>
+            </md>
+            So when writing <m>3.8 \times 10^{-7}</m> in standard notation, we need to increase the power of <m>10</m> by <m>7</m> which corresponds to a leftward shift of the decimal point by <m>7</m> digits.  To achieve this end, we introduce six zeros to the left of the <m>3</m>.  That is: <me>3.8 \times 10^{-7}=.00000038</me>
+          </p>
+          <p>
+            When multiplying or dividing numbers written in scientific notation, there are three tasks to complete.
+            <ol label="1">
+              <li>
+                <p>
+                  Multiply or divide the numbers that appear before the scientific notation multiplication signs.  If the absolute value of the result in not between <m>1</m> and <m>10</m>, make sure that you don't skip step <m>3</m>!
+                </p>
+              </li>
+              <li>
+                <p>
+                  Add or subtract the powers of <m>10</m>, dependent upon whether you are multiplying or dividing the numbers.
+                </p>
+              </li>
+              <li>
+                <p>
+                  If necessary, adjust the decimal point and power of <m>10</m> so that the final result has a number before the multiplication sign whose absolute value falls between <m>1</m> and <m>10</m>.  If you have to choose between <m>1</m> and <m>10</m>, always go with <m>1</m>.
+                </p>
+              </li>
+            </ol>
+            <p>
+            </p>
+            </p>
+            <p>
+              If you are in a science class, you also need to consider significant digits during this process.
+            </p>
+            <p>
+              Let's see a couple of examples.
+              <md>
+                <mrow>(4 \times 10^{-7})(2 \times 10^9)\amp=(4 \times 2) \times (10^{-7} \times 10^9)</mrow>
+                <mrow>\amp=8 \times 10^2</mrow>
+              </md>
+            </p>
+            <p>
+              <md>
+                <mrow>\frac{7.0 \times 10^7}{5.0 \times 10^{-2}}\amp=\frac{7.0}{5.0} \times \frac{10^7}{10^{-2}}</mrow>
+                <mrow>\amp=1.4 \times 10^9</mrow>
+              </md>
+            </p>
+            <p>
+              Let's see one more example <mdash/> one where we need to employ "step 3" of the outlined process.
+              <md>
+                <mrow>\frac{4 \times 10^3}{8 \times 10^{10}}\amp=\left(\frac{4}{8}\right) \times \frac{10^3}{10^{10}}</mrow>
+                <mrow>\amp=0.5 \times 10^{-7}</mrow>
+              </md>
+              Note that we aren't quite finished.  The number before the multiplication sign needs to be between <m>1</m> and <m>10</m>, so we need to move the decimal point one digit to the right.  To balance that act, we need to decrease the exponent on <m>10</m> by one.  Putting it all together we have:
+              <md>
+                <mrow>\frac{4 \times 10^3}{8 \times 10^{10}}\amp=\left(\frac{4}{8}\right) \times \frac{10^3}{10^{10}}</mrow>
+                <mrow>\amp=0.5 \times 10^{-7}</mrow>
+                <mrow>\amp=5 \times 10^{-8}</mrow>
+              </md>               
+            </p>
+            </statement>
+      </exercise>
+
+      <exercise>
+        <title>Practice exercises with detailed solutions</title>
+            <statement>
+              <p>Problem Set 1</p>
+              <p>
+                Write each number in scientific notation.
+                <ol cols="2">
+                  <li><m>42,000</m></li>
+                  <li><m>-0.000000714</m></li>
+                  <li><m>0.00067</m></li>
+                  <li><m>-357,288</m></li>
+                </ol>
+                <me></me>
+              </p>
+              <p>Problem Set 2</p>
+              <p>
+                Write each number in standard notation.
+                <ol cols="2">
+                  <li><m>-8.6\times 10^{-7}</m></li>
+                  <li><m>-3.7\times 10^9</m></li>
+                  <li><m>4.55\times 10^{-3}</m></li>
+                  <li><m>2.7\times 10^5</m></li>
+                </ol>
+                <me></me>
+              </p>
+              <p>Problem Set 3</p>
+              <p>
+                Determine each product or quotient<mdash/>write the results using both scientific notation and standard notation.
+                <ol cols="2">
+                  <li><m>(2.0\times10^{-7})(3.0\times10^{12})</m></li>
+                  <li><m>(4.0\times10^{-1})(3.0\times10^{-9})</m></li>
+                  <li><m>\frac{1.2\times10^7}{2.4\times10^{-3}}</m></li>
+                  <li><m>\frac{9.0\times10^{-5}}{2.0\times10^{-2}}</m></li>
+                  <li><m>(8.0\times10^7)(8.0\times10^{-7})</m></li>
+                  <li><m>\frac{3.0\times{10^5}}{9.0\times10^{-4}}</m></li>
+                </ol>
+                <me></me>
+              </p>
+              <p>Problem 4</p>
+              <p>
+                The speed of light is approximately <m>3.00\times10^8</m> m/s and there are approximately <m>1.61\times10^3</m> meters in one mile.  Use this information to answer each of the following questions.
+                <ol>
+                  <li>Determine (to three significant digits) the number of meters that light travels in one hour.</li>
+                  <li>Determine (to three significant digits) the number of miles that light travels in on hour.</li>
+                </ol>
+                <p>
+                </p>
+              </p>
+            </statement>
+            <solution>
+              <p>Problem Set 1</p>
+              <p>
+                <ol>
+                  <li><m>42,000=4.2\times 10^4</m></li>
+                  <li><m>-0.000000714=7.14\times 10^{-7}</m></li>
+                  <li><m>0.00067=6.7\times 10^{-4}</m></li>
+                  <li><m>-357,288=-3.57288\times 10^5</m></li>
+                </ol>
+              </p>
+              <P>Problem Set 2</P>
+              <p>
+                <ol label="i">
+                  <li><m>-8.6\times 10^{-7}=-0.00000086</m></li>
+                  <li><m>-3.7\times 10^9-3,700,000,000</m></li>
+                  <li><m>4.55\times 10^{-3}=0.00455</m></li>
+                  <li><m>2.7\times 10^5=270,000</m></li>
+                </ol>
+              </p>
+              <p>Problem Set 3</p>
+              <p>
+                <ol>
+        
+                  <li><m>
+                    \begin{aligned}[t]
+                    (2.0\times10^{-7})(3.0\times10^{12})\amp=(2.0\times 3.0)\times(10^{-7}\times10^{12})\\
+                    \amp=6.0\times10^5\\
+                    \amp=600,000
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    (4.0\times10^{-1})(3.0\times10^{-9})\amp=(4.0\times 3.0)\times({10^{-1}\times10^{-9}})\\
+                    \amp=12\times10^{-10}\\
+                    \amp=1.2\times10^{-9}\\
+                    \amp=0.0000000012
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    \frac{1.2\times10^7}{2.4\times10^{-3}}\amp=\frac{1.2}{2.4}\times\frac{10^7}{10^{-3}}\\
+                    \amp=0.50\times10^{10}\\
+                    \amp=5.0\times10^9\\
+                    \amp=5,000,000,000
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    \frac{9.0\times10^{-5}}{2.0\times10^{-2}}\amp=\frac{9.0}{2.0}\times\frac{10^{-5}}{10^{-2}}\\
+                    \amp=4.5\times10^{-3}\\
+                    \amp=0.0045
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    (8.0\times10^7)(8.0\times10^{-7})\amp=(8.0\times 8.0)\times(10^7\times10^{-7})\\
+                    \amp=64\times10^0\\
+                    \amp=6.4\times10^1\\
+                    \amp=64
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    \frac{3.0\times10^5}{9.0\times10^{-9}}\amp=\frac{3.0}{9.0}\times\frac{10^5}{10^{-9}}\\
+                    \amp=0.33\times10^{14}\\
+                    \amp=3.3\times10^{13}\\
+                    \amp=33,000,000,000,000
+                    \end{aligned}
+                  </m></li>
+
+                </ol>
+              </p>
+              <p>Problem 4</p>
+              <p>
+                <ol>
+                  <li>
+                  <p>(<m>3.00\times10^8</m> m/s)(<m>1</m> hr)(<m>60</m> min/hr)(<m>60</m> s/min)<m>=1.08\times10^{12}</m></p>
+                  <p>
+                    Light travels approximately <m>1.08\times10^{12}</m> meters in one hour.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    (<m>1.08\times10^{12}</m> m)\left(<m>\frac{1}{1.61\times10^3}</m> mi/m\right)<m>=2.99\times10^8</m> mi.
+                  </p>
+                  <p>
+                    Light travels approximately <m>6.71\times10^8</m> miles in one hour.  For reference, that's a little less than the average distance between Earth and Saturn which in turn is roughly 8.5 times the average distance between Earth and the sun.
+                  </p>
+                </li>
+
+                </ol>
+              </p>
+            </solution>
+      </exercise>
+
+      <exercise>
+        <title>Question bank with short answers</title>
+            <statement>
+              <p>Problem Set 1</p>
+              <p>
+                Write each number in scientific notation.
+                <ol cols="2">
+                  <li><m>321,000,000</m></li>
+                  <li><m>-0.00067</m></li>
+                  <li><m>-11,248,760,000</m></li>
+                  <li><m>0.0000000600</m></li>
+                </ol>
+              <me></me>
+              </p>
+              <p>Problem Set 2</p>
+              <p>
+                Write each number in standard notation.
+                <ol cols="2">
+                  <li><m>3.2\times 10^{-7}</m></li>
+                  <li><m>2.7\times 10^{5}</m></li>
+                  <li><m>-11.90\times 10^{7}</m></li>
+                  <li><m>-9.99\times 10^{-9}</m></li>
+                </ol>
+                <me></me>
+              </p>
+              <p>Problem Set 3</p>
+              <p>
+                Determine each product or quotient<mdash/>write the results using both scientific notation and standard notation.
+                <ol cols="2">
+                  <li><m>(4.0\times 10^{-7})(-1.5\times 10^{9})</m></li>
+                  <li><m>(1.2\times 10^{-3})(9.0\times 10^{-4})</m></li>
+                  <li><m>(-2.5\times 10^{13})(-5.0\times 10^{-7})</m></li>
+                  <li><m>\frac{4.2\times 10^{11}}{6.0\times 10^{7}}</m></li>
+                  <li><m>\frac{-3.3\times 10^{-3}}{-3.0\times 10^{-6}}</m></li>
+                  <li><m>\frac{2.00\times 10^{2}}{6.00\times 10^{-1}}</m></li>
+                </ol>
+                <me></me>
+              </p>
+            </statement>
+            <solution>
+              <p>Problem Set 1</p>
+              <p>
+                <ol>
+                  <li><m>321,000,000=3.21\times 10^{8}</m></li>
+                  <li><m>-0.00067=-6.7\times 10^{-4}</m></li>
+                  <li><m>-11,248,760,000=-1.124876\times 10^{10}</m></li>
+                  <li><m>0.0000000600=6.00\times 10^{-8}</m></li>
+                </ol>
+              </p>
+              <p>Problem Set 2</p>
+              <p>
+                <ol label="i">
+                  <li><m>3.2\times 10^{-7}=0.00000032</m></li>
+                  <li><m>2.7\times 10^{5}=270,000</m></li>
+                  <li><m>-11.90\times 10^{7}=-119,000,000</m></li>
+                  <li><m>-9.99\times 10^{-9}=-0.00000000999</m></li>
+                </ol>
+              </p>
+              <p>Problem Set 3</p>
+              <p>
+                <ol>
+        
+                  <li><m>
+                    \begin{aligned}[t]
+                    (4.0\times 10^{-7})(-1.5\times 10^{9})\amp=-6.0\times 10^2\\
+                    \amp=-600
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    (1.20\times 10^{-3})(9.00\times 10^{-4})\amp=1.08\times 10^{-6}\\
+                    \amp=0.00000108
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    (-2.50\times 10^{13})(-5.00\times 10^{-7})\amp=1.25\times 10^{7}\\
+                    \amp=12,500,000
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    \frac{4.20\times 10^{11}}{6.00\times 10^{7}}\amp=7.00\times 10^{3}\\
+                    \amp=7,000
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    \frac{-3.3\times 10^{-6}}{-3.0\times 10^{-3}}\amp=1.1\times 10^{-3}\\
+                    \amp=0.0099
+                    \end{aligned}
+                  </m></li>
+
+                  <li><m>
+                    \begin{aligned}[t]
+                    \frac{2.00\times 10^{2}}{6.00\times 10^{-1}}\amp=3.33\times 10^{2}\\
+                    \amp=333
+                    \end{aligned}
+                  </m></li>
+
+                </ol>
+              </p>
+            </solution>
+      </exercise>
+
+    </exercises>
+     
+</section>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="polynomials-additional-practice">
+    <title>Additional Practice Related to Polynomials</title>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Questions vary.
+          </p>
+        </introduction>
+      
+        <exercise>
+          <statement>
+            <p>
+              Identify the degree, the leading term, the leading coefficient, the linear term(s), and the constant term for the following polynomial.
+              <me>-2+8x+4x^3-x^4</me>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The degree is <m>4</m>, the leading term is <m>-x^4</m>, the leading coefficient is <m>-1</m>, the linear term is <m>8x</m>, and the constant term is <m>-2</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Identify the degree, the leading term, the leading coefficient, the linear term(s), and the constant term for the following polynomial.
+              <me>4x+12xy-8y</me>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The degree is <m>2</m>, the leading term is <m>12xy</m>, the leading coefficient is <m>12</m>, the linear terms are <m>4x</m> and <m>-8y</m>, and there are no constant terms.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Identify each of the following as a trinomial, binomial, monomial, or not any of those type of polynomial.
+              <me>7xy</me>
+              <me>3x^3-2x^2+x-1</me>
+              <me>x^2y^2+6</me>
+              <me>-x^3+7x^2+8x</me>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <me>7xy\text{ is a monomial}</me>
+              <me>3x^3-2x^2+x-1\text{ is not a trinomial, binomial, or monomial}</me>
+              <me>x^2y^2+6\text{ is a binomial}</me>
+              <me>-x^3+7x^2+8x\text{ is a trinomial}</me>
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Perform the indicated operation and simplify the result.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(-3x^2+5x+4)-(-8x^2-4x+7)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>(-3x^2+5x+4)-(-8x^2-4x+7)=5x^2+9x-3</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>2(x^4-3x^3+2x-4)+(6x^4-5x^2-4x+8)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>2(x^4-3x^3+2x-4)+(6x^4-5x^2-4x+8)=8x^4-6x^3-5x^2</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-(-3x^2+6x-3)-2(x^2-7x+4)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>-(-3x^2+6x-3)-2(x^2-7x+4)=x^2+8x-5</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(4x+3)(2x-9)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>(4x+3)(2x-9)=8x^2-30x-27</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(2x-9)^2</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>(2x-9)^2=4x^2-36x+81</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>x(x+8)(x-8)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>x(x+8)(x-8)=x^3-64x</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(-x^2y^4+2xy)(3x^2y^4-5xy)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>(-x^2y^4+2xy)(3x^2y^4-5xy)=-3x^4y^8+11x^3y^5-10x^2y^2</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(x+4)(x^2-7x+3)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>(x+4)(x^2-7x+3)=x^3-3x^2-25x+12</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(x^3+3x^2-x-4)(x-3)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>(x^3+3x^2-x-4)(x-3)=x^4-10x^2-x+12</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(y+5)^3</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>(y+5)^3=y^3+15y^2+75y+125</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{-3x^2+15x-3}{-3}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>\frac{-3x^2+15x-3}{-3}=x^2-5x+1</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{42x^5y^8-54x^4y^6+18x^3y^4}{6xy^4}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>\frac{42x^5y^8-54x^4y^6+18x^3y^4}{6xy^4}=7x^4y^4-9x^3y^2+3x^2</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{(xy+3x)(xy-3x)}{-x^2}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>\frac{(xy+3x)(xy-3x)}{-x^2}=-y^2+9</m>
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+    </exercises>
+
+  </section>

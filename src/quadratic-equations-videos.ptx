@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="workshop-quadratic-equations-videos">
+
+  <title>Videos Created by Ann Cary and Scot Leavitt</title>
+
+  <p>The links take you to YouTube Playlists which will open either in a new window or in a Youtube App.
+     <ul>
+       <li>
+         <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-eVVT6gBsJq_o7NFyUGC8BY" target="blank">Solving quadratic equations by factoring</url>
+       </li>
+       <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-fBul1o0Y4RxNEI5C1mE2lz" target="blank">Solving quadratic equations by using a square root</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-e22-Ev-CeAYps78s4qREon" target="blank">The quadratic formula</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-c189pInY_ddsbonNff6axR" target="blank">Complex solutions to quadratic equations</url>
+        </li>
+      </ul>
+    </p>
+
+  </section>

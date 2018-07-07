@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="quadratic-equations-additional-practice">
+    <title>Additional Practice with Quadratic Equations</title>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Use the zero-product property to solve each quadratic equation.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(2x+5)(3x-4)=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solutions are <m>-\frac{5}{2}</m> and <m>\frac{4}{3}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>4x(x+6)=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solutions are <m>0</m> and <m>-6</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>x^2-10x-24=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solutions are <m>12</m> and <m>-2</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>x(x+7)=30</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solutions are <m>-10</m> and <m>3</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>12w^2=-9w</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solutions are <m>0</m> and <m>-\frac{3}{4}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>25y^2+30y+9=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The only solution is <m>-\frac{3}{5}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Use the square root method to solve each of the following quadratic equations. Make sure that all solutions are completely simplified.  Note that for some of the equations you will need to first complete the square.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(5t+7)^2=49</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solutions are <m>0</m> and <m>-\frac{14}{5}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(2x-3)^2=12</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solutions are <m>\frac{3-2\sqrt{3}}{2}</m> and <m>\frac{3+2\sqrt{3}}{2}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>x^2+8x-20=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solutions are <m>-10</m> and <m>2</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>y^2-20y+40=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solutions are <m>10-2\sqrt{15}</m> and <m>10+2\sqrt{5}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Use the quadratic formula to solve each of the following equations over the real numbers.  
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>2x^2+8x-5=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solutions are <m>\frac{-4-\sqrt{26}}{2}</m> and <m>\frac{-4+\sqrt{26}}{2}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>t^2-15t=100</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solutions are <m>-5</m> and <m>20</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-x^2+4x+3=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solutions are <m>2-\sqrt{7}</m> and <m>2+\sqrt{7}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>x(3x-5)=-6</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The equation has no real number solutions,
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Use the square root method to solve each of the following equations.  Make sure that all solutions have been completely simplified.   Note that for one of the equations you will need to first complete the square.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(x-7)^2=-1</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solutions are <m>7-i</m> and <m>7+i</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(2x-9)^2=-48</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solutions are <m>\frac{9}{2}-2\sqrt{3}i</m> and <m>\frac{9}{2}-2\sqrt{3}i</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-2w^2+12w-24=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solutions are <m>3-\sqrt{3}i</m> and <m>3+\sqrt{3}i</m>.
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Use the quadratic formula to solve each of the following equations.  Make sure that all solutions have been completely simplified.  State both the solutions and the solution set.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>6x^2+1=2x</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solutions are <m>\frac{1}{6}-\frac{\sqrt{5}}{6}i</m> and <m>\frac{1}{6}+\frac{\sqrt{5}}{6}i</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>y^2-18y+97=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solutions are <m>9-4i</m> and <m>9+4i</m>.
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            For each equation, use the value of the discriminant to determine the nature of the solution.  That's all - do not find the actual solutions.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>12x^2+4x+3=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The equation has two complex number solutions with non-zero imaginary coefficients.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-x^2+4x+4=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The equation has two real number solutions.
+            </p>
+          </solution>
+        </exercise>
+        
+        <exercise>
+          <statement>
+            <p>
+              <m>-49+14x-x^2=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The equation has one real number solution.
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+    </exercises>
+
+  </section>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="polynomials-addition-and-subtraction">
+    <title>Addition and Subtraction of Polynomials</title>
+
+    <p>
+      I am going to begin this discussion with a backwards analogy <mdash/> that is, I'm going to state the analogy before I tell you what it is an analogy for.  Here's the analogy:
+    </p>
+    <p>
+      Bill and Todd are moving in together.  Bill and Todd each really like framed photos of dogs.  Bill brings to the new apartment <m>7</m> framed photos with only one dog in them and <m>4</m> framed photos with two dogs in them.  Todd brings to the apartment <m>2</m> framed photos that have only one dog in them and <m>10</m> framed photos that have two dogs in them.  Here's a question for you: between the two of them, how many framed photos have only one dog in them and how many framed photos have two dogs in them?
+    </p> 
+    <p>
+      That situation is any analogy for this algebra problem:  Determine the following sum:<me>(7x+4x^2)+(2x+10x^2)</me>.  In the analogy, <m>x</m> is representing a picture with only one dog in it and <m>x^2</m> is representing a picture that has two dogs in it.  Between Bill and Todd, they have a total of <m>9</m> photos with only one dog in them and a total of <m>14</m> photos that have two dogs in them.  Similarly, the algebraic sum is simplified as follows.<me>(7x+4x^2)+(2x+10x^2)=9x+14x^2</me>.  In the photo scenario, we are basically just counting like objects by adding the number of photos of one dog (<m>7+2)</m> and then adding the number of photos with two dogs (<m>4+10</m>).  We are doing the same thing in the algebraic scenario, in this case the two types of objects are <m>x</m> and <m>x^2</m>, and we are adding the coefficients on each type of object. 
+    </p>
+    <p>
+      <m>7x</m> and <m>2x</m> are called like terms as are <m>4x^2</m> and <m>10x^2</m>.  Like polynomial terms are terms that have the exact same variables, and any variable that appears has the same exponent in all of the like terms.  Because we don't write the exponent on linear or constant terms, it is clarifying to state that all constant terms are like terms with all other constant terms and all linear terms of a given variable are like terms of every other linear term of the same variable.  Lets see some examples.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          State the like terms of the following expression. <me>(5x^3+3x^2-2y^2-x+6y-3)+(7x^2+6y^2-3y+10)</me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The following pairs are the like terms.<me>3x^2\text{ and }7x^2</me><me>-2y^2\text{ and }6y^2</me><me>6y\text{ and }-3y</me><me>-3\text{ and }10</me>
+          When adding polynomials, only the like terms can actually be combined into a single term, and the coefficient on the single term is the sum of the coefficients of the original terms.  For example, we can combine the terms in the expression <m>-3x^4+8x^4</m> as follows.
+          <md>
+            <mrow>-3x^4+8x^4\amp=(-3+8)x^4</mrow>
+            <mrow>\amp=5x^4</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Notice that the equality
+      <me>-3x^4+8x^4=(-3+8)x^4</me>
+      is simply the distributive property written in reverse.  That is, instead of distributing <m>x^4</m> through the sum <m>-3+8</m>, we are "undoing" the distribution.  The actual math expression for the undoing of distribution is "factoring".  For now, the addition of coefficients of like terms is the only sort of factoring we will be doing. I only mentioned factoring because it is technically what we're doing, it is the mathematical justification for the legitimacy of the process.  It is also the reason why we can't combine something like <m>3x+7x^2</m> into a single polynomial term.  Consider the following (in each case I am applying the distributive property).
+      <md>
+        <mrow>(3+7)x\amp=3x+7x</mrow>
+        <mrow>(3+7)x^2\amp=3x^2+7x^2</mrow>
+        <mrow>(3+7)x^3\amp=3x^3+7x^3</mrow>
+      </md>
+      There simply is no way to distribute a power of <m>x</m> through a sum of integers and come up with <m>3x+7x^2</m>, so we cannot combine <m>3x+7x^2</m> into a single polynomial term.
+    </p>
+    <p>
+      I may have occurred to you that you have been combining like terms ever since you learned how to solve linear equations.  Consider the following.
+      <md>
+        <mrow>2x-5\amp=8x-19</mrow>
+        <mrow>2x-5\addright{5}\amp=8x+19\addright{5}</mrow> 
+        <mrow>2x\amp=8x+24</mrow>
+        <mrow>2x\subtractright{8x}\amp=8x+24\subtractright{8x}</mrow>
+        <mrow>-6x\amp=24</mrow>
+        <mrow>\divideunder{-6x}{-6}\amp=\divideunder{24}{-6}</mrow>
+        <mrow>x\amp=-4</mrow>
+      </md>
+      In the second step shown above we are combining the like constant terms <m>-5</m> and <m>5</m> as well as the like constant terms <m>19</m> and <m>5</m>.  In the fourth line we are combining the like linear terms <m>2x</m> and <m>-8x</m> as well as the like linear terms <m>8x</m> and <m>-8x</m>.  I mention this in part to highlight the fact that we don't actually write out the edition of the coefficients when combining linear terms <mdash/> we do the addition or subtraction in our head (or perhaps on scratch paper or calculator).  After one more example, I will adopt that strategy when combining all polynomial terms.
+    </p>
+    <p>
+      Let's see one more example where the step of adding the coefficients is explicitly shown.  Let's add the following two polynomials.
+      <me>-7x^2+3y^2+4x-2 \text{ and }4x^2-4x+6y-12</me>
+      The addition and simplification follow.
+      <md>
+        <mrow>\amp(-7x^2+3y^2+4x-2)+(4x^2-4x+6y-12)</mrow>
+        <mrow>\amp \phantom{={}} \phantom{={}} =(-7+4)x^2+3y^2+(4-4)x +6y+(-2-12)</mrow>
+        <mrow>\amp \phantom{={}} \phantom{={}} =-3x^2+3y^2+6y-14</mrow>
+      </md>
+      Sometimes we will multiply one or more polynomial by a constant before combining the polynomials.  
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Simplify the following expression. <me>-2(4x^2-6x+2)+5(7x^2-x+2)</me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by distributing the factor of <m>-2</m> to each term of the first polynomial and the factor of <m>5</m> to each term of the second polynomial.  As with the addition of coefficients, we generally do this mentally.  In this one example I am going to show the distribution to help ensure that you understand the process.  I will, however, add the coefficients of like terms in my head.
+          <md>
+            <mrow>\amp-2(4x^2-6x+2)+5(7x^2-x+2)</mrow>
+            <mrow>\amp \phantom{={}} \phantom{={}} =(-2) \cdot 4x^2+(-2) \cdot -6x+(-2) \cdot 2+5 \cdot 7x^2 +5 \cdot -x+5 \cdot 2</mrow>
+            <mrow>\amp \phantom{={}} \phantom{={}} =-8x^2+12x+(-4)+35x^2+(-5x)+10</mrow>
+            <mrow>\amp \phantom{={}} \phantom{={}} =8x^2+12x-4+35x^2-5x+10</mrow>
+            <mrow>\amp \phantom{={}} \phantom{={}} =27x^2+7x+6</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Simplify the following expression.
+          <me>3(8x^2+3xy-12y^2)+7(x^2-xy+4y^2)</me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Note that in the solution I am combining the like terms mentally and simply writing the results.
+          <md>
+            <mrow>\amp3(8x^2+3xy-12y^2)+7(x^2-xy+4y^2)</mrow>
+            <mrow>\amp \phantom{={}} \phantom{={}} =24x^2+9xy-36y^2+7x^2-7xy+28y^2</mrow>
+            <mrow>\amp \phantom{={}} \phantom{={}} =31x^2+2xy-8y^2</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Simplify the following expression.
+          <me>(7x-8)-6(12x-4)</me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          In order to simplify, we want to view the subtraction of <m>6</m> as addition of <m>-6</m>.   That is, we need to distribute <m>-6</m> through the second polynomial.  I'll show the actual process this time to help you understand my words.
+          <md>
+            <mrow>(7x-8)-6(12x-4)\amp=(7x-8)+(-6)(12x-4)</mrow>
+            <mrow>\amp=7x-8+(-6) \cdot 12x +(-6) \cdot -4</mrow>
+            <mrow>\amp=7x-8+(-72x)+24</mrow>
+            <mrow>\amp=7x-8-72x+24</mrow>
+            <mrow>\amp=-65x+16</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Notice on the second line of the last example that the final two terms are, in order, negative and positive.  This is the reverse of the signs on the original expression <m>12x-4</m>.  One repercussion of distributing a negative value though an expression is that all of the signs in the result are the reverse of their initial status.  That is, addition becomes subtraction and subtraction becomes addition.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Simplify the following expression.  
+          <me>4(w^2-5w)-3(-2w^2-7w+8)</me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\amp4(w^2-5w)-3(-2w^2-7w+8)</mrow>
+            <mrow>\amp \phantom{={}} \phantom{={}} =4w^2-20w+6w^2+21w-24</mrow>
+            <mrow>\amp \phantom{={}} \phantom{={}} =10w^2+w-24</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Simplify the following expression.
+          <me>4(-y^2+3y-8)-(4y^2-7y-8)</me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          In this expression we are actually subtracting a polynomial.  One way we could think about this is as follows. 
+          <me>4(-y^2+3y-8)+(-1)(4y^2-7y-8)</me>
+          So we can think of the subtraction as a distribution of <m>-1</m> through the second polynomial.  But the sole effect of such a distribution will be the reversal of all of the signs.  In other words, the only thing that will change is that in the second polynomial addition will change to subtraction and subtraction will change to addition.  Let's go ahead and do it.
+          <md>
+            <mrow>\amp4(-y^2+3y-8)-(4y^2-7y-8)</mrow>
+            <mrow>\amp \phantom{={}} \phantom{={}} =-4y^2+12y-32-4y^2+7y+8</mrow>
+            <mrow>\amp \phantom{={}} \phantom{={}} =-8y^2+19y-24</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Combine and completely simplify each of the following expressions.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(-3x^3+4x^2-7x+5)-(2x^2-5x+4)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \amp(-3x^3+4x^2-7x+5)-(2x^2-5x+4)\\
+                \amp \phantom{={}} \phantom{={}} =-3x^3+4x^2-7x+5-2x^2+5x-4\\
+                \amp \phantom{={}} \phantom{={}} =-3x^3+2x^2-2x+1
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>2(9x^2-3xy+9y^2)+(x^2+xy+y^2)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \amp2(9x^2-3xy+9y^2)+(x^2+xy+y^2)\\
+                \amp \phantom{={}} \phantom{={}} =18x^2-6xy+18y^2+x^2+xy+y^2\\
+                \amp \phantom{={}} \phantom{={}} =19x^2-5xy+19y^2
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-3(x^3-4x-1)-6(3x^2+2x-5)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \amp-3(x^3-4x-1)-6(3x^2+2x-5)\\
+                \amp \phantom{={}} \phantom{={}} =-3x^3+12x+3-18x^2-12x+30\\
+                \amp \phantom{={}} \phantom{={}} =-3x^3-18x^2+33
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-(-7x^2+2x)+(10x^2+6x-4)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \amp-(-7x^2+2x)+(10x^2+6x-4)\\
+                \amp \phantom{={}} \phantom{={}} =7x^2-2x+10x^2+6x-4\\
+                \amp \phantom{={}} \phantom{={}} =17x^2+4x-4
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>4(-x^3-5x^2+7x-2)-2(-2x^3+4x^2-x+1)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \amp4(-x^3-5x^2+7x-2)-2(-2x^3+4x^2-x+1)\\
+                \amp \phantom{={}} \phantom{={}} =-4x^3-20x^2+28x-8+4x^3-8x^2+2x-2\\
+                \amp \phantom{={}} \phantom{={}} =-28x^2+30x-10
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+    </exercises>
+
+  </section>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="radicals-greater-indices">
+  <title>Radicals with Indices Greater than Two</title>
+
+  <p>
+    The expression <me>\sqrt[n]{x}</me> is called a radical expression with an index of <m>n</m>.  It is generally read as "the (<m>n^{th}</m>-root) of <m>x</m>."  We usually restrict the index to integers greater than or equal to two.
+  </p>
+  <p>
+    If <m>n</m> is an odd positive integer, then <me>\sqrt[n]{x}=y \text{ if and only if } y^n=x</me>.  For example, <me>\sqrt[3]{8}=2 \text{ because } 2^3=8</me>. If <m>n</m> is a even positive integer and <m>x</m> is a positive real number, then <me>\sqrt[n]{x}=y \text{ if and only if } y \text{ is the positive number such that } y^n=x</me>.  For example, both <m>(-3)^4=81</m> and <m>3^4=81</m>, but <m>\sqrt[4]{81}</m> has the positive value of <m>3</m>.  If we want to refer to the negative fourth-root of <m>81</m>, we need to write a negative sign in front of the radical sign.  In summary,
+    <me>\sqrt[4]{81}=4 \text{  and  } -\sqrt[4]{81}=-3</me>.
+    When no index of a radical expression is written, we assume that the index is two and we call the radical a square root.
+  </p>
+  <p>
+    When the index of a radical expression is three, it's not incorrect to refer to the radical as a third root, but it's more common to refer to the radical as a cube root.  No other indexed-radical has a special name.
+  </p>
+  <p>
+    If the index, <m>n</m>, is odd, the <m>\sqrt[n]{x}</m> has a real number value for all real number values of <m>x</m>.  Furthermore, 
+    <m>\sqrt[n]{x}</m> is negative if <m>x</m> is negative, <m>\sqrt[n]{x}</m> is zero if <m>x</m> is zero, and <m>\sqrt[n]{x}</m> is positive if <m>x</m> is positive.  For example,<me>\sqrt[3]{-27}=-3 \text{,  } \sqrt[3]{0}=0 \text{, and  } \sqrt[3]{27}=3</me>.
+    If the index, <m>n</m>, is even, the <m>\sqrt[n]{x}</m> has a real number value if and only if <m>x</m> is a non-negative real number. There are always two real number even roots of a positive real number, and <m>\sqrt[n]{x}</m> represents the positive root whereas <m>-\sqrt[n]{x}</m> represents the negative root.  For example, <me>\sqrt[4]{16}=2 \text{  and  } -\sqrt[4]{16}=-2</me>.  Also, <me>\sqrt[4]{-16} \text{ is not a real number.}</me>
+    If <m>n</m> is an odd positive integer, then it is always the case that 
+    <me>\sqrt[n]{x \cdot y}=\sqrt[n]{x} \cdot \sqrt[n]{y}</me>.  For example,
+    <md>
+      <mrow>\sqrt[5]{32 \cdot -243}\amp=\sqrt[5]{32} \cdot \sqrt[5]{-243}</mrow>
+      <mrow>\amp=2\cdot -3</mrow>
+      <mrow>\amp=-6</mrow>
+    </md>
+    However, If <m>n</m> is an even positive integer, then, over the real numbers it is only the case that 
+    <me>\sqrt[n]{x \cdot y}=\sqrt[n]{x} \cdot \sqrt[n]{y}</me>
+    when neither <m>x</m> nor <m>y</m> are negative.  For example,
+    <me>\sqrt[4]{-81 \cdot 625} \neq \sqrt[4]{-81} \sqrt[4]{625}</me> because neither of the fourth-roots of negative numbers exist (as real numbers).  However,
+    <md>
+      <mrow>\sqrt[4]{81 \cdot 625} \amp= \sqrt[4]{81} \sqrt[4]{625}</mrow>
+      <mrow>\amp=3 \cdot 5</mrow>
+      <mrow>\amp=15</mrow>
+    </md>
+  </p>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Simplify each radical expression.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\sqrt[4]{81}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\sqrt[4]{81}=3</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>3\sqrt[3]{-27}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              3\sqrt[3]{-27}\amp=3 \cdot -3\\
+              \amp=-9
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{\sqrt[5]{32}}{8}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              \frac{\sqrt[5]{32}}{8}\amp=\frac{2}{8}\\
+              \amp=\frac{1}{4}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\sqrt[3]{-125 \cdot 64}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              \sqrt[3]{-125 \cdot 64}\amp=\sqrt[3]{-125} \cdot \sqrt[3]{64}\\
+              \amp=-5 \cdot 4\\
+              \amp=-20
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>-\sqrt[7]{-128}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              -\sqrt[7]{-128}\amp=-(-2)\\
+              \amp=2
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+</section>

@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="rationals-applications">
+    <title>Applications of Rational Equations</title>
+
+    <example>
+      <statement>
+        <p>
+          Joaquin and Abraham co-own a bicycle repair shop.  On average, Joaquin can swap out both tires on a bicycle in <m>26</m> minutes while, on average, it takes Abraham <m>32</m> minutes to complete the same task.  Determine the amount of time it would take the two of them to swap out both tires on 40 bicycles.  Assume that the rate at which they complete the task when they work together is the sum of the rates each owner averages on his own.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let <m>t</m> represent the amount of time it takes them to swap out the tires on <m>40</m> bicycles when they work together.  The information given in the problem is summarized in <xref ref="rationals-applications-table-1">Table</xref>.  In each row, the rate expression was derived using:<me>\text{rate}=\frac{\text{swaps completed}}{\text{time}}</me>.
+        </p>
+        <p>
+          <table xml:id="rationals-applications-table-1">
+            <caption>Joaquin and Abraham swap out bicycle tires</caption>
+            <tabular>
+              <col halign="left"/>
+              <col halign="center"/>
+              <col halign="center"/>
+              <col halign="center"/>
+              <row>
+                <cell>
+                </cell>
+                <cell>
+                  <line>rate (swaps/hr)</line>
+                </cell>
+                <cell>
+                  <line>time (minutes)</line>
+                </cell>
+                <cell>
+                  <line>number of swaps completed</line>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  Joaquin alone
+                </cell>
+                <cell>
+                  <m>\frac{1}{26}</m>
+                </cell>
+                <cell>
+                  <m>26</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  Abraham alone
+                </cell>
+                <cell>
+                  <m>\frac{1}{32}</m>
+                </cell>
+                <cell>
+                  <m>32</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                   working together
+                </cell>
+                <cell>
+                  <m>\frac{40}{t}</m>
+                </cell>
+                <cell>
+                  <m>t</m>
+                </cell>
+                <cell>
+                  <m>40</m>
+                </cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+        <p>        
+          The equation we need to solve comes from the fact that the two individual rates sum to the rate at which they work together.  To wit:
+          <me>\frac{1}{26}+\frac{1}{32}=\frac{40}{t}</me>.
+          We begin solving the equation by noting that <m>26=2 \times 13</m> and <m>32=2 \times 16</m>, so the LCD of the fractions in the equation is 
+          <m>2 \times 13 \times 16t</m> which simplifies to <m>416t</m>.  We need to multiply both sides of the equation by the LCD, distribute, simplify each term, and solve the resultant equation.
+          <md>
+            <mrow>\frac{1}{26}+\frac{1}{32}\amp=\frac{40}{t}</mrow>
+            <mrow>\multiplyleft{\frac{416t}{1}} \left(\frac{1}{26}+\frac{1}{32}\right)\amp=\multiplyleft{\frac{416t}{1}} \frac{40}{t}</mrow>
+            <mrow>\frac{416t}{26}+\frac{416t}{32}\amp=\frac{16640t}t</mrow>
+            <mrow>16t+13t\amp=16640</mrow>
+            <mrow>29t\amp=16640</mrow>
+            <mrow>\divideunder{29t}{29}\amp=\divideunder{16640}{29}</mrow>
+            <mrow>x \amp\approx 573.8</mrow>
+          </md>
+          That's a whole lot of minutes.  Let's convert <m>573.8</m> minutes to hours to get a better sense of the amount of time we're looking at here.
+          <me>\frac{573.8\text{ minutes}}{1} \times \frac{1\text{ hour}}{60\text{ minutes}} \approx 9.6\text{ hours}</me>
+          So when they work together, it takes Abraham and Joaquin approximately <m>9.6</m> hours to swap out both tires on <m>40</m> bicycles.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          A river craft that would move at a rate of 10 mph in still water, actually moves at the brisk rate 16 mph (relative to the land) when maintaining that same rate of propulsion while traveling downstream in a river whose current is flowing at the rate of <m>6</m> mph<mdash/>the actual rate being the sum of the propulsion rate and the current rate.  Similarly, the actual speed of the craft while traveling upstream in the same current is a mere 4 mph<mdash/>the difference of the two rates.
+        </p>
+        <p>
+          Suppose that one day you and your partner spent two hours canoing, part of the time moving <m>7</m> miles upstream and the remaining time traversing the same <m>7</m> miles downstream.  Suppose that during that time you and your partner somehow managed to paddle at a constant rate of <m>7.8</m> mph (if you had been in still water). Suppose, remarkably, that the rate at which the current flowed was constant the entire time as well.  Determine what that constant current rate must have been.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let <m>x</m> represent the constant rate (mph) at which the current flowed during the canoe trip.  The information given in the problem is summarized in <xref ref="rationals-applications-table-2">Table</xref>.  In each row, the time expression was derived using:<me>\text{time}=\frac{\text{distance}}{\text{rate}}</me>.
+        </p>
+        <p>
+          <table xml:id="rationals-applications-table-2">
+            <caption>You and a partner go canoeing</caption>
+            <tabular>
+              <col halign="left"/>
+              <col halign="center"/>
+              <col halign="center"/>
+              <col halign="center"/>
+              <row>
+                <cell>
+                </cell>
+                <cell>
+                  <line>rate (miles/hr)</line>
+                </cell>
+                <cell>
+                  <line>time (hours)</line>
+                </cell>
+                <cell>
+                  <line>distance (miles)</line>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  Paddling upstream
+                </cell>
+                <cell>
+                  <m>7.8-x</m>
+                </cell>
+                <cell>
+                  <m>\frac{7}{7.8-x}</m>
+                </cell>
+                <cell>
+                  <m>7</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  Paddling downstream
+                </cell>
+                <cell>
+                  <m>7.8+x</m>
+                </cell>
+                <cell>
+                  <m>\frac{7}{7.8+x}</m>
+                </cell>
+                <cell>
+                  <m>7</m>
+                </cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+        <p>        
+          The equation we need to solve comes from the fact that you spent a total of two on the river, so the two time expressions need to sum to two.  Let's write and solve that equation.
+          <md>
+            <mrow>\frac{7}{7.8-x}+\frac{7}{7.8+x}\amp=2</mrow>
+            <mrow>\multiplyleft{\frac{(7.8-x)(7.8+x)}{1}} \left(\frac{7}{7.8-x}+\frac{7}{7.8+x}\right)\amp=\multiplyleft{(7.8-x)(7.8+x)} 2</mrow>
+            <mrow>\frac{7(7.8-x)(7.8+x)}{7.8-x}+\frac{7(7.8-x)(7.8+x)}{7.8+x}\amp=2(7.8-x)(7.8+x)</mrow>
+            <mrow>7(7.8+x)+7(7.8-x)\amp=2(60.84-x^2)</mrow>
+            <mrow>54.6+7x+54.6-7x\amp=121.68-2x^2</mrow>
+            <mrow>109.2\amp=121.68-2x^2</mrow>
+            <mrow>109.2\subtractright{121.68} \amp=121.68-2x^2\subtractright{121.68} </mrow>
+            <mrow>-12.48\amp=-2x^2</mrow>
+            <mrow>\divideunder{-12.48}{-2}\amp=\divideunder{-2x^2}{-2}</mrow>
+            <mrow>6.24\amp=x^2</mrow>
+            <mrow>\pm\sqrt{6.24}\amp=x</mrow>
+            <mrow>\pm 2.498\amp=x</mrow>
+          </md>
+          We reject the negative solution because, presumably, the river was not flowing in the opposite direction of its natural course.  So we conclude that the river current was flowing at a rate of about <m>2.5</m> mph during your canoeing excursion.
+        </p>
+      </solution>
+    </example>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Solve each application problem.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              In still water, Yoshi can propel his Kayak at a constant pace of 10 km/hr.  One day he takes his kayak out on a river and spends a total of 2.5 hours paddling 12 kilometers upstream and back downstream (another 12 kilometers).  Assuming that he maintains his paddling pace of 10 km/hr and that the river current's pace was constant throughout the trip, determine the pace of the river current that day.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Define <m>x</m> to be the constant speed (km/hr) of the current. The information stated in the problem is summarized in <xref ref="rationals-applications-exercises-table-1">Table</xref>.  In both rows the expression for time was determined by <m>t=\frac{D}{r}</m>.
+              <table xml:id="rationals-applications-exercises-table-1">
+                <caption>Yoshi's kayak adventure</caption>
+                <tabular>
+                  <col halign="left"/>
+                  <col halign="center"/>
+                  <col halign="center"/>
+                  <col halign="center"/>
+                  <row>
+                    <cell>
+                    </cell>
+                    <cell>
+                      <line>rate (km/hr)</line>
+                    </cell>
+                    <cell>
+                      <line>time (hr)</line>
+                    </cell>
+                    <cell>
+                      <line>distance (km)</line>
+                    </cell>
+                  </row>
+                  <row>
+                    <cell>
+                      Upstream
+                    </cell>
+                    <cell>
+                      <m>10-x</m>
+                    </cell>
+                    <cell>
+                      <m>\frac{12}{10-x}</m>
+                    </cell>
+                    <cell>
+                      <m>12</m>
+                    </cell>
+                  </row>
+                  <row>
+                    <cell>
+                      Downstream
+                    </cell>
+                    <cell>
+                      <m>10+x</m>
+                    </cell>
+                    <cell>
+                      <m>\frac{12}{10+x}</m>
+                    </cell>
+                    <cell>
+                      <m>12</m>
+                    </cell>
+                  </row>
+                </tabular>
+              </table>
+            </p>
+            <p>
+              Because Yoshi spent a total of 2.5 hours on the river, the sum of the two time expressions needs to total 2.5.  Lets state and solve that equation.
+              <md>
+                <mrow>\frac{12}{10-x}+\frac{12}{10-x}\amp=2.5</mrow>
+                <mrow>\multiplyleft{\frac{(10-x)(10+x)}{1}}\left(\frac{12}{10-x}+\frac{12}{10-x}\right)\amp=\multiplyleft{(10-x)(10+x)}2.5</mrow>
+                <mrow>12(10+x)+12(10-x)\amp=2.5(10-x)(10+x)</mrow>
+                <mrow>120+12x+120-12x\amp=2.5(100-x^2)</mrow>
+                <mrow>240\amp=250-2.5x^2</mrow>
+                <mrow>240\subtractright{250}\amp=250-2.5x^2\subtractright{250}</mrow>
+                <mrow>-10\amp=-2.5x^2</mrow>
+                <mrow>\divideunder{-10}{-2.5}\amp=\divideunder{-2.5x^2}{-2.5}</mrow>
+                <mrow>4\amp=x^2</mrow>
+                <mrow>\pm2\amp=x</mrow>
+              </md>
+              Because the speed of the current cannot be negative, we reject the negative solution.  The speed of the river current that day was 2 km/hr.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              In 2006, Patty was living with her domestic partner Marcie.  They had twin treadmills in their basement, and they liked to spend each day jogging next to one another.  Patty always set her speedometer at a pace that was 2.4 mph faster than that set by Marcie.  Over an equal period of time, Patty would rack up 5.775 miles on her odometer while Marcie would register 3.975 miles on her odometer.  Determine the pace at which each partner jogged.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Define <m>x</m> to be the pace (mph) of the at which Marcie sets her treadmill. The information stated in the problem is summarized in <xref ref="rationals-applications-exercises-table-2">Table</xref>.  In both rows the expression for time was determined by <m>t=\frac{D}{r}</m>.
+            </p>
+            <p>
+              <table xml:id="rationals-applications-exercises-table-2">
+                <caption>Patty and Marcie jog</caption>
+                <tabular>
+                  <col halign="left"/>
+                  <col halign="center"/>
+                  <col halign="center"/>
+                  <col halign="center"/>
+                  <row>
+                    <cell>
+                    </cell>
+                    <cell>
+                      <line>rate (mi/hr)</line>
+                    </cell>
+                    <cell>
+                      <line>time (hr)</line>
+                    </cell>
+                    <cell>
+                      <line>distance (mi)</line>
+                    </cell>
+                  </row>
+                  <row>
+                    <cell>
+                      Patty
+                    </cell>
+                    <cell>
+                      <m>x+2.4</m>
+                    </cell>
+                    <cell>
+                      <m>\frac{5.775}{x+2.4}</m>
+                    </cell>
+                    <cell>
+                      <m>5.775</m>
+                    </cell>
+                  </row>
+                  <row>
+                    <cell>
+                      Marcie
+                    </cell>
+                    <cell>
+                      <m>x</m>
+                    </cell>
+                    <cell>
+                      <m>\frac{3.975}{x}</m>
+                    </cell>
+                    <cell>
+                      <m>3.975</m>
+                    </cell>
+                  </row>
+                </tabular>
+              </table>
+            </p>
+            <p>
+              Because Patty and Marcie were on their treadmills for an equal period of time, the two time expressions in the table must be equal.  Let's write an equation that reflects that fact and then go ahead and solve that equation.
+              <md>
+                <mrow>\frac{5.775}{x+2.4}\amp=\frac{3.975}{x}</mrow>
+                <mrow>\multiplyleft{\frac{x \cdot (x+2.4)}{1}}\frac{5.775}{x+2.4}\amp=\multiplyleft{\frac{x \cdot (x+2.4)}{1}}\frac{3.975}{x}</mrow>
+                <mrow>5.775x\amp=3.975(x+2.4)</mrow>
+                <mrow>5.775x\amp=3.975x+9.54</mrow>
+                <mrow>5.775x\subtractright{3.975x}\amp=3.975x+9.54\subtractright{3.975x}</mrow>
+                <mrow>1.8x\amp=9.54</mrow>
+                <mrow>\divideunder{1.8x}{1.8}\amp=\divideunder{9.54}{1.8}</mrow>
+                <mrow>x\amp=5.3</mrow>
+              </md>
+              Marcie set her treadmill to the pace of 5.3 mph while Patty set hers to 7.7 mph.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Sylvia owns a business where she assembles complicated IKEA furniture kits for folks.  Working alone, she can, on average, completely assemble two kits in five hours. She recently hired Ali, and working together the two can, on average, assemble thirty-one kits in forty hours. Assuming that their completion rate when they work together is the sum of their individual rates, determine the rate at which Ali assembles kits when he works alone.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We can determine Ali's rate by deducing how long it takes him to complete one kit. Define <m>x</m> to be the time it takes Ali to assemble one kit. The information stated in the problem is summarized in 
+              <xref ref="rationals-applications-exercises-table-3">Table</xref>.    In each row, the expression in the rate column comes from the equation <m>\text{rate}=\frac{\text{# of kits}}{\text{time}}</m>.
+            </p>
+            <p>
+              <table xml:id="rationals-applications-exercises-table-3">
+                <caption>Sylvia and Ali assemble IKEA furniture kits</caption>
+                <tabular>
+                  <col halign="left"/>
+                  <col halign="center"/>
+                  <col halign="center"/>
+                  <col halign="center"/>
+                  <row>
+                    <cell>
+                    </cell>
+                    <cell>
+                      <line>rate (kits/hr)</line>
+                    </cell>
+                    <cell>
+                      <line>time (hr)</line>
+                    </cell>
+                    <cell>
+                      <line>number of kits</line>
+                    </cell>
+                  </row>
+                  <row>
+                    <cell>
+                      Sylvia alone
+                    </cell>
+                    <cell>
+                      <m>\frac{2}{5}</m>
+                    </cell>
+                    <cell>
+                      <m>5</m>
+                    </cell>
+                    <cell>
+                      <m>2</m>
+                    </cell>
+                  </row>
+                  <row>
+                    <cell>
+                      Ali alone
+                    </cell>
+                    <cell>
+                      <m>\frac{1}{x}</m>
+                    </cell>
+                    <cell>
+                      <m>x</m>
+                    </cell>
+                    <cell>
+                      <m>1</m>
+                    </cell>
+                  </row>
+                  <row>
+                    <cell>
+                      working together
+                    </cell>
+                    <cell>
+                      <m>\frac{31}{40}</m>
+                    </cell>
+                    <cell>
+                      <m>40</m>
+                    </cell>
+                    <cell>
+                      <m>31</m>
+                    </cell>
+                  </row>
+                </tabular>
+              </table>
+            </p>
+            <p>
+              Our equation comes from the fact that the rate at which they work together is the sum of the individual rates.  Let's write an equation that reflects that fact and then solve that equation.
+              <md>
+                <mrow>\frac{2}{5}+\frac{1}{x}\amp=\frac{31}{40}</mrow>
+                <mrow>\multiplyleft{\frac{40x}{1}}\left(\frac{2}{5}+\frac{1}{x}\right)\amp=\multiplyleft{\frac{40x}{1}}\frac{31}{40}</mrow>
+                <mrow>16x+40\amp=31x</mrow>
+                <mrow>16x+40\subtractright{16x}\amp=31x\subtractright{16x}</mrow>
+                <mrow>40\amp=15x</mrow>
+                <mrow>\divideunder{40}{15}\amp=\divideunder{15x}{15}</mrow>
+                <mrow>\frac{8}{3}\amp=x</mrow>
+              </md>
+              Working alone, it takes Ali <m>\frac{8}{3}</m> hours to complete one kit.  So Ali completes <m>\frac{3}{8}</m> of a kit in one hour., making his assemblage rate <m>\frac{3}{8}\,\frac{\text{kits}}{\text{hour}}</m>. In other words, he can assemble three kits every eight hours.
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+    </exercises>
+
+  </section>

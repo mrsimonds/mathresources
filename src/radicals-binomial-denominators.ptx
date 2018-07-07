@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="radicals-binomial-denominators">
+  <title>Rationalizing Binomial-Denominators that include Square Root expressions</title>
+  <p>
+    The expressions <m>a+b</m> and <m>a-b</m> are called conjugates; collectively they form a conjugate pair.  They have the special property that when you expand their product, the result is a binomial.  Specifically:
+    <me>(a+b)(a-b)=a^2-b^2</me>
+    That pair type is the only product of binomials that does not result in a trinomial.  
+  </p>
+  <p>
+    When one or both terms of a conjugate pair is a square root, something special happens when you multiply the pair <mdash/> the square root(s) square away.  For example:
+    <md>
+      <mrow>(3+\sqrt{5})(3-\sqrt{5})\amp=3^2-(\sqrt{5})^2</mrow>
+      <mrow>\amp=9-5</mrow>
+      <mrow>\amp=4</mrow>
+    </md>
+  </p>
+        <p>
+    We can use this squaring away of the square root to rationalize denominators that are binomials where one or both terms is a square root.  We multiply the denominator by its conjugate and balance that action by also multiplying the numerator by the conjugate of the denominator.  We then simplify the result.  When the numerator is an integer, you want to avoid distribution until you've simplified the denominator as there will frequently be common factors that emerge.  Several examples follow.
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Rationalize the denominator and simply the result for the expression <m>\frac{3}{3+\sqrt{3}}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by multiplying both the numerator of the expression by the conjugate of the denominator of the expression.  We then simplify the result.
+        <md>
+          <mrow>\frac{3}{3+\sqrt{3}}\amp=\frac{3}{3+\sqrt{3}} \cdot \highlight{\frac{3-\sqrt{3}}{3-\sqrt{3}}}</mrow>
+          <mrow>\amp=\frac{3(3-\sqrt{3})}{9-3}</mrow>
+          <mrow>\amp=\frac{3(3-\sqrt{3})}{6}</mrow>
+          <mrow>\amp=\frac{3-\sqrt{3}}{2}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Rationalize the denominator and simply the result for the expression <m>\frac{50}{4-\sqrt{21}}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by multiplying both the numerator of the expression by the conjugate of the denominator of the expression.  We then simplify the result.
+        <md>
+          <mrow>\frac{50}{4-\sqrt{21}}\amp=\frac{50}{4-\sqrt{21}} \cdot \highlight{\frac{4+\sqrt{21}}{4+\sqrt{21}}}</mrow>
+          <mrow>\amp=\frac{50(4+\sqrt{21})}{16-21}</mrow>
+          <mrow>\amp=\frac{50(4+\sqrt{21})}{-5}</mrow>
+          <mrow>\amp=-10(4+\sqrt{21})</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Rationalize the denominator and simply the result for the expression <m>\frac{2+\sqrt{6}}{2-\sqrt{6}}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by multiplying both the numerator of the expression by the conjugate of the denominator of the expression.  We then simplify the result.
+        <md>
+          <mrow>\frac{2+\sqrt{6}}{2-\sqrt{6}}\amp=\frac{2+\sqrt{6}}{2-\sqrt{6}} \cdot \highlight{\frac{2+\sqrt{6}}{2+\sqrt{6}}}</mrow>
+          <mrow>\amp=\frac{4+2\sqrt{6}+2\sqrt{6}+6}{4-6}</mrow>
+          <mrow>\amp=\frac{10+4\sqrt{6}}{-2}</mrow>
+          <mrow>\amp=\frac{2(5+2\sqrt{6})}{-2}</mrow>
+          <mrow>\amp=-(5+2\sqrt{6})</mrow>
+          <mrow>\amp=-5-2\sqrt{6}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Rationalize the denominator and simply the result for the expression <m>\frac{\sqrt{11}-\sqrt{10}}{\sqrt{11}+\sqrt{10}}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by multiplying both the numerator of the expression by the conjugate of the denominator of the expression.  We then simplify the result.
+        <md>
+          <mrow>\frac{\sqrt{11}-\sqrt{10}}{\sqrt{11}+\sqrt{10}}\amp=\frac{\sqrt{11}-\sqrt{10}}{\sqrt{11}+\sqrt{10}} \cdot \highlight{\frac{\sqrt{11}-\sqrt{10}}{\sqrt{11}-\sqrt{10}}}</mrow>
+          <mrow>\amp=\frac{11-\sqrt{110}-\sqrt{110}+10}{11-10}</mrow>
+          <mrow>\amp=\frac{21-2\sqrt{110}}{1}</mrow>
+          <mrow>\amp=21-2\sqrt{110}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Rationalize each denominator.  Completely simplify each result.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{7}{3-\sqrt{2}}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by multiplying both the numerator and the denominator of the expression by the conjugate of the denominator of the expression.  We the simplify the resultant expression.
+            <md>
+              <mrow>\frac{7}{3-\sqrt{2}}\amp=\frac{7}{3-\sqrt{2}} \cdot \highlight{\frac{3+\sqrt{2}}{3+\sqrt{2}}}</mrow>
+              <mrow>\amp=\frac{7(3+\sqrt{2})}{9-2}</mrow>
+              <mrow>\amp=\frac{7(3+\sqrt{2})}{7}</mrow>
+              <mrow>\amp=3+\sqrt{2}</mrow>
+            </md>  
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{5}{\sqrt{7}+\sqrt{2}}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by multiplying both the numerator and the denominator of the expression by the conjugate of the denominator of the expression.  We the simplify the resultant expression.
+            <md>
+              <mrow>\frac{5}{\sqrt{7}+\sqrt{2}}\amp=\frac{5}{\sqrt{7}+\sqrt{2}} \cdot \highlight{\frac{\sqrt{7}-\sqrt{2}}{\sqrt{7}-\sqrt{2}}}</mrow>
+              <mrow>\amp=\frac{5(\sqrt{7}-\sqrt{2})}{7-2}</mrow>
+              <mrow>\amp=\frac{5(\sqrt{7}-\sqrt{2})}{5}</mrow>
+              <mrow>\amp=\sqrt{7}-\sqrt{2}</mrow>
+            </md>  
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{8}{\sqrt{12}+4}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by multiplying both the numerator and the denominator of the expression by the conjugate of the denominator of the expression.  We the simplify the resultant expression.
+            <md>
+              <mrow>\frac{8}{\sqrt{12}+4}\amp=\frac{8}{\sqrt{12}+4} \cdot \highlight{\frac{\sqrt{12}-4}{\sqrt{12}-4}}</mrow>
+              <mrow>\amp=\frac{8(\sqrt{12}-4)}{12-16}</mrow>
+              <mrow>\amp=\frac{8(\sqrt{12}-4)}{-4}</mrow>
+              <mrow>\amp=-2(\sqrt{12}-4)</mrow>
+              <mrow>\amp=-2(2\sqrt{3}-4)</mrow>
+              <mrow>\amp=8-4\sqrt{3}</mrow>
+            </md>  
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{\sqrt{3}+\sqrt{2}}{\sqrt{3}-\sqrt{2}}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by multiplying both the numerator and the denominator of the expression by the conjugate of the denominator of the expression.  We the simplify the resultant expression.
+            <md>
+              <mrow>\frac{\sqrt{3}+\sqrt{2}}{\sqrt{3}-\sqrt{2}}\amp=\frac{\sqrt{3}+\sqrt{2}}{\sqrt{3}-\sqrt{2}} \cdot \highlight{\frac{\sqrt{3}+\sqrt{2}}{\sqrt{3}+\sqrt{2}}}</mrow>
+              <mrow>\amp=\frac{3+\sqrt{6}+\sqrt{6}+2}{3-2}</mrow>
+              <mrow>\amp=5+2\sqrt{6}</mrow>
+            </md>     
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{\sqrt{8}}{\sqrt{2}+\sqrt{3}}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by multiplying both the numerator and the denominator of the expression by the conjugate of the denominator of the expression.  We the simplify the resultant expression.
+            <md>
+              <mrow>\frac{\sqrt{8}}{\sqrt{2}+\sqrt{3}}\amp=\frac{\sqrt{8}}{\sqrt{2}+\sqrt{3}} \cdot \highlight{\frac{\sqrt{2}-\sqrt{3}}{\sqrt{2}-\sqrt{3}}}</mrow>
+              <mrow>\amp=\frac{\sqrt{8}(\sqrt{2}-\sqrt{3})}{2-3}</mrow>
+              <mrow>\amp=\frac{\sqrt{16}-\sqrt{24}}{-1}</mrow>
+              <mrow>\amp=-(4-2\sqrt{6})</mrow>
+              <mrow>\amp=-4+2\sqrt{6}</mrow>
+            </md>     
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+</section>

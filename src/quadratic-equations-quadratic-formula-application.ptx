@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="quadratic-equations-quadratic-formula-application">
+    <title>Applying the Quadratic Formula</title>
+
+    <p>
+      As derived in the previous section, it can be shown that the solutions to a quadratic equation written in the form <me>ax^2+bx+c=0</me> can be determined using the formula <me>x=\frac{-b \pm \sqrt{b^2-4ac}}{2a}.</me>  The last equation is called the quadratic formula.
+    </p>
+    <p>
+      Let's use the quadratic formula to solve the equation <m>2x^2-5x=7</m>.
+    </p>
+    <p>
+      We begin by making the right side of the equation zero and stating the values of <m>a</m>, <m>b</m>, and <m>c</m>.
+    </p>
+    <sidebyside widths="57% 37%" margins="0%">
+
+      <p>
+        <md>
+          <mrow>2x^2-5x\amp=7</mrow>
+          <mrow>2x^2-5x\subtractright{7}\amp=7\subtractright{7}</mrow>
+          <mrow>2x^2-5x-7\amp=0</mrow>
+        </md>
+      </p>
+
+      <p>
+        <md>
+          <mrow></mrow>
+          <mrow>a=2, b=-5, c=-7</mrow>
+        </md>
+      </p>
+
+    </sidebyside>
+    <p>
+      We now state the quadratic formula, replace the constants <m>a</m>, <m>b</m>, and <m>c</m> with their respective values, and simplify the result.
+      <md>
+        <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+        <mrow>x\amp=\frac{-(-5) \pm \sqrt{(-5)^2-4 \cdot 2 \cdot -7}}{2 \cdot 2}</mrow>
+        <mrow>x\amp=\frac{5 \pm \sqrt{81}}{4}</mrow>
+        <mrow>x\amp=\frac{5 \pm 9}{4}</mrow>
+      </md>
+      <md>
+        <mrow>x\amp=\frac{5-9}{4}\amp\amp\text{or}\amp x\amp=\frac{5+9}{4}</mrow>
+        <mrow>x\amp=-1\amp\amp\text{or}\amp x\amp=\frac{7}{2}</mrow>
+      </md>
+      Finally, we state our solutions and solution set.
+    </p>
+    <p>
+      The solutions are <m>-1</m> and <m>\frac{7}{2}</m>.  The solution set is <m>\{-1,\frac{7}{2}\}</m>
+    </p>
+    <p>
+      When the square root expression does not simplify to an integer, there's no need to spit the solution into two separate equations, although we do need to make sure that we state the solutions as separate numbers (assuming that there are two solutions).  We also need to make sure that we completely simplify the square root and the fraction.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Use the quadratic formula to solve the equation <m>x^2+10x+5=0</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The equation is already in standard form, so we can go ahead and state the values of <m>a</m>, <m>b</m>, and <m>c</m> and proceed with the quadratic formula.
+        </p>
+        <sidebyside widths="57% 37%" margins="0%">
+
+          <p>
+            <md>
+              <mrow>x^2+10x+5\amp=0</mrow>
+            </md>
+          </p>
+
+          <p>
+            <md>
+              <mrow>a=1, b=10, c=5</mrow>
+            </md>
+          </p>
+
+        </sidebyside>
+        <p>
+          <md>
+            <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+            <mrow>x\amp=\frac{-10 \pm \sqrt{10^2-4 \cdot 1 \cdot 5}}{2 \cdot 1}</mrow>
+            <mrow>x\amp=\frac{-10 \pm \sqrt{80}}{2}</mrow>
+            <mrow>x\amp=\frac{-10 \pm 4\sqrt{5}}{2}</mrow>
+            <mrow>x\amp=\frac{2 \cdot (-5 \pm 2\sqrt{5})}{2}</mrow>
+            <mrow>x\amp=-5 \pm 2\sqrt{5}</mrow>
+          </md>
+        </p>
+        <p>
+          The solutions are <m>-5-2\sqrt{5}</m> and <m>-5+2\sqrt{5}</m>. 
+        </p> 
+        <p>
+          The solution set is <m>\{-5-2\sqrt{5}, -5+2\sqrt{5}\}</m>.
+        </p>
+      </solution>
+    </example>
+    <p>
+      When the ultimate value under the square root symbol is zero, the equation has only one solution.  This is because <m>\sqrt{0}=0</m>, and it doesn't alter the result changing subtraction of zero to addition of zero.
+    </p>
+    <p>
+      When the ultimate value under the square root symbol is negative, the equation has no real number solutions because square roots of negative numbers are not real numbers (although they really are numbers).  In many situations we are only interested in real number solutions, so we stop the solution process once the negative radicand has been identified and state that there are no real number solutions.
+    </p>
+    <p>
+      Difficult as it may be to believe, there are real life applications where numbers with imaginary parts (square roots of negative numbers) are meaningful.  Because of this, we do need to examine some equations where the solutions are complex numbers with imaginary parts.  We do this in the next section.
+    </p>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Use the quadratic formula to solve each of the following equations over the real numbers.  For each equation state both the solutions and the solution set.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>x^2+6x-4=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The quadratic equation is stated in standard form, so we can apply the quadratic formula immediately.
+            </p>
+            <sidebyside widths="57% 37%" margins="0%">
+
+              <p>
+                <m>x^2+6x-4=0</m>
+              </p>
+
+              <p>
+                <m>a=1, b=6, c=-4</m>
+              </p>
+
+            </sidebyside>
+            <p>
+              <md>
+                <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+                <mrow>x\amp=\frac{-6 \pm \sqrt{6^2-4 \cdot 1 \cdot -4}}{2 \cdot 1}</mrow>
+                <mrow>x\amp=\frac{-6 \pm \sqrt{52}}{2}</mrow>
+                <mrow>x\amp=\frac{-6 \pm 2\sqrt{13}}{2}</mrow>
+                <mrow>x\amp=\frac{2(-3 \pm \sqrt{13})}{2}</mrow>
+                <mrow>x\amp=-3 \pm \sqrt{13}</mrow>
+              </md>
+            </p>
+            <p>
+              The solutions are <m>-3-\sqrt{3}</m> and <m>-3+\sqrt{13}</m>.
+            </p>
+            <p>
+              The solution set is <m>\{-3-\sqrt{13}, -3+\sqrt{13}\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>t^2+10t=39</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We need to make one side of the equation zero before we can apply the quadratic formula.
+            </p>
+            <sidebyside widths="57% 37%" margins="0%">
+
+              <p>
+                <md>
+                  <mrow>t^2+10t\amp=39</mrow>
+                  <mrow>t^2+10t\subtractright{39}\amp=39\subtractright{39}</mrow>
+                  <mrow>t^2+10t-39\amp=0</mrow>
+                </md>
+              </p>
+
+              <p>
+                <md>
+                  <mrow></mrow>
+                  <mrow>a=1, b=10, c=-10</mrow>
+                </md>
+              </p>
+
+            </sidebyside>
+            <p>
+              <md>
+                <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+                <mrow>x\amp=\frac{-10 \pm \sqrt{10^2-4 \cdot 1 \cdot -39}}{2 \cdot 1}</mrow>
+                <mrow>x\amp=\frac{-10 \pm \sqrt{256}}{2}</mrow>
+                <mrow>x\amp=\frac{-10 \pm 16}{2}</mrow>
+              </md>
+              <md>
+                <mrow>x\amp=\frac{-10-16}{2}\amp\amp\text{or}\amp x\amp=\frac{-10+16}{2}</mrow>
+                <mrow>x\amp=-13\amp\amp\text{or}\amp x\amp=3</mrow>
+              </md>
+            </p>
+            <p>
+              The solutions are <m>-13</m> and <m>3</m>.
+            </p>
+            <p>
+              The solution set is <m>\{-13, 3\}</m>.
+            </p> 
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>3x^2-2x+5=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The quadratic equation is stated in standard form, so we can apply the quadratic formula immediately.
+            </p>
+            <sidebyside widths="57% 37%" margins="0%">
+
+              <p>
+                <m>3x^2-2x+5=0</m>
+              </p>
+
+              <p>
+                <m>a=3, b=-2, c=5</m>
+              </p>
+
+            </sidebyside>
+            <p>
+              <md>
+                <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+                <mrow>x\amp=\frac{-(-2) \pm \sqrt{(-2)^2-4 \cdot 3 \cdot 5}}{2 \cdot 3}</mrow>
+                <mrow>x\amp=\frac{2 \pm \sqrt{-56}}{2}</mrow>
+              </md>
+            </p>
+            <p>
+              Over the real numbers, there is no square root of <m>-56</m>.  So over the real numbers the given equation has no solutions and the solution set is <m>\emptyset</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>2x(3x-5)=5</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We need to expand the left side of the equation and make one side of the equation zero before we can apply the quadratic formula.
+            </p>
+            <sidebyside widths="57% 37%" margins="0%">
+
+              <p>
+                <md>
+                  <mrow>2x(3x+5)\amp=5</mrow>
+                  <mrow>6x^2-10x\amp=5</mrow>
+                  <mrow>6x^2-10x\subtractright{5}\amp=5\subtractright{5}</mrow>
+                  <mrow>6x^2-10x-5\amp=0</mrow>
+                </md>
+              </p>
+
+              <p>
+                <md>
+                  <mrow></mrow>
+                  <mrow></mrow>
+                  <mrow>a=6, b=-10, c=5</mrow>
+                </md>
+              </p>
+
+            </sidebyside>
+            <p>
+              <md>
+                <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+                <mrow>x\amp=\frac{-(-10) \pm \sqrt{(-10)^2-4 \cdot 6 \cdot -5}}{2 \cdot 6}</mrow>
+                <mrow>x\amp=\frac{10 \pm \sqrt{220}}{12}</mrow>
+                <mrow>x\amp=\frac{10 \pm 2\sqrt{55}}{12}</mrow>
+                <mrow>x\amp=\frac{2(5 \pm \sqrt{55})}{2 \cdot 6}</mrow>
+                <mrow>x\amp=\frac{5 \pm \sqrt{55}}{6}</mrow>
+              </md>
+            </p>
+            <p>
+              The solutions are <m>\frac{5-\sqrt{55}}{6}</m> and <m>\frac{5+\sqrt{55}}{6}</m>.
+            </p>
+            <p>
+              The solution set is <m>\{\frac{5-\sqrt{55}}{6}, \frac{5+\sqrt{55}}{6}\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>1-4x^2=x^2+10x+6</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We need to make one side of the equation zero before we can apply the quadratic formula.  We choose to make the left side of the equation zero so that the squared term has a positive coefficient.  Note that we can divide out a factor of five from both sides of the equation before applying the quadratic formula.  Making this choice makes the numbers we're working with much more manageable.
+            </p>
+            <sidebyside widths="57% 37%" margins="0%">
+
+              <p>
+                <md>
+                  <mrow>1-4x^2\subtractright{1}\addright{4x^2}\amp=x^2+10x+6\subtractright{1}\addright{4x^2}</mrow>
+                  <mrow>0\amp=5x^2+10x+5</mrow>
+                  <mrow>\multiplyleft{\frac{1}{5}}0\amp=\multiplyleft{\frac{1}{5}}(5x^2+10x+5)</mrow>
+                  <mrow>0\amp=x^2+2x+1</mrow>
+                </md>
+              </p>
+
+              <p>
+                <md>
+                  <mrow></mrow>
+                  <mrow></mrow>
+                  <mrow></mrow>
+                  <mrow></mrow>
+                  <mrow>a=1, b=2, c=1</mrow>
+                </md>
+              </p>
+
+            </sidebyside>
+            <p>
+              <md>
+                <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+                <mrow>x\amp=\frac{-2 \pm \sqrt{2^2-4 \cdot 1 \cdot 1}}{2 \cdot 1}</mrow>
+                <mrow>x\amp=\frac{-2 \pm \sqrt{0}}{2}</mrow>
+                <mrow>x\amp=-1</mrow>
+              </md>
+            </p>
+            <p>
+              The only solution is <m>1</m> and the solution set is <m>\{1\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+    </exercises>
+
+  </section>

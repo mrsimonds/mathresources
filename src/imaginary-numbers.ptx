@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="imaginary-numbers">
+    <title>Imaginary Numbers</title>
+
+    <p>
+      When two numbers of the same sign are multiplied the result is always positive, and when zero is multiplied by itself the result is zero. Consequently, there is no real number that when squared results in <m>-1</m>.  However, the fact that a number does not reside on the real number line does not imply that it doesn't exist - the number simply does not reside on the real number line.
+    </p>
+    <p>
+      There is a number that you square with a result of <m>-1</m>, and the one symbol for that number is <m>\sqrt{-1}</m>.  As suggested, the number does not reside on the real number line.  However, it does exist on what we (unfortunately) call the imaginary number line.  Numbers on the imaginary number line always consist of two factors, a real number (called the imaginary coefficient) and "<m>i</m>" which is the name we assign to <m>\sqrt{-1}</m>.
+    </p>
+    <p>
+      So long as at last one of the factors is not negative, <m>\sqrt{ab}=\sqrt{a}\sqrt{b}</m>.  We can use this fact to find square roots of negative numbers other than <m>-1</m>.  
+    </p>          
+
+    <example>
+      <statement>
+        <p>
+          Determine <m>\sqrt{-9}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\sqrt{-9}\amp=\sqrt{9 \cdot -1}</mrow>
+            <mrow>\amp=\sqrt{9} \cdot \sqrt{-1}</mrow>
+            <mrow>\amp=3i</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+      
+    <example>
+      <statement>
+        <p>
+          Determine <m>\sqrt{-64}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\sqrt{-64}\amp=\sqrt{64 \cdot -1}</mrow>
+            <mrow>\amp=\sqrt{64} \cdot \sqrt{-1}</mrow>
+            <mrow>\amp=8i</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+      
+    <example>
+      <statement>
+        <p>
+          Determine <m>\sqrt{-20}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\sqrt{-20}\amp=\sqrt{4 \cdot 5 \cdot -1}</mrow>
+            <mrow>\amp=\sqrt{4} \cdot \sqrt{5} \cdot \sqrt{-1}</mrow>
+            <mrow>\amp=2\sqrt{5}i</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      When multiplying two or more imaginary numbers, you want to use the associative and commutative properties of multiplication; this allows you to multiply the real number coefficients followed by the product of the <m>i</m> factors.  Then all occurrences of <m>i^2</m> are replaced by <m>-1</m> and the expression is further simplified.  
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Simplify <m>(4i)(12i)</m>,
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>(4i)(12i)\amp=(4 \cdot 12)(i^2)</mrow>
+            <mrow>\amp=(48)(-1)</mrow>
+            <mrow>\amp=-48</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Simplify <m>(-7i)(5i)</m>,
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>(-7i)(5i)\amp=(-7 \cdot 5)(i^2)</mrow>
+            <mrow>\amp=(-35)(-1)</mrow>
+            <mrow>\amp=35</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Simplify <m>(i)(-46i)\left(\frac{3}{2}i\right)\left(\frac{1}{3}\right)</m>,
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>(i)(-46i)\left(\frac{3}{2}i\right)\left(\frac{1}{3}\right)\amp=\left(1 \cdot -46 \cdot \frac{3}{2} \cdot \frac{1}{3}\right)(i^3)</mrow>
+            <mrow>\amp=(-23)(i^2 \cdot i)</mrow>
+            <mrow>\amp=(-23)(-1 \cdot i)</mrow>
+            <mrow>\amp=23i</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Simplify <m>(7i)(-i)(3i)^2</m>,
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>(7i)(-i)(3i)^2\amp=(7 \cdot -1 \cdot 3^2)(i^4)</mrow>
+            <mrow>\amp=(-63)(i^2 \cdot i^2)</mrow>
+            <mrow>\amp=(-63)(-1 \cdot -1)</mrow>
+            <mrow>\amp=-63</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      If we examine the last two examples carefully, an interesting fact about powers of <m>i</m> might emerge.  We already knew that <m>i^1=i</m> and <m>i^2=-1</m>.  What became apparent in the last two examples is that <m>i^3=-1</m> and <m>i^4=1</m>.  This further implies that <m>i^5</m>, which is equivalent to <m>i^4 \cdot i</m>, is equal to <m>i</m>.  This pattern continues ... positive integer powers of <m>i</m> continuously cycle through the pattern <m>i, -1, -i, 1, i, -1, -i, 1, ...</m>.  This is illustrated below up through <m>i^{20}</m>.
+    </p>
+    <table xml:id="table-powers-of-i" halign="left">
+      <caption>Powers of <m>i</m></caption>
+      <tabular>                    
+        <col halign="center"/>
+        <col halign="center"/>
+        <col halign="center"/>
+        <col halign="center"/>
+        <row>
+          <cell><m>i^{1}=i</m></cell>
+          <cell><m>i^{2}=-1</m></cell>
+          <cell><m>i^{3}=-i</m></cell>
+          <cell><m>i^{4}=1</m></cell>
+        </row>
+        <row>
+          <cell><m>i^{5}=i</m></cell>
+          <cell><m>i^{6}=-1</m></cell>
+          <cell><m>i^{7}=-i</m></cell>
+          <cell><m>i^{8}=1</m></cell>
+        </row>
+        <row>
+          <cell><m>i^{9}=i</m></cell>
+          <cell><m>i^{10}=-1</m></cell>
+          <cell><m>i^{11}=-i</m></cell>
+          <cell><m>i^{12}=1</m></cell>
+        </row>
+        <row>
+          <cell><m>i^{13}=i</m></cell>
+          <cell><m>i^{14}=-1</m></cell>
+          <cell><m>i^{15}=-i</m></cell>
+          <cell><m>i^{16}=1</m></cell>
+        </row>
+        <row>
+          <cell><m>i^{17}=i</m></cell>
+          <cell><m>i^{18}=-1</m></cell>
+          <cell><m>i^{19}=-i</m></cell>
+          <cell><m>i^{20}=1</m></cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      Let's note that the exponents in the far right column are all divisible by <m>4</m> and the results of <m>i</m> raised to those powers are always <m>1</m>.
+    </p>
+    <p>
+      Now suppose that we wanted to know the simplified value of <m>i^{403}</m>.  The key is to determine the largest multiple of <m>4</m> that is less than or equal to <m>403</m>. That would be <m>400</m>, and with that information we can determine the value of <m>i^{403}</m> by splitting the exponent into the sum <m>400+3</m>.  Specifically:
+      <md>
+        <mrow>i^{403}\amp=\highlight{i^{400}} \cdot \highlightr{i^3}</mrow>
+        <mrow>\amp=\highlight{1} \cdot \highlightr{-i}</mrow>
+        <mrow>\amp=-i</mrow>
+      </md>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Simplify <m>i^{1766}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by determining the larger multiple of <m>4</m> that is less than or equal to <m>1765</m>.  That's not as difficult as it may initially seem. The number <m>4</m> evenly divides into an integer if and only if it evenly divides into the last two digits of the number. So all we really need to do is think about the largest multiple of <m>4</m> less than or equal to <m>66</m>.  That would be <m>64</m>.  So we want to split the exponent into the sum <m>1764+2</m>.  Specifically: 
+          <md>
+            <mrow>i^{1766}\amp=\highlight{i^{1764}} \cdot \highlightr{i^2}</mrow>
+            <mrow>\amp=\highlight{1} \cdot \highlightr{-1}</mrow>
+            <mrow>\amp=-1</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Simplify <m>i^{9828}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Since <m>4</m> evenly divides into <m>28</m>, we know that <m>4</m> evenly divides into <m>9828</m> which gives us the following.
+            <me>i^{9828}=1</me>
+        </p>
+      </solution>
+    </example>
+    <p>
+      Let's now turn our attention to division by imaginary numbers.  Because <m>i</m> is a square root, division by imaginary numbers comes down to rationalizing the denominator.  We rationalize the denominator by introducing a second factor of <m>i</m> to the denominator which, of course, is balanced by introducing a factor of <m>i</m> to the numerator.  The resultant expression is then simplified.  
+    </p>
+                        
+    <example>
+      <statement>
+        <p>
+          Simplify <m>\frac{-8}{2i}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\frac{-8}{2i}\amp=\frac{-8}{2i} \cdot \highlight{\frac{i}{i}}</mrow>
+            <mrow>\amp=\frac{-8i}{2i^2}</mrow>
+            <mrow>\amp=\frac{-8}{2 \cdot -1}i</mrow>
+            <mrow>\amp=4i</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+                         
+    <example>
+      <statement>
+        <p>
+          Simplify <m>\frac{14}{21i}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\frac{14}{21i}\amp=\frac{14}{21i} \cdot \highlight{\frac{i}{i}}</mrow>
+            <mrow>\amp=\frac{14i}{21i^2}</mrow>
+            <mrow>\amp=\frac{14}{21 \cdot -1}i</mrow>
+            <mrow>\amp=-\frac{2}{3}i</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Determine each of the following, that is write each of the following in the form <m>bi</m> where <m>b</m> is a real number.  Make sure that <m>b</m> is fully simplified.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-\sqrt{-121}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+            <m>
+              \begin{aligned}[t]
+                -\sqrt{-121}\amp=-\sqrt{121 \cdot -1}\\
+                \amp=-\sqrt{121} \cdot \sqrt{-1}\\
+                \amp=-11i
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\sqrt{-25}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+                \sqrt{-25}\amp=\sqrt{25 \cdot -1}\\
+                \amp=\sqrt{25} \cdot \sqrt{-1}\\
+                \amp=5i                  
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\sqrt{-\frac{4}{49}}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+                \sqrt{-\frac{4}{49}}\amp=\sqrt{\frac{4}{49} \cdot -1}\\
+                \amp=\sqrt{\frac{4}{49}} \cdot \sqrt{-1}\\
+                \amp=\frac{2}{7}i                  
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\sqrt{-75}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+                \sqrt{-75}\amp=\sqrt{25 \cdot 3 \cdot -1}\\
+                \amp=\sqrt{25} \cdot \sqrt{3} \cdot \sqrt{-1}\\
+                \amp=5\sqrt{3}i                  
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>-\sqrt{-80}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+                -\sqrt{-80}\amp=-\sqrt{16 \cdot 5 \cdot -1}\\
+                \amp=-\sqrt{16} \cdot \sqrt{5} \cdot \sqrt{-1}\\
+                \amp=-4\sqrt{5}i
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\sqrt{-\frac{72}{121}}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+                \sqrt{-\frac{72}{121}}\amp=\sqrt{\frac{36 \cdot 2}{121} \cdot -1}\\
+                \amp=\frac{\sqrt{36} \cdot \sqrt{2}}{\sqrt{121}} \cdot \sqrt{-1}\\
+                \amp=\frac{6\sqrt{2}}{11}i
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+       </exercise>
+
+     </exercisegroup>
+
+     <exercisegroup>
+       <introduction>
+         <p>
+           Simplify each of the following.  Note that each final result should either be a real number or an imaginary number written in the form <m>bi</m> where <m>b</m> is a real number.
+         </p>
+       </introduction>
+
+       <exercise>
+         <statement>
+           <p>
+             <m>(3i)\left(\frac{1}{6}i\right)</m>
+           </p>
+         </statement>
+         <solution>
+           <p>
+             <m>
+               \begin{aligned}[t]
+                 (3i)\left(\frac{1}{6}i\right)\amp=\left(3 \cdot \frac{1}{2}\right)i^2\\                      
+                 \amp=\frac{1}{2} \cdot -1\\
+                 \amp=-\frac{1}{2}
+               \end{aligned}
+             </m>
+           </p>
+         </solution>
+       </exercise>
+
+        <exercise>
+        <statement>
+          <p>
+            <m>(-7i)(2i)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+                (-7i)(2i)\amp=(-7 \cdot 2)i^2\\
+                \amp=-14 \cdot -1\\
+                \amp=14
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(-i)(-16i)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                  (-i)(-16i)\amp=(-1 \cdot -16)i^2\\
+                  \amp=16 \cdot -1\\
+                  \amp=-16
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{5}{i}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                  \frac{5}{i}\amp=\frac{5}{i} \cdot \highlight{\frac{i}{i}}\\
+                  \amp=\frac{5i}{i^2}\\
+                  \amp=\frac{5i}{-1}\\
+                  \amp=-5i
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-\frac{7}{14i}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+              \begin{aligned}[t]
+                -\frac{7}{14i}\amp=-\frac{7}{14i} \cdot \highlight{\frac{i}{i}}\\
+                \amp=-\frac{7i}{14i^2}\\
+                \amp=-\frac{7}{14 \cdot -1}i\\
+                \amp=\frac{1}{2}i
+              \end{aligned}
+            </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(6i)(-2i)(-5i)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                  (6i)(-2i)(-5i)\amp=(6 \cdot -2 \cdot -5)(i^2)(i)\\
+                  \amp=(60)(-1)(i)\\
+                  \amp=-60i
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Determine each power of <m>i</m>.  Note that your final result should be <m>1</m>, <m>-1</m>, <m>i</m>, or <m>-i</m>.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>i^{51}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                  i^{51}\amp=\highlight{i^{48}} \cdot \highlightr{i^3}\\
+                  \amp=\highlight{1} \cdot \highlightr{-i}\\
+                  \amp=-i
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>i^{206}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                  i^{206}\amp=\highlight{i^{204}} \cdot \highlightr{i^2}\\
+                  \amp=\highlight{1} \cdot \highlightr{-1}\\
+                  \amp=-1
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>i^{-32}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                  i^{-32}\amp=\frac{1}{\highlight{i^{32}}}\\
+                  \amp=\frac{1}{\highlight{1}}\\
+                  \amp=1
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>i^{-65}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                  i^{-65}\amp=\frac{1}{i^{65}}\\
+                  \amp=\frac{1}{\highlight{i^{64}} \cdot \highlightr{i^1}}\\
+                  \amp=\frac{1}{\highlight{1} \cdot \highlightr{i}}\\
+                  \amp=\frac{1}{i}\\
+                  \amp=\frac{1}{i} \cdot \highlight{\frac{i}{i}}\\
+                  \amp=\frac{i}{i^2}\\
+                  \amp=\frac{i}{-1}\\
+                  \amp=-i
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+    </exercises>
+
+  </section>

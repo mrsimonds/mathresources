@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="rationals-equations">
+    <title>Rational Equations</title>
+    <p>
+      A rational equation is an equation that contains one or more rational expression. Similar to the addition or subtraction of rational expressions, when solving a rational equation we first identify the least common denominator of all of the fractions present in the equation.  After that, however, the process is very different.  Because we are working with equations, we do not need to establish common denominators amongst the expressions.  Quite the contrary<mdash/>we actually eliminate all of the fractions by multiplying both sides of the equation by the LCD.  When doing so, we need to be careful to distribute the LCD to every term, whether they are fractions or not.
+    </p>
+    <p>
+      While the clearing of fractions leads to a much simplified equation, the new equation sometimes leads to false solutions,  Once we determine the solution(s), we need to make sure that no solution creates a value of <m>0</m> in any of the denominators of the original equation.  If any such solution exists, we reject it due to the fact that division by <m>0</m> is never defined.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution set to the following equation. <me>\frac{2}{x-5}=\frac{x}{x+4}</me>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by making the observation that the LCD of the fractions in the equation is <m>(x-5)(x+4)</m>.  We need to multiply both sides of the equation by that LCD, simplify each term and solve the resultant equation
+          <md>
+            <mrow>\frac{2}{x-5}\amp=\frac{x}{x+4}</mrow>
+            <mrow>\multiplyleft{\frac{(x-5)(x+4)}{1}}\frac{2}{x-5}\amp=\multiplyleft{\frac{(x-5)(x+4)}{1}}\frac{x}{x+4}</mrow>
+            <mrow>\frac{2(x-5)(x+4)}{x-5}\amp=\frac{x \cdot (x-5)(x+4)}{x+4}</mrow>
+            <mrow>2(x+4)\amp=x \cdot (x-5)</mrow>
+            <mrow>2x+8\amp=x^2-5x</mrow>
+            <mrow>2x+8\subtractright{2x}\subtractright{8}\amp=x^2-5x\subtractright{2x}\subtractright{8}</mrow>
+            <mrow>0\amp=x^2-7x-8</mrow>
+            <mrow>0\amp=(x-8)(x+1)</mrow>
+          </md>
+          <md>
+            <mrow>x-8\amp=0 \amp\amp\text{or}\amp x+1\amp=0</mrow>
+            <mrow>x-8\addright{8}\amp=0\addright{8} \amp\amp\text{or}\amp x+1\subtractright{1}\amp=0\subtractright{1}</mrow>
+            <mrow>x\amp=8 \amp\amp\text{or}\amp x\amp=-1</mrow>
+          </md>
+          Neither <m>8</m> nor <m>-1</m> create any zeros in the denominators of the original equation, so we accept both solutions.  The solution set to the given equation is <m>\{8,-1\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution set to the following equation. <me>\frac{5}{x+2}+\frac{2x}{x^2-4}=\frac{3}{x-2}</me>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by making sure that all of the denominators are fully factored. 
+          <md>
+            <mrow>\frac{5}{x+2}+\frac{2x}{x^2-4}\amp=\frac{3}{x-2}</mrow>
+            <mrow>\frac{5}{x+2}+\frac{2x}{(x+2)(x-2)}\amp=\frac{3}{x-2}</mrow>
+          </md>
+          We now multiply both sides of the equation by the LCD, <m>(x+2)(x-2)</m>.  We then distribute, simplify each term, and solve the resultant equation.
+          <md>
+            <mrow>\multiplyleft{\frac{(x+2)(x-2)}{1}}\left(\frac{5}{x+2}+\frac{2x}{(x+2)(x-2)}\right)\amp=\multiplyleft{\frac{(x+2)(x-2)}{1}}\frac{3}{x-2}</mrow>
+            <mrow>\frac{5(x+2)(x-2)}{x+2}+\frac{2x \cdot (x+2)(x-2)}{(x+2)(x-2)}\amp=\frac{3(x+2)(x-2)}{x-2}</mrow>
+            <mrow>5(x-2)+2x\amp=3(x+2)</mrow>
+            <mrow>5x-10+2x\amp=3x+6</mrow>
+            <mrow>7x-10\amp=3x+6</mrow>
+            <mrow>7x-10\subtractright{3x}\addright{10}\amp=3x+6\subtractright{3x}\addright{10}</mrow>
+            <mrow>4x\amp=16</mrow>
+            <mrow>\divideunder{4x}{4}\amp=\divideunder{16}{4}</mrow>
+            <mrow>x\amp=4</mrow>
+          </md>
+          The solution, <m>4</m> creates no zeros in any of the denominators of the original equation, so we accept it as a solution.  The solution set to the given equation is <m>\{4\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution set to the following equation. <me>\frac{3}{x-3}=\frac{5x}{x^2-x-6}-\frac{5}{x+2}</me>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by making sure that all of the denominators are fully factored. 
+          <md>
+            <mrow>\frac{3}{x-3}\amp=\frac{5x}{x^2-x-6}-\frac{5}{x+2}</mrow>
+            <mrow>\frac{3}{x-3}\amp=\frac{5x}{(x-3)(x+2)}-\frac{5}{x+2}</mrow>
+          </md>
+           We now multiply both sides of the equation by the LCD, <m>(x-3)(x+2)</m>.  We then distribute, simplify each term, and solve the resultant equation.
+           <md>
+            <mrow>\multiplyleft{\frac{(x-3)(x+2)}{1}} \frac{3}{x-3}\amp=\multiplyleft{\frac{(x-3)(x+2)}{1}} \left(\frac{5x}{(x-3)(x+2)}-\frac{5}{x+2}\right)</mrow>
+            <mrow>\frac{3(x-3)(x+2)}{x-3}\amp=\frac{5x \cdot (x-3)(x+2)}{(x-3)(x+2)}-\frac{5(x-3)(x+2)}{x+2}</mrow>
+            <mrow>3(x+2)\amp=5x-5(x-3)</mrow>
+            <mrow>3x+6\amp=5x-5x+15</mrow>
+            <mrow>3x+6\amp=15</mrow>
+            <mrow>3x+6\subtractright{6}\amp=15\subtractright{6}</mrow>
+            <mrow>3x\amp=9</mrow>
+            <mrow>\divideunder{3x}{3}\amp=\divideunder{9}{3}</mrow>
+            <mrow>x\amp=3</mrow>
+          </md>
+          The value of <m>3</m> creates a a value of <m>0</m> in at least one of the denominators of the original equation, so we reject <m>3</m> as a solution.  The solution set to the given equation is <m>\emptyset</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution set to the following equation. <me>\frac{24}{x}-x=5</me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by multiplying both sides of the equation by the only denominator in the equation, <m>x</m>. We then distribute, simplify each term, and solve the resultant equation.
+          <md>
+            <mrow>\frac{24}{x}-x\amp=5</mrow>
+            <mrow>\multiplyleft{\frac{x}{1}} \left(\frac{24}{x}-\frac{x}{1}\right)\amp=\multiplyleft{\frac{x}{1}} 5</mrow>
+            <mrow>\frac{24x}{x}-\frac{x^2}{1}\amp=\frac{5x}{1}</mrow>
+            <mrow>24-x^2\amp=5x</mrow>
+            <mrow>24-x^2\subtractright{24}\addright{x^2} \amp=5x\subtractright{24}\addright{x^2} </mrow>
+            <mrow>0\amp=x^2+5x-24</mrow>
+            <mrow>0\amp=(x+8)(x-3)</mrow>
+          </md>
+          <md>
+            <mrow>x+8\amp=0 \amp\amp\text{or}\amp x-3\amp=0</mrow>
+            <mrow>x+8\subtractright{8}\amp=0\subtractright{8} \amp\amp\text{or}\amp x-3\addright{3}\amp=0\addright{3}</mrow>
+            <mrow>x\amp=-8 \amp\amp\text{or}\amp x\amp=3</mrow>
+          </md>
+          Neither solution creates any zero-denominators in the original equation, so we accept both solutions.  The solution set to the given equation is <m>\{-8,3\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Determine the solution set to each of the following equations.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{3}{x+4}-1=\frac{2}{5x+20}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>\frac{3}{x+4}-1\amp=\frac{2}{5x+20}</mrow>
+                <mrow>\frac{3}{x+4}-1\amp=\frac{2}{5(x+4)}</mrow>
+                <mrow>\multiplyleft{\frac{5(x+4)}{1}}\left(\frac{3}{x+4}-\frac{1}{1}\right)\amp=\multiplyleft{\frac{5(x+4)}{1}}\frac{2}{5(x+4)}</mrow>
+                <mrow>\frac{15(x+4)}{x+4}-\frac{5(x+4)}{1}\amp=\frac{10(x+4)}{5(x+4)}</mrow>
+                <mrow>15-5(x+4)\amp=2</mrow>
+                <mrow>15-5x-20\amp=2</mrow>
+                <mrow>-5x-5\amp=2</mrow>
+                <mrow>-5x-5\addright{5}\amp=2\addright{5}</mrow>
+                <mrow>-5x\amp=7</mrow>
+                <mrow>\divideunder{-5x}{-5}\amp=\divideunder{7}{-5}</mrow>
+                <mrow>x\amp=-\frac{7}{5}</mrow>
+              </md>
+              The solution set is <m>\{-\frac{7}{5}\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{x}{x+1}=\frac{2}{x^2-1}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>\frac{x}{x+1}\amp=\frac{2}{x^2-1}</mrow>
+                <mrow>\frac{x}{x+1}\amp=\frac{2}{(x+1)(x-1)}</mrow>
+                <mrow>\multiplyleft{\frac{(x+1)(x-1)}{1}} \frac{x}{x+1}\amp=\multiplyleft{\frac{(x+1)(x-1)}{1}} \frac{2}{(x+1)(x-1)}</mrow>
+                <mrow>\frac{x \cdot (x+1)(x-1)}{x+1}\amp=\frac{2(x+1)(x-1)}{(x+1)(x-1)}</mrow>
+                <mrow>x \cdot (x-1)\amp=2</mrow>
+                <mrow>x^2-x\amp=2</mrow>
+                <mrow>x^2-x\subtractright{2}\amp=0\subtractright{2}</mrow>
+                <mrow>x^2-x-2\amp=0</mrow>
+                <mrow>(x-2)(x+1)\amp=0</mrow>
+              </md>
+              <md>
+                <mrow>x-2\amp=0 \amp\amp\text{or}\amp x+1\amp=0</mrow>
+                <mrow>x-2\addright{2}\amp=0\addright{2} \amp\amp\text{or}\amp x+1\subtractright{1}\amp=0\subtractright{1}</mrow>
+                <mrow>x\amp=2 \amp\amp\text{or}\amp x\amp=-1</mrow>
+              </md>
+              We reject the solution of <m>-1</m> because it creates a value of <m>0</m> in at least one denominator of the original equation.
+              The solution set is <m>\{2\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{4}{x^2+2x}-\frac{3}{x}=\frac{x}{x+2}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>\frac{4}{x^2+2x}-\frac{3}{x}\amp=\frac{x}{x+2}</mrow>
+                <mrow>\frac{4}{x \cdot (x+2)}-\frac{3}{x}\amp=\frac{x}{x+2}</mrow>
+                <mrow>\multiplyleft{\frac{x \cdot (x+2)}{1}} \left(\frac{4}{x \cdot (x+2)}-\frac{3}{x}\right)\amp=\multiplyleft{\frac{x \cdot (x+2)}{1}} \frac{x}{x+2}</mrow>
+                <mrow>\frac{4x \cdot (x+2)}{x \cdot (x+2)}-\frac{3x \cdot (x+2)}{x}\amp=\frac{x^2(x+2)}{x+2}</mrow>
+                <mrow>4-3(x+2)\amp=x^2</mrow>
+                <mrow>4-3x-6\amp=x^2</mrow>
+                <mrow>-3x-2\amp=x^2</mrow>
+                <mrow>-3x-2\addright{3x+2}\amp=x^2\addright{3x+2}</mrow>
+                <mrow>0\amp=x^2+3x+2</mrow>
+                <mrow>0\amp=(x+2)(x+1)</mrow>
+              </md>
+              <md>
+                <mrow>x+2\amp=0 \amp\amp\text{or}\amp x+1\amp=0</mrow>
+                <mrow>x+2\subtractright{2}\amp=0\subtractright{2} \amp\amp\text{or}\amp x+1\subtractright{1}\amp=0\subtractright{1}</mrow>
+                <mrow>x\amp=-2 \amp\amp\text{or}\amp x\amp=-1</mrow>
+              </md>
+              We reject the solution of <m>-2</m> because it creates a value of <m>0</m> in at least one denominator of the original equation. 
+              The solution set is <m>\{-1\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{6}{x^2-6x+9}-\frac{x}{x-3}+\frac{2x-4}{3x-9}=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>\frac{6}{x^2-6x+9}-\frac{x}{x-3}+\frac{2x-4}{3x-9}\amp=0</mrow>
+                <mrow>\frac{6}{(x-3)^{2}}-\frac{x}{x-3}+\frac{2x-4}{3(x-3)}\amp=0</mrow>
+                <mrow>\multiplyleft{\frac{3(x-3)^{2}}{1}}\left(\frac{6}{(x-3)^{2}}-\frac{x}{x-3}+\frac{2x-4}{3(x-3)}\right)\amp=\multiplyleft{\frac{3(x-3)^{2}}{1}}0</mrow>
+                <mrow>\frac{18(x-3)^2}{(x-3)^2}-\frac{3x \cdot (x-3)^2}{x-3}+\frac{3(x-3)^2(2x-4)}{3(x-3)}\amp=0</mrow>
+                <mrow>18-3x \cdot (x-3)+(x-3)(2x-4)\amp=0</mrow>
+                <mrow>18-3x^2+9x+2x^2-4x-6x+12\amp=0</mrow>
+                <mrow>-x^2-x+30\amp=0</mrow>
+                <mrow>\multiplyleft{-1}(-x^2-x+30)\amp=\multiplyleft{-1}0</mrow>
+                <mrow>x^2+x-30\amp=0</mrow>
+                <mrow>(x+6)(x-5)\amp=0</mrow>
+              </md>
+              <md>
+                <mrow>x+6\amp=0 \amp\amp\text{or}\amp x-5\amp=0</mrow>
+                <mrow>x+6\subtractright{6}\amp=0\subtractright{6} \amp\amp\text{or}\amp x-5\addright{5}\amp=0\addright{5}</mrow>
+                <mrow>x\amp=-6 \amp\amp\text{or}\amp x\amp=5</mrow>
+              </md>
+              The solution set is <m>\{-6,5\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+    </exercises>
+
+  </section>

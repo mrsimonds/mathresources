@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="rational-expressions-complex-fractions">
+    <title>Complex Fractions</title>
+
+    <p>
+      A complex fraction is a fraction in which the numerator and/or denominator contains yet another fraction.
+    </p>
+    <p>
+      Complex fractions of the following form 
+      <me>\frac{\frac{a}{b}}{\frac{c}{d}} \text{ or } \frac{\frac{a}{b}}{c} \text{ or } \frac{a}{\frac{c}{d}}</me>
+      are the manner in which division of or by fractions is usually communicated in an algebraic setting.  For examples, instead of writing
+      <me>\frac{x+2}{x-7} \div \frac{x+4}{x+12}</me> we would write <me>\frac{\frac{x+2}{x-7}}{\frac{x+4}{x+12}}</me>.
+      Because division by a fraction is equivalent to multiplying by the reciprocal of the fraction, it follows that
+      <me>\frac{\frac{x+2}{x-7}}{\frac{x+4}{x+12}}=\frac{x+2}{x-7} \cdot \frac{x+12}{x+4}</me>.
+    </p>
+    <p>
+      When writing complex fractions, it is vitally important that we are clear which is the main fraction bar (which is done by clearly making it the longest bar).  This importance is made clear by the following two examples.
+      <md>
+        <mrow>\frac{2}{3} \div 7\amp=\frac{2}{3} \div \frac{7}{1}</mrow>
+        <mrow>\amp=\frac{2}{3} \cdot \frac{1}{7}</mrow>
+        <mrow>\amp=\frac{2}{21}</mrow>
+      </md>
+      whereas
+      <md>
+        <mrow>2 \div \frac{3}{7}\amp=\frac{2}{1} \div \frac{3}{7}</mrow>
+        <mrow>\amp=\frac{2}{1} \cdot \frac{7}{3}</mrow>
+        <mrow>\amp=\frac{14}{3}</mrow>
+      </md>
+      The above illustrates that <me>\frac{\frac{2}{3}}{7} \neq \frac{2}{\frac{3}{7}}</me>.
+    </p>
+    <p>
+      If you look carefully at the last inequality statement, you might discern another way that we communicate the location of the main fraction bar - the equal sign horizontally aligns with the main fraction bar.
+    </p>
+    <p>
+      There are situations where one frequently encounters complex fractions what include addition or subtraction of fractions in the numerator or denominator.  Encountering these type expressions is a lucky day event, as they are essentially two or even three problems in one!  You get to combine the expressions in the numerator and/or denominator and then proceed to the division.  Because the process can be rather complicated, we generally do not address domain restrictions in these type of exercises.  Several examples follow. 
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Simplify:<me>\frac{\frac{x}{x-5}-\frac{7}{x-5}}{\frac{x-7}{x^2-10x+25}}</me>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\frac{\frac{x}{x-5}-\frac{7}{x-5}}{\frac{x-7}{x^2-10x+25}}\amp=\frac{\frac{x-7}{x-5}}{\frac{x-7}{(x-5)(x-5)}}</mrow>
+            <mrow>\amp=\frac{x-7}{x-5} \cdot \frac {(x-5)(x-5)}{x-7}</mrow>
+            <mrow>\amp=\frac{(x-7)(x-5)(x-5)}{(x-5)(x-7)}</mrow>
+            <mrow>\amp=\frac{x-7}{x-7} \cdot \frac{x-5}{x-5} \frac{x-5}{1}</mrow>
+            <mrow>\amp=x-5</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Simplify:<me>\frac{\frac{1}{x+6}-\frac{1}{6}}{x}</me>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\frac{\frac{1}{x+6}-\frac{1}{6}}{x}\amp=\frac{\frac{1}{x+6} \cdot \highlight{\frac{6}{6}}-\frac{1}{6} \cdot \highlightr{\frac{x+6}{x+6}}}{\frac{x}{1}}</mrow>
+            <mrow>\amp=\frac{6-x-6}{6(x+6)} \cdot \frac{1}{x}</mrow>
+            <mrow>\amp=\frac{-x}{6x(x+6)}</mrow>
+            <mrow>\amp=-\frac{x}{x} \cdot \frac{1}{6(x+6)}</mrow>
+            <mrow>\amp=-\frac{1}{6(x+6)}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Simplify:<me>\frac{\frac{2x}{x-3}-\frac{x}{x+3}}{\frac{x^2-9}{x^2+9}}</me>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\amp=\frac{\frac{2x}{x-3} \cdot \highlight{\frac{x+3}{x+3}}-\frac{x}{x+3} \cdot \highlightr{\frac{x-3}{x-3}}}{\frac{(x-3)(x+3)}{x^2+9}}</mrow>
+            <mrow>\amp=\frac{\frac{2x^2+6x-x^2+3x}{(x-3)(x+3)}}{\frac{(x-3)(x+3)}{x^2+9}}</mrow>
+            <mrow>\amp=\frac{\frac{x^2+9x}{(x-3)(x+3)}}{\frac{(x-3)(x+3)}{x^2+9}}</mrow>
+            <mrow>\amp=\frac{x(x+9)}{(x-3)(x+3)} \cdot \frac{x^2+9}{(x-3)(x+3)}</mrow>
+            <mrow>\amp=\frac{x(x+9)(x^2+9)}{(x-3)^2(x+3)^2}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      There is an alternate strategy for simplifying complex fractions.  The process goes as follows.
+      <ol label="1">
+        <li>
+          Determine the Lowest Common Denominator of all of the fractions that occur in either the numerator or denominator of the main fraction.
+        </li>
+        <li>
+          Multiply both the numerator and denominator of the main fraction by the LCD found in step 1. It may be helpful to write one or both occurrences of the LCD over 1.
+        </li>
+        <li>
+          Distribute the LCD through both the numerator and denominator.  Term by term, cancel factors that are common to the numerator and denominator.
+        </li>
+        <li>
+          If you were successful in the first three steps, the fraction is no longer complex.  Expand both the numerator and denominator of the resultant fraction.
+        </li>
+        <li>
+          Factor both the numerator and the denominator and cancel any factors common to the numerator and denominator.
+        </li>
+      </ol>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Use the new strategy to simplify <me>\frac{\frac{3}{x}+\frac{2}{x-1}}{\frac{3}{x}-\frac{2}{x-1}}</me>.
+        </p>
+        </statement>
+        <solution>
+        <p>
+          We begin by observing that the LCD of the denominators of the smaller fractions is <m>x(x-1)</m>.  We proceed as follows.
+          <md>
+            <mrow>\frac{\frac{3}{x}+\frac{2}{x-1}}{\frac{3}{x}-\frac{2}{x-1}}\amp=\frac{\frac{3}{x}+\frac{2}{x-1}}{\frac{3}{x}-\frac{2}{x-1}} \cdot \highlight{\frac{\frac{x(x-1)}{1}}{\frac{x(x-1)}{1}}}</mrow>
+            <mrow>\amp=\frac{\frac{3}{x} \cdot \highlight{\frac{x(x-1)}{1}} +\frac{2}{x-1} \cdot \highlight{\frac{x(x-1)}{1}} }{\frac{3}{x} \cdot \highlight{\frac{x(x-1)}{1}} -\frac{2}{x-1} \cdot \highlight{\frac{x(x-1)}{1}} }</mrow>
+            <mrow>\amp=\frac{3(x-1)+2x}{3(x-1)-2x}</mrow>
+            <mrow>\amp=\frac{5x-3}{x-3}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+           Use the new strategy to simplify <me>\frac{\frac{5}{x+h}-\frac{5}{x}}{h}</me>.
+          </p>
+      </statement>
+      <solution>
+        <p>
+          It might be helpful to write the denominator as a fraction to help identify the LCD of the smaller fractions.  <me>\frac{\frac{5}{x+h}-\frac{5}{x}}{\frac{h}{1}}</me>  From this we can see that the LCD of the smaller fractions is <m>x(x+h)</m>.  Let's proceed.
+          <md>
+            <mrow>\frac{\frac{5}{x+h}-\frac{5}{x}}{\frac{h}{1}}\amp=\frac{\frac{5}{x+h}-\frac{5}{x}}{\frac{h}{1}} \cdot \highlight{\frac{\frac{x(x+h)}{1}}{\frac{x(x+h)}{1}}}</mrow>
+            <mrow>\amp=\frac{\frac{5}{x+h} \cdot \highlight{\frac{x(x+h)}{1}} -\frac{5}{x} \cdot \highlight{\frac{x(x+h)}{1}} }{\frac{h}{1} \cdot \highlight{\frac{x(x+h)}{1}} }</mrow>
+            <mrow>\amp=\frac{5x-5(x+h)}{hx(x+h)}</mrow>
+            <mrow>\amp=\frac{-5h}{hx(x+h)}</mrow>
+            <mrow>\amp=-\frac{5}{x(x+h)}</mrow>
+            </md>
+          </p>
+      </solution>
+    </example>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Completely simplify each expression.  You do not need to address any domain restrictions.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{\frac{x+3}{x-2}}{\frac{x+3}{x+2}}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Since there are no fractions to add or subtract, we can immediately find the product of the numerator ad the reciprocal of the denominator.
+              <md>]
+                <mrow>\frac{\frac{x+3}{x-2}}{\frac{x+3}{x+2}}\amp=\frac{x+3}{x-2} \cdot \frac{x+2}{x+3}</mrow>
+                <mrow>\amp=\frac{(x+3)(x+2)}{(x-2)(x+3)}</mrow>
+                <mrow>\amp=\frac{x+3}{x+3} \cdot \frac{x+2}{x-2}</mrow>
+                <mrow>\amp=\frac{x+2}{x-2}</mrow>
+              </md>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{\frac{1}{x-7}}{x-7}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Since there are no fractions to add or subtract, we can immediately find the product of the numerator ad the reciprocal of the denominator.
+              <md>
+                <mrow>\frac{\frac{1}{x-7}}{x-7}\amp=\frac{\frac{1}{x-7}}{\frac{x-7}{1}}</mrow>
+                <mrow>\amp=\frac{1}{x-7} \cdot \frac{1}{x-7}</mrow>
+                <mrow>\amp=\frac{1}{(x-7)^2}</mrow>
+              </md>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{x-9}{\frac{x^2-7x-18}{x^2+4}}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Since there are no fractions to add or subtract, we can immediately find the product of the numerator ad the reciprocal of the denominator.
+              <md>
+                <mrow>\frac{x-9}{\frac{x^2-7x-18}{x^2+4}}\amp=\frac{\frac{x-9}{1}}{\frac{x^2-7x-18}{x^2+4}}</mrow>
+                <mrow>\amp=\frac{x-9}{1} \cdot \frac{x^2+4}{x^2-7x-18}</mrow>
+                <mrow>\amp=\frac{(x-9)(x^2+4)}{x^2-7x-18}</mrow>
+                <mrow>\amp=\frac{(x-9)(x^2+4)}{(x-9)(x+2)}</mrow>
+                <mrow>\amp=\frac{x-9}{x-9} \cdot \frac{x^2+4}{x+2}</mrow>
+                <mrow>\amp=\frac{x^2+4}{x+2}</mrow>
+              </md>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{\frac{1}{x-10}+\frac{1}{10}}{x}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Simplification following the "build common denominators" approach.
+              <md>
+                <mrow>\frac{\frac{1}{x-10}+\frac{1}{10}}{x}\amp=\frac{\frac{1}{x-10} \cdot \highlight{\frac{10}{10}} + \frac{1}{10} \cdot \highlightr{\frac{x-10}{x-10}}}{\frac{x}{1}}</mrow>
+                <mrow>\amp=\frac{10+x-10}{10(x-10)} \cdot \frac{1}{x}</mrow>
+                <mrow>\amp=\frac{x}{10x(x-10)}</mrow>
+                <mrow>\amp =\frac{x}{x} \cdot \frac{1}{10(x-10)}</mrow>
+                <mrow>\amp=\frac{1}{10(x-10)}</mrow>
+              </md>
+              Simplification using the "clear away the denominators" approach. 
+              <md>
+                <mrow>\frac{\frac{1}{x-10}+\frac{1}{10}}{x}\amp=\frac{\frac{1}{x-10}+\frac{1}{10}}{x} \cdot \highlight{\frac{\frac{10(x-10)}{1}}{10(x-10)}}</mrow>
+                <mrow>\amp=\frac{\frac{10(x-10)}{x-10}+\frac{10(x-10)}{10}}{10x(x-10)}</mrow>
+                <mrow>\amp=\frac{10+x-10}{10x(x-10)}</mrow>
+                <mrow>\amp=\frac{x}{10x(x-10)}</mrow>
+                <mrow>\amp=\frac{1}{10(x-10)}</mrow>
+              </md>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{\frac{1}{x+5}-\frac{1}{x+4}}{\frac{1}{x+4}+\frac{1}{x+3}}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Simplification following the "build common denominators" approach.
+              <md>
+                <mrow>\frac{\frac{1}{x+5}-\frac{1}{x+4}}{\frac{1}{x+4}+\frac{1}{x+3}}\amp=\frac{\frac{1}{x+5} \cdot \highlight{\frac{x+4}{x+4}} - \frac{1}{x+4} \cdot \highlightr{\frac{x+5}{x+5}}}{\frac{1}{x+4} \cdot \highlightg{\frac{x+3}{x+3}} + \frac{1}{x+3} \cdot \highlightb{\frac{x+4}{x+4}}}</mrow>
+                <mrow>\amp=\frac{\frac{x+4-x-5}{(x+5)(x+4)}}{\frac{x+3+x+4}{(x+4)(x+3)}}</mrow>
+                <mrow>\amp=\frac{\frac{-1}{(x+5)(x+4)}}{\frac{2x+7}{(x+4)(x+3)}}</mrow>
+                <mrow>\amp=\frac{-1}{(x+5)(x+4)} \cdot \frac{(x+4)(x+3)}{2x+7}</mrow>
+                <mrow>\amp=-\frac{(x+4)(x+3)}{(x+5)(x+4)(2x+7)}</mrow>
+                <mrow>\amp=\frac{x+4}{x+4} \cdot -\frac{x+3}{(x+5)(2x+7)}</mrow>
+                <mrow>\amp=-\frac{x+3}{(x+5)(2x+7)}</mrow>
+              </md>
+              Simplification using the "clear away the denominators" approach. 
+              <md>
+                <mrow>\frac{\frac{1}{x+5}-\frac{1}{x+4}}{\frac{1}{x+4}+\frac{1}{x+3}}\amp=\frac{\frac{1}{x+5}-\frac{1}{x+4}}{\frac{1}{x+4}+\frac{1}{x+3}}\ \cdot \highlight{\frac{\frac{(x+5)(x+4)(x+3)}{1}}{\frac{(x+5)(x+4)(x+3)}{1}}}</mrow>
+                <mrow>\amp=\frac{\frac{(x+5)(x+4)(x+3)}{x+5}-\frac{(x+5)(x+4)(x+3)}{x+4}}{\frac{(x+5)(x+4)(x+3)}{x+4}+\frac{(x+5)(x+4)(x+3)}{x+3}}</mrow>
+                <mrow>\amp=\frac{(x+4)\highlight{(x+3)}-(x+5)\highlight{(x+3)}}{\highlightr{(x+5)}(x+3)+\highlightr{(x+5)}(x+4)}</mrow>
+                <mrow>\amp=\frac{(x+4-x-5)\highlight{(x+3)}}{\highlightr{(x+5)}(x+3+x+4)}</mrow>
+                <mrow>\amp=\frac{-(x+3)}{(x+5)(2x+7)}</mrow>
+                <mrow>\amp=-\frac{x+3}{(x+5)(2x+7)}</mrow>
+              </md>
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+    </exercises>
+
+  </section>
+

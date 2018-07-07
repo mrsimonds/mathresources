@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="polynomials-division">
+    <title>Division of Polynomials by Monomials</title>
+    <p>
+      When adding or subtracting fractions that have a common denominator, we simply add or subtract the numerators over that denominator.  For example: <me>\frac{12x^2}{3}-\frac{42x}{3}+\frac{15}{3}=\frac{12x^2-42x+5}{3}</me>.
+            Because of the reflexive property of equality, the above equation can be stated in reverse.  In this case, the reverse statement is actually the more useful form of the equation because each of the fractions of form <m>\frac{\text{monomial}}{\text{monomial}}</m> reduce.  That is:
+      <md>
+        <mrow>\frac{12x^2-42x+5}{3}\amp=\frac{12x^2}{3}-\frac{42x}{3}+\frac{15}{3}</mrow>
+        <mrow>\amp=4x^2-14x+5</mrow>
+      </md>
+      The reduction process just illustrated is an example of division of a polynomial by a monomial.  The process has two steps.
+      <ol label="1">
+        <li>Distribute the denominator to each term in the numerator.</li>
+        <li>Reduce each resultant term, using the exponent rule <m>\frac{x^m}{x^n}=x^{m-n}</m> where appropriate.</li>
+      </ol>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Perform the division <m>\frac{-21y^4-35y^3+70y^2}{7y^2}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\frac{-21y^4-35y^3+70y^2}{7y^2}\amp=\frac{-21y^4}{7y^2}-\frac{35y^3}{7y^2}+\frac{70y^2}{7y^2}</mrow>
+            <mrow>\amp=-3y^2-5y+10</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Perform the division <m>\frac{4x^5y^3-2x^4y^4-22x^3y^5}{-2x^2y^2}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\frac{4x^5y^3-2x^4y^4-22x^3y^5}{-2x^2y^2}\amp=\frac{4x^5y^3}{-2x^2y^2}-\frac{2x^4y^4}{-2x^2y^2}-\frac{22x^3y^5}{-2x^2y^2}</mrow>
+            <mrow>\amp=-2x^3y+x^2y^2+11xy^3</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Perform each division and simplify each result.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{3x^3-5x^2+7x}{x}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \frac{3x^3-5x^2+7x}{x}\amp=\frac{3x^3}{x}-\frac{5x^2}{x}+\frac{7x}{x}\\
+                \amp=3x^2-5x+7
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{-12x^3y+21x^2y-15xy}{-3xy}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \frac{-12x^3y+21x^2y-15xy}{-3xy}\amp=\frac{-12x^3y}{-3xy}+\frac{21x^2y}{-3xy}-\frac{15xy}{-3xy}\\
+                \amp=4x^2-7x+5
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{14y^{12}-18y^7}{-y^5}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \frac{14y^{12}-18y^7}{-y^5}\amp=\frac{14y^{12}}{-y^5}-\frac{18y^7}{-y^5}\\
+                \amp=-14y^7+18y^2
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{2x^6y^3-4x^5y^2+10x^4y+2x^3}{2x^3}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \frac{2x^6y^3-4x^5y^2+10x^4y+2x^3}{2x^3}\amp=\frac{2x^6y^3}{2x^3}-\frac{4x^5y^2}{2x^3}+\frac{10x^4y}{2x^3}+\frac{2x^3}{2x^3}\\
+                \amp=x^3y^3-2x^2y^2+5xy+1
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{(x^2+3x)(x^2-7x)}{x^2}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \frac{(x^2+3x)(x^2-7x)}{x^2}\amp=\frac{x^4-7x^3+3x^3-21x^2}{x^2}\\
+                \amp=\frac{x^4-4x^3-21x^2}{x^2}\\
+                \amp=\frac{x^4}{x^2}-\frac{4x^3}{x^2}-\frac{21x^2}{x^2}\\
+                \amp=x^2-4x-21
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{(2w^6+6w^4)(2w^6-6w^4)}{4w^5}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \frac{(2w^6+6w^4)(2w^6-6w^4)}{4w^5}\amp=\frac{4w^{12}-12w^{10}+12w^{10}-36w^8}{4w^5}\\
+                \amp=\frac{4w^{12}-36w^8}{4w^5}\\
+                \amp=\frac{4w^{12}}{4w^5}-\frac{36w^8}{4w^5}\\
+                \amp=w^7-9w^3
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+    </exercises>
+
+  </section>

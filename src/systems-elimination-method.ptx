@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="systems-elimination-method">
+    <title> Solving Systems Using the Elimination Method</title>
+
+    <p>
+      Consider the following system of equations.          
+      <me>
+        \left\{
+          \begin{aligned}
+            3x-2y\amp=-4\\
+            -4x+2y\amp=-2\\
+          \end{aligned}
+        \right.
+      </me>
+      We could solve the system by graphing or by using the method of substitution.  There are many other options, however, and we are going to exploit one of the additional options <mdash/> we are going to use the elimination method (sometimes referred to as the addition method).
+    </p>
+    <p>
+      Let's assume that there is only one ordered pair that satisfies both equations in the system.  We we replace <m>x</m> and <m>y</m> with the coordinates of that ordered pair, the first equation becomes <m>-4=-4</m> and the second equation becomes <m>-2=-2</m>.  Note that if we add the respective sides of those equations, we arrive at another true statement, namely <m>-6=-6</m>.  This phenomenon extends to solving the system <mdash/> whatever ordered pair(s) satisfies both equations in the system will also solve the equation that results from adding the respective sides of the equations.  For the system under consideration, that is a mighty useful fact, because the action will (temporarily) eliminate <m>y</m> from the system and we can solve the resultant equations for <m>x</m>.  We can then substitute that value for <m>x</m> in either of the original equations to determine the value of <m>y</m>.  Let's see that plan in action.
+    </p>
+    <p>
+      Consider the following system of equations.          
+      <me>
+        \left\{
+          \begin{aligned}
+            3x-2y\amp=-4\\
+            -4x+2y\amp=-2\\
+          \end{aligned}
+        \right.
+      </me>
+      We begin by adding the left sides of the equations together and equating that to the sum of the right sides of the equations.  The result is
+      <me>-x=-6</me>.
+      We then solve that equation for <m>x</m>.
+      <md>
+        <mrow>-x\amp=-6</mrow>
+        <mrow>\multiplyleft{-1}-x\amp=\multiplyleft{-1}-6</mrow>
+        <mrow>x\amp=6</mrow>
+      </md>
+      Let's go ahead and substitute <m>6</m> for <m>x</m> in the second original equation and solve for <m>y</m>.
+      <md>
+        <mrow>-4\highlight{x}+2y\amp=-2</mrow>
+        <mrow>-4(\highlight{6})+2y\amp=-2</mrow>
+        <mrow>-24+2y\amp=-2</mrow>
+        <mrow>-24+2y\addright{24}\amp=-2\addright{24}</mrow>
+        <mrow>2y\amp=22</mrow>
+        <mrow>\divideunder{2y}{2}\amp=\divideunder{22}{2}</mrow>
+        <mrow>y\amp=11</mrow>
+      </md>
+      Let's check are apparent solution, <m>(6,11)</m>, in the given system.         
+      <me>
+        \left\{
+          \begin{aligned}
+            3(\highlight{6})-2(\highlightr{11})\amp=-4\,?\\
+            -4(\highlight{6})+2(\highlightr{11})\amp=-2\,?\\
+          \end{aligned}
+        \right.
+      </me>         
+      <me>
+        \left\{
+          \begin{aligned}
+            18-22\amp=-4\,\checkmark\\
+            -24+22\amp=-2\,\checkmark\\
+          \end{aligned}
+        \right.
+      </me>
+      The solution to the given system of equations is the ordered pair <m>(6,11)</m>.
+    </p>
+    <p>
+      Now let's consider the following system of equations.          
+      <me>
+        \left\{
+          \begin{aligned}
+            2x+3y\amp=23\\
+            6x-5y\amp=-1\\
+          \end{aligned}
+        \right.
+      </me>
+      As given, equating the sums of the respective sides of the two equations will not eliminate either <m>x</m> or <m>y</m>.  However we could multiply both sides of one of the equations by the same value so that when the sides of the new equation are added to the sides of the other equation one of the variables is eliminated.  For example, if we multiply both sides of the first equation by <m>-3</m>, the resultant coefficient on <m>x</m> will be <m>-6</m>, and when the respective sides of that equation and the original second equation are added, <m>x</m> will be eliminated.  Let's go ahead and do that.        
+      <me>
+        \left\{
+          \begin{aligned}
+            2x+3y\amp=23\\
+            6x-5y\amp=-1\\
+          \end{aligned}
+        \right.
+      </me>        
+      <me>
+        \left\{
+          \begin{aligned}
+            \multiplyleft{-3}(2x+3y)\amp=\multiplyleft{-3}23\\
+            6x-5y\amp=-1\\
+          \end{aligned}
+        \right.
+      </me>        
+      <me>
+        \left\{
+          \begin{aligned}
+            -6x-9y\amp=-69\\
+            6x-5y\amp=-1\\
+          \end{aligned}
+        \right.
+      </me>
+      Equating the sums of the respective sides of the equation results in the following equation.
+      <me>-14y=-70</me>
+      Solving for <m>y</m> we have the following.
+      <md>
+        <mrow>-14y\amp=-70</mrow>              
+        <mrow>\divideunder{-14y}{-14}\amp=\divideunder{-70}{-14}</mrow>
+        <mrow>y\amp=5</mrow>
+      </md>
+      Let's go ahead and substitute <m>5</m> for <m>y</m> in the second original equation and solve the result for <m>x</m>.
+      <md>
+        <mrow>6x-5\highlight{y}\amp=-1</mrow>
+        <mrow>6x-5(\highlight{5})\amp=-1</mrow>
+        <mrow>6x-25\amp=-1</mrow>
+        <mrow>6x-25\addright{25}\amp=-1\addright{25}</mrow>
+        <mrow>6x\amp=24</mrow>
+        <mrow>\divideunder{6x}{6}\amp=\divideunder{24}{6}</mrow>
+        <mrow>x\amp=4</mrow>
+      </md>
+      So our apparent solution is <m>(4,5)</m>.  Let's go ahead and check in the given system of equations.
+      <me>
+        \left\{
+          \begin{aligned}
+            2(\highlight{4})+3(\highlightr{5})\amp=23\,?\\
+            6(\highlight{4})-5(\highlightr{5})\amp=-1\,?\\
+          \end{aligned}
+        \right.
+      </me>  
+      <me>
+        \left\{
+          \begin{aligned}
+            8+15\amp=23\,\checkmark\\
+            24-25\amp=-1\,\checkmark\\
+          \end{aligned}
+        \right.
+      </me> 
+      The solution to the given system of equations is the ordered pair <m>(4,5)</m>. 
+    </p>
+    <p>
+      Assuming that a system of two equations with two unknowns has exactly one ordered pair in its solution set, the process for determining that solution is outlined below.  The outline is followed by a note specifying how you recognize that there are no solutions or an "infinite number" of solutions while going through the elimination process. 
+      <ol label="1">
+        <li>
+          Before proceeding to the next step, both equations should be written in standard form (<m>ax+by=c</m>).  Rearrange the terms as necessary so that this is the case.
+        </li>
+        <li>
+          If there are like terms in the two equations with opposite coefficients (same absolute value, opposite signs), go ahead and add the respective sides of the two equations so that the variable associated with those terms is eliminated.  If no such terms exist, multiply both sides of one equation by a number, and perhaps both sides of the other equation by a different number, so that one of the variables does have opposite coefficients in the two equations.  Then add the two respective sides of the new system so that the variable with opposite coefficients is eliminated.
+        </li>
+        <li>
+          Solve the equation that emerges from step 2 for the remaining variable.
+        </li>
+        <li>
+          Substitute the value determined in step 3 into either of the original equations and solve for the remaining variable.
+        </li>
+        <li>
+          Check your proposed solution in both of the original equations.  Assuming it is correct, state your conclusion.  If the solution is not correct, find your mistake and/or rework the problem from scratch.
+        </li>
+      </ol>
+      Systems that either have no solutions or an "infinite number of solutions" reveal their nature when you execute step 2 of the process.  In either case, both variables sum to zero while performing the step.  If the system has no solutions, you are left with a contradiction (a false statement such as <m>0=2</m>).  If the system has an "infinite number" of solutions, you are left with an identity (a true statement such as <m>5=5</m>).
+    </p>
+
+    <example>
+      <statement>
+          <p>
+            Use the elimination method to solve the following system of equations.     
+            <me>
+              \left\{
+                \begin{aligned}
+                  4x+5y\amp=16\\
+                  -5x+3y\amp=17\\
+                \end{aligned}
+              \right.
+            </me>   
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Neither variable has opposite coefficients in the two equations, and there is no way of establishing opposite coefficients that doesn't lead to fractions if we only multiply both sides of only one of the equations by a constant.  Because the coefficients on <m>x</m> already have opposite signs, I'm choosing to eliminate <m>x</m> by multiplying both sides of the first equation by <m>5</m> and both sides of the second equation by <m>4</m>.  Note that I could have chosen to eliminate <m>y</m> by, say, multiplying both sides of the first equation by <m>-3</m> and both sides of the second equation by <m>5</m>. 
+            <me>
+              \left\{
+                \begin{aligned}
+                  4x+5y\amp=16\\
+                  -5x+3y\amp=17\\
+                \end{aligned}
+              \right.
+            </me>    
+            <me>
+              \left\{
+                \begin{aligned}
+                  \multiplyleft{5}(4x+5y)\amp=\multiplyleft{5}16\\
+                  \multiplyleft{4}(-5x+3y)\amp=\multiplyleft{4}17\\
+                \end{aligned}
+              \right.
+            </me>  
+            <me>
+              \left\{
+                \begin{aligned}
+                  20x+25y\amp=80\\
+                  -20x+12y\amp=68\\
+                \end{aligned}
+              \right.
+            </me>  
+            Adding the respective sides of both equations results in <m>37y=148</m>. We solve for <m>y</m> below.
+            <md>
+              <mrow>37y\amp=148</mrow>
+              <mrow>\divideunder{37y}{37}\amp=\divideunder{148}{37}</mrow>
+              <mrow>y\amp=4</mrow>
+            </md>
+            Let's go ahead and substitute <m>4</m> for <m>y</m> in the equation <m>4x+5y=20</m> and solve the resultant equation for <m>x</m>.
+            <md>
+              <mrow>4x+5\highlight{x}\amp=16</mrow>
+              <mrow>4x+5(\highlight{4})\amp=16</mrow>
+              <mrow>4x+20\amp=16</mrow>
+              <mrow>4x+20\subtractright{20}\amp=16\subtractright{20}</mrow>
+              <mrow>4x\amp=-4</mrow>
+              <mrow>\divideunder{4x}{4}\amp=\divideunder{-4}{4}</mrow>
+              <mrow>x\amp=-1</mrow>
+            </md>
+            So our proposed solution is the ordered pair <m>(-1,4)</m>.  Let's go ahead and check that in both of the original equations of the given system.
+            <me>
+              \left\{
+                \begin{aligned}
+                  4(\highlight{-1})+5(\highlightr{4})\amp=16\,?\\
+                  -5(\highlight{-1})+3(\highlightr{4})\amp=17\,?\\
+                \end{aligned}
+              \right.
+            </me>
+            <me>
+              \left\{
+                \begin{aligned}
+                  -4+20\amp=16\,\checkmark\\
+                  5+12\amp=17\,\checkmark\\
+                \end{aligned}
+              \right.
+            </me> 
+            The solution to the given system of equations is the ordered pair <m>(-1,4)</m>.       
+          </p> 
+        </solution>
+      </example>
+
+      <example>
+        <statement>
+          <p>
+            Use the elimination method to solve the following system of equations.     
+            <me>
+              \left\{
+                \begin{aligned}
+                  y\amp=3x-8\\
+                  -6x+2y\amp=17\\
+                \end{aligned}
+              \right.
+            </me>   
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by manipulating the first equation into standard form.  
+            <me>
+              \left\{
+                \begin{aligned}
+                  y\amp=3x-8\\
+                  -6x+2y\amp=17\\
+                \end{aligned}
+              \right.
+            </me>     
+            <me>
+              \left\{
+                \begin{aligned}
+                  y\subtractright{3x}\amp=3x-8\subtractright{3x}\\
+                  -6x+2y\amp=17\\
+                \end{aligned}
+              \right.
+            </me>     
+            <me>
+              \left\{
+                \begin{aligned}
+                  -3x+y\amp=-8\\
+                  -6x+2y\amp=17\\
+                \end{aligned}
+              \right.
+            </me> 
+            We now observe that we can eliminate <m>y</m> from the system by multiplying both sides of the first equation by <m>-2</m> and then adding the respective sides of the two equations.   
+            <me>
+              \left\{
+                \begin{aligned}
+                  \multiplyleft{-2}(-3x+y)\amp=\multiplyleft{-2}-8\\
+                  -6x+2y\amp=17\\
+                \end{aligned}
+              \right.
+            </me>  
+            <me>
+              \left\{
+                \begin{aligned}
+                  6x-2y\amp=-8\\
+                  -6x+2y\amp=17\\
+                \end{aligned}
+              \right.
+            </me> 
+            Adding the respective sides of the equations results in the contradiction <m>0=9</m>.  As such, there are no ordered pairs that satisfy both equations in the system.
+          </p>
+        </solution>
+      </example>
+
+      <example>
+        <statement>
+          <p>
+            Use the elimination method to solve the following system of equations.     
+            <me>
+              \left\{
+                \begin{aligned}
+                  \frac{x}{3}-\frac{2y}{5}\amp=-\frac{9}{5}\\
+                  \frac{3x}{2}+\frac{3y}{4}\amp=-3\\
+                \end{aligned}
+              \right.
+            </me>   
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Before we even think about creating opposite coefficients, let's clear away the fractions by multiplying both sides of the first equation by <m>15</m> (the LCM of <m>3</m> and <m>5</m>) and both sides of the second equation by <m>4</m> (the LCM of <m>2</m> and <m>4</m>).    
+            <me>
+              \left\{
+                \begin{aligned}
+                  \multiplyleft{15}\left(\frac{x}{3}-\frac{2y}{5}\right)\amp=\multiplyleft{15}-\frac{9}{5}\\
+                  \multiplyleft{4}\left(\frac{3x}{2}+\frac{3y}{4}\right)\amp=\multiplyleft{4}-3\\
+                \end{aligned}
+              \right.
+            </me>     
+            <me>
+              \left\{
+                \begin{aligned}
+                  5x-6y\amp=-27\\
+                  6x+3y\amp=-12\\
+                \end{aligned}
+              \right.
+            </me>
+            We can now eliminate <m>y</m> from the system by multiplying both sides of the second equation by <m>2</m> and adding the respective sides of the two equations.      
+            <me>
+              \left\{
+                \begin{aligned}
+                  5x-6y\amp=-27\\
+                  \multiplyleft{2}(6x+3y)\amp=\multiplyleft{2}-12\\
+                \end{aligned}
+              \right.
+            </me>      
+            <me>
+              \left\{
+                \begin{aligned}
+                  5x-6y\amp=-27\\
+                  12x+6y\amp=-24\\
+                \end{aligned}
+              \right.
+            </me>
+            Summing the respective sides of the equations results in <m>17x=-51</m> which we solve below.
+            <md>
+              <mrow>17x\amp=-51</mrow>   
+              <mrow>\divideunder{17x}{17}\amp=\divideunder{-51}{17}</mrow>
+              <mrow>x\amp=-3</mrow>
+            </md>
+            Let's substitute <m>-3</m> for <m>x</m> in the equation <m>6x+3y=-12</m> and solve the resultant equation for <m>y</m>.  Note that we don't need to use one of the original equations to find the value of <m>y</m>, but we do need to use the original equations when we check our solution.
+            <md>
+              <mrow>6\highlight{x}+3y\amp=-12</mrow>
+              <mrow>6(\highlight{-3})+3y\amp=-12</mrow>
+              <mrow>-18+3y\amp=-12</mrow>
+              <mrow>-18+3y\addright{18}\amp=-12\addright{18}</mrow>
+              <mrow>3y\amp=6</mrow>
+              <mrow>\divideunder{3y}{3}\amp=\divideunder{6}{3}</mrow>
+              <mrow>y\amp=2</mrow>
+            </md>
+            Our proposed solution is the ordered pair <m>(-3,2)</m>.  Let's check the solution in the given system.  
+            <me>
+              \left\{
+                \begin{aligned}
+                  \frac{\highlight{-3}}{3}-\frac{2(\highlightr{2})}{5}\amp=-\frac{9}{5}\,?\\
+                  \frac{3(\highlight{-3})}{2}+\frac{3(\highlightr{2})}{4}\amp=-3\,?\\
+                \end{aligned}
+              \right.
+            </me>     
+            <me>
+              \left\{
+                \begin{aligned}
+                  -1-\frac{4}{5}\amp=-\frac{9}{5}\,?\\
+                  -\frac{9}{2}+\frac{6}{4}\amp=-3\,?\\
+                \end{aligned}
+              \right.
+            </me>     
+            <me>
+              \left\{
+                \begin{aligned}
+                  -\frac{5}{5}-\frac{4}{5}\amp=-\frac{9}{5}\,?\\
+                  -\frac{9}{2}+\frac{3}{2}\amp=-3\,?\\
+                \end{aligned}
+              \right.
+            </me>   
+            <me>
+              \left\{
+                \begin{aligned}
+                  -\frac{9}{5}\amp=-\frac{9}{5}\,\checkmark\\
+                  -\frac{6}{2}\amp=-3\,\checkmark\\
+                \end{aligned}
+              \right.
+            </me>  
+            The solution to the given system of equations is the ordered pair <m>(-3,2)</m>.           
+          </p>
+        </solution>
+      </example>
+
+      <exercises>
+
+        <exercisegroup>
+          <introduction>
+            <p>
+              Use the elimination method to determine the solution to each of the following systems of linear equations.
+            </p>
+          </introduction>
+
+          <exercise>
+            <statement>
+              <p>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      3x-4y\amp=4\\
+                      5x+4y\amp=28\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </p>
+            </statement>
+            <solution>
+               <p>
+                 We can eliminate <m>y</m> from the system by adding the respective sides of the equations.  The result is the equation
+                  <me>8x=32</me>.
+                  Dividing both sides of the equation by <m>8</m> leaves us with <me>x=4</me>.
+                  We can replace <m>x</m> with <m>4</m> in the equation <m>3x-4y=4</m> and solve the resultant equation to determine the value of <m>y</m>.
+                 <md>
+                   <mrow>3(\substitute{4})-4y\amp=4</mrow>
+                   <mrow>12-4y\amp=4</mrow>
+                   <mrow>12-4y\subtractright{12}\amp=4\subtractright{12}</mrow>
+                   <mrow>-4y\amp=-8</mrow>
+                   <mrow>\divideunder{-4y}{-4}\amp=\divideunder{-8}{-4}</mrow>
+                   <mrow>y\amp=2</mrow>
+                 </md>
+                  he solution to the given system of equations is the ordered pair <m>(4,2)</m>.  The reader should verify that the ordered pair satisfies both of the original equations (as did the author <ellipsis /> thrice!).
+               </p>
+            </solution>
+          </exercise>
+
+          <exercise>
+            <statement>
+              <p>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      -3x-y\amp=2\\
+                      6x-4y\amp=44\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                Let's begin by multiplying both sides of the first equation by <m>2</m> so that the result added to the second equation eliminates <m>x</m> from the system.
+                <me>
+                  \left\{
+                    \begin{aligned}
+                      \multiplyleft{2}(-3x-y)\amp=\multiplyleft{2}2\\
+                      6x-4y\amp=44\\
+                    \end{aligned}
+                  \right.
+                </me>
+                The system is now:
+                <me>
+                  \left\{
+                    \begin{aligned}
+                      -6x-2y\amp=4\\
+                      6x-4y\amp=44\\
+                    \end{aligned}
+                  \right.
+                </me>
+                Adding the respective sides of the equation results in <me>-6y=48</me>.  Dividing both sides of that equation by <m>-6</m> results in <me>y=-8</me>.  We can substitute <m>-8</m> for <m>y</m> in the equation <m>6x-4y=44</m> and solve the resultant equation to determine the value of <m>x</m>.
+                <md>
+                  <mrow>6x-4(\substitute{-8})\amp=44</mrow>
+                  <mrow>6x+32\amp=44</mrow>
+                  <mrow>6x=32\subtractright{32}\amp=44\subtractright{32}</mrow>
+                  <mrow>6x\amp=12</mrow>
+                  <mrow>\divideunder{6x}{6}\amp=\divideunder{12}{6}</mrow>
+                  <mrow>x\amp=2</mrow>
+                </md>
+                he solution to the given system of equations is the ordered pair <m>(2,-8)</m>.  As always, the reader should verify that the ordered pair satisfies both of the original equations stated in the system.
+              </p>
+            </solution>
+          </exercise>
+
+          <exercise>
+            <statement>
+              <p>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      3x-7y\amp=19\\
+                      5x+3y\amp=17\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                We begin by making the observation that if we multiply both sides of the of the first equation by <m>3</m>and both sides of the second equation by <m>7</m>, then <m>y</m> will be eliminated from the sum of the respective sides.
+                <me>
+                  \left\{
+                    \begin{aligned}
+                      \multiplyleft{3}(3x-7y)\amp=\multiplyleft{3}19\\
+                      \multiplyleft{7}(5x+3y)\amp=\multiplyleft{7}17\\
+                    \end{aligned}
+                  \right.
+                </me>
+                <me>
+                  \left\{
+                    \begin{aligned}
+                      9x-21y\amp=57\\
+                      33x+21y\amp=119\\
+                    \end{aligned}
+                  \right.
+                </me>
+                Adding the respective sides of the last system results in the equation <m>44x=176</m> and dividing both sides of that equation by <m>44</m> gives us <m>x=4</m>.  We can now substitute <m>4</m> for <m>x</m> in the equation <m>5x+3y=17</m> and solve the resultant equation for <m>y</m>.
+                <md>
+                  <mrow>5(\substitute{4})+3y\amp=17</mrow>
+                  <mrow>20+3y\amp=17</mrow>
+                  <mrow>20+3y\subtractright{20}\amp=17\subtractright{20}</mrow>
+                  <mrow>3y\amp=-3</mrow>
+                  <mrow>\divideunder{3y}{3}\amp=\divideunder{-3}{3}</mrow>
+                  <mrow>y\amp=-1</mrow>
+                </md>   
+                The solution to the given system of equations is the ordered pair <m>(4,-1)</m>.  I am confident that the reader will verify the validity of the solution in both of the given equations.
+              </p>
+            </solution>
+          </exercise>
+
+          <exercise>
+            <statement>
+              <p>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      \frac{3}{2}x-\frac{5}{4}y\amp=-40\\
+                      -\frac{2}{5}x+\frac{3}{4}y\amp=14\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                t would probably be best to not even think about variable-elimination until we clear away the fractions from the system.  We shall do the clearing by multiplying both sides of the first equation by <m>4</m> and both sides of the second equation by <m>20</m>.
+                <me>
+                  \left\{
+                    \begin{aligned}
+                      \multiplyleft{4}\left(\frac{3}{2}x-\frac{5}{4}y\right)\amp=\multiplyleft{4}-40\\
+                      \multiplyleft{20}\left(-\frac{2}{5}x+\frac{3}{4}y\right)\amp=\multiplyleft{20}14\\
+                    \end{aligned}
+                  \right.
+                </me>
+                <me>
+                  \left\{
+                    \begin{aligned}
+                      6x-5y\amp=-160\\
+                      -8x+15y\amp=280\\
+                    \end{aligned}
+                  \right.
+                </me>
+              e can eliminate <m>y</m> from the system by multiplying both sides of the first equation by <m>3</m> and adding the respective sides of the first equation to the sides of the second equation.  With a plan in hand, let's proceed.
+                <me>
+                  \left\{
+                    \begin{aligned}
+                      \multiplyleft{3}(6x-5y)\amp=\multiplyleft{3}-160\\
+                      -8x+15y\amp=280\\
+                    \end{aligned}
+                  \right.
+                </me>
+                <me>
+                  \left\{
+                    \begin{aligned}
+                      18x-15y\amp=-480\\
+                      -8x+15y\amp=280\\
+                    \end{aligned}
+                  \right.
+                </me>
+                Adding the respective sides of the latest system results in <m>10x=-200</m> and dividing both sides of the equation by <m>10</m> reveals <m>x=-20</m>.  We can substitute <m>x</m> with <m>-20</m> in the equation <m>6x-5y=-160</m> and solve the result for <m>x</m>.
+                <md>
+                  <mrow>6(\substitute{-20})-5y\amp-160</mrow>
+                  <mrow>-120-5y\amp=-160</mrow>
+                  <mrow>-120-5y\addright{120}\amp=-160\addright{120}</mrow>
+                  <mrow>-5y\amp=-40</mrow>
+                  <mrow>\divideunder{-5y}{-5}\amp=\divideunder{-40}{-5}</mrow>
+                  <mrow>y\amp=8</mrow>
+                </md>
+                The solution to the given system of equations is the ordered pair <m>(-20,8)</m>.  The solution is valid as the reader should confirm in the original (fraction-laden) system.
+              </p>
+            </solution>
+          </exercise>
+
+          <exercise>
+            <statement>
+              <p>
+                <m>
+                  \left\{
+                    \begin{aligned}
+                      y\amp=-2x+2\\
+                      x\amp=\frac{1}{7}y-8\\
+                    \end{aligned}
+                  \right.
+                </m>
+              </p>
+            </statement>
+            <solution>
+            <p>
+              The first thing we need to do is rewrite the system with both equations written in the form <m>ax+by=c</m>.
+              <me>
+                \left\{
+                  \begin{aligned}
+                    y\amp=-2x+2\\
+                    x\amp=\frac{1}{7}y-8\\
+                  \end{aligned}
+                \right.
+              </me>
+              <me>
+                \left\{
+                  \begin{aligned}
+                    \addleft{2x}y\amp=\substitute{2x}-2x+2\\
+                    x\subtractright{\frac{1}{7}y}\amp=\frac{1}{7}y-8\subtractright{\frac{1}{7}y}\\
+                  \end{aligned}
+                \right.
+              </me>
+              <me>
+                \left\{
+                  \begin{aligned}
+                    2x+y\amp=2\\
+                    x-\frac{1}{7}y\amp=-8\\
+                  \end{aligned}
+                \right.
+              </me>
+              We could now clear the fraction from the second equation, but the author is choosing instead to multiply both sides of the second equation (as is) by <m>-2</m> with the goal of <m>x</m>-elimination in mind.
+                <me>
+                  \left\{
+                    \begin{aligned}
+                      2x+y\amp=2\\
+                      \multiplyleft{-2}\left(x-\frac{1}{7}y\right)\amp=\multiplyleft{-2}-8\\
+                    \end{aligned}
+                  \right.
+                </me>
+                <me>
+                  \left\{
+                    \begin{aligned}
+                      2x+y\amp=2\\
+                      -2x+\frac{2}{7}y\amp=16\\
+                    \end{aligned}
+                  \right.
+                </me>
+                Adding the respective sides of the two equations results in <m>\frac{9}{7}y=18</m> and multiplying both sides of that equation by <m>\frac{7}{9}</m> leaves us with <m>y=14</m>.  We now substitute <m>14</m> for <m>y</m> in the equation <m>x=\frac{1}{7}y-8</m> to determine the value of <m>x</m>.
+                <md>
+                  <mrow>x\amp=\frac{1}{7}\multiplyright{14}-8</mrow>
+                  <mrow>x\amp=2-8</mrow>
+                  <mrow>x\amp=-6</mrow>
+                  </md>
+                The solution to the given system of equations is the ordered pair <m>(-6,14)</m> which the reader will surely confirm.
+              </p>
+            </solution>
+          </exercise>
+
+        </exercisegroup>
+
+      </exercises>
+
+    </section>

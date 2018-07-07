@@ -9,12 +9,12 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="better-prepared-workshop-materials">
-    <title>Be Better Prepared - Math Review Materials</title>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="imaginary-and-complex-numbers-materials">
+    <title>Imaginary and Complex Numbers</title>
 
-      <xi:include href="./workshop-exponents-scientific-notation.ptx" />
-      <xi:include href="./workshop-functions.ptx" />
-
+      <xi:include href="./imaginary-numbers.ptx" />
+      <xi:include href="./complex-numbers.ptx" />
+      <xi:include href="./imaginary-and-complex-numbers-additional-practice.ptx" />
 
 
 </chapter>

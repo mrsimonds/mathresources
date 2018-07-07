@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="rationals-additional-practice">
+  <title>Additional Practice Related to Rational Expressions and Rational Equations</title>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          State the domain of each function using interval notation.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=\frac{(x-4)(x+1)}{(x-2)(x-4)}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The domain of <m>f</m> is <m>(-\infty,2) \cup (2,4) \cup (4,\infty)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>g(x)=\frac{x^2-5x-14}{x^2+9x+20}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The domain of <m>g</m> is <m>(-\infty,-5) \cup (-5,-4) \cup (-4,\infty)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>h(x)=\frac{x^2+9}{3x^3-75x}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The domain of <m>h</m> is <m>(-\infty,-5) \cup (-5,0) \cup (0,5) \cup (5,\infty)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Simplify each expression.  Make sure that you state any necessary domain restrictions.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{x^2-5x-14}{x^2-49}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{x^2-5x-14}{x^2-49}=\frac{x+2}{x+7}</m>, <m>x \neq 7</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{x^3+9x}{x^3-9x}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{x^3+9x}{x^3-9x}=\frac{x^2+9}{(x-3)(x+3)}</m>, <m>x \neq 0</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{x^2-15x+54}{9-x}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{x^2-15x+54}{9-x}=6-x</m>, <m>x \neq 9</m>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Multiply or divide as indicated.  Completely simplify each result and state any necessary domain restrictions.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{x+6}{x-7} \cdot \frac{2x-14}{x+12}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{x+6}{x-7} \cdot \frac{2x-14}{x+12}=\frac{2(x+6)}{x+12}</m>, <m>x \neq 7</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{x}{x-8} \div \frac{x^3-64x}{x+12}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{x}{x-8} \div \frac{x^3-64x}{x+12}=\frac{x+12}{(x+8)(x-8)^2}</m>, <m>x \neq 0</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>(x+3) \div \frac{x^2+9}{x+3}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>(x+3) \div \frac{x^2+9}{x+3}=\frac{(x+3)^2}{x^2+9}</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{x^2-8x+16}{x} \div (x^2-3x-4)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{x^2-8x+16}{x} \div (x^2-3x-4)=\frac{x-4}{x(x+1)}</m>, <m>x \neq 4</m>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Add or subtract as indicated.  Completely simplify each result and state any necessary domain restrictions.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{x^2}{x^2+2x+1}-\frac{3x+4}{x^2+2x+1}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{x^2}{x^2+2x+1}-\frac{3x+4}{x^2+2x+1}=\frac{x-4}{x+1}</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{2x+7}{x+4}-\frac{x-5}{x-4}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{2x+7}{x+4}-\frac{x-5}{x-4}=\frac{x^2-8}{(x-4)(x+4)}</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{x}{x-14}+\frac{14}{14-x}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{x}{x-14}+\frac{14}{14-x}=1</m>, <m>x \neq 14</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{x+1}{x^2-5x+6}+\frac{x+1}{x^2-4x+4}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{x+1}{x^2-5x+6}+\frac{x+1}{x^2-4x+4}=\frac{(x+1)(2x-5)}{(x-3)(x-2)^2}</m>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Completely simplify each complex fraction.  You do not need to address any domain restrictions.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{\frac{21}{x+7}}{\frac{3}{x+7}}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{\frac{21}{x+7}}{\frac{3}{x+7}}=7</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{\frac{8}{x^2-4}}{\frac{16x+24}{x-2}}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{\frac{8}{x^2-4}}{\frac{16x+24}{x-2}}=\frac{1}{(2x+3)(x+2)}</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{\frac{1}{x+2}+\frac{1}{x-1}}{\frac{1}{x-1}}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{\frac{1}{x+2}+\frac{1}{x-1}}{\frac{1}{x-1}}=\frac{2x+1}{x+2}</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{3}{\frac{x}{x+4}-\frac{2}{x}}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{3}{\frac{x}{x+4}-\frac{2}{x}}=\frac{3x(x+4)}{(x-4)(x+2)}</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{\frac{1}{x+8}-\frac{1}{x}}{x}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{\frac{1}{x+8}-\frac{1}{x}}{x}=-\frac{8}{x^2(x+8)}</m>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine the solution set to each equation.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{3}{2x+1}=\frac{5}{4x-3}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\{7\}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{x}{x+4}+\frac{1}{x-2}=1</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\{4\}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{6}{x^2-9x+14}-\frac{4}{x-7}=\frac{3}{x-2}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\{5\}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>x-\frac{7x}{x-2}=1-\frac{14}{x-2}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\{8\}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine the solution for each application problem.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            Two trains are cruising through the plains of Canada.  One train is westbound and the other eastbound.  They both travel at constant speeds with the westbound train traveling at a rate that is 20 km/hr faster than the rate at which the eastbound train is traveling.  Over a certain period of time, the faster train travels 265 km while the slower train travels only 215 km.  What is the constant speed of each train?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The faster (westbound) train moves at the speed of <m>106</m> km/hr while the slower (eastbound) train moves at a speed of <m>86</m> km/hr.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Trujillo home improvement has been awarded the contract for a small bathroom remodel.  Working alone, Pedro, who has been working for the company for several years, could get the job done in <m>8</m> hours.  Working alone, it would take newly hired Julia <m>12</m> hours to complete the job.  Assuming that they can maintain their individual paces, how long would it take Pedro and Julia to complete the job if they work together?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Working together, Pedro and Julia can complete the job in <m>4.8</m> hours.
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+</section>

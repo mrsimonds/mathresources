@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="polynomials-terminology">
+    <title>Polynomial Terminology</title>
+
+    <p>
+      A polynomial term is an expression that can be written as the product of a constant and variables raised to whole number powers.  The constant factor is called the coefficient of the term and the sum of the exponents is called the degree of the term.
+    </p>
+    <p>
+      For example, consider <me>15x^6</me>.  The coefficient of the term is the constant factor <m>15</m> and the degree of the term is equal to the exponent, <m>6</m>.
+    </p>
+    <p>
+       Now consider <me>-x^5y^3</me>.  The expression could be written as <me>-1 \cdot x^5y^3</me>, so the coefficient is <m>-1</m>.  The degree is equal to the sum of the two exponents, <m>8</m>.
+    </p>
+    <p>
+        Let's consider the expressions <m>6x</m> and <m>15</m>.
+      </p>
+      <p>
+      The first expression could be written as <me>6x^1</me>, so it is a polynomial term and the degree is <m>1</m>.  Polynomial terms with a degree of one are called linear terms.
+    </p>
+    <p>
+      The second expression would be written as <me>15x^0</me>, so it is a polynomial term and the degree is <m>0</m>.  Polynomial terms with a degree of zero are called constant terms.
+    </p>
+    <p>
+      A single polynomial term or an expression that can be written as the sum of two or more polynomial terms is called a polynomial.  A polynomial with only one term is further called a monomial.  A polynomial with exactly two terms is called a binomial, and a polynomial with exactly three terms is called a trinomial.  We do not have common clarifying names for polynomials that contain more than three terms.
+    </p>
+    <p>
+      It is important to remember that the terms of a polynomial are added.  Because of this, terms proceeded by a subtraction sign are always negative (assuming that nobody is trying to trick you by successive subtraction/negation signs).  For example, consider <me>4x-7</me>.  This is a binomial, and the terms are the linear term <m>4x</m> and the constant term <m>-7</m>.  The reason the constant term is negative is because we define a polynomial with more than one term as the sum of polynomial terms, so we have to think about <m>4x-7</m> as the sum <me>4x+(-7)</me> to correctly identify the terms.
+    </p>
+    <p>
+      The greatest degree of any one term in a polynomial is also called the degree of the polynomial.  For example, consider the trinomial <me>x^4-5x^2-6</me>.  The terms of the trinomial are<me>x^4,\,-5x^2,\text{ and}-6</me>and the degrees of the terms are, respectively, <m>4</m>, <m>2</m>, and <m>0</m>.  So the degree of the trinomial is also <m>4</m>, the greatest degree of any one term of the trinomial.
+    </p>
+    <p>
+      The term with greatest degree is called the leading term of a polynomial and its coefficient is called the leading coefficient of the polynomial.  One reason such a term is called the leading term is that absent a compelling reason to do otherwise, we tend to write the terms of a polynomial in descending order of degree.  For example, consider the polynomial<me>3x+x^3+4-x^2</me>.  The leading term of the polynomial is <m>x^3</m> and the leading coefficient is one (because the term could be written as <m>1 \cdot x^3</m>). It seems peculiar to refer to the second term as the leading term, but this is a manifestation of the peculiar order in which the terms are written.  If we listed the terms in order of decreasing degree (which is the norm), it would seem quite natural to refer to <m>x^3</m> as the leading term.  To wit:
+      <me>x^3-x^2+3x+4</me>.
+      When there are more than one variable in some or all of the terms we try to maintain alphabetic order unless other issues (such as listing the terms in order of decreasing degree) trump alphabetization.
+    </p>
+    <p>
+      For any given term, we almost always list the variables in alphabetical order <mdash/> this is helpful in identifying common terms, a topic discussed in the next section.  So, for example, it is simply not cool to write <m>15yx</m>, we want to stay alphabetical and write <m>15xy</m>.  Exponents play no role in this decision.  If the factors of the term were <m>x^4</m>, <m>y^2</m>, and <m>z^8</m>, we would write the term as <m>x^4y^2z^8</m> without hesitation.  Again, this has to do with an important skill that will be discussed in the next section.
+    </p>
+    <p>
+      Sometimes a polynomial with more than one variable will have more than one leading term.  For example, consider <me>x^2+xy+y^2</me>.  The degree of each of the terms is two (the middle term's degree coming from the sum of the unwritten exponents of <m>1</m>).  So all of the terms are leading terms.  Notice that I chose to write the terms and factors in alphabetical order <mdash/> that's just what we do.
+    </p>
+      
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Questions vary.
+          </p>
+        </introduction>
+
+
+        
+        <exercise>
+          <statment>
+            <p>
+              Identify the degree, the leading term, the leading coefficient, the linear term(s), and the constant term for the following polynomial.
+                <me>-4x^{6}+3x^{4}+7x^3+x-10</me>
+              </p>
+            </statment>
+            <solution>
+              <p>
+                The degree is <m>6</m>, the leading term is <m>-4x^6</m>, the leading coefficient is <m>-4</m>, the linear term is <m>x</m>, and the constant term is <m>-10</m>.
+              </p>
+            </solution>
+          </exercise>
+        
+        <exercise>
+          <statment>
+            <p>
+              Identify the degree, the leading term, the leading coefficient, the linear term(s), and the constant term for the following polynomial.
+                <me>3-4x+3x^2-10x^3-12x^4</me>
+              </p>
+            </statment>
+            <solution>
+              <p>
+                The degree is <m>4</m>, the leading term is <m>-12x^4</m>, the leading coefficient is <m>-12</m>, the linear term is <m>-4x</m>, and the constant term is <m>3</m>.
+              </p>
+            </solution>
+          </exercise>
+        
+        <exercise>
+          <statment>
+            <p>
+              Identify the degree, the leading term, the leading coefficient, the linear term(s), and the constant term for the following polynomial.
+                <me>4x^2+x^2y^2+4y^2</me>
+              </p>
+            </statment>
+            <solution>
+              <p>
+                The degree is <m>4</m>, the leading term is <m>x^2y^2</m>, the leading coefficient is <m>1</m>, there are neither any linear terms nor a constant term.
+              </p>
+            </solution>
+          </exercise>
+        <exercise>
+          <statment>
+            <p>
+              Identify each of the following as a trinomial, binomial, monomial, or not any of those type of polynomial.
+                <me>5x^3-3x</me>
+                <me>1+x^2-9x^4</me>
+                <me>x^2y^2+6</me>
+                <me>5x^3-7x^2-8x-14</me>
+                <me>x^4y^7z^8</me>
+              </p>
+            </statment>
+            <solution>
+              <p>
+                <me>5x^3-3x\text{ is a binomial}</me>
+                <me>1+x^2-9x^4\text{ is a trinomial}</me>
+                <me>x^2y^2+6\text{ is a binomial}</me>
+                <me>5x^3-7x^2-8x-14\text{ is not a trinomial, binomial, or monomial}</me>
+                <me>x^4y^7z^8\text{ is a monomial}</me>
+              </p>
+            </solution>
+          </exercise>
+
+        </exercisegroup>
+
+      </exercises>
+
+    </section>
+              

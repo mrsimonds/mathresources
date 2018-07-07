@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="radicals-combining-square-roots">
+  <title>Adding and Subtracting Square Root Expressions</title>
+
+  <p>
+    Combining square roots expressions is similar to combining other like terms.  For example, two square roots of three added to five square roots of three results in seven square roots of three.  Symbolically:
+          <me>5\sqrt{3}+2\sqrt{3}=7\sqrt{3}</me>
+    Something that is radically differently about combing square roots, however, is that it is not always immediately apparent what terms are in fact like terms.  For example, at first glance you might think that <m>/sqrt{5}</m> and <m>\sqrt{20}</m> cannot be combined, but in fact they can.  Specifically:
+    <md>
+      <mrow>\sqrt{5}+\sqrt{20}\amp=\sqrt{5}+2\sqrt{5}</mrow>
+      <mrow>\amp=3\sqrt{5}</mrow>
+    </md>
+    The last example illustrates a key step when simplifying expressions that contain several terms with square root factors.  Each and every term must first be simplified, including rationalizing denominators, and then any and all like terms must be combined  After all of the terms have been simplified, the like terms are the terms that contain exactly the same square root factors.  Several examples follow.
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Simplify <m>4\sqrt{12}+\frac{9}{\sqrt{3}}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by simplifying <m>\sqrt{12}</m> and rationalizing the denominator in the expression <m>\frac{9}{\sqrt{3}}</m>.  We then further simplify each term and finally combine the like terms.
+        <md>
+          <mrow>4\highlightr{\sqrt{12}}+\frac{9}{\sqrt{3}}\amp=4 \cdot \highlightr{2 \sqrt{3}}+\frac{9}{\sqrt{3}} \cdot \highlight{\frac{\sqrt{3}}{\sqrt{3}}}</mrow>
+          <mrow>\amp=8\sqrt{3}+\frac{9 \cdot \sqrt{3}}{3}</mrow>
+          <mrow>\amp=8\sqrt{3}+3\sqrt{3}</mrow>
+          <mrow>\amp=11\sqrt{3}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Simplify <m>5\sqrt{81}-2\sqrt{18}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by simplifying <m>\sqrt{81}</m> and <m>\sqrt{18}</m>.  We then further simplify each term.  We take no further actions because there are no like terms.
+        <md>
+          <mrow>5\highlightr{\sqrt{81}}-2\highlight{\sqrt{18}}\amp=5 \cdot \highlightr{9}-2 \cdot \highlight{3  \sqrt{2}}</mrow>
+          <mrow>\amp=45-6\sqrt{2}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Simplify <m>\frac{14}{\sqrt{98}}-\frac{\sqrt{32}}{2}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by simplifying <m>\sqrt{32}</m> and rationalizing the denominator in the expression <m>\frac{14}{\sqrt{98}}</m>.  We then further simplify each term and finally combine the like terms.
+        <md>
+          <mrow>\frac{14}{\sqrt{98}}-\frac{\highlightr{\sqrt{32}}}{2}\amp=\frac{14}{\sqrt{98}} \cdot \highlight{\frac{\sqrt{98}}{\sqrt{98}}}-\frac{\highlightr{4  \sqrt{2}}}{2}</mrow>
+          <mrow>\amp=\frac{14 \cdot \highlight{\sqrt{98}}}{98}-2\sqrt{2}</mrow>
+          <mrow>\amp=\frac{14 \cdot \highlight{7 \cdot \sqrt{2}}}{98}-2\sqrt{2}</mrow>
+          <mrow>\amp=\sqrt{2}-2\sqrt{2}</mrow>
+          <mrow>\amp=-\sqrt{2}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Simplify <m>\sqrt{50}+\sqrt{20}-\sqrt{125}+\sqrt{8}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by simplifying all four square roots expressions.  We the combine the like terms.
+        <md>
+          <mrow>\sqrt{50}+\sqrt{20}-\sqrt{125}+\sqrt{8}\amp=5\sqrt{2}+2\sqrt{5}-5\sqrt{5}+2\sqrt{2}</mrow>
+          <mrow>\amp=7{\sqrt{2}}-3\sqrt{5}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Expand and simplify <m>(4+\sqrt{12})^2</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by writing the expression as the product of two factors.  We then expand that expression, simplify <m>\sqrt{12}</m>, and combine the like terms.
+        <md>
+          <mrow>(4+\sqrt{12})^2\amp=(4+\sqrt{12})(4+\sqrt{12})</mrow>
+          <mrow>\amp=16+4\highlightr{\sqrt{12}}+4\highlightr{\sqrt{12}}+12</mrow>
+          <mrow>\amp=16+4 \cdot \highlightr{2\sqrt{3}}+4 \cdot \highlightr{2\sqrt{3}}+12</mrow>
+          <mrow>\amp=16+8\sqrt{3}+8\sqrt{3}+12</mrow>
+          <mrow>\amp=28+16\sqrt{3}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Expand and simplify <m>(7-\sqrt{24})(7+\sqrt{24})</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by expanding the product.  We then combine the like terms.  Note that there is no need to simplify the radical expressions since they sum to zero.
+        <md>
+          <mrow>(7-\sqrt{24})(7+\sqrt{24})\amp=49+7\sqrt{24}-7\sqrt{24}-24</mrow>
+          <mrow>\amp=25</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Combine all like terms after first simplifying each term containing a square root.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\sqrt{2}+\sqrt{8}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by simplifying <m>\sqrt{8}</m>.  We then combine like terms.
+            <md>
+              <mrow>\sqrt{2}+\highlightr{\sqrt{8}}\amp=\sqrt{2}+\highlightr{2\sqrt{2}}</mrow>
+              <mrow>\amp=3\sqrt{2}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\sqrt{9}+\sqrt{18}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by simplifying <m>\sqrt{18}</m>.  We take no further actions because there are no like terms.
+            <me>\sqrt{9}+\highlightr{\sqrt{18}}=3+\highlightr{3\sqrt{2}}</me>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>4\sqrt{8}-7\sqrt{18}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by simplifying <m>\sqrt{8}</m> and <m>\sqrt{18}</m>.  We then further simplify the terms and finally combine the like terms.
+            <md>
+              <mrow>4\highlightr{\sqrt{8}}-7\highlight{\sqrt{18}}\amp=4 \cdot \highlightr{2\sqrt{2}}-7 \cdot \highlight{3\sqrt{2}}</mrow>
+              <mrow>\amp=8\sqrt{2}-21\sqrt{2}</mrow>
+              <mrow>\amp=-13\sqrt{2}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>(\sqrt{6}+\sqrt{2})^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by expanding the product.  We then simplify <m>\sqrt{12}</m> and finally we combine the like terms.
+            <md>
+              <mrow>(\sqrt{6}+\sqrt{2})^2\amp=(\sqrt{6}+\sqrt{2})(\sqrt{6}+\sqrt{2})</mrow>
+              <mrow>\amp=6+\highlightr{\sqrt{12}}+\highlightr{\sqrt{12}}+2</mrow>
+              <mrow>\amp=6+\highlightr{2\sqrt{3}}+\highlightr{2\sqrt{3}}+2</mrow>
+              <mrow>\amp=8+4\sqrt{3}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>(\sqrt{8}+2)(\sqrt{8}-2)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by expanding the product and we then combine the like terms.  Note that there is no reason to simplify the radical terms since they sum to zero.
+            <md>
+              <mrow>(\sqrt{8}+2)(\sqrt{8}-2)\amp=8-2\sqrt{8}+2\sqrt{8}-4</mrow>
+              <mrow>\amp=4</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>5\sqrt{12}+\frac{6}{\sqrt{3}}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by simplifying <m>\sqrt{12}</m> and rationalizing the denominator in the expression <m>\frac{6}{\sqrt{3}}</m>.  We then further simplify the terms and finally combine the like terms.
+            <md>
+              <mrow>5\highlightr{\sqrt{12}}+\frac{6}{\sqrt{3}}\amp=5 \cdot \highlightr{2\sqrt{3}}+\frac{6}{\sqrt{3}} \cdot \highlight{\frac{\sqrt{3}}{\sqrt{3}}}</mrow>
+              <mrow>\amp=10\sqrt{3}+\frac{6\sqrt{3}}{3}</mrow>
+              <mrow>\amp=10\sqrt{3}+2\sqrt{3}</mrow>
+              <mrow>\amp=12\sqrt{3}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{2}{\sqrt{6}}-4\sqrt{8}+2\sqrt{150}+\frac{1}{\sqrt{18}}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by simplifying <m>\sqrt{8}</m> and <m>\sqrt{150}</m> and rationalizing the denominators in the expressions <m>\frac{2}{\sqrt{6}}</m> and <m>\frac{1}{\sqrt{18}}</m>.  We then further simplify each term and finally combine the like terms.
+            <md>
+              <mrow>\amp \frac{2}{\sqrt{6}}-4\highlightr{\sqrt{8}}+2\highlightb{\sqrt{150}}+\frac{1}{\sqrt{18}}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\frac{2}{\sqrt{6}}\highlight{\cdot\frac{\sqrt{6}}{\sqrt{6}}}-4 \cdot \highlightr{2\sqrt{2}}+2 \cdot \highlightb{5\sqrt{6}}+\frac{1}{\sqrt{18}}\highlight{\cdot\frac{\sqrt{18}}{\sqrt{18}}}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\frac{2\sqrt{6}}{6}-8\sqrt{2}+10\sqrt{6}+\frac{\highlight{\sqrt{18}}}{18}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\frac{\sqrt{6}}{3}-8\sqrt{2}+10\sqrt{6}+\frac{\highlight{3\sqrt{2}}}{18}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\highlightr{\frac{\sqrt{6}}{3}}\highlight{-8\sqrt{2}}\highlightr{+10\sqrt{6}}\highlight{+\frac{\sqrt{2}}{6}}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\highlightr{\frac{\sqrt{6}}{3}+10\sqrt{6}}\highlight{+\frac{\sqrt{2}}{6}-8\sqrt{2}}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\highlightr{\frac{\sqrt{6}}{3}+\frac{30\sqrt{6}}{3}}\highlight{+\frac{\sqrt{2}}{6}-\frac{48\sqrt{2}}{6}}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} =\highlightr{\frac{31\sqrt{6}}{3}}-\highlight{\frac{47\sqrt{2}}{6}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+</section>

@@ -9,24 +9,15 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-final-exam-review">
-    <title>Final Exam Review</title>
-    <p>
-      Thanks to Ann Cary for providing these review materials.
-    </p>
-
-    <p>
-      The finals will open in a new window.
-    </p>
-    <p>
-       <url href="Math_65_Practice_Final_Exam.pdf" target="blank">MTH 65 Final Exam Review <mdash/> with answer key!</url>
-    </p>
-    <p>
-       <url href="Math_95_Final_Exam_Review.pdf" target="blank">MTH 95 Final Exam Review</url>
-    </p>
-    <p>
-       <url href="Math_95_Final_Exam_Review_Key.pdf" target="blank">MTH 95 Final Exam Review Solutions</url>
-    </p>
-
-     
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="radicals-videos">
+  <title>Videos Created by Ann Cary and Scot Leavitt.</title>
+  <p>
+    The links take you to YouTube Playlists which will open either in a new window or in a Youtube App.
+    <ul>
+      <li>
+        <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-ex0-JuRQ4P920Qz1x5LwUO" target="blank">Square root properties</url>
+      </li>
+    </ul>
+  </p>
 </section>
+

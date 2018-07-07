@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="polynomials-videos">
+    <title>Videos Created by Ann Cary and Scot Leavitt.</title>
+      
+          <p>The links take you to YouTube Playlists which will open either in a new window or in a Youtube App.
+          <ul>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-ef9FnOLhpBG_Z0sQd6-7s-" target="blank">Addition and subtraction of polynomials</url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-f68uz_9tWNiLf9GRkurveh" target="blank">Multiplication of polynomials</url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-cl21nlu-cPnDREmZnzNvOg" target="blank">Special cases of polynomial multiplication</url>
+            </li>
+            <li>
+              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-dvZk2B452d9mN6V6DIHx_s" target="blank">Division of polynomials by monomials</url>
+            </li>
+          </ul>
+        </p>
+         
+    </section>

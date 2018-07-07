@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="systems-subsitution-method">
+    <title>Solving Systems Using the Substitution Method</title>
+
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        Consider the linear system of equations stated below.
+        <me>
+          \left\{
+          \begin{aligned}
+            2x-5y\amp=7\\
+            2x+y\amp=3\\
+          \end{aligned}
+        \right.
+      </me>
+      </p>
+
+      <figure xml:id="systems-substitution-figure-1">
+        <caption><m>2x-5y=7</m> and <m>2x+y=3</m></caption>
+          <image>
+            <description>plain text</description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}
+                  \addplot[primarycurve,domain=-6.9:6.9] {2*x/5-7/5};
+                  \addplot[primarycurve,domain=-1.9:4.9,color=blue] {3-2*x};  
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+      </figure>
+
+    </sidebyside>
+    <p>
+      The system is graphed <xref ref="systems-substitution-figure-1">Figure</xref>. The system is clearly consistent, but there is no way to visually determine the exact solution based upon the graph.  If we were working with graphing technology, the software could undoubtedly determine the exact solution, but dependent upon the decimal form of the coordinates of the points, we may only be able to recognize an approximation of the solution.
+    </p>
+    <p>
+      Surely people were able to determine the solution to that system before the advent of graphing technology.  Indeed they were.  There actually are several processes for determining the solution to linear systems of two equations with two unknowns.  In this section we are going to explore one of those processes, the process of substitution.
+    </p>
+    <p>
+      Referring again to 
+      <me>
+        \left\{
+          \begin{aligned}
+            2x-5y\amp=7\\
+            2x+y\amp=3\\
+          \end{aligned}
+        \right.
+      </me>
+      we can see that we could easily isolate <m>y</m> the second equation.  Let's go ahead and do that.
+      <md>
+        <mrow>2x+y\amp=3</mrow>
+        <mrow>2x+y\subtractright{2x}\amp=3\subtractright{2x}</mrow>
+        <mrow>y\amp=-2x+3</mrow>
+      </md>
+      Since the solution to the system must satisfy both equations in the system, it's got to be the case that the <m>y</m>-coordinate is equal to <m>-2x+3</m>.  We can use that fact to reduce the number of variables in the first equation to one by substituting the expression <m>-2x+3</m> for <m>y</m>. We can then solve the resultant equation for <m>x</m>.  Let's go ahead and do that.
+      <md>
+        <mrow>2x-5\highlight{y}\amp=7</mrow>
+        <mrow>2x-5(\highlight{-2x+3})\amp=7</mrow>
+        <mrow>2x+10x-15\amp=7</mrow>
+        <mrow>12x-15\amp=7</mrow>
+        <mrow>12x-15\addright{15}\amp=7\addright{15}</mrow>
+        <mrow>12x\amp=22</mrow>
+        <mrow>\divideunder{12x}{12}\amp=\divideunder{22}{12}</mrow>
+        <mrow>x\amp=\frac{11}{6}</mrow>
+      </md>
+      So the solution has an <m>x</m>-coordinate of <m>\frac{11}{6}</m>.  Let's substitute that value for <m>x</m> in the equation <m>y=-2x+3</m> and simplify to determine the <m>y</m>-coordinate of the solution.
+      <md>
+        <mrow>y\amp=-2\highlight{x}+3</mrow>
+        <mrow>y\amp=-2\left(\highlight{\frac{11}{6}}\right)+3</mrow>
+        <mrow>y\amp=-\frac{11}{3}+\frac{9}{3}</mrow>
+        <mrow>y\amp=-\frac{2}{3}</mrow>
+      </md>
+      So the solution to the system of equations is the ordered pair <m>\left(\frac{11}{6},-\frac{2}{3}\right)</m>.  Let's verify.
+      <me>
+        \left\{
+          \begin{aligned}
+            2\left(\highlight{\frac{11}{6}}\right)-5\left(\highlightr{-\frac{2}{3}}\right)\amp=7\,?\\
+            2\left(\highlight{\frac{11}{6}}\right)+\left(\highlightr{-\frac{2}{3}}\right)\amp=3\,?\\
+          \end{aligned}
+        \right.
+      </me>
+      <me>
+        \left\{
+          \begin{aligned}
+            \frac{11}{3}+\frac{10}{3}\amp=7\,?\\
+            \frac{11}{3}-\frac{2}{3}\amp=3\,?\\
+          \end{aligned}
+        \right.
+      </me>
+      <me>
+        \left\{
+          \begin{aligned}
+            \frac{21}{3}\amp=7\,\checkmark\\
+            \frac{9}{3}\amp=3\,\checkmark\\
+          \end{aligned}
+        \right.
+      </me>
+      The usual process of using substitution to solve a system of two linear equations with two unknowns is outlined below.  This is the process used when exactly one ordered pair satisfies the system.  Some of the steps are different in other situations <mdash/> those situations will be discussed later.
+      <ol label="1">
+        <li>
+          Isolate one of the variables in one of the equations.  If you can, choose a variable and equation that will not result in unnecessary fractions.
+        </li>
+        <li>
+          Substitute the expression on the other side of the isolated variable for that variable in the other equation.
+        </li>
+        <li>
+          You now have an equation with only one variable.  Go ahead and solve that equation for the remaining variable.
+        </li>
+        <li>
+          Substitute the value you determined in step 3 into the equation you found in step 1 to determine the value of the variable you isolated in step 1.
+        </li>
+        <li>
+          Check your solution in both equations, and assuming it is correct, state your solution.  If the solution is not correct, find your mistake and/or rework the problem from scratch.
+        </li>
+      </ol>
+      Let's see the steps in action.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution to the system stated below.
+          <me>
+              \left\{
+              \begin{aligned}
+                3x-4y\amp=-17\\
+                2x+4y\amp=2\\
+              \end{aligned}
+              \right.
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>Step 1</p>
+        <p>
+          We need isolate one of the variables in one of the equations.  I choose to isolate <m>x</m> in the second equation, because any other choice will lead to unnecessary fractions.
+          <md>
+            <mrow>2x+4y\amp=2</mrow>
+            <mrow>2x+4y\subtractright{4y}\amp=2\subtractright{4y}</mrow>
+            <mrow>2x\amp=-4y+2</mrow>
+            <mrow>\multiplyleft{\frac{1}{2}}2x\amp=\multiplyleft{\frac{1}{2}}(-4y+2)</mrow>
+            <mrow>x\amp=-2y+1</mrow>
+          </md>
+        </p>
+        <p>Steps 2 and 3</p>
+        <p>
+          We now substitute the expression <m>-2y+1</m> for <m>x</m> in the first equation stated in the system.  We then go ahead and solve that equation for <m>y</m>.
+          <md>
+            <mrow>3\highlight{x}-4y\amp=-17</mrow>
+            <mrow>3(\highlight{-2y+1})-4y\amp=-17</mrow>
+            <mrow>-6y+3-4y\amp=-17</mrow>
+            <mrow>-10y+3\amp=-17</mrow>
+            <mrow>-10y+3\subtractright{3}\amp=-17\subtractright{3}</mrow>
+            <mrow>-10y\amp=-20</mrow>
+            <mrow>\divideunder{-10y}{-10}\amp=\divideunder{-20}{-10}</mrow>
+            <mrow>y\amp=2</mrow>
+          </md>
+        </p>
+        <p>Step 4</p>
+        <p>
+          We now substitute <m>2</m> for <m>y</m> in the equation <m>x=-2y+1</m> to determine the value of <m>x</m>.
+          <md>
+            <mrow>x\amp=-2(\highlight{2})+1</mrow>
+            <mrow>x\amp=-3</mrow>
+          </md> 
+        </p>
+        <p>Step 5</p>
+        <p>
+          We now check our solution and state our conclusion.
+          <me>
+            \left\{
+              \begin{aligned}
+                3(\highlight{-3})-4(\highlightr{2})\amp=-17\,?\\
+                2(\highlight{-3})+4(\highlightr{2})\amp=2\,?\\
+              \end{aligned}
+            \right.
+          </me>
+          <me>
+            \left\{
+              \begin{aligned}
+                -9-8\amp=-17\,\checkmark\\
+                -6+8\amp=2\,\checkmark\\
+              \end{aligned}
+            \right.
+          </me>
+          The solution to the stated system of equations is the ordered pair <m>(-3,2)</m>.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      We now turn our attention to the manner in which we recognize that a linear system of two equations has no solutions or an "infinite number" of solutions, the latter case occurring when the two equations are equivalent.  The process begins as if we were trying to find the unique ordered pair that satisfies the system.  The signal that we are in an usual situation occurs in step 3 of that process.  Let's see how.
+      <ol label="1">
+        <li>
+          Isolate one of the variables in one of the equations.  If you can, choose a variable and equation that will not result in unnecessary fractions.
+        </li>
+        <li>
+          Substitute the expression on the other side of the isolated variable for that variable in the other equation.
+        </li>
+        <li>
+          You now have an equation with only one variable.  Go ahead and try to solve that equation for the remaining variable.  The thing that indicates that something unusual is afoot is when the variable disappears.  If that occurs, and what is left behind is a false statement (called a contradiction) such as <m>2=5</m>, you can conclude that there are no ordered pairs that satisfy both equations in the system. If the variable disappears and you are left with an equation that is always true (called an identity) such as <m>7=7</m>, you can conclude that the two equations in the system are different representations of the same line, and as such every ordered pair that falls on that line is a solution to the system.
+        </li>  
+      </ol>
+      The easiest way to check that either of these two solution types is correct is to manipulate both equations from the system into slope-intercept form.  If the two equations really share no common ordered pairs, the two corresponding lines will have the same slope but different <m>y</m>-intercepts.  If the two equations are equivalent, then the slope-intercept forms of their equations will be identical.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Use the method of substitution to determined all solutions to the following system of equations.            
+          <me>
+            \left\{
+              \begin{aligned}
+                2x-6y\amp=12\\
+                -x+3y\amp=-6\\
+              \end{aligned}
+            \right.
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by isolating <m>x</m> in the second equation from the system.
+          <md>
+            <mrow>-x+3y\amp=-6</mrow>
+            <mrow>-x+3y\subtractright{3y}\amp=-6\subtractright{3y}</mrow>
+            <mrow>-x\amp=-3y-6</mrow>
+            <mrow>\multiplyleft{-1}-x\amp=\multiplyleft{-1}(-3y-6)</mrow>
+            <mrow>x\amp=3y+6</mrow>
+          </md>
+          We now substitute <m>3y+6</m> for <m>x</m> in the first equation in the system.
+          <md>
+            <mrow>2\highlight{x}-6y\amp=12</mrow> 
+            <mrow>2(\highlight{3y+6})-6y\amp=12</mrow>
+            <mrow>6y+12-6y\amp=12</mrow>
+            <mrow>12\amp=12</mrow>
+          </md>
+          We've arrived at an identity, so we conclude that the two equations in the system are two representations of the same line, and that every ordered pair that falls on that line is a solution to the system of equations.  We can check by manipulating both equations into slope-intercept form and making sure that the two results are identical.
+        </p>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              <md>
+                <mrow>2x-6y\amp=12</mrow>
+                <mrow>2x-6y\subtractright{2x}\amp=12\subtractright{2x}</mrow>
+                <mrow>-6y\amp=-2x+12</mrow>
+                <mrow>\multiplyleft{-\frac{1}{6}}-6y\amp=\multiplyleft{-\frac{1}{6}}(-2x+12)</mrow>
+                <mrow>y\amp=\frac{1}{3}x-2</mrow>
+              </md>
+            </p>
+
+            <p>
+              <md>
+                <mrow>-x+3y\amp=-6</mrow>
+                <mrow>-x+3y\addright{x}\amp=-6\addright{x}</mrow>
+                <mrow>3y\amp=x-6</mrow>
+                <mrow>\multiplyleft{\frac{1}{3}}3y\amp=\multiplyleft{\frac{1}{3}}(x-6)</mrow>
+                <mrow>y\amp=\frac{1}{3}x-2</mrow>
+              </md>
+            </p>
+
+          </sidebyside>
+        <p>
+          Because the slope-intercept forms of the two equations are identical, we can safely conclude that the system does indeed have an "infinite number" of solutions, specifically every ordered pair on the line <m>y=\frac{1}{3}x-2</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Use the method of substitution to determined all solutions to the following system of equations.            
+          <me>
+            \left\{
+              \begin{aligned}
+                4x+10y\amp=24\\
+                y\amp=-\frac{2}{5}x+5\\
+              \end{aligned}
+            \right.
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Because <m>y</m> is already isolated in the second equation, let's run with that and substitute <m>-\frac{2}{5}x+5</m> for <m>y</m> in the first equation.
+          <md>
+            <mrow>4x+10\highlight{y}\amp=24</mrow>
+            <mrow>4x+10\left(\highlight{-\frac{2}{5}x+5}\right)\amp=24</mrow>
+            <mrow>4x-4x+50\amp=24</mrow>
+            <mrow>50\amp=24</mrow>
+          </md>
+          We've arrived at the contradiction <m>50=24</m>; no matter what values we assign to <m>x</m> and <m>y</m>, we cannot force <m>50</m> and <m>24</m> to be equal.  As such, it must be the case that there are no ordered pairs that satisfy both equations in the system.  We can check by manipulating the first equation into slope-intercept form and seeing that the slope of the line is <m>-\frac{2}{5}</m> but that the <m>y</m>-intercept is not <m>(0,5)</m> (as it is for the second equation).
+          <md>
+            <mrow>4x+10y\amp=24</mrow>
+            <mrow>4x+10y\subtractright{4x}\amp=24\subtractright{4x}</mrow>
+            <mrow>10y\amp=-4x+24</mrow>
+            <mrow>\multiplyleft{\frac{1}{10}}10y\amp=\multiplyleft{\frac{1}{10}}(-4x+24)</mrow>
+            <mrow>y\amp=-\frac{2}{5}x+\frac{12}{5}</mrow>
+          </md>
+          So we can see that if we graphed the two lines in the system, they would be parallel lines (same slope, different <m>y</m>-intercepts), so we are correct in our conclusion that the solution sets for the two equations share no common ordered pairs.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Sometimes there is no avoiding fractions when applying the method of substitution to a linear system of equations.  For example, consider the following system of equations.       
+      <me>
+        \left\{
+          \begin{aligned}
+            -5x+3y\amp=4\\
+            6x-7y\amp=2\\
+          \end{aligned}
+        \right.
+      </me>
+      No matter which variable we isolate, the expression on the other side of the equation will contain fractions.  Fortunately, once we've made the substitution we can clear away the fractions before proceeding to the solution.  Since there are no "good" choices, let's go ahead and solve the first equation for <m>y</m>.
+      <md>
+        <mrow>-5x+3y\amp=4</mrow>
+        <mrow>-5x+3y\addright{5x}\amp=4\addright{5x}</mrow>
+        <mrow>3y\amp=5x+4</mrow>
+        <mrow>\multiplyleft{\frac{1}{3}}3y\amp=\multiplyleft{\frac{1}{3}}(5x+4)</mrow>
+        <mrow>y\amp=\frac{5}{3}x+\frac{4}{3}</mrow>
+      </md>
+      We can substitute <m>\frac{5}{3}x+\frac{4}{3}</m> for <m>y</m> in the second original equation and solve the resultant equation for <m>x</m>.
+      <md>
+        <mrow>6x-7\highlight{y}\amp=2</mrow>
+        <mrow>6x-7\left(\highlight{\frac{5}{3}x+\frac{4}{3}}\right)\amp=2</mrow>
+        <mrow>6x-\frac{35}{3}x-\frac{28}{3}\amp=2</mrow>
+        <mrow>\multiplyleft{3}\left(6x-\frac{35}{3}x-\frac{28}{3}\right)\amp=\multiplyleft{3}2\,\highlight{\text{ (clearing away the fractions)}}</mrow>
+        <mrow>18x-35x-28\amp=6</mrow>
+        <mrow>-17x-28\amp=6</mrow>
+        <mrow>-17x-28\addright{28}\amp=6\addright{28}</mrow>
+        <mrow>-17x\amp=34</mrow>
+        <mrow>\divideunder{-17x}{-17}\amp=\divideunder{34}{-17}</mrow>
+        <mrow>x\amp=-2</mrow>
+      </md>
+      Let's substitute <m>-2</m> for <m>x</m> in the equation <m>y=\frac{5}{3}x+\frac{4}{3}</m> and solve for <m>y</m>.
+       <md>
+         <mrow>y\amp=\frac{5}{3}(\highlight{-2})+\frac{4}{3}</mrow>
+         <mrow>y\amp=\frac{-6}{3}</mrow>
+         <mrow>y\amp=-2</mrow>
+       </md>
+       Our proposed solution is <m>(-2,-2)</m>.  Let's check in the original system.      
+       <me>
+        \left\{
+          \begin{aligned}
+            -5(\highlight{-2})+3(\highlightr{-2})\amp=4\,?\\
+            6(\highlight{-2})-7(\highlightr{-2})\amp=2\,?\\
+          \end{aligned}
+        \right.
+      </me>      
+      <me>
+        \left\{
+          \begin{aligned}
+             10-6\amp=4\,\checkmark\\
+            -12+14\amp=2\,\checkmark\\
+          \end{aligned}
+        \right.
+       </me>
+      The solution to the given system of equations is the ordered pair <m>(-2,-2)</m>.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Use the method of substitution to solve the following system of equations.      
+          <me>
+            \left\{
+              \begin{aligned}
+                \frac{5}{2}x-\frac{3}{7}y\amp=\frac{71}{28}\\
+                -\frac{7}{9}x+\frac{2}{3}y\amp=-\frac{43}{18}\\
+              \end{aligned}
+            \right.
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Good grief.  Let's start by clearing away the fractions, noting that <m>28</m> is the LCD of the fractions in the first equation and <m>18</m> is the LCD of the fractions in the second equation.     
+          <me>
+            \left\{
+              \begin{aligned}
+                \multiplyleft{28}\left(\frac{5}{2}x-\frac{3}{7}y\right)\amp=\multiplyleft{28}\frac{71}{28}\\
+                \multiplyleft{18}\left(-\frac{7}{9}x+\frac{2}{3}y\right)\amp=\multiplyleft{18}-\frac{43}{18}\\
+              \end{aligned}
+            \right.
+          </me>     
+          <me>
+            \left\{
+              \begin{aligned}
+                70x-12y\amp=71\\
+                -14x+12y\amp=-43\\
+              \end{aligned}
+            \right.
+          </me>
+          Consideration of our choices for variable isolation does not bring good cheer.  Let's keep the fractions as reasonable as possible and solve the second equation for <m>y</m>. 
+          <md>
+            <mrow>-14x+12y\amp=-43</mrow>
+            <mrow>-14x+12y\addright{14x}\amp=-43\addright{14x}</mrow>
+            <mrow>12y\amp=14x-43</mrow>
+            <mrow>\multiplyleft{\frac{1}{12}}12y\amp=\multiplyleft{\frac{1}{12}}(14x-43)</mrow>
+            <mrow>y\amp=\frac{7}{6}x-\frac{43}{12}</mrow>
+          </md>
+          Let's go ahead and substitute <m>\frac{7}{6}x-\frac{43}{12}</m> for <m>y</m> in the equation <m>70x-12y=71</m> and solve the resultant equation for <m>x</m>.
+          <md>
+            <mrow>70x-12\highlight{y}\amp=71</mrow>
+            <mrow>70x-12\left(\highlight{\frac{7}{6}x-\frac{43}{12}}\right)\amp=71</mrow>
+            <mrow>70x-14x+43\amp=71</mrow>
+            <mrow>56x+43\amp=71</mrow>
+            <mrow>56x+43\subtractright{43}\amp=71\subtractright{43}</mrow>
+            <mrow>56x\amp=28</mrow>
+            <mrow>\divideunder{56x}{56}\amp=\divideunder{28}{56}</mrow>
+            <mrow>x\amp=\frac{1}{2}</mrow>
+          </md>
+          Let's substitute <m>\frac{1}{2}</m> for <m>x</m> in the equation <m>y=\frac{7}{6}x-\frac{43}{12}</m> and solve the resultant equation for <m>y</m>.
+          <md>
+            <mrow>y\amp=\frac{7}{6}\left(\highlight{\frac{1}{2}}\right)-\frac{43}{12}</mrow>
+            <mrow>y\amp=\frac{7}{12}-\frac{43}{12}</mrow>
+            <mrow>y\amp=-\frac{36}{12}</mrow>
+            <mrow>y\amp=-3</mrow>
+          </md>
+          Our proposed solution is <m>\left(\frac{1}{2},-3\right)</m> which is pretty clean, so probably correct.  Never-the-less, we need to check it in the original system.    
+          <me>
+            \left\{
+              \begin{aligned}
+                \frac{5}{2}\left(\highlight{\frac{1}{2}}\right)-\frac{3}{7}(\highlightr{-3})\amp=\frac{71}{28}\,?\\
+                -\frac{7}{9}\left(\highlight{\frac{1}{2}}\right)+\frac{2}{3}(\highlightr{-3})\amp=-\frac{43}{18}\,?\\
+              \end{aligned}
+            \right.
+          </me>    
+          <me>
+            \left\{
+              \begin{aligned}
+                \frac{5}{4}+\frac{9}{7}\amp=\frac{71}{28}\,?\\
+                -\frac{7}{18}-2\amp=-\frac{43}{18}\,?\\
+              \end{aligned}
+            \right.
+          </me>
+          <me>
+            \left\{
+              \begin{aligned}
+                \frac{5}{4} \cdot \highlight{\frac{7}{7}}+\frac{9}{7} \cdot \highlight{\frac{4}{4}}\amp=\frac{71}{28}\,?\\
+                -\frac{7}{18}-\frac{2}{1} \cdot \highlight{\frac{18}{18}}\amp=-\frac{43}{18}\,?\\
+              \end{aligned}
+            \right.
+          </me>
+          <me>
+            \left\{
+              \begin{aligned}
+                \frac{35}{28}+\frac{36}{28}\amp=\frac{71}{28}\,\checkmark\\
+                -\frac{7}{18}-\frac{36}{18}\amp=-\frac{43}{18}\,\checkmark\\
+              \end{aligned}
+            \right.
+          </me>
+          The solution to the given system of equations is the ordered pair <m>\left(\frac{1}{2},-3\right)</m>.
+        </p>
+        <p>
+          Criminy.
+        </p>
+      </solution>
+    </example>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Use the substitution method to determine the solution to each of the following systems of linear equations.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>
+                \left\{
+                  \begin{aligned}
+                    3x-4y\amp=32\\
+                    x\amp=2y+14\\
+                  \end{aligned}
+                \right.
+              </m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We begin by substituting the expression <m>2y+14</m> for <m>x</m> in the equation <m>3x-4y=32</m>.  We then solve the resultant equation for <m>y</m>.
+              <md>
+                <mrow>3(\substitute{2y+14})-4y\amp=32</mrow>
+                <mrow>6y+42-4y\amp=32</mrow>
+                <mrow>2y+42\amp=32</mrow>
+                <mrow>2y+42 \subtractright{42}\amp=32 \subtractright{42}</mrow>
+                <mrow>2y\amp=-10</mrow>
+                <mrow>\divideunder{2y}{2}\amp=\divideunder{-10}{2}</mrow>
+                <mrow>y\amp=-5</mrow>
+              </md>
+
+              We can now substitute the value of <m>-5</m> for <m>y</m> in the equation <m>x=2y+14</m> to determine the value of <m>x</m>.
+              <md>
+                <mrow>x\amp=2(\substitute{-5})+14</mrow>
+                <mrow>x\amp=4</mrow>
+              </md>
+              We conclude by stating that the solution to the given system of equations is the ordered pair <m>(4,-5)</m> (which checks in both equations).
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>
+                \left\{
+                  \begin{aligned}
+                    -x-3y\amp=11\\
+                    2x+5y\amp=-18\\
+                  \end{aligned}
+                \right.
+              </m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              To avoid fractions, we begin by solving the first equation for <m>x</m>.
+              <md>
+                <mrow>-x-3y\amp=11</mrow>
+                <mrow>-x-3y\addright{3y}\amp=11\addright{3y}</mrow>
+                <mrow>-x\amp=11+3y</mrow>
+                <mrow>\multiplyleft{-1}-x\amp=\multiplyleft{-1}(11+3y)</mrow>
+                <mrow>x\amp=-11-3y</mrow>
+              </md>
+              We can now substitute <m>-11-3y</m> for <m>x</m> in the equation <m>2x+5y=-18</m>. We then solve the resultant equation for <m>y</m>.
+              <md>
+                <mrow>2(\substitute{-11-3y})+5y\amp=-18</mrow>
+                <mrow>-22-6y+5y\amp=-18</mrow>
+                <mrow>-22-y\amp=-18</mrow>
+                <mrow>-322-y\addright{22}\amp=-18\addright{22}</mrow>
+                <mrow>-y\amp=4</mrow>
+                <mrow>\multiplyleft{-1}-x\amp=\multiplyleft{-1}4</mrow>
+                <mrow>y\amp=-4</mrow>
+              </md>
+              We can now substitute the value of <m>-4</m> for <m>y</m> in the equation <m>x=-11-3y</m> to determine the value of <m>x</m>.
+              <md>
+                <mrow>x\amp=-11-3(\substitute{-4})</mrow>
+                <mrow>x\amp=1</mrow>
+              </md>
+              e conclude by stating that the solution to the given system of equations is the ordered pair <m>(1,-4)</m> (which checks in both equations).
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>
+                \left\{
+                  \begin{aligned}
+                    3x-4y\amp=8\\
+                    y\amp=\frac{3}{4}x-2\\
+                  \end{aligned}
+                \right.
+              </m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We begin by substituting <m>\frac{3}{4}x-2</m> for <m>y</m> in the equation <m>3x-4y=8</m>.  We the (attempt) to solve he resultant eqaution for <m>x</m>.
+              <md>
+                <mrow>3x-4\left(\substitute{\frac{3}{4}x-2}\right)\amp=8</mrow>
+                <mrow>3x-3x+8\amp=8</mrow>
+                <mrow>8\amp=8</mrow>
+              </md>
+              The last equation is an identity, it is true regardless of the values of <m>x</m> and <m>y</m>.  This means that the two original equations are equivalent <mdash/> they represent the same line.  We can check this by isolating <m>y</m> in the equation <m>3x-4y=8</m>.
+              <md>
+                <mrow>3x-4y\amp=8</mrow>
+                <mrow>3x-4y\subtractright{3x}\amp=8\subtractright{3x}</mrow>
+                <mrow>-4y\amp=8-3x</mrow>
+                <mrow>\multiplyleft{-\frac{1}{4}}4y\amp=\multiplyleft{-\frac{1}{4}}(8-3x)</mrow>
+                <mrow>y\amp=-2+\frac{3}{4}x</mrow>
+              </md>
+              This last equation is clearly equivalent to <m>y=\frac{3}{4}x-2</m>, so we are correct in our assertion that both equations in the original system represent the same line.  We conclude that every point that lies on the line <m>y=\frac{3}{4}x-2</m> is a solution to the given system.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>
+                \left\{
+                  \begin{aligned}
+                    y\amp=-3x+7\\
+                    x\amp=-\frac{1}{3}y+3\\
+                  \end{aligned}
+                \right.
+              </m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We can begin by substituting <m>-\frac{1}{3}y+3</m> for <m>x</m> in the equation <m>y=-3x+7</m>.  We then (attempt) to solve the resultant equation for <m>y</m>.
+              <md>
+                <mrow>y\amp=-3\left(\substitute{-\frac{1}{3}y+3}\right)+7</mrow>
+                <mrow>y\amp=y-9+7</mrow>
+                <mrow>y\amp=y-2</mrow>
+                <mrow>y\subtractright{y}\amp=y-2\subtractright{y}</mrow>
+                <mrow>0\amp=-2</mrow>
+              </md>
+              The last equation is a contradiction, there are no values we can assign to <m>x</m> and <m>y</m> that will make <m>0</m> and <m>-2</m> equal!  This is an indication that there are no solutions to the given system.  We can check this by isolating <m>y</m> in the equation <m>x=-\frac{1}{3}y+3</m>.
+              <md>
+                <mrow>x\amp=-\frac{1}{3}y+3</mrow>
+                <mrow>x\subtractright{3}\amp=-\frac{1}{3}y+3\subtractright{3}</mrow>
+                <mrow>x-3\amp=-\frac{1}{3}y</mrow>
+                <mrow>\multiplyleft{-3}(x-3)\amp=\multiplyleft{-3}-\frac{1}{3}y</mrow>
+                <mrow>-3x+9\amp=y</mrow>
+              </md>
+              The last equation, <m>y=-3x+9</m>, graphs to a line that is parallel to the line that results from graphing <m>y=-3x+7</m> (the other equation in the given system).  This confirms that there is no point that lies on both lines.  The given system has no solutions, it is inconsistent.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>
+                \left\{
+                  \begin{aligned}
+                    -2x+7y\amp=69\\
+                    6x+2y\amp=0\\
+                  \end{aligned}
+                \right.
+              </m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              To avoid introducing unnecessary fractions, we solve the equation <m>6x+2y=0</m> for <m>y</m>.
+              <md>
+                <mrow>6x+2y\amp=0</mrow>
+                <mrow>6x+2y\subtractright{6x}\amp=0\subtractright{6x}</mrow>
+                <mrow>2y\amp=-6x</mrow>
+                <mrow>\divideunder{2y}{2}\amp=\divideunder{-6x}{2}</mrow>
+                <mrow>y\amp=-3x</mrow>
+              </md>
+              We now substitute <m>-3x</m> for <m>y</m> in the equation <m>-2x+7y=69</m> and solve the resultant equation for <m>x</m>.
+              <md>
+                <mrow>-2x+7(\substitute{-3x})\amp=69</mrow>
+                <mrow>-2x-21x\amp=69</mrow>
+                <mrow>-23x\amp=69</mrow>
+                <mrow>\divideunder{-23x}{-23}\amp=\divideunder{69}{-23}</mrow>
+                <mrow>x\amp=-3</mrow>
+              </md>
+              Now we substitute <m>-3</m> for <m>x</m> in the equation <m>y=-3x</m> to determine the value of <m>y</m>.
+              <md>
+                <mrow>y\amp=-3(\substitute{-3})</mrow>
+                <mrow>y\amp=9</mrow>
+              </md>
+              We conclude that the solution to the given system of equations is the ordered pair <m>(-3,9)</m> (which checks in both equations).
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>
+                \left\{
+                  \begin{aligned}
+                    x\amp=\frac{2}{5}y-2\\
+                    -x+3y\amp=28\\
+                  \end{aligned}
+                \right.
+              </m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Since <m>x</m> is already isolated in the first equation, let's go ahead and substitute <m>\frac{2}{5}y-2</m> for <m>x</m> in the second equation.
+              <md>
+                <mrow>-\left(\substitute{\frac{2}{5}y-2}\right)+3y\amp=28</mrow>
+                <mrow>-\frac{2}{5}y+2+3y\amp=28</mrow>
+              </md>
+              Before going any further, we can clear away the fraction by multiplying both sides of the equation by <m>5</m>.
+              <md>
+                <mrow>\multiplyleft{5}\left(-\frac{2}{5}y+2+3y\right)\amp=\multiplyleft{5}28</mrow>
+                <mrow>-2y+10+15y\amp=140</mrow>
+                <mrow>13y+10\amp=140</mrow>
+                <mrow>13y+10\subtractright{10}\amp=140\subtractright{10}</mrow>
+                <mrow>13y\amp=130</mrow>
+                <mrow>\divideunder{13y}{13}\amp=\divideunder{130}{13}</mrow>
+                <mrow>y\amp=10</mrow>
+              </md>
+              Now that we know that the value of <m>y</m> is <m>10</m>, we can substitute <m>10</m> for <m>y</m> in the equation <m>x=\frac{2}{5}y-2</m> to determine the value of <m>x</m>.
+              <md>
+                <mrow>x\amp=\frac{2}{5} \cdot \substitute{10}-2</mrow>
+                <mrow>x\amp=4-2</mrow>
+                <mrow>x\amp=2</mrow>
+              </md>
+              So the solution to the given system of equations is the ordered pair <m>(2,10)</m>.  The reader should verify the solution in both equations (as the author did on his own).
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>
+                \left\{
+                  \begin{aligned}
+                    -3x+4y\amp=27\\
+                    5x-3y\amp=-34\\
+                  \end{aligned}
+                \right.
+              </m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Regardless of which variable we isolate, there are going to be fractions in the resultant equation.  We'll have one fewer fraction if we isolate <m>x</m> in the first equation, so let's do that.
+              <md>
+                <mrow>-3x+4y\amp=27</mrow>
+                <mrow>-3x+4y\subtractright{4y}\amp=27\subtractright{4y}</mrow>
+                <mrow>-3x\amp=27-4y</mrow>
+                <mrow>\multiplyleft{-\frac{1}{3}}(-3x)\amp=\multiplyleft{-\frac{1}{3}}(27-4y)</mrow>
+                <mrow>x\amp=-9+\frac{4}{3}y</mrow>
+              </md>
+              We can now substitute <m>-9+\frac{4}{3}y</m> for <m>x</m> in the equation <m>5x-3y=-34</m>.
+              <md>
+                <mrow>5\left(\substitute{-9+\frac{4}{3}y}\right)-3y\amp=-34</mrow>
+                <mrow>-45+\frac{20}{3}y-3y\amp=-34</mrow>
+              </md>
+              Before proceeding any further, let's clear away the fraction by multiplying both sides of the equation by <m>3</m>.
+              <md>
+                <mrow>\multiplyleft{3}\left(-45+\frac{20}{3}y-3y\right)\amp=\multiplyleft{3}-34</mrow>
+                <mrow>-135+20y-9y\amp=-102</mrow>
+                <mrow>-135+11y\amp=-102</mrow>
+                <mrow>-135+11y\addright{135}\amp=-102\addright{135}</mrow>
+                <mrow>11y\amp=33</mrow>
+                <mrow>\divideunder{11y}{11}\amp=\divideunder{33}{11}</mrow>
+                <mrow>y\amp=3</mrow>
+              </md>
+              Knowing that <m>y=3</m>, let's substitute <m>3</m> for <m>y</m> in the equation <m>x=-9+\frac{4}{3}y</m> to determine the value of <m>x</m>.
+              <md>
+                <mrow>x\amp=-9+\frac{4}{3} \cdot \substitute{3}</mrow>
+                <mrow>x\amp=-9+4</mrow>
+                <mrow>x\amp=-5</mrow>
+              </md>
+              So the solution to the given system of equations is the ordered pair <m>(-5,3)</m>.  The author has verified the solution, as should the reader.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>
+                \left\{
+                  \begin{aligned}
+                    \frac{5}{2}x-\frac{4}{3}y\amp=-33\\
+                    -\frac{1}{5}x+\frac{2}{3}y\amp=6\\
+                  \end{aligned}
+                \right.
+              </m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Once we get over the shock of all the fractions, let's focus on eliminating them.  The LCD of the fractions in the first equation is <m>6</m> and the LCD of the fractions in the second equations is <m>15</m>, so we can clear the fractions in the first equation by multiplying both sides by <m>6</m> and we can clear the fractions from the second equation by multiplying both sides by <m>15</m>.
+              <me>
+                \left\{
+                  \begin{aligned}
+                    \multiplyleft{6}\left(\frac{5}{2}x-\frac{4}{3}y\right)\amp=\multiplyleft{6}-33\\
+                    \multiplyleft{15}\left(-\frac{1}{5}x+\frac{2}{3}y\right)\amp=\multiplyleft{15}6\\
+                  \end{aligned}
+                \right.
+              </me>
+              This results in the following system of equations.
+              <me>
+                \left\{
+                  \begin{aligned}
+                    15x-8y\amp=-198\\
+                    -3x+10y\amp=90\\
+                  \end{aligned}
+                \right.
+              </me>
+              Regardless of the variable we isolate, the resultant equation will have fractions.  As far as fractions go, thirds are relatively friendly, so let's isolate <m>x</m> in the second equation.
+              <md>
+                <mrow>-3x+10y\amp=90</mrow>
+                <mrow>-3x+10y\subtractright{10y}\amp=90\subtractright{10y}</mrow>
+                <mrow>-3x\amp=90-10y</mrow>
+                <mrow>\multiplyleft{-\frac{1}{3}}(-3x)\amp=\multiplyleft{-\frac{1}{3}}(90-10y)</mrow>
+                <mrow>x\amp=-30+\frac{10}{3}y</mrow>
+              </md>
+              Let's go ahead and substitute <m>-30+\frac{10}{3}y</m> for <m>x</m> in the equation <m>15x-8y=-198</m>.
+              <md>
+                <mrow>15\left(\substitute{-30+\frac{10}{3}y}\right)-8y\amp=-198</mrow>
+                <mrow>-450+50y-8y\amp=-198</mrow>
+                <mrow>-450+42y\amp=-198</mrow>
+                <mrow>-450+42y\addright{450}\amp=-198\addright{450}</mrow>
+                <mrow>42y\amp=252</mrow>
+                <mrow>\divideunder{42y}{42}\amp=\divideunder{252}{42}</mrow>
+                <mrow>y\amp=6</mrow>
+              </md>
+              Let's now substitute <m>6</m> for <m>y</m> in the equation <m>x=-30+\frac{10}{3}y</m> to determine the value of <m>x</m>.
+              <md>
+                <mrow>x\amp=-30+\frac{10}{3}\multiplyright{6}</mrow>
+                <mrow>x\amp=-30+20</mrow>
+                <mrow>x\amp=-10</mrow>.
+              </md>
+              The solution to the given system is the ordered pair <m>(-10,6)</m> which the author is confident the reader will verify.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>
+                \left\{
+                  \begin{aligned}
+                    \frac{3}{4}x-\frac{5}{2}y\amp=\frac{7}{4}\\
+                    -\frac{1}{3}x+y\amp=-1\\
+                  \end{aligned}
+                \right.
+              </m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Our first instinct might be to clear away all of the fractions, but that's probably not the best option.  While we definitely want to clear the fractions from the first equation, a better option for the second equation is probably to just go ahead and isolate <m>y</m>.  We begin with the second action.
+              <md>
+                <mrow>-\frac{1}{3}x+y\amp=-1</mrow>
+                <mrow>-\frac{1}{3}x+y\addright{\frac{1}{3}x}\amp=-1\addright{\frac{1}{3}x}</mrow>
+                <mrow>y\amp=-1+\frac{1}{3}x</mrow>
+              </md>
+              We can now substitute <m>-1+\frac{1}{3}x</m> for <m>y</m> in the first equation.  Before doing that, let's clear away the fractions from the first equation by multiplying both sides of the equation by the LCD of all of the fractions in the equation which is <m>4</m>.
+              <md>
+                <mrow>\frac{3}{4}x-\frac{5}{2}y\amp=\frac{7}{4}</mrow>
+                <mrow>\multiplyleft{4}\left(\frac{3}{4}x-\frac{5}{2}y\right)\amp=\multiplyleft{4}\frac{7}{4}</mrow>
+                <mrow>3x-10y\amp=7</mrow>
+                <mrow>3x-10\left(\substitute{-1+\frac{1}{3}x}\right)\amp=7</mrow>
+                <mrow>3x+10-\frac{10}{3}x\amp=7</mrow>
+              </md>
+              Before proceeding any further, let's clear away the fraction by multiplying both sides of the equation by <m>3</m>.
+              <md>
+                <mrow>\multiplyleft{3}\left(3x+10-\frac{10}{3}x\right)\amp=\multiplyleft{3}7</mrow>
+                <mrow>9x+30-10x\amp=21</mrow>
+                <mrow>-x+30\amp=21</mrow>
+                <mrow>-x+30\subtractright{30}\amp=21\subtractright{30}</mrow>
+                <mrow>-x\amp=-9</mrow>
+                <mrow>\multiplyleft{-1}-x\amp=\multiplyleft{-1}-9</mrow>
+                <mrow>x\amp=9</mrow>
+              </md>
+              We can now determine the value for <m>y</m> after replacing <m>x</m> with <m>9</m> in the equation <m>y=-1+\frac{1}{3}x</m>.
+              <md>
+                <mrow>y\amp=-1+\frac{1}{3} \cdot \substitute{9}</mrow>
+                <mrow>y\amp=-1+3</mrow>
+                <mrow>y\amp=2</mrow>
+              </md>
+              The solution to the given system of equations is the ordered pair <m>(9,2)</m>.  The solution is verified below.
+              <me>
+                \left\{
+                  \begin{aligned}
+                    \frac{3}{4}\multiplyright{9}-\frac{5}{2}\multiplyright{2}\amp=\frac{7}{4}\,?\\
+                    -\frac{1}{3}\multiplyright{9}+\substitute{2}\amp=-1\,?\\
+                  \end{aligned}
+                \right.
+              </me>
+
+              <me>
+                \left\{
+                  \begin{aligned}
+                    \frac{27}{4}-5\amp=\frac{7}{4}\,?\\
+                    -3+2\amp=-1\,\checkmark\\
+                  \end{aligned}
+                \right.
+              </me>
+
+              <me>
+                \left\{
+                  \begin{aligned}
+                    \frac{27}{4}-\frac{20}{4}\amp=\frac{7}{4}\,\checkmark\\
+                    -1\amp=-1\,\checkmark\\
+                  \end{aligned}
+                \right.
+              </me>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>
+                \left\{
+                  \begin{aligned}
+                    -4x+7y\amp=-13\\
+                    6x+14y\amp=9\\
+                  \end{aligned}
+                \right.
+              </m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              No avoiding fractions, but at least we can work with quarters.  Let's solve the first equation for <m>x</m>.
+              <md>
+                <mrow>-4x+7y\amp=-13</mrow>
+                <mrow>-4x+7y\subtractright{7y}\amp=-13\subtractright{7y}</mrow>
+                <mrow>-4x\amp=-13-7y</mrow>
+                <mrow>\multiplyleft{-\frac{1}{4}}(-4x)\amp=\multiplyleft{-\frac{1}{4}}(-13-7y)</mrow>
+                <mrow>x\amp=\frac{13}{4}+\frac{7}{4}y</mrow>
+              </md>
+              Breath ... let's substitute <m>\frac{13}{4}+\frac{7}{4}y</m> for <m>x</m> in the second given equation.
+              <md>
+                <mrow>6\substitute{x}+14y\amp=9</mrow>
+                <mrow>6\left(\substitute{\frac{13}{4}+\frac{7}{4}y}\right)+14y\amp=9</mrow>
+                <mrow>\frac{39}{2}+\frac{21}{2}y+14y\amp=9</mrow>
+              </md>
+              Let's clear away the fractions by multiplying both sides of the equation by <m>2</m> and then solve for <m>y</m>.
+              <md>
+                <mrow>\multiplyleft{2}\left(\frac{39}{2}+\frac{21}{2}y+14y\right)\amp=\multiplyleft{2}9</mrow>
+                <mrow>39+21y+28y\amp=18</mrow>
+                <mrow>49y+39\amp=18</mrow>
+                <mrow>49y+39\subtractright{39}\amp=18\subtractright{39}</mrow>
+                <mrow>49y\amp=-21</mrow>
+                <mrow>\divideunder{49y}{49}\amp=\divideunder{-21}{49}</mrow>
+                <mrow>y\amp=-\frac{3}{7}</mrow>
+              </md>
+              Oh my.  Exhale.  Let's carry on.  Replacing <m>y</m> with <m>-\frac{3}{7}</m> in the equation <m>x=\frac{13}{4}+\frac{7}{4}y</m> will led to the value of <m>x</m>.
+              <md>
+                <mrow>x\amp=\frac{13}{4}+\frac{7}{4}\multiplyright{-\frac{3}{7}}</mrow>
+                <mrow>x\amp=\frac{13}{4}-\frac{3}{4}</mrow>
+                <mrow>x\amp=\frac{5}{2}</mrow>
+              </md>
+              Alrighty, then.  The solution to the given system is the ordered pair <m>\left(\frac{5}{2},-\frac{3}{7}\right)</m>.  This unlikely outcome is verified below.
+
+              <me>
+                 left\{
+                  \begin{aligned}
+                    -4\multiplyright{\frac{5}{2}}+7\multiplyright{-\frac{3}{7}}\amp=-13\,?\\
+                    6\multiplyright{\frac{5}{2}}+14\multiplyright{-\frac{3}{7}}\amp=9\,?\\
+                  \end{aligned}
+                \right.
+              </me>
+
+              <me>
+                \left\{
+                  \begin{aligned}
+                    -10-3\amp=-13\,\checkmark\\
+                    15-6\amp=9\,\checkmark\\
+                  \end{aligned}
+                \right.
+              </me>
+
+              Crikey.
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+    </exercises>
+
+  </section>
+

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="quadratic-equations-the-discriminant">
+    <title>The Discriminant</title>
+
+    <p>
+      There are times when we are concerned about the nature of the solutions to a quadratic equation rather than the precise solutions themselves.  For example, when the equation <m>ax^2+bx+c=0</m> has two, one, or zero real number solutions, we know that the graph of <m>y=ax^2+bx+c</m> has, respectively, two, one, or zero <m>x</m>-intercepts.
+    </p>
+    <p>
+      Consider the quadratic formula.<me>x=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</me>Because <m>\sqrt{b^2-4ac}</m> is the expression that is both added and subtracted, and it the part of the expression that can be an imaginary number, it is our focus when determining the nature of the solution set.  We can narrow our focus even further, because the nature is determined by the value of <m>b^2-4ac</m>.  When that value is positive, the equation will have two real number solutions.  When the value is zero there will be one real number solution, and when the value is negative there will be two complex number solutions each with non-zero imaginary coefficients.
+    </p>
+    <p>
+      Because the expression <m>b^2-4ac</m> plays the key role in the nature of the solution set to a quadratic equation, it is given a name.  The expression is called the determinant.  Let's consider three examples.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Use the discriminant to determine the number of <m>x</m>-intercepts on the parabola with equation <m>y=x^2-4x-7</m>.  Also, state the nature of the solutions for the quadratic equation <m>x^2-4x-7=0</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          For the equation <m>x^2-4x-7=0</m>, <m>a=1</m>, <m>b=-4</m>, and <m>c=-7</m>.  The discriminant is derived below.
+          <md>
+            <mrow>b^2-4ac\amp=(-4)^2-4 \cdot 1\cdot -7</mrow>
+            <mrow>\amp=44</mrow>
+          </md>
+          Because <m>b^2-4a \gt 0</m>, we know that the equation <m>x^2-4x-7=0</m> has two real number solutions and that the graph of <m>y=x^2-4-7</m> has two <m>x</m>-intercepts.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Use the discriminant to determine the number of <m>x</m>-intercepts on the parabola with equation <m>y=2x^2-6x+9</m>.  Also, state the nature of the solutions for the quadratic equation <m>2x^2-6x+9=0</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          For the equation <m>2x^2-6x+9=0</m>, <m>a=2</m>, <m>b=-6</m>, and <m>c=9</m>.  The discriminant is derived below.
+          <md>
+            <mrow>b^2-4ac\amp=(-6)^2-4 \cdot 2 \cdot 9</mrow>
+            <mrow>\amp=-36</mrow>
+          </md>
+          Because <m>b^2-4ac \lt 0</m>, we know that the equation <m>2x^2-6x+9=0</m> has no real number solutions and that the graph of <m>y=2x^2-6x+9</m> has no <m>x</m>-intercepts.  The equation <m>2x^2-6x+9=0</m> has two complex number solutions, each of which has a non-zero imaginary coefficient.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Use the discriminant to determine the number of <m>x</m>-intercepts on the parabola with equation <m>y=4x^2-12x+9</m>.  Also, state the nature of the solutions for the quadratic equation <m>4x^2-12x+9=0</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          For the equation <m>4x^2-12x+9=0</m>, <m>a=4</m>, <m>b=-12</m>, and <m>c=9</m>.  The discriminant is derived below.
+          <md>
+            <mrow>b^2-4ac\amp=(-12)^2-4 \cdot 4 \cdot 9</mrow>
+            <mrow>\amp=0</mrow>
+          </md>
+          Because <m>b^2-4ac=0</m>, we know that the equation <m>4x^2-12x+9=0</m> has exactly one real number solution and that the graph of <m>y=4x^2-12x+9</m> has exactly one <m>x</m>-intercept.  
+        </p>
+      </solution>
+    </example>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            For each equation, use the value of the discriminant to determine the nature of the solution.  That's all - do not find the actual solutions.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>3x^2+4x-7=0</m>
+            </p>
+          </statement>
+          <solution>
+            <sidebyside widths="57% 37%" margins="0%">
+
+              <p>
+                <m>
+                  3x^2+4x-7=0
+                </m>
+              </p>
+
+              <p>
+                <m>
+                  a=3, b=4, c=-7
+                </m>
+              </p>
+
+            </sidebyside>
+            <p>
+              <md>
+                <mrow>b^2-4ac\amp=4^2-4 \cdot 3 \cdot -7</mrow>
+                <mrow>\amp=100</mrow>
+              </md>
+            </p>
+            <p>
+              Because the discriminant is a positive number, we know that the given equation has two real number solutions.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>36-12x-x^2=0</m>
+            </p>
+          </statement>
+          <solution>
+            <sidebyside widths="57% 37%" margins="0%">
+
+              <p>
+                <m>
+                  36-12x-x^2=0
+                </m>
+              </p>
+
+              <p>
+                <m>
+                  a=-1, b=-12, c=36
+                </m>
+              </p>
+
+            </sidebyside>
+            <p>
+              <md>
+                <mrow>b^2-4ac\amp=(-12)^2-4 \cdot -1 \cdot 36</mrow>
+                <mrow>\amp=0</mrow>
+              </md>
+            </p>
+            <p>
+              Because the discriminant is zero, we know that the given equation has exactly one real number solution.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>x^2+4=0</m>
+            </p>
+          </statement>
+          <solution>
+            <sidebyside widths="57% 37%" margins="0%">
+
+              <p>
+                <m>
+                  x^2+4=0
+                </m>
+              </p>
+
+              <p>
+                <m>
+                  a=1, b=0, c=4
+                </m>
+              </p>
+
+            </sidebyside>
+            <p>
+              <md>
+                <mrow>b^2-4ac\amp=0^2-4 \cdot 1 \cdot 4</mrow>
+                <mrow>\amp=-16</mrow>
+              </md>
+            </p>
+            <p>
+              Because the discriminant is a negative number, we know that the given equation has two complex number solutions with non-zero imaginary coefficients.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>3x(3x-16)=-64</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We need to write the equation in standard form before we can determine the determinant.
+            </p>
+            <sidebyside widths="57% 37%" margins="0%">
+
+              <p>
+                <md>
+                  <mrow>3x(3x-16)\amp=-64</mrow>
+                  <mrow>9x^2-48x\amp=-64</mrow>
+                  <mrow>9x^2-48x+64\amp=0</mrow>
+                </md>
+              </p>
+
+              <p>
+                <md>
+                  <mrow></mrow>
+                  <mrow></mrow>
+                  <mrow>a=9, b=-48, c=64</mrow>
+                </md>
+              </p>
+
+            </sidebyside>
+            <p>
+              <md>
+                <mrow>b^2-4ac\amp=(-48)^2-4 \cdot 9 \cdot 64</mrow>
+                <mrow>\amp=0</mrow>
+              </md>
+            </p>
+            <p>
+              Because the discriminant is zero, we know that the given equation has one real number solution.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>7x^2=15x</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We need to write the equation in standard form before we can determine the determinant.
+            </p>
+            <sidebyside widths="57% 37%" margins="0%">
+
+              <p>
+                <md>
+                  <mrow>7x^2\amp=15x</mrow>
+                  <mrow>7x^2-15x\amp=0</mrow>
+                </md>
+              </p>
+
+              <p>
+                <md>
+                  <mrow></mrow>
+                  <mrow>a=7, b=-15, c=0</mrow>
+                </md>
+              </p>
+
+            </sidebyside>
+            <p>
+              <md>
+                <mrow>b^2-4ac\amp=(-15)^2-4 \cdot 7 \cdot 0</mrow>
+                <mrow>\amp=225</mrow>
+              </md>
+            </p>
+            <p>
+              Because the discriminant is positive, the given equation has two real number solutions.
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+    </exercises>
+
+  </section>

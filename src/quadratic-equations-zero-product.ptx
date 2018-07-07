@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="quadratic-equations-zero-product">
+    <title>Solving Quadratic Equations Using the Zero-Product Property</title>
+
+    <p>
+      When the product of two numbers is zero, at least one of the numbers in the product must be zero.  This is a property unique to zero; e.g., when two numbers multiply to, say, ten, not only is it not the case that one of the two numbers need be ten, the only restriction on the two numbers at all is that neither be zero.
+    </p>
+    <p>
+      When solving an equation of form: <me>ab=0</me>, the next step in the process is to state:<me>a=0\text{  or  }b=0</me>.  We then solve the two new equations separately and state our solutions, or solution set.  For example:
+      <md>
+        <mrow>(4x+7)(2x-9)=0</mrow>
+      </md>
+      <md>
+        <mrow>4x+7\amp=0\amp\amp\text{or}\amp 2x-9\amp=0</mrow>
+        <mrow>4x+7\subtractright{7}\amp=0\subtractright{7}\amp\amp\text{or}\amp 2x-9\addright{9}\amp=0\addright{9}</mrow>
+        <mrow>4x\amp=-7\amp\amp\text{or}\amp 2x\amp=9</mrow>
+      <mrow>\divideunder{4x}{4}\amp=\divideunder{-7}{4}\amp\amp\text{or}\amp \divideunder{2x}{2}\amp=\divideunder{9}{2}</mrow>
+        <mrow>x\amp=-\frac{7}{4}\amp\amp\text{or}\amp x\amp=\frac{9}{2}</mrow>
+      </md>
+    </p>
+    <p>
+    The solutions are <m>-\frac{7}{4}</m> and <m>\frac{9}{2}</m>. The solution set is <m>\{-\frac{7}{4}, \frac{9}{2}\}</m>.
+    </p>
+    <p>
+      We frequently have to perform some preliminary steps before invoking the zero-product property.  Specifically:
+    </p>
+    <p>
+      <ol label="1">
+        <li>Completely expand both sides of the equation.</li>
+        <li>Add and/or subtract to/from both sides of the equation so that one side of the equation is zero.  The next step will be easier if make sure that the second degree term (<m>ax^2</m>) has a positive coefficient.</li>
+        <li>Factor the non-zero side of the equation.</li>
+        <li>We are now set to invoke the zero-product property.</li>
+      </ol>
+      <p></p>
+    </p>
+    <p>
+      Several examples follow.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Use the zero-product property to solve <m>4x^2=4x+15</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>4x^2\amp=4x+15</mrow>
+            <mrow>4x^2\subtractright{4x}\subtractright{15}\amp=4x+15\subtractright{4x}\subtractright{15}</mrow>
+            <mrow>4x^2-4x-15\amp=0</mrow>
+            <mrow>4x^2-10x+6x-15\amp=0</mrow>
+            <mrow>2x(2x-5)+3(2x-5)\amp=0</mrow>
+            <mrow>(2x-5)(2x+3)\amp=0</mrow>
+          </md>
+          <md>
+            <mrow>2x-5\amp=0\amp\amp\text{or}\amp 2x+3\amp=0</mrow>
+            <mrow>2x-5\addright{5}\amp=0\addright{5}\amp\amp\text{or}\amp 2x+3\subtractright{3}\amp=0\subtractright{3}</mrow>
+            <mrow>2x\amp=5\amp\amp\text{or}\amp 2x\amp=-3</mrow>
+            <mrow>\divideunder{2x}{2}\amp=\divideunder{5}{2}\amp\amp\text{or}\amp \divideunder{2x}{2}\amp=\divideunder{-3}{2}</mrow>
+            <mrow>x\amp=\frac{5}{2}\amp\amp\text{or}\amp x\amp=-\frac{3}{2}</mrow>
+          </md>
+          The solutions are <m>\frac{5}{2}</m> and <m>-\frac{3}{2}</m>. The solution set is <m>\{\frac{5}{2}, -\frac{3}{2}\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Use the zero-product property to solve <m>(x+6)(x-2)=-16</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>(x+6)(x-2)\amp=-16</mrow>
+            <mrow>x^2+4x-12\amp=-16</mrow>
+            <mrow>x^2+4x+4\amp=0</mrow>
+            <mrow>(x+2)(x+2)\amp=0</mrow>
+            <mrow>x+2=0</mrow>
+            <mrow>x+2\subtractright{2}=0\subtractright{2}</mrow>
+            <mrow>x=-2</mrow>
+          </md>
+          The solution is <m>-2</m>. The solution set is <m>\{-2\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Use the zero-product property to solve <m>(x+4)(4x-5)=(7x+10)(3x-2)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>(x+4)(4x-5)\amp=(7x+10)(3x-2)</mrow>
+            <mrow>4x^2+11x-20\amp=21x^2+16x-20</mrow>
+            <mrow>4x^2+11x-20\subtractright{4x^2}\subtractright{11x}\addright{20}\amp=21x^2+16x-20\subtractright{4x^2}\subtractright{11x}\addright{20}</mrow>
+            <mrow>0\amp=17x^2+5x</mrow>
+            <mrow>0\amp=x(17x+5)</mrow>
+          </md>
+          <md>
+            <mrow>x\amp=0\amp\amp\text{or}\amp 17x+5\amp=0</mrow>
+            <mrow>x\amp=0\amp\amp\text{or}\amp 17x+5\subtractright{5}\amp=0\subtractright{5}</mrow>
+            <mrow>x\amp=0\amp\amp\text{or}\amp 17x\amp=-5</mrow>
+            <mrow>x\amp=0\amp\amp\text{or}\amp \divideunder{17x}{17}\amp=\divideunder{-5}{17}</mrow>
+            <mrow>x\amp=0\amp\amp\text{or}\amp x\amp=-\frac{5}{17}</mrow>
+          </md>
+          The solutions are <m>0</m> and <m>-\frac{5}{17}</m>. The solution set is <m>\{0, -\frac{5}{17}\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Use the zero-product property to solve <m>2-x^2=(2-x)^2</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>2-x^2\amp=(2-x)^2</mrow>
+            <mrow>2-x^2\amp=(2-x)(2-x)</mrow>
+            <mrow>2-x^2\amp=4-4x+x^2</mrow>
+            <mrow>2-x^2\subtractright{2}\addright{x^2}\amp=4-4x+x^2\subtractright{2}\addright{x^2}</mrow>
+            <mrow>0\amp=2x^2-4x+2</mrow>
+            <mrow>\multiplyleft{\frac{1}{2}}0\amp=\multiplyleft{\frac{1}{2}}(2x^2-4x+2)</mrow>
+            <mrow>0\amp=x^2-2x+1</mrow>
+            <mrow>0\amp=(x-1)(x-1)</mrow>
+            <mrow>x-1\amp=0</mrow>
+            <mrow>x-1\addright{1}\amp=0\addright{1}</mrow>
+            <mrow>x\amp=1</mrow>
+          </md>
+          The solution is <m>1</m>. The solution set is <m>\{1\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Use the zero-product property to solve each quadratic equation.  State the solutions to each equation as well as the solution set to each equation.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(3x+8)(5x-7)=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We begin by setting each of the factors from the left side of the equation equal to zero.
+            <md>
+              <mrow>(3x+8)(5x-7)\amp=0</mrow>
+            </md>
+            <md>
+              <mrow>3x+8\amp=0 \amp\amp\text{or}\amp 5x-7\amp= 0</mrow>
+              <mrow>3x+8\subtractright{8}\amp=0\subtractright{8} \amp\amp\text{or}\amp 5x-7\addright{7}\amp= 0\addright{7}</mrow>
+              <mrow>3x\amp=-8 \amp\amp\text{or}\amp 5x\amp=7</mrow>
+              <mrow>\divideunder{3x}{3}\amp=\divideunder{-8}{3} \amp\amp\text{or}\amp \divideunder{5x}{5}\amp=\divideunder{7}{5}</mrow>
+              <mrow>x\amp=-\frac{8}{3} \amp\amp\text{or}\amp x\amp=\frac{7}{5}</mrow>
+            </md>
+            </p>
+            <p>
+              The solutions are <m>-\frac{8}{3}</m> and <m>\frac{7}{5}</m>.
+            </p>
+            <p>
+              The solution set is <m>\{-\frac{8}{3}, \frac{7}{5}\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>x(x-6)=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We begin by setting each of the factors from the left side of the equation equal to zero.
+              <md>
+                <mrow>x(x-6)\amp=0</mrow>
+              </md>
+              <md>
+                <mrow>x\amp=0 \amp\amp\text{or}\amp x-6\amp=0</mrow>
+                <mrow>x\amp=0 \amp\amp\text{or}\amp x-6\addright{6}\amp=0\addright{6}</mrow>
+                <mrow>x\amp=0 \amp\amp\text{or}\amp x\amp=6</mrow>
+              </md>
+            </p>
+            <p>
+              The solutions are <m>0</m> and <m>6</m>.
+            </p>
+            <p>
+              The solution set is <m>\{0, 6\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>x(x-3)=10</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We begin by making the right side of the equation zero and then factoring the left side of the equation.
+              <md>
+                <mrow>x(x-3)\amp=10</mrow>
+                <mrow>x(x-3)\subtractright{10}\amp=10\subtractright{10}</mrow>
+                <mrow>x^2-3x-10\amp=0</mrow>
+                <mrow>(x-5)(x+2)\amp=0</mrow>
+              </md>
+              <md>
+                <mrow>x-5\amp=0 \amp\amp\text{or}\amp x+2\amp=0</mrow>
+                <mrow>x-5\addright{5}\amp=0\addright{5} \amp\amp\text{or}\amp x+2\subtractright{2}\amp=0\subtractright{2}</mrow>
+                <mrow>x\amp=5 \amp\amp\text{or}\amp x\amp=-2</mrow>
+              </md>
+            </p>
+            <p>
+              The solutions are <m>5</m> and <m>-2</m>.
+            </p>
+            <p>
+              The solution set is <m>\{5, -2\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>x^2+12x=-36</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We begin by making the right side of the equation zero and then factoring the left side of the equation.
+              <md>
+                <mrow>x^2+12x\amp=-36</mrow>
+                <mrow>x^2+12x\addright{36}\amp=-36\addright{36}</mrow>
+                <mrow>x^2+12x+36\amp=0</mrow>
+                <mrow>(x+6)(x+6)\amp=0</mrow>
+                <mrow>x+6\amp=0</mrow>
+                <mrow>x+6\subtractright{6}\amp=0\subtractright{6}</mrow>
+                <mrow>x\amp=-6</mrow>
+              </md>
+            </p>
+            <p>
+              The solution is <m>-6</m>.
+            </p>
+            <p>
+              The solution set is <m>\{-6\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>4t(8t+9)=5</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We begin by expanding the left side of the equation, making the right side of the equation zero, and then factoring the left side of the equation.
+              <md>
+                <mrow>4t(8t+9)\amp=5</mrow>
+                <mrow>32t^2+36t\amp=5</mrow>
+                <mrow>32t^2+36t\subtractright{5}\amp=5\subtractright{5}</mrow>
+                <mrow>32t^2+36t-5\amp=0</mrow>
+                <mrow>32t^2+40t-4t-5\amp=0</mrow>
+                <mrow>8t(4t+5)-1 \cdot (4t+5)\amp=0</mrow>
+                <mrow>(4t+5)(8t-1)\amp=0</mrow>
+              </md>
+              <md>
+                <mrow>4t+5\amp=0 \amp\amp\text{or}\amp 8t-1\amp=0</mrow>
+                <mrow>4t+5\subtractright{5}\amp=0\subtractright{5} \amp\amp\text{or}\amp 8t-1\addright{1}\amp=0\addright{1}</mrow>
+                <mrow>4t\amp=-5 \amp\amp\text{or}\amp 8t\amp=1</mrow>
+                <mrow>\divideunder{4t}{4}\amp=-\divideunder{5}{4} \amp\amp\text{or}\amp \divideunder{8t}{8}\amp=\divideunder{1}{8}</mrow>
+                <mrow>t\amp=-\frac{5}{4} \amp\amp\text{ or }\amp t\amp=\frac{1}{8}</mrow>
+              </md>
+            </p>
+            <p>
+              The solutions are <m>-\frac{5}{4}</m> and <m>\frac{1}{8}</m>.
+            </p>
+            <p>
+              The solution set is <m>\{-\frac{5}{4}, \frac{1}{8}\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>2y^2=y</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We begin by making the right side of the equation zero and then factoring the left side of the equation.
+              <md>
+                <mrow>2y^2\amp=y</mrow>
+                <mrow>2y^2\subtractright{y}\amp=y\subtractright{y}</mrow>
+                <mrow>2y^2-y\amp=0</mrow>
+                <mrow>y(2y-1)\amp=0</mrow>
+              </md>
+              <md>
+                <mrow>y\amp=0 \amp\amp\text{or}\amp 2y-1\amp=0</mrow>
+                <mrow>y\amp=0 \amp\amp\text{or}\amp 2y-1\addright{1}\amp=0\addright{1}</mrow>
+                <mrow>y\amp=0 \amp\amp\text{or}\amp 2y\amp=1</mrow>
+                <mrow>y\amp=0 \amp\amp\text{or}\amp \divideunder{2y}{2}\amp=\divideunder{1}{2}</mrow>
+                <mrow>y\amp=0 \amp\amp\text{or}\amp y\amp=\frac{1}{2}</mrow>
+              </md>
+            </p>
+            <p>
+              The solutions are <m>0</m> and <m>\frac{1}{2}</m>.
+            </p>
+            <p>
+              The solution set is <m>\{0, \frac{1}{2}\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(w-10)(w+1)=-10</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We begin by expanding the left side of the equation, making the right side of the equation zero, and then factoring the left side of the equation.
+              <md>
+                <mrow>(w-10)(w+1)\amp=-10</mrow>
+                      <mrow>w^2-9w-10\amp=-10</mrow>
+                <mrow>w^2-9w-10\addright{10}\amp=-10\addright{10}</mrow>
+                <mrow>w^2-9w\amp=0</mrow>
+                <mrow>w(w-9)\amp=0</mrow>
+              </md>
+              <md>
+                <mrow>w\amp=0 \amp\amp\text{or}\amp w-9\amp=0</mrow>
+                <mrow>w\amp=0 \amp\amp\text{or}\amp w-9\addright{9}\amp=0\addright{9}</mrow>
+                <mrow>w\amp=0 \amp\amp\text{or}\amp w\amp=9</mrow>
+              </md>
+            </p>
+            <p>
+              The solutions are <m>0</m> and <m>9</m>.
+            </p>
+            <p>
+              The solution set is <m>\{0, 9\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+    </exercises>
+
+  </section>
+

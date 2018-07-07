@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="quadratic-equations-complex-solutions">
+    <title>Complex Number Solutions to Quadratic Equations</title>
+
+    <p>
+      Let's solve the quadratic equation <m>4x^2-12x+25=0</m>.  The equation is already in standard form, so we can state the values of <m>a</m>, <m>b</m>, and <m>c</m> and proceed with the quadratic formula.
+    </p>
+    <sidebyside widths="57% 37%" margins="0%">
+
+      <p>
+        <m>
+          4x^2-12x+25=0
+        </m>
+      </p>
+
+      <p>
+        <m>
+          a=4, b=-12, c=25
+        </m>
+      </p>
+
+    </sidebyside>
+    <p>
+      <md>
+        <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+        <mrow>x\amp=\frac{-(-12) \pm \sqrt{(-12)^2-4 \cdot 4 \cdot 25}}{2 \cdot 4}</mrow>
+        <mrow>x\amp=\frac{12 \pm \sqrt{-256}}{8}</mrow>
+      </md>
+      If we were only concerned with real number solutions we could state our conclusion now, because <m>\sqrt{-256}</m> is not a real number.  However, let's assume that we our also interested in solutions that include imaginary parts and proceed.  In our stated solutions we want the real part of each number separate from the imaginary part, so we will simplify towards that end.
+      <md>
+        <mrow>x\amp=\frac{12 \pm \sqrt{-256}}{8}</mrow>
+        <mrow>x\amp=\frac{12 \pm 16i}{8}</mrow>
+        <mrow>x\amp=\frac{12}{8} \pm \frac{16}{8}i</mrow>
+        <mrow>x\amp=\frac{3}{2} \pm 2i</mrow>
+      </md>
+    </p>
+    <p>
+      The solutions are <m>\frac{3}{2}-2i</m> and <m>\frac{3}{2}+2i</m>.
+    </p>
+    <p>
+      The solution set is <m>\{\frac{3}{2}-2i,\frac{3}{2}+2i\}</m>.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Use the quadratic formula to solve <m>x(2x-5)=4(x^2+3)</m>.
+        </p>
+        <p>
+          We need to manipulate the equation into standard form before we state the values of <m>a</m>, <m>b</m>, and <m>c</m>.  I prefer that <m>a</m> is a positive number, so after I expand both sides I am going to move all the terms to the right side of the equation.
+        </p>
+      </statement>
+      <solution>
+        <sidebyside widths="57% 37%" margins="0%">
+
+          <p>
+            <md>
+              <mrow>x(2x-5)\amp=4(x^2+3)</mrow>
+              <mrow>2x^2-5x\amp=4x^2+12</mrow>
+              <mrow>2x^2-5x\subtractright{2x^2}\addright{5x}\amp=4x^2+12\subtractright{2x^2}\addright{5x}</mrow>
+              <mrow>0\amp=2x^2+5x+12</mrow>
+            </md>
+          </p>
+
+          <p>
+            <md>
+              <mrow></mrow>
+              <mrow></mrow>
+              <mrow>a=2, b=5, c=12</mrow>
+            </md>
+          </p>
+
+        </sidebyside>
+        <p>
+          <md>
+            <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+            <mrow>x\amp=\frac{-5 \pm \sqrt{5^2-4 \cdot 2 \cdot 12}}{2 \cdot 2}</mrow>
+            <mrow>x\amp=\frac{-5 \pm \sqrt{-71}}{4}</mrow>
+            <mrow>x\amp=\frac{-5 \pm \sqrt{71}i}{4}</mrow>
+            <mrow>x\amp=-\frac{5}{4} \pm \frac{\sqrt{71}}{4}i</mrow>
+          </md>
+        </p>
+        <p>
+          The solutions are <m>-\frac{5}{4}-\frac{\sqrt{71}}{4}i</m> and <m>-\frac{5}{4}+\frac{\sqrt{71}}{4}i</m>.
+        </p>
+        <p>
+          The solution set is <m>\{-\frac{5}{4}-\frac{\sqrt{71}}{4}i,-\frac{5}{4}+\frac{\sqrt{71}}{4}i\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Use the square root method to solve each of the following equations over the complex numbers.  Make sure that all solutions have been completely simplified.  State both the solutions and the solution set.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(x+6)^2=-9</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We can immediately apply the square root property.
+              <md>
+                <mrow>(x+6)^2\amp=-9</mrow>
+                <mrow>x+6\amp=\pm \sqrt{-9}</mrow>
+                <mrow>x+6\amp=\pm 3i</mrow>
+                <mrow>x+6\subtractright{6}\amp=\pm 3i\subtractright{6}</mrow>
+                <mrow>x\amp=-6\pm 3i</mrow>
+              </md>
+            </p>
+            <p>
+              The solutions are <m>-6-3i</m> and <m>-6+3i</m>.
+            </p>
+            <p>
+              The solution set is <m>\{-6-3i, -6+3i\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(3x-8)^2=-20</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We can immediately apply the square root property.
+              <md>
+                <mrow>(3x-8)^2\amp=-20</mrow>
+                <mrow>3x-8\amp=\pm \sqrt{-20}</mrow>
+                <mrow>3x-8\amp=\pm 2\sqrt{5}i</mrow>
+                <mrow>3x-8\addright{8}\amp=\pm 2\sqrt{5}i\addright{8}</mrow>
+                <mrow>3x\amp=8\pm 2\sqrt{5}i</mrow>
+                <mrow>\multiplyleft{\frac{1}{3}}3x\amp=\multiplyleft{\frac{1}{3}}(8\pm 2\sqrt{5}i)</mrow>
+                <mrow>x\amp=\frac{8\pm 2\sqrt{5}i}{3}</mrow>
+                <mrow>x\amp=\frac{8}{3} \pm \frac{2\sqrt{5}}{3}i</mrow>
+              </md>
+            </p>
+            <p>
+              The solutions are <m>\frac{8}{3}-\frac{2\sqrt{5}}{3}i</m> and <m>\frac{8}{3}+\frac{2\sqrt{5}}{3}i</m>.
+            </p>
+            <p>
+              The solution set is <m>\frac{8}{3}-\frac{2\sqrt{5}}{3}i, \frac{8}{3}+\frac{2\sqrt{5}}{3}i</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>x^2-12x+52=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We need to complete the square before we can employ the square root method.
+              <md>
+                <mrow>x^2-12x+52\amp=0</mrow>
+                <mrow>x^2-12x\amp=-52</mrow>
+                <mrow>x^2-12x\addright{36}\amp=-52\addright{36}\text{ (completing the square)}</mrow>
+                <mrow>(x-6)^2\amp=-16</mrow>
+                <mrow>x-6\amp=\sqrt{-16}</mrow>
+                <mrow>x-6\amp=4i</mrow>
+                <mrow>x-6\addright{6}\amp=4i\addright{6}</mrow>
+                <mrow>x\amp=6\pm 4i</mrow>
+              </md>
+            </p>
+            <p>
+              The solutions are <m>6-4i</m> and <m>6+4i</m>.
+            </p>
+            <p>
+              The solution set is <m>\{6-4i, 6+4i\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>3w^2-12w+24=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We need to simplify and complete the square before employing the square root method.
+              <md>
+                <mrow>3w^2-12w+24\amp=0</mrow>
+                <mrow>\multiplyleft{\frac{1}{3}}(3w^2-12w+24)\amp=\multiplyleft{\frac{1}{3}}0</mrow>
+                <mrow>w^2-4w+8\amp=0</mrow>
+                <mrow>w^2-4w+8\subtractright{8}\amp=0\subtractright{8}</mrow>
+                <mrow>w^2-4w\amp=-8</mrow>
+                <mrow>w^2-4w\addright{4}\amp=-8\addright{4}\text{ (completing the square)}</mrow>
+                <mrow>(w-2)^2\amp=-4</mrow>
+                <mrow>w-2\amp=\pm \sqrt{-4}</mrow>
+                <mrow>w-2\amp=2i</mrow>
+                <mrow>w-2\addright{2}\amp=2i\addright{2}</mrow>
+                <mrow>w\amp=2\pm 2i</mrow>
+              </md>
+            </p>
+            <p>
+              The solutions are <m>2-2i</m> and <m>2+2i</m>.
+            </p>
+            <p>
+              The solution set is <m>\{2-2i, 2+2i\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Use the quadratic formula to solve each of the following equations over the complex numbers.  Make sure that all solutions have been completely simplified.  State both the solutions and the solution set.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>4x^2+2x+1=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The equation is already in standard form, so we may proceed directly to the quadratic formula.
+            </p>
+            <sidebyside widths="57% 37%" margins="0%">
+
+              <p>
+                <m>
+                  4x^2+2x+1=0
+                </m>
+              </p>
+
+              <p>
+                <m>
+                  a=4, b=2, c=1
+                </m>
+              </p>
+
+          </sidebyside>
+            <p>
+              <md>
+                <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+                <mrow>x\amp\frac{-2 \pm \sqrt{2^2-4 \cdot 4 \cdot 1}}{2 \cdot 4}</mrow>
+                <mrow>x\amp=\frac{-2 \pm \sqrt{-12}}{8}</mrow>
+                <mrow>x\amp=\frac{-2 \pm 2\sqrt{3}i}{8}</mrow>
+                <mrow>x\amp=-\frac{2}{8} \pm \frac{2\sqrt{3}}{8}i</mrow>
+                <mrow>x\amp=-\frac{1}{4} \pm \frac{\sqrt{3}}{4}i</mrow>
+              </md>
+            </p>
+            <p>
+              The solutions are <m>-\frac{1}{4}-\frac{\sqrt{3}}{4}i</m> and <m>-\frac{1}{4}+\frac{\sqrt{3}}{4}i</m>.
+            </p>
+            <p>
+              The solutions set is <m>-\frac{1}{4}-\frac{\sqrt{3}}{4}i, -\frac{1}{4}+\frac{\sqrt{3}}{4}i</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>t^2-3t+5=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The equation is already in standard form, so we may proceed directly to the quadratic formula.
+            </p>
+            <sidebyside widths="57% 37%" margins="0%">
+
+              <p>
+                <m>
+                  t^2-3t+5=0
+                </m>
+              </p>
+
+              <p>
+                <m>
+                  a=1, b=-3, c=5
+                </m>
+              </p>
+
+            </sidebyside>
+            <p>
+              <md>
+                <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+                <mrow>x\amp=\frac{-(-3) \pm \sqrt{(-3)^2-4 \cdot 1 \cdot 5}}{2 \cdot 1}</mrow>
+                <mrow>x\amp=\frac{3 \pm \sqrt{-11}}{2}</mrow>
+                <mrow>x\amp=\frac{3 \pm \sqrt{11}i}{2}</mrow>
+                <mrow>x\amp=\frac{3}{2} \pm \frac{\sqrt{11}}{2}i</mrow>
+              </md>
+            </p>
+            <p>
+              The solutions are <m>\frac{3}{2}-\frac{\sqrt{11}}{2}i</m> and <m>\frac{3}{2}+\frac{\sqrt{11}}{2}i</m>.
+            </p>
+            <p>
+              The solutions set is <m>\{\frac{3}{2}-\frac{\sqrt{11}}{2}i, \frac{3}{2}+\frac{\sqrt{11}}{2}i\}</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>3x^2+16=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The equation is already in standard form, so we may proceed directly to the quadratic formula.
+            </p>
+            <sidebyside widths="57% 37%" margins="0%">
+
+              <p>
+                <m>
+                  3x^2+16=0
+                </m>
+              </p>
+
+              <p>
+                <m>
+                  a=3, b=0, c=16
+                </m>
+              </p>
+
+            </sidebyside>
+            <p>
+              <md>
+                <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+                <mrow>x\amp=\frac{-0 \pm \sqrt{0^2-4 \cdot 3 \cdot 16}}{2 \cdot 3}</mrow>
+                <mrow>x\amp=\frac{\pm \sqrt{-192}}{6}</mrow>
+                <mrow>x\amp=\pm \frac{8\sqrt{3}i}{6}</mrow>
+                <mrow>x\amp=\pm \frac{2 \cdot 4\sqrt{3}i}{2 \cdot 3}</mrow>
+                <mrow>x\amp=\pm \frac{4\sqrt{3}}{3}i</mrow>
+              </md>
+            </p>
+            <p>
+              The solutions are <m>-\frac{4\sqrt{3}}{3}i</m> and <m>\frac{4\sqrt{3}}{3}i</m>.
+            </p>
+            <p>
+              The solutions set is <m>\{-\frac{4\sqrt{3}i}{3}, \frac{4\sqrt{3}i}{3}\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>y^2-4y+9=0</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The equation is already in standard form, so we may proceed directly to the quadratic formula.
+            </p>
+            <sidebyside widths="57% 37%" margins="0%">
+
+              <p>
+                <m>
+                  y^2-4y+9=0
+                </m>
+              </p>
+
+              <p>
+                <m>
+                  a=1, b=-4, c=9
+                </m>
+              </p>
+
+            </sidebyside>
+            <p>
+              <md>
+                <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+                <mrow>x\amp=\frac{-(-4) \pm \sqrt{(-4)^2-4 \cdot 1 \cdot 9}}{2 \cdot 1}</mrow>
+                <mrow>x\amp=\frac{4 \pm \sqrt{-20}}{2}</mrow>
+                <mrow>x\amp=\frac{4 \pm 2\sqrt{5}i}{2}</mrow>
+                <mrow>x\amp=\frac{4}{2} \pm \frac{2\sqrt{5}}{2}i</mrow>
+                <mrow>x\amp=2 \pm \sqrt{5}i</mrow>
+              </md>
+            </p>
+            <p>
+              The solutions are <m>2-\sqrt{5}i</m> and <m>2+\sqrt{5}i</m>.
+            </p>
+            <p>
+              The solutions set is <m>\{2-\sqrt{5}i, 2+\sqrt{5}i\}</m>
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+    </exercises>
+
+  </section>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="quadratic-equations-materials">
+    <title>Quadratic Equations</title>
+
+      <xi:include href="./quadratic-equations-videos.ptx" />
+      <xi:include href="./quadratic-equations-zero-product.ptx" />
+      <xi:include href="./quadratic-equations-square-root-method.ptx" />
+      <xi:include href="./quadratic-equations-quadratic-formula-derivation.ptx" />
+      <xi:include href="./quadratic-equations-quadratic-formula-application.ptx" />
+      <xi:include href="./quadratic-equations-complex-solutions.ptx" />
+      <xi:include href="./quadratic-equations-the-discriminant.ptx" />
+      <xi:include href="./quadratic-equations-application-problems.ptx" />
+      <xi:include href="./quadratic-equations-additional-practice.ptx" />
+
+
+
+</chapter>

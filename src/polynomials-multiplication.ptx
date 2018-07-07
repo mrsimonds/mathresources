@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="polynomials-mulitplication">
+    <title>Multiplication of Polynomials</title>
+
+    <p>
+      Multiplication of polynomials entails four steps:
+      <ol label="1">
+        <li>distribution: <m>a(x+y)=a \cdot x+a \cdot y</m> and <m>(x+y) \cdot a=x \cdot a+y \cdot a</m></li>
+        <li>multiplication of coefficients</li>
+        <li>addition of exponents: <m>x^mx^n=x^{m+n}</m></li>
+        <li>combination of like terms</li>
+      </ol>
+      Let's start with an example where we distribute a monomial through a trinomial.  Let's simplify the following.  <me>4x^2(3x^2-8x+2)</me>
+            We begin by distributing the factor of <m>4x^2</m> to every term in the parentheses.  
+      <md>
+        <mrow>\highlight{4x^2}(3x^2-8x+2)\amp=\highlight{4x^2} \cdot 3x^2+\highlight{4x^2} \cdot -8x +\highlight{4x^2} \cdot 2</mrow>
+        <mrow>\amp=12x^4-32x+8x^2</mrow>
+      </md>
+      As detailed in the four steps, the exponents in the first two terms of the final result came from adding the exponents of the variable factors in the product.  Also, the new coefficients came from the product of the original coefficients.  Let's see a similar example, but this time let's write the monomial on the right side of the product.
+      <me>(-y^5+4y^3+7y) \cdot -3y^2</me>
+      The process and result are shown below.
+      <md>
+        <mrow>(-y^5+4y^3+7y) \cdot \highlight{-3y^2}\amp=-y^5 \cdot \highlight{-3y^2}+4y^3 \cdot \highlight{-3y^2}+7y \cdot \highlight{-3y^2}</mrow>
+        <mrow>\amp=3y^7-12y^5-21y^3</mrow>
+      </md>
+      In general we don't write out the distribution step when multiplying by a monomial.  If the process is new to you or if you're a bit rusty, you might want to write out that step a few times until you gain confidence.  But you should have a goal of being able to execute the procedure successfully without writing out that step.  For example, suppose we were asked to simplify the following expression.
+            <me>8w^4(3w^3-2w^2+2w+11)</me>  The only work that would be expected to be shown is a statement of the simplification in the following manner.  <me>8w^4(3w^3-2w^2+2w+11)=24w^7-16w^6+16w^5+88w</me>
+    </p>
+    <p>
+      We are now moving on to he process of multiplying two binomials.  You may have heard the use of the term FOIL in a mathematical context.  That term is associated with the product of two binomials.  We're not going to begin with that approach, but I wanted to acknowledge it so that if you think that's how we multiply two binomials, you're right, we're just going to derive the process before we use it.
+    </p>
+    <p>
+      Consider the following two expressions.  
+      <me>(x+7) \cdot \highlight{y} \text{  and  } (x+7)\highlight{(}\highlightg{x}\highlight{-}\highlightr{5}\highlight{)}</me>
+      In the same way that we can distribute <m>y</m> through the expression <m>(x+7)</m> in the product on the left, we can distribute the binomial <m>(x-5)</m> through the expression <m>(x+7)</m> in the product on the right.  Let's do it.
+      <me>(x+7) \cdot \highlight{y}=x\highlight{y}+7\highlight{y} \text{  and  } (x+7)\highlight{(}\highlightg{x}\highlight{-}\highlightr{5}\highlight{)}=x\highlight{(}\highlightg{x}\highlight{-}\highlightr{5}\highlight{)}+7\highlight{(}\highlightg{x}\highlight{-}\highlightr{5}\highlight{)}</me> 
+      We are done with the product on the left, but there is unfinished business in the product on the right.  To wit, we still need to distribute <m>x</m> and <m>7</m> through <m>(x-5)</m> and then combine any and all like terms.  Let's finish the process.
+      <md>
+        <mrow>(x+7)\highlight{(}\highlightg{x}\highlight{-}\highlightr{5}\highlight{)}\amp=x\highlight{(}\highlightg{x}\highlight{-}\highlightr{5}\highlight{)}+7\highlight{(}\highlightg{x}\highlight{-}\highlightr{5}\highlight{)}</mrow>
+        <mrow>\amp=x \cdot \highlightg{x}+x \cdot \highlightr{-5}+7 \cdot \highlightg{x} +7 \cdot \highlightr{-5}</mrow>
+        <mrow>\amp=x^2-5x+7x-35</mrow>
+        <mrow>\amp=x^2+2x-35</mrow>
+      </md>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Expand the product <m>(y+8)(y+3)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>(\highlightb{y}+\highlight{8})(\highlightg{y}+\highlightr{3})\amp=\highlightb{y} \cdot (\highlightg{y}+\highlightr{3})+\highlight{8} \cdot (\highlightg{y}+\highlightr{3})</mrow>
+            <mrow>\amp=\highlightb{y} \cdot \highlightg{y}+\highlightb{y} \cdot \highlightr{3}+\highlight{8} \cdot \highlightg{y}+\highlight{8} \cdot \highlightr{3}</mrow>
+            <mrow>\amp=y^2+3y+8y+24</mrow>
+            <mrow>\amp=y^2+11y+24</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+      <p>
+        There is one equivalence in the last example towards which we want to shift our focus.  Specifically, let's focus on the following equivalence.
+        <me>(\highlightb{y}+\highlight{8})(\highlightg{y}+\highlightr{3})=\highlightb{y} \cdot \highlightg{y}+\highlightb{y} \cdot \highlightr{3}+\highlight{8} \cdot \highlightg{y}+\highlight{8} \cdot \highlightr{3}</me>
+        binomials).  The letters in the acronym stand for First, Outside, Inside, and Last.  More specifically:
+      </p>
+      <p>
+        When multiplying two binomials, you need to find the sum of the following four terms.
+        <ul>
+          <li>the product of the First terms of the two binomial</li>
+          <li>the product of the Outer terms of the two binomials</li>
+          <li>the product of the Inner terms of the two binomials</li>
+          <li>the product of the Last terms of the two binomial</li>
+        </ul>
+      </p>
+
+    <example>
+      <statement>
+        <p>
+          Apply the FOIL process to the product <m>(2x+5)(x+3)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>(\highlightb{2x}+\highlight{5})(\highlightg{x}+\highlightr{3})\amp=
+                (\overbrace{\highlightb{2x} \stackrel{}{\cdot} \highlightg{x}}^{\text{F}}) + 
+                (\overbrace{\highlightb{2x} \stackrel{}{\cdot} \highlightr{3}}^{\text{O}}) + 
+                (\overbrace{\highlight{5}  \stackrel{}{\cdot} \highlightg{x}}^{\text{I}}) + 
+                (\overbrace{\highlight{5}  \stackrel{}{\cdot} \highlightr{3}}^{\text{L}})</mrow>
+            <mrow>\amp=2x^2+6x+5x+15</mrow>
+            <mrow>\amp=2x^2+11x+15</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Apply the FOIL process to the product <m>(w-7)(w+4)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Typically we multiply the terms "in our heads" and only write down the results,  This is illustrated in this and all subsequent examples.
+          <md>
+            <mrow>(w-7)(w+4)\amp=w^2+4w-7w-28</mrow>
+            <mrow>\amp=w^2-3w+28</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Now let's turn our attention to a special product called "the product of conjugates."  Conjugates are pairs of binomials whose only difference are the operators.  In one expression the operation is addition and in the other expression the operation is subtraction.  Generically, we refer to conjugates as <m>(a+b)</m> and <m>(a-b)</m>.  Let's see what happens when we multiply those two expressions.
+      <md>
+        <mrow>(a+b)(a-b)\amp=a^2-ab+ab-b^2</mrow>
+        <mrow>\amp=a^2-b^2</mrow>
+      </md>
+      The remarkable thing that occurred is that the two linear terms in the expansion added to zero, leaving behind the binomial <m>a^2-b^2</m>.  The product of conjugates is the only product of binomials of form <m>(ax \pm h)(bx \pm k)</m> that expands and simplifies to another binomial.  In all other cases the expansion and simplification of <m>(ax \pm h)(bx \pm k)</m> results in a trinomial.
+    </p>
+    <p>
+      Because the linear terms always add to zero when we multiply conjugates, we frequently jump directly from <m>(a+b)(a-b)</m> or <m>(a-b)(a+b)</m> to <m>a^2-b^2</m>.  Three examples are shown below.
+      <me>(x-4)(x+4)=x^2-16</me>
+      <me>(3x+7y)(3x-7y)=9x^2-49y^2</me>
+      <me>(5+y^3)(5-y^3)=25-y^6</me>
+      Let's shift our attention to one of the most common errors made in mathematics.  It involves the square of a binomial.  Consider the following. <me>(x+y)^2</me>  For some folks, it is very tempting to just distribute the exponent to <m>x</m> and <m>y</m>.  So tempting, in fact, that many actually do it!  The problem is that exponents do not distribute over addition.  Exponents distribute over multiplication and division.  The only operations that distribute over addition and subtraction are multiplication and division.  Let's see what the expansion and simplification of <m>(x+y)^2</m> looks like when executed correctly.
+      <md>
+        <mrow>(x+y)^2\amp=(\highlightb{x}+\highlight{y})(\highlightg{x}+\highlightr{y})</mrow>
+        <mrow>\amp=\highlightb{x} \cdot \highlightg{x}+\highlightb{x} \cdot \highlightr{y}+\highlight{y} \cdot \highlightg{x}+\highlight{y} \cdot \highlightr{y}</mrow>
+        <mrow>\amp=x^2+xy+xy+y^2</mrow>
+        <mrow>\amp=x^2+2xy+y^2</mrow>
+      </md>
+      Ah!  If we just distribute the exponent to <m>x</m> and <m>y</m>, we miss the two products of <m>xy</m>.  OI-vey!
+      For most folks the described error can be avoided by routinely making the first statement of the expansion process the writing out of two occurrences of the factor side by side.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Expand and simplify <m>(5x-4)^2</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>(5x-4)^2\amp=(5x-4)(5x-4)</mrow>
+            <mrow>\amp=25x^2-20x-20x+16</mrow>
+            <mrow>\amp=25x^2-40x+16</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      As you know, polynomials are not limited to two terms.  For example, consider the following product.
+      <me>(x+3)(x^2+7x+2)</me>
+      We can begin the expansion process by distributing <m>(x^2+7x+2)</m> to both terms of the binomial <m>(x+3)</m>.
+      <md>
+        <mrow>(\highlightg{x}+\highlightr{3})\highlight{(x^2+7x+2)}\amp=\highlightg{x} \cdot \highlight{(x^2+7x+2)}
+              +\highlightr{3} \cdot \highlight{(x^2+7x+2)}</mrow>
+        <mrow>\amp=\highlightg{x} \cdot \highlight{x^2}+\highlightg{x} \cdot \highlight{7x}+\highlightg{x} \cdot \highlight{2}+\highlightr{3} \cdot \highlight{x^2}+\highlightr{3} \cdot \highlight{7x}+\highlightr{3} \cdot \highlight{2}</mrow>
+        <mrow>\amp=x^3+7x^2+2x+3x^2+21x+6</mrow>
+        <mrow>\amp=x^3+10x^2+23x+6</mrow>
+      </md>
+      Once again, we should turn our focus to one specific equivalence in the last expansion.
+      <me>(\highlightg{x}+\highlightr{3})\highlight{(x^2+7x+2)}=\highlightg{x} \cdot \highlight{x^2}+\highlightg{x} \cdot \highlight{7x}+\highlightg{x} \cdot \highlight{2}+\highlightr{3} \cdot \highlight{x^2}+\highlightr{3} \cdot \highlight{7x}+\highlightr{3} \cdot \highlight{2}</me>
+      What we what to focus is the fact that every term of the binomial <m>x+3</m> was multiplied with every term of the trinomial <m>x^2+7x+2</m>.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Apply the last observation to the expansion of <m>(3y-1)(y^2+4y-8)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>(\highlightg{3y}\highlightr{-1})\highlight{(y^2+4y-8)}\amp=\highlightg{3y} \cdot \highlight{y^2}+\highlightg{3y} \cdot \highlight{4y}+\highlightg{3y} \cdot \highlight{-8}-\highlightr{1} \cdot \highlight{y^2}-\highlightr{1} \cdot \highlight{4y}-\highlightr{1} \cdot \highlight{-8}</mrow>
+            <mrow>\amp=3y^3+12y^2-24y-y^2-4y+8</mrow>
+            <mrow>\amp=3y^3+11y^2-28y+8</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+        When employing the strategy of multiplying all terms of the polynomial on the left with all terms of the polynomial on the right, we need to be very deliberate in our process.  I always distribute the fist term in the left polynomial to each term of the right polynomial, then the second term of the left polynomial to each term of the right polynomial, etc.
+    </p>  
+
+    <example>
+      <statement>
+        <p>
+          Expand and simplify <m>(x^2-9x+4)(2x^2+x-4)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\amp(\highlightg{x^2}\highlightr{-9x}+\highlightb{4})\highlight{(2x^2+x-4)}</mrow>
+            <mrow>\amp \phantom{={}} \phantom{={}}=\highlightg{x^2} \cdot \highlight{2x^2}+\highlightg{x^2} \cdot \highlight{x}+\highlightg{x^2} \cdot \highlight{-4}-\highlightr{9x} \cdot \highlight{2x^2}-\highlightr{9x} \cdot \highlight{x}-\highlightr{9x} \cdot \highlight{-4}</mrow>
+            <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}} \phantom{={}}+\highlightb{4} \cdot \highlight{2x^2}+\highlightb{4} \cdot \highlight{x}+\highlightb{4} \cdot \highlight{-4}</mrow>
+            <mrow>\amp \phantom{={}} \phantom{={}}=2x^4+x^3-4x^2-18x^3-9x^2+36x+8x^2+4x-16</mrow>
+            <mrow>\amp \phantom{={}} \phantom{={}}=2x^4-17x^3-5x^2+40x-16</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Expand and simplify each product.
+          </p>
+        </introduction>
+
+          <exercise>
+            <statement>
+              <p>
+                <m>(x+3)(x-14)</m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <m>
+                  \begin{aligned}[t]
+                  (x+3)(x-14)\amp=x^2-14x+3x-42\\
+                  \amp=x^2-11x-42
+                  \end{aligned}
+                </m>
+              </p>
+            </solution>
+          </exercise>
+
+          <exercise>
+            <statement>
+              <p>
+                <m>(3y+1)(2y-4)</m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <m>
+                  \begin{aligned}[t]
+                  (3y+1)(2y-4)\amp=6y^2-12y+2y-4\\
+                  \amp=6y^2-10y-4
+                  \end{aligned}
+                </m>
+              </p>
+            </solution>
+          </exercise>
+
+          <exercise>
+            <statement>
+              <p>
+                <m>(9x-2)(x^2+4x-1)</m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <m>
+                  \begin{aligned}[t]
+                  (9x-2)(x^2+4x-1)\amp=9x^3+36x^2-9x-2x^2-8x+2\\
+                  \amp=9x^3+34x^2-17x+2
+                  \end{aligned}
+                </m>
+              </p>
+            </solution>
+          </exercise>
+
+          <exercise>
+            <statement>
+              <p>
+                <m>-3x^2(4x^2-6x+5)</m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <m>
+                  -3x^2(4x^2-6x+5)=-12x^4+18x^3-15x^2
+                </m>
+              </p>
+            </solution>
+          </exercise>
+
+          <exercise>
+            <statement>
+              <p>
+                <m>(4x+5y)(4x-5y)</m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <m>
+                  \begin{aligned}[t]
+                  (4x+5y)(4x-5y)\amp=16x^2-20xy+20xy-25y^2\\
+                  \amp=16x^2-25y^2
+                  \end{aligned}
+                </m>
+              </p>
+            </solution>
+          </exercise>
+
+          <exercise>
+            <statement>
+              <p>
+                <m>(3x+5)^2</m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <m>
+                  \begin{aligned}[t]
+                  (3x+5)^2\amp=(3x+5)(3x+5)\\
+                  \amp=9x^2+15x+15x+25\\
+                  \amp=9x^2+30x+25
+                  \end{aligned}
+                </m>
+              </p>
+            </solution>
+          </exercise>
+
+          <exercise>
+            <statement>
+              <p>
+                <m>(x+3)(x-7)(x-2)</m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <m>
+                  \begin{aligned}[t]
+                  (x+3)(x-7)(x-2)\amp=(x^2-7x+3x-21)(x-2)\\
+                  \amp=(x^2-4x-21)(x-2)\\
+                  \amp=x^3-2x^2-4x^2+8x-21x+42\\
+                  \amp=x^3-6x^2-13x+42
+                  \end{aligned}
+                </m>
+              </p>
+            </solution>
+          </exercise>
+
+          <exercise>
+            <statement>
+              <p>
+                <m>(x^4+8y^2)(-3x^4+5y^2)</m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <m>
+                  \begin{aligned}[t]
+                  (x^4+8y^2)(-3x^4+5y^2)\amp=-3x^8+5x^4y^2-24x^4y^2+40y^4\\
+                  \amp=-3x^8-19x^4y^2+40y^4
+                  \end{aligned}
+                </m>
+              </p>
+            </solution>
+          </exercise>
+
+          <exercise>
+            <statement>
+              <p>
+                <m>(3-7w^7)^2</m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <m>
+                  \begin{aligned}[t]
+                  (3-7w^7)^2\amp=(3-7w^7)(3-7w^7)\\
+                  \amp=9-21w^{7}-21w^{7}+49w^{14}\\
+                  \amp=9-42w^7+49w^{14}
+                  \end{aligned}
+                </m>
+              </p>
+            </solution>
+          </exercise>
+
+          <exercise>
+            <statement>
+              <p>
+                <m>(x+4)^3</m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <m>
+                  \begin{aligned}[t]
+                  (x+4)^3\amp=(x+4)(x+4)(x+4)\\
+                  \amp=(x^2+4x+4x+16)(x+4)\\
+                  \amp=(x^2+8x+16)(x+4)\\
+                  \amp=x^3+4x^2+8x^2+32x+16x+64\\
+                  \amp=x^3+12x^2+48x+64
+                  \end{aligned}
+                </m>
+              </p>
+            </solution>
+          </exercise>
+
+          <exercise>
+            <statement>
+              <p>
+                <m>(3x^2-4)(x^2-x+6)</m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <m>
+                  \begin{aligned}[t]
+                  (3x^2-4)(x^2-x+6)\amp=3x^4-3x^3+18x^2-4x^2+4x-24\\
+                  \amp=3x^4-3x^3+14x^2+4x-24
+                  \end{aligned}
+                </m>
+              </p>
+            </solution>
+          </exercise>
+
+          <exercise>
+            <statement>
+              <p>
+                <m>-x(-x^3-4x^2+2x+3)</m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <m>
+                  -x(-x^3-4x^2+2x+3)=x^4+4x^3-2x^2-3x
+                </m>
+              </p>
+            </solution>
+          </exercise>
+
+          <exercise>
+            <statement>
+              <p>
+                <m>(5y+2)^2</m>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <m>
+                  \begin{aligned}[t]
+                  (5y+2)^2\amp=(5y+2)(5y+2)\\
+                  \amp=25y^2+10y+10y+4\\
+                  \amp=25y^2+20y+4
+                  \end{aligned}
+                </m>
+              </p>
+            </solution>
+          </exercise>
+
+        </exercisegroup>
+
+      </exercises>
+
+    </section>

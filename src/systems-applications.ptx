@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="systems-applications">
+    <title>Applications of Systems of Linear Equations</title>
+
+      <p>
+        When presented with an application problem with two unknowns, it can be helpful to arrange the information in a table from which we can infer two equations.  Let's see a few examples. 
+      </p>
+
+      <example>
+        <statement>
+          <p>
+            Mohamed has his retirement money invested in two accounts, one "safe" and the other highly speculative.  At the beginning of 2017 the two accounts combined had a total of $27,872.00.  Over the course of the year the safe account earned 2.5% interest while the speculative account grew by 43%.  Mohamed made no deposits to nor withdrawals from either account over the course of the year.  At the end of the year the total balance between the two accounts was $35,944.26.  How much did Mohamed have invested in each account at the beginning of 2017?  Assume that the start of the year the amount in each account was a whole dollar amount.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's begin by defining <m>x</m> to be the amount ($) that Mohamed had invested in the safe account at the beginning of 2017 and <m>y</m> the amount he had invested in the speculative account at the beginning of 2017.  Let's also note that the total growth in the balance of the two accounts over the course of 2017 was $8,072.26 (the difference between $34,966.26 and $27,872.00).  The information we know about the accounts is summarized in <xref ref="systems-applications-table-1">Table</xref>.
+          </p>
+          <p>
+          <table xml:id="systems-applications-table-1">
+            <caption>Mohamed's Retirement Accounts</caption>
+            <tabular>
+            <col halign="left"/>
+            <col halign="center"/>
+            <col halign="center"/>
+            <col halign="center"/>
+            <row>
+              <cell>
+              </cell>
+              <cell>
+                <line>Safe Account</line>
+              </cell>
+              <cell>
+                <line>Speculative Account</line>
+              </cell>
+              <cell>
+                <line>Total</line>
+              </cell>
+            </row>
+            <row>
+              <cell>
+                Amount at start of 2017 ($)
+              </cell>
+              <cell>
+                <m>x</m>
+            </cell>
+              <cell>
+                  <m>y</m>
+                </cell>
+                <cell>
+                  <m>27,872.00</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  Annual Growth ($)
+                </cell>
+                <cell>
+                  <m>.025x</m>
+                </cell>
+                <cell>
+                  <m>.43y</m>
+                </cell>
+                <cell>
+                  <m>8,072.26</m>
+                </cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+        <p></p>
+        <p>
+          In each row of the table, the amounts in the safe and speculative accounts sum to to the total amount.  That leads to the following system of equations.
+          <me>
+            \left\{
+              \begin{aligned}
+                x+y\amp=27,872\\
+                .025x+.43y\amp=8,072.26\\
+              \end{aligned}
+            \right.
+          </me>
+          We can eliminate <m>x</m> from the system by multiplying both sides of the first equation by <m>-.025</m> and then summing the respective sides of the two equations in the resultant system.
+          <me>
+            \left\{
+              \begin{aligned}
+                \multiplyleft{-.025}{x+y}\amp=\multiplyleft{-.025}27,872\\
+                .025x+.43y\amp=8,072.26\\
+              \end{aligned}
+            \right.
+          </me>
+          <me>
+            \left\{
+              \begin{aligned}
+                -.025x-.025y\amp=-696.8\\
+                .025x+.43y\amp=8,072.26\\
+              \end{aligned}
+            \right.
+          </me>
+          Let's equate the sums of the respective sides of the equations and solve the resultant equation for <m>y</m>.
+          <md>
+            <mrow>.405y\amp=7375.46</mrow>
+            <mrow>\divideunder{.405y}{.405}\amp=\divideunder{7375.46}{.405}</mrow>
+            <mrow>y\amp \approx 18,211</mrow>
+          </md>
+          Substituting <m>18,211</m> for <m>y</m> in the equation <m>x+y=27,872</m> will enable us to determine the value for <m>x</m>.
+          <md>
+            <mrow>x+\highlight{18,211}\amp=27,872</mrow>
+            <mrow>x+18,211\subtractright{18,211}\amp=27,872\subtractright{18,211}</mrow>
+            <mrow>x\amp=9661</mrow>
+          </md>
+          Let's check the values for <m>x</m> and <m>y</m> in the growth equation.
+          <md>
+            <mrow>.025(\highlight{9661})+.43(\highlightr{18211})\amp=8072.26\,?</mrow>
+            <mrow>241.53+7830.73\amp=8072.26\,?</mrow>
+            <mrow>8072.26\amp=8072.26\,\checkmark</mrow>
+          </md>
+          At the beginning of 2017, Mohamed had $9,611.00 invested in the safe account and $18,211.00 invested in the speculative account. 
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Jim and Jim are lab partners in chemistry class.  The two Jim's are tasked with the creation of 3 liters of a solution that is 35.2% acid and 64.8% water.  They have two solutions to work with.  One of the existing solutions is 40% acid (and 60% water) while the other is 28% acid (and 72% water).  How much of each solution should the Jim's use in their mixture?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's define <m>x</m> to be the amount (liters) of 40% acid solution that should be used and <m>y</m> be the amount (liters) of 28% acid solution that should be used.  Let's note that the amount of acid in the final solution is 35.3% of 3 liters which is 1.056 liters.  The information in the problem is summarized in <xref ref="systems-applications-table-2">Table</xref>.
+        </p>
+        <p>
+          <table xml:id="systems-applications-table-2">
+            <caption>Jim and Jim are fixin' to do some mixin'</caption>
+              <tabular>
+                <col halign="left"/>
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+                <row>
+                  <cell>
+                  </cell>
+                  <cell>
+                    <line>40% acid</line>
+                  </cell>
+                  <cell>
+                    <line>28% acid</line>
+                  </cell>
+                  <cell>
+                    <line>New solution (35.2% acid)</line>
+                  </cell>
+                </row>
+                <row>
+                  <cell>
+                    Total amount of solution (l)
+                  </cell>
+                  <cell>
+                    <m>x</m>
+                  </cell>
+                  <cell>
+                    <m>y</m>
+                  </cell>
+                  <cell>
+                    <m>2</m>
+                  </cell>
+                </row>
+                <row>
+                  <cell>
+                    Amount of acid in solution (l)
+                  </cell>
+                  <cell>
+                    <m>.40x</m>
+                  </cell>
+                  <cell>
+                    <m>.28y</m>
+                  </cell>
+                  <cell>
+                    <m>1.056</m>
+                  </cell>
+                </row>
+              </tabular>
+          </table>
+        </p>
+        <p></p>
+        <p>
+          In both rows of the table, the amounts of the two existing solutions need to sum to the amount in the new solution.  This leads to the following system of equations.
+          <me>
+            \left\{
+              \begin{aligned}
+                x+y\amp=3\\
+                .40x+.28y\amp=1.056\\
+              \end{aligned}
+            \right.
+          </me>
+          From the first equation we can see that <m>y=3-x</m>.  Let's substitute <m>3-x</m> for <m>y</m> in the second equation and solve the resultant equation for <m>x</m>.
+          <md>
+            <mrow>.40x+.28\highlight{y}\amp=1.056</mrow>
+            <mrow>.40x+.28(\highlight{3-x})\amp=1.056</mrow>
+            <mrow>.40x+.84-.28x\amp=1.056</mrow>
+            <mrow>.12x+.84\amp=1.056</mrow>
+            <mrow>.12x+.84\subtractright{.84}\amp=1.056\subtractright{.84}</mrow>
+            <mrow>.12\amp=.216</mrow>
+            <mrow>\divideunder{.12}{.12}\amp=\divideunder{.216}{.12}</mrow>
+            <mrow>x\amp=1.8</mrow>
+          </md>
+          Since the two amounts sum to 3, it must be the case that <m>y=1.2</m>.  Let's check the values in the acid equation.
+          <md>
+            <mrow>.40(\highlight{1.8})+.28(\highlightr{1.2})\amp=1.056\,?</mrow>
+            <mrow>.72+.336\amp=1.056\,?</mrow>
+            <mrow>1.056\amp=1.056\,\checkmark</mrow>
+          </md>
+          The two Jim's need to mix 1.8 liters of the  40% acid solution with 1.2 liters of the 28% solution.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      In the equation <m>D=rt</m>,  <m>D</m> represents distance,  <m>r</m> represents rate (speed), and  <m>t</m> represents time.  For example, if you drive at a constant speed of 65 mph for 2 hours, then the total distance covered over those hours is determined as follows.
+      <md>
+        <mrow>D\amp=rt</mrow>
+        <mrow>\amp=\left(65\,\frac{\text{miles}}{\text{hr}}\right)(2\,\text{hr})</mrow>
+        <mrow>\amp=110\,\text{miles}</mrow>
+      </md>
+      Similarly, the amount of time it takes to drive 175 miles at a constant rate of 70 mph is calculated below.
+      <md>
+        <mrow>t\amp=\frac{D}{r}</mrow>
+        <mrow>\amp=\frac{175\,\text{miles}}{70\frac{\text{miles}}{\text{hr}}}</mrow>
+        <mrow>\amp=2.5\,\text{hr}</mrow>
+      </md>
+        The equation <m>D=rt</m> and its variations \left(e.g. <m>t=\frac{D}{r}</m>\right) frequently come into play when solving applications involving moving objects.  Let's see a couple of examples.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Chao and Elyse are in separate cars both driving on I-65.  At noon one day Elyse (driving north) passes Chao (driving south).  For the next 15 minutes each car maintains the exact speed they were traveling at noon.  By 12:15 pm that day the distance (along the highway) between the two cars was 33.75 miles.  During those 15 minutes Elyse's constant speed was 9 mph faster than Chao's constant speed.  Determine the constant speeds that  were maintained by the two drivers over those 15 minutes.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let <m>x</m> represent the constant speed (mph) maintained by Elyse and <m>y</m> represent the constant speed (mph) maintained by Chao.  Some of the information relevant to solution is shown in <xref ref="systems-applications-table-3">Table</xref>.  In each row of the table, the expression found in the Distance column was determined using <m>D=rt</m>.
+        </p>
+        <p>
+          <table xml:id="systems-applications-table-3">
+          <caption>Elyse passes Chao</caption>
+            <tabular>
+              <col halign="left"/>
+              <col halign="center"/>
+              <col halign="center"/>
+              <col halign="center"/>
+              <row>
+                <cell>
+                </cell>
+                <cell>
+                  <line>Rate (mph)</line>
+                </cell>
+                <cell>
+                  <line>Time (hr)</line>
+                </cell>
+                <cell>
+                  <line>Distance (miles)</line>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  Elyse
+                </cell>
+                <cell>
+                  <m>x</m>
+                </cell>
+                <cell>
+                  <m>.25</m>
+                </cell>
+                <cell>
+                  <m>.25y</m>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  Chao
+                </cell>
+                <cell>
+                  <m>y</m>
+                </cell>
+                <cell>
+                  <m>.25</m>
+                </cell>
+                <cell>
+                  <m>.25y</m>
+                </cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+        <p></p>
+        <p>
+          The fact that Elyse's constant speed was 9 mph greater than Chao gives us <me>x=y+9</me>.  The fact that that the distance betweens the two cars was 33.75 miles after 15 minutes gives us <me>.25x+.25y=33.75</me>.  Let's substitute <m>y+9</m> for <m>x</m> in the second equation and then solve for <m>y</m>.
+          <md>
+            <mrow>.25\highlight{x}+.25y\amp=33.75</mrow>
+            <mrow>.25(\highlight{y+9})+.25y\amp=33.75</mrow>
+            <mrow>.25y+2.25+.25y\amp=33.75</mrow>
+            <mrow>.5y+2.25\amp=33.75</mrow>
+            <mrow>.5y+2.25\subtractright{2.25}\amp=33.75\subtractright{2.25}</mrow>
+            <mrow>.5y\amp=31.5</mrow>
+            <mrow>\multiplyleft{2}.5y\amp=\multiplyleft{2}31.5</mrow>
+            <mrow>y\amp=62</mrow>
+          </md>
+          So Chao maintained a constant speed of 62 mph and seeing as Elyse maintained a constant speed that was 9 mph greater than Chao's, her constant speed was 71 mph.  Let's make sure that our conclusion makes sense.
+        </p>
+        <p>
+          The distance traveled in 15 minutes at a speed of 62 mph is: <me>\left(62\,\frac{\text{miles}}{\text{hr}}\right)(.25\,\text{hr})=15.5\,\text{miles}</me>.  The distance traveled in 15 minutes at a speed of 71 mph is: <me>\left(71\,\frac{\text{miles}}{\text{hr}}\right)(.25\,\text{hr})=17.75\,\text{miles}</me>.<me>15.5\,\text{miles}+17.75\,\text{miles}=33.25\,\text{miles}\,\checkmark</me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          When moving along a river, a boat's speed relative to the land is determined by both the speed at which it would be moving in still water and the speed of the current.  While moving downstream (with the current), the two speeds are added.  While moving upstream (against the current), the speed of the current is subtracted from the speed the boat would maintain in still water.
+        </p>
+        <p>
+          One afternoon Cisco took his fishing boat out on the Willamette.  He set the boat's motor to a constant (still water) cruising speed and motored 20 miles upstream before turning around and motoring the same 20 miles back downstream.  The trip upstream took 2 hours to complete while the trip back downstream took only 50 minutes.  Assuming that both the (still water) cruising speed and the speed of the current were constant the entire trip, determine both of those speeds.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Define <m>x</m> to be the (still water) cruising speed (mph) of the boat and <m>y</m> to be the speed of the current.  The information from the problem is summarized in <xref ref="systems-applications-table-4">Table</xref>.
+        </p>
+        <p>
+          <table xml:id="systems-applications-table-4">
+          <caption>Cisco goes fishing</caption>
+            <tabular>
+              <col halign="left"/>
+              <col halign="center"/>
+              <col halign="center"/>
+              <col halign="center"/>
+              <row>
+                <cell>
+                </cell>
+                <cell>
+                  <line>Rate (mph)</line>
+                </cell>
+                <cell>
+                  <line>Time (hr)</line>
+                </cell>
+                <cell>
+                  <line>Distance (miles)</line>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  Upstream
+                </cell>
+                <cell>
+                  <m>x-y</m>
+                </cell>
+                <cell>
+                  <m>2</m>
+                </cell>
+              <cell>
+                <m>20</m>
+              </cell>
+              </row>
+              <row>
+                <cell>
+                  Downstream
+                </cell>
+                <cell>
+                  <m>x+y</m>
+                </cell>
+                <cell>
+                  <m>\frac{5}{6}</m>
+                </cell>
+                <cell>
+                  <m>20</m>
+                </cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+        <p></p>
+        <p>
+          Our two equations come from the fact that in each row of the table the distance is equal to the product of the rate and time.  Specifically:
+          <me>
+            \left\{
+              \begin{aligned}
+                2(x-y)\amp=20\\
+                \frac{5}{6}(x+y)\amp=20\\
+              \end{aligned}
+            \right.
+          </me>
+          We'll begin solving our system by clearing away the fraction in the second equation and distributing the constant factors in both equations.
+          <me>
+            \left\{
+              \begin{aligned}
+                2(x-y)\amp=20\\
+                \multiplyleft{6}\frac{5}{6}(x+y)\amp=\multiplyleft{6}20\\
+              \end{aligned}
+            \right.
+          </me>
+          <me>
+            \left\{
+              \begin{aligned}
+                2(x-y)\amp=20\\
+                5(x+y)\amp=120\\
+              \end{aligned}
+            \right.
+          </me>
+          <me>
+            \left\{
+              \begin{aligned}
+                2x-2y\amp=20\\
+                5x+5y\amp=120\\
+              \end{aligned}
+            \right.
+          </me>
+          Let's eliminate <m>y</m> from the system by multiplying both sides of the first equation by <m>5</m> and both sides of the second equation by <m>2</m> and then summing the respective sides of the two equations.
+          <me>
+            \left\{
+              \begin{aligned}
+                \multiplyleft{5}(2x-2y)\amp=\multiplyleft{5}20\\
+                \multiplyleft{2}(5x+5y)\amp=\multiplyleft{2}120\\
+              \end{aligned}
+            \right.
+          </me>
+          <me>
+            \left\{
+              \begin{aligned}
+                10x-10y\amp=100\\
+                10x+10y\amp=240\\
+              \end{aligned}
+            \right.
+          </me>
+          Equating the sums of the respective sides we get <m>20x=340</m>.  Let's solve that.
+          <md>
+            <mrow>20x\amp=340</mrow>
+            <mrow>\divideunder{20x}{20}\amp=\divideunder{340}{20}</mrow>
+            <mrow>x\amp=17</mrow>
+          </md>
+          Let's substitute <m>17</m> for <m>x</m> in the equation <m>2x-2y=20</m> and solve the resultant equation for <m>y</m>.
+          <md>
+            <mrow>2\highlight{x}-2y\amp=20</mrow>
+            <mrow>2(\highlight{17})-2y\amp=20</mrow>
+            <mrow>34-2y\amp=20</mrow>
+            <mrow>34-2y\subtractright{34}\amp=20\subtractright{34}</mrow>
+            <mrow>-2y\amp=-14</mrow>
+            <mrow>\divideunder{-2y}{-2}\amp=\divideunder{-14}{-2}</mrow>
+            <mrow>y\amp=7</mrow>
+          </md>
+          Before stating a conclusion, let's make sure that our answers make sense.  When going upstream, the speed of the boat relative to the land is the difference of the two speeds, i.e. 10 mph.
+          <me>\left(10\,\frac{\text{miles}}{\text{hr}}\right)(2\,\text{hr})=20 \,\text{miles}\,\checkmark</me>
+          When going downstream, the speed of the boat relative to the land is the sum of the two speeds, i.e. 24 mph.
+          <me>\left(24\,\frac{\text{miles}}{\text{hr}}\right)\left(\frac{5}{6}\,\text{hr}\right)=20 \,\text{miles}\,\checkmark</me>
+          So the (still water) cruising speed of the boat was 17 mph and the speed of the current was 7 mph.
+        </p>
+      </solution>
+    </example>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Questions vary.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              At the beginning of 1982, Francisco had $10,000 invested in two accounts - a savings account and a stock market account.  Over the course of the year, the savings account balance grew by 8%, while the stock market account lost 5%.  At the end of the year the two account balances totaled $10,345.  How much did Francisco have invested in each account at the beginning of 1982? Assume that no money was deposited to or withdrawn from either account over the course of the year.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Let <m>x</m> represent the amount ($) Francisco had invested in the savings account at the beginning of of 1982 and <m>y</m> represent the amount Francisco had invested in the stock market account at the beginning of 1982.  The information given in the problem is summarized in 
+              <xref ref="systems-spplications-exercises-table-1">Table</xref>.
+            </p>
+
+            <table xml:id="systems-spplications-exercises-table-1">
+              <caption>Francisco's Investment Accounts</caption>
+              <tabular>
+                <col halign="left"/>
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+                <row>
+                  <cell>
+                  </cell>
+                  <cell>
+                    <line>Savings Account</line>
+                  </cell>
+                  <cell>
+                    <line>Stock Account</line>
+                  </cell>
+                  <cell>
+                    <line>Total</line>
+                  </cell>
+                </row>
+                <row>
+                  <cell>
+                    Amount invested ($)
+                  </cell>
+                  <cell>
+                    <m>x</m>
+                  </cell>
+                  <cell>
+                    <m>y</m>
+                  </cell>
+                  <cell>
+                    <m>10,000</m>
+                  </cell>
+                </row>
+                <row>
+                  <cell>
+                    Interest earned ($)
+                  </cell>
+                  <cell>
+                    <m>.08x</m>
+                  </cell>
+                  <cell>
+                    <m>-.05y</m>
+                  </cell>
+                  <cell>
+                    <m>345</m>
+                  </cell>
+                </row>
+              </tabular>
+            </table>
+            <p></p>
+            <p>
+              In both the investment and interest rows, the individual amounts from the two accounts must sum to the total.  This gives us the following system of equations.
+              <me>
+                \left\{
+                  \begin{aligned}
+                    x+y\amp=10,000\\
+                    .08x-.05y\amp=345\\
+                  \end{aligned}
+                \right.
+              </me>
+              Solving the first equation for <m>y</m> we have <m>y=10,000-x</m>.  So we can substitute <m>10,000-x</m> for <m>y</m> in the interest equation and solve for <m>x</m>.
+              <md>
+                <mrow>.08x-.05(\substitute{10,000-x})\amp=345</mrow>
+                <mrow>.08x-500+.05x\amp=345</mrow>
+                <mrow>.13x-500\amp=345</mrow>
+                <mrow>.13x-500\addright{500}\amp=345{\addright{500}}</mrow>
+                <mrow>.13x\amp=845</mrow>
+                <mrow>\divideunder{.13x}{.13}\amp=\divideunder{845}{.13}</mrow>
+                <mrow>x\amp=6500</mrow>
+              </md>
+              So Francisco had $6500 in the savings account at the beginning of 1982 leaving $3500 that he had invested in the stock market account at the beginning of 1982.  Let's confirm the result with the interest equation.
+              <md>
+                <mrow>.08(\substitute{6500})-.05(\substitute{3500})\amp=520-175</mrow>
+                <mrow>\amp=345\,\checkmark</mrow>
+              </md>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Jolly Jelly Beans are red and green.  The candy is sold from bulk bins and in general, 70% of the beans (by weight) are red while the other 30% are green.  Benito's Jelly Beans are also red and green and are also sold from bulk bins. In general, 25% of Benito's Jelly Beans (by weight) are red while the other 75% are green.  Monica wants to purchase 12 lbs of Jelly beans, but she wants the red and green beans to be evenly distributed, each making up 50% of the mix.  How many pounds of each type of candy should Monica purchase to achieve her goal?  Assume that each percentage stated in the problem is exact.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Let <m>x</m> represent the number of pounds of Jolly Jelly Beans that Monica should purchase and <m>y</m> represent the number of pounds of Benito's Jelly Beans she should buy.
+            </p>
+            <p></p>
+            <p>
+              We can solve the problem two different ways - by focusing on her goal that 50% of the beans are red or by focusing on her goal that 50% of the beans are green.  Below I focus on the goal of 50% red beans.  You should also work the problem focusing on the goal that 50% of the beans are green and see that you get the same result.  The information given in the problems is summarized in <xref ref="systems-application-exercises-table-2">Table</xref>
+            </p>
+              <table xml:id="systems-application-exercises-table-2">
+                <caption>Monica's Accounting of Jelly Beans</caption>
+                <tabular>
+                  <col halign="left"/>
+                  <col halign="center"/>
+                  <col halign="center"/>
+                  <col halign="center"/>
+                  <row>
+                    <cell>
+                    </cell>
+                    <cell>
+                      <line>Jolly Jelly Beans</line>
+                    </cell>
+                    <cell>
+                      <line>Benito's Jelly Beans</line>
+                    </cell>
+                    <cell>
+                      <line>Total</line>
+                    </cell>
+                  </row>
+                  <row>
+                    <cell>
+                      # of lbs purchased
+                    </cell>
+                    <cell>
+                      <m>x</m>
+                    </cell>
+                    <cell>
+                      <m>y</m>
+                    </cell>
+                    <cell>
+                      <m>12</m>
+                    </cell>
+                  </row>
+                  <row>
+                    <cell>
+                      # of lbs of red beans
+                    </cell>
+                    <cell>
+                      <m>.70x</m>
+                    </cell>
+                    <cell>
+                      <m>.25y</m>
+                    </cell>
+                    <cell>
+                      <m>6</m>
+                    </cell>
+                  </row>
+                </tabular>
+              </table>
+            <p></p>
+            <p>
+              In both variable rows of <xref ref="systems-application-exercises-table-2">Table</xref>, the sum of the two individual purchases needs to equal the total purchase.  This gives us the following system of equations.
+              <me>
+                \left\{
+                  \begin{aligned}
+                    x+y\amp=12\\
+                    .70x+.25y\amp=6\\
+                  \end{aligned}
+                \right.
+              </me>
+              From the first equation we have <m>y=12-x</m> which we use to make a substitution in the second equation.
+              <md>
+                <mrow>.70x+.25\substitute{y}\amp=6</mrow>
+                <mrow>.70x+.25(\substitute{12-x})\amp=6</mrow>
+                <mrow>.70x+3-.25x\amp=6</mrow>
+                <mrow>.45x+3\amp=6</mrow>
+                <mrow>.45x+3\subtractright{3}\amp=6\subtractright{3}</mrow>
+                <mrow>.45x\amp=3</mrow>
+                <mrow>\divideunder{.45x}{.45}\amp=\divideunder{3}{.45}</mrow>
+                <mrow>x\amp=6\,\sfrac{2}{3}</mrow>
+              </md>
+              So we conclude that Monica should purchase <m>6\,\sfrac{2}{3}</m> pounds of Jolly Jelly Beans and <m>5\,\sfrac{1}{3}</m> pounds of Benito's Jelly Beans (so that she purchases a total of 12 pounds of beans).  We can check to make sure that this will result in 6 lbs of red beans.
+              <md>
+                <mrow>.70\left(\substitute{\frac{20}{3}}\right)+.25\left(\substitute{\frac{16}{3}}\right)\amp=\frac{14}{3}+\frac{4}{3}</mrow>
+                <mrow>\amp=\frac{18}{3}</mrow>
+                <mrow>\amp=6\,\checkmark</mrow>
+              </md>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Calvin is in Chemistry 201 lab.  Calvin's instructor want him to prepare two liters of a solution that is 30% HCl (hydrochloric acid).  Calvin has two mixtures to work with, one of which is 20% HCl and the other of which is 45% HCl.  How many liters of each of the existent mixtures should Calvin use to achieve his goal of 2 l of solution, 30% of which is HCl?
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Let <m>x</m> represent the amount (liters) of 20% solutions Calvin should use and <m>y</m> represent the amount (liters) of 45% HCl solution Calvin should use.  The information given in the problem is summarized in <xref ref="systems-applications-exercises-table-3">Table</xref>.  The figure of <m>.60</m> in the table comes from the fact that there are two liters of new solution and 30% of that solutions is HCl; <m>30</m>% of <m>2</m> is <m>.60</m>.
+            </p>
+            <p>
+              <table xml:id="systems-applications-exercises-table-3">
+                <caption>Calvin has Chemistry to do</caption>
+                <tabular>
+                  <col halign="left"/>
+                  <col halign="center"/>
+                  <col halign="center"/>
+                  <col halign="center"/>
+                  <row>
+                    <cell>
+                    </cell>
+                    <cell>
+                      <line>20% HCl</line>
+                    </cell>
+                    <cell>
+                      <line>45% HCl</line>
+                    </cell>
+                    <cell>
+                      <line>New solution (30% HCl)</line>
+                    </cell>
+                  </row>
+                  <row>
+                    <cell>
+                      Total amount of solution (l)
+                    </cell>
+                    <cell>
+                      <m>x</m>
+                    </cell>
+                    <cell>
+                      <m>y</m>
+                    </cell>
+                    <cell>
+                      <m>2</m>
+                    </cell>
+                  </row>
+                  <row>
+                    <cell>
+                      Amount of HCl in solution (l)
+                    </cell>
+                    <cell>
+                      <m>.20x</m>
+                    </cell>
+                    <cell>
+                      <m>.45y</m>
+                    </cell>
+                    <cell>
+                      <m>.60</m>
+                    </cell>
+                  </row>
+                </tabular>
+              </table>
+            </p>
+            <p></p>
+            <p>
+              In both rows of <xref ref="systems-applications-exercises-table-3">Table</xref>, the amounts contributed by the 20% HCl solution and the 45% HCl solution need to total to the amount of 30% solution.  This gives us the following system of equations.
+              <me>
+                \left\{
+                  \begin{aligned}
+                    x+y\amp=2\\
+                    .20x+.45y\amp=.60\\
+                  \end{aligned}
+                \right.
+              </me>
+              Solving the first equation for <m>y</m> we have <m>y=2-x</m>.  So we can substitute <m>2-x</m> for <m>y</m> in the HCl equation and solve for <m>x</m>.
+              <md>
+                <mrow>.20x+.45(\substitute{2-x})\amp=.60</mrow>
+                <mrow>.20x+.90-.45x\amp=.60</mrow>
+                <mrow>-.25x+.90\amp=.60</mrow>
+                <mrow>-.25x+.90\subtractright{.90}\amp=.60\subtractright{.90}</mrow>
+                <mrow>-.25x\amp=-.30</mrow>
+                <mrow>\divideunder{-.25x}{-.25}\amp=\divideunder{-.30}{-.25}</mrow>
+                <mrow>x\amp=1.2</mrow>
+              </md>
+              So, Calvin should use <m>1.2</m> liters of the 20% HCl solution and <m>0.8</m> liters of the 45% solution.  We can check our result with the HCl equation.
+              <md>
+                <mrow>0.2(\substitute{1.2})+0.45(\substitute{0.8})\amp=0.24+036</mrow>
+                <mrow>\amp=0.6\,\checkmark</mrow>
+              </md>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Two cars are moving toward each other on a straight and flat east-west highway through th Great Plains of Canada.  Because the highway is so straight and flat, with the cruise controls engaged each car is able to maintain constant speed for two hours  At the start of the two hours the cars are 324 km apart and they cross past each other at the end of the two hours.  During the two hours period the constant speed of the westbound car is 18 km/hr greater than the constant speed of the eastbound car.  Determine the constant speed of each of the cars.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Let <m>x</m> represent the constant speed (km/hr) of the westbound car and <m>y</m> represent the constant speed (km/hr) of the eastbound car.  Since both cars travel for two hours, the distances traveled over the two hours are <m>2x</m> and <m>2y</m>.  Between the two cars, a total of 324 km are traversed over those two hours, which gives us the first equation in the system that models the problem.
+              <me>2x+2y=324</me>
+              We are told that the westbound car moves at a rate that is 18 km/hr greater than the rate at which the eastbound car moves.  This gives us the second equation in the system. <me>x=y+18</me>.
+                  We begin solving the system by substituting <m>y+18</m> for <m>x</m> in the distance equation.
+              <md>
+                <mrow>2\substitute{x}+2y\amp=324</mrow>
+                <mrow>2(\substitute{y+18})+2y\amp=324</mrow>
+                <mrow>2y+36+2y\amp=324</mrow>
+                <mrow>4y+36\amp=324</mrow>
+                <mrow>4y+36\subtractright{36}\amp=324\subtractright{36}</mrow>
+                <mrow>4y\amp=288</mrow>
+                <mrow>\divideunder{4y}{4}\amp=\divideunder{288}{4}</mrow>
+                <mrow>y\amp=72</mrow>
+              </md>
+              So the slower car (eastbound) travels at the rate of <m>72</m> km/hr and the faster car (westbound) travels at <m>90</m> km/hr.  In two hours the cars travel, respectively, <m>144</m> km and <m>180</m> km, and sure enough, <m>144+188=324</m> <m>\checkmark</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              The jet-stream produces a steady wind that blows high in the atmosphere from the west to the east.  The wind is powerful enough that it increases the speed of an eastbound flight and decreases the speed of a westbound flight.  For example, if the jet-stream wind is 80 mi/hr and a plane's speed relative to the ground would be 400 mi/hr in still air, then its seed relative to the ground when flying east is 480 mi/hr while its speed when flying west is 320 mi/hr.
+
+              Hoda works as a pilot for Richfolks Air.  She flies a root between Seattle and Denver.  During the flight she usually maintains maximum airspeed (the speed the plane would fly in perfectly still air) for 1200 miles of the flight.  One particular Tuesday the wind produced by the jet-stream was constant the entire day.  On that day the mentioned 1200 mile stretch from Seattle to Denver (eastbound) took 2 hours to complete while the same 1200 mile stretch from Denver to Seattle (westbound) took 2 hours and 40 minutes to complete.  Determine the airspeed and wind speed on that day.
+              </p>
+            </statement>
+            <solution>
+              <p>
+                  Define <m>x</m> to be the constant speed (mi/hr) of the jet in still air and <m>y</m> to be the constant speed (mi/hr) of the wind.  The information stated in the problem is summarized in <xref ref="systems-applications-exercises-table-4">Table</xref>.  Note that 40 minutes is two-thirds of an hour.
+              </p>
+              <p></p>
+              <p>
+                <table xml:id="systems-applications-exercises-table-4">
+                  <caption></caption>
+                  <tabular>
+                    <col halign="left"/>
+                    <col halign="center"/>
+                    <col halign="center"/>
+                    <col halign="center"/>
+                    <row>
+                      <cell>
+                      </cell>
+                      <cell>
+                        <line>rate (mi/hr)</line>
+                      </cell>
+                      <cell>
+                        <line>time (hr)</line>
+                      </cell>
+                      <cell>
+                        <line>distance (mi)</line>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell>
+                        Eastbound flight
+                      </cell>
+                      <cell>
+                        <m>x+y</m>
+                      </cell>
+                      <cell>
+                        <m>2</m>
+                      </cell>
+                      <cell>
+                        <m>1200</m>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell>
+                        Westbound flight
+                      </cell>
+                      <cell>
+                        <m>x-y</m>
+                      </cell>
+                      <cell>
+                        <m>\frac{8}{3}</m>
+                      </cell>
+                      <cell>
+                        <m>1200</m>
+                      </cell>
+                    </row>
+                  </tabular>
+                </table>
+              </p>
+              <p></p>
+              <p>
+              Applying the formula "<m>D=r \times t</m>" to both rows of the table, we derive our system of equations.
+              <me>
+                \left\{
+                  \begin{aligned}
+                    2(x+y)\amp=1200\\
+                    \frac{8}{3}(x-y)\amp=1200\\
+                  \end{aligned}
+                \right.
+              </me>
+              We can begin finding our solution by isolating <m>y</m> in the first equation.
+              <md>
+                <mrow>2(x+y)\amp=1200</mrow>
+                <mrow>2x+2y\amp=1200</mrow>
+                <mrow>2x+2y\subtractright{2x}\amp=1200\subtractright{2x}</mrow>
+                <mrow>2y\amp=1200-2x</mrow>
+                <mrow>\multiplyleft{\frac{1}{2}}2y\amp=\multiplyleft{\frac{1}{2}}(1200-2x)</mrow>
+                <mrow>y\amp=600-x</mrow>
+              </md>
+              We can now substitute <m>600-x</m> for <m>y</m> in the second equation and solve the resultant equation for <m>x</m>.
+              <md>
+                <mrow>\frac{8}{3}(x-(600-x))\amp=1200</mrow>
+                <mrow>\frac{8}{3}(x-600+x)\amp=1200</mrow>
+                <mrow>\frac{8}{3}(2x-600)\amp=1200</mrow>
+                <mrow>\frac{16}{3}x-1600\amp=1200</mrow>
+                <mrow>\frac{16}{3}x-1600\addright{1600}\amp=1200\addright{1600}</mrow>
+                <mrow>\frac{16}{3}x\amp=2800</mrow>
+                <mrow>\multiplyleft{\frac{3}{16}}\frac{16}{3}x\amp=\multiplyleft{\frac{3}{16}}2800</mrow>
+                <mrow>x\amp=525</mrow>
+              </md>
+              We can use the equation <m>y=600-x</m> to determine that the value of <m>y</m> is <m>75</m>.  
+            </p>
+            <p></p>
+            <p>
+              So the speed of Hoda's jet in still air is <m>525</m> mi/hr and the wind speed is <m>75</m> mi/hr.
+            </p>
+            </solution>
+          </exercise>
+
+        </exercisegroup>
+
+      </exercises>
+
+    </section>

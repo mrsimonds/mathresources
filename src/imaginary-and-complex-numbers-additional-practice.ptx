@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="imaginary-and-complex-numbers-additional-practice">
+    <title>Additional Practice Related to Imaginary and Complex Numbers</title>
+
+     <exercises>
+
+      <exercisegroup>
+        <introdction>
+          <p>
+            Determine each of the following, that is write each of the following in the form <m>bi</m> where <m>b</m> is a real number.  Make sure that <m>b</m> is fully simplified.
+          </p>
+        </introdction>
+      
+        <exercise>
+          <statement>
+            <p>
+              <m>\sqrt{-81}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>\sqrt{-81}=9i</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-\sqrt{-144}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>-\sqrt{-144}=-12i</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\sqrt{-\frac{9}{25}}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>sqrt{-\frac{9}{25}}=\frac{3}{5}i</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-\sqrt{-90}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>-\sqrt{-90}=-3\sqrt{10}i</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\sqrt{-325}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>\sqrt{-325}=5\sqrt{13}i</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\sqrt{-\frac{27}{64}}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>\sqrt{-\frac{27}{64}}=\frac{3\sqrt{3}}{8}i</m>
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Simplify each of the following expressions.  Please note that your final expression should be of the form <m>a</m>, <m>bi</m>, or <m>a+bi</m> where <m>a</m> and/or <m>b</m> are real number(s).
+          </p>
+        </introduction>
+                
+        <exercise>
+          <statement>
+            <p>
+              <m>(7i)(4i)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>(7i)(4i)=-28</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(-2i)\left(\frac{3}{4}i\right)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>(-2i)\left(\frac{3}{4}i\right)=\frac{3}{2}</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(-i)(-7i)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>(-i)(-7i)=-7</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{3}{i}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>\frac{3}{i}=-3i</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-\frac{5}{11i}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>-\frac{5}{11i}=\frac{5}{11}i</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(3i)(12i)\left(\frac{5}{6}i\right)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>(3i)(12i)\left(\frac{5}{6}i\right)=-30i</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>i^{107}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>i^{107}=-i</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>i^{7981}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>i^{7981}=i</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>i^{-15}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>i^{-15}=i</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>i^{-14}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>i^{-14}=-1</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(5-4i)(-3+2i)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>(5-4i)(-3+2i)=-7+22i</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(2-i)^2</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>(2-i)^2=3-4i</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(8-3i)(8+3i)</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>(8-3i)(8+3i)=73</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{24}{1-3i}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>\frac{24}{1-3i}=\frac{12}{5}+\frac{36}{5}i</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-\frac{169i}{5+12i}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>\frac{169i}{5+12i}=12+5i</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-\frac{1-2i}{1+2i}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>-\frac{1-2i}{1+2i}=\frac{3}{5}+\frac{4}{5}i</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{2+5i}{2-5i}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>\frac{2+5i}{2-5i}=-\frac{21}{29}+\frac{20}{29}i</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{-2-3i}{-2+3i}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>\frac{-2-3i}{-2+3i}=-\frac{5}{13}+\frac{12}{13}i</m>
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+    </exercises>
+
+  </section>
+
+
+
+
