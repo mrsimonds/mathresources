@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="logs-and-exponents-log-properties">
+  <title>Applying the Properties of Logarithms</title>
+
+  <p>
+    In the last section we derived the following properties of logarithms.  In each expression, <m>b</m>, <m>A</m>, and <m>B</m> all represent positive real numbers and <m>b \neq 1</m>.  The variable <m>n</m> can represent any real number.  I am assigning the properties numbers for reference in this section only.
+    <me>\log_{b}(AB)=\log_{b}(A)+\log_{b}(B)\,\,\,\highlight{\text{(Property 1)}}</me>
+    <me>\log_{b}\left(\frac{A}{B}\right)=\log_{b}(A)-\log_{b}(B)\,\,\,\highlight{\text{(Property 2)}}</me>
+    <me>\log_{b}\left(A^{n}\right)=n \cdot \log_{b}(A)\,\,\,\highlight{\text{(Property 3)}}</me>
+    <me>\log_{b}(b)=1\,\,\,\highlight{\text{(Property 4)}}</me>
+    <me>\log_{b}(1)=0\,\,\,\highlight{\text{(Property 5)}}</me>
+    <me>\log_{b}(b^x)=x\,\,\,\highlight{\text{(Property 6)}}</me>
+    <me>b^{\log_{b}(A)}=A\,\,\,\highlight{\text{(Property 7)}}</me>
+  </p>
+  <p>
+    Let's apply the properties of logarithms to expand or combine several logarithmic expressions. In all cases we will assume that each variable expression is in the domain of any logarithm it encounters.
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Completely expand the following.
+        <me>\log\left(\frac{1}{x^3y^2}\right)</me>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The directions are interpreted to mean that we need to apply every property of logarithms as many times as possible.
+        <md>
+          <mrow>\log\left(\frac{1}{x^3y^2}\right)\amp=\log(1)-\log\left(x^3y^3\right)\,\,\,\highlight{\text{(Property 2)}}</mrow>
+          <mrow>\amp=0-\left(\log\left(x^3\right)+\log\left(y^2\right)\right)\,\,\,\highlight{\text{(Properties 5,1)}}</mrow>
+          <mrow>\amp=-\log\left(x^3\right)-\log\left(y^2\right)</mrow>
+          <mrow>\amp=-3\log(x)-2\log(y)\,\,\,\highlight{\text{(Property 3)}}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Completely expand the following.
+        <me>\log_7\left(\frac{\sqrt[3]{a^{12}b^5}}{7}\right)</me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+          <mrow>\log_7\left(\frac{\sqrt[3]{a^{12}b^5}}{7}\right)\amp=\log_7\left(\frac{a^{12/3}b^{5/3}}{7}\right)</mrow>
+          <mrow>\amp=\log_7\left(\frac{a^{4}b^{5/3}}{7}\right)</mrow>
+          <mrow>\amp=\log_7\left(a^{4}b^{5/3}\right)-\log_7(7)\,\,\,\highlight{\text{(Property 2)}}</mrow>
+          <mrow>\amp=\log_7\left(a^4\right)+\log_7\left(b^{5/3}\right)-1\,\,\,\highlight{\text{(Properties 1,4)}}</mrow>
+          <mrow>\amp=4\log_7(a)+\frac{5}{3}\log_7(b)-1\,\,\,\highlight{\text{(Property 3)}}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Combine the following expression into a single logarithmic expression.
+        <me>\log_2(3)-4\log_2(x)+3\log_2(y)-\frac{1}{2}\log_2(z)</me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        In the last two examples, where we expanded the logarithm expression, the last rule applied was the exponent rule (Property 3).  When combining logarithmic expressions, Property 3 is the first rule applied.
+        <md>
+          <mrow>\log_2(3)- \amp 4\log_2(x)+3\log_2(y)-\frac{1}{2}\log_2(z)</mrow>
+          <mrow>\amp=\log_2(3)-\log_2\left(x^4\right)+\log_2\left(y^3\right)-\log_2\left(z^{1/2}\right)\,\,\,\highlight{\text{(Property 3)}}</mrow>
+          <mrow>\amp=\left(\log_2(3)+\log_2\left(y^3\right)\right)-\left(\log_2\left(x^4\right)+\log_2\left(\sqrt{z}\right)\right)</mrow>
+          <mrow>\amp=\log_2\left(3y^3\right)-\log_2\left(x^4\sqrt{z}\right)\,\,\,\highlight{\text{(Property 1)}}</mrow>
+          <mrow>\amp=\log_2\left(\frac{3y^3}{x^4\sqrt{z}}\right)\,\,\,\highlight{\text{(Property 2)}}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Combine the following expression into a single logarithmic expression.
+        <me>\frac{3}{5}\log(a)-1-8\log(b)-\frac{6}{7}\log(c)</me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We first need to think about what we're going to do with that <m>1</m>.  What do we need inside the parentheses so that <m>\log(\text{what})=1</m>?  Property 4 solves that riddle for us.  We need to keep in mind that when the base of the logarithm isn't specified the assumed base is <m>10</m>.
+        <md>
+          <mrow>\frac{3}{5}\log(a)- \amp 1-8\log(b)-\frac{6}{7}\log(c)</mrow>
+          <mrow>\amp=\log\left(a^{3/5}\right)-\log(10)-\log\left(b^8\right)-\log\left(c^{6/7}\right)\,\,\,\highlight{\text{(Properties 3,4)}}</mrow>
+          <mrow>\amp=\log\left(\sqrt[5]{a^3}\right)-\left(\log(10)+\log\left(b^8\right)+\log\left(\sqrt[7]{c^6}\right)\right)</mrow>
+          <mrow>\amp=\log\left(\sqrt[5]{a^3}\right)-\left(\log(10b^8\sqrt[7]{c^6}\right)\,\,\,\highlight{\text{(Property 1)}}</mrow>
+          <mrow>\amp=\log\left(\frac{\sqrt[5]{a^3}}{10b^8\sqrt[7]{c^6}}\right)\,\,\,\highlight{\text{(Property 2)}}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Do each of the following for <m>\log_2(500)</m>.
+        <ol labels="1">
+            <li>
+              <p>
+                Mentally determine two consecutive integers between which the logarithm value must lie.
+              </p>
+            </li>
+            <li>
+              <p>
+                Use a calculator and the change of base formula
+                <me>\log_b(x)=\frac{\log(x)}{\log(b)}</me>
+                to determine the value of the logarithm to the nearest hundredth.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by noting that <m>500</m> lies between <m>256</m> and <m>512</m>.  Since <m>2^8=256</m> and <m>2^9=512</m>, the power of <m>2</m> that results in <m>500</m>, i.e <m>\log_2(500)</m>, must lie between <m>8</m> and <m>9</m> and, in fact, be pretty darn close to <m>9</m>.
+          <md>
+            <mrow>\log_2(500)\amp=\frac{\log(500)}{\log(2)}</mrow>
+            <mrow>\amp \approx 8.97</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Completely expand each logarithmic expression.  In all cases, assume that each variable expression is in the domain of any logarithm it encounters.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_5\left(\frac{5x^6}{y^2}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\log_5\left(\frac{5x^6}{y^2}\right)\amp=\log_5\left(5x^6\right)-\log_5\left(y^2\right)\,\,\,\highlight{\text{(Property 2)}}</mrow>
+              <mrow>\amp=\log_5(5)+\log_5\left(x^6\right)-\log_5\left(y^2\right)\,\,\,\highlight{\text{(Property 1)}}</mrow>
+              <mrow>\amp=1+6\log_5(x)-2\log_5(y)\,\,\,\highlight{\text{(Properties 4,3)}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log\left(\frac{100}{a^7\sqrt{b}}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\log\left(\frac{100}{a^7\sqrt{b}}\right)\amp=\log(100)-\log\left(a^7\sqrt{b}\right)\,\,\,\highlight{\text{(Property 2)}}</mrow>
+              <mrow>\amp=\log(100)-\left(\log\left(a^7\right)+\log\left(\sqrt{b}\right)\right)\,\,\,\highlight{\text{(Property 1)}}</mrow>
+              <mrow>\amp=\log(10^2)-\log\left(a^7\right)-\log\left(b^{1/2}\right)</mrow>
+              <mrow>\amp=2-7\log(a)-\frac{1}{2}\log(b)\,\,\,\highlight{\text{(Properties 6,3)}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_3\left(\frac{1}{243\sqrt[4]{A^5B^8}}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\log_3\left(\frac{1}{243\sqrt[4]{A^5B^8}}\right)\amp=\log_3(1)-\log_3\left(243\sqrt[4]{A^5B^8}\right)\,\,\,\highlight{\text{(Property 2)}}</mrow>
+              <mrow>\amp=0-\log_3\left(243\sqrt[4]{A^5B^8}\right)\,\,\,\highlight{\text{(Property 5)}}</mrow>
+              <mrow>\amp=-\log_3\left(243A^{5/4}B^{8/4}\right)</mrow>
+              <mrow>\amp=-\log_3\left(243A^{5/4}B^{2}\right)</mrow>
+              <mrow>\amp=-\left(\log_3(243)+\log_3\left(A^{5/4}\right)+\log_3\left(B^2\right)\right)</mrow>
+              <mrow>\amp=-\log_3\left(3^5\right)-\log_3\left(A^{5/4}\right)-\log_3\left(B^2\right)</mrow>
+              <mrow>\amp=-5-\frac{5}{4}\log_3(A)-2\log_3(B)\,\,\,\highlight{\text{(Properties 6,3)}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_{19}\left(x^2+y^2\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Because central (last performed) operation in the argument is addition, <m>\log_{19}\left(x^2+y^2\right)</m> does not expand in any way.
+          </p>
+        </solution>
+      </exercise>
+
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_{19}\left(\frac{x^2+y^2}{(xy)^2}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            In this example, the central (last performed) operation is division, so we can apply property 2.  We also will be able to apply properties 1 and 3 to the expression that follows the subtraction sign (after application of property 2).
+            <md>
+              <mrow>\log_{19}\left(\frac{x^2+y^2}{(xy)^2}\right)\amp=\log_{19}\left(x^2+y^2\right)-\log_{19}\left((xy)^2\right)\,\,\,\highlight{\text{(Property 2)}}</mrow>
+              <mrow>\amp=\log_{19}\left(x^2+y^2\right)-\log_{19}\left(x^2y^2\right)</mrow>
+              <mrow>\amp=\log_{19}\left(x^2+y^2\right)-\left(\log_{19}\left(x^2\right)+\log_{19}\left(y^2\right)\right)\,\,\,\highlight{\text{(Property 1)}}</mrow>
+              <mrow>\amp=\log_{19}\left(x^2+y^2\right)-\log_{19}\left(x^2\right)-\log_{19}\left(y^2\right)</mrow>
+              <mrow>\amp=\log_{19}\left(x^2+y^2\right)-2\log_{19}(x)-2\log_{19}(y)\,\,\,\highlight{\text{(Property 3)}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_4\left(\sqrt[3]{\frac{w^{24}}{16z^{11}}}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\log_4\left(\sqrt[3]{\frac{w^{24}}{16z^{11}}}\right)\amp=\log_4\left(\frac{w^{24/3}}{16^{1/3}z^{11/3}}\right)</mrow>
+              <mrow>\amp=\log_4\left(\frac{w^{8}}{4^{2/3}z^{11/3}}\right)</mrow>
+              <mrow>\amp=\log_4\left(w^8\right)-\log_4\left(4^{2/3}z^{11/3}\right)\,\,\,\highlight{\text{(Property 2)}}</mrow>
+              <mrow>\amp=\log_4\left(w^8\right)-\left(\log_4\left(4^{2/3}\right)+\log_4\left(z^{11/3}\right)\right)\,\,\,\highlight{\text{(Property 1)}}</mrow>              
+              <mrow>\amp=\log_4\left(w^8\right)-\log_4\left(4^{2/3}\right)-\log_4\left(z^{11/3}\right)</mrow>
+              <mrow>\amp=8\log_4(w)-\frac{2}{3}-\frac{11}{3}\log_4(z)\,\,\,\highlight{\text{(Properties 3,6)}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Combine each expression into a single logarithmic expression.  In all cases, assume that each variable expression is in the domain of any logarithm it encounters.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{2}{3}\log_{31}(A)+\frac{5}{3}\log_{31}(B)</m>
+          </p>
+        </statement>
+        <solution>
+          <md>
+            <mrow>\frac{2}{3}\log_{31}(A)+\frac{5}{3}\log_{31}(B)\amp=\log_{31}\left(A^{2/3}\right)+\log{31}\left(B^{5/3}\right)\,\,\,\highlight{\text{(Property 3)}}</mrow>
+            <mrow>\amp=\log_{31}\left(\sqrt[3]{A^2}\right)+\log_{31}\left(\sqrt[3]{B^5}\right)</mrow>
+            <mrow>\amp=\log_{31}\left(\sqrt[3]{A^2} \cdot \sqrt[3]{B^5}\right)\,\,\,\highlight{\text{(Property 1)}}</mrow>
+            <mrow>\amp=\log_{31}\left(\sqrt[3]{A^2B^5}\right)</mrow>
+          </md>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_9(x)+\log_9(y)-\log_9(x+y)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\log_9(x)+\log_9(y)-\log_9(x+y)\amp=\log_9(xy)-\log_9(x+y)\,\,\,\highlight{\text{(Property 1)}}</mrow>
+              <mrow>\amp=\log_9\left(\frac{xy}{x+y}\right)\,\,\,\highlight{\text{(Property 2)}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>3\log_{12}(z)-\frac{1}{2}\log_{12}(w)-2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>3\log_{12}(z)- \amp \frac{1}{2}\log_{12}(w)-2</mrow>
+              <mrow>\amp=\log_{12}\left(z^3\right)-\log_{12}\left(w^{1/2}\right)-\log_{12}\left(12^2\right)\,\,\,\highlight{\text{(Properties 3,6)}}</mrow>
+              <mrow>\amp=\log_{12}\left(z^3\right)-\left(\log_{12}\left(\sqrt{w}\right)+\log_{12}(144)\right)</mrow>
+              <mrow>\amp=\log_{12}\left(z^3\right)-\log_{12}\left(\sqrt{w} \cdot 144\right)\,\,\,\highlight{\text{(Property 1)}}</mrow>
+              <mrow>\amp=\log_{12}\left(\frac{z^3}{144\sqrt{w}}\right)\,\,\,\highlight{\text{(Property 2)}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log\left(x^2-y^2\right)-\log(x-y)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\log\left(x^2-y^2\right)-\log(x-y)\amp=\log\left(\frac{x^2-y^2}{x-y}\right)\,\,\,\highlight{\text{(Property 2)}}</mrow>
+              <mrow>\amp=\log\left(\frac{(x+y)(x-y)}{x-y}\right)</mrow>
+              <mrow>\amp=\log(x+y)</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1}{2}+\frac{1}{2}\log_{16}\left(a^2+b^2\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <md>
+            <mrow>\frac{1}{2}+\frac{1}{2}\log_{16}\left(a^2+b^2\right)\amp=\frac{1}{2} \cdot 1 +\frac{1}{2}\log_{16}\left(a^2+b^2\right)</mrow>
+            <mrow>\amp=\frac{1}{2}\log_{16}(16)+\frac{1}{2}\log_{16}\left(a^2+b^2\right)\,\,\,\highlight{\text{(Property 4)}}</mrow>
+            <mrow>\amp=\log_{16}\left(16^{1/2}\right)+\log_{16}\left(\left(a^2+b^2\right)^{1/2}\right)\,\,\,\highlight{\text{(Property 3)}}</mrow>
+            <mrow>\amp=\log_{16}(4)+\log_{16}\left(\sqrt{a^2+b^2}\right)</mrow>
+            <mrow>\amp=\log_{16}\left(4\sqrt{a^2+b^2}\right)\,\,\,\highlight{\text{(Property 1)}}</mrow>
+          </md>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1}{3}\left(2\log(A)-4\log(B)-\log(C)+5\log(D)\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\amp\frac{1}{3}\left(2\log(A)-4\log(B)-\log(C)+5\log(D)\right)</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\frac{1}{3}\left(\log\left(A^2\right)-\log\left(B^4\right)-\log(C)+\log\left(D^5\right)\right)\,\,\,\highlight{\text{(Property 3)}}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\frac{1}{3}\left(\left[\log\left(A^2\right)+\log\left(D^5\right)\right]-\left[\log\left(B^4\right)+\log(C)\right]\right)</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\frac{1}{3}\left(\log\left(A^2D^5\right)-\log\left(B^4C\right)\right)\,\,\,\highlight{\text{(Property 1)}}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\frac{1}{3}\log\left(\frac{A^2D^5}{B^4C}\right)\,\,\,\highlight{\text{(Property 2)}}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\log\left(\left(\frac{A^2D^5}{B^4C}\right)^{1/3}\right)\,\,\,\highlight{\text{(Property 3)}}</mrow>
+              <mrow>\amp \phantom{={}} \phantom{={}} \phantom{={}} =\log\left(\sqrt[3]{\frac{A^2D^5}{B^4C}}\right)</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Do the following for each of the stated logarithms.
+          <ol labels="1">
+            <li>
+              <p>
+                Mentally determine two consecutive integers between which the logarithm value must lie.
+              </p>
+            </li>
+            <li>
+              <p>
+                Use a calculator and the change of base formula
+                <me>\log_b(x)=\frac{\log(x)}{\log(b)}</me>
+                to determine the value of the logarithm to the nearest hundredth.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_3(102)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            If <m>\log_3(102)=y</m>, then <m>3^y=102</m>.  Since <m>3^4=81</m> and <m>3^5=243</m>, <m>\log_3(102)</m> must lie between <m>4</m> and <m>5</m>, and clearly it is much closed to <m>4</m> than <m>5</m>.
+            <md>
+              <mrow>\log_3(102)\amp=\frac{\log(102)}{\log(3)}</mrow>
+              <mrow>\amp \approx 4.21</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_5\left(\frac{1}{300}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by observing that
+            <me>\frac{1}{625} \lt \frac{1}{300} \lt \frac{1}{125}</me>.
+            Since <m>5^{-4}=\frac{1}{625}</m> and <m>5^{-3}=\frac{1}{125}</m>, the power of <m>5</m> that results in <m>\frac{1}{300}</m> must lie between <m>-4</m> and <m>-3</m>.  That is:
+            <me>-4 \lt \log_5\left(\frac{1}{300}\right) \lt -3.</me>
+            <md>
+              <mrow>\log_5\left(\frac{1}{300}\right)\amp=\frac{\log\left(\frac{1}{300}\right)}{\log(5)}</mrow>
+              <mrow>\amp \approx -3.54</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Chose the correct answer to each multiple choice question <alert>without the use of a calculator</alert>.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            Which of the following is equivalent to: <me>\frac{\log(8)}{\log(2)}?</me>
+            <ol labels="a">
+              <li>
+                <m>\log(8)-\log(2)</m>
+              </li>
+              <li>
+                <m>4</m>
+              </li>
+              <li>
+                <m>\log(6)</m>
+              </li>
+              <li>
+                <m>3</m>
+              </li>
+              <li>
+                <p>None of the above</p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The correct answer is (d).  There are at least two distinct methods to establish the equivalence.
+          </p>
+
+          <paragraphs>
+            <title>Method 1</title>
+
+            <p>
+              <md>
+                <mrow>\frac{\log(8)}{\log(2)}\amp=\frac{\log\left(2^3\right)}{\log(2)}</mrow>
+                <mrow>\amp=\frac{3\log(2)}{\log(2)}</mrow>
+                <mrow>\amp=3</mrow>
+              </md>
+            </p>
+
+          </paragraphs>
+
+          <paragraphs>
+            <title>Method 2</title>
+
+            <p>
+              Applying the change of base formula "in reverse," we get the following.
+              <me>\frac{\log(8)}{\log(2)}=\log_2(8)</me>
+              Since <m>2^3=8</m>, <m>\log_2(8)=3</m>.
+            </p>
+
+          </paragraphs>
+
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Which of the following is equivalent to <m>\log(5) \cdot \log(2)</m>?
+            <ol labels="a">
+              <li>
+                <m>1</m>
+              </li>
+              <li>
+                <m>\log(7)</m>
+              </li>
+              <li>
+                <m>\log(0.5) \cdot \log(0.2)</m>
+              </li>
+              <li>
+                <m>\log(5)+\log(2)</m>
+              </li>
+              <li>
+                <p>None of the above</p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The correct answer is (c).  The are at least two distinct methods to establish the equivalence.
+          </p>
+
+          <paragraphs>
+            <title>Method 1</title>
+
+            <p>
+              <md>
+                <mrow>\log(0.5) \cdot \log(0.2)\amp=\log(0.2) \cdot \log(0.5)</mrow>
+                <mrow>\amp=\log\left(5^{-1}\right) \cdot \log\left(2^{-1}\right)</mrow>
+                <mrow>\amp=-1 \cdot \log(5) \cdot -1 \cdot \log(2)</mrow>
+                <mrow>\amp=\log(5)\cdot \log(2)</mrow>
+              </md>
+            </p>
+
+          </paragraphs>
+
+          <paragraphs>
+            <title>Method 2</title>
+
+            <p>
+              <md>
+                <mrow>\log(0.5) \cdot \log(0.2)\amp=\log\left(\frac{5}{10}\right) \cdot \log\left(\frac{2}{10}\right)</mrow>
+                <mrow>\amp=\left(\log(5)-\log(10)\right)\left(\log(2)-\log(10)\right)</mrow>
+                <mrow>\amp=\left(\log(5)-1\right)\left(\log(2)-1\right)</mrow>
+                <mrow>\amp=\log(5) \cdot \log(2)-\log(5)-\log(2)+1</mrow>
+                <mrow>\amp=\log(5) \cdot \log(2)-\left(\log(5)+\log(2)\right)+1</mrow>
+                <mrow>\amp=\log(5) \cdot \log(2)-\log(5 \cdot 2)+1</mrow>
+                <mrow>\amp=\log(5) \cdot \log(2)-\log(10)+1</mrow>
+                <mrow>\amp=\log(5) \cdot \log(2)-1+1</mrow>
+                <mrow>\amp=\log(5) \cdot \log(2)</mrow>
+              </md>
+            </p>
+
+          </paragraphs>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+
+</section>

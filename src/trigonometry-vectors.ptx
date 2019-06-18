@@ -1,0 +1,1796 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="trigonometry-vectors">
+  <title>Vectors in 2-Dimensions</title>
+
+  <paragraphs>
+    <title>Vector Quantities vs. Scalar Quantities</title>
+    <p></p>
+    <p>
+      Many physical phenomena can be fully described by a single quantity called a <term>magnitude</term>.  These quantities are called <term>scalar quantities</term>.  Examples of scalar quantities include volume, area, length, and temperature.
+    </p>
+    <p>
+      Other physical phenomena require a direction as well as a magnitude to be fully described.  These quantities are called <term>vector quantities</term>.  Examples of vector quantities include force, wind, and electric fields.
+    </p>
+    <p>
+      In casual English, vector quantities and scalar quantities are frequently interchanged.  For example, many people use the words speed and velocity interchangeably.  However, in mathematics and physics the words are not interchangeable.  Speed is a scalar quantity and it is also the magnitude of the velocity, which is a vector quantity .
+    </p>
+    <p>
+      In a similar vein, distance is a scalar quantity whereas displacement is a vector quantity.  Unfortunately, acceleration is both a vector quantity (change in velocity) and a scalar quantity (change in speed).
+    </p>
+  </paragraphs>
+  <paragraphs>
+    <title>Vector Arithmetic</title>
+    <p></p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        The most straight forward way to represent a vector is with an arrow.  The direction is clearly represented by the direction in which the arrow points.  The relative lengths of two vectors represent their relative magnitudes.  When drawn on a grid with a scale, the length of a vector exactly agrees with the vector's magnitude.  For this reason, mathematicians will frequently refer to a vector's magnitude as a length.
+      </p>
+
+      <figure xml:id="trigonometry-vectors-figure-1">
+        <caption>Five Equal Vector</caption>
+        <image>
+          <description>
+            Five arrows that have equal length and that point in the exact same direction (up and right).
+          </description>
+          <latex-image-code>
+            <![CDATA[
+              \begin{tikzpicture}
+                \draw [red,ultra thick,-triangle 60] (0,0) -- (4,3);
+                \draw [red,ultra thick,-triangle 60] (1,3) -- (5,6);
+                \draw [red,ultra thick,-triangle 60] (2,1) -- (6,4);
+                \draw [red,ultra thick,-triangle 60] (3,4) -- (7,7);
+                \draw [red,ultra thick,-triangle 60] (4,2) -- (8,5);
+              \end{tikzpicture}
+            ]]>
+          </latex-image-code>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <p>
+      The position of a vector is not one of its defining properties.  For example, all of the vectors in <xref ref="trigonometry-vectors-figure-1">Figure</xref> have equal length and direction, so they are all equal to one another.
+    </p>
+    <p>
+      There are two primary aspects to vector arithmetics: scalar multiplication and vector addition.  No other arithmetic can be performed between scalars and vectors.  For example, there is no way to add a vector with a scalar.  You can divide a vectors by a scalar, but that is covered by scalar multiplication (for example, dividing by tow is equivalent to multiplying by one-half).
+    </p>
+    <p>
+      <term>Scalar multiplication</term> is a product between a real number (called a scalar) and a vector.  Because this process requires two different types of variables, we need a way two distinguish between a variable that represents a scalar and a variable that represents a vector.  Scalar variables look like the variables you've been using since the day you started studying algebra.  Vector variables are distinguished in several ways.  textbooks will frequently use bold characters to represent vector variables.  It is also common to use full0arrows or half-arrows above the variable to indicate that it represents a vector.  Vector with a magnitude (or length) are called <term>unit vectors</term> of one have a karat hat atop them (e.g. <m>\hat{u}</m>.)  Unless the variable represents a unit vector, this document will use a full-arrow above the variable to indicate that the variable represents a vector.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        Consider the scalar product <m>k\vec{v}</m>.  When <m>k \gt 0</m>, <m>k\vec{v}</m> and <m>\vec{v}</m> point in the same direction.  When <m>k \lt 0</m>, <m>k\vec{v}</m> and <m>\vec{v}</m> point in opposite directions.  In both cases, the magnitude (or length) of <m>\vec{v}</m> is multiplied by <m>\abs{k}</m>.  For example, both <m>2\vec{v}</m> and <m>-2\vec{v}</m> are twice as long as <m>\vec{v}</m>.  This last fact is illustrated in <xref ref="trigonometry-vectors-figure-2">Figure</xref>.
+      </p>
+
+       <figure xml:id="trigonometry-vectors-figure-2">
+        <caption><m>\vec{u}=2\vec{v}</m> and <m>\vec{w}=-2\vec{v}</m></caption>
+        <image>
+          <description>
+            An arrow labeled <m>\vec{v}</m> that points down and right.  An arrow that points in the same direction as <m>\vec{v}</m> and is twice as long as <m>\vec{v}</m> is labeled <m>\vec{u}</m>. An arrow that points in the opposite direction as <m>\vec{v}</m> and is twice as long as <m>\vec{v}</m> is labeled <m>\vec{w}</m>.
+          </description>
+          <latex-image-code>
+            <![CDATA[
+              \begin{tikzpicture}
+                \draw [red,ultra thick,-triangle 60] (1,8) -- (2,5) node[midway, below left]{$\vec{v}$};
+                \draw [blue,ultra thick,-triangle 60] (3,8) -- (5,2) node[midway, below left]{$\vec{u}$};
+                \draw [green!50!brown,ultra thick,-triangle 60] (7,2) -- (5,8) node[midway, below left]{$\vec{w}$};
+              \end{tikzpicture}
+            ]]>
+          </latex-image-code>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <p>
+      In the figure, <m>\vec{u}=2\vec{v}</m> and <m>\vec{w}=-2\vec{v}</m>.  We also say that <m>\vec{w}=-\vec{v}</m>, where <m>-\vec{v}</m> is technically short for the scalar product of <m>\vec{v}</m> and <m>-1</m>.
+    </p>
+    <p>
+      When <m>k=0</m> in the scalar product <m>k\vec{v}</m>, the result is <term>the zero vector</term>, <term><m>\vec{0}</m></term>.  The zero vector has no direction nor any length.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        To determine <term>the vector sum</term>, <m>\vec{u}+\vec{v}</m>, we begin by drawing the vector <m>\vec{u}</m> anywhere on the plane.  We then draw the tail of <m>\vec{v}</m> at the head of <m>\vec{u}</m>.  The vector sum, which is also called <term>the resultant</term>, is then the vector from the tail of <m>\vec{u}</m> to the head of <m>\vec{v}</m>.  This is illustrated in <xref ref="trigonometry-vectors-figure-3">Figure</xref>, where <m>\vec{w}=\vec{u}+\vec{v}</m>.
+      </p>
+
+      <figure xml:id="trigonometry-vectors-figure-3">
+        <caption><m>\vec{w}=\vec{u}+\vec{v}</m></caption>
+        <image>
+          <description>
+            An arrow that points up and left is labeled <m>\vec{u}</m>.  The tail of a vector labeled <m>\vec{v}</m> is drawn at the head of <m>\vec{v}</m>.  An arrow from the tail of <m>\vec{u}</m> to the head of <m>\vec{v}</m> is also shown and is labeled <m>\vec{w}</m>.
+          </description>
+          <latex-image-code>
+            <![CDATA[
+              \begin{tikzpicture}
+                \draw [red,ultra thick,-triangle 60] (0,3) -- (4,6) node[midway, above left]{$\vec{v}$};
+                \draw [blue,ultra thick,-triangle 60] (6,0) -- (0,3) node[midway, below left]{$\vec{u}$};
+                \draw [red!30!blue,ultra thick,-triangle 60] (6,0) -- (4,6) node[midway, below left]{$\vec{w}$};
+              \end{tikzpicture}
+            ]]>
+          </latex-image-code>
+        </image>
+      </figure>
+
+    </sidebyside>
+
+    <example>
+      <statement>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            Draw the vector sum <m>\vec{v}+\vec{w}</m> onto <xref ref="trigonometry-vectors-figure-4">Figure</xref>.  Name the resultant <m>\vec{u}</m>.
+          </p>
+
+          <figure xml:id="trigonometry-vectors-figure-4">
+            <caption>Sketch <m>\vec{v}+\vec{w}</m></caption>
+            <image>
+              <description>
+                Two arrows are drawn tail-to-tail.  One of the arrows points up and left and is labeled <m>\vec{w}</m>.  The other arrow is labeled <m>\vec{v}</m> and it points up and right.
+              </description>
+              <latex-image-code>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \draw [red,ultra thick,-triangle 60] (4,0) -- (6,5) node[midway, below right]{$\vec{v}$};
+                    \draw [blue,ultra thick,-triangle 60] (4,0) -- (0,3) node[midway, below left]{$\vec{w}$};
+                    \draw [white,ultra thick,-triangle 60] (6,5) -- (2,8) node[midway, below left]{$\vec{w}$};
+                    \draw [white,ultra thick,-triangle 60] (4,0) -- (2,8) node[midway, below left]{$\vec{u}$};
+                  \end{tikzpicture}
+                ]]>
+              </latex-image-code>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </statement>
+      <solution>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            We begin by drawing the vector <m>\vec{w}</m> with its tail at the head of <m>v</m>.  The resultant is then from the tail of <m>\vec{v}</m> to the head of <m>\vec{w}</m>.
+          </p>
+
+          <figure xml:id="trigonometry-vectors-figure-5">
+            <caption><m>\vec{u}=\vec{v}+\vec{w}</m></caption>
+            <image>
+              <description>
+                Two arrows are drawn tail-to-tail.  One of the arrows points up and left and is labeled <m>\vec{w}</m>.  The other arrow labeled <m>\vec{v}</m> and it points up and right.  The arrow labeled <m>\vec{w}</m> is drawn a second time, this time with its tail at the head of <m>\vec{v}</m>.  An arrow from the tail of <m>\vec{v}</m> to the head of the second version <m>\vec{w}</m> is also shown and is labeled <m>\vec{u}</m>.
+              </description>
+              <latex-image-code>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \draw [red,ultra thick,-triangle 60] (4,0) -- (6,5) node[midway, below right]{$\vec{v}$};
+                    \draw [blue,ultra thick,-triangle 60] (4,0) -- (0,3) node[midway, below left]{$\vec{w}$};
+                    \draw [blue,ultra thick,-triangle 60] (6,5) -- (2,8) node[midway, below left]{$\vec{w}$};
+                    \draw [red!30!blue,ultra thick,-triangle 60] (4,0) -- (2,8) node[midway, below left]{$\vec{u}$};
+                  \end{tikzpicture}
+                ]]>
+              </latex-image-code>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <sidebyside widths="67% 27%" margins="0%">
+
+          <p>
+            Draw the vector difference <m>\vec{v}-\vec{u}</m> onto <xref ref="trigonometry-vectors-figure-6">Figure</xref>.  Name the resultant <m>\vec{u}</m>.  The difference can be interpreted as <m>\vec{v}+(-1)\vec{u}</m>.
+          </p>
+
+          <figure xml:id="trigonometry-vectors-figure-6">
+            <caption><m>\vec{w}=\vec{u}+\vec{v}</m></caption>
+            <image>
+              <description>
+                Two arrows are drawn tail-to-tail.  One points down and left and is labeled <m>\vec{v}</m>.  The other arrow is labeled <m>\vec{u}</m> and it points directly to the left.
+              </description>
+              <latex-image-code>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \draw [red,ultra thick,-triangle 60] (4,6) -- (0,0) node[midway, above left]{$\vec{v}$};
+                    \draw [blue,ultra thick,-triangle 60] (4,6) -- (1,6) node[midway, below]{$\vec{u}$};
+                    \draw [white,ultra thick,-triangle 60] (0,0) -- (3,0) node[midway, below]{$-\vec{u}$};
+                    \draw [white,ultra thick,-triangle 60] (4,6) -- (3,0) node[midway, left]{$\vec{w}$};
+                  \end{tikzpicture}
+                ]]>
+              </latex-image-code>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </statement>
+      <solution>
+        <sidebyside widths="67% 27%" margins="0%">
+
+          <p>
+            We begin by drawing at the head of <m>\vec{v}</m> an arrow of equal length as <m>\vec{u}</m> but pointing in the opposite direction as <m>\vec{u}</m>.  The resultant is then the vector from the tail of <m>\vec{v}</m> to the head of <m>-\vec{u}</m>.
+          </p>
+
+          <figure xml:id="trigonometry-vectors-figure-7">
+            <caption><m>\vec{w}=\vec{v}-\vec{u}</m></caption>
+            <image>
+              <description>
+                Two arrows are drawn tail-to-tail.  One points down and left and is labeled <m>\vec{v}</m>.  The other arrow is labeled <m>\vec{u}</m> and it points directly to the left.  An arrow of the same length as <m>\vec{u}</m> but in the opposite direction of <m>\vec{u}</m> is drawn with its tail at the head of <m>\vec{v}</m>.  This new vector is labeled <m>-\vec{u}</m>.  An arrow from the tail of <m>\vec{v}</m> to the head of <m>-\vec{u}</m> is also shown and is labeled <m>\vec{w}</m>.
+              </description>
+              <latex-image-code>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \draw [red,ultra thick,-triangle 60] (4,6) -- (0,0) node[midway, above left]{$\vec{v}$};
+                    \draw [blue,ultra thick,-triangle 60] (4,6) -- (1,6) node[midway, below]{$\vec{u}$};
+                    \draw [blue,ultra thick,-triangle 60] (0,0) -- (3,0) node[midway, below]{$-\vec{u}$};
+                    \draw [red!30!blue,ultra thick,-triangle 60] (4,6) -- (3,0) node[midway, left]{$\vec{w}$};
+                  \end{tikzpicture}
+                ]]>
+              </latex-image-code>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </solution>
+    </example>
+
+  </paragraphs>
+  <paragraphs>
+    <title>The Polar Form of a Vector</title>
+    <p></p>
+    <p>
+      There are two mathematical devices used to describe vectors in two-dimensions; <term>the polar form</term> and the component form, which is discussed later.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        The polar form of a vector is notated
+        <m>r\,\angle\,\theta</m>
+        which is read aloud as "r angle theta."  The variable <m>r</m> represents the magnitude of the vector and the variable <m>\theta</m> represents an angle drawn in standard position from the horizontal to the vector itself. 
+      </p>
+
+      <figure xml:id="trigonometry-vectors-figure-20">
+        <caption>The vector <m>r\,\angle\,\theta</m></caption>
+        <image>
+          <description>
+            An arrow drawn from the pole/origin into Quadrant I.  The angle formed by the arrow and the positive <m>x</m>-axis is labeled <m>\theta</m>.  The length of the arrow is labeled r equals the magnitude of v. 
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis} [axis equal image,
+                            xmin=-0.9,xmax=1.8,
+                            ymin=-0.9,ymax=1.8]
+                \addplot [domain=0:50,samples=100,color=black,line width=1pt,-] ({0.2*cos(x)},{0.2*sin(x)}) node[pos=0.75,right] {$\theta$};
+                \addplot [domain=0:1.028,line width=1.5pt,-{Stealth},color=blue] {tan(50)*x} node[pos=0.4,above left] {$r=\abs{\vec{v}}$};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>\vec{u}=7\angle 210^{\circ}</m> and <m>\vec{v}=4\angle -60^{\circ}</m>.  Draw <m>\vec{u}</m> and <m>\vec{v}</m> tail-to-tail (i.e., with their tails touching).
+        </p>
+      </statement>
+      <solution>
+
+        <p>
+          We need a horizontal line segment from which to reference <m>\theta</m>.  We also need to make sure that the length of the arrow we draw to represent <m>\vec{u}</m> is a little less than twice the length of the arrow we draw to represent <m>\vec{v}</m>.  A drawing is presented in <xref ref="trigonometry-vectors-figure-21">Figure</xref>.
+        </p>
+
+        <figure xml:id="trigonometry-vectors-figure-21">
+          <caption>A Sketch of <m>\vec{u}</m> and <m>\vec{v}</m></caption>
+          <image width="80%">
+            <description>
+             An arrow labeled <m>\vec{v}</m> points down and right from a dashed horizontal line segment. The angle between the horizontal line segment and the arrow is marked <m>60^{\circ}</m>.  A second arrow labeled <m>\vec{v}</m> is drawn down and left with its tail at the same points the first arrow.  The second arrow is a little less than twice as long as the first arrow.  The standard angle of <m>210^{\circ}</m> is drawn and marked from the horizontal line segment to the second arrow.     
+            </description>
+            <latex-image-code>
+              <![CDATA[
+                \begin{tikzpicture}
+                  \draw (-7.5,-2) -- (-7.5,6) [white];
+                  \draw (-8,4) -- (8,4) [dashed,thick];
+                  \draw (0,4) -- (-6.93,0) [ultra thick,red,-triangle 60] node[midway, above left] {$\vec{u}$};
+                  \draw (0,4) -- (1.98,0.57) [ultra thick,blue,-triangle 60] node[midway, above right] {$\vec{v}$};
+                  \draw (0.5,4) arc (0:218:.75) [red,thick,-{Stealth}];
+                  \draw (-1.5,4.5) node [red] {$210^{\circ}$};
+                  \draw (0.5,4) arc (0:-45:.75) [blue,thick,-{Stealth}];
+                  \draw (1.2,3.5) node [blue] {$-60^{\circ}$};
+                \end{tikzpicture}
+              ]]>
+            </latex-image-code>
+          </image>
+        </figure>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+
+  <paragraphs>
+    <title>The Component Form of a Vector</title>
+    <p></p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        When drawn on an <m>xy</m>-axis system, a given vector will have unique displacements in both the <m>x</m>-direction and the <m>y</m>-direction.  These displacements are called the components of the vector, and we express the components in the format
+        <me>\vec{v}=\langle x,y \rangle.</me>
+        
+      </p>
+
+       <figure xml:id="trigonometry-vectors-figure-30">
+        <caption><m>\vec{w}=\langle 9,-7 \rangle</m></caption>
+        <image>
+          <description>
+             There is vector labeled <m>\vec{w}</m> with its tail at the point <m>(-4,2)</m> and its head at the point <m>(5,-5)</m>.  The horizontal displacement is labeled <m>+9</m> and the vertical displacement is labeled <m>-7</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [axis equal image,
+                              xmin=-8,xmax=8,
+                              ymin=-8,ymax=8,
+                              xtick={-6,-4,-2,2,4,6},
+                              ytick={-6,-4,-2,2,4,6},
+                              minor xtick={-7,-5,-3,-1,1,3,5,7},
+                              minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                  \addplot[interval,thick,dashed,black,-{Stealth}] coordinates {(-4,2) (5,2)} node[pos=0.6,above] {$+9$};
+                  \addplot[interval,thick,dashed,black,{Stealth}-] coordinates {(5,-5) (5,2)} node[pos=0.4,right] {$-7$};
+                  \addplot[interval,ultra thick,red,-{Stealth}] coordinates {(-4,2) (5,-5)} node[pos=0.7,below left] {$\vec{w}$};
+                \end{axis}
+              \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <p>
+      For example, the component form of the vector shown in <xref ref="trigonometry-vectors-figure-30">Figure</xref> is
+      <me>\vec{w}=\langle 9,-7 \rangle.</me>  These components can be determined by subtracting the coordinates of the point at the tail of the vector from the coordinates of the point at the head of the vector. That is
+      <me>\vec{w}=\langle x_{\text{head}}-x_{\text{tail}},y\,_{\text{head}}-y_{\text{tail}} \rangle.</me>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine the component form of the vector <m>\vec{v}</m>, whose tail is at the point <m>(9,-3)</m> and whose head is at the point <m>(2,-7)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\vec{v}\amp=\langle x_{\text{head}}-x_{\text{tail}},y\,_{\text{head}}-y_{\text{tail}} \rangle</mrow>
+            <mrow>\amp=\langle 2-9,-7-(-3) \rangle</mrow>
+            <mrow>\amp=\langle -7,-4 \rangle</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <sidebyside widths="52% 42%" margins="0%">
+
+      <p>
+        The vector sum <m>\vec{w}=\vec{u}+\vec{v}</m> is illustrated in <xref ref="trigonometry-vectors-figure-31">Figure</xref> where
+        <me>\vec{u}=\langle -5,4 \rangle,\,\vec{v}=\langle 7,3 \rangle,\,\text{and}\,\vec{w}=\langle 2,3 \rangle.</me>
+        From a geometric perspective, it is rather intuitive that the horizontal displacement in the sum is completely independent of the vertical displacement in th sum.  This implies that from a calculation perspective we should be able to simply add the <m>\uvec{i}</m>-components and add the <m>\uvec{j}</m>-components.  Let's see if that works. 
+      </p>
+
+       <figure xml:id="trigonometry-vectors-figure-31">
+        <caption><m>\vec{w}=\vec{u}+\vec{v}</m></caption>
+        <image>
+          <description>
+             There is vector labeled <m>\vec{u}</m> with its tail at the point <m>(0,0)</m> and its head at the point <m>(-5,4)</m>.  There is a vector labeled <m>\vec{v}</m> with its tail at the point <m>(-5,4)</m> and its head at the point <m>(2,7)</m>.  There is a vector labeled <m>\vec{w}</m> with its tail at the point <m>(0,0)</m> and its head at the point <m>(2,7)</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [axis equal image,
+                              xmin=-8,xmax=4,
+                              ymin=-4,ymax=8,
+                              xtick={-6,-4,-2,2},
+                              ytick={-2,2,4,6},
+                              minor xtick={-7,-5,-3,-1,1,3,5,7},
+                              minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                  \addplot[interval,ultra thick,red,-{Stealth}] coordinates {(0,0) (-5,4)} node[pos=0.5,below left] {$\vec{u}$};
+                  \addplot[interval,ultra thick,blue,-{Stealth}] coordinates {(-5,4) (2,7)} node[pos=0.5,above left] {$\vec{v}$};
+                  \addplot[interval,ultra thick,red!30!blue,-{Stealth}] coordinates {(0,0) (2,7)} node[pos=0.7,below right] {$\vec{w}$};
+                \end{axis}
+              \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <p>
+      <md>
+        <mrow>\vec{w}\amp=\vec{u}+\vec{v}</mrow>
+        <mrow>\amp=\langle -5,4 \rangle+\langle 7,3 \rangle</mrow>
+        <mrow>\amp=\langle -5+7,4+3 \rangle</mrow>
+        <mrow>\amp=\langle 2,7 \rangle\,\,\checkmark</mrow>
+      </md>
+      In general,
+      <me>\langle x_1,y_1 \rangle+\langle x_2,y_2 \rangle=\langle x_1+x_2,y_1+y_2 \rangle \,\text{and}\,k\langle x_1,y_1 \rangle=\langle kx_1,kx_2 \rangle.</me>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine <m>3\vec{w}-2\vec{v}</m> where <m>\vec{v}=\langle -4,7 \rangle</m> and <m>\vec{w}=\langle -3,8 \rangle</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>3\vec{w}-2\vec{v}\amp=3\langle -4,7 \rangle-2\langle -3,8 \rangle</mrow>
+            <mrow>\amp=\langle 3 \cdot -4,3 \cdot 7 \rangle-\langle 2 \cdot -3,2 \cdot 8 \rangle</mrow>
+            <mrow>\amp=\langle -12,21 \rangle-\langle -6,16 \rangle</mrow>
+            <mrow>\amp=\langle -12-(-6),21-16 \rangle</mrow>
+            <mrow>\amp=\langle -6,5 \rangle</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      As previously mentioned, a vector of magnitude (or length) one is called a unit vector.  In two-dimensions there are <term>two standard unit vectors, <m>\uvec{i}</m> and <m>\uvec{j}</m></term>.  The unit vector <m>\uvec{i}</m> points directly rightward and the unit vector <m>\uvec{j}</m> points directly upward.  More formally,
+      <me>\uvec{i}=\langle 1,0 \rangle\,\text{and}\,\uvec{j}=\langle 0,1 \rangle.</me>
+      Now let's observe the following.
+      <md>
+        <mrow>-6\uvec{i}+3\uvec{j}\amp=-6\langle 1,0 \rangle+3\langle 0,1 \rangle</mrow>
+        <mrow>\amp=\langle -6,0 \rangle+\langle 0,3 \rangle</mrow>
+        <mrow>\amp=\langle -6+0,0+3 \rangle</mrow>
+        <mrow>\amp=\langle -6,3 \rangle</mrow>
+      </md>
+      From this last example it's pretty easy to infer the following relationship.
+      <me>x_1\uvec{i}+y_1\uvec{j}=\langle x_1,y_1 \rangle.</me>
+      For example, 
+      <me>7\uvec{i}-12\uvec{j}=\langle 7,-12 \rangle</me>
+      and
+      <md>
+        <mrow>14\uvec{j}\amp=0\uvec{i}+14\uvec{j}</mrow>
+        <mrow>\amp=\langle 0,14 \rangle.</mrow>
+      </md>
+    </p>
+    <p>
+      When the tail of a vector is drawn at the origin (and only when the tail of a vector is drawn at the origin), the components of the vector are equal to the coordinates of the point at the head of the vector.  For example, consider a vector, <m>\vec{u}</m>, with its tail at the origin and its head at the point <m>(12,4)</m>.  The components of <m>\vec{u}</m> are computed below.
+      <md>
+        <mrow>\vec{u}\amp=\langle x_{\text{head}}-x_{\text{tail}},y\,_{\text{head}}-y_{\text{tail}} \rangle</mrow>
+        <mrow>\amp=\langle 12-0,4-0\rangle</mrow>
+        <mrow>\amp=\langle 12,4 \rangle</mrow>
+      </md>
+      Because of the correspondence between the coordinates at the head of the vector and the components of the vector, unless there is a deliberate reason not too (such as vector addition), we almost always draw the tail of a vector at the origin. This property of vectors with their tails at the origin can come in quite handy.  Let's see a few of examples
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine the coordinates of the point at the head of <m>\vec{v}=\langle -3,-4 \rangle</m> if the tail of <m>\vec{v}</m> is drawn at the point <m>(7,6)</m>.
+        </p>
+      </statement>
+      <solution>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            As illustrated in <xref ref="trigonometry-vectors-figure-32">Figure</xref>, the stated question is analogous to adding <m>\vec{v}</m> to the vector <m>\langle 7,6 \rangle</m>.
+            <md>
+              <mrow>\langle 7,6 \rangle+\vec{v}\amp=\langle 7,6 \rangle+\langle -3,-4 \rangle</mrow>
+              <mrow>\amp=\langle 7+(-3),6+(-4)</mrow>
+              <mrow>\amp=\langle 4,2 \rangle</mrow>
+            </md>
+            When the tail of <m>\vec{v}</m> is drawn at the point <m>(7,6)</m>, its head lies at the point <m>(4,2)</m>.
+          </p>
+
+          <figure xml:id="trigonometry-vectors-figure-32">
+            <caption>Determine the Point at the Head of <m>\vec{v}</m></caption>
+            <image>
+              <description>
+                There is vector drawn from the origin to the point <m>(7,6)</m>.  There is a vector labeled <m>\vec{v}</m> drawn from the point <m>(7,6)</m> to the point <m>(4,2)</m>.  There is a vector drawn from the origin to the point <m>(4,2)</m>.
+              </description>
+              <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis} [axis equal image,
+                                  xmin=-2,xmax=8,
+                                  ymin=-2,ymax=8,
+                                  xtick={2,4,6},
+                                  ytick={2,4,6},
+                                  minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                  minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                      \addplot[interval,ultra thick,red,-{Stealth}] coordinates {(0,0) (7,6)};
+                      \addplot[interval,ultra thick,blue,-{Stealth}] coordinates {(7,6) (4,2)} node[pos=0.5,below right] {$\vec{v}$}; 
+                      \addplot[interval,ultra thick,red!30!blue,-{Stealth}] coordinates {(0,0) (4,2)};
+                    \end{axis}
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the coordinates of the point at the tail of <m>\vec{v}=\langle 6,-5 \rangle</m> if the head of <m>\vec{v}</m> is drawn at the point <m>(3,2)</m>.
+        </p>
+      </statement>
+      <solution>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            As illustrated in <xref ref="trigonometry-vectors-figure-33">Figure</xref>, if we let <m>\vec{u}=\langle x_1,y_1 \rangle</m> where <m>(x_1,y_1)</m> is the point at the tail of <m>\vec{v}</m>, then <m>\vec{u}</m> is the solution to the equation <m>\vec{u}+\vec{v}=\langle 3,2 \rangle</m>.  Let's solve for <m>\vec{u}</m>.
+            <md>
+              <mrow>\vec{u}+\vec{v}\amp=\langle 3,2 \rangle</mrow>
+              <mrow>\vec{u}\amp=\langle 3,2 \rangle-\vec{v}</mrow>
+              <mrow>\vec{u}\amp=\langle 3,2 \rangle-\langle 6,-5 \rangle</mrow>
+              <mrow>\vec{u}\amp=\langle 3-6,2-(-5) \rangle</mrow>
+              <mrow>\vec{u}\amp=\langle -3,7 \rangle</mrow>
+            </md>
+            The point at the tail of <m>\vec{v}</m> is <m>(-3,7)</m>.
+          </p>
+
+          <figure xml:id="trigonometry-vectors-figure-33">
+            <caption>Determine the Point at the Tail of <m>\vec{v}</m></caption>
+            <image>
+              <description>
+                A vector labeled <m>\vec(u)</m> is drawn from the origin to the point <m>(-3,7)</m>, a vector labeled <m>\vec{v}</m> is drawn from the point <m>(-3,7)</m> to the point <m>(3,2)</m>, and an unlabeled vector drawn from the origin to the point <m>(3,2)</m>.   
+              </description>
+              <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis} [axis equal image,
+                                  xmin=-8,xmax=4,
+                                  ymin=-4,ymax=8,
+                                  xtick={-6,-4,-2,2},
+                                  ytick={-2,2,4,6},
+                                  minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                  minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                      \addplot[soliddot,color=black] coordinates {(-3,7)} node[below left] {$(x_1,y_1)$};
+                      \addplot[interval,ultra thick,red!30!blue,-{Stealth}] coordinates {(0,0) (3,2)};
+                      \addplot[interval,ultra thick,blue,-{Stealth}] coordinates {(-3,7) (3,2)} node[pos=0.65,above right] {$\vec{v}$}; 
+                      \addplot[interval,ultra thick,red,-{Stealth}] coordinates {(0,0) (-3,7)} node[pos=0.5,below left] {$\vec{u}$}; 
+                    \end{axis}
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            Use vector addition to determine the point that is two-thirds of the way from the point <m>(3,1)</m> to the point <m>(-5,-6)</m> along the line segment that connects the two points.
+          </p>
+
+          <figure xml:id="trigonometry-vectors-figure-34">
+            <caption>Determine the Coordinates of the Point <m>(x_1,y_1)</m></caption>
+            <image>
+              <description>
+                Solid dots at the points at the points <m>(-5,-6)</m> and <m>(3,1)</m> along with the line segments connecting the two points.  There is also a solid dot on the line segment labeled <m>(x_1,y_1)</m>.  That point is two-thirds of the way from <m>(3,1)</m> to <m>(-5,-6)</m> and lies in Quadrant III.   
+              </description>
+              <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis} [axis equal image,
+                                  xmin=-8,xmax=4,
+                                  ymin=-8,ymax=4,
+                                  xtick={-6,-4,-2,2,4,6},
+                                  ytick={-6,-4,-2,2,4,6},
+                                  minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                  minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                      \addplot[soliddot,color=black] coordinates {(-5,-6)};
+                      \addplot[soliddot,color=black] coordinates {(3,1)};
+                      \addplot[soliddot,color=red] coordinates {(-2.33,-3.66)} node[above left] {$(x_1,y_1)$};
+                      \addplot[interval,ultra thick,blue,-] coordinates {(-5,-6) (3,1)}; 
+                    \end{axis}
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </statement>
+      <solution>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            The component form of the vector from the point <m>(3,1)</m> to the point <m>(-5,-6)</m> is determined below.
+            <me>\langle -5-3,-6-1 \rangle=\langle -8,-7 \rangle</me>
+            See <xref ref="trigonometry-vectors-figure-35">Figure</xref> to follow the logic to the solution presented below.
+          </p>
+
+          <figure xml:id="trigonometry-vectors-figure-35">
+            <caption>Determine the Coordinates of the Point <m>(x_1,y_1)</m></caption>
+            <image>
+              <description>
+                There is a vector drawn from the origin to the point <m>(3,1)</m> and a vector drawn from the point <m>(3,1)</m> to the point <m>(-5,-6)</m>.  Superimposed over the second vector is a vector from the point <m>(3,1)</m> to a point in Quadrant III labeled <m>(x_1,y_1)</m>.  The superimposed vector is two-thirds as long as the vector from the point <m>(3,1)</m> to the point <m>(-5,-6)</m>.  Finally, the is a vector drawn from the origin to the point labeled <m>(x_1,y_1)</m>.
+              </description>
+              <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis} [axis equal image,
+                                  xmin=-8,xmax=4,
+                                  ymin=-8,ymax=4,
+                                  xtick={-6,-4,-2,2,4,6},
+                                  ytick={-6,-4,-2,2,4,6},
+                                  minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                  minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                      \addplot[soliddot,color=red] coordinates {(-2.33,-3.66)} node[above left] {$(x_1,y_1)$};
+                      \addplot[interval,ultra thick,blue,-{Stealth}] coordinates {(3,1) (-5,-6)};
+                      \addplot[interval,ultra thick,red,dashed,-{Stealth}] coordinates {(3,1) (-2.33,-3.66)};
+                      \addplot[interval,ultra thick,green!30!brown,-{Stealth}] coordinates {(0,0) (3,1)};
+                      \addplot[interval,ultra thick,red!30!blue,-{Stealth}] coordinates {(0,0) (-2.33,-3.66)};  
+                    \end{axis}
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+        </sidebyside>
+        <p>
+          <md>
+            <mrow>\langle x_1,y_1\rangle\amp=\langle 3,1 \rangle + \frac{2}{3}\langle -8,-7 \rangle</mrow>
+            <mrow>\amp=\langle 3,1 \rangle + \left\langle \frac{2}{3}(-8),\frac{2}{3}(-7) \right\rangle</mrow>
+            <mrow>\amp=\langle 3,1 \rangle + \left\langle -\frac{16}{3},-\frac{14}{3}\right\rangle</mrow>
+            <mrow>\amp=\left\langle 3-\frac{16}{3},1-\frac{14}{3}\right\rangle</mrow>
+            <mrow>\amp=\left\langle -\frac{7}{3},-\frac{11}{3}\right\rangle</mrow>
+          </md>
+          The point two-thirds of the way from the point <m>(3,1)</m> to the point <m>(-5,-6)</m> is <m>\left(-\frac{7}{3},-\frac{11}{3}\right)</m>.
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+  <paragraphs>
+    <title>Converting Between Polar Form and Component Form</title>
+    <p></p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        There are several mathematical relationships between the labeled parts of the right triangle shown in <xref ref="trigonometry-vectors-figure-40">Figure</xref>.  Three notable relationships come from trigonometry and are stated below.
+        <me>\sin(\theta)=\frac{y}{r}</me>
+        <me>\cos(\theta)=\frac{x}{r}</me>
+        <me>\tan(\theta)=\frac{y}{x}</me>
+      </p>
+
+      <figure xml:id="trigonometry-vectors-figure-40">
+        <caption>Conversion Between Polar and Component Form</caption>
+        <image>
+          <description>
+            A right triangle drawn in Quadrant one with one of the acute angle's vertex at the origin/pole.  The bottom side of the triangle is labeled <m>x</m>.  The side opposite the origin/pole is labeled <m>y</m>.  The hypotenuse is a vector and it is labeled <m>r=\abs{\ec{v}}</m>.  The angle at the origin/pole is labeled <m>\theta</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis} [axis equal image,
+                            xmin=-0.9,xmax=1.8,
+                            ymin=-0.9,ymax=1.8]
+                \addplot [domain=0:50,samples=100,color=black,line width=1pt,-] ({0.2*cos(x)},{0.2*sin(x)}) node[pos=0.75,right] {$\theta$};
+                \addplot [domain=0:1.028,line width=1.5pt,-{Stealth},color=blue] {tan(50)*x} node[pos=0.4,above left] {$r=\abs{\vec{v}}$};
+                \addplot [domain=0:1.028,line width=.75pt,-,color=red] {0} node[pos=0.5,below] {$x$}; 
+                \addplot[interval,red,thick,-] coordinates {(1.028,-0.01) (1.028,1.226)} node[pos=0.5,right] {$y$}; 
+                \addplot[interval,black,ultra thick,-] coordinates {(0.928,0) (0.928,0.1)};
+                \addplot [domain=0.928:1.028,line width=1pt,-,color=black] {0.1};                   
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <p>
+      A fourth notable relationship comes from the Pythagorean theorem.
+      <me>r^2=x^2+y^2</me>
+      We can use these relationships to convert between polar form and component form.
+    </p> 
+    <p>
+      When converting from polar form to component form we use the following two formulas.
+    </p>
+    <sidebyside widths ="47% 47%" margins="0%">
+
+      <p>
+        <me>x=r\cos(\theta)</me>
+      </p>
+
+      <p>
+        <me>y=r\sin(\theta)</me>
+      </p>
+
+    </sidebyside>
+    <p>
+      When converting from component form to polar form we use the following two formulas.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        <me>r=\sqrt{x^2+y^2}</me>
+      </p>
+
+      <p>
+        <me>\tan(\theta)=\frac{y}{x}</me>
+      </p>
+
+    </sidebyside>
+    <p>
+      When applying the formula <m>\tan(\theta)=\frac{y}{x}</m>, we need to use caution in the use of the inverse tangent key.  That key will return a correct value for <m>\theta</m> if and only <m>\theta</m> terminates in either Quadrant I or Quadrant IV.  If <m>\theta</m> terminates in Quadrant II or Quadrant III and you need to use your inverse tangent key, the most straight forward thing to do is to find the reference angle, <m>\theta^{\,\prime}</m>, in the following way.
+      <me>\theta^{\,\prime}=\tan^{-1}\left(\abs{\frac{y}{x}}\right)</me>
+      Then subtract or add <m>\theta^{\,\prime}</m> to <m>\pi</m> dependent, respectively, upon whether the point lies in Quadrant II or Quadrant III.
+    </p>
+
+    <example>
+      <statement>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            Determine both the component form and the polar form for the vector <m>\vec{v}</m> shown in <xref ref="trigonometry-vectors-figure-41">Figure</xref>.  Round the value of <m>\theta</m> to the nearest tenth of a degree.
+          </p>
+
+          <figure xml:id="trigonometry-vectors-figure-41">
+            <caption>Determine Polar and Component Forms of <m>\vec{v}</m></caption>
+            <image>
+              <description>
+                There is vector labeled <m>\vec{v}</m> with its tail at the point <m>(4,5)</m> and its head at the point <m>(-2,-3)</m>.  
+              </description>
+              <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis} [axis equal image,
+                                  xmin=-8,xmax=8,
+                                  ymin=-8,ymax=8,
+                                  xtick={-6,-4,-2,2,4,6},
+                                  ytick={-6,-4,-2,2,4,6},
+                                  minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                  minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                      \addplot[interval,ultra thick,red,-{Stealth}] coordinates {(4,5) (-2,-3)} node[pos=0.3,above left] {$\vec{v}$}; 
+                    \end{axis}
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </statement>
+      <solution>
+        <p>
+          We begin by determining the component form of <m>\vec{v}</m>.  The head of <m>\vec{v}</m> lies at the point <m>(-2,-3)</m> and the tail lies at the point <m>(4,5)</m>.  This give us the following.
+          <md>
+            <mrow>\vec{v}\amp=\langle -2-4,-3-5 \rangle</mrow>
+            <mrow>\amp=\langle -6,-8 \rangle</mrow>
+          </md>
+          We now move on the the polar form.  We begin with <m>r</m>.
+          <md>
+            <mrow>r\amp=\abs{\vec{v}}</mrow>
+            <mrow>\amp=\sqrt{(-6)^2+(-8)^2}</mrow>
+            <mrow>\amp=\sqrt{100}</mrow>
+            <mrow>\amp=10</mrow>
+          </md>
+          To determine <m>\theta</m>, we need to find a solution that points into Quadrant III to the equation derived below.
+          <me>\tan(\theta)=\frac{-8}{-6}\,\,\Longrightarrow\,\,\tan(\theta)=\frac{4}{3}</me>
+          The reference angle for the solution we seek is derived below.
+          <md>
+            <mrow>\theta^{\,\prime}\amp=\tan^{-1}\left(\frac{4}{3}\right)</mrow>
+            <mrow>\amp\approx 53.1^{\circ}</mrow>
+          </md>
+          To derive <m>\theta</m>, we need to add <m>\theta^{\,\prime}</m> to <m>180^{\circ}</m>.  Thus the polar for of <m>\vec{v}</m> is (approximately)
+          <me>10\angle 233.1^{\circ}</me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the vector sum <m>\left(5\angle 30^{\circ}\right)+\left(7\angle 135^{\circ}\right)</m> after first converting both vectors to component form.  Call the resultant <m>\vec{v}</m>.  Round the final values of <m>r</m> and <m>\theta</m> to the nearest tenth.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by finding the component form of the vector sum.
+          <md>
+            <mrow>\vec{v}\amp=\left(5\angle 30^{\circ}\right)+\left(7\angle 135^{\circ}\right)</mrow>
+            <mrow>\amp=\left\langle 5\cos\left(30^{\circ}\right),5\sin\left(30^{\circ}\right) \right\rangle+\left\langle 7\cos\left(135^{\circ}\right),7\sin\left(135^{\circ}\right) \right\rangle</mrow>
+            <mrow>\amp=\left\langle 5 \cdot \frac{\sqrt{3}}{2},5 \cdot \frac{1}{2} \right\rangle+\left\langle 7 \cdot -\frac{\sqrt{2}}{2},7 \cdot \frac{\sqrt{2}}{2} \right\rangle</mrow>
+            <mrow>\amp=\left\langle \frac{5\sqrt{3}}{2}+\left(-\frac{7\sqrt{2}}{2}\right),\frac{5}{2}+\frac{7\sqrt{2}}{2} \right\rangle</mrow>
+            <mrow>\amp=\left\langle \frac{5\sqrt{3}-7\sqrt{2}}{2},\frac{5+7\sqrt{2}}{2} \right\rangle</mrow>
+          </md>
+          Moving on to the polar form of the sum, we begin by estimating <m>r</m>.
+          <md>
+            <mrow>r\amp=\abs{\vec{v}}</mrow>
+            <mrow>\amp=\sqrt{\left(\frac{5\sqrt{3}-7\sqrt{2}}{2}\right)^2+\left(\frac{5+7\sqrt{2}}{2}\right)^2}</mrow>
+            <mrow>\amp\approx 7.5</mrow>
+          </md>
+          Before we can determine <m>\theta</m> we need to first determine the quadrant into <m>\vec{v}</m> points.  The <m>\uvec{j}</m>-component is clearly positive, but such a determination is not so obvious for the <m>\uvec{i}</m>-component.  Let's just estimate its value.
+          <me>\frac{5\sqrt{3}-7\sqrt{2}}{2} \approx -0.6</me>
+          This tells us that <m>\vec{v}</m> points into Quadrant II, so we can't use the inverse tangent key directly to find <m>\theta</m>.  We'll instead need to subtract the reference angle from <m>180^{\circ}</m>.  Let's determine the reference angle.
+          <md>
+            <mrow>\theta^{\,\prime}\amp=\tan^{-1}\left(\abs{\frac{\frac{5+7\sqrt{2}}{2}}{\frac{5\sqrt{3}-7\sqrt{2}}{2}}}\right)</mrow>
+            <mrow>\amp=\tan^{-1}\left(\abs{\frac{5+7\sqrt{2}}{5\sqrt{3}-7\sqrt{2}}}\right)</mrow>
+            <mrow>\amp\approx 85.2^{\circ}</mrow>
+          </md>
+          This gives us the following.
+          <md>
+            <mrow>\theta\amp=180^{\circ}-85.2^{\circ}</mrow>
+            <mrow>\amp=94.8^{\circ}</mrow>
+          </md>
+          In summary, the component form of <m>\vec{v}</m> is <m>\left\langle \frac{5\sqrt{3}-7\sqrt{2}}{2},\frac{5+7\sqrt{2}}{2} \right\rangle</m> and the polar form is (approximately) <m>7.5\angle 94.8^{\circ}</m>.
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+  <paragraphs>
+    <title>Unit Vectors</title>
+    <p></p>
+    <p>
+      A vector with a magnitude (or length) of one is called a <term>unit vector</term>.  The process of determining the components of the unit vector that points in the same direction as <m>\vec{v}</m> is called <term>normalizing <m>\vec{v}</m></term>.  We symbolize the normalized vector with <m>\hat{v}</m>.  We normalize <m>\vec{v}</m> by dividing out its magnitude (or length).  This is akin to cutting a 7 inch piece of spaghetti into seven pieces of equal length.  The resultant pieces each have a length of one inch.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>\vec{w}=\langle -8,15 \rangle</m>.  Normalize <m>\vec{w}</m> and confirm that the magnitude of the new vector is one.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin with the normalization of <m>\vec{w}</m>.
+          <md>
+            <mrow>\hat{w}\amp=\frac{\vec{w}}{\abs{\vec{w}}}</mrow>
+            <mrow>\amp=\frac{\langle -8,15 \rangle}{\abs{\langle -8,15 \rangle}}</mrow>
+            <mrow>\amp=\frac{\langle -8,15 \rangle}{\sqrt{(-8)^2+15^2}}</mrow>
+            <mrow>\amp=\frac{\langle -8,15 \rangle}{\sqrt{289}}</mrow>
+            <mrow>\amp=\frac{\langle -8,15 \rangle}{17}</mrow>
+            <mrow>\amp=\left\langle -\frac{8}{17},\frac{15}{17} \right\rangle</mrow>
+          </md>
+          We now confirm that the magnitude of the new vector is one.
+          <md>
+            <mrow>\abs{\hat{w}}\amp=\abs{\left\langle -\frac{8}{17},\frac{15}{17} \right\rangle}</mrow>
+            <mrow>\amp=\sqrt{\left(-\frac{8}{17}\right)^2+\left(\frac{15}{17}\right)^2}</mrow>
+            <mrow>\amp=\sqrt{\frac{64}{289}+\frac{225}{289}}</mrow>
+            <mrow>\amp=\sqrt{\frac{289}{289}}</mrow>
+            <mrow>\amp=\sqrt{1}</mrow>
+            <mrow>\amp=1</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      One use of the unit vector is that it is helpful when determining a vector of any length in the same or opposite direction as a given vector  This is illustrated in the next example.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine the components of the vector with a magnitude of 12 that points in the opposite direction of the vector <m>\vec{v}=\langle 7,12 \rangle</m>.  Call the new vector <m>\vec{u}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Suppose that <m>\vec{u}=k\vec{v}</m>.  Surely <m>k \lt 0</m>, in the <m>\vec{u}</m> and <m>\vec{v}</m> point in opposite directions.  The value of <m>\abs{k}</m>, however, is in no way apparent.  However, if we had the unit vector that points in the same direction as <m>vec{v}</m>, we could multiply that vector by <m>-12</m> and the magnitude of the result would be <m>12</m>.  Let's go ahead and do it.
+          <md>
+            <mrow>\vec{u}\amp=-12\hat{v}</mrow>
+            <mrow>\amp=(-12)\frac{\vec{v}}{\abs{\vec{v}}}</mrow>
+            <mrow>\amp=(-12)\frac{\langle 7,12 \rangle}{\abs{\langle 7,12 \rangle}}</mrow>
+            <mrow>\amp=(-12)\frac{\langle 7,12 \rangle}{\sqrt{7^2+12^2}}</mrow>
+            <mrow>\amp=(-12)\frac{\langle 7,12 \rangle}{\sqrt{193}}</mrow>
+            <mrow>\amp=(-12)\frac{\langle 7,12 \rangle}{\sqrt{193}} \cdot \frac{\sqrt{193}}{\sqrt{193}}</mrow>
+            <mrow>\amp=\left(-\frac{12\sqrt{193}}{193}\right)\langle 7,12 \rangle</mrow>
+            <mrow>\amp=\left\langle -\frac{84\sqrt{193}}{193},\frac{144\sqrt{193}}{193} \right\rangle</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title>The Dot Product</title>
+    <p></p>
+    <p>
+      The <term>dot product</term> between the vectors <m>\vec{u}=\langle u_1,u_2 \rangle</m> and <m>\vec{v}=\langle v_1,v_2\rangle</m>is symbolized and defined as follows <mdash/> the left side of the equation is read aloud as "u dot v."
+      <me>\vec{u} \cdot \vec{v}=u_1v_1+u_2v_2</me>
+      The dot product is also referred to as the <term>scalar product</term>.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine the dot products, <m>\vec{u} \cdot \vec{w}</m> and <m>\vec{w} \cdot \vec{u}</m>, of the vectors <m>\vec{u}=-3\uvec{i}+5\uvec{j}</m> and <m>\vec{u}=2\uvec{i}+7\uvec{j}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\vec{u} \cdot \vec{w}\amp=(-3)(2)+(5)(7)</mrow>
+            <mrow>\amp=29</mrow>
+            <mrow>\vec{w} \cdot \vec{u}\amp=(2)(-3)+(7)(5)</mrow>
+            <mrow>\amp=29</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      As implied by the last example, the dot product is commutative.  That is
+      <me>\vec{u} \cdot \vec{v}=\vec{v} \cdot \vec{u}.</me>
+      This property of the dot product follows immediately from the commutative property of multiplication.
+    </p>
+    <p>
+      The dot product between two vectors has many important uses.  Let's use <xref ref="trigonometry-vectors-figure-50">Figure</xref> to derive one of those uses.
+    </p>
+    <figure xml:id="trigonometry-vectors-figure-50">
+      <caption>Definition Diagram</caption>
+      <image width="60%">
+        <description>
+          There is vector labeled <m>\vec{u}</m> with its tail at the origin and its head at a point labeled <m>(x_1,y_1)</m>.There is also a vector labeled <m>\vec{v}</m> with is tail at the origin and its head at the point <m>(x_2,y_2)</m> as well as a vector labeled <m>\vec{w}</m> with its tail at the point <m>(x_2,y_2)</m> and its head at the point <m>(x_1,y_1)</m>.  The three vectors form a triangle.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          xmin=-5,xmax=5,
+                          ymin=-2,ymax=8,
+                          xtick={12},
+                          ytick={12},
+                          minor xtick={},
+                          minor ytick={}]
+                \addplot[soliddot,color=black] coordinates {(-2,4.5)} node[above left] {$(x_1,y_1)$};
+                \addplot[soliddot,color=black] coordinates {(3,3)} node[above] {$(x_2,y_2)$};
+                \addplot[interval,thick,red,-{Stealth}] coordinates {(0,0) (3,3)} node[pos=0.65,below right] {$\vec{u}$};
+                \addplot[interval,thick,blue,-{Stealth}] coordinates {(0,0) (-2,4.5)} node[pos=0.5,left] {$\vec{v}$};
+                \addplot[interval,thick,purple!70!black,-{Stealth}] coordinates {(3,3) (-2,4.5)}  node[pos=0.5,above] {$\vec{w}$};
+                \addplot [domain=45:114,samples=100,color=black,line width=1pt] ({1.2*cos(x)},{1.2*sin(x)}) node[pos=0.3,above] {$\theta$}; 
+              \end{axis}
+            \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+    <p>
+      In the diagram we have the following lengths.
+      <md>
+        <mrow>\abs{\vec{v}}\amp=\sqrt{x_1^2+y_1^2}</mrow>
+        <mrow>\abs{\vec{u}}\amp=\sqrt{x_2^2+y_2^2}</mrow>
+        <mrow>\abs{\vec{w}}\amp=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}</mrow>
+      </md>
+      From the law of cosines we get the following.
+      <me>\abs{\vec{w}}^2=\abs{\vec{u}}^2+\abs{\vec{v}}^2-2\abs{\vec{u}}\abs{\vec{v}}\cos(\theta)</me>
+      For reasons that will become apparent, we are going to replace the three lengths with their formulas, but only in the squared terms.  Let's do that and simplify things as much as they simplify.
+      <md>
+        <mrow>\abs{\vec{w}}^2\amp=\abs{\vec{u}}^2+\abs{\vec{v}}^2-2\abs{\vec{u}}\abs{\vec{v}}\cos(\theta)</mrow>
+        <mrow>\left(\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}\right)^2\amp=\left(\sqrt{x_2^2+y_2^2}\right)^2+\left(\sqrt{x_1^2+y_1^2}\right)^2-2\abs{\vec{u}}\abs{\vec{v}}\cos(\theta)</mrow>
+        <mrow>(x_1-x_2)^2+(y_1-y_2)^2\amp=x_2^2+y_2^2+x_1^2+y_1^2-2\abs{\vec{u}}\abs{\vec{v}}\cos(\theta)</mrow>
+        <mrow>x_1^2-2x_1x_2+x_2^2+y_1^2-2y_1y_2+y_2^2\amp=x_2^2+y_2^2+x_1^2+y_1^2-2\abs{\vec{u}}\abs{\vec{v}}\cos(\theta)</mrow>
+      </md>
+      At this point let's observe that the terms <m>x_1^2</m>, <m>x_2^2</m>, <m>y_1^2</m>, and <m>y_2^2</m> each appear on both sides of the equation, so they can be eliminated from the equation by subtraction.  Let's pick up with those terms eliminated.
+      <md>
+        <mrow>-2x_1x_2-2y_1y_2\amp=-2\abs{\vec{u}}\abs{v}\cos(\theta)</mrow>
+        <mrow>\divideunder{-2x_1x_2-2y_1y_2}{-2}\amp=\divideunder{-2\abs{\vec{u}}\abs{\vec{v}}\cos(\theta)}{-2}</mrow>
+        <mrow>x_1x_2+y_1y_2\amp=\abs{\vec{u}}\abs{\vec{v}}\cos(\theta)</mrow>
+        <mrow>\vec{u} \cdot \vec{v}\amp=\abs{\vec{u}}\abs{\vec{v}}\cos(\theta)</mrow>
+      </md>
+      The last equation can be used to determine the value of <m>\theta</m> without going through the law of cosines.  Let's solve for <m>\theta</m>.
+      <md>
+        <mrow>\vec{u} \cdot \vec{v}\amp=\abs{\vec{u}}\abs{\vec{v}}\cos(\theta)</mrow>
+        <mrow>\divideunder{\vec{u} \cdot \vec{v}}{\abs{\vec{u}}\abs{\vec{v}}}\amp=\divideunder{\abs{\vec{u}}\abs{\vec{v}}\cos(\theta)}{\abs{\vec{u}}\abs{\vec{v}}}</mrow>
+        <mrow>\frac{\vec{u} \cdot \vec{v}}{\abs{\vec{u}}\abs{\vec{v}}}\amp=\cos(\theta)</mrow>
+      </md>
+      When two vectors are drawn tail-to-tail, the smaller angle formed by the vectors is always between <m>0^{\circ}</m> and <m>180^{\circ}</m>.  Since that is the range of the inverse cosine function, we can go ahead and isolate <m>\theta</m> is the last equation, so long as we stipulate that we are finding the measurement of the smaller angle formed by the vectors when they are drawn tail-to-tail.
+      <md>
+        <mrow>\frac{\vec{u} \cdot \vec{v}}{\abs{\vec{u}}\abs{\vec{v}}}\amp=\cos(\theta)</mrow>
+        <mrow>\cos^{-1}\left(\frac{\vec{u} \cdot \vec{v}}{\abs{\vec{u}}\abs{\vec{v}}}\right)\amp=\theta</mrow>
+      </md>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>\vec{v}=4\uvec{i}+8\uvec{j}</m> and <m>\vec{w}=-4\uvec{i}+7\uvec{j}</m>. Determine the smaller angle formed when <m>\vec{v}</m> and <m>\vec{w}</m> are drawn tail-to-tail.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's name the smaller angle formed at the common tail point <m>\theta</m>.  Then we have the following.
+          <md>
+            <mrow>\theta\amp=\cos^{-1}\left(\frac{\vec{u} \cdot \vec{v}}{\abs{\vec{u}}\abs{\vec{v}}}\right)</mrow>
+            <mrow>\amp=\cos^{-1}\left(\frac{(4)(-4)+(8)(7)}{\sqrt{4^2+8^2}\sqrt{(-4)^2+7^2}}\right)</mrow>
+            <mrow>\amp=\cos^{-1}\left(\frac{40}{\sqrt{72}\sqrt{65}}\right)</mrow>
+            <mrow>\amp\approx 54.2^{\circ}</mrow>
+          </md>
+        </p>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            Referring to <xref ref="trigonometry-vectors-figure-51">Figure</xref>, the value seems reasonable. 
+          </p>
+
+          <figure xml:id="trigonometry-vectors-figure-51">
+            <caption><m>\vec{u}</m> and <m>\vec{v}</m> Drawn with their Tails at the Origin</caption>
+            <image>
+              <description>
+                The vectors <m>\vec{v}=4\uvec{i}+8\uvec{j}</m> and <m>\vec{w}=-4\uvec{i}+7\uvec{j}</m> both drawn with their tails at the origin.  The smaller formed by the two vectors is labeled <m>\theta</m>.
+              </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis} [axis equal image,
+                                  xmin=-9,xmax=9,
+                                  ymin=-9,ymax=9,
+                                  xtick={-8,-6,-4,-2,2,4,6,8},
+                                  ytick={-8,-6,-4,-2,2,4,6,8},
+                                  minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                  minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                      \addplot[interval,thick,red,-{Stealth}] coordinates {(0,0) (-4,7)} node[pos=0.5,below left] {$\vec{w}$};
+                      \addplot[interval,thick,blue,-{Stealth}] coordinates {(0,0) (4,8)} node[pos=0.5,below right] {$\vec{v}$};
+                      \addplot [domain=63.43:119.75,samples=100,color=black,line width=1pt] ({1.2*cos(x)},{1.2*sin(x)}) node[pos=0.15,above] {$\theta$}; 
+                    \end{axis}
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            Determine the measurement of each of the angles of the triangle shown in <xref ref="trigonometry-vectors-figure-52">Figure</xref>.
+          </p>
+
+          <figure xml:id="trigonometry-vectors-figure-52">
+            <caption>Determine the Angular Measurements</caption>
+            <image>
+              <description>
+                A triangle with vertices at the points <m>(2,1)</m> (labeled A), <m>(8,7)</m> (labeled B), and <m>(7,3)</m> (labeled C).
+              </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis} [axis equal image,
+                                  xmin=-1,xmax=9,
+                                  ymin=-1,ymax=9,
+                                  xtick={2,4,6,8},
+                                  ytick={2,4,6,8},
+                                  minor xtick={1,3,5,7},
+                                  minor ytick={1,3,5,7}]
+                      \addplot[soliddot,color=black] coordinates {(2,1)} node[below left] {A};
+                      \addplot[soliddot,color=black] coordinates {(8,7)} node[above] {B};
+                      \addplot[soliddot,color=black] coordinates {(7,3)} node[below right] {C};
+                      \addplot[interval,thick,black,-] coordinates {(2,1) (8,7)};
+                      \addplot[interval,thick,back,-] coordinates {(2,1) (7,3)};
+                      \addplot[interval,thick,back,-] coordinates {(8,7) (7,3)}; 
+                    \end{axis}
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </statement>
+      <solution>
+        <p>
+          We can use vectors to determine the angles.  We just have to be sure that we use vectors that are oriented tail-to-tail.
+          <md>
+            <mrow>\angle\text{ABC}\amp=\cos^{-1}\left(\frac{\overrightarrow{\text{BA}} \cdot \overrightarrow{\text{BC}}}{\abs{\overrightarrow{\text{BA}}}\abs{\overrightarrow{\text{BC}}}}\right)</mrow>
+            <mrow>\amp=\cos^{-1}\left(\frac{\langle -6,-6 \rangle \cdot \langle -1,-4 \rangle}{\abs{\langle -6,6 \rangle}\abs{\langle -1,-4 \rangle}}\right)</mrow>
+            <mrow>\amp=\cos^{-1}\left(\frac{(-6)(-1)+(-6)(-4)}{\sqrt{(-6)^2+6^2}\sqrt{(-1)^2+(-4)^2}}\right)</mrow>
+            <mrow>\amp=\cos^{-1}\left(\frac{30}{\sqrt{72}\sqrt{17}}\right)</mrow>
+            <mrow>\amp\approx 31.0^{\circ}</mrow>
+            <mrow>\angle\text{BAC}\amp=\cos^{-1}\left(\frac{\overrightarrow{\text{AB}} \cdot \overrightarrow{\text{AC}}}{\abs{\overrightarrow{\text{AB}}}\abs{\overrightarrow{\text{AC}}}}\right)</mrow>
+            <mrow>\amp=\cos^{-1}\left(\frac{\langle 6,6 \rangle \cdot \langle 5,2 \rangle}{\abs{\langle 6,6 \rangle}\abs{\langle 5,2 \rangle}}\right)</mrow>
+            <mrow>\amp=\cos^{-1}\left(\frac{(6)(5)+(6)(2)}{\sqrt{6^2+6^2}\sqrt{5^2+2^2}}\right)</mrow>
+            <mrow>\amp=\cos^{-1}\left(\frac{42}{\sqrt{72}\sqrt{29}}\right)</mrow>
+            <mrow>\amp\approx 23.2^{\circ}</mrow>
+            <mrow>\angle\text{ACB}\amp=\cos^{-1}\left(\frac{\overrightarrow{\text{CA}} \cdot \overrightarrow{\text{CB}}}{\abs{\overrightarrow{\text{CA}}}\abs{\overrightarrow{\text{CB}}}}\right)</mrow>
+            <mrow>\amp=\cos^{-1}\left(\frac{\langle -5,-2 \rangle \cdot \langle 1,4 \rangle}{\abs{\langle -5,-2 \rangle}\abs{\langle 1,4 \rangle}}\right)</mrow>
+            <mrow>\amp=\cos^{-1}\left(\frac{(-5)(1)+(-2)(4)}{\sqrt{(-5)^2+(-2)^2}\sqrt{1^2+4^2}}\right)</mrow>
+            <mrow>\amp=\cos^{-1}\left(\frac{-13}{\sqrt{29}\sqrt{17}}\right)</mrow>
+            <mrow>\amp\approx 125.8^{\circ}</mrow>
+          </md>
+          We can check our answers by summing up the three angle measurements and making sure that the sum is <m>180^{\circ}</m>.
+          <me>31.0^{\circ}+23.2^{\circ}+125.8^{\circ}=180^{\circ}\,\,\checkmark</me>
+        </p>
+      </solution>
+    </example>
+
+
+
+  </paragraphs>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine the component form of <m>\overrightarrow{\text{AB}}</m> for each of the following pairs of points.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            A is <m>(-3,2)</m> and B is <m>(9,-12)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\overrightarrow{\text{AB}}\amp=\langle 9-(-3),-12-2 \rangle</mrow>
+              <mrow>\amp=\langle 12,-14 \rangle</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            A is <m>(0,0)</m> and B is <m>(-4,2)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\overrightarrow{\text{AB}}\amp=\langle -4-0,2-0 \rangle</mrow>
+              <mrow>\amp=\langle -4,2 \rangle</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            A is <m>(12,-7)</m> and B is <m>(0,0)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\overrightarrow{\text{AB}}\amp=\langle 0-12,0-(-7) \rangle</mrow>
+              <mrow>\amp=\langle -12,7 \rangle</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Convert each vector from polar form to component form.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\vec{u}=10\angle 300^{\circ}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\vec{u}\amp=\langle 10\cos\left(300^{\circ}\right),10\sin\left(300^{\circ}\right) \rangle</mrow>
+              <mrow>\amp=\left\langle 10 \cdot \frac{1}{2},10 \cdot -\frac{\sqrt{3}}{2} \right\rangle</mrow>
+              <mrow>\amp=\langle 5,-5\sqrt{3} \rangle</mrow>
+            </md>
+          </p>`
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\vec{v}=12\angle 135^{\circ}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\vec{v}\amp=\langle 12\cos\left(135^{\circ}\right),12\sin\left(135^{\circ}\right) \rangle</mrow>
+              <mrow>\amp=\left\langle 12 \cdot -\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2} \right\rangle</mrow>
+              <mrow>\amp=\langle -6\sqrt{2},6\sqrt{2} \rangle</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\vec{w}=23\angle 180^{\circ}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\vec{w}\amp=\langle 12\cos\left(180^{\circ}\right),12\sin\left(180^{\circ}\right) \rangle</mrow>
+              <mrow>\amp=\langle 12 \cdot -1,12 \cdot 0 \rangle</mrow>
+              <mrow>\amp=\langle -12,0 \rangle</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Convert each vector from component form to polar form.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\vec{u}=\langle -3,3\sqrt{3} \rangle</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by determining the value of <m>\abs{\vec{u}}</m>.
+            <md>
+              <mrow>\abs{\vec{u}}\amp=\sqrt{(-3)^2+\left(3\sqrt{3}\right)^2}</mrow>
+              <mrow>\amp=\sqrt{36}</mrow>
+              <mrow>\amp=6</mrow>
+            </md>
+            To determine a value for <m>\theta</m> we need to determine a solution to the following equations.
+            <me>\tan(\theta)=\frac{3\sqrt{3}}{-3} \Longrightarrow \tan(\theta)=-\sqrt{3}</me>
+            We need a solution that lies in Quadrant II.  The reference angle for the solution is <m>60^{\circ}</m>, making <m>120^{\circ}</m> an option for <m>\theta</m>.  This gives us the following.
+            <me>\vec{u}=6\angle 120^{\circ}</me>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\vec{v}=7\uvec{i}-\uvec{j}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by determining the value of <m>\abs{\vec{v}}</m>.
+            <md>
+              <mrow>\abs{\vec{v}}\amp=\sqrt{7^2+(-7)^2}</mrow>
+              <mrow>\amp=7\sqrt{2}</mrow>
+            </md>
+            To determine a value for <m>\theta</m> we need to determine a solution to the following equations.
+            <me>\tan(\theta)=\frac{-7}{7} \Longrightarrow \tan(\theta)=-1</me>
+            We need a solution that lies in Quadrant IV.  The reference angle for <m>\theta</m> is <m>45^{\circ}</m>, so a value we can use for <m>\theta</m> is <m>315^{\circ}</m>.  To sum things up:
+            <me>\vec{v}=7\sqrt{2}\angle 315^{\circ}.</me>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\vec{w}=\langle -\sqrt{3},-1 \rangle</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by determining the value of <m>\abs{\vec{w}}</m>.
+            <md>
+              <mrow>\abs{\vec{w}}\amp=\sqrt{(-\sqrt{3})^2+(-1)^2}</mrow>
+              <mrow>\amp=\sqrt{4}</mrow>
+              <mrow>\amp=2</mrow>
+            </md>
+            To determine a value for <m>\theta</m> we need to determine a solution to the following equations.
+            <me>\tan(\theta)=\frac{-1}{-\sqrt{3}} \Longrightarrow \tan(\theta)=\frac{\sqrt{3}}{3}</me>
+            We need a solution that lies in Quadrant III.  The reference angle for <m>\theta</m> is <m>30^{\circ}</m>, so we can use <m>210^{\circ}</m> as <m>\theta</m>.  Taken all together, we have the following.
+            <me>\vec{w}=2\angle 210^{\circ}</me>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine each vector quantity.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine <m>\vec{u}-3\vec{v}</m> where <m>\vec{u}=\langle -1,7 \rangle</m> and <m>\vec{v}=\langle 4,-2 \rangle</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\vec{u}-3\vec{v}\amp=\langle -1,7 \rangle-3\langle 4,-2 \rangle</mrow>
+              <mrow>\amp=\langle -1,7 \rangle-\langle 12,-6 \rangle</mrow>
+              <mrow>\amp=\langle -1-12,7-(-6) \rangle</mrow>
+              <mrow>\amp=\langle -13,13 \rangle</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine <m>\frac{\vec{v}+\vec{w}}{\abs{\vec{v}+\vec{w}}}</m> where <m>\vec{v}=\langle -6,4 \rangle</m> and <m>\vec{w}=\langle 10,-7 \rangle</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\vec{v}+\vec{w}\amp=\langle -6,4 \rangle + \langle 10,-7 \rangle</mrow>
+              <mrow>\amp=\langle -6+10,4+(-7) \rangle</mrow>
+              <mrow>\amp=\langle 4,-3 \rangle</mrow>
+              <mrow>\frac{\vec{v}+\vec{w}}{\abs{\vec{v}+\vec{w}}}\amp=\frac{\langle 4,-3 \rangle}{\abs{\langle 4,-3 \rangle}}</mrow>
+              <mrow>\amp=\frac{\langle 4,-3 \rangle}{\sqrt{4^2+(-3)^2}}</mrow>
+              <mrow>\amp=\frac{\langle 4,-3 \rangle}{\sqrt{25}}</mrow>
+              <mrow>\amp=\frac{\langle 4,-3 \rangle}{5}</mrow>
+              <mrow>\amp=\left\langle \frac{4}{5},-\frac{3}{5} \right\rangle</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine <m>\frac{\vec{u}}{\abs{\vec{u}}}+\frac{\vec{w}}{\abs{\vec{w}}}</m> where <m>\vec{u}=\langle -8,15 \rangle</m> and <m>\vec{w}=\langle -7,24 \rangle</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\frac{\vec{u}}{\abs{\vec{u}}}+\frac{\vec{w}}{\abs{\vec{w}}}\amp=\frac{\langle -8,15 \rangle}{\abs{\langle -8,15 \rangle}}+\frac{\langle -7,24 \rangle}{\abs{\langle -7,24 \rangle}}</mrow>
+              <mrow>\amp=\frac{\langle -8,15 \rangle}{\sqrt{(-8)^2+15^2}}+\frac{\langle -7,24 \rangle}{\sqrt{(-7)^2+24^2}}</mrow>
+              <mrow>\amp=\frac{\langle -8,15 \rangle}{\sqrt{289}}+\frac{\langle -7,24 \rangle}{\sqrt{625}}</mrow>
+              <mrow>\amp=\frac{\langle -8,15 \rangle}{17}+\frac{\langle -7,24 \rangle}{25}</mrow>
+              <mrow>\amp=\left\langle -\frac{8}{17},\frac{15}{17} \right\rangle+\left\langle -\frac{7}{25},\frac{24}{25} \right\rangle</mrow>
+              <mrow>\amp=\left\langle -\frac{8}{17}+\left(-\frac{7}{25}\right),\frac{15}{17}+\frac{24}{25} \right\rangle</mrow>
+              <mrow>\amp=\left\langle -\frac{319}{425},\frac{783}{425} \right\rangle</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Find the smallest angle, <m>\theta</m>, formed when the given angles are drawn tail-tail.  Round each answer to the nearest tenth of a degree.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\vec{w}=\langle 2,-11 \rangle</m> and <m>\vec{u}=\langle 7,3 \rangle</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\theta\amp=\cos^{-1}\left(\frac{\vec{w} \cdot \vec{u}}{\abs{\vec{w}}\abs{\vec{u}}}\right)</mrow>
+              <mrow>\amp=\cos^{-1}\left(\frac{(2)(7)+(-11)(3)}{\sqrt{2^2+(-11)^2}\sqrt{7^2+3^2}}\right)</mrow>
+              <mrow>\amp=\cos^{-1}\left(\frac{-19}{\sqrt{125}\sqrt{58}}\right)</mrow>
+              <mrow>\amp\approx 102.9^{\circ}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\vec{v}=2\uvec{i}</m> and <m>\vec{w}=-3\uvec{i}-5\uvec{j}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\theta\amp=\cos^{-1}\left(\frac{\vec{v} \cdot \vec{w}}{\abs{\vec{v}}\abs{\vec{w}}}\right)</mrow>
+              <mrow>\amp=\cos^{-1}\left(\frac{(-2)(-3)+(0)(-5)}{\sqrt{(-2)^2+0^2}\sqrt{(-3)^2+(-5)^2}}\right)</mrow>
+              <mrow>\amp=\cos^{-1}\left(\frac{6}{\sqrt{4}\sqrt{34}}\right)</mrow>
+              <mrow>\amp=\cos^{-1}\left(\frac{6}{2\sqrt{34}}\right)</mrow>
+              <mrow>\amp=\cos^{-1}\left(\frac{3}{\sqrt{34}}\right)</mrow>
+              <mrow>\amp\approx 59.0^{\circ}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\vec{u}=3\uvec{i}-7\uvec{j}</m> and <m>\vec{v}=-6\uvec{i}+\uvec{j}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\theta\amp=\cos^{-1}\left(\frac{\vec{u} \cdot \vec{v}}{\abs{\vec{u}}\abs{\vec{v}}}\right)</mrow>
+              <mrow>\amp=\cos^{-1}\left(\frac{(3)(-6)+(-7)(1)}{\sqrt{3^2+(-7)^2}\sqrt{(-6^2)+1^2}}\right)</mrow>
+              <mrow>\amp=\cos^{-1}\left(\frac{-25}{\sqrt{58}\sqrt{37}}\right)</mrow>
+              <mrow>\amp\approx 122.7^{\circ}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Questions vary.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            At what point does the head of the vector <m>-4\vec{i}+8\uvec{j}</m> lie if the tail of the vector is drawn at the point <m>(22,-5)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            This problem is akin to the following vector sum.
+            <me>\left(22\uvec{i}-5\uvec{j}\right)+\left(-4\uvec{i}+8\uvec{j}\right)=18\uvec{i}+3\uvec{j}</me>
+            The tail lies at the point <m>(18,3)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            At what point does the tail of the vector <m>11\uvec{i}-9\uvec{j}</m> lie if its head is drawn at the point <m>(-14,-1)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's let <m>(x,y)</m> be the point at which the tail of the vector lies.  Then the stated question is akin to the following vector equation.
+            <md>
+              <mrow>\left(x\uvec{i}+y\uvec{j}\right)+\left(11\uvec{i}-9\uvec{j}\right)\amp=-14\uvec{i}-\uvec{j}</mrow>
+              <mrow>x\uvec{i}+y\uvec{j}\amp=\left(-14\uvec{i}-\uvec{j}\right)-\left(11\uvec{i}-9\uvec{j}\right)</mrow>
+              <mrow>x\uvec{i}+y\uvec{j}\amp=-25\uvec{i}+8\uvec{j}</mrow>
+            </md>
+            The tail lies at the point <m>(-25,8)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Find the unit vector that points in the same direction as the vector <m>\vec{u}=7\uvec{i}-2\uvec{j}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The described unit vector is determined below.
+            <md>
+              <mrow>\hat{u}\amp=\frac{7\uvec{i}-2\uvec{j}}{\abs{7\uvec{i}-2\uvec{j}}}</mrow>
+              <mrow>\amp=\frac{7\uvec{i}-2\uvec{j}}{\sqrt{7^2+(-2)^2}}</mrow>
+              <mrow>\amp=\frac{7\uvec{i}-2\uvec{j}}{\sqrt{53}}</mrow>
+              <mrow>\amp=\frac{7\uvec{i}}{\sqrt{53}}-\frac{2\uvec{j}}{\sqrt{53}}</mrow>
+              <mrow>\amp=\frac{7\uvec{i}}{\sqrt{53}} \cdot \frac{\sqrt{53}}{\sqrt{53}}-\frac{2\uvec{j}}{\sqrt{53}} \cdot \frac{\sqrt{53}}{\sqrt{53}}</mrow>
+              <mrow>\amp=\frac{7\sqrt{53}}{53}\uvec{i}-\frac{2\sqrt{53}}{53}\uvec{j}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the vector of length 12 that points in the opposite direction as the vector <m>\vec{w}=\langle 4,-3 \rangle</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We need to determine the unit vector that points in the same direction <m>\vec{w}</m> and then multiply that vector by <m>-12</m>.  This is all done below.
+            <md>
+              <mrow>-12\hat{w}\amp=-12\frac{\vec{w}}{\abs{\vec{w}}}</mrow>
+              <mrow>\amp=-12\frac{\langle 4,-3 \rangle}{\abs{\langle 4,-3 \rangle}}</mrow>
+              <mrow>\amp=-12\frac{\langle 4,-3 \rangle}{\sqrt{4^2+(-3)^2}}</mrow>
+              <mrow>\amp=-12\frac{\langle 4,-3 \rangle}{\sqrt{25}}</mrow>
+              <mrow>\amp=-12\frac{\langle 4,-3 \rangle}{5}</mrow>
+              <mrow>\amp=\left\langle -\frac{48}{5},\frac{36}{5} \right\rangle</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Determine, to the nearest tenth of a degree, the measurement of the angle <m>\theta</m> marked in <xref ref="trigonometry-vectors-exercises-figure-1">Figure</xref>.
+            </p>
+
+            <figure xml:id="trigonometry-vectors-exercises-figure-1">
+              <caption>Determine <m>\theta</m></caption>
+              <image>
+                <description>
+                  There is vector labeled <m>\vec{u}</m> with its tail at the point <m>(-5,-6)</m> and its head at the point <m>(3,1)</m>.  There is also a vector labeled <m>\vec{v}</m> with is tail at the point <m>(3,1)</m> and its head at the point <m>(-2,4)</m>. 
+                </description>
+                <latex-image>
+                   <![CDATA[
+                    \begin{tikzpicture}
+                      \begin{axis} [axis equal image,
+                                    xmin=-8,xmax=8,
+                                    ymin=-8,ymax=8,
+                                    xtick={-6,-4,-2,2,4,6},
+                                    ytick={-6,-4,-2,2,4,6},
+                                    minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                    minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                        \addplot[interval,thick,red,-{Stealth}] coordinates {(-5,-6) (3,1)} node[pos=0.65,below right] {$\vec{u}$};
+                        \addplot[interval,thick,blue,-{Stealth}] coordinates {(3,1) (-2,4)} node[pos=0.5,above right] {$\vec{v}$};
+                        \addplot [domain=149:223.3,samples=100,color=black,line width=1pt] ({3+1.2*cos(x)},{1+1.2*sin(x)}) node[pos=0.5,left] {$\theta$}; 
+                      \end{axis}
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </statement>
+        <solution>
+          <p>
+            The vectors <m>\vec{u}</m> and <m>\vec{v}</m> are not drawn tail-to-tail, so
+            <me>\theta \neq \cos^{-1}\left(\frac{\vec{u} \cdot \vec{v}}{\abs{\vec{u}}\abs{\vec{v}}}\right).</me>
+            However, if we were to flip around <m>u</m>, the vectors would be tail-to-tail which gives us
+            <me>\theta=\cos\left(\frac{-\vec{u} \cdot \vec{v}}{\abs{-\vec{u}}\abs{\vec{v}}}\right).</me>
+            Let's go ahead and calculate the value of <m>\theta</m>.
+            <md>
+              <mrow>\theta\amp=\cos^{-1}\left(\frac{-\vec{u} \cdot \vec{v}}{\abs{-\vec{u}}\abs{\vec{v}}}\right)</mrow>
+              <mrow>\amp=\cos^{-1}\left(\frac{\langle -8,-9 \rangle \cdot \langle -5,3 \rangle}{\abs{\langle -8,-9 \rangle}\abs{\langle -5,3 \rangle}}\right)</mrow>
+              <mrow>\amp=\cos^{-1}\left(\frac{(-8)(-5)+(-9)(3)}{\sqrt{(-8)^2+(-9)^2}\sqrt{(-5)^2+3^2}}\right)</mrow>
+              <mrow>\amp=\cos^{-1}\left(\frac{19}{\sqrt{145}\sqrt{34}}\right)</mrow>
+              <mrow>\amp\approx 74.3^{\circ}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Draw the vector sum <m>\vec{w}+\vec{v}</m> using the vectors <m>\vec{w}</m> and <m>\vec{v}</m> in <xref ref="trigonometry-vectors-exercises-figure-2">Figure</xref>.
+            </p>
+
+            <figure xml:id="trigonometry-vectors-exercises-figure-2">
+              <caption>Draw <m>\vec{w}+\vec{v}</m></caption>
+              <image>
+                <description>
+                  Two vectors drawn tail-to-tail on a grid-less plane.  A vector labeled <m>\vec{w}</m> points up and left whereas a vector labeled <m>\vec{v}</m> points up and right,
+                </description>
+                <latex-image-code>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \draw [blue,ultra thick,-triangle 60] (0,0) -- (4,3) node[midway, below right]{$\vec{v}$};
+                      \draw [red,ultra thick,-triangle 60] (0,0) -- (-2.5,5) node[midway, below left]{$\vec{w}$};
+                      \draw [white,thick,-stealth] (-2.5,5) -- (1.5,8) node[midway, below right]{$\vec{v}$};
+                      \draw [white,thick,-stealth] (0,0) -- (1.5,8) node[midway, below right]{$\vec{w}+\vec{v}$};
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image-code>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </statement>
+        <solution>
+          <figure xml:id="trigonometry-vectors-exercises-figure-2-solution">
+            <caption><m>\vec{w}+\vec{v}</m></caption>
+            <image width="47%">
+              <description>
+                Two vectors drawn tail-to-tail on a grid-less plane.  A vector labeled <m>\vec{w}</m> points up and left whereas a vector labeled <m>\vec{v}</m> points up and right. The vector <m>\vec{v}</m> has been drawn a second time, this time with its tail at the head of <m>\vec{w}</m>.  A fourth vector has been drawn from the initial common tail point of <m>\vec{w}</m> and <m>\vec{v}</m> to the head of the second version of <m>\vec{v}</m>; this fourth vector is labeled <m>\vec{w}+\vec{v}</m>. 
+              </description>
+              <latex-image-code>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \draw [blue,ultra thick,-triangle 60] (0,0) -- (4,3) node[midway, below right]{$\vec{v}$};
+                    \draw [red,ultra thick,-triangle 60] (0,0) -- (-2.5,5) node[midway, below left]{$\vec{w}$};
+                    \draw [blue,ultra thick,-triangle 60] (-2.5,5) -- (1.5,8) node[midway, below right]{$\vec{v}$};
+                    \draw [purple!70!black,ultra thick,-triangle 60] (0,0) -- (1.5,8) node[midway, below right]{$\vec{w}+\vec{v}$};
+                  \end{tikzpicture}
+                ]]>
+              </latex-image-code>
+            </image>
+          </figure>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the coordinates of the point at the tail of <m>\vec{v}=\langle 3,7 \rangle</m> if the head of <m>\vec{v}</m> is drawn at the point <m>(-2,3)</m>.
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              As illustrated in <xref ref="trigonometry-vectors-exercises-figure-3-solution">Figure</xref>, if we let <m>\vec{u}=\langle x_1,y_1 \rangle</m> where <m>(x_1,y_1)</m> is the point at the tail of <m>\vec{v}</m>, then <m>\vec{u}</m> is the solution to the equation <m>\vec{u}+\vec{v}=\langle -2,3 \rangle</m>.  Let's solve for <m>\vec{u}</m>.
+              <md>
+                <mrow>\vec{u}+\vec{v}\amp=\langle -2,3 \rangle</mrow>
+                <mrow>\vec{u}\amp=\langle -2,3 \rangle-\vec{v}</mrow>
+                <mrow>\vec{u}\amp=\langle -2,3 \rangle-\langle 6,-5 \rangle</mrow>
+                <mrow>\vec{u}\amp=\langle -2-3,3-7 \rangle</mrow>
+                <mrow>\vec{u}\amp=\langle -5,-4 \rangle</mrow>
+              </md>
+              The point at the tail of <m>\vec{v}</m> is <m>(-5,-4)</m>.
+            </p>
+
+            <figure xml:id="trigonometry-vectors-exercises-figure-3-solution">
+              <caption>Determine the Point at the Tail of <m>\vec{v}</m></caption>
+              <image>
+                <description>
+                  A vector labeled <m>\vec(u)</m> draw from the origin to the point <m>(-5,-4)</m>, a vector labeled <m>\vec{v}</m> is drawn from the point <m>(-5,-4)</m> to the point <m>(-2,3)</m>, and an unlabeled vector is drawn from the origin to the point <m>(-2,3)</m>.   
+                </description>
+                <latex-image>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \begin{axis} [axis equal image,
+                                    xmin=-8,xmax=4,
+                                    ymin=-8,ymax=4,
+                                    xtick={-6,-4,-2,2},
+                                    ytick={-6,-4,-2,2},
+                                    minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                    minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                        \addplot[soliddot,color=black] coordinates {(-5,-4)} node[below] {$(x_1,y_1)$};
+                        \addplot[interval,ultra thick,red!30!blue,-{Stealth}] coordinates {(0,0) (-2,3)};
+                        \addplot[interval,ultra thick,blue,-{Stealth}] coordinates {(-5,-4) (-2,3)} node[pos=0.65,above left] {$\vec{v}$}; 
+                        \addplot[interval,ultra thick,red,-{Stealth}] coordinates {(0,0) (-5,-4)} node[pos=0.5,below right] {$\vec{u}$}; 
+                      \end{axis}
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+       <statement>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Use vector addition to determine the point that is three-sevenths of the way from the point <m>(-6,-4)</m> to the point <m>(3,-2)</m> along the line segment that connects the two points.
+            </p>
+
+            <figure xml:id="trigonometry-vectors-exercises-figure-4">
+              <caption>Determine the Coordinates of the Point <m>(x_1,y_1)</m></caption>
+              <image>
+                <description>
+                  Solid dots at the points at the points <m>(-6,-4)</m> and <m>(3,-2)</m> along with the line segments connecting the two points.  There is also a solid dot on the line segment labeled <m>(x_1,y_1)</m>.  That point is three-sevenths of the way from <m>(-6,-4)</m> to <m>(3,-2)</m> and lies in Quadrant III.   
+                </description>
+                <latex-image>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \begin{axis} [axis equal image,
+                                    xmin=-8,xmax=4,
+                                    ymin=-8,ymax=4,
+                                    xtick={-6,-4,-2,2,4,6},
+                                    ytick={-6,-4,-2,2,4,6},
+                                    minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                    minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                        \addplot[soliddot,color=black] coordinates {(-6,-4)};
+                        \addplot[soliddot,color=black] coordinates {(3,-2)};
+                        \addplot[soliddot,color=red] coordinates {(-2.14,-3.14)} node[below] {$(x_1,y_1)$};
+                        \addplot[interval,ultra thick,blue,-] coordinates {(-6,-4) (3,-2)}; 
+                      \end{axis}
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              The component form of the vector from the point <m>(-6,4)</m> to the point <m>(3,-2)</m> is determined below.
+              <me>\langle 3-(-6),-2-(-4) \rangle=\langle 9,2 \rangle</me>
+              See <xref ref="trigonometry-vectors-exercises-figure-4-soultion">Figure</xref> to follow the logic to the solution presented below.
+            </p>
+
+            <figure xml:id="trigonometry-vectors-exercises-figure-4-soultion">
+              <caption>Determine the Coordinates of the Point <m>(x_1,y_1)</m></caption>
+              <image>
+                <description>
+                  There is a vector drawn from the origin to the point <m>(-6,-4)</m> and a vector drawn from the point <m>(-6,-4)</m> to the point <m>(3,-2)</m>.  Superimposed over the second vector is a vector from the point <m>(-6,-4)</m> to a point labeled <m>(x_1,y_1)</m>.  The superimposed vector ends in Quadrant III and is three-sevenths as long as the vector from the point <m>(-6,-4)</m> to the point <m>(3,-2)</m>.  Finally, the is a vector drawn from the origin to the point labeled <m>(x_1,y_1)</m>.
+                </description>
+                <latex-image>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \begin{axis} [axis equal image,
+                                    xmin=-8,xmax=4,
+                                    ymin=-8,ymax=4,
+                                    xtick={-6,-4,-2,2},
+                                    ytick={-6,-4,-2,2},
+                                    minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                    minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                        \addplot[soliddot,color=red] coordinates {(-2.14,-3.14)} node[below] {$(x_1,y_1)$};
+                        \addplot[interval,ultra thick,blue,-{Stealth}] coordinates {(-6,-4) (3,-2)};
+                        \addplot[interval,ultra thick,red,dashed,-{Stealth}] coordinates {(-6,-4) (-2.14,-3.14)};
+                        \addplot[interval,ultra thick,green!30!brown,-{Stealth}] coordinates {(0,0) (-6,-4)};
+                        \addplot[interval,ultra thick,red!30!blue,-{Stealth}] coordinates {(0,0) (-2.14,-3.14)};  
+                      \end{axis}
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+
+          </sidebyside>
+          <p>
+            <md>
+              <mrow>\langle x_1,y_1\rangle\amp=\langle -6,-4 \rangle + \frac{3}{7}\langle 9,2 \rangle</mrow>
+              <mrow>\amp=\langle -6,-4 \rangle + \left\langle \frac{3}{7}(9),\frac{3}{7}(2) \right\rangle</mrow>
+              <mrow>\amp=\langle -6,-4 \rangle + \left\langle \frac{27}{7},\frac{6}{7}\right\rangle</mrow>
+              <mrow>\amp=\left\langle -6+\frac{27}{7},-4+\frac{6}{7}\right\rangle</mrow>
+              <mrow>\amp=\left\langle -\frac{15}{7},-\frac{22}{7}\right\rangle</mrow>
+            </md>
+            The point three-sevenths of the way from the point <m>(-6,4)</m> to the point <m>(3,-2)</m> is <m>\left(-\frac{15}{7},\frac{10}{7}\right)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+
+</section>

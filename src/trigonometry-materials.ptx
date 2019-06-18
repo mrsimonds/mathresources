@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="trigonometry-materials">
+    <title>Trigonometry</title>
+
+      <xi:include href="./trigonometry-the-unit-circle.ptx" />
+      <xi:include href="./trigonometry-function-definitions.ptx" />
+      <xi:include href="./trigonometry-special-angles.ptx" />
+      <xi:include href="./trigonometry-sine-cosine-graphs.ptx" />
+      <xi:include href="./trigonometry-tangent-cotangent-graphs.ptx" />
+      <xi:include href="./trigonometry-secant-cosecant-graphs.ptx" />
+      <xi:include href="./trigonometry-fundamental-identities.ptx" />
+      <xi:include href="./trigonometry-multi-angle-identities.ptx" />
+      <xi:include href="./trigonometry-more-identities.ptx" />
+      <xi:include href="./trigonometry-equations.ptx" />
+      <xi:include href="./trigonometry-inverse-functions.ptx" />
+      <xi:include href="./trigonometry-right-triangles.ptx" />
+      <xi:include href="./trigonometry-laws.ptx" />
+      <xi:include href="./trigonometry-polar-coordinates.ptx" />
+      <xi:include href="./trigonometry-complex-numbers.ptx" />
+      <xi:include href="./trigonometry-vectors.ptx" />
+      
+
+</chapter>

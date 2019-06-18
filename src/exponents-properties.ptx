@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="exponents-properties">
+  <title>Properties of Exponents</title>
+  
+  <p>
+    Recall that positive integer exponents keep track of the number of factors in an expression.  This is illustrated in <xref ref="exponents-properties-geogebra-1">Figure</xref>.
+  </p>
+
+  <figure xml:id="exponents-properties-geogebra-1">
+    <caption>Positive integer exponents keep track of the number of factors in the expression.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-positive.ggb">
+        setPerspective("G");
+        setGridVisible(0); 
+        setAxesVisible(0,0);        
+      </slate>
+    </interactive>
+  </figure>
+
+  <p>
+    The remainder of this age is concerned with several properties of exponents.  While you are learning these properties in the context of positive exponents, they also apply when the exponents are negative, rational (basically fractional), irrational, or even imaginary!
+  </p>
+
+  <p>
+    Consider the product <m>x^2x^4</m>.  The expression <m>x^2</m> contains <m>2</m> factors of <m>x</m> while the factor of <m>x^4</m> contains <m>4</m> factors of <m>x</m>, so altogether the expression <m>x^2x^4</m> contains <m>6</m> factors of <m>x</m>.  Note that <m>6</m> comes from summing <m>2</m> and <m>4</m>.  Writing this out using exponent notation we have:
+    <md>
+      <mrow>x^2x^4\amp=x^{2+4}</mrow>
+      <mrow>\amp=x^6</mrow>
+    </md>
+    From the above example we can infer the following rule:
+  </p>
+
+  <paragraphs>
+    <title>The Product Rule for Exponents: <m>x^mx^n=x^{m+n}</m></title>
+    <p></p>
+    <p>
+      Note that this rule only applies to exponential expressions with a common base (the thing being raised to a power).  For example, 
+      <md>
+        <mrow>t^6t^{19}\amp=t^{6+19}</mrow>
+        <mrow>\amp=t^{25}</mrow>
+      </md>
+      On the other hand, there is no way to combine the exponents in the expression <m>x^6y^{19}</m>.
+    </p>
+    <p>
+      When simplifying products containing exponential expressions, you want to group like factors together.  For example:
+      <md>
+        <mrow>(x^3y^8)(x^{11}y^4)\amp=(x^3x^{11})(y^8y^4)</mrow>
+        <mrow>\amp=x^{3+11}y^{8+4}</mrow>
+        <mrow>\amp=x^{14}y^{12}</mrow>
+      </md>
+      Let's make sure that the final result makes sense.  In terms of <m>x</m>, we started with <m>3</m> factors and another <m>11</m> factors, so it makes sense that we ended up with <m>14</m> factors.  As for <m>y</m>, we started with <m>8</m> factors and another <m>4</m> factors, so there are indeed <m>12</m> factors in all.
+    </p>
+    <p>
+      You can see several more examples of the product-rule-of-exponents using <xref ref="exponents-properties-geogebra-2">Figure</xref>.
+    </p>
+
+    <figure xml:id="exponents-properties-geogebra-2">
+      <caption>Look at several examples of the product rule of exponents.</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-product-rule.ggb">
+          setPerspective("G");
+          setGridVisible(0); 
+          setAxesVisible(0,0);        
+        </slate>
+      </interactive>
+    </figure>
+
+    <p>
+       While you may very well be able to just count factors in your head without writing out the rule, I suggest that you write out the rule, at least at first.  Down the road you will likely encounter negative exponents and even fractional exponents, and when you get there counting factors won't work.  The good news is that the rules of exponents stay the same, no matter how bizarre the exponents become.  So if you do forget a rule, you can recreate the rule using small positive exponents and then apply that rule to your strange exponents.
+    </p>
+  </paragraphs>
+
+  <p>
+    Consider the expression <m>(x^2)^4</m>.  Inside the parentheses there are two factors of <m>x</m>, and raising that expression to the fourth power results in <m>(x \cdot x)(x \cdot x)(x \cdot x)(x \cdot x)</m>.  So all together there are two factor of <m>x</m>, four times.  That is, there are four times two factors of <m>x</m>.  From this we can infer that when a power of <m>x</m> is raised to yet another power, the two exponents are multiplied.
+  </p>
+
+  <paragraphs>
+    <title>The Power to a Power Rule for Exponents: <m>(x^m)^n=x^{m \cdot n}</m></title>
+    <p></p>
+    <p>
+      For example:
+      <md>
+        <mrow>(2^3)^2\amp=2^{3 \cdot 2}</mrow>
+        <mrow>\amp=2^6</mrow>
+        <mrow>\amp=64</mrow>
+      </md>
+      This is verified by following the order of operations.
+      <md>
+        <mrow>(2^3)^2\amp=8^2</mrow>
+        <mrow>\amp=64</mrow>
+      </md>
+    </p>
+    <p>
+      While it's good practice to write out the product a few times, it's best to get in the habit of simply multiplying the exponents in your head.  Writing out the rule helps with retention, but once you get into multi-step simplification problems, writing out each and every step becomes cumbersome.  Look at each of the simplifications below and verify that the new exponent is the product of the two original exponents.
+    </p>
+    <sidebyside widths="32% 32% 32%" margins="0%">
+      <p>
+        <m>(x^{12})^3=x^{36}</m>
+      </p>
+      <p>
+        <m>(y^3)^7=y^{21}</m>
+      </p>
+      <p>
+        <m>(w^{10})^5=w^{50}</m>
+      </p>
+    </sidebyside>
+
+    <figure xml:id="exponents-properties-geogebra-7">
+      <caption>Look at several examples of the power-to-a-power rule of exponents.</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-power-power-rule.ggb">
+          setPerspective("G");
+          setGridVisible(0); 
+          setAxesVisible(0,0);        
+        </slate>
+      </interactive>
+    </figure>
+
+  </paragraphs>
+
+  <p>
+    Consider the expression <m>(xy)^3</m>.  The expression is short-hand for <m>(xy)(xy)(xy)</m>, and because multiplication is both commutative and associative, the latter expression is equivalent to <m>(x \cdot x \cdot x)(y \cdot y \cdot y)</m>.  In short:<me>(xy)^3=x^3y^3</me>.  In words, we say that exponents distribute over multiplication.  
+  </p>
+
+  <paragraphs>
+    <title>The Product to a Power Rule of Exponents: <m>(xy)^n=x^ny^n</m></title>
+    <p></p>
+    <sidebyside widths="47% 47%" margins="0%">
+      <p>
+        <md>
+          <mrow>(3 \cdot 4)^2\amp=3^2 \cdot 4^2</mrow>
+          <mrow>\amp=9 \cdot 16</mrow>
+          <mrow>\amp=144</mrow>
+        </md>
+      </p>
+      <p>
+        <md>
+          <mrow>(3 \cdot 4)^2\amp=12^2</mrow>
+          <mrow>\amp=144</mrow>
+        </md>
+      </p>
+    </sidebyside>
+    <p>
+      Let's put the power-to-a-power rule together with the product-to-a-power rule.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Simplify <m>(-2x^3y^{10})^6</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>(-2x^3y^{10})^6\amp=(-2)^6(x^3)^6(y^{10})^6</mrow>
+            <mrow>\amp=64x^{18}y^{60}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Simplify <m>(-x^{11}y)^7</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>(-x^{11}y)^7\amp=(-1)^7(x^{11})^7y^7</mrow>
+            <mrow>\amp=-1 \cdot x^77y^7</mrow>
+            <mrow>\amp=-x^{77}y^7</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      You can use <xref ref="exponents-properties-geogebra-6">Figure</xref> to practice these two rules in tandem.
+    </p>
+
+    <figure xml:id="exponents-properties-geogebra-6">
+      <caption>Practice the product-to-a-power rule coupled with the power-to-a-power rule.</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-product-to-a-power.ggb">
+          setPerspective("G");
+          setGridVisible(0); 
+          setAxesVisible(0,0);        
+        </slate>
+      </interactive>
+    </figure>
+
+  </paragraphs>
+
+    <paragraphs>
+    <title>The Quotient to a Power Rule for Exponents <m>\left(\frac{x}{y}\right)^n=\frac{x^n}{y^n}</m></title>
+    <p></p>
+
+    <p>
+      Similar to their distribution over products, exponents distribute ove quotients.  The quotient-to-a-power rule is supported numerically in the side-by-side examples below.
+    </p>
+    
+    <sidebyside widths="47% 47%" margins="0%">
+      <p>
+        <md>
+          <mrow>\left(\frac{2}{5}\right)^3\amp=\frac{2^3}{5^3}</mrow>
+          <mrow>\amp=\frac{2 \cdot 2 \cdot 2}{5 \cdot 5 \cdot 5}</mrow>
+          <mrow>\amp=\frac{8}{125}</mrow>
+        </md>
+      </p>
+      <p>
+        <md>
+          <mrow>\left(\frac{2}{5}\right)^3\amp=\frac{2}{5} \cdot \frac{2}{5} \cdot \frac{2}{5}</mrow>
+          <mrow>\amp=\frac{2 \cdot 2 \cdot 2}{5 \cdot 5 \cdot 5}</mrow>
+          <mrow>\amp=\frac{8}{125}</mrow>
+        </md>
+      </p>
+    </sidebyside>
+    <p>
+      In the examples below, the product-to-a-power rule, quotient-to-a-power rule, and the power-to-a-power rule are applied.  Please note the the multiplication involved in the power to a power rule was done in "my head." 
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Simplify <m>\left(\frac{r^{12}s^4}{t^7}\right)^4</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\left(\frac{r^{12}s^4}{t^7}\right)^4\amp=\frac{(r^{12})^7(s^4)^4}{(t^7)^4}</mrow>
+            <mrow>\amp=\frac{r^{84}s^{16}}{t^{28}}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Simplify <m>\left(\frac{4x^{10}}{y^6z^{12}}\right)^3</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\left(\frac{4x^{10}}{y^6z^{12}}\right)^3\amp=\frac{4^3(x^{10})^3}{(y^6)^3(z^{12})^3}</mrow>
+            <mrow>\amp=\frac{64x^{30}}{y^{18}z^{36}}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      One of the great things about the rules of exponents is that when multiple rules have to be applied, the rules can be applied in any order you like.  So long as you execute each applicable rule correctly, and resist the urge to make up new rules, you should end up with the correct simplification.  Compare the two paths below.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+      <p>
+        <md>
+          <mrow>\left(\frac{x^3x^6}{y^5}\right)^4\amp=\left(\frac{x^9}{y^5}\right)^4</mrow>
+          <mrow>\amp=\frac{(x^9)^4}{(y^5)^4}</mrow>
+          <mrow>\amp=\frac{x^{36}}{y^{20}}</mrow>
+        </md>
+      </p>
+      <p>
+        <md>
+          <mrow>\left(\frac{x^3x^6}{y^5}\right)^4\amp=\frac{(x^3)^4(x^6)^4}{(y^5)^4}</mrow>
+          <mrow>\amp=\frac{x^{12}x^{24}}{y^{20}}</mrow>
+          <mrow>\amp=\frac{x^{36}}{y^{20}}</mrow>
+        </md>
+      </p>
+    </sidebyside>
+  </paragraphs>
+
+  <p>
+    Let's infer another property of exponents by considering the following.
+    <md>
+      <mrow>\frac{x^7}{x^5}\amp=\frac{x \cdot x \cdot x \cdot x \cdot x \cdot x}{x \cdot x \cdot x \cdot x \cdot x}</mrow>
+      <mrow>\amp=\frac{x}{x} \cdot \frac{x}{x} \cdot \frac{x}{x} \cdot \frac{x}{x} \cdot \frac{x}{x} \cdot \frac{x \cdot x}{1}</mrow>
+      <mrow>\amp=1 \cdot 1 \cdot 1 \cdot 1 \cdot 1 \cdot x^2</mrow>
+      <mrow>\amp=x^2</mrow>
+    </md>
+  </p>
+  <p>
+    In words, five of the original seven factors of <m>x</m> that appeared in the numerator divided to one with the five factors of <m>x</m> that appeared in the denominator, leaving behind <m>"7-5"</m> factors of <m>x</m> in the numerator.  From this we infer the following rule.
+  </p>
+
+  <paragraphs>
+    <title>A Quotient Rule for Exponents: <m>\frac{x^m}{x^n}=x^{m-n}</m></title>
+    <p></p>
+    <p>
+      As with the other rules, it's good to write out the step a few times to help with retention, but in the long run you'll want to perform the subtraction in your head. What follows are three examples where the step is shown, followed by two more complicated examples where the calculations (addition, multiplication, or subtraction) were done in my head.
+    </p>
+    
+    <example>
+      <statement>
+        <p>
+          Simplify <m>\frac{w^{76}}{w^{55}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\frac{w^{76}}{w^{55}}\amp=w^{76-55}</mrow>
+            <mrow>\amp=w^{21}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+    
+    <example>
+      <statement>
+        <p>
+          Simplify <m>\frac{a^{12}b^{21}}{a^7b^{11}}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\frac{a^{12}b^{21}}{a^7b^{11}}\amp=a^{12-7}b^{21-11}</mrow>
+            <mrow>\amp=a^5b^{10}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+    
+    <example>
+      <statement>
+        <p>
+          Simplify <m>\frac{3^8}{3^6}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\frac{3^8}{3^6}\amp=3^{8-6}</mrow>
+            <mrow>\amp=3^2</mrow>
+            <mrow>\amp=9</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+    
+    <example>
+      <statement>
+        <p>
+          Simplify <m>\left(\frac{x^5x^{12}}{x^4}\right)^2</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\left(\frac{x^5x^{12}}{x^4}\right)^2\amp=\left(\frac{x^{17}}{x^4}\right)^2</mrow>
+            <mrow>\amp=(x^{13})^2</mrow>
+            <mrow>\amp=x^{26}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+    
+    <example>
+      <statement>
+        <p>
+          Simplify <m>\frac{(w^3z^5)^2}{(w^2z^2)^3}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\frac{(w^3z^5)^2}{(w^2z^2)^3}\amp=\frac{(w^3)^2(z^5)^2}{(w^2)^3(z^2)^3}</mrow>
+            <mrow>\amp=\frac{w^6z^{10}}{w^6z^6}</mrow>
+            <mrow>\amp=z^4</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      You can see many more examples of this quotient-rule-of-exponents using <xref ref="exponents-properties-geogebra-3">Figure</xref>.
+    </p>
+
+    <figure xml:id="exponents-properties-geogebra-3">
+      <caption>Look at several examples of this quotient rule of exponents.</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-quotient-rule-1.ggb">
+          setPerspective("G");
+          setGridVisible(0); 
+          setAxesVisible(0,0);        
+        </slate>
+      </interactive>
+    </figure>
+
+  </paragraphs>
+  <paragraphs>
+    <title>Another Quotient Rule for Exponents: <m>\frac{x^m}{x^n}=\frac{1}{x^{n-m}}</m></title>
+    <p></p>
+    <p>
+      You can see several examples of this rule using <xref ref="exponents-properties-geogebra-4">Figure</xref>.
+    </p>
+
+    <figure xml:id="exponents-properties-geogebra-4">
+      <caption>Look at several examples of this quotient rule of exponents.</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-quotient-rule-2.ggb">
+          setPerspective("G");
+          setGridVisible(0); 
+          setAxesVisible(0,0);        
+        </slate>
+      </interactive>
+    </figure>
+
+    <p>
+      One obvious issue is knowing when to use which quotient rule.  At the precalculus level the consensus is that we use whichever rule results in a positive exponent (assuming the two original exponents are not equal).
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Simplify 
+          <me>\frac{x^5y^9}{x^{17}y^3}</me>
+          making sure that your result contains no negative exponents.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          For the <m>x</m>-factors, the greater exponent is in the denominator, so we will us the rule
+          <me>\frac{x^m}{x^n}=\frac{1}{x^{n-m}}</me>.
+        </p>
+        <p>
+          For the <m>y</m>-factors, the greater exponent is in the numerator, so we will use the rule
+          <me>\frac{x^m}{x^n}=x^{m-n}</me>.
+        </p>
+        <p>
+          Putting it all together, we get the following.
+          <md>
+            <mrow>\frac{x^5y^9}{x^{17}y^3}\amp=\frac{y^{9-3}}{x^{17-5}}</mrow>
+            <mrow>\amp=\frac{y^6}{x^{12}}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      You can practice the two quotient-rules-for-exponents using <xref ref="exponents-properties-geogebra-5">Figure</xref>.  You can practice combining the rules of exponents using <xref ref="exponents-properties-geogebra-8">Figure</xref>.
+    </p>
+
+    <figure xml:id="exponents-properties-geogebra-5">
+      <caption>We use the property that results in a positive exponent (unless the factors divide to one).</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-quotient-rule-which.ggb">
+          setPerspective("G");
+          setGridVisible(0); 
+          setAxesVisible(0,0);        
+        </slate>
+      </interactive>
+    </figure>
+
+    <figure xml:id="exponents-properties-geogebra-8">
+      <caption>Practice the product-to-a-power rule coupled with the power-to-a-power rule.</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-positive-properties.ggb">
+          setPerspective("G");
+          setGridVisible(0); 
+          setAxesVisible(0,0);        
+        </slate>
+      </interactive>
+    </figure>
+
+  </paragraphs>
+  <paragraphs>
+    <title>Exponents Equal to Zero</title>
+    <p></p>
+    <p>
+      One last thing.  Consider <m>\frac{3^4}{3^4}</m>.  That simplifies to <m>\frac{81}{81}</m>, which of course is equal to <m>1</m>. But according to the quotient rule for exponents:
+      <md>
+        <mrow>\frac{3^4}{3^4}\amp=3^{4-4}</mrow>
+        <mrow>\amp=3^0</mrow>
+      </md>
+      Since <m>\frac{3^4}{3^4}</m> simplifies to both <m>3^0</m> and <m>1</m>, it must be the case that <m>3^0=1</m>.  In general:
+    </p>
+  </paragraphs>
+  <paragraphs>
+    <title>Zero Exponents: <m>x^0=1, x \neq 0</m></title>
+  </paragraphs>
+
+  <exercises>
+
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Simplify each of the following expressions.  The expression is not simplified unless each variable appears only once and there is only one constant factor.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>x^2x^5</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              x^2x^5\amp=x^{2+5}\\
+              \amp=x^7
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>a^3a</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              a^3a\amp=a^3a^1\\
+              \amp=a^{3+1}\\
+              \amp=a^4
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y^3y^3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              y^3y^3\amp=y^{3+3}\\
+              \amp=y^6
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>w^{27}w^{42}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              w^{27}w^{42}\amp=w^{27+42}\\
+              \amp=w^{69}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>x^{44}x^{17}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              x^{44}x^{17}\amp=x^{44+17}\\
+              \amp=x^{61}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>(a^4b^2)(a^7b)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              (a^4b^2)(a^7b)\amp=a^{4+7}b^{2+1}\\
+              \amp=a^{11}b^3
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>(3x^6)(-2x^5)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              (3x^6)(-2x^5)\amp=(3 \cdot -2)x^{6+5}\\
+              \amp=-6x^{11}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>(4y^{12})\left(\frac{y^{12}}{4}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              (4y^{12})\left(\frac{y^{12}}{4}\right)\amp=\left(4 \cdot \frac{1}{4}\right)y^{12+12}\\
+              \amp=1 \cdot y^{24}\\
+              \amp=y^{24}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>(x^2)^3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              (x^2)^3\amp=x^{2 \times 3}\\
+              \amp=x^6
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>(t^4)^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              (t^4)^2\amp=t^{4 \times 2}\\
+              \amp=t^8
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>(w^3)^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              (w^3)^2\amp=w^{3 \times 2}\\
+              \amp=w^6
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>(w^{20})^4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              (w^{20})^4\amp=w^{20 \times 4}\\
+              \amp=w^{80}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>(ab)^4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>(ab)^4=a^4b^4</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>(2a)^3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              (2a)^3\amp=2^3a^3\\
+              \amp=8a^3
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>(-3t)^4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              (-3t)^4\amp=(-3)^4t^4\\
+              \amp=81t^4
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>(4x^5)^3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              (4x^5)^3\amp=4^3(x^5)^3\\
+              \amp=64x^{15}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>(-2w^2)^4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              (-2w^2)^4\amp=(-2)^4(w^2)^4\\
+              \amp=16w^8
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>(3t^{12})(-t^{64})</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>(3t^{12})(-t^{64})=-3t^{76}</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\left(\frac{1}{2}r^7\right)^5</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              \left(\frac{1}{2}r^7\right)^5\amp=\left(\frac{1}{2}\right)^5(r^7)^5\\
+              \amp=\frac{1}{32}r^{35}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>(-2s^4t)^7</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              (-2s^4t)^7\amp=(-2)^7(s^4)^7t^7\\
+              \amp=-128s^{28}t^7
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>(-x^2y^4)^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              (-x^2y^4)^2\amp=(-1)^2(x^2)^2(y^4)^2\\
+              \amp=1 \cdot x^4y^8\\
+              \amp=x^4y^8
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{x^5}{x^3}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              \frac{x^5}{x^3}\amp=x^{5-3}\\
+              \amp=x^2
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{2^5}{2^3}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              \frac{2^5}{2^3}\amp=\frac{32}{8}\\
+              \amp=4
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{w^{59}}{w^{36}}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              \frac{w^{59}}{w^{36}}\amp=w^{59-36}\\
+              \amp=w^{23}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{x^9}{x^9}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              \frac{x^9}{x^9}\amp=x^{9-9}\\
+              \amp=x^0\\
+              \amp=1
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\left(\frac{x}{y}\right)^3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \left(\frac{x}{y}\right)^3=\frac{x^3}{y^3}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\left(\frac{2}{t}\right)^4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              \left(\frac{2}{t}\right)^4\amp=\frac{2^4}{t^4}\\
+              \amp=\frac{16}{t^4}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\left(\frac{x^8}{x^5}\right)^7</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              \left(\frac{x^8}{x^5}\right)^7\amp=(x^3)^7\\
+              \amp=x^{21}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\left(-\frac{3z^5}{xy^2}\right)^4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              \left(-\frac{3z^5}{xy^2}\right)^4\amp=(-1)^4 \cdot \frac{3^4(z^5)^4}{x^4(y^2)^4}\\
+              \amp=1 \cdot \frac{81z^{20}}{x^4y^8}\\
+              \amp=\frac{81z^{20}}{x^4y^8}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\left(\frac{2^{11}x^4}{y^{77}z^{12}}\right)^0</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \left(\frac{2^{11}x^4}{y^{77}z^{12}}\right)^0=1
+            </m>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+</section>

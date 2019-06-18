@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="functions-inequalities">
+    <title>Using Function Graphs to Determine Solution Sets to Inequalities</title>
+    <p>
+      When solving inequalities involving functions that are presented in graphical form, we follow a two-step process.  We first use the function to identify the points on the curve whose <m>-y</m>-coordinates satisfy the property implied by the inequality statement.  We then identify the <m>x</m>-coordinates of those points, which collectively make up the solution set to the inequality.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        In <xref ref="functions-inequalities-figure-1">Figure</xref>, I've indicated all of the points on the function named <m>g</m> that have <m>y</m>-coordinates greater than or equal to <m>1</m>.  I've also marked off the portion of the <m>x</m>-axis over which these points lie.  Since the <m>y</m>-coordinates of the points are the values of <m>g(x)</m>, we can infer from this that the solution set to the inequality <m>g(x) \geq 1</m> is  <m>[-4.5,3]</m>.
+      </p>
+
+      <figure xml:id="functions-inequalities-figure-1">
+        <caption><m>y=g(x)</m></caption>
+        <image>
+          <description>plain text</description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}
+                \addplot[primarycurve,domain=-6.5:-2,smooth,{Stealth}-] {2*x+10};
+                \addplot[primarycurve,domain=-2:5,smooth,-] {4-x};
+                \addplot[secondarycurve,domain=-6.8:6.8,gray,thick,{Stealth}-{Stealth}] {1};
+                \addplot[soliddot,color=blue!40] coordinates {(-4.5,1)};
+                \addplot[soliddot,color=blue!40] coordinates {(3,1)};
+                \addplot[soliddot] coordinates {(5,-1)};
+                \addplot[primarycurve,domain=-4.5:-2,smooth,blue!40,ultra thick,-] {2*x+10};
+                \addplot[primarycurve,domain=-2:3,smooth,blue!40,ultra thick,-] {4-x};
+                \addplot[primarycurve,domain=-4.5:3,smooth,blue,ultra thick,{Bracket}-{Bracket}] {0};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        In <xref ref="functions-inequalities-figure-2">Figure</xref>, I've indicated all of the points on the function named <m>g</m> that have <m>y</m>-coordinates less than to <m>44</m>.  I've also marked off the portion of the <m>x</m>-axis over which these points lie.  Since the <m>y</m>-coordinates of the points are the values of <m>g(x)</m>, we can infer from this that the solution set to the inequality <m>g(x) \lt 4</m> is  <m>(-\infty,-3) \cup (0,6]</m>.
+      </p>
+      <figure xml:id="functions-inequalities-figure-2">
+        <caption><m>y=g(x)</m></caption>
+        <image>
+          <description>plain text</description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}
+                \addplot[primarycurve,domain=-6.5:-2,smooth,{Stealth}-] {2*x+10};
+                \addplot[primarycurve,domain=-2:5,smooth,-] {4-x};
+                \addplot[secondarycurve,domain=-6.8:6.8,gray,thick,{Stealth}-{Stealth}] {4};
+                \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(-3,4)};
+                \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(0,4)};
+                \addplot[soliddot,color=blue!40] coordinates {(5,-1)};
+                \addplot[primarycurve,domain=-6.5:-3,smooth,blue!40,ultra thick,{Stealth}-] {2*x+10};
+                \addplot[primarycurve,domain=0:5,smooth,blue!40,ultra thick,-] {4-x};
+                \addplot[primarycurve,domain=0:5,smooth,blue,ultra thick,(-{Bracket}] {0};
+                \addplot[primarycurve,domain=-6.8:-3,smooth,blue,ultra thick,{Stealth}-)] {0};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Determine the solution set to each stated inequality.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <sidebyside widths="47% 47%" margins="0%">
+              
+                <p>
+                  Determine the solution set to <m>f(x) \lt 2</m> based upon the function <m>f</m> shown in <xref ref="functions-inequalities-exercises-figure-1">Figure</xref>. State the solution set using both set-builder notation and interval notation.
+                </p>
+
+                <figure xml:id="functions-inequalities-exercises-figure-1">
+                  <caption><m>y=f(x)</m></caption>
+                    <image>
+                      <description>plain text</description>
+                      <latex-image>
+                        <![CDATA[
+                        \begin{tikzpicture}
+                          \begin{axis}
+                            \addplot[primarycurve,domain=-4:5,smooth,-] {2+3*sin(pi*deg(x)/2)};
+                            \addplot[soliddot] coordinates {(-4,2)};
+                            \addplot[hollowdot] coordinates {(5,5)};
+                          \end{axis}
+                        \end{tikzpicture}
+                        ]]>
+                      </latex-image>
+                    </image>
+                  </figure>
+
+              </sidebyside>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solution set is <m>\{x \mid -2 \lt x \lt 0 \text{ or } 2 \lt x \lt 4\}</m>.
+            </p>
+            <sidebyside widths="47% 47%" margins="0%">
+              <p>
+                The solution set is <m>(-2,0) \cup (2,4)</m>.
+              </p>
+              <figure xml:id="functions-inequalities-exercises-figure-1-solution">
+                <caption><m>f(x) \lt 2</m></caption>
+                <image>
+                  <description>plain text</description>
+                  <latex-image>
+                    <![CDATA[
+                      \begin{tikzpicture}
+                        \begin{axis}
+                          \addplot[primarycurve,domain=-4:5,smooth,-] {2+3*sin(pi*deg(x)/2)};
+                          \addplot[secondarycurve,domain=-6.8:6.8,gray,thick,{Stealth}-{Stealth}] {2};
+                          \addplot[soliddot] coordinates {(-4,2)};
+                          \addplot[hollowdot] coordinates {(5,5)};
+                          \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(-2,2)};
+                          \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(0,2)};
+                          \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(2,2)};
+                          \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(4,2)};
+                          \addplot[primarycurve,domain=-2:0,smooth,blue!40,ultra thick,-] {2+3*sin(pi*deg(x)/2)};
+                          \addplot[primarycurve,domain=2:4,smooth,blue!40,ultra thick,-] {2+3*sin(pi*deg(x)/2)};
+                          \addplot[primarycurve,domain=2:4,smooth,blue,ultra thick,(-)] {0};
+                          \addplot[primarycurve,domain=-2:0,smooth,blue,ultra thick,(-)] {0};
+                        \end{axis}
+                      \end{tikzpicture}
+                    ]]>
+                  </latex-image>
+                </image>
+              </figure>
+
+            </sidebyside>
+          </solution>
+        </exercise>
+
+
+        <exercise>
+          <statement>
+            <p>
+              <sidebyside widths="47% 47%" margins="0%">
+              
+                <p>
+                  Determine the solution set to <m>f(x) \geq 2</m> based upon the function <m>f</m> shown in <xref ref="functions-inequalities-exercises-figure-2">Figure</xref>. State the solution set using both set-builder notation and interval notation.
+                </p>
+
+                <figure xml:id="functions-inequalities-exercises-figure-2">
+                  <caption><m>y=f(x)</m></caption>
+                    <image>
+                      <description>plain text</description>
+                      <latex-image>
+                        <![CDATA[
+                        \begin{tikzpicture}
+                          \begin{axis}
+                            \addplot[primarycurve,domain=-4:5,smooth,-] {2+3*sin(pi*deg(x)/2)};
+                            \addplot[soliddot] coordinates {(-4,2)};
+                            \addplot[hollowdot] coordinates {(5,5)};
+                          \end{axis}
+                        \end{tikzpicture}
+                        ]]>
+                      </latex-image>
+                    </image>
+                  </figure>
+
+              </sidebyside>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solution set is <m>\{x \mid -4 \leq x \leq -2 \text{ or } 0 \leq x \leq 2 \text{ or } 4 \leq x \lt 5\}</m>.
+            </p>
+            <sidebyside widths="47% 47%" margins="0%">
+
+              <p>
+                The solution set is <m>[-4,-2] \cup [0,2] \cup [4,5)</m>.
+              </p>
+
+              <figure xml:id="functions-inequalities-exercises-figure-2-solution">
+                <caption><m>f(x) \ge 2</m></caption>
+                  <image>
+                  <description>plain text</description>
+                  <latex-image>
+                    <![CDATA[
+                      \begin{tikzpicture}
+                        \begin{axis}
+                          \addplot[primarycurve,domain=-4:5,smooth,-] {2+3*sin(pi*deg(x)/2)};
+                          \addplot[secondarycurve,domain=-6.8:6.8,gray,thick,{Stealth}-{Stealth}] {2};
+                          \addplot[soliddot] coordinates {(-4,2)};
+                          \addplot[hollowdot] coordinates {(5,5)};
+                          \addplot[hollowdot,color=blue,fill=yellow!30] coordinates {(5,5)};
+                          \addplot[soliddot,color=blue!40] coordinates {(-4,2)};
+                          \addplot[soliddot,color=blue!40] coordinates {(-2,2)};
+                          \addplot[soliddot,color=blue!40] coordinates {(0,2)};
+                          \addplot[soliddot,color=blue!40] coordinates {(2,2)};
+                          \addplot[soliddot,color=blue!40] coordinates {(4,2)};
+                          \addplot[primarycurve,domain=-4:-2,smooth,blue!40,ultra thick,-] {2+3*sin(pi*deg(x)/2)};
+                          \addplot[primarycurve,domain=0:2,smooth,blue!40,ultra thick,-] {2+3*sin(pi*deg(x)/2)};
+                          \addplot[primarycurve,domain=4:5,smooth,blue!40,ultra thick,-] {2+3*sin(pi*deg(x)/2)};
+                          \addplot[primarycurve,domain=-4:-2,smooth,blue,ultra thick,{Bracket}-{Bracket}] {0};
+                          \addplot[primarycurve,domain=0:2,smooth,blue,ultra thick,{Bracket}-{Bracket}] {0};
+                          \addplot[primarycurve,domain=4:5,smooth,blue,ultra thick,{Bracket}-)] {0};
+                        \end{axis}
+                      \end{tikzpicture}
+                    ]]>
+                  </latex-image>
+                </image>
+              </figure>
+
+            </sidebyside>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <sidebyside widths="47% 47%" margins="0%">
+              
+                <p>
+                  Determine the solution set to <m>f(x) \lt -1</m> based upon the function <m>f</m> shown in <xref ref="functions-inequalities-exercises-figure-3">Figure</xref>. State the solution set using both set-builder notation and interval notation.
+                </p>
+
+                <figure xml:id="functions-inequalities-exercises-figure-3">
+                  <caption><m>y=f(x)</m></caption>
+                    <image>
+                      <description>plain text</description>
+                      <latex-image>
+                        <![CDATA[
+                        \begin{tikzpicture}
+                          \begin{axis}
+                            \addplot[primarycurve,domain=-4:5,smooth,-] {2+3*sin(pi*deg(x)/2)};
+                            \addplot[soliddot] coordinates {(-4,2)};
+                            \addplot[hollowdot] coordinates {(5,5)};
+                          \end{axis}
+                        \end{tikzpicture}
+                        ]]>
+                      </latex-image>
+                    </image>
+                  </figure>
+
+              </sidebyside>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <sidebyside widths="47% 47%" margins="0%">
+                <p>
+                  The solution set is <m>\{\}</m>.
+                  <p>
+                    The solution set is <m>\emptyset</m>.
+                  </p>
+                </p>
+                <figure xml:id="functions-inequalities-exercises-figure-3-solution">
+                  <caption><m>f(x) \lt -1</m></caption>
+                    <image>
+                    <description>plain text</description>
+                    <latex-image>
+                      <![CDATA[
+                        \begin{tikzpicture}
+                          \begin{axis}
+                            \addplot[primarycurve,domain=-4:5,smooth,-] {2+3*sin(pi*deg(x)/2)};
+                            \addplot[secondarycurve,domain=-6.8:6.8,gray,thick,{Stealth}-{Stealth}] {-1};
+                            \addplot[soliddot] coordinates {(-4,2)};
+                            \addplot[hollowdot] coordinates {(5,5)};
+                          \end{axis}
+                        \end{tikzpicture}
+                      ]]>
+                    </latex-image>
+                  </image>
+                </figure>
+              </sidebyside>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <sidebyside widths="47% 47%" margins="0%">
+              
+                <p>
+                  Determine the solution set to <m>ff(x) \leq 5</m> based upon the function <m>f</m> shown in <xref ref="functions-inequalities-exercises-figure-4">Figure</xref>. State the solution set using both set-builder notation and interval notation.
+                </p>
+
+                <figure xml:id="functions-inequalities-exercises-figure-4">
+                  <caption><m>y=f(x)</m></caption>
+                    <image>
+                      <description>plain text</description>
+                      <latex-image>
+                        <![CDATA[
+                        \begin{tikzpicture}
+                          \begin{axis}
+                            \addplot[primarycurve,domain=-4:5,smooth,-] {2+3*sin(pi*deg(x)/2)};
+                            \addplot[soliddot] coordinates {(-4,2)};
+                            \addplot[hollowdot] coordinates {(5,5)};
+                          \end{axis}
+                        \end{tikzpicture}
+                        ]]>
+                      </latex-image>
+                    </image>
+                  </figure>
+
+              </sidebyside>
+            </p>
+          </statement>
+          <solution>
+          <p>
+            The solution set is <m>\{x \mid -4 \leq x \lt 5\}</m>.
+          </p>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              The solution set is <m>(-4,5)</m>.
+            </p>
+
+            <figure xml:id="functions-inequalities-exercises-figure-4-solution">
+              <caption><m>f(x) \le 5</m></caption>
+                <image>
+                  <description>plain text</description>
+                  <latex-image>
+                    <![CDATA[
+                      \begin{tikzpicture}
+                        \begin{axis}
+                          \addplot[primarycurve,domain=-4:5,blue!40,ultra thick,smooth,-] {2+3*sin(pi*deg(x)/2)};
+                          \addplot[secondarycurve,domain=-6.8:6.8,gray,thick,{Stealth}-{Stealth}] {5};
+                          \addplot[soliddot,color=blue!40] coordinates {(-4,2)};
+                          \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(5,5)};
+                          \addplot[primarycurve,domain=-4:5,smooth,blue,ultra thick,{Bracket}-)] {0};
+                        \end{axis}
+                      \end{tikzpicture}
+                    ]]>
+                  </latex-image>
+                </image>
+              </figure>
+
+            </sidebyside>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>          
+              <sidebyside widths="47% 47%" margins="0%">
+              
+              <p>
+                Determine the solution set to <m>g(x) \geq -2</m> based upon the function <m>g</m> shown in <xref ref="functions-inequalities-exercises-figure-5">Figure</xref>. State the solution set using both set-builder notation and interval notation.
+              </p>
+
+              <figure xml:id="functions-inequalities-exercises-figure-5">
+                <caption><m>y=g(x)</m></caption>
+                <image>
+                  <description>plain text</description>
+                  <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                      \begin{axis}
+                        \addplot[primarycurve,domain=-6:-1,smooth,-] {(x+4)^2-6};
+                        \addplot[primarycurve,domain=-1:5.26,smooth,-{Stealth}] {-2*x+4};
+                        \addplot[hollowdot] coordinates {(-6,-2)};
+                        \addplot[hollowdot] coordinates {(-1,3)};
+                        \addplot[soliddot] coordinates {(-1,6)};
+                      \end{axis}
+                    \end{tikzpicture}
+                    ]]>
+                  </latex-image>
+                </image>
+              </figure>
+
+            </sidebyside>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\{-2 \leq x \leq 3\}</m>.
+          </p>
+          <sidebyside widths="47% 47%" margins="0%">
+            <p>
+              The solution set is <m>[-2,3]</m>.
+            </p>
+            <figure xml:id="functions-inequalities-exercises-figure-5-solution">
+              <caption><m>g(x) \ge -2</m></caption>
+              <image>
+                <description>plain text</description>
+                <latex-image>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \begin{axis}
+                        \addplot[primarycurve,domain=-6:-1,smooth,-] {(x+4)^2-6};
+                        \addplot[primarycurve,domain=-1:5.26,smooth,-{Stealth}] {-2*x+4};
+                        \addplot[secondarycurve,domain=-6.8:6.8,gray,thick,{Stealth}-{Stealth}] {-2};
+                        \addplot[hollowdot] coordinates {(-6,-2)};
+                        \addplot[hollowdot] coordinates {(-1,3)};
+                        \addplot[soliddot] coordinates {(-1,6)};
+                        \addplot[primarycurve,domain=-2:-1,blue!40,ultra thick,smooth,-] {(x+4)^2-6};
+                        \addplot[primarycurve,domain=-1:3,smooth,blue!40,ultra thick,-] {-2*x+4};
+                        \addplot[primarycurve,domain=-2:3,blue,ultra thick,smooth,{Bracket}-{Bracket}] {0};
+                        \addplot[soliddot,color=blue!40] coordinates {(-2,-2)};
+                        \addplot[soliddot,color=blue!40] coordinates {(-1,6)};
+                        \addplot[soliddot,color=blue!40] coordinates {(3,-2)};
+                        \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(-1,3)};
+                      \end{axis}
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+
+        </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>          
+            <sidebyside widths="47% 47%" margins="0%">
+              
+              <p>
+                Determine the solution set to <m>g(x) \leq 3</m> based upon the function <m>g</m> shown in <xref ref="functions-inequalities-exercises-figure-6">Figure</xref>. State the solution set using both set-builder notation and interval notation.
+              </p>
+
+              <figure xml:id="functions-inequalities-exercises-figure-6">
+                <caption><m>y=g(x)</m></caption>
+                <image>
+                  <description>plain text</description>
+                  <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                      \begin{axis}
+                        \addplot[primarycurve,domain=-6:-1,smooth,-] {(x+4)^2-6};
+                        \addplot[primarycurve,domain=-1:5.26,smooth,-{Stealth}] {-2*x+4};
+                        \addplot[hollowdot] coordinates {(-6,-2)};
+                        \addplot[hollowdot] coordinates {(-1,3)};
+                        \addplot[soliddot] coordinates {(-1,6)};
+                      \end{axis}
+                    \end{tikzpicture}
+                    ]]>
+                  </latex-image>
+                </image>
+              </figure>
+              
+            </sidebyside>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\{x \mid -6 \lt x \lt 2 \text{ or } x \geq \frac{1}{2}\}</m>.
+          </p>
+          <sidebyside widths="47% 47%" margins="0%">
+            <p>
+              The solution set is <m>(-6,-1) \cup \left[\frac{1}{2},\infty\right)</m>.
+            </p>
+            <figure xml:id="functions-inequalities-exercises-figure-6-solution">
+              <caption><m>g(x) \le 3</m></caption>
+              <image>
+              <description>plain text</description>
+                <latex-image>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \begin{axis}
+                        \addplot[primarycurve,domain=-6:-1,smooth,-] {(x+4)^2-6};
+                        \addplot[primarycurve,domain=-1:5.26,smooth,-{Stealth}] {-2*x+4};
+                        \addplot[secondarycurve,domain=-6.8:6.8,gray,thick,{Stealth}-{Stealth}] {3};
+                        \addplot[hollowdot] coordinates {(-6,-2)};
+                        \addplot[hollowdot] coordinates {(-1,3)};
+                        \addplot[soliddot] coordinates {(-1,6)};
+                        \addplot[primarycurve,domain=-6:-1,blue!40,ultra thick,smooth,-] {(x+4)^2-6};
+                        \addplot[primarycurve,domain=.5:5.26,smooth,blue!40,ultra thick,-{Stealth}] {-2*x+4};
+                        \addplot[primarycurve,domain=-6:-1,blue,ultra thick,smooth,(-)] {0};
+                        \addplot[primarycurve,domain=.5:6.8,blue,ultra thick,smooth,{Bracket}-{Stealth}] {0};
+                        \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(-6,-2)};
+                        \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(-1,3)};
+                        \addplot[soliddot,color=blue!40] coordinates {(.5,3)};
+                      \end{axis}
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>          
+            <sidebyside widths="47% 47%" margins="0%">
+            
+              <p>
+                Determine the solution set to <m>g(x) \lt -6</m> based upon the function <m>g</m> shown in <xref ref="functions-inequalities-exercises-figure-7">Figure</xref>. State the solution set using both set-builder notation and interval notation.
+              </p>
+
+              <figure xml:id="functions-inequalities-exercises-figure-7">
+                <caption><m>y=g(x)</m></caption>
+                <image>
+                  <description>plain text</description>
+                  <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                      \begin{axis}
+                        \addplot[primarycurve,domain=-6:-1,smooth,-] {(x+4)^2-6};
+                        \addplot[primarycurve,domain=-1:5.26,smooth,-{Stealth}] {-2*x+4};
+                        \addplot[hollowdot] coordinates {(-6,-2)};
+                        \addplot[hollowdot] coordinates {(-1,3)};
+                        \addplot[soliddot] coordinates {(-1,6)};
+                      \end{axis}
+                    \end{tikzpicture}
+                    ]]>
+                  </latex-image>
+                </image>
+              </figure>
+              
+            </sidebyside>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <sidebyside widths="47% 47%" margins="0%">
+              <p>
+                The solution set is <m>\{x \mid x \gt 5\}</m>.
+                <p>
+                  The solution set is <m>(5,\infty)</m>.
+                </p>
+              </p>
+              <figure xml:id="functions-inequalities-exercises-figure-7-solution">
+                <caption><m>g(x) \lt -6</m></caption>
+                <image>
+                <description>plain text</description>
+                  <latex-image>
+                    <![CDATA[
+                      \begin{tikzpicture}
+                        \begin{axis}
+                          \addplot[primarycurve,domain=-6:-1,smooth,-] {(x+4)^2-6};
+                          \addplot[primarycurve,domain=-1:5.26,smooth,-{Stealth}] {-2*x+4};
+                          \addplot[hollowdot] coordinates {(-6,-2)};
+                          \addplot[hollowdot] coordinates {(-1,3)};
+                          \addplot[soliddot] coordinates {(-1,6)};
+                          \addplot[secondarycurve,domain=-6.8:6.8,gray,thick,{Stealth}-{Stealth}] {-6};
+                          \addplot[primarycurve,domain=5:5.26,smooth,blue!40,ultra thick,-{Stealth}] {-2*x+4};
+                          \addplot[primarycurve,domain=5:6.8,blue,ultra thick,smooth,(-{Stealth}] {0};
+                        \end{axis}
+                      \end{tikzpicture}
+                    ]]>
+                  </latex-image>
+                </image>
+              </figure>
+            </sidebyside>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>          
+            <sidebyside widths="47% 47%" margins="0%">
+            
+              <p>
+                Determine the solution set to <m>g(x) \gt -6</m> based upon the function <m>g</m> shown in <xref ref="functions-inequalities-exercises-figure-8">Figure</xref>. State the solution set using both set-builder notation and interval notation.
+              </p>
+
+              <figure xml:id="functions-inequalities-exercises-figure-8">
+                <caption><m>y=g(x)</m></caption>
+                <image>
+                  <description>plain text</description>
+                  <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                      \begin{axis}
+                        \addplot[primarycurve,domain=-6:-1,smooth,-] {(x+4)^2-6};
+                        \addplot[primarycurve,domain=-1:5.26,smooth,-{Stealth}] {-2*x+4};
+                        \addplot[hollowdot] coordinates {(-6,-2)};
+                        \addplot[hollowdot] coordinates {(-1,3)};
+                        \addplot[soliddot] coordinates {(-1,6)};
+                      \end{axis}
+                    \end{tikzpicture}
+                    ]]>
+                  </latex-image>
+                </image>
+              </figure>
+              
+            </sidebyside>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\{x \mid -6 \lt x \lt -4 \text{ or } -4 \lt x \lt 5\}</m>.
+          </p>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              The solution set is <m>(-6,-4) \cup (-4,5)</m>.
+            </p>
+
+            <figure xml:id="functions-inequalities-exercises-figure-8-solution">
+              <caption><m>g(x) \gt -6</m></caption>
+              <image>
+                <description>plain text</description>
+                <latex-image>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \begin{axis}
+                        \addplot[primarycurve,domain=-6:-1,smooth,-] {(x+4)^2-6};
+                        \addplot[primarycurve,domain=-1:5.36,smooth,-{Stealth}] {-2*x+4};
+                        \addplot[hollowdot] coordinates {(-6,-2)};
+                        \addplot[hollowdot] coordinates {(-1,3)};
+                        \addplot[soliddot] coordinates {(-1,6)};
+                        \addplot[secondarycurve,domain=-6.8:6.8,gray,thick,{Stealth}-{Stealth}] {-6};
+                        \addplot[primarycurve,domain=-6:-1,blue!40,ultra thick,smooth,-] {(x+4)^2-6};
+                        \addplot[primarycurve,domain=-1:5,smooth,blue!40,ultra thick,-] {-2*x+4};
+                        \addplot[primarycurve,domain=-6:-4,blue,ultra thick,smooth,(-)] {0};
+                        \addplot[primarycurve,domain=-4:5,blue,ultra thick,smooth,(-)] {0};
+                        \addplot[soliddot,color=blue!40] coordinates {(-1,6)};
+                        \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(-6,-2)};
+                        \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(-4,-6)};
+                        \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(-1,3)};
+                        \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(5,-6)};
+                      \end{axis}
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <sidebyside widths="47% 47%" margins="0%">
+           
+              <p>
+                Determine the solution set to <m>f(x) \geq g(x)</m> based upon the functions <m>f</m> (piecewise-linear) and <m>g</m> (parabolic) shown in <xref ref="functions-inequalities-exercises-figure-9">Figure</xref>.  State the solution set using both set-builder notation and interval notation.
+              </p>
+
+              <figure xml:id="functions-inequalities-exercises-figure-9">
+                <caption><m>\highlightr{y=f(x)}</m> and <m>\highlighty{y=g(x)}</m></caption>
+                <image>
+                  <description>plain text</description>
+                  <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                      \begin{axis}
+                        \addplot[primarycurve,domain=-6.98:2,smooth,{Stealth}-] {5-(2-x)};
+                        \addplot[primarycurve,domain=2:6.98,smooth,-{Stealth}] {5-(x-2)};
+                        \addplot[primarycurve,domain=-6.95:1.68,smooth,gray] {0.5*(x+3)^2-4};
+                      \end{axis}
+                    \end{tikzpicture}
+                    ]]>
+                  </latex-image>
+                </image>
+              </figure>
+
+            </sidebyside>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\{x \mid -5 \leq x \leq 1\}</m>.
+          </p>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              The solution set is <m>[-5,1]</m>.
+            </p>
+
+            <figure xml:id="functions-inequalities-exercises-figure-9-solution">
+              <caption><m>\highlightr{f(x)} \ge \highlighty{g(x)}</m></caption>
+              <image>
+                <description>plain text</description>
+                <latex-image>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \begin{axis}
+                        \addplot[primarycurve,domain=-6.98:2,smooth,{Stealth}-] {5-(2-x)};
+                        \addplot[primarycurve,domain=2:6.98,smooth,-{Stealth}] {5-(x-2)};
+                        \addplot[primarycurve,domain=-6.95:1.68,smooth,gray] {0.5*(x+3)^2-4};
+                        \addplot[primarycurve,domain=-5:1,blue,ultra thick,smooth,{Bracket}-{Bracket}] {0};
+                        \addplot[primarycurve,domain=-5:1,smooth,blue!40,ultra thick,-] {5-(2-x)};
+                        \addplot[soliddot,color=blue!40] coordinates {(-5,-2)};
+                        \addplot[soliddot,color=blue!40] coordinates {(1,4)};
+                      \end{axis}
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <sidebyside widths="47% 47%" margins="0%">
+           
+              <p>
+                Determine the solution set to <m>g(x) \gt f(x)</m> based upon the functions <m>f</m> (piecewise-linear) and <m>g</m> (parabolic) shown in <xref ref="functions-inequalities-exercises-figure-10">Figure</xref>.  State the solution set using both set-builder notation and interval notation.
+              </p>
+
+              <figure xml:id="functions-inequalities-exercises-figure-10">
+                <caption><m>\highlightr{y=f(x)}</m> and <m>\highlighty{y=g(x)}</m></caption>
+                <image>
+                  <description>plain text</description>
+                  <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                      \begin{axis}
+                        \addplot[primarycurve,domain=-6.98:2,smooth,{Stealth}-] {5-(2-x)};
+                        \addplot[primarycurve,domain=2:6.98,smooth,-{Stealth}] {5-(x-2)};
+                        \addplot[primarycurve,domain=-6.95:1.68,smooth,gray] {0.5*(x+3)^2-4};
+                      \end{axis}
+                    \end{tikzpicture}
+                    ]]>
+                  </latex-image>
+                </image>
+              </figure>
+
+            </sidebyside>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\{x \mid x \lt -5 \text{ or } x \gt 1\}</m>.
+          </p>
+          <sidebyside widths="47% 47%" margins="0%">
+            <p>
+              The solution set is <m>(-\infty,-5) \cup (1,\infty)</m>.
+            </p>
+            <figure xml:id="functions-inequalities-exercises-figure-10-solution">
+              <caption><m>\highlighty{g(x)} \gt \highlightr{f(x)}</m></caption>
+              <image>
+                <description>plain text</description>
+                <latex-image>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \begin{axis}
+                        \addplot[primarycurve,domain=-6.98:2,smooth,{Stealth}-] {5-(2-x)};
+                        \addplot[primarycurve,domain=2:6.98,smooth,-{Stealth}] {5-(x-2)};
+                        \addplot[primarycurve,domain=-6.95:1.68,smooth,gray] {0.5*(x+3)^2-4};
+                        \addplot[primarycurve,domain=-6.95:-5,blue,ultra thick,smooth,{Stealth}-)] {0};
+                        \addplot[primarycurve,domain=1:6.95,blue,ultra thick,smooth,(-{Stealth}] {0};
+                        \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(-5,-2)};
+                        \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(1,4)};
+                        \addplot[primarycurve,domain=-6.95:-5,smooth,blue!40,ultra thick,{Stealth}-] {0.5*(x+3)^2-4};
+                        \addplot[primarycurve,domain=1:1.68,smooth,blue!40,ultra thick,-{Stealth}] {0.5*(x+3)^2-4};
+                      \end{axis}
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+          </sidebyside>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+</section>

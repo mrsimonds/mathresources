@@ -91,7 +91,7 @@
         <p>
           <md>
             <mrow>\frac{y^3-36y}{y^3+36y}\amp=\frac{y(y^2-36)}{y(y^2+36)}</mrow>
-            <mrow>\amp=\frac{y(y+6)(y-6)}{y(x^2+36)}</mrow>
+            <mrow>\amp=\frac{y(y+6)(y-6)}{y(y^2+36)}</mrow>
             <mrow>\amp=\frac{y}{y} \cdot \frac{(y+6)(y-6)}{y^2+36}</mrow>
             <mrow>\amp=\frac{(y+6)(y-6)}{y^2+36}, y \neq 0</mrow>
           </md>

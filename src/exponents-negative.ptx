@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+  <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="exponents-negative">
+    <title>Negative Exponents</title>
+
+    <p>
+      Let's begin with a discovery activity.  Move the slider in <xref ref="exponents-negative-geogebra-1">Figure</xref>  so that the exponent becomes negative.  What happens to the expression on the other side of the equal sign?  Can you make a guess as to the rule for negative exponents?
+    </p>
+
+    <figure xml:id="exponents-negative-geogebra-1">
+      <caption>Make a conjecture on the meaning of a negative exponent.</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-negative-discovery.ggb">
+          setPerspective("G");
+          setGridVisible(0); 
+          setAxesVisible(0,0);        
+        </slate>
+      </interactive>
+    </figure>
+
+    <p>
+      OK, let's dig into the mathematics of negative exponents.
+    </p>
+    <p>
+      Recall the quotient rule of exponents:<me>\frac{x^m}{x^n}=x^{m-n}</me>.
+      When you've applied this rule in the past, it is quite possible that there have always been more factors of <m>x</m> in the numerator than in the denominator, or at the very least an equal number of factors in both locations.  In this discussion, we investigate what occurs when there are more factors of <m>x</m> in the denominator than in the numerator.                    
+    </p>
+    <p>
+      Consider the expression <m>\frac{x^2}{x^5}</m>.  We can regroup the factors into the product of three fractions and simplify, specifically:
+      <md>
+        <mrow>\frac{x^2}{x^5}\amp=\frac{x}{x}\cdot\frac{x}{x}\cdot\frac{1}{x^3}</mrow>
+        <mrow>\amp=\frac{1}{x^3}</mrow>
+      </md>
+    </p>
+    <p>
+      On the other hand, if we apply the quotient rule of exponents we get:
+      <md>
+        <mrow>\frac{x^2}{x^5}\amp=x^{2-5}</mrow>
+        <mrow>\amp=x^{-3}</mrow>
+      </md>
+    </p>
+    <p>
+      Employing the transitive property of equality, we must then conclude that:<me>x^{-n}=\frac{1}{x^n}, x\neq0</me>.
+    </p>
+    <p>
+      For example:
+      <md>
+        <mrow>2^{-3}\amp=\frac{1}{2^3}</mrow>
+        <mrow>\amp=\frac{1}{8}</mrow>
+      </md>
+      You can confirm this equivalence on a scientific calculator by showing that both <m>2^{-3}</m> and <m>\frac{1}{8}</m> evaluate to 
+      <m>0.125</m>.
+    </p>
+    <p>
+      One way you could think of a negative exponent is that it's telling you to move the location of the factor - when the move is made, the exponent becomes positive.  So far, the only such move we've discussed is <m>x^{-n}=\frac{1}{x^n}</m>. In this context, let's address one common error made with negative exponents.
+    </p>
+    <p>  
+      When a factor with a negative exponent is preceded by a constant factor, many folks like to move the constant factor right along with the factor that has an exponent.  For example, many folks will write that <m>4x^{-2}</m> is equal to <m>\frac{1}{4x^2}</m>.  Unfortunately this is not correct.  According to Order of Operations (PEMDAS), exponents need to be applied before multiplication is performed.  For example:
+      <md>
+        <mrow>4\times 3^2\amp=4\times 9</mrow>
+        <mrow>\amp=36</mrow>
+      </md>
+      Similarly:
+      <md>
+        <mrow>4\times 3^{-2}\amp=4\times\frac{1}{3^2}</mrow>
+        <mrow>\amp=4\times\frac{1}{9}</mrow>
+        <mrow>\amp=\frac{4}{9}</mrow>
+      </md>
+      and
+      <md>
+        <mrow>4<times/>x^{-2}\amp=4\times\frac{1}{x^2}</mrow>
+        <mrow>\amp=\frac{4}{x^2}</mrow>
+      </md>
+    </p> 
+    <p>
+      We've explored simple expressions of the form <m>x^{-n}</m> and <m>kx^{-n}</m>, where <m>k</m> is a constant.  Now let's explore more complicated expressions, expressions with factors that have negative exponents but the factors appear in various locations of the expressions.  
+    </p>
+    <p>
+      Let's begin with the expression <m>\frac{1}{x^{-3}}</m>.  There is more than one way to determine an equivalent expression with a positive exponent.  I'm going to make the determination by multiplying the expression by <m>1</m>.  Specifically:
+      <md>
+        <mrow>\frac{1}{x^{-3}}\amp=\frac{1}{x^{-3}}\cdot\frac{x^3}{x^3}</mrow>
+        <mrow>\amp=\frac{x^3}{x^0}</mrow>
+        <mrow>\amp=\frac{x^3}{1}</mrow>
+        <mrow>\amp=x^3</mrow>
+      </md>
+    </p>
+    <p>
+      From this one example, we can infer that <m>\frac{1}{x^{-n}}=x^n</m>.  If we express our two rules side by side, we both sides of the equation stated as fractions, We should be able to identify a pattern.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+      <p>
+        <me>\frac{x^{-n}}{1}=\frac{1}{x^n}</me>
+      </p>
+      <p>
+        <me>\frac{1}{x^{-n}}=\frac{x^n}{1}</me>
+      </p>
+    </sidebyside>
+    <p>
+      One way that we can think of a negative exponent is like one of those annoying light switches where sometimes up means the light is on but at other times up means the light is off (dependent upon the position of another switch connected to the same light).  For any given factor in a fractional expression, positioning the factor on one side of the fraction bar corresponds to the factor having a positive exponent and positioning the factor on the other side of the fraction bar corresponds to the factor having a negative exponent.  The catch is that you have to determine the arrangement for each individual factor.  This is established by the exponents present in the original expression.  Regardless of the arrangement, any time a factor with an exponent moves across the fraction bar, the sign on the exponent reverses.
+    </p>
+    <p>
+      Let's consider the expression <m>\frac{x^{-3}}{y^4}</m>.  In this expression, both <m>x</m> and <m>y</m> will have negative exponents when they are in the numerator and positive exponents in the denominator.  When both factors are in the numerator, the remaining denominator is a factor of <m>1</m> which generally is not written.  Below are the four germane equivalent expressions. <me>x^{-3}y^{-4}=\frac{x^{-3}}{y^4}=\frac{y^{-4}}{x^3}=\frac{1}{x^3y^4}</me>
+    </p>
+    <p>
+      While all of the manipulative rules of exponents (e.g., <m>x^mx^n=x^{m+n}</m>) apply equally to both positive and negative exponents, when working with fractional expressions, most people find it easier to begin a simplification process by first rearranging the factors so that all exponents are positive.  Doing so not only simplifies the arithmetic, it also makes it much more intuitive as to the ultimate positioning of any given variable so that its exponent is positive.
+    </p>
+    <p>
+      Consider the expression <m>\frac{x^{-7}}{x^{-3}}</m>.  When we simplify the expression, we have two objectives: only one occurrence of <m>x</m> and no negative exponents.  While it might be obvious to you where the factor <m>x</m> needs to reside, most folks feel more secure making that call after first rearranging the factors so that both exponents are positive.
+      <me>\frac{x^{-7}}{x^{-3}}=\frac{x^3}{x^7}</me>
+      It is now fairly intuitive that there are four more factors of <m>x</m> in the denominator than in the numerator.  Putting it all together, we have:
+      <md>
+        <mrow>\frac{x^{-7}}{x^{-3}}\amp=\frac{x^3}{x^7}</mrow>
+        <mrow>\amp=\frac{1}{x^4}</mrow>
+      </md>
+      Note that we can infer a rule of exponents from the last example.  This new rule is shown below along with a rule established in an earlier lesson.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+      <p>
+        <me>\frac{x^m}{x^n}=\frac{x^{m-n}}{1}</me>
+      </p>
+      <p>
+        <me>\frac{x^m}{x^n}=\frac{1}{x^{n-m}}</me>
+      </p>
+    </sidebyside>
+    <p>
+      With our objective being positive exponents, for any given variable we use the rule that results in the variable being positioned on the side of the fraction bar that originally had the greater exponent.  Let's reconsider <m>\frac{x^{-7}}{x^{-3}}</m>.  Because <m>-3</m> is greater that <m>-7</m>, we know that the factor of <m>x</m> will ultimately reside in the denominator of the expression.  Using our new rule we have:
+      <md>
+        <mrow>\frac{x^{-7}}{x^{-3}}\amp=\frac{1}{x^{-3-(-7)}}</mrow>
+        <mrow>\amp=\frac{1}{x^{-3+7}}</mrow>
+        <mrow>\amp=\frac{1}{x^4}</mrow>
+      </md>
+      As mentioned previously, most folks find the entire process easier if they begin by moving factors so that all exponents are positive.  That said, work within your own comfort zone.  The great thing about simplifying expressions using the rules of exponents is that so long as you have a clear goal in mind and you apply the rules correctly (and don't make up your own rules!), you'll eventually arrive at your goal.
+    </p>
+    <p>
+      When simplifying variable expressions that contain negative exponents, you have the choice of first making all exponents positive and then applying the other rules of exponents or rather working with the negative exponents.  When evaluating numerical expressions with negative exponents, you have no such choice<mdash/>you have to start with making the exponents positive and then multiplying together the appropriate number of factors.  The three rules you can use are:
+    </p>
+    <sidebyside widths="32% 32% 32%" margins="0%">
+      <p>
+        <me>x^{-n}=\frac{1}{x^n}</me>
+      </p>
+      <p>
+        <me>\frac{1}{x^{-n}}=x^n</me>
+      </p>
+      <p>
+        <me>\left(\frac{a}{b}\right)^n=\left(\frac{b}{a}\right)^{-n}</me>
+      </p>
+    </sidebyside>
+    <p>
+      Several examples follow.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Evaluate <m>5^{-2}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>5^{-2}\amp=\frac{1}{5^2}</mrow>
+            <mrow>\amp=\frac{1}{25}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Evaluate <m>\frac{3}{2^{-1}}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\frac{3}{2^{-1}}\amp=3\times 2^1</mrow>
+            <mrow>\amp=3\times 2</mrow>
+            <mrow>\amp=6</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Evaluate <m>\left(\frac{4}{5}\right)^{-2}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\left(\frac{4}{5}\right)^{-2}\amp=\left(\frac{5}{4}\right)^2</mrow>
+            <mrow>\amp=\frac{25}{16}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      You can use <xref ref="exponents-negative-geogebra-2">Figure</xref> to generate random practice exercises.
+    </p>
+
+    <figure xml:id="exponents-negative-geogebra-2">
+      <caption>Make sure that your simplification does ot include any negative exponents.</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-all-properties.ggb">
+          setPerspective("G");
+          setGridVisible(0); 
+          setAxesVisible(0,0);        
+        </slate>
+      </interactive>
+    </figure>
+
+    <exercises>
+
+      <exercisegroup cols="2">
+        <introduction>
+          <p>
+            Completely simplify each expression.  Make sure that your final expression contains no negative exponents.
+          </p>
+        </introduction>
+        <exercise>
+          <statement>
+            <p>
+              <m>t^{-6}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>t^{-6}=\frac{1}{t^6}</m>
+            </p>         
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>2y^{-6}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                2y^{-6}\amp=2\times\frac{1}{y^6}\\
+                \amp=\frac{2}{y^6}
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-t^{-6}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>-t^{-6}=-\frac{1}{t^6}</m>
+            </p>       
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-4a^{-2}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                -4a^{-2}\amp=-4\times\frac{1}{a^2}\\
+                \amp=-\frac{4}{a^2}
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>x^{-9}x^5</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                x^{-9}x^5\amp=x^{-9+5}\\
+                \amp=x^{-4}\\
+                \amp=\frac{1}{x^4}
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{1}{x^{-3}}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \frac{1}{x^{-3}}=x^3
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{3y^{-6}}{y^2}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \frac{3y^{-6}}{y^2}\amp=\frac{3}{y^6y^2}\\
+                \amp=\frac{3}{y^8}
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{x^{-4}}{x^{-9}}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \frac{x^{-4}}{x^{-9}}\amp=\frac{x^9}{x^4}\\
+                \amp=x^5
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{1}{4a^{-2}}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \frac{1}{4a^{-2}}=\frac{a^2}{4}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+
+      </exercisegroup>
+      <exercisegroup cols="2">
+        <introduction>
+          <p>
+            Determine the value of each expression.  Your final result should not include any exponents.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{1}{3^{-2}}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \frac{1}{3^{-2}}\amp=3^2\\
+                \amp=9
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-2^{-3}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                -2^{-3}\amp=-\frac{1}{2^3}\\
+                \amp=-\frac{1}{8}
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\left(\frac{2}{5}\right)^{-2}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \left(\frac{2}{5}\right)^{-2}\amp=\left(\frac{5}{2}\right)^2\\
+                \amp=\frac{25}{4}
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\left(\frac{1}{4}\right)^{-3}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \left(\frac{1}{4}\right)^{-3}\amp=\left(\frac{4}{1}\right)^3\\
+                \amp=64
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-4^2</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                -4^2=-16
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>4^{-2}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                4^{-2}\amp=\frac{1}{4^2}\\
+                \amp=\frac{1}{16}
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-4^{-2}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                -4^{-2}\amp=-\frac{1}{4^2}\\
+                \amp=-\frac{1}{16}
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>(-4)^{-2}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                (-4)^{-2}\amp=\frac{1}{(-4)^2}\\
+                \amp=\frac{1}{16}
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\left(\frac{1}{3}\right)^{-3}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \left(\frac{1}{3}\right)^{-3}\amp=\left(\frac{3}{1}\right)^3\\
+                \amp=27
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-7^{-1}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                -7^{-1}=-\frac{1}{7}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{10^{-5}}{10^{-8}}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \frac{10^{-5}}{10^{-8}}\amp=\frac{10^8}{10^5}\\
+                \amp=10^3\\
+                \amp=1,000
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{1}{2^{-8}}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \frac{1}{2^{-8}}\amp=2^8\\
+                \amp=256
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\left(-\frac{2}{3}\right)^{-4}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \left(-\frac{2}{3}\right)^{-4}\amp=\left(-\frac{3}{2}\right)^4\\
+                \amp=\frac{81}{16}
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>-4^0-4^{-2}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                -4^0-4^{-2}\amp=-1-\frac{1}{4^2}\\
+                \amp=-1-\frac{1}{16}\\
+                \amp=-\frac{17}{16}
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\left(\frac{5}{4}\right)^{-2}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \left(\frac{5}{4}\right)^{-2}\amp=\left(\frac{4}{5}\right)^2\\
+                \amp=\frac{16}{25}
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\frac{4}{3^{-2}}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \frac{4}{3^{-2}}\amp=4\times 3^2\\
+                \amp=36
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+    </exercises>
+
+  </section>

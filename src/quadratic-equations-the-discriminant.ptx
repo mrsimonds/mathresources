@@ -144,11 +144,11 @@
             <p>
               <md>
                 <mrow>b^2-4ac\amp=(-12)^2-4 \cdot -1 \cdot 36</mrow>
-                <mrow>\amp=0</mrow>
+                <mrow>\amp=288</mrow>
               </md>
             </p>
             <p>
-              Because the discriminant is zero, we know that the given equation has exactly one real number solution.
+              Because the discriminant is a positive number, we know that the given equation has two real number solutions.
             </p>
           </solution>
         </exercise>

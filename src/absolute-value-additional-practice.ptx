@@ -10,332 +10,332 @@
 <!-- ********************************************************************* -->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="absolute-value-additional-practice">
-    <title>Additional Practice Solving Absolute Value Equations and Inequalities</title>
+  <title>Additional Practice Solving Absolute Value Equations and Inequalities</title>
 
-    <exercises>
+  <exercises>
 
-      <exercisegroup>
-        <introduction>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine the solution set for each equation and inequality.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
           <p>
-            Determine the solution set for each equation and inequality.
+            <m>\abs{2x-4}=12</m>
           </p>
-        </introduction>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\{-4,8\}</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\abs{2x-4}=12</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>\{-4,8\}</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\abs{3-x}=-4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\emptyset</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\abs{3-x}=-4</m>
+      <exercise>
+        <statement>
+          <p>
+            <m>\abs{5-7t}=11</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\left\{-\frac{6}{7},\frac{16}{7}\right\}</m>.
                   </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>\emptyset</m>.
-                  </p>
-                </solution>
-              </exercise>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\abs{5-7t}=11</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>\{-\frac{6}{7},\frac{16}{7}\}</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\abs{y+7}=7</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\{-14,0\}</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\abs{y+7}=7</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>\{-14,0\}</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\abs{\frac{3}{2}x-9}=9</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\{0,12\}</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\abs{\frac{3}{2}x-9}=9</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>\{0,12\}</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\abs{\frac{w+5}{3}}=15</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\{-50,40\}</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\abs{\frac{w+5}{3}}=15</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>\{-50,40\}</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\abs{2x+7} \le 14</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\left[-\frac{21}{2},\frac{7}{2}\right]</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\abs{2x+7} \le 14</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>\left[-\frac{21}{2},\frac{7}{2}\right]</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\abs{10-y} \lt 22</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>(-12,32)</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\abs{10-y} \lt 22</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>(-12,32)</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\abs{22+17x} \le -11</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\emptyset</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\abs{22+17x} \le -11</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>\emptyset</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\abs{\frac{4}{3}t+8} \le 24</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>[-24,12]</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\abs{\frac{4}{3}t+8} \le 24</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>[-24,12]</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\abs{\frac{8-x}{5}} \le 14</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>[-62,78]</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\abs{\frac{8-x}{5}} \le 14</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>[-62,78]</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\abs{z+12} \le 0</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\{-12\}</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\abs{z+12} \le 0</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>\{-12\}</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\abs{3x+7} \ge -19</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>(-\infty,\infty)</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\abs{3x+7} \ge -19</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>(-\infty,\infty)</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\abs{2x+31} \ge 17</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>(-\infty,-24] \cup [-7,\infty)</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\abs{2x+31} \ge 17</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>(-\infty,-24] \cup [-7,\infty)</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\abs{-\frac{1}{2}w+7} \gt 21</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>(-\infty,-28) \cup (56,\infty)</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\abs{-\frac{1}{2}w+7} \gt 21</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>(-\infty,-28) \cup (56,\infty)</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\abs{-5x+7} \ge 27</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>(-\infty,-4] \cup \left[\frac{34}{5},\infty\right)</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\abs{-5x+7} \ge 27</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>(-\infty,-4] \cup \left[\frac{34}{5},\infty\right)</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\abs{4x+2} \gt 0</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\left(-\infty,-\frac{1}{2}\right) \cup \left(-\frac{1}{2},\infty\right)</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\abs{4x+2} \gt 0</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>\left(-\infty,-\frac{1}{2}\right) \cup \left(-\frac{1}{2},\infty\right)</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\abs{\frac{7-2x}{3}} \gt 4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\left(-\infty,-\frac{5}{2}\right) \cup \left(\frac{19}{2},\infty\right)</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\abs{\frac{7-2x}{3}} \ge 4</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>\left(-\infty,-\frac{5}{2}\right) \cup \left(\frac{19}{2},\infty\right)</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>5-\abs{2x+3}=-8</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\{-8,5\}</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>5-\abs{2x+3}=-8</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>\{-8,5\}</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\abs{\frac{y+7}{3}}-8 \ge -4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>(-\infty,-19] \cup [5,\infty)</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\abs{\frac{y+7}{3}}-8 \ge -4</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>(-\infty,-19] \cup [5,\infty)</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>17-\abs{\frac{1-x}{3}} \ge 12</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>[-14,16]</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>17-\abs{\frac{1-x}{3}} \le 12</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>[-14,16]</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>18+3\abs{-\frac{1}{2}t} \lt 24</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>(-4,4)</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>18+3\abs{-\frac{1}{2}t} \lt 24</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>(-4,4)</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>12+\abs{w-9}=10</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\emptyset</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>12+\abs{w-9}=10</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    he solution set is <m>\emptyset</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{-\abs{3+2x}+6}{2} \gt 1</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\left(-\frac{7}{2},\frac{1}{2}\right)</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <p>
-                    <m>\frac{-\abs{3+2x}+6}{2} \gt 1</m>
-                  </p>
-                </statement>
-                <solution>
-                  <p>
-                    The solution set is <m>\left(-\frac{7}{2},\frac{1}{2}\right)</m>.
-                  </p>
-                </solution>
-              </exercise>
+    </exercisegroup>
 
-            </exercisegroup>
-
-          </exercises>
+  </exercises>
 
     
-    </section>
+</section>

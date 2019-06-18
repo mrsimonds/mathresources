@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="trigonometry-complex-numbers">
+  <title>Complex Numbers/de Moivre's Theorem/Euler's Formula</title>
+
+  <paragraphs>
+    <title>The Complex Number Plane</title>
+    <p></p>
+    <p>
+      It is often useful to plot complex numbers in <term>the complex number plane</term>.  In the plane, the horizontal-coordinate represents the real number part of the complex number and the vertical-coordinate represents the coefficient of the imaginary number part of the complex number. 
+    </p>
+
+    <example>
+      <statement>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            Determine the complex number represented by each of the points plotted in <xref ref="trigonometry-complex-numbers-figure-1">Figure</xref>.  In all cases, assume that both coordinates of the point are integers.
+          </p> 
+
+          <figure xml:id="trigonometry-complex-numbers-figure-1">
+            <caption>The Complex Number Plane: a+b i</caption>
+            <image>
+              <description>
+                Four points are plotted on an axis system where the horizontal axis is labeled <m>a</m> and the vertical axis is labeled <m>b</m>. The point <m>(2,5)</m> is plotted and labeled <m>A</m>.  The point <m>(-4,1)</m> is plotted and labeled <m>B</m>.  The point <m>(-3,0)</m> is plotted and labeled <m>C</m>.  The point <m>(0,-5)</m> is plotted and labeled <m>D</m>.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis}[axis equal image,
+                               xlabel={$a$},
+                               ylabel={$b$}]
+                    \addplot[soliddot] coordinates {(2,5)} node[above right] {$A$};
+                    \addplot[soliddot] coordinates {(-4,1)} node[above left] {$B$};
+                    \addplot[soliddot] coordinates {(-3,0)} node[below] {$C$};
+                    \addplot[soliddot] coordinates {(0,-5)} node[right] {$D$};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+        </sidebyside>
+
+      </statement>
+      <solution>
+        <p>
+          <ul>
+            <li>
+              <p>
+                Point <m>A</m> represents the complex number <m>2+5i</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Point <m>B</m> represents the complex number <m>-4+1 \cdot i</m> which simplifies to <m>-4+i</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Point <m>C</m> represents the complex number <m>-3+0 \cdot i</m> which simplifies to <m>-3</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Point <m>D</m> represents the complex number <m>0-5i</m> which simplifies to <m>-5i</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+  <paragraphs>
+    <title>The Polar Form of Complex Numbers</title>
+    <p></p>
+    <p>
+      For reasons that will be discussed later on this page, it can be advantageous to express points in the complex number plane in the polar form
+      <me>r(\cos(\theta)+i\sin(\theta)).</me>
+      To convert from the rectangular form of the number, <m>a+bi</m>, to the polar form of the number we use the following two equations.
+      <me>r=\sqrt{a^2+b^2}\,\,\text{and}\,\,\tan(\theta)=\frac{b}{a}</me>
+      We need to use caution when using the inverse tangent key to determine a value for <m>\theta</m>.  The inverse tangent key always returns a value on the interval <m>\left(-\frac{\pi}{\pi},\frac{\pi}{2}\right)</m>, so if the point representing the complex number lies in Quadrant II or Quadrant III, we need to use some sort of reference angle argument in conjunction with the inverse tangent key.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine a polar form of the number <m>-8+8i</m>. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We'll begin by determining the value of <m>r</m>.
+          <md>
+            <mrow>r\amp=\sqrt{a^2+b^2}</mrow>
+            <mrow>\amp=\sqrt{8^2+8^2}</mrow>
+            <mrow>\amp=8\sqrt{2}</mrow>
+          </md>
+          We can determine <m>\theta</m> from the following. 
+          <me>\tan(\theta)=\frac{8}{-8}\,\,\Longrightarrow\,\,\tan(\theta)=-1</me>
+          We cannot say that <m>\theta=\tan^{-1}(-1)</m>, because that inverse tangent value resides in Quadrant IV, and the point <m>(-8,8)</m> resides in Quadrant II.  However, if we know the unit circle, it's pretty easy to determine a value for <m>\theta</m>. From the definition of the tangent function, the tangent value will be <m>-1</m> anytime the <m>x</m>-coordinate and <m>y</m>-coordinate of the point on the unit circle have opposite values.  In the second quadrant this occurs at <m>\frac{3\pi}{4}</m>. In summary:
+          <me>-8+8i=8\sqrt{2}\left(\cos\left(\frac{3\pi}{4}\right)+i\sin\left(\frac{3\pi}{4}\right)\right).</me>
+        </p>
+      </solution>
+    </example>
+
+     <example>
+      <statement>
+        <p>
+          Determine a polar form of the number <m>-5</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's begin by determining the value of <m>r</m>.
+          <md>
+            <mrow>r\amp=\sqrt{a^2+b^2}</mrow>
+            <mrow>\amp=\sqrt{(-5)^2+0^2}</mrow>
+            <mrow>\amp=\sqrt{25}</mrow>
+            <mrow>\amp=5</mrow>
+          </md>
+          We don't really need the equation <m>\tan(\theta)=\frac{b}{a}</m> to determine a value for <m>\theta</m>.  The point <m>(-5,0)</m> clearly sit atop the terminal side of <m>\pi</m> when <m>\pi</m> is drawn in standard position.  In conclusion:
+          <me>-5=5(\cos(\pi)+i\sin(\pi)).</me>
+        </p>
+      </solution>
+    </example>
+  </paragraphs>
+
+  <paragraphs>
+    <title>Multiplying and Dividing Complex Numbers</title>
+    <p></p>
+    <p>
+      Let <m>z_1=r_1(\cos(\theta_1)+i\sin(\theta_1))</m> and <m>z_2=r_2(\cos(\theta_2)+i\sin(\theta_2))</m>.  Then we have the following.
+      <md>
+        <mrow>z_1z_2\amp=r_1(\cos(\theta_1)+i\sin(\theta_1)) \cdot r_2(\cos(\theta_2)+i\sin(\theta_2))</mrow>
+        <mrow>\amp=r_1r_2(\cos(\theta_1)+i\sin(\theta_1))(\cos(\theta_2)+i\sin(\theta_2))</mrow>
+        <mrow>\amp=r_1r_2(\cos(\theta_1)\cos(\theta_2)+i\cos(\theta_1)\sin(\theta_2)+i\sin(\theta_1)\cos(\theta_2)-\sin(\theta_1)\sin(\theta_2))</mrow>
+        <mrow>\amp=r_1r_2((\cos(\theta_1)\cos(\theta_2)-\sin(\theta_1)\sin(\theta_2))+i(\cos(\theta_1)\sin(\theta_2)+\sin(\theta_1)\cos(\theta_2)))</mrow>
+        <mrow>\amp=r_1r_2(\cos(\theta_1+\theta_2)+i\sin(\theta_1+\theta_2))</mrow>
+      </md>
+      We also have the following.
+      <md>
+        <mrow>\frac{z_1}{z_2}\amp=\frac{r_1(\cos(\theta_1)+i\sin(\theta_1))}{r_2(\cos(\theta_2)+i\sin(\theta_2))}</mrow>
+        <mrow>\amp=\frac{r_1(\cos(\theta_1)+i\sin(\theta_1))}{r_2(\cos(\theta_2)+i\sin(\theta_2))} \cdot \frac{(\cos(\theta_2)-i\sin(\theta_2))}{(\cos(\theta_2)-i\sin(\theta_2))} </mrow>
+        <mrow>\amp=\frac{r_1(\cos(\theta_1)\cos(\theta_2)-i\cos(\theta_1)\sin(\theta_2)+i\sin(\theta_1)\cos(\theta_2)+\sin(\theta_1)\sin(\theta_2))}{r_2\left(\cos^2(\theta_2)+\sin^2(\theta_2)\right)}</mrow>
+        <mrow>\amp=\frac{r_1((\cos(\theta_1)\cos(\theta_2)+\sin(\theta_1)\sin(\theta_2))+i(\sin(\theta_1)\cos(\theta_2)-\cos(\theta_1)\sin(\theta_2)))}{r_2 \cdot 1}</mrow>
+        <mrow>\amp=\frac{r_1}{r_2}(\cos(\theta_1-\theta_2)+i\sin(\theta_1-\theta_2))</mrow>
+      </md>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>z_1=12\left(\cos\left(\frac{5\pi}{6}\right)+i\sin\left(\frac{5\pi}{6}\right)\right)</m> and <m>z_2=6\left(\cos\left(\frac{\pi}{6}\right)+i\sin\left(\frac{\pi}{6}\right)\right)</m>.  Use the formula
+          <me>z_1z_2=r_1r_2(\cos(\theta_1+\theta_2)+i\sin(\theta_1+\theta_2))</me>
+          to evaluate the product <m>z_1z_1</m>.  Also, use the formula
+          <me>\frac{z_1}{z_2}=\frac{r_1}{r_2}(\cos(\theta_1-\theta_2)+i\sin(\theta_1-\theta_2))</me>
+          to evaluate the quotient <m>\frac{z_1}{z_2}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>z_1z_2\amp=12 \cdot 6\left(\cos\left(\frac{5\pi}{6}+\frac{\pi}{6}\right)+i\sin\left(\frac{5\pi}{6}+\frac{\pi}{6}\right)\right)</mrow>
+            <mrow>\amp=72(\cos(\pi)+i\sin(\pi))</mrow>
+            <mrow>\amp=72(-1+i \cdot 0)</mrow>
+            <mrow>\amp=-72</mrow>
+            <mrow>\frac{z_1}{z_2}\amp=\frac{12}{6}\left(\cos\left(\frac{5\pi}{6}-\frac{\pi}{6}\right)+i\sin\left(\frac{5\pi}{6}-\frac{\pi}{6}\right)\right)</mrow>
+            <mrow>\amp=2\left(\cos\left(\frac{2\pi}{3}\right)+i\sin\left(\frac{2\pi}{3}\right)\right)</mrow>
+            <mrow>\amp=2\left(-\frac{1}{2}+i \cdot \frac{\sqrt{3}}{2}\right)</mrow>
+            <mrow>\amp=-1+i\sqrt{3}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title>de Moivre's Theorem</title>
+    <p></p>
+    <p>
+      Let <m>z=r(\cos(\theta)+i\sin(\theta))</m>.  Then we have the following.
+      <md>
+        <mrow>z^2\amp=r(\cos(\theta)+i\sin(\theta)) \cdot r(\cos(\theta)+i\sin(\theta))</mrow>
+        <mrow>\amp=r^2(\cos(\theta+\theta)+i\sin(\theta+\theta))</mrow>
+        <mrow>\amp=r^2(\cos(2\theta)+i\sin(2\theta))</mrow>
+      </md>
+      From that we get the following.
+      <md>
+        <mrow>z^3\amp=z^2z</mrow>
+        <mrow>\amp=r^2(\cos(2\theta)+i\sin(2\theta)) \cdot r(\cos(\theta)+i\sin(\theta))</mrow>
+        <mrow>\amp=r^3(\cos(2\theta+\theta)+i\sin(2\theta+\theta))</mrow>
+        <mrow>\amp=r^3(\cos(3\theta)+i\sin(3\theta))</mrow>
+      </md>
+      It's fairly easy to imagine this pattern continuing, and we can actually prove that it continues using a technique called proof by induction.  This general pattern is called <term>de Moivre's Theorem</term> and is stated below.
+      <me>z^n=r^n(\cos(n\theta)+i\sin(n\theta)),\,\text{for integer values of}\,n</me>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Use de Moivre's theorem to determine the value of <m>\left(1-i\sqrt{3}\right)^5</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We first need to establish a polar coordinate form for the number <m>1-i\sqrt{3}</m>. We'll begin by determining <m>r</m>.
+          <md>
+            <mrow>r\amp=\sqrt{a^2+b^2}</mrow>
+            <mrow>\amp=\sqrt{1^2+\left(-\sqrt{3}\right)^2}</mrow>
+            <mrow>\amp=\sqrt{4}</mrow>
+            <mrow>\amp=2</mrow>
+          </md>
+          To determine a value for <m>\theta</m>, let's begin by observing the following.
+          <me>\tan(\theta)=\frac{-\sqrt{3}}{1}\,\,\Longrightarrow\,\,\tan(\theta)=-\sqrt{3}</me>
+          On the unit circle we define the tangent value by the ratio <m>\frac{y}{x}</m>.  This gives us the following.
+          <me>\tan(\theta)=-\sqrt{3}\,\,\Longrightarrow\,\,\frac{y}{x}=-\sqrt{3}\,\,\Longrightarrow\,\,y=-\sqrt{3}x</me>
+          The number <m>1-i\sqrt{3}</m> plots to a point in Quadrant IV in the complex plane.  So we're looking for an angle In Quadrant IV where the angle intersects the unit circle at a point that satisfies the property that the <m>y</m>-coordinate is <m>-\sqrt{3}</m> times the <m>x</m>-coordinate.  One such angle is <m>300^{\circ}</m>.  Taken all together, we have the following.
+          <me>1-i\sqrt{3}=2\left(\cos\left(300^{\circ}\right)+i\sin\left(300^{\circ}\right)\right)</me>
+          We're now set to employ de Moivre's theorem.
+          <md>
+            <mrow>(1-i\sqrt{3})^5\amp=2^5\left(\cos\left(5 \cdot 300^{\circ}\right)+i\sin\left(5 \cdot 300^{\circ}\right)\right)</mrow>
+            <mrow>\amp=32\left(\cos\left(1500^{\circ}\right)+i\sin\left(1500^{\circ}\right)\right)</mrow>
+            <mrow>\amp=32\left(\cos\left(60^{\circ}\right)+i\sin\left(60^{\circ}\right)\right)</mrow>
+            <mrow>\amp=32\left(\frac{1}{2}+i \cdot \frac{\sqrt{3}}{2}\right)</mrow>
+            <mrow>\amp=16+16i\sqrt{3}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title>Roots of Complex Numbers</title>
+    <p></p>
+    <p>
+      Let <me>w=r^{1/n}\left(\cos\left(\frac{\theta}{n}\right)+i\sin\left(\frac{\theta}{n}\right)\right)</me> where <m>n</m> is a positive integer. Then by de Moivre's theorem we have the following.
+      <md>
+        <mrow>w^n\amp=\left(r^{1/n}\right)^n\left(\cos\left(n \cdot \frac{\theta}{n}\right)+i\sin\left(n \cdot \frac{\theta}{n}\right)\right)</mrow>
+        <mrow>\amp=r(\cos(\theta)+i\sin(\theta))</mrow>
+      </md>
+      We have just established that if <m>z=\cos(\theta)+i\sin(\theta)</m>, then one <m>n^{\text{th}}</m> root of <m>z</m> is
+      <me>r^{1/n}\left(\cos\left(\frac{\theta}{n}\right)+i\sin\left(\frac{\theta}{n}\right)\right).</me>
+      It turns out that for any positive integer <m>n</m>, the complex number <m>r(\cos(\theta)+i\sin(\theta))</m> has <m>n</m> <m>n^{\text{th}}</m> roots and the roots are determined by
+      <me>r^{1/n}\left(\cos\left(\frac{\theta+2\pi k}{n}\right)+i\sin\left(\frac{\theta+2\pi k}{n}\right)\right)</me>
+      where <m>k=1,\,2,\,...,\,k-1</m>.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine the three third roots of <m>8</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by writing <m>8</m> in polar form.
+          <md>
+            <mrow>8\amp=8(1+0i)</mrow>
+            <mrow>\amp=8(\cos(0)+i\sin(0))</mrow>
+          </md>
+          So the three third roots of <m>8</m> are generated by the formula
+          <me>8^{1/3}\left(\cos\left(\frac{0+2\pi k}{3}\right)+i\sin\left(\frac{0+2\pi k}{3}\right)\right)</me>
+          which simplifies to
+          <me>2\left(\cos\left(\frac{2\pi k}{3}\right)+i\sin\left(\frac{2\pi k}{3}\right)\right)</me>
+          We need to apply the formula for <m>k=0,1</m>, and <m>2</m>.
+        </p>
+        <p>
+          For <m>k=0</m> we have the following.
+          <md>
+            <mrow>2\left(\cos\left(\frac{2\pi k}{3}\right)+i\sin\left(\frac{2\pi k}{3}\right)\right)\amp=2\left(\cos\left(\frac{2\pi \cdot 0}{3}\right)+i\sin\left(\frac{2\pi \cdot 0}{3}\right)\right)</mrow>
+            <mrow>\amp=2(\cos(0)+i\sin(0))</mrow>
+            <mrow>\amp=2(1+i \cdot 0)</mrow>
+            <mrow>\amp=2</mrow>
+          </md>
+          For <m>k=1</m> we have the following.
+          <md>
+            <mrow>2\left(\cos\left(\frac{2\pi k}{3}\right)+i\sin\left(\frac{2\pi k}{3}\right)\right)\amp=2\left(\cos\left(\frac{2\pi \cdot 1}{3}\right)+i\sin\left(\frac{2\pi \cdot 1}{3}\right)\right)</mrow>
+            <mrow>\amp=2\left(\cos\left(\frac{2\pi}{3}\right)+i\sin\left(\frac{2\pi}{3}\right)\right)</mrow>
+            <mrow>\amp=2\left(-\frac{1}{2}+\frac{\sqrt{3}}{2}\right)</mrow>
+            <mrow>\amp=-1+i\sqrt{3}</mrow>
+          </md>
+          For <m>k=2</m> we have the following.
+          <md>
+            <mrow>2\left(\cos\left(\frac{2\pi k}{3}\right)+i\sin\left(\frac{2\pi k}{3}\right)\right)\amp=2\left(\cos\left(\frac{2\pi \cdot 2}{3}\right)+i\sin\left(\frac{2\pi \cdot 2}{3}\right)\right)</mrow>
+            <mrow>\amp=2\left(\cos\left(\frac{4\pi}{3}\right)+i\sin\left(\frac{4\pi}{3}\right)\right)</mrow>
+            <mrow>\amp=2\left(-\frac{1}{2}-\frac{\sqrt{3}}{2}\right)</mrow>
+            <mrow>\amp=-1-i\sqrt{3}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <p></p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        We just determined that the three cube roots of <m>8</m> are <m>2</m>, <m>-1+i\sqrt{3}</m>, and <m>-1-i\sqrt{3}</m>.  In <xref ref="trigonometry-complex-numbers-figure-2">Figure</xref> the roots have been plotted in the complex plane.  The attendant points ave all been connected to the origin.  Let's observe two things.   First, the points are equidistant from the origin.  Second, the lines connecting the  points to the origin break the plane into three equal parts, with the angle between each pair of consecutive spokes being <m>120^{\circ}</m>.
+      </p>
+
+      <figure xml:id="trigonometry-complex-numbers-figure-2">
+      <caption>The Three Third Roots of <m>8</m></caption>
+      <image width="60%">
+        <description>
+          The points <m>(2,0)</m>, <m>(-1,\sqrt{3})</m>, and <m>(-1,-\sqrt{3})</m> have plotted and each point a line segment is drawn to the origin.  The three line segments all have equal length and each pair of consecutive line segments form the sides of a <m>120^{\circ}</m> angle. 
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=8cm,
+                          xmin=-4,xmax=4,
+                          ymin=-4,ymax=4]
+              \addplot[soliddot] coordinates {(2,0)} node[above right] {$(2,0)$};
+              \addplot[soliddot] coordinates {(-1,1.73)} node[above left] {$(-1,\sqrt{3})$};
+              \addplot[soliddot] coordinates {(-1,-1.73)} node[below left] {$(-1,-\sqrt{3})$};
+              \addplot[interval,red,thick,-] coordinates {(-1,1.73) (0,0)};
+              \addplot[interval,red,thick,-] coordinates {(-1,-1.73) (0,0)};
+              \addplot[interval,red,thick,-] coordinates {(2,0) (0,0)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+
+  <p>
+    Although cool to see, neither of these occurrences is particularly remarkable.  The formula used to generate the values was:
+    <me>8^{1/3}\left(\cos\left(\frac{0+2\pi k}{3}\right)+i\sin\left(\frac{0+2\pi k}{3}\right)\right).</me>
+    The distance from the origin to each point was generated by the formula <m>r=8^{1/3}</m>, so of course they are all equidistant from the origin.  As for the equal rotation from one spoke to the next, let's simplify the formula. 
+    <me>2\left(\cos\left(\frac{2\pi}{3}k\right)+i\sin\left(\frac{2\pi}{3}k\right)\right).</me>
+    So every time <m>k</m> goes up by <m>1</m>, the amount of rotation from the positive <m>x</m>-axis increases by <m>\frac{2\pi}{3}</m> which is equivalent to <m>120^{\circ}</m>.
+  </p>
+  <p>
+    The value generated by the <m>n^{\text{th}}</m> root formula when <m>k=0</m> is called <term>the principal <m>n^{\text{th}}</m> root</term>. This can lead to some surprising results, as we shall see in the next example.
+  </p>
+
+  <exercise>
+    <statement>
+      <p>
+        Determine the principle cube root of <m>-8</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by writing <m>-8</m> in polar form.  We could use the previously stated formulas to determine values for <m>r</m> and <m>\theta</m>.  But when the number is either a real number or an imaginary number, it plots onto an axis in the polar plane, so it's pretty simple to just "figure out" a polar form of the number.  Let's do it.
+        <md>
+          <mrow>-8\amp=8(-1+i \cdot 0)</mrow>
+          <mrow>\amp=8(\cos(\pi)+i\sin(\pi))</mrow>
+        </md>
+        We're set now to apply the <m>n^{\text{th}}</m> root theorem with <m>k=0</m>.
+        <md>
+          <mrow>8^{1/3}\amp\left(\cos\left(\frac{\pi+2\pi \cdot 0}{3}\right)+i\sin\left(\frac{\pi+2\pi \cdot 0}{3}\right)\right)</mrow>
+          <mrow>\amp=2\left(\cos\left(\frac{\pi}{3}\right)+i\sin\left(\frac{\pi}{3}\right)\right)</mrow>
+          <mrow>\amp=2\left(\frac{1}{2}+i \cdot \frac{\sqrt{3}}{2}\right)</mrow>
+          <mrow>\amp=1+i\sqrt{3}</mrow>
+        </md>
+        Now if I had asked you before you read this page, you probably would have said that the cube root of <m>-8</m> is <m>-2</m>.  It's a little jarring to learn that there are actually three cube roots of <m>-8</m>, and that <m>-2</m> is not even considered the principal cube root of <m>-8</m>!  If you are using a piece of technology that allows you to toggle between "real number mode" and "complex number mode," you can enter <m>(-8)^{1/3}</m> and see that the result changes from <m>-2</m> to <m>1+\sqrt{3}</m>.
+      </p>
+    </solution>
+  </exercise>
+
+
+  </paragraphs>
+  <paragraphs>
+    <title>Euler's Formula</title>
+    <p></p>
+    <p>
+      It can be proven using calculus that
+      <me>e^{i\theta}=\cos(\theta)+i\sin(\theta).</me>
+      The above equation is referred to as Euler's formula and it leads directly to some surprising and elegant facts.  Lets explore <m>e^{i\pi}</m>.
+      <md>
+        <mrow>e^{i\pi}\amp=\cos(\pi)+i\sin(\pi)</mrow>
+        <mrow>\amp=-1+i \cdot 0</mrow>
+        <mrow>\amp=-1</mrow>
+      </md>
+      From that, we get the following.
+      <me>e^{i\pi}+1=0</me>
+      This last equation is called <term>Euler's Identity</term> and, face it, is just plain freaky.  Beautiful, but freaky.
+    </p>
+    <p>
+      If you accept Euler's formula, you can use it along with rules of exponents to provide more elegant proofs of the arithmetic we explored at the beginning of this topic.  Let's see a couple of examples.
+      <md>
+        <mrow>(r_1(\cos(\theta_1)+i\sin(\theta_1)))(r_2(\cos(\theta_2)+i\sin(\theta_2)))\amp=r_1e^{i\theta_1} \cdot r_2e^{i\theta_2}</mrow>
+        <mrow>\amp=r_1r_2e^{i\theta_1+i\theta_2}</mrow>
+        <mrow>\amp=r_1r_2e^{i(\theta_1+\theta_2)}</mrow>
+        <mrow>\amp=r_1r_2(\cos(\theta_1+\theta_2)+i\sin(\theta_1+\theta_2))</mrow>
+      </md>
+    </p>
+    <p>
+      We can perform a similar calculation for the quotient of two complex numbers written in polar form.
+      <md>
+        <mrow>\frac{r_1(\cos(\theta_1)+i\sin(\theta_2))}{r_2(\cos(\theta_2)+i\sin(\theta))}\amp=\frac{e^{i\theta_1}}{e^{i\theta_2}}</mrow>
+        <mrow>\amp=\frac{r_1}{r_2}e^{i\theta_1-i\theta_2}</mrow>
+        <mrow>\amp=\frac{r_1}{r_2}e^{i(\theta_1-\theta_2)}</mrow>
+        <mrow>\amp=\frac{r_1}{r_2}(\cos(\theta_1-\theta_2)+i\sin(\theta_1-\theta_2))</mrow>
+      </md>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>z_1=8\left(\cos\left(\frac{\pi}{6}\right)+i\sin\left(\frac{\pi}{6}\right)\right)</m> and <m>z_2=7\left(\cos\left(\frac{\pi}{3}\right)+i\sin\left(\frac{\pi}{3}\right)\right)</m>.  Use Euler's formula and rules of exponents to help determine the value of <m>z_1z_2</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>z_1z_2\amp=8e^{i\frac{\pi}{6}} \cdot 7^{i\frac{\pi}{3}}</mrow>
+            <mrow>\amp=56e^{i\frac{\pi}{6}+i\frac{\pi}{3}}</mrow>
+            <mrow>\amp=56e^{i\frac{\pi}{2}}</mrow>
+            <mrow>\amp=56\left(\cos\left(\frac{\pi}{2}\right)+i\sin\left(\frac{\pi}{2}\right)\right)</mrow>
+            <mrow>\amp=56(0+i \cdot 1)</mrow>
+            <mrow>\amp=56i</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Use Euler's formula and rules of exponents to help determine the value of <m>\left(2\sqrt{3}-2i\right)^6</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to begin by finding a polar form for the complex number <m>2\sqrt{3}-2i</m>.  Let's begin by finding the value of <m>r</m>.
+          <md>
+            <mrow>r\amp=\sqrt{a^2+b^2}</mrow>
+            <mrow>\amp=\sqrt{(2\sqrt{3})^2+(-2)^2}</mrow>
+            <mrow>\amp=\sqrt{16}</mrow>
+            <mrow>\amp=4</mrow>
+          </md>
+          To determine a value of <m>\theta</m>, we need to find a solution in Quadrant IV to the following equations.
+          <me>\tan(\theta)=\frac{-2}{2\sqrt{3}}\,\,\Longrightarrow\,\,\tan(\theta)=-\frac{1}{\sqrt{3}}</me>
+          Because, from a unit circle perspective, the tangent value is equal to the ration <m>\frac{y}{x}</m>, we have the following.
+          <md>
+            <mrow>\tan(\theta)=-\frac{1}{\sqrt{3}}\,\,\amp\Longrightarrow\,\,\frac{y}{x}=-\frac{1}{\sqrt{3}}</mrow>
+            <mrow>\amp\Longrightarrow\,\,-\sqrt{3}y=x</mrow>
+          </md>
+          So we are looking for a point on the unit circle in Quadrant IV where the <m>x</m>-coordinate is equal to <m>-\sqrt{3}</m> times the <m>y</m>-coordinate.  The point in question occurs at <m>-\frac{\pi}{6}</m>.  So we can state the following.
+          <md>
+            <mrow>2\sqrt{3}-2i\amp=4\left(\cos\left(-\frac{\pi}{6}\right)+i\sin\left(-\frac{\pi}{6}\right)\right)</mrow>
+            <mrow>\amp=4e^{-i\frac{\pi}{6}}</mrow>
+          </md>
+          We can now take the sixth power of the number.
+          <md>
+            <mrow>\left(2\sqrt{3}-2i\right)^6\amp=\left(4e^{-i\frac{\pi}{6}}\right)^6</mrow>
+            <mrow>\amp=4096e^{-i\pi}</mrow>
+            <mrow>\amp=4096(\cos(-\pi)+i\sin(-\pi))</mrow>
+            <mrow>\amp=4096(-1+i \cdot 0)</mrow>
+            <mrow>\amp=-4096</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Use the formula
+          <me>z_1z_2=r_1r_2(\cos(\theta_1+\theta_2)+i\sin(\theta_1+\theta_2))</me>
+          to determine the product of each pair of numbers.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statmment>
+          <p>
+            <m>z_1=9\left(\cos\left(240^{\circ}\right)+i\sin\left(240^{\circ}\right)\right)</m> and <m>z_2=4\left(\cos\left(75^{\circ}\right)+i\sin\left(75^{\circ}\right)\right)</m>
+          </p>
+        </statmment>
+        <solution>
+          <p>
+            <md>
+              <mrow>z_1z_2\amp=9 \cdot 4\left(\cos\left(240^{\circ}+75^{\circ}\right)+i\sin\left(240^{\circ}+75^{\circ}\right)\right)</mrow>
+              <mrow>\amp=36\left(\cos\left(315^{\circ}\right)+i\sin\left(315^{\circ}\right)\right)</mrow>
+              <mrow>\amp=36\left(\frac{\sqrt{2}}{2}+i \cdot -\frac{\sqrt{2}}{2}\right)</mrow>
+              <mrow>\amp=18\sqrt{2}-18i\sqrt{2}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statmment>
+          <p>
+            <m>z_1=5\left(\cos\left(\frac{2\pi}{3}\right)+i\sin\left(\frac{2\pi}{3}\right)\right)</m> and <m>z_2=10\left(\cos\left(\frac{\pi}{3}\right)+i\sin\left(\frac{\pi}{3}\right)\right)</m>
+          </p>
+        </statmment>
+        <solution>
+          <p>
+            <md>
+              <mrow>z_1z_2\amp=5 \cdot 10\left(\cos\left(\frac{2\pi}{3}+\frac{\pi}{3}\right)+i\sin\left(\frac{2\pi}{3}+\frac{\pi}{3}\right)\right)</mrow>
+              <mrow>\amp=50(\cos(\pi)+i\sin(\pi))</mrow>
+              <mrow>\amp=50(-1+i \cdot 0)</mrow>
+              <mrow>\amp=-50</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statmment>
+          <p>
+            <m>z_1=-i</m> and <m>z_2=8\left(\cos\left(60^{\circ}\right)+\sin\left(60^{\circ}\right)\right)</m>
+          </p>
+        </statmment>
+        <solution>
+          <p>
+            We first need to express <m>z_1</m> in polar form.
+            <md>
+              <mrow>z_1\amp=-i</mrow>
+              <mrow>\amp=1 \cdot \left(\cos\left(270^{\circ}\right)+i\sin\left(270^{\circ}\right)\right)</mrow>
+            </md>
+            We can now go ahead and apply the product formula.
+            <md>
+              <mrow>z_1z_2\amp=1 \cdot 8\left(\cos\left(270^{\circ}+60^{\circ}\right)+i\sin\left(270^{\circ}+60^{\circ}\right)\right)</mrow>
+              <mrow>\amp=8\left(\cos\left(330^{\circ}\right)+i\sin\left(330^{\circ}\right)\right)</mrow>
+              <mrow>\amp=8\left(\frac{\sqrt{3}}{2}+i \cdot -\frac{1}{2}\right)</mrow>
+              <mrow>\amp=4\sqrt{3}-4i</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Use the formula
+          <me>\frac{z_1}{z_2}=\frac{r_1}{r_2}(\cos(\theta_1-\theta_2)+i\sin(\theta_1-\theta_2))</me>
+          to determine the quotient, <m>\frac{z_1}{z_2}</m>, of each pair of numbers.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statmment>
+          <p>
+            <m>z_1=33\left(\cos\left(\frac{7\pi}{4}\right)+\sin\left(\frac{\pi}{4}\right)\right)</m> and <m>z_2=11\left(\cos\left(\frac{\pi}{4}\right)+i\sin\left(\frac{\pi}{4}\right)\right)</m>
+          </p>
+        </statmment>
+        <solution>
+          <p>
+            <md>
+              <mrow>\frac{z_1}{z_2}\amp=\frac{33}{11}\left(\cos\left(\frac{7\pi}{4}-\frac{\pi}{4}\right)+i\sin\left(\frac{7\pi}{4}-\frac{\pi}{4}\right)\right)</mrow>
+              <mrow>\amp=3\left(\cos\left(\frac{3\pi}{2}\right)+i\sin\left(\frac{3\pi}{2}\right)\right)</mrow>
+              <mrow>\amp=3(0+i \cdot -1)</mrow>
+              <mrow>\amp=-3i</mrow>\frac{
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statmment>
+          <p>
+            <m>z_1=-12</m> and <m>z_2=2\left(\cos\left(-120^{\circ}\right)+i\sin\left(-120^{\circ}\right)\right)</m>
+          </p>
+        </statmment>
+        <solution>
+          <p>
+            We need to first express <m>z_1</m> in polar form.
+            <md>
+              <mrow>z_1\amp=-12</mrow>
+              <mrow>\amp=12\left(\cos\left(180^{\circ}\right)+i\sin\left(120^{\circ}\right)\right)</mrow>
+            </md>
+            We can proceed to the quotient.
+            <md>
+              <mrow>\frac{z_1}{z_2}\amp=\frac{12}{2}\left(\cos\left(180^{\circ}-\left(-120^{\circ}\right)\right)+i\sin\left(180^{\circ}-\left(-120^{\circ}\right)\right)\right)</mrow>
+              <mrow>\amp=6\left(\cos\left(300^{\circ}\right)+i\sin\left(300^{\circ}\right)\right)</mrow>
+              <mrow>\amp=6\left(\frac{1}{2}+i \cdot -\frac{\sqrt{3}}{2}\right)</mrow>
+              <mrow>\amp=3-3i\sqrt{3}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statmment>
+          <p>
+            <m>z_1=14\left(\cos\left(\frac{9\pi}{7}\right)+i\sin\left(\frac{9\pi}{7}\right)\right)</m> and <m>z_2=2\left(\cos\left(\frac{29\pi}{28}\right)+i\sin\left(\frac{29\pi}{28}\right)\right)</m>
+          </p>
+        </statmment>
+        <solution>
+          <p>
+            <md>
+              <mrow>\frac{z_1}{z_2}\amp=\frac{14}{2}\left(\cos\left(\frac{9\pi}{7}-\frac{29\pi}{28}\right)+i\sin\left(\frac{9\pi}{7}-\frac{29\pi}{28}\right)\right)</mrow>
+              <mrow>\amp=7\left(\cos\left(\frac{\pi}{4}\right)+i\sin\left(\frac{\pi}{4}\right)\right)</mrow>
+              <mrow>\amp=7\left(\frac{\sqrt{2}}{2} + i \cdot \frac{\sqrt{2}}{2}\right)</mrow>
+              <mrow>\amp=\frac{7\sqrt{2}}{2}+\frac{7\sqrt{2}}{2}i</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Use de Moivre's theorem to evaluate each power.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\left(\cos\left(-135^{\circ}\right)+i\sin\left(-135^{\circ}\right)\right)^8</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\left(\cos\left(-135^{\circ}\right)+i\sin\left(-135^{\circ}\right)\right)^8\amp=\left(1 \cdot \left(\cos\left(-135^{\circ}\right)+i\sin\left(-135^{\circ}\right)\right)\right)^8</mrow>
+              <mrow>\amp=1^8\left(\cos\left(8 \cdot -135^{\circ}\right)+i\sin\left(8 \cdot -135^{\circ}\right)\right)</mrow>
+              <mrow>\amp=1 \cdot \left(\cos\left(-1080^{\circ}\right)+i\sin\left(-1080^{\circ}\right)\right)</mrow>
+              <mrow>\amp=\cos\left(0^{\circ}\right)+i\sin\left(0^{\circ}\right)</mrow>
+              <mrow>\amp=1+i \cdot 0</mrow>
+              <mrow>\amp=1</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\left(2\left(\cos\left(24^{\circ}\right)+i\sin\left(24^{\circ}\right)\right)\right)^{10}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\left(2\left(\cos\left(24^{\circ}\right)+i\sin\left(24^{\circ}\right)\right)\right)^{10}\amp=2^{10}\left(\cos\left(10 \cdot 24^{\circ}\right)+i\sin\left(10 \cdot 24^{\circ}\right)\right)</mrow>
+              <mrow>\amp=1024\left(\cos\left(240^{\circ}\right)+i\sin\left(240^{\circ}\right)\right)</mrow>
+              <mrow>\amp=1024\left(-\frac{1}{2}+i \cdot -\frac{\sqrt{3}}{2}\right)</mrow>
+              <mrow>\amp=-512-512i\sqrt{3}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>(-3+3i)^5</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We first need to express <m>-3+3i</m> in polar form.  Let's start by determining the value of <m>r</m>.
+            <md>
+              <mrow>r\amp=\sqrt{a^2+b^2}</mrow>
+              <mrow>\amp=\sqrt{(-3)^2+3^2}</mrow>
+              <mrow>\amp=3\sqrt{2}</mrow>
+            </md>
+            Because the complex number <m>-3+3i</m> plots to the point <m>(-3,3)</m> in the complex plane, we are looking for an angle that terminates in Quadrant II along whose terminal side the coordinates have opposite values.  One such angle is <m>135^{\circ}</m>.  In summary:
+            <me>3+3i=3\sqrt{2}\left(\cos\left(135^{\circ}\right)+i\sin\left(135^{\circ}\right)\right).</me>
+            We're now set to go ahead and apply de Moivre's theorem.
+            <md>
+              <mrow>(-3+3i)^5\amp=\left(3\sqrt{2}\left(\cos\left(135^{\circ}\right)+i\sin\left(135^{\circ}\right)\right)\right)^5</mrow>
+              <mrow>\amp=\left(3\sqrt{2}\right)^5\left(\cos\left(5 \cdot 135^{\circ}\right)+i\sin\left(5 \cdot 135^{\circ}\right)\right)</mrow>
+              <mrow>\amp=972\sqrt{2}\left(\cos\left(675^{\circ}\right)+i\sin\left(675^{\circ}\right)\right)</mrow>
+              <mrow>\amp=972\sqrt{2}\left(\cos\left(315^{\circ}\right)+i\sin\left(315^{\circ}\right)\right)</mrow>
+              <mrow>\amp=972\sqrt{2}\left(\frac{\sqrt{2}}{2}+i \cdot -\frac{\sqrt{2}}{2}\right)</mrow>
+              <mrow>\amp=972-972i</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine the <m>n^{\text{th}}</m> roots as directed.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the four fourth roots of <m>-8+8i\sqrt{3}</m>.  Also, state which of the roots is the principal fourth root of <m>-8+8i\sqrt{3}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            To begin, we express <m>-8+8i\sqrt{3}</m> in polar form.
+            <md>
+              <mrow>-8+8i\sqrt{3}\amp=16\left(-\frac{1}{2}+\frac{\sqrt{3}}{2}\right)</mrow>
+              <mrow>\amp=16\left(\cos\left(120^{\circ}\right)+i\sin\left(120^{\circ}\right)\right)</mrow>
+            </md>
+            We can now apply the <m>n^{\text{th}}</m> root theorem.  The four fourth roots are generated by the following formula for <m>k=0,\,1,\,2,\,3</m>.
+            <me>16^{1/4}\left(\cos\left(\frac{120^{\circ}+360^{\circ} \cdot k}{4}\right)+i\sin\left(\frac{120^{\circ}+360^{\circ} \cdot k}{4}\right)\right)</me>
+            The root when <m>k=0</m> is generated below.
+            <md>
+              <mrow>16^{1/4}\amp\left(\cos\left(\frac{120^{\circ}+360^{\circ} \cdot 0}{4}\right)+i\sin\left(\frac{120^{\circ}+360^{\circ} \cdot 0}{4}\right)\right)</mrow>
+              <mrow>\amp=2\left(\cos\left(30^{\circ}\right)+i\sin\left(30^{\circ}\right)\right)</mrow>
+              <mrow>\amp=2\left(\frac{\sqrt{3}}{2}+i \cdot \frac{1}{2}\right)</mrow>
+              <mrow>\amp=\sqrt{3}+i</mrow>
+            </md>
+            The root when <m>k=1</m> is generated below.
+            <md>
+              <mrow>16^{1/4}\amp\left(\cos\left(\frac{120^{\circ}+360^{\circ} \cdot 1}{4}\right)+i\sin\left(\frac{120^{\circ}+360^{\circ} \cdot 1}{4}\right)\right)</mrow>
+              <mrow>\amp=2\left(\cos\left(120^{\circ}\right)+i\sin\left(120^{\circ}\right)\right)</mrow>
+              <mrow>\amp=2\left(-\frac{1}{2}+i \cdot \frac{\sqrt{3}}{2}\right)</mrow>
+              <mrow>\amp=-1+i\sqrt{3}</mrow>
+            </md>
+            The root when <m>k=2</m> is generated below.
+            <md>
+              <mrow>16^{1/4}\amp\left(\cos\left(\frac{120^{\circ}+360^{\circ} \cdot 2}{4}\right)+i\sin\left(\frac{120^{\circ}+360^{\circ} \cdot 2}{4}\right)\right)</mrow>
+              <mrow>\amp=2\left(\cos\left(210^{\circ}\right)+i\sin\left(210^{\circ}\right)\right)</mrow>
+              <mrow>\amp=2\left(-\frac{\sqrt{3}}{2}+i \cdot -\frac{1}{2}\right)</mrow>
+              <mrow>\amp=-\sqrt{3}-i</mrow>
+            </md>
+            The root when <m>k=3</m> is generated below.
+            <md>
+              <mrow>16^{1/4}\amp\left(\cos\left(\frac{120^{\circ}+360^{\circ} \cdot 3}{4}\right)+i\sin\left(\frac{120^{\circ}+360^{\circ} \cdot 3}{4}\right)\right)</mrow>
+              <mrow>\amp=2\left(\cos\left(300^{\circ}\right)+i\sin\left(300^{\circ}\right)\right)</mrow>
+              <mrow>\amp=2\left(\frac{1}{2}+i \cdot -\frac{\sqrt{3}}{2}\right)</mrow>
+              <mrow>\amp=1-i\sqrt{3}</mrow>
+            </md>
+            The principal fourth root is generated when <m>k=0</m>.  That fourth root of <m>-8+8i\sqrt{3}</m> is <m>\sqrt{3}+i</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the three cube roots of <m>-27</m>.  Also, state which of those roots is the principal cube root of <m>-27</m>. 
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Our first task is to express <m>-27</m> in polar form.
+            <md>
+              <mrow>-27\amp=27(-1+i \cdot 0)</mrow>
+              <mrow>\amp=27(\cos(\pi)+i\sin(\pi))</mrow>
+            </md>
+            The third roots are generated by the following formula for <m>k=1,\,1,\,2,\,3</m>.
+            <me>27^{1/3}\left(\cos\left(\frac{\pi +2\pi k}{3}\right)+i\sin\left(\frac{\pi +2\pi k}{3}\right)\right)</me>
+            The principal third root is generated when <m>k=0</m>.  We determine that root below.
+            <md>
+              <mrow>27^{1/3}\amp\left(\cos\left(\frac{\pi +2\pi \cdot 0}{3}\right)+i\sin\left(\frac{\pi +2\pi \cdot 0}{3}\right)\right)</mrow>
+              <mrow>\amp=3\left(\cos\left(\frac{\pi}{3}\right)+i\sin\left(\frac{\pi}{3}\right)\right)</mrow>
+              <mrow>\amp=3\left(\frac{1}{2}+i \cdot \frac{\sqrt{3}}{2}\right)</mrow>
+              <mrow>\amp=\frac{3}{2}+\frac{3\sqrt{3}}{2}i</mrow>
+            </md>
+            The third root generated when <m>k=1</m> is derived below.
+            <md>
+              <mrow>27^{1/3}\amp\left(\cos\left(\frac{\pi +2\pi \cdot 1}{3}\right)+i\sin\left(\frac{\pi +2\pi \cdot 1}{3}\right)\right)</mrow>
+              <mrow>\amp=3(\cos(\pi)+i\sin(\pi))</mrow>
+              <mrow>\amp=3(-1+i \cdot 0)</mrow>
+              <mrow>\amp=-3</mrow>
+            </md>
+            We finish up by applying the formula when <m>k=2</m>.
+            <md>
+              <mrow>27^{1/3}\amp\left(\cos\left(\frac{\pi +2\pi \cdot 2}{3}\right)+i\sin\left(\frac{\pi +2\pi \cdot 2}{3}\right)\right)</mrow>
+              <mrow>\amp=3\left(\cos\left(\frac{5\pi}{3}\right)+i\sin\left(\frac{5\pi}{3}\right)\right)</mrow>
+              <mrow>\amp=3\left(\frac{1}{2}-i \cdot \frac{\sqrt{3}}{2}\right)</mrow>
+              <mrow>\amp=\frac{3}{2}-\frac{3\sqrt{3}}{2}i</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the principal sixth root of <m>-64i</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We first need to express <m>-64i</m> in polar form.
+            <md>
+              <mrow>-64i\amp=64(0+i \cdot -1)</mrow>
+              <mrow>\amp=64\left(\cos\left(\frac{3\pi}{2}\right)+\sin\left(\frac{3\pi}{2}\right)\right)</mrow>
+            </md>
+            The principal sixth root of <m>-64i</m> is derive below.
+            <md>
+              <mrow>64^{1/6}\amp\left(\cos\left(\frac{\frac{3\pi}{2}+2\pi \cdot 0}{6}\right)+i\sin\left(\frac{\frac{3\pi}{2}+2\pi \cdot 0}{6}\right)\right)</mrow>
+              <mrow>\amp=2\left(\cos\left(\frac{\pi}{4}\right)+i\sin\left(\frac{\pi}{4}\right)\right)</mrow>
+              <mrow>\amp=2\left(\frac{\sqrt{2}}{2}+i \cdot \frac{\sqrt{2}}{2}\right)</mrow>
+              <mrow>\amp=\sqrt{2}+i\sqrt{2}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Use Euler's formula and rules of exponents to simplify each expression.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine <m>\frac{z_1}{z_2}</m> where <m>z_1=15\left(\cos\left(\frac{\pi}{3}\right)+i\sin\left(\frac{\pi}{3}\right)\right)</m> and <m>z_2=3\left(\cos\left(\frac{\pi}{3}\right)+i\sin\left(\frac{\pi}{3}\right)\right)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>z_1z_2\amp=\frac{15e^{i\frac{\pi}{3}}}{3e^{i\frac{\pi}{6}}}</mrow>
+              <mrow>\amp=5e^{i\frac{\pi}{6}}</mrow>
+              <mrow>\amp=5\left(\cos\left(\frac{\pi}{6}\right)+i\sin\left(\frac{\pi}{6}\right)\right)</mrow>
+              <mrow>\amp=5\left(\frac{\sqrt{3}}{2}+i \cdot \frac{1}{2}\right)</mrow>
+              <mrow>\amp=\frac{5\sqrt{3}}{2}+\frac{5}{2}i</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the value of <m>\left(-\frac{\sqrt{3}}{2}+\frac{1}{2}\right)^{11}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\left(-\frac{\sqrt{3}}{2}+\frac{1}{2}\right)^{11}\amp=\left(\cos\left(\frac{5\pi}{6}\right)+i\sin\left(\frac{5\pi}{6}\right)\right)^{11}</mrow>
+              <mrow>\amp=\left(e^{i\frac{5\pi}{6}}\right)^{11}</mrow>
+              <mrow>\amp=e^{i\frac{55\pi}{6}}</mrow>
+              <mrow>\amp=\cos\left(\frac{55\pi}{6}\right)+i\sin\left(\frac{55\pi}{6}\right)</mrow>
+              <mrow>\amp=\cos\left(\frac{7\pi}{6}\right)+i\sin\left(\frac{7\pi}{6}\right)</mrow>
+              <mrow>\amp=-\frac{\sqrt{3}}{2}-\frac{1}{2}i</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>Determine the value of <m>wz^2</m> where <m>w=\frac{\sqrt{2}}{2}-\frac{\sqrt{2}}{2}i</m> and <m>z=\frac{\sqrt{2}}{2}+\frac{\sqrt{2}}{2}i</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>wz^2\amp=\left(\cos\left(-\frac{\pi}{4}\right)+i\sin\left(-\frac{\pi}{4}\right)\right)\left(\cos\left(\frac{\pi}{4}\right)+i\sin\left(\frac{\pi}{4}\right)\right)^2</mrow>
+              <mrow>\amp=e^{-i\frac{\pi}{4}} \cdot \left(e^{i\frac{\pi}{4}}\right)^2</mrow>
+              <mrow>\amp=e^{-i\frac{\pi}{4}} \cdot e^{i\frac{\pi}{2}}</mrow>
+              <mrow>\amp=e^{i\frac{\pi}{4}}</mrow>
+              <mrow>\amp=\cos\left(\frac{\pi}{4}\right)+i\sin\left(\frac{\pi}{4}\right)</mrow>
+              <mrow>\amp=\frac{\sqrt{2}}{2}+\frac{\sqrt{2}}{2}i</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>   
+
+</section>

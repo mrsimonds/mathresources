@@ -10,15 +10,17 @@
 <!-- ********************************************************************* -->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="parabolas-videos">
-    <title>Videos Created by Ann Cary and Scot Leavitt.</title>
-      <p>The links take you to YouTube Playlists which will open either in a new window or in a Youtube App.
-        <ul>
-          <li>
-            <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-eECn1ZvhdPfvjEfmws278m" target="blank">Properties of quadratic functions</url>
-          </li>
-          <li>
-             <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-eMuMnKbNnpaRxES40hW87w" target="blank">Graphing quadratic functions</url>
-          </li>
-        </ul>
-      </p>
+  <title>Videos Created by Ann Cary and Scot Leavitt</title>
+
+  <p>The links take you to YouTube Playlists which will open either in a new window or in a Youtube App.
+    <ul>
+      <li>
+        <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-eECn1ZvhdPfvjEfmws278m" target="blank">Properties of quadratic functions</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-eMuMnKbNnpaRxES40hW87w" target="blank">Graphing quadratic functions</url>
+      </li>
+    </ul>
+  </p>
+  
 </section>

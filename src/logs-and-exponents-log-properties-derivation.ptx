@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="logs-and-exponents-log-properies-derivation">
+  <title>Derivations of the Properties of Logarithms</title>
+
+  <p>
+    In this section we will derive several properties of logarithms.  In the next section we will see several examples and encounter several exercises where the properties are applied to logarithmic expressions.
+  </p>
+  <p>
+    For each of the stated properties, In each expression, <m>b</m>, <m>x</m>, <m>A</m>, and <m>B</m> all represent positive real numbers and <m>b \neq 1</m>.  The variable <m>n</m> can represent any real number.
+  </p>
+
+  <paragraphs>
+    <title><m>\highlight{\log_{b}(AB)=\log_{b}(A)+\log_{b}(B)}</m></title>
+
+    <p></p>
+    <p>
+      This property is the companion of the product rule of exponents:
+      <me>b^x \cdot b^y=b^{x+y}.</me>
+      Specifically, suppose that
+      <me>\log_b(A)=x\,\,\text{and}\,\,\log_b(B)=y.</me>
+      It immediately follows that
+      <me>b^x=A\,\,\text{and}\,\,b^y=B.</me>
+      We now have the following.
+      <md>
+        <mrow>AB\amp=b^xb^y</mrow>
+        <mrow>\amp=b^{x+y}</mrow>
+      </md>
+      Since <m>AB=b^{x+y}</m>, it follow that <m>\log_b(AB)=x+y</m>.  Putting it all together we reach our conclusion.
+      <md>
+        <mrow>\log_b(AB)\amp=x+y</mrow>
+        <mrow>\amp=\log_b(A)+\log_b(B)</mrow>
+      </md>
+    </p>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title><m>\highlight{\log_{b}\left(\frac{A}{B}\right)=\log_{b}(A)-\log_{b}(B)}</m></title>
+
+    <p></p>
+    <p>
+      This property is the companion of the quotient rule of exponents:
+      <me>\frac{b^x}{b^y}=b^{x-y}.</me>
+      Specifically, suppose that
+      <me>\log_b(A)=x\,\,\text{and}\,\,\log_b(B)=y.</me>
+      It immediately follows that
+      <me>b^x=A\,\,\text{and}\,\,b^y=B.</me>
+      We now have the following.
+      <md>
+        <mrow>\frac{A}{B}\amp=\frac{b^x}{b^y}</mrow>
+        <mrow>\amp=b^{x-y}</mrow>
+      </md>
+      Since <m>\frac{A}{B}=b^{x-y}</m>, it follow that <m>\log_b\left(\frac{A}{B}\right)=x-y</m>.  Putting it all together we reach our conclusion.
+      <md>
+        <mrow>\log_b\left(\frac{A}{B}\right)\amp=x-y</mrow>
+        <mrow>\amp=\log_b(A)-\log_b(B)</mrow>
+      </md>
+    </p>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title><m>\highlight{log_{b}\left(A^{n}\right)=n \cdot \log_{b}(A)}</m></title>
+
+    <p></p>
+    <p>
+      This property is the companion of the power-to-a-power rule of exponents:
+      <me>\left(b^x\right)^n=b^{xn}</me>
+      Specifically, suppose that
+      <me>\log_b(A)=x.</me>
+      It immediately follows that
+      <me>b^x=A.</me>
+      We now have the following.
+      <md>
+        <mrow>A^n\amp=\left(b^x\right)^n</mrow>
+        <mrow>\amp=b^{nx}</mrow>
+      </md>
+      Since <m>A^n=b^{nx}</m>, it follow that <m>\log_b\left(A^n\right)=nx</m>.  Putting it all together we reach our conclusion.
+      <md>
+        <mrow>\log_b\left(A^n\right)\amp=nx</mrow>
+        <mrow>\amp=n \cdot \log(A)</mrow>
+      </md>
+    </p>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title><m>\highlight{\log_{b}(b)=1\,\,\text{and}\,\,\log_{b}(1)=0\,\,\text{and}\log_{b}(b^x)=x}</m></title>
+
+    <p></p>
+    <p>
+      The fact that <m>\log_b(b)=1</m> is an immediate consequence of the fact that <m>b^1=b</m>.
+    </p>
+    <p>
+      The fact that <m>\log_b(1)=0</m> is an immediate consequence of the fact that <m>b^0=1</m>.
+    </p>
+    <p>
+      The fact that <me>\log_\highlightr{b}(\highlight{b^x})=\highlightg{x}</me> is an immediate consequence of the fact that <me>\highlightr{b}^\highlightg{x}=\highlight{b^x}.</me>
+    </p>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title><m>\highlight{b^{\log_{b}(A)}=A}</m></title>
+
+    <p></p>
+    <p>
+      The fact that <me>\highlightr{b}^{\highlight{\log_{b}(A)}}=\highlightg{A}</me>is an immediate consequence of the fact that
+      <me>\log_\highlightr{b}(\highlightg{A})=\highlight{\log_{b}(A)}.</me>
+    </p>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title><m>\highlight{\log_b(x)=\frac{\log(x)}{\log(b)}\,\,\text{(This property is called "Change of Base.")}}</m></title>
+
+    <p></p>
+    <p>
+      We begin by assuming that <me>\log_b(x)=n</me> from which it follows that <me>b^n=x</me>.  We now equate the log-base-ten of the last two expressions and apply the rule <m>\log\left(b^{n}\right)=n \cdot \log(b)</m>. We solve the resultant equation for <m>n</m>.
+      <md>
+        <mrow>b^n\amp=x</mrow>
+        <mrow>\log\left(b^n\right)\amp=\log(x)</mrow>
+        <mrow>n \cdot \log(b) \amp=\log(x)</mrow>
+        <mrow>\divideunder{n \cdot \log(b)}{\log(b)}\amp=\divideunder{\log(x)}{\log(b)}</mrow>
+        <mrow>n\amp=\frac{\log(x)}{\log(b)}</mrow>
+      </md>
+      Our conclusion is at hand, because our starting point was the assumption that <m>\log_b(x)=n</m>.  Putting the pieces together we have the following.
+      <md>
+        <mrow>\log_b(x)\amp=n</mrow>
+        <mrow>\amp=\frac{\log(x)}{\log(b)}</mrow>
+      </md>
+    </p>
+    <p>
+      <alert>Note</alert>
+    </p>
+    <p>
+      I used a base of ten on the right side of the stated change of base formula.  I could have used any base (the same in the numerator and denominator).  I chose to use base 10 to minimize symbols and because most scientific calculators afford easy access to a log-base-10 key.
+    </p>
+
+  </paragraphs>
+
+</section>

@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="trigonometry-fundamental-identities">
+  <title>The Fundamental Trigonometric Identities </title>
+
+  <p>
+    Because the six basic trigonometric functions are all defined in terms of the <m>x</m> and <m>y</m> coordinates of a point on the unit circle, there are several fundamental relationships that exist between the function - these relationships are called <term>the fundamental trigonometric identities</term>.
+  </p>
+  <p>
+    Four of the fundamental identities relates to the fact that the tangent, cotangent, secant, and cosecant functions can all be expressed in terms of the sine function and/or the cosine function.  To wit: 
+    <me>\tan(\theta)=\frac{\sin(\theta)}{\cos(\theta)}\,\,\,\,\,\,\,\,\,\,\,\cot(\theta)=\frac{\cos(\theta)}{\sin(\theta)}\,\,\,\,\,\,\,\,\,\,\,\sec(\theta)=\frac{1}{\cos(\theta)}\,\,\,\,\,\,\,\,\,\,\,\csc(\theta)=\frac{1}{\sin(\theta)}</me>
+  </p>
+  <p>
+    The fact that the other four functions can each be expressed in terms of the sine and/or cosine functions follows directly from the definitions of the six basic trigonometric identities.  For example, if the angle <m>\theta</m>, drawn in standard position, intersects the unit circle at the point <m>(x,y)</m>, then we have the following.
+    <md>
+      <mrow>\tan(\theta)\amp=\frac{y}{x}</mrow>
+      <mrow>\amp=\frac{\sin(\theta)}{\cos(\theta)}</mrow>
+    </md>
+    Two of the identities already stated are called <term>reciprocal identities</term>.  All together there are three reciprocal identities, each of which can be stated in multiple ways.  The three reciprocal identities follow.
+    <me>\sec(\theta)=\frac{1}{\cos(\theta)}\,\,\,\,\,\,\,\,\,\,\,\csc(\theta)=\frac{1}{\sin(\theta)}\,\,\,\,\,\,\,\,\,\,\,\cot(\theta)=\frac{1}{\tan(\theta)}</me>
+  </p>
+  <p>
+    As already mentioned, these identities could be stated in multiple ways. For example, the identity <m>\sec(\theta)=\frac{1}{\cos(\theta)}</m> immediately implies the equivalent identity <m>\sec(\theta)\cos(\theta)=1</m> which in turn implies the identity <m>\cos(\theta)=\frac{1}{\sec(\theta)}</m>.
+  </p>
+  <p>
+    In general, you just need to remember the three pairs of reciprocal trigonometric functions: the cosine function and the secant function are reciprocal functions, the sine function and the cosecant function are reciprocal functions, and the tangent function and the cotangent function are reciprocal functions.
+  </p>
+  <p>
+    The other two identities that have already been stated are called <term>quotient identities</term>.  One statement of the two quotient identities follows.
+    <me>\tan(\theta)=\frac{\sin(\theta)}{\cos(\theta)}\,\,\,\,\,\,\,\,\,\,\,\cot(\theta)=\frac{\cos(\theta)}{\sin(\theta)}</me>
+    Again, each of these identities can be stated in more than one way.  For example, <m>\tan(\theta)=\frac{\sin(\theta)}{\cos(\theta)}</m> is equivalent to <m>\tan(\theta)\cos(\theta)=\sin(\theta)</m>.  That said, it is not common to reference the quotient identities in any form other those stated above.
+  </p>
+  <p>
+    There is one final category of fundamental trigonometric identities - <term>Pythagorean identities</term>.
+  </p>
+  <p>
+    Suppose that <m>\theta</m>, when drawn in standard position, intersects the unit circle at the point <m>(x,y)</m>.  Then by definition we have <m>\cos(\theta)=x</m> and <m>\sin(\theta)=y</m>.  The equation of the unit circle is <m>x^2+y^2=1</m>, so using substitution we can conclude that regardless of the value of <m>\theta</m>,
+    <me>(\cos(\theta))^2+(\sin(\theta))^2=1</me>.
+    Because this identity is referenced in multiple contexts, there is a writing convention to "abbreviate" <m>(\cos(\theta))^2</m> as <m>\cos^2(\theta)</m> and <m>(\sin(\theta))^2</m> as <m>\sin^2(\theta)</m>. For reasons that escape the author's imagination, this particular identity is almost always expressed with the sine term written or said first.  Altogether there are three Pythagorean identities and they follow.
+    <me>\sin^2(\theta)+\cos^2(\theta)=1\,\,\,\,\,\,\,\,\,\,\tan^2(\theta)+1=\sec^2(\theta)\,\,\,\,\,\,\,\,\,\,1+\cot^2(\theta)=\csc^2(\theta)</me>
+  </p>
+  <p>
+    The two newly introduced Pythagorean identities can be derived from the identity <m>\sin^2(\theta)+\cos^2(\theta)=1</m> by dividing both sides of that identity by either <m>\cos^2(\theta)</m> or <m>\sin^2(\theta)</m>.  The derivation of the identity <m>\tan^2(\theta)+1=\sec^2(\theta)</m> follows.
+    <md>
+      <mrow>\sin^2(\theta)+\cos^2(\theta)\amp=1</mrow>
+      <mrow>\frac{\sin^2(\theta)+\cos^2(\theta)}{\cos^2(\theta)}\amp=\frac{1}{\cos^2(\theta)}</mrow>
+      <mrow>\frac{\sin^2(\theta)}{\cos^2(\theta)}+\frac{\cos^2(\theta)}{\cos^2(\theta)}\amp=\frac{1}{\cos^2(\theta)}</mrow>
+      <mrow>\left(\frac{\sin(\theta)}{\cos(\theta)}\right)^2+1\amp=\left(\frac{1}{\cos(\theta)}\right)^2</mrow>
+      <mrow>\left(\tan(\theta)\right)^2+1\amp=\left(\sec(\theta)\right)^2</mrow>
+      <mrow>\tan^2(\theta)+1\amp=\sec^2(\theta)</mrow>
+    </md>
+  </p>
+  <p>
+    As with the other identities, the Pythagorean identities can be stated in equivalent forms.  In this case four of the equivalent forms are referenced rather frequently.  Below you will find the most common statements of the Pythagorean identities.
+    <me>\sin^2(\theta)+cos^2(\theta)=1\,\,\,\,\,\,\,\,\,\,1-\sin^2(\theta)=\cos^2(\theta)\,\,\,\,\,\,\,\,\,\,1-\cos^2(\theta)=\sin^2(\theta)</me>
+    <me>\tan^2(\theta)+1=\sec^2(\theta)\,\,\,\,\,\,\,\,\,\,\sec^2(\theta)-1=\tan^2(\theta)</me>
+    <me>1+\cot^2(\theta)=\csc^2(\theta)\,\,\,\,\,\,\,\,\,\,\csc^2(\theta)-1=\cot^2(\theta)</me>
+  </p>
+  <p>
+    When solving equations involving trigonometric functions and when performing calculus operations on trigonometric functions, it is frequently necessary to use the fundamental trigonometric identities to manipulate a given trigonometric expression into an equivalent expression.  Such manipulation is the focus of the remainder of this section.  This topic is loosely referred to as <term>proving trigonometric identities</term>.
+  </p>
+  <p>
+    In the examples that follow and in most of the exercises at the end of the section, an equivalence of trigonometric equivalence is stated and the objective is to prove the truth of the statement. In each case we will start with the expression on one side of the equal sign and use algebra and trigonometric identities to step-by-step alter the expression until it is finally identical to the expression that originally appeared on the other side of the equal sign.  There are several things that you should keep in mind while proving an identity.
+    <ul>
+      <li>
+        <p>
+          It is generally easier to manipulate a complicated expression into a simpler expression than to manipulate a simple expression into a more complicated expression.
+        </p>
+      </li>
+      <li>
+        <p>
+          Unless there is an obvious Pythagorean identity that can be applied, it can sometimes be helpful to first replace all occurrences of the tangent, cotangent, secant, and cosecant functions with their equivalent expressions involving the sine and/or cosine functions.
+        </p>
+      </li>
+      <li>
+        <p>
+          If you can't see a clear path to the other side, get out some scratch paper and try manipulating the other side - sometimes you will discover a common middle ground between the two sides.  In your formal proof, however, you want to follow the side A to side B protocol.
+        </p>
+      </li>
+    </ul>
+  </p>
+
+   <example>
+    <statement>
+      <p>
+        Verify the identity <m>(1+\sin(\theta))(1-\sin(\theta))=\frac{1}{\sec^2(\theta)}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We certainly want to begin with the more complicated side, as there are "obvious" actions that can be taken on the expression on the left side of the equal sign,  Specifically, we can FOIL the expression which will result in <m>1-\sin^2(\theta)</m>.  We can then use a Pythagorean identity to replace that with <m>\cos^2(\theta)</m> and a reciprocal identity to secure <m>\frac{1}{\sec^(\theta)}</m>.  Let's do it.
+        <md>
+          <mrow>(1+\sin(\theta))(1-\sin(\theta))\amp=1-\sin^2(\theta)\amp\highlight{\text{FOIL}}</mrow>
+          <mrow>\amp=\cos^2(\theta)\amp\highlight{\text{Pythagorean identity}}</mrow>
+          <mrow>\amp=(\cos(\theta))^2\amp\highlight{\text{Equivalent expression}}</mrow>
+          <mrow>\amp=\left(\frac{1}{\sec(\theta)}\right)^2\amp\highlight{\text{Reciprocal identity}}</mrow>
+          <mrow>\amp=\frac{1}{\sec^2(\theta)}\amp\highlight{\text{Equivalent expression}}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+
+  <example>
+    <statement>
+      <p>
+        Verify the identity <m>\frac{\cot(t)}{\sec(t)}=\frac{1}{\sin(t)}-\frac{1}{\csc(t)}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        It's probably going to be easier to turn two terms into one than the other way around.  It's also probably going to be easier to establish the connection using only sine and cosine terms.  Before we start the actual proof, let's see how the left side simplifies in terms of sine and cosine so that we know what we're aiming for.
+        <md>
+          <mrow>\frac{\cot(t)}{\sec(t)}\amp=\frac{\frac{\cos(t)}{\sin(t)}}{\frac{1}{\cos(t)}}\amp\highlight{\text{Quotient and Reciprocal identities}}</mrow>
+          <mrow>\amp=\frac{\cos(t)}{\sin(t)} \cdot \frac{\cos(t)}{1}\amp\highlight{\text{Equivalent expression}}</mrow>
+          <mrow>\amp=\frac{\cos^2(t)}{\sin(t)}\amp\highlight{\text{Equivalent expression}}</mrow>
+        </md>
+        OK, if we can manipulate the right side of the original identity into <m>\frac{\cos^2(t)}{\sin(t)}</m>, then we can retrace the steps above in reverse order to complete our proof.
+        <md>
+          <mrow>\frac{1}{\sin(t)}-\frac{1}{\csc(t)}\amp=\frac{1}{\sin(t)}-\sin(t)\amp\highlight{\text{Reciprocal identity}}</mrow>
+          <mrow>\amp=\frac{1}{\sin(t)}-\frac{\sin(t)}{1} \cdot \frac{\sin(t)}{\sin(t)}\amp\highlight{\text{Common denominators}}</mrow>
+          <mrow>\amp=\frac{1-\sin^2(t)}{\sin(t)}\amp\highlight{\text{Subtraction of fractions}}</mrow>
+          <mrow>\amp=\frac{\cos^2(t)}{\sin(t)}\amp\highlight{\text{Pythagorean identity}}</mrow>
+          <mrow>\amp=\frac{\cos(t)}{\sin(t)} \cdot \frac{\cos(t)}{1}\amp\highlight{\text{Equivalent expression}}</mrow>
+          <mrow>\amp=\frac{\frac{\cos(t)}{\sin(t)}}{\frac{1}{\cos(t)}}\amp\highlight{\text{Equivalent expression}}</mrow>
+          <mrow>\amp=\frac{\cot(t)}{\sec(t)}\amp\highlight{\text{Quotient/reciprocal identities}}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+
+  <example>
+    <statement>
+      <p>
+        Verify the identity <m>\frac{\csc(t)}{\csc(t)+1}=\frac{1-\sin(t)}{\cos^2(t)}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        In this proof I am going to employ a technique that almost everybody has to be shown - i.e., if you think "Gosh, I'd never have thought of that on my own" you're in the majority.  Once  you see the technique a couple of times, however, you're much more likely to think to use it on your own in the future.
+      </p>
+      <p>
+        We're going begin with the expression on the right side of the equal sign.  I'm observing that if we had <m>1-\sin^2(t)</m> in the numerator then we could replace it with <m>\cos^2(t)</m> and use that to cancel the factor of <m>\cos^2(t)</m> in the denominator of the expression.  We can create <m>1-\sin^2(t)</m> in the numerator by multiplying the numerate by its conjugate.   Of course, we'll have to multiply the denominator by the same expression, but this is a good thing because we need to end up with two terms in the denominator.  Let's carry this out and then force some reciprocal identities to complete the proof.
+        <md>
+          <mrow>\frac{1-\sin(t)}{\cos^2(t)}\amp=\frac{1-\sin(t)}{\cos^2(t)} \cdot \frac{1+\sin(t)}{1+\sin(t)}\amp\highlight{\text{Introduce conjugate}}</mrow>
+          <mrow>\amp=\frac{1-\sin^2(t)}{\cos^2(t)(1+\sin(t))}\amp\highlight{\text{Simplification}}</mrow>
+          <mrow>\amp=\frac{\cos^2(t)}{\cos^2(t)(1+\sin(t))}\amp\highlight{\text{Pythagorean identity}}</mrow>
+          <mrow>\amp=\frac{1}{1+\sin(t)}\amp\highlight{\text{Common factors}}</mrow>
+          <mrow>\amp=\frac{1}{1+\sin{t}} \cdot \frac{\frac{1}{\sin(t)}}{\frac{1}{\sin(t)}}\amp\highlight{\text{Creating }\csc(t)}</mrow>
+          <mrow>\amp=\frac{\frac{1}{\sin(t)}}{\frac{1}{\sin(t)}+\frac{\sin(t)}{\sin(t)}}\amp\highlight{\text{Distribution}}</mrow>
+          <mrow>\amp=\frac{\csc(t)}{\csc(t)+1}\amp\highlight{\text{Pythagorean identity}}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Verify the identity <m>\frac{\tan^2(t)}{\sec(t)-1}=\frac{1+\cos(t)}{\cos(t)}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Let's employ a technique similar to the one shown in the previous example.  If we multiply the denominator on the left side of the equation by its conjugate, the denominator will become <m>\sec^2(t)-1</m> which we can replace with <m>\tan^2(t)</m>.  Once we cancel the common factors of <m>\tan^2(t)</m>, we will hopefully have a clear path to the expression on the right side of the equal sign.
+        <md>
+          <mrow>\frac{\tan^2(t)}{\sec(t)-1}\amp=\frac{\tan^2(t)}{\sec(t)-1} \cdot \frac{\sec(t)+1}{\sec{t}+1}\amp\highlight{\text{Introduce conjugate}}</mrow>
+          <mrow>\amp=\frac{\tan^2(t)(\sec(t)+1)}{\sec^2(t)-1}\amp\highlight{\text{Simplification}}</mrow>
+          <mrow>\amp=\frac{\tan^2(t)(\sec(t)+1)}{\tan^2(t)}\amp\highlight{\text{Pythagorean identity}}</mrow>
+          <mrow>\amp=\sec(t)+1\amp\highlight{\text{Simplification}}</mrow>
+          <mrow>\amp=\frac{1}{\cos(t)}+1\amp\highlight{\text{Reciprocal identity}}</mrow>
+          <mrow>\amp=\frac{1}{\cos(t)}+\frac{\cos(t)}{\cos(t)}\amp\highlight{\text{Common denominator}}</mrow>
+          <mrow>\amp=\frac{1+\cos(t)}{\cos(t)}\amp\highlight{\text{Addition of fractions}}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Verify the identity <m>\frac{\sec(t)+\csc(t)}{\tan(t)+\cot(t)}=\sin(t)+\cos(t)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Sometimes you have to just dive in and hope that something good comes from it.  Let's start with the left side, change everything to sines and cosines, simplify, and reassess.
+        <md>
+          <mrow>\frac{\sec(t)+\csc(t)}{\tan(t)+\cos(t)}\amp=\frac{\frac{1}{\cos(t)}+\frac{1}{\sin(t)}}{\frac{\sin(t)}{\cos(t)}+\frac{\cos(t)}{\sin(t)}}\amp\highlight{\text{Reciprocal/Quotient ids}}</mrow>
+          <mrow>\amp=\frac{\frac{1}{\cos(t)}+\frac{1}{\sin(t)}}{\frac{\sin(t)}{\cos(t)}+\frac{\cos(t)}{\sin(t)}} \cdot \frac{\sin(t)\cos(t)}{\sin(t)\cos(t)}\amp\highlight{\text{Simplification step}}</mrow>
+          <mrow>\amp=\frac{\sin(t)+\cos(t)}{\sin^2(t)+\cos^2(t)}\amp\highlight{\text{Distribute and reduce}}</mrow>
+          <mrow>\amp=\frac{\sin(t)+\cos(t)}{1}\amp\highlight{\text{Pythagorean identity}}</mrow>
+          <mrow>\amp=\sin(t)+\cos(t)\amp\highlight{\text{Simplification}}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Verify the identity <m>(\sin(\theta)+\cos(\theta))^4=(1+2\sin(\theta)\cos(\theta))^2</m>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The first thing I notice is the mismatched exponents.  We can't simply square the right side to make the exponent four, because unless <m>u=0</m> or <m>u= \pm 1</m>, <m>u^2 \neq u^4</m>.  We can, however, use the fact that <m>u^4=(u^2)^2</m> to reduce the outermost exponent on the left side to two.  We can then expand the inside expression and reassess.
+        <md>
+          <mrow>(\sin(\theta)\amp+\cos(\theta))^4</mrow>
+          <mrow>\amp=\left((\sin(\theta)+\cos(\theta))^2\right)^2\amp\highlight{\text{Rule of exponents}}</mrow>
+          <mrow>\amp=\left(\sin^2(\theta)+2\sin(\theta)\cos(\theta)+\cos^2(\theta)\right)^2\amp\highlight{\text{Expand the inside}}</mrow>
+          <mrow>\amp=(1+2\sin(\theta)\cos(\theta))^2\amp\highlight{\sin^2(\theta)+\cos^2(\theta)=1}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Verify the identity <m>\frac{\cot(t)\cos(t)}{\cot(t)+\cos(t)}=\frac{\cot(t)-\cos(t)}{\cot(t)\cos(t)}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The first thing I notice is that the denominator on the left is the conjugate of the numerator on the right, so if we multiply the numerator and denominator on the left by the conjugate of the denominator half of our transition will be complete.  We'll have to hope that the other half works itself out as well.
+        <md>
+          <mrow>\amp\frac{\cot(t)\cos(t)}{\cot(t)+\cos(t)}</mrow>
+          <mrow>\amp=\frac{\cot(t)\cos(t)}{\cot(t)+\cos(t)} \cdot \frac{\cot(t)-\cos(t)}{\cot(t)-\cos(t)}\amp\highlight{\text{Introduce conjugate}}</mrow>
+          <mrow>\amp=\frac{\cot(t)\cos(t)(\cot(t)-\cos(t))}{\cot^2(t)-\cos^2(t)}\amp\highlight{\text{Simplification}}</mrow>
+          <mrow>\amp=\frac{\frac{\cos(t)}{\sin(t)} \cdot \cos(t)(\cot(t)-\cos(t))}{\frac{\cos^2(t)}{\sin^2(t)}-\cos^2(t)}\amp\highlight{\text{Quotient identity}}</mrow>
+          <mrow>\amp=\frac{\frac{\cos^2(t)}{\sin(t)}(\cot(t)-\cos(t))}{\frac{\cos^2(t)}{\sin^2(t)}-\cos^2(t)} \cdot \frac{\sin^2(t)}{\sin^2(t)} \amp\highlight{\text{Simplification step}}</mrow>
+          <mrow>\amp=\frac{\cos^2(t)\sin(t)(\cot(t)-\cos(t))}{\cos^2(t)-\cos^2(t)\sin^2(t)}\amp\highlight{\text{Distribute and simplify}}</mrow>
+          <mrow>\amp=\frac{\cos^2(t)\sin(t)(\cot(t)-\cos(t))}{\cos^2(t)(1-\sin^2(t))}\amp\highlight{\text{Factor denominator}}</mrow>
+          <mrow>\amp=\frac{\sin(t)(\cot(t)-\cos(t))}{1-\sin^2(t)}\amp\highlight{\text{Common factors}}</mrow>
+          <mrow>\amp=\frac{\sin(t)(\cot(t)-\cos(t))}{\cos^2(t)}\amp\highlight{\text{Pythagorean identity}}</mrow>
+          <mrow>\amp=\frac{\sin(t)(\cot(t)-\cos(t))}{\cos^2(t)} \cdot \frac{\frac{1}{\sin(t)}}{\frac{1}{\sin(t)}}\amp\highlight{\text{Step to goal}}</mrow>
+          <mrow>\amp=\frac{\cot(t)-\cos(t)}{\frac{\cos^2(t)}{\sin(t)}}\amp\highlight{\text{Distribute and simplify}}</mrow>
+          <mrow>\amp=\frac{\cot(t)-\cos(t)}{\frac{\cos(t)}{\sin(t)} \cdot \cos(t)}\amp\highlight{\text{Equivalent expression}}</mrow>
+          <mrow>\amp=\frac{\cot(t)-\cos(t)}{\cot(t)\cos(t)}\amp\highlight{\text{Quotient identity}}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Verify the identity <m>\frac{\cos(\theta)}{1-\sin(\theta)}-\tan(\theta)=\sec(\theta)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We're certainly going to start with the left side.  One might want to begin by building a common denominator, but we're better off using the conjugate technique on the leftmost expression first - this will (eventually) result in a denominator of <m>\cos(t)</m> which is what we ultimately want.
+        <md>
+          <mrow>\frac{\cos(\theta)}{1-\sin(\theta)}\amp-\cot(\theta)</mrow>
+          <mrow>\amp=\frac{\cos(\theta)}{1-\sin(\theta)} \cdot \frac{1+\sin(\theta)}{1+\sin(\theta)} -\tan(\theta)\amp\highlight{\text{Introduce conjugate}}</mrow>
+          <mrow>\amp=\frac{\cos(\theta)(1+\sin(\theta))}{1-\sin^2(\theta)}-\tan(\theta)\amp\highlight{\text{Simplify}}</mrow>
+          <mrow>\amp=\frac{\cos(\theta)(1+\sin(\theta))}{\cos^2(\theta)}-\tan(\theta)\amp\highlight{\text{Pythagorean identity}}</mrow>
+          <mrow>\amp=\frac{1+\sin(\theta)}{\cos(\theta)}-\frac{\sin(\theta)}{\cos(\theta)}\amp\highlight{\text{Reduce frac./Quotient ident.}}</mrow>
+          <mrow>\amp=\frac{1+\sin(\theta)-\sin(\theta)}{\cos(\theta)}\amp\highlight{\text{Subtract fractions}}</mrow>
+          <mrow>\amp=\frac{1}{\cos(\theta)}\amp\highlight{\text{Simplify}}</mrow>
+          <mrow>\amp=\sec(\theta)\amp\highlight{\text{Reciprocal identity}}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Verify each trigonometric identity.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{\cos^2(\theta)}{\sin(\theta)}=\csc{\theta}-\sin(\theta)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            There are (at least) two reasonable approaches to this proof.  We could start with the left side, replace <m>\csc(\theta)</m> with <m>\frac{1}{\sin(\theta)}</m>, build a common denominator, and proceed from there.  As an alternative, we can start with the left side, apply a Pythagorean identity to the numerator, split the fraction into two fractions, and simplify.  I choose to employ the second strategy.
+            <md>
+              <mrow>\frac{\cos^2(\theta)}{\sin(\theta)}\amp=\frac{1-\sin^2(\theta)}{\sin(\theta)}\amp\highlight{\text{Pythagorean identity}}</mrow>
+              <mrow>\amp=\frac{1}{\sin(\theta)}-\frac{\sin^2(\theta)}{\sin(\theta)}\amp\highlight{\text{Equivalent expression}}</mrow>
+              <mrow>\amp=\csc(\theta)-\sin(\theta)\amp\highlight{\text{Simplify/Reciprocal identities}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1}{1-\sin^2(\theta)}=1+\tan^2(\theta)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We could start with the left side and apply a Pythagorean identity.  We could also start with the right side, change the tangent into its sine/cosine equivalent, build a common denominator and go from there.  I'm going to use the second strategy.
+            <md>
+              <mrow>1+\tan^2(\theta)\amp=1+(\tan(\theta))^2\amp\highlight{\text{Equivalent expressions}}</mrow>
+              <mrow>\amp=1+\left(\frac{\sin(\theta)}{\cos(\theta)}\right)^2\amp\highlight{\text{Quotient identity}}</mrow>
+              <mrow>\amp=1+\frac{\sin^2(\theta)}{\cos^2(\theta)}\amp\highlight{\text{Equivalent expression}}</mrow>
+              <mrow>\amp=\frac{\cos^2(\theta)}{\cos^2(\theta)}+\frac{\sin^2(\theta)}{\cos^2(\theta)}\amp\highlight{\text{Common denominators}}</mrow>
+              <mrow>\amp=\frac{\cos^2(\theta)+\sin^2(\theta)}{\cos^2(\theta)}\amp\highlight{\text{Add fractions}}</mrow>
+              <mrow>\amp=\frac{1}{\cos^2(\theta)}\amp\highlight{\text{Pythagorean identity}}</mrow>
+              <mrow>\amp=\left(\frac{1}{\cos(\theta)}\right)^2\amp\highlight{\text{Equivalent expression}}</mrow>
+              <mrow>\amp=(\sec(\theta))^2\amp\highlight{\text{Reciprocal identity}}</mrow>
+              <mrow>\amp=1+\tan^2(\theta)\amp\highlight{\text{Pythagorean identity}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1}{\cos^2(t)-\sin^2(t)}=\frac{1+\tan^2(t)}{1-\tan^2(t)}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            I can't think of any relevant action to take to the expression on the left side of the equal sign.  On the right side I can change the tangent expressions to the equivalents in terms of sine and cosine and then clean up the resultant complex fraction.  Hopefully the path will be clear from there.
+            <md>
+              <mrow>\frac{1+\tan^2(t)}{1-\tan^2(t)}\amp=\frac{1+(\tan(t))^2}{1-(\tan(t))^2}\amp\highlight{\text{Equivalent expressions}}</mrow>
+              <mrow>\amp=\frac{1+\left(\frac{\sin(t)}{\cos(t)}\right)^2}{1-\left(\frac{\sin(t)}{\cos(t)}\right)^2}\amp\highlight{\text{Quotient identity}}</mrow>
+              <mrow>\amp=\frac{1+\frac{\sin^2(t)}{\cos^2(t)}}{1-\frac{\sin^2(t)}{\cos^2(t)}}\amp\highlight{\text{Equivalent expression}}</mrow>
+              <mrow>\amp=\frac{1+\frac{\sin^2(t)}{\cos^2(t)}}{1-\frac{\sin^2(t)}{\cos^2(t)}} \cdot \frac{\cos^2(t)}{\cos^2(t)}\amp\highlight{\text{Equivalent expression}}</mrow>
+              <mrow>\amp=\frac{\cos^2(t)+\sin^2(t)}{\cos^2(t)-\sin^2(t)}\amp\highlight{\text{Distribute and simplify}}</mrow>
+              <mrow>\amp=\frac{1}{\cos^2(t)-\sin^2(t)}\amp\highlight{\text{Pythagorean identity}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1}{1-\sin(\theta)}=\sec^2(\theta)+\tan(\theta)\sec(\theta)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's begin with the left side and employ the conjugate strategy.
+            <md>
+              <mrow>\frac{1}{1-\sin(\theta)}\amp=\frac{1}{1-\sin(\theta)} \cdot \frac{1+\sin(\theta)}{1+\sin(\theta)}\amp\highlight{\text{Introduce conjugate}}</mrow>
+              <mrow>\amp=\frac{1+\sin(\theta)}{1-\sin^2(\theta)}\amp\highlight{\text{Simplify}}</mrow>
+              <mrow>\amp=\frac{1+\sin(\theta)}{\cos^2(\theta)}\amp\highlight{\text{Pythagorean identity}}</mrow>
+              <mrow>\amp=\frac{1}{\cos^2(\theta)}+\frac{\sin(\theta)}{\cos^2(\theta)}\amp\highlight{\text{Equivalent expression}}</mrow>
+              <mrow>\amp=\left(\frac{1}{\cos(\theta)}\right)^2+\frac{\sin{\theta}}{\cos(\theta)} \cdot \frac{1}{\cos(\theta)}\amp\highlight{\text{Equivalent expression}}</mrow>
+              <mrow>\amp=\sec^2(\theta)+\tan(\theta)\sec(\theta)\amp\highlight{\text{Quotient/Reciprocal ids.}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan^2(t)-\sin^2(t)=\tan^2(t)\sin^2(t)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's start with the left side, change the tangent to its sine/cosine equivalent, build a common denominator, and proceed from there.
+            <md>
+              <mrow>\tan^2(t)-\sin^2(t)\amp=(\tan(t))^2-\sin^2(t)\amp\highlight{\text{Equivalent expressions}}</mrow>
+              <mrow>\amp=\left(\frac{\sin(t)}{\cos(t)}\right)^2-\sin^2(t)\amp\highlight{\text{Quotient identity}}</mrow>
+              <mrow>\amp=\frac{\sin^2(t)}{\cos^2(t)}-\sin^2(t)\amp\highlight{\text{Equivalent expression}}</mrow>
+              <mrow>\amp=\frac{\sin^2(t)}{\cos^2(t)}-\frac{\sin^2(t)}{1} \cdot \frac{\cos^2(t)}{\cos^2(t)}\amp\highlight{\text{Common denominators}}</mrow>
+              <mrow>\amp=\frac{\sin^2(t)-\sin^2(t)\cos^2}{\cos^2(t)}\amp\highlight{\text{Subtract fractions}}</mrow>
+              <mrow>\amp=\frac{\sin^2(t)\left(1-\cos^2(t)\right)}{\cos^2(t)}\amp\highlight{\text{Factor numerator}}</mrow>
+              <mrow>\amp=\frac{\sin^2(t)\sin^2(t)}{\cos^2(t)}\amp\highlight{\text{Pythagorean identity}}</mrow>
+              <mrow>\amp=\sin^2(t) \cdot \frac{\sin^2(t)}{\cos^2(t)}\amp\highlight{\text{Equivalent expression}}</mrow>
+              <mrow>\amp=\sin^2(t) \cdot \left(\frac{\sin(t)}{\cos(t)}\right)^2\amp\highlight{\text{Equivalent expression}}</mrow>
+              <mrow>\amp=\sin^2(t)\tan^2(t)\amp\highlight{\text{Quotient identity}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{\cos(t)+\sin(t)}{\csc(t)+\sec(t)}=\sin(t)\cos(t)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's start with the left side of the identity.  The first thing I notice is that if I multiply the denominator by the expression <m>\sin(t)\cos(t)</m>, it will become equivalent to the numerator.  Of course I'll have to multiply the numerator by the same expression, but that's a good thing, because that expression is exactly where we want to end up.
+            <md>
+              <mrow>\amp\frac{\cos(t)+\sin(t)}{\csc(t)+\sec(t)}</mrow>
+                <mrow>\amp=\frac{\cos(t)+\sin(t)}{\csc(t)+\sec(t)} \cdot \frac{\sin(t)\cos(t)}{\sin(t)\cos(t)}\amp\highlight{\text{Equivalent expressions}}</mrow>
+              <mrow>\amp=\frac{(\cos(t)+\sin(t))\sin(t)\cos(t)}{\csc(t)\sin(t) \cdot \cos(t)+\sec(t)\cos(t) \cdot \sin(t)}\amp\highlight{\text{Multiply and distribute}}</mrow>
+              <mrow>\amp=\frac{(\cos(t)+\sin(t))\sin(t)\cos(t)}{1 \cdot \cos(t)+1 \cdot \sin(t)}\amp\highlight{\text{Reciprocal identities}}</mrow>
+              <mrow>\amp=\sin(t)\cos(t)\amp\highlight{\text{Reduce the fraction}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\left(1-\sin^2(\theta)\right)\left(1+\tan^2(\theta)\right)=1</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            I don't really see any option other than to expand the left side of the identity and hope that good things come from that.
+            <md>
+              <mrow>\amp\left(1-\sin^2(\theta)\right)\left(1+\tan^2(\theta)\right)</mrow>
+              <mrow>\amp=1+\tan^2(\theta)-\sin^2(\theta)-\sin^2(\theta)\tan^2(\theta)\amp\highlight{\text{Expansion}}</mrow>
+              <mrow>\amp=1-\sin^2(\theta)+\tan^2(\theta)(1-\sin^2(\theta))\amp\highlight{\text{Factor out }\tan^2(\theta)}</mrow>
+              <mrow>\amp=1-\sin^2(\theta)+\tan^2(\theta)\cos^2(\theta)\amp\highlight{\text{Pythagorean identity}}</mrow>
+              <mrow>\amp=1-\sin^2(\theta)+(\tan(\theta))^2\cos^2(\theta)\amp\highlight{\text{Equivalent expression}}</mrow>
+              <mrow>\amp=1-\sin^2(\theta)+\left(\frac{\sin(t)}{\cos(t)}\right)^2\cos^2(\theta)\amp\highlight{\text{Reciprocal identity}}</mrow>
+              <mrow>\amp=1-\sin^2(\theta)+\frac{\sin^2(\theta)}{\cos^2(\theta)} \cdot \frac{\cos(\theta)}{1}\amp\highlight{\text{Equivalent expression}}</mrow>
+              <mrow>\amp=1-\sin^2(\theta)+\sin^2(\theta)\amp\highlight{\text{Multiply and reduce}}</mrow>
+              <mrow>\amp=1\amp\highlight{\text{Combine like terms}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1-\sin(t)}{\cos(t)}=\frac{\cos(t)-\cot(t)}{\csc(t)-\sin(t)}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            My first thought is that its going to be an easier task if we begin with the expression on the right side of the identity.  My second thought is that in their equivalent forms, both the cotangent function and the cosecant function have the sine function in the denominator.  Given that, I'm going to begin by multiplying both the numerator and the denominator by <m>\sin(t)</m>.  I'll sort things out from there.
+            <md>
+              <mrow>\amp\frac{\cos(t)-\cot(t)}{\csc(t)-\sin(t)}</mrow>
+              <mrow>\amp=\frac{\cos(t)-\cot(t)}{\csc(t)-\sin(t)} \cdot \frac{\sin(t)}{\sin(t)}\amp\highlight{\text{Equivalent expressions}}</mrow>
+              <mrow>\amp=\frac{\cos(t)\sin(t)-\cot(t)\sin(t)}{\csc(t)\sin(t)-\sin^2(t)}\amp\highlight{\text{Multiply and distribute}}</mrow>
+              <mrow>\amp=\frac{\cos(t)\sin(t)-\frac{\cos(t)}{\sin(t)} \cdot \sin(t)}{\frac{1}{\sin(t)} \cdot \sin(t)-\sin^2(t)}\amp\highlight{\text{Quotient/Reciprocal ids.}}</mrow>
+              <mrow>\amp=\frac{\cos(t)\sin(t)-\cos(t)}{1-\sin^2(t)}\amp\highlight{\text{Multiply and reduce}}</mrow>
+              <mrow>\amp=\frac{\cos(t)\sin(t)-\cos(t)}{\cos^2(t)}\amp\highlight{\text{Pythagorean identity}}</mrow>
+              <mrow>\amp=\frac{\cos(t)(\sin(t)-1)}{\cos^2(t)}\amp\highlight{\text{Factor the numerator}}</mrow>
+              <mrow>\amp=\frac{\sin(t)-1}{\cos(t)}\amp\highlight{\text{reduce the fraction}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{\sec(t)-\tan(t)}{\csc(t)-1}=\tan(t)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            My only thought is to multiply the numerator and denominator of the fractional expression by <m>\sin(t)\cos(t)</m>, simplify the expression, and reevaluate the situation.
+            <md>
+              <mrow>\amp\frac{\sec(t)-\tan(t)}{\csc(t)-1}</mrow>
+              <mrow>\amp=\frac{\sec(t)-\tan(t)}{\csc(t)-1} \cdot \frac{\sin(t)\cos(t)}{\sin(t)\cos(t)}\amp\highlight{\text{Equivalent expression}}</mrow>
+              <mrow>\amp=\frac{\sec(t)\sin(t)\cos(t)-\tan(t)\sin(t)\cos(t)}{\csc(t)\sin(t)\cos(t)-\sin(t)\cos(t)}\amp\highlight{\text{Multiply and distribute}}</mrow>
+              <mrow>\amp=\frac{\frac{1}{\cos(t)} \cdot \sin(t)\cos(t)-\frac{\sin(t)}{\cos(t)} \cdot \sin(t)\cos(t)}{\frac{1}{\sin(t)} \cdot \sin(t)\cos(t)-\sin(t)\cos(t)}\amp\highlight{\text{Quotient/Reciprocal ids.}}</mrow>
+              <mrow>\amp=\frac{\sin(t)-\sin^2(t)}{\cos(t)-\sin(t)\cos(t)}\amp\highlight{\text{Multiply and reduce}}</mrow>
+              <mrow>\amp=\frac{\sin(t)(1-\sin(t))}{\cos(t)(1-\sin(t))}\amp\highlight{\text{Factor}}</mrow>
+              <mrow>\amp=\frac{\sin(t)}{\cos(t)}\amp\highlight{\text{Reduce the fraction}}</mrow>
+              <mrow>\amp=\tan(t)\amp\highlight{\text{Quotient identity}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1+\cos(t)}{1-\cos(t)}-\frac{1-\cos(t)}{1+\cos(t)}=4\csc(t)\cot(t)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The only practical thing to do is combine the fractions on the left, expand the numerator, and go from there.
+            <md>
+              <mrow>\amp\frac{1+\cos(t)}{1-\cos(t)}-\frac{1-\cos(t)}{1+\cos(t)}</mrow>
+              <mrow>\amp=\frac{1+\cos(t)}{1-\cos(t)} \cdot \frac{1+\cos(t)}{1+\cos(t)}-\frac{1-\cos(t)}{1+\cos(t)} \cdot \frac{1-\cos(t)}{1-\cos(t)}\amp\highlight{\text{Common dens.}}</mrow>
+              <mrow>\amp=\frac{(1+2\cos(t)+\cos^2(t))-(1-2\cos(t)+\cos^2(t))}{1-\cos^2(t)}\amp\highlight{\text{Mult. and expand}}</mrow>
+              <mrow>\amp=\frac{1+2\cos(t)+\cos^2(t)-1+2\cos(t)-\cos^2(t)}{1-\cos^2(t)}\amp\highlight{\text{Dist. the sub}}</mrow>
+              <mrow>\amp=\frac{4\cos(t)}{1-\cos^2(t)}\amp\highlight{\text{Comb. like terms}}</mrow>
+              <mrow>\amp=\frac{4\cos(t)}{\sin^2(t)}\amp\highlight{\text{Pythagorean id.}}</mrow>
+              <mrow>\amp=4 \cdot \frac{1}{\sin(t)} \cdot \frac{\cos(t)}{\sin(t)}\amp\highlight{\text{Equiv. expression}}</mrow>
+              <mrow>\amp=4\csc(t)\cot(t)\amp\highlight{\text{Quot./Rec. ids.}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1+\cos(t)}{1-\cos(t)}=(\csc(t)+\cot(t))^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            To my eyes the immediate issue is the two terms in the denominator of the fractional term.  We can eliminate that issue by employing the conjugate strategy.  Let's do it.
+            <md>
+              <mrow>\amp\frac{1+\cos(t)}{1-\cos(t)}</mrow>
+              <mrow>\amp=\frac{1+\cos(t)}{1-\cos(t)} \cdot \frac{1+\cos(t)}{{1+\cos(t)}}\amp\highlight{\text{Introduce conj. of den.}}</mrow>
+              <mrow>\amp=\frac{1+2\cos(t)+\cos^2(t)}{1-\cos^2(t)}\amp\highlight{\text{Mult. and dist.}}</mrow>
+              <mrow>\amp=\frac{1+2\cos(t)+\cos^2(t)}{\sin^2(t)}\amp\highlight{\text{Pythagorean identity}}</mrow>
+              <mrow>\amp=\frac{1}{\sin^2(t)}+\frac{2\cos(t)}{\sin^2(t)}+\frac{\cos^2(t)}{\sin^2(t)}\amp\highlight{\text{Equivalent expression}}</mrow>
+              <mrow>\amp=\left(\frac{1}{\sin(t)}\right)^2+2 \cdot \frac{1}{\sin(t)} \cdot \frac{\cos(t)}{\sin(t)} + \left(\frac{\cos(t)}{\sin(t)}\right)^2\amp\highlight{\text{Equivalent expression}}</mrow>
+              <mrow>\amp=(\csc(t))^2+2\csc(t)\cot(t)+(\cot(t))^2\amp\highlight{\text{Quotient/Reciprocal ids.}}</mrow>
+              <mrow>\amp=(\csc(t)+\cot(t))^2\amp\highlight{\text{Factor}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1-\cos(\theta)}{\sin{\theta}}+\frac{\sin(\theta)}{1-\cos(\theta)}=2\csc(\theta</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's combine the fractions on the left side of the identity and let things fall where they may.
+            <md>
+              <mrow>\amp\frac{1-\cos(\theta)}{\sin{\theta}}+\frac{\sin(\theta)}{1-\cos(\theta)}</mrow>
+              <mrow>\amp=\frac{1-\cos(\theta)}{\sin{\theta}} \cdot \frac{1-\cos(\theta)}{1-\cos(\theta)}+\frac{\sin(\theta)}{1-\cos(\theta)} \cdot \frac{\sin(\theta)}{\sin(\theta)}\amp\highlight{\text{Common dens.}}</mrow>
+              <mrow>\amp=\frac{1-2\cos(\theta)+\cos^2(t)+\sin^2(t)}{\sin(\theta)(1-\cos(\theta))}\amp\highlight{\text{Combine fractions}}</mrow>
+              <mrow>\amp=\frac{1-2\cos(\theta)+1}{\sin(\theta)(1-\cos(\theta))}\amp\highlight{\text{Pythagorean identity}}</mrow>
+              <mrow>\amp=\frac{2-2\cos(\theta)}{\sin(\theta)(1-\cos(\theta))}\amp\highlight{\text{Combine like terms}}</mrow>
+              <mrow>\amp=\frac{2(1-\cos(\theta))}{\sin(\theta)(1-\cos(\theta))}\amp\highlight{\text{Factor numerator}}</mrow>
+              <mrow>\amp=\frac{2}{\sin(\theta)}\amp\highlight{\text{Reduce the fraction}}</mrow>
+              <mrow>\amp=2 \cdot \frac{1}{\sin(\theta)}\amp\highlight{\text{Equivalent expression}}</mrow>
+              <mrow>\amp=\csc(\theta)\amp\highlight{\text{Reciprocal identity}}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+
+
+
+  
+
+
+</section>

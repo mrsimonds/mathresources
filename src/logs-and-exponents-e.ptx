@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="logs-and-exponents-e">
+  <title>The Number <m>e</m></title>
+
+  <paragraphs>
+    <title>Compound Interest</title>
+    <p></p>
+
+    <p>
+      Most savings accounts which accrue interest accrue the interest in a compounding way.  The simplest example of compounding interest is a one-time deposit that accrues interest on the current balance at the end of each year.  Suppose that you deposit $100 in an account that applies 4% interest to the current balance at the end of each year.  This process is illustrated in <xref ref="logs-and-exponents-e-table-1">Table</xref>.
+    </p>
+
+    <table xml:id="logs-and-exponents-e-table-1">
+      <caption>4% Interest Compounding Annually</caption>
+      <tabular>
+        <col halign="center" />
+        <col halign="center" />
+        <col halign="center" />
+        <col halign="center" />
+        <row bottom="medium">
+          <cell><line>Year</line></cell>
+          <cell><line>Starting Balance ($)</line></cell>
+          <cell><line>Interest Earned ($)</line></cell>
+          <cell><line>Ending Balance ($)</line></cell>
+        </row>
+        <row>
+          <cell><m>1</m></cell>
+          <cell><m>100.00</m></cell>
+          <cell><m>0.04(100.00)=4.00</m></cell>
+          <cell><m>104.00</m></cell>
+        </row>
+        <row>
+          <cell><m>2</m></cell>
+          <cell><m>104.00</m></cell>
+          <cell><m>0.04(104.00)=4.16</m></cell>
+          <cell><m>108.16</m></cell>
+        </row>
+        <row>
+          <cell><m>3</m></cell>
+          <cell><m>108.16</m></cell>
+          <cell><m>0.04(108.16)=4.33</m></cell>
+          <cell><m>112.49</m></cell>
+        </row>
+        <row>
+          <cell><m>4</m></cell>
+          <cell><m>112.49</m></cell>
+          <cell><m>0.04(112.49)=4.50</m></cell>
+          <cell><m>116.99</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      If we let <m>x</m> represent the balance at the start of any year, then the balance at the end of that year is given by the formula derived below.
+      <md>
+        <mrow>x+0.04x\amp=1 \cdot x+0.04 \cdot x</mrow>
+        <mrow>\amp=(1+0.04)x</mrow>
+        <mrow>\amp=1.04x</mrow>
+      </md>
+      In <xref ref="logs-and-exponents-e-table-2">Table</xref> the formula has applied for several years.
+    </p>
+
+    <table xml:id="logs-and-exponents-e-table-2">
+      <caption>4% Interest Compounding Annually</caption>
+      <tabular>
+        <col halign="center" />
+        <col halign="center" />
+        <col halign="center" />
+        <row bottom="medium">
+          <cell><line>Year</line></cell>
+          <cell><line>Beginning Balance</line></cell>
+          <cell><line>Ending Balance</line></cell>
+        </row>
+        <row>
+          <cell><m>1</m></cell>
+          <cell><m>100</m></cell>
+          <cell><m>1.04(100)</m></cell>
+        </row>
+        <row>
+          <cell><m>2</m></cell>
+          <cell><m>1.04(100)</m></cell>
+          <cell><m>1.04 \cdot 1.04(100)=1.04^2(100)</m></cell>
+        </row>
+        <row>
+          <cell><m>3</m></cell>
+          <cell><m>1.04^2(100)</m></cell>
+          <cell><m>1.04 \cdot 1.04^2(100)=1.04^3(100)</m></cell>
+        </row>
+        <row>
+          <cell><m>4</m></cell>
+          <cell><m>1.04^3(100)</m></cell>
+          <cell><m>1.04 \cdot 1.04^3(100)=1.04^4(100)</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      It's easy to see that if we let <m>B(t)</m> represent the balance of the account after the account has earned interest for <m>t</m> years, then 
+      <me>B(t)=100 \cdot 1.04^t.</me>
+      For most savings accounts, the  interest is applied more than once per year.  Suppose, for example, that in the account above instead of 4% interest being applied at the end of each year, 1% interest is applied at the end of each quarter (March 31, June 30, September 30, and December 31).  This scenario is illustrated in <xref ref="logs-and-exponents-e-table-3">Table</xref>.
+    </p>
+
+    <table xml:id="logs-and-exponents-e-table-3">
+      <caption>4% Interest Compounding Quarterly</caption>
+      <tabular>
+        <col halign="center" />
+        <col halign="center" />
+        <col halign="center" />
+        <col halign="center" />
+        <row bottom="medium">
+          <cell><line>Quarter</line></cell>
+          <cell><line>Starting Balance ($)</line></cell>
+          <cell><line>Interest Earned ($)</line></cell>
+          <cell><line>Ending Balance ($)</line></cell>
+        </row>
+        <row>
+          <cell><m>1</m></cell>
+          <cell><m>100.00</m></cell>
+          <cell><m>0.01(100.00)=1.00</m></cell>
+          <cell><m>101.00</m></cell>
+        </row>
+        <row>
+          <cell><m>2</m></cell>
+          <cell><m>101.00</m></cell>
+          <cell><m>0.01(101.00)=1.01</m></cell>
+          <cell><m>102.01</m></cell>
+        </row>
+        <row>
+          <cell><m>3</m></cell>
+          <cell><m>102.01</m></cell>
+          <cell><m>0.01(102.01)=1.02</m></cell>
+          <cell><m>103.03</m></cell>
+        </row>
+        <row>
+          <cell><m>4</m></cell>
+          <cell><m>103.03</m></cell>
+          <cell><m>0.01(103.03)=1.03</m></cell>
+          <cell><m>104.06</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      We can see that at the end of one year (end of the fourth quarter), the amount of interest that was earned was not 4%, but instead was actually 4.06%.  The annual interest before the compounding effect is called <term>the nominal interest rate</term>.  The interest rate after the compounding effect is called <term>the effective interest rate</term>.  In our current scenario, 1% interest is applied four times per year, so the balance at the end of <m>t</m> years is given by the formula
+      <me>B(t)=100 \cdot 1.01^{4t}.</me>
+      We can further parse the formula in a way that communicates how the 1% interest rate was derived. 
+      <me>B(t)=100 \cdot \left(1+\frac{0.04}{4}\right)^{4t}</me>
+      From the last formula we can infer a general formula for the balance of an account after compounding interest for <m>t</m> years.
+      <me>B(t)=P\left(1+\frac{r}{n}\right)^{nt}</me>
+      where
+      <ul>
+        <li>
+          <p>
+            <m>P</m> is the initial investment in the account
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>r</m> is the nominal interest rate
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>n</m> is the number of times the interest is compounded each year
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>t</m> is the number of years that interest has been earned
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Suppose that Giacomo invests $100 in a savings account with a nominal interest rate of 4%.  Determine the effective interest rate on the account if the interest is compounded in each of the following ways.
+          <ol label="a">
+            <li>
+              <p>
+                Monthly
+              </p>
+            </li>
+            <li>
+              <p>
+                Weekly
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Because the invested is $100, we can determine the effective rates by applying the compound interest formula to each scenario for one year.  The amount of growth in the account at the end of one year will be numerically equivalent to the effective interest rate.  All of the calculations below have been rounded to the nearest cent.
+          <ol label="a">
+            <li>
+              <p>
+                <me>100\left(1+\frac{0.04}{12}\right)^{(12 \cdot 1)}=104.07</me>
+                The effective rate on the account is 4.07%.
+              </p>
+            </li>
+            <li>
+              <p>
+                <me>100\left(1+\frac{0.04}{52}\right)^{(52 \cdot 1)}=104.08</me>
+                The effective rate on the account is 4.08%.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+  <paragraphs>
+    <title>Continuous Interest Rates and the Number e</title>
+    <p></p>
+    <p>
+      Suppose that you open a savings account with a nominal interest rate of 4%. (Good luck with that.)  As illustrated in <xref ref="logs-and-exponents-e-table-4">Table</xref>, the effective interest rate increases as the number of compounding events per year increases.
+    </p>
+
+    <table xml:id="logs-and-exponents-e-table-4">
+      <caption>Effective Interest Rate When the Nominal Interest Rate is 4%</caption>
+      <tabular>
+        <col halign="center" />
+        <col halign="center" />
+        <row bottom="medium">
+          <cell><line>Number of Compounding Events per Year</line></cell>
+          <cell><line>Effective Interest Rate</line></cell>
+        </row>
+        <row>
+          <cell><m>1</m></cell>
+          <cell>4%</cell>
+        </row>
+        <row>
+          <cell><m>4</m></cell>
+          <cell>4.06%</cell>
+        </row>
+        <row>
+          <cell><m>12</m></cell>
+          <cell>4.07%</cell>
+        </row>
+        <row>
+          <cell><m>52</m></cell>
+          <cell>4.08%</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      Now suppose that the number of compounding events per year keeps growing:   a thousand times per year, a million times per year, a billion times per year!  The more and more times the interest compounds per year, the closer the account comes to having the interest compound at a <term>continuous interest rate</term>.  We could use our established interest rate formula with <m>n=1,000,000</m> to get a pretty darn good estimation of the effective continuous interest rate, but there's another option.  Before coming up with the other option, we need to manipulate our existing interest formula into another form.
+      <md>
+        <mrow>B(t)\amp=P\left(1+\frac{r}{n}\right)^{nt}</mrow>
+        <mrow>\amp=P\left(\left(1+\frac{1}{\frac{n}{r}}\right)^{\frac{n}{r}}\right)^{rt}</mrow>
+        <mrow>\amp=P\left(\left(1+\frac{1}{x}\right)^x\right)^{rt}</mrow>
+      </md>
+      In the last expression, <m>x=\frac{n}{r}</m>, so as the number of compounding events increases, so does the value of <m>x</m>. 
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+         In <xref ref="logs-and-exponents-e-table-5">Table</xref> we see the effect that increasing the value of <m>x</m> has on the value of <m>\left(1+\frac{1}{x}\right)^x</m>.  The larger the value of <m>x</m>, the closer the expression <m>\left(1+\frac{1}{x}\right)^x</m> gets to <term>the irrational number e</term>.
+       </p>
+
+      <table xml:id="logs-and-exponents-e-table-5">
+        <caption>Values of <m>\left(1+\frac{1}{x}\right)^x</m></caption>
+        <tabular>
+          <col halign="center" />
+          <col halign="center" />
+          <row bottom="medium">
+            <cell><line><m>x</m></line></cell>
+            <cell><line><m>\left(1+\frac{1}{x}\right)^x</m></line></cell>
+          </row>
+          <row>
+            <cell><m>10</m></cell>
+            <cell><m>2.59374</m></cell>
+          </row>
+          <row>
+            <cell><m>100</m></cell>
+            <cell><m>2.70481</m></cell>
+          </row>
+          <row>
+            <cell><m>1,000</m></cell>
+            <cell><m>2.71692</m></cell>
+          </row>
+          <row>
+            <cell><m>10,000</m></cell>
+            <cell><m>2.71815</m></cell>
+          </row>
+          <row>
+            <cell><m>100,000</m></cell>
+            <cell><m>2.71827</m></cell>
+          </row>
+          <row>
+            <cell><m>1,000,000</m></cell>
+            <cell><m>2.71828</m></cell>
+          </row>
+        </tabular>
+      </table>
+
+    </sidebyside>
+    <p>
+      The number <m>e</m> is also referred to as <term>Euler's constant</term>. The value of <m>e</m> is rounded to the nearest millionth below.
+      <me>e\approx 2.718282</me>
+      As mentioned previously, as the number of annual compounding events increases, so to does the value of <m>x</m>.  As the value of <m>x</m> increases, the value of the expression <m>\left(1+\frac{1}{x}\right)^x</m> gets closer and closer to the number <m>e</m>.  Lets use this fact to come up with our <term>continuous interest rate formula</term>.
+      <md>
+        <mrow>B(t)\amp=P\left(\highlight{\left(1+\frac{1}{x}\right)^x}\right)^{rt}</mrow>
+        <mrow>\amp=P\highlight{e}^{rt}\,\,\,\,\,\,\,\highlight{\text{as the value of}\,x\,\text{gets increasingly large}}</mrow>
+      </md>
+      <ul>
+        <li>
+          <p>
+            <m>P</m> is the initial amount investment
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>r</m> is the nominal interest rate
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>t</m> is the number of years that interest is earned
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>e</m> is Euler's constant
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine the effective rate on an account with a nominal interest rate of 6% that compounds continuously.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's see what the one-year effect of this scenario is on an initial deposit of $100 (rounded to the nearest cent).
+          <me>100e^{(.06 \cdot 1)}\approx 106.18</me>
+          Because over one year $100 grew by $6.08, the effective interest rate is 6.18%.
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+  <paragraphs>
+    <title>The Natural Logarithm Function</title>
+    <p></p>
+    <p>
+      The logarithm function with a base of <m>e</m> is called <term>the natural logarithm function</term>.  The function is symbolized as <m>\ln(x)</m> which is read aloud as "the natural log(arithm) of <m>x</m>."  To reiterate,
+      <me>\ln(x)=\log_e(x)</me>
+      The natural logarithm function is tremendously important in calculus.  At this level, it basically serves two functions.  It's a key on any scientific or graphing calculator, so it can be used when applying the change of base formula.  It is also used when solving exponential equations where the base of the exponential expression(s) is the number <m>e</m>.  Before seeing several examples, let's make an observation based upon the logarithmic property <m>\log_b(b^n)=n</m>.
+      <md>
+        <mrow>\ln(e^x)\amp=\log_e(e^x)</mrow>
+        <mrow>\amp=x</mrow>
+      </md>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Soojin has a savings account that compounds interest continuously.  The effective interest rate on Soojin's account is 2.84%.  What is the nominal interest rate on the account?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          If Soojin invests $100 for one year, her balance at the end of one year is $102.84.  We can determine the nominal interest rate, <m>r</m>, by solving the equation
+          <me>100e^{(r \cdot 1)}=102.84.</me>
+          We could use a logarithm of any base to solve the equation.  However, because our technology tends to only have keys for logarithms of base <m>10</m> and base <m>e</m>, we tend to only use those two bases. Because the base of the exponential expression in the equation we are solving is <m>e</m>, it seems natural that <m>e</m> is the base we sill use.  Remember that instead of writing <m>\log_e(x)</m> we write <m>\ln(x)</m>.
+          <md>
+            <mrow>100e^{r}\amp=102.84</mrow>
+            <mrow>\divideunder{100e^{r}}{100}\amp=\divideunder{102.84}{100}</mrow>
+            <mrow>e^r\amp=1.0284</mrow>
+            <mrow>\ln(e^r)\amp=\ln(1.0284)</mrow>
+            <mrow>r\amp\approx 0.028</mrow>
+          </md>
+          The nominal interest rate on Soojin's account is 2.8%.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution to the equation <m>7e^{10-3x}+4=12</m>.  Round the final value to the nearest thousandth.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We want to isolate the exponential expression before taking the natural logarithm of both sides.
+          <md>
+            <mrow>7e^{10-3x}+4\amp=12</mrow>
+            <mrow>7e^{10-3x}+4\subtractright{4}\amp=12\subtractright{4}</mrow>
+            <mrow>7e^{10-3x}\amp=8</mrow>
+            <mrow>\divideunder{7e^{10-3x}}{7}\amp=\divideunder{8}{7}</mrow>
+            <mrow>e^{10-3x}\amp=\frac{8}{7}</mrow>
+            <mrow>\ln\left(e^{10-3x}\right)\amp=\ln\left(\frac{8}{7}\right)</mrow>
+            <mrow>10-3x\amp=\ln\left(\frac{8}{7}\right)</mrow>
+            <mrow>10-3x\subtractright{10}\amp=\ln\left(\frac{8}{7}\right)\subtractright{10}</mrow>
+            <mrow>-3x\amp=\ln\left(\frac{8}{7}\right)-10</mrow>
+            <mrow>\divideunder{-3x}{-3}\amp=\divideunder{\ln\left(\frac{8}{7}\right)-10}{-3}</mrow>
+            <mrow>x\amp=\frac{\ln\left(\frac{8}{7}\right)-10}{-3}</mrow>
+            <mrow>x\amp\approx 3.829</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Use the natural logarithm function to determine the value of <m>\log_9(74)</m>.  Round the value to the nearest thousandth.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Before we apply the change of base formula, lets observe that
+          <me>\log_9(74)=x\,\,\Longrightarrow\,\,9^x=74</me>
+          and because <m>9^2=81</m>, we expect the value of <m>\log_9(74)</m> to be a little less than <m>2</m>.  Let's go ahead and estimate the value.
+          <md>
+            <mrow>\log_9(74)\amp=\frac{\ln(74)}{\ln(9)}</mrow>
+            <mrow>\amp\approx 1.959</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Most weather as we experience it here on Earth occurs within nine miles of the surface of the Earth.  Suppose that had a gigantic (we're taking really big) sheet of graph paper laid out perpendicular to the surface of the Earth.  Suppose that an <m>xy</m>-axis system is drawn onto the graph paper with a unit of inches on both the <m>x</m>-axis and the <m>y</m>-axis. Suppose further the the origin of the axis system lies on the surface of the Earth.  Suppose that we graphed the function <m>y=e^x</m> on this fantastical sheet of graph paper.  How far would we need to travel out the <m>x</m>-axis before the <m>y</m>-coordinate escaped the weather-zone for Earth?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We are basically being asked for the value of the <m>x</m> when the <m>y</m>-coordinate on the graph of <m>y=e^x</m> is nine miles above the <m>x</m>-axis.  We'll need to convert the unit miles to a unit of inches before we'll be able to make that determination.
+          <md>
+            <mrow>9\,\text{miles}\amp=\left(\frac{9\,\text{miles}}{1}\right)\left(\frac{5280\,\text{feet}}{1\,\text{mile}}\right)\left(\frac{12\,\text{inches}}{1\,\text{foot}}\right)</mrow>
+            <mrow>\amp=570,240\,\text{inches}</mrow>
+          </md>
+          We can determine the answer to the question by solving the equation <m>e^x=570,240</m>.  Let's do it.
+          <md>
+            <mrow>e^x\amp=570,240</mrow>
+            <mrow>\ln(e^x)\amp=\ln(570,240)</mrow>
+            <mrow>x\amp=\ln(570,240)</mrow>
+            <mrow>x\amp\approx 13.25</mrow>
+          </md>
+          So by the time we've traveled a little more than a foot (12 inches) in the <m>x</m>-direction the <m>y</m> coordinate on the graph of <m>y=e^x</m> is already nine miles above the surface of Earth.
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Solve each equation for <m>x</m>.  In each case, round the solution(s) to the nearest thousandth.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>4e^{5x-9}-19=22</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>4e^{5x-9}-19\amp=22</mrow>
+              <mrow>4e^{5x-9}-19\addright{19}\amp=22\addright{19}</mrow>
+              <mrow>4e^{5x-9}\amp=41</mrow>
+              <mrow>\divideunder{4e^{5x-9}}{4}\amp=\divideunder{41}{4}</mrow>
+              <mrow>e^{5x-9}\amp=\frac{41}{4}</mrow>
+              <mrow>\ln\left(e^{5x-9}\right)\amp=\ln\left(\frac{41}{4}\right)</mrow>
+              <mrow>5x-9\amp=\ln\left(\frac{41}{4}\right)</mrow>
+              <mrow>5x-9\addright{9}\amp=\ln\left(\frac{41}{4}\right)\addright{9}</mrow>
+              <mrow>5x\amp=\ln\left(\frac{41}{4}\right)+9</mrow>
+              <mrow>\divideunder{5x}{5}\amp=\divideunder{\ln\left(\frac{41}{4}\right)+9}{5}</mrow>
+              <mrow>x\amp=\frac{\ln\left(\frac{41}{4}\right)+9}{5}</mrow>
+              <mrow>x\amp\approx 2.265</mrow>
+            </md>
+            The approximate solution to the given equation is 2.265.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>3e^{7x-1}=5e^{2x+3}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            I'm going to solve this equation twice because there are two extremely different yet successful solving strategies that can be applied to the equation.
+          </p>
+          <p>
+            <term>Solution 1</term>
+            <md>
+              <mrow>3e^{7x-1}\amp=5e^{2x+3}</mrow>
+              <mrow>\ln\left(3e^{7x-1}\right)\amp=\ln\left(5e^{2x+3}\right)</mrow>
+              <mrow>\ln(3)+\ln\left(e^{7x-1}\right)\amp=\ln(5)+\ln\left(e^{2x+3}\right)</mrow>
+              <mrow>\ln(3)+7x-1\amp=\ln(5)+2x+3</mrow>
+              <mrow>\ln(3)+7x-1\subtractright{\ln(3)}\addright{1}\amp=\ln(5)+2x+3\subtractright{\ln(3)}\addright{1}</mrow>
+              <mrow>7x\amp=2x+\ln(5)-\ln(3)+4</mrow>
+              <mrow>7x\subtractright{2x}\amp=2x+\ln(5)-\ln(3)+4\subtractright{2x}</mrow>
+              <mrow>5x\amp=\ln(5)-\ln(3)+4</mrow>
+              <mrow>\divideunder{5x}{5}\amp=\divideunder{\ln(5)-\ln(3)+4}{5}</mrow>
+              <mrow>x\amp=\frac{\ln(5)-\ln(3)+4}{5}</mrow>
+              <mrow>x\amp\approx 0.902</mrow>
+            </md>
+            <term>Solution 2</term>
+            <md>
+              <mrow>3e^{7x-1}\amp=5e^{2x+3}</mrow>
+              <mrow>\divideunder{3e^{7x-1}}{3e^{2x+3}}\amp=\divideunder{5e^{2x+3}}{3e^{2x+3}}</mrow>
+              <mrow>\frac{e^{7x-1}}{e^{2x+3}}\amp=\frac{5}{3}</mrow>
+              <mrow>e^{(7x-1)-(2x+3)}\amp=\frac{5}{3}</mrow>
+              <mrow>e^{5x-4}\amp=\frac{5}{3}</mrow>
+              <mrow>\ln\left(e^{5x-4}\right)\amp=\ln\left(\frac{5}{3}\right)</mrow>
+              <mrow>5x-4\amp=\ln\left(\frac{5}{4}\right)</mrow>
+              <mrow>5x-4\addright{4}\amp=\ln\left(\frac{5}{3}\right)\addright{4}</mrow>
+              <mrow>5x\amp=\ln\left(\frac{5}{3}\right)+4</mrow>
+              <mrow>\divideunder{5x}{5}\amp=\divideunder{\ln\left(\frac{5}{3}\right)+4}{5}</mrow>
+              <mrow>x\amp=\frac{\ln\left(\frac{5}{3}\right)+4}{5}</mrow>
+              <mrow>x\amp\approx 0.902</mrow>
+            </md>
+            Any way you slice it, the approximate solution to the given equation is 0.902.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\ln(x+6)+\ln(x-2)=2ln(2x-5)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\ln(x+6)+\ln(x-2)\amp=2\ln(2x-5)</mrow>
+              <mrow>\ln((x+6)(x-2))\amp=\ln\left((2x-5)^2\right)</mrow>
+              <mrow>(x+6)(x-2)\amp=(2x-5)^2</mrow>
+              <mrow>(x+6)(x-2)\amp=(2x-5)(2x-5)</mrow>
+              <mrow>x^2+4x-12\amp=4x^2-20x+25</mrow>
+              <mrow>x^2+4x-12\subtractright{x^2}\subtractright{4x}\addright{12}\amp=4x^2-20x+25\subtractright{x^2}\subtractright{4x}\addright{12}</mrow>
+              <mrow>0\amp=3x^2-24x+37</mrow>
+              <mrow>x\amp=\frac{-(-24)\pm\sqrt{(-24)^2-4 \cdot 3 \cdot 37}}{2 \cdot 3}</mrow>
+              <mrow>x\amp=\frac{24\pm\sqrt{132}}{6}</mrow>
+            </md>
+            <md>
+              <mrow>x\amp=\frac{24+\sqrt{132}}{6}\amp\amp\,\,\text{or}\,\,\amp x\amp=\frac{24-\sqrt{132}}{6}</mrow>
+              <mrow>x\amp\approx 5.915\amp\amp\,\,\text{or}\,\,\amp x\amp\approx 2.085</mrow>
+            </md>
+            Both values are in the domain of all three logarithmic expressions in the original equation, so the approximate solutions are 5.915 and 2.085.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\ln(6-x)+5=\ln(7-3x)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\ln(6-x)+5\amp=\ln(7-3x)</mrow>
+              <mrow>\ln(6-x)+5\subtractright{5}\amp=\ln(7-3x)\subtractright{5}</mrow>
+              <mrow>\ln(6-x)\amp=\ln(7-3x)-5</mrow>
+              <mrow>\ln(6-x)\subtractright{\ln(7-3x)}\amp=\ln(7-3x)-5\subtractright{\ln(7-3x)}</mrow>
+              <mrow>\ln(6-x)-\ln(7-3x)\amp=-5</mrow>
+              <mrow>\ln\left(\frac{6-x}{7-3x}\right)\amp=-5</mrow>
+              <mrow>\frac{6-x}{7-3x}\amp=e^{-5}</mrow>
+
+              <mrow>\frac{6-x}{7-3x}\multiplyright{(7-3x)}\amp=e^{-5}\multiplyright{(7-3x)}</mrow>
+              <mrow>6-x\amp=7e^{-5}-3e^{-5}x</mrow>
+              <mrow>6-x\subtractright{6}\amp=7e^{-5}-3e^{-5}x\subtractright{6}</mrow>
+              <mrow>-x\amp=7e^{-5}-3e^{-5}x-6</mrow>
+              <mrow>-x\amp\addright{3e^{-5}x}=7e^{-5}-3e^{-5}x-6\addright{3e^{-5}x}</mrow>
+
+              <mrow>\left(3e^{-5}-1\right)x\amp=7e^{-5}-6</mrow>
+              <mrow>\divideunder{\left(3e^{-5}-1\right)x}{3e^{-5}-1}\amp=\divideunder{7e^{-5}-6}{3e^{-5}-1}</mrow>
+              <mrow>x\amp=\frac{7e^{-5}-6}{3e^{-5}-1}</mrow>
+              <mrow>x \amp\approx 6.076</mrow>
+            </md>
+            <m>6.076</m> is not in the domain of the expression <m>\ln(6-x)</m>, so the given equation has no solution.
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Solve each compound interest problem.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            Lucy has a savings account which accrues interest at a continuous rate.  The nominal rate on the account is 3.25%.  Lucy made a one-time deposit of $5,000.  How much was in the account 7.5 years after Lucy made her deposit?  What is the effective annual interest rate for the account?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The formula we need to use is <m>B(t)=Pe^{rt}</m> with the following substitutions.
+            <ul>
+              <li>
+                <p>
+                  <m>P=5,000</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>r=0.0325</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>t=7.5</m>
+                </p>
+              </li>
+            </ul>
+            This gives us the following (rounded to the nearest cent).
+            <md>
+              <mrow>B(7.5)\amp=5,000e^{(0.0325 \cdot 7.5)}</mrow>
+              <mrow>\amp\approx 6,380.16</mrow>
+            </md>
+            So the balance of Lucy's account after 7.5 years is $6,380.16. We can determine the effective rate for Lucy's account if we track what happens to $100 in one year.
+            <md>
+              <mrow>B(1)\amp=100e^{(0.035 \cdot 1)}</mrow>
+              <mrow>\amp\approx 103.56</mrow>
+            </md>
+            Because $100 grew to $103.56 in one year, the effective annual interest rate on the account is 3.56%.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Abdul has inherited $50,000 tax free.  Abdul plans to save this money for retirement in thirty years.  He would like the balance at that time to be at least $1,000,000.  What is the minimum average continuous rate of growth the savings must achieve to meet Abdul's goal?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The formula we need to use is <m>B(t)=Pe^{rt}</m> with the following substitutions.
+            <ul>
+              <li>
+                <p>
+                  <m>B(30)=50,000</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>P=50,000</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>t=30</m>
+                </p>
+              </li>
+            </ul>
+            We need to solve the equation <m>1,000,000=50,000e^{(r \cdot 30)}</m> for <m>r</m>. Let's do it.
+            <md>
+              <mrow>1,000,000\amp=50,000e^{30r}</mrow>
+              <mrow>\divideunder{1,000,000}{50,000}\amp=\divideunder{50,000e^{30r}}{50,000}</mrow>
+              <mrow>20\amp=e^{30r}</mrow>
+              <mrow>\ln(20)\amp=\ln\left(e^{30r}\right)</mrow>
+              <mrow>\ln(20)\amp=30r</mrow>
+              <mrow>\divideunder{\ln(20)}{30}\amp=\divideunder{30r}{30}</mrow>
+              <mrow>\frac{\ln(20)}{30}\amp=r</mrow>
+              <mrow>0.10 \approx r</mrow>
+            </md>
+            For Abdul to reach his savings goal, the account will have to grow at a continuous annual interest rate of 10%.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Keenan has a bond that has a nominal annual interest rate of 4.25%.  The bond accrues interest at the end of every quarter.  What is the effective annual interest rate on Keenan's bond?.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The formula for this exercise is
+            <me>R(t)=P\left(1+\frac{r}{n}\right)^{nt}.</me>
+            We are told that the nominal annual interest rate, <m>r</m>, is <m>0.0425</m>.  We are told that the number of compounding events per year, <m>n</m>, is <m>4</m>.  We can determine the effective annual interest rate by making a virtual deposit, <m>P</m>, of $100.00 and seeing what the balance is after <m>1</m> year (<m>t</m>).  The following calculation is rounded to the nearest cent.
+            <md>
+              <mrow>R(1)\amp=100\left(1+\frac{0.0425}{4}\right)^{(4 \cdot 1)}</mrow>
+              <mrow>\amp=104.32</mrow>
+            </md>
+            Since $100.00 earns $4.32 interest in one year, we can deduce that the effective annual interest rate is 4.32%. 
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Jolene has a super sweet savings account that has an effective annual interest rate of 6.715%.  The account compounds interest on a daily basis.  Determine the nominal interest rate on Jolene's super  sweet savings account.  Use 365 for the number of days in a year.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The formula for this exercise is
+            <me>R(t)=P\left(1+\frac{r}{n}\right)^{nt}.</me>
+            The only value that we are given directly is <m>n</m>, the number of compounding events in a year (365).  From the effective annual interest rate we can tell that $100.00 would grow to $106.715 over the course of one year.  Let's let <m>P=100</m>, <m>t=1</m>, and <m>R(1)=106.715</m>.  We can then solve for the nominal interest rate, <m>r</m>.
+            <md>
+              <mrow>106.715\amp=100\left(1+\frac{r}{365}\right)^{(365 \cdot 1)}</mrow>
+              <mrow>\divideunder{106.715}{100}\amp=\divideunder{100\left(1+\frac{r}{365}\right)^{365}}{100}</mrow>         
+              <mrow>1.06715\amp=\left(1+\frac{r}{365}\right)^{365}</mrow>
+
+              <mrow>1.06715\highlight{^{1/365}}\amp=\left(\left(1+\frac{r}{365}\right)^{365}\right)\highlight{^{1/365}}</mrow>
+              <mrow>1.06715^{1/365}\amp=1+\frac{r}{365}</mrow>
+              <mrow>1.06715^{1/365}\subtractright{1}\amp=1+\frac{r}{365}\subtractright{1}</mrow>
+
+              <mrow>1.06715^{1/365}-1\amp=\frac{r}{365}</mrow>
+              <mrow>\multiplyleft{365}\left(1.06715^{1/365}-1\right)\amp=\multiplyleft{365}\frac{r}{365}</mrow>
+              <mrow>365\left(1.06715^{1/365}-1\right)\amp=r</mrow>
+              <mrow>0.65\amp\approx r</mrow>
+            </md>
+            The nominal annual interest rate on Jolene's account is 6.5%
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          One more extreme problem.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            When Earth's moon is directly above you, it is approximately 239,000 miles away from you.  Suppose that our fantastical grid system perpendicular to the Earth was able to reach that high.  How far would we have to travel out the <m>x</m>-axis before the <m>y</m>-coordinate on a graph of <m>y=e^x</m> would reach the moon?  Recall that the origin of the grid is on the Earth's surface and that the unit on each axis is inches.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We are basically being asked for the value of the <m>x</m> when the <m>y</m>-coordinate on the graph of <m>y=e^x</m> is 239,000 miles above the <m>x</m>-axis.  We'll need to convert the unit miles to a unit of inches before we'll be able to make that determination.
+            <md>
+              <mrow>239,000\,\text{miles}\amp=\left(\frac{239,000\,\text{miles}}{1}\right)\left(\frac{5280\,\text{feet}}{1\,\text{mile}}\right)\left(\frac{12\,\text{inches}}{1\,\text{foot}}\right)</mrow>
+              <mrow>\amp=15,143,040,000\,\text{inches}</mrow>
+            </md>
+            That's a lot of inches! We can determine the answer to the question by solving the equation <m>e^x=15,143,040,000</m>.  Let's do it.
+            <md>
+              <mrow>e^x\amp=15,143,040,000</mrow>
+              <mrow>\ln(e^x)\amp=\ln(15,143,040,000)</mrow>
+              <mrow>x\amp=\ln(15,143,040,000)</mrow>
+              <mrow>x\amp\approx 23.44</mrow>
+            </md>
+            So by the time we've traveled a little less than two feet (24 inches) in the <m>x</m>-direction the <m>y</m> coordinate on the graph of <m>y=e^x</m> is already to the moon!  Extreme indeed.
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+ 
+  </exercises>
+
+
+
+</section>

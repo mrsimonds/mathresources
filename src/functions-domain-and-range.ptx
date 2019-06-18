@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="functions-domain-and-range">
+  <title>Domain and Range of Functions</title>
+
+  <paragraphs>
+    <title>Domain and Range of Discrete Functions</title>
+    <p></p>
+  <p>
+    When <m>y</m> is a function of <m>x</m>, the set of all <m>x</m>-coordinates in the set is called the domain of the function and the set of all <m>y</m>-coordinates is called the range of the function.
+  </p>
+  <sidebyside widths="73% 23%" margins="0%">
+
+    <p>
+      For example, the domain of the function <m>f</m> whose ordered pairs are shown in <xref ref="functions-domain-and-range-table-1">Table</xref> is <m>\{-1,3,6,-7,2,-5\}</m>.  The range of <m>f</m> is <m>\{7,-1,4,0\}</m>.  Notice that <m>7</m> was listed only once in the range even though it is the <m>y</m>-coordinate of more than one point in the set.  Either <m>7</m> is an element of the range or it is not <mdash/> it can't be be an element multiple times (even though it can be the <m>y</m>-coordinate of multiple ordered pairs in the function).
+    </p>
+
+    <table xml:id="functions-domain-and-range-table-1">
+      <caption><m>y=f(x)</m></caption>
+      <tabular>
+        <col halign="center" />
+        <col halign="center" />
+        <row bottom="medium">
+          <cell><line><m>x</m></line></cell>
+          <cell><line><m>y</m></line></cell>
+        </row>
+        <row>
+          <cell><m>-1</m></cell>
+          <cell><m>7</m></cell>
+        </row>
+        <row>
+          <cell><m>3</m></cell>
+          <cell><m>-1</m></cell>
+        </row>
+        <row>
+          <cell><m>6</m></cell>
+          <cell><m>7</m></cell>
+        </row>
+        <row>
+          <cell><m>-7</m></cell>
+          <cell><m>4</m></cell>
+        </row>
+        <row>
+          <cell><m>2</m></cell>
+          <cell><m>7</m></cell>
+        </row>
+        <row>
+          <cell><m>-5</m></cell>
+          <cell><m>0</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+  </sidebyside>
+  <p>
+    The function <m>f</m> described in <xref ref="functions-domain-and-range-table-1">Table</xref> is called a discrete function.  A discrete function is a function where both the domain and range can be listed as distinct elements in a set.  This is in comparison to a continuous function like a line. The domain of a linear function is all real numbers, and it's not possible to write every real number in a list. 
+  </p>
+  <p>
+    Discrete functions are very common in real life.  For example, suppose that are taking a psychology class.  Consider all of the students present the first day of class.  We could define a function where the <m>x</m>-coordinates are made up the students' ages and the <m>y</m>-coordinates are made up by the corresponding student's credit-load. In this case, the domain of the function would be the set of all of the students' ages and the range would be the set of all of the students' credit-loads.  This type of function is frequently analyzed in the field of statistics.
+  </p>
+  </paragraphs>
+  <paragraphs>
+    <title>Domain and Range of Continuous Functions</title>
+    <p></p>
+  <p>
+    In early algebra classes and in calculus classes it is much more common to work with (mostly) continuous functions.  While there is a formal definition for a continuous function, it relies upon a context not encountered until calculus.  An informal way to describe a continuous function is to note that it is a function that can be drawn without lifting your pencil off of the paper (for sticklers, and not drawing any open circles in the process).  Sometimes a function is not continuous everywhere, but does have distinct regions where it is continuous.
+  </p>
+  <sidebyside widths="48% 48%" margins="0%">
+
+    <p>
+      Consider the function, <m>g</m>, shown in <xref ref="functions-domain-and-range-figure-1">Figure</xref>.  We can see that the function has points for all <m>x</m>-coordinates between <m>-2</m> and <m>4</m>.  The open circle at the point <m>(-2,-3)</m> indicates that the point is not on the function, so <m>-2</m> is not a part of the domain.  The solid dot at the point <m>(4,3)</m> indicates that the point is a part of the function, so <m>4</m> is in the domain.
+    </p>
+
+    <figure xml:id="functions-domain-and-range-figure-1">
+      <caption><m>y=g(x)</m></caption>
+      <image>
+        <description>
+          The graph of a function that resembles a fishhook.  The short end of the hook lies at the point <m>(-2,-3)</m> and the is an open circle at that point.  The long end of the hook lies at the point <m>(4,3)</m> and there is a solid dot at that point.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}
+              \addplot[primarycurve,domain=-2:4,smooth,-] {.5*x^2-5};
+              \addplot[hollowdot,fill=yellow!30] coordinates {(-2,-3)} node[below left] {(-2,-3)};
+              \addplot[soliddot] coordinates {(4,3)} node[above right] {(4,3)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+  <p>
+    We can state the domain using interval notation. In that format the domain is <m>(-2,4]</m>.  Recall that a parenthesis indicates that the endpoint is not included in the set whereas a square bracket indicates that the end point is included in the set.
+  </p>
+  <p>
+    We can also state the domain using set builder notation.  In that format the domain is <m>\{x \mid -2 \lt x\leq 4\}</m>.
+  </p>
+  <sidebyside widths="48% 48%" margins="0%">
+
+    <p>
+      When working with a function that is continuous, we can think of the domain as the shadow that the function casts upon the <m>x</m>-axis and the range the shadow cast upon the <m>y</m>-axis. In <xref ref="functions-domain-and-range-figure-2">Figure</xref> I've added these two shadows.  From the shadow cast upon the <m>y</m>-axis, we can see that the range of <m>g</m> is <m>[-5,3]</m>.  Stated with set-builder notation, the range is <m>\{y \mid -5 \leq y \leq 3\}</m>.
+    </p>
+
+    <figure xml:id="functions-domain-and-range-figure-2">
+      <caption><m>y=g(x)</m></caption>
+      <image>
+        <description>
+          The graph of a function that resembles a fishhook.  The short end of the hook lies at the point <m>(-2,-3)</m> and the is an open circle at that point.  The long end of the hook lies at the point <m>(4,3)</m> and there is a solid dot at that point.  The bottom of the hook is located at the point <m>(0,5)</m>. The interval <m>(-2,3]</m> is marked on the <m>x</m>-axis.  The interval <m>[-5,3]</m> is marked on the <m>y</m>-axis.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}
+              \addplot[primarycurve,domain=-2:4,smooth,-] {.5*x^2-5};
+              \addplot[hollowdot,fill=yellow!30] coordinates {(-2,-3)} node[below left] {(-2,-3)};
+              \addplot[soliddot] coordinates {(4,3)} node[above right] {(4,3)};
+              \addplot[primarycurve,domain=-2:4,blue,ultra thick,(-{Bracket}] {0};
+              \addplot[interval,brown,ultra thick,{Bracket}-{Bracket}] coordinates {(0,-5) (0,3)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+  <sidebyside widths="48% 48%" margins="0%">
+
+    <p>
+      Let's now consider the function <m>h</m> shown in <xref ref="functions-domain-and-range-figure-3">Figure</xref>.  From the shadows cast upon the axes we can deduce the the domain of the function is <m>(-\infty,-3] \cup (4,\infty)</m> and that the range is <m>(-\infty,-5) \cup [1,\infty)</m>.  
+    </p>
+
+    <figure xml:id="functions-domain-and-range-figure-3">
+      <caption><m>y=h(x)</m></caption>
+      <image>
+        <description>
+          The graph of a function that consists of tow half-lines.  The half-line on the left points upward and terminates at a solid dot located at the point <m>(-3,1)</m>.  The half-line on the right originates at an open circle located at the point <m>(4,-5)</m>; this half-line points downward.  The interval <m>(-\infty,-3] \cup (4,infty)</m> is marked on the <m>x</m>-axis.  The interval <m>(-\infty,-5) \cup [1,\infty)</m> is marked on the <m>y</m>-axis.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}
+              \addplot[primarycurve,domain=-6.9:-3,smooth,{Stealth}-] {-x-2};
+              \addplot[primarycurve,domain=4:6.9,smooth,-{Stealth}] {-.5*x-3};
+              \addplot[soliddot] coordinates {(-3,1)} node[above] {(-3,1)};
+              \addplot[hollowdot,fill=yellow!30] coordinates {(4,-5)} node[above right] {(4,-5)};
+              \addplot[primarycurve,domain=-6.9:-3,blue,ultra thick,{Stealth}-{Bracket}] {0};
+              \addplot[primarycurve,domain=4:6.9,blue,ultra thick,(-{Stealth}] {0};
+              \addplot[interval,brown,ultra thick,{Bracket}-{Stealth}] coordinates {(0,1) (0,6.9)};
+              \addplot[interval,brown,ultra thick,{Stealth}-)] coordinates {(0,-6.9) (0,-5)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+  <p>
+    Recall that beginning an interval with the symbols "<m>(-\infty,\,...</m>" signifies that the interval has no left-hand endpoint and ending an interval with the symbols "<m>...\,\infty)</m>" signifies that the interval has no right-hand endpoint.  The symbol "<m>\cup</m>" is read "union" and it indicates that the set in total includes both intervals on either side of the union symbol.
+  </p>
+  <p>
+    Using set builder notation, the domain of <m>h</m> is <m>\{x \mid x \leq -3 \,\text{or}\, x \gt 4\}</m> and the range is <m>\{y \mid y \lt -5 \,\text{or}\, y \geq 1\}</m>.  The same domain applies to a function whose formula is the absolute value of a polynomial function.
+  </p>
+  </paragraphs>
+  <paragraphs>
+    <title>Determining Domains from Function Formulas</title>
+    <p></p>
+  <p>
+    We now turn our attention to determining the domains of functions where we are presented with a formula for the function.  For now we will restrict our discussion to three types of function: polynomial functions, radical functions, and rational functions.
+  </p>
+  <p>
+    We begin with polynomial functions, because they are the easiest type of function to determine the domain.  Unless otherwise restricted, the domain of any polynomial function, including linear and quadratic functions, is the set of all real numbers, which we write as <m>(-\infty,\infty)</m> or <m>\{x \mid x \in \mathbb{R}\}</m>.  The same is true for a function where the formula is the absolute value of a polynomial function.
+  </p>
+  <p>
+    When determining the domain of a radical function, the first thing that needs to be considered is the index of the radical.  For now, let's assume that the radicand (the expression under the radical symbol) is a polynomial function.
+  </p>
+  <p>
+    If the index is odd, the domain of the function is again all real numbers.  That's because the odd root of a real number is itself always a real number.
+  </p>
+  <p>
+    On the other hand, if the index of the radicand is even, the radicand cannot be negative because the even root of a negative number is not a real number.
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Determine the domains of the functions <m>f(x)=\sqrt{3-15x}</m> and <m>g(x)=\sqrt[3]{3-15x}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The radicand of the square root function cannot be negative.  We can determine the domain be setting the radicand greater than or equal to zero and solving the resultant inequality.
+        <md>
+          <mrow>3-15x \amp\geq 0</mrow>
+          <mrow>3-15x\subtractright{3} \amp\geq 0\subtractright{3}</mrow>
+          <mrow>-15x \amp\geq -3</mrow>
+          <mrow>\divideunder{-15x}{-15} \amp\leq \divideunder{-3}{-15}</mrow>
+          <mrow>x \amp\leq \frac{1}{5}</mrow>          
+        </md>
+        So the domain of <m>f</m> is <m>\left(-\infty,\frac{1}{5}\right]</m> which can also be written as <m>\{x \mid x \leq \frac{1}{5}\}</m>.
+      </p>
+      <p></p>
+      <b>
+        Because the formula for <m>g</m> is an odd root of a polynomial function, the domain of <m>g</m> is <m>(-\infty,\infty)</m> which can also be written as <m>\{x \mid x \in \mathbb{R}\}</m>.
+      </b>
+    </solution>
+  </example>
+
+  <p>
+    Finally, let's turn our attention to rational functions.  A rational function is a function that can be expressed as a polynomial over a polynomial.  Because the domain of any polynomial function is all real numbers, no matter what the value of <m>x</m>, the rational function will produce numbers in both the numerator and the denominator.  Most of the time we can then just divide the two number.  There's a problem, however, when the number in the denominator turns out to be zero.  Division by zero is not defined in any context, so the value that led to such division is not a part of the domain of the function.
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Determine the domain of the function <m>g(x)=\frac{5}{x-9}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The denominator of the expression <m>\frac{5}{x-9}</m> cannot equal zero.
+        <md>
+          <mrow>x-9 \amp\neq 0</mrow>
+          <mrow>x-9\addright{9} \amp\neq 0\addright{9}</mrow>
+          <mrow>x \amp\neq 9</mrow>
+        </md>
+        The domain of <m>g</m> is <m>(-\infty,9) \cup (9,\infty)</m> which can also be written as <m>\{x \mid x \neq 9\}</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Determine the domain of the function <m>l(t)=\frac{t-3}{t^2+7t-70}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The denominator of the expression <m>\frac{t-3}{t^2+7t-70}</m> cannot equal zero.
+        <md>
+          <mrow>t^2+7t-70 \amp\neq 0</mrow>
+          <mrow>(t+10)(t-3) \amp\neq 0</mrow>
+        </md>
+        <md>
+          <mrow>t+10 \amp\neq 0 \amp\amp\text{ and }\amp t-3 \amp\neq 0</mrow>
+          <mrow>t+10\subtractright{10} \amp\neq 0\subtractright{10} \amp\amp\text{ and }\amp t-3\addright{3} \amp\neq 0\addright{3}</mrow>
+          <mrow>t \amp\neq -10 \amp\amp\text{ and }\amp t \amp\neq 3</mrow>
+        </md> 
+        The domain of <m>l</m> is <m>(-\infty,-10) \cup (-10,3) \cup (3,\infty)</m> which can also be written as <m>\{x \mid x \neq -10 \,\text{and}\, x \neq 3\}</m>
+      </p>
+    </solution>
+  </example>
+  
+  <example>
+    <statement>
+      <p>
+        Determine the domain of the function <m>f(t)=\frac{t^2-16}{t^2+16}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        he denominator of the expression <m>\frac{t^2-16}{t^2+16}</m> cannot equal zero.
+        <md>
+          <mrow>t^2+16 \amp\neq 0</mrow>
+          <mrow>t^2+16\subtractright{16} \amp\neq 0\subtractright{16}</mrow>
+          <mrow>t^2 \amp\neq -16</mrow>
+        </md>
+        The last inequality is an identity, that is, it is true for any real number value of <m>t</m>.  So the domain of <m>f</m> is <m>(-\infty,\infty)</m> which can also be written as <m>\{x \mid x \in \mathbb{R}\}</m>.
+      </p>
+    </solution>
+  </example>
+  
+  <example>
+    <statement>
+      <p>
+        Determine the domain of the function <m>k(x)=\frac{x^2+4}{x^2+4x}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The denominator of the expression <m>\frac{x^2+4}{x^2+4x}</m> cannot equal zero.
+        <md>
+          <mrow>x^2+4x \amp\neq 0</mrow>
+          <mrow>x \dot (x+4) \amp\neq 0</mrow>
+        </md>
+        <md>
+          <mrow>x+4 \amp\neq 0 \amp\amp\text{ and }\amp x \neq 0</mrow>
+          <mrow>x+4\subtractright{4} \amp\neq 0\subtractright{4} \amp\amp\text{ and }\amp x \neq 0</mrow>
+          <mrow>x \amp\neq -4 \amp\amp\text{ and }\amp x \neq 0</mrow>
+        </md>
+        The domain of <m>k</m> is <m>(-\infty,-4) \cup (-4,0) \cup (0,\infty)</m> which can also be written as <m>\{x \mid x \neq -4 \,\text{and}\, x \neq 0\}</m>.
+      </p>
+    </solution>
+  </example>
+
+  </paragraphs>
+  
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine the domain of each of the following functions.  Where possible, state the domain using interval notation.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y(x)=\sqrt{15-x}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            To determine the domain of <m>y(x)=\sqrt{15-x}</m>, we begin by noting that we cannot take the square root of a negative number (at least over the real numbers).  This gives us the following.
+            <md>
+              <mrow>15-x \amp\ge 0</mrow> 
+              <mrow>15-x\subtractright{15} \amp\ge 0\subtractright{15}</mrow>
+              <mrow>-x \amp\ge -15</mrow>
+              <mrow>\multiplyleft{-1}-x \amp\le \multiplyleft{-1}-15</mrow>
+              <mrow>x \amp\le 15</mrow>
+            </md>
+          </p>
+          <p>
+            The domain of <m>y</m> is <m>(-\infty,15]</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(t)=\sqrt[3]{t^2-9}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            To determine the domain of <m>f(t)=\sqrt[3]{t^2-9}</m>, we begin by noting that the polynomial expression <m>t^2-9</m> is defined for all real numbers as is the cube root function.  So the domain of <m>f</m> is <m>(-\infty,\infty)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>w(x)=\frac{x-7}{x-12}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            To determine the domain of <m>w(x)=\frac{x-7}{x-12}</m>, we begin by noting that we cannot divide by zero.  This gives us the following.
+            <md>
+              <mrow>x-12 \amp\ne 0</mrow>
+              <mrow>x-12\addright{12} \amp\ne 0\addright{12}</mrow>
+              <mrow>x \amp\ne 12</mrow>
+            </md>
+          </p>
+          <p>
+            The domain of <m>w</m> is <m>(-\infty,12) \cup (12,\infty)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>g(x)=\frac{x+3}{x^2+8x+15}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            To determine the domain of <m>g(x)=\frac{x+3}{x^2+8x+15}</m>, we begin by noting that we cannot divide by zero.  This gives us the following.
+            <md>
+              <mrow>x^2+8x+15 \amp\ne 0</mrow>
+              <mrow>(x+3)(x+5) \amp\ne 0</mrow>
+            </md>
+            <md>
+              <mrow>x+3 \amp\ne 0 \amp\amp\text{ and }\amp x+5 \amp\ne 0</mrow>
+              <mrow>x+3\subtractright{3} \amp\ne 0\subtractright{3} \amp\amp\text{ and }\amp x+5\subtractright{5} \amp\ne 0\subtractright{5}</mrow>
+              <mrow>x \amp\ne -3 \amp\amp\text{ and }\amp x \amp\ne -5</mrow>
+            </md>
+          </p>
+          <p>
+            The domain of <m>g</m> is <m>(-\infty,-5) \cup (-5,-3) \cup (-3,\infty)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>r(t)=t^2-3t+9</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            To determine the domain of <m>r(t)=t^2-3t+9</m>, we begin by noting that <m>r</m> is a polynomial function and polynomial functions are defined for all real numbers. So the domain of <m>r</m> is <m>(-\infty,\infty)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>k(t)=\frac{t^2+16}{t^2+16}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            To determine the domain of <m>k(t)=\frac{t^2+16}{t^2+16}</m>, we begin by noting that we cannot divide by zero.  But <m>t^2+16</m> is positive for all real number values of <m>t</m>, so no value of <m>t</m> will cause division by zero.  So the domain of <m>k</m> is <m>(-\infty,\infty)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine the domains and ranges of functions presented graphically.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the domain and range of the function <m>f</m> shown in <xref ref="functions-domain-and-range-exercises-figure-1">Figure</xref>. State the domain and range using interval notation.
+          </p>
+          <figure xml:id="functions-domain-and-range-exercises-figure-1">
+            <caption><m>y=f(x)</m></caption>
+            <image width="47%">
+              <description>
+                The graph of a function named f.  The function is rather squiggly.  The left most point on the function is a solid dot at the point <m>(-4,2)</m>.  The right most point plotted is an open circle at the point <m>(5,5)</m>. From left to right, the curve starts at the point <m>(-4,2)</m> and rises to a peak at <m>(-3,5)</m>.  It then falls past the point <m>(-2,2)</m> until it reaches a floor at the point <m>(-1,-1)</m>.  It then rises past the point <m>(0,2)</m> until reaching a second peak at the point <m>(1,5)</m>.  The curve then falls past the point <m>(2,2)</m> to a second floor at the point <m>(3,-1)</m>.  The curve finishes up by rising past the point <m>(4,1)</m> before terminating at the hole plotted at the point <m>(5,5)</m>.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis}
+                    \addplot[primarycurve,domain=-4:5,smooth,-] {2+3*sin(pi*deg(x)/2)};
+                    \addplot[soliddot] coordinates {(-4,2)};
+                    \addplot[hollowdot] coordinates {(5,5)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </statement>
+        <solution>
+          <p>
+            The domain is <m>[-4,5),</m>.  The range is <m>[-1,5]</m>. See <xref ref="functions-domain-and-range-exercises-figure-1-key">Figure</xref>. 
+          </p>
+          <figure xml:id="functions-domain-and-range-exercises-figure-1-key">
+            <caption><m>y=f(x)</m></caption>
+            <image width="47%">
+              <description>The graph of a function named f.  The function is rather squiggly.  The left most point on the function is a solid dot at the point <m>(-4,2)</m>.  The right most point plotted is an open circle at the point <m>(5,5)</m>. From left to right, the curve starts at the point <m>(-4,2)</m> and rises to a peak at <m>(-3,5)</m>.  It then falls past the point <m>(-2,2)</m> until it reaches a floor at the point <m>(-1,-1)</m>.  It then rises past the point <m>(0,2)</m> until reaching a second peak at the point <m>(1,5)</m>.  The curve then falls past the point <m>(2,2)</m> to a second floor at the point <m>(3,-1)</m>.  The curve finishes up by rising past the point <m>(4,1)</m> before terminating at the hole plotted at the point <m>(5,5)</m>.  The interval <m>[-4,5)</m> is marked on the <m>x</m>axis.  The interval <m>[-1,5]</m> is marked on the <m>y</m>-axis.
+            </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis}
+                    \addplot[primarycurve,domain=-4:5,smooth,-] {2+3*sin(pi*deg(x)/2)};
+                    \addplot[soliddot] coordinates {(-4,2)};
+                    \addplot[hollowdot] coordinates {(5,5)};
+                    \addplot[primarycurve,domain=-4:5,blue,ultra thick,[-)] {0};
+                    \addplot[closedinterval,brown,ultra thick] coordinates {(0,-1) (0,5)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the domain and range of the function <m>g</m> shown in <xref ref="functions-domain-and-range-exercises-figure-2">Figure</xref>. State the domain and range using interval notation.
+          </p>
+          <figure xml:id="functions-domain-and-range-exercises-figure-2">
+            <caption><m>y=g(x)</m></caption>
+            <image width="47%">
+              <description>
+                The graph of a function named g.  There are two distinct pieces to the function.  The piece on the left resembles a fishhook.  It has open holes at either end.  The endpoints are <m>(-6,2)</m> and <m>(-1,3)</m>.  The bottom point on the hook is <m>(4,-6)</m>.  The hook also passes through the point <m>(-2,-2)</m>.  The other piece of the function is a half-line.  The half-line originates at a solid dot plotted at the point <m>(-1,6)</m>.  The line then decreases with a slope of <m>-2</m> passes through the points <m>(0,4)</m>, <m>(1,2)</m>, <m>(2,0)</m>, <m>(3,-2)</m>, <m>(4,-4)</m> and <m>(5,-6)</m>.  There is an arrow at the right end of the half-line.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis}
+                    \addplot[primarycurve,domain=-6:-1,smooth,-] {(x+4)^2-6};
+                    \addplot[primarycurve,domain=-1:5.26,smooth,-{Stealth}] {-2*x+4};
+                    \addplot[hollowdot] coordinates {(-6,-2)};
+                    \addplot[hollowdot] coordinates {(-1,3)};
+                    \addplot[soliddot] coordinates {(-1,6)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </statement>
+        <solution>
+          <p>
+            The domain is <m>(-6,\infty)</m>.  The range is <m>(-\infty,6]</m>.  See <xref ref="functions-domain-and-range-exercises-figure-2-key">Figure</xref>.
+          </p>
+           <figure xml:id="functions-domain-and-range-exercises-figure-2-key">
+            <caption><m>y=g(x)</m></caption>
+            <image width="47%">
+              <description>
+                The graph of a function named g.  There are two distinct pieces to the function.  The piece on the left resembles a fishhook.  It has open holes at either end.  The endpoints are <m>(-6,2)</m> and <m>(-1,3)</m>.  The bottom point on the hook is <m>(4,-6)</m>.  The hook also passes through the point <m>(-2,-2)</m>.  The other piece of the function is a half-line.  The half-line originates at a solid dot plotted at the point <m>(-1,6)</m>.  The line then decreases with a slope of <m>-2</m> passes through the points <m>(0,4)</m>, <m>(1,2)</m>, <m>(2,0)</m>, <m>(3,-2)</m>, <m>(4,-4)</m> and <m>(5,-6)</m>.  There is an arrow at the right end of the half-line.  The interval <m>(-6,\infty)</m> is marked on the <m>x</m>-axis.  The interval <m>(-\infty,6]</m> is marked on the <m>y</m>-axis.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis}
+                    \addplot[primarycurve,domain=-6:-1,smooth,-] {(x+4)^2-6};
+                    \addplot[primarycurve,domain=-1:5.26,smooth,-{Stealth}] {-2*x+4};
+                    \addplot[hollowdot] coordinates {(-6,-2)};
+                    \addplot[hollowdot] coordinates {(-1,3)};
+                    \addplot[soliddot] coordinates {(-1,6)}; 
+                    \addplot[primarycurve,domain=-6:6.5,blue,ultra thick,(-{Stealth}] {0};
+                    \addplot[interval,brown,ultra thick,{Stealth}-{Bracket}] coordinates {(0,-6.5) (0,6)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the domain and range of the function <m>k</m> shown in <xref ref="functions-domain-and-range-exercises-figure-3">Figure</xref>.  State the domain and range using interval notation.
+          </p>
+          <figure xml:id="functions-domain-and-range-exercises-figure-3">
+            <caption><m>y=k(x)</m></caption>
+              <image width="47%">
+              <description>
+                The graph of a function names <m>k</m>.  There are three distinct pieces to the curve,  There is a half-line that points leftward ad downward.  The half-line terminates at the point <m>(0,4)</m>.  There is an isolated solid dot at the point <m>(0,-3)</m>.  There is a little more than half of a parabola that originates at an open circle located at the point <m>(2,4)</m>.  The top point on the parabolic piece is located at the point <m>(3,5)</m>.  The parabolic piece continues downward from that point with an arrow at the end.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis}
+                    \addplot[primarycurve,domain=-3.5:0,smooth,{Stealth}-] {3*x+4};
+                    \addplot[primarycurve,domain=2:6.4,smooth,-{Stealth}] {-(x-3)^2+5};
+                    \addplot[hollowdot] coordinates {(0,4)};
+                    \addplot[soliddot] coordinates {(0,-3)};
+                    \addplot[hollowdot] coordinates {(2,4)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </statement>
+        <solution>
+          <p>
+            The domain is <m>(-\infty,0] \cup (2,\infty)</m>.  The range is <m>(-\infty,6]</m>. See <xref ref="functions-domain-and-range-exercises-figure-3-key">Figure</xref>.
+          </p>
+          <figure xml:id="functions-domain-and-range-exercises-figure-3-key">
+            <caption><m>y=k(x)</m></caption>
+            <image width="47%">
+              <description>
+                The graph of a function names <m>k</m>.  There are three distinct pieces to the curve,  There is a half-line that points leftward ad downward.  The half-line terminates at the point <m>(0,4)</m>.  There is an isolated solid dot at the point <m>(0,-3)</m>.  There is a little more than half of a parabola that originates at an open circle located at the point <m>(2,4)</m>.  The top point on the parabolic piece is located at the point <m>(3,5)</m>.  The parabola piece continues downward from that point with an arrow at the end.  The interval <m>(-\infty,0] \cup (2,\infty)</m> is marked on the <m>x</m>-axis.  The interval <m>(-\infty,5]</m> is marked on the <m>y</m>-axis.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis}
+                    \addplot[primarycurve,domain=-3.5:0,smooth,{Stealth}-] {3*x+4};
+                    \addplot[primarycurve,domain=2:6.4,smooth,-{Stealth}] {-(x-3)^2+5};
+                    \addplot[hollowdot] coordinates {(0,4)};
+                    \addplot[soliddot] coordinates {(0,-3)};
+                    \addplot[hollowdot] coordinates {(2,4)};
+                    \addplot[interval,blue,ultra thick,{Stealth}-{Bracket}] coordinates {(-6.5,0) (0,0)};
+                    \addplot[interval,blue,ultra think,(-{Stealth}] coordinates {(2,0) (6.5,0)};
+                    \addplot[interval,brown,ultra thick,{Stealth}-{Bracket}] coordinates {(0,-6.5) (0,5)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+</section>

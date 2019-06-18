@@ -10,223 +10,234 @@
 <!-- ********************************************************************* -->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="factoring-leading-coefficient-1">
-    <title>Factoring Trinomials with Leading Coefficients of 1</title>
+  <title>Factoring Trinomials with Leading Coefficients of 1</title>
 
+  <p>
+    Factoring a trinomial of form <m>x^2+bx+c</m>, where <m>b</m> and <m>c</m> are integers, is essentially the reversal of a FOIL process.  For this reason, we can develop a strategy by investigating a FOIL expansion.  Let's expand <m>(x+4)(x+6)</m>.   
+    <md>
+      <mrow>(x+4)(x+6)\amp=x^2+6x+4x+24</mrow>
+      <mrow>\amp=x^2+10x+24</mrow>
+    </md>
+  </p>
+  <p>
+    Let's observe that the linear coefficient, <m>10</m>, is the sum of <m>4</m> and <m>6</m> whereas the constant term, <m>24</m>, is the product of <m>4</m> and <m>6</m>.  Since we expanded <m>(x+4)(x+6)</m>, we can infer that finding the constants in a factorization of trinomials of form <m>x^2+bx+c</m> is dependent upon determining two numbers that sum to <m>b</m> and multiply to <m>c</m>.
+  </p>
+  <p>
+    From the factor pairs and sums shown in <xref ref="factoring-trinomial-lc1-table-1">Table</xref>, we can infer the following factorizations. 
+  </p>
+  <sidebyside widths="48% 48%" margins="0%">
+
+    <p>
+      <md>
+        <mrow>x^2+7x+6\amp=(x+1)(x+6)</mrow>
+        <mrow>x^2+5x+6\amp=(x+2)(x+3)</mrow>
+        <mrow>x^2-7x+6\amp=(x-1)(x-6)</mrow>
+        <mrow>x^2-5x+6\amp=(x-2)(x-3)</mrow>
+      </md> 
+    </p>
+
+    <table xml:id="factoring-trinomial-lc1-table-1">
+      <caption>Factor pairs of <m>6</m></caption>
+      <tabular>
+        <col halign="center" />
+        <col halign="center"/>
+        <row bottom="medium">
+          <cell>
+            <line>factors</line>
+          </cell>
+          <cell>
+            <line>sum</line>
+          </cell>
+        </row>
+        <row>
+          <cell><m>1,6</m></cell>
+          <cell><m>7</m></cell>
+        </row>
+        <row>
+          <cell><m>2,3</m></cell>
+          <cell><m>5</m></cell>
+        </row>
+        <row>
+          <cell><m>-1,-6</m></cell>
+          <cell><m>-7</m></cell>
+        </row>
+        <row>
+          <cell><m>-2,-3</m></cell>
+          <cell><m>-5</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+  </sidebyside> 
+  <p>
+    Just as noteworthy, since the factor pairs shown in <xref ref="factoring-trinomial-lc1-table-1">Table</xref> form an exhaustive list, we cannot factor any trinomial of form <m>x^2+bx+6</m> where b is not one of the four numbers shown in the sum column.  Such trinomials are said to be prime.  For example, <m>x^2+3x+6</m> is prime.
+  </p>
+
+  <example xml:is="factoring-trinomial-lc1-ex-1">
+    <statement>
       <p>
-        Factoring a trinomial of form <m>x^2+bx+c</m>, where <m>b</m> and <m>c</m> are integers, is essentially the reversal of a FOIL process.  For this reason, we can develop a strategy by investigating a FOIL expansion.  Let's expand <m>(x+4)(x+6)</m>.                   
-        </p>
-        <md>
-        <mrow>(x+4)(x+6)\amp=x^2+6x+4x+24</mrow>
-        <mrow>\amp=x^2+10x+24</mrow>
-      </md>
-      <p>
-        Let's observe that the linear coefficient, <m>10</m>, is the sum of <m>4</m> and <m>6</m> whereas the constant term, <m>24</m>, is the product of <m>4</m> and <m>6</m>.  Since we expanded <m>(x+4)(x+6)</m>, we can infer that finding the constants in a factorization of trinomials of form <m>x^2+bx+c</m> is dependent upon determining two numbers that sum to <m>b</m> and multiply to <m>c</m>.
+        Factor <m>x^2-8x+15</m>
       </p>
-        From the factor pairs and sums shown in <xref ref="factoring-trinomial-lc1-table-1">Table</xref>, we can infer the following factorizations. 
+    </statement>
+    <solution>
       <p>
-
+        Our first task is to determine a factor pair that multiplies to <m>15</m> and adds to <m>-8</m>.  Since the product is positive and the sum is negative, we are searching for two negative numbers.  The pair that works is <m>-3</m> and <m>-5</m>.  This gives us:
+          <me>x^2-8x+15=(x-3)(x-5)</me>.
       </p>
-      <sidebyside widths="50% 50%" margins="0%">
+    </solution>
+  </example>
+
+  <example xml:is="factoring-trinomial-lc1-ex-1">
+    <statement>
+      <p>
+        Factor <m>w^2-4w-12</m>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Since our factor pair needs to multiply to a negative value <m>(-12)</m>, one the numbers in the pair must be positive and the other negative.  Let's note that <m>6</m> and <m>2</m> multiply to 12 and have a difference of <m>4</m>.  This can be helpful in determining that the factor pair that multiplies to <m>-12</m> and adds to <m>-4</m> is <m>-6</m> and <m>2</m>.  This gives us:
+        <me>w^2-4w-12=(w-6)(w+2)</me>. 
+      </p>
+    </solution>
+  </example>
+  <figure xml:id="factoring-leading-coefficient-1-geogebra-1">
+    <caption>Practice Factoring Trinomials with a Leading Coefficient of One</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/factor-trinomials-1.ggb">
+        setPerspective("G");
+        setAxesVisible(0,0);
+      </slate>
+    </interactive>
+  </figure>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
         <p>
-        <md>
-          <mrow>x^2+7x+6\amp=(x+1)(x+6)</mrow>
-          <mrow>x^2+5x+6\amp=(x+2)(x+3)</mrow>
-          <mrow>x^2-7x+6\amp=(x-1)(x-6)</mrow>
-          <mrow>x^2-5x+6\amp=(x-2)(x-3)</mrow>
-        </md> 
+          Factor each trinomial.  Check your answer by expanding the factorization.  If the trinomial cannot be factored, state that it is prime.
         </p>
-        <table xml:id="factoring-trinomial-lc1-table-1">
-          <caption>Factor pairs of <m>6</m></caption>
-            <tabular>
-              <col halign="center" />
-              <col halign="center"/>
-              <row bottom="medium">
-                <cell>
-                  <line>factors</line>
-                </cell>
-                <cell>
-                  <line>sum</line>
-                </cell>
-              </row>
-              <row>
-                <cell><m>1,6</m></cell>
-                <cell><m>7</m></cell>
-              </row>
-              <row>
-                <cell><m>2,3</m></cell>
-                <cell><m>5</m></cell>
-              </row>
-              <row>
-                <cell><m>-1,-6</m></cell>
-                <cell><m>-7</m></cell>
-              </row>
-              <row>
-                <cell><m>-2,-3</m></cell>
-                <cell><m>-5</m></cell>
-              </row>
-            </tabular>
-          </table>
-        </sidebyside> 
-        <p>
-          Just as noteworthy, since the factor pairs shown in <xref ref="factoring-trinomial-lc1-table-1">Table</xref> form an exhaustive list, we cannot factor any trinomial of form <m>x^2+bx+6</m> where b is not one of the four numbers shown in the sum column.  Such trinomials are said to be prime.  For example, <m>x^2+3x+6</m> is prime.
-        </p>
+      </introduction>
 
-        <example xml:is="factoring-trinomial-lc1-ex-1">
-          <statement>
-            <p>
-              Factor <m>x^2-8x+15</m>
-            </p>
-          </statement>
-          <solution>
-            <p>
-              Our first task is to determine a factor pair that multiplies to <m>15</m> and adds to <m>-8</m>.  Since the product is positive and the sum is negative, we are searching for two negative numbers.  The pair that works is <m>-3</m> and <m>-5</m>.  This gives us:
-              <me>x^2-8x+15=(x-3)(x-5)</me>.
-            </p>
-          </solution>
-        </example>
+      <exercise>
+        <statement>
+          <p>
+            <m>x^2+6x+5</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x^2+6x+5=(x+2)(x+3)</m>
+          </p>
+        </solution>
+      </exercise>
 
-        <example xml:is="factoring-trinomial-lc1-ex-1">
-          <statement>
-            <p>
-              Factor <m>w^2-4w-12</m>
-            </p>
-          </statement>
-          <solution>
-            <p>
-              Since our factor pair needs to multiply to a negative value <m>(-12)</m>, one the numbers in the pair must be positive and the other negative.  Let's note that <m>6</m> and <m>2</m> multiply to 12 and have a difference of <m>4</m>.  This can be helpful in determining that the factor pair that multiplies to <m>-12</m> and adds to <m>-4</m> is <m>-6</m> and <m>2</m>.  This gives us:
-              <me>w^2-4w-12=(w-6)(w+2)</me>. 
-            </p>
-          </solution>
-        </example>
+      <exercise>
+        <statement>
+          <p>
+            <m>t^2-6t+8</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>t^2-6t+8=(t-2)(t-4)</m>
+          </p>
+        </solution>
+      </exercise>
 
-      <exercises>
+      <exercise>
+        <statement>
+          <p>
+            <m>x^2+8x+4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x^2+8x+4</m> is prime.
+          </p>
+        </solution>
+      </exercise>
 
-        <exercisegroup>
-          <introduction>
-            <p>
-              Factor each trinomial.  Check your answer by expanding the factorization.  If the trinomial cannot be factored, state that it is prime.
-            </p>
-          </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>y^2-14y-32</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>y^2-14y-32=(y-16)(y+2)</m>
+          </p>
+        </solution>
+      </exercise>
 
-            <exercise>
-              <statement>
-                <p>
-                  <m>x^2+6x+5</m>
-                </p>
-              </statement>
-              <solution>
-                <p>
-                  <m>x^2+6x+5=(x+2)(x+3)</m>
-                </p>
-              </solution>
-            </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>x^2+6x-20</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x^2+6x-20</m> is prime.
+          </p>
+        </solution>
+      </exercise>
 
-            <exercise>
-              <statement>
-                <p>
-                  <m>t^2-6t+8</m>
-                </p>
-              </statement>
-              <solution>
-                <p>
-                  <m>t^2-6t+8=(t-2)(t-4)</m>
-                </p>
-              </solution>
-            </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>x^2+15x-100</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x^2+15x-100=(x+20)(x-5)</m>
+          </p>
+        </solution>
+      </exercise>
 
-            <exercise>
-              <statement>
-                <p>
-                  <m>x^2+8x+4</m>
-                </p>
-              </statement>
-              <solution>
-                <p>
-                  <m>x^2+8x+4</m> is prime.
-                </p>
-              </solution>
-            </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>w^2-18w+45</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>w^2-18w+45=(w-15)(w-3)</m>
+          </p>
+        </solution>
+      </exercise>
 
-            <exercise>
-              <statement>
-                <p>
-                  <m>y^2-14y-32</m>
-                </p>
-              </statement>
-              <solution>
-                <p>
-                  <m>y^2-14y-32=(y-16)(y+2)</m>
-                </p>
-              </solution>
-            </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>x^2+21x+80</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x^2+21x+80=(x+16)(x+5)</m>
+          </p>
+        </solution>
+      </exercise>
 
-            <exercise>
-              <statement>
-                <p>
-                  <m>x^2+6x-20</m>
-                </p>
-              </statement>
-              <solution>
-                <p>
-                  <m>x^2+6x-20</m> is prime.
-                </p>
-              </solution>
-            </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>b^2-9b-400</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>b^2-9b-400=(b-25)(b+16)</m>
+          </p>
+        </solution>
+      </exercise>
 
-            <exercise>
-              <statement>
-                <p>
-                  <m>x^2+15x-100</m>
-                </p>
-              </statement>
-              <solution>
-                <p>
-                  <m>x^2+15x-100=(x+20)(x-5)</m>
-                </p>
-              </solution>
-            </exercise>
+    </exercisegroup>
 
-            <exercise>
-              <statement>
-                <p>
-                  <m>w^2-18w+45</m>
-                </p>
-              </statement>
-              <solution>
-                <p>
-                  <m>w^2-18w+45=(w-15)(w-3)</m>
-                </p>
-              </solution>
-            </exercise>
+  </exercises>
 
-            <exercise>
-              <statement>
-                <p>
-                  <m>x^2+21x+80</m>
-                </p>
-              </statement>
-              <solution>
-                <p>
-                  <m>x^2+21x+80</m> is prime.
-                </p>
-              </solution>
-            </exercise>
-
-            <exercise>
-              <statement>
-                <p>
-                  <m>b^2-9b-400</m>
-                </p>
-              </statement>
-              <solution>
-                <p>
-                  <m>b^2-9b-400=(b-25)(b+16)</m>
-                </p>
-              </solution>
-            </exercise>
-
-          </exercisegroup>
-
-        </exercises>
-
-      </section>
+</section>

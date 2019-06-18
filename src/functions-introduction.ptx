@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="functions-introduction">
+  <title>Introduction to Function Notation</title>
+
+  <paragraphs>
+    <title>Functions from a Graphical Perspective</title>
+    <p></p>
+    <p>
+      A function is a set of ordered pairs with the property that no two points in the set share the same first coordinate.  Specifically, if the function is a set of points of form <m>(x,y)</m>, we say that <m>y</m> is a function of <m>x</m>, and if the name of the function is <m>f</m>, we write <m>y=f(x)</m>.  The symbols <m>y=f(x)</m> are read aloud as "<m>y</m> equals <m>f</m> of <m>x</m>" or "<m>y</m> equals <m>f</m> at <m>x</m>."  The <m>y</m>-coordinate of he point is called the function value at the <m>x</m>-coordinate of the point.
+    </p>
+    <sidebyside widths="58% 38%" margins="0%">
+
+      <p>
+        Consider the function, <m>f</m>, that consists of the ordered pairs shown in <xref ref="functions-introduction-table-1">Table</xref>.  From the given ordered we know each of the following function values.
+        <md>
+          <mrow>f(0)\amp=7</mrow>
+          <mrow>f(1)\amp=-3</mrow>
+          <mrow>f(2)\amp=11</mrow>
+          <mrow>f(3)\amp=7</mrow>
+        </md>
+      </p>
+
+      <table xml:id="functions-introduction-table-1">
+        <caption>The ordered pairs in <m>f</m></caption>
+        <tabular>
+          <col halign="center" />
+          <col halign="center" />
+          <row bottom="medium">
+            <cell><line><m>x</m></line></cell>
+            <cell><line><m>y</m></line></cell>
+          </row>
+          <row>
+            <cell><m>0</m></cell>
+            <cell><m>7</m></cell>
+          </row>
+          <row>
+            <cell><m>1</m></cell>
+            <cell><m>-3</m></cell>
+          </row>
+          <row>
+            <cell><m>2</m></cell>
+            <cell><m>11</m></cell>
+          </row>
+          <row>
+            <cell><m>3</m></cell>
+            <cell><m>7</m></cell>
+          </row>
+        </tabular>
+      </table>
+    </sidebyside>
+    <p>
+      Using words, we say that the value of <m>f</m> at <m>0</m> is <m>7</m>, the value of <m>f</m> at <m>1</m> is <m>-3</m>, the value of <m>f</m> at <m>2</m> is <m>11</m>, and the value of <m>f</m> at <m>3</m> is <m>7</m>.
+    </p>
+    <sidebyside widths="48% 48%" margins="0%">
+
+    <p>
+      Consider the function, <m>g</m>, shown in <xref ref="functions-introduction-figure-1">Figure</xref>.  From the points (ordered pairs) that have been stated, we can infer the following function values.
+      <md>
+        <mrow>g(-4)\amp=2</mrow>
+        <mrow>g(1)\amp=3</mrow>
+        <mrow>g(5)\amp=-1</mrow>
+      </md>
+    </p>
+
+    <figure xml:id="functions-introduction-figure-1">
+      <caption><m>y=g(x)</m></caption>
+      <image>
+        <description>
+          The graph of a function that resembles a downward facing vee.  The vertex of the vee is at the point <m>(-2,6)</m>.  The left side of the vee has an arrow on it.  The right side of the vee terminates at a solid dot at the point <m>(5,-1)</m>.   The points <m>(-4,2)</m> and <m>(1,3)</m> also lie on the vee.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}
+              \addplot[primarycurve,domain=-6.5:-2,smooth,{Stealth}-] {2*x+10};
+              \addplot[primarycurve,domain=-2:5,smooth,-] {4-x};
+              \addplot[soliddot] coordinates {(5,-1)} node[below] {(5,-1)};
+              \addplot[soliddot] coordinates {(1,3)} node[above right] {(1,3)};
+              \addplot[soliddot] coordinates {(-4,2)} node[above left] {(-4,2)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    </sidebyside>
+    <p>
+      If we were asked to evaluate the function at <m>4</m>, we would first locate the point with an <m>x</m>-coordinate of <m>4</m>.  Then the function value would be the corresponding <m>y</m>-coordinate.  In this case the relevant point is <m>(4,0)</m> and we would report the function value by writing <m>f(4)=0</m>. 
+    </p>
+    <p>
+      Now suppose that we were asked to solve the equation <m>g(x)=4</m>.  Just like any other equation with the variable <m>x</m>, we are looking for all values that we could substitute for <m>x</m> that would result in a true statement.  In words, the equation <m>g(x)=4</m> could be stated as "determine the values of <m>x</m> for which the value of the function<m>g</m> is <m>2</m>."  Since the function value corresponds the to the <m>y</m>-coordinate, we can further refine the charge as follows: "locate the points on the curve <m>y=g(x)</m> with <m>y</m>-coordinates equal to <m>4</m>, then the solutions to <m>g(x)=4</m> are the <m>x</m>-coordinates of those points"
+    </p>
+    <sidebyside widths="48% 48%" margins="0%">
+
+      <p>
+        In <xref ref="functions-introduction-figure-2">Figure</xref> I've added the line <m>y=4</m> to a graph of <m>y=g(x)</m>.  We can see that the line intersects the function <m>g</m> at the points <m>(-3,4)</m> and <m>(0,4)</m>, so the solutions to the equation <m>g(x)=4</m> are <m>-3</m> and <m>4</m>.  Similarly, if we drew the line <m>y=1</m>, we see that is would intersect <m>g</m> at the points <m>(-4.5,1)</m> and <m>(3,1)</m>, so the solutions to the equation <m>g(x)=1</m> are <m>-4.5</m> and <m>1</m>.
+      </p>
+
+      <figure xml:id="functions-introduction-figure-2">
+        <caption><m>y=g(x)</m></caption>
+        <image>
+          <description>
+            The graph of a function that resembles a downward facing vee.  The vertex of the vee is at the point <m>(-2,6)</m>.  The left side of the vee has an arrow on it.  The right side of the vee terminates at a solid dot at the point <m>(5,-1)</m>.  The dotted line <m>y=4</m> is also graphed and the line intersects the vee at the points <m>(-3,4)</m> and <m>(0,4)</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}
+                \addplot[primarycurve,domain=-6.5:-2,smooth,{Stealth}-] {2*x+10};
+                \addplot[primarycurve,domain=-2:5,smooth,-] {4-x};
+                \addplot[secondarycurve,domain=-6.8:6.8,blue,thick,{Stealth}-{Stealth}] {4};
+                \addplot[soliddot,color=black] coordinates {(0,4)} node[above right] {(0,4)};
+                \addplot[soliddot,color=black] coordinates {(-3,4)} node[above left] {(-3,4)};
+                \addplot[soliddot] coordinates {(5,-1)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <sidebyside widths="73% 23%" margins="0%">
+      <p>
+        Let's consider the equation <m>g(x)=-8</m>.  We can't draw the line <m>y=-8</m> onto <xref ref="functions-introduction-table-2">Table</xref>, nor can we see a point with an <m>y</m>-coordinate of <m>10</m>,so we'll have to take a different tact.  The arrow on the left side of <m>g</m> implies that <m>g</m> continues forever in the leftward direction with the same slope.  So one strategy we can employ is to use that slope to make a table for <m>g</m> until we find the point that has a <m>y</m>-coordinate of <m>-8</m>.  I've done that in <xref ref="functions-introduction-table-2">Table</xref>, and we can see that the relevant ordered pair is <m>(-8,-9)</m>.  From this we know that the solution to the equation <m>g(x)=-8</m> is <m>-9</m>.
+      </p>
+      <table xml:id="functions-introduction-table-2">
+        <caption><m>y=g(x)</m></caption>
+        <tabular>
+          <col halign="center" />
+          <col halign="center" />
+          <row bottom="medium">
+            <cell><line><m>x</m></line></cell>
+            <cell><line><m>y</m></line></cell>
+          </row>
+          <row>
+            <cell><m>-4</m></cell>
+            <cell><m>2</m></cell>
+          </row>
+          <row>
+            <cell><m>-5</m></cell>
+            <cell><m>0</m></cell>
+          </row>
+          <row>
+            <cell><m>-6</m></cell>
+            <cell><m>-2</m></cell>
+          </row>
+          <row>
+            <cell><m>-7</m></cell>
+            <cell><m>-4</m></cell>
+          </row>
+          <row>
+            <cell><m>-8</m></cell>
+            <cell><m>-6</m></cell>
+          </row>
+          <row>
+            <cell><m>-9</m></cell>
+            <cell><m>-8</m></cell>
+          </row>
+        </tabular>
+      </table>
+
+    </sidebyside>
+  </paragraphs>
+  <paragraphs>
+    <title>Function Formulas</title>
+    <p></p>
+    <p>
+      Functions are frequently described by a function formula.  For example, consider <me>f(x)=x^2-8</me>.  Suppose that we want to determine the value of <m>f</m> when <m>x</m> has a value of <m>-3</m>.  To make this determination we need to replace <m>x</m> with <m>-3</m> on both sides of the equation and then simplify the expression on the right-side of the equation (AKA "do the math").  Let's do it.
+      <md>
+        <mrow>f(\highlight{x})\amp=\highlight{x}^2-\highlight{x}-8</mrow>
+        <mrow>f(\highlight{-3})\amp=(\highlight{-3})^2-(\highlight{-3})-8</mrow>
+        <mrow>\amp=9+3-8</mrow>
+        <mrow>\amp=4</mrow>
+      </md>
+      So the value of <m>f</m> at <m>-3</m> is <m>4</m>.
+    </p>
+    <p>
+      Let's see several more examples.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine the value of <m>g(x)=\sqrt{9-2x}</m> at <m>-8</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>g(\highlight{x})\amp=\sqrt{9-2\highlight{x}}</mrow>
+            <mrow>g(\highlight{-8})\amp=\sqrt{9-2(\highlight{-8})}</mrow>
+            <mrow>\amp=\sqrt{9+16}</mrow>
+            <mrow>\amp=\sqrt{25}</mrow>
+            <mrow>\amp=5</mrow>
+          </md>
+          The value of <m>g</m> at <m>-8</m> is <m>5</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>f(x)=8-5x</m>.  Determine the value(s) of <m>x</m> where <m>f</m> has a value of <m>53</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          In this example we are being told that <me>f(x)=53</me> and being asked to determine the value of <m>x</m> when this happens.  That is, we are being asked to solve the equation <me>8-5x=53</me>.  Let's get to solving.
+          <md>
+            <mrow>8-5x\amp=53</mrow>
+            <mrow>8-5x\subtractright{8}\amp=53\subtractright{8}</mrow>
+            <mrow>-5x\amp=45</mrow>
+            <mrow>\divideunder{-5x}{-5}\amp=\divideunder{45}{-5}</mrow>
+            <mrow>x\amp=-9</mrow>
+          </md>
+          The function, <m>f</m>, has a value of <m>53</m> when the value of <m>x</m> is <m>-9</m>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the values of <m>g(5)</m> and <m>g(3)</m> where <m>g(x)=\frac{x+12}{x^2-4x+3}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>g(\highlight{x})\amp=\frac{\highlight{x}+12}{\highlight{x}^2-4\highlight{x}+3}</mrow>
+            <mrow>g(\highlight{5})\amp=\frac{\highlight{5}+12}{\highlight{5}^2-4(\highlight{5})+3}</mrow>
+            <mrow>\amp=\frac{17}{25-20+3}</mrow>
+            <mrow>\amp=\frac{17}{8}</mrow>
+          </md>
+          <md>
+            <mrow>g(\highlight{x})\amp=\frac{\highlight{x}+12}{\highlight{x}^2-4\highlight{x}+3}</mrow>
+            <mrow>g(\highlight{3})\amp=\frac{\highlight{3}+12}{\highlight{3}^2-4(\highlight{3})+3}</mrow>
+            <mrow>\amp=\frac{15}{9-12+3}</mrow>
+            <mrow>\amp=\frac{15}{0}</mrow>
+          </md>
+          In the parlance of Scooby Doo, Rut Roh! Division by zero never leads to good results.  Put another way, no number is equal to <m>\frac{15}{0}</m>.  When an error like this arises, we say that the function value is "undefined."  Or we might say that the function value "does not exist." Any way we put it, <m>g(3)</m> is a non-thing (in this problem).
+        </p> 
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>h(t)=\frac{2t+1}{t-6}</m>.  Determine each of the following.
+          <ol>
+            <li>
+              <p>
+                The value(s) of <m>t</m> where the value of <m>h</m> is equal to <m>\frac{7}{2}</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The value of <m>h</m> when the value of <m>t</m> is <m>5</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Any and all values of <m>t</m> where the function is undefined.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                We are being asked to determine where <m>h(t)=\frac{7}{2}</m>.  To do so, we need to set the formula for <m>h(t)</m> equal to <m>\frac{7}{2}</m> and solve the resultant equation for <m>t</m>.
+                <md>
+                  <mrow>\frac{2t+1}{t-6}\amp=\frac{7}{2}</mrow>
+                  <mrow>2(2t+1)\amp=7(t-6)\,\,\,\,\text{(I cross-multiplied.)}</mrow>
+                  <mrow>4t+2\amp=7t-42</mrow>
+                  <mrow>4t+2\subtractright{2}-\subtractright{7t}\amp=7t-42\subtractright{2}-\subtractright{7t}</mrow>
+                  <mrow>-3t\amp=40</mrow>
+                  <mrow>\divideunder{-3t}{-3}\amp=\divideunder{-44}{-3}</mrow>
+                  <mrow>t\amp=\frac{44}{3}</mrow>
+                </md>
+                The value of <m>h</m> is <m>\frac{7}{2}</m> when the value of <m>t</m> is <m>\frac{44}{3}</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                We are being asked to determine <m>h(5)</m>.
+                <md>
+                  <mrow>h(\highlight{t})\amp=\frac{2\highlight{t}+1}{\highlight{t}-6}</mrow>
+                  <mrow>h(\highlight{5})\amp=\frac{2(\highlight{5})+1}{\highlight{5}-6}</mrow>
+                  <mrow>\amp=\frac{11}{-1}</mrow>
+                  <mrow>\amp=-11</mrow>
+                </md>
+                The value of <m>h</m> at <m>5</m> is <m>-11</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                We are essentially asked to determine what values of <m>t</m> will make the formula <me>\frac{2t+1}{t-6}</me> go haywire.  This will only occur if we try to force division by zero, which in turn will only occur if we replace <m>t</m> with <m>6</m>.  So the only value where <m>h</m> is undefined is <m>6</m>.
+              </p>
+              <p></p>
+              <p>
+                This idea of determining where a function is or is not defined is explored in more detail in the section titled "Domain and Range".
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+    <exercises>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Determine each of the stated function values.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine <m>g(7)</m> where <m>g(t)=8-4t</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                g(\highlight{7})\amp=8-4(\highlight{7})\\
+                \amp=8-28\\
+                \amp=-20
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine <m>f(-3)</m> where <m>f(x)=-x^2+5x+12</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                f(\highlight{-3})\amp=-(\highlight{-3})^2+5(\highlight{-3})+12\\
+                \amp=-9-15+12\\
+                \amp=-12
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine <m>h(33)</m> where <m>h(x)=-\sqrt{\frac{x-25}{2}}</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                h(\highlight{33})\amp=-\sqrt{\frac{\highlight{33}-25}{2}}\\
+                \amp=-\sqrt{\frac{8}{2}}\\
+                \amp=-\sqrt{4}\\
+                \amp=-2
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine <m>t(22)</m> where <m>t(x)=17</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                t(\highlight{22})\amp=17\\
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine <m>y(-6)</m> where <m>y(t)=\abs{-9-t}+3</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                y(\highlight{-6})\amp=\abs{-9-(\highlight{-6})}+3\\
+                \amp=\abs{-3}+3\\
+                \amp=3+3\\
+                \amp=6
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine <m>z(-1)</m> where <m>z(x)=\frac{x+6}{x^2+1}</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                z(\highlight{-1})\amp=\frac{\highlight{-1}+6}{(\highlight{-1})^2+1}\\
+                \amp=\frac{5}{2}
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine <m>k(4)</m> where <m>k(t)=3\sqrt{21-t^2}</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                k(\highlight{4})\amp=3\sqrt{21-\highlight{4}^2}\\
+                \amp=3\sqrt{21-16}\\
+                \amp=3\sqrt{5}
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Determine the solution set for each of the following equations.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              Solve <m>f(x)=12</m> where <m>f(x)=4-x</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>f(x)\amp=12</mrow>
+                <mrow>4-x\amp=12</mrow>
+                <mrow>4-x\subtractright{4}\amp=12\subtractright{4}</mrow>
+                <mrow>-x\amp=8</mrow>
+                <mrow>\multiplyleft{-1}-x\amp=\multiplyleft{-1}8</mrow>
+                <mrow>x\amp=-8</mrow>
+              </md>
+              The solution set is <m>\{-8\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Solve <m>h(t)=100</m> where <m>h(t)=t^2-21</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>h(t)\amp=100</mrow>
+                <mrow>t^2-21\amp=100</mrow>
+                <mrow>t^2-21\addright{21}\amp=100\addright{21}</mrow>
+                <mrow>t^2\amp=121</mrow>
+                <mrow>t\amp=\pm\sqrt{121}</mrow>
+                <mrow>t\amp=\pm 11</mrow>
+              </md>
+              The solution set is <m>\{-11,11\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Solve <m>p(x)=-14</m> where <m>p(x)=6-\abs{x}</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>p(x)\amp=-14</mrow>
+                <mrow>6-\abs{x}\amp=-14</mrow>
+                <mrow>6-\abs{x}\subtractright{6}\amp=-14\subtractright{6}</mrow>
+                <mrow>-\abs{x}\amp=-20</mrow>
+                <mrow>\multiplyleft{-1}-\abs{x}\amp=\multiplyleft{-1}-20</mrow>
+                <mrow>\abs{x}\amp=20</mrow>
+                <mrow>x\amp=\pm 20</mrow>
+              </md>
+              The solution set is <m>\{-20,20\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Solve <m>w(y)=10</m> where <m>w(y)=y^2-y-2</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>w(y)\amp=10</mrow>
+                <mrow>y^2-y-2\amp=10</mrow>
+                <mrow>y^2-y-2\subtractright{10}\amp=10\subtractright{10}</mrow>
+                <mrow>y^2-y-12\amp=0</mrow>
+                <mrow>(y-4)(y+3)\amp=0</mrow>
+              </md>
+              <md>
+                <mrow>y-4\amp=0\amp\amp\text{ or }\amp y+3\amp=0</mrow>
+                <mrow>y-4\addright{4}\amp=0\addright{4}\amp\amp\text{ or }\amp y+3\subtractright{3}\amp=0\subtractright{3}</mrow>
+                <mrow>y\amp=4\amp\amp\text{ or }\amp y\amp=-3</mrow>
+              </md>
+              The solution set is <m>\{-3,4\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Solve <m>r(t)=s(t)</m> where <m>r(t)=\frac{5}{7}t-3</m> and <m>s(t)=\frac{2}{3}t+\frac{11}{21}</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>r(t)\amp=s(t)</mrow>
+                <mrow>\frac{5}{7}t-3\amp=\frac{2}{3}t+\frac{11}{21}</mrow>
+                <mrow>\multiplyleft{21}\left(\frac{5}{7}t-3\right)\amp=\multiplyleft{21}\left(\frac{2}{3}t+\frac{11}{21}\right)</mrow>
+                <mrow>15t-63\amp=14t+11</mrow>
+                <mrow>15t-63\addright{63}\amp=14t+11\addright{63}</mrow>
+                <mrow>15t\amp=14t+74</mrow>
+                <mrow>15t\subtractright{14t}\amp=14t+74\subtractright{14t}</mrow>
+                <mrow>t\amp=74</mrow>
+              </md>
+              The solution set is <m>\{74\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Solve <m>g(x)=y(x)</m> where <m>q(x)=6-4x^2</m> and <m>y(x)=(3-x)(8+4x)</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Solve <m>g(x)=y(x)</m> where <m>q(x)=6-4x^2</m> and <m>y(x)=(3-x)(8+4x)</m>.
+              <md>
+                <mrow>g(x)\amp=y(x)</mrow>
+                <mrow>6-4x^2\amp=(3-x)(8+4x)</mrow>
+                <mrow>6-4x^2\amp=24+4x-4x^2</mrow>
+                <mrow>6-4x^2\addright{4x^2}\amp=24+4x-4x^2\addright{4x^2}</mrow>
+                <mrow>6\amp=24+4x</mrow>
+                <mrow>6\subtractright{24}\amp=24+4x\subtractright{24}</mrow>
+                <mrow>-18\amp=4x</mrow>
+                <mrow>\divideunder{-18}{4}\amp=\divideunder{4x}{4}</mrow>
+                <mrow>-\frac{9}{2}\amp=x</mrow>
+              </md>
+              The solution set is <m>\{-\frac{9}{2}\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+      <exercisegroup cols="2">
+        <introduction>
+          <p>
+            Determine the function value, or the solution set to the stated equation,  based upon the function <m>f</m> shown in <xref ref="functions-introduction-exercises-figure-1">Figure</xref>.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine <m>f(4)</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>f(4)=2</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine <m>f(2)</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>f(2)=2</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine <m>f(5)</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>f(5)</m> is not defined.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine <m>f(1)</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>f(1)=5</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine the solution set to <m>f(x)=-1</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solution set is <m>\{-1,3\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine the solution set to <m>f(x)=2</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solution set is <m>\{-4,-2,0,2,4\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine the solution set to <m>f(x)=-3</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solution set is <m>\emptyset</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine the solution set to <m>f(x)=5</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solution set is <m>\{-3,1\}</m>
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+      <figure xml:id="functions-introduction-exercises-figure-1">
+        <caption><m>y=f(x)</m></caption>
+        <image width="47%">
+          <description>
+            The graph of a function named f.  The function is rather squiggly.  The left most point on the function is a solid dot at the point <m>(-4,2)</m>.  The right most point plotted is an open circle at the point <m>(5,5)</m>. From left to right, the curve starts at the point <m>(-4,2)</m> and rises to a peak at <m>(-3,5)</m>.  It then falls past the point <m>(-2,2)</m> until it reaches a floor at the point <m>(-1,-1)</m>.  It then rises past the point <m>(0,2)</m> until reaching a second peak at the point <m>(1,5)</m>.  The curve then falls past the point <m>(2,2)</m> to a second floor at the point <m>(3,-1)</m>.  The curve finishes up by rising past the point <m>(4,1)</m> before terminating at the hole plotted at the point <m>(5,5)</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}
+                \addplot[primarycurve,domain=-4:5,smooth,-] {2+3*sin(pi*deg(x)/2)};
+                \addplot[soliddot] coordinates {(-4,2)};
+                \addplot[hollowdot] coordinates {(5,5)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+      <exercisegroup cols="2">
+        <introduction>
+          <p>
+            Determine the function value, or the solution set to the stated equation,  based upon the function <m>g</m> shown in <xref ref="functions-introduction-exercises-figure-2">Figure</xref>.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine <m>g(-1)</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>g(-1)=6</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine <m>g(2)</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>g(2)=0</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine <m>g(6)</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>g(6)=-8</m>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine <m>g(-6)</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>g(-6)</m> is not defined.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine the solution set to <m>g(x)=-2</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solution set is <m>\{-2,3\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine the solution set to <m>g(x)=3</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solution set is <m>\{\frac{1}{2}\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine the solution set to <m>g(x)=-6</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>The solution set is <m>\{-4,5\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine the solution set to <m>g(x)=-10</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The solution set is <m>\{7\}</m>.
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+
+      <figure xml:id="functions-introduction-exercises-figure-2">
+        <caption><m>y=g(x)</m></caption>
+        <image width="47%">
+          <description>
+            The graph of a function named g.  There are two distinct pieces to the function.  The piece on the left resembles a fishhook.  It has open holes at either end.  The endpoints are <m>(-6,2)</m> and <m>(-1,3)</m>.  The bottom point on the hook is <m>(4,-6)</m>.  The hook also passes through the point <m>(-2,-2)</m>.  The other piece of the function is a half-line.  The half-line originates at a solid dot plotted at the point <m>(-1,6)</m>.  The line then decreases with a slope of <m>-2</m> passes through the points <m>(0,4)</m>, <m>(1,2)</m>, <m>(2,0)</m>, <m>(3,-2)</m>, <m>(4,-4)</m> and <m>(5,-6)</m>.  There is an arrow at the right end of the half-line.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}
+                \addplot[primarycurve,domain=-6:-1,smooth,-] {(x+4)^2-6};
+                \addplot[primarycurve,domain=-1:5.26,smooth,-{Stealth}] {-2*x+4};
+                \addplot[hollowdot] coordinates {(-6,-2)};
+                \addplot[hollowdot] coordinates {(-1,3)};
+                \addplot[soliddot] coordinates {(-1,6)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </exercises>
+
+  </section>
+

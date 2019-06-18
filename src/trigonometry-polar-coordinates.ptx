@@ -1,0 +1,1653 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="trigonometry-polar-coordinates">
+  <title>Polar Coordinates</title>
+
+  <paragraphs>
+    <title>Polar Coordinates</title>
+    <p></p>
+    <p>
+      When graphing in two-dimensions, the most common way we identify points in the plane is with the use of rectangular coordinates <mdash/> i.e. by the ordered pair <m>(x,y)</m> (or whatever variables are in use).  In this section we talk about an alternate strategy for identifying points in the plane <mdash/> with the use of polar coordinates.
+    </p>
+    <p>
+      In the polar plane, the point we call the origin in the rectangular plane is called <term>the pole</term>.  A point in the plane, <m>P</m>, identified using <term>polar coordinates</term> has the form <m>(r,\theta)</m> where <m>r</m> is the signed distance from the pole to <m>P</m> and <m>\theta</m> is an angle that when drawn in standard position has a terminal side that passes either through the pole and <m>P</m> or through the pole and the direction opposite of <m>P</m>.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        The polar plane is shown in <xref ref="trigonometry-polar-coordinates-figure-1">Figure</xref>.  One polar ordered pair that plots to point labeled <m>A</m> is <m>\left(4,\frac{\pi}{6}\right)</m>.  One polar ordered pair that plots to point labeled <m>B</m> is <m>\left(3,\frac{17\pi}{12}\right)</m>.  Unlike the rectangular plane, however, neither of these ordered pairs are unique.  In fact, for each point there are an unlimited number of ordered pairs that plot to that single point.
+      </p>
+
+      <figure xml:id="trigonometry-polar-coordinates-figure-1">
+        <caption>The Polar Plane</caption>
+        <image>
+          <description>
+            A graph of the polar plane.  There are six concentric circles centered at the pole.  The circles have radii of <m>1</m>, <m>2</m>, <m>3</m>, <m>4</m>, <m>5</m>, and <m>6</m>.  There are 24 spoke emanating from the pole, each consecutive pair of spokes covering one twenty-fourth of a revolution which is equivalent to <m>\frac{\pi}{12}</m>.  The spokes are labeled <m>0</m>, <m>\frac{\pi}{12}</m>, <m>\frac{\pi}{6}</m>, <m>\frac{\pi}{4}</m>, <m>\frac{\pi}{3}</m>, <m>\frac{5\pi}{6}</m>, <m>\frac{\pi}{2}</m>, ..., <m>\frac{7\pi}{4}</m>, <m>\frac{11\pi}{6}</m>, and <m>\frac{23\pi}{12}</m>.  There is a large dot labeled <m>A</m> at the point where the circle of radius <m>4</m> intersects the terminal arm of the angle labeled <m>\frac{\pi}{6}</m>.  There is a large dot labeled <m>B</m> at the point where the circle of radius <m>3</m> intersects the terminal arm of the angle labeled <m>\frac{17\pi}{12}</m>.
+          </description>
+          <latex-image>
+              <![CDATA[
+              \begin{center}
+                \begin{tikzpicture}
+                  \foreach \r in {1, 2,...,6}
+                  \draw[gray, thin] (0,0) circle (\r);
+                  \foreach \a in {15, 30,...,345}
+                  \draw[gray, thin, dashed] (0, 0) -- (\a:6);
+                  \foreach \a in {0, 30,...,330}
+                  \draw[gray, thick] (0, 0) -- (\a:6);
+                  \foreach \a in {0, 5,...,355}
+                  \draw[gray] (\a:5.7) -- (\a:6);
+                  \foreach \r in {1, 2,...,5}
+                  \draw (\r,0) node[inner sep=1pt,below=3pt,rectangle,fill=white] {$\r$};
+                  \foreach \a in {0}
+                  \draw (\a: 6.3) node{$0$};
+                  \foreach \a in {15}
+                  \draw (\a: 6.3) node{$\frac{\pi}{12}$};
+                  \foreach \a in {30}
+                  \draw (\a: 6.3) node{$\frac{\pi}{6}$};
+                  \foreach \a in {45}
+                  \draw (\a: 6.3) node{$\frac{\pi}{4}$};
+                  \foreach \a in {60}
+                  \draw (\a: 6.3) node{$\frac{\pi}{3}$};
+                  \foreach \a in {75}
+                  \draw (\a: 6.3) node{$\frac{5\pi}{12}$};
+                  \foreach \a in {90}
+                  \draw (\a: 6.3) node{$\frac{\pi}{2}$};
+                  \foreach \a in {105}
+                  \draw (\a: 6.3) node{$\frac{7\pi}{12}$};
+                  \foreach \a in {120}
+                  \draw (\a: 6.3) node{$\frac{2\pi}{3}$};
+                  \foreach \a in {135}
+                  \draw (\a: 6.3) node{$\frac{3\pi}{4}$};
+                  \foreach \a in {150}
+                  \draw (\a: 6.3) node{$\frac{5\pi}{6}$};
+                  \foreach \a in {165}
+                  \draw (\a: 6.3) node{$\frac{11\pi}{12}$};
+                  \foreach \a in {180}
+                  \draw (\a: 6.3) node{$\pi$};
+                  \foreach \a in {195}
+                  \draw (\a: 6.3) node{$\frac{13\pi}{12}$};
+                  \foreach \a in {210}
+                  \draw (\a: 6.3) node{$\frac{7\pi}{6}$};
+                  \foreach \a in {225}
+                  \draw (\a: 6.3) node{$\frac{5\pi}{4}$};
+                  \foreach \a in {240}
+                  \draw (\a: 6.3) node{$\frac{4\pi}{3}$};
+                  \foreach \a in {255}
+                  \draw (\a: 6.3) node{$\frac{17\pi}{12}$};
+                  \foreach \a in {270}
+                  \draw (\a: 6.3) node{$\frac{3\pi}{2}$};
+                  \foreach \a in {285}
+                  \draw (\a: 6.3) node{$\frac{19\pi}{12}$};
+                  \foreach \a in {300}
+                  \draw (\a: 6.3) node{$\frac{5\pi}{3}$};
+                  \foreach \a in {315}
+                  \draw (\a: 6.3) node{$\frac{7\pi}{4}$};
+                  \foreach \a in {330}
+                  \draw (\a: 6.3) node{$\frac{11\pi}{6}$};
+                  \foreach \a in {345}
+                  \draw (\a: 6.3) node{$\frac{23\pi}{12}$};
+                  \foreach \a in {345}
+                  \draw (\a: 6.3) node{$\frac{23\pi}{12}$};
+                  \tkzLabelPoint[red,right below](3.46,2){$A$};
+                  \node at (3.46,2)[red,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,right below](-0.78,-2.9){$B$};
+                  \node at (-0.78,-2.9)[blue,circle,fill,inner sep=3pt] {};
+                \end{tikzpicture}
+              \end{center}
+              ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <p>
+      When drawn in standard position, any two angles whose difference is an integer multiple of <m>2\pi</m> are coterminal.  One repercussion of this  is that each of the following polar ordered pairs will plot to <m>A</m>.
+      <me>...,\,\left(4,-\frac{11\pi}{6}\right),\,\left(4,\frac{\pi}{6}\right),\,\left(4,\frac{13\pi}{6}\right),\,...</me>
+      But these aren't the only polar ordered pairs that plot to <m>A</m>.  When the value of <m>r</m> is negative, we plot the point using the fact that <m>(r,\theta)</m> and <m>(-r,\theta+\pi)</m> plot to the same point.
+    </p>
+    <p>
+      So, for example suppose that we wanted to plot the point <m>\left(-4,\frac{7\pi}{6}\right)</m>.  This will plot in the same location as the point derived below.
+      <me>\left(4,\frac{7\pi}{6}+\pi\right)=\left(4,\frac{13\pi}{6}\right)</me>
+      Because <m>\left(4,\frac{13\pi}{6}\right)</m> has already been identified as an ordered pair that plots to <m>A</m>, it must be the case that <m>\left(-4,\frac{7\pi}{6}\right)</m> also plots to <m>A</m>.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        One way that you can think about negative values of <m>r</m> is to image the positive <m>x</m>-axis being rotated to the <m>\theta</m>-coordinate of the polar ordered pair.  This is illustrated in <xref ref="trigonometry-polar-coordinates-figure-2">Figure</xref> for a <m>\theta</m> value of <m>\frac{7\pi}{6}</m>.  The positive values of <m>r</m> emanate from the pole in the direction of <m>\frac{7\pi}{6}</m> and the negative values of <m>r</m> emanate from the pole in the opposite direction of <m>\frac{7\pi}{6}</m>, i.e. in the direction of <m>\frac{7\pi}{6}+\pi</m>.
+      </p>
+
+      <figure xml:id="trigonometry-polar-coordinates-figure-2">
+        <caption>The Polar Plane</caption>
+        <image>
+          <description>
+            A graph of the polar plane where the only radii shown are positioned at <m>0</m>, <m>\frac{\pi}{6}</m>, <m>\pi</m>, and <m>\frac{7\pi}{6}</m>.  The is an arc indicated that the positive <m>x</m>-axis has been rotated to the direction of <m>\frac{7\pi}{6}</m>   The circles are labeled <m>1</m>, <m>2</m>, <m>3</m>, <m>4</m>, and <m>5</m> in the direction of <m>\frac{7\pi}{6}</m>.  The circles are labeled <m>-1</m>, <m>-2</m>, <m>-3</m>, <m>-4</m>, and <m>-5</m> in the direction of <m>\frac{\pi}{6}</m>.
+          </description>
+          <latex-image>
+              <![CDATA[
+              \begin{center}
+                \begin{tikzpicture}
+                  \foreach \r in {1, 2,...,6}
+                  \draw[gray, thin] (0,0) circle (\r);
+                  \foreach \a in {0,180,30,210}
+                  \draw[gray, thick] (0, 0) -- (\a:6);
+                  \draw [thick,domain=0:210,-{Stealth}] plot ({0.5*cos(\x)}, {0.5*sin(\x)});
+                  \foreach \a in {0, 5,...,355}
+                  \draw[gray] (\a:5.7) -- (\a:6);
+                  \foreach \r in {1, 2,...,5}
+                  \draw (\r*0.866,\r*0.5) node[inner sep=1pt,above=4pt,rectangle,fill=white] {$-\r$};
+                  \foreach \r in {1, 2,...,5}
+                  \draw (\r*-0.866,\r*-0.5) node[inner sep=1pt,above=4.1pt,rectangle,fill=white] {$\r$};
+                  \foreach \a in {210}
+                  \draw (\a: 6.3) node{$\frac{7\pi}{6}$};
+                \end{tikzpicture}
+              \end{center}
+              ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+
+    <example>
+      <statement>
+        <p>
+          Plot each of the following polar ordered pairs.
+        </p>
+        <sidebyside widths="32% 32% 32%" margins="0%">
+
+          <p>
+            <me>A:\,\,\left(3,\frac{11\pi}{12}\right)</me>
+          </p>
+
+          <p>
+            <me>B:\,\,\left(2,-\frac{3\pi}{4}\right)</me>
+          </p>
+
+          <p>
+            <me>C:\,\,(-3,\pi)</me>
+          </p>
+
+        </sidebyside>
+      </statement>
+      <solution>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            Note that <m>-\frac{3\pi}{4}</m> is coterminal with <m>\frac{5\pi}{4}</m>.  Note also that <m>(-3,\pi)</m> plots to the same point as <m>(3,2\pi)</m> which in turn plots to the same point as <m>(3,0)</m>.
+          </p>
+
+          <figure xml:id="trigonometry-polar-coordinates-figure-3">
+            <caption>The Polar Plane</caption>
+            <image>
+              <description>
+                A graph of the polar plane.  The polar ordered pairs <m>(3,\frac{11\pi}{12})</m>, <m>(2,-\frac{3\pi}{4})</m>, and <m>(-3,\pi)</m> are plotted and labeled, respectively, <m>A</m>, <m>B</m>, and <m>C</m>.  The polar ordered pair <m>(2,-\frac{3\pi}{4})</m> lies in the same location as the polar ordered pair <m>(2,\frac{5\pi}{4})</m>.  The polar ordered pair <m>(-3,\pi)</m> lies in the same location as the polar ordered pair <m>(3,0)</m>.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{center}
+                  \begin{tikzpicture}
+                    \foreach \r in {1, 2,...,6}
+                    \draw[gray, thin] (0,0) circle (\r);
+                    \foreach \a in {15, 30,...,345}
+                    \draw[gray, thin, dashed] (0, 0) -- (\a:6);
+                    \foreach \a in {0, 30,...,330}
+                    \draw[gray, thick] (0, 0) -- (\a:6);
+                    \foreach \a in {0, 5,...,355}
+                    \draw[gray] (\a:5.7) -- (\a:6);
+                    \foreach \r in {1, 2,...,5}
+                    \draw (\r,0) node[inner sep=1pt,below=3pt,rectangle,fill=white] {$\r$};
+                    \foreach \a in {0}
+                    \draw (\a: 6.3) node{$0$};
+                    \foreach \a in {15}
+                    \draw (\a: 6.3) node{$\frac{\pi}{12}$};
+                    \foreach \a in {30}
+                    \draw (\a: 6.3) node{$\frac{\pi}{6}$};
+                    \foreach \a in {45}
+                    \draw (\a: 6.3) node{$\frac{\pi}{4}$};
+                    \foreach \a in {60}
+                    \draw (\a: 6.3) node{$\frac{\pi}{3}$};
+                    \foreach \a in {75}
+                    \draw (\a: 6.3) node{$\frac{5\pi}{12}$};
+                    \foreach \a in {90}
+                    \draw (\a: 6.3) node{$\frac{\pi}{2}$};
+                    \foreach \a in {105}
+                    \draw (\a: 6.3) node{$\frac{7\pi}{12}$};
+                    \foreach \a in {120}
+                    \draw (\a: 6.3) node{$\frac{2\pi}{3}$};
+                    \foreach \a in {135}
+                    \draw (\a: 6.3) node{$\frac{3\pi}{4}$};
+                    \foreach \a in {150}
+                    \draw (\a: 6.3) node{$\frac{5\pi}{6}$};
+                    \foreach \a in {165}
+                    \draw (\a: 6.3) node{$\frac{11\pi}{12}$};
+                    \foreach \a in {180}
+                    \draw (\a: 6.3) node{$\pi$};
+                    \foreach \a in {195}
+                    \draw (\a: 6.3) node{$\frac{13\pi}{12}$};
+                    \foreach \a in {210}
+                    \draw (\a: 6.3) node{$\frac{7\pi}{6}$};
+                    \foreach \a in {225}
+                    \draw (\a: 6.3) node{$\frac{5\pi}{4}$};
+                    \foreach \a in {240}
+                    \draw (\a: 6.3) node{$\frac{4\pi}{3}$};
+                    \foreach \a in {255}
+                    \draw (\a: 6.3) node{$\frac{17\pi}{12}$};
+                    \foreach \a in {270}
+                    \draw (\a: 6.3) node{$\frac{3\pi}{2}$};
+                    \foreach \a in {285}
+                    \draw (\a: 6.3) node{$\frac{19\pi}{12}$};
+                    \foreach \a in {300}
+                    \draw (\a: 6.3) node{$\frac{5\pi}{3}$};
+                    \foreach \a in {315}
+                    \draw (\a: 6.3) node{$\frac{7\pi}{4}$};
+                    \foreach \a in {330}
+                    \draw (\a: 6.3) node{$\frac{11\pi}{6}$};
+                    \foreach \a in {345}
+                    \draw (\a: 6.3) node{$\frac{23\pi}{12}$};
+                    \foreach \a in {345}
+                    \draw (\a: 6.3) node{$\frac{23\pi}{12}$};
+                    \tkzLabelPoint[red,right below](-2.9,0.78){$A$};
+                    \node at (-2.9,0.78)[red,circle,fill,inner sep=3pt] {};
+                    \tkzLabelPoint[blue,below left](-1.41,-1.41){$B$};
+                    \node at (-1.41,-1.41)[blue,circle,fill,inner sep=3pt] {};
+                    \tkzLabelPoint[green!50!black,right below](3,0){$C$};
+                    \node at (3,0)[green!50!black,circle,fill,inner sep=3pt] {};
+                  \end{tikzpicture}
+                \end{center}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </solution>
+    </example>
+
+  </paragraphs>
+  <paragraphs>
+    <title>Converting Between Polar Coordinates and Rectangular Coordinates.</title>
+    <p></p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        There are several mathematical relationships between the labeled parts of the right triangle shown in <xref ref="trigonometry-polar-coordinates-figure-4">Figure</xref>.  Three notable relationships come from trigonometry and are stated below.
+        <me>\sin(\theta)=\frac{y}{r}</me>
+        <me>\cos(\theta)=\frac{x}{r}</me>
+        <me>\tan(\theta)=\frac{y}{x}</me>
+      </p>
+
+      <figure xml:id="trigonometry-polar-coordinates-figure-4">
+        <caption>Conversion Between Polar and Rectangular Coordinates</caption>
+        <image>
+          <description>
+            A right triangle drawn in Quadrant one with one of the acute angle's vertex at the origin/pole.  The bottom side of the triangle is labeled <m>x</m>.  The side opposite the origin/pole is labeled <m>y</m>.  The hypotenuse is labeled <m>r</m>.  The angle at the origin/pole is labeled <m>\theta</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis} [axis equal image,
+                            xmin=-0.9,xmax=1.8,
+                            ymin=-0.9,ymax=1.8]
+                \addplot [domain=0:50,samples=100,color=black,line width=1pt,-] ({0.2*cos(x)},{0.2*sin(x)}) node[pos=0.75,right] {$\theta$};
+                \addplot [domain=0:1.028,line width=1.5pt,-,color=blue] {tan(50)*x} node[pos=0.4,above left] {$r$};
+                \addplot [domain=0:1.028,line width=1.5pt,-,color=blue] {0} node[pos=0.5,below] {$x$}; 
+                \addplot[interval,blue,ultra thick,-] coordinates {(1.028,-0.01) (1.028,1.226)} node[pos=0.5,right] {$y$}; 
+                \addplot[interval,black,thick,-] coordinates {(0.928,0) (0.928,0.1)};
+                \addplot [domain=0.928:1.028,line width=1pt,-,color=black] {0.1};                   
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <p>
+      A fourth notable relationship comes from the Pythagorean theorem.
+      <me>r^2=x^2+y^2</me>
+      We can use these relationships to convert between polar coordinates and rectangular coordinates.
+    </p> 
+    <p>
+      When converting from polar coordinates to rectangular coordinates we use the following two formulas.
+    </p>
+    <sidebyside widths ="47% 47%" margins="0%">
+
+      <p>
+        <me>x=r\cos(\theta)</me>
+      </p>
+
+      <p>
+        <me>y=r\sin(\theta)</me>
+      </p>
+
+    </sidebyside>
+    <p>
+      When converting from rectangular coordinates to polar coordinates we use the following two formulas.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        <me>r=\sqrt{x^2+y^2}</me>
+      </p>
+
+      <p>
+        <me>\tan(\theta)=\frac{y}{x}</me>
+      </p>
+
+    </sidebyside>
+    <p>
+      When applying the formula <m>\tan(\theta)=\frac{y}{x}</m>, we need to use caution in the use of the inverse tangent key.  That key will return a correct value for <m>\theta</m> if and only <m>\theta</m> terminates in either Quadrant I or Quadrant IV.  If <m>\theta</m> terminates in Quadrant II or Quadrant III and you need to use your inverse tangent key, the most straight forward thing to do is to find the reference angle, <m>\theta^{\,\prime}</m>, in the following way.
+      <me>\theta^{\,\prime}=\tan^{-1}\left(\abs{\frac{y}{x}}\right)</me>
+      Then subtract or add <m>\theta^{\,\prime}</m> to <m>\pi</m> dependent, respectively, upon whether the point lies in Quadrant II or Quadrant III.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Convert each of the following ordered pairs from rectangular coordinates to polar coordinates.
+          <ol label="a">
+            <li>
+              <p>
+                <m>\left(12,\frac{5\pi}{3}\right)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\left(-20,-\frac{5\pi}{4}\right)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The formulas for converting from polar coordinates to rectangular coordinates can be applied in a passive manner <mdash/> that is, we don't need to worry about reaching a false conclusion by careless application of the inverse tangent function.  Let's proceed.
+          <ol label="a">
+            <li>
+              <p>
+                <md>
+                  <mrow>\left(12\cos\left(\frac{5\pi}{3}\right),12\sin\left(\frac{5\pi}{3}\right)\right)\amp=\left(12 \cdot \frac{1}{2},12 \cdot -\frac{\sqrt{3}}{2}\right)</mrow>
+                  <mrow>\amp=(6,-6\sqrt{3})</mrow>
+                </md>
+              </p>
+            </li>
+            <li>
+              <p>
+                <md>
+                  <mrow>\left(-20\cos\left(-\frac{5\pi}{4}\right),-20\sin\left(-\frac{5\pi}{4}\right)\right)\amp=\left(-20 \cdot -\frac{\sqrt{2}}{2},-20 \cdot \frac{\sqrt{2}}{2}\right)</mrow>
+                  <mrow>\amp=(10\sqrt{2},-10\sqrt{2})</mrow>
+                </md>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Convert each of the following ordered pairs from rectangular coordinates to polar coordinates.  In all cases state a positive value for <m>r</m> and choose a value for <m>\theta</m> that falls on the interval <m>[0,2\pi)</m>.  For parts (a) and (b) state exact values for both <m>r</m> and <m>\theta</m>.  For parts (c) and (d), state an exact value for <m>r</m> but round the value of <m>\theta</m> to the nearest thousandth. 
+          <ol label="a">
+            <li>
+              <p>
+                <m>(4,4\sqrt{3})</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(-7\sqrt{2},-7\sqrt{2})</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(3,-4)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(-5,12)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol label="a">
+            <li>
+              <p>
+                Let's begin by determining the value of <m>r</m>.
+                <md>
+                  <mrow>r\amp=\sqrt{x^2+y^2}</mrow>
+                  <mrow>\amp=\sqrt{4^2+(4\sqrt{3})^2}</mrow>
+                  <mrow>\amp=\sqrt{64}</mrow>
+                  <mrow>\amp=8</mrow>
+                </md>
+              </p>
+              <p>
+                To determine the value of <m>\theta</m>, we need to find the solution to <m>\tan(\theta)=\frac{y}{x}</m> that lies in Quadrant I and falls between <m>0</m> and <m>2\pi</m>.
+                <md>
+                  <mrow>\tan(\theta)=\frac{y}{x}\,\,\amp\Longrightarrow\,\,\tan(\theta)=\frac{4\sqrt{3}}{4}</mrow>
+                  <mrow>\amp\Longrightarrow\,\,\tan(\theta)=\sqrt{3}</mrow>
+                </md>
+                The solution to the last equation that satisfies the stated requirements is <m>\frac{\pi}{3}</m>.
+              </p>
+              <p>
+                In conclusion, a polar equivalent of the rectangular ordered pair <m>(4,4\sqrt{3})</m> is 
+                <me>\left(8,\frac{\pi}{3}\right).</me>
+              </p>
+            </li>
+            <li>
+              <p>
+                We begin by determining the value of <m>r</m>.
+                <md>
+                  <mrow>r\amp=\sqrt{x^2+y^2}</mrow>
+                  <mrow>\amp=\sqrt{\left(-7\sqrt{2}\right)^2+\left(-7\sqrt{2}\right)^2}</mrow>
+                  <mrow>\amp=\sqrt{196}</mrow>
+                  <mrow>\amp=14</mrow>
+                </md>
+                To determine the value of <m>\theta</m>, we need to find the solution to the equation <m>\tan(\theta)=\frac{y}{x}</m> that lies in Quadrant III and falls between <m>0</m> and <m>2\pi</m>.
+                <md>
+                  <mrow>\tan(\theta)=\frac{y}{x}\amp\,\,\Longrightarrow\,\,\tan(\theta)=\frac{-7\sqrt{2}}{-7\sqrt{2}}</mrow>
+                  <mrow>\amp\Longrightarrow\,\,\tan(\theta)=1</mrow>
+                </md>
+                The solution to the last equation that meets the specified conditions is <m>\frac{5\pi}{4}</m>.
+              </p>
+              <p>
+                In conclusion, a polar equivalent of the rectangular ordered pair <m>(-7\sqrt{2},-7\sqrt{2})</m> is
+                <me>\left(14,\frac{5\pi}{4}\right).</me>
+              </p>
+            </li>
+            <li>
+              <p>
+                A good place to start is to determine the value of <m>r</m>.
+                <md>
+                  <mrow>r\amp=\sqrt{x^2+y^2}</mrow>
+                  <mrow>\amp=\sqrt{3^2+(-4)^2}</mrow>
+                  <mrow>\amp=\sqrt{25}</mrow>
+                  <mrow>\amp=5</mrow>
+                </md>
+                Let's move on to <m>\theta</m>.  We need to determine the solution to <m>\tan(\theta)=\frac{y}{x}</m> that lies in Quadrant IV and falls on the interval <m>[0,2\pi)</m>.
+                <md>
+                  <mrow>\tan(\theta)=\frac{y}{x}\,\,\amp\Longrightarrow\,\,\tan(\theta)=\frac{-4}{3}</mrow>
+                  <mrow>\amp\Longrightarrow\,\,\tan(\theta)=-\frac{4}{3}</mrow>
+                </md>
+                This last equation is not one for which we know an exact solution.  However, because the range of the inverse tangent function is <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> and the point we're analyzing lies in Quadrant IV, we can use <m>\tan^{-1}\left(-\frac{4}{3}\right)</m> to directly determine an angle that could be used in the polar ordered pair.
+                <me>\tan^{-1}\left(-\frac{4}{3}\right)\approx -0.927</me>
+                A mentioned, in general this would be a fine value for <m>\theta</m>, but the problem specified that we need to use a value that falls between <m>0</m> and <m>2\pi</m>.  We can find the specified value by adding <m>2\pi</m> to the value the calculator returned and do so below.
+                <md>
+                  <mrow>\theta\approx -.927+2\pi</mrow>
+                  <mrow>\approx 5.356</mrow>
+                </md>
+              </p>
+              <p>
+                To sum up, one polar equivalent to the rectangular ordered pair <m>(3,-4)</m> is approximately
+                <me>(5,5.536).</me>
+              </p>
+            </li>
+            <li>
+              <p>
+                Once again, let's begin by determining the value of <m>r</m>.
+                <md>
+                  <mrow>r\amp=\sqrt{x^2+y^2}</mrow>
+                  <mrow>\amp=\sqrt{(-5)^2+12^2}</mrow>
+                  <mrow>\amp=\sqrt{169}</mrow>
+                  <mrow>\amp=13</mrow>
+                </md>
+                Determination of <m>\theta</m> requires us to figure out the solution to <m>\tan(\theta)=\frac{y}{x}</m> that lies in Quadrant II and falls between <m>0</m> and <m>2\pi</m>.
+                <md>
+                  <mrow>\tan(\theta)=\frac{y}{x}\,\,\amp\Longrightarrow\,\,\tan(\theta)=\frac{12}{-5}</mrow>
+                  <mrow>\amp\Longrightarrow\,\,\tan(\theta)=-\frac{12}{5}</mrow>
+                </md>
+                We do not know an exact solution for the last equation, so we will need to use technology to find an approximate solution.  Unfortunately, <m>\theta</m> needs to point into Quadrant II, and technology will give us a solution in Quadrant IV.  Let's use <m>\tan^{-1}\left(\frac{12}{5}\right)</m> to determine the reference angle for <m>\theta</m> and proceed from there.
+                <md>
+                  <mrow>\theta^{\,\prime}\amp=\tan^{-1}\left(\frac{12}{5}\right)</mrow>
+                  <mrow>\amp\approx 1.176</mrow>
+                </md>
+                Because <m>\theta</m> lies in Quadrant II, we need to subtract <m>\theta^{\,\prime}</m> from <m>\pi</m> to determine its (approximate) value.
+                <me>\pi-1.176\approx 1.966</me>
+                We conclude by stating that an approximate polar equivalent of the rectangular ordered pair <m>(-5,12)</m> is
+                <me>(13,1.966).</me>
+              </p>
+            </li>
+          </ol>
+
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+  <paragraphs>
+    <title>Graphing Polar Functions</title>
+    <p></p>
+    <p>
+      Polar functions are generally stated in the format <m>r=f(\theta)</m>.  Because we state polar ordered pairs using the format <m>(r,\theta)</m>, it follows that unlike rectangular ordered pairs, in polar ordered pairs the second coordinate is generally the independent variable and the first coordinate is the dependent variable.
+    </p>
+    <p>
+      Let's consider the polar function <m>r=4\cos(\theta)</m>.  If we want to plot a graph of this function, a good place to start would be with a table of values.  The table I'm going to create is going to contain values of <m>\theta</m> that increase from <m>0</m> up through <m>\frac{11\pi}{6}</m>.  The points need to be connected in a counterclockwise fashion in the order in which they appeared.  This can sometimes get a little confusing when the value of <m>r</m> turns negative.  For this reason I'm going to assign names to the points to help us recall the order.  This is done in <xref ref="trigonometry-polar-coordinates-table-1">Table</xref>.  I went ahead and used my calculator to get approximate values for <m>r</m> in order to facilitate point plotting.
+    </p>
+    <table xml:id="trigonometry-polar-coordinates-table-1">
+      <caption><m>r=4\cos(\theta)</m></caption>
+      <tabular>
+        <col halign="center" />
+        <col halign="center"/>
+        <col halign="center"/>
+        <row bottom="medium">
+          <cell>
+            <line>Label</line>
+          </cell>
+          <cell>
+            <line><m>\theta</m></line>
+          </cell>
+          <cell>
+            <line><m>r</m></line>
+          </cell>
+        </row>
+        <row>
+          <cell><m>A</m></cell>
+          <cell><m>0</m></cell>
+          <cell><m>4</m></cell>
+        </row>
+        <row>
+          <cell><m>B</m></cell>
+          <cell><m>\frac{\pi}{6}</m></cell>
+          <cell><m>3.46</m></cell>
+        </row>
+        <row>
+          <cell><m>C</m></cell>
+          <cell><m>\frac{\pi}{4}</m></cell>
+          <cell><m>2.83</m></cell>
+        </row>
+        <row>
+          <cell><m>D</m></cell>
+          <cell><m>\frac{\pi}{3}</m></cell>
+          <cell><m>2</m></cell>
+        </row>
+        <row>
+          <cell><m>E</m></cell>
+          <cell><m>\frac{\pi}{2}</m></cell>
+          <cell><m>0</m></cell>
+        </row>
+        <row>
+          <cell><m>F</m></cell>
+          <cell><m>\frac{2\pi}{3}</m></cell>
+          <cell><m>-2</m></cell>
+        </row>
+        <row>
+          <cell><m>G</m></cell>
+          <cell><m>\frac{3\pi}{4}</m></cell>
+          <cell><m>-2.83</m></cell>
+        </row>
+        <row>
+          <cell><m>H</m></cell>
+          <cell><m>\frac{5\pi}{6}</m></cell>
+          <cell><m>-3.46</m></cell>
+        </row>
+        <row>
+          <cell><m>I</m></cell>
+          <cell><m>\pi</m></cell>
+          <cell><m>-4</m></cell>
+        </row>
+        <row>
+          <cell><m>J</m></cell>
+          <cell><m>\frac{7\pi}{6}</m></cell>
+          <cell><m>-3.46</m></cell>
+        </row>
+        <row>
+          <cell><m>K</m></cell>
+          <cell><m>\frac{5\pi}{4}</m></cell>
+          <cell><m>-2.83</m></cell>
+        </row>
+        <row>
+          <cell><m>L</m></cell>
+          <cell><m>\frac{4\pi}{3}</m></cell>
+          <cell><m>-2</m></cell>
+        </row>
+        <row>
+          <cell><m>M</m></cell>
+          <cell><m>\frac{3\pi}{2}</m></cell>
+          <cell><m>0</m></cell>
+        </row>
+        <row>
+          <cell><m>N</m></cell>
+          <cell><m>\frac{5\pi}{3}</m></cell>
+          <cell><m>2</m></cell>
+        </row>
+        <row>
+          <cell><m>O</m></cell>
+          <cell><m>\frac{7\pi}{4}</m></cell>
+          <cell><m>2.83</m></cell>
+        </row>
+        <row>
+          <cell><m>P</m></cell>
+          <cell><m>\frac{11\pi}{6}</m></cell>
+          <cell><m>3.46</m></cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      Let's go ahead and plot the points in <xref ref="trigonometry-polar-coordinates-figure-5">Figure</xref>.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        If we follow the points in order, it appears that we are going around a circle in a counterclockwise fashion.  Let's go ahead and connect the dots to see if they really do form a circle.  This is done in <xref ref="trigonometry-polar-coordinates-figure-6">Figure</xref>.
+      </p>
+
+      <figure xml:id="trigonometry-polar-coordinates-figure-5">
+        <caption>Points on the Polar Function <m>r=4\cos(\theta)</m></caption>
+        <image>
+          <description>
+            A graph in the polar plane.  The order pairs from <xref ref="trigonometry-polar-coordinates-table-1">Table</xref> are plotted.  The points appear to lie on a circle of radius 2 that is centered at the polar point <m>(2,0)</m>. 
+          </description>
+          <latex-image>
+              <![CDATA[
+              \begin{center}
+                \begin{tikzpicture}
+                  \foreach \r in {1, 2,...,6}
+                  \draw[gray, thin] (0,0) circle (\r);
+                  \foreach \a in {0, 30,...,330}
+                  \draw[gray, thick] (0, 0) -- (\a:6);
+                  \foreach \a in {0, 5,...,355}
+                  \draw[gray] (\a:5.7) -- (\a:6);
+                  \foreach \r in {1, 2,...,5}
+                  \draw (\r,0) node[inner sep=1pt,below=3pt,rectangle,fill=white] {$\r$};
+                  \foreach \a in {0}
+                  \draw (\a: 6.3) node{$0$};
+                  \foreach \a in {30}
+                  \draw (\a: 6.3) node{$\frac{\pi}{6}$};
+                  \foreach \a in {45}
+                  \draw (\a: 6.3) node{$\frac{\pi}{4}$};
+                  \foreach \a in {60}
+                  \draw (\a: 6.3) node{$\frac{\pi}{3}$};
+                  \foreach \a in {90}
+                  \draw (\a: 6.3) node{$\frac{\pi}{2}$};
+                  \foreach \a in {120}
+                  \draw (\a: 6.3) node{$\frac{2\pi}{3}$};
+                  \foreach \a in {135}
+                  \draw (\a: 6.3) node{$\frac{3\pi}{4}$};
+                  \foreach \a in {150}
+                  \draw (\a: 6.3) node{$\frac{5\pi}{6}$};
+                  \foreach \a in {180}
+                  \draw (\a: 6.3) node{$\pi$};
+                  \foreach \a in {210}
+                  \draw (\a: 6.3) node{$\frac{7\pi}{6}$};
+                  \foreach \a in {225}
+                  \draw (\a: 6.3) node{$\frac{5\pi}{4}$};
+                  \foreach \a in {240}
+                  \draw (\a: 6.3) node{$\frac{4\pi}{3}$};
+                  \foreach \a in {270}
+                  \draw (\a: 6.3) node{$\frac{3\pi}{2}$};
+                  \foreach \a in {300}
+                  \draw (\a: 6.3) node{$\frac{5\pi}{3}$};
+                  \foreach \a in {315}
+                  \draw (\a: 6.3) node{$\frac{7\pi}{4}$};
+                  \foreach \a in {330}
+                  \draw (\a: 6.3) node{$\frac{11\pi}{6}$};
+                  \tkzLabelPoint[blue,above right](4,0){$A,I$};
+                  \node at (4,0)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,above right](3,1.73){$B,J$};
+                  \node at (3,1.73)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,above right](2,2){$C,K$};
+                  \node at (2,2)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,above left](1,1.7){$D,L$};
+                  \node at (1,1.7)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,below left](0,0){$E,M$};
+                  \node at (0,0)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,below left](1,-1.7){$F,N$};
+                  \node at (1,-1.7)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,below right](2,-2){$G,O$};
+                  \node at (2,-2)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,below right](3,-1.73){$H,P$};
+                  \node at (3,-1.73)[blue,circle,fill,inner sep=3pt] {};
+                \end{tikzpicture}
+              \end{center}
+              ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        So the points do indeed connect into a circle.  Let's convert the equation to rectangular form to see if we can figure out why.  We'll begin our exploration by first multiplying both sides of the equation <m>r=4\cos(\theta)</m> by <m>r</m>.  The reason for doing so will be easier to explain once we've done it, so let's get to it.
+        <me>r \cdot r=r \cdot 4\cos(\theta)\,\,\Longrightarrow\,\,r^2=4r\cos(\theta)</me>
+      </p>
+
+      <figure xml:id="trigonometry-polar-coordinates-figure-6">
+        <caption><m>r=4\cos(\theta)</m></caption>
+        <image>
+          <description>
+            A graph in the polar plane.  The order pairs from <xref ref="trigonometry-polar-coordinates-table-1">Table</xref> are plotted.  The points connect to a circle of radius 2 that is centered at the polar point <m>(2,0)</m>. 
+          </description>
+          <latex-image>
+              <![CDATA[
+              \begin{center}
+                \begin{tikzpicture}
+                  \foreach \r in {1, 2,...,6}
+                  \draw[gray, thin] (0,0) circle (\r);
+                  \foreach \a in {0, 30,...,330}
+                  \draw[gray, thick] (0, 0) -- (\a:6);
+                  \foreach \a in {0, 5,...,355}
+                  \draw[gray] (\a:5.7) -- (\a:6);
+                  \foreach \r in {1, 2,...,5}
+                  \draw (\r,0) node[inner sep=1pt,below=3pt,rectangle,fill=white] {$\r$};
+                  \foreach \a in {0}
+                  \draw (\a: 6.3) node{$0$};
+                  \foreach \a in {30}
+                  \draw (\a: 6.3) node{$\frac{\pi}{6}$};
+                  \foreach \a in {45}
+                  \draw (\a: 6.3) node{$\frac{\pi}{4}$};
+                  \foreach \a in {60}
+                  \draw (\a: 6.3) node{$\frac{\pi}{3}$};
+                  \foreach \a in {90}
+                  \draw (\a: 6.3) node{$\frac{\pi}{2}$};
+                  \foreach \a in {120}
+                  \draw (\a: 6.3) node{$\frac{2\pi}{3}$};
+                  \foreach \a in {135}
+                  \draw (\a: 6.3) node{$\frac{3\pi}{4}$};
+                  \foreach \a in {150}
+                  \draw (\a: 6.3) node{$\frac{5\pi}{6}$};
+                  \foreach \a in {180}
+                  \draw (\a: 6.3) node{$\pi$};
+                  \foreach \a in {210}
+                  \draw (\a: 6.3) node{$\frac{7\pi}{6}$};
+                  \foreach \a in {225}
+                  \draw (\a: 6.3) node{$\frac{5\pi}{4}$};
+                  \foreach \a in {240}
+                  \draw (\a: 6.3) node{$\frac{4\pi}{3}$};
+                  \foreach \a in {270}
+                  \draw (\a: 6.3) node{$\frac{3\pi}{2}$};
+                  \foreach \a in {300}
+                  \draw (\a: 6.3) node{$\frac{5\pi}{3}$};
+                  \foreach \a in {315}
+                  \draw (\a: 6.3) node{$\frac{7\pi}{4}$};
+                  \foreach \a in {330}
+                  \draw (\a: 6.3) node{$\frac{11\pi}{6}$};
+                  \tkzLabelPoint[blue,above right](4,0){$A,I$};
+                  \node at (4,0)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,above right](3,1.73){$B,J$};
+                  \node at (3,1.73)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,above right](2,2){$C,K$};
+                  \node at (2,2)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,above left](1,1.7){$D,L$};
+                  \node at (1,1.7)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,below left](0,0){$E,M$};
+                  \node at (0,0)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,below left](1,-1.7){$F,N$};
+                  \node at (1,-1.7)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,below right](2,-2){$G,O$};
+                  \node at (2,-2)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,below right](3,-1.73){$H,P$};
+                  \node at (3,-1.73)[blue,circle,fill,inner sep=3pt] {};
+                  \draw[domain=0:180,color=blue,line width=2pt,samples=200] plot (\x:{4*cos(\x)});
+                \end{tikzpicture}
+              \end{center}
+              ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <p>
+      We can now replace <m>r^2</m> with <m>x^2+y^2</m> and <m>r\cos(\theta)</m> with <m>x</m>, resulting in the following.
+      <me>x^2+y^2=4x</me>
+      Let's move the linear term to the left side of the equation and complete the square and then pause to see if the mystery has been solved.
+      <md>
+        <mrow>x^2+y^2\amp=4x</mrow>
+        <mrow>x^2-4x+y^2\amp=0</mrow>
+        <mrow>x^2-4x\addright{4}+y^2\amp=0\addright{4}</mrow>
+        <mrow>(x-2)^2+y^2\amp=4</mrow>
+      </md>
+      This last equation is indeed the equation of a circle with a radius of <m>2</m> centered at the rectangular point <m>(2,0)</m>.  So there you have it.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Graph the polar function <m>r=2-3\sin(\theta)</m> after first making an appropriate table of values.
+        </p>
+      </statement>
+      <solution>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            Several ordered pairs that satisfy the equation are shown in <xref ref="trigonometry-polar-coordinates-table-2">Table</xref>.
+          </p>
+
+          <table xml:id="trigonometry-polar-coordinates-table-2">
+            <caption><m>r=2-3\sin(\theta)</m></caption>
+            <tabular>
+              <col halign="center" />
+              <col halign="center"/>
+              <col halign="center"/>
+              <row bottom="medium">
+                <cell>
+                  <line>Label</line>
+                </cell>
+                <cell>
+                  <line><m>\theta</m></line>
+                </cell>
+                <cell>
+                  <line><m>r</m></line>
+                </cell>
+              </row>
+              <row>
+                <cell><m>A</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>2</m></cell>
+              </row>
+              <row>
+                <cell><m>B</m></cell>
+                <cell><m>\frac{\pi}{6}</m></cell>
+                <cell><m>0.5</m></cell>
+              </row>
+            <row>
+              <cell><m>C</m></cell>
+              <cell><m>\frac{\pi}{4}</m></cell>
+              <cell><m>-0.12</m></cell>
+            </row>
+            <row>
+              <cell><m>D</m></cell>
+              <cell><m>\frac{\pi}{3}</m></cell>
+              <cell><m>-0.60</m></cell>
+            </row>
+            <row>
+              <cell><m>E</m></cell>
+              <cell><m>\frac{\pi}{2}</m></cell>
+              <cell><m>-1</m></cell>
+            </row>
+            <row>
+              <cell><m>F</m></cell>
+              <cell><m>\frac{2\pi}{3}</m></cell>
+              <cell><m>-0.60</m></cell>
+            </row>
+            <row>
+              <cell><m>G</m></cell>
+              <cell><m>\frac{3\pi}{4}</m></cell>
+              <cell><m>-0.12</m></cell>
+            </row>
+            <row>
+              <cell><m>H</m></cell>
+              <cell><m>\frac{5\pi}{6}</m></cell>
+              <cell><m>0.5</m></cell>
+            </row>
+            <row>
+              <cell><m>I</m></cell>
+              <cell><m>\pi</m></cell>
+              <cell><m>2</m></cell>
+            </row>
+            <row>
+              <cell><m>J</m></cell>
+              <cell><m>\frac{7\pi}{6}</m></cell>
+              <cell><m>3.5</m></cell>
+            </row>
+            <row>
+              <cell><m>K</m></cell>
+              <cell><m>\frac{5\pi}{4}</m></cell>
+              <cell><m>4.12</m></cell>
+            </row>
+            <row>
+              <cell><m>L</m></cell>
+              <cell><m>\frac{4\pi}{3}</m></cell>
+              <cell><m>4.60</m></cell>
+            </row>
+            <row>
+              <cell><m>M</m></cell>
+              <cell><m>\frac{3\pi}{2}</m></cell>
+              <cell><m>5</m></cell>
+            </row>
+            <row>
+              <cell><m>N</m></cell>
+              <cell><m>\frac{5\pi}{3}</m></cell>
+              <cell><m>4.60</m></cell>
+            </row>
+            <row>
+              <cell><m>O</m></cell>
+              <cell><m>\frac{7\pi}{4}</m></cell>
+              <cell><m>4.12</m></cell>
+            </row>
+            <row>
+              <cell><m>P</m></cell>
+              <cell><m>\frac{11\pi}{6}</m></cell>
+              <cell><m>3.5</m></cell>
+            </row>
+          </tabular>
+        </table>
+
+      </sidebyside>
+      <sidebyside widths="47% 47%" margins="0%">
+
+        <p>
+          The ordered pairs from <xref ref="trigonometry-polar-coordinates-table-2">Table</xref> are graphed in <xref ref="trigonometry-polar-coordinates-figure-7">Figure</xref>.  Note that the value of <m>r</m> changes from positive to negative somewhere between <m>\frac{\pi}{6}</m> and <m>\frac{\pi}{4}</m> and then changes back to positive somewhere between <m>\frac{3\pi}{4}</m> and <m>\frac{5\pi}{6}</m>.  Whenever the value of <m>r</m> changes sign on a continuous polar curve the curve passes through the pole.   
+        </p>
+
+        <figure xml:id="trigonometry-polar-coordinates-figure-7">
+          <caption><m>r=4\cos(\theta)</m></caption>
+          <image>
+            <description>
+              A graph in the polar plane.  The order pairs from <xref ref="trigonometry-polar-coordinates-table-2">Table</xref> are plotted.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{center}
+                \begin{tikzpicture}
+                  \foreach \r in {1, 2,...,6}
+                  \draw[gray, thin] (0,0) circle (\r);
+                  \foreach \a in {0, 30,...,330}
+                  \draw[gray, thick] (0, 0) -- (\a:6);
+                  \foreach \a in {0, 5,...,355}
+                  \draw[gray] (\a:5.7) -- (\a:6);
+                  \foreach \r in {1, 2,...,5}
+                  \draw (\r,0) node[inner sep=1pt,below=3pt,rectangle,fill=white] {$\r$};
+                  \foreach \a in {0}
+                  \draw (\a: 6.3) node{$0$};
+                  \foreach \a in {30}
+                  \draw (\a: 6.3) node{$\frac{\pi}{6}$};
+                  \foreach \a in {45}
+                  \draw (\a: 6.3) node{$\frac{\pi}{4}$};
+                  \foreach \a in {60}
+                  \draw (\a: 6.3) node{$\frac{\pi}{3}$};
+                  \foreach \a in {90}
+                  \draw (\a: 6.3) node{$\frac{\pi}{2}$};
+                  \foreach \a in {120}
+                  \draw (\a: 6.3) node{$\frac{2\pi}{3}$};
+                  \foreach \a in {135}
+                  \draw (\a: 6.3) node{$\frac{3\pi}{4}$};
+                  \foreach \a in {150}
+                  \draw (\a: 6.3) node{$\frac{5\pi}{6}$};
+                  \foreach \a in {180}
+                  \draw (\a: 6.3) node{$\pi$};
+                  \foreach \a in {210}
+                  \draw (\a: 6.3) node{$\frac{7\pi}{6}$};
+                  \foreach \a in {225}
+                  \draw (\a: 6.3) node{$\frac{5\pi}{4}$};
+                  \foreach \a in {240}
+                  \draw (\a: 6.3) node{$\frac{4\pi}{3}$};
+                  \foreach \a in {270}
+                  \draw (\a: 6.3) node{$\frac{3\pi}{2}$};
+                  \foreach \a in {300}
+                  \draw (\a: 6.3) node{$\frac{5\pi}{3}$};
+                  \foreach \a in {315}
+                  \draw (\a: 6.3) node{$\frac{7\pi}{4}$};
+                  \foreach \a in {330}
+                  \draw (\a: 6.3) node{$\frac{11\pi}{6}$};
+                  \tkzLabelPoint[blue,above right](2,0){$A$};
+                  \node at (2,0)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,above right](0.43,0.25){$B$};
+                  \node at (0.43,0.25)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,left](-0.08,-0.08){$C$};
+                  \node at (-0.08,-0.08)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,below left](-0.3,-0.52){$D$};
+                  \node at (-0.3,-0.52)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,below left](0,-1){$E$};
+                  \node at (0,-1)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,below right](0.3,-0.52){$F$};
+                  \node at (0.3,-0.52)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,right](0.08,-0.08){$G$};
+                  \node at (0.08,-0.08)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,above left](-0.43,0.25){$H$};
+                  \node at (-0.43,0.25)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,above left](-2,0){$I$};
+                  \node at (-2,0)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,below left](-3,-1.75){$J$};
+                  \node at (-3,-1.75)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,below left](-2.91,-2.91){$K$};
+                  \node at (-2.91,-2.91)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,below left](-2.3,-3.98){$L$};
+                  \node at (-2.3,-3.98)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,below left](0,-5){$M$};
+                  \node at (0,-5)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,below right](2.4,-3.98){$N$};
+                  \node at (2.4,-3.98)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,below right](2.91,-2.91){$O$};
+                  \node at (2.91,-2.91)[blue,circle,fill,inner sep=3pt] {};
+                  \tkzLabelPoint[blue,below right](3,-1.75){$P$};
+                  \node at (3,-1.75)[blue,circle,fill,inner sep=3pt] {};
+                \end{tikzpicture}
+              \end{center}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+
+      </sidebyside>
+      <p>
+        This is similar to the continuous rectangular function <m>y=f(x)</m> crossing the <m>x</m>-axis when the value of <m>y</m> changes sign.  The completed graph of <m>r=2-3\sin(\theta)</m> is shown in <xref ref="trigonometry-polar-coordinates-figure-8">Figure</xref>.  This curve is an example of a limacon with an inner loop. If you're interested in other generic types of polar curves, just type "types of polar curves" into the search bar and follow a resultant link.
+      </p>
+      <figure xml:id="trigonometry-polar-coordinates-figure-8">
+        <caption><m>r=4\cos(\theta)</m></caption>
+        <image width="60%">
+          <description>
+            A graph of <m>r=2-3\sin(\theta)</m> in the polar plane. The curve consists of a large outer loop that resembles a rounded heart symbol and a small inner loop that resembles a water drop.  The two loops intersect a the pole.  The entire graph is symmetric across the line that in the rectangular plane is called the <m>y</m>-axis.
+          </description>
+          <latex-image>
+              <![CDATA[
+              \begin{center}
+                \begin{tikzpicture}
+                  \foreach \r in {1, 2,...,6}
+                  \draw[gray, thin] (0,0) circle (\r);
+                  \foreach \a in {0, 30,...,330}
+                  \draw[gray, thick] (0, 0) -- (\a:6);
+                  \foreach \a in {0, 5,...,355}
+                  \draw[gray] (\a:5.7) -- (\a:6);
+                  \foreach \r in {1, 2,...,5}
+                  \draw (\r,0) node[inner sep=1pt,below=3pt,rectangle,fill=white] {$\r$};
+                  \foreach \a in {0}
+                  \draw (\a: 6.3) node{$0$};
+                  \foreach \a in {30}
+                  \draw (\a: 6.3) node{$\frac{\pi}{6}$};
+                  \foreach \a in {45}
+                  \draw (\a: 6.3) node{$\frac{\pi}{4}$};
+                  \foreach \a in {60}
+                  \draw (\a: 6.3) node{$\frac{\pi}{3}$};
+                  \foreach \a in {90}
+                  \draw (\a: 6.3) node{$\frac{\pi}{2}$};
+                  \foreach \a in {120}
+                  \draw (\a: 6.3) node{$\frac{2\pi}{3}$};
+                  \foreach \a in {135}
+                  \draw (\a: 6.3) node{$\frac{3\pi}{4}$};
+                  \foreach \a in {150}
+                  \draw (\a: 6.3) node{$\frac{5\pi}{6}$};
+                  \foreach \a in {180}
+                  \draw (\a: 6.3) node{$\pi$};
+                  \foreach \a in {210}
+                  \draw (\a: 6.3) node{$\frac{7\pi}{6}$};
+                  \foreach \a in {225}
+                  \draw (\a: 6.3) node{$\frac{5\pi}{4}$};
+                  \foreach \a in {240}
+                  \draw (\a: 6.3) node{$\frac{4\pi}{3}$};
+                  \foreach \a in {270}
+                  \draw (\a: 6.3) node{$\frac{3\pi}{2}$};
+                  \foreach \a in {300}
+                  \draw (\a: 6.3) node{$\frac{5\pi}{3}$};
+                  \foreach \a in {315}
+                  \draw (\a: 6.3) node{$\frac{7\pi}{4}$};
+                  \foreach \a in {330}
+                  \draw (\a: 6.3) node{$\frac{11\pi}{6}$};
+                  \draw[domain=0:360,color=blue,line width=2pt,samples=200] plot (\x:{2-3*sin(\x)});
+                \end{tikzpicture}
+              \end{center}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Convert each polar equation to a rectangular equation to determine the appearance of the graph of the polar equation.
+        <ol label="a">
+          <li>
+            <p>
+              <m>r=7</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>r=3\sec(\theta)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\theta=\frac{\pi}{3}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol label="a">
+          <li>
+            <p>
+              We begin by squaring both sides of the equation resulting in
+              <me>r^2=49.</me>
+              Replacing <m>r^2</m> with <m>x^2+y^2</m> give us
+              <me>x^2+y^2=49.</me>
+              This rectangular equation graphs to a circle centered at the origin with a radius of <m>7</m>.  So <m>r=7</m> is a circle centered at the pole with a radius of <m>7</m> which makes sense as any point with an <m>r</m>-coordinate of <m>7</m> lies on that circle.
+            </p>
+          </li>
+          <li>
+            <p>
+              <md>
+                <mrow>r=3\sec(\theta)\,\,\amp\Longrightarrow\,\,r=\frac{3}{\cos(\theta)}</mrow>
+                <mrow>\amp\Longrightarrow\,\,r\cos(\theta)=3</mrow>
+                <mrow>\amp\Longrightarrow\,\,x=3</mrow>
+              </md>
+              From this last equation we can conclude that <m>r=3\sec(\theta)</m> graphs to a vertical line that passes through the polar point <m>(3,0)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <md>
+                <mrow>\theta=\frac{\pi}{3}\,\,\amp\Longrightarrow\,\,\tan(\theta)=\tan\left(\frac{\pi}{3}\right)</mrow>
+                <mrow>\amp\Longrightarrow\,\,\frac{y}{x}=\sqrt{3}</mrow>
+                <mrow>\amp\Longrightarrow\,\,y=\sqrt{3}x</mrow>
+              </md>
+              So <m>\theta=\frac{\pi}{3}</m> graphs to a line through the pole that has a rectangular slope of <m>\sqrt{3}</m>. This makes sense as any point with a <m>\theta</m>-coordinate of <m>\frac{\pi}{3}</m> lies on that line.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  </paragraphs>
+
+  <exercises>
+
+    <exercise>
+      <statement>
+        <p>
+          Match each function with one of the graphs shown in <xref ref="trigonometry-polar-coordinates-exercises-figure-1">Figure</xref>-<xref ref="trigonometry-polar-coordinates-exercises-figure-4">Figure</xref>.
+          <ol label="a">
+            <li>
+              <p>
+                <m>r=1+3\sin(3\theta)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>r=4\cos(3\theta)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>r=4\sin(4\theta)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>r=2+2\cos(2\theta)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <figure xml:id="trigonometry-polar-coordinates-exercises-figure-1">
+            <caption></caption>
+            <image>
+              <description>
+                A flower with eight petals total, two in each quadrant.  The flower is symmetric across both the <m>x</m>-axis and the <m>y</m>-axis.
+              </description>
+              <latex-image>
+                 <![CDATA[
+                \begin{center}
+                  \begin{tikzpicture}
+                    \foreach \r in {1, 2,...,6}
+                    \draw[gray, thin] (0,0) circle (\r);
+                    \foreach \a in {0, 30,...,330}
+                    \draw[gray, thick] (0, 0) -- (\a:6);
+                    \foreach \a in {0, 5,...,355}
+                    \draw[gray] (\a:5.7) -- (\a:6);
+                    \foreach \r in {1, 2,...,5}
+                    \draw (\r,0) node[inner sep=1pt,below=3pt,rectangle,fill=white] {$\r$};
+                    \foreach \a in {0}
+                    \draw (\a: 6.3) node{$0$};
+                    \foreach \a in {30}
+                    \draw (\a: 6.3) node{$\frac{\pi}{6}$};
+                    \foreach \a in {45}
+                    \draw (\a: 6.3) node{$\frac{\pi}{4}$};
+                    \foreach \a in {60}
+                    \draw (\a: 6.3) node{$\frac{\pi}{3}$};
+                    \foreach \a in {90}
+                    \draw (\a: 6.3) node{$\frac{\pi}{2}$};
+                    \foreach \a in {120}
+                    \draw (\a: 6.3) node{$\frac{2\pi}{3}$};
+                    \foreach \a in {135}
+                    \draw (\a: 6.3) node{$\frac{3\pi}{4}$};
+                    \foreach \a in {150}
+                    \draw (\a: 6.3) node{$\frac{5\pi}{6}$};
+                    \foreach \a in {180}
+                    \draw (\a: 6.3) node{$\pi$};
+                    \foreach \a in {210}
+                    \draw (\a: 6.3) node{$\frac{7\pi}{6}$};
+                    \foreach \a in {225}
+                    \draw (\a: 6.3) node{$\frac{5\pi}{4}$};
+                    \foreach \a in {240}
+                    \draw (\a: 6.3) node{$\frac{4\pi}{3}$};
+                    \foreach \a in {270}
+                    \draw (\a: 6.3) node{$\frac{3\pi}{2}$};
+                    \foreach \a in {300}
+                    \draw (\a: 6.3) node{$\frac{5\pi}{3}$};
+                    \foreach \a in {315}
+                    \draw (\a: 6.3) node{$\frac{7\pi}{4}$};
+                    \foreach \a in {330}
+                    \draw (\a: 6.3) node{$\frac{11\pi}{6}$};
+                    \draw[domain=0:360,color=blue,line width=2pt,samples=200] plot (\x:{4*sin(4*\x)});
+                  \end{tikzpicture}
+                \end{center}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+          <figure xml:id="trigonometry-polar-coordinates-exercises-figure-2">
+            <caption></caption>
+            <image>
+              <description>
+              Three large loops of equal size, each with a smaller loop inside.  The smaller loops are also of equal size.  The loops all meet at the pole.  One pair of loops is entirely in Quadrant I and a second pair is entirely in Quadrant II. The third pair of loops is symmetric across the negative <m>y</m>-axis. 
+              </description>
+              <latex-image>
+                 <![CDATA[
+                \begin{center}
+                  \begin{tikzpicture}
+                    \foreach \r in {1, 2,...,6}
+                    \draw[gray, thin] (0,0) circle (\r);
+                    \foreach \a in {0, 30,...,330}
+                    \draw[gray, thick] (0, 0) -- (\a:6);
+                    \foreach \a in {0, 5,...,355}
+                    \draw[gray] (\a:5.7) -- (\a:6);
+                    \foreach \r in {1, 2,...,5}
+                    \draw (\r,0) node[inner sep=1pt,below=3pt,rectangle,fill=white] {$\r$};
+                    \foreach \a in {0}
+                    \draw (\a: 6.3) node{$0$};
+                    \foreach \a in {30}
+                    \draw (\a: 6.3) node{$\frac{\pi}{6}$};
+                    \foreach \a in {45}
+                    \draw (\a: 6.3) node{$\frac{\pi}{4}$};
+                    \foreach \a in {60}
+                    \draw (\a: 6.3) node{$\frac{\pi}{3}$};
+                    \foreach \a in {90}
+                    \draw (\a: 6.3) node{$\frac{\pi}{2}$};
+                    \foreach \a in {120}
+                    \draw (\a: 6.3) node{$\frac{2\pi}{3}$};
+                    \foreach \a in {135}
+                    \draw (\a: 6.3) node{$\frac{3\pi}{4}$};
+                    \foreach \a in {150}
+                    \draw (\a: 6.3) node{$\frac{5\pi}{6}$};
+                    \foreach \a in {180}
+                    \draw (\a: 6.3) node{$\pi$};
+                    \foreach \a in {210}
+                    \draw (\a: 6.3) node{$\frac{7\pi}{6}$};
+                    \foreach \a in {225}
+                    \draw (\a: 6.3) node{$\frac{5\pi}{4}$};
+                    \foreach \a in {240}
+                    \draw (\a: 6.3) node{$\frac{4\pi}{3}$};
+                    \foreach \a in {270}
+                    \draw (\a: 6.3) node{$\frac{3\pi}{2}$};
+                    \foreach \a in {300}
+                    \draw (\a: 6.3) node{$\frac{5\pi}{3}$};
+                    \foreach \a in {315}
+                    \draw (\a: 6.3) node{$\frac{7\pi}{4}$};
+                    \foreach \a in {330}
+                    \draw (\a: 6.3) node{$\frac{11\pi}{6}$};
+                    \draw[domain=0:360,color=blue,line width=2pt,samples=200] plot (\x:{1+3*sin(3*\x)});
+                  \end{tikzpicture}
+                \end{center}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+        </sidebyside>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <figure xml:id="trigonometry-polar-coordinates-exercises-figure-3">
+            <caption></caption>
+            <image>
+              <description>
+              A curve that resembles an infinity symbol.  The two loops meet at the pole.
+              </description>
+              <latex-image>
+                 <![CDATA[
+                \begin{center}
+                  \begin{tikzpicture}
+                    \foreach \r in {1, 2,...,6}
+                    \draw[gray, thin] (0,0) circle (\r);
+                    \foreach \a in {0, 30,...,330}
+                    \draw[gray, thick] (0, 0) -- (\a:6);
+                    \foreach \a in {0, 5,...,355}
+                    \draw[gray] (\a:5.7) -- (\a:6);
+                    \foreach \r in {1, 2,...,5}
+                    \draw (\r,0) node[inner sep=1pt,below=3pt,rectangle,fill=white] {$\r$};
+                    \foreach \a in {0}
+                    \draw (\a: 6.3) node{$0$};
+                    \foreach \a in {30}
+                    \draw (\a: 6.3) node{$\frac{\pi}{6}$};
+                    \foreach \a in {45}
+                    \draw (\a: 6.3) node{$\frac{\pi}{4}$};
+                    \foreach \a in {60}
+                    \draw (\a: 6.3) node{$\frac{\pi}{3}$};
+                    \foreach \a in {90}
+                    \draw (\a: 6.3) node{$\frac{\pi}{2}$};
+                    \foreach \a in {120}
+                    \draw (\a: 6.3) node{$\frac{2\pi}{3}$};
+                    \foreach \a in {135}
+                    \draw (\a: 6.3) node{$\frac{3\pi}{4}$};
+                    \foreach \a in {150}
+                    \draw (\a: 6.3) node{$\frac{5\pi}{6}$};
+                    \foreach \a in {180}
+                    \draw (\a: 6.3) node{$\pi$};
+                    \foreach \a in {210}
+                    \draw (\a: 6.3) node{$\frac{7\pi}{6}$};
+                    \foreach \a in {225}
+                    \draw (\a: 6.3) node{$\frac{5\pi}{4}$};
+                    \foreach \a in {240}
+                    \draw (\a: 6.3) node{$\frac{4\pi}{3}$};
+                    \foreach \a in {270}
+                    \draw (\a: 6.3) node{$\frac{3\pi}{2}$};
+                    \foreach \a in {300}
+                    \draw (\a: 6.3) node{$\frac{5\pi}{3}$};
+                    \foreach \a in {315}
+                    \draw (\a: 6.3) node{$\frac{7\pi}{4}$};
+                    \foreach \a in {330}
+                    \draw (\a: 6.3) node{$\frac{11\pi}{6}$};
+                    \draw[domain=0:360,color=blue,line width=2pt,samples=200] plot (\x:{2+2*cos(2*\x)});
+                  \end{tikzpicture}
+                \end{center}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+          <figure xml:id="trigonometry-polar-coordinates-exercises-figure-4">
+            <caption></caption>
+            <image>
+              <description>
+              Three loops of equal size.  The loops meet at the pole.  One loop is entirely in Quadrant II and a second loop is entirely in Quadrant III.  The third loop is symmetric across the positive <m>x</m>-axis.
+              </description>
+              <latex-image>
+                 <![CDATA[
+                \begin{center}
+                  \begin{tikzpicture}
+                    \foreach \r in {1, 2,...,6}
+                    \draw[gray, thin] (0,0) circle (\r);
+                    \foreach \a in {0, 30,...,330}
+                    \draw[gray, thick] (0, 0) -- (\a:6);
+                    \foreach \a in {0, 5,...,355}
+                    \draw[gray] (\a:5.7) -- (\a:6);
+                    \foreach \r in {1, 2,...,5}
+                    \draw (\r,0) node[inner sep=1pt,below=3pt,rectangle,fill=white] {$\r$};
+                    \foreach \a in {0}
+                    \draw (\a: 6.3) node{$0$};
+                    \foreach \a in {30}
+                    \draw (\a: 6.3) node{$\frac{\pi}{6}$};
+                    \foreach \a in {45}
+                    \draw (\a: 6.3) node{$\frac{\pi}{4}$};
+                    \foreach \a in {60}
+                    \draw (\a: 6.3) node{$\frac{\pi}{3}$};
+                    \foreach \a in {90}
+                    \draw (\a: 6.3) node{$\frac{\pi}{2}$};
+                    \foreach \a in {120}
+                    \draw (\a: 6.3) node{$\frac{2\pi}{3}$};
+                    \foreach \a in {135}
+                    \draw (\a: 6.3) node{$\frac{3\pi}{4}$};
+                    \foreach \a in {150}
+                    \draw (\a: 6.3) node{$\frac{5\pi}{6}$};
+                    \foreach \a in {180}
+                    \draw (\a: 6.3) node{$\pi$};
+                    \foreach \a in {210}
+                    \draw (\a: 6.3) node{$\frac{7\pi}{6}$};
+                    \foreach \a in {225}
+                    \draw (\a: 6.3) node{$\frac{5\pi}{4}$};
+                    \foreach \a in {240}
+                    \draw (\a: 6.3) node{$\frac{4\pi}{3}$};
+                    \foreach \a in {270}
+                    \draw (\a: 6.3) node{$\frac{3\pi}{2}$};
+                    \foreach \a in {300}
+                    \draw (\a: 6.3) node{$\frac{5\pi}{3}$};
+                    \foreach \a in {315}
+                    \draw (\a: 6.3) node{$\frac{7\pi}{4}$};
+                    \foreach \a in {330}
+                    \draw (\a: 6.3) node{$\frac{11\pi}{6}$};
+                    \draw[domain=0:360,color=blue,line width=2pt,samples=200] plot (\x:{4*cos(3*\x)});
+                  \end{tikzpicture}
+                \end{center}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </statement>
+      <solution>
+        <ol label="a">
+          <li>
+            <p>
+              <xref ref="trigonometry-polar-coordinates-exercises-figure-2">Figure</xref>
+            </p>
+          </li>
+          <li>
+            <p>
+              <xref ref="trigonometry-polar-coordinates-exercises-figure-4">Figure</xref>
+            </p>
+          </li>
+          <li>
+            <p>
+              <xref ref="trigonometry-polar-coordinates-exercises-figure-1">Figure</xref>
+            </p>
+          </li>
+          <li>
+            <p>
+              <xref ref="trigonometry-polar-coordinates-exercises-figure-3">Figure</xref>
+            </p>
+          </li>
+        </ol>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Determine the appearance of each polar function after first converting the equation into rectangular form.
+          <ol label="a">
+            <li>
+              <p>
+                <m>r=-8\sin(\theta)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>r=5\csc(\theta)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>r=\frac{1}{1+\sin(\theta)}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+               <m>\theta=\frac{3\pi}{4}</m>
+             </p>
+           </li>
+         </ol>
+       </p>
+     </statement>
+     <solution>
+      <ol label="a">
+        <li>
+          <p>
+            <md>
+              <mrow>r=8\sin(\theta)\,\,\amp\Longrightarrow\,\,r \cdot r=r \cdot -8\sin(\theta)</mrow>
+              <mrow>\amp\Longrightarrow\,\,r^2=-8r\sin(\theta)</mrow>
+              <mrow>\amp\Longrightarrow\,\,x^2+y^2=-8y</mrow>
+              <mrow>\amp\Longrightarrow\,\,x^2+y^2+8y=0</mrow>
+              <mrow>\amp\Longrightarrow\,\,x^2+y^2+8y\addright{16}=0\addright{16}</mrow>
+              <mrow>\amp\Longrightarrow\,\,(x+4)^2=16</mrow>
+            </md>
+            <m>r=-8\sin(\theta)</m> graphs to a circle of radius <m>4</m> centered at the polar point <m>(4,\pi)</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <md>
+              <mrow>r=5\csc(\theta)\,\,\amp\Longrightarrow\,\,r=\frac{5}{\sin(\theta)}</mrow>
+              <mrow>\amp\Longrightarrow\,\,r\sin(\theta)=5</mrow>
+              <mrow>\amp\Longrightarrow\,\,y=5</mrow>
+            </md>
+            <m>r=5\csc(\theta)</m> graphs to a horizontal line through the polar point <m>\left(5,\frac{\pi}{2}\right)</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <md>
+              <mrow>r=\frac{1}{1+\sin(\theta)}\,\,\amp\Longrightarrow\,\,r+r\sin(\theta)=1</mrow>
+              <mrow>\amp\Longrightarrow\,\,r=1-r\sin(\theta)</mrow>
+              <mrow>\amp\Longrightarrow\,\,r^2=\left(1-r\sin(\theta)\right)^2</mrow>
+              <mrow>\amp\Longrightarrow\,\,x^2+y^2=1-2r\sin(\theta)+\left(r\sin(\theta)\right)^2</mrow>
+              <mrow>\amp\Longrightarrow\,\,x^2+y^2=1-2y+y^2</mrow>
+              <mrow>\amp\Longrightarrow\,\,2y=1-x^2</mrow>
+              <mrow>\amp\Longrightarrow\,\,y=-\frac{1}{2}x^2+\frac{1}{2}</mrow>
+            </md>
+            <m>r=\frac{1}{1+sin(\theta)}</m> graphs to a downward opening parabola with its vertex at the polar point <m>\left(\frac{1}{2},\frac{\pi}{2}\right)</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <md>
+              <mrow>\theta=\frac{3\pi}{4}\amp\Longrightarrow\,\,\tan(\theta)=\tan\left(\frac{3\pi}{4}\right)</mrow>
+              <mrow>\amp\Longrightarrow\,\,\frac{y}{x}=-1</mrow>
+              <mrow>\amp\Longrightarrow\,\,y=-x</mrow>
+            </md>
+            <m>\theta=\frac{3\pi}{4}</m> graphs to a line through the origin that bisects Quadrants I and IV.
+          </p>
+        </li>
+      </ol>
+    </solution>
+  </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Convert each of the following ordered pairs from rectangular coordinates to polar coordinates.  In all cases state a positive value for <m>r</m> and choose a value for <m>\theta</m> that falls on the interval <m>[0,2\pi)</m>.  For parts (a) and (b) state exact values for both <m>r</m> and <m>\theta</m>.  For parts (c) and (d), state an exact value for <m>r</m> but round the value of <m>\theta</m> to the nearest thousandth. 
+          <ol label="a">
+            <li>
+              <p>
+                <m>\left(3\sqrt{3},9\right)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\left(-\frac{4}{\sqrt{2}},\frac{4}{\sqrt{2}}\right)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(-8,-15)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(-5,2)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol label="a">
+            <li>
+              <p>
+                Let's first find the value of <m>r</m>.
+                <md>
+                  <mrow>r\amp=\sqrt{x^2+y^2}</mrow>
+                  <mrow>\amp=\sqrt{\left(3\sqrt{3}\right)^2+9^2}</mrow>
+                  <mrow>\amp=\sqrt{108}</mrow>
+                  <mrow>\amp=6\sqrt{3}</mrow>
+                </md>
+                To determine the value of <m>\theta</m>, we need to find a solution to the equation <m>\tan(\theta)=\frac{y}{x}</m> that lies in Quadrant I and falls on the interval <m>[0,2\pi)</m>.
+                <md>
+                  <mrow>\tan(\theta)\amp=\frac{y}{x}</mrow>
+                  <mrow>\tan(\theta)\amp=\frac{9}{3\sqrt{3}}</mrow>
+                  <mrow>\tan(\theta)\amp=\frac{3}{\sqrt{3}}</mrow>
+                  <mrow>\tan(\theta)\amp=\frac{3}{\sqrt{3}} \cdot \frac{\sqrt{3}}{\sqrt{3}}</mrow>
+                  <mrow>\tan(\theta)\amp=\frac{3\sqrt{3}}{3}</mrow>
+                  <mrow>\tan(\theta)\amp=\sqrt{3}</mrow>
+                </md>
+                The solution to the last equation that satisfies the stated conditions is <m>\frac{\pi}{3}</m>. In summary, one polar equivalent to the rectangular ordered pair <m>\left(3\sqrt{3},9\right)</m> is <m>\left(6\sqrt{3},\frac{\pi}{3}\right)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                We begin by determining the value of <m>r</m>.
+                <md>
+                  <mrow>r\amp=\sqrt{x^2+y^2}</mrow>
+                  <mrow>\amp=\sqrt{\left(-\frac{4}{\sqrt{2}}\right)^2+\left(\frac{4}{\sqrt{2}}\right)^2}</mrow>
+                  <mrow>\amp=\sqrt{16}</mrow>
+                  <mrow>\amp=4</mrow>
+                </md>
+                To determine <m>\theta</m>, we need to find the solution to the equation <m>\tan(\theta)=\frac{y}{x}</m> that lies in Quadrant II and is between <m>0</m> and <m>2\pi</m>.
+                <md>
+                  <mrow>\tan(\theta)\amp=\frac{y}{x}</mrow>
+                  <mrow>\tan(\theta)\amp=\frac{-\frac{4}{\sqrt{2}}}{\frac{4}{\sqrt{2}}}</mrow>
+                  <mrow>\tan(\theta)\amp=-1</mrow>
+                </md>
+                The solution to the last equation that meets the stated requirements is <m>\frac{3\pi}{4}</m>. In conclusion, a polar equivalent to the rectangular ordered pair <m>\left(-\frac{4}{\sqrt{2}},\frac{4}{\sqrt{2}}\right)</m> is <m>\left(4,\frac{3\pi}{4}\right)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                To start things off we'll determine the value of <m>r</m>.
+                <md>
+                  <mrow>r\amp=\sqrt{x^2+y^2}</mrow>
+                  <mrow>\amp=\sqrt{(-8)^2+(-15)^2}</mrow>
+                  <mrow>\amp=\sqrt{289}</mrow>
+                  <mrow>\amp=17</mrow>
+                </md>
+                To estimate the value of <m>\theta</m>, we need to determine solution to the equation <m>\tan(\theta)=\frac{y}{x}</m> that lies in Quadrant III and falls between <m>0</m> and <m>2\pi</m>.
+                <md>
+                  <mrow>\tan(\theta)\amp=\frac{y}{x}</mrow>
+                  <mrow>\tan(\theta)\amp=\frac{-15}{-8}</mrow>
+                  <mrow>\tan(\theta)\amp=\frac{15}{8}</mrow>
+                </md>
+                The last equation is not one for which we know an exact solution, so we'll need to rely on technology to determine an estimated solution.  We can be certain that
+                <me>\theta\neq\tan^{-1}\left(\frac{15}{8}\right)</me>
+                because that angle terminates in Quadrant I and we need an angle that terminates in Quadrant III.  However, <m>\tan^{-1}\left(\frac{15}{8}\right)</m> is the reference angle for <m>\theta</m> which gives us the following.
+                <md>
+                  <mrow>\theta\amp=\pi+\tan\left(\frac{15}{8}\right)</mrow>
+                  <mrow>\amp\approx 4.222</mrow>
+                </md>
+                In conclusion, an approximate polar equivalent to the rectangular ordered pair <m>(-8,-15)</m> is <m>(17,4.222)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                We begin by determining the value of <m>r</m>.
+                <md>
+                  <mrow>r\amp=\sqrt{x^2+y^2}</mrow>
+                  <mrow>\amp=\sqrt{(-5)^2+2^2}</mrow>
+                  <mrow>\amp=\sqrt{29}</mrow>
+                </md>
+                We need to also determine a solution to the equation <m>\tan(\theta)=\frac{y}{x}</m> that terminates in Quadrant II and falls on the interval <m>[0,2\pi)</m>.  
+                <md>
+                  <mrow>\tan(\theta)\amp=\frac{y}{x}</mrow>
+                  <mrow>\tan(\theta)\amp=\frac{2}{-5}</mrow>
+                  <mrow>\tan(\theta)\amp=-\frac{2}{5}</mrow>
+                </md>
+                We do not know an exact solution to the last equation, so we'll need to use technology to estimate the solution.  We can' find the value directly with the inverse tangent function, because <m>\tan^{-1}\left(-\frac{2}{5}\right)</m> points into Quadrant IV and we're looking for an angle that points into Quadrant II.  Let's find the reference angle for the solution and then subtract that from <m>\pi</m>.
+                <md>
+                  <mrow>\theta^{\,\prime}\amp=\tan^{-1}\left(\abs{\frac{2}{5}}\right)</mrow>
+                  <mrow>\amp\approx 0.381</mrow>
+                  <mrow>\theta\amp=\pi-\theta^{\,\prime}</mrow>
+                  <mrow>\amp\approx \pi-0.381</mrow>
+                  <mrow>\amp\approx 2.761</mrow>
+                </md>
+                So we conclude by stating that a polar equivalent to the rectangular ordered pair <m>(-5,2)</m> is approximately <m>\left(\sqrt{29},2.761\right)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </exercise>
+
+  </exercises>
+
+</section>

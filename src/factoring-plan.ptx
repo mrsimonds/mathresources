@@ -10,238 +10,244 @@
 <!-- ********************************************************************* -->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="factoring-plan">
-    <title>Factoring: A General Strategy</title>
+  <title>Factoring: A General Strategy</title>
 
-      <p>
-        A Factor Plan
-        <ol label="1">
-          <li>
-            <p>
-              Always begin by factoring out the Greatest Common Factor of the terms.
-            </p>
-          </li>
-          <li>
-            <p>
-              If there's a binomial lurking about, see if it fits one of the following special forms:
-                <me>a^2-b^2=(a+b)(a-b)</me>
-                <me>a^3-b^3=(a-b)(a^2+ab+b^2)</me>
-                <me>a^3+b^3=(a+b)(a^2-ab+b^2)</me>
-            </p>
-          </li>
-          <li>
-            <p>
-              If there's a trinomial in the picture, then:
-              <ul>
-                <li>
-                  <p>
-                    If the leading coefficient is <m>1</m> and the trinomial is factorable, then:
-                    <me>x^2+bx+c=(x+h)(x+k)</me>
-                    where <m>hk=c</m> and <m>h+k=b</m>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    If the leading coefficient isn't <m>1</m>, you could try "guess and check."  You could also try the "<m>ac</m>" method. Begin by finding a pair of numbers, <m>h</m> and <m>k</m>, whose product is <m>ac</m> and whose sum is <m>b</m>.  Then rewrite the trinomial in the following form and factor by grouping:<me>ax^2+bx+c=ax^2+hx+kx+c</me>
-                  </p>
-                </li>
-              </ul>
-            </p>
-          </li>
-          <li>
-            <p>
-              If there's a four-termed polynomial on the table, try factoring by grouping.
-            </p>
-          </li>
-          <li>
-            <p>
-              In each of the above circumstances, check you factorization by expanding the result and making sure that it matches the polynomial you started with.
-            </p>
-          </li>
-          <li>
-            <p>
-              Remember, many (most!) polynomials are prime - they do not factor at all.  This fact is almost surely counter to your experienced reality.  That's because it would counterproductive and mean-spirited to ask students to factor dozens of polynomials, most of which were prime.  Regardless, we have to throw the occasional prime polynomial into the mix to remind you that such things do exist.
-            </p>
-          </li>
-        </ol>
-      </p>
-
-        <exercises>
-
-          <exercisegroup>
-            <introduction>
+  <p>
+    A Factor Plan
+    <ol label="1">
+      <li>
+        <p>
+          Always begin by factoring out the Greatest Common Factor of the terms.
+        </p>
+      </li>
+      <li>
+        <p>
+          If there's a binomial lurking about, see if it fits one of the following special forms:
+            <me>a^2-b^2=(a+b)(a-b)</me>
+            <me>a^3-b^3=(a-b)(a^2+ab+b^2)</me>
+            <me>a^3+b^3=(a+b)(a^2-ab+b^2)</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          If there's a trinomial in the picture, then:
+          <ul>
+            <li>
               <p>
-                Completely factor each of the following expressions.  Check each result by expanding the factored form.
+                If the leading coefficient is <m>1</m> and the trinomial is factorable, then:
+                <me>x^2+bx+c=(x+h)(x+k)</me>
+                where <m>hk=c</m> and <m>h+k=b</m>
               </p>
-            </introduction>
+            </li>
+            <li>
+              <p>
+                If the leading coefficient isn't <m>1</m>, you could try "guess and check."  You could also try the "<m>ac</m>" method. Begin by finding a pair of numbers, <m>h</m> and <m>k</m>, whose product is <m>ac</m> and whose sum is <m>b</m>.  Then rewrite the trinomial in the following form and factor by grouping:<me>ax^2+bx+c=ax^2+hx+kx+c</me>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </li>
+      <li>
+        <p>
+          If there's a four-termed polynomial on the table, try factoring by grouping.
+        </p>
+      </li>
+      <li>
+        <p>
+          In each of the above circumstances, check you factorization by expanding the result and making sure that it matches the polynomial you started with.
+        </p>
+      </li>
+      <li>
+        <p>
+          Remember, many (most!) polynomials are prime - they do not factor at all.  This fact is almost surely counter to your experienced reality.  That's because it would counterproductive and mean-spirited to ask students to factor dozens of polynomials, most of which were prime.  Regardless, we have to throw the occasional prime polynomial into the mix to remind you that such things do exist.
+        </p>
+      </li>
+    </ol>
+  </p>
 
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>x^2+19x+48</m>
-                    </p>
-                  </statement>
-                  <solution>
-                    <p>
-                      <m>x^2+19x+48=(x+16)(x+3)</m>
-                    </p>
-                  </solution>
-                </exercise>
+  <exercises>
 
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>y^2+47y-48</m>
-                    </p>
-                  </statement>
-                  <solution>
-                    <p>
-                      <m>y^2+47y-48=(y+48)(y-1)</m>
-                    </p>
-                  </solution>
-                </exercise>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Completely factor each of the following expressions.  Check each result by expanding the factored form.
+        </p>
+      </introduction>
 
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>6x^2-5x-25</m>
-                    </p>
-                  </statement>
-                  <solution>
-                    <p><m>
-                      \begin{aligned}[t]
-                      6x^2-5x-25\amp=6x^2-15x+10x-25\\
-                      \amp=\highlightb{3x}\highlight{(2x-5)}\highlightg{+5}\highlight{(2x-5)}\\
-                      \amp=(\highlightb{3x}\highlightg{+5})\highlight{(2x-5)}
-                      \end{aligned}
-                    </m></p>
-                  </solution>
-                </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>x^2+19x+48</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x^2+19x+48=(x+16)(x+3)</m>
+          </p>
+        </solution>
+      </exercise>
 
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>125w^6+27z^3</m>
-                    </p>
-                  </statement>
-                  <solution>
-                    <p>
-                      <m>125w^6+27z^3=(5w^2+3z)(25w^4-15w^2z+9z^2)</m>
-                    </p>
-                  </solution>
-                </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y^2+47y-48</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>y^2+47y-48=(y+48)(y-1)</m>
+          </p>
+        </solution>
+      </exercise>
 
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>y^2-2y-48</m>
-                    </p>
-                  </statement>
-                  <solution>
-                    <p>
-                      <m>y^2-2y-48=(y-8)(y+6)</m>
-                    </p>
-                  </solution>
-                </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>6x^2-5x-25</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              6x^2-5x-25\amp=6x^2-15x+10x-25\\
+              \amp=\highlightb{3x}\highlight{(2x-5)}\highlightg{+5}\highlight{(2x-5)}\\
+              \amp=(\highlightb{3x}\highlightg{+5})\highlight{(2x-5)}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
 
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>x^2y^4+26xy^2+48</m>
-                    </p>
-                  </statement>
-                  <solution>
-                    <p>
-                      <m>x^2y^4+26xy^2+48=(xy^2+24)(xy^2+2)</m>
-                    </p>
-                  </solution>
-                </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>125w^6+27z^3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>125w^6+27z^3=(5w^2+3z)(25w^4-15w^2z+9z^2)</m>
+          </p>
+        </solution>
+      </exercise>
 
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>121-9w^4</m>
-                    </p>
-                  </statement>
-                  <solution>
-                    <p>
-                      <m>121-9w^4=(11+3w^2)(11-3w^2)</m>
-                    </p>
-                  </solution>
-                </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y^2-2y-48</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>y^2-2y-48=(y-8)(y+6)</m>
+          </p>
+        </solution>
+      </exercise>
 
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>32w^4-18w^2</m>
-                    </p>
-                  </statement>
-                  <solution>
-                    <p><m>
-                      \begin{aligned}[t]
-                      32w^4-18w^2\amp=2w^2(16w^2-9)\\
-                      \amp=2w^2(4w+3)(4w-3)
-                      \end{aligned}
-                    </m></p>
-                  </solution>
-                </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>x^2y^4+26xy^2+48</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x^2y^4+26xy^2+48=(xy^2+24)(xy^2+2)</m>
+          </p>
+        </solution>
+      </exercise>
 
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>3x^2-33x+84</m>
-                    </p>
-                  </statement>
-                  <solution>
-                    <p><m>
-                      \begin{aligned}[t]
-                      3x^2-33x+84\amp=3(x^2-11x+28)\\
-                      \amp=3(x-7)(x-4)
-                      \end{aligned}
-                    </m></p>
-                  </solution>
-                </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>121-9w^4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>121-9w^4=(11+3w^2)(11-3w^2)</m>
+          </p>
+        </solution>
+      </exercise>
 
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>15x^2+45x+15</m>
-                    </p>
-                  </statement>
-                  <solution>
-                    <p>
-                      <m>15x^2+45x+15=15(x^2+3x+1)</m>
-                    </p>
-                  </solution>
-                </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>32w^4-18w^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              32w^4-18w^2\amp=2w^2(16w^2-9)\\
+              \amp=2w^2(4w+3)(4w-3)
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
 
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>x^4y^2+9x^2y^2</m>
-                    </p>
-                  </statement>
-                  <solution>
-                    <p>
-                      <m>x^4y^2+9x^2y^2=x^2y^2(x^2+9)</m>
-                    </p>
-                  </solution>
-                </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3x^2-33x+84</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              3x^2-33x+84\amp=3(x^2-11x+28)\\
+              \amp=3(x-7)(x-4)
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
 
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>121+9w^4</m>
+      <exercise>
+        <statement>
+          <p>
+            <m>15x^2+45x+15</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>15x^2+45x+15=15(x^2+3x+1)</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>x^4y^2+9x^2y^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>x^4y^2+9x^2y^2=x^2y^2(x^2+9)</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>121+9w^4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>121+9w^4</m> is prime.
                     </p>
-                  </statement>
-                  <solution>
-                    <p>
-                      <m>121+9w^4</m> is prime.
-                    </p>
-                  </solution>
-                </exercise>
+        </solution>
+      </exercise>
 
-              </exercisegroup>
+    </exercisegroup>
 
-            </exercises>
+  </exercises>
 
-          </section>
+</section>

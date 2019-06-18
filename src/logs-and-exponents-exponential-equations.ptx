@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="logs-and-exponents-exponential-equations">
+  <title>Exponential Equations</title>
+
+  <p>
+    An exponential equation is an equation who's variable terms all take the 
+    <me>k \cdot b^{f(x)}</me>
+    where <m>b</m> and <m>k</m> both represent real numbers, <m>b \gt 0, b \neq 1</m>.
+  </p>
+  <p>
+    The bases of the exponential expressions in the equation may or may not all be the same.  The manner of solution is very much dependent upon the specific type of equation.  In this section we explore the following specific types of equations.  For simplicity, in all cases we assume that the variable is <m>x</m>, that <m>a</m> and <m>b</m> are positive real numbers, and that <m>k</m> <m>k_1</m>, and <m>k_2</m> are real numbers.
+    <ul>
+      <li>
+        <p>
+          Equations that can be manipulated into the form <m>b^{f(x)}=b^{g(x)}</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Equations that can be manipulated into the form <m>b^{f(x)}=k</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Equations of form <m>k_1 \cdot a^{f(x)}=k_2 \cdot b^{g(x)}</m>, <m>a \neq b</m>.
+        </p>
+      </li>
+    </ul>
+  </p>
+
+  <paragraphs>
+    <title>Equations that can be manipulated into the form <m>b^{f(x)}=b^{g(x)}</m></title>
+
+    <p></p>
+
+    <p>
+      Because (basic) exponential functions are one-to-one, if we can manipulate the equation into the form <m>b^{f(x)}=b^{g(x)}</m>, we can immediately follow that with the statement that <m>f(x)=g(x)</m>.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Find all solutions to the following equation. <me>32^{x+2}=8</me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We can express both <m>32</m> and <m>8</m> as powers of <m>2</m>.  We'll begin there, simplify the exponent on the left side of the equation, and then equate the exponents.  Please note that we need to apply the power-to-a-power rule of exponents: <m>\left(a^m\right)^n=a^{mn}</m>.
+          <md>
+            <mrow>32^{x+2}\amp=8</mrow>
+            <mrow>\left(2^5\right)^{x+2}\amp=2^3</mrow>
+            <mrow>2^{5x+10}\amp=2^3</mrow>
+            <mrow>5x+10\amp=3</mrow>
+            <mrow>5x+10\subtractright{10}\amp=3\subtractright{10}</mrow>
+            <mrow>5x\amp=-7</mrow>
+            <mrow>\divideunder{5x}{5}\amp=\divideunder{-7}{5}</mrow>
+            <mrow>x\amp=-\frac{7}{5}</mrow>
+          </md>
+          The solution is <m>-\frac{7}{2}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Find all solutions to the following equation.  <me>5^{x^2}-125^{2x+9}=0</me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by isolating the non-zero terms on either side of the equal sign.  We then establish the common base of <m>5</m>, and then simplify and equate the exponents.
+          <md>
+            <mrow>5^{x^2}-125^{2x+9}\amp=0</mrow>
+            <mrow>5^{x^2}-125^{2x+9}\addright{125^{2+-9}}\amp=0\addright{125^{2x+9}}</mrow>
+            <mrow>5^{x^2}\amp=125^{2x+9}</mrow>
+            <mrow>5^{x^2}\amp=\left(5^3\right)^{2x+9}</mrow>
+            <mrow>5^{x^2}\amp=5^{6x+27}</mrow>
+            <mrow>x^2\amp=6x+27</mrow>
+            <mrow>x^2\subtractright{6x}\subtractright{27}\amp=6x+27\subtractright{6x}\subtractright{27}</mrow>
+            <mrow>x^2-6x-27\amp=0</mrow>
+            <mrow>(x-9)(x+3)\amp=0</mrow>
+          </md>
+          <md>
+            <mrow>x-9\amp=0 \amp\amp\text{or}\amp x+3\amp=0</mrow>
+            <mrow>x-9\addright{9}\amp=0\addright{9} \amp\amp\text{or}\amp x+3\subtractright{3}\amp=0\subtractright{3}</mrow>
+            <mrow>x\amp=9 \amp\amp\text{or}\amp x\amp=-3</mrow>
+          </md>
+          The solutions are <m>-3</m> and <m>9</m>.
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title>Equations that can be manipulated into the form <m>b^{f(x)}=k</m></title>
+
+    <p></p>
+    <p>
+      While the following strategy can be used to find the exact solution to any exponential equation of this form, if an approximate solution is desired and the base of the exponential expression is neither <m>10</m> nor the number <m>e</m>, you're probably better off employing the strategy illustrated in the next set of examples.  This is discussed in the second example of this set of examples.
+    </p>
+    <p>
+      When an equation can be manipulated into the form <m>b^{f(x)}=k</m>, we can state the equivalent logarithmic equation, <m>f(x)=\log_b(k)</m> and solve that equation for <m>x</m>.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine all solutions to the equation stated below.  State both exact solutions and approximate solutions (to the nearest hundredth).
+          <me>5 \cdot 10^{6-x}=35</me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Before we can convert the equation in logarithmic form, we need to eliminate the coefficient of <m>5</m> on the exponential term.
+          <md>
+            <mrow>5 \cdot 10^{6-x}\amp=35</mrow>
+            <mrow>\divideunder{5 \cdot 10^{6-x}}{5}\amp=\divideunder{35}{5}</mrow>
+            <mrow>10^{6-x}\amp=7</mrow>
+            <mrow>6-x\amp=\log(7)</mrow>
+            <mrow>6-x\subtractright{6}\amp=\log(7)\subtractright{6}</mrow>
+            <mrow>-x\amp=\log(7)-6</mrow>
+            <mrow>\multiplyleft{-1}-x\amp=\multiplyleft{-1}(\log(7)-6)</mrow>
+            <mrow>x\amp=-\log(7)+6</mrow>
+          </md>
+          So the exact solution to the equation is <m>-\log(7)+6</m> and because most scientific calculators have a log-base-ten key, we can easily determine that to the nearest hundredth the solution is <m>5.15</m>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine all solutions to the equation stated below.  State both exact solutions and approximate solutions (to the nearest hundredth).
+          <me>12^{2x-26}+2=7</me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Before we can rewrite the equation in its equivalent logarithmic form, we need to move all constant terms to the right side of the equation.
+          <md>
+            <mrow>12^{2x-26}+2\amp=7</mrow>
+            <mrow>12^{2x-26}+2\subtractright{2}\amp=7\subtractright{2}</mrow>
+            <mrow>12^{2x-26}\amp=5</mrow>
+            <mrow>2x-26\amp=\log_{12}(5)</mrow>
+            <mrow>2x-26\addright{26}\amp=\log_{12}(5)\addright{26}</mrow>
+            <mrow>2x\amp=\log_{12}(5)+26</mrow>
+            <mrow>\multiplyleft{\frac{1}{2}}2x\amp=\multiplyleft{\frac{1}{2}}\left(\log_{12}(5)+26\right)</mrow>
+            <mrow>x\amp=\frac{1}{2}\log_{12}(5)+13</mrow>
+          </md>
+          So we know that the exact solution is <m>\frac{1}{2}\log_{12}(5)+13</m>.  However, since most calculators don't have logarithm keys for any bases other than <m>10</m> and <m>e</m>, we probably will need to use the change of bases formula to get the approximate solution.  Not a biggie, but if we had used the technique illustrated in the next set of examples, that detail would have taken care of itself.  Regardless, the approximate solution is derived below.
+          <md>
+            <mrow>\frac{1}{2}\log_{12}(5)+13\amp=\frac{1}{2} \cdot \frac{\log(5)}{\log(12)}+13</mrow>
+            <mrow>\amp \approx 13.32</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine all solutions to the equation stated below.  State both exact solutions and approximate solutions (to the nearest hundredth).
+          <me>2 \cdot 10^{18x^2}=\frac{54}{10^{7x^2}}</me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Before we even begin to think about logarithms, let's clear the fraction and then apply the product rule of exponents, <m>b^xb^y=b^{x+y}</m>. We'll then move the factor of <m>2</m> to the right side of the equation and move on to the logarithmic equation.
+          <md>
+            <mrow>2 \cdot 10^{18x^2}\amp=\frac{54}{10^{7x^2}}</mrow>
+            <mrow>2 \cdot 10^{18x^2}\multiplyright{10^{7x^2}}\amp=\frac{54}{10^{7x^2}}\multiplyright{10^{7x^2}}</mrow>
+            <mrow>2 \cdot 10^{18x^2+7x^2}\amp=54</mrow>
+            <mrow>2 \cdot 10^{25x^2}\amp=54</mrow>
+            <mrow>\divideunder{2 \cdot 10^{25x^2}}{2}\amp=\divideunder{54}{2}</mrow>
+            <mrow>10^{25x^2}\amp=27</mrow>
+            <mrow>25x^2\amp=\log(27)</mrow>
+            <mrow>\divideunder{25x^2}{25}\amp=\divideunder{\log(27)}{25}</mrow>
+            <mrow>x^2\amp=\frac{\log(27)}{25}</mrow>
+            <mrow>x\amp= \pm \frac{\sqrt{\log(27)}}{5}</mrow>
+          </md>
+          The exact solutions to the equation are <m>\frac{\sqrt{\log(27)}}{5}</m> and <m>-\frac{\sqrt{\log(27)}}{5}</m>.  The approximate solutions are <m>0.24</m> and <m>-0.24</m>.
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title>Equations that can be manipulated into the form <m>k_1 \cdot a^{f(x)}=k_2 \cdot b^{g(x)}</m></title>
+
+    <p></p>
+    <p>
+      When working with equation of form <m>k_1 \cdot a^{f(x)}=k_2 \cdot b^{g(x)}</m>, we need to free the variable from the exponent.  The key is to "take the log" of each side of the equation and then use the properties of logarithms to expand each side as much as possible.  The steps to follow from there depend upon the specifics of the resultant equation.  Please note, that while we may use any based logarithm in the opening step, we tend to always use either the base of <m>10</m> or the base of <m>e</m>.  This is because those two bases are the easiest to work with when using a calculator to estimate the solutions.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine all solutions to the following equation. State both exact solutions and approximate solutions (to the nearest hundredth).
+          <me>3^{2-x}=4^{x+1}</me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I am going to use log-base-<m>10</m> to begin the solution process.
+          <md>
+            <mrow>3^{2-x}\amp=4^{x+1}</mrow>
+            <mrow>\log\left(3^{2-x}\right)\amp=\log\left(4^{x+1}\right)</mrow>
+            <mrow>(2-x)\log(3)\amp=(x+1)\log(4)</mrow>
+          </md>
+          At this point, we need to distribute the logarithmic expressions.  We then need to isolate the variable terms on one side of the equal sign and the other terms on the other side of the equal sign.  We will then factor <m>x</m> from the two variable terms and divide both sides of the equation by the resultant coefficient on <m>x</m>.  Let's pick up where we left off.
+          <md>
+            <mrow>(2-x)\log(3)\amp=(x+1)\log(4)</mrow>
+            <mrow>2\log(3)-x\log(3)\amp=x\log(4)+\log(4)</mrow>
+            <mrow>2\log(3)-x\log(3)\addright{x\log(3)}\amp=x\log(4)+\log(4)\addright{x\log(3)}</mrow>
+            <mrow>2\log(3)\amp=x\log(4)+x\log(3)+\log(4)</mrow>
+            <mrow>2\log(3)\subtractright{\log(4)}\amp=x\log(4)+x\log(3)+\log(4)\subtractright{\log(4)}</mrow>
+            <mrow>2\log(3)-\log(4)\amp=x\log(4)+x\log(3)</mrow>
+            <mrow>2\log(3)-\log(4)\amp=x\left(\log(4)+\log(3)\right)</mrow>
+          </md>
+          We could now go ahead and divide both sides of the equation by <m>\log(4)+\log(3)</m>.  However, if we use the properties of logarithms to combine the logarithmic expressions, our final answer will be much cleaner (and easier to compute).  Let's go ahead and do that.
+          <md>
+            <mrow>2\log(3)-\log(4)\amp=x\left(\log(4)+\log(3)\right)</mrow>
+            <mrow>\log\left(3^2\right)-\log(4)\amp=x\left(\log(4)+\log(3)\right)</mrow>
+            <mrow>\log(9)-\log(4)\amp=x\left(\log(4)+\log(3)\right)</mrow>
+            <mrow>\log\left(\frac{9}{4}\right)\amp=x\log(4 \cdot 3)</mrow>
+            <mrow>\log\left(\frac{9}{4}\right)\amp=x\log(12)</mrow>
+            <mrow>\divideunder{\log\left(\frac{9}{4}\right)}{\log(12)}\amp=\divideunder{x\log(12)}{\log(12)}</mrow>
+            <mrow>\frac{\log\left(\frac{9}{4}\right)}{\log(12)}\amp=x</mrow>
+          </md>
+          We need to resist the temptation to combine the remaining two logarithmic expressions.  Logarithmic expressions (with the same base) that are added or subtracted can be combined, logarithmic expressions that are multiplied or divided cannot (with very minor exceptions).
+        </p>
+        <p>
+          The exact solution tot he stated equation is <m>\frac{\log\left(\frac{9}{4}\right)}{\log(12)}</m> and the approximate solution is <m>0.33</m>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine all solutions to the following equation. State both exact solutions and approximate solutions (to the nearest hundredth).
+          <me>5 \cdot 10^{2x+1}=7 \cdot 5^{4x-2}</me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          I will follow steps similar to those outlined in the last example.
+          <md>
+            <mrow>5 \cdot 10^{2x+1}\amp=7 \cdot 5^{4x-2}</mrow>
+            <mrow>\log\left(5 \cdot 10^{2x+1}\right)\amp=\log\left(7 \cdot 5^{4x-2}\right)</mrow>
+            <mrow>\log(5)+\log\left(10^{2x+1}\right)\amp=\log(7)+\log\left(5^{4x-2}\right)</mrow>
+            <mrow>\log(5)+(2x+1)\log(10)\amp=\log(7)+(4x-2)\log(5)</mrow>
+            <mrow>\log(5)+(2x+1) \cdot 1\amp=\log(7)+(4x-2)\log(5)</mrow>
+            <mrow>\log(5)+2x+1\amp=\log(7)+4x\log(5)-6\log(5)</mrow>
+            <mrow>\log(5)+2x+1\subtractright{4x\log(5)}\amp=\log(7)+4x\log(5)-2\log(5)\subtractright{4x\log(5)}</mrow>
+            <mrow>2x-4x\log(5)+\log(5)+1\amp=\log(7)-2\log(5)</mrow>
+            <mrow>2x-4x\log(5)+\log(5)+1\subtractright{1}\amp=\log(7)-2\log(5)\subtractright{1}</mrow>
+            <mrow>2x-4x\log(5)+\log(5)\amp=\log(7)-2\log(5)-1</mrow>
+            <mrow>2x-4x\log(5)+\log(5)\subtractright{\log(5)}\amp=\log(7)-2\log(5)-1\subtractright{\log(5)}</mrow>
+            <mrow>2x-4x\log(5)\amp=\log(7)-3\log(5)-1</mrow>
+            <mrow>\left(2-4\log(5)\right)x\amp=\log(7)-3\log(5)-1</mrow>
+            <mrow>\left(2\log(10)-\log\left(5^4\right)\right)x\amp=\log(7)-\log\left(5^3\right)-\log(10)</mrow>
+            <mrow>\left(\log\left(10^2\right)-\log(625)\right)x\amp=\log(7)-\left(\log(125)+\log(10)\right)</mrow>
+            <mrow>\left(\log(100)-\log(625)\right)x\amp=\log(7)-\log(125 \cdot 10)</mrow>
+            <mrow>\log\left(\frac{100}{625}\right)x\amp=\log\left(\frac{7}{1250}\right)</mrow>
+            <mrow>\log\left(\frac{4}{25}\right)x\amp=\log\left(\frac{7}{1250}\right)</mrow>
+            <mrow>\divideunder{\log\left(\frac{4}{25}\right)x}{\log\left(\frac{4}{25}\right)} \amp=\divideunder{\log\left(\frac{7}{1250}\right)}{\log\left(\frac{4}{25}\right)}</mrow>
+            <mrow>x\amp=\frac{\log\left(\frac{7}{1250}\right)}{\log\left(\frac{4}{25}\right)}</mrow>
+          </md>
+          The exact solution is <m>\frac{\log\left(\frac{7}{1250}\right)}{\log\left(\frac{4}{25}\right)}</m> and the approximate solution is <m>2.83</m>.
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine all solutions to each of the following equations.  In each case, state the exact solutions and, where appropriate, the approximate solutions round to the nearest hundredth.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>5^{x+4}-5^{2x-7}=0</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>5^{x+4}-5^{2x-7}\amp=0</mrow>
+              <mrow>5^{x+4}-5^{2x-7}\addright{5^{2x-7}}\amp=0\addright{5^{2x-7}}</mrow>
+              <mrow>5^{x+4}\amp=5^{2x-7}</mrow>
+              <mrow>x+4\amp=2x-7</mrow>
+              <mrow>x+4\subtractright{x}\amp=2x-7\subtractright{x}</mrow>
+              <mrow>4\amp=x-7</mrow>
+              <mrow>4\addright{7}\amp=x-7\addright{7}</mrow>
+              <mrow>11\amp=x</mrow>
+            </md>
+            The solution is <m>11</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>3^{5x-2}=27^{x+2}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>3^{5x-2}\amp=27^{x+2}</mrow>
+              <mrow>3^{5x-2}\amp=\left(3^3\right)^{x+2}</mrow>
+              <mrow>3^{5x-2}\amp=3^{3x+6}</mrow>
+              <mrow>5x-2\amp=3x+6</mrow>
+              <mrow>5x-2\subtractright{3x}\amp=3x+6\subtractright{3x}</mrow>
+              <mrow>2x-2\amp=6</mrow>
+              <mrow>2x-2\addright{2}\amp=6\addright{2}</mrow>
+              <mrow>2x\amp=8</mrow>
+              <mrow>\divideunder{2x}{2}\amp=\divideunder{8}{2}</mrow>
+              <mrow>x\amp=4</mrow>
+            </md>
+            The solution is <m>4</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>100 \cdot 10^x=19</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>100 \cdot 10^x\amp=19</mrow>
+              <mrow>10^2 \cdot 10^x\amp=19</mrow>
+              <mrow>10^{x+2}\amp=19</mrow>
+              <mrow>x+2\amp=\log(19)</mrow>
+              <mrow>x+2\subtractright{2}\amp=\log(19)\subtractright{2}</mrow>
+              <mrow>x\amp=\log(19)-2</mrow>
+            </md>
+            The exact solution is <m>\log(19)-2</m> and the approximate solution is <m>-0.72</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>10^{4-x}-18=7</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>10^{4-x}-18\amp=7</mrow>
+              <mrow>10^{4-x}-18\addright{18}\amp=7\addright{18}</mrow>
+              <mrow>10^{4-x}\amp=25</mrow>
+              <mrow>4-x\amp=\log(25)</mrow>
+              <mrow>4-x\subtractright{4}\amp=\log(25)\subtractright{4}</mrow>
+              <mrow>\multiplyleft{-1}-x\amp=\multiplyleft{-1}\left(\log(25)-4\right)</mrow>
+              <mrow>x\amp=-\log(25)+4</mrow>
+            </md>
+            The exact solution is <m>-\log(25)+4</m> and the approximate solution is <m>2.60</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{3^{2x}}{3^{4}}=12</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\frac{3^{2x}}{3^{4}}\amp=12</mrow>
+              <mrow>3^{2x-4}\amp=12</mrow>
+              <mrow>\log\left(3^{2x-4}\right)\amp=\log(12)</mrow>
+              <mrow>(2x-4)\log(3)\amp=\log(12)</mrow>
+              <mrow>2x\log(3)-4\log(3)\amp=\log(12)</mrow>
+              <mrow>2x\log(3)-4\log(3)\addright{4\log(3)}\amp=\log(12)\addright{4\log(3)}</mrow>
+              <mrow>2x\log(3)\amp=\log(12)+4\log(3)</mrow>
+              <mrow>x\log\left(3^2\right)\amp=\log(12)+\log\left(3^4\right)</mrow>
+              <mrow>x\log(9)\amp=\log(12)+\log(81)</mrow>
+              <mrow>x\log(9)\amp=\log(12 \cdot 81)</mrow>
+              <mrow>x\log(9)\amp=\log(972)</mrow>
+              <mrow>\divideunder{x\log(9)}{\log(9)}\amp=\divideunder{\log(972)}{\log(9)}</mrow>
+              <mrow>x\amp=\frac{\log(972)}{\log(9)}</mrow>
+            </md>
+            The exact solution is <m>\frac{\log(972)}{\log(9)}</m> and the approximate solution is <m>3.13</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>6^{2-x}=4^{x+1}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>6^{2-x}\amp=4^{x+1}</mrow>
+              <mrow>\log\left(6^{2-x}\right)\amp=\log\left(4^{x+1}\right)</mrow>
+              <mrow>(2-x)\log(6)\amp=(x+1)\log(4)</mrow>
+              <mrow>2\log(6)-x\log(6)\amp=x\log(4)+\log(4)</mrow>
+              <mrow>2\log(6)-x\log(6)\addright{x\log(6)}\amp=x\log(4)+\log(4)\addright{x\log(6)}</mrow>
+              <mrow>2\log(6)\amp=x\log(4)+x\log(6)+\log(4)</mrow>
+              <mrow>2\log(6)\subtractright{\log(4)}\amp=x\log(4)+x\log(6)+\log(4)\subtractright{\log(4)}</mrow>
+              <mrow>2\log(6)-\log(4)\amp=x\log(4)+x\log(6)</mrow>
+              <mrow>2\log(6)-\log(4)\amp=x\left(\log(4)+\log(6)\right)</mrow>
+              <mrow>\log\left(6^2\right)-\log(4)\amp=x\left(\log(4)+\log(6)\right)</mrow>
+              <mrow>\log(36)-\log(4)\amp=x\left(\log(4)+\log(6)\right)</mrow>
+              <mrow>\log\left(\frac{36}{4}\right)\amp=x\log(4 \cdot 6)</mrow>
+              <mrow>\log(9)\amp=x\log(24)</mrow>
+              <mrow>\divideunder{\log(9)}{\log(24)}\amp=\divideunder{x\log(24)}{\log(24)}</mrow>
+              <mrow>\frac{\log(9)}{\log(24)}</mrow>
+            </md>
+            The exact solution is <m>\frac{\log(9)}{\log(24)}</m> and the approximate solution is <m>0.69</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>9 \cdot 10^{4x+5}=7 \cdot 10^{5x+5}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>9 \cdot 10^{4x+5}\amp=7 \cdot 10^{5x+5}</mrow>
+              <mrow>\log\left(9 \cdot 10^{4x+5}\right)\amp=\log\left(7 \cdot 10^{5x+5}\right)</mrow>
+              <mrow>\log(9)+\log\left(10^{4x+5}\right)\amp=\log(7)+\log\left(10^{5x+5}\right)</mrow>
+              <mrow>\log(9)+4x+5\amp=\log(7)+5x+5</mrow>
+              <mrow>\log(9)+4x+5\subtractright{4x}\amp=\log(7)+5x+5\subtractright{4x}</mrow>
+              <mrow>\log(9)+5\amp=x+\log(7)+5</mrow>
+              <mrow>\log(9)+5\subtractright{\log(7)}\subtractright{5}\amp=x+\log(7)+5\subtractright{\log(7)}\subtractright{5}</mrow>
+              <mrow>\log(9)-\log(7)\amp=x</mrow>
+              <mrow>\log\left(\frac{9}{7}\right)\amp=x</mrow>
+            </md>
+            The exact solution is <m>\log\left(\frac{9}{7}\right)</m> and the approximate solution is <m>0.11</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>3 \cdot 2^{5-4x}=\frac{8}{7^{x+1}}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>3 \cdot 2^{5-4x}\amp=\frac{8}{7^{x+1}}</mrow>
+              <mrow>\log\left(3 \cdot 2^{5-4x}\right)\amp=\log\left(\frac{8}{7^{x+1}}\right)</mrow>
+              <mrow>\log(3)+\log\left(2^{5-4x}\right)\amp=\log(8)-\log\left(7^{x+1}\right)</mrow>
+              <mrow>\log(3)+(5-4x)\log(2)\amp=\log(8)-(x+1)\log(7)</mrow>
+              <mrow>\log(3)+5\log(2)-4x\log(2)\amp=\log(8)-x\log(7)-\log(7)</mrow>
+            </md>
+            At this juncture I am going to combine the constant log terms on the both sides of the equation.  My motivation for doing this is so that the remaining steps fit onto the screen
+            <md>
+              <mrow>\log(3)+\log\left(2^5\right)-4x\log(2)\amp=\log(8)-x\log(7)-\log(7)</mrow>
+              <mrow>\log(3)+\log(32)-4x\log(2)\amp=\log(8)-\log(7)-x\log(7)</mrow>
+              <mrow>\log(3 \cdot 32)-4x\log(2)\amp=\log(8)-x\log(7)</mrow>
+              <mrow>\log(96)-4x\log(2)\amp=\log\left(\frac{8}{7}\right)-x\log(7)</mrow>
+              <mrow>\log(96)-4x\log(2)\addright{x\log(7)}\amp=\log\left(\frac{8}{7}\right)-x\log(7)\addright{x\log(7)}</mrow>
+              <mrow>\log(96)-4x\log(2)+x\log(7)\amp=\log\left(\frac{8}{7}\right)-\log(7)</mrow>
+              <mrow>\log(96)-4x\log(2)+x\log(7)\subtractright{\log(96)}\amp=\log\left(\frac{8}{7}\right)\subtractright{\log(96)}</mrow>
+              <mrow>x\log(7)-4x\log(2)\amp=\log\left(\frac{8}{7}\right)-\log(96)</mrow>
+              <mrow>x\left(\log(7)-4\log(2)\right)\amp=\log\left(\frac{8}{7}\right)-\log(96)</mrow>
+              <mrow>x\left(\log(7)-\log\left(2^4\right)\right)\amp=\log\left(\frac{8}{7}\right)-\log(96)</mrow>
+              <mrow>x\left(\log(7)-\log(16)\right)\amp=\log\left(\frac{8}{7}\right)-\log(96)</mrow>
+              <mrow>x\left(\log(7)-\log(16)\right)\amp=\log\left(\frac{8}{7}\right)-\log(96)</mrow>
+              <mrow>x\log\left(\frac{7}{16}\right)\amp=\log\left(\frac{\frac{8}{7}}{96}\right)</mrow>
+              <mrow>x\log\left(\frac{7}{16}\right)\amp=\log\left(\frac{1}{84}\right)</mrow>
+              <mrow>\divideunder{x\log\left(\frac{7}{16}\right)}{\log\left(\frac{7}{16}\right)} \amp=\divideunder{\log\left(\frac{1}{84}\right)}{\log\left(\frac{7}{16}\right)} </mrow>
+              <mrow>x\amp=\frac{\log\left(\frac{1}{84}\right)}{\log\left(\frac{7}{16}\right)}</mrow>
+            </md>
+            The exact solution is <m>\frac{\log\left(\frac{1}{84}\right)}{\log\left(\frac{7}{16}\right)}</m> and the approximate solution is <m>5.36</m>.
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+
+
+</section>

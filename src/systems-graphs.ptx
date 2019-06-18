@@ -10,336 +10,351 @@
 <!-- ********************************************************************* -->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="systems-graphs">
-    <title>Graphing Systems of Linear Equations</title>
+  <title>Graphing Systems of Linear Equations</title>
 
-     <p>
-       A linear equation in <m>x</m> and <m>y</m> is an equation that can be written in the form <m>ax+by=c</m> where <m>a</m>, <m>b</m>, and <m>c</m> are constants, and not both <m>a</m> and <m>b</m> are <m>0</m>.  When graphed, a linear equation produces a line consisting of all of the ordered pairs that satisfy the equation (make the two sides of the equation have equal value).
-     </p>
-     <p>
-       A linear system of equations in two variables is a collection of two or more linear equations with those two variables.  Solving a system of linear equations in two variables entails determining what ordered pairs, if any, satisfy every equation in the system.  With the advent of graphing technology, one efficient way of determining the solution set to a system of linear equations is by graphing the line associated with every equation in the system and analyzing the result.
-     </p>
-     <p>
-       Consider the following system of equations.  Please note that the large left brace is the symbol we use to indicate that the two equations form a system <mdash/> that we are looking for ordered pairs that satisfy both equations in the system.
-       <me>
-        \left\{
-          \begin{aligned}
-            3x-2y\amp=-8\\
-            2x-y\amp=-6\\
-          \end{aligned}
-        \right.
-        </me>
-        If we were going to graph these two lines by hand, there would be value in manipulating the equations into slope-intercept from.  Let'ahead and do that.
-      </p>
-      <sidebyside widths="47% 47%" margins="0%">
+  <p>
+    A linear equation in <m>x</m> and <m>y</m> is an equation that can be written in the form <m>ax+by=c</m> where <m>a</m>, <m>b</m>, and <m>c</m> are constants, and not both <m>a</m> and <m>b</m> are <m>0</m>.  When graphed, a linear equation produces a line consisting of all of the ordered pairs that satisfy the equation (make the two sides of the equation have equal value).
+  </p>
+  <p>
+    A linear system of equations in two variables is a collection of two or more linear equations with those two variables.  Solving a system of linear equations in two variables entails determining what ordered pairs, if any, satisfy every equation in the system.  With the advent of graphing technology, one efficient way of determining the solution set to a system of linear equations is by graphing the line associated with every equation in the system and analyzing the result.
+  </p>
+  <p>
+    Consider the following system of equations.  Please note that the large left brace is the symbol we use to indicate that the two equations form a system <mdash/> that we are looking for ordered pairs that satisfy both equations in the system.
+    <me>
+      \left\{
+        \begin{aligned}
+          3x-2y\amp=-8\\
+          2x-y\amp=-6\\
+        \end{aligned}
+      \right.
+    </me>
+    If we were going to graph these two lines by hand, there would be value in manipulating the equations into slope-intercept from.  Let'ahead and do that.
+  </p>
+  <sidebyside widths="47% 47%" margins="0%">
 
+    <p>
+      <md>
+        <mrow>3x-2y\amp=-8</mrow>
+        <mrow>3x-2y\subtractright{3x}\amp=-8\subtractright{3x}</mrow>
+        <mrow>-2y\amp=-3x-8</mrow>
+        <mrow>\multiplyleft{-\frac{1}{2}}(-2y)\amp=\multiplyleft{-\frac{1}{2}}(-3x-8)</mrow>
+        <mrow>y\amp=\frac{3}{2}x+4</mrow>
+      </md>
+    </p>
+
+    <p>
+      <md>
+        <mrow>2x-y\amp=-6</mrow>
+        <mrow>2x-y\subtractright{2x}\amp=-6\subtractright{2x}</mrow>
+        <mrow>-y\amp=-2x-6</mrow>
+        <mrow>\multiplyleft{(-y)}\amp=\multiplyleft{(-2x-6)}</mrow>
+        <mrow>y\amp=2x+6</mrow>
+      </md>
+    </p>
+
+  </sidebyside>
+  <p>
+    From the slope-intercept form of the line with equation <m>3x-2x=-8</m>, we can see that the line has a <m>y</m>-intercept of <m>(0,4)</m> and a slope of <m>\frac{3}{2}</m>.
+  </p>
+  <p>
+    From the slope-intercept form of the line with equation <m>2x-y=-6</m>, we can see that the line has a <m>y</m>-intercept of <m>(0,6)</m> and a slope of <m>2</m>.
+  </p>
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <p>
+      As seen in <xref ref="systems-graphs-figure-1">Figure</xref>, the two lines intersect at the point <m>(-4,-2)</m>.  So the solution to the given system of equations is the ordered pair <m>(-4,-2)</m>.
+    </p>
+
+    <figure xml:id="systems-graphs-figure-1">
+      <caption><m>\highlightr{3x-2y=-8}</m> and <m>\highlight{2x-y=-6}</m></caption>
+      <image>
+        <description>
+          A graph of two lines, one whose equation is <m>3x-2y=8</m> and another whose equation is <m>2x-y=-6</m>.  The two lines intersect at the point <m>(-4,-2)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}
+              \addplot[primarycurve,domain=-6.9:1.9] {1.5*x+4};
+              \addplot[primarycurve,domain=-6.4:0.4,color=blue] {2*x+6};                             
+              \addplot[soliddot,color=black] coordinates {(-4,-2)} node[below right] {(-4,-2)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+  <p>
+    When solving a system of two linear equations with two unknowns, there are three possible outcomes for the nature of the solution.  The most common outcome is that there is exactly one ordered pair that satisfies both equations.  This outcome is illustrated by the intersecting lines shown in <xref ref="systems-graphs-figure-2">Figure</xref>  Another possible outcome is that no ordered pair satisfies both equations.  This outcome is illustrated by the parallel lines shown in <xref ref="systems-graphs-figure-3">Figure</xref>.  The third possible outcome is that the two equations are equivalent <mdash/> that they are two manifestations of the equation for the same line.  In this case, every point on the line satisfies both equations in the system.  This outcome is illustrated by the single line shown in <xref ref="systems-graphs-figure-4">Figure</xref>.
+  </p>
+  <sidebyside widths="31% 31% 31%" margins="0%">
+
+    <figure xml:id="systems-graphs-figure-2">
+      <caption><m>\highlightr{2x+y=3}</m> and <m>\highlight{x-2y=8}</m></caption>
+      <image>
+        <description>
+          A graph of two lines, one with equation <m>2x+y=3</m> and the other with equation <m>x-2y=8</m>.  The two lines intersect at the point <m>(2.8,-2.6)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}
+              \addplot[primarycurve,domain=-1.9:4.9] {3-2*x};
+              \addplot[primarycurve,domain=-5.8:6.9,color=blue] {.5*x-4};                             
+              \addplot[soliddot,color=black] coordinates {(2.8,-2.6)} node[below right] {(2.8,-2.6)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+    <figure xml:id="systems-graphs-figure-3">
+      <caption><m>\highlightr{x-y=3}</m> and <m>\highlight{-x+y=1}</m></caption>
+      <image>
+        <description>
+          The graph of to lines, one with the equation <m>x-y=3</m> and the other with the equation <m>-x+y=1</m>.  The two ines are parallel, they do not intersect.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}
+              \addplot[primarycurve,domain=-3.9:6.9] {x-3};
+              \addplot[primarycurve,domain=-6.9:5.9,color=blue] {x+1};   
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+    <figure xml:id="systems-graphs-figure-4">
+      <caption><m>\highlightr{2x+3y=6}</m> and <m>\highlight{y=-\frac{2}{3}x+2}</m></caption>
+      <image>
+        <description>
+          The graph of one line.  Two equations for the line are given: <m>2x+3y=6</m> and <m>y=-\frac{2}{3}x+2</m>. 
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}
+              \addplot[primarycurve,domain=-6.9:6.9] {-2*x/3+2};
+              \addplot[secondarycurve,domain=-6.9:6.9] {-2*x/3+2};  
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+  </sidebyside>
+  <p>
+    When there is at least one ordered pair that satisfies both equations in the system, the system is said to be consistent (<xref ref="systems-graphs-figure-5">Figure</xref> and <xref ref="systems-graphs-figure-7">Figure</xref>).  When there are no ordered pairs that satisfy both equations in the system, the system is said to be inconsistent (<xref ref="systems-graphs-figure-6">Figure</xref>).
+  </p>
+  <p>
+    When there is exactly one or zero ordered pairs that satisfy both equations in the system, the equations in the system are said to be independent (<xref ref="systems-graphs-figure-5">Figure</xref> and <xref ref="systems-graphs-figure-6">Figure</xref>).  When there is more than one ordered pair that satisfies both equations in the system, the equations are said to be dependent (<xref ref="systems-graphs-figure-7">Figure</xref>).
+  </p>
+  <sidebyside widths="31% 31% 31%" margins="0%">
+
+    <figure xml:id="systems-graphs-figure-5">
+      <caption>Consistent System; Independent Equations</caption>
+      <image>
+        <description>
+          The graph i\of two lines that intersect in a single point.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}
+              \addplot[primarycurve,domain=-1.9:4.9] {3-2*x};
+              \addplot[primarycurve,domain=-5.8:6.9,color=blue] {.5*x-4};                             
+              \addplot[soliddot,color=black] coordinates {(2.8,-2.6)} node[below right] {(2.8,-2.6)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+    <figure xml:id="systems-graphs-figure-6">
+      <caption>Inconsistent System; Independent Equations</caption>
+      <image>
+        <description>The graph of two parallel lines.</description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}
+              \addplot[primarycurve,domain=-3.9:6.9] {x-3};
+              \addplot[primarycurve,domain=-6.9:5.9,color=blue] {x+1};   
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+    <figure xml:id="systems-graphs-figure-7">
+      <caption>Consistent System; Dependent Equations</caption>
+      <image>
+        <description>The graph of one line lying directly atop another line.</description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}
+              \addplot[primarycurve,domain=-6.9:6.9] {-2*x/3+2};
+              \addplot[secondarycurve,domain=-6.9:6.9] {-2*x/3+2};  
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
         <p>
-          <md>
-            <mrow>3x-2y\amp=-8</mrow>
-            <mrow>3x-2y\subtractright{3x}\amp=-8\subtractright{3x}</mrow>
-            <mrow>-2y\amp=-3x-8</mrow>
-            <mrow>\multiplyleft{-\frac{1}{2}}(-2y)\amp=\multiplyleft{-\frac{1}{2}}(-3x-8)</mrow>
-            <mrow>y\amp=\frac{3}{2}x+4</mrow>
-          </md>
-
+          Solve each system of equations by graphing.
         </p>
+      </introduction>
 
-        <p>
-          <md>
-            <mrow>2x-y\amp=-6</mrow>
-            <mrow>2x-y\subtractright{2x}\amp=-6\subtractright{2x}</mrow>
-            <mrow>-y\amp=-2x-6</mrow>
-            <mrow>\multiplyleft{(-y)}\amp=\multiplyleft{(-2x-6)}</mrow>
-            <mrow>y\amp=2x+6</mrow>
-          </md>
-        </p>
+      <exercise>
+        <statement>
+          <p>
+            <m>
+              \left\{
+                \begin{aligned}
+                  y\amp=\frac{2}{3}x-4\\
+                  y\amp=-2x+4\\
+                \end{aligned}
+              \right.
+            </m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
 
-      </sidebyside>
-      <p>
-        From the slope-intercept form of the line with equation <m>3x-2x=-8</m>, we can see that the line has a <m>y</m>-intercept of <m>(0,4)</m> and a slope of <m>\frac{3}{2}</m>.
-      </p>
-      <p>
-        From the slope-intercept form of the line with equation <m>2x-y=-6</m>, we can see that the line has a <m>y</m>-intercept of <m>(0,6)</m> and a slope of <m>2</m>.
-      </p>
-      <sidebyside widths="47% 47%" margins="0%">
-
-        <p>
-          As seen in <xref ref="systems-graphs-figure-1">Figure</xref>, the two lines intersect at the point <m>(-4,-2)</m>.  So the solution to the given system of equations is the ordered pair <m>(-4,-2)</m>.
-        </p>
-
-        <figure xml:id="systems-graphs-figure-1">
-        <caption><m>3x-2y=-8</m> and <m>2x-y=-6</m></caption>
-          <image>
-            <description>plain text</description>
-              <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}
-                  \begin{axis}
-                    \addplot[primarycurve,domain=-6.9:1.9] {1.5*x+4};
-                    \addplot[primarycurve,domain=-6.4:0.4,color=blue] {2*x+6};                             
-                    \addplot[soliddot,color=black] coordinates {(-4,-2)} node[below right] {(-4,-2)};
-                  \end{axis}
-                \end{tikzpicture}
-              ]]>
-            </latex-image>
-          </image>
-        </figure>
-
-      </sidebyside>
-      <p>
-        When solving a system of two linear equations with two unknowns, there are three possible outcomes for the nature of the solution.  The most common outcome is that there is exactly one ordered pair that satisfies both equations.  This outcome is illustrated by the intersecting lines shown in <xref ref="systems-graphs-figure-2">Figure</xref>  Another possible outcome is that no ordered pair satisfies both equations.  This outcome is illustrated by the parallel lines shown in <xref ref="systems-graphs-figure-3">Figure</xref>.  The third possible outcome is that the two equations are equivalent <mdash/> that they are two manifestations of the equation for the same line.  In this case, every point on the line satisfies both equations in the system.  This outcome is illustrated by the single line shown in <xref ref="systems-graphs-figure-4">Figure</xref>.
-      </p>
-      <sidebyside widths="31% 31% 31%" margins="0%">
-
-        <figure xml:id="systems-graphs-figure-2">
-          <caption><m>2x+y=3</m> and <m>x-2y=8</m></caption>
-            <image>
-              <description>plain text</description>
-                <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                    \begin{axis}
-                      \addplot[primarycurve,domain=-1.9:4.9] {3-2*x};
-                      \addplot[primarycurve,domain=-5.8:6.9,color=blue] {.5*x-4};                             
-                      \addplot[soliddot,color=black] coordinates {(2.8,-2.6)} node[below right] {(2.8,-2.6)};
-                    \end{axis}
-                  \end{tikzpicture}
-                  ]]>
-                </latex-image>
-            </image>
-        </figure>
-
-        <figure xml:id="systems-graphs-figure-3">
-          <caption><m>x-y=3</m> and <m>-x+y=1</m></caption>
-            <image>
-              <description>plain text</description>
-                <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                    \begin{axis}
-                      \addplot[primarycurve,domain=-3.9:6.9] {x-3};
-                      \addplot[primarycurve,domain=-6.9:5.9,color=blue] {x+1};   
-                    \end{axis}
-                  \end{tikzpicture}
-                  ]]>
-                </latex-image>
-            </image>
-        </figure>
-
-        <figure xml:id="systems-graphs-figure-4">
-          <caption><m>2x+3y=6</m> and <m>y=-\frac{2}{3}x+2</m></caption>
-            <image>
-              <description>plain text</description>
-                <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                    \begin{axis}
-                      \addplot[primarycurve,domain=-6.9:6.9] {-2*x/3+2};
-                      \addplot[secondarycurve,domain=-6.9:6.9] {-2*x/3+2};  
-                    \end{axis}
-                  \end{tikzpicture}
-                  ]]>
-                </latex-image>
-            </image>
-        </figure>
-      </sidebyside>
-      <p>
-        When there is at least one ordered pair that satisfies both equations in the system, the system is said to be consistent (<xref ref="systems-graphs-figure-5">Figure</xref> and <xref ref="systems-graphs-figure-7">Figure</xref>).  When there are no ordered pairs that satisfy both equations in the system, the system is said to be inconsistent (<xref ref="systems-graphs-figure-6">Figure</xref>).
-      </p>
-      <p>
-        When there is exactly one or zero ordered pairs that satisfy both equations in the system, the equations in the system are said to be independent (<xref ref="systems-graphs-figure-5">Figure</xref> and <xref ref="systems-graphs-figure-6">Figure</xref>).  When there is more than one ordered pair that satisfies both equations in the system, the equations are said to be dependent (<xref ref="systems-graphs-figure-7">Figure</xref>).
-      </p>
-      <sidebyside widths="31% 31% 31%" margins="0%">
-
-        <figure xml:id="systems-graphs-figure-5">
-          <caption>Consistent System; Independent Equations</caption>
-            <image>
-              <description>plain text</description>
-                <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                    \begin{axis}
-                      \addplot[primarycurve,domain=-1.9:4.9] {3-2*x};
-                      \addplot[primarycurve,domain=-5.8:6.9,color=blue] {.5*x-4};                             
-                      \addplot[soliddot,color=black] coordinates {(2.8,-2.6)} node[below right] {(2.8,-2.6)};
-                    \end{axis}
-                  \end{tikzpicture}
-                  ]]>
-                </latex-image>
-            </image>
-        </figure>
-
-        <figure xml:id="systems-graphs-figure-6">
-          <caption>Inconsistent System; Independent Equations</caption>
-            <image>
-              <description>plain text</description>
-                <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                    \begin{axis}
-                      \addplot[primarycurve,domain=-3.9:6.9] {x-3};
-                      \addplot[primarycurve,domain=-6.9:5.9,color=blue] {x+1};   
-                    \end{axis}
-                  \end{tikzpicture}
-                  ]]>
-                </latex-image>
-            </image>
-        </figure>
-
-        <figure xml:id="systems-graphs-figure-7">
-          <caption>Consistent System; Dependent Equations</caption>
-            <image>
-              <description>plain text</description>
-                <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                    \begin{axis}
-                      \addplot[primarycurve,domain=-6.9:6.9] {-2*x/3+2};
-                      \addplot[secondarycurve,domain=-6.9:6.9] {-2*x/3+2};  
-                    \end{axis}
-                  \end{tikzpicture}
-                  ]]>
-                </latex-image>
-            </image>
-        </figure>
-
-      </sidebyside>
-
-      <exercises>
-
-        <exercisegroup>
-          <introduction>
             <p>
-              Solve each system of equations by graphing.
+              The solution to the given system of equations is the ordered pair <m>(3,-2)</m>.
             </p>
-          </introduction>
 
-          <exercise>
-            <statement>
-              <p>
-                <m>
-                    \left\{
-                      \begin{aligned}
-                        y\amp=\frac{2}{3}x-4\\
-                        y\amp=-2x+4\\
-                      \end{aligned}
-                    \right.
-                  </m>
-                </p>
-              </statement>
-              <solution>
-                <sidebyside widths="47% 47%" margins="0%">
+            <figure xml:id="systems-graphs-exercises-figure-1">
+              <caption><m>\highlightr{y=\frac{2}{3}x-4}</m> and <m>\highlight{y=-2x+4}</m></caption>
+              <image>
+                <description>
+                  The graph of two lines, one with equation <m>y=\frac{2}{3}x-4</m> and the other with equation <m>y=-2x+4</m>.  The lines intersect at the point <m>(3,-2)</m>.
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis}
+                      \addplot[primarycurve,domain=-4.3:6.7] {(2/3)*x-4};
+                      \addplot[primarycurve,domain=-1.3:5.3,color=blue] {-2*x+4};
+                      \addplot[soliddot,color=purple] coordinates {(3,-2)} node[right] {(3,-2)};
+                    \end{axis}
+                  \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
 
-                  <p>
-                    The solution to the given system of equations is the ordered pair <m>(3,-2)</m>.
-                  </p>
+          </sidebyside>
+        </solution>
+      </exercise>
 
-                  <figure xml:id="systems-graphs-exercises-figure-1">
-                    <caption><m>y=\frac{2}{3}x-4</m> and <m>y=-2x+4</m></caption>
-                      <image>
-                        <description>plain text</description>
-                          <latex-image>
-                            <![CDATA[
-                            \begin{tikzpicture}
-                              \begin{axis}
-                                \addplot[primarycurve,domain=-4.3:6.7] {(2/3)*x-4};
-                                \addplot[primarycurve,domain=-1.3:5.3,color=blue] {-2*x+4};
-                                \addplot[soliddot,color=purple] coordinates {(3,-2)} node[right] {(3,-2)};
-                              \end{axis}
-                            \end{tikzpicture}
-                            ]]>
-                          </latex-image>
-                      </image>
-                  </figure>
+      <exercise>
+        <statement>
+          <p>
+            <m>
+              \left\{
+                \begin{aligned}
+                  x+2y\amp=-5\\
+                  -x+2y\amp=1\\
+                \end{aligned}
+              \right.
+            </m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
 
-                </sidebyside>
-              </solution>
-            </exercise>
+            <p>
+              The solution to the given system of equations is the ordered pair <m>(-3,-1)</m>.
+            </p>
 
-          <exercise>
-            <statement>
-              <p>
-                <m>
-                    \left\{
-                      \begin{aligned}
-                        x+2y\amp=-5\\
-                        -x+2y\amp=1\\
-                      \end{aligned}
-                    \right.
-                  </m>
-                </p>
-              </statement>
-              <solution>
-                <sidebyside widths="47% 47%" margins="0%">
+            <figure xml:id="systems-graphs-exercises-figure-2">
+              <caption><m>\highlightr{x+2y=-5}</m> and <m>\highlight{-x+2y=1}</m></caption>
+              <image>
+                <description>
+                  The graph of two lines, one with the equation <m>x+2y=-5</m> and the other with equation <m>-x+2y=1</m>.  The lines intersect at the point <m>(-3,-1)</m>.
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis}
+                      \addplot[primarycurve,domain=-6.7:6.7] {-.5*x-2.5};
+                      \addplot[primarycurve,domain=-6.7:6.7,color=blue] {.5*x+.5};
+                      \addplot[soliddot,color=purple] coordinates {(-3,-1)} node[below] {(-3,-1)};
+                    \end{axis}
+                  \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
 
-                  <p>
-                    The solution to the given system of equations is the ordered pair <m>(-3,-1)</m>.
-                  </p>
+          </sidebyside>
+        </solution>
+      </exercise>
 
-                  <figure xml:id="systems-graphs-exercises-figure-2">
-                    <caption><m>x+2y=-5</m> and <m>-x+2y=1</m></caption>
-                      <image>
-                        <description>plain text</description>
-                          <latex-image>
-                            <![CDATA[
-                            \begin{tikzpicture}
-                              \begin{axis}
-                                \addplot[primarycurve,domain=-6.7:6.7] {-.5*x-2.5};
-                                \addplot[primarycurve,domain=-6.7:6.7,color=blue] {.5*x+.5};
-                                \addplot[soliddot,color=purple] coordinates {(-3,-1)} node[below] {(-3,-1)};
-                              \end{axis}
-                            \end{tikzpicture}
-                            ]]>
-                          </latex-image>
-                      </image>
-                  </figure>
+      <exercise>
+        <statement>
+          <p>
+            <m>
+              \left\{
+                \begin{aligned}
+                  5x-4y\amp=8\\
+                  y\amp=\frac{5}{4}x+3\\
+                \end{aligned}
+              \right.
+            </m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
 
-                </sidebyside>
-              </solution>
-            </exercise>
+            <p>
+              The given system of equations has no solutions, it is inconsistent.
+            </p>
 
-          <exercise>
-            <statement>
-              <p>
-                <m>
-                    \left\{
-                      \begin{aligned}
-                        5x-4y\amp=8\\
-                        y\amp=\frac{5}{4}x+3\\
-                      \end{aligned}
-                    \right.
-                  </m>
-                </p>
-              </statement>
-              <solution>
-                <sidebyside widths="47% 47%" margins="0%">
+            <figure xml:id="systems-graphs-exercises-figure-3">
+              <caption><m>\highlightr{5x-4y=8}</m> and <m>\highlight{y=\frac{5}{4}x+3}</m></caption>
+              <image>
+                <description>
+                  The graph of two lines, one with the equation <m>5x-4y=8</m> and the other with the equation <m>y=\frac{5}{4}x+3</m>.  The lines are parallel, they do not intersect.
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis}
+                      \addplot[primarycurve,domain=-3.7:6.7] {1.25*x-2};
+                      \addplot[primarycurve,domain=-6.7:2.7,color=blue] {1.25*x+3};
+                    \end{axis}
+                  \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
 
-                  <p>
-                    The given system of equations has no solutions, it is inconsistent.
-                  </p>
+          </sidebyside>
+        </solution>
+      </exercise>
 
-                  <figure xml:id="systems-graphs-exercises-figure-3">
-                    <caption><m>5x-4y=8</m> and <m>y=\frac{5}{4}x+3</m></caption>
-                      <image>
-                        <description>plain text</description>
-                          <latex-image>
-                            <![CDATA[
-                            \begin{tikzpicture}
-                              \begin{axis}
-                                \addplot[primarycurve,domain=-3.7:6.7] {1.25*x-2};
-                                \addplot[primarycurve,domain=-6.7:2.7,color=blue] {1.25*x+3};
-                              \end{axis}
-                            \end{tikzpicture}
-                            ]]>
-                          </latex-image>
-                      </image>
-                  </figure>
+    </exercisegroup>
 
-                </sidebyside>
-              </solution>
-            </exercise>
+  </exercises>
 
-          </exercisegroup>
-
-        </exercises>
-
-      </section>
+</section>

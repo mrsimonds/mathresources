@@ -10,14 +10,17 @@
 <!-- ********************************************************************* -->
 
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="rationals-materials">
-    <title>Rational Expressions and Equations</title>
+    <title>Rational Expressions, Equations, Functions, and Graphs</title>
 
+      <xi:include href="./rationals-videos-95.ptx" />
+      <xi:include href="./rational-functions-videos-111.ptx" />
       <xi:include href="./rationals-domains.ptx" />
       <xi:include href="./rationals-simplification.ptx" />
       <xi:include href="./rationals-multiplication-and-division.ptx" />
       <xi:include href="./rationals-addition-and-subtraction.ptx" />
       <xi:include href="./rationals-complex-fractions.ptx" />
       <xi:include href="./rationals-equations.ptx" />
+      <xi:include href="./rationals-functions-and-graphs.ptx" />
       <xi:include href="./rationals-applications.ptx" />
       <xi:include href="./rationals-additional-practice.ptx" />
 

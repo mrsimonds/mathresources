@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- *********************************************************************-->
+<!-- Copyright 2017-2019                                                       -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                                                       -->
+<!--                                                                      -->
+<!-- Creative Commons BY 4.0 license                                      -->
+<!-- https://creativecommons.org/licenses/by/4.0/                         -->
+<!-- *********************************************************************-->
+
+<frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <titlepage>
+        <author>
+            <personname>Portland Community College Mathematics Faculty</personname>
+        </author>
+
+        <credit>
+            <title>Author</title>
+            <author>
+              <personname>Steve Simonds</personname>
+              <email>ssimonds@pcc.edu</email>
+            </author>
+        </credit>
+
+          <credit>
+            <title>Video Production</title>
+            <author>
+              <personname>Ann Cary</personname>>
+              <email>ann.cary@pcc.edu</email>
+            </author>
+
+            <author>
+              <personname>Scot Leavitt</personname>
+              <email>sleavitt@pcc.edu</email>>
+            </author>
+
+            <author>
+              <personname>Emily Nelson</personname>
+              <email>emily.nelson@pcc.edu</email>>
+            </author>
+        </credit>
+
+        <date><today /></date>
+
+    </titlepage>
+
+    <colophon>
+
+        <credit>
+            <role>Project Lead</role>
+            <entity>Steve Simonds</entity>
+        </credit>
+
+        <credit>
+            <role>Technology Engineer</role>
+            <entity>Steve Simonds</entity>
+        </credit>
+
+        <edition>Chapters and sections are being added on an ongoing basis.</edition>
+
+        <website>
+            <name>spot.pcc.edu/slc/mathresources/output/html/</name>
+            <address>https://spot.pcc.edu/slc/mathresources/output/html/</address>
+        </website>
+
+
+        <copyright>
+            <year>2017<ndash />2019</year>
+            <holder>Portand Community College</holder>
+            <minilicense>CC BY 4.0 License</minilicense>
+            <shortlicense>Permission is granted to copy, distribute and/or modify this document under the terms of the Creative Commons Attribution 4.0 International License.
+                <sidebyside width="25%" margins="0%">
+                    <image xml:id="CClicense" source="images/by" />
+                </sidebyside>
+            </shortlicense>
+        </copyright>
+
+    </colophon>
+
+    
+    <acknowledgement>
+      <p>
+        This work has been funded in part by Portland Community College and in part by funds awarded through an Open Oregon Educational Resources Grant.
+      </p>
+    </acknowledgement>
+
+    <preface xml:id="to-all">
+        <title>About This Site</title>
+
+        <p>
+          The materials begin with linear equations in two variables and extends through trigonometry.
+          </p>
+          <p>
+
+          Each topic includes written introductions, detailed examples, and practice exercises that are fully keyed. In addition, each chapter concludes with additional practice problems – those problems are not keyed, although short answers are provided. Many topics also include videos.       Each topic has its own link, so students can be referred to the pages directly.
+          </p>
+          <p>
+
+          The material was written with review in mind, but there is enough detail that it would be useful for new students as well. All exercises in the content areas are fully keyed, with no steps excluded. The supplemental problem sets only include answers; they are not fully keyed. Each individual topic (e.g. factoring by grouping) has its own URL, so it is easy for instructors to send their students direct links. While video instruction is useful for many, there are also learners who prefer written exposition, hence the redundancy in presentation of material. Students engaged in self-study review can quickly become frustrated while working practice problems, hence the thorough explanations in the solutions to the practice problems. The workshop problems provide a bank for instructors or tutors to work with students in an interactive, “I do one, you do one” fashion.
+          </p>
+          <p>
+
+          I envision the materials being used in various ways, particularly in online courses. “Heads up” links can be posted before pivotal topics. For example, links to the factoring materials could be posted the week before rational expressions are to be covered. Links to specific topics that have been identified as specific weaknesses in specific students can be sent directly to those students. The site can also be used to supplement the class in which a given topic is taught. For example, problem sets can be projected for group work in lieu of printed assignments. Of course, there are ways to use the materials that haven’t occurred to me.
+          </p>
+          <p>
+          Feedback is appreciated, both from faculty and students. I’m especially eager to know of any mistakes, so that I can fix them ASAP. 
+        </p>
+        <p>
+          A special note of appreciation to those who created and maintain Geogebra.  Geogebra 5 was used to make all of the interactive activities on this site.
+        </p>
+
+        <paragraphs>
+            <title>Accessibility</title>
+            <p>The <init>HTML</init> version is intended to meet or exceed all web accessibility standards. If you encounter an accessibility issue, please report it to the editor.<ul>
+                <li>
+                    <p>All graphs and images have meaningful alt text that communicates what a sighted person would see, without necessarily giving away anything that is intended to be deduced from the image. Construction of alt text is underway, and will be complete by the end of 2018.</p>
+                </li>
+                <li>
+                    <p>All math content is rendered using MathJax. MathJax has a contextual menu that can be accessed in several ways, depending on what operating system and browser you are using. The most common way is to right-click or control-click on some piece of math content.</p>
+                </li>
+                <li>
+                    <p>In the MathJax contextual menu, you may set options for triggering a zoom effect on math content, and also by what factor the zoom will be.</p>
+                </li>
+                <li>
+                    <p>If you change the MathJax renderer to MathML, then a screen reader will generally have success verbalizing the math content.</p>
+                </li>
+            </ul></p>
+        </paragraphs>
+
+    </preface>
+
+</frontmatter>

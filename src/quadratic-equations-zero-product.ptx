@@ -70,7 +70,7 @@
             <mrow>\divideunder{2x}{2}\amp=\divideunder{5}{2}\amp\amp\text{or}\amp \divideunder{2x}{2}\amp=\divideunder{-3}{2}</mrow>
             <mrow>x\amp=\frac{5}{2}\amp\amp\text{or}\amp x\amp=-\frac{3}{2}</mrow>
           </md>
-          The solutions are <m>\frac{5}{2}</m> and <m>-\frac{3}{2}</m>. The solution set is <m>\{\frac{5}{2}, -\frac{3}{2}\}</m>.
+          The solutions are <m>\frac{5}{2}</m> and <m>-\frac{3}{2}</m>. The solution set is <m>\left\{\frac{5}{2}, -\frac{3}{2}\right\}</m>.
         </p>
       </solution>
     </example>
@@ -119,7 +119,7 @@
             <mrow>x\amp=0\amp\amp\text{or}\amp \divideunder{17x}{17}\amp=\divideunder{-5}{17}</mrow>
             <mrow>x\amp=0\amp\amp\text{or}\amp x\amp=-\frac{5}{17}</mrow>
           </md>
-          The solutions are <m>0</m> and <m>-\frac{5}{17}</m>. The solution set is <m>\{0, -\frac{5}{17}\}</m>.
+          The solutions are <m>0</m> and <m>-\frac{5}{17}</m>. The solution set is <m>\left\{0, -\frac{5}{17}\right\}</m>.
         </p>
       </solution>
     </example>
@@ -183,7 +183,7 @@
               The solutions are <m>-\frac{8}{3}</m> and <m>\frac{7}{5}</m>.
             </p>
             <p>
-              The solution set is <m>\{-\frac{8}{3}, \frac{7}{5}\}</m>.
+              The solution set is <m>\left\{-\frac{8}{3}, \frac{7}{5}\right\}</m>.
             </p>
           </solution>
         </exercise>
@@ -303,7 +303,7 @@
               The solutions are <m>-\frac{5}{4}</m> and <m>\frac{1}{8}</m>.
             </p>
             <p>
-              The solution set is <m>\{-\frac{5}{4}, \frac{1}{8}\}</m>.
+              The solution set is <m>\left\{-\frac{5}{4}, \frac{1}{8}\right\}</m>.
             </p>
           </solution>
         </exercise>
@@ -335,7 +335,7 @@
               The solutions are <m>0</m> and <m>\frac{1}{2}</m>.
             </p>
             <p>
-              The solution set is <m>\{0, \frac{1}{2}\}</m>.
+              The solution set is <m>\left\{0, \frac{1}{2}\right\}</m>.
             </p>
           </solution>
         </exercise>

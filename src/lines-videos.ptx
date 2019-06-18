@@ -10,32 +10,33 @@
 <!-- ********************************************************************* -->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="lines-videos">
-    
-        <title>Videos Created by Ann Cary and Scot Leavitt.</title>        
-          <p>The links take you to YouTube Playlists which will open either in a new window or in a Youtube App.
-          <ul>
-            <li>
-              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-fY732-8tex6rx7xNEar3TO" target="blank">The Cartesian coordinate system</url>
-            </li>
-            <li>
-              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-e4BPQL-CTfUR7abqP1MlHx" target="blank">Graphing linear equations on the Cartesian coordinate system</url> 
-            </li>
-            <li>
-              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-f8cnTX8Fv82mnDxfGtuNF6" target="blank">The standard Form of the equation of a line/Intercepts</url>
-            </li>
-            <li>
-              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-egOM3nFkifyG8kzF1PA46D" target="blank">Slope of a line</url>
-            </li>
-            <li>
-              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-e5tfdgFM8gL44XS1TxKQcf" target="blank">The slope-intercept form of the equation of a line</url>
-            </li>
-            <li>
-              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-e3HVQTn7ysJcPB_-5mUO5O" target="blank">The point-slope form of the equation of a line</url>
-            </li>
-            <li>
-              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-dAFOej6LZ7akWnP1saiC_w" target="blank">Parallel lines/Perpendicular lines/Vertical and horizontal lines</url>
-            </li>
-          </ul>
-        </p>
+  <title>Videos Created by Ann Cary and Scot Leavitt</title>
+
+  <p>
+    The links take you to YouTube Playlists which will open either in a new window or in a Youtube App.
+    <ul>
+      <li>
+        <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-fY732-8tex6rx7xNEar3TO" target="blank">The Cartesian coordinate system</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-e4BPQL-CTfUR7abqP1MlHx" target="blank">Graphing linear equations on the Cartesian coordinate system</url> 
+      </li>
+      <li>
+        <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-f8cnTX8Fv82mnDxfGtuNF6" target="blank">The standard Form of the equation of a line/Intercepts</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-egOM3nFkifyG8kzF1PA46D" target="blank">Slope of a line</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-e5tfdgFM8gL44XS1TxKQcf" target="blank">The slope-intercept form of the equation of a line</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-e3HVQTn7ysJcPB_-5mUO5O" target="blank">The point-slope form of the equation of a line</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-dAFOej6LZ7akWnP1saiC_w" target="blank">Parallel lines/Perpendicular lines/Vertical and horizontal lines</url>
+      </li>
+    </ul>
+  </p>
       
 </section>

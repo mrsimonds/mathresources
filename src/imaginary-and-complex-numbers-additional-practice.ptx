@@ -55,7 +55,7 @@
           </statement>
           <solution>
             <p>
-              <m>sqrt{-\frac{9}{25}}=\frac{3}{5}i</m>
+              <m>\sqrt{-\frac{9}{25}}=\frac{3}{5}i</m>
             </p>
           </solution>
         </exercise>
@@ -298,7 +298,7 @@
           </statement>
           <solution>
             <p>
-              <m>\frac{169i}{5+12i}=12+5i</m>
+              <m>-\frac{169i}{5+12i}=-12-5i</m>
             </p>
           </solution>
         </exercise>

@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="functions-additional-practice">
+  <title>Additional Practice Related to Functions</title>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          As directed, determine either the specified function value or determine the solution set to the stated equation.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine <m>k(9)</m> where <m>k(x)=3+4x-x^2</m>.
+          </p>
+        </statement>.
+        <solution>
+          <p>
+            <m>k(9)=-42</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine <m>y(-3)</m> where <m>y(t)=5-x-x^3</m>.
+          </p>
+        </statement>.
+        <solution>
+          <p>
+            <m>y(-3)=35</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the solution set to <m>m(x)=5</m> where <m>m(x)=3x-7</m>.
+          </p>
+        </statement>.
+        <solution>
+          <p>
+            The solution set is <m>\{4\}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the solution set to <m>p(t)=-3</m> where <m>p(t)=t^2-7t-47</m>.
+          </p>
+        </statement>.
+        <solution>
+          <p>
+            The solution set is <m>\{-4,11\}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine <m>f(11)</m> where <m>f(x)=\frac{x-4}{x+3}</m>.
+          </p>
+        </statement>.
+        <solution>
+          <p>
+            <m>f(11)=\frac{1}{2}</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the solution set to <m>w(t)=6</m> where <m>w(t)=\sqrt{3t-9}</m>.
+          </p>
+        </statement>.
+        <solution>
+          <p>
+            The solution set is <m>\{15\}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine <m>w(6)</m> where <m>w(t)=\sqrt{3t-9}</m>.
+          </p>
+        </statement>.
+        <solution>
+          <p>
+            <m>w(6)=3</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the solution set to <m>q(x)=12</m> where <m>q(x)=3+\abs{x-1}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution set is <m>\{-8,10\}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Work with a function presented in graphical form.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine each of the following function values based upon the function <m>k</m> shown in <xref ref="functions-additional-practice-figure-1">Figure</xref>. 
+            <ol>
+              <li><m>k(2)</m></li>
+              <li><m>k(0)</m></li>
+              <li><m>k(4)</m></li>
+              <li><m>k(-3)</m></li>
+            </ol>
+            <p>
+            </p>
+          </p>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Determine the solution set to each of the following equations based upon the function <m>k</m> shown in <xref ref="functions-additional-practice-figure-1">Figure</xref>. 
+              <ol label="i">
+                <li><m>k(x)=1</m></li>
+                <li><m>k(x)=4</m></li>
+                <li><m>k(x)=5</m></li>
+                <li><m>k(x)=6</m></li>
+              </ol>
+            </p>
+
+            <figure xml:id="functions-additional-practice-figure-1">
+              <caption><m>y=k(x)</m></caption>
+              <image>
+                <description>
+                  The graph of a function names <m>k</m>.  There are three distinct pieces to the curve,  There is a half-line that points leftward ad downward.  The half-line terminates at the point <m>(0,4)</m>.  There is an isolated solid dot at the point <m>(0,-3)</m>.  There is a little more than half of a parabola that originates at an open circle located at the point <m>(2,4)</m>.  The top point on the parabolic piece is located at the point <m>(3,5)</m>.  The parabolic piece continues downward from that point with an arrow at the end.
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis}
+                      \addplot[primarycurve,domain=-3.5:0,smooth,{Stealth}-] {3*x+4};
+                      \addplot[primarycurve,domain=2:6.4,smooth,-{Stealth}] {-(x-3)^2+5};
+                      \addplot[hollowdot] coordinates {(0,4)};
+                      \addplot[soliddot] coordinates {(0,-3)};
+                      \addplot[hollowdot] coordinates {(2,4)};
+                    \end{axis}
+                  \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+
+           </sidebyside>
+          </statement>
+          <solution>
+            <p>
+              <ol>
+                <li><m>k(2)</m> is undefined.</li>
+                <li><m>k(0)=-3</m></li>
+                <li><m>k(4)=4</m></li>
+                <li><m>k(-3)=-5</m></li>
+              </ol>
+            </p>
+            <p>
+              <ol label="i">
+                <li>The solution set is <m>\{-1,5\}</m>.</li>
+                <li>The solution set is <m>\{4\}</m>.</li>
+                <li>The solution set is <m>\{3\}</m>.</li>
+                <li>The solution set is <m>\emptyset</m>.</li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+      <exercisegroup>
+        <introduction>
+          <p>
+            Determine the domain of each of the following functions.  State each domain using interval notation.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>r(x)=4-\sqrt{8-16x}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The domain of <m>r</m> is <m>\left(-\infty,\frac{1}{2}\right]</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>w(t)=\sqrt[5]{6t+42}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The domain of <m>w</m> is <m>(-\infty,\infty)</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>f(x)=2x^2-7x+8</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The domain of <m>f</m> is <m>(-\infty,\infty)</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>q(x)=\frac{y-9}{y+10}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The domain of <m>q</m> is <m>(-\infty,-10) \cup (-10,\infty)</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>q(t)=\frac{\sqrt{t-12}}{t-3}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The domain of <m>q</m> is <m>[12,\infty)</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>y(x)=\frac{x^2-5x+6}{x^2-8x+12}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The domain of <m>y</m> is <m>(-\infty,2) \cup (2,6) \cup (6,\infty)</m>.
+            </p>
+          </solution>
+        </exercise>
+
+      </exercisegroup>
+      <exercisegroup>
+        <introduction>
+          <p>
+            Determine the domain and range of functions presented in graphical form.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <sidebyside widths="47% 47%" margins="0%">
+
+                <p>
+                  Determine the domain and range of the function <m>g</m> shown in <xref ref="functions-additional-practice-figure-2">Figure</xref>.  State the domain and range using interval notation.
+                </p>
+
+                <figure xml:id="functions-additional-practice-figure-2">
+                  <caption><m>y=g(x)</m></caption>
+                  <image>
+                    <description>
+                      The graph of a function named <m>g</m>.  The function is a little more than the left-half of a downward opening parabola.  The vertex is at the point <m>(-2,5)</m>.  The function stops at a point a little higher the <m>(1,2)</m>.  There is an arrow on the left end of the curve. 
+                    </description>
+                    <latex-image>
+                      <![CDATA[
+                      \begin{tikzpicture}
+                        \begin{axis}
+                          \addplot[primarycurve,domain=-6.9:1,smooth,{Stealth}-] {-.3*(x+2)^2+5};
+                          \addplot[hollowdot] coordinates {(1,2.3)};
+                        \end{axis}
+                      \end{tikzpicture}
+                      ]]>
+                    </latex-image>
+                  </image>
+                </figure>
+
+              </sidebyside>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The domain of <m>g</m> is <m>(-\infty,1)</m>and the range is <m>(-\infty,5]</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Determine the domain and range of the function <m>z</m> shown in <xref ref="functions-additional-practice-figure-3">Figure</xref>.  State the domain and range using interval notation.
+            </p>
+
+            <figure xml:id="functions-additional-practice-figure-3">
+              <caption><m>y=z(x)</m></caption>
+              <image>
+                <description>
+                  The graph of a function named <m>z</m>.  The function is made up of two line segments.  One of the line segments extends from the point <m>(-5,1)</m> to the point <m>(0,4)</m> with an open circle at the left endpoint and a solid dot at the right endpoint.  The other line segment extends from the point <m>(3,2)</m> to the point <m>(6,-1)</m> with pen circles at each end point.
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis}
+                      \addplot[primarycurve,domain=-5:0,smooth,-] {(3/5)*x+4};
+                      \addplot[primarycurve,domain=3:6,smooth,-] {-x+5};
+                      \addplot[hollowdot] coordinates {(-5,1)};
+                      \addplot[soliddot] coordinates {(0,4)};
+                      \addplot[hollowdot] coordinates {(3,2)};
+                      \addplot[hollowdot] coordinates {(6,-1)};
+                    \end{axis}
+                  \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The domain of <m>z</m> is <m>(-5,0] \cup (3,6)</m>and the range is <m>(-1,4]</m>.
+        </p>
+      </solution>
+    </exercise>
+
+  </exercisegroup>
+  <exercisegroup>
+    <introduction>
+      <p>
+        Evaluate and simplify each indicated expression.
+      </p>
+    </introduction>
+
+    <exercise>
+      <statement>
+        <p>
+          Determine <m>f(x+3)</m> for the function <m>f(x)=x^2-x</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>f(x+3)=x^2+5x+6</m>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Determine <m>g(-x)+5</m> for the function <m>g(x)=2x^3-3x^2-6x+2</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>g(-x)+5=-2x^3-3x^2+6x+7</m>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Determine <m>3g(4t)</m> for the function <m>\sqrt{t-7}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>3g(4t)=3\sqrt{4t-7}</m>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Determine <m>-2y(t)-7</m> for the function <m>y(t)=-5t^2-11t+3</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>-2y(t)-7=10t^2+22t-13</m>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Determine <m>3r(4t-3)</m> for the function <m>r(t)=\frac{3t-5}{t+4}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>3r(4t-3)=\frac{36t-42}{4t+1}</m>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Determine <m>\frac{w(y+5)-w(y-5)}{2}</m> for the function <m>w(y)=4y-7</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\frac{w(y+5)-w(y-5)}{2}=20</m>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Evaluate and simplify  <m>(f \circ f)(x)</m> where <m>f(x)=7-x</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(f \circ f)(x)=x</m>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Evaluate and simplify <m>(g \circ f)(x)</m> where <m>f(x)=3x+9</m> and <m>g(x)=5-x^2</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(g \circ f)(x)=-9x^2-54x-76</m>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Evaluate and simplify <m>(f \circ g)(4)</m> where <m>f(x)=3x+9</m> and <m>g(x)=5-x^2</m>. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(f \circ g)(4)=-24</m>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Evaluate and simplify <m>(g \circ g)(8)</m> where <m>g(t)=\frac{3}{t+1}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>(g \circ g)(8)=\frac{9}{4}</m>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Evaluate and simplify <m>(k \circ h)(t)</m> where <m>h(t)=\frac{9t+2}{6}</m> and <m>k(t)=\frac{6t-2}{9}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>k \circ h)(t)=t</m>
+        </p>
+      </solution>
+    </exercise>
+
+  </exercisegroup>
+  <exercisegroup>
+    <introduction>
+      <p>
+        Determine the difference quotient for each of the following functions.  Make sure that you completely simplify each expression.
+      </p>
+    </introduction>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x)=3x+7</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The difference quotient is <m>\frac{f(x+h)-f(x)}{h}=3,\,\,h \neq 0</m>.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>g(x)=x^2-5x+1</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The difference quotient is <m>\frac{g(x+h)-g(x)}{h}=2x+h-5,\,\, h \neq 0</m>.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>k(t)=3-2t^2</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The difference quotient is <m>\frac{k(t+h)-k(t)}{h}=-4t-2h,\,\, h \neq 0</m>.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>s(t)=-\frac{3}{2t}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The difference quotient is <m>\frac{s(t+h)-s(t)}{h}=\frac{3}{2t^2+2th},\,\, h \neq 0</m>.
+        </p>
+      </solution>
+    </exercise>
+
+  </exercisegroup>
+  <exercisegroup>
+    <introduction>
+      <p>
+        Determine solution sets to inequalities based upon the graph of a function.
+      </p>
+    </introduction>
+
+    <exercise>
+      <statement>
+        <p>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Determine the solution set to <m>k(x) \geq 1</m> based upon the function <m>k</m> shown in <xref ref="functions-additional-practice-figure-4">Figure</xref>.  State the solution set using both set-builder notation and interval notation.
+            </p>
+
+            <figure xml:id="functions-additional-practice-figure-4">
+              <caption><m>y=k(x)</m></caption>
+              <image>
+                <description>
+                  The graph of a function names <m>k</m>.  There are three distinct pieces to the curve,  There is a half-line that points leftward ad downward.  The half-line terminates at the point <m>(0,4)</m>.  There is an isolated solid dot at the point <m>(0,-3)</m>.  There is a little more than half of a parabola that originates at an open circle located at the point <m>(2,4)</m>.  The top point on the parabolic piece is located at the point <m>(3,5)</m>.  The parabolic piece continues downward from that point with an arrow at the end.
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis}
+                      \addplot[primarycurve,domain=-3.5:0,smooth,{Stealth}-] {3*x+4};
+                      \addplot[primarycurve,domain=2:6.4,smooth,-{Stealth}] {-(x-3)^2+5};
+                      \addplot[hollowdot] coordinates {(0,4)};
+                      \addplot[soliddot] coordinates {(0,-3)};
+                      \addplot[hollowdot] coordinates {(2,4)};
+                    \end{axis}
+                  \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The solution set is <m>\{x \mid -1 \leq x \lt 0 \text{ or } 2 \lt x \leq 5\}</m>.
+        </p>
+        <p>
+          The solution set is <m>[-1,0) \cup (2,5]</m>.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Determine the solution set to <m>k(x) \leq 4</m> based upon the function <m>k</m> shown in <xref ref="functions-additional-practice-figure-5">Figure</xref>.  State the solution set using both set-builder notation and interval notation.
+            </p>
+
+            <figure xml:id="functions-additional-practice-figure-5">
+              <caption><m>y=k(x)</m></caption>
+              <image>
+                <description>
+                  The graph of a function names <m>k</m>.  There are three distinct pieces to the curve,  There is a half-line that points leftward ad downward.  The half-line terminates at the point <m>(0,4)</m>.  There is an isolated solid dot at the point <m>(0,-3)</m>.  There is a little more than half of a parabola that originates at an open circle located at the point <m>(2,4)</m>.  The top point on the parabolic piece is located at the point <m>(3,5)</m>.  The parabolic piece continues downward from that point with an arrow at the end.
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis}
+                      \addplot[primarycurve,domain=-3.5:0,smooth,{Stealth}-] {3*x+4};
+                      \addplot[primarycurve,domain=2:6.4,smooth,-{Stealth}] {-(x-3)^2+5};
+                      \addplot[hollowdot] coordinates {(0,4)};
+                      \addplot[soliddot] coordinates {(0,-3)};
+                      \addplot[hollowdot] coordinates {(2,4)};
+                    \end{axis}
+                  \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The solution set is <m>\{x \mid x \leq 0 \text{ or } x \geq 4\}</m>.
+        </p>
+        <p>
+          The solution set is <m>(-\infty,0] \cup [4,\infty)</m>.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Determine the solution set to <m>k(x) \gt 5</m> based upon the function <m>k</m> shown in <xref ref="functions-additional-practice-figure-6">Figure</xref>.  State the solution set using both set-builder notation and interval notation.
+            </p>
+
+            <figure xml:id="functions-additional-practice-figure-6">
+              <caption><m>y=k(x)</m></caption>
+              <image>
+                <description>
+                  The graph of a function names <m>k</m>.  There are three distinct pieces to the curve,  There is a half-line that points leftward ad downward.  The half-line terminates at the point <m>(0,4)</m>.  There is an isolated solid dot at the point <m>(0,-3)</m>.  There is a little more than half of a parabola that originates at an open circle located at the point <m>(2,4)</m>.  The top point on the parabolic piece is located at the point <m>(3,5)</m>.  The parabolic piece continues downward from that point with an arrow at the end.
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis}
+                      \addplot[primarycurve,domain=-3.5:0,smooth,{Stealth}-] {3*x+4};
+                      \addplot[primarycurve,domain=2:6.4,smooth,-{Stealth}] {-(x-3)^2+5};
+                      \addplot[hollowdot] coordinates {(0,4)};
+                      \addplot[soliddot] coordinates {(0,-3)};
+                      \addplot[hollowdot] coordinates {(2,4)};
+                    \end{axis}
+                  \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The solution set is <m>\{\}</m>.
+        </p>
+        <p>
+          The solution set is <m>\emptyset</m>.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Determine the solution set to <m>k(x) \lt 6</m> based upon the function <m>k</m> shown in <xref ref="functions-additional-practice-figure-7">Figure</xref>.  State the solution set using both set-builder notation and interval notation.
+            </p>
+
+            <figure xml:id="functions-additional-practice-figure-7">
+              <caption><m>y=k(x)</m></caption>
+              <image>
+                <description>
+                  The graph of a function names <m>k</m>.  There are three distinct pieces to the curve,  There is a half-line that points leftward ad downward.  The half-line terminates at the point <m>(0,4)</m>.  There is an isolated solid dot at the point <m>(0,-3)</m>.  There is a little more than half of a parabola that originates at an open circle located at the point <m>(2,4)</m>.  The top point on the parabolic piece is located at the point <m>(3,5)</m>.  The parabolic piece continues downward from that point with an arrow at the end.
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis}
+                      \addplot[primarycurve,domain=-3.5:0,smooth,{Stealth}-] {3*x+4};
+                      \addplot[primarycurve,domain=2:6.4,smooth,-{Stealth}] {-(x-3)^2+5};
+                      \addplot[hollowdot] coordinates {(0,4)};
+                      \addplot[soliddot] coordinates {(0,-3)};
+                      \addplot[hollowdot] coordinates {(2,4)};
+                    \end{axis}
+                  \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The solution set is <m>\{x \mid x \leq 0 \text{ or } x \gt 2\}</m>.
+        </p>
+        <p>
+          The solution set is <m>(-\infty,0] \cup (2,\infty)</m>.
+        </p>
+      </solution>
+    </exercise>
+
+  </exercisegroup>
+  <exercisegroup>
+      <introduction>
+        <p>
+          Draw the inverse of each graphed function.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <figure xml:id="functions-additional-practice-figure-8">
+            <caption><m>\highlightr{y=f(x)}</m></caption>
+            <image width="47%">
+              <description>
+                The graph of a linear function named <m>f</m>.  The function passes through the points <m>(0,-1)</m> and <m>(3,0)</m>.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis}[axis equal image]
+                    \addplot[primarycurve,smooth,domain=-6.95:6.95] {x/3-1}; 
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </statement>
+        <solution>
+          <figure xml:id="functions-additional-practice-figure-9">
+            <caption><m>\highlightr{y=f(x)}</m> and <m>\highlight{y=f^{-1}(x)}</m></caption>
+            <image width="47%">
+              <description>
+                The graph of two linear functions, one named <m>f</m> and the other named <m>f</m>-inverse.  The function <m>f</m> passes through the points <m>(0,-1)</m> and <m>(3,0)</m>.  The function <m>f</m>-inverse passes through the points <m>(-1,0)</m> and <m>(0,3)</m>.  The two lines ar mirror images across the line <m>y=x</m> (which is also graphed).
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis}[axis equal image]
+                    \addplot[primarycurve,smooth,domain=-6.95:6.95] {x/3-1};
+                    \addplot[primarycurve,smooth,color=blue,domain=-3.3:1.3] {3*x+3};
+                    \addplot[primarycurve,smooth,color=gray,domain=-6.95:6.95] {x};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <figure xml:id="functions-additional-practice-figure-10">
+            <caption><m>\highlightr{y=g(x)}</m></caption>
+            <image width="47%">
+              <description>
+                The graph of a function named <m>g</m>.  The function is the right half of an upward opening parabola.  A solid dot sits atop the vertex which lies at the point <m>(-5,-3)</m>.  The points <m>(-3,-2)</m> and <m>(0,3.25)</m> also lie on function.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis}[axis equal image]
+                    \addplot[primarycurve,smooth,domain=-5:.95,-{Stealth}] {.25*(x+5)^2-3};
+                    \addplot[soliddot] coordinates {(-5,-3)}; 
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </statement>
+        <solution>
+          <figure xml:id="functions-additional-practice-figure-11">
+            <caption><m>\highlightr{y=g(x)}</m> and <m>\highlight{y=g^{-1}(x)}</m></caption>
+            <image width="47%">
+              <description>
+                The graph of two function, one named <m>g</m> and the other named <m>g</m>inverse.  The function <m>g</m> is the right half of an upward opening parabola. The function <m>g</m>-inverse s the top half of a rightward opening parabola. A solid dot sits atop the vertex of <m>g</m> which lies at the point <m>(-5,-3)</m>.  A solid dot sits atop the vertex <m>g</m>-inverse which lies at the point <m>(-3,-5)</m>. The points <m>(-3,-2)</m> and <m>(0,3.25)</m> also lie on function <m>g</m>.  The points <m>(-2,-3)</m> and <m>(3.25,0)</m> also lie on function <m>g</m>-inverse.  The two functions are mirror images across the line <m>y=x</m> (which is also graphed).
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis}[axis equal image]
+                    \addplot[primarycurve,smooth,domain=-5:.95,-{Stealth}] {.25*(x+5)^2-3};
+                    \addplot[soliddot] coordinates {(-5,-3)}; 
+                    \addplot[primarycurve,smooth,color=blue,domain=-5:.95,-{Stealth}] ({.25*(x+5)^2-3},{x});
+                    \addplot[soliddot,color=blue] coordinates {(-3,-5)}; 
+                    \addplot[primarycurve,smooth,color=gray,domain=-6.95:6.95] {x};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Given the formula for <m>f(x)</m>, determine the formula for <m>f^{-1}(x)</m>.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=4x-19</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>f^{-1}(x)=\frac{1}{4}x+\frac{19}{4}</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=\frac{\sqrt[3]{2x+8}}{2}-6</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>f^{-1}(x)=\frac{1}{2}(2x+12)^3-4</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=\frac{1-2x}{3x+11}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>f^{-1}(x)=\frac{11-x}{3x+2}</m>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            The graph of a function named <m>f</m> is given in <xref ref="functions-additional-practice-figure-12">Figure</xref>.  Three functions are stated in terms of <m>f</m>.  Graph each of these functions.
+          </p>
+
+          <figure xml:id="functions-additional-practice-figure-12">
+            <caption><m>\highlight{y=f(x)}</m></caption>
+            <image width="47%">
+              <description>
+                The graph of a function named <m>f</m>.  The function is a line segment extending from the point <m>(-6,-3)</m> to the point <m>(3,6)</m>.  There are solid dots at each end of the line segment.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                    \begin{axis} [axis equal image,
+                                  xmin=-8,xmax=8,
+                                  ymin=-8,ymax=8,
+                                  xtick={-6,-4,-2,2,4,6},
+                                  ytick={-6,-4,-2,2,4,6},
+                                  minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                  minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                  \addplot[interval,ultra thick,blue,-] coordinates {(-6,-3) (3,6)};
+                  \addplot[soliddot,color=blue] coordinates {(-6,-3)};
+                  \addplot[soliddot,color=blue] coordinates {(3,6)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>g(x)=\frac{1}{3}f(3x-6)+2</m>
+          </p>
+        </statement>
+        <solution>
+          <figure xml:id="functions-additional-practice-figure-13">
+            <caption><m>\highlight{y=f(x)}</m> and <m>\highlightr{y=g(x)}</m></caption>
+            <image width="47%">
+              <description>
+                The graph of two functions, one named <m>f</m> and the other named <m>g</m>.  The function <m>f</m> is a line segment extending from the point <m>(-6,-3)</m> to the point <m>(3,6)</m>.  There are solid dots at each end of the line segment.  The function <m>g</m> is a line segment extending from the point <m>(0,1)</m> to the point <m>(3,4)</m>.  There are solid dots at each end of the line segment.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                    \begin{axis} [axis equal image,
+                                  xmin=-8,xmax=8,
+                                  ymin=-8,ymax=8,
+                                  xtick={-6,-4,-2,2,4,6},
+                                  ytick={-6,-4,-2,2,4,6},
+                                  minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                  minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                  \addplot[interval,ultra thick,blue,-] coordinates {(-6,-3) (3,6)};
+                  \addplot[interval,ultra thick,red,-] coordinates {(0,1) (3,4)};
+                  \addplot[soliddot,color=blue] coordinates {(-6,-3)};
+                  \addplot[soliddot,color=blue] coordinates {(3,6)};
+                  \addplot[soliddot,color=red] coordinates {(0,1)};
+                  \addplot[soliddot,color=red] coordinates {(3,4)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>h(x)=\frac{2}{3}f\left(\frac{3}{2}(x+1)\right)-1</m>
+          </p>
+        </statement>
+        <solution>
+          <figure xml:id="functions-additional-practice-figure-14">
+            <caption><m>\highlight{y=f(x)}</m> and <m>\highlightr{y=h(x)}</m></caption>
+            <image width="47%">
+              <description>
+                The graph of two functions, one named <m>f</m> and the other named <m>h</m>.  The function <m>f</m> is a line segment extending from the point <m>(-6,-3)</m> to the point <m>(3,6)</m>.  There are solid dots at each end of the line segment.  The function <m>h</m> s a line segment extending from the point <m>(-5,-3)</m> to the point <m>(3,1)</m>.  There are solid dots at each end of the line segment.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                    \begin{axis} [axis equal image,
+                                  xmin=-8,xmax=8,
+                                  ymin=-8,ymax=8,
+                                  xtick={-6,-4,-2,2,4,6},
+                                  ytick={-6,-4,-2,2,4,6},
+                                  minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                  minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                  \addplot[interval,ultra thick,blue,-] coordinates {(-6,-3) (3,6)};
+                  \addplot[interval,ultra thick,red,-] coordinates {(1,3) (-5,-3)};
+                  \addplot[soliddot,color=blue] coordinates {(-6,-3)};
+                  \addplot[soliddot,color=blue] coordinates {(3,6)};
+                  \addplot[soliddot,color=red] coordinates {(1,3)};
+                  \addplot[soliddot,color=red] coordinates {(-5,-3)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>k(x)=-f(-(x+2))</m>
+          </p>
+        </statement>
+        <solution>
+          <figure xml:id="functions-additional-practice-figure-15">
+            <caption><m>\highlight{y=f(x)}</m> and <m>\highlightr{y=k(x)}</m></caption>
+            <image width="47%">
+              <description>
+                The graph of two functions, one named <m>f</m> and the other named <m>k</m>.  The function <m>f</m> is a line segment extending from the point <m>(-6,-3)</m> to the point <m>(3,6)</m>.  There are solid dots at each end of the line segment.  The function <m>k</m> is a line segment extending from the point <m>(-5,-6)</m> to the point <m>(4,3)</m>.  There are solid dots at each end of the line segment.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                    \begin{axis} [axis equal image,
+                                  xmin=-8,xmax=8,
+                                  ymin=-8,ymax=8,
+                                  xtick={-6,-4,-2,2,4,6},
+                                  ytick={-6,-4,-2,2,4,6},
+                                  minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                  minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                  \addplot[interval,ultra thick,blue,-] coordinates {(-6,-3) (3,6)};
+                  \addplot[interval,ultra thick,red,-] coordinates {(4,3) (-5,-6)};
+                  \addplot[soliddot,color=blue] coordinates {(-6,-3)};
+                  \addplot[soliddot,color=blue] coordinates {(3,6)};
+                  \addplot[soliddot,color=red] coordinates {(4,3)};
+                  \addplot[soliddot,color=red] coordinates {(-5,-6)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          One point on a function named <m>f</m> is <m>(12,-20)</m>.  Several functions are defined in terms of <m>f</m>.  For each function, use graphical transformation properties to determine where the stated point on <m>f</m> resides on the graph of the new function.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>g(x)=-f(4(x-3))-8</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The point <m>(12,-20)</m> for <m>f</m> moves to <m>(6,12)</m> on <m>g</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>h(x)=\frac{1}{10}f(\frac{1}{5}x+3)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The point <m>(12,-20)</m> for <m>f</m> moves to <m>(45,-2)</m> on <m>h</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>k(x)=2f(-6x-12)+5</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The point <m>(12,-20)</m> for <m>f</m> moves to <m>(-4,-35)</m> on <m>k</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>w(x)=-\frac{2}{5}f(\frac{2}{3}(x+8))-3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The point <m>(12,-20)</m> for <m>f</m> moves to <m>(10,5)</m> on <m>w</m>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+</section>

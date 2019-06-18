@@ -1,0 +1,1206 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="functions-inverses">
+  <title>Inverse Functions</title>
+
+  <paragraphs>
+    <title>One-to-One Functions</title>
+    <p></p>
+  <p>
+    Suppose that <m>y</m> is a function of <m>x</m> and that the name of the function is <m>f</m>.  We say that <m>f</m> is a <term>one-to-one function</term> if no two ordered pairs in the set that makes up the function share the same <m>y</m>-coordinate.  Another way of putting it is that a function is one-to-one if and only every  value of <m>y</m> in the range of the function corresponds to exactly one value of <m>x</m> in the domain of the function.  
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Determine whether or note the functions described in <xref ref="functions-inverses-table-1">Table</xref> and <xref ref="functions-inverses-table-2">Table</xref> are one-to-one functions.
+      </p>
+      <sidebyside widths="47% 47%" margins="0%">
+
+        <table xml:id="functions-inverses-table-1">
+          <caption><m>y=f(x)</m></caption>
+          <tabular>
+            <col halign="center" />
+            <col halign="center" />
+            <row bottom="medium">
+              <cell><line><m>x</m></line></cell>
+              <cell><line><m>y</m></line></cell>
+            </row>
+            <row>
+              <cell><m>-2</m></cell>
+              <cell><m>7</m></cell>
+            </row>
+            <row>
+              <cell><m>6</m></cell>
+              <cell><m>1</m></cell>
+            </row>
+            <row>
+              <cell><m>3</m></cell>
+              <cell><m>11</m></cell>
+            </row>
+            <row>
+              <cell><m>9</m></cell>
+              <cell><m>1</m></cell>
+            </row>
+            <row>
+              <cell><m>10</m></cell>
+              <cell><m>17</m></cell>
+            </row>
+            <row>
+              <cell><m>-5</m></cell>
+              <cell><m>0</m></cell>
+            </row>
+          </tabular>
+        </table>
+
+        <table xml:id="functions-inverses-table-2">
+          <caption><m>y=g(x)</m></caption>
+          <tabular>
+            <col halign="center" />
+            <col halign="center" />
+            <row bottom="medium">
+              <cell><line><m>x</m></line></cell>
+              <cell><line><m>y</m></line></cell>
+            </row>
+            <row>
+              <cell><m>1</m></cell>
+              <cell><m>-7</m></cell>
+            </row>
+            <row>
+              <cell><m>2</m></cell>
+              <cell><m>-6</m></cell>
+            </row>
+            <row>
+              <cell><m>3</m></cell>
+              <cell><m>-5</m></cell>
+            </row>
+            <row>
+              <cell><m>4</m></cell>
+              <cell><m>-4</m></cell>
+            </row>
+            <row>
+              <cell><m>5</m></cell>
+              <cell><m>-3</m></cell>
+            </row>
+            <row>
+              <cell><m>6</m></cell>
+              <cell><m>-2</m></cell>
+            </row>
+          </tabular>
+        </table>
+
+      </sidebyside>
+    </statement>
+    <solution>
+      <p>
+        The function <m>f</m> described in <xref ref="functions-inverses-table-1">Table</xref> is not one-to-one.  There are two different ordered pairs with <m>y</m>-coordinates equal to <m>6</m>.  The function <m>g</m> described in <xref ref="functions-inverses-table-2">Table</xref> is one-to-one. The <m>y</m>-coordinate of each ordered pair in the table is distinct from every other <m>y</m>-coordinate in the table.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Determine whether or not the functions shown in <xref ref="functions-inverses-figure-1">Figure</xref> and <xref ref="functions-inverses-figure-2">Figure</xref> are one-to-one.
+      </p>
+      <sidebyside widths="47% 47%" margins="0%">
+
+        <figure xml:id="functions-inverses-figure-1">
+          <caption><m>y=h(x)</m></caption>
+          <image>
+            <description>
+              A graph of a function that is nearly vertical over the interval <m>(-5,-4)</m> that then turns rightward and upward.  The function is every increasing and concave down.  There are arrows at both ends of the curve.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}
+                  \addplot[primarycurve,smooth,domain=-6.64:3.58] ({2^(x)-5},{x}); 
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+
+        <figure xml:id="functions-inverses-figure-2">
+          <caption><m>y=k(x)</m></caption>
+          <image>
+            <description>
+              The graph of a function that resembles an upside down vee. The vertex of the vee is at the point <m>(2,5)</m>.  The left side of the vee passes through the point <m>(-4,2)</m>.  The right side of the vee passes through the point <m>(5,2)</m>.  There are arrows at both ends of the vee.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}
+                  \addplot[primarycurve,domain=-6.98:2,{Stealth}-] {.5*x+4};
+                  \addplot[primarycurve,domain=2:6.98,-{Stealth}] {-x+7};  
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+
+      </sidebyside>
+    </statement>
+    <solution>
+      <p>
+        The function <m>h</m> shown in <xref ref="functions-inverses-figure-1">Figure</xref> is one-to-one; no two points share the same <m>y</m>-coordinate.  One way of visualizing this it to imagine passing a horizontal line over the entirety of the graph.  At no place on the graph would the horizontal line intersect the function in two or points, so there are no two points that share the same <m>y</m>-coordinate.
+      </p>
+      <p>
+        On the other hand, performing the same <term>horizontal line test</term> on the function <m>k</m> shown in <xref ref="functions-inverses-figure-2">Figure</xref>, we see that there are several locations where the horizontal line intersects the function in two points.  For example, as shown in, <xref ref="functions-inverses-figure-3">Figure</xref>, the line <m>y=2</m> intersects the function in two distinct points which demonstrates two or more points with the same <m>y</m>-coordinate, thereby establishing that the function, <m>k</m> is not one-to-one.
+      </p>
+
+      <figure xml:id="functions-inverses-figure-3">
+        <caption><m>y=k(x)</m></caption>
+        <image>
+          <description>
+            The graph of a function that resembles an upside down vee. The vertex of the vee is at the point <m>(2,5)</m>.  The left side of the vee passes through the point <m>(-4,2)</m>.  The right side of the vee passes through the point <m>(5,2)</m>.  There are arrows at both ends of the vee. A dashed horizontal line is drawn through the points <m>(-4,2)</m> and <m>(5,2)</m>. 
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}
+                \addplot[primarycurve,domain=-6.98:2,{Stealth}-] {.5*x+4};
+                \addplot[primarycurve,domain=2:6.98,-{Stealth}] {-x+7};
+                \addplot[secondarycurve,domain=-6.98:6.98] {2};                              
+                \addplot[soliddot] coordinates {(-4,2)} node[above left] {(-4,2)};                              
+                \addplot[soliddot] coordinates {(5,2)} node[below left] {(5,2)};  
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+    </solution>
+  </example>
+
+  <p>
+    In general, linear functions, square root functions, and other radical functions are one-to-one whereas absolute value functions and quadratic functions are not one-to-one (at least not without domain restrictions, which will be discusses later). 
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Determine which of the following functions are one-to-one.  If a given function is not one-to-one, state an explicit example of a pair of points that demonstrate it is not one-to-one.
+        <ol>
+          <li>
+            <m>
+              g(x)=6-11x
+            </m>
+          </li>
+          <li>
+            <m>
+              m(x)=7-x^2
+            </m>
+          </li>
+          <li>
+            <m>
+              f(x)=\abs{x-3}+4
+            </m>
+          </li>
+          <li>
+            <m>
+              h(x)=\sqrt[4]{x+9}
+            </m>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              The function <m>g</m> is a one-to-one linear function.
+            </p>
+          </li>
+          <li>
+            <p>
+              The function <m>m</m> is not one-to-one.  For example, both the points <m>(-3,-2)</m> and <m>(3,-2)</m> lie on a graph of the function.
+            </p>
+          </li>
+          <li>
+            <p>
+              The function <m>f</m> is not one-to-one.  For example, both the points <m>(-5,12)</m> and <m>(11,12)</m> lie on a graph of the function.
+            </p>
+          </li>
+          <li>
+            <p>
+              The function <m>h</m> is a one-to-one radical function.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  </paragraphs>
+  <paragraphs>
+    <title>Inverse Functions</title>
+    <p></p>
+  <p>
+    One-to-one functions, and only one-to-one functions, are said to be <term>invertible</term>.  Specifically, if the one-to-one function <m>f</m> consists of the ordered pairs <m>\{(a,b)\}</m>, then the <term>inverse function</term> of <m>f</m> consists of the ordered pairs <m>\{(b,a)\}</m>.The inverse function of <m>f</m> is denoted as <m>f^{-1}</m> which is read aloud as "<m>f</m> inverse."  Please note that in this context the <m>-1</m> is in no way acting as an exponent,  That is, <me>f^{-1} \neq \frac{1}{f}.</me>
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Three function values for the one-to-one function <m>f</m> are <m>f(9)=2</m>, <m>f(3)=-5</m>, and <m>f(1)=0</m>.  State three function values for <m>f^{-1}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        From the given information we know that three ordered pairs in the set that makes up <m>f</m> are <m>(9,2)</m>, <m>(3,-5)</m>, and <m>(1,0)</m>.  This implies that three ordered pairs in the set that makes up <m>f^{-1}</m> are <m>(2,9)</m>, <m>(-5,3)</m>, and <m>(0,1)</m>.  Thus, three function values for <m>f^{-1}</m> are <m>f^{-1}(2)=9</m>, <m>f^{-1}(-5)=3</m>, and <m>f^{-1}(0)=1</m>.
+      </p>
+    </solution>
+  </example>
+
+  <p>
+    Recall that if <m>y=f(x)</m>, then the set of all <m>x</m>-coordinates in the set that makes up <m>f</m> is called the <term>domain</term> of <m>f</m> and the set of all <m>y</m>-coordinates in the set that makes up <m>f</m> is called the <term>range</term> of <m>f</m>.  Assuming that <m>f</m> is a one-to-one function, all of the <m>x</m>-coordinates in <m>f</m> become <m>y</m>-coordinates in <m>f^{-1}</m> and all of the <m>y</m>-coordinates in <m>f</m> become <m>x</m>-coordinates in <m>f^{1}</m>.
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Suppose that <m>f</m> is a one-to-one function.  Suppose further that the domain of <m>f</m> is <m>(-\infty,6]</m> and that the range of <m>f</m> is <m>[-4,11]</m>.  What are the domain and range of <m>f^{-1}</m>?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The domain of <m>f^{-1}</m> is <m>[-4,11]</m> and the range of <m>f^{-1}</m> is <m>(-\infty,6]</m>.
+      </p>
+    </solution>
+  </example>
+
+  <p>
+    As discussed previously, if <m>f</m> is a one-to-one function and <m>f(a)=b</m>, it follows that <m>f^{-1}(b)=a</m>.  Putting these two function values together we get the following.
+  </p>
+
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <p>
+      <men xml:id="functions-inverses-figure-4">b\xrightarrow{\,\,\,f^{-1}\,\,\,}a\xrightarrow{\,\,\,\,\,f\,\,\,\,\,}b</men>
+      <md>
+        <mrow>(f \circ f^{-1})(b)\amp=f(f^{-1}(b))</mrow>
+        <mrow>\amp=f(a)</mrow>
+        <mrow>\amp=b</mrow>
+      </md>
+    </p>
+
+    <p>
+      <men xml:id="functions-inverses-figure-5">a\xrightarrow{\,\,\,\,\,f\,\,\,\,\,}b\xrightarrow{\,\,\,f^{-1}\,\,\,}a</men>
+      <md>
+        <mrow>(f^{-1} \circ f)(a)\amp=f^{-1}(f(a))</mrow>
+        <mrow>\amp=f^{-1}(b)</mrow>
+        <mrow>\amp=a</mrow>
+      </md>
+    </p>
+
+  </sidebyside>
+  <p>
+    From these to observations, we infer the following.
+  </p>
+  <p>
+    The functions <m>f</m> and <m>g</m> are inverse functions if and only if:
+    <me>(f \circ g)(x)=x\,\text{for all values of}\, x\,\text{in the domain of}\, g</me>
+    and
+    <me>(g \circ f)(x)=x\,\text{for all values of}\, x\,\text{in the domain of}\, f.</me>
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Determine whether or not the functions <m>f(x)=\frac{1}{3}x-\frac{7}{6}</m> and <m>g(x)=3x+\frac{7}{2}</m> are inverses of one another.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We need to determine whether or not it is always the case that the expressions <m>(f \circ g)(x)</m> and <m>(g \circ f)(x)</m> both simplify to <m>x</m>.
+        <md>
+          <mrow>(f \circ g)(x)\amp=f(g(x))</mrow>
+          <mrow>\amp=f\left(3x+\frac{7}{2}\right)</mrow>
+          <mrow>\amp=\frac{1}{3}\left(3x+\frac{7}{2}\right)-\frac{7}{6}</mrow>
+          <mrow>\amp=x+\frac{7}{6}-\frac{7}{6}</mrow>
+          <mrow>\amp=x</mrow>
+        </md>
+        and
+        <md>
+          <mrow>(g \circ f)(x)\amp=g(f(x))</mrow>
+          <mrow>\amp=g\left(\frac{1}{3}x-\frac{7}{6}\right)</mrow>
+          <mrow>\amp=3\left(\frac{1}{3}x-\frac{7}{6}\right)+\frac{7}{2}</mrow>
+          <mrow>\amp=x-\frac{7}{2}+\frac{7}{2}</mrow>
+          <mrow>\amp=x</mrow>
+        </md>
+        Since it is indeed the case that <m>(f \circ g)(x)=x</m> and <m>(g \circ f)(x)=x</m> for all <m>x</m>, <m>f</m> and <m>g</m> are inverses of one another.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Determine whether or not the functions <m>f(x)=x^2+6</m> and <m>g(x)=\sqrt{x-6}</m> are inverses of one another.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We need to determine whether or not it is always the case that the expressions <m>(f \circ g)(x)</m> and <m>(g \circ f)(x)</m> both simplify to <m>x</m>.
+        <md>
+          <mrow>(f \circ g)(x)\amp=f(g(x))</mrow>
+          <mrow>\amp=f\left(\sqrt{x-6}\right)</mrow>
+          <mrow>\amp=\left(\sqrt{x-6}\right)^2+6</mrow>
+          <mrow>\amp=x-6+6;\,\, x \ge 6</mrow>
+          <mrow>\amp=x;\,\, x \ge 6</mrow>
+        </md>
+        and
+        <md>
+          <mrow>(g \circ f)(x)\amp=g(f(x))</mrow>
+          <mrow>\amp=g(x^2+6)</mrow>
+          <mrow>\amp=\sqrt{x^2+6-6}</mrow>
+          <mrow>\amp=\sqrt{x^2}</mrow>
+          <mrow>\amp=\abs{x}</mrow>
+        </md>
+        Since <m>(g \circ f)(x)</m> does not simplify to <m>x</m>, <m>f</m> and <m>g</m> are not inverses of one another.
+      </p>
+    </solution>
+  </example>
+
+  <p>
+    In the last example, we could have simply noted that <m>f</m> is not a one-to-one function (e.g., <m>f(-1)=f(1))</m>) and, consequently, it is not the inverse of <alert>any</alert> function.  However, with a modification called a <term>restricted domain</term>, we can make <m>f</m> a one-to-one function and the inverse of <m>g</m> as well.  If we restrict the domain of <m>f</m> to <m>[0,\infty)</m>, then <m>f</m> becomes one-to-one and the evaluation of <m>(g \circ f)(x)</m> has one more line.
+    <md>
+      <mrow>(g \circ f)(x)\amp=g(f(x))</mrow>
+      <mrow>\amp=g(x^2+6);\,\,x \ge 0</mrow>
+      <mrow>\amp=\sqrt{x^2+6-6};\,\,x \ge 0</mrow>
+      <mrow>\amp=\sqrt{x^2};\,\,x \ge 0</mrow>
+      <mrow>\amp=\abs{x};\,\,x \ge 0</mrow>
+      <mrow>\amp=x;\,\,x \ge 0</mrow>
+    </md>
+    Now, because both <m>(f \circ g)(x)</m> and <m>(g \circ f)(x)</m> simplify to <m>x</m>, <m>f</m> and <m>g</m> are inverse functions.  That is, <m>f^{-1}(x)=g(x)</m> and <m>g^{-1}(x)=f(x)</m>.  We don't need to worry about the fact that the domains are neither all real numbers near even the same.  Remember, the domain of <m>f</m> is the range of <m>f^{-1}</m> and the domain of <m>f^{-1}</m> is the range of <m>f</m>.  There's nothing that says the two domains need to be the same. 
+  </p>
+  </paragraphs>
+  <paragraphs>
+    <title>Determining the Formula of an Inverse Function</title>
+    <p></p>
+  <p>
+    We now turn our attention to the determination of the formulas for inverse functions.  Let's assume that <m>y=f(x)</m> is a one-to-one function. To determine the formula for the inverse of <m>f</m>, we go through the following steps.
+    <ol label="1">
+      <li>
+        <p>
+          In lieu of writing <m>y=f(x)</m>, we exchange the placements of <m>x</m> and <m>y</m>, that is we write <m>x=f(y)</m> using the actual formula for <m>f</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          We then solve the resultant equation for <m>y</m>.  The formula on the other side of the equal sign from <m>y</m> is the formula for <m>f^{-1}</m>.
+        </p>
+      </li>
+    </ol>
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Determine the formula for <m>f^{-1}(x)</m> given that <m>f(x)=5x+2</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by noting that the ordered pairs in <m>f</m> satisfy the equation <m>y=5x+2</m>, so the ordered pairs in <m>f^{-1}</m> satisfy the equation <m>x=5y+2</m>.  We then isolate <m>y</m> in the second equation.
+        <md>
+          <mrow>x\amp=5y+2</mrow>
+          <mrow>x\subtractright{2}\amp=5y+2\subtractright{2}</mrow>
+          <mrow>x-2\amp=5y</mrow>
+          <mrow>\divideunder{x-2}{5}\amp=\divideunder{5y}{5}</mrow>
+          <mrow>\frac{1}{5}x-\frac{2}{5}\amp=y</mrow>
+        </md>
+        We conclude by stating that <me>f^{-1}(x)=\frac{1}{5}x-\frac{2}{5}</me>. The reader should confirm that both <m>(f \circ f^{-1})(x)=x</m> and <m>(f^{-1} \circ f)(x)=x</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Determine the formula for <m>g^{-1}(x)</m> given that <m>g(x)=\sqrt[3]{x+9}-2</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We being by noting that the ordered pairs in <m>g</m> satisfy the equation <m>y=\sqrt[3]{x+9}-2</m>, so the ordered pairs in <m>g^{-1}</m> satify the equation <m>x=\sqrt[3]{y+9}-2</m>.  We then isolate <m>y</m> in the second equation.
+        <md>
+          <mrow>x\amp=\sqrt[3]{y+9}-2</mrow>
+          <mrow>x\addright{2}\amp=\sqrt[3]{y+9}-2\addright{2}</mrow>
+          <mrow>x+2\amp=\sqrt[3]{y+9}</mrow>
+          <mrow>(x+2)^3\amp=\left(\sqrt[3]{y+9}\right)^3</mrow>
+          <mrow>(x+2)^3\amp=y+9</mrow>
+          <mrow>(x+2)^3\subtractright{9}\amp=y+9\subtractright{9}</mrow>
+          <mrow>(x+2)^3-9\amp=y</mrow>
+        </md>
+        We conclude by stating that <m>g^{-1}(x)=(x+2)^3-9</m>. The reader should confirm that both <m>(g \circ g^{-1})(x)=x</m> and <m>(g^{-1} \circ g)(x)=x</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Determine the formula for <m>h^{-1}(x)</m> given that <m>h(x)=\frac{x+7}{x-3}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by noting that the ordered pairs that make up <m>h</m> all satisfy the equation <m>y=\frac{x+7}{x-3}</m>, so the ordered pairs that make up <m>h^{-1}</m> all satisfy the equation <m>x=\frac{y+7}{y-3}</m>.  We the isolate <m>y</m> in the second equation.
+        <md>
+          <mrow>x\amp=\frac{y+7}{y-3}</mrow>
+          <mrow>\amp\highlight{\text{(we begin by clearing away the fraction)}}</mrow>
+          <mrow>x\multiplyright{(y-3)}\amp=\frac{y+7}{y-3}\multiplyright{(y-3)}</mrow>
+          <mrow>\amp\highlight{\text{(we go ahead and distribute on the left side of the equation)}}</mrow>
+          <mrow>xy-3x\amp=y+7</mrow>
+          <mrow>\amp\highlight{(\text{to isolate}\,y\,\text{we need all occurrences of}\,y\,\text{on the same side of}\,=)}</mrow>
+          <mrow>xy-3x\subtractright{y}\amp=y+7\subtractright{y}</mrow>
+          <mrow>xy-y-3x\amp=7</mrow>
+          <mrow>\amp\highlight{(\text{we need terms without factors of}\,y\,\text{on the other side of}\,=)}</mrow>
+          <mrow>xy-y-3x\addright{3x}\amp=7\addright{3x}</mrow>
+          <mrow>xy-y\amp=3x+7</mrow>
+          <mrow>\amp\highlight{(\text{we factor out}\,y\,\text{so that we know what to divide on the next line})}</mrow>
+          <mrow>y(x-1)\amp=3x+7</mrow>
+          <mrow>\divideunder{y(x-1)}{x-1}\amp=\divideunder{3x+7}{x-1}</mrow>
+          <mrow>y\amp=\frac{3x+7}{x-1}</mrow>
+        </md>
+      </p>
+      <p>
+        That was pretty intense.  Let's go ahead and check together.
+        <md>
+          <mrow>(h \circ h^{-1})(x)\amp=h(h^{-1}(x))</mrow>
+          <mrow>\amp=h\left(\frac{3x+7}{x-1}\right)</mrow>
+          <mrow>\amp=\frac{\frac{3x+7}{x-1}+7}{\frac{3x+7}{x-1}-3}</mrow>
+          <mrow>\amp=\frac{\frac{3x+7}{x-1}+7}{\frac{3x+7}{x-1}-3}\multiplyright{\frac{\frac{x-1}{1}}{\frac{x-1}{1}}}</mrow>
+          <mrow>\amp=\frac{3x+7+7(x-1)}{3x+7-3(x-1)}</mrow>
+          <mrow>\amp=\frac{3x+7+7x-7}{3x+7-3x+3}</mrow>
+          <mrow>\amp=\frac{10x}{10}</mrow>
+          <mrow>\amp=x</mrow>
+        </md>
+        and
+        <md>
+          <mrow>(h^{-1} \circ h)(x)\amp=h^{-1}(h(x))</mrow>
+          <mrow>\amp=h^{-1}\left(\frac{x+7}{x-3}\right)</mrow>
+          <mrow>\amp=\frac{3 \cdot \frac{x+7}{x-3}+7}{\frac{x+7}{x-3}-1}</mrow>
+          <mrow>\amp=\frac{\frac{3x+21}{x-3}+7}{\frac{x+7}{x-3}-1}\multiplyright{\frac{\frac{x-3}{1}}{\frac{x-3}{1}}}</mrow>
+          <mrow>\amp=\frac{3x+21+7(x-3)}{x+7-(x-3)}</mrow>
+          <mrow>\amp=\frac{3x+21+7(x-3)}{x+7-(x-3)}</mrow>
+          <mrow>\amp=\frac{3x+21+7x-21}{x+7-x+3}</mrow>
+          <mrow>\amp=\frac{10x}{10}</mrow>
+          <mrow>\amp=x</mrow>
+        </md>
+        So we can confidently conclude that <m>h^{-1}(x)=\frac{3x+7}{x-1}</m>.
+      </p>
+    </solution>
+  </example>
+  </paragraphs>
+  <paragraphs>
+    <title>Graphs of Inverse Functions</title>
+    <p></p>
+  <p>
+    When graphed, inverse functions display a special characteristic.
+  </p>
+  <p>
+    Suppose that two of the points of the function <m>f</m> are <m>(-5,2)</m> and <m>(3,6)</m>.  Then two of the points on the function <m>f^{-1}</m> are <m>(2,-5)</m> and <m>(6,3)</m>.  All four of the points are shown in <href ref="functions-inverses-figure-6">Figure</href>.
+  </p>
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <p>
+      The points with interchanged coordinates have been connected with line segments.  Note that both of these line segments are perpendicular to the line <m>y=x</m> and that the endpoints of thee line segment are equidistant from the line <m>y=x</m>.  We refer this phenomenon as <term>symmetry across the line <m>y=x</m></term>.  When graphed on the same grid, inverse function are always symmetric across the line <m>y=x</m>.
+    </p>
+
+
+    <figure xml:id="functions-inverses-figure-6">
+      <caption>Symmetry across <m>y=x</m></caption>
+      <image>
+        <description>
+          A graph consisting of the line <m>y=x</m> and two line segments.  One line segment extends from the <m>(3,6)</m> to the point <m>(6,3)</m>.  The other line segment extends from the point <m>(-5,2)</m> to the point <m>(2,-5)</m>.  Both line segments are perpendicular to the line <m>y=x</m> and the line <m>y=x</m> cuts both line segments in half.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}[axis equal image]
+              \addplot[primarycurve,color=gray,domain=-6.7:6.7] {x};
+              \addplot[soliddot] coordinates {(3,6)} node[below left] {(3,6)};
+              \addplot[soliddot] coordinates {(6,3)} node[below left] {(6,3)};
+              \addplot[primarycurve,color=gray,domain=-6.7:6.7] {x};
+              \addplot[soliddot,color=blue] coordinates {(-5,2)} node[above] {(-5,2)};
+              \addplot[soliddot,color=blue] coordinates {(2,-5)} node[right] {(2,-5)};
+              \addplot[interval,red] coordinates {(3,6) (6,3)};
+              \addplot[interval,blue] coordinates {(-5,2) (2,-5)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+
+  <example>
+    <statement>
+      <p>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            A function <m>g</m> is shown in <href ref="functions-inverses-figure-7">Figure</href>.  Sketch the graph of <m>g^{-1}</m>.
+          </p>
+
+          <figure xml:id="functions-inverses-figure-7">
+            <caption><m>y=g(x)</m></caption>
+            <image>
+              <description>
+                The graph of a function named <m>g</m>.  The function is everywhere increasing and concave up.  The function passes through the points <m>(-5,-5)</m>, <m>(-1,-4.5)</m>, <m>(0,-4)</m>, <m>(1,-3)</m>, <m>(2,-1)</m>, and <m>(3,3)</m>.  There are arrows at both ends of the function.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis}[axis equal image]
+                    \addplot[primarycurve,smooth,domain=-6.64:3.58] {2^(x)-5}; 
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by noting several points on <m>g</m> and the implied points on <m>g^{-1}</m>.  These are shown in <href ref="functions-inverses-table-3">Table</href> and <href ref="functions-inverses-table-4">Table</href>.
+      </p>
+      <sidebyside>
+
+        <table xml:id="functions-inverses-table-3">
+          <caption><m>y=g(x)</m></caption>
+          <tabular>
+            <col halign="center" />
+            <col halign="center" />
+            <row bottom="medium">
+              <cell><line><m>x</m></line></cell>
+              <cell><line><m>y</m></line></cell>
+            </row>
+            <row>
+              <cell><m>-5</m></cell>
+              <cell><m>-5</m></cell>
+            </row>
+            <row>
+              <cell><m>-1</m></cell>
+              <cell><m>-4.5</m></cell>
+            </row>
+            <row>
+              <cell><m>0</m></cell>
+              <cell><m>-4</m></cell>
+            </row>
+            <row>
+              <cell><m>1</m></cell>
+              <cell><m>-3</m></cell>
+            </row>
+            <row>
+              <cell><m>2</m></cell>
+              <cell><m>-1</m></cell>
+            </row>
+            <row>
+              <cell><m>3</m></cell>
+              <cell><m>3</m></cell>
+            </row>
+          </tabular>
+        </table>
+
+        <table xml:id="functions-inverses-table-4">
+          <caption><m>y=g(x)</m></caption>
+          <tabular>
+            <col halign="center" />
+            <col halign="center" />
+            <row bottom="medium">
+              <cell><line><m>x</m></line></cell>
+              <cell><line><m>y</m></line></cell>
+            </row>
+            <row>
+              <cell><m>-5</m></cell>
+              <cell><m>-5</m></cell>
+            </row>
+            <row>
+              <cell><m>-4.5</m></cell>
+              <cell><m>-1</m></cell>
+            </row>
+            <row>
+              <cell><m>-4</m></cell>
+              <cell><m>0</m></cell>
+            </row>
+            <row>
+              <cell><m>-3</m></cell>
+              <cell><m>1</m></cell>
+            </row>
+            <row>
+              <cell><m>-1</m></cell>
+              <cell><m>2</m></cell>
+            </row>
+            <row>
+              <cell><m>3</m></cell>
+              <cell><m>3</m></cell>
+            </row>
+          </tabular>
+        </table>
+
+      </sidebyside>
+
+      <sidebyside>
+
+        <p>
+          We the plot the know points on <m>g^{-1}</m> and the line <m>y=x</m>.  Finally we connect the dots and extend the curve keeping in mind the need to maintain symmetry across the line <m>y=x</m>.  This is all shown in <href ref="functions-inverses-figure-8">Figure</href>.
+        </p>.
+
+        <figure xml:id="functions-inverses-figure-8">
+          <caption><m>\highlightr{y=g(x)}</m> and <m>\highlight{y=g^{-1}(x)}</m></caption>
+          <image>
+            <description>
+              The graph of two functions, one named <m>g</m> and the other named <m>g</m>-inverse.  The function <m>g</m> is everywhere increasing and concave up. The function <m>g</m>-inverse is everywhere increasing and concave down.  The two functions intersect on the line <m>y=x</m> (which is also graphed) at the points <m>(-5,-5)</m> and <m>(3,3)</m>. The function <m>g</m> also passes through the points <m>(-1,-4.5)</m>, <m>(0,-4)</m>, <m>(1,-3)</m>, and <m>(2,-1)</m>. The function <m>g</m>-inverse also passes through the points <m>(-4,5,-1)</m>, <m>(-4,0)</m>, <m>(-3,1)</m>, and <m>(-1,2)</m>. There are arrows at both ends of both functions.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}[axis equal image]
+                  \addplot[primarycurve,smooth,domain=-6.64:3.58] {2^(x)-5};
+                  \addplot[primarycurve,smooth,color=blue,domain=-6.64:3.58] ({2^(x)-5},{x}); 
+                  \addplot[primarycurve,color=gray,domain=-6.7:6.7] {x};
+                  \addplot[soliddot,color=blue] coordinates {(-5,-5)}; 
+                  \addplot[soliddot,color=blue] coordinates {(-4.5,-1)}; 
+                  \addplot[soliddot,color=blue] coordinates {(-4,0)};
+                  \addplot[soliddot,color=blue] coordinates {(-3,1)}; 
+                  \addplot[soliddot,color=blue] coordinates {(-1,2)};
+                  \addplot[soliddot,color=blue] coordinates {(3,3)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+
+      </sidebyside>
+    </solution>
+  </example>
+
+  </paragraphs>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Verify that each stated pair of functions are in fact inverse functions by showing that both <m>(f \circ f^{-1})(x)</m> and <m>(f^{-1} \circ f)(x)</m> simplify to <m>x</m>.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=-\frac{1}{8}x+3</m> and <m>f^{-1}(x)=-8x+24</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>(f \circ f^{-1})(x)\amp=f(f^{-1}(x))</mrow>
+              <mrow>\amp=f(-8x+24)</mrow>
+              <mrow>\amp=-\frac{1}{8}(-8x+24)+3</mrow>
+              <mrow>\amp=x-3+3</mrow>
+              <mrow>\amp=x</mrow>
+            </md>
+            and
+            <md>
+              <mrow>(f^{-1} \circ f)(x)\amp=f^{-1}(f(x))</mrow>
+              <mrow>\amp=f^{-1}\left(-\frac{1}{8}x+3\right)</mrow>
+              <mrow>\amp=-8\left(-\frac{1}{8}x+3\right)+24</mrow>
+              <mrow>\amp=x-24+24</mrow>
+              <mrow>\amp=x</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=\frac{3-x}{7}</m> and <m>f^{-1}(x)=3-7x</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>(f \circ f^{-1})(x)\amp=f(f^{-1}(x))</mrow>
+              <mrow>\amp=f(3-7x)</mrow>
+              <mrow>\amp=\frac{3-(3-7x)}{7}</mrow>
+              <mrow>\amp=\frac{3-3+7x}{7}</mrow>
+              <mrow>\amp=\frac{7x}{7}</mrow>
+              <mrow>\amp=x</mrow>
+            </md>
+            and
+            <md>
+              <mrow>(f^{-1} \circ f)(x)\amp=f^{-1}(f(x))</mrow>
+              <mrow>\amp=f^{-1}\left(\frac{3-x}{7}\right)</mrow>
+              <mrow>\amp=3-7\left(\frac{3-x}{7}\right)</mrow>
+              <mrow>\amp=3-(3-x)</mrow>
+              <mrow>\amp=3-3+x</mrow>
+              <mrow>\amp=x</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=9(x-5)^2-8;\,\,x \ge 5</m> and <m>f^{-1}(x)=\frac{1}{3}\sqrt{x+8}+5</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>(f \circ f^{-1})(x)\amp=f(f^{-1}(x))</mrow>
+              <mrow>\amp=f\left(\frac{1}{3}\sqrt{x+8}+5\right)</mrow>
+              <mrow>\amp=9\left(\frac{1}{3}\sqrt{x+8}+5-5\right)^2-8</mrow>
+              <mrow>\amp=9\left(\frac{1}{3}\sqrt{x+8}\right)^2-8</mrow>
+              <mrow>\amp=9 \cdot \frac{1}{9}(x+8)-8;;\,\,x \ge -8</mrow>
+              <mrow>\amp=x+8-8;\,\,x \ge -8</mrow>
+              <mrow>\amp=x;\,\,x \ge -8</mrow>
+            </md>
+            and
+            <md>
+              <mrow>(f^{-1} \circ f)(x)\amp=f^{-1}(f(x))</mrow>
+              <mrow>\amp=f^{-1}\left(9(x-5)^2-8\right);\,\,x \ge 5</mrow>
+              <mrow>\amp=\frac{1}{3}\sqrt{9(x-5)^2-8+8}+5;\,\,x \ge 5</mrow>
+              <mrow>\amp=\frac{1}{3}\sqrt{9(x-5)^2}+5;\,\,x \ge 5</mrow>
+              <mrow>\amp=\frac{1}{3} \cdot 3(x-5)+5;\,\,x \ge 5</mrow>
+              <mrow>\amp=x-5+5;\,\,x \ge 5</mrow>
+              <mrow>\amp=x;\,\,x \ge 5</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=11-\sqrt[7]{6-2x}</m> and <m>f^{-1}(x)=-\frac{1}{2}(11-x)^7+3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>(f \circ f^{-1})(x)\amp=f(f^{-1}(x))</mrow>
+              <mrow>\amp=f\left(-\frac{1}{2}(11-x)^7+3\right)</mrow>
+              <mrow>\amp=11-\sqrt[7]{6-2\left(-\frac{1}{2}(11-x)^7+3\right)}</mrow>
+              <mrow>\amp=11-\sqrt[7]{6+(11-x)^7-6}</mrow>
+              <mrow>\amp=11-\sqrt[7]{(11-x)^7}</mrow>
+              <mrow>\amp=11-(11-x)</mrow>
+              <mrow>\amp=11-11+x</mrow>
+              <mrow>\amp=x</mrow>
+            </md>
+            and
+            <md>
+              <mrow>(f^{-1} \circ f)(x)\amp=f^{-1}(f(x))</mrow>
+              <mrow>\amp=f^{-1}\left(11-\sqrt[7]{6-2x}\right)</mrow>
+              <mrow>\amp=-\frac{1}{2}\left[11-\left(11-\sqrt[7]{6-2x}\right)\right]^7+3</mrow>
+              <mrow>\amp=-\frac{1}{2}\left[11-11+\sqrt[7]{6-2x}\right]^7+3</mrow>
+              <mrow>\amp=-\frac{1}{2}\left(\sqrt[7]{6-2x}\right)^7+3</mrow>
+              <mrow>\amp=-\frac{1}{2}(6-2x)+3</mrow>
+              <mrow>\amp=-3+x+3</mrow>
+              <mrow>\amp=x</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=\frac{x-7}{x}</m> and <m>f^{-1}(x)=\frac{7}{1-x}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>(f \circ f^{-1})(x)\amp=f(f^{-1}(x))</mrow>
+              <mrow>\amp=f\left(-\frac{7}{1-x}\right)</mrow>
+              <mrow>\amp=\frac{\frac{7}{1-x}-7}{\frac{7}{1-x}}</mrow>
+              <mrow>\amp=\frac{\frac{7}{1-x}-7}{\frac{7}{1-x}}\multiplyright{\frac{1-x}{1-x}}</mrow>
+              <mrow>\amp=\frac{7-7(1-x)}{7}</mrow>
+              <mrow>\amp=\frac{7-7+7x}{7}</mrow>
+              <mrow>\amp=\frac{7x}{7}</mrow>
+              <mrow>\amp=x</mrow>
+            </md>
+            and
+            <md>
+              <mrow>(f^{-1} \circ f)(x)\amp=f^{-1}(f(x))</mrow>
+              <mrow>\amp=f^{-1}\left(\frac{x-7}{x}\right)</mrow>
+              <mrow>\amp=\frac{7}{1-\frac{x-7}{x}}</mrow>
+              <mrow>\amp=\frac{7}{1-\frac{x-7}{x}}\multiplyright{\frac{x}{x}}</mrow>
+              <mrow>\amp=\frac{7x}{x-(x-7)}</mrow>
+              <mrow>\amp=\frac{7x}{x-x+7}</mrow>
+              <mrow>\amp=\frac{7x}{7}</mrow>
+              <mrow>\amp=x</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=\frac{x+3}{2-x}</m> and <m>f^{-1}(x)=\frac{2x-3}{x+1}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>(f \circ f^{-1})(x)\amp=f(f^{-1}(x))</mrow>
+              <mrow>\amp=f\left(\frac{2x-3}{x+1}\right)</mrow>
+              <mrow>\amp=\frac{\frac{2x-3}{x+1}+3}{2-\frac{2x-3}{x+1}}</mrow>
+              <mrow>\amp=\frac{\frac{2x-3}{x+1}+3}{2-\frac{2x-3}{x+1}}\multiplyright{\frac{x+1}{x+1}}</mrow>
+              <mrow>\amp=\frac{2x-3+3(x+1)}{2(x+1)-(2x-3)}</mrow>
+              <mrow>\amp=\frac{2x-3+3x+3}{2x+2-2x+3}</mrow>
+              <mrow>\amp=\frac{5x}{5}</mrow>
+              <mrow>\amp=x</mrow>
+            </md>
+            and
+            <md>
+              <mrow>(f^{-1} \circ f)(x)\amp=f^{-1}(f(x))</mrow>
+              <mrow>\amp=f^{-1}\left(\frac{x+3}{2-x}\right)</mrow>
+              <mrow>\amp=\frac{2 \cdot \frac{x+3}{2-x}-3}{\frac{x+3}{2-x}+1}</mrow>
+              <mrow>\amp=\frac{2 \cdot \frac{x+3}{2-x}-3}{\frac{x+3}{2-x}+1}\multiplyright{\frac{2-x}{2-x}}</mrow>
+              <mrow>\amp=\frac{2(x+3)-3(2-x)}{x+3+2-x}</mrow>
+              <mrow>\amp=\frac{2x+6-6+3x}{5}</mrow>
+              <mrow>\amp=\frac{5x}{5}</mrow>
+              <mrow>\amp=x</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          For each stated function, determine the formula for <m>f^{-1}(x)</m>.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=12x-8</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by noting that the ordered pairs in <m>f</m> satisfy the equation <m>y=12x-8</m>.  It follows that the ordered pairs in <m>f^{-1}</m> satisfy the equation <m>x=12y-8</m>.  This latter equation needs to be solved for <m>y</m>.
+            <md>
+              <mrow>x\amp=12y-8</mrow>
+              <mrow>x\addright{8}\amp=12y-8\addright{8}</mrow>
+              <mrow>x+8\amp=12y</mrow>
+              <mrow>\divideunder{x+8}{12}\amp=\divideunder{12y}{12}</mrow>
+              <mrow>\frac{1}{12}x+\frac{2}{3}=y</mrow>
+            </md>
+            We conclude that <m>f^{-1}(x)=\frac{1}{12}x+\frac{2}{3}</m> (after checking the answer, of course).
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=-\frac{2}{9}x+\frac{4}{9}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by noting that the ordered pairs in <m>f</m> satisfy the equation <m>y=-\frac{2}{9}x+\frac{4}{9}</m>.  It follows that the ordered pairs in <m>f^{-1}</m> satisfy the equation <m>x=-\frac{2}{9}y+\frac{4}{9}</m>.  This latter equation needs to be solved for <m>y</m>.
+            <md>
+              <mrow>x\amp=-\frac{2}{9}y+\frac{4}{9}</mrow>
+              <mrow>x\subtractright{\frac{4}{9}}\amp=-\frac{2}{9}y+\frac{4}{9}\subtractright{\frac{4}{9}}</mrow>
+              <mrow>x-\frac{4}{9}\amp=-\frac{2}{9}y</mrow>
+              <mrow>\multiplyleft{-\frac{9}{2}}\left(x-\frac{4}{9}\right)\amp=\multiplyleft{-\frac{9}{2}}-\frac{2}{9}y</mrow>
+              <mrow>-\frac{9}{2}x+2\amp=y</mrow>
+            </md>
+            We conclude that <m>f^{-1}(x)=-\frac{9}{2}x+2</m> (after checking the answer, of course :).
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=8-\sqrt[3]{2x+8}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by noting that the ordered pairs in <m>f</m> satisfy the equation <m>y=8-\sqrt[3]{2x+8}</m>.  It follows that the ordered pairs in <m>f^{-1}</m> satisfy the equation <m>x=8-\sqrt[3]{2y+8}</m>.  This latter equation needs to be solved for <m>y</m>.
+            <md>
+              <mrow>x\amp=8-\sqrt[3]{2y+8}</mrow>
+              <mrow>x\subtractright{8}\amp=8-\sqrt[3]{2y+8}\subtractright{8}</mrow>
+              <mrow>x-8\amp=-\sqrt{2y+8}</mrow>
+              <mrow>\multiplyleft{-1}(x-8)\amp=\multiplyleft{-1}-\sqrt{2y+8}</mrow>
+              <mrow>-x+8\amp=\sqrt[3]{2y+8}</mrow>
+              <mrow>(-x+8)^3\amp=\left(\sqrt[3]{2y+8}\right)^3</mrow>
+              <mrow>(-x+8)^3\amp=2y+8</mrow>
+              <mrow>(-x+8)^3\subtractright{8}\amp=2y+8\subtractright{8}</mrow>
+              <mrow>(-x+8)^3-8\amp=2y</mrow>
+              <mrow>\divideunder{(-x+8)^3-8}{2}\amp=\divideunder{2y}{2}</mrow>
+              <mrow>\frac{1}{2}(-x+8)^3-4\amp=y</mrow>.
+            </md>
+            We conclude that <m>f^{-1}(x)=\frac{1}{2}(-x+8)^3-4</m> (once we've checked, that is).
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=2\sqrt[5]{11-x}+22</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by noting that the ordered pairs in <m>f</m> satisfy the equation <m>y=2\sqrt[5]{11-x}+22</m>.  It follows that the ordered pairs in <m>f^{-1}</m> satisfy the equation <m>x=2\sqrt[5]{11-y}+22</m>.  This latter equation needs to be solved for <m>y</m>.
+            <md>
+              <mrow>x\amp=2\sqrt[5]{11-y}+22</mrow>
+              <mrow>x\subtractright{22}\amp=2\sqrt[5]{11-y}+22\subtractright{22}</mrow>
+              <mrow>x-22\amp=2\sqrt[5]{11-y}</mrow>
+              <mrow>\divideunder{x-22}{2}\amp=\divideunder{2\sqrt[5]{11-y}}{2}</mrow>
+              <mrow>\frac{1}{2}x-11\amp=\sqrt[5]{11-y}</mrow>
+              <mrow>\left(\frac{1}{2}x-11\right)^5\amp=\left(\sqrt[5]{11-y}\right)^5</mrow>
+              <mrow>\left(\frac{1}{2}x-11\right)^5\amp=11-y</mrow>
+              <mrow>\left(\frac{1}{2}x-11\right)^5\subtractright{11}\amp=11-y\subtractright{11}</mrow>
+              <mrow>\left(\frac{1}{2}x-11\right)^5-11\amp=-y</mrow>
+              <mrow>\multiplyleft{-1}\left[\left(\frac{1}{2}x-11\right)^5-11\right]\amp=\multiplyleft{-1}-y</mrow>
+              <mrow>-\left(\frac{1}{2}x-11\right)^5+11\amp=y</mrow>
+            </md>
+            We conclude that <m>f^{-1}(x)=-\left(\frac{1}{2}x-11\right)^5+11</m> (once we've thoroughly checked).
+          </p>
+        </solution>
+      </exercise>
+
+       <exercise>
+        <statement>
+          <p>
+            <m>f(x)=\frac{x}{x-12}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by noting that the ordered pairs in <m>f</m> satisfy the equation <m>y=\frac{x}{x-12}</m>.  It follows that the ordered pairs in <m>f^{-1}</m> satisfy the equation <m>x=\frac{y}{y-12}</m>.  This latter equation needs to be solved for <m>y</m>.
+            <md>
+              <mrow>x\amp=\frac{y}{y-12}</mrow>
+              <mrow>x\multiplyright{(y-12)}\amp=\frac{y}{y-12}\multiplyright{(y-12)}</mrow>
+              <mrow>xy-12x\amp=y</mrow>
+              <mrow>xy-12x\subtractright{y}\amp=y\subtractright{y}</mrow>
+              <mrow>xy-12x-y\amp=0</mrow>
+              <mrow>xy-12x-y\addright{12x}\amp=0\addright{12x}</mrow>
+              <mrow>xy-y\amp=12x</mrow>
+              <mrow>y(x-1)\amp=12x</mrow>
+              <mrow>\divideunder{y(x-1)}{x-1}\amp=\divideunder{12x}{x-1}</mrow>
+              <mrow>y\amp=\frac{12x}{x-1}</mrow>
+            </md>
+            We conclude that <m>f^{-1}(x)=\frac{12x}{x-1}</m> (upon check, of course.).
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=\frac{2x+3}{4-x}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by noting that the ordered pairs in <m>f</m> satisfy the equation <m>y=\frac{2x+3}{4-x}</m>.  It follows that the ordered pairs in <m>f^{-1}</m> satisfy the equation <m>x=\frac{2y+3}{4-y}</m>.  This latter equation needs to be solved for <m>y</m>.
+            <md>
+              <mrow>x\amp=\frac{2y+3}{4-y}</mrow>
+              <mrow>x\multiplyright{(4-y)}\amp=\frac{2y+3}{4-y}\multiplyright{(4-y)}</mrow>
+              <mrow>4x-xy\amp=2y+3</mrow>
+              <mrow>4x-xy\addright{xy}\amp=2y+3\addright{xy}</mrow>
+              <mrow>4x\amp=2y+3+xy</mrow>
+              <mrow>4x\subtractright{3}\amp=2y+3+xy\subtractright{3}</mrow>
+              <mrow>4x-3\amp=2y+xy</mrow>
+              <mrow>4x-3\amp=y(x+2)</mrow>
+              <mrow>\divideunder{4x-3}{x+2}\amp=\divideunder{y(x+2)}{x+2}</mrow>
+              <mrow>\frac{4x-3}{x+2}\amp=y</mrow>
+            </md>
+            We conclude that <m>f^{-1}(x)=\frac{4x-3}{x+2}</m> (oh yeah, I checked, as should you :).
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Draw the inverse of each graphed function.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <figure xml:id="functions-inverses-figure-1-exercises">
+            <caption><m>\highlightr{y=f(x)}</m></caption>
+            <image width="47%">
+              <description>
+                The graph of function named <m>f</m>.  The function is linear and passes through the points <m>(0,-3)</m> and <m>(2,1)</m>.  There are arrows at both ends of the function.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis}[axis equal image]
+                    \addplot[primarycurve,smooth,domain=-1.95:4.95] {2*x-3}; 
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </statement>
+        <solution>
+          <figure xml:id="functions-inverses-figure-2-exercises">
+            <caption><m>\highlightr{y=f(x)}</m> and <m>\highlight{y=f^{-1}(x)}</m></caption>
+            <image width="47%">
+              <description>
+                The graph of two functions, one named <m>f</m> and the other named <m>f</m>-inverse.  The function <m>f</m> is linear and passes through the points <m>(0,-3)</m> and <m>(2,1)</m>. The function <m>f</m>-inverse is also linear and passes through the points <m>(-3,0)</m> and <m>(1,2)</m>.  The functions are mirror images across the line <m>y=x</m> (which is also graphed). There are arrows at both ends of the function.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis}[axis equal image]
+                    \addplot[primarycurve,smooth,domain=-1.95:4.95] {2*x-3};
+                    \addplot[primarycurve,smooth,color=blue,domain=-6.95:6.95] {.5*x+1.5};
+                    \addplot[primarycurve,smooth,color=gray,domain=-6.95:6.95] {x};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <figure xml:id="functions-inverses-figure-3-exercises">
+            <caption><m>\highlightr{y=g(x)}</m></caption>
+            <image width="47%">
+              <description>
+                The graph of a function named <m>g</m>.  The function is the the right half of a downward opening parabola.  There is a solid dot at the vertex of the parabola which lies at the point <m>(-4,6)</m>.  The half-parabola also passes through the points <m>(-2,5)</m>, <m>(-1,4)</m>, <m>(0,2)</m>, and <m>(2,-3)</m>.  There is an arrow at the end of the right side of the curve.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis}[axis equal image]
+                    \addplot[primarycurve,smooth,domain=-4:3.15,-{Stealth}] {6-.25*(x+4)^2};
+                    \addplot[soliddot] coordinates {(-4,6)}; 
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </statement>
+        <solution>
+          <figure xml:id="functions-inverses-figure-4-exercises">
+            <caption><m>\highlightr{y=g(x)}</m> and <m>\highlight{y=g^{-1}(x)}</m></caption>
+            <image width="47%">
+              <description>
+                The graph of two functions, one named <m>g</m> and the other named <m>g</m>-inverse.  The function <m>g</m> is the the right half of a downward opening parabola. The function <m>g</m>-inverse is the top half of a leftward opening parabola. There is a solid dot at the vertex of the function <m>g</m> which lies at the point <m>(-4,6)</m>.  The function <m>g</m> also passes through the points <m>(-2,5)</m>, <m>(-1,4)</m>, <m>(0,2)</m>, and <m>(2,-3)</m>. There is a solid dot at the vertex of the function <m>g</m>-inverse which lies at the point <m>(6,-4)</m>.  The function <m>g</m>-inverse also passes through the points <m>(5,-2)</m>, <m>(4,-1)</m>, <m>(2,0)</m>, and <m>(-3,2)</m>. The two functions are mirror images across the line <m>y=x</m> (which is also graphed). There is an arrow at the end of the right side of the function <m>g</m> and an arrow at the end of the left side of <m>g</m>-inverse.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis}[axis equal image]
+                    \addplot[primarycurve,smooth,domain=-4:3.15,-{Stealth}] {6-.25*(x+4)^2};
+                    \addplot[soliddot] coordinates {(-4,6)}; 
+                    \addplot[primarycurve,smooth,color=blue,domain=-4:3.15,-{Stealth}] ({6-.25*(x+4)^2},{x});
+                    \addplot[soliddot,color=blue] coordinates {(6,-4)}; 
+                    \addplot[primarycurve,smooth,color=gray,domain=-6.95:6.95] {x};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <figure xml:id="functions-inverses-figure-5-exercises">
+            <caption><m>\highlightr{y=k(x)}</m></caption>
+            <image width="47%">
+              <description>
+                The graph of a function named <m>k</m>.  The function extends from the point <m>(-4,-5)</m> to the point <m>(5,4)</m>.  There are solid dots at both ends of the function. The function is symmetric about the origin.  The function is increasing, concave up in Quadrant III and increasing, concave down in Quadrant I.  The function asses through the origin.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis}[axis equal image]
+                    \addplot[primarycurve,smooth,domain=-4:4,-] {5*sin(22.5*x)};
+                    \addplot[soliddot] coordinates {(-4,-5)};
+                    \addplot[soliddot] coordinates {(4,5)}; 
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </statement>
+        <solution>
+          <figure xml:id="functions-inverses-figure-6-exercises">
+            <caption><m>\highlightr{y=k(x)}</m> and <m>\highlight{y=k^{-1}(x)}</m></caption>
+            <image width="47%">
+              <description>
+                The graph of two functions, one named <m>k</m> and the other named <m>k</m>-inverse. The functions intersect at the origin. The function <m>k</m> extends from the point <m>(-4,-5)</m> to the point <m>(4,5)</m>. The function <m>k</m>-inverse extends from the point <m>(-5,-4)</m> to the point <m>(5,4)</m>.  There are solid dots at both ends of both functions. Both functions are symmetric about the origin.  The function <m>k</m> is increasing, concave up in Quadrant III and increasing, concave down in Quadrant I.  The function <m>k</m>-inverse is increasing, concave down in Quadrant III and increasing, concave up in Quadrant I.  The functions are mirror images across the line <m>y=x</m> (which is also graphed).
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis}[axis equal image]
+                    \addplot[primarycurve,smooth,domain=-4:4,-] {5*sin(22.5*x)};
+                    \addplot[soliddot] coordinates {(-4,-5)};
+                    \addplot[soliddot] coordinates {(4,5)}; 
+                    \addplot[primarycurve,smooth,color=blue,domain=-4:4,-] ({5*sin(22.5*x)},{x});
+                    \addplot[soliddot,color=blue] coordinates {(-5,-4)};
+                    \addplot[soliddot,color=blue] coordinates {(5,4)}; 
+                    \addplot[primarycurve,smooth,color=gray,domain=-6.95:6.95] {x};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+</section>
+    

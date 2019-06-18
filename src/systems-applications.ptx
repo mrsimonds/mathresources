@@ -12,9 +12,127 @@
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="systems-applications">
     <title>Applications of Systems of Linear Equations</title>
 
+    <paragraphs>
+      <title>Interest Problems</title>
+      <p></p>
       <p>
-        When presented with an application problem with two unknowns, it can be helpful to arrange the information in a table from which we can infer two equations.  Let's see a few examples. 
+        When presented with an application problem with two unknowns, it can be helpful to arrange the information in a table from which we can infer two equations.  For example, let's consider the following situation. 
       </p>
+      <p>
+        Suppose that at the beginning of 2018 Damien had a balance of exactly $9000 in an IRA account.  Part of the money was invested in a safe bond that earned 3% interest over the course of 2018.  The remaining money was invested in a mutual fund (consisting of stocks) that earned 11% "interest" over the course of 2018.  Over the course of that year Damien's IRA account earned a total of $694 in "interest".  We're going to determine how much Damien had invested in the bond account and how much he had invested in the mutual fund account, but before we do that let's explore the problem numerically using <xref ref="systems-applications-geogebra-1">Figure</xref>.
+      </p>
+      <p>
+        The slider in the application controls how much money is invested in the bond account.  Before changing the value, get out your calculator and make sure that you understand how all of the figures in the table are derived.  For example, the value found in the position that corresponds to the bond interest is 0.03 times the value the corresponds to the bond's initial balance.  How are the other figures in the table derived?  Once you've got that figured out, go ahead and use the slider to determine how much is invested in each account if the total amount of interest earned over 2018 was $694.
+      </p>
+
+      <figure xml:id="systems-applications-geogebra-1">
+        <caption>Explore Scenarios for Damien's IRA account</caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/systems-interest-problem.ggb">
+            setPerspective("G");
+            setAxesVisible(0,0);
+          </slate>
+        </interactive>
+      </figure>
+
+      <p>
+        OK, let's now solve the problem using a system of linear equations.  Let's let <m>x</m>represent the amount ($) that Damion invested  in the bond and <m>y</m> represent the amount that was invested in the mutual fund account.  The the amount's ($) of interest earned by the two accounts were <m>0.03x</m> and <m>0.11y</m>.  This information is summarized in <xref ref="systems-applications-table-damien">Table</xref>.
+      </p>
+      <table xml:id="systems-applications-table-damien">
+        <caption>Damien's IRA Account</caption>
+        <tabular>
+        <col halign="left"/>
+        <col halign="center"/>
+        <col halign="center"/>
+        <col halign="center"/>
+        <row>
+          <cell>
+          </cell>
+          <cell>
+            <line>Bond Account</line>
+          </cell>
+          <cell>
+            <line>Mutual Fund Account</line>
+          </cell>
+          <cell>
+            <line>Total</line>
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Amount at start of 2018 ($)
+          </cell>
+          <cell>
+            <m>x</m>
+          </cell>
+          <cell>
+             <m>y</m>
+          </cell>
+          <cell>
+            <m>9,000</m>
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Interest Earned ($)
+          </cell>
+          <cell>
+            <m>0.03x</m>
+          </cell>
+          <cell>
+            <m>0.11y</m>
+          </cell>
+          <cell>
+            <m>694</m>
+          </cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      In each row of <xref ref="systems-applications-table-damien">Table</xref>, the amounts in the first two columns need to sum to the amount in the third column.  This gives us the following system of equations.
+      <me>
+        \left\{
+          \begin{aligned}
+            x+y\amp=9000\\
+            0.03x+0.11y\amp=694\\
+          \end{aligned}
+        \right.
+      </me>
+      We can eliminate <m>x</m> from the system by multiplying both sides of the first equation by <m>-0.03</m> and then adding the respective sides of the two equations.
+      <me>
+        \left\{
+          \begin{aligned}
+            \multiplyleft{-0.03}{x+y}\amp=\multiplyleft{-0.03}{9000}\\
+            0.03x+0.11y\amp=694\\
+          \end{aligned}
+        \right.
+      </me>
+      <me>
+        \left\{
+          \begin{aligned}
+            -0.03x-0.03y\amp=-270\\
+            0.03x+0.11y\amp=694\\
+          \end{aligned}
+        \right.
+      </me>
+      Adding the respective sides of the equations results in <m>0.08y=424</m>.  Let's solve this for <m>y</m>.
+      <md>
+        <mrow>0.08y\amp=424</mrow>
+        <mrow>\divideunder{0.08y}{0.08}\amp=\divideunder{424}{0.08}</mrow>
+        <mrow>y\amp=5300</mrow>
+      </md>
+      Since <m>x</m> and <m>y</m> must sum to <m>9000</m>, we have
+      <md>
+        <mrow>x\amp=9000-y</mrow>
+        <mrow>\amp=9000-5300</mrow>
+        <mrow>\amp=3700</mrow>
+      </md>
+      In conclusion, at the start of 2018 Damien had $3700 invested in his IRA bond account and $5300 invested in his IRA mutual fund account.
+    </p>
+    <p>
+      Let's see another example of an interest situation before moving on to other types of problems.
+    </p>
 
       <example>
         <statement>
@@ -128,25 +246,140 @@
         </p>
       </solution>
     </example>
+  </paragraphs>
+  <paragraphs>
+    <title>Acid Mixture Problems</title>
+    <p></p>
+    <p>
+      Let's consider the following scenario.
+    </p>
+    <p>
+      Jim and Jim are lab partners in chemistry class.  The two Jim's are tasked with the creation of 3 liters of a solution that is 35.2% acid and 64.8% water.  They have two solutions to work with.  One of the existing solutions is 40% acid (and 60% water) while the other is 28% acid (and 72% water).  How much of each solution should the Jim's use in their mixture?
+    </p>
+    <p>
+      Let's explore this scenario before we jump into creating an algebraic model for the problem.  Grab a calculator and use <xref ref="systems-applications-geogebra-2">Figure</xref> to explore what happens when we change the amount of each solution used.
+    </p>
+    <p>
+      Do you see how we calculate the amount of acid in the two given acid solutions based upon the amount of solution added to he mixture?  In the case of the 40% acid solution, we multiply the amount of solution used by 0.40.  In both rows the figures in the mixture column are just the sums of the first two columns in that row.  Finally, the percentage at the top is determined by dividing the amount of acid in the mixture by the total amount of solution (3 liters) and then multiplying by 100.
+    </p>
+
+    <figure xml:id="systems-applications-geogebra-2">
+      <caption>Explore Scenarios for the Jim's Mixture Problem</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/systems-acid-problem.ggb">
+          setPerspective("G");
+          setAxesVisible(0,0);
+        </slate>
+      </interactive>
+    </figure>
+
+    <p>
+      OK, let's get to creating and solving an algebraic model for the problem.
+    </p>      
+    <p>
+      Let's define <m>x</m> to be the amount (liters) of 40% acid solution that should be used and <m>y</m> be the amount (liters) of 28% acid solution that should be used.  Let's note that the amount of acid in the final solution is 35.3% of 3 liters which is 1.056 liters.  The information in the problem is summarized in <xref ref="systems-applications-table-2">Table</xref>.
+    </p>
+    <table xml:id="systems-applications-table-2">
+      <caption>Jim and Jim are fixin' to do some mixin'</caption>
+        <tabular>
+          <col halign="left"/>
+          <col halign="center"/>
+          <col halign="center"/>
+          <col halign="center"/>
+          <row>
+            <cell>
+            </cell>
+            <cell>
+              <line>40% acid</line>
+            </cell>
+            <cell>
+              <line>28% acid</line>
+            </cell>
+            <cell>
+              <line>New solution (35.2% acid)</line>
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Total amount of solution (l)
+            </cell>
+            <cell>
+              <m>x</m>
+            </cell>
+            <cell>
+              <m>y</m>
+            </cell>
+            <cell>
+              <m>3</m>
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Amount of acid in solution (l)
+            </cell>
+            <cell>
+              <m>0.40x</m>
+            </cell>
+            <cell>
+              <m>0.28y</m>
+            </cell>
+            <cell>
+              <m>1.056</m>
+            </cell>
+          </row>
+        </tabular>
+      </table>
+      <p></p>
+      <p>
+        In both rows of the table, the amounts of the two existing solutions need to sum to the amount in the new solution.  This leads to the following system of equations.
+        <me>
+          \left\{
+            \begin{aligned}
+              x+y\amp=3\\
+              .40x+.28y\amp=1.056\\
+            \end{aligned}
+          \right.
+        </me>
+        From the first equation we can see that <m>y=3-x</m>.  Let's substitute <m>3-x</m> for <m>y</m> in the second equation and solve the resultant equation for <m>x</m>.
+        <md>
+          <mrow>.40x+.28\highlight{y}\amp=1.056</mrow>
+          <mrow>.40x+.28(\highlight{3-x})\amp=1.056</mrow>
+          <mrow>.40x+.84-.28x\amp=1.056</mrow>
+          <mrow>.12x+.84\amp=1.056</mrow>
+          <mrow>.12x+.84\subtractright{.84}\amp=1.056\subtractright{.84}</mrow>
+          <mrow>.12\amp=.216</mrow>
+          <mrow>\divideunder{.12}{.12}\amp=\divideunder{.216}{.12}</mrow>
+          <mrow>x\amp=1.8</mrow>
+        </md>
+        Since the two amounts sum to 3, it must be the case that <m>y=1.2</m>.  Let's check the values in the acid equation.
+        <md>
+          <mrow>.40(\highlight{1.8})+.28(\highlightr{1.2})\amp=1.056\,?</mrow>
+          <mrow>.72+.336\amp=1.056\,?</mrow>
+          <mrow>1.056\amp=1.056\,\checkmark</mrow>
+        </md>
+        The two Jim's need to mix 1.8 liters of the  40% acid solution with 1.2 liters of the 28% solution.
+      </p>
+    <p>
+      Let's see another example.
+    </p>
 
     <example>
       <statement>
         <p>
-          Jim and Jim are lab partners in chemistry class.  The two Jim's are tasked with the creation of 3 liters of a solution that is 35.2% acid and 64.8% water.  They have two solutions to work with.  One of the existing solutions is 40% acid (and 60% water) while the other is 28% acid (and 72% water).  How much of each solution should the Jim's use in their mixture?
+          Clarise and Nahid are lab partners mixing up some acid.  They have two solutions to work with, one of which is 40% acid (and 60% water) and the other is 10% acid (and 90% water).  They need to create 4 liters of solution that is 23.5% acid (and 76.5% water).  How much of each solution should the parters use in their mixture?
         </p>
       </statement>
       <solution>
         <p>
-          Let's define <m>x</m> to be the amount (liters) of 40% acid solution that should be used and <m>y</m> be the amount (liters) of 28% acid solution that should be used.  Let's note that the amount of acid in the final solution is 35.3% of 3 liters which is 1.056 liters.  The information in the problem is summarized in <xref ref="systems-applications-table-2">Table</xref>.
+          Let's let <m>x</m> represent the amount (liters) of the 40% acid solution used and <m>y</m> represent the amount (liters) of 10% acid solution used.  Let's note that the amount of acid in the mixture needs to be 23.5% of 4 liters which is 0.94 liters. The information in the problem is summarized in <xref ref="systems-applications-table-22">Table</xref>.
         </p>
-        <p>
-          <table xml:id="systems-applications-table-2">
-            <caption>Jim and Jim are fixin' to do some mixin'</caption>
-              <tabular>
-                <col halign="left"/>
-                <col halign="center"/>
-                <col halign="center"/>
-                <col halign="center"/>
+        <table xml:id="systems-applications-table-22">
+          <caption>Nahid and Clarises' Solution</caption>
+            <tabular>
+              <col halign="left"/>
+              <col halign="center"/>
+              <col halign="center"/>
+              <col halign="center"/>
                 <row>
                   <cell>
                   </cell>
@@ -154,10 +387,10 @@
                     <line>40% acid</line>
                   </cell>
                   <cell>
-                    <line>28% acid</line>
+                    <line>10% acid</line>
                   </cell>
                   <cell>
-                    <line>New solution (35.2% acid)</line>
+                    <line>New solution (23.5% acid)</line>
                   </cell>
                 </row>
                 <row>
@@ -171,7 +404,7 @@
                     <m>y</m>
                   </cell>
                   <cell>
-                    <m>2</m>
+                    <m>4</m>
                   </cell>
                 </row>
                 <row>
@@ -179,51 +412,63 @@
                     Amount of acid in solution (l)
                   </cell>
                   <cell>
-                    <m>.40x</m>
+                    <m>0.40x</m>
                   </cell>
                   <cell>
-                    <m>.28y</m>
+                    <m>0.28y</m>
                   </cell>
                   <cell>
-                    <m>1.056</m>
+                    <m>0.94</m>
                   </cell>
                 </row>
               </tabular>
-          </table>
-        </p>
-        <p></p>
-        <p>
-          In both rows of the table, the amounts of the two existing solutions need to sum to the amount in the new solution.  This leads to the following system of equations.
-          <me>
-            \left\{
-              \begin{aligned}
-                x+y\amp=3\\
-                .40x+.28y\amp=1.056\\
-              \end{aligned}
-            \right.
-          </me>
-          From the first equation we can see that <m>y=3-x</m>.  Let's substitute <m>3-x</m> for <m>y</m> in the second equation and solve the resultant equation for <m>x</m>.
-          <md>
-            <mrow>.40x+.28\highlight{y}\amp=1.056</mrow>
-            <mrow>.40x+.28(\highlight{3-x})\amp=1.056</mrow>
-            <mrow>.40x+.84-.28x\amp=1.056</mrow>
-            <mrow>.12x+.84\amp=1.056</mrow>
-            <mrow>.12x+.84\subtractright{.84}\amp=1.056\subtractright{.84}</mrow>
-            <mrow>.12\amp=.216</mrow>
-            <mrow>\divideunder{.12}{.12}\amp=\divideunder{.216}{.12}</mrow>
-            <mrow>x\amp=1.8</mrow>
-          </md>
-          Since the two amounts sum to 3, it must be the case that <m>y=1.2</m>.  Let's check the values in the acid equation.
-          <md>
-            <mrow>.40(\highlight{1.8})+.28(\highlightr{1.2})\amp=1.056\,?</mrow>
-            <mrow>.72+.336\amp=1.056\,?</mrow>
-            <mrow>1.056\amp=1.056\,\checkmark</mrow>
-          </md>
-          The two Jim's need to mix 1.8 liters of the  40% acid solution with 1.2 liters of the 28% solution.
-        </p>
-      </solution>
-    </example>
+            </table>
+            <p></p>
+            <p>
+              For each row, the figures in the first two columns need to sum to the figure in the third column.  This leads to the following system of equations.
+              <me>
+                \left\{
+                  \begin{aligned}
+                    x+y\amp=4\\
+                    .40x+.10y\amp=0.94\\
+                  \end{aligned}
+                \right.
+              </me>
+              We can eliminate <m>y</m> from the equation by multiplying both sides of teh first equation by <m>-0.10</m> and then adding together the respective ides of the two equations.  Let's do that.
+              <me>
+                \left\{
+                  \begin{aligned}
+                    \multiplyleft{-0.10}{x+y}\amp=\multiplyleft{-0.10}{4}\\
+                    .40x+.10y\amp=0.94\\
+                  \end{aligned}
+                \right.
+              </me>
+              <me>
+                \left\{
+                  \begin{aligned}
+                    -.10x-.10y\amp=-.4\\
+                    .40x+.10y\amp=0.94\\
+                  \end{aligned}
+                \right.
+              </me>
+              Adding the respective sides of the equations results in the equation <m>0.30x=0.54</m>.  Let's solve this last equation for <m>x</m>.
+              <md>
+                <mrow>0.30x\amp=0.54</mrow>
+                <mrow>\divideunder{0.30x}{0.30}\amp=\divideunder{0.54}{0.30}</mrow>
+                <mrow>x\amp=1.8</mrow>
+              </md>
+              Since the two variables need to sum to <m>4</m>, it must be the case that <m>y=2.2</m>.
+            </p>
+            <p>
+              In conclusion, the aspiring chemists need to use 1.8 liters of the 40% acid solution and 2.2 liters of the 10% solution.
+            </p>
+          </solution>
+        </example>
 
+  </paragraphs>
+  <paragraphs>
+    <title>Distance/Rate/Time Problems</title>
+    <p></p>
     <p>
       In the equation <m>D=rt</m>,  <m>D</m> represents distance,  <m>r</m> represents rate (speed), and  <m>t</m> represents time.  For example, if you drive at a constant speed of 65 mph for 2 hours, then the total distance covered over those hours is determined as follows.
       <md>
@@ -237,91 +482,105 @@
         <mrow>\amp=\frac{175\,\text{miles}}{70\frac{\text{miles}}{\text{hr}}}</mrow>
         <mrow>\amp=2.5\,\text{hr}</mrow>
       </md>
-        The equation <m>D=rt</m> and its variations \left(e.g. <m>t=\frac{D}{r}</m>\right) frequently come into play when solving applications involving moving objects.  Let's see a couple of examples.
+        The equation <m>D=rt</m> and its variations <m>\left(\text{e.g.},\,t=\frac{D}{r}\right)</m> frequently come into play when solving applications involving moving objects.  Let's see a couple of examples.
+    </p>
+    <p>
+      Let's consider the following scenario.
+    </p>
+    <p>
+      Chao and Elyse are in separate cars both driving on I-65.  At noon one day Elyse (driving north) passes Chao (driving south).  For the next 15 minutes each car maintains the exact speed they were traveling at noon.  By 12:15 pm that day the distance (along the highway) between the two cars was 33.75 miles.  During those 15 minutes Elyse's constant speed was 9 mph faster than Chao's constant speed.  Determine the constant speeds that  were maintained by the two drivers over those 15 minutes.
+    </p>
+    <p>
+      Before jumping into the algebra, let's use <xref ref="systems-applications-geogebra-4">Figure</xref> to numerically explore the problem.  Notice that the ime unit is hours to agree with the time component of the rate unit (miles/hour).  In each row the distance is simply the product of the rate and time.  Finally, the distance stated at the top is the sum of the two distances found in the table.
     </p>
 
-    <example>
-      <statement>
-        <p>
-          Chao and Elyse are in separate cars both driving on I-65.  At noon one day Elyse (driving north) passes Chao (driving south).  For the next 15 minutes each car maintains the exact speed they were traveling at noon.  By 12:15 pm that day the distance (along the highway) between the two cars was 33.75 miles.  During those 15 minutes Elyse's constant speed was 9 mph faster than Chao's constant speed.  Determine the constant speeds that  were maintained by the two drivers over those 15 minutes.
-        </p>
-      </statement>
-      <solution>
-        <p>
-          Let <m>x</m> represent the constant speed (mph) maintained by Elyse and <m>y</m> represent the constant speed (mph) maintained by Chao.  Some of the information relevant to solution is shown in <xref ref="systems-applications-table-3">Table</xref>.  In each row of the table, the expression found in the Distance column was determined using <m>D=rt</m>.
-        </p>
-        <p>
-          <table xml:id="systems-applications-table-3">
-          <caption>Elyse passes Chao</caption>
-            <tabular>
-              <col halign="left"/>
-              <col halign="center"/>
-              <col halign="center"/>
-              <col halign="center"/>
-              <row>
-                <cell>
-                </cell>
-                <cell>
-                  <line>Rate (mph)</line>
-                </cell>
-                <cell>
-                  <line>Time (hr)</line>
-                </cell>
-                <cell>
-                  <line>Distance (miles)</line>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  Elyse
-                </cell>
-                <cell>
-                  <m>x</m>
-                </cell>
-                <cell>
-                  <m>.25</m>
-                </cell>
-                <cell>
-                  <m>.25y</m>
-                </cell>
-              </row>
-              <row>
-                <cell>
-                  Chao
-                </cell>
-                <cell>
-                  <m>y</m>
-                </cell>
-                <cell>
-                  <m>.25</m>
-                </cell>
-                <cell>
-                  <m>.25y</m>
-                </cell>
-              </row>
-            </tabular>
-          </table>
-        </p>
-        <p></p>
-        <p>
-          The fact that Elyse's constant speed was 9 mph greater than Chao gives us <me>x=y+9</me>.  The fact that that the distance betweens the two cars was 33.75 miles after 15 minutes gives us <me>.25x+.25y=33.75</me>.  Let's substitute <m>y+9</m> for <m>x</m> in the second equation and then solve for <m>y</m>.
-          <md>
-            <mrow>.25\highlight{x}+.25y\amp=33.75</mrow>
-            <mrow>.25(\highlight{y+9})+.25y\amp=33.75</mrow>
-            <mrow>.25y+2.25+.25y\amp=33.75</mrow>
-            <mrow>.5y+2.25\amp=33.75</mrow>
-            <mrow>.5y+2.25\subtractright{2.25}\amp=33.75\subtractright{2.25}</mrow>
-            <mrow>.5y\amp=31.5</mrow>
-            <mrow>\multiplyleft{2}.5y\amp=\multiplyleft{2}31.5</mrow>
-            <mrow>y\amp=62</mrow>
-          </md>
-          So Chao maintained a constant speed of 62 mph and seeing as Elyse maintained a constant speed that was 9 mph greater than Chao's, her constant speed was 71 mph.  Let's make sure that our conclusion makes sense.
-        </p>
-        <p>
-          The distance traveled in 15 minutes at a speed of 62 mph is: <me>\left(62\,\frac{\text{miles}}{\text{hr}}\right)(.25\,\text{hr})=15.5\,\text{miles}</me>.  The distance traveled in 15 minutes at a speed of 71 mph is: <me>\left(71\,\frac{\text{miles}}{\text{hr}}\right)(.25\,\text{hr})=17.75\,\text{miles}</me>.<me>15.5\,\text{miles}+17.75\,\text{miles}=33.25\,\text{miles}\,\checkmark</me>
-        </p>
-      </solution>
-    </example>
+    <figure xml:id="systems-applications-geogebra-4">
+      <caption>Two Drives along I-65</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/systems-drt-problem.ggb">
+          setPerspective("G");
+          setAxesVisible(0,0);
+        </slate>
+      </interactive>
+    </figure>
+
+    <p>
+      Time to set about using algebra to determine the solution tot he problem.
+    </p>
+    <p>
+      Let <m>x</m> represent the constant speed (mph) maintained by Elyse and <m>y</m> represent the constant speed (mph) maintained by Chao.  Some of the information relevant to solution is shown in <xref ref="systems-applications-table-3">Table</xref>.  In each row of the table, the expression found in the Distance column was determined using <m>D=rt</m>.
+    </p>
+    <table xml:id="systems-applications-table-3">
+    <caption>Elyse passes Chao</caption>
+      <tabular>
+        <col halign="left"/>
+        <col halign="center"/>
+        <col halign="center"/>
+        <col halign="center"/>
+        <row>
+          <cell>
+          </cell>
+          <cell>
+            <line>Rate (mph)</line>
+          </cell>
+          <cell>
+            <line>Time (hr)</line>
+          </cell>
+          <cell>
+            <line>Distance (miles)</line>
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Chao
+          </cell>
+          <cell>
+            <m>y</m>
+          </cell>
+          <cell>
+           <m>.25</m>
+          </cell>
+          <cell>
+            <m>.25y</m>
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Elyse
+          </cell>
+          <cell>
+            <m>x</m>
+          </cell>
+          <cell>
+            <m>.25</m>
+          </cell>
+          <cell>
+            <m>.25y</m>
+          </cell>
+        </row>
+      </tabular>
+    </table>
+    <p></p>
+    <p>
+      The fact that Elyse's constant speed was 9 mph greater than Chao's speed gives us <me>x=y+9</me>.  The fact that that the distance betweens the two cars was 33.75 miles after 15 minutes gives us <me>.25x+.25y=33.75</me>.  Let's substitute <m>y+9</m> for <m>x</m> in the second equation and then solve for <m>y</m>.
+      <md>
+        <mrow>.25\highlight{x}+.25y\amp=33.75</mrow>
+        <mrow>.25(\highlight{y+9})+.25y\amp=33.75</mrow>
+        <mrow>.25y+2.25+.25y\amp=33.75</mrow>
+        <mrow>.5y+2.25\amp=33.75</mrow>
+        <mrow>.5y+2.25\subtractright{2.25}\amp=33.75\subtractright{2.25}</mrow>
+        <mrow>.5y\amp=31.5</mrow>
+        <mrow>\multiplyleft{2}.5y\amp=\multiplyleft{2}31.5</mrow>
+        <mrow>y\amp=62</mrow>
+      </md>
+        So Chao maintained a constant speed of 62 mph and seeing as Elyse maintained a constant speed that was 9 mph greater than Chao's, her constant speed was 71 mph.  Let's make sure that our conclusion makes sense.
+      </p>
+      <p>
+        The distance traveled in 15 minutes at a speed of 62 mph is: <me>\left(62\,\frac{\text{miles}}{\text{hr}}\right)(.25\,\text{hr})=15.5\,\text{miles}</me>.  The distance traveled in 15 minutes at a speed of 71 mph is: <me>\left(71\,\frac{\text{miles}}{\text{hr}}\right)(.25\,\text{hr})=17.75\,\text{miles}</me>.<me>15.5\,\text{miles}+17.75\,\text{miles}=33.25\,\text{miles}\,\checkmark</me>
+      </p>
+      <p>
+        Let's explore another example.
+      </p>
 
     <example>
       <statement>
@@ -465,6 +724,8 @@
         </p>
       </solution>
     </example>
+
+  </paragraphs>
 
     <exercises>
 

@@ -10,130 +10,188 @@
 <!-- ********************************************************************* -->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="factoring-greatest-factor">
-    <title>Factoring the Greatest Common Factor</title>
-      <P>
-        Factoring a polynomial is the reverse action to expanding the product of two or more polynomials.  For example, using the FOIL expansion we know that <me>(x-3)(x+7)=x^2+4x-21</me>.  So if we were asked to factor <m>x^2+4x-21</m>, the correct response would be 
-        <me>x^2+4x-21=(x-3)(x+7)</me>. 
-      </P>
-      <p>
-        The process used to determine the factored form of a given polynomial is dependent upon the nature of the polynomial.  For example, the strategies used for trinomials (polynomials with three terms) are completely different than the strategies used for binomials (polynomials with two terms).
-      </p>
-      <p>
-        One thing that is common to all factorizations is that the first step is to identify the Greatest Common Factor (GCF) of the terms in the polynomial and if the GCF is not <m>1</m> proceed to factor out the GCF. 
-      </p>
-      <p>
-        For example, we can see that <m>2</m> is a factor of both terms of the expression <m>2x+10</m>, so the first step in factoring <m>2x+10</m> is to "take out" the factor of <m>2</m>.  (Side note:  the author prefers the phrase "take out the factor" over the phrase "factor out the factor"; using the word "factor" as both a verb and a noun in the same sentence just seems wrong.)  Back to factoring:
-        <me>2x+10=2(x+5)</me>.
-      </p>
-      <p>
-        Determining the GCF for variable factors is fairly straight forward.  A strategy follows.
-        <ol label="1">
-          <li>
-            Any variable that appears in every term is in the GCF and only variables that occur in every term are in the GCF.
-          </li>
-          <li>
-            The exponent on any given variable in the GCF is the smallest exponent that occurs on the variable in any given term.  When making this determination, we need to recognize that an expression such as "<m>x</m>" can be regarded as having an exponent of <m>1</m>.
-        </li>
-      </ol>
-      </p>
-      <p>
-        Let's determine and take out the GCF of the expression <me>x^3y^3z^7+x^4y-x^7yz</me>.  The variables that occur in all three terms are <m>x</m> and <m>y</m>.  The smallest exponent on <m>x</m> is <m>3</m> and the smallest exponent on <m>y</m> is (the hidden) <m>1</m>, so the GCF is <m>x^3y</m>.  Taking out the GCF we have <me>x^3y^3z^7+x^4y-x^7yz=x^3y(y^2z^7+x-x^4z)</me>.
-      </p> 
-      <p>
-        The thought process I used to determine the factor <m>(y^2z^7+x-x^4z)</m> is outlined below.
-        <ol label="1">
-          <li>
-            I took out three factors of <m>x</m> and one factor of <m>y</m> from the first term, <m>x^3y^3z^7</m>.  So what was left behind were no factors of <m>x</m>, two factors of <m>y</m>, and all seven factors of <m>z</m>.
-          </li>
-          <li>
-            I took out three factors of <m>x</m> and one factor of <m>y</m> from the middle term, <m>x^4y</m>, so all that was left behind was a single factor of <m>x</m>.
-          </li>
-          <li>
-            I took out three factors of <m>x</m> and one factor of <m>y</m> from the last term, <m>x^7yz</m>, so I left behind four factors <m>x</m> and the lone factor of <m>z</m>.
-          </li>
-        </ol>
-          One of the great things about factor problems is that you can always check your answer by expansion.  That is, you can confirm the equality <me>x^3y(y^2z^7+x-x^4z)=x^3y^3z^7+x^4y-x^7yz</me>.
-      </p>
-      <p>
-        When it comes to determining the GCF of the coefficients of the terms, the numbers are usually small enough that you can just "figure it out."  Remember that your goal is to determine the greatest integer that evenly divides into each coefficient.  When we say "evenly divide" we mean that there is no remainder after the division is performed. Once you think you have determined the GCF, take it out (along with relevant variable factors) and make sure that there are no remaining common factors to each of the coefficients.
-      </p>
-      <p>
-        There are some tools you can use to help you determine if certain integers evenly divide into a given integer.   
-      </p>
-      <p>
-        Each of the following statements are "if and only if" statements which I find easier to remember if they are simply stated in the affirmative.  For example, instead of saying "an integer is evenly divisible by <m>2</m> if and only if ends in an even digit" I say "any integer that ends in an even digit is evenly divisible by <m>2</m>."  In addition to that rule, we have the following.
-        <ul>
-          <li>
-            If <m>3</m> evenly divides into the sum of the digits, then <m>3</m> evenly divides into the original number.  For example, I know that <m>3</m> evenly divides into <m>11,874</m> because <m>1+1+8+7+4=21</m> and <m>3</m> evenly divides into <m>21</m>.  Conversely, I know that <m>3</m> does not evenly divide into <m>2,437</m> because <m>2+4+3+7=16</m> and <m>3</m> does not evenly divide into <m>16</m>.
-          </li>
-          <li>
-            If <m>4</m> evenly divides into the the last two digits of the number, then it evenly divides into the entire number.  For example, <m>4</m> evenly divides in <m>1,302,824</m> but <m>4</m> does not evenly divide into <m>226,734</m>.
-          </li>
-          <li>
-            Numbers that end in <m>0</m> or <m>5</m> are evenly divisible by <m>5</m>.
-          </li>
-          <li>
-            If <m>9</m> evenly divides into the sum of the digits, then <m>9</m> evenly divides into the original number.  For example, I know that <m>9</m> evenly divides into <m>41,274</m> because <m>4+1+2+7+4=18</m> and <m>9</m> evenly divides into <m>18</m>.  Conversely, I know that <m>9</m> does not evenly divide into <m>11,874</m> because <m>1+1+8+7+4=21</m> and <m>9</m> does not evenly divide into <m>21</m>.
-          </li>
-        </ul>
-      </p>
-      <p>
-        While there are tricks for other numbers, most people find them too cumbersome to remember.  If you're good at remembering rules, you might try searching for them online.
-      </p>
-      <p>
-        When the first term of the polynomial has a negative coefficient, we tend to factor the negative sign along with the GCF.  For example, it would be standard to factor <m>-12x^2y+24x^2+18x^3</m> as follows. <me>-12x^2y+24x^2+18x^3=-6x^2(2y-4-3x)</me>.
-        One final note.  A very common mistake is to write out too few terms when factoring an expression where the GCF happens to be a term of the original expression.  For example, consider the polynomial <m>6x^3+8x^2+2x</m>.  Hopefully you recognize that the GCF of the terms is <m>2x</m>.  With that, a common error is to write <me>6x^3+8x^2+2x=2x(3x^2+4x)</me>.  One way to recognize that can't be correct is to expand the proposed factorization.  <me>2x(3x^2+4x)=6x^3+8x^2</me>  Uh oh - we're missing a term - where's "<m>+2x</m>"?  We forgot to save a place for it!  Whenever you take out the GCF, the expression left behind in parentheses needs to have as many terms as the original polynomial.  In this case, we forgot a term of <m>+1</m> so that the last term in the expansion is <m>+2x</m>.  That is:
-        <me>6x^3+4x^2+2x=2x(3x^2+4x+1)</me>.
-      </p>
-      <exercises>
+  <title>Factoring the Greatest Common Factor</title>
 
-        <exercisegroup>
-          <introduction>
-            <P>
-              Factor the greatest common factor from each expression.
-            </P>
-          </introduction>
+  <P>
+    Factoring a polynomial is the reverse action to expanding the product of two or more polynomials.  For example, using the FOIL expansion we know that <me>(x-3)(x+7)=x^2+4x-21</me>.  So if we were asked to factor <m>x^2+4x-21</m>, the correct response would be 
+    <me>x^2+4x-21=(x-3)(x+7)</me>. 
+  </P>
+  <p>
+    The process used to determine the factored form of a given polynomial is dependent upon the nature of the polynomial.  For example, the strategies used for trinomials (polynomials with three terms) are completely different than the strategies used for binomials (polynomials with two terms).
+  </p>
+  <p>
+    One thing that is common to all factorizations is that the first step is to identify the Greatest Common Factor (GCF) of the terms in the polynomial and if the GCF is not <m>1</m> proceed to factor out the GCF. 
+  </p>
+  <p>
+    For example, we can see that <m>2</m> is a factor of both terms of the expression <m>2x+10</m>, so the first step in factoring <m>2x+10</m> is to "take out" the factor of <m>2</m>.  (Side note:  the author prefers the phrase "take out the factor" over the phrase "factor out the factor"; using the word "factor" as both a verb and a noun in the same sentence just seems wrong.)  Back to factoring:
+    <me>2x+10=2(x+5)</me>.
+  </p>
+  <p>
+    Determining the GCF for variable factors is fairly straight forward.  A strategy follows.
+    <ol label="1">
+      <li>
+        Any variable that appears in every term is in the GCF and only variables that occur in every term are in the GCF.
+      </li>
+      <li>
+        The exponent on any given variable in the GCF is the smallest exponent that occurs on the variable in any given term.  When making this determination, we need to recognize that an expression such as "<m>x</m>" can be regarded as having an exponent of <m>1</m>.
+      </li>
+    </ol>
+  </p>
 
-            <exercise>
-              <statement>
-                <p>
-                  <m>12x^5-21x^4-24x^2+3x</m>
-                </p>
-              </statement>
-              <solution>
-                <p>
-                  <m>12x^5-21x^4-24x^2+3x=3x(4x^4-7x^3-8x+1)</m>
-                </p>
-              </solution>
-              </exercise>
+  <example>
+    <statement>
+      <p>
+        Determine the greatest common factor of the expressions
+        <me>12x^5y^2,\,\,30x^9y^8z,\,\,24x^7y</me>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The greatest common factor (also called the greatest common divisor) of <m>12</m>, <m>30</m>, and <m>24</m> is <m>6</m>.
+      </p>
+      <p>
+        The variable <m>x</m> appears in all three expressions, so it appears in the GCF.  The smallest exponent that occurs on <m>x</m> is <m>5</m>, so that is its exponent in the GCF.
+      </p>
+      <p>
+        The variable <m>y</m> appears in all three expressions, so it appears in the GCF.  The smallest exponent that occurs on <m>y</m> is <m>1</m>, so that is its exponent in the GCF.
+      </p>
+      <p>
+        The variable <m>z</m> does not appear in at least one of the expressions, so it does not appear in the GCF.
+      </p>
+      <p>
+        In summary, the GCF is <m>6x^5y</m>.
+      </p>
+    </solution>
+  </example>
 
-            <exercise>
-              <statement>
-                <p>
-                  <m>-4x^2y^3-44x^3y^2+4x^2y^2</m>
-                </p>
-              </statement>
-              <solution>
-                <p>
-                  <m>-4x^2y^3-44x^3y^2+4x^2y^2=-4x^2y^2(y+11x-1)</m>
-                </p>
-              </solution>
-              </exercise>
+  <p>
+    You can use <xref ref="factoring-gcf-geogebra-1">Figure</xref> to get some practice at determining the greatest common factor of several expressions.
+  </p>
 
-            <exercise>
-              <statement>
-                <p>
-                  <m>63a^8b^{12}c^5+108a^6b^9c-135a^6b^4c</m>
-                </p>
-              </statement>
-              <solution>
-                <p>
-                  <m>63a^8b^{12}c^5+108a^6b^9c-135a^6b^4c=9a^6b^4c(7a^2b^8c^4+12b^5-15)</m>
-                </p>
-              </solution>
-              </exercise>
+  <figure xml:id="factoring-gcf-geogebra-1">
+    <caption>Practice Determining the Greatest Common Factor of Multiple Expressions</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/factor-greatest-factor.ggb">
+        setPerspective("G");
+        setAxesVisible(0,0);
+      </slate>
+    </interactive>
+  </figure>
 
-            </exercisegroup>
-          </exercises>
+  <p>
+    Let's determine and take out the GCF of the expression <me>x^3y^3z^7+x^4y-x^7yz</me>.  The variables that occur in all three terms are <m>x</m> and <m>y</m>.  The smallest exponent on <m>x</m> is <m>3</m> and the smallest exponent on <m>y</m> is (the hidden) <m>1</m>, so the GCF is <m>x^3y</m>.  Taking out the GCF we have <me>x^3y^3z^7+x^4y-x^7yz=x^3y(y^2z^7+x-x^4z)</me>.
+  </p> 
+  <p>
+    The thought process I used to determine the factor <m>(y^2z^7+x-x^4z)</m> is outlined below.
+    <ol label="1">
+      <li>
+        I took out three factors of <m>x</m> and one factor of <m>y</m> from the first term, <m>x^3y^3z^7</m>.  So what was left behind were no factors of <m>x</m>, two factors of <m>y</m>, and all seven factors of <m>z</m>.
+      </li>
+      <li>
+        I took out three factors of <m>x</m> and one factor of <m>y</m> from the middle term, <m>x^4y</m>, so all that was left behind was a single factor of <m>x</m>.
+      </li>
+      <li>
+        I took out three factors of <m>x</m> and one factor of <m>y</m> from the last term, <m>x^7yz</m>, so I left behind four factors <m>x</m> and the lone factor of <m>z</m>.
+      </li>
+    </ol>
+    One of the great things about factor problems is that you can always check your answer by expansion.  That is, you can confirm the equality <me>x^3y(y^2z^7+x-x^4z)=x^3y^3z^7+x^4y-x^7yz</me>.
+  </p>
+  <p>
+    When it comes to determining the GCF of the coefficients of the terms, the numbers are usually small enough that you can just "figure it out."  Remember that your goal is to determine the greatest integer that evenly divides into each coefficient.  When we say "evenly divide" we mean that there is no remainder after the division is performed. Once you think you have determined the GCF, take it out (along with relevant variable factors) and make sure that there are no remaining common factors to each of the coefficients.
+  </p>
+  <p>
+    There are some tools you can use to help you determine if certain integers evenly divide into a given integer.   
+  </p>
+  <p>
+    Each of the following statements are "if and only if" statements which I find easier to remember if they are simply stated in the affirmative.  For example, instead of saying "an integer is evenly divisible by <m>2</m> if and only if ends in an even digit" I say "any integer that ends in an even digit is evenly divisible by <m>2</m>."  In addition to that rule, we have the following.
+    <ul>
+      <li>
+        If <m>3</m> evenly divides into the sum of the digits, then <m>3</m> evenly divides into the original number.  For example, I know that <m>3</m> evenly divides into <m>11,874</m> because <m>1+1+8+7+4=21</m> and <m>3</m> evenly divides into <m>21</m>.  Conversely, I know that <m>3</m> does not evenly divide into <m>2,437</m> because <m>2+4+3+7=16</m> and <m>3</m> does not evenly divide into <m>16</m>.
+      </li>
+      <li>
+        If <m>4</m> evenly divides into the the last two digits of the number, then it evenly divides into the entire number.  For example, <m>4</m> evenly divides in <m>1,302,824</m> but <m>4</m> does not evenly divide into <m>226,734</m>.
+      </li>
+      <li>
+        Numbers that end in <m>0</m> or <m>5</m> are evenly divisible by <m>5</m>.
+      </li>
+      <li>
+        If <m>9</m> evenly divides into the sum of the digits, then <m>9</m> evenly divides into the original number.  For example, I know that <m>9</m> evenly divides into <m>41,274</m> because <m>4+1+2+7+4=18</m> and <m>9</m> evenly divides into <m>18</m>.  Conversely, I know that <m>9</m> does not evenly divide into <m>11,874</m> because <m>1+1+8+7+4=21</m> and <m>9</m> does not evenly divide into <m>21</m>.
+      </li>
+    </ul>
+  </p>
+  <p>
+    While there are tricks for other numbers, most people find them too cumbersome to remember.  If you're good at remembering rules, you might try searching for them online.
+  </p>
+  <p>
+    When the first term of the polynomial has a negative coefficient, we tend to factor the negative sign along with the GCF.  For example, it would be standard to factor <m>-12x^2y+24x^2+18x^3</m> as follows. <me>-12x^2y+24x^2+18x^3=-6x^2(2y-4-3x)</me>.
+    One final note.  A very common mistake is to write out too few terms when factoring an expression where the GCF happens to be a term of the original expression.  For example, consider the polynomial <m>6x^3+8x^2+2x</m>.  Hopefully you recognize that the GCF of the terms is <m>2x</m>.  With that, a common error is to write <me>6x^3+8x^2+2x=2x(3x^2+4x)</me>.  One way to recognize that can't be correct is to expand the proposed factorization.  <me>2x(3x^2+4x)=6x^3+8x^2</me>  Uh oh - we're missing a term - where's "<m>+2x</m>"?  We forgot to save a place for it!  Whenever you take out the GCF, the expression left behind in parentheses needs to have as many terms as the original polynomial.  In this case, we forgot a term of <m>+1</m> so that the last term in the expansion is <m>+2x</m>.  That is:
+    <me>6x^3+8x^2+2x=2x(3x^2+4x+1)</me>.
+  </p>
+
+  <p>
+    You can use <xref ref="factoring-gcf-geogebra-2">Figure</xref> to generate random factoring exercises.
+  </p>
+
+   <figure xml:id="factoring-gcf-geogebra-2">
+    <caption>Factoring Practice</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/factor-gcf.ggb">
+        setPerspective("G");
+        setAxesVisible(0,0);
+      </slate>
+    </interactive>
+  </figure>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <P>
+          Factor the greatest common factor from each expression.
+        </P>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>12x^5-21x^4-24x^2+3x</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>12x^5-21x^4-24x^2+3x=3x(4x^4-7x^3-8x+1)</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>-4x^2y^3-44x^3y^2+4x^2y^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-4x^2y^3-44x^3y^2+4x^2y^2=-4x^2y^2(y+11x-1)</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>63a^8b^{12}c^5+108a^6b^9c-135a^6b^4c</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>63a^8b^{12}c^5+108a^6b^9c-135a^6b^4c=9a^6b^4c(7a^2b^8c^4+12b^5-15)</m>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
 
 </section>

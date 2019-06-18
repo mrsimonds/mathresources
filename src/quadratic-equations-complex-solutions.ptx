@@ -48,7 +48,7 @@
       The solutions are <m>\frac{3}{2}-2i</m> and <m>\frac{3}{2}+2i</m>.
     </p>
     <p>
-      The solution set is <m>\{\frac{3}{2}-2i,\frac{3}{2}+2i\}</m>.
+      The solution set is <m>\left\{\frac{3}{2}-2i,\frac{3}{2}+2i\right\}</m>.
     </p>
 
     <example>
@@ -158,7 +158,7 @@
               The solutions are <m>\frac{8}{3}-\frac{2\sqrt{5}}{3}i</m> and <m>\frac{8}{3}+\frac{2\sqrt{5}}{3}i</m>.
             </p>
             <p>
-              The solution set is <m>\frac{8}{3}-\frac{2\sqrt{5}}{3}i, \frac{8}{3}+\frac{2\sqrt{5}}{3}i</m>.
+              The solution set is <m>\left\{\frac{8}{3}-\frac{2\sqrt{5}}{3}i, \frac{8}{3}+\frac{2\sqrt{5}}{3}i\right\}</m>.
             </p>
           </solution>
         </exercise>
@@ -272,7 +272,7 @@
               The solutions are <m>-\frac{1}{4}-\frac{\sqrt{3}}{4}i</m> and <m>-\frac{1}{4}+\frac{\sqrt{3}}{4}i</m>.
             </p>
             <p>
-              The solutions set is <m>-\frac{1}{4}-\frac{\sqrt{3}}{4}i, -\frac{1}{4}+\frac{\sqrt{3}}{4}i</m>
+              The solutions set is <m>\left\{-\frac{1}{4}-\frac{\sqrt{3}}{4}i, -\frac{1}{4}+\frac{\sqrt{3}}{4}i\right\}</m>
             </p>
           </solution>
         </exercise>
@@ -315,7 +315,7 @@
               The solutions are <m>\frac{3}{2}-\frac{\sqrt{11}}{2}i</m> and <m>\frac{3}{2}+\frac{\sqrt{11}}{2}i</m>.
             </p>
             <p>
-              The solutions set is <m>\{\frac{3}{2}-\frac{\sqrt{11}}{2}i, \frac{3}{2}+\frac{\sqrt{11}}{2}i\}</m>
+              The solutions set is <m>\left\{\frac{3}{2}-\frac{\sqrt{11}}{2}i, \frac{3}{2}+\frac{\sqrt{11}}{2}i\right\}</m>
             </p>
           </solution>
         </exercise>
@@ -359,7 +359,7 @@
               The solutions are <m>-\frac{4\sqrt{3}}{3}i</m> and <m>\frac{4\sqrt{3}}{3}i</m>.
             </p>
             <p>
-              The solutions set is <m>\{-\frac{4\sqrt{3}i}{3}, \frac{4\sqrt{3}i}{3}\}</m>.
+              The solutions set is <m>\left\{-\frac{4\sqrt{3}i}{3}, \frac{4\sqrt{3}i}{3}\right\}</m>.
             </p>
           </solution>
         </exercise>

@@ -1,0 +1,1962 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="trigonometry-sine-cosine-graphs">
+  <title>The Graphs of the Sine and Cosine Functions</title>
+
+  <paragraphs>
+    <title>The Graph of the Function <m>y=\sin(t)</m></title>
+    <p></p>
+    <p>
+      Although the values of the sine function are dependent upon the graph of the unit circle, the function itself can be graphed. For example, because <m>\sin\left(\frac{\pi}{2}\right)=1</m> one point that would be on a graph of <m>y=\sin(t)</m> would be <m>\left(\frac{\pi}{2},1\right)</m>.
+    </p>
+    <p>
+      A graph of <m>y=\sin(t)</m> is shown in <xref ref="trigonometry-sine-cosine-graphs-geogebra-1">Figure</xref>.  We are going to develop this graph, but I first want to help you understand the relationship between the <m>y</m>-coordinate of the point on the  unit circle and the corresponding point on the graph of <m>y=\sin(t)</m>; the relationship is that they are the same!  Go ahead and drag the slider.  note that as the point on the unit circle goes round and round, the graph of <m>y=\sin(t)</m> is traced and at all times the <m>y</m>-coordinates on the unit circle and <m>y=\sin(t)</m> are the same.
+    </p>
+    <figure xml:id="trigonometry-sine-cosine-graphs-geogebra-1">
+      <caption>Drag the slider to the relationship between the <m>y</m>-coordinates of the point on the unit circle and the point on <m>y=\sin(t)</m>. .</caption>
+      <interactive platform="geogebra" width="100%" aspect="6:5">
+          <slate surface="geogebra" aspect="6:5" source="geogebra/sine-graph.ggb">
+            setPerspective("G");
+            setGridVisible(1);         
+            setAxisLabels(1,"x","y","z");
+          </slate>
+      </interactive>
+    </figure>
+    <p>
+      Several pairs of graphs are about to be presented.  It is important that you are mindful of the fact that the variables on the horizontal axes in the graphs of the unit circle are <m>x</m> whereas the variables on the horizontal axes in the graphs of <m>y=\sin(t)</m> are <m>t</m>.
+    </p>
+    <p>
+      In <xref ref="trigonometry-sine-cosine-graphs-figure-1">Figure</xref> we see that when traveling around the unit circle, as the value of <m>t</m> increases from <m>0</m> to <m>\frac{\pi}{2}</m>, the <m>y</m>-coordinate of the point on the unit circle steadily increases from <m>0</m> to <m>1</m>.  This means that on the graph of <m>y=\sin(t)</m>, as <m>t</m> increases from <m>0</m> to <m>\frac{\pi}{2}</m>, the function value (<m>y</m>) will also steadily increase from <m>0</m> to <m>1</m>.  This is illustrated in <xref ref="trigonometry-sine-cosine-graphs-figure-2">Figure</xref>.
+    </p>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-1">
+      <caption>Key Angles That Terminate in Quadrant I</caption>
+      <image width="60%">
+        <description>
+          Five angles in standard position and the coordinates of the points where they intersect the unit circle are shown.  An angle of measure zero intersects the circle at the point <m>(1,0)</m>.  An angle of measure <m>\frac{\pi}{6}</m> intersects the circle at the point <m>(\frac{\sqrt{3}}{2},\frac{1}{2})</m>.  An angle of measure <m>\frac{\pi}{4}</m> intersects the circle at the point <m>(\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2})</m>.  An angle of measure <m>\frac{\pi}{3}</m> intersects the circle at the point <m>(\frac{1}{2},\frac{\sqrt{3}}{2})</m>.  Finally, an angle if measure <m>(\frac{\pi}{2}</m>intersects the circle at the point <m>(0,1)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-0.3,xmax=1.3,
+                          ymin=-0.3,ymax=1.3,
+                          xtick={-2,2},
+                          ytick={-2,2}]
+              \addplot [domain=0:360,samples=100,color=gray,line width=0.5pt] ({cos(x)},{sin(x)});
+              \addplot [domain=0:90,samples=100,color=red,line width=1pt,-{Stealth}] ({cos(x)},{sin(x)});
+              \addplot [primarycurve,domain=0:0.33,line width=1pt,-,color=green!60!black] {x} node[pos=1,above right] {$\frac{\pi}{4}$};
+              \addplot [primarycurve,domain=0.44:0.707,line width=1pt,-,color=green!60!black] {x};
+              \addplot [primarycurve,domain=0:0.25,line width=1pt,-,color=purple!75!black] {1.733*x} node[pos=1,above right] {$\frac{\pi}{3}$};
+              \addplot [primarycurve,domain=0.34:0.5,line width=1pt,-,color=purple!75!black] {1.733*x};    
+              \addplot [primarycurve,domain=0:0.41,line width=1pt,-,color=brown] {.577*x} node[pos=1,above right] {$\frac{\pi}{6}$};  
+              \addplot [primarycurve,domain=0.5:0.866,line width=1pt,-,color=brown] {.577*x}; 
+              \addplot [interval,yellow!30,-,line width=1pt,-] coordinates {(0,0.55) (0,0.7)};
+              \addplot [interval,blue,-,line width=1pt,-] coordinates {(0,0) (0,0.55)} node[pos=1,above] {$\frac{\pi}{2}$};
+              \addplot [interval,blue,-,line width=1pt,-] coordinates {(0,0.7) (0,1)};
+              \addplot [soliddot,color=blue] coordinates {(0,1)} node[above right] {$(0,1)$};
+              \addplot [interval,yellow!30,-,line width=1pt,-] coordinates {(0.55,0) (0.64,0)};
+              \addplot [interval,blue!50!purple,-,line width=1pt,-] coordinates {(0,0) (0.55,0)} node[pos=1,right] {$0$};
+              \addplot [interval,blue!50!purple,-,line width=1pt,-] coordinates {(0.64,0) (1,0)};
+              \addplot [soliddot,color=blue!50!purple] coordinates {(1,0)} node[above right] {$(1,0)$};
+              \addplot [soliddot,color=brown] coordinates {(.866,.5)} node[right] {$\left(\frac{\sqrt{3}}{2},\frac{1}{2}\right)$};
+              \addplot [soliddot,color=green!60!black] coordinates {(.707,.707)} node[above right] {$\left(\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(.5,.866)} node[above right] {$\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)$};         
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-2">
+      <caption>The Graph of <m>y=\sin(t)</m> Over the Interval <m>\left(0,\frac{\pi}{2}\right)</m> </caption>
+      <image width="80%">
+        <description>
+          A graph of a curve that increases concave down from the point <m>(0,0)</m> to the point <m>(\frac{\pi}{2},1)</m>. The curve passes through the points <m>(0,0)</m>, <m>(\frac{\pi}{6},\frac{1}{2})</m>, <m>(\frac{\pi}{4},\frac{\sqrt{2}}{2})</m>m <m>(\frac{\pi}{3},\frac{\sqrt{3}}{2})</m>, and <m>(\frac{\pi{2}}{2},1)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=7.5cm,
+                          xlabel={$t$},
+                          xmin=-15,xmax=105,
+                          ymin=-1.1,ymax=1.1,
+                          xtick={30,45,60,90},
+                          ytick={-1,-0.866,-0.707,-0.5,0.5,0.707,0.866,1},
+                          minor xtick={},
+                          xticklabels={$\frac{\pi}{6}$,$\frac{\pi}{4}$,$\frac{\pi}{3}$,$\frac{\pi}{2}$},
+                          yticklabels={$-1$,$-\sqrt{3}/2$,$-\sqrt{2}/2$,$-1/2$,$1/2$,$\sqrt{2}/2$,$\sqrt{3}/2$,$1$}]
+              \addplot [domain=0:90,samples=100,color=red,line width=2pt] {sin(x)}; 
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <p>    
+      In <xref ref="trigonometry-sine-cosine-graphs-figure-3">Figure</xref> we see that when traveling around the unit circle, as the value of <m>t</m> increases from <m>\frac{\pi}{2}</m> to <m>\pi</m>, the <m>y</m>-coordinate of the point on the unit circle steadily decreases from <m>1</m> to <m>0</m>.  This means that on the graph of <m>y=\sin(t)</m>, as <m>t</m> increases from <m>\frac{\pi}{2}</m> to <m>\pi</m>, the function value (<m>y</m>) will also steadily decrease from <m>1</m> to <m>0</m>.  This is illustrated in <xref ref="trigonometry-sine-cosine-graphs-figure-4">Figure</xref>.
+    </p>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-3">
+      <caption>Key Angles That Terminate in Quadrant II</caption>
+      <image width="60%">
+        <description>
+          Five angles in standard position and the coordinates of the points where they intersect the unit circle are shown.  An angle of measure <m>\frac{\pi}{2}</m> intersects the circle at the point <m>(0,1)</m>.  An angle of measure <m>\frac{2\pi}{3}</m> intersects the circle at the point <m>(-\frac{1}{2},\frac{\sqrt{3}}{2})</m>.  An angle of measure <m>\frac{3\pi}{4}</m> intersects the circle at the point <m>(\frac{-\sqrt{2}}{2},\frac{\sqrt{2}}{2})</m>.  An angle of measure <m>\frac{5\pi}{6}</m> intersects the circle at the point <m>(-\frac{\sqrt{3}}{2},\frac{1}{2})</m>.  Finally, an angle if measure <m>(\pi</m>intersects the circle at the point <m>(-1,0)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-1.3,xmax=0.3,
+                          ymin=-0.3,ymax=1.3,
+                          xtick={-2,2},
+                          ytick={-2,2}]
+              \addplot [domain=0:360,samples=100,color=gray,line width=0.5pt] ({cos(x)},{sin(x)});
+              \addplot [domain=90:180,samples=100,color=red,line width=1pt,-{Stealth}] ({cos(x)},{sin(x)});
+              \addplot [primarycurve,domain=-0.33:0,line width=1pt,-,color=green!60!black] {-x} node[pos=0,above left] {$\frac{3\pi}{4}$};
+              \addplot [primarycurve,domain=-0.707:-0.46,line width=1pt,-,color=green!60!black] {-x};
+              \addplot [primarycurve,domain=-0.25:0,line width=1pt,-,color=purple!75!black] {-1.733*x} node[pos=0,above left] {$\frac{2\pi}{3}$};
+              \addplot [primarycurve,domain=-0.5:-0.36,line width=1pt,-,color=purple!75!black] {-1.733*x};    
+              \addplot [primarycurve,domain=-0.41:0,line width=1pt,-,color=brown] {-.577*x} node[pos=0,above left] {$\frac{5\pi}{6}$};  
+              \addplot [primarycurve,domain=-0.866:-0.54,line width=1pt,-,color=brown] {-.577*x}; 
+              \addplot [interval,yellow!30,-,line width=1pt,-] coordinates {(0,0.55) (0,0.7)};
+              \addplot [interval,blue,-,line width=1pt,-] coordinates {(0,0) (0,0.55)} node[pos=1,above] {$\frac{\pi}{2}$};
+              \addplot [interval,blue,-,line width=1pt,-] coordinates {(0,0.7) (0,1)};
+              \addplot [soliddot,color=blue] coordinates {(0,1)} node[above right] {$(0,1)$};
+              \addplot [interval,yellow!30,-,line width=1pt,-] coordinates {(-0.66,0) (-0.55,0)};
+              \addplot [interval,blue!50!purple,-,line width=1pt,-] coordinates {(-0.55,0) (0,0)} node[pos=0,left] {$\pi$};
+              \addplot [interval,blue!50!purple,-,line width=1pt,-] coordinates {(-1,0) (-0.66,0)};
+              \addplot [soliddot,color=blue!50!purple] coordinates {(-1,0)} node[below left] {$(-1,0)$};
+              \addplot [soliddot,color=brown] coordinates {(-.866,.5)} node[left] {$\left(-\frac{\sqrt{3}}{2},\frac{1}{2}\right)$};
+              \addplot [soliddot,color=green!60!black] coordinates {(-.707,.707)} node[above left] {$\left(-\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(-.5,.866)} node[above left] {$\left(-\frac{1}{2},\frac{\sqrt{3}}{2}\right)$};         
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-4">
+      <caption>The Graph of <m>y=\sin(t)</m> Over the Interval <m>\left(\frac{\pi}{2},\pi\right)</m> </caption>
+      <image width="80%">
+        <description>
+          A graph of a curve that decreases concave down from the point <m>(\frac{\pi}{2},1)</m> to the point <m>(\pi,0)</m>. The curve passes through the points <m>(\frac{\pi}{2},1)</m>, <m>(\frac{2\pi}{3},\frac{\sqrt{3}}{2})</m>, <m>(\frac{3\pi}{4},\frac{\sqrt{2}}{2})</m>m <m>(\frac{5\pi}{6},\frac{1}{2})</m>, and <m>(\pi,0)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=7.5cm,
+                          xlabel={$t$},
+                          xmin=-30,xmax=195,
+                          ymin=-1.1,ymax=1.1,
+                          xtick={30,45,60,90,120,135,150,180},
+                          ytick={-1,-0.866,-0.707,-0.5,0.5,0.707,0.866,1},
+                          minor xtick={},
+                          xticklabels={$\frac{\pi}{6}$,$\frac{\pi}{4}$,$\frac{\pi}{3}$,$\frac{\pi}{2}$,$\frac{2\pi}{3}$,$\frac{3\pi}{4}$,$\frac{5\pi}{6}$,$\pi$},
+                          yticklabels={$-1$,$-\sqrt{3}/2$,$-\sqrt{2}/2$,$-1/2$,$1/2$,$\sqrt{2}/2$,$\sqrt{3}/2$,$1$}]
+              \addplot [domain=0:90,samples=100,color=gray!50!white,line width=1pt] {sin(x)};
+              \addplot [domain=90:180,samples=100,color=red,line width=2pt] {sin(x)}; 
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      In <xref ref="trigonometry-sine-cosine-graphs-figure-5">Figure</xref> we see that when traveling around the unit circle, as the value of <m>t</m> increases from <m>\pi</m> to <m>\frac{3\pi}{2}</m>, the <m>y</m>-coordinate of the point on the unit circle steadily decreases from <m>0</m> to <m>-1</m>.  This means that on the graph of <m>y=\sin(t)</m>, as <m>t</m> increases from <m>\pi</m> to <m>\frac{3\pi}{2}</m>, the function value (<m>y</m>) will also steadily decrease from <m>0</m> to <m>-1</m>.  This is illustrated in <xref ref="trigonometry-sine-cosine-graphs-figure-6">Figure</xref>.
+    </p>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-5">
+      <caption>Key Angles That Terminate in Quadrant III</caption>
+      <image width="60%">
+        <description>
+          Five angles in standard position and the coordinates of the points where they intersect the unit circle are shown.  An angle of measure <m>\pi</m> intersects the circle at the point <m>(-1,0)</m>.  An angle of measure <m>\frac{7\pi}{6}</m> intersects the circle at the point <m>(-\frac{\sqrt{3}}{2},-\frac{1}{2})</m>.  An angle of measure <m>\frac{5\pi}{4}</m> intersects the circle at the point <m>(-\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2})</m>.  An angle of measure <m>\frac{4\pi}{3}</m> intersects the circle at the point <m>(-\frac{1}{2},-\frac{\sqrt{3}}{2})</m>.  Finally, an angle if measure <m>(\frac{3\pi}{2}</m>intersects the circle at the point <m>(0,-1)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-1.3,xmax=0.3,
+                          ymin=-1.3,ymax=0.3,
+                          xtick={-2,2},
+                          ytick={-2,2}]
+              \addplot [domain=0:360,samples=100,color=gray,line width=0.5pt] ({cos(x)},{sin(x)});
+              \addplot [domain=180:270,samples=100,color=red,line width=1pt,-{Stealth}] ({cos(x)},{sin(x)});
+              \addplot [primarycurve,domain=-0.33:0,line width=1pt,-,color=green!60!black] {x} node[pos=0,below left] {$\frac{5\pi}{4}$};
+              \addplot [primarycurve,domain=-0.707:-0.46,line width=1pt,-,color=green!60!black] {x};
+              \addplot [primarycurve,domain=-0.25:0,line width=1pt,-,color=purple!75!black] {1.733*x} node[pos=0,below left] {$\frac{4\pi}{3}$};
+              \addplot [primarycurve,domain=-0.5:-0.36,line width=1pt,-,color=purple!75!black] {1.733*x};    
+              \addplot [primarycurve,domain=-0.41:0,line width=1pt,-,color=brown] {.577*x} node[pos=0,below left] {$\frac{7\pi}{6}$};  
+              \addplot [primarycurve,domain=-0.866:-0.54,line width=1pt,-,color=brown] {.577*x}; 
+              \addplot [interval,yellow!30,-,line width=1pt,-] coordinates {(0,-0.7) (0,-0.55)};
+              \addplot [interval,blue,-,line width=1pt,-] coordinates {(0,-0.55) (0,0)} node[pos=0,below] {$\frac{3\pi}{2}$};
+              \addplot [interval,blue,-,line width=1pt,-] coordinates {(0,-1) (0,-0.7)};
+              \addplot [soliddot,color=blue] coordinates {(0,-1)} node[below right] {$(0,-1)$};
+              \addplot [interval,yellow!30,-,line width=1pt,-] coordinates {(-0.66,0) (-0.55,0)};
+              \addplot [interval,blue!50!purple,-,line width=1pt,-] coordinates {(-0.55,0) (0,0)} node[pos=0,left] {$\pi$};
+              \addplot [interval,blue!50!purple,-,line width=1pt,-] coordinates {(-1,0) (-0.66,0)};
+              \addplot [soliddot,color=blue!50!purple] coordinates {(-1,0)} node[above left] {$(-1,0)$};
+              \addplot [soliddot,color=brown] coordinates {(-.866,-.5)} node[left] {$\left(-\frac{\sqrt{3}}{2},-\frac{1}{2}\right)$};
+              \addplot [soliddot,color=green!60!black] coordinates {(-.707,-.707)} node[below left] {$\left(-\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2}\right)$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(-.5,-.866)} node[below left] {$\left(-\frac{1}{2},-\frac{\sqrt{3}}{2}\right)$};           
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-6">
+      <caption>The Graph of <m>y=\sin(t)</m> Over the Interval <m>\left(\pi,\frac{3\pi}{2}\right)</m> </caption>
+      <image width="80%">
+        <description>
+          A graph of a curve that decreases concave up from the point <m>(\pi,0)</m> to the point <m>(\frac{3\pi}{2},-1)</m>. The curve passes through the points <m>(\pi,0)</m>, <m>(\frac{7\pi}{6},-\frac{1}{2})</m>, <m>(\frac{5\pi}{4},-\frac{\sqrt{2}}{2})</m>m <m>(\frac{4\pi}{3},-\frac{\sqrt{3}}{2})</m>, and <m>(\frac{3\pi}{2},-1)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=7.5cm,
+                          xlabel={$t$},
+                          xmin=-45,xmax=285,
+                          ymin=-1.1,ymax=1.1,
+                          xtick={30,45,60,90,120,135,150,180,210,225,240,270},
+                          ytick={-1,-0.866,-0.707,-0.5,0.5,0.707,0.866,1},
+                          minor xtick={},
+                        xticklabels={$\frac{\pi}{6}$,$\frac{\pi}{4}$,$\frac{\pi}{3}$,$\frac{\pi}{2}$,$\frac{2\pi}{3}$,$\frac{3\pi}{4}$,$\frac{5\pi}{6}$,$\pi$,$\frac{7\pi}{6}$,$\frac{5\pi}{4}$,$\frac{4\pi}{3}$,$\frac{3\pi}{2}$},
+                          yticklabels={$-1$,$-\sqrt{3}/2$,$-\sqrt{2}/2$,$-1/2$,$1/2$,$\sqrt{2}/2$,$\sqrt{3}/2$,$1$}]
+              \addplot [domain=0:180,samples=100,color=gray!50!white,line width=1pt] {sin(x)};
+              \addplot [domain=180:270,samples=100,color=red,line width=2pt] {sin(x)}; 
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      In <xref ref="trigonometry-sine-cosine-graphs-figure-7">Figure</xref> we see that when traveling around the unit circle, as the value of <m>t</m> increases from <m>\frac{3\pi}{2}</m> to <m>2\pi</m>, the <m>y</m>-coordinate of the point on the unit circle steadily increases from <m>-1</m> to <m>0</m>.  This means that on the graph of <m>y=\sin(t)</m>, as <m>t</m> increases from <m>\frac{3\pi}{2}</m> to <m>2\pi</m>, the function value (<m>y</m>) will also steadily increase from <m>-1</m> to <m>0</m>.  This is illustrated in <xref ref="trigonometry-sine-cosine-graphs-figure-8">Figure</xref>.
+    </p>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-7">
+      <caption>Key Angles That Terminate in Quadrant IV</caption>
+      <image width="60%">
+        <description>
+          Five angles in standard position and the coordinates of the points where they intersect the unit circle are shown.  An angle of measure <m>\frac{3\pi}{2}</m> intersects the circle at the point <m>(0,-1)</m>.  An angle of measure <m>\frac{5\pi}{3}</m> intersects the circle at the point <m>(\frac{1}{2},-\frac{\sqrt{3}}{2})</m>.  An angle of measure <m>\frac{7\pi}{4}</m> intersects the circle at the point <m>(\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2})</m>.  An angle of measure <m>\frac{11\pi}{6}</m> intersects the circle at the point <m>(\frac{\sqrt{3}}{2},-\frac{1}{2})</m>.  Finally, an angle if measure <m>2\pi</m>intersects the circle at the point <m>(1,0)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-0.3,xmax=1.3,
+                          ymin=-1.3,ymax=0.3,
+                          xtick={-2,2},
+                          ytick={-2,2}]
+              \addplot [domain=0:360,samples=100,color=gray,line width=0.5pt] ({cos(x)},{sin(x)});
+              \addplot [domain=270:360,samples=100,color=red,line width=1pt,-{Stealth}] ({cos(x)},{sin(x)});
+              \addplot [primarycurve,domain=0:0.33,line width=1pt,-,color=green!60!black] {-x} node[pos=1,below right] {$\frac{7\pi}{4}$};
+              \addplot [primarycurve,domain=0.44:0.707,line width=1pt,-,color=green!60!black] {-x};
+              \addplot [primarycurve,domain=0:0.25,line width=1pt,-,color=purple!75!black] {-1.733*x} node[pos=1,below right] {$\frac{5\pi}{3}$};
+              \addplot [primarycurve,domain=0.34:0.5,line width=1pt,-,color=purple!75!black] {-1.733*x};    
+              \addplot [primarycurve,domain=0:0.41,line width=1pt,-,color=brown] {-.577*x} node[pos=1,below right] {$\frac{11\pi}{6}$};  
+              \addplot [primarycurve,domain=0.55:0.866,line width=1pt,-,color=brown] {-.577*x};  
+              \addplot [interval,yellow!30,-,line width=1pt,-] coordinates {(0,-0.7) (0,-0.55)};
+              \addplot [interval,blue,-,line width=1pt,-] coordinates {(0,-0.55) (0,0)} node[pos=0,below] {$\frac{3\pi}{2}$};
+              \addplot [interval,blue,-,line width=1pt,-] coordinates {(0,-1) (0,-0.7)};
+              \addplot [soliddot,color=blue] coordinates {(0,-1)} node[below right] {$(0,-1)$};
+              \addplot [interval,yellow!30,-,line width=1pt,-] coordinates {(0.55,0) (0.68,0)};
+              \addplot [interval,blue!50!purple,-,line width=1pt,-] coordinates {(0,0) (0.55,0)} node[pos=1,right] {$2\pi$};
+              \addplot [interval,blue!50!purple,-,line width=1pt,-] coordinates {(0.68,0) (1,0)};
+              \addplot [soliddot,color=blue!50!purple] coordinates {(1,0)} node[below right] {$(1,0)$};
+              \addplot [soliddot,color=brown] coordinates {(.866,-.5)} node[right] {$\left(\frac{\sqrt{3}}{2},-\frac{1}{2}\right)$};
+              \addplot [soliddot,color=green!60!black] coordinates {(.707,-.707)} node[below right] {$\left(\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2}\right)$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(.5,-.866)} node[below right] {$\left(\frac{1}{2},-\frac{\sqrt{3}}{2}\right)$};         
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-8">
+      <caption>The Graph of <m>y=\sin(t)</m> Over the Interval <m>\left(\frac{3\pi}{2},2\pi\right)</m> </caption>
+      <image width="80%">
+        <description>
+          A graph of a curve that increases concave up from the point <m>(\frac{3\pi}{2},-1)</m> to the point <m>(2\pi,0)</m>. The curve passes through the points <m>(\frac{3\pi}{2},-1)</m>, <m>(\frac{5\pi}{3},-\frac{\sqrt{3}}{2})</m>, <m>(\frac{7\pi}{4},-\frac{\sqrt{2}}{2})</m>m <m>(\frac{11\pi}{6},-\frac{1}{2})</m>, and <m>(2\pi,0)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=7.5cm,
+                          xlabel={$t$},
+                          xmin=-60,xmax=375,
+                          ymin=-1.1,ymax=1.1,
+                          xtick={30,45,60,90,120,135,150,180,210,225,240,270,300,315,330,360},
+                          ytick={-1,-0.866,-0.707,-0.5,0.5,0.707,0.866,1},
+                          minor xtick={},
+                        xticklabels={$\frac{\pi}{6}$,$\frac{\pi}{4}$,$\frac{\pi}{3}$,$\frac{\pi}{2}$,$\frac{2\pi}{3}$,$\frac{3\pi}{4}$,$\frac{5\pi}{6}$,$\pi$,$\frac{7\pi}{6}$,$\frac{5\pi}{4}$,$\frac{4\pi}{3}$,$\frac{3\pi}{2}$,$\frac{5\pi}{3}$,$\frac{7\pi}{4}$,$\frac{11\pi}{6}$,$2\pi$},
+                          yticklabels={$-1$,$-\sqrt{3}/2$,$-\sqrt{2}/2$,$-1/2$,$1/2$,$\sqrt{2}/2$,$\sqrt{3}/2$,$1$}]
+              \addplot [domain=0:270,samples=100,color=gray!50!white,line width=1pt] {sin(x)};
+              \addplot [domain=270:360,samples=100,color=red,line width=2pt] {sin(x)}; 
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+  </paragraphs>
+
+  <paragraphs>
+    <title>The Graph of the Function <m>y=\cos(t)</m></title>
+    <p></p>
+    <p>
+      As with the sine function, while the values of the cosine function values are dependent upon the graph of the unit circle, the function itself produces its own graph.
+    </p>
+    <p>
+      In <xref ref="trigonometry-sine-cosine-graphs-figure-9">Figure</xref> we see that when traveling around the unit circle, as the value of <m>t</m> increases from <m>0</m> to <m>\frac{\pi}{2}</m>, the <m>x</m>-coordinate of the point on the unit circle steadily decreases from <m>1</m> to <m>0</m>.  This means that on the graph of <m>y=\cos(t)</m>, as <m>t</m> increases from <m>0</m> to <m>\frac{\pi}{2}</m>, the function value (<m>y</m>) will also steadily decrease from <m>1</m> to <m>0</m>.  This is illustrated in <xref ref="trigonometry-sine-cosine-graphs-figure-10">Figure</xref>.
+    </p>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-9">
+      <caption>Key Angles That Terminate in Quadrant I</caption>
+      <image width="60%">
+        <description>
+          Five angles in standard position and the coordinates of the points where they intersect the unit circle are shown.  An angle of measure zero intersects the circle at the point <m>(1,0)</m>.  An angle of measure <m>\frac{\pi}{6}</m> intersects the circle at the point <m>(\frac{\sqrt{3}}{2},\frac{1}{2})</m>.  An angle of measure <m>\frac{\pi}{4}</m> intersects the circle at the point <m>(\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2})</m>.  An angle of measure <m>\frac{\pi}{3}</m> intersects the circle at the point <m>(\frac{1}{2},\frac{\sqrt{3}}{2})</m>.  Finally, an angle if measure <m>(\frac{\pi}{2}</m>intersects the circle at the point <m>(0,1)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-0.3,xmax=1.3,
+                          ymin=-0.3,ymax=1.3,
+                          xtick={-2,2},
+                          ytick={-2,2}]
+              \addplot [domain=0:360,samples=100,color=gray,line width=0.5pt] ({cos(x)},{sin(x)});
+              \addplot [domain=0:90,samples=100,color=red,line width=1pt,-{Stealth}] ({cos(x)},{sin(x)});
+              \addplot [primarycurve,domain=0:0.33,line width=1pt,-,color=green!60!black] {x} node[pos=1,above right] {$\frac{\pi}{4}$};
+              \addplot [primarycurve,domain=0.44:0.707,line width=1pt,-,color=green!60!black] {x};
+              \addplot [primarycurve,domain=0:0.25,line width=1pt,-,color=purple!75!black] {1.733*x} node[pos=1,above right] {$\frac{\pi}{3}$};
+              \addplot [primarycurve,domain=0.34:0.5,line width=1pt,-,color=purple!75!black] {1.733*x};    
+              \addplot [primarycurve,domain=0:0.41,line width=1pt,-,color=brown] {.577*x} node[pos=1,above right] {$\frac{\pi}{6}$};  
+              \addplot [primarycurve,domain=0.5:0.866,line width=1pt,-,color=brown] {.577*x};                    
+              \addplot [primarycurve,domain=0:1,line width=1pt,-}] {0};;
+              \addplot [interval,yellow!30,-,line width=1pt,-] coordinates {(0,0.55) (0,0.7)};
+              \addplot [interval,blue,-,line width=1pt,-] coordinates {(0,0) (0,0.55)} node[pos=1,above] {$\frac{\pi}{2}$};
+              \addplot [interval,blue,-,line width=1pt,-] coordinates {(0,0.7) (0,1)};
+              \addplot [soliddot,color=blue] coordinates {(0,1)} node[above right] {$(0,1)$};
+              \addplot [interval,yellow!30,-,line width=1pt,-] coordinates {(0.55,0) (0.64,0)};
+              \addplot [interval,blue!50!purple,-,line width=1pt,-] coordinates {(0,0) (0.55,0)} node[pos=1,right] {$0$};
+              \addplot [interval,blue!50!purple,-,line width=1pt,-] coordinates {(0.64,0) (1,0)};
+              \addplot [soliddot,color=blue!50!purple] coordinates {(1,0)} node[above right] {$(1,0)$};
+              \addplot [soliddot,color=brown] coordinates {(.866,.5)} node[right] {$\left(\frac{\sqrt{3}}{2},\frac{1}{2}\right)$};
+              \addplot [soliddot,color=green!60!black] coordinates {(.707,.707)} node[above right] {$\left(\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(.5,.866)} node[above right] {$\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)$};         
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-10">
+      <caption>The Graph of <m>y=\cos(t)</m> Over the Interval <m>\left(0,\frac{\pi}{2}\right)</m> </caption>
+      <image width="80%">
+        <description>
+          A graph of a curve that decreases concave down from the point <m>(0,1)</m> to the point <m>(\frac{\pi}{2},0)</m>. The curve passes through the points <m>(0,1)</m>, <m>(\frac{\pi}{6},\frac{\sqrt{3}{2})</m>, <m>(\frac{\pi}{4},\frac{\sqrt{2}}{2})</m>m <m>(\frac{\pi}{3},\frac{1}{2})</m>, and <m>(\frac{\pi{2}}{2},0)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=7.5cm,
+                          xlabel={$t$},
+                          xmin=-20,xmax=105,
+                          ymin=-1.1,ymax=1.1,
+                          xtick={30,45,60,90},
+                          ytick={-1,-0.866,-0.707,-0.5,0.5,0.707,0.866,1},
+                          minor xtick={},
+                          xticklabels={$\frac{\pi}{6}$,$\frac{\pi}{4}$,$\frac{\pi}{3}$,$\frac{\pi}{2}$},
+                          yticklabels={$-1$,$-\sqrt{3}/2$,$-\sqrt{2}/2$,$-1/2$,$1/2$,$\sqrt{2}/2$,$\sqrt{3}/2$,$1$}]
+              \addplot [domain=0:90,samples=100,color=red,line width=2pt] {cos(x)}; 
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <p>    
+      In <xref ref="trigonometry-sine-cosine-graphs-figure-11">Figure</xref> we see that when traveling around the unit circle, as the value of <m>t</m> increases from <m>\frac{\pi}{2}</m> to <m>\pi</m>, the <m>x</m>-coordinate of the point on the unit circle steadily decreases from <m>0</m> to <m>-1</m>.  This means that on the graph of <m>y=\cos(t)</m>, as <m>t</m> increases from <m>\frac{\pi}{2}</m> to <m>\pi</m>, the function value (<m>y</m>) will also steadily decrease from <m>0</m> to <m>-1</m>.  This is illustrated in <xref ref="trigonometry-sine-cosine-graphs-figure-12">Figure</xref>.
+    </p>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-11">
+      <caption>Key Angles That Terminate in Quadrant II</caption>
+      <image width="60%">
+        <description>
+          Five angles in standard position and the coordinates of the points where they intersect the unit circle are shown.  An angle of measure <m>\frac{\pi}{2}</m> intersects the circle at the point <m>(0,1)</m>.  An angle of measure <m>\frac{2\pi}{3}</m> intersects the circle at the point <m>(-\frac{1}{2},\frac{\sqrt{3}}{2})</m>.  An angle of measure <m>\frac{3\pi}{4}</m> intersects the circle at the point <m>(\frac{-\sqrt{2}}{2},\frac{\sqrt{2}}{2})</m>.  An angle of measure <m>\frac{5\pi}{6}</m> intersects the circle at the point <m>(-\frac{\sqrt{3}}{2},\frac{1}{2})</m>.  Finally, an angle if measure <m>(\pi</m>intersects the circle at the point <m>(-1,0)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-1.3,xmax=0.3,
+                          ymin=-0.3,ymax=1.3,
+                          xtick={-2,2},
+                          ytick={-2,2}]
+              \addplot [domain=0:360,samples=100,color=gray,line width=0.5pt] ({cos(x)},{sin(x)});
+              \addplot [domain=90:180,samples=100,color=red,line width=1pt,-{Stealth}] ({cos(x)},{sin(x)});
+              \addplot [primarycurve,domain=-0.33:0,line width=1pt,-,color=green!60!black] {-x} node[pos=0,above left] {$\frac{3\pi}{4}$};
+              \addplot [primarycurve,domain=-0.707:-0.46,line width=1pt,-,color=green!60!black] {-x};
+              \addplot [primarycurve,domain=-0.25:0,line width=1pt,-,color=purple!75!black] {-1.733*x} node[pos=0,above left] {$\frac{2\pi}{3}$};
+              \addplot [primarycurve,domain=-0.5:-0.36,line width=1pt,-,color=purple!75!black] {-1.733*x};    
+              \addplot [primarycurve,domain=-0.41:0,line width=1pt,-,color=brown] {-.577*x} node[pos=0,above left] {$\frac{5\pi}{6}$};  
+              \addplot [primarycurve,domain=-0.866:-0.54,line width=1pt,-,color=brown] {-.577*x};                    
+              \addplot [primarycurve,domain=0:1,line width=1pt,-}] {0};;
+              \addplot [interval,yellow!30,-,line width=1pt,-] coordinates {(0,0.55) (0,0.7)};
+              \addplot [interval,blue,-,line width=1pt,-] coordinates {(0,0) (0,0.55)} node[pos=1,above] {$\frac{\pi}{2}$};
+              \addplot [interval,blue,-,line width=1pt,-] coordinates {(0,0.7) (0,1)};
+              \addplot [soliddot,color=blue] coordinates {(0,1)} node[above right] {$(0,1)$};
+              \addplot [interval,yellow!30,-,line width=1pt,-] coordinates {(-0.66,0) (-0.55,0)};
+              \addplot [interval,blue!50!purple,-,line width=1pt,-] coordinates {(-0.55,0) (0,0)} node[pos=0,left] {$\pi$};
+              \addplot [interval,blue!50!purple,-,line width=1pt,-] coordinates {(-1,0) (-0.66,0)};
+              \addplot [soliddot,color=blue!50!purple] coordinates {(-1,0)} node[below left] {$(-1,0)$};
+              \addplot [soliddot,color=brown] coordinates {(-.866,.5)} node[left] {$\left(-\frac{\sqrt{3}}{2},\frac{1}{2}\right)$};
+              \addplot [soliddot,color=green!60!black] coordinates {(-.707,.707)} node[above left] {$\left(-\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(-.5,.866)} node[above left] {$\left(-\frac{1}{2},\frac{\sqrt{3}}{2}\right)$};         
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-12">
+      <caption>The Graph of <m>y=\cos(t)</m> Over the Interval <m>\left(\frac{\pi}{2},\pi\right)</m> </caption>
+      <image width="80%">
+        <description>
+          A graph of a curve that decreases concave up from the point <m>(\frac{\pi}{2},0)</m> to the point <m>(\pi,-1)</m>. The curve passes through the points <m>(\frac{\pi}{2},0)</m>, <m>(\frac{2\pi}{3},-\frac{1}{2})</m>, <m>(\frac{3\pi}{4},-\frac{\sqrt{2}}{2})</m>m <m>(\frac{5\pi}{6},-\frac{\sqrt{3}}{2})</m>, and <m>(\pi,-1)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=7.5cm,
+                          xlabel={$t$},
+                          xmin=-30,xmax=195,
+                          ymin=-1.1,ymax=1.1,
+                          xtick={30,45,60,90,120,135,150,180},
+                          ytick={-1,-0.866,-0.707,-0.5,0.5,0.707,0.866,1},
+                          minor xtick={},
+                          xticklabels={$\frac{\pi}{6}$,$\frac{\pi}{4}$,$\frac{\pi}{3}$,$\frac{\pi}{2}$,$\frac{2\pi}{3}$,$\frac{3\pi}{4}$,$\frac{5\pi}{6}$,$\pi$},
+                          yticklabels={$-1$,$-\sqrt{3}/2$,$-\sqrt{2}/2$,$-1/2$,$1/2$,$\sqrt{2}/2$,$\sqrt{3}/2$,$1$}]
+              \addplot [domain=0:90,samples=100,color=gray!50!white,line width=1pt] {cos(x)};
+              \addplot [domain=90:180,samples=100,color=red,line width=2pt] {cos(x)}; 
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      In <xref ref="trigonometry-sine-cosine-graphs-figure-13">Figure</xref> we see that when traveling around the unit circle, as the value of <m>t</m> increases from <m>\pi</m> to <m>\frac{3\pi}{2}</m>, the <m>x</m>-coordinate of the point on the unit circle steadily increases from <m>-1</m> to <m>0</m>.  This means that on the graph of <m>y=\cos(t)</m>, as <m>t</m> increases from <m>\pi</m> to <m>\frac{3\pi}{2}</m>, the function value (<m>y</m>) will also steadily increase from <m>-1</m> to <m>0</m>.  This is illustrated in <xref ref="trigonometry-sine-cosine-graphs-figure-14">Figure</xref>.
+    </p>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-13">
+      <caption>Key Angles That Terminate in Quadrant III</caption>
+      <image width="60%">
+        <description>
+          Five angles in standard position and the coordinates of the points where they intersect the unit circle are shown.  An angle of measure <m>\pi</m> intersects the circle at the point <m>(-1,0)</m>.  An angle of measure <m>\frac{7\pi}{6}</m> intersects the circle at the point <m>(-\frac{\sqrt{3}}{2},-\frac{1}{2})</m>.  An angle of measure <m>\frac{5\pi}{4}</m> intersects the circle at the point <m>(-\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2})</m>.  An angle of measure <m>\frac{4\pi}{3}</m> intersects the circle at the point <m>(-\frac{1}{2},-\frac{\sqrt{3}}{2})</m>.  Finally, an angle if measure <m>(\frac{3\pi}{2}</m>intersects the circle at the point <m>(0,-1)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-1.3,xmax=0.3,
+                          ymin=-1.3,ymax=0.3,
+                          xtick={-2,2},
+                          ytick={-2,2}]
+              \addplot [domain=0:360,samples=100,color=gray,line width=0.5pt] ({cos(x)},{sin(x)});
+              \addplot [domain=180:270,samples=100,color=red,line width=1pt,-{Stealth}] ({cos(x)},{sin(x)});
+              \addplot [primarycurve,domain=-0.33:0,line width=1pt,-,color=green!60!black] {x} node[pos=0,below left] {$\frac{5\pi}{4}$};
+              \addplot [primarycurve,domain=-0.707:-0.46,line width=1pt,-,color=green!60!black] {x};
+              \addplot [primarycurve,domain=-0.25:0,line width=1pt,-,color=purple!75!black] {1.733*x} node[pos=0,below left] {$\frac{4\pi}{3}$};
+              \addplot [primarycurve,domain=-0.5:-0.36,line width=1pt,-,color=purple!75!black] {1.733*x};    
+              \addplot [primarycurve,domain=-0.41:0,line width=1pt,-,color=brown] {.577*x} node[pos=0,below left] {$\frac{7\pi}{6}$};  
+              \addplot [primarycurve,domain=-0.866:-0.54,line width=1pt,-,color=brown] {.577*x};                    
+              \addplot [primarycurve,domain=0:1,line width=1pt,-}] {0};;
+              \addplot [interval,yellow!30,-,line width=1pt,-] coordinates {(0,-0.7) (0,-0.55)};
+              \addplot [interval,blue,-,line width=1pt,-] coordinates {(0,-0.55) (0,0)} node[pos=0,below] {$\frac{3\pi}{2}$};
+              \addplot [interval,blue,-,line width=1pt,-] coordinates {(0,-1) (0,-0.7)};
+              \addplot [soliddot,color=blue] coordinates {(0,-1)} node[below right] {$(0,-1)$};
+              \addplot [interval,yellow!30,-,line width=1pt,-] coordinates {(-0.66,0) (-0.55,0)};
+              \addplot [interval,blue!50!purple,-,line width=1pt,-] coordinates {(-0.55,0) (0,0)} node[pos=0,left] {$\pi$};
+              \addplot [interval,blue!50!purple,-,line width=1pt,-] coordinates {(-1,0) (-0.66,0)};
+              \addplot [soliddot,color=blue!50!purple] coordinates {(-1,0)} node[above left] {$(-1,0)$};
+              \addplot [soliddot,color=brown] coordinates {(-.866,-.5)} node[left] {$\left(-\frac{\sqrt{3}}{2},-\frac{1}{2}\right)$};
+              \addplot [soliddot,color=green!60!black] coordinates {(-.707,-.707)} node[below left] {$\left(-\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2}\right)$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(-.5,-.866)} node[below left] {$\left(-\frac{1}{2},-\frac{\sqrt{3}}{2}\right)$};           
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-14">
+      <caption>The Graph of <m>y=\cos(t)</m> Over the Interval <m>\left(\pi,\frac{3\pi}{2}\right)</m> </caption>
+      <image width="80%">
+        <description>
+          A graph of a curve that increases concave up from the point <m>(\pi,-1)</m> to the point <m>(\frac{3\pi}{2},0)</m>. The curve passes through the points <m>(\pi,-1)</m>, <m>(\frac{7\pi}{6},-\frac{\sqrt{3}}{2})</m>, <m>(\frac{5\pi}{4},-\frac{\sqrt{2}}{2})</m>m <m>(\frac{4\pi}{3},-\frac{1}{2})</m>, and <m>(\frac{3\pi}{2},0)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=7.5cm,
+                          xlabel={$t$},
+                          xmin=-45,xmax=285,
+                          ymin=-1.1,ymax=1.1,
+                          xtick={30,45,60,90,120,135,150,180,210,225,240,270},
+                          ytick={-1,-0.866,-0.707,-0.5,0.5,0.707,0.866,1},
+                          minor xtick={},
+                          xticklabels={$\frac{\pi}{6}$,$\frac{\pi}{4}$,$\frac{\pi}{3}$,$\frac{\pi}{2}$,$\frac{2\pi}{3}$,$\frac{3\pi}{4}$,$\frac{5\pi}{6}$,$\pi$,$\frac{7\pi}{6}$,$\frac{5\pi}{4}$,$\frac{4\pi}{3}$,$\frac{3\pi}{2}$},
+                          yticklabels={$-1$,$-\sqrt{3}/2$,$-\sqrt{2}/2$,$-1/2$,$1/2$,$\sqrt{2}/2$,$\sqrt{3}/2$,$1$}]
+              \addplot [domain=0:180,samples=100,color=gray!50!white,line width=1pt] {cos(x)};
+              \addplot [domain=180:270,samples=100,color=red,line width=2pt] {cos(x)}; 
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      In <xref ref="trigonometry-sine-cosine-graphs-figure-15">Figure</xref> we see that when traveling around the unit circle, as the value of <m>t</m> increases from <m>\frac{3\pi}{2}</m> to <m>2\pi</m>, the <m>x</m>-coordinate of the point on the unit circle steadily increases from <m>0</m> to <m>1</m>.  This means that on the graph of <m>y=\cos(t)</m>, as <m>t</m> increases from <m>\frac{3\pi}{2}</m> to <m>2\pi</m>, the function value (<m>y</m>) will also steadily increase from <m>0</m> to <m>1</m>.  This is illustrated in <xref ref="trigonometry-sine-cosine-graphs-figure-16">Figure</xref>.
+    </p>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-15">
+      <caption>Key Angles That Terminate in Quadrant IV</caption>
+      <image width="60%">
+        <description>
+          Five angles in standard position and the coordinates of the points where they intersect the unit circle are shown.  An angle of measure <m>\frac{3\pi}{2}</m> intersects the circle at the point <m>(0,-1)</m>.  An angle of measure <m>\frac{5\pi}{3}</m> intersects the circle at the point <m>(\frac{1}{2},-\frac{\sqrt{3}}{2})</m>.  An angle of measure <m>\frac{7\pi}{4}</m> intersects the circle at the point <m>(\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2})</m>.  An angle of measure <m>\frac{11\pi}{6}</m> intersects the circle at the point <m>(\frac{\sqrt{3}}{2},-\frac{1}{2})</m>.  Finally, an angle if measure <m>2\pi</m>intersects the circle at the point <m>(1,0)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-0.3,xmax=1.3,
+                          ymin=-1.3,ymax=0.3,
+                          xtick={-2,2},
+                          ytick={-2,2}]
+              \addplot [domain=0:360,samples=100,color=gray,line width=0.5pt] ({cos(x)},{sin(x)});
+              \addplot [domain=270:360,samples=100,color=red,line width=1pt,-{Stealth}] ({cos(x)},{sin(x)});
+              \addplot [primarycurve,domain=0:0.33,line width=1pt,-,color=green!60!black] {-x} node[pos=1,below right] {$\frac{7\pi}{4}$};
+              \addplot [primarycurve,domain=0.44:0.707,line width=1pt,-,color=green!60!black] {-x};
+              \addplot [primarycurve,domain=0:0.25,line width=1pt,-,color=purple!75!black] {-1.733*x} node[pos=1,below right] {$\frac{5\pi}{3}$};
+              \addplot [primarycurve,domain=0.34:0.5,line width=1pt,-,color=purple!75!black] {-1.733*x};    
+              \addplot [primarycurve,domain=0:0.41,line width=1pt,-,color=brown] {-.577*x} node[pos=1,below right] {$\frac{11\pi}{6}$};  
+              \addplot [primarycurve,domain=0.55:0.866,line width=1pt,-,color=brown] {-.577*x};                    
+              \addplot [primarycurve,domain=0:1,line width=1pt,-}] {0};;
+              \addplot [interval,yellow!30,-,line width=1pt,-] coordinates {(0,-0.7) (0,-0.55)};
+              \addplot [interval,blue,-,line width=1pt,-] coordinates {(0,-0.55) (0,0)} node[pos=0,below] {$\frac{3\pi}{2}$};
+              \addplot [interval,blue,-,line width=1pt,-] coordinates {(0,-1) (0,-0.7)};
+              \addplot [soliddot,color=blue] coordinates {(0,-1)} node[below right] {$(0,-1)$};
+              \addplot [interval,yellow!30,-,line width=1pt,-] coordinates {(0.55,0) (0.68,0)};
+              \addplot [interval,blue!50!purple,-,line width=1pt,-] coordinates {(0,0) (0.55,0)} node[pos=1,right] {$2\pi$};
+              \addplot [interval,blue!50!purple,-,line width=1pt,-] coordinates {(0.68,0) (1,0)};
+              \addplot [soliddot,color=blue!50!purple] coordinates {(1,0)} node[below right] {$(1,0)$};
+              \addplot [soliddot,color=brown] coordinates {(.866,-.5)} node[right] {$\left(\frac{\sqrt{3}}{2},-\frac{1}{2}\right)$};
+              \addplot [soliddot,color=green!60!black] coordinates {(.707,-.707)} node[below right] {$\left(\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2}\right)$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(.5,-.866)} node[below right] {$\left(\frac{1}{2},-\frac{\sqrt{3}}{2}\right)$};         
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-16">
+      <caption>The Graph of <m>y=\cos(t)</m> Over the Interval <m>\left(\frac{3\pi}{2},2\pi\right)</m> </caption>
+      <image width="80%">
+        <description>
+          A graph of a curve that increases concave down from the point <m>(\frac{3\pi}{2},0)</m> to the point <m>(2\pi,1)</m>. The curve passes through the points <m>(\frac{3\pi}{2},0)</m>, <m>(\frac{5\pi}{3},\frac{1}{2})</m>, <m>(\frac{7\pi}{4},\frac{\sqrt{2}}{2})</m>m <m>(\frac{11\pi}{6},\frac{\sqrt{3}}{2})</m>, and <m>(2\pi,1)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=7.5cm,
+                          xlabel={$t$},
+                          xmin=-60,xmax=375,
+                          ymin=-1.1,ymax=1.1,
+                          xtick={30,45,60,90,120,135,150,180,210,225,240,270,300,315,330,360},
+                          ytick={-1,-0.866,-0.707,-0.5,0.5,0.707,0.866,1},
+                          minor xtick={},
+                          xticklabels={$\frac{\pi}{6}$,$\frac{\pi}{4}$,$\frac{\pi}{3}$,$\frac{\pi}{2}$,$\frac{2\pi}{3}$,$\frac{3\pi}{4}$,$\frac{5\pi}{6}$,$\pi$,$\frac{7\pi}{6}$,$\frac{5\pi}{4}$,$\frac{4\pi}{3}$,$\frac{3\pi}{2}$,$\frac{5\pi}{3}$,$\frac{7\pi}{4}$,$\frac{11\pi}{6}$,$2\pi$},
+                          yticklabels={$-1$,$-\sqrt{3}/2$,$-\sqrt{2}/2$,$-1/2$,$1/2$,$\sqrt{2}/2$,$\sqrt{3}/2$,$1$}]
+              \addplot [domain=0:270,samples=100,color=gray!50!white,line width=1pt] {cos(x)};
+              \addplot [domain=270:360,samples=100,color=red,line width=2pt] {cos(x)}; 
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+  </paragraphs>
+  <p>
+    We know turn our attention to language that is specific to trigonometric functions.
+  </p>
+
+  <paragraphs>
+    <title>Periodic Functions/Basic Properties of the Graphs of Sine and Cosine Functions</title>
+    <p></p>
+    <p>
+      A non-constant function, <m>f</m>, is said to be <term>periodic</term> if there exists a non-zero constant, <m>k</m>, with the property that <m>f(t+k)=f(t)</m> for all values of <m>t</m>.
+    </p>
+    <p>
+      If the function <m>f</m> is periodic, then the smallest positive value, <m>p</m>, that satisfies <m>f(t+p)=f(t)</m> for all values of <m>t</m> is defined to be <term>the period</term> of the function <m>f</m>.
+    </p>
+    <p>
+      The periods of <m>y=\sin(t)</m> and <m>y=\cos(t)</m> are both <m>2\pi</m>.  This is mostly intuitive if you think about how the two functions are defined in terms of coordinates of points along the unit circle.  Every time <m>t</m> travels <m>2\pi</m> around the unit circle, it is back at the point at which at which it started, so the values of both <m>\sin(t)</m> and <m>\cos(t)</m> are also back to the values at which they started.
+    </p>
+    <p>
+      <xref ref="trigonometry-sine-cosine-graphs-figure-200">Figure</xref> shows a little more than three full periods of the function <m>y=\sin(t)</m> and Figure <xref ref="trigonometry-sine-cosine-graphs-figure-201">Figure</xref> shows a little more than three periods of the function <m>y=\cos(t)</m>.
+    </p>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-200">
+      <caption><m>y=\sin(t)</m> </caption>
+      <image width="80%">
+        <description>
+          A graph of the function <m>y=\sin(t)</m> over an interval that is a little longer (on both sides) than <m>(-2\pi,4\pi)</m>.  There are arrows at each end of the curve.  The period that occurs over the interval <m>(0,2\pi)</m> also occurs over the intervals <m>(-2\pi,0)</m> and <m>(2\pi,4\pi)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          xmin=-450,xmax=780,
+                          ymin=-1.5,ymax=1.5,
+                          xtick={-360,-270,-180,-90,90,180,270,360,450,540,630,720},
+                          ytick={-1,1},
+                          minor xtick={},
+                          xticklabels={$-2\pi$,$-\frac{3\pi}{2}$,$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$,$\frac{5\pi}{2}$,$3\pi$,$\frac{7\pi}{2}$,$4\pi$}]
+              \addplot [domain=-430:760,samples=200,color=blue,line width=1.5pt,{Stealth}-{Stealth}] {sin(x)}; 
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-201">
+      <caption><m>y=\cos(t)</m> </caption>
+      <image width="80%">
+        <description>
+          A graph of the function <m>y=\cos(t)</m> over an interval that is a little longer (on both sides) than <m>(-2\pi,4\pi)</m>.  The periods over two intervals are highlighted, one that begins and ends shortly before a maximum point on the curve and another than begins and ends a little less than midway though a decreasing portion of the curve.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          xmin=-450,xmax=780,
+                          ymin=-1.5,ymax=1.5,
+                          xtick={-360,-270,-180,-90,90,180,270,360,450,540,630,720},
+                          ytick={-1,1},
+                          minor xtick={},
+                          xticklabels={$-2\pi$,$-\frac{3\pi}{2}$,$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$,$\frac{5\pi}{2}$,$3\pi$,$\frac{7\pi}{2}$,$4\pi$}]
+              \addplot [domain=-430:760,samples=200,color=red,line width=1.5pt,{Stealth}-{Stealth}] {cos(x)}; 
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      One interesting thing to note about the graphs is that if you affect a leftward shift of <m>\frac{\pi}{2}</m> on the graph of <m>y=\sin(t)</m>, the resultant curve is <m>y=\cos(t)</m>.  Similarly, a rightward shift of <m>\frac{\pi}{2}</m> affected upon the graph of <m>y=\cos(t)</m> results in the curve <m>y=\sin(t)</m>.  These two facts lead to the following two identities.
+      <me>\sin\left(t+\frac{\pi}{2}\right)=\cos(t)\,\text{for all values of}\,t</me>
+      and
+      <me>\cos\left(t-\frac{\pi}{2}\right)=\sin(t)\,\text{for all values of}\,t</me>
+    </p>
+    <p>
+      It is important to fully understand that this repetitive, periodic behavior of both the sine and cosine functions continues forever in both directions.  This is especially important in the sciences, most notably in physics.  Many particles travel along <term>sinusoidal</term> paths, that is, paths that can modeled using a (modified) sine function.  Photons (the particles that create light) are one such particle.  Without the eternal continuity of the sine wave, light from the sun - much less distant stars - would never reach us.  To be honest, the period of the path of a photon can vary over time, but the basic integrity of the sinusoidal wave remains intact until the photon is absorbed by some object (your eye?).
+    </p>
+    <p>
+      Graphically, we think of the term "period" as representing the repeating wave-like pattern in the graphs of sine and cosine functions.  In <xref ref="trigonometry-sine-cosine-graphs-figure-202">Figure</xref>, two periods of the function <m>y=\sin(x)</m> are highlighted.  The two periods have very different shapes, but each take place over an interval of length <m>2\pi</m>, so they each take us back to to the part of the wave-form from which they originated. 
+    </p>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-202">
+      <caption><m>y=\sin(t)</m> </caption>
+      <image width="80%">
+        <description>
+          A graph of the function <m>y=\sin(t)</m> over an interval that is a little longer (on both sides) than <m>(-2\pi,4\pi)</m>.  There are arrows at each end of the curve.  The period that occurs over the interval <m>(0,2\pi)</m> also occurs over the intervals <m>(-2\pi,0)</m> and <m>(2\pi,4\pi)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          xmin=-450,xmax=780,
+                          ymin=-1.5,ymax=1.5,
+                          xtick={-360,-270,-180,-90,90,180,270,360,450,540,630,720},
+                          ytick={-1,1},
+                          minor xtick={},
+                          xticklabels={$-2\pi$,$-\frac{3\pi}{2}$,$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$,$\frac{5\pi}{2}$,$3\pi$,$\frac{7\pi}{2}$,$4\pi$}]
+              \addplot [domain=-430:760,samples=200,color=gray,line width=.75pt,{Stealth}-{Stealth}] {sin(x)};
+              \addplot [domain=-315:45,samples=200,color=red,line width=2pt] {sin(x)};
+              \addplot [domain=160:520,samples=200,color=blue,line width=2pt] {sin(x)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      Having said all of that, there are <term>standard periods</term> that we associate with the sine and cosine functions.  These are the periods that begin at <m>t=0</m>, assuming that no horizontal shift has been affected upon the base function.  There are four standard periods associated with sine and cosine functions that you should memorize: the standard periods of the functions <m>y=\sin(t)</m>, <m>y=\cos(t)</m>, <m>y=-\sin(t)</m>, and <m>y=-\cos(t)</m>.
+    </p>
+    <p>
+      When discussing the standard periods, I will use the term "min" to represent the lowest <m>y</m>-coordinate on the curve, the term "max" to represent the highest <m>y</m>-coordinate on the curve, and the term "mid-line" to represent the <m>y</m>-coordinate that occurs midway between the lowest and highest <m>y</m>-coordinates on the curve.  I will use the phrase "critical values of <m>t</m>"" to reference the <m>t</m>-coordinates of the points where the functions have min, max, or mid-line <m>y</m>-coordinates. For example, the <m>y</m>-coordinates of the standard period of the function <m>y=\sin(t)</m> that begins at <m>t=0</m> follow the pattern mid-line, max, mid-line, min, mid-line at the following critical values of <m>t</m>: <m>0,\,\frac{\pi}{2},\,\pi,\,\frac{3\pi}{2},\,2\pi</m>.
+    </p>
+    <p>
+      <xref ref="trigonometry-sine-cosine-graphs-figure-203">Figures</xref>-<xref ref="trigonometry-sine-cosine-graphs-figure-206"></xref> show the standard periods that begin at <m>t=0</m> for the functions <m>y=\sin(t)</m>, <m>y=\cos(t)</m>, <m>y=-\sin(t)</m>, and <m>y=-\cos(t)</m>.
+    </p>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-203">
+      <caption>One Standard Period of <m>y=\sin(t)</m> </caption>
+      <image width="80%">
+        <description>
+          A graph of the function <m>y=\sin(t)</m> over the interval <m>(0,\2pi)</m>.  The point <m>(0,0)></m> is labeled mid-line.  The point <m>(\frac{\pi}{2},1)</m> is labeled max.  The point <m>(\pi,0)</m> is labeled mid-line.  The point <m>(\frac{3\pi},-1)</m> is labeled min.  The point <m>(\2\pi,0)</m> is labeled mid-line.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          xmin=-90,xmax=450,
+                          ymin=-1.5,ymax=1.5,
+                          xtick={90,180,270,360},
+                          ytick={-1,1},
+                          minor xtick={},
+                          xticklabels={$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$}]
+              \addplot [domain=0:360,samples=200,color=red,line width=1.5pt] {sin(x)};
+              \addplot [soliddot,color=black] coordinates {(0,0)} node[above left] {mid-line};
+              \addplot [soliddot,color=black] coordinates {(90,1)} node[above] {max};
+              \addplot [soliddot,color=black] coordinates {(180,0)} node[above right] {mid-line};
+              \addplot [soliddot,color=black] coordinates {(270,-1)} node[below] {min};
+              \addplot [soliddot,color=black] coordinates {(360,0)} node[above] {mid-line};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-204">
+      <caption>One Standard Period of <m>y=\cos(t)</m> </caption>
+      <image width="80%">
+        <description>
+          A graph of the function <m>y=\cos(t)</m> over the interval <m>(0,\2pi)</m>.  The point <m>(0,1)></m> is labeled max.  The point <m>(\frac{\pi}{2},0)</m> is labeled mid-line.  The point <m>(\pi,-1)</m> is labeled min.  The point <m>(\frac{3\pi},0)</m> is labeled mid-line.  The point <m>(\2\pi,1)</m> is labeled max.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          xmin=-90,xmax=450,
+                          ymin=-1.5,ymax=1.5,
+                          xtick={90,180,270,360},
+                          ytick={-1,1},
+                          minor xtick={},
+                          xticklabels={$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$}]
+              \addplot [domain=0:360,samples=200,color=blue,line width=1.5pt] {cos(x)};
+              \addplot [soliddot,color=black] coordinates {(0,1)} node[above left] {max};
+              \addplot [soliddot,color=black] coordinates {(90,0)} node[above right] {mid-line};
+              \addplot [soliddot,color=black] coordinates {(180,-1)} node[below] {min};
+              \addplot [soliddot,color=black] coordinates {(270,0)} node[above right] {mid-line};
+              \addplot [soliddot,color=black] coordinates {(360,1)} node[above right] {max};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-205">
+      <caption>One Standard Period of <m>y=-\sin(t)</m> </caption>
+      <image width="80%">
+        <description>
+          A graph of the function <m>y=-\sin(t)</m> over the interval <m>(0,\2pi)</m>.  The point <m>(0,0)></m> is labeled mid-line.  The point <m>(\frac{\pi}{2},-1)</m> is labeled min.  The point <m>(\pi,0)</m> is labeled mid-line.  The point <m>(\frac{3\pi},1)</m> is labeled max.  The point <m>(\2\pi,0)</m> is labeled mid-line.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          xmin=-90,xmax=450,
+                          ymin=-1.5,ymax=1.5,
+                          xtick={90,180,270,360},
+                          ytick={-1,1},
+                          minor xtick={},
+                          xticklabels={$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$}]
+              \addplot [domain=0:360,samples=200,color=red,line width=1.5pt] {-sin(x)};
+              \addplot [soliddot,color=black] coordinates {(0,0)} node[above left] {mid-line};
+              \addplot [soliddot,color=black] coordinates {(90,-1)} node[below] {min};
+              \addplot [soliddot,color=black] coordinates {(180,0)} node[above left] {mid-line};
+              \addplot [soliddot,color=black] coordinates {(270,1)} node[above] {max};
+              \addplot [soliddot,color=black] coordinates {(360,0)} node[above left] {mid-line};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-sine-cosine-graphs-figure-206">
+      <caption>One Standard Period of <m>y=-\cos(t)</m> </caption>
+      <image width="80%">
+        <description>
+          A graph of the function <m>y=-\cos(t)</m> over the interval <m>(0,\2pi)</m>.  The point <m>(0,-1)></m> is labeled min.  The point <m>(\frac{\pi}{2},0)</m> is labeled mid-line.  The point <m>(\pi,1)</m> is labeled max.  The point <m>(\frac{3\pi},0)</m> is labeled mid-line.  The point <m>(\2\pi,-1)</m> is labeled min.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          xmin=-90,xmax=450,
+                          ymin=-1.5,ymax=1.5,
+                          xtick={90,180,270,360},
+                          ytick={-1,1},
+                          minor xtick={},
+                          xticklabels={$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$}]
+              \addplot [domain=0:360,samples=200,color=blue,line width=1.5pt] {-cos(x)};
+              \addplot [soliddot,color=black] coordinates {(0,-1)} node[below left] {min};
+              \addplot [soliddot,color=black] coordinates {(90,0)} node[above left] {mid-line};
+              \addplot [soliddot,color=black] coordinates {(180,1)} node[above] {max};
+              \addplot [soliddot,color=black] coordinates {(270,0)} node[above right] {mid-line};
+              \addplot [soliddot,color=black] coordinates {(360,-1)} node[below] {min};;
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+  </paragraphs>
+  <p>
+    We now turn our attention to graphical transformations and their specific effects upon sine and cosine functions.
+  </p>
+
+  <paragraphs>
+    <title>Amplitude and Vertical Shift of a Sine or Cosine Function</title>
+    <p></p>
+    <p>
+      In this section we are going to consider functions of the forms <m>y=A\sin(t)+k</m> and <m>y=A\cos(t)+k</m>.
+    </p>
+    <p>
+      As with any function, the addition of a constant, <m>k</m>, after a function formula results in a vertical shift.  When <m>k</m> is positive, the function is shifted upward from its original position and when <m>k</m> is negative the function is shifted downward from its original position.  In the current context we define the <term>mid-line</term> as <m>y=k</m>.  The mid-line is halfway between the minimum and maximum values of the function and corresponds to the <m>x</m>-axis of an un-shifted sine or cosine graph.
+    </p>
+    <p>
+      We define the <term>amplitude</term> of the function as <m>\abs{A}</m>.  The amplitude of a sine or cosine function is the vertical distance between the mid-line and the minimum and maximum values of the function.  This is a result of a vertical stretch of compression on the parent function.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Sketch two periods of the function <m>y=4\cos(t)-1</m>, one immediately to the left of the <m>y</m>-axis and one immediately to the right of the <m>y</m>-axis
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The amplitude of the function is <m>4</m> and the mid-line is <m>y=-1</m>, so the minimum <m>y</m>-coordinate is <m>-5</m> and the maximum <m>y</m>-coordinate is <m>3</m>.  Because we're graphing a positive-cosine function, between <m>-2\pi</m> and <m>2\pi</m> (two standard periods), the <m>y</m>-coordinates at the critical values of <m>t</m> will twice follow the pattern max, mid-line, min, mid-line, max.  Two periods of the function are shown in <xref ref="trigonometry-sine-cosine-graphs-figure-100">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-sine-cosine-graphs-figure-100">
+          <caption>Two Periods of <m>y=4\cos(t)-1</m></caption>
+          <image width="80%">
+            <description>
+              A graph of a curve that decreases concave down from the point <m>(-2\pi,3)</m> to the point <m>(-\frac{3\pi}{2},-1)</m>, then decreases concave up from the point <m>(-frac{3\pi}{2},-1)</m> to the point <m>(-\pi,-5)</m>, then increases concave up from the point <m>(-\pi,-5)</m> to the point <m>(-\frac{\pi}{2},-1)</m>, and finishes up this period by increasing concave down from the point <m>(-\frac{\pi}{2},-1)</m> to the point <m>(0,3)</m>.  This pattern is then repeated over the interval <m>(0,2\pi)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-450,xmax=450,
+                              ymin=-6,ymax=4,
+                              xtick={-360,-270,-180,-90,90,180,270,360},
+                              ytick={-5,-4,...,4},
+                              minor xtick={},
+                              xticklabels={$-2\pi$,$\frac{3\pi}{2}$,$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$\2\pi$}]
+                  \addplot [domain=-360:360,samples=100,color=blue,line width=1.5pt] {4*cos(x)-1};
+                  \addplot [domain=-450:450,samples=100,style=dashed,color=black,line width=1pt,{Stealth}-{Stealth}] {-1};                        
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </example>
+  </paragraphs>
+
+  <paragraphs>
+    <title>Period of a Sine or Cosine Function</title>
+    <p></p>
+    <p>
+      In this section we are going to consider functions of the forms <m>y=\sin(\omega t)</m> and <m>y=\cos(\omega t)</m>, <m>\omega \neq 0</m>.  <m>\omega</m> is a Greek letter that is pronounced "omega."
+    </p>
+    <p>
+      As previously discussed, the <term>period</term> of a periodic function, <m>f</m>, is the smallest positive value, <m>p</m>, with the property that
+      <m>f(t+p)=f(t)</m> for all values of <m>t</m>.  Assuming that <m>\omega</m> is positive, the functions <m>y=\sin(\omega t)</m> and <m>y=\cos(\omega t)</m> will complete the period that begins at <m>t=0</m> when <m>\omega t=2\pi</m>, which gives us <m>t=\frac{2\pi}{\omega}</m>.
+    </p>
+    <p>
+      Since there is no restriction that <m>\omega</m> cannot be negative, in general the periods of the functions <m>y=\sin(\omega t)</m> and <m>y=\cos(\omega t)</m> are both <m>\frac{2\pi}{\abs{\omega}}</m>.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Sketch two periods of the function <m>y=\sin(3t)</m>, one immediately to the left of the <m>y</m>-axis and one immediately to the right of the <m>y</m>-axis.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The value of <m>\omega</m> is <m>3</m>, so the period of this function is <m>\frac{2\pi}{3}</m>.  The period we will sketch to the left of the <m>y</m>-axis occurs over the interval <m>\left(-\frac{2\pi}{3},0\right)</m>.  One-quarter of the period is <m>\frac{\pi}{6}</m>. Beginning with <m>-\frac{2\pi}{3}</m> and repeatedly adding <m>\frac{\pi}{6}</m> until we reach <m>0</m>. we see that the critical values of <m>t</m> over this period are <m>-\frac{2\pi}{3},\,-\frac{\pi}{2},\,-\frac{\pi}{3},\,-\frac{\pi}{6},\text{and}\,,0</m>.  Similarly, the critical values of <m>t</m> over the period that occurs over the interval <m>\left(0,\frac{2\pi}{3}\right)</m> are <m>0,\,\frac{\pi}{6},\,\frac{\pi}{3},\,\frac{\pi}{2},\,\text{and}\,\frac{2\pi}{3}</m>.
+        </p>
+        <p>  
+          Because we are graphing a positive-sine function, between <m>-\frac{2\pi}{3}</m> and <m>\frac{2\pi}{3}</m> (two standard periods), the <m>y</m>-coordinates at the critical values of <m>t</m> will twice follow the pattern mid-line, max, mid-line, min, mid-line.  Two periods of the function are shown in <xref ref="trigonometry-sine-cosine-graphs-figure-102">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-sine-cosine-graphs-figure-102">
+          <caption>Two Periods of <m>y=\sin(3t)</m></caption>
+          <image width="80%">
+            <description>
+              A graph of a curve that increases concave down from the point <m>(-\frac{2\pi}{3},0)</m> to the point <m>(-\frac{\pi}{2},1)</m>, then decreases concave down from the point <m>(-\frac{\pi}{2},1)</m> to the point <m>(-\frac{\pi}{3},0)</m>, then decreases concave up from the point <m>(-\frac{pi}{3},0)</m> to the point <m>(-\frac{\pi}{6},-1)</m>, and finishes up this period by increasing concave up from the point <m>(-\frac{\pi}{6},1)</m> to the point <m>(0,0)</m>.  This pattern is then repeated over the interval <m>(0,frac{2\pi}{3})</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-150,xmax=150,
+                              ymin=-1.5,ymax=1.5,
+                              xtick={-120,-90,-60,-30,30,60,90,120},
+                              ytick={-1,1},
+                              minor xtick={},
+                              minor ytick={-0.5,0.5},
+                              xticklabels={$-\frac{2\pi}{3}$,$-\frac{\pi}{2}$,$-\frac{\pi}{3}$,$-\frac{\pi}{6}$,$\frac{\pi}{6}$,$\frac{\pi}{3}$,$\frac{\pi}{2}$,$\frac{2\pi}{3}$}]
+                  \addplot [domain=-120:120,samples=100,color=blue,line width=1.5pt] {sin(3*x)};                        
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Sketch two periods of the function <m>y=-\cos(4\pi t)</m>, one immediately to the left of the <m>y</m>-axis and one immediately to the right of the <m>y</m>-axis.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The value of <m>\omega</m> is <m>4\pi</m>. The period of this function is derived below.
+          <md>
+            <mrow>\frac{2\pi}{\abs{\omega}}\amp=\frac{2\pi}{4\pi}</mrow>
+            <mrow>\amp=\frac{1}{2}</mrow>
+          </md>
+          The period we will sketch to the left of the <m>y</m>-axis occurs over the interval <m>\left(-\frac{1}{2},0\right)</m>.  One-quarter of the period is <m>\frac{1}{8}</m>. Beginning with <m>-\frac{1}{2}</m> and repeatedly adding <m>\frac{1}{8}</m> until we reach <m>0</m>. we see that the critical values of <m>t</m> over <m>\left(-\frac{1}{2},0\right)</m> are <m>-\frac{1}{2},\,-\frac{3}{8},\,-\frac{1}{4},\,-\frac{1}{8},\text{and}\,0</m>.  Similarly, the critical values of <m>t</m> over the period that occurs over the interval <m>\left(0,\frac{1}{2}\right)</m> are <m>0,\,\frac{1}{8},\,\frac{1}{4},\,\frac{3}{8},\,\text{and}\,\frac{1}{2}</m>.
+        </p>
+        <p>
+          Because we are graphing a negative-cosine function, between <m>-\frac{1}{2}</m> and <m>\frac{1}{2}</m> (two standard periods), over each of the intervals the <m>y</m>-coordinates at the critical values of <m>t</m> will follow the pattern min, mid-line, max, mid-line, min.  Two periods of the function are shown in <xref ref="trigonometry-sine-cosine-graphs-figure-103">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-sine-cosine-graphs-figure-103">
+          <caption>Two Periods of <m>y=-\cos(4\pi t)</m></caption>
+          <image width="80%">
+            <description>
+              A graph of a curve that increases concave up from the point <m>(-0.5,-1)</m> to the point <m>(-0.375,0)</m>, then increases concave down from the point <m>(-0.375,0)</m> to the point <m>(-0.5,1)</m>, then decreases concave down from the point <m>(-0.5,1)</m> to the point <m>(-0.125,0)</m>, and finishes up this period by decreasing concave up from the point <m>(-0.125,0)</m> to the point <m>(0,-1)</m>.  This pattern is then repeated over the interval <m>(0,0.5)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-35.81,xmax=35.81,
+                              ymin=-1.5,ymax=1.5,
+                              xtick={-28.68,-21.49,-14.32,-7.16,7.16,14.32,21.49,28.68},
+                              ytick={-1,1},
+                              minor xtick={},
+                              minor ytick={-0.5,0.5},
+                              xticklabels={$-\frac{1}{2}$,$-\frac{3}{8}$,$-\frac{1}{4}$,$-\frac{1}{8}$,$\frac{1}{8}$,$\frac{1}{2}$,$\frac{3}{8}$,$\frac{1}{2}$}]
+                  \addplot [domain=-28.68:28.68,samples=100,color=blue,line width=1.5pt] {-cos(12.566*x)};                        
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title>Phase Shift and Horizontal Shift of a Sine or Cosine Function</title>
+    <p></p>
+    <p>
+      In this section we are going to consider functions of the forms <m>y=\sin(\omega t+\phi)</m> and <m>y=\cos(\omega t+\phi)</m>.  <m>\phi</m> is a Greek letter that is pronounce "phi."
+    </p>
+    <p>
+      In this context <m>\phi</m> represents the <term>phase shift</term> of the sine or cosine function.  While this value has no direct bearing on the graph of the function (unless <m>\omega=1</m>), it does have tremendous import in other applications, especially in physics.  The only reason I'm defining the term here is that many sources incorrectly equate the phase shift with the horizontal shift, and I need to address the fact that they are not the same thing.  The difference is immense.  For one thing, the phase shift is a value (or in the case of physic, a quantity) whereas a horizontal shift is a graphical transformation.  For another thing, the amount of shift is equal to <m>\abs{\phi}</m> if and only if <m>\omega=1</m>.
+    </p>
+    <p>
+      <term>Horizontal shifts</term> work the same way for trigonometric functions as they do for any other function.  Both the functions <m>y=\sin(\omega(t-h))</m> and <m>y=\cos(\omega(t-h))</m> are a horizontal shift by <m>h</m> from their parent functions.  When <m>h</m> is positive the shift is rightward and when <m>h</m> is negative the shift is leftward. For example, <m>y=\cos(3(t-\pi))</m> results in a rightward shift by <m>\pi</m> of the function <m>y=\cos(3t)</m> whereas <m>y=\cos(3(t+\pi))</m> results in a leftward shift by <m>\pi</m> of the function <m>y=\cos(3t)</m>.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine both the phase shift and the horizontal shift of the function <m>y=\sin(2t+\pi)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We can see straight away that the phase shift is <m>\pi</m>.  In order to determine the horizontal shift, we need to first factor the <m>2</m> away from both <m>t</m> and <m>\pi</m>.  This is done below.
+          <me>\sin(2t+\pi)=\sin\left(2\left(t+\frac{\pi}{2}\right)\right)</me>
+          We can now see that the function is a leftward shift by <m>\frac{\pi}{2}</m> of the function <m>y=\sin(2t)</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine both the phase shift and the horizontal shift of the function <m>y=\cos\left(4\left(t-\frac{2\pi}{5}\right)\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We can immediately see that the function is a rightward shift by <m>\frac{2\pi}{5}</m> of the function <m>y=\sin(4t)</m>.  In order to determine the phase shift, we need to distribute <m>4</m> to the two terms inside the inner parentheses.  This is done below.
+          <me>\cos\left(4\left(t-\frac{2\pi}{5}\right)\right)=\cos\left(4t-\frac{8\pi}{5}\right)</me>
+          We can now see that the phase shift is <m>-\frac{8\pi}{5}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine both the phase shift and the horizontal shift of the function <m>y=\cos\left(t+\frac{\pi}{3}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We can immediately see that the phase shift is <m>\frac{\pi}{3}</m>.  We can also immediately see that the function is a leftward shift by <m>\frac{\pi}{3}</m> of the function <m>y=\sin(t)</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Sketch two periods of the function <m>y=\cos(3(t-\pi))</m>, one immediately to the left of <m>t=\pi</m> and one immediately to the right of the <m>t=\pi</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The period of the function is <m>\frac{2\pi}{3}</m> and the function if a rightward shift by <m>\pi</m> of the function <m>y=\cos(t)</m>.
+        </p>
+        <p>
+          The standard period that occurs over <m>\left(-\frac{2\pi}{3},0\right)</m> on the graph of <m>y=\cos(3t)</m> is shifted to <m>\left(-\frac{2\pi}{3}+\pi,0+\pi\right)</m> which simplifies to <m>(\frac{\pi}{3},\pi)</m>.  The standard period that occurs over <m>\left(0,\frac{2\pi}{3}\right)</m> on the graph of <m>y=\cos(3t)</m> is shifted to <m>(\pi,\frac{5\pi}{3})</m>.
+        </p>
+        s<p>
+            One-quarter of the period is <m>\frac{\pi}{6}</m>.  Beginning with <m>\frac{\pi}{3}</m> and repeatedly adding <m>\frac{\pi}{6}</m>, we see that the critical values of <m>t</m> over the interval <m>\left(\frac{\pi}{3},\pi\right)</m> are <m>\frac{\pi}{3},\,\frac{\pi}{2},\,\frac{2\pi}{3},\,\frac{5\pi}{6},\text{and}\,\pi</m>.  Similarly, over the interval <m>\left(\pi,\frac{5\pi}{3}\right)</m> the critical values of <m>t</m> are <m>\pi,\,\frac{7\pi}{6},\,\frac{4\pi}{3},\,\frac{3\pi}{2},\text{and}\,\frac{5\pi}{3}</m>. 
+        </p>
+        <p>
+          Because the we are graping a positive-cosine function, over each of the periods the <m>y</m>-coordinates at the critical values of <m>t</m> will follow the pattern max, mid-line, min, mid-line, max.
+        </p>
+        <p>
+          Two periods of the function are shown in <xref ref="trigonometry-sine-cosine-graphs-figure-104">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-sine-cosine-graphs-figure-104">
+          <caption>Two Periods of <m>y=\cos(3(t-\pi))</m></caption>
+          <image width="80%">
+            <description>
+              A graph of a curve that increases concave down from the point <m>(\frac{\pi}{3},0)</m> to the point <m>(\frac{\pi}{2},1)</m>, then decreases concave down from the point <m>(\frac{\pi}{2},1)</m> to the point <m>(\frac{4\pi}{3},0)</m>, then decreases concave up from the point <m>(\frac{4\pi}{3},0)</m> to the point <m>(\frac{5\pi}{6},-1)</m>, and finishes up this period by increasing concave up from the point <m>(\frac{5\pi}{6},1)</m> to the point <m>(\pi,0)</m>.  This pattern is then repeated over the interval <m>(\pi,\frac{2\pi}{3})</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-30,xmax=330,
+                              ymin=-1.5,ymax=1.5,
+                              xtick={30,60,90,120,150,180,210,240,270,300},
+                              ytick={-1,1},
+                              minor xtick={},
+                              minor ytick={-0.5,0.5},
+                              xticklabels={$\frac{\pi}{6}$,$\frac{\pi}{3}$,$\frac{\pi}{2}$,$\frac{2\pi}{3}$,$\frac{5\pi}{6}$,$\pi$,$\frac{7\pi}{6}$,$\frac{4\pi}{3}$,$\frac{3\pi}{2}$,$\frac{5\pi}{3}$}]
+                  \addplot [domain=60:300,samples=100,color=blue,line width=1.5pt] {cos(3*x-540)};                        
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Sketch two periods of the function <m>y=-\sin\left(\frac{3}{2}t+\pi\right)</m>, one immediately to the left of the value of <m>t</m> to which <m>t=0</m> is shifted and one immediately to the right of the value of <m>t</m> to which <m>t=0</m> is shifted.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We can calculate the period right away, and that is done below.
+          <md>
+            <mrow>\frac{2\pi}{\omega}\amp=\frac{2\pi}{\frac{3}{2}}</mrow>
+            <mrow>\amp=\frac{2\pi}{1} \cdot  \frac{2}{3}</mrow>
+            <mrow>\amp=\frac{4\pi}{3}</mrow>
+          </md>
+          In order to determine the horizontal shift, we need to factor <m>\frac{3}{2}</m> away from both <m>t</m> and <m>\pi</m>.  This is shown below.
+          <me>-\sin\left(\frac{3}{2}t+\pi\right)=-\sin\left(\frac{3}{2}\left(t+\frac{2\pi}{3}\right)\right)</me>
+          We now see that there is a leftward shift of <m>\frac{2\pi}{3}</m>. 
+        </p>
+        <p>
+          The period that immediately to the left of <m>-\frac{2\pi}{3}</m> will occur over the interval <m>\left(-\frac{2\pi}{3}-\frac{4\pi}{3},-\frac{2\pi}{3}\right)</m> which simplifies to <m>\left(-2\pi,-\frac{2\pi}{3}\right)</m>.  The period immediately to the right of <m>-\frac{2\pi}{3}</m> occurs over the interval <m>\left(-\frac{2\pi}{3},-\frac{2\pi}{3}+\frac{4\pi}{3}\right)</m> which simplifies to <m>\left(-\frac{2\pi}{3},\frac{2\pi}{3}\right)</m>.
+        </p>
+        <p>
+          One-quarter of the period is <m>\frac{\pi}{3}</m>.  Starting with <m>-2\pi</m> and repeatedly adding <m>\frac{\pi}{3}</m> until we reach <m>-\frac{2\pi}{3}</m>, we see that the critical values of <m>t</m> that occur over the interval <m>\left(-2\pi,-\frac{2\pi}{3}\right)</m> are <m>-2\pi,\,-\frac{5\pi}{3},\,-\frac{4\pi}{3},\,-\pi,\,\text{and}\,-\frac{2\pi}{3}</m>.  Similarly, the critical values of <m>t</m> that occur over the interval <m>\left(-\frac{2\pi}{3},\frac{2\pi}{3}\right)</m> are <m>-\frac{2\pi}{3},\,-\frac{\pi}{3},\,0,\,\frac{\pi}{3},\,\text{and}\,\frac{2\pi}{3}</m>.
+        </p>
+        <p>
+          Because the we are graping a negative-sine function, over each of the periods the <m>y</m>-coordinates at the critical values of <m>t</m> will follow the pattern mid-line, min, mid-line, max, mid-line.
+        </p>
+        <p>
+          Two periods of the function are shown in <xref ref="trigonometry-sine-cosine-graphs-figure-105">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-sine-cosine-graphs-figure-105">
+          <caption>Two Periods of <m>y=-\sin\left(\frac{3}{2}t+\pi\right)</m></caption>
+          <image width="80%">
+            <description>
+              A graph of a curve that decreases concave up from the point <m>(-2\pi,0)</m> to the point <m>(-\frac{5\pi}{3},-1)</m>, then increases concave up from the point <m>(-\frac{5\pi}{3},-1)</m> to the point <m>(-\frac{4\pi}{3},0)</m>, then increases concave down from the point <m>(-\frac{4\pi}{3},0)</m> to the point <m>(-\pi,1)</m>, and finishes up this period by decreasing concave down from the point <m>(-\pi,1)</m> to the point <m>(-\frac{2\pi}{3},0)</m>.  This pattern is then repeated over the interval <m>(-\frac{2\pi}{3},\frac{2\pi}{3})</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-390,xmax=180,
+                              ymin=-1.5,ymax=1.5,
+                              xtick={-360,-300,-240,-180,-120,-60,60,120},
+                              ytick={-1,1},
+                              minor xtick={},
+                              minor ytick={-0.5,0.5},
+                              xticklabels={$-2\pi$,$-\frac{5\pi}{3}$,$-\frac{4\pi}{3}$,$-\pi$,$-\frac{2\pi}{3}$,$-\frac{\pi}{3}$,$\frac{\pi}{3}$,$\frac{2\pi}{3}$}]
+                  \addplot [domain=-360:120,samples=100,color=blue,line width=1.5pt] {-sin(1.5*x+180)};                        
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </example>
+
+  </paragraphs>
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          For each stated function, describe the way in which the graph of the function differs from its parent function <m>(\sin(t),\,\cos(t),\,-\sin(t),\,\text{or}\,-\cos(t))</m>.  Then graph two full periods <mdash/> one immediately to the left of the horizontal shift and one immediately to the right of the horizontal shift.  If there is no horizontal shift, graph one period immediately to the left of the <m>y</m>-axis and one period immediately to the right of the <m>y</m>-axis.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y=3\sin(t)-2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The period is unchanged and there is no horizontal shift.  The amplitude is <m>3</m> and the mid-line is <m>y=-2</m>, so the minimum <m>y</m>-coordinate is <m>-5</m> and the maximum <m>y</m>-coordinate is <m>1</m>.  Because we're graphing a positive-sine function, between <m>-2\pi</m> and <m>2\pi</m> (two standard periods), the <m>y</m>-coordinates at the critical values of <m>t</m> will twice follow the pattern mid-line, max, mid-line, min, mid-line.
+          </p>
+          <p>
+            Two periods of the function are shown in <xref ref="trigonometry-sine-cosine-graphs-figure-exercises-1">Figure</xref>.
+          </p>
+          <figure xml:id="trigonometry-sine-cosine-graphs-figure-exercises-1">
+          <caption>Two Periods of <m>y=3\sin(t)-2</m></caption>
+          <image width="80%">
+            <description>
+              A graph of a curve that increases concave down from the point <m>(-\frac{\pi}{6},0)</m> to the point <m>(-\frac{\pi}{12},1)</m>, then decreases concave down from the point <m>(-\frac{\pi}{12},1)</m> to the point <m>(\frac{\pi}{3},0)</m>, then decreases concave up from the point <m>(\frac{\pi}{3},0)</m> to the point <m>(\frac{7\pi}{12},-1)</m>, and finally increases concave up from the point <m>(\frac{7\pi}{12},-1)</m> to the point <m>(\frac{5\pi}{6},1)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-450,xmax=450,
+                              ymin=-6,ymax=2,
+                              xtick={-360,-270,-180,-90,90,180,270,360},
+                              ytick={-5,-4,...,1},
+                              minor xtick={},
+                              xticklabels={$-2\pi$,$\frac{3\pi}{2}$,$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$\2\pi$}]
+                  \addplot [domain=-360:360,samples=100,color=blue,line width=1.5pt] {3*sin(x)-2};
+                  \addplot [domain=-450:450,samples=100,style=dashed,color=black,line width=1pt,{Stealth}-{Stealth}] {-2};                        
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>y=-\cos(t)+3</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The period is unchanged and there is no horizontal shift.  The amplitude is <m>1</m> and the mid-line is <m>y=3</m>, so the minimum <m>y</m>-coordinate is <m>2</m> and the maximum <m>y</m>-coordinate is <m>4</m>.  Because we're graphing a negative-cosine function, between <m>-2\pi</m> and <m>2\pi</m> (two standard periods), the <m>y</m>-coordinates at the critical values of <m>t</m> will twice follow the pattern min, mid-line, max, mid-line, min.
+        </p>
+        <p>
+          Two periods of the function are shown in <xref ref="trigonometry-sine-cosine-graphs-figure-exercises-2">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-sine-cosine-graphs-figure-exercises-2">
+          <caption>Two Periods of <m>y=-\cos(t)+3</m></caption>
+          <image width="80%">
+            <description>
+              A graph of a curve that increases concave down from the point <m>(-\frac{\pi}{6},0)</m> to the point <m>(-\frac{\pi}{12},1)</m>, then decreases concave down from the point <m>(-\frac{\pi}{12},1)</m> to the point <m>(\frac{\pi}{3},0)</m>, then decreases concave up from the point <m>(\frac{\pi}{3},0)</m> to the point <m>(\frac{7\pi}{12},-1)</m>, and finally increases concave up from the point <m>(\frac{7\pi}{12},-1)</m> to the point <m>(\frac{5\pi}{6},1)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-450,xmax=450,
+                              ymin=-1,ymax=5,
+                              xtick={-360,-270,-180,-90,90,180,270,360},
+                              ytick={1,2,3,4,5},
+                              minor xtick={},
+                              xticklabels={$-2\pi$,$\frac{3\pi}{2}$,$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$\2\pi$}]
+                  \addplot [domain=-360:360,samples=100,color=blue,line width=1.5pt] {-cos(x)+3};
+                  \addplot [domain=-450:450,samples=100,style=dashed,color=black,line width=1pt,{Stealth}-{Stealth}] {3};                        
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>y=-\sin(5t)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There are no changes in the vertical direction nor is there a horizontal shift.  The period has been shortened to <m>\frac{2\pi}{5}</m>. The period we will sketch to the left of the <m>y</m>-axis occurs over the interval <m>\left(-\frac{2\pi}{5},0\right)</m> and the period we will sketch to the right of the <m>y</m>-axis occurs over the interval <m>\left(0,\frac{2\pi}{3}\right)</m>.
+        </p>
+        <p>
+         One-quarter of the period is <m>\frac{\pi}{10}</m>.  Starting at <m>-\frac{2\pi}{5}</m> and repeatedly adding <m>\frac{\pi}{10}</m>, we see that the critical values of <m>t</m> for the period immediately to the left of the <m>y</m>-axis are <m>-\frac{2\pi}{5},\,-\frac{3\pi}{10},\,-\frac{\pi}{5},\,-\frac{\pi}{10},\,\text{and}\,0</m> and the critical values of <m>t</m> for the period immediately to the right of the <m>y</m>-axis are <m>0,\,\frac{\pi}{10},\,\frac{\pi}{5},\,\frac{3\pi}{10},\,\text{and}\,\frac{2\pi}{5}</m>.
+        </p>
+        <p>
+         Because we're graphing a negative-sine function, between <m>-\frac{2\pi}{5}</m> and <m>\frac{2\pi}{5}</m> (two standard periods), the <m>y</m>-coordinates at the critical values of <m>t</m> will twice follow the pattern mid-line, min, mid-line, max, mid-line.  
+        </p>
+        <p>
+          Two periods of the function are shown in <xref ref="trigonometry-sine-cosine-graphs-figure-exercises-3">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-sine-cosine-graphs-figure-exercises-3">
+          <caption>Two Periods of <m>y=-\sin(5t)</m></caption>
+          <image width="80%">
+            <description>
+              A graph of a curve that increases concave down from the point <m>(-\frac{\pi}{6},0)</m> to the point <m>(-\frac{\pi}{12},1)</m>, then decreases concave down from the point <m>(-\frac{\pi}{12},1)</m> to the point <m>(\frac{\pi}{3},0)</m>, then decreases concave up from the point <m>(\frac{\pi}{3},0)</m> to the point <m>(\frac{7\pi}{12},-1)</m>, and finally increases concave up from the point <m>(\frac{7\pi}{12},-1)</m> to the point <m>(\frac{5\pi}{6},1)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-90,xmax=90,
+                              ymin=-1.5,ymax=1.5,
+                              xtick={-72,-54,-36,-18,18,36,54,72},
+                              ytick={-1,1},
+                              minor xtick={},
+                              minor ytick={-0.5,0.5},
+                              xticklabels={$-\frac{2\pi}{5}$,$-\frac{3\pi}{10}$,$-\frac{\pi}{5}$,$-\frac{\pi}{10}$,$\frac{\pi}{10}$,$\frac{\pi}{5}$,$\frac{3\pi}{10}$,$\frac{2\pi}{5}$}]
+                  \addplot [domain=-72:72,samples=100,color=blue,line width=1.5pt] {-sin(5*x)};                        
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>  
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>y=\cos\left(\frac{2t}{3}\right)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There are no changes in the vertical direction nor is there a horizontal shift.  The period has been changed.  The new period is derived below.
+          <md>
+            <mrow>\frac{2\pi}{\abs{\omega}}\amp=\frac{2\pi}{\frac{2}{3}}</mrow>
+            <mrow>\amp=\frac{2\pi}{1} \cdot \frac{3}{2}</mrow>
+            <mrow>\amp=3\pi</mrow>
+          </md>
+          The two periods we will sketch occur over the intervals <m>(-3\pi,0)</m> and <m>(0,3\pi)</m>.
+        </p>
+        <p>
+          One-quarter of the period is <m>\frac{3\pi}{4}</m>.  Starting at <m>-3\pi</m> and repeatedly adding <m>\frac{3\pi}{4}</m>. we see that the critical values for the period immediately to the left of the <m>y</m>-axis are <m>-3\pi,\,-\frac{9\pi}{4},\,-\frac{3\pi}{2},\,-\frac{3\pi}{4},\,\text{and}\,0</m> and the critical values of <m>t</m> for the period immediately to the right of the <m>y</m>-axis are <m>0,\,\frac{3\pi}{4},\,\frac{3\pi}{2},\,\frac{9\pi}{4},\,\text{and}\,3\pi</m>.
+        </p>
+        <p>
+          Because we're graphing a positive-cosine function, between <m>-3\pi</m> and <m>3\pi</m> (two standard periods), the <m>y</m>-coordinates at the critical values of <m>t</m> will twice follow the pattern max, mid-line, min, mid-line, max.
+        </p>
+        <p>
+          Two periods of the function are shown in <xref ref="trigonometry-sine-cosine-graphs-figure-exercises-4">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-sine-cosine-graphs-figure-exercises-4">
+          <caption>Two Periods of <m>y=\cos\left(\frac{2t}{3}\right)</m></caption>
+          <image width="80%">
+            <description>
+              A graph of a curve that increases concave down from the point <m>(-\frac{\pi}{6},0)</m> to the point <m>(-\frac{\pi}{12},1)</m>, then decreases concave down from the point <m>(-\frac{\pi}{12},1)</m> to the point <m>(\frac{\pi}{3},0)</m>, then decreases concave up from the point <m>(\frac{\pi}{3},0)</m> to the point <m>(\frac{7\pi}{12},-1)</m>, and finally increases concave up from the point <m>(\frac{7\pi}{12},-1)</m> to the point <m>(\frac{5\pi}{6},1)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-675,xmax=675,
+                              ymin=-1.5,ymax=1.5,
+                              xtick={-540,-405,-270,-135,135,270,405,540},
+                              ytick={-1,1},
+                              minor xtick={},
+                              minor ytick={-0.5,0.5},
+                              xticklabels={$-3\pi$,$-\frac{9\pi}{4}$,$-\frac{3\pi}{2}$,$-\frac{3\pi}{4}$,$\frac{3\pi}{4}$,$\frac{3\pi}{2}$,$\frac{9\pi}{4}$,$3\pi$}]
+                  \addplot [domain=-540:540,samples=100,color=blue,line width=1.5pt] {cos(2*x/3)};                        
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>y=\cos\left(t+\frac{\pi}{3}\right)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There are no changes in the vertical direction nor is there a change to the period.  There is a leftward shift of <m>\frac{\pi}{3}</m>, so we will have one standard period over the interval <m>(-2\pi-\frac{\pi}{3},0-\frac{3\pi}{3})</m> and another over the interval <m>(0-\frac{\pi}{3},2\pi-\frac{\pi}{3})</m>.  Those intervals simplify, respectively, as <m>(-\frac{7\pi}{3},-\frac{\pi}{3})</m> and <m>(-\frac{\pi}{3},\frac{5\pi}{3})</m>.
+        </p>
+        <p>
+          One-quarter of a period is <m>\frac{\pi}{2}</m>.  Starting at <m>-\frac{7\pi}{3}</m> and repeated adding <m>\frac{\pi}{2}</m>, we see that the critical values for the period immediately to the left of <m>-\frac{\pi}{3}</m> are <m>-\frac{7\pi}{3},\,-\frac{11\pi}{6},\,-\frac{4\pi}{3},\,-\frac{5\pi}{6},\,\text{and}\,-\frac{\pi}{3}</m> and the critical values of <m>t</m> for the period immediately to the right of the <m>-\frac{\pi}{3}</m> are <m>-\frac{\pi}{3},\,\frac{\pi}{6},\,\frac{2\pi}{3},\,\frac{7\pi}{6},\,\text{and}\,\frac{5\pi}{3}</m>.
+        </p>
+        <p>
+          Because we're graphing a positive-cosine function, between <m>-\frac{2\pi}{5}</m> and <m>\frac{2\pi}{5}</m> (two standard periods), the <m>y</m>-coordinates at the critical values of <m>t</m> will twice follow the pattern max, mid-line, min, mid-line, max.
+        </p>
+        <p>
+          Two periods of the function are shown in <xref ref="trigonometry-sine-cosine-graphs-figure-exercises-5">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-sine-cosine-graphs-figure-exercises-5">
+          <caption>Two Periods of <m>y=\cos\left(t+\frac{\pi}{3}\right)</m></caption>
+          <image width="80%">
+            <description>
+              A graph of a curve that increases concave down from the point <m>(-\frac{\pi}{6},0)</m> to the point <m>(-\frac{\pi}{12},1)</m>, then decreases concave down from the point <m>(-\frac{\pi}{12},1)</m> to the point <m>(\frac{\pi}{3},0)</m>, then decreases concave up from the point <m>(\frac{\pi}{3},0)</m> to the point <m>(\frac{7\pi}{12},-1)</m>, and finally increases concave up from the point <m>(\frac{7\pi}{12},-1)</m> to the point <m>(\frac{5\pi}{6},1)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-510,xmax=390,
+                              ymin=-1.5,ymax=1.5,
+                              xtick={-420,-330,-240,-150,-60,30,120,210,300},
+                              ytick={-1,1},
+                              minor xtick={},
+                              minor ytick={-0.5,0.5},
+                              xticklabels={$-\frac{7\pi}{3}$,$-\frac{11\pi}{6}$,$-\frac{4\pi}{3}$,$-\frac{5\pi}{6}$,$-\frac{\pi}{3}$,$\frac{\pi}{6}$,$\frac{2\pi}{3}$,$\frac{7\pi}{6}$,$\frac{5\pi}{3}$}]
+                  \addplot [domain=-420:300,samples=100,color=blue,line width=1.5pt] {cos(x+60)};                        
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>y=-\cos(t-\pi)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There are no changes in the vertical direction nor is there a change to the period.  There is a rightward shift of <m>\pi</m>, so we will have one standard period over the interval <m>(-\pi,\pi)</m> and another over the interval <m>(\pi,3\pi)</m>.
+        </p>
+        <p>
+          One-quarter of a period is <m>\frac{\pi}{2}</m>.  Starting at <m>-\pi</m> and repeatedly adding <m>\frac{\pi}{2}</m>, we see that the critical values for the period immediately to the left of <m>\pi</m> are <m>-\pi,\,-\frac{\pi}{2},\,0,\,\frac{\pi}{2},\,\text{and}\,\pi</m> and the critical values of <m>t</m> for the period immediately to the right of the <m>\pi</m> are <m>\pi,\,\frac{3\pi}{2},\,2\pi,\,\frac{5\pi}{2},\,\text{and}\,3\pi</m>.
+        </p>
+        <p>
+          Because we're graphing a negative-cosine function, between <m>-\pi</m> and <m>3\pi</m> (two standard periods), the <m>y</m>-coordinates at the critical values of <m>t</m> will twice follow the pattern min, mid-line, max, mid-line, min.
+        </p>
+        <p>
+          Two periods of the function are shown in <xref ref="trigonometry-sine-cosine-graphs-figure-exercises-6">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-sine-cosine-graphs-figure-exercises-6">
+          <caption>Two Periods of <m>y=-\cos(t-\pi)</m></caption>
+          <image width="80%">
+            <description>
+              A graph of a curve that increases concave down from the point <m>(-\frac{\pi}{6},0)</m> to the point <m>(-\frac{\pi}{12},1)</m>, then decreases concave down from the point <m>(-\frac{\pi}{12},1)</m> to the point <m>(\frac{\pi}{3},0)</m>, then decreases concave up from the point <m>(\frac{\pi}{3},0)</m> to the point <m>(\frac{7\pi}{12},-1)</m>, and finally increases concave up from the point <m>(\frac{7\pi}{12},-1)</m> to the point <m>(\frac{5\pi}{6},1)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-270,xmax=630,
+                              ymin=-1.5,ymax=1.5,
+                              xtick={-180,-90,90,180,270,360,450,540},
+                              ytick={-1,1},
+                              minor xtick={},
+                              minor ytick={-0.5,0.5},
+                              xticklabels={$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$,$\frac{5\pi}{2}$,$3\pi$}]
+                  \addplot [domain=-180:540,samples=100,color=blue,line width=1.5pt] {-cos(x-180)};                        
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>y=\sin\left(8\left(t+\frac{\pi}{8}\right)\right)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There are no changes in the vertical direction.  There is a leftward shift of <m>\frac{\pi}{8}</m> and the period has been shortened to <m>\frac{2\pi}{8}</m> which simplifies to <m>\frac{\pi}{4}</m>. We will have one standard period over the interval <m>(-\frac{\pi}{4}-\frac{\pi}{8},0-\frac{\pi}{8})</m> and another over the interval <m>(0-\frac{\pi}{8},\frac{\pi}{4}-\frac{\pi}{8})</m>.  Those intervals simplify, respectively, as <m>(-\frac{3\pi}{8},-\frac{\pi}{8})</m> and <m>(-\frac{\pi}{8},\frac{\pi}{8})</m>.  One-quarter of a period is <m>\frac{\pi}{16}</m>.
+        </p>
+        <p>
+          Starting at <m>-\frac{3\pi}{8}</m> and repeatedly adding <m>\frac{\pi}{16}</m>, we see that the critical values for the period immediately to the left of <m>-\frac{\pi}{8}</m> are <m>-\frac{3\pi}{8},\,-\frac{5\pi}{16},\,-\frac{\pi}{4}\,-\frac{3\pi}{16},\,\text{and}\,-\frac{\pi}{8}</m> and the critical values of <m>t</m> for the period immediately to the right of the <m>-\frac{\pi}{8}</m> are <m>-\frac{\pi}{8},\,-\frac{\pi}{16},\,0,\,\frac{\pi}{16},\,\text{and}\,\frac{\pi}{8}</m>.
+        </p>
+        <p>
+          Because we're graphing a positive-sine function, between <m>-\frac{3\pi}{8}</m> and <m>\frac{\pi}{8}</m> (two standard periods), the <m>y</m>-coordinates at the critical values of <m>t</m> will twice follow the pattern mid-line, max, mid-line, min, mid-line.
+        </p>
+        <p>
+          Two periods of the function are shown in <xref ref="trigonometry-sine-cosine-graphs-figure-exercises-7">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-sine-cosine-graphs-figure-exercises-7">
+          <caption>Two Periods of <m>y=\sin\left(8\left(t+\frac{\pi}{8}\right)\right)</m></caption>
+          <image width="80%">
+            <description>
+              A graph of a curve that increases concave down from the point <m>(-\frac{\pi}{6},0)</m> to the point <m>(-\frac{\pi}{12},1)</m>, then decreases concave down from the point <m>(-\frac{\pi}{12},1)</m> to the point <m>(\frac{\pi}{3},0)</m>, then decreases concave up from the point <m>(\frac{\pi}{3},0)</m> to the point <m>(\frac{7\pi}{12},-1)</m>, and finally increases concave up from the point <m>(\frac{7\pi}{12},-1)</m> to the point <m>(\frac{5\pi}{6},1)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-78.75,xmax=33.75,
+                              ymin=-1.5,ymax=1.5,
+                              xtick={-67.5,-56.25,-45,-33.75,-22.5,-11.25,11.25,22.5},
+                              ytick={-1,1},
+                              minor xtick={},
+                              minor ytick={-0.5,0.5},
+                              xticklabels={$-\frac{3\pi}{8}$,$-\frac{5\pi}{16}$,$-\frac{\pi}{4}$,$-\frac{3\pi}{16}$,$-\frac{\pi}{8}$,$-\frac{\pi}{16}$,$\frac{\pi}{16}$,$\frac{\pi}{8}$}]
+                  \addplot [domain=-67.5:22.5,samples=100,color=blue,line width=1.5pt] {sin(8*(x+22.5))};                        
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>y=-\sin(4\pi t-\pi)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There are no changes in the vertical direction.  Before discussing the changes in the horizontal direction, let's factor <m>4\pi</m> from the expression inside the parentheses.
+          <me>-\sin(4\pi t-\pi)=-\sin\left(4\pi\left(t-\frac{1}{4}\right)\right)</me>
+          We can now see that there is a rightward shift of <m>\frac{1}{4}</m> and the period has been changed to <m>\frac{2\pi}{4\pi}</m> which simplifies to <m>\frac{1}{2}</m>. We will have one standard period over the interval <m>(-\frac{1}{2}+\frac{1}{4},0+\frac{1}{4})</m> and another over the interval <m>(0+\frac{1}{4},\frac{1}{2}+\frac{1}{4})</m>.  Those intervals simplify, respectively, as <m>(-\frac{1}{4},\frac{1}{4})</m> and <m>(\frac{1}{4},\frac{3}{4})</m>.
+        </p>
+        <p>
+          One-quarter of a period is <m>\frac{1}{8}</m>.  Starting at <m>-\frac{1}{4}</m> and repeatedly adding <m>\frac{1}{8}</m>, we see that the critical values for the period immediately to the left of <m>\frac{1}{4}</m> are <m>-\frac{1}{4},\,-\frac{1}{8},\,0,\,\frac{1}{8},\,\text{and}\,\frac{1}{4}</m> and the critical values of <m>t</m> for the period immediately to the right of <m>\frac{1}{4}</m> are <m>\frac{1}{4},\,\frac{3}{8},\,\frac{1}{4},\,\frac{3}{8},\,\text{and}\,\frac{3}{4}</m>. Because we're graphing a negative-sine function, between <m>-\frac{1}{8}</m> and <m>\frac{3}{4}</m> (two standard periods), the <m>y</m>-coordinates at the critical values of <m>t</m> will twice follow the pattern mid-line, min, mid-line, max, mid-line.  
+        </p>
+        <p>
+          Two periods of the function are shown in <xref ref="trigonometry-sine-cosine-graphs-figure-exercises-8">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-sine-cosine-graphs-figure-exercises-8">
+          <caption>Two Periods of <m>y=-\sin(4\pi t-\pi)</m></caption>
+          <image width="80%">
+            <description>
+              A graph of a curve that increases concave down from the point <m>(-\frac{\pi}{6},0)</m> to the point <m>(-\frac{\pi}{12},1)</m>, then decreases concave down from the point <m>(-\frac{\pi}{12},1)</m> to the point <m>(\frac{\pi}{3},0)</m>, then decreases concave up from the point <m>(\frac{\pi}{3},0)</m> to the point <m>(\frac{7\pi}{12},-1)</m>, and finally increases concave up from the point <m>(\frac{7\pi}{12},-1)</m> to the point <m>(\frac{5\pi}{6},1)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-0.375,xmax=0.875,
+                              ymin=-1.5,ymax=1.5,
+                              xtick={-0.25,-0.125,0.125,0.25,0.375,0.5,0.6125,0.75},
+                              ytick={-1,1},
+                              minor ytick={-0.5,0.5},
+                              xticklabels={$-\frac{1}{4}$,$-\frac{1}{8}$,$\frac{1}{8}$,$\frac{1}{4}$,$\frac{3}{8}$,$\frac{1}{2}$,$\frac{5}{8}$,$\frac{3}{4}$}]
+                  \addplot [domain=-0.25:0.75,samples=100,color=blue,line width=1.5pt] {-sin(720*x-180)};                        
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </exercise>
+
+  </exercisegroup>
+
+  <exercisegroup>
+    <introduction>
+      <p>
+        For each stated function, create and complete a table that states the values of <m>A</m>, <m>\omega</m>, <m>\phi</m>, and <m>k</m> where either <m>y=A\sin(\omega t+\phi)+k</m> or <m>y=A\cos(\omega +\phi)+k</m>.  Then determine and state the amplitude, period, phase shift, horizontal shift, and mid-line for a graph of the function.
+      </p>
+    </introduction>
+
+     <exercise>
+      <statement>
+        <p>
+          <m>y=1.5\cos(3(t+\pi))</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Before making the table, let's expand the expression inside the sine function to determine the value of <m>\phi</m>.
+          <me>1.5\cos(3(t+\pi))=1.5\cos(3t+3\pi)</me>
+          <table xml:id="trigonometry-sine-cosine-graphs-table-ex-4">
+            <caption>Graphing Variables</caption>
+            <tabular>
+              <col halign="center" />
+              <col halign="center"/>
+                <row bottom="medium">
+                  <cell>
+                    <line>Variable</line>
+                  </cell>
+                  <cell>
+                    <line>Value</line>
+                  </cell>
+                </row>
+                <row>
+                  <cell><m>A</m></cell>
+                  <cell><m>1.5</m></cell>
+                </row>
+                <row>
+                  <cell><m>\omega</m></cell>
+                  <cell><m>3</m></cell>
+                </row>
+                <row>
+                  <cell><m>\phi</m></cell>
+                  <cell><m>3\pi</m></cell>
+                </row>
+                <row>
+                  <cell><m>k</m></cell>
+                  <cell><m>0</m></cell>
+                </row>
+            </tabular>
+          </table>
+        </p>
+        <p>
+          The amplitude is <m>\abs{A}</m>, which in this case is <m>1.5</m>.  The period is determined as follows.
+          <me>\frac{2\pi}{\abs{\omega}}=\frac{2\pi}{3}</me>
+          The phase shift is <m>\phi</m>, which in this case is <m>3\pi</m>. From the original statement of the function we see that the horizontal shift is left <m>\pi</m>.  The mid-line is <m>y=0</m>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>y=-\cos(2\pi t-3\pi)+4</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <table xml:id="trigonometry-sine-cosine-graphs-table-ex-2">
+            <caption>Graphing Variables</caption>
+            <tabular>
+              <col halign="center" />
+              <col halign="center"/>
+                <row bottom="medium">
+                  <cell>
+                    <line>Variable</line>
+                  </cell>
+                  <cell>
+                    <line>Value</line>
+                  </cell>
+                </row>
+                <row>
+                  <cell><m>A</m></cell>
+                  <cell><m>-1</m></cell>
+                </row>
+                <row>
+                  <cell><m>\omega</m></cell>
+                  <cell><m>2\pi</m></cell>
+                </row>
+                <row>
+                  <cell><m>\phi</m></cell>
+                  <cell><m>-3\pi</m></cell>
+                </row>
+                <row>
+                  <cell><m>k</m></cell>
+                  <cell><m>4</m></cell>
+                </row>
+            </tabular>
+          </table>
+        </p>
+        <p>
+          The amplitude is <m>\abs{A}</m>, which in this case is <m>1</m>.  The period is determined as follows.
+          <md>
+            <mrow>\frac{2\pi}{\abs{\omega}}\amp=\frac{2\pi}{2\pi}</mrow>
+            <mrow>\amp=1</mrow>
+          </md>
+          The phase shift is <m>\phi</m>, which in this case is <m>-3\pi</m>. To determine the horizontal shift, we need to rewrite the function formula as follows.
+          <me>-\cos(2\pi t-3\pi)+4=-\cos\left(2\pi\left(t-\frac{3}{2}\right)\right)+4</me>
+          The horizontal shift is right <m>\frac{3}{2}</m>.  The mid-line is <m>y=4</m>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>y=-3\sin(\pi(t-2))-2.5</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Before making the table, let's expand the expression inside the sine function to determine the value of <m>\phi</m>.
+          <me>-3\sin(\pi(t-2))-2.5=-3\sin(\pi t-2\pi)-2.5</me>
+          <table xml:id="trigonometry-sine-cosine-graphs-table-ex-3">
+            <caption>Graphing Variables</caption>
+            <tabular>
+              <col halign="center" />
+              <col halign="center"/>
+                <row bottom="medium">
+                  <cell>
+                    <line>Variable</line>
+                  </cell>
+                  <cell>
+                    <line>Value</line>
+                  </cell>
+                </row>
+                <row>
+                  <cell><m>A</m></cell>
+                  <cell><m>-3</m></cell>
+                </row>
+                <row>
+                  <cell><m>\omega</m></cell>
+                  <cell><m>\pi</m></cell>
+                </row>
+                <row>
+                  <cell><m>\phi</m></cell>
+                  <cell><m>-2\pi</m></cell>
+                </row>
+                <row>
+                  <cell><m>k</m></cell>
+                  <cell><m>-2.5</m></cell>
+                </row>
+            </tabular>
+          </table>
+        </p>
+        <p>
+          The amplitude is <m>\abs{A}</m>, which in this case is <m>3</m>.  The period is determined as follows.
+          <md>
+            <mrow>\frac{2\pi}{\abs{\omega}}\amp=\frac{2\pi}{\pi}</mrow>
+            <mrow>\amp=2</mrow>
+          </md>
+          The phase shift is <m>\phi</m>, which in this case is <m>-2\pi</m>. From the original statement of the function we see that the horizontal shift is right <m>2</m>.  The mid-line is <m>y=-2.5</m>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>y=\sin\left(2t+\frac{\pi}{3}\right)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <table xml:id="trigonometry-sine-cosine-graphs-table-ex-1">
+            <caption>Graphing Variables</caption>
+            <tabular>
+              <col halign="center" />
+              <col halign="center"/>
+                <row bottom="medium">
+                  <cell>
+                    <line>Variable</line>
+                  </cell>
+                  <cell>
+                    <line>Value</line>
+                  </cell>
+                </row>
+                <row>
+                  <cell><m>A</m></cell>
+                  <cell><m>1</m></cell>
+                </row>
+                <row>
+                  <cell><m>\omega</m></cell>
+                  <cell><m>2</m></cell>
+                </row>
+                <row>
+                  <cell><m>\phi</m></cell>
+                  <cell><m>\frac{\pi}{3}</m></cell>
+                </row>
+                <row>
+                  <cell><m>k</m></cell>
+                  <cell><m>0</m></cell>
+                </row>
+            </tabular>
+          </table>
+        </p>
+        <p>
+          The amplitude is <m>\abs{A}</m>, which in this case is <m>1</m>.  The period is determined as follows.
+          <md>
+            <mrow>\frac{2\pi}{\abs{\omega}}\amp=\frac{2\pi}{2}</mrow>
+            <mrow>\amp=\pi</mrow>
+          </md>
+          The phase shift is <m>\phi</m>, which in this case is <m>\frac{\pi}{3}</m>. To determine the horizontal shift, we need to rewrite the function formula as follows.
+          <me>\sin\left(2t+\frac{\pi}{3}\right)=\sin\left(2\left(t+\frac{\pi}{6}\right)\right)</me>
+          The horizontal shift is left <m>\frac{\pi}{6}</m>.  The mid-line is <m>y=0</m>
+        </p>
+      </solution>
+    </exercise>   
+
+  </exercisegroup>
+
+  <exercisegroup>
+    <introduction>
+      <p>
+        Graph one period of each of the functions in the previous exercise group.
+      </p> 
+    </introduction>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>y=1.5\cos(3(t+\pi))</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The horizontal shift is left <m>\pi</m> and the period is <m>\frac{2\pi}{3}</m>, so there will be one standard period over the interval <m>\left(-\pi,-\pi+\frac{2\pi}{3}\right)</m> which simplifies to <m>\left(-\pi,-\frac{\pi}{3}\right)</m>.
+        </p>
+        <p>
+          One-quarter of a period is <m>\frac{\pi}{6}</m>.  Starting at <m>-\pi</m> and repeatedly adding <m>\frac{\pi}{6}</m> until we get to <m>-\frac{\pi}{3}</m>, we see that the
+          critical values of <m>t</m> over the primary period that we will sketch are <m>-\pi,\,-\frac{5\pi}{6},\,-\frac{2\pi}{3}.,\,-\frac{\pi}{2},\,-\frac{\pi}{6},\,\text{and}\,0</m>.
+        </p>
+        <p>
+          Because the mid-line is <m>y=0</m> and the amplitude is <m>1.5</m>, the minimum and maximum function values are, respectively, <m>-1.5</m> and <m>1.5</m>.
+        </p>
+        <p>
+          Because the function is a positive-cosine function, the <m>y</m>-coordinates at the critical values of <m>t</m> over the standard period follow the pattern max ,mid-line, min, mid-line, max.
+        </p>
+        <p>
+          One standard period is shown in <xref ref="trigonometry-sine-cosine-graphs-figure-24">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-sine-cosine-graphs-figure-24">
+          <caption>One Period of <m>y=1.5\cos(3(t+\pi))</m></caption>
+          <image width="80%">
+            <description>
+              A graph of a curve that decreases concave down from the point <m>(-\pi,1.5)</m> to the point <m>(-\frac{5\pi}{6},0)</m>, then decreases concave up from the point <m>(-\frac{5\pi}{6},0)</m> to the point <m>(-\frac{2\pi}{3},-1.5)</m>, then increases concave up from the point <m>(-\frac{2\pi}{3},-1.5)</m> to the point <m>(-\frac{\pi}{2},0)</m>, and finally increases concave down from the point <m>(-\frac{\pi}{2},0)</m> to the point <m>(-\frac{\pi}{3},1.5)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-210,xmax=30,
+                              ymin=-2,ymax=2,
+                              xtick={-180,-150,-120,-90,-60,-30},
+                              ytick={-1.5,-1,-0.5,0.5,1,1.5},
+                              minor xtick={},
+                              xticklabels={$-\pi$,$-\frac{5\pi}{6}$,$-\frac{2\pi}{3}$,$-\frac{\pi}{2}$,-$\frac{\pi}{3}$,$-\frac{\pi}{6}$}]
+                  \addplot [domain=-180:-60,samples=100,color=blue,line width=1.5pt] {1.5*cos(3*x+540)};             
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>y=-\cos(2\pi t-3\pi)+4</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The horizontal shift is right <m>\frac{3}{2}</m> and the period is <m>1</m>, so the primary period we will sketch lies over the interval <m>(1.5, 2.5)</m>.
+        </p>
+        <p>
+          One-quarter of the period is <m>0.25</m>.  Starting at <m>1.5</m> and repeatedly adding <m>0.25</m> until we get to <m>2.5</m>, we see that the critical values of <m>t</m> over the primary period we will sketch are <m>1.5,\,1.75,\,2,\,2.25\,\text{and}\,2.5</m>.
+        </p>
+        <p>
+          Because the mid-line is <m>y=4</m> and the amplitude is <m>1</m>, the minimum and maximum function values are, respectively, <m>3</m> and <m>5</m>.
+        </p>
+        <p>
+          Because the function is a negative-cosine function, the <m>y</m>-coordinates at the critical values of <m>t</m> over the standard period follow the pattern min, mid-line, max, mid-line, min.
+        </p>
+        <p>
+          One standard period is shown in <xref ref="trigonometry-sine-cosine-graphs-figure-22">Figure</xref> .
+        </p>
+        
+        <figure xml:id="trigonometry-sine-cosine-graphs-figure-22">
+          <caption>One Period of <m>y=-\cos(2\pi t-3\pi)+4</m></caption>
+          <image width="80%">
+            <description>
+              A graph of a curve that increases concave up from the point <m>(1.5,3)</m> to the point <m>(1.75,4)</m>, then increases concave down from the point <m>(1.75,4)</m> to the point <m>(2,5)</m>, then decreases concave down from the point <m>(2,5)</m> to the point <m>(2.25,4)</m>, and finally decreases concave up from the point <m>(2.25,4)</m> to the point <m>(2.5,3)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-0.25,xmax=2.75,
+                              ymin=-0.5,ymax=5.5,
+                              xtick={0.5,1,...,2.5},
+                              ytick={1,2,3,4,5},
+                              minor xtick={-0.25,0.25,...,2.75}]
+                  \addplot [domain=1.5:2.5,samples=100,color=blue,line width=1.5pt] {4-cos(360*(x-1.5))};
+                  \addplot [domain=-0.25:2.75,color=black,line width=1pt,style=dashed,{Stealth}-{Stealth}] {4};             
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>y=-3\sin(\pi(t-2))-2.5</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The horizontal shift is right <m>2</m> and the period is <m>2</m>, so the primary period we will sketch occurs over the interval <m>(2,4)</m>. 
+        </p>
+        <p>
+          One quarter of the period is <m>0.5</m>.  Starting at <m>2</m> and repeatedly adding <m>0.5</m> until we reach <m>4</m>, we see that the critical values of <m>t</m> for the primary period we will sketch are <m>2,\,2.5,\,3,\,3.5,\,\text{and}\,4</m>.
+        </p>
+        <p>
+          Because the mid-line is <m>y=-2.5</m> and the amplitude is <m>3</m>, the minimum and maximum function values are, respectively, <m>-5.5</m> and <m>0.5</m>.  
+        </p>
+        <p>
+          Because the function is a negative-sine function, the <m>y</m>-coordinates at the critical values of <m>t</m> over the standard period follow the pattern mid-line, min, mid-line, max, mid-line.
+        </p>
+        <p>
+          One standard period is shown in <xref ref="trigonometry-sine-cosine-graphs-figure-23">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-sine-cosine-graphs-figure-23">
+          <caption>One Period of <m>y=-3\sin(\pi(t-2))-2.5</m></caption>
+          <image width="80%">
+            <description>
+              A graph of a curve that decreases concave up from the point <m>(2,-2.5)</m> to the point <m>(2.5,-5.5)</m>, then increases concave up from the point <m>(2.5,-5.5)</m> to the point <m>(3,-2.5)</m>, then increases concave down from the point <m>(3,-2.5)</m> to the point <m>(3.5,0.5)</m>, and finally decreases concave down from the point <m>(3.5,0.5)</m> to the point <m>(4,-2.5)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-0.5,xmax=4.5,
+                              ymin=-6,ymax=1.5,
+                              xtick={0.5,1,...,4},
+                              ytick={-5,-4,-3,-2,-1,1},
+                              minor xtick={},
+                              minor ytick={-5.5,-4.5,-3.5,-2.5,-1.5,-0.5,0.5}]
+                  \addplot [domain=2:4,samples=100,color=blue,line width=1.5pt] {-2.5-3*sin(180*x-360)};
+                  \addplot [domain=-0.5:4.5,color=black,line width=1pt,style=dashed,{Stealth}-{Stealth}] {-2.5};          
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>y=\sin\left(2t+\frac{\pi}{3}\right)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The horizontal shift is left <m>\frac{\pi}{6}</m> and the period is <m>\pi</m>, so there will be one standard period over the interval <m>\left(-\frac{\pi}{6},-\frac{\pi}{6}+\pi\right)</m> which simplifies to <m>\left(-\frac{\pi}{6},\frac{5\pi}{6}\right)</m>.
+        </p>
+        <p>
+          One-quarter of the period is <m>\frac{\pi}{4}</m>.  Beginning at <m>-\frac{\pi}{6}</m> and repeatedly adding <m>\frac{\pi}{4}</m> until we reach <m>\frac{5\pi}{6}</m>, we see that the critical values of <m>t</m> over the primary period that we will sketch are <m>-\frac{\pi}{6},\,\frac{\pi}{12},\,\frac{\pi}{3},\,\frac{7\pi}{12},\,\text{and}\,\frac{5\pi}{6}</m>.
+        </p>
+        <p>
+          Because the mid-line is <m>y=0</m> and the amplitude is <m>1</m>, the minimum and maximum function values are, respectively, <m>-1</m> and <m>1</m>.  
+        </p>
+        <p>
+          Because the function is a positive-sine function, the <m>y</m>-coordinates at the critical values of <m>t</m> over the standard period follow the pattern mid-line, max, mid-line, min, mid-line.
+        </p>
+        <p>
+          One standard period is shown in <xref ref="trigonometry-sine-cosine-graphs-figure-21">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-sine-cosine-graphs-figure-21">
+          <caption>One Period of <m>y=\sin\left(2t+\frac{\pi}{3}\right)</m></caption>
+          <image width="80%">
+            <description>
+              A graph of a curve that increases concave down from the point <m>(-\frac{\pi}{6},0)</m> to the point <m>(-\frac{\pi}{12},1)</m>, then decreases concave down from the point <m>(-\frac{\pi}{12},1)</m> to the point <m>(\frac{\pi}{3},0)</m>, then decreases concave up from the point <m>(\frac{\pi}{3},0)</m> to the point <m>(\frac{7\pi}{12},-1)</m>, and finally increases concave up from the point <m>(\frac{7\pi}{12},-1)</m> to the point <m>(\frac{5\pi}{6},1)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-60,xmax=180,
+                              ymin=-1.5,ymax=1.5,
+                              xtick={-30,15,60,105,150},
+                              ytick={-1,1},
+                              minor xtick={},
+                              xticklabels={$-\frac{\pi}{6}$,$\frac{\pi}{12}$,$\frac{\pi}{3}$,$\frac{7\pi}{12}$,$\frac{5\pi}{6}$}]
+                  \addplot [domain=-30:150,samples=100,color=blue,line width=1.5pt] {sin(2*x+60)};            
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </exercise>
+
+  </exercisegroup>
+
+  </exercises>
+
+</section>

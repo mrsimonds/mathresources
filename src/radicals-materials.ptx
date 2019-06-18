@@ -9,10 +9,11 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="rationals-materials">
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="radicals-materials">
     <title>Radicals and Rational Exponents</title>
 
       <xi:include href="./radicals-videos.ptx" />
+      <xi:include href="./radicals-videos-95.ptx" />
       <xi:include href="./radicals-simplifying-square-roots.ptx" />
       <xi:include href="./radicals-rationalize-monomial-denominators.ptx" />
       <xi:include href="./radicals-combining-square-roots.ptx" />
@@ -20,6 +21,7 @@
       <xi:include href="./radicals-greater-indices.ptx" />
       <xi:include href="./radicals-rational-exponents.ptx" />
       <xi:include href="./radicals-equations.ptx" />
+      <xi:include href="./radicals-additional-practice.ptx" />
 
 
 </chapter>

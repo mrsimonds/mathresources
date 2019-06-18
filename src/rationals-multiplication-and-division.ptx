@@ -11,6 +11,10 @@
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="rationals-multiplication-and-division">
   <title>Multiplication and Division of Rational Expressions</title>
+  
+  <paragraphs>
+    <title>Multiplication of Rational Expressions</title>
+    <p></p>
   <p>
     As suggested in the last section, multiplying rational expressions entails writing the numerators of the expression over the product of the denominators of the expression.  We then simplify the result.  Several examples follow.
   </p>
@@ -73,8 +77,12 @@
     </solution>
   </example>
 
+  </paragraphs>
+  <paragraphs>
+    <title>Division of Rational Expressions</title>
+    <p></p>
   <p>
-    Let's move on to division.  Recall that when we divide one fraction by another, we rewrite the quotient as a product after reciprocating the divisor.  That is:
+     Recall that when we divide one fraction by another, we rewrite the quotient as a product after reciprocating the divisor.  That is:
     <me>\frac{a}{b} \div \frac{c}{d}=\frac{a}{b} \cdot \frac{d}{c}</me>.
   </p>
   <p>
@@ -171,6 +179,8 @@
       </p>
     </solution>
   </example>
+
+  </paragraphs>
 
   <exercises>
 

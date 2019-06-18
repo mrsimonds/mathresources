@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="trigonometry-function-defintions">
+  <title>The Six Basic Trigonometric Functions</title>
+
+  <paragraphs>
+    <title>The Sine Function and the Cosine Function</title>
+    <p></p>
+
+   <sidebyside widths="47% 47%" margins="0%">
+
+    <p>
+      Suppose that an arc of (signed) length <m>t</m> units is drawn in standard position along the circle centered at the origin with a radius of <m>r</m> units and that the arc terminates at the point <m>(x,y)</m>.  Then the <term>sine function</term> and <term>cosine function</term> evaluated at <m>t</m> are defined as follows.
+      <me>\cos(t)=\frac{x}{r}\,\,\,\text{and}\,\,\,\sin(t)=\frac{y}{r}</me>
+    </p>
+
+    <figure xml:id="trigonometry-function-definitions-figure-1">
+      <caption><m>\cos(t)=\cos(\theta)=\frac{x}{r},\text{and}\,\sin(t)=\sin(\theta)=\frac{y}{r}</m></caption>
+      <image>
+        <description>
+          An angle and arc drawn in standard position that terminates along a circle of radius r at a point labeled as <m>(x,y)</m>.  The angle is labeled as theta and the arc is labeled as t.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          xmin=-1.8,xmax=1.8,
+                          ymin=-1.8,ymax=1.8]
+              \addplot [domain=0:360,samples=100,color=blue,line width=0.5pt,dashed] ({1.3*cos(x)},{1.3*sin(x)});
+              \addplot [domain=0:70,samples=100,color=red,line width=1.5pt,-] ({1.3*cos(x)},{1.3*sin(x)}) node[pos=0.5,above right] {$t$};
+              \addplot [domain=0:70,samples=100,color=black,line width=1pt,-] ({0.2*cos(x)},{0.2*sin(x)}) node[pos=0.5,above right] {$\theta$};
+              \addplot [domain=0:1.3,line width=1.5pt,-,color=black] {0} node[pos=0.5,below] {$r$};
+              \addplot [domain=0:0.445,line width=1.5pt,-,color=black] {tan(70)*x}; 
+              \addplot [soliddot,color=red] coordinates {(0.445,1.222)} node[above right] {$(x,y)$};                    
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+  <p>
+    Similarly, if an angle with measurement <m>\theta</m> is drawn in standard position and the terminal side of <m>\theta</m> intersects a circle centered at the origin with a radius of <m>r</m> at the point <m>(x,y)</m>, then
+    <me>\cos(\theta)=\frac{x}{r}\,\,\,\text{and}\,\,\,\sin(\theta)=\frac{y}{r}</me>.
+  </p>
+
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <p>
+      For example, suppose that the radius of the circle shown in <xref ref="trigonometry-function-definitions-figure-2">Figure</xref> has a measurement of 1.3 centimeters and the <m>x</m> and <m>y</m> coordinates of the point where the terminal side of <m>\theta</m> intersects the unit circle are, respectively, 0.44 centimeters and 1.22 centimeters.  Then the values of the sine and cosine of theta are derived as follows.
+    </p>
+
+    <figure xml:id="trigonometry-function-definitions-figure-2">
+      <caption><m>r=1.3\,\text{cm}, x=0.44\,\text{cm}\,\text{and}\,\,y=1.22\,\text{cm}</m></caption>
+      <image>
+        <description>
+          An angle drawn in standard position that terminates along a circle of radius r at a point labeled as <m>(x,y)</m>.  The angle is labeled as theta.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          xmin=-1.8,xmax=1.8,
+                          ymin=-1.8,ymax=1.8]
+              \addplot [domain=0:360,samples=100,color=blue,line width=0.5pt,dashed] ({1.3*cos(x)},{1.3*sin(x)});
+              \addplot [domain=0:70,samples=100,color=black,line width=1pt,-] ({0.2*cos(x)},{0.2*sin(x)}) node[pos=0.5,above right] {$\theta$};
+              \addplot [domain=0:1.3,line width=1.5pt,-,color=black] {0} node[pos=0.5,below] {$r$};
+              \addplot [domain=0:0.445,line width=1.5pt,-,color=black] {tan(70)*x}; 
+              \addplot [soliddot,color=red] coordinates {(0.445,1.222)} node[above right] {$(x,y)$};                    
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+  <p>
+    <md>
+      <mrow>\sin{(\theta)}\amp=\frac{y}{r}</mrow>
+      <mrow>\amp=\frac{0.44\,\text{cm}}{1.3\,\text{cm}}</mrow>
+      <mrow>\amp\approx.34</mrow>
+    </md>
+    and
+    <md>
+      <mrow>\cos{(\theta)}\amp=\frac{x}{r}</mrow>
+      <mrow>\amp=\frac{1.22\,\text{cm}}{1.3\,\text{cm}}</mrow>
+      <mrow>\amp\approx.94</mrow>
+    </md>
+  </p>
+  <p>
+    Let's observe that the length units divided to one in both the calculation of the sine value and the calculation of the the cosine value.  As a result, the values of of both the sine and cosine are unitless.  The output from the sine and cosine functions (as well as four yet to be defined additional trigonometric functions) are always unitless.
+  </p>
+  <p>
+    Now let's turn our attention to the special case where the circle under consideration is the unit circle, and let's supposes that the length unit is feet.  Suppose that the terminal side of <m>\theta</m> intersects this unit circle at a point where the <m>x</m>-coordinate is 0.6 feet.  Then:
+    <md>
+      <mrow>\cos{(\theta)}\amp=\frac{x}{r}</mrow>
+      <mrow>\amp=\frac{0.6\,\text{ft}}{1\,\text{ft}}</mrow>
+      <mrow>\amp=0.6</mrow>
+    </md>
+    As illustrated, when working with the unit circle the cosine of <m>\theta</m> is numerically equivalent to the <m>x</m>-coordinate of the point where where the terminal side of <m>\theta</m> intersects the unit circle.  The difference between the two values is that the <m>x</m>-coordinate has a length unit associated with its value while the cosine value is unitless.
+  </p>
+  <p>
+    With this last observation, we have an alternative way to define the sine and cosine functions, and this is the definition we will use going forward.
+  </p>
+  <p>
+    Suppose that the terminal side of an angle, <m>\theta</m>, in standard position intersects the unit circle at the point <m>(x,y)</m>.  Treating both of those coordinates as unitless values, we define the <term>sine</term> and <term>cosine</term> functions as follows.
+    <me>\cos(t)=x\,\,\,\text{and}\,\,\,\sin(t)=y</me>
+  </p>
+
+
+  <example>
+    <statement>
+      <p>
+        Suppose that <m>\theta</m> is drawn in standard position and the terminal side of the point where the angle intersects the unit circle lies in Quadrant I and has a <m>y</m>-coordinate of <m>\frac{1}{2}</m>.  Determine both <m>\cos(\theta)</m> and <m>\sin(\theta)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The value of <m>\sin(t)</m> is the <m>y</m>-coordinate of the point where the terminal side of the angle intersects the unit circle.  We are told that this coordinate is <m>\frac{1}{2}</m>, so <m>\sin(t)=\frac{1}{2}</m>. 
+      </p>
+      <p>
+        We need to determine the <m>x</m>-coordinate of the point of intersection to determine the value of <m>\cos(t)</m>.  The equation of the unit circle is <m>x^2+y^2=1</m>.  We can substitute <m>\frac{1}{2}</m> for <m>y</m> in that equation and solve for <m>x</m>.
+        <md>
+          <mrow>x^2+\left(\frac{1}{2}\right)^2\amp=1</mrow>
+          <mrow>x^2+\frac{1}{4}\amp=1</mrow>
+          <mrow>x^2\amp=\frac{3}{4}</mrow>
+          <mrow>x\amp=\pm \sqrt{\frac{3}{4}}</mrow>
+          <mrow>x\amp=\pm \frac{\sqrt{3}}{2}</mrow>
+        </md>
+        Since the point lies in the first quadrant, its <m>x</m>-coordinate must be positive.  So, <m>\cos(t)=\frac{\sqrt{3}}{2}</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Suppose that <m>\theta</m> is drawn in standard position and the terminal side of the point where the angle intersects the unit circle lies in Quadrant Iv and has an <m>x</m>-coordinate of <m>\frac{3}{8}</m>.  Determine both <m>\cos(\theta)</m> and <m>\sin(\theta)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The value of <m>\cos(t)</m> is the <m>x</m>-coordinate of the point where the terminal side of the angle intersects the unit circle.  We are told that this coordinate is <m>\frac{3}{8}</m>, so <m>\cos(t)=\frac{3}{8}</m>. 
+      </p>
+      <p>
+        We need to determine the <m>y</m>-coordinate of the point of intersection to determine the value of <m>\sin(t)</m>.  The equation of the unit circle is <m>x^2+y^2=1</m>.  We can substitute <m>\frac{3}{8}</m> for <m>x</m> in that equation and solve for <m>y</m>.
+        <md>
+          <mrow>\left(\frac{3}{8}\right)^2+y^2\amp=1</mrow>
+          <mrow>\frac{9}{64}+y^2\amp=1</mrow>
+          <mrow>y^2\amp=\frac{55}{64}</mrow>
+          <mrow>y\amp=\pm \sqrt{\frac{55}{64}}</mrow>
+          <mrow>y\amp=\pm \frac{\sqrt{55}}{8}</mrow>
+        </md>
+        Since the point lies in the fourth quadrant, its <m>y</m>-coordinate must be negative.  So, <m>\sin(t)=-\frac{\sqrt{55}}{8}</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Suppose that an arc of (signed) length is drawn along the unit circle in standard position and the arc terminates in Quadrant III. Suppose further that <m>\sin(t)=-\frac{\sqrt{253}}{17}</m>.  Determine the value of <m>\cos(t)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Since  <m>\sin(t)=-\frac{\sqrt{253}}{17}</m>, the <m>y</m>-coordinate of the terminal point of the arc is <m>-\frac{\sqrt{253}}{17}</m>.  We can substitute that value for <m>y</m> in the equation <m>x^2+y^2=1</m> and solve for <m>x</m>. 
+        <md>
+          <mrow>x^2+\left(-\frac{\sqrt{253}}{17}\right)^2\amp=1</mrow>
+          <mrow>x^2+\frac{253}{289}\amp=1</mrow>
+          <mrow>x^2\amp=\frac{36}{289}</mrow>
+          <mrow>x\amp=\pm\sqrt{\frac{36}{389}}</mrow>
+          <mrow>x\amp=\pm\frac{6}{17}</mrow>
+        </md>
+        Since the arc terminates in the third quadrant, its <m>x</m>-coordinate must be negative.  So, <m>\cos(t)=-\frac{6}{17}</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        As we'll see in the next section, <m>\sin\left(120^{\circ}\right)=\frac{1}{2}</m>.  Determine the value of <m>\cos(120^{\circ})</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        From the given information, we know that when an angle of measurement <m>120^{\circ}</m> is drawn in standard position, the terminal side of the angle intersects the unit circle at a point where the <m>y</m>-coordinate is <m>\frac{1}{2}</m>.  We can substitute that value for <m>y</m> in the equation <m>x^2+y^2=1</m> and solve for <m>x</m>.
+        <md>
+          <mrow>x^2+\left(\frac{1}{2}\right)^2\amp=1</mrow>
+          <mrow>x^2+\frac{1}{4}\amp=1</mrow>
+          <mrow>x^2\amp=\frac{3}{4}</mrow>
+          <mrow>x\amp=\pm\sqrt{\frac{3}{4}}</mrow>
+          <mrow>x\amp=\pm\frac{\sqrt{3}}{2}</mrow>
+        </md>
+        Since (in standard position) <m>120^{\circ}</m> terminates in the second quadrant, the <m>x</m>-coordinate of the point where the terminal side of the angle intersects the unit circle must be negative.  So, <m>\cos\left(120^{\circ}\right)=-\frac{\sqrt{3}}{2}</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        You are told that <m>\cos(-4) \approx -0.654</m>.  Use that information to determine, to the nearest thousandth, the value of <m>\sin(-4)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Let's first note that <m>-4</m> is a radian measurement.  So if we draw an clockwise arc of length 4 units along the unit circle, starting at the point <m>(1,0)</m>, the arc will terminate at a point where the <m>x</m>-coordinate is approximately <m>-0.654</m>.  We can substitute that value into the equation for the unit circle to approximate the <m>y</m>-coordinate of that same point.
+        <md>
+          <mrow>x^2+y^2\amp=1</mrow>
+          <mrow>(-0.654)^2+y^2\amp=1</mrow>
+          <mrow>0.427716+y^2\amp=1</mrow>
+          <mrow>y^2\amp=0.572284</mrow>
+          <mrow>y\amp=\pm\sqrt{0.572284}</mrow>
+          <mrow>y\amp=\pm 0.756</mrow>
+        </md>
+        Rotating in the clockwise direction, we can label the negative <m>x</m>-axis as <m>-\pi</m> and the positive <m>y</m>-axis as <m>-\frac{3\pi}{2}</m>.  Approximating these values we have <m>-pi \approx -3.14</m> and <m>\frac{3\pi}{2} \approx -4.71</m>.  Since <m>-4</m> is between <m>-3.14</m> and <m>-4.71</m> it must terminate somewhere between the negative <m>x</m>-axis and the positive <m>y</m>-axis, i.e., it terminates in Quadrant II. This is illustrated in <xref ref="trigonometry-function-definitions-figure-3">Figure</xref>. Because the arc terminates in the second quadrant, the <m>y</m>-coordinate of the terminal point is positive and <m>\sin(-4)\approx 0.756</m>.  
+      </p>
+
+      <figure xml:id="trigonometry-function-definitions-figure-3">
+        <caption>The Arc of Measurement <m>-4</m> Drawn in Standard Position</caption>
+          <image width="50%">
+          <description>
+            An arc of measurement <m>-4</m> drawn in standard position on the unit circle.  The arc terminates in quadrant two.
+          </description>
+            <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis} [axis equal image,
+                            xmin=-1.5,xmax=1.5,
+                            ymin=-1.5,ymax=1.5]
+                \addplot [domain=0:360,samples=100,color=blue,line width=0.5pt,dashed] ({cos(x)},{sin(x)});
+                \addplot [domain=-229:0,samples=100,color=red,line width=1.5pt,-] ({cos(x)},{sin(x)});
+                \addplot [soliddot,color=red] coordinates {(-0.654,0.757)} node[left] {$-4$};
+                \addplot [soliddot,color=black] coordinates {(-1,0)} node[below left] {$-3.14$};         
+                \addplot [soliddot,color=black] coordinates {(0,1)} node[above left] {$-4.71$};                             
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+    </solution>
+  </example>
+
+</paragraphs>
+<paragraphs>
+  <title>The Six Basic Trigonometric Functions</title>
+  <p></p>
+
+  <p>
+    All together the are six basic trigonometric functions: <term>sine</term>, <term>cosine</term>, <term>tangent</term>, <term>cotangent</term>, <term>secant</term>, and <term>cosecant</term>.  In terms of the <m>x</m> and <m>y</m> coordinates at the end of the arc <m>t</m> (drawn along the unit circle in standard position), the functions are defined as shown in <xref ref="trigonometry-function-definitions-table-1">Table</xref>.  In each case, we treat the values of <m>x</m> and <m>y</m> as unitless and consider the unit on <m>t</m> to be radians.
+  </p>
+
+  <table xml:id="trigonometry-function-definitions-table-1">
+    <caption>The Six Standard Trigonometric Functions</caption>
+    <tabular>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+        <row>
+          <cell>
+            <m>\cos(t)=x</m>
+          </cell>
+          <cell>
+            <m>\,\,\,\,\,\,\,\,\,\,\,\,</m>
+          </cell>
+          <cell>
+            <m>\sin(t)=y</m>
+          </cell>
+          <cell>
+            <m>\,\,\,\,\,\,\,\,\,\,\,\,</m>
+          </cell>
+          <cell>
+            <m>\tan(t)=\frac{y}{x}</m>
+          </cell>
+        </row>
+        <row>
+          <cell>
+            <m>\sec(t)=\frac{1}{x}</m>
+          </cell>
+          <cell>
+            <m>\,\,\,\,\,\,\,\,\,\,\,\,</m>
+          </cell>
+          <cell>
+            <m>\csc(t)=\frac{1}{y}</m>
+          </cell>
+          <cell>
+            <m>\,\,\,\,\,\,\,\,\,\,\,\,</m>
+          </cell>
+          <cell>
+            <m>\cot(t)=\frac{x}{y}</m>
+          </cell>
+        </row>
+      </tabular>
+    </table>
+               
+
+  <example>
+    <statement>
+      <p>
+        When drawn in standard position, the arc of measurement <m>\frac{5\pi}{3}</m> terminates at the point <m>(\frac{1}{2},-\frac{\sqrt{3}}{2})</m>.  Determine the values of the six standard trigonometric functions at <m>\frac{5\pi}{3}</m>. 
+      </p>
+    </statement>
+    <solution>
+      <p>
+        At the terminal point of <m>\frac{5\pi}{3}</m>, we are given that <m>x=\frac{1}{2}</m> and <m>y=-\frac{\sqrt{3}}{2}</m>.   This gives us the following.
+        <md>
+          <mrow>\cos\left(\frac{5\pi}{3}\right)\amp=x</mrow>
+          <mrow>\amp=\frac{1}{2}</mrow>
+        </md>
+        <md>
+          <mrow>\sin\left(\frac{5\pi}{3}\right)\amp=y</mrow>
+          <mrow>\amp=-\frac{\sqrt{3}}{2}</mrow>
+        </md>
+        <md>
+          <mrow>\tan\left(\frac{5\pi}{3}\right)\amp=\frac{y}{x}</mrow>
+          <mrow>\amp=\frac{-\frac{\sqrt{3}}{2}}{\frac{1}{2}}</mrow>
+          <mrow>\amp=-\frac{\sqrt{3}}{2} \cdot \frac{2}{1}</mrow>
+          <mrow>\amp=-\sqrt{3}</mrow>
+        </md>
+        <md>
+          <mrow>\sec\left(\frac{5\pi}{3}\right)\amp=\frac{1}{x}</mrow>
+          <mrow>\amp=\frac{1}{\frac{1}{2}}</mrow>
+          <mrow>\amp=\frac{1}{1} \cdot \frac{2}{1}</mrow>
+          <mrow>\amp=2</mrow>
+        </md>
+        <md>
+          <mrow>\csc\left(\frac{5\pi}{3}\right)\amp=\frac{1}{y}</mrow>
+          <mrow>\amp=\frac{1}{-\frac{\sqrt{3}}{2}}</mrow>
+          <mrow>\amp=\frac{1}{1} \cdot -\frac{2}{\sqrt{3}}</mrow>
+          <mrow>\amp=-\frac{2}{\sqrt{3}}</mrow>
+          <mrow>\amp=-\frac{2}{\sqrt{3}} \cdot \frac{\sqrt{3}}{\sqrt{3}}</mrow>
+          <mrow>\amp=-\frac{2\sqrt{3}}{3}</mrow>
+        </md>
+        <md>
+          <mrow>\cot\left(\frac{5\pi}{3}\right)\amp=\frac{x}{y}</mrow>
+          <mrow>\amp=\frac{\frac{1}{2}}{-\frac{\sqrt{3}}{2}}</mrow>
+          <mrow>\amp=\frac{1}{2} \cdot -\frac{2}{\sqrt{3}}</mrow>
+          <mrow>\amp=-\frac{1}{\sqrt{3}}</mrow>
+          <mrow>\amp=-\frac{1}{\sqrt{3}} \cdot \frac{\sqrt{3}}{\sqrt{3}}</mrow>
+          <mrow>\amp=-\frac{\sqrt{3}}{3}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <p>
+    Note that in the last example, we rationalized the denominator in the values of <m>\csc\left(\frac{5\pi}{3}\right)</m> and <m>\cot\left(\frac{5\pi}{3}\right)</m>.  It is customary to rationalize denominators whenever an irrational square root naturally appears in the denominator.
+  </p>
+  <p>
+    We can define the six basic trigonometric functions in terms of angle measurements as well arc lengths.  If, when drawn in standard position, the angle of measurement <m>\theta</m> intersects the unit circle at the point <m>(x,y)</m>, then we define the six primary trigonometric functions as shown in <xref ref="trigonometry-function-definitions-table-2">Table</xref>. In each case, we treat the values of <m>x</m> and <m>y</m> as unitless.
+  </p>
+  <table xml:id="trigonometry-function-definitions-table-2">
+    <caption>The Six Standard Trigonometric Functions</caption>
+    <tabular>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+        <row>
+          <cell>
+            <m>\cos(\theta)=x</m>
+          </cell>
+          <cell>
+            <m>\,\,\,\,\,\,\,\,\,\,\,\,</m>
+          </cell>
+          <cell>
+            <m>\sin(\theta)=y</m>
+          </cell>
+          <cell>
+            <m>\,\,\,\,\,\,\,\,\,\,\,\,</m>
+          </cell>
+          <cell>
+            <m>\tan(\theta)=\frac{y}{x}</m>
+          </cell>
+        </row>
+        <row>
+          <cell>
+            <m>\sec(\theta)=\frac{1}{x}</m>
+          </cell>
+          <cell>
+            <m>\,\,\,\,\,\,\,\,\,\,\,\,</m>
+          </cell>
+          <cell>
+            <m>\csc(\theta)=\frac{1}{y}</m>
+          </cell>
+          <cell>
+            <m>\,\,\,\,\,\,\,\,\,\,\,\,</m>
+          </cell>
+          <cell>
+            <m>\cot(\theta)=\frac{x}{y}</m>
+          </cell>
+        </row>
+      </tabular>
+    </table> 
+
+
+  <example>
+    <statement>
+      <p>
+        Determine the six basic trigonometric values at <m>\theta=\frac{121\pi}{2}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We first need to determine where <m>\theta</m> terminates.  Let's begin by determining the number of complete revolutions in <m>\frac{121\pi}{2}</m>.
+        <me>\frac{\frac{121\pi}{2}}{2\pi}=30.25</me>
+        So there are 30 complete revolutions and exactly one-fourth more of a complete revolution.  Since the rotation is in the counterclockwise direction, this means that the angle terminates along the positive <m>y</m>-axiss and the terminal side intersects the unit circle at the point <m>(0,1)</m>.  
+        <md>
+          <mrow>\cos\left(\frac{121\pi}{2}\right)\amp=x</mrow>
+          <mrow>\amp=0</mrow>
+        </md>
+        <md>
+          <mrow>\sin\left(\frac{121\pi}{2}\right)\amp=y</mrow>
+          <mrow>\amp=1</mrow>
+        </md>
+        <md>
+          <mrow>\csc\left(\frac{121\pi}{2}\right)\amp=\frac{1}{y}</mrow>
+          <mrow>\amp=\frac{1}{1}</mrow>
+          <mrow>\amp=1</mrow>
+        </md>
+        <md>
+          <mrow>\cot\left(\frac{121\pi}{2}\right)\amp=\frac{x}{y}</mrow>
+          <mrow>\amp=\frac{0}{1}</mrow>
+          <mrow>\amp=0</mrow>
+        </md>
+        Neither <m>\tan\left(\frac{121\pi}{2}\right)</m> nor <m>\sec\left(\frac{121\pi}{2}\right)</m> exist because their defining ratios both have a factor of <m>x</m> in the denominator, and in this case that results in division by zero which leads to an undefined result.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Suppose that <m>t</m>, in standard position, terminates in Quadrant II and <m>\tan(t)=-2</m>.  Determine the values of the other five basic trigonometric functions at <m>t</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We need to begin by determining the <m>x</m> and <m>y</m> coordinates at the terminal point of <m>t</m>.  We know, that <m>\frac{y}{x}=-2</m>, from which is follows that <m>y=-2x</m>.  We can substitute <m>-2x</m> for <m>y</m> in the equation of the unit circle and solve for <m>x</m>.
+        <md>
+          <mrow>x^2+y^2\amp=1</mrow>
+          <mrow>x^2+(-2x)^2\amp=1</mrow>
+          <mrow>5x^2\amp=1</mrow>
+          <mrow>x^2\amp=\frac{1}{5}</mrow>
+          <mrow>x\amp=\pm\sqrt{\frac{1}{5}}</mrow>
+          <mrow>\amp=\pm\frac{1}{\sqrt{5}}</mrow>
+          <mrow>\amp=\pm\frac{1}{\sqrt{5}} \cdot \frac{\sqrt{5}}{\sqrt{5}}</mrow>
+          <mrow>\amp=\pm\frac{\sqrt{5}}{5}</mrow>
+        </md>
+        Because <m>t</m> terminates in the second quadrant, we know that its <m>x</m>-coordinate is negative.  So, <m>x=-\frac{\sqrt{5}}{5}</m>.
+        We also know that <m>y=-2x</m>, so <m>y=\frac{2\sqrt{5}}{5}</m>.  The six basic trigonometric values of <m>t</m> are derived below.
+        <md>
+          <mrow>\cos(t)\amp=x</mrow>
+          <mrow>\amp=-\frac{\sqrt{5}}{5}</mrow>
+        </md>
+        <md>
+          <mrow>\sin(t)\amp=y</mrow>
+          <mrow>\amp=\frac{2\sqrt{5}}{5}</mrow>
+        </md>
+        <md>
+          <mrow>\tan(t)\amp=\frac{y}{x}</mrow>
+          <mrow>\amp=\frac{\frac{2\sqrt{5}}{5}}{-\frac{\sqrt{5}}{5}}</mrow>
+          <mrow>\amp=\frac{2\sqrt{5}}{5} \cdot -\frac{5}{\sqrt{5}}</mrow>
+          <mrow>\amp=-2</mrow>
+        </md>
+        <md>
+          <mrow>\sec(t)\amp=\frac{1}{x}</mrow>
+          <mrow>\amp=\frac{1}{-\frac{\sqrt{5}}{5}}</mrow>
+          <mrow>\amp=\frac{1}{1} \cdot -\frac{5}{\sqrt{5}}</mrow>
+          <mrow>\amp=-\frac{5}{\sqrt{5}}</mrow>
+          <mrow>\amp=-\frac{5}{\sqrt{5}} \cdot \frac{\sqrt{5}}{\sqrt{5}}</mrow>
+          <mrow>\amp=-\frac{5\sqrt{5}}{5}</mrow>
+          <mrow>\amp=-\sqrt{5}</mrow>
+        </md>
+        <md>
+          <mrow>\csc(t)\amp=\frac{1}{y}</mrow>
+          <mrow>\amp=\frac{1}{\frac{2\sqrt{5}}{5}}</mrow>
+          <mrow>\amp=\frac{1}{1} \cdot \frac{5}{2\sqrt{5}}</mrow>
+          <mrow>\amp=\frac{5}{2\sqrt{5}}</mrow>
+          <mrow>\amp=\frac{5}{2\sqrt{5}} \cdot \frac{\sqrt{5}}{\sqrt{5}}</mrow>
+          <mrow>\amp=\frac{5\sqrt{5}}{10}</mrow>
+          <mrow>\amp=\frac{\sqrt{5}}{2}</mrow>
+        </md>
+        <md>
+          <mrow>\cot(t)\amp=\frac{x}{y}</mrow>
+          <mrow>\amp=\frac{-\frac{\sqrt{5}}{5}}{\frac{2\sqrt{5}}{5}}</mrow>
+          <mrow>\amp=-\frac{\sqrt{5}}{5} \cdot \frac{5}{2\sqrt{5}}</mrow>
+          <mrow>\amp=-\frac{1}{2}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+</paragraphs>
+
+  <exercises>
+    <exercisegroup>
+      <introduction>
+        <p>
+          In each problem, information is given about an an arc or angle.  In each case, determine the values of each of the six basic trigonometric functions at the given arc or angle.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            When drawn in standard position, an angle of measurement <m>-210^{\circ}</m> intersects the unit circle at the point <m>(-\frac{\sqrt{3}}{2},\frac{1}{2})</m>.  Use this information to determine the six basic trigonometric values at <m>-210^{\circ}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We are given both coordinates of the point where the terminal side of the angle intersects the unit circle, so we can immediately evaluate all six basic trigonometric functions.
+            <md>
+              <mrow>\cos\left(-210^{\circ}\right)\amp=x</mrow>
+              <mrow>\amp=-\frac{\sqrt{3}}{2}</mrow>
+            </md>
+            <md>
+              <mrow>\sin\left(-210^{\circ}\right)\amp=y</mrow>
+              <mrow>\amp=\frac{1}{2}</mrow>
+            </md>
+            <md>
+              <mrow>\tan\left(-210^{\circ}\right)\amp=\frac{y}{x}</mrow>
+              <mrow>\amp=\frac{\frac{1}{2}}{-\frac{\sqrt{3}}{2}}</mrow>
+              <mrow>\amp=\frac{1}{2} \cdot -\frac{2}{\sqrt{3}}</mrow>
+              <mrow>\amp=-\frac{1}{\sqrt{3}}</mrow>
+              <mrow>\amp=-\frac{1}{\sqrt{3}} \cdot \frac{\sqrt{3}}{\sqrt{3}}</mrow>
+              <mrow>\amp=-\frac{\sqrt{3}}{3}</mrow>
+            </md>
+            <md>
+              <mrow>\sec\left(-210^{\circ}\right)\amp=\frac{1}{x}</mrow>
+              <mrow>\amp=\frac{1}{-\frac{\sqrt{3}}{2}}</mrow>
+              <mrow>\amp=\frac{1}{1} \cdot -\frac{2}{\sqrt{3}}</mrow>
+              <mrow>\amp=-\frac{2}{\sqrt{3}}</mrow>
+              <mrow>\amp=-\frac{2}{\sqrt{3}} \cdot \frac{\sqrt{3}}{\sqrt{3}}</mrow>
+              <mrow>\amp=-\frac{2\sqrt{3}}{3}</mrow>
+            </md>
+            <md>
+              <mrow>\csc\left(-210^{\circ}\right)\amp=\frac{1}{y}</mrow>
+              <mrow>\amp=\frac{1}{\frac{1}{2}}</mrow>
+              <mrow>\amp=\frac{1}{1} \cdot \frac{2}{1}</mrow>
+              <mrow>\amp=2</mrow>
+            </md>
+            <md>
+              <mrow>\cot\left(-210^{\circ}\right)\amp=\frac{x}{y}</mrow>
+              <mrow>\amp=\frac{-\frac{\sqrt{3}}{2}}{\frac{1}{2}}</mrow>
+              <mrow>\amp=-\frac{\sqrt{3}}{2} \cdot \frac{2}{1}</mrow>
+              <mrow>\amp=-\sqrt{3}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            When drawn in standard position, the angle <m>\gamma</m> (gamma) intersects the unit circle at the point <m>\left(\frac{12}{13},\frac{5}{13}\right)</m>.  Determine the six basic trigonometric values at <m>\gamma</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We have the information necessary to find the trigonometric values so we shall do so right now.
+            <md>
+              <mrow>\sin(\gamma)\amp=y</mrow>
+              <mrow>\amp=\frac{5}{13}</mrow>
+            </md>
+            <md>
+              <mrow>\cos(\gamma)\amp=x</mrow>
+              <mrow>\amp=\frac{12}{13}</mrow>
+            </md>
+            <md>
+              <mrow>\tan(\gamma)\amp=\frac{y}{x}</mrow>
+              <mrow>\amp=\frac{\frac{5}{13}}{\frac{12}{13}}</mrow>
+              <mrow>\amp=\frac{5}{13} \cdot \frac{13}{12}</mrow>
+              <mrow>\amp=\frac{5}{12}</mrow>
+            </md>
+            <md>
+              <mrow>\cot(\gamma)\amp=\frac{x}{y}</mrow>
+              <mrow>\amp=\frac{\frac{12}{13}}{\frac{5}{13}}</mrow>
+              <mrow>\amp=\frac{12}{13} \cdot \frac{13}{5}</mrow>
+              <mrow>\amp=\frac{12}{5}</mrow>
+            </md>
+            <md>
+              <mrow>\sec(\gamma)\amp=\frac{1}{x}</mrow>
+              <mrow>\amp=\frac{1}{\frac{12}{13}}</mrow>
+              <mrow>\amp=\frac{13}{12}</mrow>
+            </md>
+            <md>
+              <mrow>\csc(\gamma)\amp=\frac{1}{y}</mrow>
+              <mrow>\amp=\frac{1}{\frac{5}{13}}</mrow>
+              <mrow>\amp=\frac{13}{5}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+       <exercise>
+        <statement>
+          <p>
+            <m>t</m> is an arc along the unit circle drawn in standard position.  The arc terminates in the third quadrant at a point with an <m>x</m>-coordinate of <m>-\frac{2}{3}</m>.  Determine the values of the six basic trigonometric functions at <m>t</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by determining the <m>y</m>-coordinate of the point.  We do that by substituting <m>-\frac{2}{3}</m> for <m>x</m> in the equation for the unit circle and then solving for <m>y</m>.
+            <md>
+              <mrow>x^2+y^2\amp=1</mrow>
+              <mrow>\left(-\frac{2}{3}\right)+y^2\amp=1</mrow>
+              <mrow>\frac{4}{9}+y^2\amp=1</mrow>
+              <mrow>y^2\amp=\frac{5}{9}</mrow>
+              <mrow>y\amp=\pm\sqrt{\frac{5}{9}}</mrow>
+              <mrow>y\amp=\pm\frac{\sqrt{5}}{3}</mrow>
+            </md>
+            Because <m>t</m> terminates in the third quadrant, we know that <m>y</m> must be negative, so <m>y=-\frac{\sqrt{5}}{3}</m>.  We proceed to determine the six trigonometric values.
+            <md>
+              <mrow>\cos(t)\amp=x</mrow>
+              <mrow>\amp=-\frac{2}{3}</mrow>
+            </md>
+            <md>
+              <mrow>\sin(t)\amp=y</mrow>
+              <mrow>\amp=-\frac{\sqrt{5}}{3}</mrow>
+            </md>
+            <md>
+              <mrow>\tan(t)\amp=\frac{y}{x}</mrow>
+              <mrow>\amp=\frac{-\frac{\sqrt{5}}{3}}{-\frac{2}{3}}</mrow>
+              <mrow>\amp=-\frac{\sqrt{5}}{3} \cdot -\frac{3}{2}</mrow>
+              <mrow>\amp=\frac{\sqrt{5}}{2}</mrow>
+            </md>
+            <md>
+              <mrow>\sec(t)\amp=\frac{1}{x}</mrow>
+              <mrow>\amp=\frac{1}{-\frac{2}{3}}</mrow>
+              <mrow>\amp=\frac{1}{1} \cdot -\frac{3}{2}</mrow>
+              <mrow>\amp=-\frac{3}{2}</mrow>
+            </md>
+            <md>
+              <mrow>\csc(t)\amp=\frac{1}{y}</mrow>
+              <mrow>\amp=\frac{1}{-\frac{\sqrt{5}}{3}}</mrow>
+              <mrow>\amp=\frac{1}{1} \cdot -\frac{3}{\sqrt{5}}</mrow>
+              <mrow>\amp=-\frac{3}{\sqrt{5}}</mrow>
+              <mrow>\amp=-\frac{3}{\sqrt{5}} \cdot \frac{\sqrt{5}}{\sqrt{5}}</mrow>
+              <mrow>\amp=-\frac{3\sqrt{5}}{5}</mrow>
+            </md>
+            <md>
+              <mrow>\cot(t)\amp=\frac{x}{y}</mrow>
+              <mrow>\amp=\frac{-\frac{2}{3}}{-\frac{\sqrt{5}}{3}}</mrow>
+              <mrow>\amp=-\frac{2}{3} \cdot -\frac{3}{\sqrt{5}}</mrow>
+              <mrow>\amp=\frac{2}{\sqrt{5}}</mrow>
+              <mrow>\amp=\frac{2}{\sqrt{5}} \cdot \frac{\sqrt{5}}{\sqrt{5}}</mrow>
+              <mrow>\amp=\frac{2\sqrt{5}}{5}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+       <exercise>
+        <statement>
+          <p>
+            Determine the six basic trigonometric values of <m>7\pi</m>. 
+          </p>
+        </statement>
+        <solution>
+          <p>
+            There are three and one-half complete revolutions in <m>7\pi</m>, so as an arc along the unit circle drawn in standard position, <m>7\pi</m> terminates at the point <m>(0,-1)</m>.  We can use that point to determine the values of the six basic trigonometric functions at <m>7\pi</m>.
+            <md>
+              <mrow>\cos(7\pi)\amp=x</mrow>
+              <mrow>\amp=0</mrow>
+            </md>
+            <md>
+              <mrow>\sin(7\pi)\amp=y</mrow>
+              <mrow>\amp=-1</mrow>
+            </md>
+            <md>
+              <mrow>\tan(7\pi)\amp=\frac{y}{x}</mrow>
+              <mrow>\amp=\frac{0}{-1}</mrow>
+              <mrow>\amp=0</mrow>
+            </md>
+            <md>
+              <mrow>\sec(7\pi)\amp=\frac{1}{-1}</mrow>
+              <mrow>\amp-1</mrow>
+            </md>
+            The expressions used to evaluate both the cosecant function and the cotangent function have a factor of <m>y</m> in the denominator of a fraction.  Since <m>y=0</m> at <m>7\pi</m>, neither <m>\csc(7\pi)</m> nor <m>\cot(7\pi)</m> exist.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            When drawn in standard position, the angle <m>\alpha</m> (alpha) intersects the unit circle in Quadrant II.  We also know that <m>\tan(\alpha)=-\frac{7}{24}</m>.  Determine all six basic trigonometric values at <m>\alpha</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            From the given information we know that the ratio <m>\frac{y}{x}</m> is equal to <m>-\frac{7}{24}</m>.  We can use this fact too express <m>y</m> in terms of <m>x</m> and then substitute that expression into the equation of the unit circle to determine the value of <m>x</m>.  Let's do it.
+            <md>
+              <mrow>\frac{y}{x}\amp=-\frac{7}{24}</mrow>
+              <mrow>y\amp=-\frac{7}{24}x</mrow>
+              <mrow>x^2+y^2\amp=1</mrow>
+              <mrow>x^2+\left(-\frac{7}{24}x\right)^2\amp=1</mrow>
+              <mrow>x^2+\frac{49}{576}x^2\amp=1</mrow>
+              <mrow>\frac{625}{576}x^2\amp=1</mrow>
+              <mrow>x^2\amp=\frac{576}{625}</mrow>
+              <mrow>x\amp=\pm\frac{24}{25}</mrow>
+            </md>
+            Because <m>\alpha</m> terminates in Quadrant II, its <m>x</m>-coordinate is negative.  That fact couple with the above derivation leads us to conclude that <m>x=-\frac{24}{25}</m>.  We can us the equation <m>y=-\frac{7}{24}x</m> to determine the value of <m>y</m>.
+            <md>
+              <mrow>y\amp=-\frac{7}{24}x</mrow>
+              <mrow>\amp=-\frac{7}{24} \cdot -\frac{24}{25}</mrow>
+              <mrow>\amp=\frac{7}{25}</mrow>
+            </md>
+            We now have the information needed to find the trigonometric values at <m>\alpha</m> and will proceed to do just that.
+            <md>
+              <mrow>\sin(\alpha)\amp=y</mrow>
+              <mrow>\amp=\frac{7}{25}</mrow>
+            </md>
+            <md>
+              <mrow>\cos(\alpha)\amp=x</mrow>
+              <mrow>\amp=-\frac{24}{25}</mrow>
+            </md>
+            <md>
+              <mrow>\tan(\alpha)\amp=\frac{y}{x}</mrow>
+              <mrow>\amp=\frac{\frac{7}{25}}{-\frac{7}{24}}</mrow>
+              <mrow>\amp=\frac{7}{25} \cdot -\frac{24}{7}</mrow>
+              <mrow>\amp=-\frac{24}{25}</mrow>
+            </md>
+            <md>
+              <mrow>\cot(\alpha)\amp=\frac{x}{y}</mrow>
+              <mrow>\amp=\frac{-\frac{24}{25}}{\frac{7}{25}}</mrow>
+              <mrow>\amp=-\frac{24}{25} \cdot \frac{25}{7}</mrow>
+              <mrow>\amp=-\frac{24}{7}</mrow>
+            </md>
+            <md>
+              <mrow>\sec(\alpha)=\frac{1}{x}</mrow>
+              <mrow>\amp=\frac{1}{-\frac{24}{25}}</mrow>
+              <mrow>\amp=-\frac{25}{24}</mrow>
+            </md>
+            <md>
+              <mrow>\csc(\alpha)\amp=\frac{1}{y}</mrow>
+              <mrow>\amp=\frac{1}{\frac{7}{25}}</mrow>
+              <mrow>\amp=\frac{25}{7}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+       <exercise>
+        <statement>
+          <p>
+            <m>\theta</m> is an angle drawn in standard position.  The terminal side of <m>\theta</m> intersects the unit circle in the second quadrant and <m>\csc(\theta)=\frac{12}{11}</m>.  Determine the six basic trigonometric values of <m>\theta</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We know that the cosecant value at <m>\theta</m> is the reciprocal of the <m>y</m>-coordinate of the point at which the terminal side of <m>\theta</m> intersects the unit circle. So at that point <m>y=\frac{11}{12}</m>.  We can use the equation of the unit circle to determine the <m>x</m>-coordinate at that point.
+            <md>
+              <mrow>x^2+y^2\amp=1</mrow>
+              <mrow>x^2+\left(\frac{11}{12}\right)^2\amp=1</mrow>
+              <mrow>x^2+\frac{121}{144}\amp=1</mrow>
+              <mrow>x^2\amp=\frac{23}{144}</mrow>
+              <mrow>x\amp=\pm\sqrt{\frac{23}{144}}</mrow>
+              <mrow>x\amp=\pm\frac{\sqrt{23}}{12}</mrow>
+            </md>
+            Because <m>\theta</m> terminates in the second quadrant, we know that its <m>x</m>-coordinate must be negative.  So <m>x=-\frac{\sqrt{23}}{12}</m>.  We have enough information now to determine the six basic trigonometric values at <m>\theta</m>.
+            <md>
+              <mrow>\cos(\theta)\amp=x</mrow>
+              <mrow>\amp=-\frac{\sqrt{23}}{12}</mrow>
+            </md>
+            <md>
+              <mrow>\sin(\theta)\amp=y</mrow>
+              <mrow>\amp=\frac{11}{12}</mrow>
+            </md>
+            <md>
+              <mrow>\tan(\theta)\amp=\frac{y}{x}</mrow>
+              <mrow>\amp=\frac{\frac{11}{12}}{-\frac{\sqrt{23}}{12}}</mrow>
+              <mrow>\amp=\frac{11}{12} \cdot -\frac{12}{\sqrt{23}}</mrow>
+              <mrow>\amp=-\frac{11}{\sqrt{23}}</mrow>
+              <mrow>\amp=-\frac{11}{\sqrt{23}} \cdot \frac{\sqrt{23}}{\sqrt{23}}</mrow>
+              <mrow>\amp=-\frac{11\sqrt{23}}{23}</mrow>
+            </md>
+            <md>
+              <mrow>\sec(\theta)\amp=\frac{1}{x}</mrow>
+              <mrow>\amp=\frac{1}{-\frac{\sqrt{23}}{12}}</mrow>
+              <mrow>\amp=\frac{1}{1} \cdot -\frac{12}{\sqrt{23}}</mrow>
+              <mrow>\amp=-\frac{12}{\sqrt{23}}</mrow>
+              <mrow>\amp=-\frac{12}{\sqrt{23}} \cdot \frac{\sqrt{23}}{\sqrt{23}}</mrow>
+              <mrow>\amp=-\frac{12\sqrt{23}}{23}</mrow>
+            </md>
+            <md>
+              <mrow>\csc(\theta)\amp=\frac{1}{y}</mrow>
+              <mrow>\amp=\frac{1}{\frac{11}{12}}</mrow>
+              <mrow>\amp=\frac{1}{1} \cdot \frac{12}{11}</mrow>
+              <mrow>\amp=\frac{12}{11}</mrow>
+            </md>
+            <md>
+              <mrow>\cot(\theta)\amp=\frac{x}{y}</mrow>
+              <mrow>\amp=\frac{-\frac{\sqrt{23}}{12}}{\frac{11}{12}}</mrow>
+              <mrow>\amp=-\frac{\sqrt{23}}{12} \cdot \frac{12}{11}</mrow>
+              <mrow>\amp=-\frac{\sqrt{23}}{11}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+       <exercise>
+        <statement>
+          <p>
+            <m>t</m> is an arc drawn in standard postion along the unit circle that terminates in Quadrant I and has a secant value of <m>\frac{7}{2}</m>.  Determine the six basic trigonometric values at <m>t</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We know that the value of <m>\sec(t)</m> is the reciprocal of the <m>x</m>-coordinate of the point at which the arc terminates, so it must be the case that at that point <m>x=\frac{2}{7}</m>.  We can use the equation of the unit circle to determine the <m>y</m>-coordinate at the terminal point.
+            <md>
+              <mrow>x^2+y^2\amp=1</mrow>
+              <mrow>\left(\frac{2}{7}\right)^2+y^2\amp=1</mrow>
+              <mrow>\frac{4}{49}+y^2\amp=1</mrow>
+              <mrow>y^2\amp=\frac{45}{49}</mrow>
+              <mrow>y\amp=\pm\sqrt{\frac{45}{49}}</mrow>
+              <mrow>y\amp=\pm\frac{3\sqrt{5}}{7}</mrow>
+            </md>
+            Since the terminal point of <m>t</m> lies in Quadrant I, it's <m>y</m>-coordinate must be positive.  So <m>y=\frac{3\sqrt{5}}{7}</m>.  Let's go ahead and derive the six basic trigonometric values.
+            <md>
+              <mrow>\cos(t)\amp=x</mrow>
+              <mrow>\amp=\frac{2}{7}</mrow>
+            </md>
+            <md>
+              <mrow>\sin(t)\amp=y</mrow>
+              <mrow>\amp=\frac{3\sqrt{5}}{7}</mrow>
+            </md>
+            <md>
+              <mrow>\tan(t)\amp=\frac{y}{x}</mrow>
+              <mrow>\amp=\frac{\frac{3\sqrt{5}}{7}}{\frac{2}{7}}</mrow>
+              <mrow>\amp=\frac{3\sqrt{5}}{7} \cdot \frac{7}{2}</mrow>
+              <mrow>\amp=\frac{3\sqrt{5}}{2}</mrow>
+            </md>
+            <md>
+              <mrow>\sec(t)\amp=\frac{1}{x}</mrow>
+              <mrow>\amp=\frac{1}{\frac{2}{7}}</mrow>
+              <mrow>\amp=\frac{1}{1} \cdot \frac{7}{2}</mrow>
+              <mrow>\amp=\frac{7}{2}</mrow>
+            </md>
+            <md>
+              <mrow>\csc(t)\amp=\frac{1}{y}</mrow>
+              <mrow>\amp=\frac{1}{\frac{3\sqrt{5}}{7}}</mrow>
+              <mrow>\amp=\frac{1}{1} \cdot \frac{7}{3\sqrt{5}}</mrow>
+              <mrow>\amp=\frac{7}{3\sqrt{5}}</mrow>
+              <mrow>\amp=\frac{7}{3\sqrt{5}} \cdot \frac{\sqrt{5}}{\sqrt{5}}</mrow>
+              <mrow>\amp=\frac{7\sqrt{5}}{15}</mrow>
+            </md>
+            <md>
+              <mrow>\cot(t)\amp=\frac{x}{y}</mrow>
+              <mrow>\amp=\frac{\frac{2}{7}}{\frac{3\sqrt{5}}{7}}</mrow>
+              <mrow>\amp=\frac{2}{7} \cdot \frac{7}{3\sqrt{5}}</mrow>
+              <mrow>\amp=\frac{2}{3\sqrt{5}}</mrow>
+              <mrow>\amp=\frac{2}{3\sqrt{5}} \cdot \frac{\sqrt{5}}{\sqrt{5}}</mrow>
+              <mrow>\amp=\frac{2\sqrt{5}}{15}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+       <exercise>
+        <statement>
+          <p>
+            <m>\cot\left(\frac{7\pi}{4}\right)=-1</m>.  Use that information to determine the six basic trigonometric values of <m>\frac{7\pi}{4}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We know that the expression used to determine cosecant values is <m>\frac{x}{y}</m>, so at <m>\frac{7\pi}{4}</m>, <m>\frac{x}{y}=-1</m>.  This tells us that at <m>\frac{7\pi}{4}</m>, <m>x=-y</m>.  We can substitute <m>-y</m> for <m>x</m> in the equation of the unit circle to determine the <m>y</m>-coordinate of the point where the terminal side of an angle of measure <m>\frac{7\pi}{4}</m> intersects the unit circle.
+            <md>
+              <mrow>x^2+y^2\amp=1</mrow>
+              <mrow>(-y)^2+y^2\amp=1</mrow>
+              <mrow>2y^2\amp=1</mrow>
+              <mrow>y^2\amp=\frac{1}{2}</mrow>
+              <mrow>y\amp=\pm\sqrt{\frac{1}{2}}</mrow>
+              <mrow>y\amp=\pm\frac{1}{\sqrt{2}}</mrow> 
+              <mrow>y\amp=\pm\frac{1}{\sqrt{2}} \cdot \frac{\sqrt{2}}{\sqrt{2}}</mrow>
+              <mrow>y\amp=\pm\frac{\sqrt{2}}{2}</mrow>
+            </md>
+            <m>\frac{7\pi}{4}</m> terminates in Quadrant IV, so its <m>y</m>-coordinate must be negative.  This give us <m>y=-\frac{\sqrt{2}}{2}</m>.  Since <m>x=-y</m>, we also have <m>x=\frac{\sqrt{2}}{2}</m>.  We can now determine the six basic trigonometric values at <m>\frac{7\pi}{4}</m>
+            <md>
+              <mrow>\cos\left(\frac{7\pi}{4}\right)\amp=x</mrow>
+              <mrow>\amp=\frac{\sqrt{2}}{2}</mrow>
+            </md>
+            <md>
+              <mrow>\sin\left(\frac{7\pi}{4}\right)\amp=y</mrow>
+              <mrow>\amp=-\frac{\sqrt{2}}{2}</mrow>
+            </md>
+            <md>
+              <mrow>\tan\left(\frac{7\pi}{4}\right)\amp=\frac{y}{x}</mrow>
+              <mrow>\amp=\frac{-\frac{\sqrt{2}}{2}}{\frac{\sqrt{2}}{2}}</mrow>
+              <mrow>\amp=-1</mrow>
+            </md>
+            <md>
+              <mrow>\sec\left(\frac{7\pi}{4}\right)\amp=\frac{1}{x}</mrow>
+              <mrow>\amp=\frac{1}{\frac{\sqrt{2}}{2}}</mrow>
+              <mrow>\amp=\frac{1}{1} \cdot \frac{2}{\sqrt{2}}</mrow>
+              <mrow>\amp=\frac{2}{\sqrt{2}}</mrow>
+              <mrow>\amp=\frac{2}{\sqrt{2}} \cdot \frac{\sqrt{2}}{\sqrt{2}}</mrow>
+              <mrow>\amp=\frac{2\sqrt{2}}{2}</mrow>
+              <mrow>\amp=\sqrt{2}</mrow>
+            </md>
+            <md>
+              <mrow>\csc\left(\frac{7\pi}{4}\right)\amp=\frac{1}{y}</mrow>
+              <mrow>\amp=\frac{1}{-\frac{\sqrt{2}}{2}}</mrow>
+              <mrow>\amp=\frac{1}{1} \cdot -\frac{2}{\sqrt{2}}</mrow>
+              <mrow>\amp=-\frac{2}{\sqrt{2}}</mrow>
+              <mrow>\amp=-\frac{2}{\sqrt{2}} \cdot \frac{\sqrt{2}}{\sqrt{2}}</mrow>
+              <mrow>\amp=-\frac{2\sqrt{2}}{2}</mrow>
+              <mrow>\amp=-\sqrt{2}</mrow>
+            </md>
+            <md>
+              <mrow>\cot\left(\frac{7\pi}{4}\right)\amp=\frac{x}{y}</mrow>
+              <mrow>\amp=\frac{\frac{\sqrt{2}}{2}}{-\frac{\sqrt{2}}{2}}</mrow>
+              <mrow>\amp=-1</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+  </exercises>
+
+
+  
+
+
+</section>

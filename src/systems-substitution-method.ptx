@@ -29,7 +29,9 @@
       <figure xml:id="systems-substitution-figure-1">
         <caption><m>2x-5y=7</m> and <m>2x+y=3</m></caption>
           <image>
-            <description>plain text</description>
+            <description>
+              The graph of two lines, one with equation <m>2x-5y=7</m> and the other with equation <m>2x+y=3</m>.  The two lines intersect at a point a little bit above and to the left of the point <m>(2,-1)</m>.  There is no way of visually establishing the exact coordinates of the point.
+            </description>
             <latex-image>
               <![CDATA[
               \begin{tikzpicture}
@@ -948,13 +950,15 @@
               Alrighty, then.  The solution to the given system is the ordered pair <m>\left(\frac{5}{2},-\frac{3}{7}\right)</m>.  This unlikely outcome is verified below.
 
               <me>
-                 left\{
+                 \left\{
                   \begin{aligned}
                     -4\multiplyright{\frac{5}{2}}+7\multiplyright{-\frac{3}{7}}\amp=-13\,?\\
                     6\multiplyright{\frac{5}{2}}+14\multiplyright{-\frac{3}{7}}\amp=9\,?\\
                   \end{aligned}
                 \right.
               </me>
+
+
 
               <me>
                 \left\{

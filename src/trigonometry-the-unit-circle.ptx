@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="trigonometry-the-unit-circle">
+  <title>The Unit Circle/Angles in Standard Position/Arc Length</title>
+
+   <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        The function shown in <xref ref="trigonometry-the-unit-circle-figure-1">Figure</xref> is called <term>the unit circle</term>.  Note that the circle is centered at the origin and has a radius of 1 (unit).  The equation of the unit circle is <m>x^2+y^2=1</m>.  The unit circle is the most important graph in all of trigonometry, for it is the basis for the definitions of all of the trigonometric functions.   
+      </p>
+
+    <figure xml:id="trigonometry-the-unit-circle-figure-1">
+      <caption>The Unit Circle</caption>
+      <image>
+        <description>
+          The graph of the circle centered at the origin with a radius of 1.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-1.5,xmax=1.5,
+                          ymin=-1.5,ymax=1.5,
+                          xtick={-1,1},
+                          ytick={-1,1}]
+              \addplot [domain=0:360,samples=100,color=blue,line width=1pt] ({cos(x)},{sin(x)});            
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+
+  <p>
+    Using the circumference formula <m>C=2\pi r</m>, we can easily determine that the circumference of the unit circle is <m>2 \pi</m> (unit). So if we start at any point along the circle and make one full revolution around the circle, we will has traveled a distance of <m>2\pi</m> (unit).
+  </p>
+  <p>
+    As mentioned above, the trigonometric functions are all defined in reference to this circle, and in these definitions the starting point for rotation is always <m>(1,0)</m>.  We shall refer to arcs along the unit circle that originate from the point <m>(1,0)</m> as <term>arcs in standard position</term>. When we move off this point in the counter-clockwise direction, we state the measurement of the resultant arc (piece of the circle) as a positive number.  When we move from the point <m>(1,0)</m> and move in the clockwise direction, we state the measurement of the arc as a negative number.  For arcs that that don't originate from the point <m>(1,0)</m>, the measurement is always stated as a positive number.
+  </p>
+   <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        Let's consider the arc in standard position that rotates one quarter revolution in the counterclockwise direction.  This arc is illustrated in <xref ref="trigonometry-the-unit-circle-figure-2">Figure</xref>. Since the the length of one complete rotation is <m>2\pi</m> (unit), the length of one quarter revolution is  <m>\frac{2\pi}{4}</m> which simplifies to <m>\frac{\pi}{2}</m>.  Because the illustrated arc rotates counterclockwise, we measure it with a positive value.   
+      </p>
+
+    <figure xml:id="trigonometry-the-unit-circle-figure-2">
+      <caption>The Arc <m>\frac{\pi}{2}</m> (units) ins Standard Position</caption>
+      <image>
+        <description>
+          An arc drawn atop the unit circle.  The arc starts at <m>(0,0)</m> and rotates counterclockwise until ending at the point <m>(0,1)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-1.5,xmax=1.5,
+                          ymin=-1.5,ymax=1.5,
+                          xtick={-1,1},
+                          ytick={-1,1}]
+              \addplot [domain=0:360,samples=100,color=blue,line width=1pt] ({cos(x)},{sin(x)});
+              \addplot [domain=0:90,samples=100,color=red,line width=2pt,-{Stealth}] ({cos(x)},{sin(x)});            
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+  <p>
+    When an arc is in standard position, the angle from the origin whose sides are the positive <m>x</m>-axis and the line from the origin to the terminal point of the arc has a <term>radian measurement</term> numerically equivalent to arc's measurement.  We refer to such angles as <term>angles in standard position</term>.
+  </p>
+  <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        Let's consider the angle in standard position that rotates three-eighths of a revolution in the clockwise direction.  This angle is illustrated in <xref ref="trigonometry-the-unit-circle-figure-3">Figure</xref>.  In standard position, an angle that rotates clockwise  one-quarter of a revolution terminates on the negative <m>y</m>-axis and an angle that rotates clockwise  one-half of a revolution terminates on the negative <m>x</m>-axis.  Since <m>\frac{3}{8}</m> is halfway between <m>\frac{1}{2}</m> and <m>1</m>, the angle in standard position that rotates three-eighths of a revolution in the clockwise direction must terminate midway into quadrant III.
+      </p>
+
+    <figure xml:id="trigonometry-the-unit-circle-figure-3">
+      <caption>The Angle <m>-\frac{3\pi}{4}</m> Drawn in Standard Position</caption>
+      <image>
+        <description>
+          An angle that rotates clockwise from the positive <m>x</m>-axis stopping midway into Quadrant III.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-1.5,xmax=1.5,
+                          ymin=-1.5,ymax=1.5,
+                          xtick={-1,1},
+                          ytick={-1,1}]
+              \addplot [domain=0:360,samples=100,color=blue,line width=0.5pt] ({cos(x)},{sin(x)});
+              \addplot [domain=225:360,samples=100,color=red,line width=1pt,{Stealth}-] ({cos(x)},{sin(x)}); 
+              \addplot [primarycurve,domain=-0.99:0,line width=1pt,{Stealth}-] {x};  
+              \addplot [primarycurve,domain=0:1.4,line width=1pt,-{Stealth}] {0};                     
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+  <p>
+    Because the rotation of the angle shown in <xref ref="trigonometry-the-unit-circle-figure-3">Figure</xref> is clockwise, its radian measurement is negative.  Because the rotation is three-eighths of a revolution, the absolute value of its radian measurement is <m>\frac{3}{8}(2\pi)</m> which simplifies to <m>\frac{3\pi}{4}</m>.  We frequently use the Greek letter <m>\theta</m> (theta) when referencing angles in standard position, so using this reference we would refer to the angle in <xref ref="trigonometry-the-unit-circle-figure-3">Figure</xref> as <m>\theta=-\frac{3\pi}{4}</m> rad (read "radians).  We would refer to the affiliated arc along the unit circle as <m>t=-\frac{3\pi}{4}</m>.
+  </p> 
+ 
+   <sidebyside widths="47% 47%" margins="0%">
+
+    <p>
+      Let's illustrate <m>\theta=\frac{\pi}{4}</m> rad.  Because the measurement is positive, we know that the rotation off of the positive <m>x</m>-axis is counterclockwise.  Because there are <m>2\pi</m> rad in one complete revolution, we can determine the amount of rotation in <m>\frac{\pi}{4}</m> rad by solving the equation <m>\frac{\pi}{4}=2\pi x</m> which gives us <m>x=\frac{1}{8}</m>.  This makes the terminal side of the angle land midway into quadrant I.  The angle is illustrated in <xref ref="trigonometry-the-unit-circle-figure-4">Figure</xref>.
+    </p>
+
+    <figure xml:id="trigonometry-the-unit-circle-figure-4">
+      <caption>The Angle <m>\frac{\pi}{4}</m> Drawn in Standard Position</caption>
+      <image>
+        <description>
+          An angle that rotates counterclockwise from the positive <m>x</m>-axis stopping midway into Quadrant I.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-1.5,xmax=1.5,
+                          ymin=-1.5,ymax=1.5,
+                          xtick={-1,1},
+                          ytick={-1,1}]
+              \addplot [domain=0:360,samples=100,color=blue,line width=0.5pt] ({cos(x)},{sin(x)});
+              \addplot [domain=0:45,samples=100,color=red,line width=1pt,-{Stealth}] ({cos(x)},{sin(x)}); 
+              \addplot [primarycurve,domain=0:0.99,line width=1pt,-{Stealth}] {x};  
+              \addplot [primarycurve,domain=0:1.4,line width=1pt,-{Stealth}] {0};                     
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+  <p>
+    For reasons that will become apparent when we begin to evaluate trigonometric functions, we frequently break the unit circle up into 24 equal parts.  This is shown in <xref ref="trigonometry-the-unit-circle-figure-5">Figure</xref>-<xref ref="trigonometry-the-unit-circle-figure-12">Figure</xref>.  In each of the four quadrants, there are three angles of interest that terminate in the quadrant.  In the figures on the left each terminal side of interest is labeled with its smallest positive radian measurement as a fraction of <m>2\pi</m>.  In the figures on the right, the fractions have been reduced <mdash/> this is the manner in which the values will be stated in the future.
+  </p>
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <figure xml:id="trigonometry-the-unit-circle-figure-5">
+      <caption>Key Angles That Terminate in Quadrant I</caption>
+      <image>
+        <description>
+          The first quadrant has been broken up into six equal angles, each with a measurement of <m>\frac{\pi}{24}</m>.  Each side of each angle is a radius of the unit circle.  Starting from the positive x-axis and rotating counterclockwise, the third, fourth, and fifth radii are labeled, respectively, as <m>\frac{2}{24}(2\pi)</m>, <m>\frac{3}{24}(2\pi)</m>, and <m>\frac{4}{24}(2\pi)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-0.3,xmax=1.3,
+                          ymin=-0.3,ymax=1.3,
+                          xtick={-1,1},
+                          ytick={-1,1}]
+              \addplot [domain=0:360,samples=100,color=blue,line width=0.5pt] ({cos(x)},{sin(x)});
+              \addplot [primarycurve,domain=0:0.707,line width=1pt,-,color=green!60!black] {x};
+              \addplot [primarycurve,domain=0:0.5,line width=1pt,-,color=purple!75!black] {1.733*x};    
+              \addplot [primarycurve,domain=0:0.866,line width=1pt,-,color=brown] {.577*x};    
+              \addplot [primarycurve,domain=0:0.966,line width=1pt,color=gray!50!white,-] {.268*x}; 
+              \addplot [primarycurve,domain=0:0.259,line width=1pt,color=gray!50!white,-] {3.732*x};        
+              \addplot [primarycurve,domain=0:1,line width=1pt,-}] {0};
+              \addplot [interval,gray!50!white,-,line width=1pt,-] coordinates {(0,0) (0,1)};
+              \addplot [interval,gray!50!white,-,line width=1pt,-] coordinates {(0,0) (1,0)};
+              \addplot [soliddot,color=brown] coordinates {(.866,.5)} node[right] {$\frac{2}{24}(2\pi)$};
+              \addplot [soliddot,color=green!60!black] coordinates {(.707,.707)} node[right] {$\frac{3}{24}(2\pi)$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(.5,.866)} node[above right] {$\frac{4}{10}(2\pi)$};         
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+    <figure xml:id="trigonometry-the-unit-circle-figure-6">
+      <caption>Key Angles That Terminate in Quadrant I</caption>
+      <image>
+        <description>
+          The first quadrant has been broken up into six equal angles, each with a measurement of <m>\frac{\pi}{24}</m>.  Each side of each angle is a radius of the unit circle.  Starting from the positive x-axis and rotating counterclockwise, the third, fourth, and fifth radii are labeled, respectively, as <m>\frac{\pi}{6}</m>, <m>\frac{\pi}{4}</m>, and <m>\frac{\pi}{3}</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-0.3,xmax=1.3,
+                          ymin=-0.3,ymax=1.3,
+                          xtick={-1,1},
+                          ytick={-1,1}]
+              \addplot [domain=0:360,samples=100,color=blue,line width=0.5pt] ({cos(x)},{sin(x)});
+              \addplot [primarycurve,domain=0:0.707,line width=1pt,-,color=green!60!black] {x};
+              \addplot [primarycurve,domain=0:0.5,line width=1pt,-,color=purple!75!black] {1.733*x};    
+              \addplot [primarycurve,domain=0:0.866,line width=1pt,-,color=brown] {.577*x};    
+              \addplot [primarycurve,domain=0:0.966,line width=1pt,color=gray!50!white,-] {.268*x}; 
+              \addplot [primarycurve,domain=0:0.259,line width=1pt,color=gray!50!white,-] {3.732*x};        
+              \addplot [primarycurve,domain=0:1,line width=1pt,-}] {0};
+              \addplot [interval,gray!50!white,-,line width=1pt,-] coordinates {(0,0) (0,1)};
+              \addplot [interval,gray!50!white,-,line width=1pt,-] coordinates {(0,0) (1,0)};
+              \addplot [soliddot,color=brown] coordinates {(.866,.5)} node[right] {$\frac{\pi}{6}$};
+              \addplot [soliddot,color=green!60!black] coordinates {(.707,.707)} node[right] {$\frac{\pi}{4}$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(.5,.866)} node[above right] {$\frac{\pi}{3}$};         
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <figure xml:id="trigonometry-the-unit-circle-figure-7">
+      <caption>Key Angles That Terminate in Quadrant II</caption>
+      <image>
+        <description>
+          The second quadrant has been broken up into six equal angles, each with a measurement of <m>\frac{\pi}{24}</m>.  Each side of each angle is a radius of the unit circle.  Starting from the positive y-axis and rotating counterclockwise, the third, fourth, and fifth radius are labeled, respectively, as <m>\frac{8}{24}(2\pi)</m>, <m>\frac{9}{24}(2\pi)</m>, and <m>\frac{10}{24}(2\pi)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-1.3,xmax=0.3,
+                          ymin=-0.3,ymax=1.3,
+                          xtick={-1,1},
+                          ytick={-1,1}]
+              \addplot [domain=0:360,samples=100,color=blue,line width=0.5pt] ({cos(x)},{sin(x)}); 
+              \addplot [primarycurve,domain=-0.707:0,line width=1pt,-,color=green!60!black] {-x};  
+              \addplot [primarycurve,domain=-0.5:0,line width=1pt,-,color=purple!75!black] {-1.733*x};  
+              \addplot [primarycurve,domain=-0.866:0,line width=1pt,-,color=brown] {-.577*x};  
+              \addplot [primarycurve,domain=-0.966:0,line width=1pt,color=gray!50!white,-] {-.268*x}; 
+              \addplot [primarycurve,domain=-0.259:0,line width=1pt,color=gray!50!white,-] {-3.732*x}; 
+              \addplot [primarycurve,gray!50!white,-,domain=-1:0,line width=1pt,-] {0};
+              \addplot [interval,gray!50!white,line width=1pt,-] coordinates {(0,1) (0,0)};
+              \addplot [soliddot,color=brown] coordinates {(-.866,.5)} node[left] {$\frac{10}{24}(2\pi)$};
+              \addplot [soliddot,color=green!60!black] coordinates {(-.707,.707)} node[left] {$\frac{9}{24}(2\pi)$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(-.5,.866)} node[above left] {$\frac{8}{10}(2\pi)$};    
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+    <figure xml:id="trigonometry-the-unit-circle-figure-8">
+      <caption>Key Angles That Terminate in Quadrant II</caption>
+      <image>
+        <description>
+          The second quadrant has been broken up into six equal angles, each with a measurement of <m>\frac{\pi}{24}</m>.  Each side of each angle is a radius of the unit circle.  Starting from the positive y-axis and rotating counterclockwise, the third, fourth, and fifth radii are labeled, respectively, as <m>\frac{2\pi}{3}</m>, <m>\frac{4\pi}{4}</m>, and <m>\frac{5\pi}{6}</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-1.3,xmax=0.3,
+                          ymin=-0.3,ymax=1.3,
+                          xtick={-1,1},
+                          ytick={-1,1}]
+              \addplot [domain=0:360,samples=100,color=blue,line width=0.5pt] ({cos(x)},{sin(x)}); 
+              \addplot [primarycurve,domain=-0.707:0,line width=1pt,-,color=green!60!black] {-x};  
+              \addplot [primarycurve,domain=-0.5:0,line width=1pt,-,color=purple!75!black] {-1.733*x};  
+              \addplot [primarycurve,domain=-0.866:0,line width=1pt,-,color=brown] {-.577*x};  
+              \addplot [primarycurve,domain=-0.966:0,line width=1pt,color=gray!50!white,-] {-.268*x}; 
+              \addplot [primarycurve,domain=-0.259:0,line width=1pt,color=gray!50!white,-] {-3.732*x}; 
+              \addplot [primarycurve,gray!50!white,-,domain=-1:0,line width=1pt,-] {0};
+              \addplot [interval,gray!50!white,-,line width=1pt,-] coordinates {(0,1) (0,0)};
+              \addplot [soliddot,color=brown] coordinates {(-.866,.5)} node[left] {$\frac{5\pi}{6}$};
+              \addplot [soliddot,color=green!60!black] coordinates {(-.707,.707)} node[left] {$\frac{3\pi}{4}$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(-.5,.866)} node[above left] {$\frac{2\pi}{3}$};    
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <figure xml:id="trigonometry-the-unit-circle-figure-9">
+      <caption>Key Angles That Terminate in Quadrant III</caption>
+      <image>
+        <description>
+          The third quadrant has been broken up into six equal angles, each with a measurement of <m>\frac{\pi}{24}</m>.  Each side of each angle is a radius of the unit circle.  Starting from the negative x-axis and rotating counterclockwise, the third, fourth, and fifth radius are labeled, respectively, as <m>\frac{14}{24}(2\pi)</m>, <m>\frac{15}{24}(2\pi)</m>, and <m>\frac{16}{24}(2\pi)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-1.3,xmax=0.3,
+                          ymin=-1.3,ymax=0.3,
+                          xtick={-1,1},
+                          ytick={-1,1}]
+              \addplot [domain=0:360,samples=100,color=blue,line width=0.5pt] ({cos(x)},{sin(x)}); 
+              \addplot [primarycurve,domain=-0.707:0,line width=1pt,-,color=green!60!black] {x};  
+              \addplot [primarycurve,domain=-0.5:0,line width=1pt,-,color=purple!75!black] {1.733*x};  
+              \addplot [primarycurve,domain=-0.866:0,line width=1pt,-,color=brown] {.577*x};  
+              \addplot [primarycurve,domain=-0.966:0,line width=1pt,color=gray!50!white,-] {.268*x}; 
+              \addplot [primarycurve,domain=-0.259:0,line width=1pt,color=gray!50!white,-] {3.732*x}; 
+              \addplot [primarycurve,gray!50!white,-,domain=-1:0,line width=1pt,-] {0};
+              \addplot [interval,gray!50!white,-,line width=1pt,-] coordinates {(0,1) (0,0)};
+              \addplot [soliddot,color=brown] coordinates {(-.866,-.5)} node[left] {$\frac{14}{24}(2\pi)$};
+              \addplot [soliddot,color=green!60!black] coordinates {(-.707,-.707)} node[left] {$\frac{15}{24}(2\pi)$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(-.5,-.866)} node[below left] {$\frac{16}{24}(2\pi)$};    
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+    <figure xml:id="trigonometry-the-unit-circle-figure-10">
+      <caption>Key Angles That Terminate in Quadrant III</caption>
+      <image>
+        <description>
+          The third quadrant has been broken up into six equal angles, each with a measurement of <m>\frac{\pi}{24}</m>.  Each side of each angle is a radius of the unit circle.  Starting from the negative x-axis and rotating counterclockwise, the third, fourth, and fifth radii are labeled, respectively, as <m>\frac{7\pi}{6}</m>, <m>\frac{5\pi}{4}</m>, and <m>\frac{4\pi}{3}</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-1.3,xmax=0.3,
+                          ymin=-1.3,ymax=0.3,
+                          xtick={-1,1},
+                          ytick={-1,1}]
+              \addplot [domain=0:360,samples=100,color=blue,line width=0.5pt] ({cos(x)},{sin(x)}); 
+              \addplot [primarycurve,domain=-0.707:0,line width=1pt,-,color=green!60!black] {x};  
+              \addplot [primarycurve,domain=-0.5:0,line width=1pt,-,color=purple!75!black] {1.733*x};  
+              \addplot [primarycurve,domain=-0.866:0,line width=1pt,-,color=brown] {.577*x};  
+              \addplot [primarycurve,domain=-0.966:0,line width=1pt,color=gray!50!white,-] {.268*x}; 
+              \addplot [primarycurve,domain=-0.259:0,line width=1pt,color=gray!50!white,-] {3.732*x}; 
+              \addplot [primarycurve,gray!50!white,-,domain=-1:0,line width=1pt,-] {0};
+              \addplot [interval,gray!50!white,-,line width=1pt,-] coordinates {(0,1) (0,0)};
+              \addplot [soliddot,color=brown] coordinates {(-.866,-.5)} node[below left] {$\frac{7\pi}{6}$};
+              \addplot [soliddot,color=green!60!black] coordinates {(-.707,-.707)} node[below left] {$\frac{5\pi}{4}$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(-.5,-.866)} node[below left] {$\frac{4\pi}{3}$};    
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <figure xml:id="trigonometry-the-unit-circle-figure-11">
+      <caption>Key Angles That Terminate in Quadrant IV</caption>
+      <image>
+        <description>
+          The fourth quadrant has been broken up into six equal angles, each with a measurement of <m>\frac{\pi}{24}</m>.  Each side of each angle is a radius of the unit circle.  Starting from the negative y-axis and rotating counterclockwise, the third, fourth, and fifth radius are labeled, respectively, as <m>\frac{20}{24}(2\pi)</m>, <m>\frac{21}{24}(2\pi)</m>, and <m>\frac{22}{24}(2\pi)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-0.3,xmax=1.3,
+                          ymin=-1.3,ymax=0.3,
+                          xtick={-1,1},
+                          ytick={-1,1}]
+              \addplot [domain=0:360,samples=100,color=blue,line width=0.5pt] ({cos(x)},{sin(x)}); 
+              \addplot [primarycurve,domain=0:0.707,line width=1pt,-,color=green!60!black] {-x};  
+              \addplot [primarycurve,domain=0:0.5,line width=1pt,-,color=purple!75!black] {-1.733*x};  
+              \addplot [primarycurve,domain=0:0.866,line width=1pt,-,color=brown] {-.577*x};  
+              \addplot [primarycurve,domain=0:0.966,line width=1pt,color=gray!50!white,-] {-.268*x}; 
+              \addplot [primarycurve,domain=0:0.259,line width=1pt,color=gray!50!white,-] {-3.732*x}; 
+              \addplot [primarycurve,gray!50!white,-,domain=-1:0,line width=1pt,-] {0};
+              \addplot [interval,gray!50!white,-,line width=1pt,-] coordinates {(0,1) (0,0)};
+              \addplot [soliddot,color=brown] coordinates {(.866,-.5)} node[right] {$\frac{22}{24}(2\pi)$};
+              \addplot [soliddot,color=green!60!black] coordinates {(.707,-.707)} node[right] {$\frac{21}{24}(2\pi)$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(.5,-.866)} node[below right] {$\frac{20}{24}(2\pi)$};    
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+    <figure xml:id="trigonometry-the-unit-circle-figure-12">
+      <caption>Key Angles That Terminate in Quadrant IV</caption>
+      <image>
+        <description>
+          The fourth quadrant has been broken up into six equal angles, each with a measurement of <m>\frac{\pi}{24}</m>.  Each side of each angle is a radius of the unit circle.  Starting from the positive x-axis and rotating counterclockwise, the third, fourth, and fifth radii are labeled, respectively, as <m>\frac{5\pi}{3}</m>, <m>\frac{7\pi}{4}</m>, and <m>\frac{11\pi}{6}</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-0.3,xmax=1.3,
+                          ymin=-1.3,ymax=0.3,
+                          xtick={-1,1},
+                          ytick={-1,1}]
+              \addplot [domain=0:360,samples=100,color=blue,line width=0.5pt] ({cos(x)},{sin(x)}); 
+              \addplot [primarycurve,domain=0:0.707,line width=1pt,-,color=green!60!black] {-x};  
+              \addplot [primarycurve,domain=0:0.5,line width=1pt,-,color=purple!75!black] {-1.733*x};  
+              \addplot [primarycurve,domain=0:0.866,line width=1pt,-,color=brown] {-.577*x};  
+              \addplot [primarycurve,domain=0:0.966,line width=1pt,color=gray!50!white,-] {-.268*x}; 
+              \addplot [primarycurve,domain=0:0.259,line width=1pt,color=gray!50!white,-] {-3.732*x}; 
+              \addplot [primarycurve,gray!50!white,-,domain=-1:0,line width=1pt,-] {0};
+              \addplot [interval,gray!50!white,-,line width=1pt,-] coordinates {(0,1) (0,0)};
+              \addplot [soliddot,color=brown] coordinates {(.866,-.5)} node[below right] {$\frac{11\pi}{6}$};
+              \addplot [soliddot,color=green!60!black] coordinates {(.707,-.707)} node[below right] {$\frac{7\pi}{4}$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(.5,-.866)} node[below right] {$\frac{5\pi}{3}$};    
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+  <p>
+    <xref ref="trigonometry-the-unit-circle-figure-13">Figure</xref> summarizes the points referenced above as well as the points where the unit circle intersects the axes.  <xref ref="trigonometry-the-unit-circle-figure-14">Figure</xref> show the circle with the key points labeled with negative values (the result of clockwise rotation).  In the next section we will add the coordinates of each point to the graph and that picture will be the basis for all of trigonometry.  As you probably can guess, memorizing the location of these key points and the coordinates of the points is vital if you want to really understand and master trigonometry.
+  </p>
+  <figure xml:id="trigonometry-the-unit-circle-figure-13">
+      <caption>Key Angles/Points on the Unit Circle</caption>
+      <image width="60%">
+        <description>
+          The terminal sides of multiple angles are drawn in standard position to the unit circle and their values are stated in radians. The angles shown, starting at the positive x-axis and rotating one complete revolution in the counterclockwise direction are (in order) the following.  <m>0</m>,  <m>\frac{\pi}{6}</m>, <m>\frac{\pi}{4}</m>, <m>\frac{\pi}{3}</m>, <m>\frac{\pi}{2}</m>, <m>\frac{2\pi}{3}</m>, <m>\frac{3\pi}{4}</m>, <m>\frac{5\pi}{6}</m>, <m>\pi}</m>, <m>\frac{7\pi}{6}</m>, <m>\frac{5\pi}{4}</m>, <m>\frac{4\pi}{3}</m>, <m>\frac{3\pi}{2}</m>, <m>\frac{5\pi}{3}</m>, <m>\frac{7\pi}{4}</m>, <m>\frac{11\pi}{6}</m>, and <m>2\pi</m>
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-1.5,xmax=1.5,
+                          ymin=-1.5,ymax=1.5]
+              \addplot [domain=0:360,samples=100,color=blue,line width=0.5pt] ({cos(x)},{sin(x)});
+              \addplot [primarycurve,domain=0:0.707,line width=1pt,-,color=green!60!black] {x};
+              \addplot [primarycurve,domain=0:0.5,line width=1pt,-,color=purple!75!black] {1.733*x};    
+              \addplot [primarycurve,domain=0:0.866,line width=1pt,-,color=brown] {.577*x};         
+              \addplot [primarycurve,domain=0:1,line width=1pt,-}] {0};
+              \addplot [soliddot,color=brown] coordinates {(.866,.5)} node[right] {$\frac{\pi}{6}$};
+              \addplot [soliddot,color=green!60!black] coordinates {(.707,.707)} node[above right] {$\frac{\pi}{4}$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(.5,.866)} node[above] {$\frac{\pi}{3}$};
+              \addplot [primarycurve,domain=-0.707:0,line width=1pt,-,color=green!60!black] {-x};  
+              \addplot [primarycurve,domain=-0.5:0,line width=1pt,-,color=purple!75!black] {-1.733*x};  
+              \addplot [primarycurve,domain=-0.866:0,line width=1pt,-,color=brown] {-.577*x};  
+              \addplot [soliddot,color=brown] coordinates {(-.866,.5)} node[left] {$\frac{5\pi}{6}$};
+              \addplot [soliddot,color=green!60!black] coordinates {(-.707,.707)} node[above left] {$\frac{3\pi}{4}$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(-.5,.866)} node[above] {$\frac{2\pi}{3}$};
+              \addplot [primarycurve,domain=-0.707:0,line width=1pt,-,color=green!60!black] {x};  
+              \addplot [primarycurve,domain=-0.5:0,line width=1pt,-,color=purple!75!black] {1.733*x};  
+              \addplot [primarycurve,domain=-0.866:0,line width=1pt,-,color=brown] {.577*x};  
+              \addplot [soliddot,color=brown] coordinates {(-.866,-.5)} node[left] {$\frac{7\pi}{6}$};
+              \addplot [soliddot,color=green!60!black] coordinates {(-.707,-.707)} node[below left] {$\frac{5\pi}{4}$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(-.5,-.866)} node[below] {$\frac{4\pi}{3}$};
+              \addplot [primarycurve,domain=0:0.707,line width=1pt,-,color=green!60!black] {-x};  
+              \addplot [primarycurve,domain=0:0.5,line width=1pt,-,color=purple!75!black] {-1.733*x};  
+              \addplot [primarycurve,domain=0:0.866,line width=1pt,-,color=brown] {-.577*x};  
+              \addplot [soliddot,color=brown] coordinates {(.866,-.5)} node[right] {$\frac{11\pi}{6}$};
+              \addplot [soliddot,color=green!60!black] coordinates {(.707,-.707)} node[below right] {$\frac{7\pi}{4}$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(.5,-.866)} node[below] {$\frac{5\pi}{3}$};
+              \addplot [interval,red,line width=1pt,-] coordinates {(0,0) (0,1)};
+              \addplot [interval,red,line width=1pt,-] coordinates {(0,0) (1,0)};
+              \addplot [interval,red,line width=1pt,-] coordinates {(0,0) (-1,0)};
+              \addplot [interval,red,line width=1pt,-] coordinates {(0,0) (0,-1)};
+              \addplot [soliddot,color=red] coordinates {(1,0)} node[above right] {$0$};
+              \addplot [soliddot,color=red] coordinates {(1,0)} node[below right] {$2\pi$};
+              \addplot [soliddot,color=red] coordinates {(0,1)} node[above left] {$\frac{\pi}{2}$};
+              \addplot [soliddot,color=red] coordinates {(-1,0)} node[below left] {$\pi$};
+              \addplot [soliddot,color=red] coordinates {(0,-1)} node[below right] {$\frac{3\pi}{2}$};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+  </figure>
+
+  <figure xml:id="trigonometry-the-unit-circle-figure-14">
+      <caption>Key Angles/Points on the Unit Circle</caption>
+      <image width="60%">
+        <description>
+          The terminal sides of multiple angles are drawn in standard position to the unit circle and their values are stated in radians. The angles shown, starting at the positive x-axis and rotating one complete revolution in the clockwise direction are (in order) the following.  <m>0</m>,  <m>-\frac{\pi}{6}</m>, <m>-\frac{\pi}{4}</m>, <m>-\frac{\pi}{3}</m>, <m>-\frac{\pi}{2}</m>, <m>-\frac{2\pi}{3}</m>, <m>-\frac{3\pi}{4}</m>, <m>-\frac{5\pi}{6}</m>, <m>-\pi}</m>, <m>-\frac{7\pi}{6}</m>, <m>-\frac{5\pi}{4}</m>, <m>-\frac{4\pi}{3}</m>, <m>-\frac{3\pi}{2}</m>, <m>-\frac{5\pi}{3}</m>, <m>-\frac{7\pi}{4}</m>, <m>-\frac{11\pi}{6}</m>, and <m>-2\pi</m>
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-1.5,xmax=1.5,
+                          ymin=-1.5,ymax=1.5]
+              \addplot [domain=0:360,samples=100,color=blue,line width=0.5pt] ({cos(x)},{sin(x)});
+              \addplot [primarycurve,domain=0:0.707,line width=1pt,-,color=green!60!black] {x};
+              \addplot [primarycurve,domain=0:0.5,line width=1pt,-,color=purple!75!black] {1.733*x};    
+              \addplot [primarycurve,domain=0:0.866,line width=1pt,-,color=brown] {.577*x};         
+              \addplot [primarycurve,domain=0:1,line width=1pt,-}] {0};
+              \addplot [soliddot,color=brown] coordinates {(.866,.5)} node[right] {$-\frac{11\pi}{6}$};
+              \addplot [soliddot,color=green!60!black] coordinates {(.707,.707)} node[above right] {$-\frac{7\pi}{4}$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(.5,.866)} node[above] {$-\frac{5\pi}{3}$};
+              \addplot [primarycurve,domain=-0.707:0,line width=1pt,-,color=green!60!black] {-x};  
+              \addplot [primarycurve,domain=-0.5:0,line width=1pt,-,color=purple!75!black] {-1.733*x};  
+              \addplot [primarycurve,domain=-0.866:0,line width=1pt,-,color=brown] {-.577*x};  
+              \addplot [soliddot,color=brown] coordinates {(-.866,.5)} node[left] {$-\frac{7\pi}{6}$};
+              \addplot [soliddot,color=green!60!black] coordinates {(-.707,.707)} node[above left] {$-\frac{5\pi}{4}$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(-.5,.866)} node[above left] {$-\frac{4\pi}{3}$};
+              \addplot [primarycurve,domain=-0.707:0,line width=1pt,-,color=green!60!black] {x};  
+              \addplot [primarycurve,domain=-0.5:0,line width=1pt,-,color=purple!75!black] {1.733*x};  
+              \addplot [primarycurve,domain=-0.866:0,line width=1pt,-,color=brown] {.577*x};  
+              \addplot [soliddot,color=brown] coordinates {(-.866,-.5)} node[left] {$-\frac{5\pi}{6}$};
+              \addplot [soliddot,color=green!60!black] coordinates {(-.707,-.707)} node[below left] {$-\frac{3\pi}{4}$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(-.5,-.866)} node[below] {$-\frac{2\pi}{3}$};
+              \addplot [primarycurve,domain=0:0.707,line width=1pt,-,color=green!60!black] {-x};  
+              \addplot [primarycurve,domain=0:0.5,line width=1pt,-,color=purple!75!black] {-1.733*x};  
+              \addplot [primarycurve,domain=0:0.866,line width=1pt,-,color=brown] {-.577*x};  
+              \addplot [soliddot,color=brown] coordinates {(.866,-.5)} node[right] {$-\frac{\pi}{6}$};
+              \addplot [soliddot,color=green!60!black] coordinates {(.707,-.707)} node[below right] {$-\frac{\pi}{4}$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(.5,-.866)} node[below] {$-\frac{\pi}{3}$};
+              \addplot [interval,red,line width=1pt,-] coordinates {(0,0) (0,1)};
+              \addplot [interval,red,line width=1pt,-] coordinates {(0,0) (1,0)};
+              \addplot [interval,red,line width=1pt,-] coordinates {(0,0) (-1,0)};
+              \addplot [interval,red,line width=1pt,-] coordinates {(0,0) (0,-1)};
+              \addplot [soliddot,color=red] coordinates {(1,0)} node[above right] {$-2\pi$};
+              \addplot [soliddot,color=red] coordinates {(1,0)} node[below right] {$0$};
+              \addplot [soliddot,color=red] coordinates {(0,1)} node[above left] {$-\frac{3\pi}{2}$};
+              \addplot [soliddot,color=red] coordinates {(-1,0)} node[below left] {$-\pi$};
+              \addplot [soliddot,color=red] coordinates {(0,-1)} node[below right] {$-\frac{\pi}{2}$};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+  </figure>
+  <p>
+    As illustrated above, when drawn in standard position, multiple angles share the same terminal side.  In fact, there is no limit to the number of angles that terminate at any given position.  Angles drawn in standard position that share a terminal side are called <term>coterminal angles</term>.  The radian measurements of coterminal angles always differ by an integer multiple of <m>2\pi</m> and angles whose radian measurements differ by an integer multiple of <m>2\pi</m> are always coterminal.
+  </p>
+  <example>
+    <statement>
+      <p>
+        Determine four angles, two with positive measurement and two with negative measurement, that are coterminal with the angle <m>\theta=\frac{5\pi}{7}</m>. 
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We need to add and subtract integer multiples of <m>2\pi</m> to <m>\frac{5\pi}{7}</m> to generate coterminal angles to <m>\theta</m>.  This is done below.
+      </p>
+      <sidebyside widths="47% 47%" margins="0%">
+
+        <p>
+          <md>
+            <mrow>\frac{5\pi}{7}+2\pi\amp=\frac{5\pi}{7}+\frac{14\pi}{7}</mrow>
+            <mrow>\amp=\frac{19\pi}{7}</mrow>
+          </md>
+        </p>
+        
+        <p>
+          <md>
+            <mrow>\frac{5\pi}{7}+2 \cdot 2\pi\amp=\frac{5\pi}{7}+4\pi</mrow>
+            <mrow>\amp=\frac{5\pi}{7}+\frac{28\pi}{7}</mrow>
+            <mrow>\amp=\frac{33\pi}{7}</mrow>
+          </md>
+        </p>
+
+      </sidebyside>
+      <sidebyside widths="47% 47%" margins="0%">
+
+        <p>
+          <md>
+            <mrow>\frac{5\pi}{7}-2\pi\amp=\frac{5\pi}{7}-\frac{14\pi}{7}</mrow>
+            <mrow>\amp=-\frac{9\pi}{7}</mrow>
+          </md>
+        </p>
+        
+        <p>
+          <md>
+            <mrow>\frac{5\pi}{7}-2 \cdot 2\pi\amp=\frac{5\pi}{7}-4\pi</mrow>
+            <mrow>\amp=\frac{5\pi}{7}-\frac{28\pi}{7}</mrow>
+            <mrow>\amp=-\frac{23\pi}{7}</mrow>
+          </md>
+        </p>
+
+      </sidebyside>
+    </solution>
+  </example>
+  <p>
+    In some contexts, it is preferable to measure angles using degrees rather than radians.  (In fact, several students would prefer that be done in all contexts. :) You may recall that there are <m>360^{\circ}</m> in one complete revolution. <xref ref="trigonometry-the-unit-circle-figure-15">Figure</xref> shows the key angles around the unit circle labeled with their degree values that fall between <m>0^{\circ}</m> and <m>360^{\circ}</m>.
+  </p>
+  <figure xml:id="trigonometry-the-unit-circle-figure-15">
+      <caption>Key Angles/Points on the Unit Circle</caption>
+      <image width="60%">
+        <description>
+          The terminal sides of multiple angles are drawn in standard position to the unit circle and their values are stated in degrees. The angles shown, starting at the positive x-axis and rotating one complete revolution in the counterclockwise direction are (in order) the following.  <m>0^{\circ}</m>, <m>30^{\circ}</m>, <m>45^{\circ}</m>, <m>60^{\circ}</m>, <m>90^{\circ}</m>, <m>120^{\circ}</m>, <m>135^{\circ}</m>, <m>150^{\circ}</m>, <m>180^{\circ}</m>, <m>210^{\circ}</m>, <m>225^{\circ}</m>, <m>240^{\circ}</m>, <m>270^{\circ}</m>, <m>310^{\circ}</m>, <m>315^{\circ}</m>, <m>330^{\circ}</m>, and <m>360^{\circ}</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-1.5,xmax=1.5,
+                          ymin=-1.5,ymax=1.5]
+              \addplot [domain=0:360,samples=100,color=blue,line width=0.5pt] ({cos(x)},{sin(x)});
+              \addplot [primarycurve,domain=0:0.707,line width=1pt,-,color=green!60!black] {x};
+              \addplot [primarycurve,domain=0:0.5,line width=1pt,-,color=purple!75!black] {1.733*x};    
+              \addplot [primarycurve,domain=0:0.866,line width=1pt,-,color=brown] {.577*x};         
+              \addplot [primarycurve,domain=0:1,line width=1pt,-}] {0};
+              \addplot [soliddot,color=brown] coordinates {(.866,.5)} node[right] {$30^{\circ}$};
+              \addplot [soliddot,color=green!60!black] coordinates {(.707,.707)} node[above right] {$45^{\circ}$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(.5,.866)} node[above] {$60^{\circ}$};
+              \addplot [primarycurve,domain=-0.707:0,line width=1pt,-,color=green!60!black] {-x};  
+              \addplot [primarycurve,domain=-0.5:0,line width=1pt,-,color=purple!75!black] {-1.733*x};  
+              \addplot [primarycurve,domain=-0.866:0,line width=1pt,-,color=brown] {-.577*x};  
+              \addplot [soliddot,color=brown] coordinates {(-.866,.5)} node[left] {$150^{\circ}$};
+              \addplot [soliddot,color=green!60!black] coordinates {(-.707,.707)} node[left] {$135^{\circ}$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(-.5,.866)} node[above left] {$120^{\circ}$};
+              \addplot [primarycurve,domain=-0.707:0,line width=1pt,-,color=green!60!black] {x};  
+              \addplot [primarycurve,domain=-0.5:0,line width=1pt,-,color=purple!75!black] {1.733*x};  
+              \addplot [primarycurve,domain=-0.866:0,line width=1pt,-,color=brown] {.577*x};  
+              \addplot [soliddot,color=brown] coordinates {(-.866,-.5)} node[left] {$210^{\circ}$};
+              \addplot [soliddot,color=green!60!black] coordinates {(-.707,-.707)} node[below left] {$225^{\circ}$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(-.5,-.866)} node[below] {$240^{\circ}$};
+              \addplot [primarycurve,domain=0:0.707,line width=1pt,-,color=green!60!black] {-x};  
+              \addplot [primarycurve,domain=0:0.5,line width=1pt,-,color=purple!75!black] {-1.733*x};  
+              \addplot [primarycurve,domain=0:0.866,line width=1pt,-,color=brown] {-.577*x};  
+              \addplot [soliddot,color=brown] coordinates {(.866,-.5)} node[right] {$330^{\circ}$};
+              \addplot [soliddot,color=green!60!black] coordinates {(.707,-.707)} node[right] {$315^{\circ}$};
+              \addplot [soliddot,color=purple!75!black] coordinates {(.5,-.866)} node[below right] {$300^{\circ}$};
+              \addplot [interval,red,line width=1pt,-] coordinates {(0,0) (0,1)};
+              \addplot [interval,red,line width=1pt,-] coordinates {(0,0) (1,0)};
+              \addplot [interval,red,line width=1pt,-] coordinates {(0,0) (-1,0)};
+              \addplot [interval,red,line width=1pt,-] coordinates {(0,0) (0,-1)};
+              \addplot [soliddot,color=red] coordinates {(1,0)} node[above right] {$0^{\circ}$};
+              \addplot [soliddot,color=red] coordinates {(1,0)} node[below right] {$360^{\circ}$};
+              \addplot [soliddot,color=red] coordinates {(0,1)} node[above left] {$90^{\circ}$};
+              \addplot [soliddot,color=red] coordinates {(-1,0)} node[below left] {$180^{\circ}$};
+              \addplot [soliddot,color=red] coordinates {(0,-1)} node[below right] {$270^{\circ}$};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+  </figure>
+  <p>
+    The degree measurements of coterminal angles always differ by an integer multiple of <m>360^{\circ}</m> and angles whose degree measurements differ by an integer multiple of <m>360^{\circ}</m> are always coterminal.
+  </p>
+  <example>
+    <statement>
+      <p>
+        Determine the quadrant in which the angles in standard position with measurements of <m>21,354^{\circ}</m> and <m>-12,344^{\circ}</m> terminate.  Also, for each of the stated measurements, determine the measurement of the coterminal angle whose measurement is between <m>0^{\circ}</m> and <m>360^{\circ}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Let's begin with <m>21,354^{\circ}</m>. The first thing we need to determine is the number of times 360 divides 21,254.  This will tell us how many complete revolutions are made before the final partial revolution.
+        <me>\frac{21,254}{60} \approx 59.039</me>
+        This tells us that the angle makes 59 complete revolutions plus a tiny bit more.  Since the rotation is counterclockwise, the angle terminates in Quadrant I.
+      </p>
+      <p>
+        To determine the desired coterminal angle, let's subtract away the 59 complete revolutions.
+        <me>21,354^{\circ}-59 \cdot 360^{\circ}=14^{\circ}</me>
+        So in standard position, a <m>21,354^{\circ}</m> angle is coterminal with a <m>14^{\circ}</m> angle.
+      </p>
+      <p>
+        Let's move on to <m>-12,344^{\circ}</m>.
+        <me>\frac{12,344}{360} \approx 34.29</me>
+        So the angle makes 34 complete revolutions and then a little more than a quarter of a revolution.  Since the rotation is in the clockwise direction, the angle terminates in Quadrant III.
+      </p>
+      <p>
+        To determine the desired coterminal angle, we need to start at <m>-12,344^{\circ}</m> and add 35 complete revolutions in the counterclockwise direction.
+        <me>-12,344^{\circ}+35 \cdot 360^{\circ}=256^{\circ}</me>
+        So in standard position, a <m>-12,344^{\circ}</m> angle is coterminal with a <m>256^{\circ}</m> angle.
+      </p>
+    </solution>
+  </example>
+  <p>
+    Let's make note of the fact that when drawn in standard position, <m>\pi\,\text{rad}</m> and <m>180^{\circ}</m> both generate one-half of a complete revolution in the counterclockwise direction.  Because of this, <m>\pi\,\text{rad}=180^{\circ}</m>.  We can use this fact to convert between radian measurement and degree measurement.
+  </p>
+  <example>
+    <statement>
+      <p>
+        Convert <m>220^{\circ}</m> to its equivalent radian measurement and then convert <m>-\frac{5\pi}{9}\,\text{rad}</m> to its equivalent degree measurement.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Because <m>\pi\,\text{rad}=180^{\circ}</m>, both <m>\frac{\pi\,\text{rad}}{180^{\circ}}</m> and <m>\frac{180^{\circ}}{\pi \text{rad}}</m> are equivalent to the unitless value of one.  Consequently, we can multiply by the fraction with the new unit in the numerator and existent unit in the denominator to produce the desired equivalent measurement.
+      </p>
+      <sidebyside widths="47% 47%" margins="0%">
+
+        <p>
+          <md>
+            <mrow>220^{\circ}\amp=\frac{220^{\circ}}{1} \cdot \frac{\pi\,\text{rad}}{180^{\circ}}</mrow>
+            <mrow>\amp=\frac{11\pi}{9}\,\text{rad}</mrow>
+          </md>
+        </p>
+
+        <p>
+          <md>
+            <mrow>-\frac{5\pi}{9}\,\text{rad}\amp=-\frac{5\pi}{9}\,\text{rad} \cdot \frac{180^{\circ}}{\pi\,\text{rad}}</mrow>
+            <mrow>\amp=-100^{\circ}</mrow>
+          </md>
+        </p>
+
+      </sidebyside>
+    </solution>
+  </example>
+  <p></p>
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <p>
+      The length of an arc, s, traced along a circle with whose radius is r and cut by an angle with a vertex at the center of the circle with a <emphasisis>radian measurement</emphasisis> of <m>\theta</m> is determined by the equation <m>s=r\theta</m>.  This is illustrated in <xref ref="trigonometry-the-unit-circle-figure-16">Figure</xref>.  When we solve the arc length equation for <m>\theta</m>, we get the following equation, which has a startling implication with regards to the radian unit.
+      <me>\theta=\frac{s}{r}</me>
+    </p>
+
+     <figure xml:id="trigonometry-the-unit-circle-figure-16">
+      <caption>Arc Length: <m>s=r\theta</m></caption>
+      <image>
+        <description>
+          An angle is drawn in quadrant 1 with both sides terminating at a circle whose radius is labeled as r. The angle is labeled as theta and the arc formed along the circle between the two sides of the angle is labeled as s.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=10cm,
+                          xmin=-1.5,xmax=1.5,
+                          ymin=-1.5,ymax=1.5]
+              \addplot [domain=0:360,samples=100,color=blue,line width=0.5pt,dashed] ({cos(x)},{sin(x)});
+              \addplot [domain=20:85,samples=100,color=red,line width=1pt,-] ({cos(x)},{sin(x)}) node[pos=0.5,above] {$s$};
+              \addplot [domain=20:85,samples=100,color=black,line width=1pt,-] ({0.1*cos(x)},{0.1*sin(x)}) node[pos=0.5,above right] {$\theta$};
+              \addplot [domain=0:0.94,line width=1.5pt,-,color=green!40!black] {tan(20)*x} node[pos=0.5,above] {$r$};
+              \addplot [domain=0:0.087,line width=1.5pt,-,color=green!40!black] {tan(85)*x};                    
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+  <p>
+    Suppose that you draw an arc of length 7 cm atop a circle that has a radius of 21 cm.  Then the measurement of the central angle is derived as follows.
+    <md>
+      <mrow>\theta\amp=\frac{s}{r}</mrow>
+      <mrow>\amp=\frac{7\,\text{cm}}{21\,\text{cm}}</mrow>
+      <mrow>\amp=\frac{1}{3}</mrow> 
+    </md>
+    Where's the unit?  There is no unit!  The units of cm divided to one and left nothing (unit-wise) in their wake.  
+  </p>
+  <p>
+    It turns out that the radian unit is something of a sham.  When we say "three radians" what we really mean is "three."  So why do we use the word radian at all?  To contextual the reader to the fact that we are referring to "three" as the measurement of an angle or an amount of rotation.  Because radians are not a real thing, we generally do not write it out - e.g., we write <m>\frac{\pi}{2}</m> and contextually recognize that we are referencing a "radian measurement."  When making angle measurement references, the omission of a unit always indicates that we should interpret the value as a radian measurement.  For this reason, it is vital that you include a degree symbol when stating a measurement in terms of degrees.
+  </p>
+  <exercises>
+    <exercisegroup>
+      <introduction>
+        <p>
+          For each stated value of <m>\theta</m>, determine the quadrant in which the angle terminates and determine the angle with a measurement between <m>0^{\circ}</m> and <m>360^{\circ}</m> that is coterminal with <m>\theta</m>.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\theta=15,722^{\circ}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+           We begin by determining how much rotation is left after all of the complete revolutions are made.
+            <me>\frac{15,722}{360} \approx 43.67</me>
+            So the angle makes 43 complete revolutions plus a little less than three-quarters of a revolution.  Since the rotation is in the counterclockwise direction (<m>\theta</m> is positive), the angle terminates in Quadrant III.
+            <me>15,722^{\circ}-43 \cdot360^{\circ}=242^{\circ}</me>
+            This tells us that a <m>15,722^{\circ}</m> angle is coterminal with a <m>242^{\circ}</m> angle.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\theta=-2,566^{\circ}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by determining how much rotation is left after all of the complete revolutions are made.
+            <me>\frac{2,566}{360} \approx 7.13</me>
+            So the angle makes 7 complete revolutions plus less than one-quarter of a revolution.  Since the rotation is in the clockwise direction (<m>\theta</m> is negative), the angle terminates in Quadrant IV.
+            <me>-2,566^{\circ}+8 \cdot 360^{\circ}=314^{\circ}</me> 
+            This tells us that a <m>-2,566^{\circ}</m> angle is coterminal with a <m>314^{\circ}</m> angle.
+          </p>
+        </solution>
+      </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\theta=198,170^{\circ}</m>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We begin by determining how much rotation is left after all of the complete revolutions are made.
+              <me>\frac{198,170}{360} \approx 550.47</me>
+              So the angle makes 550 complete revolutions plus a little less than one-half of a revolution.  Since the rotation is in the counterclockwise direction (<m>\theta</m> is positive), the angle terminates in Quadrant II.
+              <me>198,170^{\circ}-550 \cdot 360^{\circ}=170^{\circ}</me>
+              This tells us that a <m>-198,170^{\circ}</m> angle is coterminal with a <m>170^{\circ}</m> angle.
+            </p>
+          </solution>
+        </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\theta=-7,110^{\circ}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by determining how much rotation is left after all of the complete revolutions are made.
+            <me>\frac{7,110}{360}=19.75</me>
+            So the angle makes 19 complete revolutions plus exactly three-quarters of a revolution.  Since the rotation is in the clockwise direction (<m>\theta</m> is negative), the angle terminates on the positive <m>y</m>-axis and is coterminal with a <m>90^{\circ}</m> angle
+          </p>
+        </solution>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          For each stated value of <m>\theta</m>, determine the quadrant in which the angle terminates and determine the angle with a measurement between <m>0</m> and <m>2\pi</m> that is coterminal with <m>\theta</m>.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\theta=\frac{226\pi}{3}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+           We begin by determining how much rotation is left after all of the complete revolutions are made.  We do this by dividing the value of <m>\theta</m> by <m>2\pi</m> - the number of radians in one complete revolution.
+            <me>\frac{\frac{226\pi}{3}}{2\pi} \approx 37.67</me>
+            So the angle makes 37 complete revolutions plus a little less than three-quarters of a revolution.  Since the rotation is in the counterclockwise direction (<m>\theta</m> is positive), the angle terminates in Quadrant III.
+            <me>\frac{226\pi}{3}-37 \cdot 2\pi=\frac{4\pi}{3}</me>
+            This tells us that an angle of measurement <m>\frac{226\pi}{3}</m> angle is coterminal with an angle of measurement <m>\frac{4\pi}{3}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\theta=3,356</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+           We begin by determining how much rotation is left after all of the complete revolutions are made.  We do this by dividing the value of <m>\theta</m> by <m>2\pi</m> - the number of radians in one complete revolution.
+            <me>\frac{3,356}{2\pi} \approx 534.12</me>
+            So the angle makes 534 complete revolutions plus less than one-quarter of a revolution.  Since the rotation is in the counterclockwise direction (<m>\theta</m> is positive), the angle terminates in Quadrant I.
+            <me>3,356-37 \cdot 2\pi \approx 0.779</me>
+            This tells us that an angle of measurement <m>3,356</m> angle is (very close to being) coterminal with an angle of measurement <m>0.779</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\theta=-\frac{1781\pi}{2}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+           We begin by determining how much rotation is left after all of the complete revolutions are made.  We do this by dividing the value of <m>\theta</m> by <m>2\pi</m> - the number of radians in one complete revolution.
+            <me>\frac{\frac{1781\pi}{2}}{2\pi} \approx 445.25</me>
+            So the angle makes 445 complete revolutions plus exactly one-quarter of a revolution.  Since the rotation is in the clockwise direction (<m>\theta</m> is negative), the angle terminates on the negative <m>y</m>-axis and is coterminal with <m>\frac{3\pi}{2}</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\theta=-250</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+           We begin by determining how much rotation is left after all of the complete revolutions are made.  We do this by dividing the value of <m>\theta</m> by <m>2\pi</m> - the number of radians in one complete revolution.
+            <me>\frac{250}{2\pi} \approx 39.79</me>
+            So the angle makes 39 complete revolutions plus a little more than three-quarters of a revolution.  Since the rotation is in the clockwise direction (<m>\theta</m> is negative), the angle terminates in Quadrant I.
+            <me>-250+40 \cdot 2\pi \approx 1.327</me>
+            This tells us that an angle of measurement <m>-250</m> angle is (very close to being) coterminal with an angle of measurement <m>1.327</m>.
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Convert each degree measurement to its equivalent radian measurement and each radian measurement to its equivalent degree measurement.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>290^{\circ}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{290^{\circ}}{1} \cdot \frac{\pi}{180^{\circ}}=\frac{29\pi}{18}</m>
+          </p>
+          <p>
+            <m>290^{\circ}</m> is equivalent to <m>\frac{29\pi}{18}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>-\frac{101\pi}{4}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>-\frac{101\pi}{4} \cdot \frac{180^{\circ}}{\pi}=-4545^{\circ}</m>
+          </p>
+          <p>
+            <m>-\frac{101\pi}{4}</m> is equivalent to <m>-4545^{\circ}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>240</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's begin by making note that 240 may look like it should be a degree measurement, but the absence of a degree symbol means that it is in fact a radian measurement.
+            <md>
+              <mrow>\frac{240}{1} \cdot \frac{180^{\circ}}{\pi}\amp=\left(\frac{43,200}{\pi}\right)^{\circ}</mrow>
+              <mrow>\amp \approx 13,750.987^{\circ}</mrow>
+            </md>
+            <m>240</m> is approximately equivalent to  <m>13,750.987^{\circ}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{17\pi}{3}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{17\pi}{3} \cdot \frac{180^{\circ}}{\pi}=1020^{\circ}</m>
+          </p>
+          <p>
+            <m>\frac{17\pi}{3}</m> is equivalent to <m>1020^{\circ}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>-515^{\circ}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{-515^{\circ}}{1} \cdot \frac{\pi}{180^{\circ}}=-\frac{103\pi}{36}</m>
+          </p>
+          <p>
+            <m>-515^{\circ}</m> is equivalent to <m>-\frac{103\pi}{36}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>45</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's begin by making note that 45 may look like it should be a degree measurement, but the absence of a degree symbol means that it is in fact a radian measurement.
+            <md>
+              <mrow>\frac{45}{1} \cdot \frac{180^{\circ}}{\pi}\amp=\left(\frac{8100}{\pi}\right)^{\circ}</mrow>
+              <mrow>\amp \approx 2,578.310^{\circ}</mrow>
+            </md>
+            <m>45</m> is approximately equivalent to <m>2,578.310^{\circ}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+
+
+
+
+
+
+
+
+  </exercises>
+
+  
+
+
+</section>

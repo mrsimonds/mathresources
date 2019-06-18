@@ -10,23 +10,21 @@
 <!-- ********************************************************************* -->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="systems-videos">
-    <title>Videos Created by Ann Cary and Scot Leavitt</title>
+  <title>Videos Created by Ann Cary and Scot Leavitt</title>
 
-          <p>
-            The links take you to YouTube Playlists which will open either in a new window or in a Youtube App.
-          <ul>
-            <li>
-              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-cVXXDS3q3MLeYAC9rz4TGX" target="blank">Solving systems of equations by graphing</url>
-            </li>
-            <li>
-              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-f-72s-L0ZpS4K8B86jMm1i" target="blank">Solving systems of equations by substitution</url>
-            </li>
-            <li>
-              <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-db09h4ugJEcflfcwm94aNB" target="blank">Solving systems of equations by variable elimination</url>
-            </li>
-          </ul>
-        </p>
+  <p>
+    The links take you to YouTube Playlists which will open either in a new window or in a Youtube App.
+    <ul>
+      <li>
+        <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-cVXXDS3q3MLeYAC9rz4TGX" target="blank">Solving systems of equations by graphing</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-f-72s-L0ZpS4K8B86jMm1i" target="blank">Solving systems of equations by substitution</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-db09h4ugJEcflfcwm94aNB" target="blank">Solving systems of equations by variable elimination</url>
+      </li>
+    </ul>
+  </p>
     
-
-         
-    </section>
+</section>

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!-- ********************************************************************* -->
-<!-- Copyright 2017                                                        -->
-<!-- Portlant Community College                                            -->
+<!-- Copyright 2017-2018                                                        -->
+<!-- Portland Community College                                            -->
 <!--                                                                       -->
 <!-- Author                                                                -->
 <!-- Steve Simonds                                                         -->
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 
     <docinfo>
-        <!-- <brandlogo url="http://mathbook.pugetsound.edu" source="images/book-cover-google-art-project.jpg" /> -->
+        <brandlogo url="https://spot.pcc.edu/slc/mathresources/output/html/" source="images/chalk-board-knowledge-learn-54597.jpg" />
 
-        <!-- <initialism>SA</initialism> -->
+        <initialism>Let's Learn</initialism>
 
         <cross-references text="global" />
 
@@ -128,6 +128,12 @@
 \newcommand{\pear}{\text{&#x1F350;}}
 \newcommand{\cat}{\text{&#128049;}}
 \newcommand{\dog}{\text{&#128054;}}
+%
+%
+\newcommand{\uvec}[1]{\boldsymbol{\hat{\textbf{#1}}}}
+<!-- $\uvec{i}, \uvec{j}, \uvec{k}$ -->
+
+
 
 
     </macros>
@@ -246,44 +252,25 @@
     <book xml:id="math-resources">
         <title>PCC SLC Math Resources</title>
 
-        <frontmatter xml:id="index">
-            <titlepage>
-                <author>
-                    <personname>Steve Simonds</personname>
-                    <department>Department of Mathematics</department>
-                    <institution>Portland Community College</institution>
-                    <email>ssimonds@pcc.edu</email>
-                </author>
-                <author>
-                    <personname>Ann Cary (video production)</personname>
-                    <department>Department of Mathematics</department>
-                    <institution>Portland Community College</institution>
-                    <email>ann.cary@pcc.edu</email>
-                </author>
-                <author>
-                    <personname>Scot Leavitt (video production)</personname>
-                    <department>Department of Mathematics</department>
-                    <institution>Portland Community College</institution>
-                    <email>sleavitt@pcc.edu</email>
-                </author>
-
-
-                <!-- Can set date manually or use the "today" element -->
-                <date><today /></date>
-            </titlepage>
-        </frontmatter>
-
-        <xi:include href="./workshop-materials.ptx" />
-        <xi:include href="./absolute-value-materials.ptx" />
-        <xi:include href="./factoring-materials.ptx" />
+        
+                
+        
+        <!-- <xi:include href="./frontmatter.ptx" />
+        <xi:include href="./absolute-value-materials.ptx" /> -->
+        <xi:include href="./exponents-materials.ptx" />
+        <!-- <xi:include href="./factoring-materials.ptx" />
+        <xi:include href="./functions-materials.ptx" />
         <xi:include href="./imaginary-and-complex-numbers-materials.ptx" />
         <xi:include href="./lines-materials.ptx" />
+        <xi:include href="./logs-and-exponents-materials.ptx" />
         <xi:include href="./parabolas-materials.ptx" />
         <xi:include href="./polynomials-materials.ptx" />
         <xi:include href="./quadratic-equations-materials.ptx" />
         <xi:include href="./radicals-materials.ptx" />
         <xi:include href="./rationals-materials.ptx" />
-        <xi:include href="./systems-materials.ptx" />
+        <xi:include href="./systems-materials.ptx" /> 
+        <xi:include href="./trigonometry-materials.ptx" />
+        <xi:include href="./test-page-materials.ptx" /> -->
 
     </book>
-</mathbook>
+</pretext>

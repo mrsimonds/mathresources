@@ -9,837 +9,441 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="section-workshop-absolute-value">
-    <title>Absolute Value Equations and Inequalities</title>
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="absolute-value-basic-inequalities">
+  <title>Basic Absolute Inequalities</title>
 
-     <exercises>
-      <title>Equations of Form <m>\abs{ax+b}=c</m></title>
+  <paragraphs>
+    <title>Inequalities of form <m>\abs{ax+b} \lt c</m> or <m>\abs{ax+b} \le c</m></title>
+    <p></p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        A graph of the function <m>y=\abs{x}</m> is shown in <xref ref="absolute-value-basic-inequalities-figure-1">Figure</xref>.  The line <m>y=3</m> is also. Note that the points where the absolute function has <m>y</m>-coordinates less than <m>3</m> all have <m>x</m>-coordinates between <m>-3</m> and <m>3</m>.  This indicates that the solution set to the inequality <m>\abs{x} \lt 3</m> is the interval <m>(3,3)</m>.
+      </p>
+
+      <figure xml:id="absolute-value-basic-inequalities-figure-1">
+        <caption><m>\abs{x} \lt 3</m></caption>
+        <image>
+          <description>
+            A graph of <m>y=\abs(x)</m> and the line <m>y=3</m>.  The line intersects <m>y=\abs(x)</m> at the points <m>(-3,3)</m> and <m>(3,3)</m> and a hollow dot has been placed at both of those point.  The portion of <m>y=\abs(x)</m> that lies above the interval <m>(-3,3)</m> is highlighted and the interval <m>(-3,3)</m> is highlighted on the <m>x</m>-axis.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}
+                \addplot[primarycurve,domain=0:6.8,smooth,-{Stealth}] {x};
+                \addplot[primarycurve,domain=-6.8:0,smooth,{Stealth}-] {-x};
+                \addplot[primarycurve,domain=-6.8:6.8,gray] {3};
+                \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(-3,3)};
+                \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(3,3)};
+                \addplot[primarycurve,domain=0:3,smooth,blue!40,ultra thick,-] {x};
+                \addplot[primarycurve,domain=-3:0,smooth,blue!40,ultra thick,-] {-x};
+                \addplot[primarycurve,domain=-3:3,smooth,blue,ultra thick,(-)] {0};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <p>
+      In general, if <m>k \gt 0</m>, then the solution set to an inequality of the form <m>\abs{ax+b} \lt k</m> will be an open interval that is determined by solving a compound inequality.  Specifically:
+      <me>\abs{ax+b} \lt k;\,k \gt 0</me>
+      is equivalent to the compound inequality
+      <me>-k \lt ax+b \lt k</me>.
+    </p>
+    
+    <example>
+      <statement>
+        <p>
+          Determine the solution set to the inequality <m>\abs{3x+7} \le 14</m>.  State the solution set using interval notation (if possible).
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by writing an equivalent compound inequality that does not include an absolute value expression.  We then solve that compound inequality.
+          <md alignment="alignat">
+            <mrow>-14 \amp\le 3x+7 \amp\amp\le 14</mrow>
+            <mrow>-14\subtractright{7} \amp\le 3x+7\subtractright{7} \amp\amp\le 14\subtractright{7}</mrow>
+            <mrow>-21 \amp\le 3x \amp\amp\le 7</mrow>
+            <mrow>\divideunder{-21}{3} \amp\le \divideunder{3x}{3} \amp\amp\le \divideunder{7}{3}</mrow>
+            <mrow>-7 \amp\le x \amp\amp\le \frac{7}{3}</mrow>
+          </md> 
+          The solution set to the give inequality is <m>\left[-7,\frac{7}{3}\right]</m>.
+        </p>
+      </solution>
+    </example>
+    
+    <example>
+      <statement>
+        <p>
+          Determine the solution set to the inequality <m>\abs{5x+19} \lt -10</m>.  State the solution set using interval notation (if possible).
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's pause for a moment and consider what's actually being asked.  We are asked to determine what values of <m>x</m> will cause an absolute value to be less than <m>-10</m>.  Since no absolute value is negative, no absolute value is ever less than <m>-10</m>.  So no value of <m>x</m> makes the inequality <m>\abs{5x+19} \lt -10</m> true, and the solution set to that inequality is <m>\emptyset</m>.
+        </p>
+      </solution>
+    </example>
+    
+    <example>
+      <statement>
+        <p>
+          Determine the solution set to the inequality <m>\abs{-\frac{3}{7}x+6} \lt 9</m>.  State the solution set using interval notation (if possible).
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to write and solve an equivalent compound inequality that does not include an absolute value expression.  While solving, we need to remember that the direction of the inequality sign reverses anytime we multiply or divide both sides of the equation by a negative number,
+          <md alignment="alignat">
+            <mrow>-9 \amp\lt -\frac{3}{7}x+6 \amp\amp\lt 9</mrow>
+            <mrow>-9\subtractright{6} \amp\lt -\frac{3}{7}x+6\subtractright{6} \amp\amp\lt 9\subtractright{6}</mrow>
+            <mrow>-15 \amp\lt -\frac{3}{7}x \amp\amp\lt 3</mrow>
+            <mrow>\multiplyleft{-\frac{7}{3}}-15 \amp\gt \multiplyleft{-\frac{7}{3}}-\frac{3}{7}x \amp\amp\gt \multiplyleft{-\frac{7}{3}}3</mrow>
+            <mrow>35 \amp\gt x \amp\amp\gt  -7</mrow>
+          </md>
+          The solution set to the given inequality is <m>(-7,35)</m>.
+        </p>
+      </solution>
+    </example>
+  </paragraphs>
+
+  <paragraphs>
+    <title>Inequalities of form <m>\abs{ax+b} \gt c</m> or <m>\abs{ax+b} \ge c</m>.</title>
+    <p></p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+       A  graph of the function <m>y=\abs{x}</m> is shown in <xref ref="absolute-value-basic-inequalities-figure-2">Figure</xref>.  The line <m>y=3</m> is also. Note that the points where the absolute function has <m>y</m>-coordinates greater than <m>3</m> have <m>x</m>-coordinates that are either to the left of <m>-3</m> or to the right of <m>3</m>.  This indicates that the solution set to the inequality <m>\abs{x} \gt 3</m> is the interval <m>(-\infty,-3) \cup (3,\infty)</m>.
+      </p>
+
+      <figure xml:id="absolute-value-basic-inequalities-figure-2">
+        <caption><m>\abs{x} \gt 3</m></caption>
+        <image>
+          <description>
+            A graph of <m>y=\abs(x)</m> and the line <m>y=3</m>.  The line intersects <m>y=\abs(x)</m> at the points <m>(-3,3)</m> and <m>(3,3)</m> and a hollow dot has been placed at both of those point. The portion of <m>y=\abs(x)</m> that lies to the left of <m>x=3</m> has been highlighted as has the portion that lies to the right of <m>x=3</m>.  The intervals <m>(-\infty,-3)</m> and <m>(3,\infty)</m> have also been highlighted on the <m>x</m>-axis.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}
+                \addplot[primarycurve,domain=0:6.8,smooth,-{Stealth}] {x};
+                \addplot[primarycurve,domain=-6.8:0,smooth,{Stealth}-] {-x};
+                \addplot[primarycurve,domain=-6.8:6.8,gray] {3};
+                \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(-3,3)};
+                \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(3,3)};
+                \addplot[primarycurve,domain=3:6.8,smooth,blue!40,ultra thick,-{Stealth}] {x};
+                \addplot[primarycurve,domain=-6.8:-3,smooth,blue!40,ultra thick,{Stealth}-] {-x};
+                \addplot[primarycurve,domain=3:6.8,smooth,blue,ultra thick,(-{Stealth}] {0};
+                \addplot[primarycurve,domain=-6.8:-3,smooth,blue,ultra thick,{Stealth}-)] {0};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+    </sidebyside>
+    <p>
+      In general, if <m>k \gt 0</m>, then the solution set to an inequality of the form <m>\abs{ax+b} \gt k</m> will be the union of two open intervals that are determined by solving a compound inequality.  Specifically:
+      <me>\abs{ax+b} \gt k;\,k \gt 0</me>
+      is equivalent to the compound inequality
+      <me>ax+b \lt -k \text{ or } ax+b \gt k</me>.
+    </p>
+    
+    <example>
+      <statement>
+        <p>
+          Determine the solution set to the inequality <m>\abs{3x+2} \gt 11</m>. State the solution set using interval notation (if possible).
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by writing an equivalent compound inequality that does not include an absolute value expression.  We then solve that compound inequality
+          <md>
+            <mrow>3x+2 \amp\lt -11 \amp\amp\text{or}\amp 3x+ 2 \amp\gt 11</mrow>
+            <mrow>3x+2\subtractright{2} \amp\lt -11\subtractright{2} \amp\amp\text{or}\amp 3x+2\subtractright{2} \amp\gt 11\subtractright{2}</mrow>
+            <mrow>3x \amp\lt -13 \amp\amp\text{or}\amp 3x \amp\gt 9</mrow>
+            <mrow>\divideunder{3x}{3} \amp\lt \divideunder{-13}{3} \amp\amp\text{or}\amp \divideunder{3x}{3}\amp\gt \divideunder{9}{3}</mrow>
+                <mrow>x \amp\lt -\frac{13}{3} \amp\amp\text{or}\amp x \amp\gt 3</mrow>
+          </md>
+          The solution set to the given inequality is <m>\left(-\infty,-\frac{13}{3}\right) \cup (3,\infty)</m>.
+        </p>
+      </solution>
+    </example>
+    
+    <example>
+      <statement>
+        <p>
+          Determine the solution set to the inequality <m>\abs{6-x} \ge 12</m>.  State the set using interval notation (if possible).
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to write an equivalent compound inequality that does not include an absolute value expression and solve that compound inequality.  We need to remember that when we multiply or divide both sides of an inequality by a negative value, the direction of the inequality is reversed.
+          <md>
+            <mrow>6-x \amp\le -12 \amp\amp\text{or}\amp 6-x \amp\ge 12</mrow>
+            <mrow>6-x\subtractright{6} \amp\le -12\subtractright{6} \amp\amp\text{or}\amp 6-x\subtractright{6} \amp\ge 12\subtractright{6}</mrow>
+            <mrow>-x \amp\le -18 \amp\amp\text{or}\amp -x \amp\ge 6</mrow>
+            <mrow>\multiplyleft{-1}-x \amp\ge -\multiplyleft{-1}-18 \amp\amp\text{or}\amp \multiplyleft{-1}-x \amp\le \multiplyleft{-1}6</mrow>
+            <mrow>x \amp\ge 18 \amp\amp\text{or}\amp x \amp\le -6</mrow>
+          </md>
+          The solution set is <m>(-\infty,-6] \cup [18,\infty)</m>.
+        </p>
+      </solution>
+    </example>
+  
+    <example>
+      <statement>
+        <p>
+          Determine the solution set to the inequality <m>\abs{\frac{4x-8}{3}} \ge -9</m>.  Write the solution set using interval notation (if possible).
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to be careful not to prematurely jump into rote mode.  The smallest value the absolute value ever has is zero.  Any value greater than or equal to zero is also greater than <m>-9</m>.  So the value of the absolute value expression will be greater than <m>-9</m> regardless of the value of <m>x</m>, and the solution set to <m>\abs{\frac{4x-8}{3}} \ge -9</m> is <m>(-\infty,\infty)</m>.
+        </p>
+      </solution>
+    </example>
+  </paragraphs>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine the solution set to each of the following inequalities.  Express each solution set using interval notation (where possible).
+        </p>
+      </introduction>
 
       <exercise>
-        <title>Explanation and examples</title>
-        <statement>
-          <sidebyside widths="47% 47%">
-            <p>
-               A graph of the function <m>y=\abs{x}</m> is shown in <xref ref="workshop-abs-value-equation-figure-examples">Figure</xref>.  The line <m>y=3</m> is also shown. Note that the line intersects the absolute value at two points: <m>(-3,3)</m> and <m>(3,3)</m>.  These points of intersection indicate that the equation <m>\abs{x}=3</m> has two solutions: <m>-3</m> and <m>3</m>.
-            </p>
-            <figure xml:id="workshop-abs-value-equation-figure-examples">
-                  <caption><m>\abs{x}=3</m></caption>
-                    <image>
-                      <description>plain text</description>
-                        <latex-image>
-                          <![CDATA[
-                          \begin{tikzpicture}
-                            \begin{axis}
-                              \addplot[primarycurve,domain=0:6.8,smooth,-{Stealth}] {x};
-                              \addplot[primarycurve,domain=-6.8:0,smooth,{Stealth}-] {-x};
-                              \addplot[primarycurve,domain=-6.8:6.8,gray] {3};
-                              \addplot[soliddot,color=blue] coordinates {(-3,3)} node[below left] {(-3,3)};
-                              \addplot[soliddot,color=blue] coordinates {(3,3)} node[below right] {(3,3)};
-                            \end{axis}
-                          \end{tikzpicture}
-                          ]]>
-                        </latex-image>
-                    </image>
-          </figure>
-          </sidebyside>
-          <p>
-            In general, if <m>k</m> is a positive number, an equation of form <m>\abs{ax+b}=k</m> will have two solutions.  Specifically:
-            <me>\abs{ax+b}=k;\,k \gt 0</me>
-            is equivalent to the pair of equations
-            <me>ax+b=-k \text{ or } ax+b=k</me>.
-          </p>
-          <paragraphs>
-            <title>Example</title>
-            <p>
-              Determine the solution set to the equation <m>\abs{4x-1}=29</m>.
-            </p>
-            <p>
-              We begin by writing an equivalent pair of equations that do not include absolute value expressions.  We then solve that pair of equations.
-              <md>
-                <mrow>4x-1\amp=-29 \amp\amp\text{or}\amp 4x-1\amp=29</mrow>
-                <mrow>4x-1\addright{1}\amp=-29\addright{1} \amp\amp\text{or}\amp 4x-1\addright{1}\amp=29\addright{1}</mrow>
-                <mrow>4x\amp=-28 \amp\amp\text{or}\amp 4x\amp=30</mrow>
-                <mrow>\divideunder{4x}{4}\amp=\divideunder{-28}{4} \amp\amp\text{or}\amp \divideunder{4x}{4}\amp=\divideunder{30}{4}</mrow>
-                <mrow>x\amp=-7 \amp\amp\text{or}\amp x\amp=\frac{15}{2}</mrow>
-              </md>
-              The solution set to the given equation is <m>\{-7,\frac{15}{2}\}</m>.
-            </p>
-          </paragraphs>
-          <p>Example</p>
-          <p></p>
-          <p>
-            Determine the solution set to the equation <m>\abs{\frac{3-x}{7}}=4</m>.
-          </p>
-          <p>
-            We begin by writing a pair of equations (without absolute value expressions) that are collectively equivalent to the given equation.  We then solve those equations.
-            <md>
-              <mrow>\frac{3-x}{7}\amp=-4 \amp\amp\text{or}\amp \frac{3-x}{7}\amp=4</mrow>
-              <mrow>\multiplyleft{7}\frac{3-x}{7}\amp=\multiplyleft{7}-4 \amp\amp\text{or}\amp \multiplyleft{7}\frac{3-x}{7}\amp=\multiplyleft{7}4</mrow>
-              <mrow>3-x\amp=-28 \amp\amp\text{or}\amp 3-x\amp=28</mrow>
-              <mrow>3-x\subtractright{3}\amp=-28\subtractright{3} \amp\amp\text{or}\amp 3-x\subtractright{3}\amp=28\subtractright{3}</mrow>
-              <mrow>-x\amp=-31 \amp\amp\text{or}\amp -x\amp=25</mrow>
-              <mrow>\multiplyleft{-1}-x \amp=\multiplyleft{-1}-31 \amp\amp\text{or}\amp \multiplyleft{-1}-x\amp=\multiplyleft{-1}25</mrow>
-              <mrow>x\amp=31 \amp\amp\text{or}\amp x\amp=-25</mrow>
-            </md>
-            The solutions set is <m>\{-25,31\}</m>.
-          </p>
-          <p>Example</p>
-          <p></p>
-          <p>
-            Determine the solution set to the equation <m>\abs{6x-29}=0</m>.
-          </p>
-          <p>
-            We need to first make note that we do not have a positive constant on the non-absolute value side of the equation, so we need to proceed with caution.  There is only one number whose absolute value is zero, and that's zero itself.  So when we write an equivalent statement without absolute value bars, there will still be only one equation.
-            <md>
-              <mrow>\abs{6x-29}\amp=0</mrow>
-              <mrow>6x-29\amp=0</mrow>
-              <mrow>6x-29\addright{29}\amp=0\addright{29}</mrow>
-              <mrow>6x\amp=29</mrow>
-              <mrow>\divideunder{6x}{6}\amp=\divideunder{29}{6}</mrow>
-              <mrow>x\amp=\frac{29}{6}</mrow>
-            </md>
-            The solution set to the given equation is <m>\frac{29}{6}</m>.
-          </p>
-        </statement>
-      </exercise>
-
-      <exercise>
-        <title>Practice exercises with detailed solutions</title>
         <statement>
           <p>
-            Find the solution set for each of the following equations.
-            <ol>
-              <li><m>\abs{x-6}=8</m></li>
-              <li><m>\abs{2x+7}=21</m></li>
-              <li><m>\abs{3x-2}=-11</m></li>
-              <li><m>\abs{3-5x}=30</m></li>
-              <li><m>\abs{9-x}=0</m></li>
-              <li><m>\abs{-4x-9}=99</m></li>
-            </ol>
-            <p></p>
+            <m>
+              \abs{x+9} \lt 20
+            </m>
           </p>
         </statement>
         <solution>
-          <p>
-            <ol>
-              <li>
-                We are asked to solve <m>\abs{x-6}=8</m>.  We begin by rewriting a pair of equations that do not include absolute value expressions. We then solve those two equations.
-                <md>
-                  <mrow>x-6\amp=-8 \amp\amp\text{or}\amp x-6\amp=8</mrow>
-                  <mrow>x-6\addright{6}\amp=8\addright{6} \amp\amp\text{or}\amp x-6\addright{6}\amp=8\addright{6}</mrow>
-                  <mrow>x\amp=-2 \amp\amp\text{or}\amp x\amp=14</mrow>
-                </md>
-                The solution set to the given equation is <m>\{-2,14\}</m>
-              </li>
-              <li>
-                We are asked to solve <m>\abs{2x+7}=21</m>.  We begin by rewriting a pair of equations that do not include absolute value expressions. We then solve those two equations.
-                <md>
-                  <mrow>2x+7\amp=-21 \amp\amp\text{or}\amp 2x+7\amp=21</mrow>
-                  <mrow>2x+7\subtractright{7}\amp=-21\subtractright{7} \amp\amp\text{or}\amp 2x+7\subtractright{7}\amp=21\subtractright{7}</mrow>
-                  <mrow>2x\amp=-28 \amp\amp\text{or}\amp 2x\amp=14</mrow>
-                  <mrow>\divideunder{2x}2\amp=\divideunder{-28}{2} \amp\amp\text{or}\amp \divideunder{2x}{2}\amp=\divideunder{14}{2}</mrow>
-                  <mrow>x\amp=-14 \amp\amp\text{or}\amp x\amp=7</mrow>
-                </md>
-                The solution set to the given equation is <m>\{-14,7\}</m>.
-              </li>
-              <li>
-                We are asked to solve <m>\abs{3x-2}=-11</m>.  We begin by observing that no number has an absolute value equal to <m>-11</m>.  We can therefore conclude that there are no solutions to the given equation and that the solution set is <m>\emptyset</m>.
-              </li>
-              <li>
-                We are asked to solve <m>\abs{3-5x}=30</m>.  We begin by rewriting a pair of equations that do not include absolute value expressions. We then solve those two equations.
-                <md>
-                  <mrow>3-5x\amp=-30 \amp\amp\text{or}\amp 3-5x\amp=30</mrow>
-                  <mrow>3-5x\subtractright{3}\amp=-33\subtractright{3} \amp\amp\text{or}\amp 3-5x\subtractright{3}\amp=30\subtractright{3}</mrow>
-                  <mrow>-5x\amp=-36 \amp\amp\text{or}\amp -5x\amp=27</mrow>
-                  <mrow>\divideunder{-5x}{-5}\amp=\divideunder{-36}{-5} \amp\amp\text{or}\amp \divideunder{-5x}{-5}\amp=\divideunder{27}{-5}</mrow>
-                  <mrow>x\amp=\frac{36}{5} \amp\amp\text{or}\amp x\amp=-\frac{27}{5}</mrow>
-                </md>
-                The solution set is <m>\{\frac{36}{5},-\frac{27}{5}\}</m>.
-              </li>
-              <li>
-                We are asked to solve <m>\abs{9-x}=0</m>.  We begin by observing that the only number whose absolute value is <m>0</m> is <m>0</m> itself.  So the given equation is equivalent to the equation <m>9-x=0</m>.  Let's solve the new equation.
-                <md>
-                  <mrow>9-x\amp=0</mrow>
-                  <mrow>9-x\subtractright{9}\amp=0\subtractright{9}</mrow>
-                  <mrow>-x\amp=-9</mrow>
-                  <mrow>\multiplyleft{-1}-x\amp=\multiplyleft{-1}-9</mrow>
-                  <mrow>x\amp=9</mrow>
-                </md>
-                The solution set is <m>\{9\}</m>.
-              </li>
-              <li>
-                We are asked to solve <m>\abs{-4x-9}=99</m>.  We begin by rewriting a pair of equations that do not include absolute value expressions. We then solve those two equations.
-                <md>
-                  <mrow>-4x-9\amp=-99 \amp\amp\text{or}\amp -4x-9\amp=99</mrow>
-                  <mrow>-4x-9\addright{9}\amp=-99\addright{9} \amp\amp\text{or}\amp -4x-9\addright{9}\amp=99\addright{9}</mrow>
-                  <mrow>-4x\amp=-90 \amp\amp\text{or}\amp -4x\amp=108</mrow>
-                  <mrow>\divideunder{-4x}{-4}\amp=\divideunder{-90}{-4} \amp\amp\text{or}\amp \divideunder{-4x}{-4}\amp=\divideunder{108}{-4}</mrow>
-                  <mrow>x\amp=\frac{45}{2} \amp\amp\text{or}\amp x\amp=-27</mrow>
-                </md>
-                The solution set is <m>\{\frac{45}{2},-27\}</m>.
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-
-      <exercise>
-        <title>Question bank with short answers</title>
-        <statement>
-          <p>
-            Determine the solution set to each equation.
-            <ol>
-              <li><m>\abs{2x-4}=12</m></li>
-              <li><m>\abs{3-x}=-4</m></li>
-              <li><m>\abs{5-7t}=11</m></li>
-              <li><m>\abs{y+7}=7</m></li>
-              <li><m>\abs{\frac{3}{2}x-9}=9</m></li>
-              <li><m>\abs{\frac{w+5}{3}}=15</m></li>
-            </ol>
-            <p></p>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <ol>
-              <li>The solution set is <m>\{-4,8\}</m>.</li>
-              <li>The solution set is <m>\emptyset</m>.</li>
-              <li>The solution set is <m>\{-\frac{6}{7},\frac{16}{7}\}</m></li>
-              <li>The solution set is <m>\{-14,0\}</m>.</li>
-              <li>The solution set is <m>\{0,12\}</m>.</li>
-              <li>The solution set is <m>\{-50,40\}</m>.</li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-
-    </exercises>
-
-     <exercises>
-      <title>Inequalities of Form <m>\abs{ax+b} \lt c</m> or <m>\abs{ax+b} \le c</m></title>
-
-      <exercise>
-        <title>Explanation and examples</title>
-        <statement>
-          <sidebyside widths="47% 47%">
-            <p>
-               A graph of the function <m>y=\abs{x}</m> is shown in <xref ref="workshop-abs-value-less-than-figure-examples">Figure</xref>.  The line <m>y=3</m> is also. Note that the points where the absolute function has <m>y</m>-coordinates less than <m>3</m> all have <m>x</m>-coordinates between <m>-3</m> and <m>3</m>.  This indicates that the solution set to the inequality <m>\abs{x} \lt 3</m> is the interval <m>(3,3)</m>.
-            </p>
-            <figure xml:id="workshop-abs-value-less-than-figure-examples">
-                  <caption><m>\abs{x} \lt 3</m></caption>
-                    <image>
-                      <description>plain text</description>
-                        <latex-image>
-                          <![CDATA[
-                          \begin{tikzpicture}
-                            \begin{axis}
-                              \addplot[primarycurve,domain=0:6.8,smooth,-{Stealth}] {x};
-                              \addplot[primarycurve,domain=-6.8:0,smooth,{Stealth}-] {-x};
-                              \addplot[primarycurve,domain=-6.8:6.8,gray] {3};
-                              \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(-3,3)};
-                              \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(3,3)};
-                              \addplot[primarycurve,domain=0:3,smooth,blue!40,ultra thick,-] {x};
-                              \addplot[primarycurve,domain=-3:0,smooth,blue!40,ultra thick,-] {-x};
-                              \addplot[primarycurve,domain=-3:3,smooth,blue,ultra thick,(-)] {0};
-                            \end{axis}
-                          \end{tikzpicture}
-                          ]]>
-                        </latex-image>
-                    </image>
-          </figure>
-          </sidebyside>
-          <p>
-            In general, if <m>k \gt 0</m>, then the solution set to an inequality of the form <m>\abs{ax+b} \lt k</m> will be an open interval that is determined by solving a compound inequality.  Specifically:
-            <me>\abs{ax+b} \lt k;\,k \gt 0</me>
-            is equivalent to the compound inequality
-            <me>-k \lt ax+b \lt k</me>.
-          </p>
-          <p>Example</p>
-          <p>
-            Determine the solution set to the inequality <m>\abs{3x+7} \le 14</m>.  State the solution set using interval notation (if possible).
-          </p>
           <p>
             We begin by writing an equivalent compound inequality that does not include an absolute value expression.  We then solve that compound inequality.
             <md alignment="alignat">
-              <mrow>-14 \amp\lt 3x+7 \amp\amp\lt 14</mrow>
-              <mrow>-14\subtractright{7} \amp\lt 3x+7\subtractright{7} \amp\amp\lt 14\subtractright{7}</mrow>
-              <mrow>-21 \amp\lt 3x \amp\amp\lt 7</mrow>
-              <mrow>\divideunder{-21}{3} \amp\lt \divideunder{3x}{3} \amp\amp\lt \divideunder{7}{3}</mrow>
-              <mrow>-7 \amp\lt x \amp\amp\lt \frac{7}{3}</mrow>
-            </md> 
-            The solution set to the give inequality is <m>\left[-7,\frac{7}{3}\right]</m>.
+              <mrow>-20 \amp\lt x+9 \amp\amp\lt 20</mrow>
+              <mrow>-20\subtractright{9} \amp\lt x+9\subtractright{9} \amp\amp\lt 20\subtractright{9}</mrow>
+              <mrow>-29 \amp\lt x \amp\amp\lt 11</mrow>
+            </md>
+            The solution set to the given inequality is <m>(-29,11)</m>.
           </p>
-          <p>Example</p>
-          <p></p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
           <p>
-            Determine the solution set to the inequality <m>\abs{5x+19} \lt -10</m>.  State the solution set using interval notation (if possible).
+            <m>
+              \abs{2x+8} \lt -4
+            </m>
           </p>
+        </statement>
+        <solution>
           <p>
-            Let's pause for a moment and consider what's actually being asked.  We are asked to determine what values of <m>x</m> will cause an absolute value to be less than <m>-10</m>.  Since no absolute value is negative, no absolute value is ever less than <m>-10</m>.  So no value of <m>x</m> makes the inequality <m>\abs{5x+19} \lt -10</m> true, and the solution set to that inequality is <m>\emptyset</m>.
+            There are no numbers whose absolute value is negative, hence there are no numbers whose absolute value is less than <m>-4</m>.  So the given inequality has no solutions and the solution set to the inequality is <m>\emptyset</m>.
           </p>
-          <p>Example</p>
-          <p></p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
           <p>
-            Determine the solution set to the inequality <m>\abs{-\frac{3}{7}x+6} \lt 9</m>.  State the solution set using interval notation (if possible).
+            <m>
+              \abs{-10-\frac{3x}{2}} \le 19
+            </m>
           </p>
+        </statement>
+        <solution>
           <p>
-            We need to write and solve an equivalent compound inequality that does not include an absolute value expression.  While solving, we need to remember that the direction of the inequality sign reverses anytime we multiply or divide both sides of the equation by a negative number,
+            We begin by writing an equivalent compound inequality that does not include an absolute value expression.  We then solve that compound inequality.
             <md alignment="alignat">
-              <mrow>-9 \amp\lt -\frac{3}{7}x+6 \amp\amp\lt 9</mrow>
-              <mrow>-9\subtractright{6} \amp\lt -\frac{3}{7}x+6\subtractright{6} \amp\amp\lt 9\subtractright{6}</mrow>
-              <mrow>-15 \amp\lt -\frac{3}{7}x \amp\amp\lt 3</mrow>
-              <mrow>\multiplyleft{-\frac{7}{3}}-15 \amp\gt \multiplyleft{-\frac{7}{3}}-\frac{3}{7}x \amp\amp\gt \multiplyleft{-\frac{7}{3}}3</mrow>
-              <mrow>35 \amp\gt x \amp\amp\gt  -7</mrow>
+              <mrow>-19 \amp\le -10-\frac{3x}{2} \amp\amp\le 19</mrow>
+              <mrow>-19\addright{10} \amp\le -10-\frac{3x}{2}\addright{10} \amp\amp\le 19\addright{10}</mrow>
+              <mrow>-9 -\amp\le \frac{3x}{2} \amp\amp\le 29</mrow>
+              <mrow>\multiplyleft{-\frac{2}{3}}-9 \amp\ge \multiplyleft{-\frac{2}{3}}-\frac{3x}{2} \amp\amp\ge \multiplyleft{-\frac{2}{3}}29</mrow>
+              <mrow>6 \amp\ge x \amp\amp\ge -\frac{58}{3}</mrow>
             </md>
-            The solution set to the given inequality is <m>(-7,35)</m>.
-          </p>
-
-        </statement>
-      </exercise>
-
-      <exercise>
-        <title>Practice exercises with detailed solutions</title>
-        <statement>
-          <p>
-            Determine the solution set to each of the following inequalities.  Express each solution set using interval notation (where possible).
-            <ol>
-              <li><m>\abs{x+9} \lt 20</m></li>
-              <li><m>\abs{2x+8} \lt -4</m></li>
-              <li><m>\abs{-10-\frac{3x}{2}} \le 19</m></li>
-              <li><m>\abs{\frac{x}{4}+5} \lt 25</m></li>
-              <li><m>\abs{-9x} \le 63</m></li>
-              <li><m>\abs{2+10x} \lt 0</m></li>
-            </ol>
-            <p></p>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <ol>
-              <li>
-                We are tasked with finding the solution set to <m>\abs{x+9} \lt 20</m>.  We begin by writing an equivalent compound inequality that does not include an absolute value expression.  We then solve that compound inequality.
-                <md alignment="alignat">
-                  <mrow>-20 \amp\lt x+9 \amp\amp\lt 20</mrow>
-                  <mrow>-20\subtractright{9} \amp\lt x+9\subtractright{9} \amp\amp\lt 20\subtractright{9}</mrow>
-                  <mrow>-29 \amp\lt x \amp\amp\lt 11</mrow>
-                </md>
-                The solution set to the given inequality is <m>(-29,11)</m>.
-              </li>
-              <li>
-                We are tasked with finding the solution set to <m>\abs{2x+8} \lt -4</m>.  There are no numbers whose absolute value is negative, hence there are no numbers whose absolute value is less than <m>-4</m>.  So the given inequality has no solutions and the solution set to the inequality is <m>\emptyset</m>.
-              </li>
-              <li>
-                We are tasked with finding the solution set to <m>\abs{-10-\frac{3x}{2}} \le 19</m>.  We begin by writing an equivalent compound inequality that does not include an absolute value expression.  We then solve that compound inequality.
-                <md alignment="alignat">
-                  <mrow>-19 \amp\le -10-\frac{3x}{2} \amp\amp\le 19</mrow>
-                  <mrow>-19\addright{10} \amp\le -10-\frac{3x}{2}\addright{10} \amp\amp\le 19\addright{10}</mrow>
-                  <mrow>-9 -\amp\le \frac{3x}{2} \amp\amp\le 29</mrow>
-                  <mrow>\multiplyleft{-\frac{2}{3}}-9 \amp\ge \multiplyleft{-\frac{2}{3}}-\frac{3x}{2} \amp\amp\ge \multiplyleft{-\frac{2}{3}}29</mrow>
-                  <mrow>6 \amp\ge x \amp\amp\ge -\frac{58}{3}</mrow>
-                </md>
-                The solution set is <m>\left[-\frac{58}{3},6\right]</m>.
-              </li>
-              <li>
-                We are tasked with finding the solution set to <m>\abs{4x+5} \lt 25</m>.  We begin by writing an equivalent compound inequality that does not include an absolute value expression.  We then solve that compound inequality.
-                <md alignment="alignat">
-                  <mrow>-25 \amp\le 4x+5 \amp\amp\le 25</mrow>
-                  <mrow>-25\subtractright{5} \amp\le 4x+5\subtractright{5} \amp\amp\le 25\subtractright{5}</mrow>
-                  <mrow>-30 \amp\le 4x \amp\amp\le 20</mrow>
-                  <mrow>\divideunder{-30}{4} \amp\le \divideunder{4x}{4} \amp\amp\le \divideunder{20}{4}</mrow>
-                  <mrow>-\frac{15}{2} \amp\le x \amp\amp\le 5</mrow>
-                </md>
-                The solution set is <m>\left[-\frac{15}{2},5\right]</m>.
-              </li>
-              <li>
-                We are tasked with finding the solution set to <m>\abs{-9x} \le 63</m>.  We begin by writing an equivalent compound inequality that does not include an absolute value expression.  We then solve that compound inequality.
-                <md alignment="alignat">
-                  <mrow>-63 \amp\le -9x \amp\amp\le 63</mrow>
-                  <mrow>\divideunder{-63}{-9} \amp\ge \divideunder{-9x}{-9} \amp\amp\ge \divideunder{63}{-9}</mrow>
-                  <mrow>7 \amp\ge x \amp\amp\ge -7</mrow>
-                </md>
-                The solution set is <m>[-7,7]</m>.
-              </li>
-              <li>
-                We are tasked with finding the solution set to <m>\abs{2+10x} \lt 0</m>.  No number has an absolute value that is negative, so no number has an absolute value that is less than <m>0</m>.  Therefore, the given inequality has no solutions and the solution set for the inequality is <m>\emptyset</m>.
-              </li>
-            </ol>
+            The solution set is <m>\left[-\frac{58}{3},6\right]</m>.
           </p>
         </solution>
       </exercise>
 
       <exercise>
-        <title>Question bank with short answers</title>
         <statement>
           <p>
-            Determine the solution set to each inequality.  State the solutions sets using interval notation (where possible).
-            <ol>
-              <li><m>\abs{2x+7} \le 14</m></li>
-              <li><m>\abs{10-y} \lt 22</m></li>
-              <li><m>\abs{22+17x} \le -11</m></li>
-              <li><m>\abs{\frac{4}{3}t+8} \le 24</m></li>
-              <li><m>\abs{\frac{8-x}{5}} \le 14</m></li>
-              <li><m>\abs{z+12} \le 0</m></li>
-            </ol> 
-            <p></p>
+            <m>
+              \abs{4x+5} \le 25
+            </m>
           </p>
         </statement>
         <solution>
           <p>
-            <ol>
-              <li>The solution set is <m>\left[-\frac{21}{2},\frac{7}{2}\right]</m>.</li>
-              <li>The solution set is <m>(-12,32)</m>.</li>
-              <li>The solution set is <m>\emptyset</m>.</li>
-              <li>The solution set is <m>[-24,12]</m>.</li>
-              <li>The solution set is <m>[-62,78]</m>.</li>
-              <li>The solution set is <m>\{-12\}</m>.</li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-
-    </exercises>
-
-     <exercises>
-      <title>Inequalities of Form <m>\abs{ax+b} \gt c</m> or <m>\abs{ax+b} \ge c</m></title>
-
-      <exercise>
-        <title>Explanation and examples</title>
-        <statement>
-          <sidebyside widths="47% 47%">
-            <p>
-                A graph of the function <m>y=\abs{x}</m> is shown in <xref ref="workshop-abs-value-less-than-figure-examples">Figure</xref>.  The line <m>y=3</m> is also. Note that the points where the absolute function has <m>y</m>-coordinates greater than <m>3</m> have <m>x</m>-coordinates that are either to the left of <m>-3</m> or to the right of <m>3</m>.  This indicates that the solution set to the inequality <m>\abs{x} \gt 3</m> is the interval <m>(-\infty,-3) \cup (3,\infty)</m>.
-            </p>
-            <figure xml:id="workshop-abs-value-gt-figure-examples">
-                  <caption><m>\abs{x} \gt 3</m></caption>
-                    <image>
-                      <description>plain text</description>
-                        <latex-image>
-                           <![CDATA[
-                          \begin{tikzpicture}
-                            \begin{axis}
-                              \addplot[primarycurve,domain=0:6.8,smooth,-{Stealth}] {x};
-                              \addplot[primarycurve,domain=-6.8:0,smooth,{Stealth}-] {-x};
-                              \addplot[primarycurve,domain=-6.8:6.8,gray] {3};
-                              \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(-3,3)};
-                              \addplot[hollowdot,color=blue!60,fill=yellow!30] coordinates {(3,3)};
-                              \addplot[primarycurve,domain=3:6.8,smooth,blue!40,ultra thick,-{Stealth}] {x};
-                              \addplot[primarycurve,domain=-6.8:-3,smooth,blue!40,ultra thick,{Stealth}-] {-x};
-                              \addplot[primarycurve,domain=3:6.8,smooth,blue,ultra thick,(-{Stealth}] {0};
-                              \addplot[primarycurve,domain=-6.8:-3,smooth,blue,ultra thick,{Stealth}-)] {0};
-                            \end{axis}
-                          \end{tikzpicture}
-                          ]]>
-                        </latex-image>
-                    </image>
-          </figure>
-          </sidebyside>
-          <p>
-            In general, if <m>k \gt 0</m>, then the solution set to an inequality of the form <m>\abs{ax+b} \gt k</m> will be the union of two open intervals that are determined by solving a compound inequality.  Specifically:
-            <me>\abs{ax+b} \gt k;\,k \gt 0</me>
-            is equivalent to the compound inequality
-            <me>ax+b \lt -k \text{ or } ax+b \gt k</me>.
-          </p>
-          <p>Example</p>
-          <p></p>
-          <p>
-            Determine the solution set to the inequality <m>\abs{3x+2} \gt 11</m>. State the solution set using interval notation (if possible).
-          </p>
-          <p>
-            We begin by writing an equivalent compound inequality that does not include an absolute value expression.  We then solve that compound inequality
-            <md>
-              <mrow>3x+2 \amp\lt -11 \amp\amp\text{or}\amp 3x+ 2 \amp\gt 11</mrow>
-              <mrow>3x+2\subtractright{2} \amp\lt -11\subtractright{2} \amp\amp\text{or}\amp 3x+2\subtractright{2} \amp\gt 11\subtractright{2}</mrow>
-              <mrow>3x \amp\lt -13 \amp\amp\text{or}\amp 3x \amp\gt 9</mrow>
-              <mrow>\divideunder{3x}{3} \amp\lt \divideunder{-13}{3} \amp\amp\text{or}\amp \divideunder{3x}{3}\amp\gt \divideunder{9}{3}</mrow>
-              <mrow>x \amp\lt -\frac{13}{3} \amp\amp\text{or}\amp x \amp\gt 3</mrow>
-            </md>
-            The solution set to the given inequality is <m>\left(-\infty,-\frac{13}{3}\right) \cup (3,\infty)</m>.
-          </p>
-          <p>Example</p>
-          <p></p>
-          <p>
-            Determine the solution set to the inequality <m>\abs{6-x} \ge 12</m>.  State the set using interval notation (if possible).
-          </p>
-          <p>
-            We need to write an equivalent compound inequality that does not include an absolute value expression and solve that compound inequality.  We need to remember that when we multiply or divide both sides of an inequality by a negative value, the direction of the inequality is reversed.
-            <md>
-              <mrow>6-x \amp\lt -12 \amp\amp\text{or}\amp 6-x \amp\gt 12</mrow>
-              <mrow>6-x\subtractright{6} \amp\lt -12\subtractright{6} \amp\amp\text{or}\amp 6-x\subtractright{6} \amp\gt 12\subtractright{6}</mrow>
-              <mrow>-x \amp\lt -18 \amp\amp\text{or}\amp -x \amp\gt 6</mrow>
-              <mrow>\multiplyleft{-1}-x \amp\gt -\multiplyleft{-1}-18 \amp\amp\text{or}\amp \multiplyleft{-1}-x \amp\lt \multiplyleft{-1}6</mrow>
-              <mrow>x \amp\gt 18 \amp\amp\text{or}\amp x \amp\lt -6</mrow>
-            </md>
-            The solution set is <m>(-\infty,-6] \cup [18,\infty)</m>.
-          </p>
-          <p>Example</p>
-          <p></p>
-          <p>
-            Determine the solution set to the inequality <m>\abs{\frac{4x-8}{3}} \ge -9</m>.  Write the solution set using interval notation (if possible).
-          </p>
-          <p>
-            We need to be careful not to prematurely jump into rote mode.  The smallest value the absolute value ever has is zero.  Any value greater than or equal to zero is also greater than <m>-9</m>.  So the value of the absolute value expression will be greater than <m>-9</m> regardless of the value of <m>x</m>, and the solution set to <m>\abs{\frac{4x-8}{3}} \ge -9</m> is <m>(-\infty,\infty)</m>.
-          </p>
-        </statement>
-      </exercise>
-
-      <exercise>
-        <title>Practice exercises with detailed solutions</title>
-        <statement>
-          <p>
-            Determine the solution set to each of the following inequalities.  Express each solution set using interval notation (where possible).
-            <ol>
-              <li><m>\abs{2x+8} \gt 64</m></li>
-              <li><m>\abs{7-x} \ge 16</m></li>
-              <li><m>\abs{-9x+14} \gt 83</m></li>
-              <li><m>\abs{4x+15} \ge -10</m></li>
-              <li><m>\abs{3x-18} \gt 14</m></li>
-            </ol>
-            <p></p>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            Determine the solution set to each of the following inequalities.  Express each solution set using interval notation.
-            <ol>
-              <li>
-                Our charge is to determine the solution set to the inequality <m>\abs{2x+8} \gt 64</m>.  We begin by writing an equivalent compound inequality and proceed to solve that compound inequality.
-                <md>
-                  <mrow>2x+8 \amp\lt -64 \amp\amp\text{or}\amp 2x+8 \amp\gt 64</mrow>
-                  <mrow>2x+8\subtractright{8} \amp\lt -64\subtractright{8}  \amp\amp\text{or}\amp 2x+8\subtractright{8} \amp\gt 64\subtractright{8}</mrow>
-                  <mrow>2x \amp\lt -72 \amp\amp\text{or}\amp 2x \amp\gt 56</mrow>
-                  <mrow>\divideunder{2x}{2} \amp\lt \divideunder{-72}{2} \amp\amp\text{or}\amp \divideunder{2x}{2} \amp\gt \divideunder{56}{2}</mrow>
-                  <mrow>x \amp\lt -36 \amp\amp\text{or}\amp x\amp\gt 28</mrow>
-                </md>
-                The solution set is <m>(-\infty,-36) \cup (28,\infty)</m>.
-              </li>
-              <li>
-                Our charge is to determine the solution set to the inequality <m>\abs{7-x} \ge 16</m>.  We begin by writing an equivalent compound inequality and proceed to solve that compound inequality.  We need to remember that when we multiply or divide both sides of an inequality by a negative number, the direction of the inequality sign is reversed.
-                <md>
-                  <mrow>7-x \amp\le -16 \amp\amp\text{or}\amp 7-x \amp\ge 16</mrow>
-                  <mrow>7-x\subtractright{7} \amp\le -16\subtractright{7} \amp\amp\text{or}\amp 7-x\subtractright{7} \amp\ge 16\subtractright{7}</mrow>
-                  <mrow>-x \amp\le -23 \amp\amp\text{or}\amp -x \amp\ge 9</mrow>
-                  <mrow>\multiplyleft{-1}-x \amp\ge \multiplyleft{-1}-23 \amp\amp\text{or}\amp \multiplyleft{-1}-x \amp\le \multiplyleft{-1}9</mrow>
-                  <mrow>x \amp\ge 23 \amp\amp\text{or}\amp x \amp\le -9</mrow>
-                </md>
-                The solution set is <m>(-\infty,-9] \cup [23,\infty)</m>. 
-              </li>
-              <li>
-                Our charge is to determine the solution set to the inequality <m>\abs{-9x+14} \gt 83</m>.  We begin by writing an equivalent compound inequality and proceed to solve that compound inequality.  We need to remember that when we multiply or divide both sides of an inequality by a negative number, the direction of the inequality sign is reversed.
-                <md>
-                  <mrow>-9x+14 \amp\lt -83 \amp\amp\text{or}\amp -9x+14 \amp\gt 83</mrow>
-                  <mrow>-9x+14\subtractright{14} \amp\lt -83\subtractright{14} \amp\amp\text{or}\amp -92+14\subtractright{14} \amp\gt 83\subtractright{14}</mrow>
-                  <mrow>-9x \amp\lt -97 \amp\amp\text{or}\amp -9x \amp\gt 69</mrow>
-                  <mrow>\divideunder{-9x}{-9} \amp\gt \divideunder{-97}{-9} \amp\amp\text{or}\amp \divideunder{-9x}{-9} \amp\lt \divideunder{69}{-9}</mrow>
-                  <mrow>x \amp\gt \frac{97}{9} \amp\amp\text{or}\amp x \amp\lt -\frac{23}{3}</mrow>
-                </md>
-                The solution set is <m>\left(-\infty,-\frac{23}{3}\right) \cup \left(\frac{97}{9},\infty\right)</m>.
-              </li>
-              <li>
-                Our charge is to determine the solution set to the inequality <m>\abs{4x+15} \ge -10</m>.  We begin by observing that every number has an absolute value that is greater than (or equal to) <m>-10</m>.  So we conclude by noting that every value of <m>x</m> is a solution to the given inequality and that the solution set to the inequality is <m>(-\infty,\infty)</m>.
-              </li>
-              <li>
-                Our charge is to determine the solution set to the inequality <m>\abs{3x-18} \gt 14</m>.  We begin by writing an equivalent compound inequality and proceed to solve that compound inequality.
-                <md>
-                  <mrow>3x-18 \amp\lt -14 \amp\amp\text{or}\amp 3x-18 \amp\gt 14</mrow>
-                  <mrow>3x-18\addright{18} \amp\lt -14\addright{18} \amp\amp\text{or}\amp 3x-18\addright{18} \amp\gt 14\addright{18}</mrow>
-                  <mrow>3x \amp\lt 4 \amp\amp\text{or}\amp 3x \amp\gt 32</mrow>
-                  <mrow>\divideunder{3x}{3} \amp\lt \divideunder {4}{3} \amp\amp\text{or}\amp \divideunder{3x}{3} \amp\gt \divideunder{32}{3}</mrow>
-                  <mrow>x \amp\lt \frac{4}{3} \amp\amp\text{or}\amp x \amp\gt \frac{32}{3}</mrow>
-                </md>
-                The solution set is <m>\left(-\infty,\frac{4}{3}\right) \cup \left(\frac{32}{3},\infty\right)</m>.
-              </li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-
-      <exercise>
-        <title>Question bank with short answers</title>
-        <statement>
-          <p>
-            Determine the solution set to each inequality.  State each solution set using interval notation (where possible).
-            <ol>
-              <li><m>\abs{3x+7} \ge -19</m></li>
-              <li><m>\abs{2x+31} \ge 17</m></li>
-              <li><m>\abs{-\frac{1}{2}w+7} \gt 21</m></li>
-              <li><m>\abs{-5x+7} \ge 27</m></li>
-              <li><m>\abs{4x+2} \gt 0</m></li>
-              <li><m>\abs{\frac{7-2x}{3}} \ge 4</m></li>
-            </ol>
-            <p></p>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <ol>
-              <li>The solution set is <m>(-\infty,\infty)</m>.</li>
-              <li>The solution set is <m>(-\infty,-24] \cup [-7,\infty)</m>.</li>
-              <li>The solution set is <m>(-\infty,-28) \cup (56,\infty)</m>.</li>
-              <li>The solution set is <m>(-\infty,-4] \cup \left[\frac{34}{5},\infty\right)</m>.</li>
-              <li>The solution set is <m>\left(-\infty,-\frac{1}{2}\right) \cup \left(-\frac{1}{2},\infty\right)</m>.</li>
-              <li>The solution set is <m>\left(-\infty,-\frac{5}{2}\right) \cup \left(\frac{19}{2},\infty\right)</m>.</li>
-            </ol>
-          </p>
-        </solution>
-      </exercise>
-
-    </exercises>
-
-     <exercises>
-      <title>General Absolute Value Equations and Inequalities</title>
-
-      <exercise>
-        <title>Explanation and examples</title>
-        <statement>
-          <p>
-            Whether working with an absolute value equation or an absolute value inequality, the first objective is always to isolate the absolute value expression.  The process to follow from that point forward is dependent upon the nature of the equation or inequality, as well as that constant value.  These processes were outlined in the previous three sections.
-          </p>
-          <p>Example</p>
-          <p></p>
-          <p>
-            Determine the solution set to the equation <m>\abs{\frac{12-2x}{3}}-5=15</m>.
-          </p>
-          <p>
-            We begin by isolating the absolute value expression.
-            <md>
-              <mrow>\abs{\frac{12-2x}{3}}-5\amp=15</mrow>
-              <mrow>\abs{\frac{12-2x}{3}}-5\addright{5}\amp=15\addright{5}</mrow>
-              <mrow>\abs{\frac{12-2x}{3}}\amp=20</mrow>
-            </md>
-            Now that we have the absolute value expression isolated, we write and solve two equations that have no absolute value expressions and the collectively are equivalent to the given equation.
-            <md>
-              <mrow>\frac{12-2x}{3}\amp=-20 \amp\amp\text{or}\amp \frac{12-2x}{3}\amp=20</mrow>
-              <mrow>\multiplyleft{3}\frac{12-2x}{3} \amp= \multiplyleft{3}-20 \amp\amp\text{or}\amp \multiplyleft{3}\frac{12-2x}{3}\amp=\multiplyleft{3}20</mrow>
-              <mrow>12-2x\amp=-60 \amp\amp\text{or}\amp 12-2x\amp=60</mrow> 
-              <mrow>12-2x\subtractright{12}\amp=-60\subtractright{12} \amp\amp\text{or}\amp 12-2x\subtractright{12}\amp=60\subtractright{12}</mrow>
-              <mrow>-2x\amp=-72 \amp\amp\text{or}\amp -2x\amp=48</mrow>
-              <mrow>\divideunder{-2x}{-2}\amp=\divideunder{-72}{-2} \amp\amp\text{or}\amp \divideunder{-2x}{-2}\amp=\divideunder{48}{-2}</mrow>
-              <mrow>x\amp=36 \amp\amp\text{or}\amp=-24</mrow>
-            </md>
-            The solution set to the given equation is <m>\{-24,36\}</m>.
-          </p>
-          <p>Example</p>
-          <p></p>
-          <p>
-            Determine the solution set to the inequality <m>14-\frac{\abs{2-4x}}{3} \ge 8</m>.  State the solution using interval notation (if possible).
-          </p>
-          <p>
-            We begin by isolating the absolute value expression.  We need to keep in mind that any time we multiply or divide both sides of the inequality by a negative number, the direction of the inequality sign reverses.
-            <md>
-              <mrow>14-\frac{\abs{2-4x}}{3} \amp\ge 8</mrow>
-              <mrow>14-\frac{\abs{2-4x}}{3}\subtractright{14} \amp\ge 8\subtractright{14}</mrow>
-              <mrow>-\frac{\abs{2-4x}}{3} \amp\ge -6</mrow>
-              <mrow>\multiplyleft{-3}-\frac{\abs{2-4x}}{3} \amp\le \multiplyleft{-3}-6</mrow>
-              <mrow>\abs{2-4x} \amp\le 18</mrow>
-            </md>
-            Note that  we began with a "greater than" inequality, but now that the absolute value expression is isolated we have a "less than" inequality, and that's all that matters at this point in the process.  We need to write and solve a compound inequality (that contains no absolute value expressions) equivalent to the last absolute value inequality.  We then solve that compound inequality.
+            We begin by writing an equivalent compound inequality that does not include an absolute value expression.  We then solve that compound inequality.
             <md alignment="alignat">
-              <mrow>-18 \amp\le 2-4x \amp\amp\le 18</mrow>
-              <mrow>-18\subtractright{2} \amp\le 2-4x\subtractright{2} \amp\amp\le 18\subtractright{2}</mrow>
-              <mrow>-20 \amp\le -4x \amp\amp\le 16</mrow>
-              <mrow>\divideunder{-20}{-4} \amp\ge \divideunder{-4x}{-4} \amp\amp\ge \divideunder{16}{-4}</mrow>
-              <mrow>5 \amp\ge x \amp\amp\ge -4</mrow>
+              <mrow>-25 \amp\le 4x+5 \amp\amp\le 25</mrow>
+              <mrow>-25\subtractright{5} \amp\le 4x+5\subtractright{5} \amp\amp\le 25\subtractright{5}</mrow>
+              <mrow>-30 \amp\le 4x \amp\amp\le 20</mrow>
+              <mrow>\divideunder{-30}{4} \amp\le \divideunder{4x}{4} \amp\amp\le \divideunder{20}{4}</mrow>
+              <mrow>-\frac{15}{2} \amp\le x \amp\amp\le 5</mrow>
             </md>
-            The solution set to the given inequality is <m>[-4,5]</m>.
-          </p>
-          <p>Example</p>
-          <p></p>
-          <p>
-            Determine the solution set to the inequality <m>2\abs{88-3x}-12 \gt -20</m>.  State the solution set using interval notation (if possible).
-          </p>
-          <p>
-            We begin by isolating the absolute value expression.
-            <md>
-              <mrow>2\abs{88-3x}-12 \amp\gt -20</mrow>
-              <mrow>2\abs{88-3x}-12\addright{12} \amp\gt -20\addright{12}</mrow>
-              <mrow>2\abs{88-3x} \amp\gt -8</mrow>
-              <mrow>\divideunder{2\abs{88-3x}}{2} \amp\gt \divideunder{-8}{2}</mrow>
-              <mrow>\abs{88-3x} \amp\gt -4</mrow>
-            </md>
-            Now that the absolute value expression is isolated, our hackles should rise over the existence of a negative constant on the other side of the inequality sign.  There are no numbers whose absolute values are not greater than <m>-4</m>, so the solution set to the given inequality is <m>(-\infty,\infty)</m>.
-          </p>
-          <p>Example</p>
-          <p></p>
-          <p>
-            Determine the solution set to the inequality <m>\frac{\abs{5x+10}}{3}-\frac{15}{2} \ge \frac{5}{2}</m>.  State the solution set using interval notation (if possible).
-          </p>
-          <p>
-            We begin by isolating the absolute value expression.  We'll first multiply through both sides if the inequality by <m>6</m> to clear away all of the fractions.
-            <md>
-              <mrow>\frac{\abs{5x+10}}{3}-\frac{15}{2} \amp\ge \frac{5}{3}</mrow>
-              <mrow>\multiplyleft{6}\left(\frac{\abs{5x+10}}{3}-\frac{15}{2}\right) \amp\ge \multiplyleft{6}\frac{5}{2}</mrow>
-              <mrow>2\abs{5x+10}-45 \amp\ge 15</mrow>
-              <mrow>2\abs{5x+10}-45\addright{45} \amp\ge 15\addright{45}</mrow>
-              <mrow>2\abs{5x+10} \amp\ge 60</mrow>
-              <mrow>\divideunder{2\abs{5x+10}}{2} \amp\ge \divideunder{60}{2}</mrow>
-              <mrow>\abs{5x+10} \amp\ge 30</mrow>
-            </md>
-            We now write and solve a compound inequality that contains no absolute value expressions and that is equivalent to the given equation.
-            <md>
-              <mrow>5x+10 \amp\le -30 \amp\amp\text{or}\amp 5x+10 \amp\ge 30</mrow>
-              <mrow>5x+10\subtractright{10} \amp\le -30\subtractright{10} \amp\amp\text{or}\amp 5x+10\subtractright{10} \amp\ge 30\subtractright{10}</mrow>
-              <mrow>5x \amp\le -40 \amp\amp\text{or}\amp 5x \amp\ge 20</mrow>
-              <mrow>\divideunder{5x}{5} \amp\le \divideunder{-40}{5} \amp\amp\text{or}\amp \divideunder{5x}{5} \amp\ge \divideunder{20}{5}</mrow>
-              <mrow>x \amp\le -8 \amp\amp\text{or}\amp x \amp\ge 4</mrow>
-            </md>
-            The solution set to the given inequality is <m>(-\infty,-8] \cup [4,\infty)</m>.
-          </p>
-        </statement>
-      </exercise>
-
-      <exercise>
-        <title>Practice exercises with detailed solutions</title>
-        <statement>
-          <p>
-            Determine the solution set to each equation or inequality.  Express the solution sets to the inequalities using interval notation (where possible).
-            <ol>
-              <li><m>4-\abs{x} \ge -11</m></li>
-              <li><m>-3+\abs{5-x}=-2</m></li>
-              <li><m>2\abs{\frac{x}{3}}-12 \le -6</m></li>
-              <li><m>5-6\abs{2x+1}=17</m></li>
-              <li><m>30-\frac{\abs{x+9}}{5} \gt -40</m></li>
-              <li><m>-\abs{\frac{8-2x}{3}}+15 \le 12</m></li>
-            </ol>
-            <p></p>
-          </p>
-        </statement>
-        <solution>
-          <p>
-            <ol>
-              <li>
-                Our opportunity, not to be passed up, is to determine the solution set for <m>4-\abs{x} \ge -11</m>.  We begin by isolating the absolute value expression.
-                <md>
-                  <mrow>4-\abs{x} \amp\ge -11</mrow>
-                  <mrow>4-\abs{x}\subtractright{4} \amp\ge -11\subtractright{4}</mrow>
-                  <mrow>-\abs{x} \amp\ge -15</mrow>
-                  <mrow>\multiplyleft{-1}-\abs{x} \amp\le \multiplyleft{-1}-15</mrow>
-                  <mrow>\abs{x} \amp\le 15</mrow>
-                </md>
-                We now write an equivalent compound inequality that does not include an absolute value expression.
-                <me>-15 \le x \le 15</me>
-                The solution set to the given inequality is <m>[-15, 15]</m>.
-              </li>
-              <li>
-                Our opportunity, not to be passed upon, is to determine the solution set for <m>-3+\abs{5-x}=-2</m>.  We begin by isolating the absolute value expression.
-                <md>
-                  <mrow>-3+\abs{5-x}\amp=-2</mrow>
-                  <mrow>-3+\abs{5-x}\addright{3}\amp=-2\addright{3}</mrow>
-                  <mrow>\abs{5-x}=1</mrow>
-                </md>
-                We now write a pair of equivalent equations that do not include absolute value expressions and go on to solve that pair of equations.
-                <md>
-                  <mrow>5-x\amp=-1 \amp\amp\text{or}\amp 5-x\amp=1</mrow>
-                  <mrow>5-x\subtractright{5}\amp=-1\subtractright{5} \amp\amp\text{or}\amp 5-x\subtractright{5}\amp=1\subtractright{5}</mrow>
-                  <mrow>-x\amp=-6 \amp\amp\text{or}\amp x\amp=-4</mrow>
-                  <mrow>\multiplyleft{-1}-x\amp=\multiplyleft{-1}-6 \amp\amp\text{or}\amp \multiplyleft{-1}-x\amp=\multiplyleft{-1}-4</mrow>
-                  <mrow>x\amp=6 \amp\amp\text{or}\amp x\amp=4</mrow>
-                </md>
-                The solution set is <m>\{4,6\}</m>.
-              </li>
-              <li>
-                Our opportunity, not to be passed, is to determine the solution set for <m>2\abs{3x}-12 \le -6</m>.  We begin by isolating the absolute value expression.
-                <md>
-                  <mrow>2\abs{\frac{x}{3}}-12 \amp\le -6</mrow>
-                  <mrow>2\abs{\frac{x}{3}}-12\addright{12} \amp\le -6\addright{12}</mrow>
-                  <mrow>2\abs{\frac{x}{3}} \amp\le 6</mrow>
-                  <mrow>\divideunder{2\abs{\frac{x}{3}}}{2} \amp\le \divideunder{6}{2}</mrow>
-                  <mrow>\abs{\frac{x}{3}} \amp\le 3</mrow>
-                </md>
-                We now write and solve an equivalent compound equality that does not include an absolute value expression.
-                <md alignment="alignat">
-                  <mrow>-3 \amp\le \frac{x}{3} \amp \amp\le 3</mrow>
-                  <mrow>\multiplyleft{3}-3 \amp\le \multiplyleft{3}\frac{x}{3} \amp \amp\le \multiplyleft{3}3</mrow>
-                  <mrow>-9 \amp\le x \amp \amp\le 9</mrow>
-                </md>
-                The solution set to the given inequality is <m>[-9,9]</m>.
-
-              </li>
-              <li>
-                Our opportunity, not to be passed by, is to determine the solution set for <m>5-6\abs{2x+1}=17</m>.  We begin by isolating the absolute value expression.
-                <md>
-                  <mrow>5-6\abs{2x+1}\amp=17</mrow>
-                  <mrow>5-6\abs{2x+1}\subtractright{5}\amp=17\subtractright{5}</mrow>
-                  <mrow>-6\abs{2x+1}\amp=12</mrow>
-                  <mrow>\divideunder{-6\abs{2x+1}}{-6}\amp=\divideunder{12}{-6}</mrow>
-                  <mrow>\abs{2x+1}\amp=-2</mrow>
-                </md>
-                We observe that there are no numbers whose absolute value is <m>-2</m> and conclude that the given equation has no solutions.
-              </li>
-              <li>
-                Our opportunity, not to be passed on, is to determine the solution set for <m>30-\frac{\abs{x+9}}{5} \gt -40</m>.  We begin by isolating the absolute value expression.
-                <md>
-                  <mrow>30-\frac{\abs{x+9}}{5} \amp\gt -40</mrow>
-                  <mrow>30 -\frac{\abs{x+9}}{5}\subtractright{30} \amp\gt -40\subtractright{30}</mrow>
-                  <mrow>-\frac{\abs{x+9}}{5} \amp\gt -70</mrow>
-                  <mrow>\multiplyleft{-5}-\frac{\abs{x+9}}{5} \amp\lt \multiplyleft{-5}-70</mrow>
-                  <mrow>\abs{x+9} \amp\lt 350</mrow>
-                </md>
-                We now write and solve an equivalent compound inequality that does not include an absolute value expression.
-                <md alignment="alignat">
-                  <mrow>-350 \amp\lt x+9 \amp\amp\lt 350</mrow>
-                  <mrow>-350\subtractright{9} \amp\lt x+9\subtractright{9} \amp\amp\lt 350\subtractright{9}</mrow>
-                  <mrow>-359 \amp\lt x \amp\amp\lt 341</mrow>
-                </md>
-                The solution set is <m>(-359,341)</m>.
-              </li>
-              <li>
-                Our opportunity, not to be bypassed, is to determine the solution set for <m>-\abs{\frac{8-2x}{3}}+15 \le 12</m>.  We begin by isolating the absolute value expression.
-                <md>
-                  <mrow>-\abs{\frac{8-2x}{3}}+15 \amp\le 12</mrow>
-                  <mrow>-\abs{\frac{8-2x}{3}}+15\subtractright{15} \amp\le 12\subtractright{15}</mrow>
-                  <mrow>-\abs{\frac{8-2x}{3}} \amp\le -3</mrow>
-                  <mrow>\multiplyleft{-1}-\abs{\frac{8-2x}{3}} \amp\ge \multiplyleft{-1}-3</mrow>
-                  <mrow>\abs{\frac{8-2x}{3}} \amp\ge 3</mrow>
-                </md>
-                We now write and solve an equivalent compound inequality that does not include an absolute value expression
-                <md>
-                  <mrow>\frac{8-2x}{3} \amp\le -3 \amp\amp\text{or}\amp \frac{8-2x}{3} \amp\ge 3</mrow>
-                  <mrow>\multiplyleft{3}\frac{8-2x}{3} \amp\le \multiplyleft{3}-3 \amp\amp\text{or}\amp \multiplyleft{3}\frac{8-2x}{3} \amp\ge \multiplyleft{3}3</mrow>
-                  <mrow>8-2x \amp\le -9 \amp\amp\text{or}\amp 8-2x \amp\ge 9</mrow>
-                  <mrow>8-2x\subtractright{8} \amp\le -9\subtractright{8} \amp\amp\text{or}\amp 8-2x\subtractright{8} \amp\ge 9\subtractright{8}</mrow>
-                  <mrow>-2x \amp\le -17 \amp\amp\text{or}\amp -2x \amp\ge 1</mrow>
-                  <mrow>\divideunder{-2x}{-2} \amp\ge \divideunder{-17}{-2} \amp\amp\text{or}\amp \divideunder{-2x}{-2} \amp\le \divideunder{1}{-2}</mrow>
-                  <mrow>x \amp\ge \frac{17}{2} \amp\amp\text{or}\amp x \amp\le -\frac{1}{2}</mrow>
-                </md>
-                The solution set to the given inequality is <m>\left(-\infty,-\frac{1}{2}\right] \cup \left[\frac{17}{2},\infty\right)</m>.
-              </li>
-            </ol>
-            <p></p>
+            The solution set is <m>\left[-\frac{15}{2},5\right]</m>.
           </p>
         </solution>
       </exercise>
 
       <exercise>
-        <title>Question bank with short answers</title>
         <statement>
           <p>
-            Determine the solution set to each equation or inequality.  State the solution sets to the inequalities using interval notation (where possible).
-            <ol>
-              <li><m>5-\abs{2x+3}=-8</m></li>
-              <li><m>\abs{\frac{y+7}{3}}-8 \ge -4</m></li>
-              <li><m>17-\abs{\frac{1-x}{3}} \le 12</m></li>
-              <li><m>18+3\abs{-\frac{1}{2}t} \lt 24</m></li>
-              <li><m>12+\abs{w-9}=10</m></li>
-              <li><m>\frac{-\abs{3+2x}+6}{2} \gt 1</m></li>
-            </ol>
-            <p></p>
+            <m>
+              \abs{-9x} \le 63
+            </m>
           </p>
         </statement>
         <solution>
           <p>
-            <ol>
-              <li>The solution set is <m>\{-8,5\}</m>.</li>
-              <li>The solution set is <m>(-\infty,-19] \cup [5,\infty)</m>.</li>
-              <li>The solution set is <m>[-14,16]</m>.</li>
-              <li>The solution set is <m>(-4,4)</m>.</li>
-              <li>The solution set is <m>\emptyset</m>.</li>
-              <li>The solution set is <m>\left(-\frac{7}{2},\frac{1}{2}\right)</m>.</li>
-            </ol>
+            We begin by writing an equivalent compound inequality that does not include an absolute value expression.  We then solve that compound inequality.
+            <md alignment="alignat">
+              <mrow>-63 \amp\le -9x \amp\amp\le 63</mrow>
+              <mrow>\divideunder{-63}{-9} \amp\ge \divideunder{-9x}{-9} \amp\amp\ge \divideunder{63}{-9}</mrow>
+              <mrow>7 \amp\ge x \amp\amp\ge -7</mrow>
+            </md>
+            The solution set is <m>[-7,7]</m>.
           </p>
         </solution>
       </exercise>
 
-    </exercises>
+      <exercise>
+        <statement>
+          <p>
+            <m>
+              \abs{2+10x} \lt 0
+            </m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            No number has an absolute value that is negative, so no number has an absolute value that is less than <m>0</m>.  Therefore, the given inequality has no solutions and the solution set for the inequality is <m>\emptyset</m>.
+          </p>
+        </solution>
+      </exercise>
 
-    
-    </section>
+      <exercise>
+        <statement>
+          <p>
+            <m>
+              \abs{2x+8} \gt 64
+            </m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by writing an equivalent compound inequality and proceed to solve that compound inequality.
+            <md>
+              <mrow>2x+8 \amp\lt -64 \amp\amp\text{or}\amp 2x+8 \amp\gt 64</mrow>
+              <mrow>2x+8\subtractright{8} \amp\lt -64\subtractright{8}  \amp\amp\text{or}\amp 2x+8\subtractright{8} \amp\gt 64\subtractright{8}</mrow>
+              <mrow>2x \amp\lt -72 \amp\amp\text{or}\amp 2x \amp\gt 56</mrow>
+              <mrow>\divideunder{2x}{2} \amp\lt \divideunder{-72}{2} \amp\amp\text{or}\amp \divideunder{2x}{2} \amp\gt \divideunder{56}{2}</mrow>
+              <mrow>x \amp\lt -36 \amp\amp\text{or}\amp x\amp\gt 28</mrow>
+            </md>
+            The solution set is <m>(-\infty,-36) \cup (28,\infty)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>
+              \abs{7-x} \ge 16
+            </m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by writing an equivalent compound inequality and proceed to solve that compound inequality.  We need to remember that when we multiply or divide both sides of an inequality by a negative number, the direction of the inequality sign is reversed.
+            <md>
+              <mrow>7-x \amp\le -16 \amp\amp\text{or}\amp 7-x \amp\ge 16</mrow>
+              <mrow>7-x\subtractright{7} \amp\le -16\subtractright{7} \amp\amp\text{or}\amp 7-x\subtractright{7} \amp\ge 16\subtractright{7}</mrow>
+              <mrow>-x \amp\le -23 \amp\amp\text{or}\amp -x \amp\ge 9</mrow>
+              <mrow>\multiplyleft{-1}-x \amp\ge \multiplyleft{-1}-23 \amp\amp\text{or}\amp \multiplyleft{-1}-x \amp\le \multiplyleft{-1}9</mrow>
+              <mrow>x \amp\ge 23 \amp\amp\text{or}\amp x \amp\le -9</mrow>
+            </md>
+            The solution set is <m>(-\infty,-9] \cup [23,\infty)</m>. 
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>
+              \abs{-9x+14} \gt 83
+            </m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by writing an equivalent compound inequality and proceed to solve that compound inequality.  We need to remember that when we multiply or divide both sides of an inequality by a negative number, the direction of the inequality sign is reversed.
+            <md>
+              <mrow>-9x+14 \amp\lt -83 \amp\amp\text{or}\amp -9x+14 \amp\gt 83</mrow>
+              <mrow>-9x+14\subtractright{14} \amp\lt -83\subtractright{14} \amp\amp\text{or}\amp -92+14\subtractright{14} \amp\gt 83\subtractright{14}</mrow>
+              <mrow>-9x \amp\lt -97 \amp\amp\text{or}\amp -9x \amp\gt 69</mrow>
+              <mrow>\divideunder{-9x}{-9} \amp\gt \divideunder{-97}{-9} \amp\amp\text{or}\amp \divideunder{-9x}{-9} \amp\lt \divideunder{69}{-9}</mrow>
+              <mrow>x \amp\gt \frac{97}{9} \amp\amp\text{or}\amp x \amp\lt -\frac{23}{3}</mrow>
+            </md>
+            The solution set is <m>\left(-\infty,-\frac{23}{3}\right) \cup \left(\frac{97}{9},\infty\right)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>
+              \abs{4x+15} \ge -10
+            </m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by observing that every number has an absolute value that is greater than (or equal to) <m>-10</m>.  So we conclude by noting that every value of <m>x</m> is a solution to the given inequality and that the solution set to the inequality is <m>(-\infty,\infty)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>
+              \abs{3x-18} \gt 14
+            </m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by writing an equivalent compound inequality and proceed to solve that compound inequality.
+            <md>
+              <mrow>3x-18 \amp\lt -14 \amp\amp\text{or}\amp 3x-18 \amp\gt 14</mrow>
+              <mrow>3x-18\addright{18} \amp\lt -14\addright{18} \amp\amp\text{or}\amp 3x-18\addright{18} \amp\gt 14\addright{18}</mrow>
+              <mrow>3x \amp\lt 4 \amp\amp\text{or}\amp 3x \amp\gt 32</mrow>
+              <mrow>\divideunder{3x}{3} \amp\lt \divideunder {4}{3} \amp\amp\text{or}\amp \divideunder{3x}{3} \amp\gt \divideunder{32}{3}</mrow>
+              <mrow>x \amp\lt \frac{4}{3} \amp\amp\text{or}\amp x \amp\gt \frac{32}{3}</mrow>
+            </md>
+            The solution set is <m>\left(-\infty,\frac{4}{3}\right) \cup \left(\frac{32}{3},\infty\right)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+</section>

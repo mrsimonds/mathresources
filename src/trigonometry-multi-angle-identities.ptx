@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="trigonometry-vectors">
+  <title>Vectors in 2-Dimensions</title>
+
+  <paragraphs>
+    <title></title>
+    <p></p>
+    <p>
+      The following identities are presented without proof.  The proofs are not at all trivial, and in the author's opinion have no value in helping students either apply or memorize these identities.  If you want to read a proof, you can find many written examples and videos online.
+      <me>\sin(A+B)=\sin(A)\cos(B)+\cos(A)\sin(B)</me>
+      <me>\sin(A-B)=\sin(A)\cos(B)-\cos(A)\sin(B)</me>
+      <me>\cos(A+B)=\cos(A)\cos(B)-\sin(A)\sin(B)</me>
+      <me>\cos(A-B)=\cos(A)\cos(B)+\sin(A)\sin(B)</me>
+      If we apply these identities to the angles whose sine and cosine values we already know, we greatly expand the number of angles whose sine and cosine values we can state in exact form.  For example, we know the values of both the sine and cosine values at both <m>45^{\circ}</m> and <m>30^{\circ}</m>, so we can, for example, determine the exact values of both <m>\cos\left(75^{\circ}\right)</m> and <m>\cos\left(15^{\circ}\right)</m>.  Let's go ahead and do that.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine the exact value of <m>\cos\left(75^{\circ}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by observing that <m>75^{\circ}=45^{\circ}+30^{\circ}</m>.  This gives us the following.
+          <md>
+            <mrow>\cos\left(75^{\circ}\right)\amp=\cos\left(45^{\circ}+30^{\circ}\right)</mrow>
+            <mrow>\amp=\cos\left(45^{\circ}\right)\cos\left(30^{\circ}\right)-\sin\left(45^{\circ}\right)\sin\left(30^{\circ}\right)</mrow>
+            <mrow>\amp=\frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2}-\frac{\sqrt{2}}{2} \cdot \frac{1}{2}</mrow>
+            <mrow>\amp=\frac{\sqrt{6}-\sqrt{2}}{4}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the exact value of <m>\cos\left(15^{\circ}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by observing that <m>15^{\circ}=45^{\circ}-30^{\circ}</m>.  This gives us the following.
+          <md>
+            <mrow>\cos\left(15^{\circ}\right)\amp=\cos\left(45^{\circ}-30^{\circ}\right)</mrow>
+            <mrow>\amp=\cos\left(45^{\circ}\right)\cos\left(30^{\circ}\right)+\sin\left(45^{\circ}\right)\sin\left(30^{\circ}\right)</mrow>
+            <mrow>\amp=\frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2}+\frac{\sqrt{2}}{2} \cdot \frac{1}{2}</mrow>
+            <mrow>\amp=\frac{\sqrt{6}+\sqrt{2}}{4}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Provide evidence for the validity of the sum identity for the sine function by using the expression <m>\sin\left(30^{\circ}+60^{\circ}\right)</m> to determine the value of <m>\sin\left(90^{\circ}\right)</m> (which we know to be <m>1</m>).
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\sin\left(90^{\circ}\right)\amp=\sin\left(30^{\circ}+60^{\circ}\right)</mrow>
+            <mrow>\amp=\sin\left(30^{\circ}\right)\cos\left(60^{\circ}\right)+\cos\left(30^{\circ}\right)\sin\left(60^{\circ}\right)</mrow>
+            <mrow>\amp=\frac{1}{2} \cdot \frac{1}{2}+\frac{\sqrt{3}}{2} \cdot \frac{\sqrt{3}}{2}</mrow>
+            <mrow>\amp=\frac{1}{4}+\frac{3}{4}</mrow>
+            <mrow>\amp=1</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the exact value of <m>\sin\left(\frac{17\pi}{12}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The first thing we need to do it determine a sum or difference of two radian measurements whose sine and cosine values we know.  One way to achieve this goal is to add to or subtract from <m>\frac{17\pi}{12}</m> the measurements <m>\frac{\pi}{6}</m>, <m>\frac{\pi}{4}</m>, or <m>\frac{\pi}{3}</m> until we find a second angle whose sine and cosine value we know.  For example,
+          <me>\frac{17\pi}{12}+\frac{\pi}{6}=\frac{19\pi}{12}</me>
+          which is not helpful, as we do not know the sine and cosine values of <m>\frac{19\pi}{12}</m>.  However,
+          <me>\frac{17\pi}{12}+\frac{\pi}{4}=\frac{5\pi}{3}</me>
+          which is helpful, because we do know the sine and cosine values of <m>\frac{5\pi}{3}</m>.  Let's note the following.
+          <me>\frac{17\pi}{12}+\frac{\pi}{4}=\frac{5\pi}{3}\,\,\Longrightarrow\,\,\frac{17\pi}{12}=\frac{5\pi}{3}-\frac{\pi}{4}</me>
+          Let's go ahead and determine the exact value of of <m>\sin\left(\frac{17\pi}{12}\right)</m>.
+          <md>
+            <mrow>\sin\left(\frac{17\pi}{12}\right)\amp=\sin\left(\frac{5\pi}{3}\right)\cos\left(\frac{\pi}{4}\right)-\cos\left(\frac{5\pi}{3}\right)\sin\left(\frac{\pi}{4}\right)</mrow>
+            <mrow>\amp=-\frac{\sqrt{3}}{2} \cdot \frac{\sqrt{2}}{2}-\frac{1}{2} \cdot \frac{\sqrt{2}}{2}</mrow>
+            <mrow>\amp=\frac{-\sqrt{6}-\sqrt{2}}{4}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title>The Sum and Difference Identities for the Tangent Function</title>
+    <p></p>
+    <p>
+      If we accept the validity of the sum and difference identities stated for the sine and cosine functions, we can use the quotient identity, 
+      <me>\tan(t)=\frac{\sin(t)}{\cos(t)}</me>
+      to determine the sum and difference identities for the tangent function.  Let's proceed to do that.
+      <md>
+        <mrow>\tan(A+B)\amp=\frac{\sin(A+B)}{\cos(A+B)}</mrow>
+        <mrow>\amp=\frac{\sin(A)\cos(B)+\cos(A)\sin(B)}{\cos(A)\cos(B)-\sin(A)\cos(B)}</mrow>
+        <mrow>\amp=\frac{\sin(A)\cos(B)+\cos(A)\sin(B)}{\cos(A)\cos(B)-\sin(A)\cos(B)} \cdot \frac{\frac{1}{\cos(A)\cos{B}}}{\frac{1}{\cos(A)\cos{B}}}</mrow>
+        <mrow>\amp=\frac{\frac{\sin(A)}{\cos(A)}+\frac{\sin(B)}{\cos(B)}}{1-\frac{\sin(A)}{\cos(A)} \cdot \frac{\sin(B)}{\cos(B)}}</mrow>
+        <mrow>\amp=\frac{\tan(A)+\tan(B)}{1-\tan(A)\tan(B)}</mrow>
+      </md>
+      and
+      <md>
+        <mrow>\tan(A-B)\amp=\frac{\sin(A-B)}{\cos(A-B)}</mrow>
+        <mrow>\amp=\frac{\sin(A)\cos(B)-\cos(A)\sin(B)}{\cos(A)\cos(B)+\sin(A)\cos(B)}</mrow>
+        <mrow>\amp=\frac{\sin(A)\cos(B)-\cos(A)\sin(B)}{\cos(A)\cos(B)+\sin(A)\cos(B)} \cdot \frac{\frac{1}{\cos(A)\cos{B}}}{\frac{1}{\cos(A)\cos{B}}}</mrow>
+        <mrow>\amp=\frac{\frac{\sin(A)}{\cos(A)}-\frac{\sin(B)}{\cos(B)}}{1+\frac{\sin(A)}{\cos(A)} \cdot \frac{\sin(B)}{\cos(B)}}</mrow>
+        <mrow>\amp=\frac{\tan(A)-\tan(B)}{1+\tan(A)\tan(B)}</mrow>
+      </md>
+      In summary, the sum and and different identities for the tangent function are stated below.
+      <me>\tan(A+B)=\frac{\tan(A)+\tan(B)}{1-\tan(A)\tan(B)}</me>
+      <me>\tan(A-B)=\frac{\tan(A)-\tan(B)}{1+\tan(A)\tan(B)}</me>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine the exact value of <m>\tan\left(\frac{13\pi}{12}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's begin by observing that
+          <me>\frac{13\pi}{12}-\frac{\pi}{3}=\frac{3\pi}{4}</me>
+          which is useful because we know the tangent value at <m>\frac{3\pi}{4}</m>.  Lets also note the following.
+          <me>\frac{13\pi}{12}-\frac{\pi}{3}=\frac{3\pi}{4}\,\,\Longrightarrow\,\,\frac{13\pi}{12}=\frac{3\pi}{4}+\frac{\pi}{3}</me>
+          Let's go ahead and determine the exact value of <m>\tan\left(\frac{13\pi}{12}\right)</m>.
+          <md>
+            <mrow>\tan\left(\frac{13\pi}{12}\right)\amp=\frac{\tan\left(\frac{3\pi}{4}\right)+\tan\left(\frac{\pi}{3}\right)}{1-\tan\left(\frac{3\pi}{4}\right)\tan\left(\frac{\pi}{3}\right)}</mrow>
+            <mrow>\amp=\frac{-1+\sqrt{3}}{1-(-1)(\sqrt{3})}</mrow>
+            <mrow>\amp=\frac{-1+\sqrt{3}}{1+\sqrt{3}}</mrow>
+          </md>
+          Technically we have established the exact value of <m>\tan\left(\frac{13\pi}{12}\right)</m>, but many math teachers are real sticklers for rationalized denominators, so let's keep going.
+          <md>
+            <mrow>\tan\left(\frac{13\pi}{12}\right)\amp=\frac{-1+\sqrt{3}}{1+\sqrt{3}}</mrow>
+            <mrow>\amp=\frac{-1+\sqrt{3}}{1+\sqrt{3}} \cdot \frac{1-\sqrt{3}}{1-\sqrt{3}}</mrow>
+            <mrow>\amp=\frac{-1+\sqrt{3}+\sqrt{3}-3}{1-3}</mrow>
+            <mrow>\amp=\frac{2\sqrt{3}-4}{-2}</mrow>
+            <mrow>\amp=\frac{2(\sqrt{3}-2)}{-2}</mrow>
+            <mrow>\amp=-(\sqrt{3}-2)</mrow>
+            <mrow>\amp=2-\sqrt{3}</mrow>
+          </md>
+          Well that cleaned up quite a bit, so it's a good thing that we went ahead and rationalized the denominator.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Suppose that <m>\sin(\alpha)=-\frac{3}{5}</m> and <m>\cos(\beta)=-\frac{8}{17}</m>.  Suppose further that when drawn in standard position, <m>\alpha</m> terminates in Quadrant IV and <m>\beta</m> terminates in Quadrant III.  Determine the exact value of <m>\tan(\beta-\alpha)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Our immediate task is to determine the values of both <m>\tan(\alpha)</m> and <m>\tan(\beta)</m>.  If we knew both the sine and cosine values of each of the angles, we could then use a quotient identity to determine the tangent values.  Let's go ahead and use the Pythagorean identity <m>\sin^2(t)+\cos^2(t)=1</m> to determine the unknown sine and cosine values.
+          <md>
+            <mrow>\sin^2(\alpha)+\cos^2(\alpha)\amp=1</mrow>
+            <mrow>\left(-\frac{3}{5}\right)^2+\cos^2(\alpha)\amp=1</mrow>
+            <mrow>\frac{9}{25}+\cos^2(\alpha)\amp=1</mrow>
+            <mrow>\cos^2(\alpha)\amp=\frac{16}{25}</mrow>
+            <mrow>\cos(\alpha)\amp=\pm \frac{4}{5}</mrow>
+          </md>
+          Because <m>\alpha</m> terminates in Quadrant IV, its cosine value is positive.  Ergo, <m>\cos(\alpha)=\frac{4}{5}</m>.
+          <md>
+            <mrow>\sin^2(\beta)+\cos^2(\beta)\amp=1</mrow>
+            <mrow>\sin^2(\beta)+\left(-\frac{8}{17}\right)^2\amp=1</mrow>
+            <mrow>\sin^2(\beta)+\frac{64}{289}\amp=1</mrow>
+            <mrow>\sin^2(\beta)\amp=\frac{225}{289}</mrow>
+            <mrow>\sin(\beta)\amp=\pm\frac{15}{17}</mrow>
+          </md>
+          Because <m>\beta</m> terminates in Quadrant III, its sine value is negative.  Thus, <m>\sin(\beta)=-\frac{15}{17}</m>.
+        </p>
+        <p>
+          We now have enough information to determine the tangent values at <m>\alpha</m> and <m>\beta</m>.  Let's proceed.
+          <md>
+            <mrow>\tan(\alpha)\amp=\frac{\sin(\alpha)}{\cos(\alpha)}</mrow>
+            <mrow>\amp=\frac{-\frac{3}{5}}{\frac{4}{5}}</mrow>
+            <mrow>\amp=-\frac{3}{5}\cdot \frac{5}{4}</mrow>
+            <mrow>\amp=-\frac{3}{4}</mrow>
+          </md>
+          <md>
+            <mrow>\tan(\beta)\amp=\frac{\sin(\beta)}{\cos(\beta)}</mrow>
+            <mrow>\amp=\frac{-\frac{15}{17}}{-\frac{8}{17}}</mrow>
+            <mrow>\amp=-\frac{15}{17} \cdot -\frac{17}{8}</mrow>
+            <mrow>\amp=\frac{15}{8}</mrow>
+          </md>
+          We now have all of the information we need to determine the value of <m>\tan{\beta-\alpha}</m>  Let's wrap this exercise up.
+          <md>
+            <mrow>\tan(\beta-\alpha)\amp=\frac{\tan(\beta)-\tan(\alpha)}{1+\tan(\beta)\tan(\alpha)}</mrow>
+              <mrow>\amp=\frac{\frac{15}{8}-\left(-\frac{3}{4}\right)}{1+\frac{15}{8} \cdot -\frac{3}{4}}</mrow>
+            <mrow>\amp=\frac{\frac{15}{8}+\frac{3}{4}}{1-\frac{45}{32}} \cdot \frac{\frac{32}{1}}{\frac{32}{1}}</mrow>
+            <mrow>\amp=\frac{15 \cdot 4 +3 \cdot 8}{32-45}</mrow>
+            <mrow>\amp=-\frac{84}{13}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title>The Double-Angle Identities</title>
+    <p></p>
+    <p>
+      The double-angle identities are derived by replacing both variables in the sum identities with the same variable.  Let's use the variable <m>\theta</m> in our derivations.
+      <md>
+        <mrow>\sin(2\theta)\amp=\sin(\theta+\theta)</mrow>
+        <mrow>\amp=\sin(\theta)\cos(\theta)+\cos(\theta)\sin(\theta)</mrow>
+        <mrow>\amp=2\sin(\theta)\cos(\theta)</mrow>
+      </md>
+      <md>
+        <mrow>\cos(2\theta)\amp=\cos(\theta+\theta)</mrow>
+        <mrow>\amp=\cos(\theta)\cos(\theta)-\sin(\theta)\sin(\theta)</mrow>
+        <mrow>\amp=\cos^2(\theta)-\sin^2(\theta)</mrow>
+      </md>
+      <md>
+        <mrow>\tan(2\theta)\amp=\tan(\theta+\theta)</mrow>
+        <mrow>\amp=\frac{\tan(\theta)+\tan(\theta)}{1-\tan(\theta)\tan(\theta)}</mrow>
+        <mrow>\amp=\frac{2\tan(\theta)}{1-\tan^2(\theta)}</mrow>
+      </md>
+      From the Pythagorean identity <m>\sin^2(\theta)+\cos^2(\theta)=1</m> we get two addition double-angle identities for the cosine function.  These are derived below.
+      <md>
+        <mrow>\cos(2\theta)\amp=\cos^2(\theta)-\sin^2(\theta)</mrow>
+        <mrow>\amp=\left(1-\sin^2(\theta)\right)-\sin^2(\theta)</mrow>
+        <mrow>\amp=1-2\sin^2(\theta)</mrow>
+      </md>
+      <md>
+        <mrow>\cos(2\theta)\amp=\cos^2(\theta)-\sin^2(\theta)</mrow>
+        <mrow>\amp=\cos^2(\theta)-\left(1-\cos^2(\theta)\right)</mrow>
+        <mrow>\amp=2\cos^2(\theta)-1</mrow>
+      </md>
+      In summary, the double-angle identities are stated below.
+      <me>\sin(2\theta)=2\sin(\theta)\cos(\theta)</me>
+      <me>\cos(2\theta)=\cos^2(\theta)-\sin^2(\theta)=1-2\sin^2(\theta)=2\cos^2(\theta)-1</me>
+      <me>\tan(\theta)=\frac{2\tan(\theta)}{1-\tan^2(\theta)}</me>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Provide evidence for the validity of the double-angle identity for the sine function by using the expression <m>\sin\left(2 \cdot 30^{\circ}\right)</m> to determine the value of <m>\sin\left(60^{\circ}\right)</m> (which we know to be <m>\frac{\sqrt{3}}{2}</m>).
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\sin\left(60^{\circ}\right)\amp=\sin\left(2 \cdot 30^{\circ}\right)</mrow>
+            <mrow>\amp=2\sin\left(30^{\circ}\right)\cos\left(30^{\circ}\right)</mrow>
+            <mrow>\amp=\frac{2}{1} \cdot \frac{1}{2} \cdot \frac{\sqrt{3}}{2}</mrow>
+            <mrow>\amp=\frac{\sqrt{3}}{2}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Suppose that <m>\cos(\theta)=\frac{5}{13}</m> and that when drawn in standard position <m>\theta</m> terminates in Quadrant I.  Use this information to determine <m>\tan{2\theta}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Since we need to know the value of <m>\tan(\theta)</m> in order to apply the double-angle identity for the tangent function, our immediate task is to determine the value of <m>\tan(\theta)</m>.  The easiest way to make that determination is to first determine the value of <m>\sin(\theta)</m>.  Let's proceed to do that.
+          <md>
+            <mrow>\sin^2(\theta)+\cos^2(\theta)\amp=1</mrow>
+            <mrow>\sin^2(\theta)+\left(\frac{5}{13}\right)^2\amp=1</mrow>
+            <mrow>\sin^2(\theta)+\frac{25}{169}\amp=1</mrow>
+            <mrow>\sin^2(\theta)\amp=\frac{144}{169}</mrow>
+            <mrow>\sin(\theta)\amp=\pm\frac{12}{13}</mrow>
+          </md>
+          Since <m>\theta</m> terminates in Quadrant I, its sine value is positive. So we conclude that <m>\sin(\theta)=\frac{12}{13}</m>.  We can now determine the value of <m>\tan(\theta)</m>.  Let's do it.
+          <md>
+            <mrow>\tan(\theta)\amp=\frac{\sin(\theta)}{\cos(\theta)}</mrow>
+            <mrow>\amp=\frac{\frac{12}{13}}{\frac{5}{13}}</mrow>
+            <mrow>\amp=\frac{12}{13} \cdot \frac{13}{5}</mrow>
+            <mrow>\amp=\frac{12}{5}</mrow>
+          </md>
+          We now have the information we need to determine the value of <m>\tan(2\theta)</m>, so let's go ahead and determine it.
+          <md>
+            <mrow>\tan(2\theta)\amp=\frac{2\tan(\theta)}{1-\tan^2(\theta)}</mrow>
+            <mrow>\amp=\frac{\frac{2}{1} \cdot \frac{12}{5}}{1-\left(\frac{12}{5}\right)^2}</mrow>
+            <mrow>\amp=\frac{\frac{24}{5}}{1-\frac{144}{25}} \cdot \frac{\frac{25}{1}}{\frac{25}{1}}</mrow>
+            <mrow>\amp=\frac{5 \cdot 24}{25-144}</mrow>
+            <mrow>\amp=-\frac{120}{119}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <exercises>
+
+    <exercise>
+      <statement>
+        <p>
+          Use a sum or difference identity to determine the value of <m>\sin\left(165^{\circ}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's begin by noting that <m>165^{\circ}=135^{\circ}+30^{\circ}</m>, and since we know the values of both the sine and cosine functions at both <m>135^{\circ}</m> and <m>30^{\circ}</m>, that is a good way to split <m>165^{\circ}</m> into a sum.  Let's proceed to finding the value of <m>\sin\left(165^{\circ}\right)</m>.
+          <md>
+            <mrow>\sin\left(165^{\circ}\right)\amp=\sin\left(135^{\circ}+30^{\circ}\right)</mrow>
+            <mrow>\amp=\sin\left(135^{\circ}\right)\cos\left(30^{\circ}\right)+\cos\left(135^{\circ}\right)\sin\left(30^{\circ}\right)</mrow>
+            <mrow>\amp=\frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2}+\left(-\frac{\sqrt{2}}{2}\right) \cdot \frac{1}{2}</mrow>
+            <mrow>\amp=\frac{\sqrt{6}-\sqrt{2}}{4}</mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Use a sum or difference identity to determine the value of <m>\cos\left(\frac{11\pi}{12}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We being by noting the following.
+          <me>\frac{11\pi}{12}-\frac{\pi}{4}=\frac{2\pi}{3}\,\,\Longrightarrow\,\,\frac{11\pi}{12}=\frac{2\pi}{3}+\frac{\pi}{4}</me>
+          Since we know the values of the sine and cosine functions at both <m>\frac{2\pi}{3}</m> and <m>\frac{\pi}{4}</m>, that is an appropriate way to split <m>\frac{11\pi}{12}</m> into a sum.  Let's determine the value of <m>\cos\left(\frac{11\pi}{12}\right)</m>.
+          <md>
+            <mrow>\cos\left(\frac{11\pi}{12}\right)\amp=\cos\left(\frac{2\pi}{3}+\frac{\pi}{4}\right)</mrow>
+            <mrow>\amp=\cos\left(\frac{2\pi}{3}\right)\cos\left(\frac{\pi}{4}\right)-\sin\left(\frac{2\pi}{3}\right)\sin\left(\frac{\pi}{4}\right)</mrow>
+            <mrow>\amp=-\frac{1}{2} \cdot \frac{\sqrt{2}}{2}-\frac{\sqrt{3}}{2} \cdot \frac{\sqrt{2}}{2}</mrow>
+            <mrow>\amp=\frac{-\sqrt{2}-\sqrt{6}}{4}</mrow>
+            <mrow>\amp=-\frac{\sqrt{2}+\sqrt{6}}{4}</mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Use a sum or difference identity to determine the value of <m>\tan\left(-\frac{5\pi}{12}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's make this initial observation.
+          <me>-\frac{5\pi}{12}+\frac{3\pi}{4}=\frac{\pi}{3}\,\,\Longrightarrow\,\,-\frac{5\pi}{12}=\frac{\pi}{3}-\frac{3\pi}{4}</me>
+          Since we know the values of both the sine and cosine functions at both <m>\frac{\pi}{3}</m> and <m>\frac{3\pi}{4}</m>, that is a useful way to render <m>-\frac{5\pi}{12}</m> into a difference.  Let's compute the value of <m>\tan\left(-\frac{5\pi}{12}\right)</m>.
+          <md>
+            <mrow>\tan\left(-\frac{5\pi}{12}\right)\amp=\tan\left(\frac{\pi}{3}-\frac{3\pi}{4}\right)</mrow>
+            <mrow>\amp=\frac{\tan\left(\frac{\pi}{3}\right)-\tan\left(\frac{3\pi}{4}\right)}{1+\tan\left(\frac{\pi}{3}\right)\tan\left(\frac{3\pi}{4}\right)}</mrow>
+            <mrow>\amp=\frac{\sqrt{3}-(-1)}{1+\sqrt{3}(-1)}</mrow>
+            <mrow>\amp=\frac{\sqrt{3}+1}{1-\sqrt{3}} \cdot \frac{1+\sqrt{3}}{1+\sqrt{3}}</mrow>
+            <mrow>\amp=\frac{\sqrt{3}+3+1+\sqrt{3}}{1-3}</mrow>
+            <mrow>\amp=\frac{2\sqrt{3}+4}{-2}</mrow>
+            <mrow>\amp=\frac{2(\sqrt{3}+2)}{-2}</mrow>
+            <mrow>\amp=-(\sqrt{3}+2)</mrow>
+            <mrow>\amp=-\sqrt{3}-2</mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Suppose that <m>\sin(\omega)=-\frac{7}{25}</m> and <m>\tan(\omega)=\frac{7}{24}</m>.  Determine the value of <m>\sin(2\omega)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          In order to determine the value of <m>\sin(2\omega)</m>, we will need to know the value of <m>\cos(\omega)</m> as well as the given value of <m>\sin(\omega)</m>.  Let's use a quotient identity to determine the cosine value.
+          <md>
+            <mrow>\tan(\omega)\amp=\frac{\sin(\omega)}{\cos(\omega)}</mrow>
+            <mrow>\frac{7}{25}\amp=\frac{-\frac{7}{24}}{\cos(\omega)}</mrow>
+            <mrow>\frac{7}{25}\cos(\omega)\amp=-\frac{7}{24}</mrow>
+            <mrow>\cos(\omega)\amp=-\frac{7}{24} \cdot \frac{25}{7}</mrow>
+            <mrow>\cos(\omega)\amp=-\frac{24}{25}</mrow>
+          </md>
+          We now have all of the necessary information to compute the value of <m>\sin(2\omega)</m> and we shall do so.
+          <md>
+            <mrow>\sin(2\omega)\amp=2\sin(\omega)\cos(\omega)</mrow>
+            <mrow>\amp=\frac{2}{1} \cdot -\frac{7}{25} \cdot -\frac{24}{25}</mrow>
+            <mrow>\amp=\frac{336}{625}</mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Suppose that <m>\cos(A)=-\frac{3}{5}</m> and that <m>\sin(B)=\frac{12}{13}</m>.  Suppose further that when drawn in standard position, <m>A</m> and <m>B</m> both terminate in Quadrant II.  Determine the value of <m>\cos(A+B)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to begin by determining the values of <m>\sin(A)</m> and <m>\cos(B)</m>.  We will use a Pythagorean identity to do that.
+          <md>
+            <mrow>\sin^2(A)+\cos^2(A)\amp=1</mrow>
+            <mrow>\sin^2(A)+\left(-\frac{3}{5}\right)^2\amp=1</mrow>
+            <mrow>\sin^2(A)+\frac{9}{25}\amp=1</mrow>
+            <mrow>\sin^2{A}\amp=\frac{16}{25}</mrow>
+            <mrow>\sin(A)\amp=\pm\frac{4}{5}</mrow>
+          </md>
+          Because <m>A</m> terminates in Quadrant II, its sine vale is positive and, consequently, <m>\sin(A)=\frac{4}{5}</m>.
+          <md>
+            <mrow>\sin^2(B)+\cos^2(B)\amp=1</mrow>
+            <mrow>\left(\frac{12}{13}\right)^2+\cos^2(B)\amp=1</mrow>
+            <mrow>\frac{144}{169}+\cos^2(B)\amp=1</mrow>
+            <mrow>\cos^2(B)\amp=\frac{25}{169}</mrow>
+            <mrow>\cos(B)\amp=\pm\frac{5}{13}</mrow>
+          </md>
+          Because <m>B</m> terminates in Quadrant II, its cosine value is negative and that, taken with what we determined above, lead us to the conclusion that <m>\cos(B)=-\frac{5}{13}</m>.
+        </p>
+        <p>
+          We now have all of the values needed to compute <m>\cos(A+B)</m>, so let's go ahead and do that.
+          <md>
+            <mrow>\cos(A+B)\amp=\cos(A)\cos(B)-\sin(A)\sin(B)</mrow>
+            <mrow>\amp=-\frac{3}{5} \cdot -\frac{5}{13}-(-\frac{4}{5}) \cdot \frac{12}{13}</mrow>
+            <mrow>\amp=\frac{63}{65}</mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Suppose that <m>\sin(\beta)=-\frac{21}{29}</m> and that when drawn in standard position <m>\beta</m> terminates in the fourth quadrant.  Determine the value of <m>\tan(2\beta)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Before we can determine the value of <m>\tan(2\beta)</m> we will first need to determine the value of <m>\tan(\beta)</m> which in turn requires knowledge of the value of <m>\cos(\beta)</m>.  Let's determine the value of <m>\cos(\beta)</m>.
+          <md>
+            <mrow>\sin^2(\beta)+\cos^2(\beta)\amp=1</mrow>
+            <mrow>\left(-\frac{21}{29}\right)^2+\cos^2(\beta)\amp=1</mrow>
+            <mrow>\frac{441}{841}+\cos^2(\beta)\amp=1</mrow>
+            <mrow>\cos^2(\beta)\amp=\frac{400}{841}</mrow>
+            <mrow>\cos(\beta)\amp=\frac{20}{29}</mrow>
+          </md>
+          We will now determine the value of <m>\tan(\beta)</m>.
+          <md>
+            <mrow>\tan(\beta)\amp=\frac{\sin(\beta)}{\cos(\beta)}</mrow>
+            <mrow>\amp=\frac{-\frac{21}{29}}{\frac{20}{29}}</mrow>
+            <mrow>\amp=-\frac{21}{29} \cdot \frac{29}{20}</mrow>
+            <mrow>\amp=-\frac{21}{20}</mrow>
+          </md>
+          And, finally, we will determine the value of <m>\tan(2\beta)</m>.
+          <md>
+            <mrow>\tan(2\beta)\amp=\frac{2\tan{\beta}}{1-\tan^2(\beta)}</mrow>
+            <mrow>\amp=\frac{\frac{2}{1} \cdot -\frac{21}{20}}{1-\left(-\frac{21}{20}\right)^2}</mrow>
+            <mrow>\amp=\frac{-\frac{21}{10}}{1-\frac{441}{400}} \cdot \frac{\frac{400}{1}}{\frac{400}{1}}</mrow>
+            <mrow>\amp=\frac{-21 \cdot 40}{400-441}</mrow>
+            <mrow>\amp=\frac{-840}{-41}</mrow>
+            <mrow>\amp=\frac{840}{41}</mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Suppose that <m>\tan(\alpha)=-\frac{7}{24}</m> and that <m>\alpha</m> terminates in Quadrant II.  Determine the value of <m>\cos(2\alpha)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          In order to determine the value of <m>\cos(2\alpha)</m>, we need to first determine the value of either <m>\sin(\alpha)</m> or <m>\cos(\alpha)</m>.  Let's use the appropriate quotient identity to help us express <m>\sin(\alpha)</m> in terms of <m>\cos(\alpha)</m> and then substitute that expression into the Pythagorean identity <m>\sin^2(\alpha)+\cos^2(\alpha)=1</m>.
+          <md>
+            <mrow>\tan(\alpha)\amp=-\frac{7}{24}</mrow>
+            <mrow>\frac{\sin(\alpha)}{\cos(\alpha)}\amp=-\frac{7}{24}</mrow>
+            <mrow>\sin(\alpha)\amp=-\frac{7}{24}\cos(\alpha)</mrow>
+            <mrow>\sin^2(\alpha)+\cos^2(\alpha)\amp=1</mrow>
+            <mrow>\left(-\frac{7}{24}\cos(\alpha)\right)^2+\cos^2(\alpha)\amp=1</mrow>
+            <mrow>\frac{49}{576}\cos^2(\alpha)+\cos^2(\alpha)\amp=1</mrow>
+            <mrow>\frac{625}{576}\cos^2(\alpha)\amp=1</mrow>
+            <mrow>\cos^2(\alpha)\amp=\frac{576}{625}</mrow>
+            <mrow>\cos(\alpha)\amp=\pm\frac{24}{25}</mrow>
+          </md>
+          We are told that <m>\alpha</m> terminates in Quadrant II, so its cosine value is negative and as a result <m>\cos(\alpha)=-\frac{24}{25}</m>.
+        </p>
+        <p>
+        We can now proceed to compute the value of <m>\cos(2\alpha)</m>.
+        <md>
+          <mrow>\cos(2\alpha)\amp=2\cos^2(\alpha)-1</mrow>
+          <mrow>\amp=2\left(-\frac{24}{25}\right)^2-1</mrow>
+          <mrow>\amp=\frac{2}{1} \cdot \frac{576}{625}-1</mrow>
+          <mrow>\amp=\frac{1152}{625}-\frac{625}{625}</mrow>
+          <mrow>\amp=\frac{527}{625}</mrow>
+        </md>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Use an appropriate sum or difference identity to determine the value of <m>\sec\left(375^{\circ}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's first observe that <m>375^{\circ}=330^{\circ}+45^{\circ}</m> and since we know the trigonometric values at both <m>330^{\circ}</m> and <m>45^{\circ}</m>, that sum is appropriate to our end.  Let's use the fact that the secant function is the reciprocal of the cosine function to help us determine the value of <m>\sec\left(375^{\circ}\right)</m>.
+          <md>
+            <mrow>\sec\left(375^{\circ}\right)\amp=\frac{1}{\cos\left(375^{\circ}\right)}</mrow>
+            <mrow>\amp=\frac{1}{\cos\left(330^{\circ}+45^{\circ}\right)}</mrow>
+            <mrow>\amp=\frac{1}{\cos\left(330^{\circ}\right)\cos\left(45^{\circ}\right)-\sin\left(330^{\circ}\right)\sin\left(45^{\circ}\right)}</mrow>
+            <mrow>\amp=\frac{1}{\frac{1}{2} \cdot \frac{\sqrt{2}}{2}-\left(-\frac{\sqrt{3}}{2}\right) \cdot \frac{\sqrt{2}}{2}}</mrow>
+            <mrow>\amp=\frac{1}{\frac{\sqrt{2}+\sqrt{6}}{4}}</mrow>
+            <mrow>\amp=\frac{4}{\sqrt{2}+\sqrt{6}} \cdot \frac{\sqrt{2}-\sqrt{6}}{\sqrt{2}-\sqrt{6}}</mrow>
+            <mrow>\amp=\frac{4(\sqrt{2}-\sqrt{6})}{-4}</mrow>
+            <mrow>\amp=-(\sqrt{2}-\sqrt{6})</mrow>
+            <mrow>\amp=\sqrt{6}-\sqrt{2}</mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+  </exercises>  
+
+
+</section>

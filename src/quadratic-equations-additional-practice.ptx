@@ -155,7 +155,7 @@
           </statement>
           <solution>
             <p>
-              The solutions are <m>10-2\sqrt{15}</m> and <m>10+2\sqrt{5}</m>.
+              The solutions are <m>10-2\sqrt{15}</m> and <m>10+2\sqrt{15}</m>.
             </p>
           </solution>
         </exercise>
@@ -226,7 +226,7 @@
       <exercisegroup>
         <introduction>
           <p>
-            Use the square root method to solve each of the following equations.  Make sure that all solutions have been completely simplified.   Note that for one of the equations you will need to first complete the square.
+            Use the square root method to solve each of the following equations over the complex numbers.  Make sure that all solutions have been completely simplified.   Note that for one of the equations you will need to first complete the square.
           </p>
         </introduction>
 
@@ -274,7 +274,7 @@
       <exercisegroup>
         <introduction>
           <p>
-            Use the quadratic formula to solve each of the following equations.  Make sure that all solutions have been completely simplified.  State both the solutions and the solution set.
+            Use the quadratic formula to solve each of the following equations over the complex numbers.  Make sure that all solutions have been completely simplified. 
           </p>
         </introduction>
 
@@ -321,6 +321,7 @@
           </statement>
           <solution>
             <p>
+              <me>b^2-4ac=-128</me>
               The equation has two complex number solutions with non-zero imaginary coefficients.
             </p>
           </solution>
@@ -334,6 +335,7 @@
           </statement>
           <solution>
             <p>
+              <me>b^2-4ac=32</me>
               The equation has two real number solutions.
             </p>
           </solution>
@@ -347,6 +349,7 @@
           </statement>
           <solution>
             <p>
+              <me>b^2-4ac=0</me>
               The equation has one real number solution.
             </p>
           </solution>

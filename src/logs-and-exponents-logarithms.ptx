@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="logs-and-exponents-logarithms">
+  <title>Logarithms as Exponents</title>
+
+  <p>
+    A <term>logarithm</term> is a mathematical expression with a positive base, <m>b</m> (<m>b \neq 1</m>), and a positive argument, <m>x</m>.  The expression
+    <me>\log_{b}(x)</me>
+    is read aloud as "the log base <m>b</m> of <m>x</m>."  When the base is not indicated, the base is assumed to be <m>10</m>.  Logarithms with a base of <m>10</m> are called <term>common logarithms</term>.
+  </p>
+  <p>
+    One common manner in which to think about logarithms is that they act as exponents.  Specifically, if <m>x</m> and <m>b</m> are both positive numbers where <m>b \neq 1</m>, then <m>\log_b(x)</m> is the exponent that when written on the base of <m>b</m> produces the value <m>x</m>.  That is, for positive values of <m>x</m> and <m>b</m>, <m>b \neq 1</m>:
+    <me>\log_b(x)=y\,\,\text{if and only if}\,\,b^{y}=x</me>.
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Determine <m>\log_{2}(8)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        In words, the expression <m>\log_{2}(8)</m> is asking the question "what power of <m>2</m> is equal to <m>8</m>?"  We could also write this out as a pair of equations.
+        <me>\log_2(8)=y\,\,\text{if and only if}\,\,2^{y}=8</me>
+        Whether we think about it verbally or visually, the exponent we're looking for is <m>3</m>.  That is:
+        <me>\log_2(8)=3\,\,\text{because}\,\,2^{3}=8</me>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Determine <m>\log_{6}\left(\frac{1}{36}\right)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        In words, we're being asked "what power of <m>6</m> is equal to <m>\frac{1}{36}</m>."  Visually,
+        <me>\log_{6}\left(\frac{1}{36}\right)=y\,\,\text{if and only if}\,\,6^{y}=\frac{1}{36}</me>.
+        We know that <m>6^{2}=36</m>, but we have to also recall what moves the 36 to the denominator of a fraction.  That's the effect of a negative exponent. 
+        <md>
+          <mrow>6^{-2}\amp=\frac{1}{6^{2}}</mrow>
+          <mrow>\amp=\frac{1}{36}</mrow>
+        </md>
+        So we conclude that 
+        <me>\log_{6}\left(\frac{1}{36}\right)=-2</me>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Determine <m>\log\left(\sqrt[3]{10^5}\right)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Since the base of the logarithm is not indicated, it is assumed to be <m>10</m>.  Because logarithms are exponent seeking creatures, it behooves us to rewrite the radical as a rational exponent.  Recall that 
+        <me>\sqrt[n]{a^{m}}=a^{m/n}</me>.
+        Altogether this gives us
+        <me>\log(\sqrt[3]{10^5})=\log_{10}\left(10^{5/3}\right)</me>.
+        In words, the question posed is "what power of <m>10</m> results in <m>10^{5/3}</m>.  That's a rather silly question.  If you're not seeing the answer, it might help to write it out as an equation.
+        <me>10^y=10^{5/3}</me>
+        Clearly the value of <m>y</m> must be <m>\frac{5}{3}</m>.   So we conclude that
+        <me>\log\left(\sqrt[3]{10^5}\right)=\frac{5}{3}</me>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Determine <m>\log_{64}\left(\frac{1}{4}\right)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We need to solve
+        <me>64^{y}=\frac{1}{4}</me>.
+        We first observe that the exponent needs to be negative <mdash/> that's the only way that the power would result in the <m>4</m> moving to the denominator.  With a little thought, we recall that <m>4^3=64</m> which means that <m>\sqrt[3]{64}=4</m>.  Written as an exponential expression, the cube root becomes <m>64^{1/3}</m>.  Putting it all together, we get the following.
+        <md>
+          <mrow>64^{-1/3}\amp=\frac{1}{64^{1/3}}</mrow>
+          <mrow>\amp=\frac{1}{\sqrt[3]{64}}</mrow>
+          <mrow>\amp=\frac{1}{4}</mrow>
+        </md>
+        We conclude that
+        <me>\log_{64}\left(\frac{1}{4}\right)=-\frac{1}{3}</me>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Solve <m>\log_{\frac{49}{81}}(x)=-\frac{1}{2}</m> for <m>x</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The equivalent exponential equation is
+        <me>\left(\frac{49}{81}\right)^{-1/2}=x</me>.  Let's go ahead and evaluate the solution.  We begin by reciprocating the fraction which is counterbalanced by making the exponent positive.
+        <md>
+          <mrow>x\amp=\left(\frac{49}{81}\right)^{-1/2}</mrow>
+          <mrow>\amp=\left(\frac{81}{49}\right)^{1/2}</mrow>
+          <mrow>\amp=\sqrt{\frac{81}{49}}</mrow>
+          <mrow>\amp=\frac{9}{7}</mrow>
+        </md>
+        The solution is <m>\frac{9}{7}</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Solve <m>\log_{b}\left(\frac{125}{8}\right)=-3</m> for <m>b</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The equivalent exponential equation is
+        <me>b^{-3}=\frac{125}{8}</me>.
+        The first order of business is to turn that exponent positive.  There is more than one way to do that.  I'm going to take a rather long route that I hope everyone can follow.
+        <md>
+          <mrow>b^{-3}\amp=\frac{125}{8}</mrow>
+          <mrow>\multiplyleft{b^3}b^{-3}\amp=\multiplyleft{b^3}\frac{125}{8}</mrow>
+          <mrow>1\amp=\frac{125}{8}b^{3}</mrow>
+          <mrow>\multiplyleft{\frac{8}{125}}1\amp=\multiplyleft{\frac{8}{125}}\frac{125}{8}b^{3}</mrow>
+          <mrow>\frac{8}{125}\amp=b^{3}</mrow>
+          <mrow>\sqrt[3]{\frac{8}{125}}\amp=b</mrow>
+          <mrow>\frac{2}{5}\amp=b</mrow>
+        </md>
+        The solution is <m>\frac{2}{5}</m>.
+      </p>
+    </solution>
+  </example>
+
+
+  <exercises>
+
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Rewrite each logarithmic equation in its equivalent exponential form.  That's it, do not evaluate the logarithm.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_{7}(92)=y</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>7^{y}=92</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_{3}(x)=-18</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>3^{-18}=x</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log\left(\frac{1}{3}\right)=y</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>10^{y}=\frac{1}{3}</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_{b}(17)=-4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>b^{-4}=17</m>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine the value of each logarithm.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_{2}(32)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We are essentially being asked to solve the equation <m>2^{y}=32</m>.  Because <m>2^{5}=32</m>, we conclude that
+            <me>\log_{2}(32)=5</me>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log\left(\frac{1}{100}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The missing base in the logarithmic expression is assumed to be <m>10</m>, so the question posed is to determine the power of <m>10</m> that results in <m>\frac{1}{10}</m>. Because <m>10^{-2}=\frac{1}{100}</m>, we conclude that
+            <me>\log\left(\frac{1}{100}\right)=-2</me>.
+          </p>
+        </solution>
+      </exercise>
+
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_{121}(11)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We need to solve <m>121^{y}=11</m>.  We know that <m>\sqrt{121}=11</m>, and writing that equation using a rational exponent we have <m>121^{1/2}=11</m>.  Thus,
+            <me>\log_{121}(11)=\frac{1}{2}</me>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log\left(10^{71}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The base is assumed to be <m>10</m>, so the question can be restated as <m>10^{y}=10^{71}</m> for what value of <m>y</m>?  That would be <m>71</m>.  That is,
+            <me>\log\left(10^{71}\right)=71</me>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log(0.00000001)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Yet another common logarithm.  One way we can determine the value of the logarithm is to rewrite the argument using scientific notation.  Because the decimal point needs to be shifted right eight spaces to fall after the <m>1</m>, 
+            <me>0.00000001=10^{-8}</me>.
+            So the equation becomes <m>10^{y}=10^{-8}</m> for what value of <m>y</m>.  Since <m>10^{-8}=10^{-8}</m>, we conclude thus.
+            <me>\log(0.00000001)=-8</me> 
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_{16}\left(\frac{1}{2}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            As an equation, what we need to solve is <m>16^{y}=\frac{1}{2}</m>.  Because the two is in the denominator, the unknown exponent must be negative.  Because <m>2^{4}=16</m>, we can infer that <m>\sqrt[4]{16}=2</m>.  Putting the pieces together, we have the following.
+            <md>
+              <mrow>16^{-1/4}\amp=\frac{1}{16^{1/4}}</mrow>
+              <mrow>\amp=\frac{1}{\sqrt[4]{16}}</mrow>
+              <mrow>\amp=\frac{1}{2}</mrow>
+            </md>
+            So,
+            <me>\log_{16}\left(\frac{1}{2}\right)=-\frac{1}{4}</me>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_{\frac{1}{15}}(15)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Because <m>\left(\frac{1}{15}\right)^{-1}=15</m>, we conclude that
+            <me>\log_{\frac{1}{15}}(15)=-1</me>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_{8}(4)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Hoo boy, this is a stumper.  "What power of <m>8</m> results in <m>4</m>?"  Let's write it out as an equation.
+            <me>8^{y}=4</me>
+            Let's try to think of something that <m>8</m> and <m>4</m> have in common in the land of exponents.  One thing that comes to my mind is that they can both be written as powers of <m>2</m>.  Let's see if that helps.
+            <me>\left(2^{3}\right)^{y}=2^{2}</me>
+            Applying the power-to-a-power rule of exponent, we have
+            <m>2^{3y}=2^{2}</m>.
+            It follows that the exponents on either side of the equal sign must be equal, which gives us the following.
+            <md>
+              <mrow>3y\amp=2</mrow>
+              <mrow>\divideunder{3y}{3}\amp=\divideunder{2}{3}</mrow>
+              <mrow>y\amp=\frac{2}{3}</mrow>
+            </md>
+            Thus,
+            <me>\log_8(4)=\frac{2}{3}</me>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_{125}\left(\frac{1}{625}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Following the thought process in the solution to the last problem, we can express both <m>125</m> and <m>\frac{1}{625}</m> as powers of <m>5</m>.  Let's put that to use
+            <md>
+              <mrow>125^{y}\amp=\frac{1}{625}</mrow>
+              <mrow>\left(5^{3}\right)^{y}\amp=5^{-4}</mrow>
+              <mrow>5^{3y}\amp=5^{-4}</mrow>
+              <mrow>3y\amp=-4</mrow>
+              <mrow>\divideunder{3y}{3}\amp=\divideunder{-4}{3}</mrow>
+              <mrow>y\amp=-\frac{4}{3}</mrow>
+            </md>
+            This gives us
+            <me>\log_{125}\left(\frac{1}{625}\right)=-\frac{4}{3}</me>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_{128}(256)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Following the plan used in the last two solutions, we proceed thus.
+            <md>
+              <mrow>128^{y}\amp=256</mrow>
+              <mrow>\left(2^7\right)^{y}\amp=2^{8}</mrow>
+              <mrow>2^{7y}\amp=2^{8}</mrow>
+              <mrow>7y\amp=8</mrow>
+              <mrow>\divideunder{7y}{8}\amp=\divideunder{8}{8}</mrow>
+              <mrow>y\amp=\frac{8}{7}</mrow>
+            </md>
+            <me>\log_{128}(256)=\frac{8}{7}</me>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Solve each equation for the specified variable>.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            Solve <m>\log_{b}\left(\frac{29}{65}\right)=-1</m> for <m>b</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\log_{b}\left(\frac{29}{65}\right)\amp=-1</mrow>
+              <mrow>b^{-1}\amp=\frac{29}{65}</mrow>
+              <mrow>\multiplyleft{b}b^{-1}\amp=\multiplyleft{b}\frac{29}{65}</mrow>
+              <mrow>1\amp=\frac{29}{65}b</mrow>
+              <mrow>\multiplyleft{\frac{65}{29}}1\amp=\multiplyleft{\frac{65}{29}}\frac{29}{65}b</mrow>
+              <mrow>\frac{65}{29}\amp=b</mrow>
+            </md>
+            The solution is <m>\frac{65}{29}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Solve <m>\log_{\frac{1}{4}}(x)=-3</m> for <m>x</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\log_{\frac{1}{4}}(x)\amp=-3</mrow>
+              <mrow>\left(\frac{1}{4}\right)^{-3}\amp=x</mrow>
+              <mrow>\left(\frac{4}{1}\right)^3\amp=x</mrow>
+              <mrow>64\amp=x</mrow>
+            </md>
+            The solution is <m>64</m>.
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+</section>

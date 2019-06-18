@@ -12,10 +12,10 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="absolute-value-materials">
     <title>Absolute Value</title>
 
+      <xi:include href="./absolute-value-videos-95.ptx" />
+      <xi:include href="./absolute-value-basic-equations.ptx" />
       <xi:include href="./absolute-value-basic-inequalities.ptx" />
       <xi:include href="./absolute-value-isolation.ptx" />
       <xi:include href="./absolute-value-additional-practice.ptx" />
-
-
 
 </chapter>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="functions-difference-quotient">
+  <title>Difference Quotients</title>
+
+  <paragraphs>
+    <title>Definition of the Difference Quotient</title>
+    <p></p>
+  <p>
+    The difference quotient is a new expression created from a template and a given function formula. The template for the difference quotient of the function <m>y=f(x)</m> is <me>\frac{f(x+h)-f(x)}{h}</me>.  It will be discussed later why this is an important expression.  For now, lets just get familiar the algebra associated with difference quotient.
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Determine the difference quotient for the function <m>f(x)=8x-7</m>.  Make sure that your expression is fully simplified.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The difference quotient for <m>f(x)=8x-7</m> follows.
+        <md>
+          <mrow>\frac{\highlight{f(x+h)}-\highlightr{f(x)}}{x}\amp=\frac{(\highlight{8(x+h)-7})-(\highlightr{8x-7})}{h}</mrow>
+          <mrow>\amp=\frac{8x+8h-7-8x+7}{h}</mrow>
+          <mrow>\amp=\frac{8h}{8}</mrow>
+          <mrow>\amp=8,\,\,h \neq 0</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Determine the difference quotient for the function <m>g(t)=6t-t^2</m>.  Make sure that your expression is fully simplified.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The difference quotient for <m>g(t)=6t-t^2</m> follows.
+        <md>
+          <mrow>\frac{\highlight{g(t+h)}-\highlightr{g(t)}}{h}\amp=\frac{(\highlight{6(t+h)-(t+h)^2})-(\highlightr{6t-t^2})}{h}</mrow>
+          <mrow>\amp=\frac{6t+6h-(t+h)(t+h)-6t+t^2}{h}</mrow>
+          <mrow>\amp=\frac{6h-(t^2+2th+h^2)+t^2}{h}</mrow>
+          <mrow>\amp=\frac{6h-t^2-2th-h^2+t^2}{h}</mrow>
+          <mrow>\amp=\frac{6h-2th-h^2}{h}</mrow>
+          <mrow>\amp=\frac{h \cdot (6-2t-h)}{h}</mrow>
+          <mrow>\amp=-2t+6-h,\,\,h \neq 0</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Determine the difference quotient for the function <m>m(x)=157</m>.  Make sure that your expression is completely simplified.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The difference quotient for the function <m>m(x)=157</m> follows.
+        <md>
+          <mrow>\frac{\highlight{m(x+h)}-\highlightr{m(x)}}{h}\amp=\frac{\highlight{157}-\highlightr{157}}{h}</mrow>
+          <mrow>\amp=\frac{0}{h}</mrow>
+          <mrow>\amp=0,\,\,h \neq 0</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Determine the difference quotient for the function <m>w(x)=\frac{5}{x-3}</m>.  Make sure that your expression is fully simplified.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The difference quotient for <m>w(x)=\frac{5}{x-3}</m> follows.
+        <md>
+          <mrow>\frac{\highlight{w(x+h)}-\highlightr{w(x)}}{h}\amp=\frac{\highlight{\frac{5}{x+h-3}}-\highlightr{\frac{5}{x-3}}}{h}</mrow>
+          <mrow>\amp=\frac{\frac{5}{x+h-3} \cdot \highlightb{\frac{x-3}{x-3}}-\frac{5}{x-3} \cdot \highlightb{\frac{x+h-3}{x+h-3}}}{\frac{h}{1}}</mrow>
+          <mrow>\amp=\frac{5(x-3)-5(x+h-3)}{(x-3)(x+h-3)} \cdot \frac{1}{h}</mrow>
+          <mrow>\amp=\frac{5x-15-5x-5h+15}{(x-3)(x+h-3)h}</mrow>
+          <mrow>\amp=\frac{-5 \cdot h}{(x-3)(x+h-3) \cdot h}</mrow>
+          <mrow>\amp=-\frac{5}{(x-3)(x+h-3)},\,\, h \neq 0</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+  </paragraphs>
+  <paragraphs>
+    <title>The Graphical Significance of the Difference Quotient</title>
+    <p></p>
+  <p>
+    A secant line for the graph of the function <m>y=f(x)</m> is a line that connects two points on the curve.  If you're thinking "gee, it's pretty easy to be a secant line" you're correct in that thought.  For example, consider a function that graphs to a parabola.  With one exception, any non-vertical line that intersects the parabola once intersects the parabola a second time as well.  So with one exception, any non-vertical line that intersects a parabola is a secant line for the parabola.  The only exception is the horizontal line that intersects the vertex.
+  </p>
+  <p>
+    It turns out that the difference quotient is the slope of a secant line to <m>f</m>. Specifically, it is the slope of the line connecting the point <m>(x,f(x))</m> with the point <m>(x+h,f(x+h))</m>.
+  </p>
+  <p>
+    To understand this, consider <m>y=f(x)</m>.  Let <m>x_1=x</m> and <m>x_2=x+h</m>.  Let's now apply the classic slope-formula.
+    <md>
+      <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
+      <mrow>\amp=\frac{f(x_2)-f(x_1)}{x_2-x_1}</mrow>
+      <mrow>\amp=\frac{f(x+h)-f(x)}{(x+h)-x}</mrow>
+      <mrow>\amp=\frac{f(x+h)-f(x)}{h}</mrow>
+    </md>
+    Note that this implies that for the two stated points the rise of the secant line is <me>\text{rise}=f(x+h)-f(x)</me> and the run of the secant line is <me>\text{run}=h</me>
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Determine the difference quotient for the function <m>f(x)=2x^2-x-7</m>.  Then use the simplified difference quotient expression to determine the slope of the secant line for <m>f</m> between the points where <m>x=-3</m> and <m>x=5</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by determining the simplified difference quotient for <m>f</m>.
+        <md>
+          <mrow>\frac{\highlight{f(x+h)}-\highlightr{f(x)}}{h}\amp=\frac{(\highlight{2(x+h)^2-(x+h)-7})-(\highlightr{2x^2-x-7})}{h}</mrow>
+          <mrow>\amp=\frac{2(x+h)(x+h)-x-h-7-2x^2+x+7}{h}</mrow>
+          <mrow>\amp=\frac{2(x^2+2xh+h^2)-h-2x^2}{h}</mrow>
+          <mrow>\amp=\frac{2x^2+4xh+2h^2-h-2x^2}{h}</mrow>
+          <mrow>\amp=\frac{4xh+2h^2-h}{h}</mrow>
+          <mrow>\amp=\frac{h(4x+2h-1)}{h}</mrow>
+          <mrow>\amp=4x+2h-1,\,\,h \neq 0</mrow>
+        </md>
+        The run from the point where <m>x=-3</m> to the point where <m>x=5</m> is <m>8</m>.  So let's take our difference quotient formula and replace <m>x</m> with <m>-3</m> and <m>h</m> with <m>8</m> to determine the slope of the indicated secant line. 
+        <md>
+          <mrow>m\amp=4x+2h-1</mrow>
+          <mrow>\amp=4(-3)+2 \cdot 8-1</mrow>
+          <mrow>\amp=3</mrow>
+        </md>
+        Let's confirm the slope using the traditional slope formula.
+        <md>
+          <mrow>m\amp=\frac{f(5)-f(-3)}{5-(-3)}</mrow>
+          <mrow>\amp=\frac{(2 \cdot 5^2-5-7)-(2 \cdot (-3)^2-(-3)-7)}{8}</mrow>
+          <mrow>\amp=\frac{38-14}{8}</mrow>
+          <mrow>\amp=\frac{24}{8}</mrow>
+          <mrow>\amp=3\,\,\checkmark</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  </paragraphs>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine the difference quotient for each of the following functions.  Make sure that you completely simplify each expression.
+        </p>
+      </introduction>
+       
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=7x-8</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The difference quotient for the function <m>f(x)=7x-8</m> is derived below.
+            <md>
+              <mrow>\frac{\highlight{f(x+h)}-\highlightr{f(x)}}{h}\amp=\frac{\highlight{(7(x+h)-8)}-\highlightr{(7x-8)}}{h}</mrow>
+              <mrow>\amp=\frac{7x+7h-8-7x+8}{h}</mrow>
+              <mrow>\amp=\frac{7h}{h}</mrow>
+              <mrow>\amp=7,\,\,h \neq 0</mrow>
+            </md>              
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>g(x)=x^2-3x+2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The difference quotient for the function <m>g(x)=x^2-3x+2</m> is derived below.
+            <md>
+              <mrow>\frac{\highlight{g(x+h)}-\highlightr{g(x)}}{h}\amp=\frac{\highlight{((x+h)^2-3(x+h)+2)}-\highlightr{(x^2-3x+2)}}{h}</mrow>
+              <mrow>\amp=\frac{x^2+2xh+h^2-3x-3h+2-x^2+3x-2}{h}</mrow>
+              <mrow>\amp=\frac{2xh-3h+h^2}{h}</mrow>
+              <mrow>\amp=\frac{h \cdot (2x-3+h)}{h}</mrow>
+              <mrow>\amp=2x-3+h,\,\,h \neq 0</mrow>
+            </md>              
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>g(t)=5-t^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The difference quotient for the function <m>g(t)=5-t^2</m> is derived below.
+            <md>
+              <mrow>\frac{\highlight{g(t+h)}-\highlightr{g(t)}}{h}\amp=\frac{\highlight{(5-(t+h)^2)}-\highlightr{(5-t^2)}}{h}</mrow>
+              <mrow>\amp=\frac{5-(t^2+2th+h^2)-5+t^2}{h}</mrow>
+              <mrow>\amp=\frac{5-t^2-2th-h^2-5+t^2}{h}</mrow>
+              <mrow>\amp=\frac{-2th-h^2}{h}</mrow>
+              <mrow>\amp=\frac{h \cdot (-2t-h)}{h}</mrow>
+              <mrow>\amp=-2t-h,\,\,h \neq 0</mrow>
+            </md>              
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>k(x)=12</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The difference quotient for the function <m>k(x)=12</m> is derived below.
+            <md>
+              <mrow>\frac{\highlight{k(x+h)}-\highlightr{k(x)}}{h}\amp=\frac{\highlight{12}-\highlightr{12}}{h}</mrow>
+              <mrow>\amp=\frac{0}{h}</mrow>
+              <mrow>\amp=0,\,\,h \neq 0</mrow>
+            </md>              
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>r(t)=\frac{3}{t+4}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The difference quotient for the function <m>r(t)=\frac{3}{t+4}</m> is derived below.
+            <md>
+              <mrow>\frac{\highlight{r(t+h)}-\highlightr{r(t)}}{h}\amp=\frac{\highlight{\frac{3}{t+h+4}}-\highlightr{\frac{3}{t+4}}}{h}</mrow>
+              <mrow>\amp=\frac{\frac{3}{t+h+4} \cdot \highlightg{\frac{t+4}{t+4}}-\frac{3}{t+4} \cdot \highlightb{\frac{t+h+4}{t+h+4}}}{h}</mrow>
+              <mrow>\amp=\frac{\frac{3t+12-3t-3h-12}{(t+4)(t+h+4)}}{\frac{h}{1}}</mrow>
+              <mrow>\amp=\frac{-3h}{(t+4)(t+h+4)} \cdot \frac{1}{h}</mrow>
+              <mrow>\amp=\frac{-3 \cdot h}{(t+4)(t+h+4) \cdot h}</mrow>
+              <mrow>\amp=-\frac{3}{(t+4)(t+4+h)},\,\, h \neq 0</mrow>
+            </md>              
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y(x)=\frac{1}{7-2x}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The difference quotient for the function <m>y(x)=\frac{1}{7-2x}</m> is derived below.
+            <md>
+              <mrow>\frac{\highlight{y(x+h)}-\highlightr{y(x)}}{h}\amp=\frac{\highlight{\frac{1}{7-2(x+h)}}-\highlightr{\frac{1}{7-2x}}}{h}</mrow>
+              <mrow>\amp=\frac{\frac{1}{7-2x-2h}-\frac{1}{7-2x}}{h}</mrow>
+              <mrow>\amp=\frac{\frac{1}{7-2x-2h} \cdot \highlightg{\frac{7-2x}{7-2x}}-\frac{1}{7-2x} \cdot \highlightb{\frac{7-2x-2h}{7-2x-2h}}}{h}</mrow>
+              <mrow>\amp=\frac{\frac{7-2x-7+2x+2h}{(7-2x-2h)(7-2x)}}{h}</mrow>
+              <mrow>\amp=\frac{\frac{2h}{(7-2x-2h)(7-2x)}}{\frac{h}{1}}</mrow>
+              <mrow>\amp=\frac{2h}{(7-2x-2h)(7-2x)} \cdot \frac{1}{h}</mrow>
+              <mrow>\amp=\frac{2 \cdot h}{(7-2x-2h)(7-2x) \cdot h}</mrow>
+              <mrow>\amp=\frac{2}{(7-2x-2h)(7-2x)},\,h\neq 0</mrow>
+            </md>              
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Interpret a difference quotient value as a slope.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <sidebyside widths="47% 47%" margins="0%">
+
+              <p>
+                The function <m>f(x)=\frac{1}{2}x^2+2x-3</m> is shown in <xref ref="functions-difference-quotient-exercises-figure-1">Figure</xref> along with the secant line connecting the points <m>(-2,-5)</m> and <m>(2,3)</m>.  Determine the difference quotient of <m>f</m> and then use that to determine the slope of the indicated secant line.
+              </p>
+
+              <figure xml:id="functions-difference-quotient-exercises-figure-1">
+                <caption><m>f(x)=\frac{1}{2}x^2+2x-3</m></caption>
+                <image>
+                  <description>
+                    A graph of the function <m>f(x)=\frac{1}{2}x^2+2x-3</m>.  A line is also graphed.  The line intersects the parabola at the points <m>(-2,-5)</m> and <m>(2,3)</m>.
+                  </description>
+                  <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                      \begin{axis}
+                        \addplot[primarycurve,domain=-6.85:2.85,smooth] {2*x+.5*x^2-3};
+                        \addplot[primarycurve,domain=-2.95:3.95,smooth,blue] {2*x-1};
+                        \addplot[soliddot] coordinates {(-2,-5)};
+                        \addplot[soliddot] coordinates {(2,3)};
+                      \end{axis}
+                    \end{tikzpicture}
+                    ]]>
+                  </latex-image>
+                </image>
+              </figure>
+            </sidebyside>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by deriving the difference quotient for <m>f(x)=\frac{1}{2}x^2+2x-3</m>.
+            <md>
+              <mrow>\frac{\highlight{f(x+h)}-\highlightr{f(x)}}{h}\amp=\frac{\highlight{\left(\frac{1}{2}(x+h\right)^2+2(x+h)-3)}-\highlightr{\left(\frac{1}{2}x^2+2x-3\right)}}{h}</mrow>
+              <mrow>\amp=\frac{\frac{1}{2}(x^2+2xh+h^2)+2x+2h-3-\frac{1}{2}x^2-2x+3}{h}</mrow>
+              <mrow>\amp=\frac{\frac{1}{2}x^2+xh+\frac{1}{2}h^2+2h-\frac{1}{2}x^2}{h}</mrow>
+              <mrow>\amp=\frac{xh+\frac{1}{2}h^2+2h}{h}</mrow>
+              <mrow>\amp=\frac{h \cdot \left(x+\frac{1}{2}h+2\right)}{h}</mrow>
+              <mrow>\amp=x+2+\frac{1}{2}h,\,\,h \neq 0</mrow>
+            </md>
+            We now find the slope of the indicated secant line by letting <m>x=-2</m> and <m>h=4</m> (the left-most of the two <m>x</m>-coordinates and the run between the two indicated points). The calculation follows.
+            <md>
+              <mrow>m\amp=-2+2+\frac{1}{2} \cdot 4</mrow>
+              <mrow>\amp=2</mrow>
+            </md>
+            A slope of <m>2</m> is confirmed by looking at the <m>\frac{\text{rise}}{\text{run}}</m> between the two points.
+          </p>   
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+</section>

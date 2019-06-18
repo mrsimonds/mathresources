@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="logs-and-exponent-exponential-functions-and-graphs">
+  <title>Exponential Functions and Their Graphs</title>
+
+  <p>
+    A simple <term>exponential function</term>, <m>f</m>, is a function that can be expressed as <me>f(x)=b^x</me> where <m>b \gt 0,\,\,b \neq 1</m>.
+  </p>
+  <p>
+    Let's consider the function <m>f(x)=2^x</m>.  Several function values are shown in <xref ref="exponential-functions-and-graphs-table-1">Table</xref> and the corresponding ordered pairs are plotted in <xref ref="exponential-functions-and-graphs-figure-1">Figure</xref>.  The function is continuous, and we can infer it's shape from the points plotted in <xref ref="exponential-functions-and-graphs-figure-1">Figure</xref>.  The continuous function is shown in <xref ref="exponential-functions-and-graphs-figure-2">Figure</xref>.
+  </p>
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <table xml:id="exponential-functions-and-graphs-table-1">
+      <caption><m>y=2^x</m></caption>
+      <tabular>
+        <col halign="center" />
+        <col halign="center" />
+        <row bottom="medium">
+          <cell><line><m>x</m></line></cell>
+          <cell><line><m>y</m></line></cell>
+        </row>
+        <row>
+          <cell><m>-3</m></cell>
+          <cell><m>0.125</m></cell>
+        </row>
+        <row>
+          <cell><m>-2</m></cell>
+          <cell><m>0.25</m></cell>
+        </row>
+        <row>
+          <cell><m>-1</m></cell>
+          <cell><m>0.5</m></cell>
+        </row>
+        <row>
+          <cell><m>0</m></cell>
+          <cell><m>1</m></cell>
+        </row>
+        <row>
+          <cell><m>1</m></cell>
+          <cell><m>2</m></cell>
+        </row>
+        <row>
+          <cell><m>2</m></cell>
+          <cell><m>4</m></cell>
+        </row>
+        <row>
+          <cell><m>3</m></cell>
+          <cell><m>8</m></cell>
+        </row>
+        <row>
+          <cell><m>4</m></cell>
+          <cell><m>16</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <figure xml:id="exponential-functions-and-graphs-figure-1">
+      <caption>Points on <m>y=2^x</m></caption>
+      <image>
+        <description>
+          A graph consisting of eight points that fall on the function <m>y=2^x</m>.  The points, from left-to-right, are <m>(-3,0.12)</m>, <m>(-2,0.15)</m>, <m>(-1,-0.5)</m>, <m>(0,1)</m>, <m>(1,2)</m>, <m>(2,4)</m>, <m>(3,8)</m>, <m>(4,16)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [xmin=-5,xmax=5,
+                          ymin=-4,ymax=18,
+                          xtick={-4,-2,2,4},
+                          ytick={-2,2,4,6,8,10,12,14,16},
+                          minor xtick={-3,-1,1,3},
+                          minor ytick={}]
+              \addplot[soliddot] coordinates {(-3,.125)};
+              \addplot[soliddot] coordinates {(-2,.25)};
+              \addplot[soliddot] coordinates {(-1,.5)};
+              \addplot[soliddot] coordinates {(0,1)};
+              \addplot[soliddot] coordinates {(1,2)};
+              \addplot[soliddot] coordinates {(2,4)};
+              \addplot[soliddot] coordinates {(3,8)};
+              \addplot[soliddot] coordinates {(4,16)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure> 
+
+  </sidebyside>
+
+  <figure xml:id="exponential-functions-and-graphs-figure-2">
+    <caption><m>y=2^x</m></caption>
+    <image width="47%">
+      <description>
+        A graph of the function <m>y=2^x</m> over the interval<m>(-5,5)</m>.  The curve is everywhere increasing and concave up.  The curve hugs the <m>x</m>-axis on the left side of the interval.  The curve is increasing very rapidly on the right side of the interval.
+      </description>
+      <latex-image>
+        <![CDATA[
+        \begin{tikzpicture}
+            \begin{axis} [xmin=-5,xmax=5,
+                          ymin=-4,ymax=18,
+                          xtick={-4,-2,2,4},
+                          ytick={-2,2,4,6,8,10,12,14,16},
+                          minor xtick={-3,-1,1,3},
+                          minor ytick={}]
+            \addplot[primarycurve,domain=-4.8:4.15,smooth] {2^x};
+          \end{axis}
+        \end{tikzpicture}
+        ]]>
+      </latex-image>
+    </image>
+  </figure> 
+
+  <p>
+    Let's make some observations about the curve in <xref ref="exponential-functions-and-graphs-figure-2">Figure</xref>.  Let's first focus on the behavior to the left of the <m>y</m>-axis.  As the value of <m>x</m> moves further and further to the left, the curve seems to hug the <m>x</m>-axis more and more. We call this behavior <term>asymptotic</term> and, specifically, we say that the <m>x</m>-axis is the <term>horizontal asymptote</term> for the graph of <m>y=2^x</m> as <m>y \rightarrow -\infty</m>.  The last set of symbols is read aloud as "<m>x</m> approaches negative infinity."  In this context, the symbols mean that the value of <m>x</m> is moving farther and farther to the left with no limit on how far it will get.  While this is happening, the value of <m>y</m> is getting closer and closer to zero, although it will never get to zero as no (real number) value of <m>x</m> results in <m>2^x</m> having a value of zero (or a negative value, for that matter).
+  </p>
+
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <p>
+      Let's now turn our attention to the behavior of <m>y=2^x</m>.  I've plotted the function again in <xref ref="exponential-functions-and-graphs-figure-3">Figure</xref>, only this time I've used equal scales on the two axes.  In doing so, we see just how incredibly fast the curve rises as it moves rightward away from the <m>x</m>-axis. The rate at which the value of <m>y</m> increases relative to small changes in the value of <m>x</m> is really difficult to fully grasp.  Let's ponder one example.
+    </p>
+
+    <figure xml:id="exponential-functions-and-graphs-figure-3">
+      <caption><m>y=2^x</m></caption>
+      <image>
+        <description>
+          A graph of the function <m>y=2^x</m> over the interval<m>(-10,10)</m>. The <m>y</m>-axis extends from <m>-4</m> to <m></m> The curve is everywhere increasing and concave up.  The curve hugs the <m>x</m>-axis on the left side of the interval.  The curve is increasing very rapidly on the right side of the interval and leaves the grid just past <m>x=4</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+              \begin{axis} [axis equal image,
+                            xmin=-11,xmax=11,
+                            ymin=-4,ymax=18,
+                            xtick={-10,-6,-2,2,6,10},
+                            ytick={-2,2,6,10,14},
+                            minor xtick={-8,-4,4,8},
+                            minor ytick={4,8,12,16}]
+              \addplot[primarycurve,domain=-10.8:4.15,smooth] {2^x};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure> 
+
+  </sidebyside>
+  <p>
+    The Empire State Building in New York is 102 stories tall.  It's height is 1250 ft which is equivalent to 15,000 inches.  Now suppose that we have a <em>gigantic</em> piece of graph paper that we plaster to the side of the Empire State Building, with the <m>x</m>-axis lying on the sidewalk.  Suppose further that the unit used to scale each axis is one inch, so that the largest <m>y</m>-coordinate on the graph is 15,000.  Let's see how far we'd need to move along the positive <m>x</m>-axis before we'd no longer be able to plot the point because the <m>y</m>-coordinate would be larger than 15,000.  Turns out not far at all: <m>2^{13}=8,192</m> and <m>2^{14}=16,384</m>.  That means that 14 is the first integer <m>x</m>-coordinate where the <m>y</m>-coordinate is already higher than the Empire State Building.  Think about that <mdash/> a little more than a foot to the right of the <m>y</m>-axis and the <m>y</m>-coordinate is already higher than the Empire State Building.  Crazy!  But it gets weirder. 
+  </p> 
+  <p>
+    The average distance between the Earth and its moon is 238,900 miles which, in turn, is a little more than <m>1.5 \times 10^{10}</m> inches.  On the other hand, <m>2^{34}</m> is a little more than <m>1.7 \times 10^{10}</m>, so on our Empire State Building Grid we've moved less than three feet to the right of the origin and the <m>y</m>-coordinate on the graph of <m>y=2^x</m> has already blown past the Moon!  To infinity and beyond, indeed.
+  </p>
+  <p>
+    Now let's consider the graph of <m>g(x)=\left(\frac{1}{2}\right)^x</m>.  Several function values are shown in <xref ref="exponential-functions-and-graphs-table-2">Table</xref> and the function is graphed in <xref ref="exponential-functions-and-graphs-figure-4">Figure</xref>.
+  </p>
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <table xml:id="exponential-functions-and-graphs-table-2">
+      <caption><m>y=\left(\frac{1}{2}\right)^x</m></caption>
+      <tabular>
+        <col halign="center" />
+        <col halign="center" />
+        <row bottom="medium">
+          <cell><line><m>x</m></line></cell>
+          <cell><line><m>y</m></line></cell>
+        </row>
+        <row>
+          <cell><m>-4</m></cell>
+          <cell><m>16</m></cell>
+        </row>
+        <row>
+          <cell><m>-3</m></cell>
+          <cell><m>8</m></cell>
+        </row>
+        <row>
+          <cell><m>-2</m></cell>
+          <cell><m>4</m></cell>
+        </row>
+        <row>
+          <cell><m>-1</m></cell>
+          <cell><m>2</m></cell>
+        </row>
+        <row>
+          <cell><m>0</m></cell>
+          <cell><m>1</m></cell>
+        </row>
+        <row>
+          <cell><m>1</m></cell>
+          <cell><m>0.5</m></cell>
+        </row>
+        <row>
+          <cell><m>2</m></cell>
+          <cell><m>0.25</m></cell>
+        </row>
+        <row>
+          <cell><m>3</m></cell>
+          <cell><m>0.125</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <figure xml:id="exponential-functions-and-graphs-figure-4">
+      <caption><m>y=\left(\frac{1}{2}\right)^x</m></caption>
+      <image>
+        <description>
+          A graph of the function <m>y=\left(\frac{1}{2}\right)^x</m> over the interval <m>(-6,6)</m>.  The curve is everywhere decreasing and concave up.On the left side of the interval the curve becomes more and more vertical as it moves away from the <m>y</m>-axis.  On the right side of the interval the curve hugs the <m>x</m>-axis.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+              \begin{axis} [xmin=-5,xmax=5,
+                            ymin=-4,ymax=18,
+                            xtick={-4,-2,2,4},
+                            ytick={-2,2,4,6,8,10,12,14,16},
+                            minor xtick={-3,-1,1,3},
+                            minor ytick={}]
+              \addplot[primarycurve,domain=-4.15:4.8,smooth] {0.5^x};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <p>
+      Plots of both <m>y=2^x</m> and <m>y=\left(\frac{1}{2}\right)^x</m> are shown in <xref ref="exponential-functions-and-graphs-figure-5">Figure</xref> .  Notice that the curves are mirror images across the <m>y</m>-axis.  It turns out that any function of form <m>y=b^x,\,\,b \gt 1</m> has the same basic graphical properties as <m>y=2^x</m> and any function of form <m>y=b^x,\,\,0 \lt x \lt 0</m> has the same basic graphical properties as <m>y=\left(\frac{1}{2}\right)^x</m>.  These properties are summarized below.
+    </p>
+
+    <figure xml:id="exponential-functions-and-graphs-figure-5">
+      <caption><m>\highlight{y=2^x}\,\,\text{and}\,\,\highlightr{y=\left(\frac{1}{2}\right)^x}</m></caption>
+      <image>
+        <description>
+          A graph of the functions <m>y=2^x</m> and <m>y=(\frac{1}{2})^x</m>.  The curves are mirror images of one another across the <m>y</m>-axis.  The function <m>y=2^x</m> is everywhere increasing and concave up.  The function <m>y=(\frac{1}{2})^x</m> is everywhere decreasing and concave up.  The two curves intersect at the point <m>(0,1)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+              \begin{axis} [xmin=-5,xmax=5,
+                            ymin=-4,ymax=18,
+                            xtick={-4,-2,2,4},
+                            ytick={-2,2,4,6,8,10,12,14,16},
+                            minor xtick={-3,-1,1,3},
+                            minor ytick={}]
+              \addplot[primarycurve,domain=-4.15:4.8,smooth] {0.5^x};
+              \addplot[primarycurve,domain=-4.8:4.15,smooth,color=blue] {2^x};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+
+  <paragraphs>
+    <title>Properties of the function <m>f(x)=b^x,\,\,b \gt 0</m></title>
+
+    <p></p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              The domain is <m>(-\infty,\infty)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              The range is <m>(0,\infty)</m>.
+            </p>
+          </li>
+          <li>
+            <m>f(0)=1</m>
+          </li>
+          <li>
+            <p>
+              As <m>x \rightarrow -\infty</m>, <m>y \rightarrow 0</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              As <m>x \rightarrow \infty</m>, <m>y \rightarrow \infty</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+
+      <figure xml:id="exponential-functions-and-graphs-figure-6">
+      <caption><m>y=b^x,\,\,b \gt 1</m></caption>
+        <image>
+          <description>
+            The graph of a function that is everywhere increasing and concave up.  The curve hugs the <m>x</m>-axis on the left side of the interval and increases rapidly on the right side of the interval.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [xmin=-5,xmax=5,
+                              ymin=-4,ymax=18,
+                              xtick={},
+                              ytick={},
+                              minor xtick={},
+                              minor ytick={}]
+                \addplot[primarycurve,domain=-4.8:4.15,smooth,color=blue] {2^x};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title>Properties of the function <m>f(x)=b^x,\,\,0 \lt b \lt 1</m></title>
+
+    <p></p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              The domain is <m>(-\infty,\infty)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              The range is <m>(0,\infty)</m>.
+            </p>
+          </li>
+          <li>
+            <m>f(0)=1</m>
+          </li>
+          <li>
+            <p>
+              As <m>x \rightarrow -\infty</m>, <m>y \rightarrow \infty</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              As <m>x \rightarrow \infty</m>, <m>y \rightarrow 0</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+
+      <figure xml:id="exponential-functions-and-graphs-figure-7">
+      <caption><m>y=b^x,\,\,0 \lt b \lt 1</m></caption>
+        <image>
+          <description>
+            The graph of a function the is everywhere decreasing and concave up.  The curve is more and more vertical as it moves to the left side of the interval.  The curve hugs the <m>x</m>-axis on the right side of the interval.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [xmin=-5,xmax=5,
+                              ymin=-4,ymax=18,
+                              xtick={},
+                              ytick={},
+                              minor xtick={},
+                              minor ytick={}]
+                \addplot[primarycurve,domain=-4.15:4.8,smooth] {0.5^x};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+  </paragraphs>
+
+  <p>
+    We now turn our attention to graphical transformations as they apply to exponential functions.  While on paper the transformations are the same for exponential functions as they are for any other type of functions, the <em>apparent</em> effect can sometimes be extremely subtle when the transformation is applied to an exponential function.  Let's recall the transformations and see them applied to exponential functions.
+  </p>
+
+  <paragraphs>
+    <title>Transformations of type <m>g(x)=f(x \pm h)</m></title>
+
+    <p></p>
+    <p>
+      Assuming that <m>h</m> is a positive number, the graph of <m>y=f(x-h)</m> shifts every point on <m>y=f(x)</m> rightward by <m>h</m> units while the graph of <m>y=f(x+h)</m> shifts every point on <m>y=f(x)</m> leftward by <m>h</m> units.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        The graphs of <m>y=2^x</m> and <m>y=2^{x-3}</m> are shown in <xref ref="exponential-functions-and-graphs-figure-8">Figure</xref>.  While the rightward shift of the latter function is very apparent for positive values of <m>x</m>, it is not nearly as apparent to the left of <m>-2</m> and it is not at all apparent once you get to the left of <m>-4</m>.
+      </p>
+
+      <figure xml:id="exponential-functions-and-graphs-figure-8">
+      <caption><m>\highlight{y=2^x}\,\,\text{and}\,\,\highlightr{y=2^{x-3}}</m></caption>
+        <image>
+          <description>
+            A graph of the functions <m>y=2^x</m> and <m>y=2^{x-3}</m>.  For both functions the <m>x</m>-axis acts as a horizontal asymptote on the left side of the graph.  Both functions become more and more vertical as they move towards the right side of the graph.  It is apparent only on the right side of the graph that <m>y=2^{x-3}</m> lies three units to the right of <m>y=2^x</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [xmin=-8,xmax=8,
+                              ymin=-4,ymax=18,
+                              xtick={-6,-4,-2,2,4,6},
+                              ytick={-2,2,4,6,8,10,12,14,16},
+                              minor xtick={-7,-5,-3,-1,1,3,5,7},
+                              minor ytick={}]
+                \addplot[primarycurve,domain=-7.8:7.15,smooth] {2^(x-3)};
+                \addplot[primarycurve,domain=-7.8:4.15,smooth,color=blue] {2^x};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+  </paragraphs>
+
+  <paragraphs>
+    <title>Transformations of type <m>g(x)=f(x) \pm k</m></title>
+
+    <p></p>
+    <p>
+      Assuming that <m>k</m> is a positive number, the graph of <m>y=f(x)+k</m> shifts every point on <m>y=f(x)</m> upward by <m>k</m> units while the graph of <m>y=f(x)-k</m> shifts every point on <m>y=f(x)</m> downward by <m>k</m> units.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        The graphs of <m>y=2^x</m> and <m>y=2^x-2</m> are shown in <xref ref="exponential-functions-and-graphs-figure-9">Figure</xref>.  The downward shift of the latter function is very apparent below the <m>x</m>-axis <mdash/> most notably the horizontal asymptote has moved from the line <m>y=0</m> to the line <m>y=-2</m>. You have to be much more deliberate to identify the downward shift above the <m>x</m>-axis, and once you get very far to right of the <m>y</m>-axis the specific amount of downward shift becomes almost impossible to discern.
+      </p>
+
+      <figure xml:id="exponential-functions-and-graphs-figure-9">
+      <caption><m>\highlight{y=2^x}</m>, <m>\highlightr{y=2^x-2}</m> and <m>y=-2</m></caption>
+        <image>
+          <description>
+            A graph of the functions <m>y=2^x</m> and <m>y=2^x-2</m>.  On the left side of the graph <m>x</m>-axis acts as an asymptote for <m>y=2^x</m> while the line <m>y=-2</m> acts as a horizontal asymptote for <m>y=2^x-2</m>.  On the left side of the graph it is apparent that that <m>y=2^x-2</m> lies two units below <m>y=2^x</m>.  This relationship is difficult to see on the right side of the graph as both functions becomig more and more vertical an both leaving the grid just to the right of <m>x=4</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [xmin=-8,xmax=8,
+                              ymin=-4,ymax=18,
+                              xtick={-6,-4,-2,2,4,6},
+                              ytick={-2,2,4,6,8,10,12,14,16},
+                              minor xtick={-7,-5,-3,-1,1,3,5,7},
+                              minor ytick={}]
+                \addplot[primarycurve,domain=-7.8:4.3,smooth] {2^x-2};
+                \addplot[primarycurve,domain=-7.8:4.15,smooth,color=blue] {2^x};
+                \addplot[secondarycurve,domain=-7.9:7.9,smooth,color=gray] {-2};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+  </paragraphs>
+
+  <paragraphs>
+    <title>Transformations of type <m>g(x)=-f(x)</m> or <m>g(x)=f(-x)</m></title>
+
+    <p></p>
+    <p>
+      The graph of <m>y=-f(x)</m> reflects every point on <m>y=f(x)</m> across the <m>x</m>-axis whereas the graph of <m>y=f(-x)</m> reflects every point on <m>y=f(x)</m> across the <m>y</m>-axis.  As seen in <xref ref="exponential-functions-and-graphs-figure-10">Figure</xref> and <xref ref="exponential-functions-and-graphs-figure-11">Figure</xref>, these transformations are just as dramatic for exponential functions as the are for any other function.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <figure xml:id="exponential-functions-and-graphs-figure-10">
+      <caption><m>\highlight{y=2^x}</m> and <m>\highlightr{y=-2^x}</m></caption>
+        <image>
+          <description>
+            A graph of the functions <m>y=2^x</m> and <m>y=2^{-x}</m>.  The curves are mirror images across the <m>x</m>-axis.  The function <m>y=2^x</m> is everywhere increasing and concave up.  The function <m>y=-2^x</m> is everywhere decreasing and concave down.  On the left side of the graph the <m>x</m>-axis acts as a horizontal asymptote for both functions.  Both functions become more and more vertical as the curves move more and more rightwards before leaving the grid a little to the right of <m>x=3</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [axis equal image,
+                              xmin=-10,xmax=10,
+                              ymin=-10,ymax=10,
+                              xtick={-8,-6,-4,-2,2,4,6,8},
+                              ytick={-8,-6,-4,-2,2,4,6,8},
+                              minor xtick={},
+                              minor ytick={}]
+                \addplot[primarycurve,domain=-9.8:3.3,smooth] {-2^x};
+                \addplot[primarycurve,domain=-9.8:3.3,smooth,color=blue] {2^x};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+      <figure xml:id="exponential-functions-and-graphs-figure-11">
+      <caption><m>\highlight{y=2^x}</m> and <m>\highlightr{y=2^{-x}}</m></caption>
+        <image>
+          <description>
+            A graph of the functions <m>y=2^x</m> and <m>y=2^{-x}</m>.  The curves are mirror images of one another across the <m>y</m>-axis.  The function <m>y=2^x</m> is everywhere increasing and concave up.  The function <m>y=2^{-x}</m> is everywhere decreasing and concave up.  The two curves intersect at the point <m>(0,1)</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [axis equal image,
+                              xmin=-10,xmax=10,
+                              ymin=-10,ymax=10,
+                              xtick={-8,-6,-4,-2,2,4,6,8},
+                              ytick={-8,-6,-4,-2,2,4,6,8},
+                              minor xtick={},
+                              minor ytick={}]
+                \addplot[primarycurve,domain=-3.3:9.8,smooth] {2^(-x)};
+                \addplot[primarycurve,domain=-9.8:3.3,smooth,color=blue] {2^x};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <p>
+      When you look at <xref ref="exponential-functions-and-graphs-figure-11">Figure</xref>, you might get a sense that you've seen that graph before.  If so, you are mostly correct.  We saw the same sort of reflection when we graphed <m>y=2^x</m> and <m>\left(\frac{1}{2}\right)</m> on the same set of axes.  How can this be?  Lets see.
+      <md>
+        <mrow>2^{-x}\amp=2^{-1 \cdot x}</mrow>
+        <mrow>\amp=\left(2^{-1}\right)^x</mrow>
+        <mrow>\amp=\left(\frac{1}{2}\right)^x</mrow>
+      </md>.
+      So not only could it be, it had to be.  Exponential functions are funny this way, and things will get even stranger when we explore the next type of transformation.
+    </p>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title>Transformations of type <m>g(x)=a \cdot f(x), a \gt 0</m></title>
+
+    <p></p>
+    <p>
+      The graph of <m>y=a \cdot f(x), a \gt 0</m> moves the <m>y</m>-coordinate of every point on <m>f</m> by the factor of <m>a</m>.  When <m>a \gt 1</m>, the transformation is called a vertical stretch.  When <m>0 \lt a \lt 1</m>, the transformation is called a vertical compression.
+    </p>
+
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        The graphs of <m>y=2^x</m> and <m>y=4 \cdot 2^x</m> are shown in <xref ref="exponential-functions-and-graphs-figure-12">Figure</xref>.  Three vertical shifts by a factor of 4 on the graph.
+        <me>(0,1) \rightarrow (0,4)</me>
+        <me>(1,2) \rightarrow (1,8)</me>
+        <me>(2,4) \rightarrow (2,16)</me>
+      </p>
+
+      <figure xml:id="exponential-functions-and-graphs-figure-12">
+      <caption><m>\highlight{y=2^x}</m> and <m>\highlightr{y=4 \cdot 2^x}</m></caption>
+        <image>
+          <description>
+            A graph of the functions <m>y=2^x</m> and <m>y=4 \cdot 2^x</m>.  There are three arrows point upward from the function <m>y=2^x</m> to the function <m>4 \cdot 2^x</m>.  The leftmost arrow points from the point <m>(0,1)</m> to the point <m>(0,4)</m>.  The middle arrow points from the point <m>(1,2)</m> to the point <m>(1,8)</m>.  The rightmost arrow points from the point <m>(2,4)</m> to the point <m>(2,16)</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [xmin=-8,xmax=8,
+                              ymin=-4,ymax=18,
+                              xtick={-6,-4,-2,2,4,6},
+                              ytick={-2,2,4,6,8,10,12,14,16},
+                              minor xtick={-7,-5,-3,-1,1,3,5,7},
+                              minor ytick={}]
+                \addplot[primarycurve,domain=-7.8:2.15,smooth] {4*2^x};
+                \addplot[primarycurve,domain=-7.8:4.15,smooth,color=blue] {2^x};
+                \addplot[interval,black,ultra thick,-{Stealth}] coordinates {(0,1) (0,4)};
+                \addplot[interval,black,ultra thick,-{Stealth}] coordinates {(1,2) (1,8)};
+                \addplot[interval,black,ultra thick,-{Stealth}] coordinates {(2,4) (2,16)};
+                \addplot[soliddot,color=brown] coordinates {(0,1)};
+                \addplot[soliddot,color=brown] coordinates {(0,4)};
+                \addplot[soliddot,color=green] coordinates {(1,2)};
+                \addplot[soliddot,color=green] coordinates {(1,8)};
+                \addplot[soliddot,color=gray] coordinates {(2,4)};
+                \addplot[soliddot,color=gray] coordinates {(2,16)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        The graphs of <m>y=2^x</m> and <m>y=4 \cdot 2^x</m> are also shown in <xref ref="exponential-functions-and-graphs-figure-13">Figure</xref>.  Three <em>horizontal shifts</em> have been highlighted.
+        <me>(4,16) \rightarrow (2,16)</me>
+        <me>(3,8) \rightarrow (1,8)</me>
+        <me>(2,4) \rightarrow (0,4)</me>
+      </p>
+
+      <figure xml:id="exponential-functions-and-graphs-figure-13">
+      <caption><m>\highlight{y=2^x}</m> and <m>\highlightr{y=4 \cdot 2^x}</m></caption>
+        <image>
+          <description>
+            A graph of the functions <m>y=2^x</m> and <m>y=4 \cdot 2^x</m>.  There are three arrows point leftward from the function <m>y=2^x</m> to the function <m>4 \cdot 2^x</m>.  The bottom arrow points from the point <m>(2,4)</m> to the point <m>(0,4)</m>.  The middle arrow points from the point <m>(3,8)</m> to the point <m>(1,8)</m>.  The top arrow points from the point <m>(4,16)</m> to the point <m>(2,16)</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [xmin=-8,xmax=8,
+                              ymin=-4,ymax=18,
+                              xtick={-6,-4,-2,2,4,6},
+                              ytick={-2,2,4,6,8,10,12,14,16},
+                              minor xtick={-7,-5,-3,-1,1,3,5,7},
+                              minor ytick={}]
+                \addplot[primarycurve,domain=-7.8:2.15,smooth] {4*2^x};
+                \addplot[primarycurve,domain=-7.8:4.15,smooth,color=blue] {2^x};
+                \addplot[interval,black,ultra thick,-{Stealth}] coordinates {(4,16) (2,16)};
+                \addplot[interval,black,ultra thick,-{Stealth}] coordinates {(3,8) (1,8)};
+                \addplot[interval,black,ultra thick,-{Stealth}] coordinates {(2,4) (0,4)};
+                \addplot[soliddot,color=brown] coordinates {(4,16)};
+                \addplot[soliddot,color=brown] coordinates {(2,16)};
+                \addplot[soliddot,color=green] coordinates {(3,8)};
+                \addplot[soliddot,color=green] coordinates {(1,8)};
+                \addplot[soliddot,color=gray] coordinates {(2,4)};
+                \addplot[soliddot,color=gray] coordinates {(0,4)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+
+    <p>
+      So, apparently, a vertical stretch is also a horizontal shift.  In this specific case, the vertical stretch of <m>y=2^x</m> by a factor of 4 of the function <m>y=2^x</m> is equivalent to a leftward shift of 2 units for the same function.  What's the mathematics behind this?
+      <md>
+        <mrow>4 \cdot 2^x\amp=2^2 \cdot 2^x</mrow>
+        <mrow>\amp=2^{x+2}</mrow>
+      </md>
+      In a similar vein, <m>y=\frac{1}{8} \cdot 2^x</m> affects upon <m>y=2^x</m>  a vertical compression by a factor of <m>\frac{1}{8}</m> which in turn is also a rightward shift of 3 units.  This is established below.
+      <md>
+        <mrow>\frac{1}{8} \cdot 2^x\amp=2^{-3} \cdot 2^x</mrow>
+        <mrow>\amp=2^{x-3}</mrow>
+      </md>
+    </p>
+      
+
+      <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        Let's consider <m>y=7 \cdot 2^x</m>.  It is not "obvious" what power of 2 results in 7, but it turns out that the appropriate power is approximately 2.807.  The functions <m>y=2^x</m> and <m>y=7 \cdot 2^x</m> are both shown in <xref ref="exponential-functions-and-graphs-figure-14">Figure</xref>.  Three pairs of points have been highlighted to show the attendant leftward shift of a little less than 3 units.
+        <md>
+          <mrow>7 \cdot 2^x \amp\approx 2^{2.807} \cdot 2^x</mrow>
+          <mrow>\amp=2^{x+2.807}</mrow>
+        </md>
+      </p>
+
+      <figure xml:id="exponential-functions-and-graphs-figure-14">
+      <caption><m>\highlight{y=2^x}</m> and <m>\highlightr{y=7 \cdot 2^x}</m></caption>
+        <image>
+          <description>
+            A graph of the functions <m>y=2^x</m> and <m>y=7 \cdot 2^x</m>.  There are three arrows a tiny bit longer than 2.8 units pointing leftward from the function <m>y=2^x</m> to the function <m>y=7 \cdot 2^x</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [xmin=-8,xmax=8,
+                              ymin=-4,ymax=18,
+                              xtick={-6,-4,-2,2,4,6},
+                              ytick={-2,2,4,6,8,10,12,14,16},
+                              minor xtick={-7,-5,-3,-1,1,3,5,7},
+                              minor ytick={}]
+                \addplot[primarycurve,domain=-7.8:1.36,smooth] {7*2^x};
+                \addplot[primarycurve,domain=-7.8:4.15,smooth,color=blue] {2^x};
+                \addplot[interval,black,ultra thick,-{Stealth}] coordinates {(4,16) (1.193,16)};
+                \addplot[interval,black,ultra thick,-{Stealth}] coordinates {(3,8) (.193,8)};
+                \addplot[interval,black,ultra thick,-{Stealth}] coordinates {(2,4) (0-.807,4)};
+                \addplot[soliddot,color=brown] coordinates {(4,16)};
+                \addplot[soliddot,color=brown] coordinates {(1.193,16)};
+                \addplot[soliddot,color=green] coordinates {(3,8)};
+                \addplot[soliddot,color=green] coordinates {(.193,8)};
+                \addplot[soliddot,color=gray] coordinates {(2,4)};
+                \addplot[soliddot,color=gray] coordinates {(-.807,4)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <p>
+      As a side note, a process used to determine the power of 2 that results in 7 is discussed in the section about applying the properties of logarithms.
+    </p>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title>Transformations of type <m>g(x)=f(ax), a \gt 0</m></title>
+
+    <p></p>
+    <p>
+      The graph of <m>y=f(ax), a \gt 0</m> moves the <m>x</m>-coordinate of every point on <m>f</m> by the factor of <m>\frac{1}{a}</m>.  When <m>a \gt 1</m> the result is a horizontal compression.  When <m>0 \lt a \lt 1</m>, the result is a horizontal stretch. When algebraically simplified, these type of transformations always result in an exponential function with a different base. For example, consider <m>f(x)=2^x</m> and <m>g(x)=f(3x)</m>.
+      <md>
+        <mrow>g(3x)\amp=2^{3x}</mrow>
+        <mrow>\amp=\left(2^3\right)^x</mrow>
+        <mrow>\amp=8^x</mrow>
+      </md>
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        Graphs of <m>y=2^x</m> and <m>y=8^x</m> are shown in <xref ref="exponential-functions-and-graphs-figure-15">Figure</xref>.  Three pairs of points have been highlight to demonstrate that <m>y=8^x</m> is indeed a horizontal compression of the function <m>y=2^x</m> by a factor of <m>\frac{1}{3}</m> .
+        <me>(12,4096) \rightarrow (4,4096)</me>
+        <me>(9,512) \rightarrow (3,512)</me>
+        <me>(6,64) \rightarrow (2,64)</me>
+      </p>
+
+      <figure xml:id="exponential-functions-and-graphs-figure-15">
+      <caption><m>\highlight{y=2^x}</m> and <m>\highlightr{y=8^x}</m></caption>
+        <image>
+          <description>
+            A graph of the functions <m>y=2^x</m> and <m>y=8^x</m>.  There are three leftward pointing arrows from the function <m>y=2^x</m> to the function <m>y=8^x</m>.  The bottom arrow points from the point <m>(6,64)</m>to the point <m>(2,64)</m>.  The middle arrow points from the point <m>(9,512)</m>to the point <m>(3,512)</m>. The top arrow points from the point <m>(12,4096)</m>to the point <m>(4,4096)</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [xmin=-6,xmax=14,
+                              ymin=-500,ymax=5000,
+                              xtick={-4,-2,2,4,6,8,10,12},
+                              ytick={1000,2000,3000,4000},
+                              minor xtick={-5,-3,-1,1,3,5,7,9,11,13},
+                              minor ytick={500,1500,2500,3500,4500}]
+                \addplot[primarycurve,domain=-5.8:4.085,smooth] {8^x};
+                \addplot[primarycurve,domain=-5.8:12.27,smooth,color=blue] {2^x};
+                \addplot[interval,black,ultra thick,-{Stealth}] coordinates {(12,4096) (4,4096)};
+                \addplot[interval,black,ultra thick,-{Stealth}] coordinates {(9,512) (3,512)};
+                \addplot[interval,black,ultra thick,-{Stealth}] coordinates {(6,64) (2,64)};
+                \addplot[soliddot,color=brown] coordinates {(12,4096)};
+                \addplot[soliddot,color=brown] coordinates {(4,4096)};
+                \addplot[soliddot,color=green] coordinates {(9,512)};
+                \addplot[soliddot,color=green] coordinates {(3,512)};
+                \addplot[soliddot,color=gray] coordinates {(6,64)};
+                \addplot[soliddot,color=gray] coordinates {(2,64)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+
+  </paragraphs>
+
+      
+      
+</section>

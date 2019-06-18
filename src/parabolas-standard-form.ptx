@@ -10,591 +10,682 @@
 <!-- ********************************************************************* -->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="parabolas-standard-form">
-    <title>Standard Form</title>
-          <sidebyside widths="47% 47%" margins="0%">
-            <p>
-              The curve produced by an equation of form <me>y=ax^2+bx+c, a \ne 0</me>is called an parabola.  An example of a parabola is shown in 
-              <xref ref="parabolas-standard-form-figure-1-examples">Figure</xref>. The point at the bottom of the parabola, <m>(2,-3)</m>, is called the vertex of the parabola.  Because the curve could hold water, we refer to it a concave up.
-            </p>
-            <figure xml:id="parabolas-standard-form-figure-1-examples">
-                  <caption><m>y=x^2-4x+1</m></caption>
-                    <image>
-                      <description>plain text</description>
-                        <latex-image>
-                          <![CDATA[
-                          \begin{tikzpicture}
-                            \begin{axis}
-                              \addplot[primarycurve,domain=-1.14:5.14] {(x-2)^2-3};                              
-                              \addplot[soliddot] coordinates {(2,-3)} node[below] {(2,-3)};  
-                            \end{axis}
-                          \end{tikzpicture}
-                          ]]>
-                        </latex-image>
-                    </image>
-          </figure>
-          </sidebyside>
-          <sidebyside widths="47% 47%" margins="0%">
-            <p>
-              Another parabola is shown in <xref ref="parabolas-standard-form-figure-2-examples">Figure</xref>. This time, the point at the top of the parabola, <m>(-2,4)</m>, is the vertex of the parabola.  Because the curve could not hold water, we refer to it a concave down.
-            </p>
-            <figure xml:id="parabolas-standard-form-figure-2-examples">
-                  <caption><m>y=-\frac{1}{2}x^2-2x+2</m></caption>
-                    <image>
-                      <description>plain text</description>
-                        <latex-image>
-                          <![CDATA[
-                          \begin{tikzpicture}
-                            \begin{axis}
-                              \addplot[primarycurve,domain=-6.67:2.67] {-0.5*(x+2)^2+4};                              
-                              \addplot[soliddot] coordinates {(-2,4)} node[above] {(-2,4)};  
-                            \end{axis}
-                          \end{tikzpicture}
-                          ]]>
-                        </latex-image>
-                    </image>
-          </figure>
-          </sidebyside>
-          <p>
-            When <m>a \gt 0</m>, the bottom most point on the parabola is the vertex and the parabola is concave up.
-          </p>
-          <p>
-            When <m>a \lt 0</m>, the top most point on the parabola is the vertex and the parabola is concave down.
-          </p>
-          <p>
-            Regardless of the value of <m>a</m>, the <m>x</m>-coordinate of the vertex can be found using the formula 
-            <me>x=-\frac{b}{2a}</me>.  The <m>y</m>-coordinate of the vertex is then found by substituting the <m>x</m>-coordinate for <m>x</m> in the equation <m>y=ax^2+bx+c</m>.
-          </p>
-          <P>Example</P>
-          <p>
-            Determine the concavity and vertex of the parabola with equation <me>y=-x^2+10x+3</me>.
-            We can see that <m>a=-1</m> and <m>b=10</m>, so let's go ahead and calculate the <m>x</m>-coordinate of the vertex.
-            <md>
-              <mrow>x\amp=-\frac{b}{2a}</mrow>
-              <mrow>\amp=-\frac{\highlight{10}}{2 \cdot \highlight{-1}}</mrow>
-              <mrow>\amp=5</mrow>
-            </md>
-            Let's substitute <m>5</m> for <m>x</m> in the given equation to determine the <m>y</m>-coordinate of the vertex.
-            <md>
-              <mrow>y\amp=-(\highlight{5})^2+10(\highlight{5})+3</mrow>
-              <mrow>\amp=-25+50+3</mrow>
-              <mrow>\amp=28</mrow>
-            </md>
-            So the vertex of the parabola is <m>(5,28)</m>.  Also, because the value of <m>a</m> is negative, we know that the parabola is concave down.
-          </p>
-           <sidebyside widths="47% 47%" margins="0%">
-            <p>
-              The vertical line with equation <m>x=1</m> is called the axis of symmetry for the parabola shown in   
-              <xref ref="parabolas-standard-form-figure-3-examples">Figure</xref>. If we had a paper version off the graph and folded that graph across the axis of symmetry, the two halves of the parabola relative to the axis of symmetry would lie directly atop one another.  Also, note that as you move away from the axis of symmetry that every pair of points that lie equidistant to the left and right of the axis of symmetry have equal <m>y</m>-coordinates.
-            </p>
-            <figure xml:id="parabolas-standard-form-figure-3-examples">
-                  <caption><m>y=\frac{1}{2}x^2-x-\frac{9}{2}</m></caption>
-                    <image>
-                      <description>plain text</description>
-                        <latex-image>
-                          <![CDATA[
-                          \begin{tikzpicture}
-                            \begin{axis}
-                              \addplot[primarycurve,domain=-3.87:5.87] {.5*(x-1)^2-5};                              
-                              \addplot[soliddot] coordinates {(1,-5)} node[below right] {(1,-5)};                              
-                              \addplot[soliddot,blue] coordinates {(-1,-3)} node[below left] {(-1,-3)};                              
-                              \addplot[soliddot,blue] coordinates {(3,-3)} node[below right] {(3,-3)};                              
-                              \addplot[soliddot,brown] coordinates {(-3,3)} node[above left] {(-3,3)};                              
-                              \addplot[soliddot,brown] coordinates {(5,3)} node[above left] {(5,3)};  
-                              \addplot[primarycurve,domain=-0.98:2.98,color=blue] {-3};
-                              \addplot[primarycurve,domain=-2.98:4.98,color=brown] {3};
-                              \addplot[interval,ultra thick,{Stealth}-{Stealth}] coordinates {(1,-6.8) (1,6.8)};
-                            \end{axis}
-                          \end{tikzpicture}
-                          ]]>
-                        </latex-image>
-                    </image>
-          </figure>
-        </sidebyside>
-          <p>
-            In general, the axis of symmetry for a parabola with equation of form <m>y=ax^2+bx+c</m> is the vertical line with equation 
-            <me>x=-\frac{b}{2a}</me>.
-            Note that this corresponds to the <m>x</m>-coordinate of the vertex of the parabola.
-          </p>
-          <p>
-            When filling out a table of values for a parabola, we can use the axis of symmetry to our advantage.  Once we determine the vertex and calculate a few points to the right of the vertex, we can use symmetry to infer a few points to the left of the vertex.
-          </p>
-          <p>
-            Consider the parabola with equation <me>y=-x^2-6x-5</me>.  The <m>x</m>-coordinate of the vertex  is calculated thus.
-            <md>
-              <mrow>x\amp=-\frac{b}{2a}</mrow>
-              <mrow>\amp=-\frac{-6}{2 \cdot -1}</mrow>
-              <mrow>\amp=-3</mrow>
-            </md>
-            Note that this implies that the axis of symmetry is the vertical line with equation <m>x=-3</m>.
-          </p>       
-          <sidebyside widths="67% 27%" margins="0%">
-          <p>
-            The vertex and three points to the right of the vertex were computed and written into <xref ref="parabolas-standard-form-table-1-examples">Table</xref>.
-          </p>
+  <title>Standard Form</title>
+  <sidebyside widths="47% 47%" margins="0%">
+    <p>
+      The curve produced by an equation of form <me>y=ax^2+bx+c, a \ne 0</me>is called an parabola.  An example of a parabola is shown in 
+      <xref ref="parabolas-standard-form-figure-1">Figure</xref>. The point at the bottom of the parabola, <m>(2,-3)</m>, is called the vertex of the parabola.  Because the curve could hold water, we refer to it a concave up.
+    </p>
+    <figure xml:id="parabolas-standard-form-figure-1">
+      <caption><m>y=x^2-4x+1</m></caption>
+      <image>
+        <description>
+          The graph of the parabola with equation <m>y=x^2-4x+1</m>.  The general appearance is that of a narrow smiley face - this shape is referred to as concave up.  The lowest point on the curve, called the vertex, is <m>(2,-3)</m>.  The curve is symmetric across the vertical line <m>x=2</m>.  This symmetry is illustrate by the fact that the curve passes through the following pairs of point: <m>(1,-2)</m> and <m>(3,-2)</m>, <m>(0,1)</m> and <m>(4,1)</m>, <m>(-1,6)</m> and <m>(5,6)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}
+              \addplot[primarycurve,domain=-1.14:5.14] {(x-2)^2-3};                              
+              \addplot[soliddot] coordinates {(2,-3)} node[below] {(2,-3)};  
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+  </sidebyside>
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <p>
+      Another parabola is shown in <xref ref="parabolas-standard-form-figure-2">Figure</xref>. This time, the point at the top of the parabola, <m>(-2,4)</m>, is the vertex of the parabola.  Because the curve could not hold water, we refer to it a concave down.
+    </p>
+
+    <figure xml:id="parabolas-standard-form-figure-2">
+      <caption><m>y=-\frac{1}{2}x^2-2x+2</m></caption>
+      <image>
+        <description>
+          The graph of the parabola with equation <m>y=-\frac{1}{2}x^2-2x+2</m>.  The general is that of a narrow frowny face - this shape is referred to as concave down.  The topmost point on the curve, called the vertex, is <m>(-2,4)</m>.  The curve is symmetric across the vertical line <m>x=-2</m>.  This symmetry is illustrated by the fact that the curve passes through the following pairs of points: <m>(-4,2)</m> and <m>(0,2)</m>, <m>(-6,-4)</m> and <m>(2,-4)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}
+              \addplot[primarycurve,domain=-6.67:2.67] {-0.5*(x+2)^2+4};                              
+              \addplot[soliddot] coordinates {(-2,4)} node[above] {(-2,4)};  
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+  </sidebyside>
+  <p>
+    When <m>a \gt 0</m>, the bottom most point on the parabola is the vertex and the parabola is concave up.
+  </p>
+  <p>
+    When <m>a \lt 0</m>, the top most point on the parabola is the vertex and the parabola is concave down.
+  </p>
+  <p>
+    Regardless of the value of <m>a</m>, the <m>x</m>-coordinate of the vertex can be found using the formula 
+    <me>x=-\frac{b}{2a}</me>.  The <m>y</m>-coordinate of the vertex is then found by substituting the <m>x</m>-coordinate for <m>x</m> in the equation <m>y=ax^2+bx+c</m>.
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Determine the concavity and vertex of the parabola with equation <me>y=-x^2+10x+3</me>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We can see that <m>a=-1</m> and <m>b=10</m>, so let's go ahead and calculate the <m>x</m>-coordinate of the vertex.
+        <md>
+          <mrow>x\amp=-\frac{b}{2a}</mrow>
+          <mrow>\amp=-\frac{\highlight{10}}{2 \cdot \highlight{-1}}</mrow>
+          <mrow>\amp=5</mrow>
+        </md>
+        Let's substitute <m>5</m> for <m>x</m> in the given equation to determine the <m>y</m>-coordinate of the vertex.
+        <md>
+          <mrow>y\amp=-(\highlight{5})^2+10(\highlight{5})+3</mrow>
+          <mrow>\amp=-25+50+3</mrow>
+          <mrow>\amp=28</mrow>
+        </md>
+        So the vertex of the parabola is <m>(5,28)</m>.  Also, because the value of <m>a</m> is negative, we know that the parabola is concave down.
+      </p>
+    </solution>
+  </example>
+
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <p>
+      The vertical line with equation <m>x=1</m> is called the axis of symmetry for the parabola shown in   
+      <xref ref="parabolas-standard-form-figure-3">Figure</xref>. If we had a paper version off the graph and folded that graph across the axis of symmetry, the two halves of the parabola relative to the axis of symmetry would lie directly atop one another.  Also, note that as you move away from the axis of symmetry that every pair of points that lie equidistant to the left and right of the axis of symmetry have equal <m>y</m>-coordinates.
+    </p>
+
+    <figure xml:id="parabolas-standard-form-figure-3">
+      <caption><m>y=\frac{1}{2}x^2-x-\frac{9}{2}</m></caption>
+      <image>
+        <description>
+          A graph of the parabola whose equation is <m>y=\frac{1}{2}x^2-x-\frac{9}{2}</m>.  The vertex(lowest point) is <m>(1,-5)</m>.  The axis of symmetry, the vertical line <m>x=1</m> is also graphed.  In order to illustrate the symmetry, there are horizontal line segments drawn between two pairs of points on the parabola to illustrate that the are equidistant from the axis of symmetry and have equal <m>y</m>-coordinates.  One of the indicate pair of points is <m>(-1,-3)</m> and <m>(3,-3)</m>, each of which is two units from the axis of symmetry.  The other pair of points is <m>(-3,3)</m> and <m>(5,-3)</m>, each of which is four units from the axis of symmetry.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}
+              \addplot[primarycurve,domain=-3.87:5.87] {.5*(x-1)^2-5};                              
+              \addplot[soliddot] coordinates {(1,-5)} node[below right] {(1,-5)};                              
+              \addplot[soliddot,blue] coordinates {(-1,-3)} node[below left] {(-1,-3)};                              
+              \addplot[soliddot,blue] coordinates {(3,-3)} node[below right] {(3,-3)};                              
+              \addplot[soliddot,brown] coordinates {(-3,3)} node[above left] {(-3,3)};                              
+              \addplot[soliddot,brown] coordinates {(5,3)} node[above left] {(5,3)};  
+              \addplot[primarycurve,domain=-0.98:2.98,color=blue] {-3};
+              \addplot[primarycurve,domain=-2.98:4.98,color=brown] {3};
+              \addplot[interval,ultra thick,{Stealth}-{Stealth}] coordinates {(1,-6.8) (1,6.8)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+  </sidebyside>
+  <p>
+    In general, the axis of symmetry for a parabola with equation of form <m>y=ax^2+bx+c</m> is the vertical line with equation 
+    <me>x=-\frac{b}{2a}</me>.
+    Note that this corresponds to the <m>x</m>-coordinate of the vertex of the parabola.
+  </p>
+  <p>
+    When filling out a table of values for a parabola, we can use the axis of symmetry to our advantage.  Once we determine the vertex and calculate a few points to the right of the vertex, we can use symmetry to infer a few points to the left of the vertex.
+  </p>
+  <p>
+    Consider the parabola with equation <me>y=-x^2-6x-5</me>.  The <m>x</m>-coordinate of the vertex  is calculated thus.
+    <md>
+      <mrow>x\amp=-\frac{b}{2a}</mrow>
+      <mrow>\amp=-\frac{-6}{2 \cdot -1}</mrow>
+      <mrow>\amp=-3</mrow>
+    </md>
+    Note that this implies that the axis of symmetry is the vertical line with equation <m>x=-3</m>.
+  </p>       
+  <sidebyside widths="67% 27%" margins="0%">
+
+    <p>
+      The vertex and three points to the right of the vertex were computed and written into <xref ref="parabolas-standard-form-table-1">Table</xref>.
+    </p>
                
-          <table xml:id="parabolas-standard-form-table-1-examples">
-                          <caption>Points from a parabola</caption>
-                            <tabular>
-                              <col halign="center" />
-                              <col halign="center"/>
-                              <row bottom="medium">
-                                <cell>
-                                  <line><m>x</m></line>
-                                </cell>
-                                <cell>
-                                  <line><m>y</m></line>
-                                </cell>
-                              </row>
-                              <row>
-                                <cell><m>-3</m></cell>
-                                <cell><m>4</m></cell>
-                              </row>
-                              <row>
-                                <cell><m>-2</m></cell>
-                                <cell><m>3</m></cell>
-                              </row>
-                              <row>
-                                <cell><m>-1</m></cell>
-                                <cell><m>0</m></cell>
-                              </row>
-                              <row>
-                                <cell><m>0</m></cell>
-                                <cell><m>-5</m></cell>
-                              </row>
-                              
-                            </tabular>
-                          </table>
-          </sidebyside>
+    <table xml:id="parabolas-standard-form-table-1">
+      <caption>Points from a parabola</caption>
+      <tabular>
+        <col halign="center" />
+        <col halign="center"/>
+        <row bottom="medium">
+          <cell>
+            <line><m>x</m></line>
+          </cell>
+          <cell>
+            <line><m>y</m></line>
+          </cell>
+        </row>
+        <row>
+          <cell><m>-3</m></cell>
+          <cell><m>4</m></cell>
+        </row>
+        <row>
+          <cell><m>-2</m></cell>
+          <cell><m>3</m></cell>
+        </row>
+        <row>
+          <cell><m>-1</m></cell>
+          <cell><m>0</m></cell>
+        </row>
+        <row>
+          <cell><m>0</m></cell>
+          <cell><m>-5</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+  </sidebyside>
+  <p>
+    We do not need to compute any points to the left of the vertex.  We can use the symmetry of the parabola across the line <m>x=-3</m> to infer three points to the left of the of the vertex.  These three point have been added to <xref ref="parabolas-standard-form-table-2">Table</xref> and a graph of the parabola is shown in <xref ref="parabolas-standard-form-figure-4">Figure</xref>.
+  </p>
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <table xml:id="parabolas-standard-form-table-2">
+      <caption>Points from a parabola</caption>
+      <tabular>
+        <col halign="center" />
+        <col halign="center"/>
+        <row bottom="medium">
+          <cell>
+            <line><m>x</m></line>
+          </cell>
+          <cell>
+            <line><m>y</m></line>
+          </cell>
+        </row>
+        <row>
+          <cell><m>\highlightg{-6}</m></cell>
+          <cell><m>\highlightg{-5}</m></cell>
+        </row>
+        <row>
+          <cell><m>\highlightr{-5}</m></cell>
+          <cell><m>\highlightr{0}</m></cell>
+        </row>
+        <row>
+          <cell><m>\highlight{-4}</m></cell>
+          <cell><m>\highlight{3}</m></cell>
+        </row>
+        <row>
+          <cell><m>-3</m></cell>
+          <cell><m>4</m></cell>
+        </row>
+        <row>
+          <cell><m>\highlight{-2}</m></cell>
+          <cell><m>\highlight{3}</m></cell>
+        </row>
+        <row>
+          <cell><m>\highlightr{-1}</m></cell>
+          <cell><m>\highlightr{0}</m></cell>
+        </row>
+        <row>
+          <cell><m>\highlightg{0}</m></cell>
+          <cell><m>\highlightg{-5}</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <figure xml:id="parabolas-standard-form-figure-4">
+      <caption><m>y=-x^2-6x-5</m></caption>
+      <image>
+        <description>
+          A graph of the parabola whose equation is <m>y=x^2-6-5</m>.  The parabola is concave down from the vertex <m>(-3,4)</m>.  The parabola is symmetric across the vertical line <m>x=-3</m>.  The symmetry is illustrated by the following pairs of points on the parabola: <m>(-4,3)</m> and <m>(-2,3)</m>, <m>(-5,0)</m> and <m>(-1,0)</m>, <m>(-6,5)</m> and <m>(0,-5)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}
+              \addplot[primarycurve,domain=-6.29:0.296] {-5-6*x-x^2};    
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+  </sidebyside>
+  <p>
+    The <m>y</m>-intercept of a parabola is determined in the same manner as the <m>y</m>-intercept of a line with equation <m>y=mx+b</m>. We replace <m>x</m> with zero and calculate the resultant value of <m>y</m>.
+  </p>
+  <p>
+    The <m>x</m>-intercept(s) of parabola are similarly computed in the same manner as the <m>x</m>-intercept of a line.  We replace <m>y</m> with zero and solve the resultant equation for <m>x</m>.  However, in the case of a parabola the resultant equation will have exactly two, exactly one, or exactly zero real number solutions.  Consequently, a parabola whose equation has form <m>y=ax^2+bx+c</m> can have exactly two, exactly one, or exactly zero <m>x</m>-intercepts.  This is illustrated below.
+  </p>
+  <sidebyside widths="32% 32% 32%" margins="0%">
+    <figure xml:id="parabolas-standard-form-figure-5">
+      <caption>Two <m>x</m>-intercepts</caption>
+      <image>
+        <description>
+          A graph of a parabola that opens concave up from the vertex <m>(-1,-4)</m>.  The parabola intersects the <m>x</m>-axis at the points <m>(-3,0)</m> and <m>(1,0)</m>. 
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}
+              \addplot[primarycurve,domain=-4.29:2.29] {(x+1)^2-4};                             
+              \addplot[soliddot] coordinates {(-3,0)};                               
+              \addplot[soliddot] coordinates {(1,0)};           
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+    <figure xml:id="parabolas-standard-form-figure-6">
+      <caption>One <m>x</m>-intercepts</caption>
+      <image>
+        <description>
+          A  graph of a parabola that opens concave up from the vertex <m>(-1,0)</m>.  The point <m>(-1,0)</m> is the only place the parabola intersects the <m>x</m>-axis.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}
+              \addplot[primarycurve,domain=-3.625:1.625] {(x+1)^2};                            
+              \addplot[soliddot] coordinates {(-1,0)};            
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+    <figure xml:id="parabolas-standard-form-figure-7">
+      <caption>Zero <m>x</m>-intercepts</caption>
+      <image>
+        <description>
+          A graph of a parabola that opens concave up from the vertex <m>(-1,2)</m>.  The parabola does not intersect the <m>x</m>-axis.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}
+              \addplot[primarycurve,domain=-3.216:1.216] {(x+1)^2+2};    
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+  </sidebyside>
+  <p>
+    The properties we've investigated about a parabola with an equation of form <m>y=ax^2+bx+c, a \ne 0</m> are summarized below.
+    <ul>
+      <li>
+        We determine the <m>x</m>-coordinate of the vertex using the equation <m>x=-\frac{b}{2a}</m>.  We then substitute <m>x</m> with that value in the equation <m>y=ax^2+bx+c</m> to determine the <m>y</m>-coordinate of the vertex
+      </li>
+      <li>
+        The axis of symmetry for the parabola is the vertical line with equation <m>x=-\frac{b}{2a}</m>.
+      </li>
+      <li>
+        The parabola is concave up (opens upward) when <m>a \gt 0</m> and the parabola is concave down (opens downward) when <m>a \lt 0</m>.
+      </li>
+      <li>
+        If there are <m>x</m>-intercept(s) on the parabola, the <m>x</m>-coordinates of those (or that) point(s) are the real number solutions to the equation <m>ax^2+bx+c=0</m>.  When that equation has no real number solutions, the parabola has no <m>x</m>-intercepts.
+      </li>
+      <li>
+        The <m>y</m>-coordinate of the <m>y</m>-intercept is determined by replacing <m>x</m> with zero in the equation <m>y=ax^2+bx+c</m>.
+      </li>
+    </ul>
+  </p>
+
+  <example xml:id="parabola-properties">
+    <statement>
+      <p>
+        Determine and state the vertex, axis of symmetry, concavity, and all intercepts of the parabola with the equation <me>y=-2x^2+16x+40</me>.
+      </p>
+    </statement>
+    <solution>
+    <p>
+      We begin by finding the <m>x</m>-coordinate of the vertex.
+      <md>
+        <mrow>x\amp=-\frac{b}{2a}</mrow>
+        <mrow>\amp=-\frac{16}{2 \cdot -2}</mrow>
+        <mrow>\amp=4</mrow>
+      </md>
+      We now substitute <m>4</m> for <m>x</m> in the given equation to determine the <m>y</m>-coordinate of the vertex.
+      <md>
+        <mrow>y\amp=-2(\highlight{4})^2+16(\highlight{4})+40</mrow>
+        <mrow>\amp=-32+64+40</mrow>
+        <mrow>\amp=72</mrow>
+      </md>
+      So the vertex of the parabola is the point <m>(4,72)</m> and the axis of symmetry is <m>x=4</m>.
+    </p>
+    <p>
+      Because the value of <m>a</m>, <m>-2</m>, is negative, we know that the parabola is concave down.
+    </p>
+    <p>
+      To determine the <m>x</m>-coordinate(s) of the <m>x</m>-intercept(s) (if any), we need to determine the real number solutions to the equation <m>-2x^2+16x+40=0</m>.
+      <md>
+        <mrow>-2x^2+16x+40\amp=0</mrow>
+        <mrow>\multiplyleft{-\frac{1}{2}}(-2x^2+16x+40)\amp=\multiplyleft{-\frac{1}{2}}0</mrow>
+        <mrow>x^2-8x-20\amp=0</mrow>
+        <mrow>(x-10)(x+2)\amp=0</mrow>
+      </md>
+      <md>
+        <mrow>x-10\amp=0 \amp\amp\text{ or }\amp x+2\amp=0</mrow>
+        <mrow>x-10\addright{10}\amp=0\addright{10} \amp\amp\text{ or }\amp x+2\subtractright{2}\amp=0\subtractright{2}</mrow>
+        <mrow>x\amp=10 \amp\amp\text{ or }\amp x\amp=-2</mrow>
+      </md>
+      So the <m>x</m>-intercepts on the parabola are <m>(-2,0)</m> and <m>(10,0)</m>.  Note that the axis of symmetry, <m>x=4</m>, is half-way between these two points, which supports that they are correct.
+    </p>
+    <p>
+      To determine the <m>y</m>-intercept of the parabola, we substitute <m>0</m> for <m>x</m> in the given equation.
+      <md>
+        <mrow>y\amp=-2(\highlight{0})^2+16(\highlight{0})+40</mrow>
+        <mrow>\amp=40</mrow>
+      </md>
+      So the <m>y</m>-intercept is the point <m>(0,40)</m>.
+    </p>
+    </solution>
+  </example>
+
+  <example xml:id="parabola-no-x-intercepts">
+    <statement>
+      <p>
+        Determine the <m>x</m>-intercept(s), if any, on the parabola with the equation <me>y=x^2-10x+30</me>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We need to solve the equation <me>x^2-10x+30=0</me>.  Because the left-side of the equation does not factor, we will use the quadratic formula to determine the solution.
+        <md>
+          <mrow>x\amp=\frac{-b \pm\sqrt{b^2-4ac}}{2a}</mrow>
+          <mrow>\amp=\frac{-(-10) \pm\sqrt{(-10)^2-4 \cdot 1 \cdot 30}}{2 \cdot 1}</mrow>
+          <mrow>\amp=\frac{10 \pm \sqrt{100 - 120}}{2}</mrow>
+          <mrow>\amp=\frac{10 \pm \sqrt{-20}}{2}</mrow>
+        </md>
+        Because <m>\sqrt{-20}</m> is not a real number, the equation <m>x^2-10x+30=0</m> has no real number solutions.  Consequently, the parabola with equation <m>y=x^2-10x+30</m> has no <m>x</m>-intercepts.
+      </p>
+    </solution>
+  </example>
+
+  <figure xml:id="parabolas--standard-form-geogebra-1">
+    <caption>Determine the vertex of the parabola that arises from the given equation.  Then drag the vertex of the parabola to the point that matches that vertex. A message will appear when you are correct.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/paraola-vertex-a-1.ggb">
+        setPerspective("G");
+        setGridVisible(1);         
+        setAxisLabels(1,"x","y","z");
+      </slate>
+    </interactive>
+  </figure>
+
+  <figure xml:id="parabolas-standard-form-geogebra-2">
+    <caption>Determine the vertex of the parabola that arises from the given equation.  Then drag the vertex of the parabola to the point that matches that vertex. A message will appear when you are correct. A message will appear when you are correct.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/paraola-vertex-a-2.ggb">
+        setPerspective("G");
+        setGridVisible(1);         
+        setAxisLabels(1,"x","y","z");
+      </slate>
+    </interactive>
+  </figure>
+
+  <figure xml:id="parabolas-standard-form-geogebra-3">
+    <caption>Determine the vertex of the parabola that arises from the given equation.  Then drag the vertex of the parabola to the point that matches that vertex. A message will appear when you are correct.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/paraola-vertex-a-neg.ggb">
+        setPerspective("G");
+        setGridVisible(1);         
+        setAxisLabels(1,"x","y","z");
+      </slate>
+    </interactive>
+  </figure>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          For each equation, determine and state the vertex, axis of symmetry, concavity, and all intercepts of the parabola.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
           <p>
-            We do not need to compute any points to the left of the vertex.  We can use the symmetry of the parabola across the line <m>x=-3</m> to infer three points to the left of the of the vertex.  These three point have been added to <xref ref="parabolas-standard-form-table-2-examples">Table</xref> and a graph of the parabola is shown in <xref ref="parabolas-standard-form-figure-4-examples">Figure</xref>.
+            <m>
+              y=x^2+9x+20
+            </m>
           </p>
-          <sidebyside widths="47% 47%" margins="0%">
-            <table xml:id="parabolas-standard-form-table-2-examples">
-                          <caption>Points from a parabola</caption>
-                            <tabular>
-                              <col halign="center" />
-                              <col halign="center"/>
-                              <row bottom="medium">
-                                <cell>
-                                  <line><m>x</m></line>
-                                </cell>
-                                <cell>
-                                  <line><m>y</m></line>
-                                </cell>
-                              </row>
-                              <row>
-                                <cell><m>\highlightg{-6}</m></cell>
-                                <cell><m>\highlightg{-5}</m></cell>
-                              </row>
-                              <row>
-                                <cell><m>\highlightr{-5}</m></cell>
-                                <cell><m>\highlightr{0}</m></cell>
-                              </row>
-                              <row>
-                                <cell><m>\highlight{-4}</m></cell>
-                                <cell><m>\highlight{3}</m></cell>
-                              </row>
-                              <row>
-                                <cell><m>-3</m></cell>
-                                <cell><m>4</m></cell>
-                              </row>
-                              <row>
-                                <cell><m>\highlight{-2}</m></cell>
-                                <cell><m>\highlight{3}</m></cell>
-                              </row>
-                              <row>
-                                <cell><m>\highlightr{-1}</m></cell>
-                                <cell><m>\highlightr{0}</m></cell>
-                              </row>
-                              <row>
-                                <cell><m>\highlightg{0}</m></cell>
-                                <cell><m>\highlightg{-5}</m></cell>
-                              </row>
-                              
-                            </tabular>
-              </table>
-              <figure xml:id="parabolas-standard-form-figure-4-examples">
-                  <caption><m>y=-x^2-6x-5</m></caption>
-                    <image>
-                      <description>plain text</description>
-                        <latex-image>
-                          <![CDATA[
-                          \begin{tikzpicture}
-                            \begin{axis}
-                              \addplot[primarycurve,domain=-6.29:0.296] {-5-6*x-x^2};    
-                            \end{axis}
-                          \end{tikzpicture}
-                          ]]>
-                        </latex-image>
-                    </image>
-              </figure>
-            </sidebyside>
-            <p>
-              The <m>y</m>-intercept of a parabola is determined in the same manner as the <m>y</m>-intercept of a line with equation <m>y=mx+b</m>. We replace <m>x</m> with zero and calculate the resultant value of <m>y</m>.
-            </p>
-            <p>
-              The <m>x</m>-intercept(s) of parabola are similarly computed in the same manner as the <m>x</m>-intercept of a line.  We replace <m>y</m> with zero and solve the resultant equation for <m>x</m>.  However, in the case of a parabola the resultant equation will have exactly two, exactly one, or exactly zero real number solutions.  Consequently, a parabola whose equation has form <m>y=ax^2+bx+c</m> can have exactly two, exactly one, or exactly zero <m>x</m>-intercepts.  This is illustrated below.
-            </p>
-            <sidebyside widths="32% 32% 32%" margins="0%">
-              <figure xml:id="parabolas-standard-form-figure-5-examples">
-                  <caption>Two <m>x</m>-intercepts</caption>
-                    <image>
-                      <description>plain text</description>
-                        <latex-image>
-                          <![CDATA[
-                          \begin{tikzpicture}
-                            \begin{axis}
-                              \addplot[primarycurve,domain=-4.29:2.29] {(x+1)^2-4};                             
-                              \addplot[soliddot] coordinates {(-3,0)};                               
-                              \addplot[soliddot] coordinates {(1,0)};           
-                            \end{axis}
-                          \end{tikzpicture}
-                          ]]>
-                        </latex-image>
-                    </image>
-                  </figure>
-              <figure xml:id="parabolas-standard-form-figure-6-examples">
-                  <caption>One <m>x</m>-intercepts</caption>
-                    <image>
-                      <description>plain text</description>
-                        <latex-image>
-                          <![CDATA[
-                          \begin{tikzpicture}
-                            \begin{axis}
-                              \addplot[primarycurve,domain=-3.625:1.625] {(x+1)^2};                            
-                              \addplot[soliddot] coordinates {(-1,0)};            
-                            \end{axis}
-                          \end{tikzpicture}
-                          ]]>
-                        </latex-image>
-                    </image>
-                  </figure>
-              <figure xml:id="parabolas-standard-form-figure-7-examples">
-                  <caption>Zero <m>x</m>-intercepts</caption>
-                    <image>
-                      <description>plain text</description>
-                        <latex-image>
-                          <![CDATA[
-                          \begin{tikzpicture}
-                            \begin{axis}
-                              \addplot[primarycurve,domain=-3.216:1.216] {(x+1)^2+2};    
-                            \end{axis}
-                          \end{tikzpicture}
-                          ]]>
-                        </latex-image>
-                    </image>
-              </figure>
-            </sidebyside>
-            <p>
-              The properties we've investigated about a parabola with an equation of form <m>y=ax^2+bx+c, a \ne 0</m> are summarized below.
-              <ul>
-                <li>
-                  We determine the <m>x</m>-coordinate of the vertex using the equation <m>x=-\frac{b}{2a}</m>.  We then substitute <m>x</m> with that value in the equation <m>y=ax^2+bx+c</m> to determine the <m>y</m>-coordinate of the vertex
-                </li>
-                <li>
-                  The axis of symmetry for the parabola is the vertical line with equation <m>x=-\frac{b}{2a}</m>.
-                </li>
-                <li>
-                  The parabola is concave up (opens upward) when <m>a \gt 0</m> and the parabola is concave down (opens downward) when <m>a \lt 0</m>.
-                </li>
-                <li>
-                  If there are <m>x</m>-intercept(s) on the parabola, the <m>x</m>-coordinates of those (or that) point(s) are the real number solutions to the equation <m>ax^2+bx+c=0</m>.  When that equation has no real number solutions, the parabola has no <m>x</m>-intercepts.
-                </li>
-                <li>
-                  The <m>y</m>-coordinate of the <m>y</m>-intercept is determined by replacing <m>x</m> with zero in the equation <m>y=ax^2+bx+c</m>.
-                </li>
-              </ul>
-            </p>
-            <example xml:id="parabola-properties">
-              <statement>
-                <p>
-                  Determine and state the vertex, axis of symmetry, concavity, and all intercepts of the parabola with the equation <me>y=-2x^2+16x+40</me>.
-                </p>
-              </statement>
-              <solution>
-              <p>
-                We begin by finding the <m>x</m>-coordinate of the vertex.
-                <md>
-                  <mrow>x\amp=-\frac{b}{2a}</mrow>
-                  <mrow>\amp=-\frac{16}{2 \cdot -2}</mrow>
-                  <mrow>\amp=4</mrow>
-                </md>
-                We now substitute <m>4</m> for <m>x</m> in the given equation to determine the <m>y</m>-coordinate of the vertex.
-                <md>
-                  <mrow>y\amp=-2(\highlight{4})^2+16(\highlight{4})+40</mrow>
-                  <mrow>\amp=-32+64+40</mrow>
-                  <mrow>\amp=72</mrow>
-                </md>
-                So the vertex of the parabola is the point <m>(4,72)</m> and the axis of symmetry is <m>x=4</m>.
-              </p>
-              <p>
-                Because the value of <m>a</m>, <m>-2</m>, is negative, we know that the parabola is concave down.
-              </p>
-              <p>
-                To determine the <m>x</m>-coordinate(s) of the <m>x</m>-intercept(s) (if any), we need to determine the real number solutions to the equation <m>-2x^2+16x+40=0</m>.
-                <md>
-                  <mrow>-2x^2+16x+40\amp=0</mrow>
-                  <mrow>\multiplyleft{-\frac{1}{2}}(-2x^2+16x+40)\amp=\multiplyleft{-\frac{1}{2}}0</mrow>
-                  <mrow>x^2-8x-20\amp=0</mrow>
-                  <mrow>(x-10)(x+2)\amp=0</mrow>
-                </md>
-                <md>
-                  <mrow>x-10\amp=0 \amp\amp\text{ or }\amp x+2\amp=0</mrow>
-                  <mrow>x-10\addright{10}\amp=0\addright{10} \amp\amp\text{ or }\amp x+2\subtractright{2}\amp=0\subtractright{2}</mrow>
-                  <mrow>x\amp=10 \amp\amp\text{ or }\amp x\amp=-2</mrow>
-                </md>
-                So the <m>x</m>-intercepts on the parabola are <m>(-2,0)</m> and <m>(10,0)</m>.  Note that the axis of symmetry, <m>x=4</m>, is half-way between these two points, which supports that they are correct.
-              </p>
-              <p>
-                To determine the <m>y</m>-intercept of the parabola, we substitute <m>0</m> for <m>x</m> in the given equation.
-                <md>
-                  <mrow>y\amp=-2(\highlight{0})^2+16(\highlight{0})+40</mrow>
-                  <mrow>\amp=40</mrow>
-                </md>
-                So the <m>y</m>-intercept is the point <m>(0,40)</m>.
-              </p>
-              </solution>
-            </example>
-            <example xml:id="parabola-no-x-intercepts">
-              <statement>
-                <p>
-                  Determine the <m>x</m>-intercept(s), if any, on the parabola with the equation <me>y=x^2-10x+30</me>.
-                </p>
-              </statement>
-              <solution>
-                <p>
-                  We need to solve the equation <me>x^2-10x+30=0</me>.  Because the left-side of the equation does not factor, we will use the quadratic formula to determine the solution.
-                  <md>
-                    <mrow>x\amp=\frac{-b \pm\sqrt{b^2-4ac}}{2a}</mrow>
-                    <mrow>\amp=\frac{-(-10) \pm\sqrt{(-10)^2-4 \cdot 1 \cdot 30}}{2 \cdot 1}</mrow>
-                    <mrow>\amp=\frac{10 \pm \sqrt{100 - 120}}{2}</mrow>
-                    <mrow>\amp=\frac{10 \pm \sqrt{-20}}{2}</mrow>
-                  </md>
-                  Because <m>\sqrt{-20}</m> is not a real number, the equation <m>x^2-10x+30=0</m> has no real number solutions.  Consequently, the parabola with equation <m>y=x^2-10x+30</m> has no <m>x</m>-intercepts.
-                </p>
-              </solution>
-            </example>
-
-      <exercises>
-
-        <exercisegroup>
-        <introduction>
+        </statement>
+        <solution>
           <p>
-            For each equation, determine and state the vertex, axis of symmetry, concavity, and all intercepts of the parabola.
+            From the standard form of the equation, <m>y=ax^2+bx+c</m>, we have <m>a=1</m>, <m>b=9</m>, and <m>c=20</m>.  The <m>x</m>-coordinate of the parabola is derived as follows.
+            <md>
+              <mrow>x\amp=-\frac{b}{2a}</mrow>
+              <mrow>\amp=-\frac{9}{2 \cdot 1}</mrow>
+              <mrow>\amp=-\frac{9}{2}</mrow>
+            </md>
+            We use the given equation to derive the <m>y</m>-coordinate of the vertex.
+            <md>
+              <mrow>y\amp=\left(\highlight{-\frac{9}{2}}\right)^2+9\left(\highlight{-\frac{9}{2}}\right)+20</mrow>
+              <mrow>\amp=\frac{81}{4}-\frac{81}{2}+20</mrow>
+              <mrow>\amp=-\frac{1}{4}</mrow>
+            </md>
+            So the vertex of the parabola is <m>\left(-\frac{9}{2},-\frac{1}{4}\right)</m> and the axis of symmetry is the vertical line with equation <m>x=-\frac{9}{2}</m>.
+            Because the value of <m>a</m> is positive, we know that the parabola is concave up.
+            The <m>x</m> intercepts have <m>y</m>-coordinates of zero, so we determine the <m>x</m>-coordinates by solving the equation <m>x^2+9x+20=0</m>.
+            <md>
+              <mrow>x^2+9x+20\amp=0</mrow>
+              <mrow>(x+5)(x+4)\amp=0</mrow>
+            </md>
+            <md>
+              <mrow>x+5\amp=0 \amp\amp\text{ or }\amp x+4\amp=0</mrow>
+              <mrow>x+5\subtractright{5}\amp=0\subtractright{5} \amp\amp\text{ or }\amp x+4\subtractright{4}\amp=0\subtractright{4}</mrow>
+              <mrow>x\amp=-5 \amp\amp\text{ or }\amp x\amp=-4</mrow>
+            </md>
+            So the <m>x</m>-intercepts of the parabola are <m>(-5,0)</m> and <m>(-4,0)</m>.
+            The <m>y</m>-intercept of the parabola is the point on the parabola with an <m>x</m>-coordinate of zero.  That point is <m>(0,20)</m>.
           </p>
-        </introduction>
-        <exercise>
-          <statement>
-            <p><m>y=x^2+9x+20</m></p>
-          </statement>
-          <solution>
-            <p>
-              From the standard form of the equation, <m>y=ax^2+bx+c</m>, we have <m>a=1</m>, <m>b=9</m>, and <m>c=20</m>.  The <m>x</m>-coordinate of the parabola is derived as follows.
-                <md>
-                  <mrow>x\amp=-\frac{b}{2a}</mrow>
-                  <mrow>\amp=-\frac{9}{2 \cdot 1}</mrow>
-                  <mrow>\amp=-\frac{9}{2}</mrow>
-                </md>
-                We use the given equation to derive the <m>y</m>-coordinate of the vertex.
-                <md>
-                  <mrow>y\amp=\left\left(\highlight{-\frac{9}{2}}\right\right)^2+9\left(\highlight{-\frac{9}{2}}\right)+20</mrow>
-                  <mrow>\amp=\frac{81}{4}-\frac{81}{2}+20</mrow>
-                  <mrow>\amp=-\frac{1}{4}</mrow>
-                </md>
-                So the vertex of the parabola is <m>\left(-\frac{9}{2},-\frac{1}{4}\right)</m> and the axis of symmetry is the vertical line with equation <m>x=-\frac{9}{2}</m>.
-                Because the value of <m>a</m> is positive, we know that the parabola is concave up.
-                The <m>x</m> intercepts have <m>y</m>-coordinates of zero, so we determine the <m>x</m>-coordinates by solving the equation <m>x^2+9x+20=0</m>.
-                <md>
-                  <mrow>x^2+9x+20\amp=0</mrow>
-                  <mrow>(x+5)(x+4)\amp=0</mrow>
-                </md>
-                <md>
-                  <mrow>x+5\amp=0 \amp\amp\text{ or }\amp x+4\amp=0</mrow>
-                  <mrow>x+5\subtractright{5}\amp=0\subtractright{5} \amp\amp\text{ or }\amp x+4\subtractright{4}\amp=0\subtractright{4}</mrow>
-                  <mrow>x\amp=-5 \amp\amp\text{ or }\amp x\amp=-4</mrow>
-                </md>
-                So the <m>x</m>-intercepts of the parabola are <m>(-5,0)</m> and <m>(-4,0)</m>.
-                The <m>y</m>-intercept of the parabola is the point on the parabola with an <m>x</m>-coordinate of zero.  That point is <m>(0,20)</m>.
-            </p>
-          </solution>
-        </exercise>
+        </solution>
+      </exercise>
 
-        <exercise>
-          <statement>
-            <p><m>y=4x^2-4x-15</m></p>
-          </statement>
-          <solution>
-            <p>
-                From the standard form of the equation, <m>y=ax^2+bx+c</m>, we have <m>a=4</m>, <m>b=-4</m>, and <m>c=-15</m>.  The <m>x</m>-coordinate of the parabola is derived as follows.
-                <md>
-                  <mrow>x\amp=-\frac{b}{2a}</mrow>
-                  <mrow>\amp=-\frac{-4}{2 \cdot 4}</mrow>
-                  <mrow>\amp=\frac{1}{2}</mrow>
-                </md>
-                We use the given equation to derive the <m>y</m>-coordinate of the vertex.
-                <md>
-                  <mrow>y\amp=4\left(\highlight{\frac{1}{2}}\right)^2-4\left(\highlight{\frac{1}{2}}\right)-15</mrow>  
-                  <mrow>\amp=1-2-15</mrow>
-                  <mrow>\amp=-16</mrow>
-                </md>
-                So the vertex of the parabola is <m>\left(\frac{1}{2},-16\right)</m> and the axis of symmetry is the vertical line with equation <m>x=\frac{1}{2}</m>.
-                Because the value of <m>a</m> is positive, we know that the parabola is concave up.
-                The <m>x</m> intercepts have <m>y</m>-coordinates of zero, so we determine the <m>x</m>-coordinates by solving the equation <m>4x^2-4x-15=0</m>.
-                <md>
-                  <mrow>4x^2-4x-15\amp=0</mrow>
-                  <mrow>4x^2-10x+6x-15\amp=0</mrow>
-                  <mrow>2x\highlight{(2x-5)}+3\highlight{(2x-5)}\amp=0</mrow>
-                  <mrow>(2x+3)\highlight{(2x-5)}\amp=0</mrow>
-                </md>
-                <md>
-                  <mrow>2x+3\amp=0 \amp\amp\text{ or }\amp 2x-5\amp=0</mrow>
-                  <mrow>2x+3\subtractright{3}\amp=0\subtractright{3} \amp\amp\text{ or }\amp 2x-5\addright{5}\amp=0\addright{5}</mrow>
-                  <mrow>2x\amp=-3 \amp\amp\text{ or }\amp 2x\amp=5</mrow>
-                  <mrow>\divideunder{2x}{2}\amp=\divideunder{-3}{2} \amp\amp\text{ or }\amp \divideunder{2x}{2}\amp=\divideunder{5}{2}</mrow>
-                  <mrow>x\amp=-\frac{3}{2} \amp\amp\text{ or }\amp x\amp=\frac{5}{2}</mrow>                  
-                </md>
-                So the <m>x</m>-intercepts of the parabola are <m>\left(-\frac{3}{2},0\right)</m> and <m>\left(\frac{5}{2},0\right)</m>.
-                The <m>y</m>-intercept of the parabola is the point on the parabola with an <m>x</m>-coordinate of zero.  That point is <m>(0,-15)</m>.
-            </p>
-          </solution>
-        </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>
+              y=4x^2-4x-15
+            </m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            From the standard form of the equation, <m>y=ax^2+bx+c</m>, we have <m>a=4</m>, <m>b=-4</m>, and <m>c=-15</m>.  The <m>x</m>-coordinate of the parabola is derived as follows.
+            <md>
+              <mrow>x\amp=-\frac{b}{2a}</mrow>
+              <mrow>\amp=-\frac{-4}{2 \cdot 4}</mrow>
+              <mrow>\amp=\frac{1}{2}</mrow>
+            </md>
+            We use the given equation to derive the <m>y</m>-coordinate of the vertex.
+            <md>
+              <mrow>y\amp=4\left(\highlight{\frac{1}{2}}\right)^2-4\left(\highlight{\frac{1}{2}}\right)-15</mrow>  
+              <mrow>\amp=1-2-15</mrow>
+              <mrow>\amp=-16</mrow>
+            </md>
+              So the vertex of the parabola is <m>\left(\frac{1}{2},-16\right)</m> and the axis of symmetry is the vertical line with equation <m>x=\frac{1}{2}</m>.
+              Because the value of <m>a</m> is positive, we know that the parabola is concave up.
+              The <m>x</m> intercepts have <m>y</m>-coordinates of zero, so we determine the <m>x</m>-coordinates by solving the equation <m>4x^2-4x-15=0</m>.
+            <md>
+              <mrow>4x^2-4x-15\amp=0</mrow>
+              <mrow>4x^2-10x+6x-15\amp=0</mrow>
+              <mrow>2x\highlight{(2x-5)}+3\highlight{(2x-5)}\amp=0</mrow>
+              <mrow>(2x+3)\highlight{(2x-5)}\amp=0</mrow>
+            </md>
+            <md>
+              <mrow>2x+3\amp=0 \amp\amp\text{ or }\amp 2x-5\amp=0</mrow>
+              <mrow>2x+3\subtractright{3}\amp=0\subtractright{3} \amp\amp\text{ or }\amp 2x-5\addright{5}\amp=0\addright{5}</mrow>
+              <mrow>2x\amp=-3 \amp\amp\text{ or }\amp 2x\amp=5</mrow>
+              <mrow>\divideunder{2x}{2}\amp=\divideunder{-3}{2} \amp\amp\text{ or }\amp \divideunder{2x}{2}\amp=\divideunder{5}{2}</mrow>
+              <mrow>x\amp=-\frac{3}{2} \amp\amp\text{ or }\amp x\amp=\frac{5}{2}</mrow>                  
+            </md>
+            So the <m>x</m>-intercepts of the parabola are <m>\left(-\frac{3}{2},0\right)</m> and <m>\left(\frac{5}{2},0\right)</m>.
+            The <m>y</m>-intercept of the parabola is the point on the parabola with an <m>x</m>-coordinate of zero.  That point is <m>(0,-15)</m>.
+          </p>
+        </solution>
+      </exercise>
 
-        <exercise>
-          <statement>
-            <p><m>y=-x^2+3x-10</m></p>
-          </statement>
-          <solution>
-            <p>
-                From the standard form of the equation, <m>y=ax^2+bx+c</m>, we have <m>a=-1</m>, <m>b=3</m>, and <m>c=-10</m>.  The <m>x</m>-coordinate of the parabola is derived as follows.
-                <md>
-                  <mrow>x\amp=-\frac{b}{2a}</mrow>
-                  <mrow>\amp=-\frac{3}{2 \cdot -1}</mrow>
-                  <mrow>\amp=\frac{3}{2}</mrow>
-                </md>
-                We use the given equation to derive the <m>y</m>-coordinate of the vertex.
-                <md>
-                  <mrow>y\amp=-\left(\highlight{\frac{3}{2}}\right)^2+3\left(\highlight{\frac{3}{2}}\right)-10</mrow>
-                  <mrow>\amp=-\frac{9}{4}+\frac{9}{2}-10</mrow>
-                  <mrow>\amp=-\frac{31}{4}</mrow>
-                </md>
-                So the vertex of the parabola is <m>\left(\frac{3}{2},-\frac{31}{4}\right)</m> and the axis of symmetry is the vertical line with equation <m>x=\frac{3}{2}</m>.
-                Because the value of <m>a</m> is negative, we know that the parabola is concave down.  Since the parabola opens down and the vertex is below the <m>x</m>-axis, the parabola cannot possibly have any <m>x</m>-intercepts.  This is verified by the negative value of the discriminant.
-                <md>
-                  <mrow>b^2-4ac\amp=3^2-4 \cdot -1 \cdot -10</mrow>
-                  <mrow>\amp=-31</mrow>
-                </md>
-                The <m>y</m>-intercept of the parabola is the point on the parabola with an <m>x</m>-coordinate of zero.  That point is <m>(0,-10)</m>.
-            </p>
-          </solution>
-        </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>
+              y=-x^2+3x-10
+            </m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            From the standard form of the equation, <m>y=ax^2+bx+c</m>, we have <m>a=-1</m>, <m>b=3</m>, and <m>c=-10</m>.  The <m>x</m>-coordinate of the parabola is derived as follows.
+            <md>
+              <mrow>x\amp=-\frac{b}{2a}</mrow>
+              <mrow>\amp=-\frac{3}{2 \cdot -1}</mrow>
+              <mrow>\amp=\frac{3}{2}</mrow>
+            </md>
+            We use the given equation to derive the <m>y</m>-coordinate of the vertex.
+            <md>
+              <mrow>y\amp=-\left(\highlight{\frac{3}{2}}\right)^2+3\left(\highlight{\frac{3}{2}}\right)-10</mrow>
+              <mrow>\amp=-\frac{9}{4}+\frac{9}{2}-10</mrow>
+              <mrow>\amp=-\frac{31}{4}</mrow>
+            </md>
+            So the vertex of the parabola is <m>\left(\frac{3}{2},-\frac{31}{4}\right)</m> and the axis of symmetry is the vertical line with equation <m>x=\frac{3}{2}</m>.
+            Because the value of <m>a</m> is negative, we know that the parabola is concave down.  Since the parabola opens down and the vertex is below the <m>x</m>-axis, the parabola cannot possibly have any <m>x</m>-intercepts.  This is verified by the negative value of the discriminant.
+            <md>
+              <mrow>b^2-4ac\amp=3^2-4 \cdot -1 \cdot -10</mrow>
+              <mrow>\amp=-31</mrow>
+            </md>
+            The <m>y</m>-intercept of the parabola is the point on the parabola with an <m>x</m>-coordinate of zero.  That point is <m>(0,-10)</m>.
+          </p>
+        </solution>
+      </exercise>
 
-        <exercise>
-          <statement>
-            <p><m>y=2x^2+4x-3</m></p>
-          </statement>
-          <solution>
-            <p>
-                From the standard form of the equation, <m>y=ax^2+bx+c</m>, we have <m>a=2</m>, <m>b=4</m>, and <m>c=-3</m>.  The <m>x</m>-coordinate of the parabola is derived as follows.
-                <md>
-                  <mrow>x\amp=-\frac{b}{2a}</mrow>
-                  <mrow>\amp=-\frac{4}{2 \cdot 2}</mrow>
-                  <mrow>\amp=-1</mrow>
-                </md>
-                We use the given equation to derive the <m>y</m>-coordinate of the vertex.
-                <md>
-                  <mrow>y\amp=2(\highlight{-1})^2+4(\highlight{-1})-3</mrow>
-                  <mrow>\amp=2-4-3</mrow>
-                  <mrow>\amp=-5</mrow>
-                </md>
-                So the vertex of the parabola is <m>(-1,-5)</m> and the axis of symmetry is the vertical line with equation <m>x=1</m>.
-                Because the value of <m>a</m> is positive, we know that the parabola is concave up.
-                The <m>x</m> intercepts have <m>y</m>-coordinates of zero, so we determine the <m>x</m>-coordinates by solving the equation <m>2x^2+4x-3=0</m>.  Because the non-zero side of the equation does not factor, we will use the quadratic formula to determine the solutions.
-                <md>
-                  <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
-                  <mrow>\amp=\frac{-4 \pm \sqrt{4^2-4 \cdot 2 \cdot -3}}{2 \cdot 2}</mrow>
-                  <mrow>\amp=\frac{-4 \pm \sqrt{40}}{4}</mrow>
-                  <mrow>\amp=\frac{-4 \pm \sqrt{4 \cdot 10}}{4}</mrow>
-                  <mrow>\amp=\frac{-4 \pm 2\sqrt{10}}{4}</mrow>
-                  <mrow>\amp=\frac{2(-2 \pm \sqrt{10})}{4}</mrow>
-                  <mrow>\amp=\frac{-2 \pm \sqrt{10}}{2}</mrow>
-                </md>
-                So the <m>x</m>-intercepts of the parabola are <m>\left(\frac{-2-\sqrt{10}}{2},0\right)</m> and <m>\left(\frac{-2+\sqrt{10}}{2},0\right)</m>.
-                The <m>y</m>-intercept of the parabola is the point on the parabola with an <m>x</m>-coordinate of zero.  That point is <m>(0,-3)</m>.
-            </p>
-          </solution>
-        </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>
+              y=2x^2+4x-3
+            </m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            From the standard form of the equation, <m>y=ax^2+bx+c</m>, we have <m>a=2</m>, <m>b=4</m>, and <m>c=-3</m>.  The <m>x</m>-coordinate of the parabola is derived as follows.
+            <md>
+              <mrow>x\amp=-\frac{b}{2a}</mrow>
+              <mrow>\amp=-\frac{4}{2 \cdot 2}</mrow>
+              <mrow>\amp=-1</mrow>
+            </md>
+            We use the given equation to derive the <m>y</m>-coordinate of the vertex.
+            <md>
+              <mrow>y\amp=2(\highlight{-1})^2+4(\highlight{-1})-3</mrow>
+              <mrow>\amp=2-4-3</mrow>
+              <mrow>\amp=-5</mrow>
+            </md>
+            So the vertex of the parabola is <m>(-1,-5)</m> and the axis of symmetry is the vertical line with equation <m>x=1</m>.
+            Because the value of <m>a</m> is positive, we know that the parabola is concave up.
+            The <m>x</m> intercepts have <m>y</m>-coordinates of zero, so we determine the <m>x</m>-coordinates by solving the equation <m>2x^2+4x-3=0</m>.  Because the non-zero side of the equation does not factor, we will use the quadratic formula to determine the solutions.
+            <md>
+              <mrow>x\amp=\frac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+              <mrow>\amp=\frac{-4 \pm \sqrt{4^2-4 \cdot 2 \cdot -3}}{2 \cdot 2}</mrow>
+              <mrow>\amp=\frac{-4 \pm \sqrt{40}}{4}</mrow>
+              <mrow>\amp=\frac{-4 \pm \sqrt{4 \cdot 10}}{4}</mrow>
+              <mrow>\amp=\frac{-4 \pm 2\sqrt{10}}{4}</mrow>
+              <mrow>\amp=\frac{2(-2 \pm \sqrt{10})}{4}</mrow>
+              <mrow>\amp=\frac{-2 \pm \sqrt{10}}{2}</mrow>
+            </md>
+            So the <m>x</m>-intercepts of the parabola are <m>\left(\frac{-2-\sqrt{10}}{2},0\right)</m> and <m>\left(\frac{-2+\sqrt{10}}{2},0\right)</m>.
+            The <m>y</m>-intercept of the parabola is the point on the parabola with an <m>x</m>-coordinate of zero.  That point is <m>(0,-3)</m>.
+          </p>
+        </solution>
+      </exercise>
 
-        <exercise>
-          <statement>
-            <p><m>y=10-x^2</m></p>
-          </statement>
-          <solution>
-            <p>
-                Rewriting the equation in standard form, <m>y=-x^2+10</m>, from the standard form of the equation, <m>y=ax^2+bx+c</m>, we have <m>a=-1</m>, <m>b=0</m>, and <m>c=10</m>.  The <m>x</m>-coordinate of the parabola is derived as follows.
-                <md>
-                  <mrow>x\amp=-\frac{b}{2a}</mrow>
-                  <mrow>\amp=-\frac{0}{2 \cdot -1}</mrow>
-                  <mrow>\amp=0</mrow>
-                </md>
-                We use the given equation to derive the <m>y</m>-coordinate of the vertex.
-                <md>
-                  <mrow>y\amp=10-(\highlight{0})^2</mrow>
-                  <mrow>\amp=10</mrow>
-                </md>
-                So the vertex of the parabola is <m>(0,10)</m> and the axis of symmetry is the vertical line with equation <m>x=0</m> (i.e. the <m>y</m>-axis. Because the value of <m>a</m> is negative, we know that the parabola is concave down.
-                The <m>x</m> intercepts have <m>y</m>-coordinates of zero, so we determine the <m>x</m>-coordinates by solving the equation <m>10-x^2=0</m>.
-                <md>
-                  <mrow>10-x^2\amp=0</mrow>
-                  <mrow>10-x^2\subtractright{10}\amp=0\subtractright{10}</mrow>
-                  <mrow>-x^2\amp=-10</mrow>
-                  <mrow>\multiplyleft{-1}-x^2\amp=\multiplyleft{-1}-10</mrow>
-                  <mrow>x^2\amp=10</mrow>
-                  <mrow>x\amp=\pm\sqrt{10}</mrow>
-                </md>
-                So the <m>x</m>-intercepts of the parabola are <m>(-\sqrt{10},0)</m> and <m>(\sqrt{10},0)</m>.
-                The <m>y</m>-intercept of the parabola is the point on the parabola with an <m>x</m>-coordinate of zero.  That point is <m>(0,10)</m>.
-            </p>
-          </solution>
-        </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>
+              y=10-x^2
+            </m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Rewriting the equation in standard form, <m>y=-x^2+10</m>, from the standard form of the equation, <m>y=ax^2+bx+c</m>, we have <m>a=-1</m>, <m>b=0</m>, and <m>c=10</m>.  The <m>x</m>-coordinate of the parabola is derived as follows.
+            <md>
+              <mrow>x\amp=-\frac{b}{2a}</mrow>
+              <mrow>\amp=-\frac{0}{2 \cdot -1}</mrow>
+              <mrow>\amp=0</mrow>
+            </md>
+            We use the given equation to derive the <m>y</m>-coordinate of the vertex.
+            <md>
+              <mrow>y\amp=10-(\highlight{0})^2</mrow>
+              <mrow>\amp=10</mrow>
+            </md>
+            So the vertex of the parabola is <m>(0,10)</m> and the axis of symmetry is the vertical line with equation <m>x=0</m> (i.e. the <m>y</m>-axis. Because the value of <m>a</m> is negative, we know that the parabola is concave down.
+            The <m>x</m> intercepts have <m>y</m>-coordinates of zero, so we determine the <m>x</m>-coordinates by solving the equation <m>10-x^2=0</m>.
+            <md>
+              <mrow>10-x^2\amp=0</mrow>
+              <mrow>10-x^2\subtractright{10}\amp=0\subtractright{10}</mrow>
+              <mrow>-x^2\amp=-10</mrow>
+              <mrow>\multiplyleft{-1}-x^2\amp=\multiplyleft{-1}-10</mrow>
+              <mrow>x^2\amp=10</mrow>
+              <mrow>x\amp=\pm\sqrt{10}</mrow>
+            </md>
+            So the <m>x</m>-intercepts of the parabola are <m>(-\sqrt{10},0)</m> and <m>(\sqrt{10},0)</m>.
+            The <m>y</m>-intercept of the parabola is the point on the parabola with an <m>x</m>-coordinate of zero.  That point is <m>(0,10)</m>.
+          </p>
+        </solution>
+      </exercise>
 
-        <exercise>
-          <statement>
-            <p><m>y=-3x^2+12x</m></p>
-          </statement>
-          <solution>
-            <p>
-                From the standard form of the equation, <m>y=ax^2+bx+c</m>, we have <m>a=-3</m>, <m>b=12</m>, and <m>c=0</m>.  The <m>x</m>-coordinate of the parabola is derived as follows.
-                <md>
-                  <mrow>x\amp=-\frac{b}{2a}</mrow>
-                  <mrow>\amp=-\frac{12}{2 \cdot -3}</mrow>
-                  <mrow>\amp=2</mrow>
-                </md>
-                We use the given equation to derive the <m>y</m>-coordinate of the vertex.
-                <md>
-                  <mrow>y\amp=-3(\highlight{2})^2+12(\highlight{2)}</mrow>
-                  <mrow>\amp=-12+24</mrow>
-                  <mrow>\amp=12</mrow>
-                </md>
-                So the vertex of the parabola is <m>(2,12)</m> and the axis of symmetry is the vertical line with equation <m>x=2</m>.
-                Because the value of <m>a</m> is negative, we know that the parabola is concave down.
-                The <m>x</m> intercepts have <m>y</m>-coordinates of zero, so we determine the <m>x</m>-coordinates by solving the equation <m>-3x^2+12x=0</m>.
-                <md>
-                  <mrow>-3x^2+12x\amp=0</mrow>
-                  <mrow>-3x(x-4)\amp=0</mrow>
-                </md>
-                <md>
-                  <mrow>x\amp=0 \amp\amp\text{ or }\amp x-4\amp=0</mrow>
-                  <mrow>x\amp=0 \amp\amp\text{ or }\amp x-4\addright{4}\amp=0\addright{4}</mrow>
-                  <mrow>x\amp=0 \amp\amp\text{ or }\amp x\amp=4</mrow>
-                </md>
-                So the <m>x</m>-intercepts of the parabola are <m>(0,0)</m> and <m>(4,0)</m>.
-                The <m>y</m>-intercept of the parabola is the point on the parabola with an <m>x</m>-coordinate of zero.  That point is <m>(0,0)</m>.
-            </p>
-          </solution>
-        </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>
+              y=-3x^2+12x
+            </m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            From the standard form of the equation, <m>y=ax^2+bx+c</m>, we have <m>a=-3</m>, <m>b=12</m>, and <m>c=0</m>.  The <m>x</m>-coordinate of the parabola is derived as follows.
+            <md>
+              <mrow>x\amp=-\frac{b}{2a}</mrow>
+              <mrow>\amp=-\frac{12}{2 \cdot -3}</mrow>
+              <mrow>\amp=2</mrow>
+            </md>
+            We use the given equation to derive the <m>y</m>-coordinate of the vertex.
+            <md>
+              <mrow>y\amp=-3(\highlight{2})^2+12(\highlight{2)}</mrow>
+              <mrow>\amp=-12+24</mrow>
+              <mrow>\amp=12</mrow>
+            </md>
+            So the vertex of the parabola is <m>(2,12)</m> and the axis of symmetry is the vertical line with equation <m>x=2</m>.
+            Because the value of <m>a</m> is negative, we know that the parabola is concave down.
+            The <m>x</m> intercepts have <m>y</m>-coordinates of zero, so we determine the <m>x</m>-coordinates by solving the equation <m>-3x^2+12x=0</m>.
+            <md>
+              <mrow>-3x^2+12x\amp=0</mrow>
+              <mrow>-3x(x-4)\amp=0</mrow>
+            </md>
+            <md>
+              <mrow>x\amp=0 \amp\amp\text{ or }\amp x-4\amp=0</mrow>
+              <mrow>x\amp=0 \amp\amp\text{ or }\amp x-4\addright{4}\amp=0\addright{4}</mrow>
+              <mrow>x\amp=0 \amp\amp\text{ or }\amp x\amp=4</mrow>
+            </md>
+            So the <m>x</m>-intercepts of the parabola are <m>(0,0)</m> and <m>(4,0)</m>.
+            The <m>y</m>-intercept of the parabola is the point on the parabola with an <m>x</m>-coordinate of zero.  That point is <m>(0,0)</m>.
+          </p>
+        </solution>
+      </exercise>
 
-      </exercisegroup>
+    </exercisegroup>
 
-      </exercises>
+  </exercises>
 
-    </section>
+</section>

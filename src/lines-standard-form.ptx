@@ -10,332 +10,380 @@
 <!-- ********************************************************************* -->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="lines-standard-form">
-    <title>Intercepts and the Standard Form of the Equation of a Line</title>
+  <title>Intercepts and the Standard Form of the Equation of a Line</title>
 
-          <p>
-            The standard form of the equation of a line is <m>ax+by=c</m> where <m>a</m>, <m>b</m>, and <m>c</m> represent real numbers.  While either <m>a</m> or <m>b</m> can be zero, they cannot both be zero in the same equation of a line.
-          </p>
-          <p>
-            To determine points on the line, we replace one of the variables in the equation with a number and solve the resultant equation for the other variable.  For example, consider the line with equation <m>3x-4y=24</m>.  If we wanted to determine the point on the line that has an <m>x</m>-coordinate of <m>4</m> we would go through the following process.
-            <md>
-              <mrow>3(4)-4y\amp=24</mrow>
-              <mrow>12-4y\amp=24</mrow>
-              <mrow>12-4y\subtractright{12}\amp=24\subtractright{12}</mrow>
-              <mrow>-4y\amp=12</mrow>
-              <mrow>\divideunder{-4y}{-4}\amp=\divideunder{12}{-4}</mrow>
-              <mrow>y\amp=-3</mrow>
-            </md>
-            We now know that the point is <m>(4,-3)</m>.
-          </p>
-          <p>
-            Similarly, if we wanted to know the point on the line that has a <m>y</m>-coordinate of <m>15</m>, we would do the following.
-            <md>
-              <mrow>3x-4(15)\amp=24</mrow>
-              <mrow>3x-60\amp=24</mrow>
-              <mrow>3x-60\addright{60}\amp=24\addright{60}</mrow>
-              <mrow>3x\amp=84</mrow>
-              <mrow>\divideunder{3x}{3}\amp=\divideunder{84}{3}</mrow>
-              <mrow>x\amp=28</mrow>
-            </md>
-            We can conclude that the point is <m>(28,15)</m>.
-          </p>
-          <p>
-            The point on a line with an <m>x</m>-coordinate of zero (if such a point exists) is called the <m>y</m>-intercept of the line.  Similarly, the point with a <m>y</m>-coordinate of zero is called the <m>x</m>-intercept of the line.
-          </p>
-          <sidebyside widths="47% 47%" margins="0%">
-          <p>
-             For example, the <m>y</m>-intercept of the line shown in <xref ref="lines-standard-form-figure-1">Figure</xref> is <m>(0,-5)</m>; note that this is the point where the line intersects the <m>y</m>-axis. The <m>x</m>-intercept of the same line is <m>(-2,0)</m>, the point where the line intersects the <m>x</m>-axis.
-          </p>
-            <figure xml:id="lines-standard-form-figure-1">
-                  <caption>The <m>x</m> and <m>y</m> intercepts</caption>
-                    <image>
-                      <description>plain text</description>
-                        <latex-image>
-                          <![CDATA[
-                          \begin{tikzpicture}
-                            \begin{axis}
-                              \addplot[primarycurve,domain=-4.7:.7] {-5+(-5/2)*x};
-                              \addplot[soliddot] coordinates {(-2,0)} node[above right] {(-2,0)};
-                              \addplot[soliddot] coordinates {(0,-5)} node[above right] {(0,-5)};
-                            \end{axis}
-                          \end{tikzpicture}
-                          ]]>
-                        </latex-image>
-                    </image>
-          </figure>
-        </sidebyside>
+  <paragraphs>
+    <title>The Standard Form of the Equation of a Line</title>
+    <p></p>
+  <p>
+    The standard form of the equation of a line is <m>ax+by=c</m> where <m>a</m>, <m>b</m>, and <m>c</m> represent real numbers.  While either <m>a</m> or <m>b</m> can be zero, they cannot both be zero in the same equation of a line.
+  </p>
+  <p>
+    To determine points on the line, we replace one of the variables in the equation with a number and solve the resultant equation for the other variable.  For example, consider the line with equation <m>3x-4y=24</m>.  If we wanted to determine the point on the line that has an <m>x</m>-coordinate of <m>4</m> we would go through the following process.
+    <md>
+      <mrow>3(4)-4y\amp=24</mrow>
+      <mrow>12-4y\amp=24</mrow>
+      <mrow>12-4y\subtractright{12}\amp=24\subtractright{12}</mrow>
+      <mrow>-4y\amp=12</mrow>
+      <mrow>\divideunder{-4y}{-4}\amp=\divideunder{12}{-4}</mrow>
+      <mrow>y\amp=-3</mrow>
+    </md>
+    We now know that the point is <m>(4,-3)</m>.
+  </p>
+  <p>
+    Similarly, if we wanted to know the point on the line that has a <m>y</m>-coordinate of <m>15</m>, we would do the following.
+    <md>
+      <mrow>3x-4(15)\amp=24</mrow>
+      <mrow>3x-60\amp=24</mrow>
+      <mrow>3x-60\addright{60}\amp=24\addright{60}</mrow>
+      <mrow>3x\amp=84</mrow>
+      <mrow>\divideunder{3x}{3}\amp=\divideunder{84}{3}</mrow>
+      <mrow>x\amp=28</mrow>
+    </md>
+    We can conclude that the point is <m>(28,15)</m>.
+  </p>
+  </paragraphs>
+  <paragraphs>
+    <title><m>x</m>-intercepts and <m>y</m>-intercepts</title>
+    <p></p>
+  <p>
+    The point on a line with an <m>x</m>-coordinate of zero (if such a point exists) is called the <m>y</m>-intercept of the line.  Similarly, the point with a <m>y</m>-coordinate of zero is called the <m>x</m>-intercept of the line.
+  </p>
+  <sidebyside widths="47% 47%" margins="0%">
 
-        <example xml:id="lines-standard-form-ex-1">
-          <statement>
+    <p>
+      For example, the <m>y</m>-intercept of the line shown in <xref ref="lines-standard-form-figure-1">Figure</xref> is <m>(0,-5)</m>; note that this is the point where the line intersects the <m>y</m>-axis. The <m>x</m>-intercept of the same line is <m>(-2,0)</m>, the point where the line intersects the <m>x</m>-axis.
+    </p>
+
+    <figure xml:id="lines-standard-form-figure-1">
+      <caption>The <m>x</m> and <m>y</m> intercepts</caption>
+      <image>
+        <description>
+          The graph of the line that passes through the points <m>(-2,0)</m> and <m>(0,-5)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}
+              \addplot[primarycurve,domain=-4.7:.7] {-5+(-5/2)*x};
+              \addplot[soliddot] coordinates {(-2,0)} node[above right] {(-2,0)};
+              \addplot[soliddot] coordinates {(0,-5)} node[above right] {(0,-5)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+
+  <example xml:id="lines-standard-form-ex-1">
+    <statement>
+      <p>
+        Determine the <m>x</m>-intercept of the line with equation <m>-11x+5y=-110</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Since the <m>x</m>-intercept is a point on the <m>x</m>-axis, it must have a <m>y</m>-coordinate of zero.  Replacing <m>y</m> with zero and solving for <m>x</m> results in <m>x=10</m>.  So the <m>x</m>-intercept of the line is the point <m>(10,0)</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Determine the <m>y</m>-intercept of the line with equation <m>-11x+5y=-110</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Since the <m>y</m>-intercept is a point on the <m>y</m>-axis, it must have an <m>x</m>-coordinate of zero.  Replacing <m>x</m> with zero and solving for <m>y</m> results in <m>y=-21</m>.  So the <m>y</m>-intercept of the line is the point <m>(0,-21)</m>. 
+      </p>
+    </solution>
+  </example>
+
+  <figure xml:id="lines-standard-form-geogebra-1">
+    <caption>Determine the <m>x</m>-intercept and <m>y</m>-intercept of the line with the given equation.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/line-intercepts.ggb">
+        setPerspective("G");
+        setGridVisible(0); 
+        setAxesVisible(0,0);        
+      </slate>
+    </interactive>
+  </figure>
+
+  <example>
+    <statement>
+      <p>
+        Graph the line with equation <m>2x-3y=-6</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        When graphing a line by hand it's useful to have at least three points with which to align your ruler.  Let's consider the line with equation <m>2x-3y=-6</m>.  The <m>x</m>-intercept and <m>y</m>-intercept of this line are, respectively, <m>(3,0)</m> and <m>(0,-2)</m>.  In the next section we discuss the idea of the slope of the line, but we can use the basic idea right now to determine a couple of more points on the line.
+      </p>
+      <sidebyside widths="47% 47%" margins="0%">
+
+        <p>
+          The line <m>2x-3y=-6</m> in shown in <xref ref="lines-standard-form-figure-2">Figure</xref>.  Note that one way to describe the movement from the <m>y</m>-intercept to the <m>x</m>-intercept is "up <m>2</m>, right <m>3</m>."  If we continue that pattern, starting at the <m>x</m>-intercept, we land at the point <m>(6,2)</m>, which is also on the line.
+        </p>
+
+        <figure xml:id="lines-standard-form-figure-2">
+          <caption>The step-like pattern between points on a line</caption>
+          <image>
+            <description>
+              A graph of the line that passes through the points <m>(-3,-4)</m> and <m>(6,2)</m>.  There is a stair-like pattern of arrows pointing up and right.  The first "step" starts at <m>(-2,0)</m>, points up to  <m>(0,0)</m>, and then points right to <m>(3,0)</m>.  The second "step" starts at <m>(3,0)</m>, points up to <m>(3,2)</m>, and then points right to <m>(6,2)</m>.  There is another stair-like pattern that points down and left.  The first "step" starts at <m>(3,0)</m>, points down to <m>(3,-2)</m>, and then points left to <m>(0,-2)</m>.  The second step starts at <m>(0,-2)</m>, points down to <m>(0,-4)</m>, and then points left to <m>(-3,-4)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}
+                  \addplot[primarycurve,domain=-6.7:6.7] {-2+(2/3)*x};
+                  \addplot[soliddot] coordinates {(3,0)};
+                  \addplot[soliddot] coordinates {(0,-2)};
+                  \addplot[soliddot] coordinates {(6,2)} node[above left] {(6,2)};
+                  \addplot[soliddot] coordinates {(-3,-4)} node[above left] {(-3,-4)};
+                  \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(0,-2) (0,0)};
+                  \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(0,0) (3,0)};
+                  \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(3,0) (3,2)};
+                  \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(3,2) (6,2)};
+                  \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(3,0) (3,-2)};
+                  \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(3,-2) (0,-2)};
+                  \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(0,-2) (0,-4)};
+                  \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(0,-4) (-3,-4)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+
+      </sidebyside>
+      <p>
+        Similarly, the movement from the <m>x</m>-intercept to the <m>y</m>-intercept can be described as "down <m>2</m>, left <m>3</m>," and continuing that pattern takes us to the point <m>(-3,-4)</m> which is also a point on the line.  
+      </p>
+      <p>
+        Every line has its on step-like pattern that can be executed either left-to-right or right-to-left.  This phenomenon is the basis for the concept of "slope of a line" and is explored in-depth in the next section.
+      </p>
+    </solution>
+  </example>
+
+  <figure xml:id="lines-standard-form-geogebra-2">
+    <caption>Drag the points so that the line matches the given equation. A message appears when you are correct.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/standard-line.ggb">
+        setPerspective("G");
+        setAxisSteps(1, 1, 1, 1);
+        setCoordSystem(-6, 6, -6, 6);
+        setGridVisible(1);         
+        setAxisLabels(1,"x","y","z");
+      </slate>
+    </interactive>
+  </figure>
+
+  </paragraphs>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine the indicated ordered pairs (points) on the lines with the given equations.
+        </p>
+      </introduction>
+
+      <exercise>
+
+        <statement>
+          <sidebyside widths="78% 18%" margins="0%">
+
             <p>
-              Determine the <m>x</m>-intercept of the line with equation <m>-11x+5y=-110</m>.
+              Complete the entries in <xref ref="lines-standard-form-exercises-table-1">Table</xref> for the line with equation <m>3x-y=6</m>.  Also, state the <m>x</m> and <m>y</m> intercepts of the line.
             </p>
-          </statement>
-          <solution>
+
+            <table xml:id="lines-standard-form-exercises-table-1">
+              <caption><m>3x-y=6</m></caption>
+              <tabular>
+                <col halign="center" />
+                <col halign="center"/>
+                <row bottom="medium">
+                  <cell>
+                    <line><m>x</m></line>
+                  </cell>
+                  <cell>
+                    <line><m>y</m></line>
+                  </cell>
+                </row>
+                <row>
+                  <cell><m>-1</m></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell><m>2</m></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell><m>5</m></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell><m>8</m></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell><m>11</m></cell>
+                  <cell></cell>
+                </row>
+              </tabular>
+            </table>
+
+          </sidebyside>
+        </statement>
+
+        <solution>
+          <sidebyside widths="78% 18%" margins="0%">
+
             <p>
-              Since the <m>x</m>-intercept is a point on the <m>x</m>-axis, it must have a <m>y</m>-coordinate of zero.  Replacing <m>y</m> with zero and solving for <m>x</m> results in <m>x=10</m>.  So the <m>x</m>-intercept of the line is the point <m>(10,0)</m>.
+              The <m>x</m>-intercept is <m>(2,0)</m> and the <m>y</m>-intercept is <m>(0,-6)</m>.
             </p>
-          </solution>
-        </example>
 
-        <example>
-          <statement>
+            <table xml:id="table-workshop-lines-exercises-table-1-solution">
+              <caption><m>3x-y=6</m></caption>
+              <tabular>
+                <col halign="center" />
+                <col halign="center"/>
+                <row bottom="medium">
+                  <cell>
+                    <line><m>x</m></line>
+                  </cell>
+                  <cell>
+                    <line><m>y</m></line>
+                  </cell>
+                </row>
+                <row>
+                  <cell><m>-1</m></cell>
+                  <cell><m>-9</m></cell>
+                </row>
+                <row>
+                  <cell><m>2</m></cell>
+                  <cell><m>0</m></cell>
+                </row>
+                <row>
+                  <cell><m>5</m></cell>
+                  <cell><m>9</m></cell>
+                </row>
+                <row>
+                  <cell><m>8</m></cell>
+                  <cell><m>18</m></cell>
+                </row>
+                <row>
+                  <cell><m>11</m></cell>
+                  <cell><m>27</m></cell>
+                </row>
+              </tabular>
+            </table>
+
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>   
+          <sidebyside widths="78% 18%" margins="0%">
+
             <p>
-              Determine the <m>y</m>-intercept of the line with equation <m>-11x+5y=-110</m>.
+              Complete the entries in <xref ref="lines-standard-form-exercises-table-2">Table</xref> for the line with equation <m>7x+4y=-8</m>.  Also, state the <m>x</m> and <m>y</m> intercepts of the line.
             </p>
-          </statement>
-          <solution>
+
+            <table xml:id="lines-standard-form-exercises-table-2">
+              <caption><m>7x+4y=-8</m></caption>
+              <tabular>
+                <col halign="center" />
+                <col halign="center"/>
+                <row bottom="medium">
+                  <cell>
+                    <line><m>x</m></line>
+                  </cell>
+                  <cell>
+                    <line><m>y</m></line>
+                  </cell>
+                </row>
+                <row>
+                  <cell><m>2</m></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell></cell>
+                  <cell><m>5</m></cell>
+                </row>
+                <row>
+                  <cell><m>-2</m></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell><m>\frac{4}{7}</m></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell></cell>
+                  <cell><m>-\frac{5}{4}</m></cell>
+                </row>
+              </tabular>
+            </table>
+          </sidebyside>
+        </statement>
+
+        <solution>
+          <sidebyside widths="78% 18%" margins="0%">
+
             <p>
-              Since the <m>y</m>-intercept is a point on the <m>y</m>-axis, it must have an <m>x</m>-coordinate of zero.  Replacing <m>x</m> with zero and solving for <m>y</m> results in <m>y=-21</m>.  So the <m>y</m>-intercept of the line is the point <m>(0,-21)</m>. 
+              The <m>x</m>-intercept is <m>\left(-\frac{8}{7},0\right)</m> and the <m>y</m>-intercept is <m>(0,-2)</m>.
             </p>
-          </solution>
-        </example>
 
-        <example>
-          <statement>
-            <p>
-              Graph the line with equation <m>2x-3y=-6</m>.
-            </p>
-          </statement>
-          <solution>
-            <p>
-              When graphing a line by hand it's useful to have at least three points with which to align your ruler.  Let's consider the line with equation <m>2x-3y=-6</m>.  The <m>x</m>-intercept and <m>y</m>-intercept of this line are, respectively, <m>(3,0)</m> and <m>(0,-2)</m>.  In the next section we discuss the idea of the slope of the line, but we can use the basic idea right now to determine a couple of more points on the line.
-            </p>
-            <sidebyside widths="47% 47%" margins="0%">
-              <p>
-                The line <m>2x-3y=-6</m> in shown in <xref ref="lines-standard-form-figure-2">Figure</xref>.  Note that one way to describe the movement from the <m>y</m>-intercept to the <m>x</m>-intercept is "up <m>2</m>, right <m>3</m>."  If we continue that pattern, starting at the <m>x</m>-intercept, we land at the point <m>(6,2)</m>, which is also on the line.
-              </p>
-              <figure xml:id="lines-standard-form-figure-2">
-                      <caption>The step-like pattern between points on a line</caption>
-                        <image>
-                          <description>plain text</description>
-                            <latex-image>
-                              <![CDATA[
-                              \begin{tikzpicture}
-                                \begin{axis}
-                                  \addplot[primarycurve,domain=-6.7:6.7] {-2+(2/3)*x};
-                                  \addplot[soliddot] coordinates {(3,0)};
-                                  \addplot[soliddot] coordinates {(0,-2)};
-                                  \addplot[soliddot] coordinates {(6,2)} node[above left] {(6,2)};
-                                  \addplot[soliddot] coordinates {(-3,-4)} node[above left] {(-3,-4)};
-                                  \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(0,-2) (0,0)};
-                                  \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(0,0) (3,0)};
-                                  \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(3,0) (3,2)};
-                                  \addplot[interval,blue,ultra think,-{Stealth}] coordinates {(3,2) (6,2)};
-                                  \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(3,0) (3,-2)};
-                                  \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(3,-2) (0,-2)};
-                                  \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(0,-2) (0,-4)};
-                                  \addplot[interval,gray,ultra think,-{Stealth}] coordinates {(0,-4) (-3,-4)};
-                                \end{axis}
-                              \end{tikzpicture}
-                              ]]>
-                            </latex-image>
-                        </image>
-              </figure>
-            </sidebyside>
-            <p>
-              Similarly, the movement from the <m>x</m>-intercept to the <m>y</m>-intercept can be described as "down <m>2</m>, left <m>3</m>," and continuing that pattern takes us to the point <m>(-3,-4)</m> which is also a point on the line.  
-            </p>
-            <p>
-              Every line has its on step-like pattern that can be executed either left-to-right or right-to-left.  This phenomenon is the basis for the concept of "slope of a line" and is explored in-depth in the next section.
-            </p>
-          </solution>
-        </example>
+            <table xml:id="table-workshop-lines-exercises-table-2-solution">
+              <caption><m>7x+4y=-8</m></caption>
+              <tabular>
+                <col halign="center" />
+                <col halign="center"/>
+                <row bottom="medium">
+                  <cell>
+                    <line><m>x</m></line>
+                  </cell>
+                  <cell>
+                    <line><m>y</m></line>
+                  </cell>
+                </row>
+                <row>
+                  <cell><m>2</m></cell>
+                  <cell><m>-\frac{11}{2}</m></cell>
+                </row>
+                <row>
+                  <cell><m>-4</m></cell>
+                  <cell><m>5</m></cell>
+                </row>
+                <row>
+                  <cell><m>-2</m></cell>
+                  <cell><m>\frac{3}{2}</m></cell>
+                </row>
+                <row>
+                  <cell><m>\frac{4}{7}</m></cell>
+                  <cell><m>-3</m></cell>
+                </row>
+                <row>
+                  <cell><m>-\frac{3}{7}</m></cell>
+                  <cell><m>-\frac{5}{4}</m></cell>
+                </row>
+              </tabular>
+            </table>
 
-      <exercises>
+          </sidebyside>
+        </solution>
+      </exercise>
 
-        <exercisegroup>
-          <introduction>
-            <p>
-              Determine the indicated ordered pairs (points) on the lines with the given equations.
-            </p>
-          </introduction>
+    </exercisegroup>
 
-          <exercise>
+  </exercises>
 
-          <statement>
-            <sidebyside widths="78% 18%" margins="0%">
-
-              <p>
-                Complete the entries in <xref ref="lines-standard-form-exercises-table-1">Table</xref> for the line with equation <m>3x-y=6</m>.  Also, state the <m>x</m> and <m>y</m> intercepts of the line.
-              </p>
-
-              <table xml:id="lines-standard-form-exercises-table-1">
-                <caption><m>3x-y=6</m></caption>
-                  <tabular>
-                    <col halign="center" />
-                    <col halign="center"/>
-                    <row bottom="medium">
-                      <cell>
-                        <line><m>x</m></line>
-                      </cell>
-                      <cell>
-                        <line><m>y</m></line>
-                      </cell>
-                    </row>
-                    <row>
-                      <cell><m>-1</m></cell>
-                      <cell></cell>
-                    </row>
-                    <row>
-                      <cell><m>2</m></cell>
-                      <cell></cell>
-                    </row>
-                    <row>
-                      <cell><m>5</m></cell>
-                      <cell></cell>
-                    </row>
-                    <row>
-                      <cell><m>8</m></cell>
-                      <cell></cell>
-                    </row>
-                    <row>
-                      <cell><m>11</m></cell>
-                      <cell></cell>
-                    </row>
-                  </tabular>
-                </table>
-              </sidebyside>
-            </statement>
-
-            <solution>
-              <sidebyside widths="78% 18%" margins="0%">
-                <p>
-                  The <m>x</m>-intercept is <m>(2,0)</m> and the <m>y</m>-intercept is <m>(0,-6)</m>.
-                </p>
-                <table xml:id="table-workshop-lines-exercises-table-1-solution">
-                  <caption><m>3x-y=6</m></caption>
-                    <tabular>
-                      <col halign="center" />
-                      <col halign="center"/>
-                      <row bottom="medium">
-                        <cell>
-                          <line><m>x</m></line>
-                        </cell>
-                        <cell>
-                          <line><m>y</m></line>
-                        </cell>
-                      </row>
-                      <row>
-                        <cell><m>-1</m></cell>
-                        <cell><m>-9</m></cell>
-                      </row>
-                      <row>
-                        <cell><m>2</m></cell>
-                        <cell><m>0</m></cell>
-                      </row>
-                      <row>
-                        <cell><m>5</m></cell>
-                        <cell><m>9</m></cell>
-                      </row>
-                      <row>
-                        <cell><m>8</m></cell>
-                        <cell><m>18</m></cell>
-                      </row>
-                      <row>
-                        <cell><m>11</m></cell>
-                        <cell><m>27</m></cell>
-                      </row>
-                    </tabular>
-                  </table>
-                </sidebyside>
-              </solution>
-            </exercise>
-
-            <exercise>
-              <statement>   
-              <sidebyside widths="78% 18%" margins="0%">
-
-                <p>
-                  Complete the entries in <xref ref="lines-standard-form-exercises-table-2">Table</xref> for the line with equation <m>7x+4y=-8</m>.  Also, state the <m>x</m> and <m>y</m> intercepts of the line.
-                </p>
-
-                <table xml:id="lines-standard-form-exercises-table-2">
-                  <caption><m>7x+4y=-8</m></caption>
-                    <tabular>
-                      <col halign="center" />
-                      <col halign="center"/>
-                      <row bottom="medium">
-                        <cell>
-                          <line><m>x</m></line>
-                        </cell>
-                        <cell>
-                          <line><m>y</m></line>
-                        </cell>
-                      </row>
-                      <row>
-                        <cell><m>2</m></cell>
-                        <cell></cell>
-                      </row>
-                      <row>
-                        <cell></cell>
-                        <cell><m>5</m></cell>
-                      </row>
-                      <row>
-                        <cell><m>-2</m></cell>
-                        <cell></cell>
-                      </row>
-                      <row>
-                        <cell><m>\frac{4}{7}</m></cell>
-                        <cell></cell>
-                      </row>
-                      <row>
-                        <cell></cell>
-                        <cell><m>-\frac{5}{4}</m></cell>
-                      </row>
-                    </tabular>
-                  </table>
-              </sidebyside>
-            </statement>
-
-            <solution>
-              <sidebyside widths="78% 18%" margins="0%">
-                <p>
-                  The <m>x</m>-intercept is <m>\left(-\frac{8}{7},0\right)</m> and the <m>y</m>-intercept is <m>(0,-2)</m>.
-                </p>
-
-                <table xml:id="table-workshop-lines-exercises-table-2-solution">
-                    <caption><m>7x+4y=-8</m></caption>
-                      <tabular>
-                        <col halign="center" />
-                        <col halign="center"/>
-                        <row bottom="medium">
-                          <cell>
-                            <line><m>x</m></line>
-                          </cell>
-                          <cell>
-                            <line><m>y</m></line>
-                          </cell>
-                        </row>
-                        <row>
-                          <cell><m>2</m></cell>
-                          <cell><m>-\frac{11}{2}</m></cell>
-                        </row>
-                        <row>
-                          <cell><m>-4</m></cell>
-                          <cell><m>5</m></cell>
-                        </row>
-                        <row>
-                          <cell><m>-2</m></cell>
-                          <cell><m>\frac{3}{2}</m></cell>
-                        </row>
-                        <row>
-                          <cell><m>\frac{4}{7}</m></cell>
-                          <cell><m>-3</m></cell>
-                        </row>
-                        <row>
-                          <cell><m>-\frac{3}{7}</m></cell>
-                          <cell><m>-\frac{5}{4}</m></cell>
-                        </row>
-                      </tabular>
-                    </table>
-
-              </sidebyside>
-            </solution>
-          </exercise>
-
-        </exercisegroup>
-
-      </exercises>
-
-    </section>
+</section>

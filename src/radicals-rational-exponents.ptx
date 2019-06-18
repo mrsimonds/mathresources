@@ -71,6 +71,20 @@
   </example>
 
   <p>
+    You can use <xref ref="radicals-rational-exponents-geogebra-figure-1">Figure</xref> to explore this definition some more.
+  </p>
+
+  <figure xml:id="radicals-rational-exponents-geogebra-figure-1">
+    <caption>Explore the Meaning of Rational Exponents</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/radicals-rational-exponents.ggb">
+        setPerspective("G");
+        setAxesVisible(0,0);
+      </slate>
+    </interactive>
+  </figure>
+
+  <p>
     As long as both the numerator and denominator of a rational exponent are fairly small positive numbers, it is fairly easy to evaluate expressions that include rational exponents using the rule <m>x^{m/n}=\sqrt[n]{x^m}</m>.
   </p>
 

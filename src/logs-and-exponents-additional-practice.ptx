@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="logs-and-exponents-additional-practice">
+  <title>Additional Practice Related to Logarithms and Exponential Equations</title>
+
+  <exercises>
+
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Determine the value of each logarithm <em>without the use of a calculator</em>.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statememt>
+          <p>
+            <m>\log_5\left(\frac{1}{5}\right)</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            <m>\log_5\left(\frac{1}{5}\right)=-1</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statememt>
+          <p>
+            <m>\log_3(81)</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            <m>\log_3(81)=4</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statememt>
+          <p>
+            <m>\log_{100}(10)</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            <m>\log_{100}(10)=\frac{1}{2}</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statememt>
+          <p>
+            <m>\log_{27}(9)</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            <m>\log_{27}(9)=\frac{2}{3}</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statememt>
+          <p>
+            <m>\log_4\left(\frac{1}{2}\right)</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            <m>\log_4\left(\frac{1}{2}\right)=-\frac{1}{2}</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statememt>
+          <p>
+            <m>\log(10^{-6})</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            <m>\log(10^{-6})=-6</m>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Use the change of base formula and a calculator to estimate the value of each logarithm.  Round each value to three digits after the decimal point.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statememt>
+          <p>
+            <m>\log_7(8)</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            <m>\log_7(8) \approx 1.069</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statememt>
+          <p>
+            <m>\log_{12}(100)</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            <m>\log_{12}(100) \approx 1.852</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statememt>
+          <p>
+            <m>\log_{19}\left(\frac{2}{87}\right)</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            <m>\log_{19}\left(\frac{2}{87}\right) \approx -1.281</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statememt>
+          <p>
+            <m>\log_2(1977)</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            <m>\log_2(1977) \approx 10.949</m>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Completely expand each logarithmic expression.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statememt>
+          <p>
+            <m>\log\left(\frac{xy^2}{4\sqrt{z}}\right)</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            <m>\log(x)+2\log(y)-\log(4)-\frac{1}{2}\log(z)</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statememt>
+          <p>
+            <m>\log_2\left(\frac{8\sqrt[3]{x^7}}{y^9z^4}\right)</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            <m>3+\frac{7}{3}\log_2(x)-9\log_2(y)-4\log_2(z)</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statememt>
+          <p>
+            <m>\log_8\left((x+y)(x-y)\right)</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            <m>\log_8(x+y)+\log_8(x-y)</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statememt>
+          <p>
+            <m>\log\left(\frac{x^2+y^2}{x+y}\right)</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            <m>\log\left(x^2+y^2\right)-\log(x+y)</m>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Combine each expression into a single logarithmic expression.
+        </p>
+      </introduction>
+
+    <exercise>
+        <statememt>
+          <p>
+            <m>\log_2(x)-4\log_2(y)-7\log_2(z)</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            <m>\log_2\left(\frac{x}{y^4z^7}\right)</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statememt>
+          <p>
+            <m>3+\frac{1}{5}\log(x)-10\log(y)+14\log(z)</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            <m>\log\left(\frac{1000z^{14}\sqrt[5]{x}}{y^{10}}\right)</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statememt>
+          <p>
+            <m>-\frac{1}{2}-\frac{2}{3}\log_9(x)+\log_9(y-z)</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            <m>\log_9\left(\frac{y-z}{3\sqrt[3]{x^2}}\right)</m>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statememt>
+          <p>
+            <m>8\log_6\left(\sqrt{x}\right)-2-4\log_6(x)-\frac{4}{9}\log_6(y)</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            <m>\log_6\left(\frac{1}{36\sqrt[9]{y^4}}\right)</m>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine all solutions to each stated equation.  State the exact solutions and , where appropriate, also state approximate solutions (rounded to the nearest hundredth).
+        </p>
+      </introduction>
+
+    <exercise>
+        <statememt>
+          <p>
+            <m>\log(x)+\log(x-2)=\log(15)</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            The only solution is 5.
+          </p>
+        </solution>
+      </exercise>
+
+    <exercise>
+        <statememt>
+          <p>
+            <m>\log_2(x+1)-\log_2(x-3)=1</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            The only solution is 7.
+          </p>
+        </solution>
+      </exercise>
+
+    <exercise>
+        <statememt>
+          <p>
+            <m>2\log_3(x)-2=\log_3(x-2)</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            The solutions are 3 and 6.
+          </p>
+        </solution>
+      </exercise>
+
+    <exercise>
+        <statememt>
+          <p>
+            <m>3^{x+5}-9^{x+2}=0</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            The only solution is 1.
+          </p>
+        </solution>
+      </exercise>
+
+    <exercise>
+        <statememt>
+          <p>
+            <m>5^x=3^{2x-1}</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            The only solution is <m>\frac{\log(3)}{\log\left(\frac{5}{9}\right)}</m> which is approximately 1.87.
+          </p>
+        </solution>
+      </exercise>
+
+    <exercise>
+        <statememt>
+          <p>
+            <m>\ln(x+2)-\ln(x-3)=2</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            The only solution is <m>\frac{3e^2+3}{e^2-1}</m> which is approximately 3.78.
+          </p>
+        </solution>
+      </exercise>
+
+    <exercise>
+        <statememt>
+          <p>
+            <m>e^{3x-1}=5</m>
+          </p>
+        </statememt>
+        <solution>
+          <p>
+            The only solution is <m>\frac{\ln(5)+1}{3}</m> which is approximately 0.87.
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+</section>

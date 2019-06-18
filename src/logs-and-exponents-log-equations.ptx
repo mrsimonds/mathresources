@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="logs-and-exponents-log-equations">
+  <title>Logarithmic Equations</title>
+
+  <p>
+    The focus of this section are equations where one or more terms in the equation is  of the form <m>\log_b(\text{expression})</m> and every other term is a constant.  In any given equation every logarithmic expression will have the same base.  To solve these type equations, we go through the following steps.  I'm assuming the variable in the equation is <m>x</m>.
+    <ol labels="1">
+      <li>
+        <p>
+          When there are two or more logarithmic terms, we first rearrange the terms so that all of the logarithmic terms are one side of the equal sign. Regardless of the number of logarithmic terms (even if there is only one), we want the constant term on the other side of the equal sign.
+        </p>
+      </li>
+      <li>
+        <p>
+          We then use the properties of logarithms to combine the logarithmic terms into a single term.
+        </p>
+      </li>
+      <li>
+        <p>
+          Regardless of whether or not you start with multiple logarithmic terms, we now have an equation of form <m>\log_b(f(x))=n</m> where <m>n</m> is a constant.  We now write the equivalent exponential equation, <m>b^n=f(x)</m>, and solve that equation.
+        </p>
+      </li>
+      <li>
+        <p>
+          It is vital that we check all solutions to the exponential equation in the <alert>original logarithmic equation</alert>.  False solutions to the original equation can emerge when we combine the logarithmic terms.  What we're especially concerned with are domain issues (like inadvertently taking the logarithm of a negative number).  False solutions are more technically called <alert>extraneous solutions</alert>.
+        </p>
+      </li>
+    </ol>
+    Let's see several examples.
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Find all solutions to the following equation.
+        <me>\log_3(4x-11)=2</me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The equation is already the form <m>\log_b(f(x))=n</m>, so we can proceed directly to writing the equivalent exponential equation.
+        <md>
+          <mrow>\log_3(4x-11)\amp=2</mrow>
+          <mrow>3^2\amp=4x-11</mrow>
+          <mrow>9\amp=4x-11</mrow>
+          <mrow>9\addright{11}\amp=4x-11\addright{11}</mrow>
+          <mrow>20\amp=4x</mrow>
+          <mrow>\divideunder{20}{4}\amp=\divideunder{4x}{4}</mrow>
+          <mrow>5\amp=x</mrow>
+        </md>
+        Let's check our solution.
+        <md>
+          <mrow>\log_3(4\multiplyright{5}-11)\amp=2\,\,?</mrow>
+          <mrow>\log_3(9)\amp=2\,\,?</mrow>
+          <mrow>3^2\amp=9\,\,\checkmark</mrow>
+        </md>
+        The solution to the equation is <m>5</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Find all solutions to the following equation.
+        <me>\log_2(x)+\log_2(x-2)=3</me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We need to first combine the logarithmic terms into a single term.  We can then solve the equivalent exponential equation.
+        <md>
+          <mrow>\log_2(x)+\log_2(x-2)\amp=3</mrow>
+          <mrow>\log_2\left(x \cdot (x-2)\right)\amp=3</mrow>
+          <mrow>\log_2\left(x^2-2x\right)\amp=3</mrow>
+          <mrow>2^3\amp=x^2-2x</mrow>
+          <mrow>8\amp=x^2-2x</mrow>
+          <mrow>0\amp=x^2-2x-8</mrow>
+          <mrow>0\amp=(x-4)(x+2)</mrow>
+        </md>
+        <md>
+          <mrow>x-4\amp=0 \amp\amp\text{ or }\amp x+2\amp=0</mrow>
+          <mrow>x-4\addright{4}\amp=0\addright{4} \amp\amp\text{ or }\amp x+2\amp=0\subtractright{2}</mrow>
+          <mrow>x\amp=4\amp\amp\text{ or }\amp x\amp=-2</mrow>
+        </md>
+        We now check each potential solution in the original equation.  Let's begin with <m>4</m>.
+        <md>
+          <mrow>\log_2(\highlight{4})+\log_2(\highlight{4}-2)\amp=3\,\,?</mrow>
+          <mrow>\log_2(4)+\log_2(2)\amp=3\,\,?</mrow>
+          <mrow>2+1\amp=3\,\,\checkmark</mrow>
+        </md>
+        As soon as we start to check <m>-2</m> we run into <m>\log_2(-2)</m>.  That's a problem, because the domains of logarithmic functions do not include negative numbers.  So <m>-2</m> is an extraneous solution. The only solution to the original equation is <m>4</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Find all solutions to the following equation.
+        <me>\log_2(x+6)+33=36-\log_2(x-1)</me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Let's begin by moving the logarithmic expressions to the left side of the equal sign and the constant terms to the right side of the equal sign.  We'll then combine the logarithmic terms into a single logarithmic term, state and solve the equivalent exponential equation, and check our potential solution(s).
+        <md>
+          <mrow>\log_2(x+6)+33\amp=36-\log_2(x-1)</mrow>
+          <mrow>\log_2(x+6)+33\addright{\log_2(x-1)}\amp=36-\log_2(x-1)\addright{\log_2(x-1)}</mrow>
+          <mrow>\log_2(x+6)+\log_2(x-1)+33\amp=36</mrow>
+          <mrow>\log_2(x+6)+\log_2(x-1)+33\subtractright{33}\amp=36\subtractright{33}</mrow>
+          <mrow>\log_2(x+6)+\log_2(x-1)\amp=3</mrow>
+          <mrow>\log_2\left((x+6)(x-1)\right)\amp=3</mrow>
+          <mrow>\log_2\left(x^2+5x-6\right)\amp=3</mrow>
+          <mrow>2^3\amp=x^2+5x-6</mrow>
+          <mrow>8\amp=x^2+5x-6</mrow>
+          <mrow>8\subtractright{8}\amp=x^2+5x-6\subtractright{8}</mrow>
+          <mrow>0\amp=x^2+5x-14</mrow>
+          <mrow>0\amp=(x+7)(x-2)</mrow>
+        </md>
+        <md>
+          <mrow>x+7\amp=0 \amp\amp\text{or}\amp x-2\amp=0</mrow>
+          <mrow>x+7\subtractright{7}\amp=0\subtractright{7} \amp\amp\text{or}\amp x-2\addright{2}\amp=0\addright{2}</mrow>
+          <mrow>x\amp=-7 \amp\amp\text{ or }\amp x\amp=2</mrow>
+        </md>
+        We can immediately dismiss <m>-7</m> as an extraneous solution, because that would lead to both <m>\log_2(-1)</m> and <m>\log(-8)</m> in the original equation.  Let's go ahead and check <m>2</m>.
+        <md>
+          <mrow>\log_2(\highlight{2}+6)+33\amp=36-\log_2(\highlight{2}-1)\,\,?</mrow>
+          <mrow>\log_2(8)+33\amp=36-\log_2(1)\,\,?</mrow>
+          <mrow>3+33\amp=36-0\,\,\checkmark</mrow>
+        </md>
+        Te solution to the stated equation is <m>2</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        <m>\log_2\left(x^2-9\right)=3+\log_2(x+3)</m>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+          <mrow>\log_2\left(x^2-9\right)\amp=3+\log_2(x+3)</mrow>
+          <mrow>\log_2\left(x^2-9\right)\subtractright{\log_2(x+3)}\amp=3+\log_2(x+3)\subtractright{\log_2(x+3)}</mrow>
+          <mrow>\log_2\left(x^2-9\right)-\log_2(x+3)\amp=3</mrow>
+          <mrow>\log_2\left(\frac{x^2-9}{x+3}\right)\amp=3</mrow>
+          <mrow>2^3\amp=\frac{x^2-9}{x+3}</mrow>
+          <mrow>8\amp=\frac{x^2-9}{x+3}</mrow>
+          <mrow>8\multiplyright{(x+3)}\amp=\frac{x^2-9}{x+3}\multiplyright{(x+3)}</mrow>
+          <mrow>8x+24\amp=x^2-9</mrow>
+          <mrow>8x+24\subtractright{8x}\subtractright{24}\amp=x^2-9\subtractright{8x}\subtractright{24}</mrow>
+          <mrow>0\amp=x^2-8x-33</mrow>
+          <mrow>0\amp=(x-11)(x+3)</mrow>
+        </md>
+        <md>
+          <mrow>x-11\amp=0 \amp\amp\text{or}\amp x+3\amp=0</mrow>
+          <mrow>x-11\addright{11}\amp=0\addright{11} \amp\amp\text{or}\amp x+3\subtractright{3}\amp=0\subtractright{3}</mrow>
+          <mrow>x\amp=11 \amp\amp\text{or}\amp x\amp=-3</mrow>
+        </md>
+        We can immediately dismiss <m>-3</m> as an extraneous solution, because it results in <m>\log_2(0)</m> in the original equation, and <m>0</m> is not in the domain of (simple) logarithmic functions.  Let's go ahead and check the other proposed solution.
+        <md>
+          <mrow>\log_2\left(\highlight{11}^2-9\right)\amp=3+\log_2(\highlight{11}+3)\,\,?</mrow>
+          <mrow>\log_2(112)\amp=3+\log_2(14)\,\,?</mrow>
+          <mrow>\log_2(112)\subtractright{\log_2(14)}\amp=3+\log_2(14)\subtractright{\log_2(14)}\,\,?</mrow>
+          <mrow>\log_2(112)-\log_2(14)\amp=3\,\,?</mrow>
+          <mrow>\log_2\left(\frac{112}{14}\right)\amp=3\,\,?</mrow>
+          <mrow>\log_2(8)\amp=3\,\,\checkmark</mrow>
+        </md>
+        The solution to the given equation is <m>11</m>.
+      </p>
+    </solution>
+  </example>
+
+  <p>
+    There is an alternate strategy for solving logarithmic equations.  If we can manipulate an equation into the form
+    <me>\log_b\left(f(x)\right)=\log_b\left(g(x)\right),</me>
+    then we can use the fact that (simple) logarithm functions are one-to-one to conclude that
+    <me>f(x)=g(x)</me>.
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        <m>\log(x)+\log(x-2)=\log(x+4)</m>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+          <mrow>\log(x)+\log(x-2)\amp=\log(x+4)</mrow>
+          <mrow>\log\left(x \cdot (x-2)\right)\amp=\log(x+4)</mrow>
+          <mrow>\log\left(x^2-2x\right)\amp=\log(x+4)</mrow>
+          <mrow>x^2-2x\amp=x+4</mrow>
+          <mrow>x^2-2x\subtractright{x}\subtractright{4}\amp=x+4\subtractright{x}\subtractright{4}</mrow>
+          <mrow>x^2-3x-4\amp=0</mrow>
+          <mrow>(x-4)(x+1)\amp=0</mrow>
+        </md>
+        <md>
+          <mrow>x-4\amp=0 \amp\amp\text{or}\amp x+1\amp=0</mrow>
+          <mrow>x-4\addright{4}\amp=0\addright{4} \amp\amp\text{or}\amp x+1\subtractright{1}\amp=0\subtractright{1}</mrow>
+          <mrow>x\amp=4 \amp\amp\text{or}\amp 1\amp=-1</mrow>
+        </md>
+        The proposed solution of <m>-1</m> is extraneous as it results in <m>\log(-1)</m> and <m>\log(-3)</m> in the original equation.  Let's check out <m>4</m>.
+        <md>
+          <mrow>\log(\highlight{4})+\log(\highlight{4}-2)\amp=\log(\highlight{4}+4)\,\,?</mrow>
+          <mrow>\log(4)+\log(2)\amp=\log(8)\,\,?</mrow>
+          <mrow>\log(4 \cdot 2)\amp=\log(8)\,\,?</mrow>
+          <mrow>\log(8)\amp=\log(8)\,\,\checkmark</mrow>
+        </md>
+        The solution to the stated equation is <m>4</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        <m>-2\log_4(x)=\log_4(9)</m>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+          <mrow>-2\log_4(x)\amp=\log_4(9)</mrow>
+          <mrow>\log_4\left(x^{-2}\right)\amp=\log_4(9)</mrow>
+          <mrow>x^{-2}\amp=9</mrow>
+          <mrow>\frac{1}{x^2}\amp=9</mrow>
+          <mrow>\frac{1}{x^2}\multiplyright{x^2}\amp=9\multiplyright{x^2}</mrow>
+          <mrow>1\amp=9x^2</mrow>
+          <mrow>\divideunder{1}{9}\amp=\divideunder{9x^2}{9}</mrow>
+          <mrow>\frac{1}{9}\amp=x^2</mrow>
+          <mrow>\pm \frac{1}{3}\amp=x</mrow>
+        </md>
+        The proposed solution of <m>-\frac{1}{3}</m> is extraneous <mdash/> it results in the appearance of <m>\log_4\left(-\frac{1}{3}\right)</m> in the stated equation.  Let's investigate the other proposed solution.
+        <md>
+          <mrow>-2\log_4\left(\frac{1}{3}\right)\amp=\log_4(9)\,\,?</mrow>
+          <mrow>\log_4\left(\left(\frac{1}{3}\right)^{-2}\right)\amp=\log_4(9)\,\,?</mrow>
+          <mrow>\log_4\left(\left(\frac{3}{1}\right)^2\right)\amp=\log_4(9)\,\,?</mrow>
+          <mrow>\log_4(9)\amp=\log_4(9)\,\,\checkmark</mrow>
+        </md>
+        The given equation's only solution is <m>\frac{1}{3}</m>.
+      </p>
+    </solution>
+  </example>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine all solutions to each equation.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_{12}(x^2)=0</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\log_{12}(x^2)\amp=0</mrow>
+              <mrow>12^0\amp=x^2</mrow>
+              <mrow>1\amp=x^2</mrow>
+              <mrow>\pm 1 \amp=x</mrow>
+            </md>
+            Both solutions check (as shown below).
+            <md>
+              <mrow>\log_{12}\left((\pm 1)^2\right)\amp=\log_{12}(1)</mrow>
+              <mrow>\amp=0</mrow>
+            </md>
+            The solutions are <m>-1</m> and <m>1</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_5(2x+41)-3=0</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\log_5(2x+41)-3\amp=0</mrow>
+              <mrow>\log_5(2x+41)-3\addright{3}\amp=0\addright{3}</mrow>
+              <mrow>\log_5(2x+41)\amp=3</mrow>
+              <mrow>5^3\amp=2x+41</mrow>
+              <mrow>125\amp=2x+41</mrow>
+              <mrow>125\subtractright{41}\amp=2x+41\subtractright{41}</mrow>
+              <mrow>84\amp=2x</mrow>
+              <mrow>\divideunder{84}{2}\amp=\divideunder{2x}{2}</mrow>
+              <mrow>42\amp=x</mrow>
+            </md>
+            Let's check.
+            <md>
+              <mrow>\log_5(2\multiplyright{42}+41)-3\amp=0\,\,?</mrow>
+              <mrow>\log_5(125)\amp=3\,\,?</mrow>
+              <mrow>5^3\amp=125\,\,\checkmark</mrow>
+            </md>
+            The solution is <m>42</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_3(8x+1)=2+\log_3(x)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\log_3(8x+1)\amp=2+\log_3(x)</mrow>
+              <mrow>\log_3(8x+1)\subtractright{\log_3(x)}\amp=2+\log_3(x)\subtractright{\log_3(x)}</mrow>
+              <mrow>\log_3(8x+1)-\log_3(x)\amp=2</mrow>
+              <mrow>\log_3\left(\frac{8x+1}{x}\right)\amp=2</mrow>
+              <mrow>3^2\amp=\frac{8x+1}{x}</mrow>
+              <mrow>9\amp=\frac{8x+1}{x}</mrow>
+              <mrow>9\multiplyright{x}\amp=\frac{8x+1}{x}\multiplyright{x}</mrow>
+              <mrow>9x\amp=8x+1</mrow>
+              <mrow>9x\subtractright{8x}\amp=8x+1\subtractright{8x}</mrow>
+              <mrow>x\amp=1</mrow>
+            </md>
+            Let's check the value of <m>1</m> for <m>x</m> in the given equation.
+            <md>
+              <mrow>\log_3(8\multiplyright{1}+1)\amp=2+\log_3(\highlight{1})\,\,?</mrow>
+              <mrow>\log_3(9)\amp=2+0\,\,?</mrow>
+              <mrow>\log_3(9)\amp=2\,\,?</mrow>
+              <mrow>3^2\amp=9\,\,\checkmark</mrow>
+            </md>
+            The solution to the given equation is <m>1</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>3\log_8(7-2x)=-1</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>3\log_8(7-2x)\amp=-1</mrow>
+              <mrow>\log_8\left((7-2x)^3\right)\amp=-1</mrow>
+              <mrow>8^{-1}\amp=(7-2x)^3</mrow>
+              <mrow>\frac{1}{8}\amp=(7-2x)^3</mrow>
+              <mrow>\sqrt[3]{\frac{1}{8}}\amp=7-2x</mrow>
+              <mrow>\frac{1}{2}\amp=7-2x</mrow>
+              <mrow>\multiplyleft{2}\frac{1}{2}\amp=\multiplyleft{2}(7-2x)</mrow>
+              <mrow>1\amp=14-4x</mrow>
+              <mrow>1\subtractright{14}\amp=14-4x\subtractright{14}</mrow>
+              <mrow>-13\amp=-4x</mrow>
+              <mrow>\divideunder{-13}{-4}\amp=\divideunder{4x}{-4}</mrow>
+              <mrow>\frac{13}{4}\amp=x</mrow>
+            </md>
+            Time to check.
+            <md>
+              <mrow>3\log_8\left(7-2\multiplyright{\frac{13}{4}}\right)\amp=-1\,\,?</mrow>
+              <mrow>3\log_8\left(\frac{28}{4}-\frac{26}{4}\right)\amp=-1\,\,?</mrow>
+              <mrow>3\log_8\left(\frac{1}{2}\right)\amp=-1,\,?</mrow>
+              <mrow>\log_8\left(\left(\frac{1}{2}\right)^3\right)\amp=-1\,\,?</mrow>
+              <mrow>\log_8\left(\frac{1}{8}\right)\amp=-1\,\,?</mrow>
+              <mrow>8^{-1}\amp=\frac{1}{8}\,\,\checkmark</mrow>
+            </md>
+            The solution is <m>\frac{13}{4}</m>.
+          </p>
+          <p>
+            <term>Note</term>
+          </p>
+          <p>
+            We could have arrived at the equation <m>\frac{1}{2}=7-2x</m> taking a completely different route.  The alternate route is shown below.
+            <md>
+              <mrow>3\log_8(7-2x)\amp=-1</mrow>
+              <mrow>\divideunder{3\log_8(7-2x)}{3}\amp=\divideunder{-1}{3}</mrow>
+              <mrow>\log_8(7-2x)\amp=-\frac{1}{3}</mrow>
+              <mrow>8^{-1/3}\amp=7-2x</mrow>
+              <mrow>\frac{1}{8^{1/3}}\amp=7-2x</mrow>
+              <mrow>\frac{1}{\sqrt[3]{8}}\amp=7-2x</mrow>
+              <mrow>\frac{1}{2}\amp=7-2x</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_2(x+7)=1-\log_2(x+8)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\log_2(x+7)\amp=1-\log_2(x+8)</mrow>
+              <mrow>\log_2(x+7)\addright{\log_2(x+8)}\amp=1-\log_2(x+8)\addright{\log_2(x+8)}</mrow>
+              <mrow>\log_2(x+7)+\log_2(x+8)\amp=1</mrow>
+              <mrow>\log_2\left((x+7)(x+8)\right)\amp=1</mrow>
+              <mrow>\log_2\left(x^2+15x+56\right)\amp=1</mrow>
+              <mrow>2^1\amp=x^2+15x+56</mrow>
+              <mrow>2\amp=x^2+15x+56</mrow>
+              <mrow>2\subtractright{2}\amp=x^2+15x+56\subtractright{2}</mrow>
+              <mrow>0\amp=x^2+15x+54</mrow>
+              <mrow>0\amp=(x+6)(x+9)</mrow>
+            </md>
+            <md>
+              <mrow>x+6\amp=0 \amp\amp\text{or}\amp x+9\amp=0</mrow>
+              <mrow>x+6\subtractright{6}\amp=0\subtractright{6} \amp\amp\text{or}\amp x+9\subtractright{9}\amp=0\subtractright{9}</mrow>
+              <mrow>x\amp=-6 \amp\amp\text{or}\amp x\amp=-9</mrow>
+            </md>
+            We can dismiss the solution of <m>-9</m> as extraneous as it results in both <m>\log_2(-2)</m> and <m>\log_2(-1)</m> in the original equation.  Let's go ahead and check the other solution.
+            <md>
+              <mrow>\log_2(\highlight{-6}+7)\amp=1-\log_2(\highlight{-6}+8)\,\,?</mrow>
+              <mrow>\log_2(1)\amp=1-\log_2(2)\,\,?</mrow>
+              <mrow>0\amp=1-1\,\,\checkmark</mrow>
+            </md>
+            The solution to the stated equation is <m>-6</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log(4-3x)=\log(4x-7)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We can straight away take advantage of the fact that the log-base-10 function is one-to-one.
+            <md>
+              <mrow>\log(4-3x)\amp=\log(4x-7)</mrow>
+              <mrow>4-3x\amp=4x-7</mrow>
+              <mrow>4-3x\addright{3x}\amp=4x-7\addright{3x}</mrow>
+              <mrow>4\amp=7x-7</mrow>
+              <mrow>4\addright{7}\amp=7x-7\addright{7}</mrow>
+              <mrow>11\amp=7x</mrow>
+              <mrow>\divideunder{11}{7}\amp=\divideunder{7x}{7}</mrow>
+              <mrow>\frac{11}{7}\amp=x</mrow>
+            </md>
+            Time to check.
+            <md>
+              <mrow>\log\left(4-3\multiplyright{\frac{11}{7}}\right)\amp=\log\left(4\multiplyright{\frac{11}{7}}-7\right)\,\,?</mrow>
+              <mrow>\log\left(\frac{28}{7}-\frac{33}{7}\right)\amp=\log\left(\frac{44}{7}-\frac{49}{7}\right)\,\,?</mrow>
+              <mrow>\log\left(-\frac{5}{7}\right)\amp=\log\left(-\frac{5}{7}\right)\,\,\highlightr{\text{nope}}</mrow>
+            </md>
+            Whiles it's true that <m>-\frac{5}{7}=-\frac{5}{7}</m>, <m>\log(\left(-\frac{5}{7}\right) \neq \log(\left(-\frac{5}{7}\right)</m> because <m>-\frac{5}{7}</m> is not in the domain of log-base-10 function.  Since our only proposed solution did not check, we conclude that the given equation has no solutions.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\log_{17}(x+15)-\log_{17}(x+2)=\log_{17}(x-9)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\log_{17}(x+15)-\log_{17}(x+2)\amp=\log_{17}(x-9)</mrow>
+              <mrow>\log_{17}\left(\frac{x+15}{x+2}\right)\amp=\log_{17}(x-9)</mrow>
+              <mrow>\frac{x+15}{x+2}\amp=x-9</mrow>
+              <mrow>\frac{x+15}{x+2}\multiplyright{(x+2)}\amp=(x-9)\multiplyright{(x+2)}</mrow>
+              <mrow>x+15\amp=x^2-7x-18</mrow>
+              <mrow>x+15\subtractright{x}\subtractright{15}\amp=x^2-7x-18\subtractright{x}\subtractright{15}</mrow>
+              <mrow>0\amp=x^2-8x-33</mrow>
+              <mrow>0\amp=(x-11)(x+3)</mrow>
+            </md>
+            <md>
+              <mrow>x-11\amp=0 \amp\amp\text{or}\amp x+3\amp=0</mrow>
+              <mrow>x-11\addright{11}\amp=0\addright{11} \amp\amp\text{or}\amp x+3\subtractright{3}\amp=0\subtractright{3}</mrow>
+              <mrow>x\amp=11 \amp\amp\text{or}\amp x\amp=-3</mrow>
+            </md>
+            We identify the proposed solution of <m>-3</m> as extraneous as it presents us with <m>\log_{17}(-1)</m> and <m>\log_{17}(-12)</m> when replaced for <m>x</m> in the original equation.  We need to go ahead and check <m>11</m>.
+            <md>
+              <mrow>\log_{17}(\highlight{11}+15)-\log_{17}(\highlight{11}+2)\amp=\log_{17}(\highlight{11}-9)\,\,?</mrow>
+              <mrow>\log_{17}(26)-\log_{17}(13)\amp=\log_{17}(2)\,\,?</mrow>
+              <mrow>\log_{17}\left(\frac{26}{13}\right)\amp=\log_{17}(2)\,\,?</mrow>
+              <mrow>\log_{17}(2)\amp=\log_{17}(2)\,\,\checkmark</mrow>
+            </md>
+            The solution is <m>11</m>.
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+</section>

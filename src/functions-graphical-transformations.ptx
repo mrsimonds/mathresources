@@ -1,0 +1,1505 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="functions-graphical-transformations">
+  <title>Graphical Transformations</title>
+
+  <p>
+    In this section we are going to explore the graphical repercussions of alterations to a given function formula.  Specifically, we are going to explore how the graph of the function <m>g</m> compares to the graph <m>f</m> where
+    <me>g(x)=a \cdot f\left(b(x-h)\right)+k</me>
+    for non-zero constants <m>a</m>, <m>b</m>, <m>h</m>, and <m>k</m>.
+  </p>
+  <p>
+    We will also consider the repercussions when
+    <me>g(x)=a \cdot f(bx+c)+d</me>
+    for nonzero constants <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m>.
+  </p>
+  <p>
+    Before taking on the general cases, we need to examine the effects of minor, stand-alone, changes to the formula for <m>f</m>.
+  </p>
+
+  <paragraphs>
+    <title>Transformations of type <m>g(x)=f(x \pm h)</m></title>
+
+    <p></p>
+    <p>
+      Assuming that <m>h</m> is a positive number, the graph of <m>y=f(x-h)</m> shifts every point on <m>y=f(x)</m> rightward by <m>h</m> units while the graph of <m>y=f(x+h)</m> shifts every point on <m>y=f(x)</m> leftward by <m>h</m> units.
+    </p>
+    <p>
+      The graphs of <m>f(x)=\abs{x}</m> and <m>g(x)=\abs{x-3}</m> are shown in <xref ref="functions-grahical-transformations-figure-1">Figure</xref>.  Notice that <m>g</m> is the result of shifting <m>f</m> to the right by 3 units. The graphs of <m>f(x)=\abs{x}</m> and <m>h(x)=\abs{x+4}</m> are shown in <xref ref="functions-grahical-transformations-figure-2">Figure</xref>.  Notice that <m>h</m> is the result of shifting <m>f</m> to the left by 4 units.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <figure xml:id="functions-grahical-transformations-figure-1">
+        <caption><m>\highlight{y=\abs{x}}\,\,\text{and}\,\,\highlightr{y=\abs{x-3}}</m></caption>
+        <image>
+          <description>
+            A graph with several arrows of length three pointing to the right from the function <m>y=\abs(x)</m> to the function <m>y=\abs(x-3)</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [axis equal image,
+                              xmin=-8,xmax=8,
+                              ymin=-8,ymax=8,
+                              xtick={-6,-4,-2,2,4,6},
+                              ytick={-6,-4,-2,2,4,6},
+                              minor xtick={-7,-5,-3,-1,1,3,5,7},
+                              minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                \addplot[primarycurve,domain=-4.9:7.9,smooth] {abs(x-3)};
+                \addplot[primarycurve,domain=-7.9:7.9,smooth,color=blue] {abs(x)};
+                \addplot[interval,black,thick,-{Stealth}] coordinates {(-5,5) (-2,5)};
+                \addplot[interval,black,thick,-{Stealth}] coordinates {(-2,2) (1,2)};
+                \addplot[interval,black,thick,-{Stealth}] coordinates {(4,4) (7,4)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+      <figure xml:id="functions-grahical-transformations-figure-2">
+        <caption><m>\highlight{y=\abs{x}}\,\,\text{and}\,\,\highlightr{y=\abs{x+4}}</m></caption>
+        <image>
+          <description>
+            A graph with several arrows of length four pointing to the left from the function <m>y=\abs(x)</m> to the function <m>y=\abs(x+4)</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [axis equal image,
+                              xmin=-8,xmax=8,
+                              ymin=-8,ymax=8,
+                              xtick={-6,-4,-2,2,4,6},
+                              ytick={-6,-4,-2,2,4,6},
+                              minor xtick={-7,-5,-3,-1,1,3,5,7},
+                              minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                \addplot[primarycurve,domain=-7.9:3.9,smooth] {abs(x+4)};
+                \addplot[primarycurve,domain=-7.9:7.9,smooth,color=blue] {abs(x)};
+                \addplot[interval,black,thick,-{Stealth}] coordinates {(6,6) (2,6)};
+                \addplot[interval,black,thick,-{Stealth}] coordinates {(1,1) (-3,1)};
+                \addplot[interval,black,thick,-{Stealth}] coordinates {(-3,3) (-7,3)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+  </paragraphs>
+
+  <paragraphs>
+    <title>Transformations of type <m>g(x)=f(x) \pm k</m></title>
+
+    <p></p>
+    <p>
+      Assuming that <m>k</m> is a positive number, the graph of <m>y=f(x)+k</m> shifts every point on <m>y=f(x)</m> upward by <m>hk</m> units while the graph of <m>y=f(x)-k</m> shifts every point on <m>y=f(x)</m> downward by <m>k</m> units.
+    </p>
+    <p>
+      The graphs of <m>f(x)=\abs{x}</m> and <m>g(x)=\abs{x}-5</m> are shown in <xref ref="functions-grahical-transformations-figure-3">Figure</xref>.  Notice that <m>g</m> is the result of shifting <m>f</m> downward by 5 units. The graphs of <m>f(x)=\abs{x}</m> and <m>h(x)=\abs{x}+2</m> are shown in <xref ref="functions-grahical-transformations-figure-4">Figure</xref>.  Notice that <m>h</m> is the result of shifting <m>f</m> upward by 2 units.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <figure xml:id="functions-grahical-transformations-figure-3">
+        <caption><m>\highlight{y=\abs{x}}\,\,\text{and}\,\,\highlightr{y=\abs{x}-5}</m></caption>
+        <image>
+          <description>
+            A graph with several arrows of length five pointing downward from the function <m>y=\abs(x)</m> to the function <m>y=\abs(x)-5</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [axis equal image,
+                              xmin=-8,xmax=8,
+                              ymin=-8,ymax=8,
+                              xtick={-6,-4,-2,2,4,6},
+                              ytick={-6,-4,-2,2,4,6},
+                              minor xtick={-7,-5,-3,-1,1,3,5,7},
+                              minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                \addplot[primarycurve,domain=-7.9:7.9,smooth] {abs(x)-5};
+                \addplot[primarycurve,domain=-7.9:7.9,smooth,color=blue] {abs(x)};
+                \addplot[interval,black,thick,-{Stealth}] coordinates {(-7,7) (-7,2)};
+                \addplot[interval,black,thick,-{Stealth}] coordinates {(-2,2) (-2,-3)};
+                \addplot[interval,black,thick,-{Stealth}] coordinates {(5,5) (5,0)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+      <figure xml:id="functions-grahical-transformations-figure-4">
+        <caption><m>\highlight{y=\abs{x}}\,\,\text{and}\,\,\highlightr{y=\abs{x}+2}</m></caption>
+        <image>
+          <description>
+            A graph with several arrows of length two pointing upward from the function <m>y=\abs(x)</m> to the function <m>y=\abs(x)+2</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [axis equal image,
+                              xmin=-8,xmax=8,
+                              ymin=-8,ymax=8,
+                              xtick={-6,-4,-2,2,4,6},
+                              ytick={-6,-4,-2,2,4,6},
+                              minor xtick={-7,-5,-3,-1,1,3,5,7},
+                              minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                \addplot[primarycurve,domain=-5.9:5.9,smooth] {abs(x)+2};
+                \addplot[primarycurve,domain=-7.9:7.9,smooth,color=blue] {abs(x)};
+                \addplot[interval,thick,black,-{Stealth}] coordinates {(-4,4) (-4,6)};
+                \addplot[interval,thick,black,-{Stealth}] coordinates {(1,1) (1,3)};
+                \addplot[interval,thick,black,-{Stealth}] coordinates {(5,5) (5,7)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+
+    <figure xml:id="functions-graphical-transformations-geogebra-1">
+      <caption>Practice Shift Transformations:  Enter the coordinates for the shifted points A, B, C and then click "Show Transformed Curve" to check your answer.</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/transformation-shift-quiz.ggb">
+          setPerspective("G");
+          setGridVisible(1);         
+        </slate>
+      </interactive>
+    </figure>
+    
+  </paragraphs>
+
+  <paragraphs>
+    <title>Transformations of type <m>g(x)=f(-x)</m> and <m>g(x)=-f(x)</m></title> 
+
+    <p></p>
+    <p>
+      The graph of <m>y=f(-x)</m> is a reflection of the graph of <m>y=f(x)</m> across the <m>y</m>-axis. The graph of <m>y=-f(x)</m> is a reflection of the graph of <m>y=f(x)</m> across the <m>x</m>-axis.
+    </p>
+    <p>
+      The graphs of <m>f(x)=x+5</m> and <m>g(x)=-x+5</m> are shown in <xref ref="functions-grahical-transformations-figure-5">Figure</xref>.  Notice that the two lines are reflections across the <m>y</m>-axis. The graphs of <m>f(x)=x+5</m> and <m>g(x)=-(x+5)</m> are shown in <xref ref="functions-grahical-transformations-figure-6">Figure</xref>.  Notice that the two lines are reflections across the <m>x</m>-axis.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <figure xml:id="functions-grahical-transformations-figure-5">
+        <caption><m>\highlight{y=x+5}</m> and <m>\highlightr{y=-x+5}</m></caption>
+        <image>
+          <description>
+            A graph of the lines <m>f(x)=x+5</m> and <m>g(x)=-x+5</m>.  Both lines pass through the point <m>(0,5)</m>.  The function <m>f</m> passes through the point <m>(1,6)</m> whereas the function <m>g</m> passes through the point <m>(-1,6)</m>. The function <m>f</m> passes through the point <m>(2,6)</m> whereas the function <m>g</m> passes through the point <m>(-2,6)</m>.  This pattern of common <m>y</m>-coordinates but opposite <m>x</m>-coordinates continues without end in both the positive <m>x</m> direction and the negative <m>x</m> direction.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [axis equal image,
+                              xmin=-8,xmax=8,
+                              ymin=-8,ymax=8,
+                              xtick={-6,-4,-2,2,4,6},
+                              ytick={-6,-4,-2,2,4,6},
+                              minor xtick={-7,-5,-3,-1,1,3,5,7},
+                              minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                \addplot[primarycurve,domain=-2.9:7.9,smooth] {-x+5};
+                \addplot[primarycurve,domain=-7.9:2.9,smooth,color=blue] {x+5};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+      <figure xml:id="functions-grahical-transformations-figure-6">
+        <caption><m>\highlight{y=x+5}</m> and <m>\highlightr{y=-(x+5)}</m></caption>
+        <image>
+          <description>
+            A graph of the lines <m>f(x)=x+5</m> and <m>g(x)=-(x+5)</m>.  Both lines pass through the point <m>(-5,0)</m>.  The function <m>f</m> passes through the point <m>(-4,1)</m> whereas the function <m>g</m> passes through the point <m>(-4,-1)</m>. The function <m>f</m> passes through the point <m>(-3,2)</m> whereas the function <m>g</m> passes through the point <m>(-3,-2)</m>.  This pattern of common <m>x</m>-coordinates but opposite <m>y</m>-coordinates continues without end in both the positive <m>x</m> direction and the negative <m>x</m> direction.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [axis equal image,
+                              xmin=-8,xmax=8,
+                              ymin=-8,ymax=8,
+                              xtick={-6,-4,-2,2,4,6},
+                              ytick={-6,-4,-2,2,4,6},
+                              minor xtick={-7,-5,-3,-1,1,3,5,7},
+                              minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                \addplot[primarycurve,domain=-7.9:2.9,smooth] {-x-5};
+                \addplot[primarycurve,domain=-7.9:2.9,smooth,color=blue] {x+5};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+  </paragraphs>
+
+  <paragraphs>
+    <title>Transformations of type <m>g(x)=f(bx)</m> where <m>b \gt 0, b \neq 1</m></title> 
+
+    <p></p>
+    <p>
+      The graph of <m>y=f(bx), b \gt 0</m> moves the <m>x</m>-coordinate of every point on <m>f</m> by the factor of <m>\frac{1}{b}</m>.  When <m>b \gt 1</m> the result is a horizontal compression.  When <m>0 \lt b \lt 1</m>, the result is a horizontal stretch.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+    <p>
+      The graphs of <m>f(x)=x^2</m> and <m>g(x)=(2x)^2</m> are shown in <xref ref="functions-grahical-transformations-figure-7">Figure</xref>.  Notice that every <m>x</m>-coordinate on <m>f</m> has been cut in half on the graph of <m>g</m>.  The result is a horizontal compression of <m>f</m> by a factor of <m>\frac{1}{2}</m>.  Three pairs of points have been highlighted to accentuate the effect.  Specifically:
+      <md>
+        <mrow>(2,4) \rightarrow (1,4)</mrow>
+        <mrow>(4,16) \rightarrow (2,16)</mrow>
+        <mrow>(-4,16) \rightarrow (-2,16)</mrow>
+      </md>
+    </p>
+
+      <figure xml:id="functions-grahical-transformations-figure-7">
+        <caption><m>\highlight{y=x^2}</m> and <m>\highlightr{y=(2x)^2}</m></caption>
+        <image>
+          <description>
+            A graph of the functions <m>y=x^2</m> and <m>y=(2x)^2</m>.  There are three arrows pointing either left or right from the function <m>y=x^2</m> to the function <m>y=(2x)^2</m>.  One arrow originates at the point <m>(-4,16)</m> and terminates at the point <m>(-2,16)</m>.  A second arrow originates at the point <m>(4,16)</m> and terminates at the point <m>(2,16)</m>.  The third arrow originates at the point <m>(2,4)</m> and terminates at the point <m>(1,4)</m>. 
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [axis equal image,
+                              xmin=-10,xmax=10,
+                              ymin=-2,ymax=18,
+                              xtick={-8,-6,-4,-2,2,4,6,8},
+                              ytick={2,4,6,8,10,12,14,16},
+                              minor xtick={-9,-7,-5,-3,-1,1,3,5,7,9},
+                              minor ytick={--1,1,3,5,7,9,11,13,15,17}]
+                \addplot[primarycurve,domain=-2.1:2.1,smooth] {4*x^2};
+                \addplot[primarycurve,domain=-4.2:4.2,smooth,color=blue] {x^2};
+                \addplot[interval,thick,black,-{Stealth}] coordinates {(-4,16) (-2,16)};
+                \addplot[interval,thick,black,-{Stealth}] coordinates {(4,16) (2,16)};
+                \addplot[interval,thick,black,-{Stealth}] coordinates {(2,4) (1,4)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+     <sidebyside widths="47% 47%" margins="0%">
+
+    <p>
+      The graphs of <m>f(x)=x^2</m> and <m>g(x)=\left(\frac{1}{3}x\right)^2</m> are shown in <xref ref="functions-grahical-transformations-figure-8">Figure</xref>.  Notice that every <m>x</m>-coordinate on <m>f</m> has been tripled on the graph of <m>g</m>.  The result is a horizontal stretch of <m>f</m> by a factor of <m>3</m>.  Three pairs of points have been highlighted to accentuate the effect.  Specifically:
+      <md>
+        <mrow>(1,1) \rightarrow (3,1)</mrow>
+        <mrow>(2,4) \rightarrow (6,4)</mrow>
+        <mrow>(3,9) \rightarrow (9,9)</mrow>
+      </md>
+    </p>
+
+      <figure xml:id="functions-grahical-transformations-figure-8">
+        <caption><m>\highlight{y=x^2}</m> and <m>\highlightr{y=\left(\frac{1}{3}x\right)^2}</m></caption>
+        <image>
+          <description>
+            A graph of the functions <m>y=x^2</m> and <m>y=(\frac{1}{3}x)^2</m>.  There are three arrows pointing to the right from the function <m>y=x^2</m> to the function <m>(\frac{1}{3}x)^2</m>.  The bottom arrow start at the point <m>(1,1)</m> and ends at the point <m>(3,1)</m>.  The middle arrow starts at the point <m>(2,4)</m> and ends at the point <m>(6,4)</m>.  The top arrow starts at the point <m>(3,9)</m> and ends at the point <m>(9,9)</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [axis equal image,
+                              xmin=-10,xmax=10,
+                              ymin=-2,ymax=18,
+                              xtick={-8,-6,-4,-2,2,4,6,8},
+                              ytick={2,4,6,8,10,12,14,16},
+                              minor xtick={-9,-7,-5,-3,-1,1,3,5,7,9},
+                              minor ytick={--1,1,3,5,7,9,11,13,15,17}]
+                \addplot[primarycurve,domain=-9.9:9.9,smooth] {(1/9)*x^2};
+                \addplot[primarycurve,domain=-4.2:4.2,smooth,color=blue] {x^2};
+                \addplot[interval,thick,black,-{Stealth}] coordinates {(1,1) (3,1)};
+                \addplot[interval,thick,black,-{Stealth}] coordinates {(3,9) (9,9)};
+                \addplot[interval,thick,black,-{Stealth}] coordinates {(2,4) (6,4)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+  </paragraphs>
+
+  <paragraphs>
+    <title>Transformations of type <m>g(x)=a \cdot f(x)</m> where <m>a \gt 0, a \neq 1</m></title> 
+
+    <p></p>
+    <p>
+      The graph of <m>y=a \cdot f(x), a \gt 0</m> moves the <m>y</m>-coordinate of every point on <m>f</m> by the factor of <m>a</m>.  When <m>a \gt 1</m> the result is a vertical stretch.  When <m>0 \lt a \lt 1</m>, the result is a vertical compression.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+    <p>
+      The graphs of <m>f(x)=x^2</m> and <m>g(x)=2x^2</m> are shown in <xref ref="functions-grahical-transformations-figure-9">Figure</xref>.  Notice that every <m>y</m>-coordinate on <m>f</m> has been doubled on the graph of <m>g</m>.  The result is a vertical stretch of <m>f</m> by a factor of <m>2</m>.  Three pairs of points have been highlighted to accentuate the effect.  Specifically:
+      <md>
+        <mrow>(1,1) \rightarrow (1,2)</mrow>
+        <mrow>(2,4) \rightarrow (2,8)</mrow>
+        <mrow>(3,9) \rightarrow (3,18)</mrow>
+      </md>
+    </p>
+
+      <figure xml:id="functions-grahical-transformations-figure-9">
+        <caption><m>\highlight{y=x^2}</m> and <m>\highlightr{y=2x^2}</m></caption>
+        <image>
+          <description>
+            A graph of the functions <m>y=x^2</m> and <m>y=2x^2</m>.  There are three arrows pointing upward from the function <m>y=x^2</m> to the function <m>y=2x^2</m>.  The leftmost arrow  starts at the point <m>(1,1)</m> and ends at the point <m>(1,2)</m>.  The arrow in the middle starts at the point <m>(2,4)</m> and ends at the point <m>(2,8)</m>.  The rightmost arrow starts at the point <m>(3,9)</m> and ends at the point <m>(3,18)</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [xmin=-8,xmax=8,
+                              ymin=-2,ymax=22,
+                              xtick={-6,-4,-2,2,4,6},
+                              ytick={2,4,6,8,10,12,14,16,18,20},
+                              minor xtick={-11,-9,-7,-5,-3,-1,1,3,5,7,9,11},
+                              minor ytick={--1,1,3,5,7,9,11,13,15,17,19,21}]
+                \addplot[primarycurve,domain=-3.3:3.3,smooth] {2*x^2};
+                \addplot[primarycurve,domain=-4.675:4.675,smooth,color=blue] {x^2};
+                \addplot[interval,thick,black,-{Stealth}] coordinates {(1,1) (1,2)};
+                \addplot[interval,thick,black,-{Stealth}] coordinates {(3,9) (3,18)};
+                \addplot[interval,thick,black,-{Stealth}] coordinates {(2,4) (2,8)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+     <sidebyside widths="47% 47%" margins="0%">
+
+    <p>
+      The graphs of <m>f(x)=x^2</m> and <m>g(x)=\frac{1}{2}x^2</m> are shown in <xref ref="functions-grahical-transformations-figure-10">Figure</xref>.  Notice that every <m>y</m>-coordinate on <m>f</m> has been cut in half on the graph of <m>g</m>.  The result is a vertical compression of <m>f</m> by a factor of <m>\frac{1}{2}</m>.  Three pairs of points have been highlighted to accentuate the effect.  Specifically:
+      <md>
+        <mrow>(2,4) \rightarrow (2,2)</mrow>
+        <mrow>(4,16) \rightarrow (4,8)</mrow>
+        <mrow>(-4,16) \rightarrow (-4,8)</mrow>
+      </md>
+    </p>
+
+      <figure xml:id="functions-grahical-transformations-figure-10">
+        <caption><m>\highlight{y=x^2}</m> and <m>\highlightr{y=\frac{1}{2}x^2}</m></caption>
+        <image>
+          <description>
+            A graph of the functions <m>y=x^2</m> and <m>y=\frac{1}{2}x^2</m>.  There are three arrows pointing downward from the function <m>y=x^2</m> to the function <m>y=\frac{1}{2}x^2</m>.  The leftmost arrow originates at the point <m>(-4,16)</m> and terminates at the point <m>(-4,8)</m>.  The arrow in the middle originates at the point <m>(2,4)</m> and terminates at the point <m>(2,2)</m>.  The rightmost arrow originates at the point <m>(4,16)</m> and terminates at the point <m>(4,8)</m>.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [xmin=-8,xmax=8,
+                              ymin=-2,ymax=22,
+                              xtick={-6,-4,-2,2,4,6},
+                              ytick={2,4,6,8,10,12,14,16,18,20},
+                              minor xtick={-11,-9,-7,-5,-3,-1,1,3,5,7,9,11},
+                              minor ytick={--1,1,3,5,7,9,11,13,15,17,19,21}]
+                \addplot[primarycurve,domain=-6.61:6.61,smooth] {(1/2)*x^2};
+                \addplot[primarycurve,domain=-4.675:4.675,smooth,color=blue] {x^2};
+                \addplot[interval,thick,black,-{Stealth}] coordinates {(-4,16) (-4,8)};
+                \addplot[interval,thick,black,-{Stealth}] coordinates {(4,16) (4,8)};
+                \addplot[interval,thick,black,-{Stealth}] coordinates {(2,4) (2,2)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <figure xml:id="functions-graphical-transformations-geogebra-2">
+      <caption>Practice Stretch/Compress/Reflect Transformations:  Enter the coordinates for the shifted points A, B, C and then click "Show Transformed Curve" to check your answer.</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/transformation-reflect-stretch-quiz.ggb">
+          setPerspective("G");
+          setGridVisible(1);         
+        </slate>
+      </interactive>
+    </figure>
+  </paragraphs>
+
+  <p>
+    We now turn our attention to graphical transformations that involve multiple transformations.  Let's make some observations based upon what we've already seen.
+    <ul>
+      <li>
+        <p>
+          Every algebraic change made inside the function parentheses affects <m>x</m> and only <m>x</m>; i.e. these result in horizontal shifts, horizontal stretches, horizontal compressions, or horizontal reflections (across the <m>y</m>-axis).
+        </p>
+      </li>
+      <li>
+        <p>
+          Every algebraic change made outside the function parentheses affects <m>y</m> and only <m>y</m>; i.e. these result in vertical shifts, vertical stretches, vertical compressions, or vertical reflections (across the <m>x</m>-axis).
+        </p>
+      </li>
+      <li>
+        <p>
+          The changes that affect <m>y</m> behave in accordance with the way in which we usually think about graphs; addition results in an upward shift, subtraction results in a downward shift, multiplication by a constant greater than 1 results in a greater <m>y</m>-coordinate where as multiplication by a number between 0 and 1 results in a lesser <m>y</m>-coordinate.
+        </p>
+      </li>
+      <li>
+        <p>
+          The changes that affect <m>x</m> behave opposite of the way in which we usually think about graphs; addition results in a leftward shift, subtraction results in a rightward shift, multiplication by a constant greater than 1 results in a lesser <m>x</m>-coordinate whereas multiplication by a constant between 0 and 1 results in a greater <m>x</m>-coordinate.
+        </p>
+      </li>
+    </ul>
+    A question that comes up when performing multiple transformations on the same function <mdash/> does order matter?  It's fairly intuitive that the order does not matter when deciding between horizontal and vertical transformations <mdash/> the first only affects <m>x</m>-coordinates and the second only affects <m>y</m>-coordinates.  Let's investigate where the order matters when there are multiple horizontal transformations (and by implication, multiple vertical transformations).
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Suppose that <m>f</m> contains the point <m>(7,2)</m>.  Where does that point end up if it is shifted right by 4 units and then horizontally stretched by a factor of 2?  What if the transformations are performed in the opposite order?  What can we conclude from this example?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Shifting <m>(7,2)</m> rightward by 4 units moves it to <m>(11,2)</m>. Stretching <m>(11,2)</m> horizontally by a factor of 2 moves it to <m>(22,2)</m>.
+      </p>
+      <p>
+        Stretching <m>(1,2)</m> horizontally by a factor of 2 moves it to <m>(2,2)</m>. Shifting <m>(2,2)</m> rightward by 4 units moves it to <m>(6,2)</m>.
+      </p>
+      <p>
+        We can infer from this one example that if both a horizontal stretch/compression and a horizontal shift occur, the order does affect the outcome.  It's reasonable to conclude that the same is true for a vertical stretch/compression and a vertical shifts.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Track the point <m>(7,2)</m> through a reflection across the <m>y</m>-axis followed by a horizontal compression by a factor of <m>\frac{2}{7}</m>.  Then track the same point performing the transformations in the opposite direction.  What can we conclude?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Reflecting <m>(7,2)</m> across the <m>y</m>-axis lands the point at <m>(-7,2)</m> and the subsequent horizontal compression by a factor of <m>\frac{2}{7}</m> lands the point at <m>(-2,2)</m>.
+      </p>
+      <p>
+        If we horizontally compress <m>(7,2)</m> by a factor of <m>\frac{2}{7}</m> it moves to <m>(2,2)</m>.  Reflecting <m>(2,2)</m> across the <m>y</m>-axis moves the point to <m>(-2,2)</m>.
+      </p>
+      <p>
+        Our conclusion is that in either the horizontal or vertical direction, the order in which stretches/compressions and reflections occur does not matter.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Track the point <m>(7,2)</m> through a leftward shift by 9 units followed by a reflection across the <m>y</m>-axis.  Then track the same point performing the transformations in the opposite order.  What can we conclude?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Shifting <m>(7,2)</m> leftward by 9 units moves it to <m>(-2,2)</m>.  Reflecting <m>(-2,2)</m> across the <m>y</m>-axis moves it to <m>(2,2)</m>.
+      </p>
+      <p>
+        Reflecting <m>(7,2)</m> across the <m>y</m>-axis moves it to <m>(-7,2)</m> and shifting <m>(-7,2)</m> leftward by 9 units moves it to <m>(-16,2)</m>.
+      </p>
+      <p>
+        Our conclusion that when mixing reflections with shifts the order matters.
+      </p>
+    </solution>
+  </example>
+
+  <p>
+    Summing up the last three examples, whether focused on the horizontal direction or vertical direction, the order matters when mixing transformations related to multiplication (stretches/compressions/reflections) with transformation related to addition/subtraction (shifts).
+  </p>
+  <p>
+    In the vertical direction, order of observation is observed.  Consider <m>g(x)=a \cdot f(x)+k</m>.  Because multiplication comes before addition (in order of operations), the stretch/compression/reflection comes before the shift.
+  </p>
+  <p>
+    Everything in the horizontal direction occurs opposite of the normal rules.  So not only are the order of operations not followed, they are flat out reversed.
+  </p>
+  <p>
+    Consider <m>g(x)=f(bx+c)</m>.  In order of operations, multiplication proceeds addition.  Because horizontal transformations follow opposite-land rules, we need to address the addition first and then attend to the multiplication.  To wit, the shift is performed before the stretch/compression/reflection.
+  </p>
+  <p>
+    Now consider <m>g(x)=f\left(b(x-k)\right)</m>.  In order of operations, we attend to the expression inside the parentheses before addressing the multiplication.  Horizontal transformations flaunt convention <mdash/> the multiplication is addressed before consideration is given to the expression inside the parentheses.  So graphically, we perform the stretch/compression/refection before we perform the shift.
+  </p>
+  <p>
+    Let's see several examples.
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Describe the graphical transformations (including order) affected upon <m>f</m> by <m>g</m> where <m>g(x)=3f(x)+8</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Because all of the algebraic changes being made to <m>f</m> occur outside the parentheses, they affect <m>y</m>-coordinates and their application needs to follow the order of operations.  To wit:
+        <ol label="1">
+          <li>
+            <p>
+              Perform a vertical stretch by a factor of 3.
+            </p>
+          </li>
+          <li>
+            <p>
+              Shift the resultant points upward by 8 units.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Describe the graphical transformations (including order) affected upon <m>f</m> by <m>g</m> where <m>g(x)=f(3x+8)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Because all of the algebraic changes being made to <m>f</m> occur inside the function parentheses, they affect <m>x</m>-coordinates and their application needs to be applied <em>opposite</em> of the order of operations.  To wit:
+        <ol label="1">
+          <li>
+            <p>
+              Shift every point on <m>f</m> leftward by 8 units.
+            </p>
+          </li>
+          <li>
+            <p>
+              Horizontally compress the resultant points by a factor of <m>\frac{1}{3}</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <p>
+    At least initially, most people find the opposite-land effects that occur in the horizontal direction annoying at best and totally confusing at worse.  It can help one come to terms with the effects if they understand why they are opposite in nature to what most folks expect.
+  </p>
+  <p>
+    Let's consider the last example.  Suppose that <m>f(17)=23</m> and that 17 is the only <m>x</m>-coordinate that has a function value of 23.  What would the vale of <m>x_{\text{new}}</m> have to be so that <m>g(x_{\text{new}})=23</m>.
+  </p>
+  <p>
+    Since <m>g(x_{\text{new}})=f(3x_{\text{new}}+8)</m>, the only way that the value of <m>g(x_{\text{new}})</m> will be 23 is if
+    <me>3x_{\text{new}}+8=17</me>
+    Let's solve that last equation for <m>x_{\text{new}}</m> to see what happens to the original <m>x</m>-coordinate of 17.
+    <md>
+      <mrow>3x_{\text{new}}+8\amp=17</mrow>
+      <mrow>3x_{\text{new}}+8\subtractright{8}\amp=17\subtractright{8}</mrow>
+      <mrow>3x_{\text{new}}\amp=17\subtractright{8}</mrow>
+      <mrow>\divideunder{3x_{\text{new}}}{3}\amp=\divideunder{17\subtractright{8}}{3}</mrow>
+      <mrow>x_{\text{new}}\amp=\divideunder{17\subtractright{8}}{3}</mrow>
+    </md>
+    Let's track what just happened.
+    <ol label="1">
+      <li>
+        <p>
+          8 was subtracted from 17.  The graphical result is the point being shifted to the left by 8 units.
+        </p>
+      </li>
+      <li>
+        <p>
+          That result was divided by 3.  The graphical result is the point that resulted from step 1 being horizontally compressed by a factor of <m>\frac{1}{3}</m>.
+        </p>
+      </li>
+    </ol>
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Describe the graphical transformations (including order) affected upon <m>f</m> by <m>g</m> where <m>g(x)=-2f\left(\frac{1}{4}x-5\right)-6</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Because the horizontal and vertical transformations are completely independent of one another, we need two ordered lists.
+      </p>
+      <p>
+        For the horizontal transformations we need to apply the following.
+        <ol label="1">
+          <li>
+            <p>
+              Shift every point rightward by 5 units.
+            </p>
+          </li>
+          <li>
+            <p>
+              Stretch the resultant points horizontally by a factor of 4.
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        For the vertical transformations we need to apply the following.
+        <ol label="1">
+          <li>
+            <p>
+              Stretch every point vertically by a factor of 2 and reflect every point across the <m>x</m>-axis.  These two actions can happen in either order.
+            </p>
+          </li>
+          <li>
+            <p>
+              Shift the resultant points downward by 6 units.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Describe the graphical transformations (including order) affected upon <m>f</m> by <m>g</m> where <m>g(x)=f\left(-5(x+4)\right)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Because all of the algebraic changes being made to <m>f</m> occur inside the function parentheses, they affect <m>x</m>-coordinates and their application needs to be applied <em>opposite</em> of the order of operations.  Because order of operations tell us to attend to what's inside the parentheses first, in this opposite-land context we need to attend to the factor of <m>-5</m> first.
+        <ol label="1">
+          <li>
+            <p>
+              Compress every point on <m>f</m> by a factor of <m>\frac{1}{5}</m> and reflect every point across the <m>y</m>-axis.  These two actions can be taken in either order.
+            </p>
+          </li>
+          <li>
+            <p>
+              Shift all of the resultant points leftward by 4 units.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Suppose that one point on <m>f</m> is <m>(-2,6)</m> (i.e., <m>f(-2)=6</m>). What is one point that you know lies of <m>g</m> where <m>g(x)=-f\left(\frac{1}{7}x-4\right)-12</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Let's track the horizontal motion first.
+        <ol label="1">
+          <li>
+            <p>
+              Shift the point rightward by 4 units.  The result is the point <m>(2,6)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Perform a horizontal stretch by a factor of 7.  The result if the point <m>(14,6)</m>.
+            </p>
+          </li>
+        </ol>
+        Now let's apply the vertical transformations to the new point <m>(14,6)</m>
+        <ol label="1">
+          <li>
+            <p>
+              Reflect the point across the <m>x</m>-axis.  The result is the point <m>(14.-6)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Shift the new point downward by 12 units.  The result is the point <m>(14,-18)</m>.
+            </p>
+          </li>
+        </ol>
+        The point <m>(-2,6)</m> gets transformed into the point <m>(14,-18)</m> on <m>g</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <sidebyside widths="47% 47%" margins="0%">
+
+        <p>
+          The graph of a function <m>f</m> is shown in <xref ref="functions-grahical-transformations-figure-11">Figure</xref>.  Graph on the same set of axes the function <m>g</m> where <me>g(x)=\frac{1}{2}f(-3x-2)+4.</me>
+        </p>
+
+        <figure xml:id="functions-grahical-transformations-figure-11">
+          <caption><m>\highlight{y=f(x)}</m></caption>
+          <image>
+            <description>
+              The graph of a function named <m>f</m>.  The function is a line segment that originates at the point <m>(-5,4)</m> and terminates at the point <m>(4,-6)</m>.  There are solid dots at each end of the line segment.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                  \begin{axis} [axis equal image,
+                                xmin=-8,xmax=8,
+                                ymin=-8,ymax=8,
+                                xtick={-6,-4,-2,2,4,6},
+                                ytick={-6,-4,-2,2,4,6},
+                                minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                \addplot[interval,ultra thick,blue,-] coordinates {(-5,4) (4,-6)};
+                \addplot[soliddot,color=blue] coordinates {(-5,4)};
+                \addplot[soliddot,color=blue] coordinates {(4,-6)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </sidebyside>
+    </statement>
+    <solution>
+      <p>
+        Because <m>f</m> graphs to a line segment, <m>g</m> will also graph to a line segment.  (None of the transformations introduce a bend that was not already there.)  As such, we can just track the endpoints through the transformations, plot the new endpoints, and connect those with a line segment.  Let's begin with the horizontal transformations and follow up with the vertical transformations.  To facilitate communication, let's give the endpoints labels.
+        <md>
+          <mrow>A:\,(-5,4)</mrow>
+          <mrow>B:\,(4,-6)</mrow>
+        </md>
+        <ol label="1">
+          <li>
+            <p>
+              Shift rightward by 2 units.
+              <md>
+                <mrow>A:\,(-5,4) \rightarrow (-3,4)</mrow>
+                <mrow>B:\,(4,-6) \rightarrow (6,-6)</mrow>
+              </md>
+            </p>
+          </li>
+          <li>
+            <p>
+              Reflect across the <m>y</m>-axis and horizontally compress by a factor of <m>\frac{1}{3}</m>.
+              <md>
+                <mrow>A:\,(-3,4) \rightarrow (1,4)</mrow>
+                <mrow>B:\,(6,-6) \rightarrow (-2,-6)</mrow>
+              </md>
+            </p>
+          </li>
+          <li>
+            <p>
+              Vertically compress by a factor of <m>\frac{1}{2}</m>.
+              <md>
+                <mrow>A:\,(1,4) \rightarrow (1,2)</mrow>
+                <mrow>B:\,(-2,-6) \rightarrow (-2,-3)</mrow>
+              </md>
+            </p>
+          </li>
+          <li>
+            <p>
+              Shift upward by 4 units.
+              <md>
+                <mrow>A:\,(1,2) \rightarrow (1,6)</mrow>
+                <mrow>B:\,(-2,-3) \rightarrow (-2,1)</mrow>
+              </md>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <figure xml:id="functions-grahical-transformations-figure-12">
+        <caption><m>\highlight{y=f(x)}</m> and <m>\highlightr{y=g(x)}</m></caption>
+        <image width="47%">
+          <description>
+            The graph of two functions, one named <m>f</m> and the other named <m>g</m>.  The function <m>f</m> is a line segment that originates at the point <m>(-5,4)</m> and terminates at the point <m>(4,-6)</m>.  There are solid dots at each end of the line segment.  The function <m>g</m> is a line segment that originates at the point <m>(-2,1)</m> and terminates at the point <m>(1,6)</m>.  There are solid dots at each end of the line segment.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [axis equal image,
+                              xmin=-8,xmax=8,
+                              ymin=-8,ymax=8,
+                              xtick={-6,-4,-2,2,4,6},
+                              ytick={-6,-4,-2,2,4,6},
+                              minor xtick={-7,-5,-3,-1,1,3,5,7},
+                              minor ytick={-7,-5,-3,-1,1,3,5,7}]
+              \addplot[interval,ultra thick,blue,-] coordinates {(-5,4) (4,-6)};
+              \addplot[interval,ultra thick,red,-] coordinates {(1,6) (-2,1)};
+              \addplot[soliddot,color=blue] coordinates {(-5,4)};
+              \addplot[soliddot,color=blue] coordinates {(4,-6)};
+              \addplot[soliddot,color=red] coordinates {(1,6)};
+              \addplot[soliddot,color=red] coordinates {(-2,1)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <sidebyside widths="47% 47%" margins="0%">
+
+        <p>
+          The graph of a function <m>f</m> is shown in <xref ref="functions-grahical-transformations-figure-13">Figure</xref>.  Graph on the same set of axes the function <m>g</m> where <me>g(x)=-f\left(\frac{1}{2}(x+1)\right)-2.</me>
+        </p>
+
+        <figure xml:id="functions-grahical-transformations-figure-13">
+          <caption><m>\highlight{y=f(x)}</m></caption>
+          <image width="47%">
+            <description>
+              The graph of a function named <m>f</m>.  The function resembles a vee.  The bottom point on the vee is <m>(2,-5)</m>.  The left side of the vee passes through the point <m>(0,-1)</m>.  The right side of the vee passes through the point <m>(4,-1)</m>.  There are arrows at both ends of the vee.  
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                  \begin{axis} [axis equal image,
+                                xmin=-8,xmax=8,
+                                ymin=-8,ymax=8,
+                                xtick={-6,-4,-2,2,4,6},
+                                ytick={-6,-4,-2,2,4,6},
+                                minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                \addplot[primarycurve,domain=2:7.95,color=blue,-{Stealth}] {2*(x-2)-5};
+                \addplot[primarycurve,domain=-4.45:2,color=blue,{Stealth}-] {-2*(x-2)-5};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+
+      </sidebyside>
+    </statement>
+    <solution>
+      <p>
+        Because <m>f</m> graphs to a V-shape, <m>g</m> will also graph to a V-shape.  As such, we can just track the point of the V and one point on each arm of the V through the transformations, plot the new points, and connect into a V-shape.  Let's begin with the horizontal transformations and follow up with the vertical transformations.  To facilitate communication, let's give the key points labels.
+        <md>
+          <mrow>A:\,(0,-1)</mrow>
+          <mrow>V:\,(2,-5)</mrow>
+          <mrow>B:\,(4,-1)</mrow>
+        </md>
+        <ol label="1">
+          <li>
+            <p>
+              Horizontally stretch by a factor of 2.
+              <md>
+                <mrow>A:\,(0,-1) \rightarrow (0,-1)</mrow>
+                <mrow>V:\,(2,-5) \rightarrow (4,-5)</mrow>
+                <mrow>B:\,(4,-1) \rightarrow (8,-1)</mrow>
+              </md>
+            </p>
+          </li>
+          <li>
+            <p>
+              Shift leftward by 1 unit.
+              <md>
+                <mrow>A:\,(0,-1) \rightarrow (-1,-1)</mrow>
+                <mrow>V:\,(4,-5) \rightarrow (3,-5)</mrow>
+                <mrow>B:\,(8,-1) \rightarrow (7,-1)</mrow>
+              </md>
+            </p>
+          </li>
+          <li>
+            <p>
+              Reflect across the <m>x</m>-axis.
+              <md>
+                <mrow>A:\,(-1,-1) \rightarrow (-1,1)</mrow>
+                <mrow>V:\,(3,-5) \rightarrow (3,5)</mrow>
+                <mrow>B:\,(7,-1) \rightarrow (7,1)</mrow>
+              </md>
+            </p>
+          </li>
+          <li>
+            <p>
+              Shift downward by 2 units.
+              <md>
+                <mrow>A:\,(-1,1) \rightarrow (-1,-1)</mrow>
+                <mrow>V:\,(3,5) \rightarrow (3,3)</mrow>
+                <mrow>B:\,(7,1) \rightarrow (7,-1)</mrow>
+              </md>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <figure xml:id="functions-grahical-transformations-figure-14">
+        <caption><m>\highlight{y=f(x)}</m> and <m>\highlightr{y=g(x)}</m></caption>
+        <image width="47%">
+          <description>
+            The graph of two functions, one named <m>f</m> and the other named <m>g</m>.  The function <m>f</m> resembles a vee.  The bottom point on the vee is <m>(2,-5)</m>.  The left side of the vee passes through the point <m>(0,-1)</m>.  The right side of the vee passes through the point <m>(4,-1)</m>.  There are arrows at both ends of the vee.  The function <m>g</m> resembles an upside down vee.  The topmost point lies at <m>(3,3)</m>.  The left side of the vee passes through the point <m>(-1,-1)</m>.  The ride side of the vee passes through the point <m>(7,-1)</m>.  There are arrows at both ends of the vee.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [axis equal image,
+                              xmin=-8,xmax=8,
+                              ymin=-8,ymax=8,
+                              xtick={-6,-4,-2,2,4,6},
+                              ytick={-6,-4,-2,2,4,6},
+                              minor xtick={-7,-5,-3,-1,1,3,5,7},
+                              minor ytick={-7,-5,-3,-1,1,3,5,7}]
+              \addplot[primarycurve,domain=2:7.95,color=blue,-{Stealth}] {2*(x-2)-5};
+              \addplot[primarycurve,domain=-4.45:2,color=blue,{Stealth}-] {-2*(x-2)-5};
+              \addplot[primarycurve,domain=3:7.95,smooth,color=red,-{Stealth}] {-(x-3)+3};
+              \addplot[primarycurve,domain=-7.95:3,smooth,color=red,{Stealth}-] {(x-3)+3};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+    </solution>
+  </example>
+  <figure xml:id="functions-graphical-transformations-geogebra-3">
+    <caption>Practice Transformations based upon <m>y=A f(B(x-h))+k</m>:  Enter the coordinates for the shifted points A, B, C and then click "Show Transformed Curve" to check your answer.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/transformation-quiz-2.ggb">
+        setPerspective("G");
+        setGridVisible(1);         
+      </slate>
+    </interactive>
+    </figure>
+    <figure xml:id="functions-graphical-transformations-geogebra-4">
+      <caption>Practice Transformations based upon <m>y=A f(Bx-h)+k</m>:  Enter the coordinates for the shifted points A, B, C and then click "Show Transformed Curve" to check your answer.</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/transformation-quiz-1.ggb">
+          setPerspective("G");
+        setGridVisible(1);         
+        </slate>
+      </interactive>
+    </figure>
+
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          In each exercise a function <m>g</m> is described in terms of the function <m>f</m>.  For each function do each of the following.
+          <ul>
+            <li>
+              <p>
+                Describe the transformations that must occur to the graph of <m>f</m> to produce the graph of <m>g</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Determine one point on the graph of <m>g</m> given that one point on the graph of <m>f</m> is <m>(1,1)</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>g(x)=f(x-3)+6</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The only two transformations that need to occur are a rightward shift by 3 units and an upward shift of 6 units.  The point we know on <m>g</m> is <m>(4,7)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>g(x)=5f(x)-7</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The only two transformations that need to occur are a vertical stretch by a factor of 5 followed by a downward shift by 7 units.  The point we know on <m>g</m> is <m>(1,-2)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>g(x)=f(4x-3)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The only two transformations that need to occur are a rightward shift by a factor of 3 followed by a vertical compression by a factor of <m>\frac{1}{4}</m>.  The point we know on <m>g</m> is <m>(1,1)</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>g(x)=f\left(-\frac{1}{10}(x+21)\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            There are three transformations that need to occur.  Let's track <m>(1,1)</m> through the process.
+            <ol label="1">
+              <li>
+                <p>
+                  Reflect across the <m>y</m>-axis.  The point is now <m>(-1,1)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Stretch horizontally by a factor of 10.  The point is now <m>(-10,1)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Shift leftward by 21 units.  The point <m>(1,1)</m> from <m>f</m> ends up lying at <m>(-31,1)</m> on <m>g</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>g(x)=-f\left(\frac{2}{3}x-4\right)+7</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            There are two horizontal transformations and two vertical transformations that need to occur.  Let's track <m>(1,1)</m> through the four actions, starting with the horizontal transformations.
+            <ol label="1">
+              <li>
+                <p>
+                  Shift rightward by four units. The point is now <m>(5,1)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Horizontally stretch by a factor of 1.5.  The point is now <m>(7.5,1)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Reflect across the <m>x</m>-axis.  The point is now <m>(7.5,-1)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Shift upward by 7 units.  The point <m>(1,1)</m> from <m>f</m> ends up lying at <m>(7.5,6)</m> on <m>g</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>g(x)=-8f\left(-\frac{4}{3}x-7\right)-12</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            There are three transformations in both the horizontal direction and the vertical direction.  Let's track <m>(1,1)</m> through the transformations starting with the horizontal transformations.
+            <ol label="1">
+              <li>
+                <p>
+                  Shift rightward by 7 units.  The point is now <m>(8,1)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Reflect across the <m>y</m>-axis.  The point is now <m>(-8,1)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Horizontally compress by a factor of <m>\frac{3}{4}</m>.  The point is now <m>(-6,1)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Reflect across the <m>x</m>-axis.  The point is now <m>(-6,-1)</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Vertically stretch by a factor of 8.  The point is now <m>(-6,-8)</m>.
+                </p>
+              </li>
+              <li>
+                Shift downward by 12 units. The point <m>(1,1)</m> from <m>f</m> ends up lying at <m>(-6,-20)</m> on <m>g</m>.
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          In each exercise a graph of a function named <m>f</m> is shown and a function named <m>g</m> is defined in terms of <m>f</m>.  Draw onto the same set of axes the function <m>g</m>.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>g(x)=2f(-x-5)+4</m>
+          </p>
+          <figure xml:id="functions-grahical-transformations-figure-15">
+            <caption><m>\highlight{y=f(x)}</m></caption>
+            <image width="47%">
+              <description>
+                The graph of a linear function named <m>f</m>.  The line passes through the points <m>(2,-3)</m> and <m>(-1,-4)</m>.  There are arrows on both ends of the line.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                    \begin{axis} [axis equal image,
+                                  xmin=-8,xmax=8,
+                                  ymin=-8,ymax=8,
+                                  xtick={-6,-4,-2,2,4,6},
+                                  ytick={-6,-4,-2,2,4,6},
+                                  minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                  minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                  \addplot[primarycurve,domain=-7.95:7.95,color=blue] {(1/3)*(x-2)-3};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </statement>
+        <solution>
+          <p>
+            Since the function will stay linear, and two points determine a unique line, we can just track two points, plot their final location, and connect the dots.  We'll start with the horizontal transformations and conclude with the vertical transformations. Let's identify our two points thus.
+            <md>
+              <mrow>A:\,(2,-3)</mrow>
+              <mrow>B:\,(-1,-4)</mrow>
+            </md>
+            <ol label="1">
+              <li>
+                <p>
+                  Shift rightward by 5 units.
+                  <md>
+                    <mrow>A:\,(2,-3) \rightarrow (7,-3)</mrow>
+                    <mrow>B:\,(-1,-4) \rightarrow (4,-4)</mrow>
+                  </md>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Reflect across the <m>y</m>-axis.
+                  <md>
+                    <mrow>A:\,(7,-3) \rightarrow (-7,-3)</mrow>
+                    <mrow>B:\,(4,-4) \rightarrow (-4,-4)</mrow>
+                  </md>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Stretch vertically by a factor of 2.
+                  <md>
+                    <mrow>A:\,(-7,-3) \rightarrow (-7,-6)</mrow>
+                    <mrow>B:\,(-4,-4) \rightarrow (-4,-8)</mrow>
+                  </md>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Shift upward by 4 units.
+                    <md>
+                      <mrow>A:\,(-7,-6) \rightarrow (-7,-2)</mrow>
+                      <mrow>B:\,(-4,-8) \rightarrow (-4,-4)</mrow>
+                    </md>
+                  </p>
+                </li>
+              </ol>
+            </p>
+            <figure xml:id="functions-grahical-transformations-figure-16">
+              <caption><m>\highlight{y=f(x)}</m> and <m>\highlightr{y=g(x)}</m></caption>
+              <image width="47%">
+                <description>
+                  The graph of two linear functions, one named named <m>f</m> and the other named <m>g</m>.  The function <m>f</m> passes through the points <m>(2,-3)</m> and <m>(-1,-4)</m>.  There are arrows on both ends of the line.  The function <m>g</m> passes through the points <m>(-7,-2)</m> and <m>(-4,-4)</m>.  There are arrows at both ends of the line.
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                      \begin{axis} [axis equal image,
+                                    xmin=-8,xmax=8,
+                                    ymin=-8,ymax=8,
+                                    xtick={-6,-4,-2,2,4,6},
+                                    ytick={-6,-4,-2,2,4,6},
+                                    minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                    minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                    \addplot[primarycurve,domain=-7.95:7.95,color=blue] {(1/3)*(x-2)-3};
+                    \addplot[primarycurve,domain=-7.95:1.95,color=red] {(-2/3)*(x+7)-2};
+                    \end{axis}
+                  \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+          </solution>
+        </exercise>
+
+        <exercise>
+        <statement>
+          <p>
+            <m>g(x)=-\frac{1}{3}f(-2(x+4))-1</m>
+          </p>
+          <figure xml:id="functions-grahical-transformations-figure-17">
+            <caption><m>\highlight{y=f(x)}</m></caption>
+            <image width="47%">
+              <description>
+                The graph of a linear function named <m>f</m>.  The line passes through the points <m>(2,6)</m> and <m>(-4,-6)</m>.  There are arrows at both ends of the line.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                    \begin{axis} [axis equal image,
+                                  xmin=-8,xmax=8,
+                                  ymin=-8,ymax=8,
+                                  xtick={-6,-4,-2,2,4,6},
+                                  ytick={-6,-4,-2,2,4,6},
+                                  minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                  minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                  \addplot[primarycurve,domain=-4.95:2.95,color=blue] {2*x+2};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </statement>
+        <solution>
+          <p>
+            Since the function will stay linear, and two points determine a unique line, we can just track two points, plot their final location, and connect the dots.  We'll start with the horizontal transformations and conclude with the vertical transformations. Let's identify our two points thus.
+            <md>
+              <mrow>A:\,(2,6)</mrow>
+              <mrow>B:\,(-4,-6)</mrow>
+            </md>
+            <ol label="1">
+              <li>
+                <p>
+                  Reflect across the <m>y</m>-axis.
+                  <md>
+                    <mrow>A:\,(2,6) \rightarrow (-2,6)</mrow>
+                    <mrow>B:\,(-4,-6) \rightarrow (4,-6)</mrow>
+                  </md>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Horizontally compress by a factor of <m>\frac{1}{2}</m>.
+                  <md>
+                    <mrow>A:\,(-2,6) \rightarrow (-1,6)</mrow>
+                    <mrow>B:\,(4,-6) \rightarrow (2,-6)</mrow>
+                  </md>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Shift leftward by 4 units.
+                  <md>
+                    <mrow>A:\,(-1,6) \rightarrow (-5,6)</mrow>
+                    <mrow>B:\,(2,-6) \rightarrow (-2,-6)</mrow>
+                  </md>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Reflect across the <m>x</m>-axis.
+                  <md>
+                    <mrow>A:\,(-5,6) \rightarrow (-5,-6)</mrow>
+                    <mrow>B:\,(-2,-6) \rightarrow (-2,6)</mrow>
+                  </md>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Vertically compress by a factor of <m>\frac{1}{3}</m>.
+                  <md>
+                    <mrow>A:\,(-5,-6) \rightarrow (-5,-2)</mrow>
+                    <mrow>B:\,(-2,6) \rightarrow (-2,2)</mrow>
+                  </md>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Shift downward by one unit.
+                  <md>
+                    <mrow>A:\,(-5,-2) \rightarrow (-5,-3)</mrow>
+                    <mrow>B:\,(-2,2) \rightarrow (-2,1)</mrow>
+                  </md>
+                </p>
+              </li>
+            </ol>
+          </p>
+          <figure xml:id="functions-grahical-transformations-figure-18">
+            <caption><m>\highlight{y=f(x)}</m> and <m>\highlightr{y=g(x)}</m></caption>
+            <image width="47%">
+              <description>
+                The graph of two linear functions, one named <m>f</m> and the other named <m>g</m>.  The function <m>f</m> passes through the points <m>(2,6)</m> and <m>(-4,-6)</m>.  There are arrows at both ends of the line.  The function <m>g</m> passes through the  points <m>(-5,-3)</m> and <m>(-2,1)</m>.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                    \begin{axis} [axis equal image,
+                                  xmin=-8,xmax=8,
+                                  ymin=-8,ymax=8,
+                                  xtick={-6,-4,-2,2,4,6},
+                                  ytick={-6,-4,-2,2,4,6},
+                                  minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                  minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                  \addplot[primarycurve,domain=-4.95:2.95,color=blue] {2*x+2};
+                  \addplot[primarycurve,domain=-7.95:3.2,color=red] {(4/3)*x+11/3};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>g(x)=-\frac{3}{2}f\left(\frac{2}{3}x-2\right)-2</m>
+          </p>
+          <figure xml:id="functions-grahical-transformations-figure-19">
+            <caption><m>\highlight{y=f(x)}</m></caption>
+            <image width="47%">
+              <description>
+                The graph of a function named <m>f</m>.  The function consist of two half-lines which are connected by a horizontal line segment.  The line segment runs from the point <m>(-4,4)</m> to the point <m>(2,4)</m>.  The half-line on the left passes through the point <m>(-6,2)</m>.  The half-line on the right passes through the point <m>(4,2)</m>.  There are arrows at the end of each half-line. 
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                    \begin{axis} [axis equal image,
+                                  xmin=-10,xmax=10,
+                                  ymin=-10,ymax=10,
+                                  xtick={-8,-6,-4,-2,2,4,6,8},
+                                  ytick={-8,-6,-4,-2,2,4,6,8},
+                                  minor xtick={-9,-7,-5,-3,-1,1,3,5,7,9},
+                                  minor ytick={-9,-7,-5,-3,-1,1,3,5,7,9}]
+                  \addplot[primarycurve,domain=-4:2,color=blue,-] {4};
+                  \addplot[primarycurve,domain=-9.95:-4,color=blue,{Stealth}-] {x+8};
+                  \addplot[primarycurve,domain=2:9.95,color=blue,-{Stealth}] {-x+6};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </statement>
+        <solution>
+          <p>
+            Since the function will retain its essential shape, we can track the two corner points and one point on each of the downward projecting rays.  We'll start with the horizontal transformations and conclude with the vertical transformations. Let's identify our four points thus.
+            <md>
+              <mrow>A:\,(-6,2)</mrow>
+              <mrow>V_1:\,(-4,4)</mrow>
+              <mrow>V_2:\,(2,4)</mrow>
+              <mrow>B:\,(4,2)</mrow>
+            </md>
+            <ol label="1">
+              <li>
+                <p>
+                  Shift rightward by two units.
+                  <md>
+                    <mrow>A:\,(-6,2) \rightarrow (-4,2)</mrow>
+                    <mrow>V_1:\,(-4,4) \rightarrow (-2,4)</mrow>
+                    <mrow>V_2:\,(2,4) \rightarrow (4,4)</mrow>
+                    <mrow>B:\,(4,2) \rightarrow (6,2)</mrow>
+                  </md>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Horizontally stretch by a factor of <m>\frac{3}{2}</m>.
+                  <md>
+                    <mrow>A:\,(-4,2) \rightarrow (-6,2)</mrow>
+                    <mrow>V_1:\,(-2,4) \rightarrow (-3,4)</mrow>
+                    <mrow>V_2:\,(4,4) \rightarrow (6,4)</mrow>
+                    <mrow>B:\,(6,2) \rightarrow (9,2)</mrow>
+                  </md>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Reflect across the <m>x</m>-axis.
+                  <md>
+                    <mrow>A:\,(-6,2) \rightarrow (-6,-2)</mrow>
+                    <mrow>V_1:\,(-3,4) \rightarrow (-3,-4)</mrow>
+                    <mrow>V_2:\,(6,4) \rightarrow (6,-4)</mrow>
+                    <mrow>B:\,(9,2) \rightarrow (9,-2)</mrow>
+                  </md>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Vertically stretch by a factor of <m>\frac{3}{2}</m>.
+                  <md>
+                    <mrow>A:\,(-6,-2) \rightarrow (-6,-3)</mrow>
+                    <mrow>V_1:\,(-3,-4) \rightarrow (-3,-6)</mrow>
+                    <mrow>V_2:\,(6,-4) \rightarrow (6,-6)</mrow>
+                    <mrow>B:\,(9,-2) \rightarrow (9,-3)</mrow>
+                  </md>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Shift downward by 2 units.
+                  <md>
+                    <mrow>A:\,(-6,-3) \rightarrow (-6,-5)</mrow>
+                    <mrow>V_1:\,(-3,-6) \rightarrow (-3,-8)</mrow>
+                    <mrow>V_2:\,(6,-6) \rightarrow (6,-8)</mrow>
+                    <mrow>B:\,(9,-3) \rightarrow (9,-5)</mrow>
+                  </md>
+                </p>
+              </li>
+            </ol>
+          </p>
+          <figure xml:id="functions-grahical-transformations-figure-20">
+            <caption><m>\highlight{y=f(x)}</m> and <m>\highlightr{y=g(x)}</m></caption>
+            <image width="47%">
+              <description>
+                The graph of tow functions, one named <m>f</m> and one named <m>g</m>.  Both functions consist of two half-lines which are connected by a horizontal line segments.  The line segment on <m>f</m> runs from the point <m>(-4,4)</m> to the point <m>(2,4)</m>.  The half-line on the left side of <m>f</m> passes through the point <m>(-6,2)</m>.  The half-line on the right side of <m>f</m> passes through the point <m>(4,2)</m>.  There are arrows at the end of each half-line.  The line segment on <m>g</m> runs from the point <m>(-3,-8)</m> to the point <m>(6,-8)</m>.  The half-line on the left side of <m>g</m> passes through the point <m>(-6,-5)</m>.  The half-line on the right side of <m>g</m> passes through the point <m>(9,-5)</m>.  There are arrows at the end of each half-line.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                    \begin{axis} [axis equal image,
+                                  xmin=-10,xmax=10,
+                                  ymin=-10,ymax=10,
+                                  xtick={-8,-6,-4,-2,2,4,6,8},
+                                  ytick={-8,-6,-4,-2,2,4,6,8},
+                                  minor xtick={-9,-7,-5,-3,-1,1,3,5,7,9},
+                                  minor ytick={-9,-7,-5,-3,-1,1,3,5,7,9}]
+                  \addplot[primarycurve,domain=-4:2,color=blue,-] {4};
+                  \addplot[primarycurve,domain=-9.95:-4,color=blue,{Stealth}-] {x+8};
+                  \addplot[primarycurve,domain=2:9.95,color=blue,-{Stealth}] {-x+6};
+                  \addplot[primarycurve,domain=-3:6,color=red,-] {-8};
+                  \addplot[primarycurve,domain=-9.95:-3,color=red,{Stealth}-] {-x-11};
+                  \addplot[primarycurve,domain=6:9.95,color=red,-{Stealth}] {x-14};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+
+
+  </exercises>
+      
+</section>

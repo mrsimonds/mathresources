@@ -109,8 +109,10 @@ html:
 	cp -a $(IMGSRC) $(HTML)
 	cp -a $(IMGOUT) $(HTML)
 	cp -a $(CSS) $(HTML)
+	cp -a $(SRC)/geogebra/*.ggb $(HTML)/geogebra/
 	cd $(HTML); \
-	xsltproc --xinclude --stringparam html.knowl.example no --stringparam html.knowl.list yes --stringparam webwork.server $(SERVER) $(PRJXSL)/math-resources-html.xsl $(MAINFILE)
+	xsltproc --xinclude --stringparam html.knowl.example no --stringparam html.calculator geogebra-graphing --stringparam html.knowl.list yes --stringparam webwork.server $(SERVER) $(PRJXSL)/math-resources-html.xsl $(MAINFILE); \
+	cp math-resources.html index.html
 
 ###########
 # Utilities

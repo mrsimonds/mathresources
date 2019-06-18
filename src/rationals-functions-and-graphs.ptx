@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="rationals-functions-and-graphs">
+  <title>Rational Functions and Their Graphs</title>
+  <p>
+    A <term>polynomial function</term> of degree <m>n</m>, <m>n</m> a non-negative integer, is a function that can be written in the form
+    <me>f(x)=c_0+c_1x+c_2x^2+ \cdots +c_nx^n</me>
+    where <m>c_0,\,c_1\, \ldots,\,c_n</m> are real numbers, <m>c_n \neq 0</m>.  The exponent on any given term is called <term>the degree</term> of that term.  The numerical factor is called <term>the coefficient</term> of the term.  The coefficient on the term of highest degree is called the <term>leading coefficient</term>.
+  </p>
+  <p>
+    Although we define polynomial functions with the terms listed in ascending order of degree, in practice we tend to write the terms in descending order of degree.  For example, it is much more common to write <m>f(x)=3x^2+6x+2</m> than it is to write <m>f(x)=2+6x+3x^2</m>.  Also, we omit terms with coefficients of zero and we use subtraction signs for terms where the coefficients are negative.  Consider
+    <me>g(x)=5x^4-x^2-6x.</me>
+    The function <m>g</m> is a fourth-degree polynomial.  The coefficients of the fourth (also called quartic), third (also called cubic), second (also called quadratic), first (also called liner), and zeroth (also called constant) terms are receptively:
+    <me>c_4=5,\,c_3=0,\,c_2=-1,\,c_1=-6,\,\text{and},\,c_0=0.</me>  The leading coefficient is 5
+  </p>
+  <p>
+    A <term>rational function</term> is a function that can be written in the form
+    <me>f(x)=\frac{p(x)}{q(x)}</me>
+    where <m>p</m> and <m>q</m> are both rational functions, <m>q(x) \neq 0</m>.  Technically any polynomial function is also a rational function, because, for example, the polynomial function <m>f(x)=x+7</m> can also be stated in the rational function form <m>f(x)=\frac{x+7}{1}</m>.  In practice, however, when we use the term "rational function," the implicit suggestion is that the variable appears in the polynomial resident in the denominator of the expression.
+  </p>
+
+  <paragraphs>
+    <title>Graphs of Rational Functions - Vertical Asymptotes</title>
+    <p></p>
+    <p>
+      If the rational function <m>f</m> can be written as <m>f(x)=\frac{p(x)}{q(x)}</m> where <m>p</m> and <m>q</m> have no common factors, and <m>k</m> is a real number solution to the equation <m>q(x)=0</m>, then the vertical line <m>x=k</m> is a <term>vertical asymptote</term> on a graph of <m>y=f(x)</m>.
+    </p>
+    <p>
+      The vertical asymptote is not actually part of the function, it is simply a visual aid to help the viewer of the graph understand that from either side of the line <m>x=k</m>, the actual function is actual soaring up and up without limit or plummeting down and down without limit.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        The function <m>f(x)=\frac{2}{x-3}</m> is shown in <xref ref="rationals-functions-and-graphs-figure-1">Figure</xref>.  The vertical asymptote <m>x=3</m> is also shown.  From the left of the line, the actual function value falls without limit.  We communicate this fall using the limit equation
+        <me>\lim_{x\to 3^-}f(x)=-\infty.</me> 
+      </p>
+
+      <figure xml:id="rationals-functions-and-graphs-figure-1">
+        <caption><m>y=\frac{2}{x-3}</m></caption>
+        <image width="47%">
+          <description>
+            A graph of the function <m>y=\frac{2}{x-3}</m>.  The line <m>x=3</m> is the only vertical asymptote.  To the left of the vertical asymptote there is a decreasing, concave down curve below the <m>x</m>-axis that hugs the <m>x</m>-axis on the left side of the interval and the vertical asymptote on the right side of the interval,  To the right of the vertical asymptote there is a decreasing, concave up curve above the <m>x</m>-axis that hugs the vertical asymptote on the left side of the interval and huhs the <m>x</m>-axis on the right side of the interval.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+                \begin{axis} [xmin=-8,xmax=8,
+                              ymin=-8,ymax=8,
+                              xtick={-6,-4,-2,2,4,6},
+                              ytick={-6,-4,-2,2,4,6},
+                              minor xtick={-7,-5,-3,-1,1,3,5,7},
+                              minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                \addplot[primarycurve,domain=-7.9:2.74,samples=60] {2/(x-3)};
+                \addplot[primarycurve,domain=3.26:7.9,smooth] {2/(x-3)};
+                \addplot[interval,thin,black,{Stealth}-{Stealth}] coordinates {(3,-7.9) (3,7.9)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+
+    <p>
+      The limit equation stated above is read aloud as "the limit of <m>f(x)</m>, as <m>x</m> approaches 3 from the left, is (or equals) negative infinity."  Similarly, for the function shown in <xref ref="rationals-functions-and-graphs-figure-1">Figure</xref> we would say that "the limit of <m>f(x)</m>, as <m>x</m> approaches 3 from the right, is infinity.""  In symbols:
+      <me>\lim_{x\to 3^+}f(x)=\infty.</me> 
+    </p>
+    <sidebyside widths="57% 37%" margins="0%">
+
+      <p>
+        We see in <xref ref="rationals-functions-and-graphs-table-1">Table</xref> the cause of the asymptotic behavior.  As the value of <m>x</m> approaches 3 from either side of 3, the absolute value of the expression <m>x-3</m> gets closer and closer to zero which causes the absolute value of <m>\frac{2}{x-3}</m> to grow and grow with limit.
+      </p>
+
+      <table xml:id="rationals-functions-and-graphs-table-1">
+        <caption><m>y=2\frac{2}{x-3}</m></caption>
+        <tabular>
+          <col halign="center" />
+          <col halign="center" />
+          <col halign="center" />
+          <row bottom="medium">
+            <cell><line><m>x</m></line></cell>
+            <cell><line><m>x-3</m></line></cell>
+            <cell><line><m>\frac{2}{x-3}</m></line></cell>
+          </row>
+          <row>
+            <cell><m>2.9</m></cell>
+            <cell><m>-0.1</m></cell>
+            <cell><m>-20</m></cell>
+          </row>
+          <row>
+            <cell><m>2.99</m></cell>
+            <cell><m>-0.01</m></cell>
+            <cell><m>-200</m></cell>
+          </row>
+          <row>
+            <cell><m>2.999</m></cell>
+            <cell><m>-0.001</m></cell>
+            <cell><m>-2,000</m></cell>
+          </row>
+          <row>
+            <cell><m>3.001</m></cell>
+            <cell><m>0.001</m></cell>
+            <cell><m>2,000</m></cell>
+          </row>
+          <row>
+            <cell><m>3.01</m></cell>
+            <cell><m>0.01</m></cell>
+            <cell><m>200</m></cell>
+          </row>
+          <row>
+            <cell><m>3.1</m></cell>
+            <cell><m>0.1</m></cell>
+            <cell><m>20</m></cell>
+          </row>
+        </tabular>
+      </table>
+
+    </sidebyside>
+
+    <example>
+      <statement>
+        <p>
+          Determine the vertical asymptotes for the function <me>f(x)=\frac{x-4}{x^2+7x+10}.</me>Also, use limit notation to express the behavior of <m>f</m> from either side of both asymptotes.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Setting the denominator equal to zero and solving we get the following.
+          <md>
+            <mrow>x^2+7x+10\amp=0</mrow>
+            <mrow>(x+5)(x+2)\amp=0</mrow>
+          </md>
+          <md>
+            <mrow>x+5\amp=0 \amp\amp\text{ or }\amp x+2\amp=0</mrow>
+            <mrow>x+5\subtractright{5}\amp=0\subtractright{5} \amp\amp\text{ or }\amp x+2\subtractright{2}\amp=0\subtractright{2}</mrow>
+            <mrow>x\amp=-5 \amp\amp\text{ or }\amp x\amp=-2</mrow>
+          </md>
+        </p>
+        <p>
+          The vertical asymptotes are the lines <m>x=-5</m> and <m>x=-2</m>.  We can determine whether the function soars upward or plunges to the depths by testing values of <m>x</m> a tenth of a unit to the left and right of each asymptote.  Specifically, we are only interested in the signs of each of the factors in <m>f</m> from wish we can infer the over all sign for <m>f</m>.  This is down in <xref ref="rationals-functions-and-graphs-table-2">Table</xref>.
+        </p>
+        <table xml:id="rationals-functions-and-graphs-table-2">
+          <caption>Sign and Limit Table for <m>f</m></caption>
+          <tabular>
+            <col halign="center" />
+            <col halign="center" />
+            <col halign="center" />
+            <col halign="center" />
+            <col halign="center" />
+            <row bottom="medium">
+              <cell><line><m>x</m></line></cell>
+              <cell><line><m>x-4</m></line></cell>
+              <cell><line><m>x+5</m></line></cell>
+              <cell><line><m>x+2</m></line></cell>
+              <cell><line><m>\frac{x-4}{(x+5)(x+2)}</m></line></cell>
+              <cell><line>Implied Limit</line></cell>
+            </row>
+            <row>
+              <cell><m>-5.1</m></cell>
+              <cell><m>-</m></cell>
+              <cell><m>-</m></cell>
+              <cell><m>-</m></cell>
+              <cell><m>-</m></cell>
+              <cell><m>\lim_{x \to -5^-}f(x)=-\infty</m></cell>
+            </row>
+            <row>
+              <cell><m>-4.9</m></cell>
+              <cell><m>-</m></cell>
+              <cell><m>+</m></cell>
+              <cell><m>-</m></cell>
+              <cell><m>+</m></cell>
+              <cell><m>\lim_{x \to -5^+}f(x)=\infty</m></cell>
+            </row>
+            <row>
+              <cell><m>-2.1</m></cell>
+              <cell><m>-</m></cell>
+              <cell><m>+</m></cell>
+              <cell><m>-</m></cell>
+              <cell><m>+</m></cell>
+              <cell><m>\lim_{x \to -2^-}f(x)=\infty</m></cell>
+            </row>
+            <row>
+              <cell><m>-1.9</m></cell>
+              <cell><m>-</m></cell>
+              <cell><m>+</m></cell>
+              <cell><m>+</m></cell>
+              <cell><m>-</m></cell>
+              <cell><m>\lim_{x \to -2^+}f(x)=-\infty</m></cell>
+            </row>
+          </tabular>
+        </table>
+        <p>
+          From the sign analysis in <xref ref="rationals-functions-and-graphs-table-2">Table</xref> we can infer the following for limits.
+        </p>
+        <sidebyside widths="47% 47%" margins="0%">
+          <p>
+            <me>\lim_{x \to -5^-}f(x)=-\infty</me>
+          </p>
+          <p>
+            <me>\lim_{x \to -5^+}f(x)=\infty</me>
+          </p>
+        </sidebyside>
+        <sidebyside widths="47% 47%" margins="0%">
+          <p>
+            <me>\lim_{x \to -2^-}f(x)=\infty</me>
+          </p>
+          <p>
+            <me>\lim_{x \to -2^+}f(x)=-\infty</me>
+          </p>
+        </sidebyside>
+
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            As a bonus, a graph of the function <m>y=\frac{x-4}{(x+5)(x+2)}</m> is shown in <xref ref="rationals-functions-and-graphs-figure-2">Figure</xref>.
+          </p>
+
+          <figure xml:id="rationals-functions-and-graphs-figure-2">
+            <caption><m>y=\frac{x-4}{(x+5)(x+2)}</m></caption>
+            <image width="47%">
+              <description>
+                A graph of the function <m>y=\frac{x-4}{(x+5)(x+2)}</m>.  The lines <m>x=-5</m> and <m>x=-2</m> are the vertical asymptotes.  To the left of the line <m>x=-5</m>there is a decreasing, concave down curve below the <m>x</m>-axis that hugs the <m>x</m>-axis on the left side of the interval and hugs the vertical asymptote on the right side of the interval.  Between the lines <m>x=-5</m>  and <m>x=-2</m> there is a concave up curve that is at first decreasing and then increasing bottoming at at a point whose coordinates are approximately <m>(-3.4,3.2)</m>.  The curve hugs the vertical asymptote on both sides of the interval.  To the right of the line <m>x=-2</m> the is an increasing, concave down curve below the <m>x</m>-axis.  The curve hugs the vertical asymptote on the left side of the interval and hugs the <m>x</m>-axis on the right side of the interval.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                    \begin{axis} [xmin=-8,xmax=8,
+                                  ymin=-8,ymax=8,
+                                  xtick={-6,-4,-2,2,4,6},
+                                  ytick={-6,-4,-2,2,4,6},
+                                  minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                  minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                    \addplot[primarycurve,domain=-7.9:-5.36,smooth] {(x-4)/((x+5)*(x+2))};
+                    \addplot[primarycurve,domain=-4.58:-2.29,smooth] {(x-4)/((x+5)*(x+2))};
+                    \addplot[primarycurve,domain=-1.77:7.9,smooth] {(x-4)/((x+5)*(x+2))};
+                    \addplot[interval,thin,black,{Stealth}-{Stealth}] coordinates {(-5,-7.9) (-5,7.9)};
+                    \addplot[interval,thin,black,{Stealth}-{Stealth}] coordinates {(-2,-7.9) (-2,7.9)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title>Graphs of Rational Functions - Holes</title>
+    <p></p>
+    <p>
+      If <m>f(x)=\frac{p(x)}{q(x)}</m>, and <m>p</m> and <m>q</m> share the common factor <m>x-k</m>, and the factor is completely eliminated from the denominator upon simplification, then the function <m>f</m> has a hole at the point corresponding to <m>x=k</m>.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine all vertical asymptotes and holes on a graph of the function<me>g(x)=\frac{x^2-3x-10}{x^2-6x+5}</me>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by factoring and simplifying the formula for <m>g</m>.
+          <md>
+            <mrow>g(x)\amp=\frac{x^2-3x-10}{x^2-6x+5}</mrow>
+            <mrow>\amp=\frac{(x-5)(x+2)}{(x-5)(x-1)}</mrow>
+            <mrow>\amp=\frac{x-5}{x-5} \cdot \frac{x+2}{x-1}</mrow>
+            <mrow>\amp=\frac{x+2}{x-1};\,\,x \neq 5</mrow>
+          </md>
+          The function <m>g</m> has a hole where <m>x=5</m> and the line <m>x=1</m> is a vertical asymptote on a graph of <m>g</m>.  As bonus, a graph of <m>g</m> is shown in <xref ref="rationals-functions-and-graphs-figure-3">Figure</xref>.
+        </p>
+        <figure xml:id="rationals-functions-and-graphs-figure-3">
+          <caption><m>y=\frac{(x-5)(x+2)}{(x-5)(x-1)}</m></caption>
+          <image width="47%">
+            <description>
+              A graph of the function <m>y=\frac{(x-5)(x+2)}{(x-5)(x-1)}</m>.  The line <m>x=1</m> is the only vertical asymptote.  To the left of the vertical asymptote there is a decreasing, concave down curve that lies below the line <m>y=1</m>.  The curve approaches the line <m>y=1</m> on the left side of the interval and hugs the vertical asymptote on the right side of the interval. To the right of the vertical asymptote there is a decreasing, concave up curve that lies above the line <m>y=1</m>.  The curve hugs the vertical asymptote on the left side of the interval and approaches the line <m>y=1</m> on the right side of the interval.  There is a hole on this curve a little below the point <m>(5,2)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                  \begin{axis} [xmin=-8,xmax=8,
+                                ymin=-8,ymax=8,
+                                xtick={-6,-4,-2,2,4,6},
+                                ytick={-6,-4,-2,2,4,6},
+                                minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                  \addplot[primarycurve,domain=-7.9:0.65,smooth] {((x-5)*(x+2))/((x-5)*(x-1))};
+                  \addplot[primarycurve,domain=1.44:7.9,smooth] {((x-5)*(x+2))/((x-5)*(x-1))};
+                  \addplot[interval,thin,black,{Stealth}-{Stealth}] coordinates {(1,-7.9) (1,7.9)};
+                  \addplot[hollowdot,fill=yellow!30] coordinates {(5,1.75)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title>Graphs of Rational Functions - Intercepts</title>
+    <p></p>
+    <p>
+      As with any function of form <m>y=f(x)</m>, the vertical-intercept is determined by replacing <m>x</m> by zero and the horizontal-intercept(s) are determined by setting the function formula equal to zero.  In the case of rational functions, we begin by factoring and simplifying the function formula.  Once that is done we determine the horizontal-intercept by setting the numerator of the expression equal to zero.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine the intercepts, vertical asymptotes, and holes on a graph of the function <me>f(x)=\frac{x^2+x-6}{x^2-4}.</me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by factoring and simplifying the formula for <m>f</m>.
+          <md>
+            <mrow>f(x)\amp=\frac{x^2+x-6}{x^2-4}</mrow>
+            <mrow>\amp=\frac{(x-2)(x+3)}{(x-2)(x+2)}</mrow>
+            <mrow>\amp=\frac{x-2}{x-2} \cdot \frac{x+3}{x+2}</mrow>
+            <mrow>\amp=\frac{x+3}{x+2},\,\,x \neq 2</mrow>
+          </md>
+          Replacing <m>x</m> with zero in the simplified formula for <m>f</m>, we determine that the vertical-intercept on the graph of <m>y=f(x)</m> is the point <m>(0,1.5)</m>.  In the simplified formula for <m>f</m> we can see that the only value of <m>x</m> that creates zero in the numerator is <m>-3</m>, so the only horizontal-intercept is <m>(-3,0)</m>. We can tell by the elimination of the factor <m>x-2</m> from the denominator of <m>f</m> that <m>f</m> has a hole where <m>x=2</m>.  Replacing <m>x</m> with two in the simplified formula for <m>f</m>, we can see that the hole is specifically at the point <m>(2,1.25)</m>.  Finally, from the simplified formula for <m>f</m>, we can see that a graph of <m>y=f(x)</m> includes the vertical asymptote <m>x=-2</m>.
+        </p>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            You might anticipate a bonus graph of <m>f</m>, and if you do your insight is keen.  See <xref ref="rationals-functions-and-graphs-figure-4">Figure</xref>.
+          </p>
+
+          <figure xml:id="rationals-functions-and-graphs-figure-4">
+            <caption><m>y=\frac{(x-2)(x+3)}{(x-2)(x+2)}</m></caption>
+            <image width="47%">
+              <description>
+                A graph of the function <m>y=\frac{(x-2)(x+3)}{(x-2)(x+2)}</m>.  The line <m>x=-2</m> is the only vertical asymptote.  To the left of the vertical asymptote there is a decreasing, concave down curve below the line <m>y=1</m>.  The curve approaches the line <m>y=1</m> on the left side of the interval and hugs the vertical asymptote on the right side of the interval.  This curve crosses the <m>x</m>-axis at the point <m>(-3,0)</m>.  To the right of the vertical asymptote there is a decreasing, concave up curve above the line <m>y=1</m>.  The curve hugs the vertical asymptote on the left side of the interval and approaches the line <m>y=1</m> on the right side of the interval.  This curve crosses the <m>y</m>-axis at the point <m>(0,1.5)</m>.  This curve has a hole at a point a little bit above the point <m>(2,1)</m>.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis} [xmin=-8,xmax=8,
+                                ymin=-8,ymax=8,
+                                xtick={-6,-4,-2,2,4,6},
+                                ytick={-6,-4,-2,2,4,6},
+                                minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                  \addplot[primarycurve,domain=-7.9:-2.12,smooth] {(x+3)/(x+2)};
+                  \addplot[primarycurve,domain=-1.85:7.9,smooth] {(x+3)/(x+2)};
+                  \addplot[interval,thin,black,{Stealth}-{Stealth}] coordinates {(-2,-7.9) (-2,7.9)};
+                  \addplot[hollowdot,fill=yellow!30] coordinates {(2,1.25)};
+                  \end{axis}
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine all intercepts, holes, and vertical asymptotes on a graph of the functions <me>h(x)=\frac{x^2+4}{x+2}\,\,\text{and}r(x)=\frac{x+2}{x^2+4}.</me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by observing that neither function simplifies in any way, because <m>x^2+4</m> is prime (i.e., does not factor).  We also observe that the equation <m>x^2+4=0</m> has no real number solutions, because there are no real numbers that satisfy the equation <m>x^2=-4</m>.  The answers to the stated questions are presented in <xref ref="rationals-functions-and-graphs-table-3">Table</xref> and the bonus graphs of the functions are shown in <xref ref="rationals-functions-and-graphs-figure-5">Figure</xref> and <xref ref="rationals-functions-and-graphs-figure-6">Figure</xref>.
+        </p>
+        <table xml:id="rationals-functions-and-graphs-table-3">
+          <caption>Sign and Limit Table for <m>f</m></caption>
+          <tabular>
+            <col halign="center" />
+            <col halign="center" />
+            <col halign="center" />
+            <col halign="center" />
+            <col halign="center" />
+            <row bottom="medium">
+              <cell><line>function</line></cell>
+              <cell><line><m>y</m>-intercept</line></cell>
+              <cell><line><m>x</m>-intercept</line></cell>
+              <cell><line>hole</line></cell>
+              <cell><line>vertical asymptote</line></cell>
+            </row>
+            <row>
+              <cell><m>h(x)=\frac{x^2+4}{x+2}</m></cell>
+              <cell><m>(0,2)</m></cell>
+              <cell>none</cell>
+              <cell>none</cell>
+              <cell><m>x=-2</m></cell>
+            </row>
+            <row>
+              <cell><m>r(x)=\frac{x+2}{x^2+4}</m></cell>
+              <cell><m>(0,0.5)</m></cell>
+              <cell><m>(-2,0)</m></cell>
+              <cell>none</cell>
+              <cell>none</cell>
+            </row>
+          </tabular>
+        </table>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <figure xml:id="rationals-functions-and-graphs-figure-5">
+            <caption><m>y=\frac{x^2+4}{x+2}</m></caption>
+            <image width="47%">
+              <description>
+                A graph of the function <m>y=\frac{x^2+4}{x+2}</m>. The line <m>x=-2</m> is the only vertical asymptote.  To the left of the vertical asymptote there is a concave down curve below the <m>x</m>-axis that is at first increasing at a very slow rate and then turns decreasing in an almost vertical way.  The turn from increasing to decreasing occurs near the point <m>(-3,-1)</m>.  To the right of the vertical asymptote there is a concave up curve that lies above the <m>x</m>-axis that at first is decreasing in an almost vertical fashion and then turns to a slow increase.  The curve is close to horizontal between the points where <m>x=-0.5</m> and where <m>x=2</m>.  This stretch of the curve lies just a tiny bit above the <m>x</m>-axis and it is somewhere on this interval that the change from decresing to increasing occurs. 
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis} [xmin=-8,xmax=8,
+                                ymin=-80,ymax=80,
+                                xtick={-6,-4,-2,2,4,6},
+                                ytick={-60,-40,-20,20,40,60},
+                                minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                minor ytick={-70,-50,-30,-10,10,30,50,70}]
+                  \addplot[primarycurve,domain=-7.9:-2.11,smooth] {(x^2+4)/(x+2)};
+                  \addplot[primarycurve,domain=-1.9:7.9,samples=40] {(x^2+4)/(x+2)};
+                  \addplot[interval,thin,black,{Stealth}-{Stealth}] coordinates {(-2,-79) (-2,79)};
+                  \end{axis}
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+          <figure xml:id="rationals-functions-and-graphs-figure-6">
+            <caption><m>y=\frac{x+2}{x^2+4}</m></caption>
+            <image width="47%">
+              <description>
+                A graph of the function <m>y=\frac{x+2}{x^2+4}</m>.  There are no breaks in the curve.  It starts below the <m>x</m>-axis decreasing, concave up and turns to increasing concave up close to the point <m>(-5,-0.1)</m>.  The curve is almost horizontal over the interval <m>(-8,-5)</m>. The curve has a slope close to <m>2</m> a little to the left of the <m>x</m>-axis at which point it keeps increasing but turns concave down. The curves reaches a local maximum at a point close to <m>(1,0.6)</m>. The curve decreases concave down until a point close to <m>(3,0.4)</m> at which point it turns decreasing, concave up.  The curve exits the graph at a point close to <m>(8,0.13)</m>.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis} [xmin=-8,xmax=8,
+                                ymin=-0.8,ymax=0.8,
+                                xtick={-6,-4,-2,2,4,6},
+                                ytick={-0.6,-0.4,-0.2,0.2,0.4,0.6},
+                                minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                minor ytick={-0.7,-0.5,-0.3,-0.1,0.1,0.3,0.5,0.7}]
+                  \addplot[primarycurve,domain=-7.9:7.9,smooth] {(x+2)/(x^2+4)};
+                  \end{axis}
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </solution>
+    </example>
+  </paragraphs>
+
+  <paragraphs>
+    <title>Graphs of Rational Functions - Horizontal and Slant Asymptotes</title>
+    <p></p>
+    <p>
+      The <term>end behavior</term> of a function is a term we use to contextualize what happens to the curve as <m>x \rightarrow -\infty</m> and <m>x \rightarrow \infty</m>.  This behavior for a rational function is dependent upon the relative degrees of the polynomials in the numerator and denominator of the function formula.  These behaviors are summarized below.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        <alert>If the degree of the numerator is equal the degree of the denominator</alert>, then the line <m>y=\frac{c_{\text{num}}}{c_{\text{den}}}</m> is a horizontal asymptote for the graph where <m>c_{\text{num}}</m> and <m>c_{\text{den}}</m> are, respectively, the leading coefficients in the numerator and denominator.  This is illustrated in <xref ref="rationals-functions-and-graphs-figure-7">Figure</xref> for the function
+        <me>y=\frac{x+4}{(x+6)(x-3)}</me>.
+      </p>
+
+      <figure xml:id="rationals-functions-and-graphs-figure-7">
+        <caption><m>y=\frac{x+4}{(x+6)(x-3)}</m></caption>
+        <image width="47%">
+          <description>
+            A graph of the function <m>y=\frac{x+4}{(x+6)(x-3)}</m>.  The lines <m>x=-6</m> and <m>x=3</m> are vertical asymptotes.  The <m>x</m>-axis is the horizontal asymptote.  To the left of the line <m>x=-6</m> there is a decreasing, concave down curve below the <m>x</m>-axis.  The curve hugs the <m>x</m>-axis on the left side of the interval and hugs the vertical asymptote on the right side of the interval.  Between the lines <m>x=-6</m> and <m>x=3</m> there is a curve that is at first decreasing, concave up.  The curve crosses the <m>x</m>-axis at the point <m>(-4,0)</m> and somewhere close to this point the curve changes to decreasing, concave down.  The curve hugs vertical asymptote on both side of the interval.  To the right of the line <m>x=3</m> there is a decreasing, concave up curve above the <m>x</m>-axis.  The curve hugs the vertical asymptote on the left side of the interval and hugs the <m>x</m>-axis on the right side of the interval.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis} [xmin=-8,xmax=8,
+                            ymin=-8,ymax=8,
+                            xtick={-6,-4,-2,2,4,6},
+                            ytick={-6,-4,-2,2,4,6},
+                            minor xtick={-7,-5,-3,-1,1,3,5,7},
+                            minor ytick={-7,-5,-3,-1,1,3,5,7}]
+              \addplot[primarycurve,domain=-7.9:-6.03] {(x+4)/(x^2+3*x-18)};
+              \addplot[primarycurve,domain=-5.97:2.9,samples=80] {(x+4)/(x^2+3*x-18)};
+              \addplot[primarycurve,domain=3.1:7.9,samples=40] {x+4)/(x^2+3*x-18)};
+              \addplot[interval,thin,black,{Stealth}-{Stealth}] coordinates {(-6,-7.9) (-6,7.9)};
+              \addplot[interval,thin,black,{Stealth}-{Stealth}] coordinates {(3,-7.9) (3,7.9)};
+              \end{axis}
+              \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        <alert>If the degree of the numerator is less than the degree of the denominator</alert>, then the line <m>y=0</m> is a horizontal asymptote for the graph.  This is illustrated in <xref ref="rationals-functions-and-graphs-figure-8">Figure</xref> for the function<me>y=\frac{6x-2}{3x-5}</me>.  Note that the line <m>y=2</m> is the horizontal asymptote because the ratio of the leading coefficients, <m>\frac{6}{3}</m>, simplifies to 2.
+      </p>
+
+      <figure xml:id="rationals-functions-and-graphs-figure-8">
+        <caption><m>y=\frac{6x-2}{3x-5}</m></caption>
+        <image width="47%">
+          <description>
+            A graph of the function <m>y=\frac{6x-2}{3x-5}</m>.  The line <m>x=2</m> is the only vertical asymptote.  The horizontal asymptote is the line <m>y=2</m>.  To the left of the horizontal asymptote there is a decreasing, concave down curve below the line <m>y=2</m>.  The curve hugs the horizontal asymptote on the left side of the interval and hugs the vertical asymptote on the right side of the interval. To the right of the vertical asymptote there is a decreasing, concave up curve above the line <m>y=2</m>.  The curve hugs the vertical asymptote on the left side of the interval and hugs the horizontal asymptote on the right side of the interval,
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis} [xmin=-8,xmax=8,
+                            ymin=-16,ymax=16,
+                            xtick={-6,-4,-2,2,4,6},
+                            ytick={-12,-8,-4,4,8,12},
+                            minor xtick={-7,-5,-3,-1,1,3,5,7},
+                            minor ytick={-14,-10,-6,-2,2,6,10,14}]
+              \addplot[primarycurve,domain=-7.9:1.51,samples=60] {(6*x-2)/(3*x-5)};
+              \addplot[primarycurve,domain=1.86:7.9,smooth] {(6*x-2)/(3*x-5};
+              \addplot[interval,thin,black,{Stealth}-{Stealth}] coordinates {(1.66,-15.9) (1.66,15.9)};
+              \addplot[interval,thin,black,{Stealth}-{Stealth}] coordinates {(-7.9,2) (7.9,2)};
+              \end{axis}
+              \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        <alert>If the degree of the numerator is greater than the degree of the denominator</alert>, then the graph of the function does not have a horizontal asymptote.  If the degree of the numerator is exactly one more than the degree of the denominator, then the graph includes a slant (or skew) asymptote.  
+      </p>
+
+      <figure xml:id="rationals-functions-and-graphs-figure-9">
+        <caption><m>y=\frac{x^2-9}{x-1}</m></caption>
+        <image width="47%">
+          <description>
+            A graph of the function <m>y=\frac{x^2-9}{x-1}</m>. The line <m>x=1</m> is the only vertical asymptote.  The line <m>y=x+1</m> is the slant asymptote. To the left of the vertical asymptote there is an increasing, concave up curve above the line <m>y=x+1</m>.  The curve hugs the slant asymptote on the left side of the interval and hugs the vertical asymptote on the right side of the interval.  To the right of the vertical asymptote there is an increasing, concave down curve below the line <m>y=x+1</m>.  The curve hugs the vertical asymptote on the left side of the interval and hugs the slant asymptote on the right side of the interval.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis} [xmin=-8,xmax=8,
+                            ymin=-80,ymax=80,
+                            xtick={-6,-4,-2,2,4,6},
+                            ytick={-60,-40,-20,20,40,60},
+                            minor xtick={-7,-5,-3,-1,1,3,5,7},
+                            minor ytick={-70,-50,-30,-10,10,30,50,70}]
+              \addplot[primarycurve,domain=-7.9:0.89,samples=60] {(x^2-9)/(x-1)};
+              \addplot[primarycurve,domain=1.1:7.9,samples=60] {(x^2-9)/(x-1};
+              \addplot[primarycurve,thin,color=black,domain=-7.9:7.9,smooth] {x+1};
+              \addplot[interval,thin,black,{Stealth}-{Stealth}] coordinates {(1,-79) (1,79)};
+              \end{axis}
+              \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <p>
+      This document does not cover how to determine the equation of such an asymptote, but one is illustrated in <xref ref="rationals-functions-and-graphs-figure-9">Figure</xref> for the function<me>y=\frac{x^2-9}{x-1}</me>.  If the degree of the numerator is more than one greater than the degree of the denominator, we generally don't categorize the graph as having an end-behavior asymptote.
+    </p>
+  </paragraphs>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          For each function determine and state all intercepts, asymptotes, and holes.  
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=\frac{x-4}{x+3}</m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Horizontal-intercept: <m>(4,0)</m>
+              Vertical-intercept: <m>\left(0,-\frac{4}{3}\right)</m>
+              Vertical-asymptote: <m>x=-3</m>
+              Horizontal-asymptote: <m>y=1</m>
+              Holes: None
+            </p>
+
+            <figure xml:id="rationals-functions-and-graphs-figure-10">
+              <caption><m>y=\frac{x-4}{x+3}</m></caption>
+              <image width="47%">
+                <description>
+                  A ggraph of the function <m>y=\frac{x-4}{x+3}</m>.  The line <m>x=-3</m> is the only vertical asymptote.  The line <m>y=1</m> is the horizontal asymptote.  To the left of the vertical asymptote there is an increasing concave up curve above the line <m>y=1</m>.  The curve hugs the horizontal asymptote on the left side of the interval and hugs the vertical asymptote on the right side of the interval.  To the right of the vertical asymptote there is an increasing, concave down curve below the line <m>y=1</m>.  The curve hugs the vertical asymptote on the left side of the interval and hugs the horizontal asymptote n the right side of the interval.  
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis} [xmin=-8,xmax=8,
+                                  ymin=-16,ymax=16,
+                                  xtick={-6,-4,-2,2,4,6},
+                                  ytick={-12,-8,-4,4,8,12},
+                                  minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                  minor ytick={-14,-10,-6,-2,2,6,10,14}]
+                    \addplot[primarycurve,domain=-7.9:-3.5] {(x-4)/(x+3)};
+                    \addplot[primarycurve,domain=-2.58:7.9,samples=60] {(x-4)/(x+3)};
+                    \addplot[interval,thin,black,{Stealth}-{Stealth}] coordinates {(-3,-15.9) (-3,15.9)};
+                    \addplot[interval,thin,black,{Stealth}-{Stealth}] coordinates {(-7.9,1) (7.9,1)};
+                    \end{axis}
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>g(x)=\frac{-2x-6}{x}</m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Horizontal-intercept: <m>(-3,0)</m>
+              Vertical-intercept: None
+              Vertical-asymptote: <m>x=0</m>
+              Horizontal-asymptote: <m>y=-2</m>
+              Holes: None
+            </p>
+
+            <figure xml:id="rationals-functions-and-graphs-figure-11">
+              <caption><m>y=\frac{-2x-6}{x}</m></caption>
+              <image width="47%">
+                <description>
+                  A graph of the function <m>y=\frac{-2x-6}{x}</m>.  The <m>y</m>-axis is the only vertical asymptote and the line <m>y=-2</m> is the horizontal asymptote. To the left of the <m>y</m>-axis there is an increasing, concave up curve above the line <m>y=-2</m>.  The curve hugs the horizontal asymptote on the left side of the interval and hugs the <m>y</m>-axis on the right side of the interval.  To the right of the <m>y</m>-axis there is a increasing, concave down curve below the line <m>y=-2</m>.  The curve hugs the <m>y</m>-axis on the left side of the interval and hugs the horizontal asymptote on the right side of the interval.
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis} [xmin=-8,xmax=8,
+                                  ymin=-16,ymax=16,
+                                  xtick={-6,-4,-2,2,4,6},
+                                  ytick={-12,-8,-4,4,8,12},
+                                  minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                  minor ytick={-14,-10,-6,-2,2,6,10,14}]
+                    \addplot[primarycurve,domain=-7.9:-0.34] {(-2*x-6)/x};
+                    \addplot[primarycurve,domain=0.43:7.9] {(-2*x-6)/x};
+                    \addplot[interval,thin,black,{Stealth}-{Stealth}] coordinates {(-7.9,-2) (7.9,-2)};
+                    \end{axis}
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+
+        </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>h(x)=\frac{x^2-5x-14}{x^2-10x+21}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by factoring and simplifying the expression.
+            <md>
+              <mrow>h(x)\amp=\frac{x^2-5x-14}{x^2-10x+21}</mrow>
+              <mrow>\amp=\frac{(x-7)(x+2)}{(x-7)(x-3)}</mrow>
+              <mrow>\amp=\frac{x-7}{x-7} \cdot \frac{x+2}{x-3}</mrow>
+              <mrow>\amp=\frac{x+2}{x-3},\,\,x \neq 7</mrow>
+            </md>
+          </p>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Horizontal-intercept: <m>(-2,0)</m>
+              Vertical-intercept: <m>\left(0,-\frac{2}{3}\right)</m>
+              Vertical-asymptote: <m>x=3</m>
+              Horizontal-asymptote: <m>y=1</m>
+              Holes: <m>(7,2.25)</m>
+            </p>
+
+            <figure xml:id="rationals-functions-and-graphs-figure-12">
+              <caption><m>y=\frac{(x-7)(x+2)}{(x-7)(x-3)}</m></caption>
+              <image width="47%">
+                <description>
+                  A graph of the function <m>h(x)=\frac{x^2-5x-14}{x^2-10x+21}</m>.  The only vertical asymptote is the line <m>y=3</m>.  The horizontal asymptote is <m>y=1</m>.  On the left side of the vertical asymptote there is a decreasing, concave down curve below the line <m>y=1</m>.  The curve hugs the horizontal asymptote on the left side of the interval and it hugs the vertical asymptote on the right side of the interval.  To the right of the vertical asymptote there is a decreasing, concave up curve above the line <m>y=1</m>.  The curve hugs the vertical asymptote on the left side of the interval and it hugs the horizontal asymptote on the right side of the interval. There is a hole on this curve that lies just above the point <m>(7,2)</m>.
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis} [xmin=-16,xmax=16,
+                                  ymin=-16,ymax=16,
+                                  xtick={-12,-8,-4,4,8,12},
+                                  ytick={-12,-8,-4,4,8,12},
+                                  minor xtick={-14,-10,-6,-2,2,6,10,14},
+                                  minor ytick={-14,-10,-6,-2,2,6,10,14}]
+                    \addplot[primarycurve,domain=-15.9:2.7,samples=60] {(x+2)/(x-3)};
+                    \addplot[primarycurve,domain=3.35:15.9,samples=60] {(x+2)/(x-3)};
+                    \addplot[interval,thin,black,{Stealth}-{Stealth}] coordinates {(3,-15.9) (3,15.9)};
+                    \addplot[interval,thin,black,{Stealth}-{Stealth}] coordinates {(-15.9,1) (15.9,1)};
+                    \addplot[hollowdot,fill=yellow!30] coordinates {(7,2.25)};
+                    \end{axis}
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>k(x)=\frac{x+5}{x^2-16}</m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              We begin by factoring the expression.
+              <md>
+                <mrow>k(x)\amp=\frac{x+5}{x^2-16}</mrow>
+                <mrow>\amp=\frac{x+5}{(x-4)(x+4)}</mrow>
+              </md>
+            </p>
+
+            <figure xml:id="rationals-functions-and-graphs-figure-13">
+              <caption><m>y=\frac{x+5}{(x-4)(x+4)}</m></caption>
+              <image width="47%">
+                <description>
+                  A graph of the function <m>k(x)=\frac{x+5}{x^2-16}</m>.  There are two vertical asymptotes: the lines <m>x=-4</m> and <m>x=4</m>.  The <m>x</m>-axis is the horizontal asymptote.  To the left of the line <m>x=-4</m> there is an increasing, concave up curve above the <m>x</m>-axis.  The curve hugs the <m>x</m>-axis on the left side of the interval and hugs the vertical asymptote on the right side of the interval.  Between the lines <m>x=-4</m> and <m>x=4</m> the is a concave down curve below the <m>x</m>-axis.  At first the curve is increasing.  It then becomes almost horizontal over the interval <m>(-3,0)</m>.  Somewhere on that interval the curve begins to decrease.  The rate of decrease is slow at first, but by the time it gets past <m>x=3.5</m> it's pretty much going straight down.  It is going straight down on the left side of the interval as well.  To the right of the line <m>y=4</m> there is a decreasing, concave up curve above the <m>x</m>-axis.  The curve hugs the vertical asymptote on the left side of the interval and it hugs the <m>x</m>-axis on the right side of the interval.
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis} [xmin=-8,xmax=8,
+                                  ymin=-8,ymax=8,
+                                  xtick={-6,-4,-2,2,4,6},
+                                  ytick={-6,-4,-2,2,4,6},
+                                  minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                  minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                    \addplot[primarycurve,domain=-7.9:-4.0156,samples=40] {(x+5)/(x^2-16)};
+                    \addplot[primarycurve,domain=-3.982:3.85,samples=80] {(x+5)/(x^2-16)};
+                    \addplot[primarycurve,domain=4.15:7.9] {(x+5)/(x^2-16)};
+                    \addplot[interval,thin,black,{Stealth}-{Stealth}] coordinates {(-4,-7.9) (-4,7.9)};
+                    \addplot[interval,thin,black,{Stealth}-{Stealth}] coordinates {(4,-7.9) (4,7.9)};
+                    \end{axis}
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+
+          </sidebyside>
+          <p>
+            Horizontal-intercept: <m>(-5,0)</m>
+          </p>
+          <p>
+            Vertical-intercept: <m>\left(0,-\frac{5}{16}\right)</m>
+          </p>
+          <p>
+            Vertical-asymptotes: <m>x=4</m> and <m>x=-4</m>
+          </p>
+          <p>
+            Horizontal-asymptote: <m>y=0</m>
+          </p>
+          <p>
+            Holes: None
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>p(x)=\frac{8-2x^2}{x^2+4}</m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              We begin by factoring the expression.
+              <md>
+                <mrow>p(x)\amp=\frac{8-2x^2}{x^2+4}</mrow>
+                <mrow>\amp=\frac{2(4-x^2)}{x^2+4}</mrow>
+                <mrow>\amp=\frac{2(2-x)(2+x)}{x^2+4}</mrow>
+              </md>
+            </p>
+
+            <figure xml:id="rationals-functions-and-graphs-figure-14">
+              <caption><m>y=\frac{2(2-x)(2+x)}{x^2+4}</m></caption>
+              <image width="47%">
+                <description>
+                  A graph of the function <m>y=\frac{2(2-x)(2+x)}{x^2+4}</m>.  There is no vertical asymptote.  The horizontal asymptote is the line <m>y=-2</m>.  The curve is symmetric across the <m>y</m>-axis.  The curve hugs the horizontal asymptote at either end, crosses the <m>x</m>-axis at the points <m>(-2,0)</m> and <m>(2,0)</m>.  The curves absolute maximum point is <m>(0,2)</m>.  The curve is concave up almost everywhere, turning concave down only as it approaches the <m>y</m>-axis from either side of the axis, the change occurring roughly at the points <m>(-1,0)</m> and <m>(1,0)</m>.
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis} [xmin=-8,xmax=8,
+                                  ymin=-8,ymax=8,
+                                  xtick={-6,-4,-2,2,4,6},
+                                  ytick={-6,-4,-2,2,4,6},
+                                  minor xtick={-7,-5,-3,-1,1,3,5,7},
+                                  minor ytick={-7,-5,-3,-1,1,3,5,7}]
+                    \addplot[primarycurve,domain=-7.9:7.9] {(8-2*x^2)/(x^2+4)};
+                    \addplot[interval,thin,black,{Stealth}-{Stealth},samples=80] coordinates {(-7.9,-2) (7.9,-2)};
+                    \end{axis}
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+
+          </sidebyside>
+          <p>
+            Horizontal-intercepts: <m>(2,0)</m> and <m>(-2,0)</m>
+          </p>
+          <p>
+            Vertical-intercept: <m>(0,2)</m>
+          </p>
+          <p>
+            Vertical-asymptotes: None
+          </p>
+          <p>
+            Horizontal-asymptote: <m>y=-2</m>
+          </p>
+          <p>
+            Holes: None
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+</section>

@@ -1,0 +1,1479 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="trigonometry-tangent-cotangent-graphs">
+  <title>The Graphs of the Tangent and Cotangent Functions</title>
+
+  <paragraphs>
+    <title>The Graph of <m>y=\tan(t)</m></title>
+    <p></p>
+    <p>
+      Exploring the effects of the quotient identity <m>\tan(t)=\frac{\sin(t)}{\cos(t)}</m> on the behavior of the tangent function will give us a lot of insight into the graph <m>y=\tan(t)</m>.  Let's make some initial observations.
+      <ul>
+        <li>
+          <p>
+            There is an <m>t</m>-intercept everywhere <m>\sin(t)=0</m>.  This gives us the following <m>t</m>-intercepts. 
+            <me>...,\,(-2\pi,0),\,(-\pi,0),\,(0,0),\,(\pi,0),\,(2\pi,0),\,...</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            The is a vertical asymptote at every value of <m>t</m> where <m>\cos(t)=0</m>.  This gives us the following vertical asymptotes.
+            <me>...,\,t=-\frac{5\pi}{2},\,t=-\frac{3\pi}{2},\,t=-\frac{\pi}{2},\,t=\frac{\pi}{2},\,t=\frac{3\pi}{2},\,t=\frac{5\pi}{2},\,...</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            The <m>y</m>-coordinate of the point on the graph of <m>y=\tan(t)</m> is either <m>1</m> or <m>-1</m> at every value of <m>t</m> where the sine and cosine functions have equal or opposite values.  This gives us the following points.
+            <me>...,\,\left(-\frac{5\pi}{4},-1\right),\,\left(-\frac{3\pi}{4},1\right),\,\left(-\frac{\pi}{4},-1\right),\,\left(\frac{\pi}{4},1\right),\,\left(\frac{3\pi}{4},-1\right),\,\left(\frac{5\pi}{4},1\right),\,...</me>
+          </p>
+        </li>
+      </ul>
+      Let's go ahead and plot what we've discussed to this point.  This is done in <xref ref="trigonometry-tangent-cotangent-graphs-figure-1">Figure</xref>.
+    </p>
+    <figure xml:id="trigonometry-tangent-cotangent-graphs-figure-1">
+      <caption>Points on and Asymptotes for the Graph of <m>y=\tan(t)</m> </caption>
+      <image width="80%">
+        <description>
+          A graph over an interval that is a little wider than interval <m>(-\frac{7\pi}{4},\frac{7\pi}{4})</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{3\pi}{2}</m>, <m>t=-\frac{\pi}{2}</m>, <m>t=\frac{\pi}{2}</m>, and <m>t=\frac{3\pi}{2}</m>.  Eleven points are also plotted,  The points are <m>(-\frac{7\pi}{4},1)</m>, <m>(-\frac{5\pi}{4},-1)</m>, <m>(-\pi,0)</m>, <m>(-\frac{3\pi}{4},1)</m>, <m>(-\frac{\pi}{4},-1)</m>, <m>(0,0)</m>, <m>(\frac{\pi}{4},1)</m> <m>(\frac{3\pi}{4},-1)</m>, <m>(\pi,0)</m>, <m>(\frac{5\pi}{4},1)</m>, and <m>(\frac{7\pi}{4},-1)</m>
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+           \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          xmin=-323,xmax=323,
+                          ymin=-6.5,ymax=6.5,
+                          xtick={-270,-180,-90,90,180,270},
+                          ytick={-6,-5,...,6},
+                          minor xtick={},
+                          minor ytick={},
+                          xticklabels={$-\frac{3\pi}{2}$,$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$}]
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-270,-6.48) (-270,6.48)}; 
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-90,-6.48) (-90,6.48)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(270,-6.48) (270,6.48)}; 
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(90,-6.48) (90,6.48)};
+              \addplot [soliddot,color=blue] coordinates {(-315,1)};
+              \addplot [soliddot,color=blue] coordinates {(-225,-1)};
+              \addplot [soliddot,color=blue] coordinates {(-180,0)};
+              \addplot [soliddot,color=blue] coordinates {(-135,1)};
+              \addplot [soliddot,color=blue] coordinates {(-45,-1)};
+              \addplot [soliddot,color=blue] coordinates {(-0,0)};
+              \addplot [soliddot,color=blue] coordinates {(45,1)};
+              \addplot [soliddot,color=blue] coordinates {(135,-1)};
+              \addplot [soliddot,color=blue] coordinates {(180,0)};
+              \addplot [soliddot,color=blue] coordinates {(225,1)};
+              \addplot [soliddot,color=blue] coordinates {(315,-1)};   
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      The sign on the tangent value can only change when <m>t</m> moves from one quadrant to the next.  In <xref ref="trigonometry-tangent-cotangent-graphs-figure-1">Figure</xref> this occurs at the asymptotes and the <m>t</m>-intercepts.  We can use this fact to infer the behavior of the function as <m>t</m> approaches the asymptotes from either side, giving us the function graph shown in <xref ref="trigonometry-tangent-cotangent-graphs-figure-2">Figure</xref>.
+    </p>
+    <figure xml:id="trigonometry-tangent-cotangent-graphs-figure-2">
+      <caption><m>y=\tan(t)</m></caption>
+      <image width="80%">
+        <description>
+          A graph of the function <m>y=\tan(t)</m> over an interval that is a little wider than <m>(-\frac{7\pi}{4},-frac{7\pi}{4})</m>.  Over the interval <m>(-\frac{7\pi}{4},-\frac{\3\pi}{2})</m>, there is a curve that rises from the point <m>(-\frac{7\pi}{4},1)</m> that then approaches the vertical asymptote <m>t=-\frac{3\pi}{2}</m> in an upward fashion.  Over the intervals <m>(-\frac{3\pi}{2},-\frac{\pi}{4})</m>, <m>(\frac{\pi}{2},\frac{\pi}{2})</m>, and <m>(\frac{\pi}{2},\frac{3\pi}{2})</m> there are vertical asymptotes at both ends of the interval.  In all three cases there is a curve that approaches the asymptote on the left in a downward fashion and the asymptote on the right in an upward fashion.  In all three cases the curve crosses the <m>t-axis</m> halfway through the interval.  Finally, over the interval <m>(\frac{3\pi}{2},\frac{7\pi}{4})</m> the curve approaches the vertical asymptote <m>t=\frac{3\pi}{2}</m>from the right in a downward fashion and also passes through the point <m>(\frac{7\pi}{4},-1)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+           \begin{axis} [width=10cm,height=5cm,
+                        xlabel={$t$},
+                        xmin=-323,xmax=323,
+                        ymin=-6.5,ymax=6.5,
+                        xtick={-270,-180,-90,90,180,270},
+                        ytick={-6,-5,...,6},
+                        minor xtick={},
+                        minor ytick={},
+                        xticklabels={$-\frac{3\pi}{2}$,$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$}]
+              \addplot [domain=-315:-279,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {tan(x)};
+              \addplot [domain=-261:-99,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {tan(x)};
+              \addplot [domain=-81:81,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {tan(x)};
+              \addplot [domain=99:261,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {tan(x)};
+              \addplot [domain=279:315,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {tan(x)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-270,-6.48) (-270,6.48)}; 
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-90,-6.48) (-90,6.48)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(270,-6.48) (270,6.48)}; 
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(90,-6.48) (90,6.48)};    
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      We should make that unlike the sine and cosine functions, the period of <m>y=\tan(t)</m> is only <m>\pi</m>.
+    </p>
+  </paragraphs>
+
+  <paragraphs>
+    <title>The Graph of <m>y=\cot(t)</m></title>
+    <p></p>
+    <p>
+      Exploring the effects of the quotient identity <m>\cot(t)=\frac{\cos(t)}{\sin(t)}</m> on the behavior of the cotangent function will give us a lot of insight into the graph <m>y=\cot(t)</m>.  Let's make some initial observations.
+      <ul>
+        <li>
+          <p>
+            There is an <m>t</m>-intercept everywhere <m>\cos(t)=0</m>.  This gives us the following <m>t</m>-intercepts. 
+            <me>...,\,\left(-\frac{5\pi}{2},0\right),\,\left(-\frac{3\pi}{2},0\right),\,\left(-\frac{\pi}{2},0\right),\,\left(\frac{3\pi}{2},0\right),\,\left(\frac{5\pi}{2},0\right),\,\left(\frac{7\pi}{2},0\right),\,...</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            The is a vertical asymptote at every value of <m>t</m> where <m>\sin(t)=0</m>.  This gives us the following vertical asymptotes.
+            <me>...,\,t=-2\pi,\,t=-\pi,\,t=0,\,t=\pi,\,t=2\pi,\,t=3\pi,\,...</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            The <m>y</m>-coordinate of the point on the graph of <m>y=\cot(t)</m> is either <m>1</m> or <m>-1</m> at every value of <m>t</m> where the sine and cosine functions have equal or opposite values.  This gives us the following points.
+            <me>...,\,\left(-\frac{5\pi}{4},-1\right),\,\left(-\frac{3\pi}{4},1\right),\,\left(-\frac{\pi}{4},-1\right),\,\left(\frac{\pi}{4},1\right),\,\left(\frac{3\pi}{4},-1\right),\,\left(\frac{5\pi}{4},1\right),\,...</me>
+          </p>
+        </li>
+      </ul>
+      Let's go ahead and plot what we've discussed to this point.  This is done in <xref ref="trigonometry-tangent-cotangent-graphs-figure-3">Figure</xref>.
+    </p>
+    <figure xml:id="trigonometry-tangent-cotangent-graphs-figure-3">
+      <caption>Points on and Asymptotes for the Graph of <m>y=\cot(t)</m></caption>
+      <image width="80%">
+        <description>
+          A graph over an interval that is a little wider than interval <m>(-\frac{5\pi}{4},\frac{9\pi}{4})</m>.  There are four vertical asymptotes, specifically <m>t=-\pi</m>, <m>t=0</m>, <m>t=\pi</m>, and <m>t=2\pi</m>.  Eleven points are also plotted,  The points are <m>(-\frac{5\pi}{4},-1)</m>, <m>(-\frac{3\pi}{4},1)</m>, <m>(-\frac{\pi}{2},0)</m>, <m>(-\frac{\pi}{4},-1)</m>, <m>(\frac{\pi}{4},1)</m>, <m>(\frac{\pi}{2},0)</m>, <m>(\frac{3\pi}{4},-1)</m>, <m>(\frac{5\pi}{4},1)</m>, <m>(\frac{3\pi}{2},0)</m>, <m>(\frac{7\pi}{4},-1)</m>, and <m>(\frac{9\pi}{4},1)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          xmin=-233,xmax=413,
+                          ymin=-6.5,ymax=6.5,
+                          xtick={-180,-90,90,180,270,360},
+                          ytick={-6,-5,...,6},
+                          minor xtick={},
+                          minor ytick={},
+                          xticklabels={$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$,}]
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-360,-6.48) (-360,6.48)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-180,-6.48) (-180,6.48)}; 
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(180,-6.48) (180,6.48)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(360,-6.48) (360,6.48)};
+              \addplot [soliddot,color=blue] coordinates {(-225,-1)};
+              \addplot [soliddot,color=blue] coordinates {(-135,1)};
+              \addplot [soliddot,color=blue] coordinates {(-90,0)};
+              \addplot [soliddot,color=blue] coordinates {(-45,-1)};
+              \addplot [soliddot,color=blue] coordinates {(45,1)};
+              \addplot [soliddot,color=blue] coordinates {(90,0)};
+              \addplot [soliddot,color=blue] coordinates {(135,-1)};
+              \addplot [soliddot,color=blue] coordinates {(225,1)};
+              \addplot [soliddot,color=blue] coordinates {(270,0)};
+              \addplot [soliddot,color=blue] coordinates {(315,-1)};
+              \addplot [soliddot,color=blue] coordinates {(405,1)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      The sign on the cotangent value can only change when <m>t</m> moves from one quadrant to the next.  In <xref ref="trigonometry-tangent-cotangent-graphs-figure-3">Figure</xref> this occurs at the asymptotes and the <m>t</m>-intercepts.  We can use this fact to infer the behavior of the function as <m>t</m> approaches the asymptotes from either side, giving us the function graph shown in <xref ref="trigonometry-tangent-cotangent-graphs-figure-4">Figure</xref>.
+    </p>
+    <figure xml:id="trigonometry-tangent-cotangent-graphs-figure-4">
+      <caption><m>y=\cot(t)</m></caption>
+      <image width="80%">
+        <description>
+          A graph of the function and <m>y=\cot(t)</m> over the interval that's a little wider than <m>(-\frac{5\pi}{4},\frac{9\pi}{4})</m>.  Over the interval <m>(-\frac{5\pi}{4},-\pi)</m> there is a curve that falls from the point <m>(-\frac{5\pi},-1)</m> and then approaches the the vertical asymptote <m>t=-\pi</m> in a downward fashion.  Over the intervals <m>(-\pi,0)</m>, <m>(0,\pi)</m>, and <m>(\pi,2\pi)</m> there are vertical asymptote at both ends of the intervals. In all three cases there is a curve that approaches the asymptote on the left in an upward fashion and approacher the asymptote on the right in a downward fashion.  In all three cases the curve intersects the <m>t</m>-axis halfway through the interval.  Over the interval <m>(2\pi,\frac{9\pi}{4})</m> there is a curve that approaches the the vertical asymptote <m>x=2\pi</m> in an upward fashion that thn falls to the point <m>(\frac{9\pi}{4},1)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          xmin=-233,xmax=413,
+                          ymin=-6.5,ymax=6.5,
+                          xtick={-180,-90,90,180,270,360},
+                          ytick={-6,-5,...,6},
+                          minor xtick={},
+                          minor ytick={},
+                          xticklabels={$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$,}]
+              \addplot [domain=-225:-189,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {cos(x)/sin(x)};
+              \addplot [domain=-171:-9,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {cos(x)/sin(x)};
+              \addplot [domain=9:171,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {cos(x)/sin(x)};
+              \addplot [domain=189:351,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {cos(x)/sin(x)};
+              \addplot [domain=369:401,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {cos(x)/sin(x)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-360,-6.48) (-360,6.48)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-180,-6.48) (-180,6.48)}; 
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(180,-6.48) (180,6.48)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(360,-6.48) (360,6.48)};   
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      We should note that like the tangent function, the period of <m>y=\cot(t)</m> is <m>\pi</m>.
+    </p>
+  </paragraphs>
+  <p>
+    Let's move on and discuss graphical transformations effected upon <m>y=\tan(t)</m> and <m>y=\cot(t)</m>.
+  </p>
+  <paragraphs>
+    <title>Period of a Tangent or Cotangent Function</title>
+    <p></p>
+    <p>
+      As is the case with the sine and cosine function, if <m>\omega</m> is a nonzero constant that is not equal to <m>1</m> or <m>-1</m>, then the graph of <m>y=\tan(\omega t)</m> or <m>y=\cot(\omega t)</m> will be different than the periods of the graphs of <m>y=\tan(t)</m> and <m>y=\cot(t)</m>.  However, in this case the new period is <m>\frac{\pi}{\abs{\omega}}</m> (as opposed to <m>\frac{2\pi}{\abs{\omega}}</m> which is the period of either <m>y=\sin(\omega t)</m> or <m>y=\cos(\omega t)</m>).  Let's see a couple of examples.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Sketch three periods of the function <m>y=\tan(2t)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We can see that <m>\omega=2</m>, so the period of this function is <m>\frac{\pi}{2}</m>.
+        </p>
+        <p>
+          When there is no horizontal shift, the tangent function has vertical asymptotes half of a period to both the left and the right of the <m>y</m>-axis.  In this case, this means that both <m>t=-\frac{\pi}{4}</m> and <m>t=\frac{\pi}{4}</m> are vertical asymptotes.  Every time we move one full period to the left or the right from a vertical asymptote] we will encounter another vertical asymptote.  This means that both <m>t=-\frac{3\pi}{4}</m> and <m>t=\frac{3\pi}{4}</m> are vertical asymptotes.  These vertical asymptotes are shown in <xref ref="trigonometry-tangent-cotangent-graphs-figure-5">Figure</xref>.  Note that the scale on the <m>t</m>-axis is <m>\frac{\pi}{4}</m>.  That is because <m>\frac{\pi}{4}</m> is one-half of a full period. 
+        </p>
+        <figure xml:id="trigonometry-tangent-cotangent-graphs-figure-5">
+          <caption>Vertical Asymptotes for the Graph of <m>y=\tan(2t)</m> </caption>
+          <image width="80%">
+            <description>
+            A graph over the interval <m>(-\frac{7\pi}{8},\frac{7\pi}{48)</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{3\pi}{4}</m>, <m>t=-\frac{\pi}{4}</m>, <m>t=\frac{\pi}{4}</m>, and <m>t=\frac{3\pi}{4}</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+              \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-157.5,xmax=157.5,
+                              ymin=-6.5,ymax=6.5,
+                              xtick={-135,-90,-45,45,90,135},
+                              ytick={-6,-5,...,6},
+                              minor xtick={},
+                              minor ytick={},
+                              xticklabels={$-\frac{3\pi}{4}$,$-\frac{\pi}{2}$,$-\frac{\pi}{4}$,$\frac{\pi}{4}$,$\frac{\pi}{2}$,$\frac{3\pi}{4}$}]
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-135,-6.48) (-135,6.48)}; 
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-45,-6.48) (-45,6.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(135,-6.48) (135,6.48)}; 
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(45,-6.48) (45,6.48)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+        <p>
+          There is a <m>t</m>-intercept halfway between each pair of asymptotes.  A quarter of a period to the left of each <m>t</m>intercept there is a point with a <m>y</m>-coordinate of <m>-1</m>.  A quarter of a period to the right of each <m>t</m>-intercept there is a point with a <m>y</m>-coordinate of <m>1</m>.  All of these points have been added to the graph in <xref ref="trigonometry-tangent-cotangent-graphs-figure-6">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-tangent-cotangent-graphs-figure-6">
+          <caption>Points on and Asymptotes for the Graph of <m>y=\tan(2t)</m> </caption>
+          <image width="80%">
+            <description>
+            A graph over the interval <m>(-\frac{7\pi}{8},\frac{7\pi}{8)</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{3\pi}{4}</m>, <m>t=-\frac{\pi}{4}</m>, <m>t=\frac{\pi}{4}</m>, and <m>t=\frac{3\pi}{4}</m>.  Nine points are also plotted,  The points are <m>(-\frac{5\pi}{8},-1)</m>, <m>(-\frac{\pi}{2},0)</m>, <m>(-\frac{3\pi}{8},1)</m>, <m>(-\frac{\pi}{8},-1)</m>, <m>(0,0)</m>, <m>(\frac{\pi}{8},1)</m> <m>(\frac{3\pi}{8},-1)</m>, <m>(\frac{\pi}{2},0)</m>, and <m>(\frac{5\pi}{8},1)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+              \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-157.5,xmax=157.5,
+                              ymin=-6.5,ymax=6.5,
+                              xtick={-135,-90,-45,45,90,135},
+                              ytick={-6,-5,...,6},
+                              minor xtick={},
+                              minor ytick={},
+                              xticklabels={$-\frac{3\pi}{4}$,$-\frac{\pi}{2}$,$-\frac{\pi}{4}$,$\frac{\pi}{4}$,$\frac{\pi}{2}$,$\frac{3\pi}{4}$}]
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-135,-6.48) (-135,6.48)}; 
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-45,-6.48) (-45,6.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(135,-6.48) (135,6.48)}; 
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(45,-6.48) (45,6.48)};
+                  \addplot [soliddot,color=blue] coordinates {(-112.5,-1)};
+                  \addplot [soliddot,color=blue] coordinates {(-90,0)};
+                  \addplot [soliddot,color=blue] coordinates {(-67.5,1)};
+                  \addplot [soliddot,color=blue] coordinates {(-22.5,-1)};
+                  \addplot [soliddot,color=blue] coordinates {(0,0)};
+                  \addplot [soliddot,color=blue] coordinates {(22.5,1)};
+                  \addplot [soliddot,color=blue] coordinates {(67.5,-1)};
+                  \addplot [soliddot,color=blue] coordinates {(90,0)};
+                  \addplot [soliddot,color=blue] coordinates {(112.5,1)}; 
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+        <p>
+          All that's left to do is connect the points in a way that demonstrates the asymptotic behavior of the function.  This is done in <xref ref="trigonometry-tangent-cotangent-graphs-figure-7">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-tangent-cotangent-graphs-figure-7">
+          <caption>Points on and Asymptotes for the Graph of <m>y=\tan(2t)</m> </caption>
+          <image width="80%">
+            <description>
+            A graph over the interval <m>(-\frac{7\pi}{8},\frac{7\pi}{48)</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{3\pi}{4}</m>, <m>t=-\frac{\pi}{4}</m>, <m>t=\frac{\pi}{4}</m>, and <m>t=\frac{3\pi}{4}</m>.  Between each consecutive pair of asymptotes there is a curve that is strictly increasing.  The curves are concave down to the left of the midpoint of the interval defined by the asymptotes and they are concave up  to the right of that point.  Each curve crosses the <m>t</m>-axis at the midpoint.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+              \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-157.5,xmax=157.5,
+                              ymin=-6.5,ymax=6.5,
+                              xtick={-135,-90,-45,45,90,135},
+                              ytick={-6,-5,...,6},
+                              minor xtick={},
+                              minor ytick={},
+                              xticklabels={$-\frac{3\pi}{4}$,$-\frac{\pi}{2}$,$-\frac{\pi}{4}$,$\frac{\pi}{4}$,$\frac{\pi}{2}$,$\frac{3\pi}{4}$}]
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-135,-6.48) (-135,6.48)}; 
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-45,-6.48) (-45,6.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(135,-6.48) (135,6.48)}; 
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(45,-6.48) (45,6.48)};
+                  \addplot [domain=-130.5:-49.5,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {tan(2*x)};
+                  \addplot [domain=-40.5:40.5,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {tan(2*x)};
+                  \addplot [domain=49.5:130.5,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {tan(2*x)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Sketch three periods of the function <m>y=\cot\left(\frac{\pi}{3}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's begin by noting that <m>\frac{t}{3}=\frac{1}{3}t</m>, so <m>\omega=\frac{1}{3}</m>.  The period for <m>y=\cot\left(\frac{pi}{3}\right)</m> is derived below.
+          <md>
+            <mrow>\frac{\pi}{\abs{\omega}}\amp=\frac{\pi}{\frac{1}{3}}</mrow>
+            <mrow>\amp=\frac{\pi}{1} \cdot \frac{3}{1}</mrow>
+          </md>
+          When there is no horizontal shift the <m>y</m>-axis is a vertical asymptote for the graph of a cotangent function.  Every time we move one full period to the left of a vertical asymptote we encounter another vertical asymptote.  In this case this means that <m>t=-3\pi</m>, <m>t=3\pi</m>, and <m>t=6\pi</m> are also vertical asymptotes.  These vertical asymptotes are shown in <xref ref="trigonometry-tangent-cotangent-graphs-figure-8">Figure</xref>.  Note that the scale on the <m>t</m>-axis is <m>\frac{3\pi}{2}</m>.  That is because <m>\frac{3\pi}{2}</m> is one-half of a period.
+        </p>
+        <figure xml:id="trigonometry-tangent-cotangent-graphs-figure-8">
+          <caption>Vertical Asymptotes for the Graph of <m>y=\cot\left(\frac{\pi}{3}\right)</m></caption>
+          <image width="80%">
+            <description>
+              A graph over the interval <m>(-\frac{15\pi}{4},\frac{27\pi}{4})</m>.  There are four vertical asymptotes, specifically <m>t=-3\pi</m>, <m>t=0</m>, <m>t=3\pi</m>, and <m>t=6\pi</m>.  
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-675,xmax=1215,
+                              ymin=-6.5,ymax=6.5,
+                              xtick={-540,-270,270,540,810,1080},
+                              ytick={-6,-5,...,6},
+                              minor xtick={},
+                              minor ytick={},
+                              xticklabels={$-3\pi$,$-\frac{3\pi}{2}$,$\frac{3\pi}{2}$,$3\pi$,$\frac{9\pi}{2}$,$6\pi$,}]
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-1080,-6.48) (-1080,6.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-540,-6.48) (-540,6.48)}; 
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(540,-6.48) (540,6.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(1080,-6.48) (1080,6.48)};
+                  \addplot [soliddot,color=blue] coordinates {(-405,1)};
+                  \addplot [soliddot,color=blue] coordinates {(-270,0)};
+                  \addplot [soliddot,color=blue] coordinates {(-135,-1)};
+                  \addplot [soliddot,color=blue] coordinates {(135,1)};
+                  \addplot [soliddot,color=blue] coordinates {(270,0)};
+                  \addplot [soliddot,color=blue] coordinates {(405,-1)};
+                  \addplot [soliddot,color=blue] coordinates {(675,1)};
+                  \addplot [soliddot,color=blue] coordinates {(810,0)};
+                  \addplot [soliddot,color=blue] coordinates {(945,-1)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+        <p>
+          There is a <m>t</m>-intercept halfway between each pair of asymptotes.  A quarter of a period to the left of each <m>t</m>intercept there is a point with a <m>y</m>-coordinate of <m>1</m>.  A quarter of a period to the right of each <m>t</m>-intercept there is a point with a <m>y</m>-coordinate of <m>-1</m>.  All of these points have been added to the graph in <xref ref="trigonometry-tangent-cotangent-graphs-figure-6">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-tangent-cotangent-graphs-figure-9">
+          <caption>Points on and Asymptotes for the Graph of <m>y=\cot\left(\frac{\pi}{3}\right)</m></caption>
+          <image width="80%">
+            <description>
+              A graph over the interval <m>(-\frac{15\pi}{4},\frac{27\pi}{4})</m>.  There are four vertical asymptotes, specifically <m>t=-3\pi</m>, <m>t=0</m>, <m>t=3\pi</m>, and <m>t=6\pi</m>.  Nine points are also plotted,  The points are <m>(-\frac{9\pi}{4},1)</m>, <m>(-\frac{3\pi}{2},)</m>, <m>(-\frac{3\pi}{4},-1)</m>, <m>(\frac{3\pi}{4},1)</m>, <m>(\frac{3\pi}{2},0)</m>, <m>(\frac{9\pi}{4},-1)</m>, <m>(\frac{15\pi}{4},1)</m>, <m>(\frac{9\pi}{2},0)</m>, and <m>(\frac{21\pi}{4},-1)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-675,xmax=1215,
+                              ymin=-6.5,ymax=6.5,
+                              xtick={-540,-270,270,540,810,1080},
+                              ytick={-6,-5,...,6},
+                              minor xtick={},
+                              minor ytick={},
+                              xticklabels={$-3\pi$,$-\frac{3\pi}{2}$,$\frac{3\pi}{2}$,$3\pi$,$\frac{9\pi}{2}$,$6\pi$,}]
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-1080,-6.48) (-1080,6.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-540,-6.48) (-540,6.48)}; 
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(540,-6.48) (540,6.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(1080,-6.48) (1080,6.48)};
+                  \addplot [soliddot,color=blue] coordinates {(-405,1)};
+                  \addplot [soliddot,color=blue] coordinates {(-270,0)};
+                  \addplot [soliddot,color=blue] coordinates {(-135,-1)};
+                  \addplot [soliddot,color=blue] coordinates {(135,1)};
+                  \addplot [soliddot,color=blue] coordinates {(270,0)};
+                  \addplot [soliddot,color=blue] coordinates {(405,-1)};
+                  \addplot [soliddot,color=blue] coordinates {(675,1)};
+                  \addplot [soliddot,color=blue] coordinates {(810,0)};
+                  \addplot [soliddot,color=blue] coordinates {(945,-1)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+        <p>
+          All that's left to do is connect the points in a way that demonstrates the asymptotic behavior of the function.  This is done in <xref ref="trigonometry-tangent-cotangent-graphs-figure-10">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-tangent-cotangent-graphs-figure-10">
+          <caption><m>y=\cot\left(\frac{\pi}{3}\right)</m></caption>
+          <image width="80%">
+            <description>
+              A graph over the interval <m>(-\frac{15\pi}{4},\frac{27\pi}{4})</m>.  There are four vertical asymptotes, specifically <m>t=-3\pi</m>, <m>t=0</m>, <m>t=3\pi</m>, and <m>t=6\pi</m>.   Between each consecutive pair of asymptotes there is a curve that is strictly decreasing.  The curves are concave up to the left of the midpoint of the interval defined by the asymptotes and they are concave down  to the right of that point.  Each curve crosses the <m>t</m>-axis at the midpoint.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-675,xmax=1215,
+                              ymin=-6.5,ymax=6.5,
+                              xtick={-540,-270,270,540,810,1080},
+                              ytick={-6,-5,...,6},
+                              minor xtick={},
+                              minor ytick={},
+                              xticklabels={$-3\pi$,$-\frac{3\pi}{2}$,$\frac{3\pi}{2}$,$3\pi$,$\frac{9\pi}{2}$,$6\pi$,}]
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-1080,-6.48) (-1080,6.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-540,-6.48) (-540,6.48)}; 
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(540,-6.48) (540,6.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(1080,-6.48) (1080,6.48)};
+                  \addplot [domain=-513:-27,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {cos(x/3)/sin(x/3)};
+                  \addplot [domain=27:513,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {cos(x/3)/sin(x/3)};
+                  \addplot [domain=567:1053,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {cos(x/3)/sin(x/3)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </example>
+  </paragraphs>
+  <paragraphs>
+    <title>Horizontal Shift of a Tangent or Cotangent Function</title>
+    <p></p>
+    <p>
+      As with any other function, the nonzero constant <m>h</m> in the expression <m>y=\tan(\omega(t-h))</m> or <m>y=\cot(\omega(t-h))</m> affects a horizontal shift of <m>\abs{h}</m> upon their parent function (<m>y=\tan(\omega t)</m> or <m>y=\cot(\omega t)</m>).  When <m>h</m> is positive, the shift is rightward and when <m>h</m> is negative the shift if leftward.
+    </p>
+    <p>
+      For example, <m>y=\tan\left(t-\frac{\pi}{3}\right)</m> lies <m>\frac{\pi}{3}</m> to the right of <m>y=\tan(t)</m> whereas <m>y=\tan\left(t+\frac{\pi}{3}\right)</m> lies <m>\frac{\pi}{3}</m> to the left of <m>y=\tan(t)</m>.
+    </p>
+    <p>
+      Let's see a couple of examples of the graphing process when there is a horizontal shift.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Sketch three periods of the function <m>y=\tan\left(t-\frac{\pi}{3}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The function <m>y=\tan(t)</m> has vertical asymptote at <m>t=-\frac{3\pi}{2}</m>, <m>t=-\frac{\pi}{2}</m>, <m>t=\frac{\pi}{2}</m>, and <m>t=\frac{3\pi}{2}</m>.  The function <m>y=\tan\left(t-\frac{\pi}{3}\right)</m> lies <m>\frac{\pi}{3}</m> to the right of the function <m>y=\tan(t)</m>.  The effect this has on the location of the vertical asymptotes for a graph of <m>y=\tan\left(t-\frac{\pi}{3}\right)</m> is calculated below
+        </p>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            <md>
+              <mrow>t\amp=-\frac{3\pi}{2}+\frac{\pi}{3}</mrow>
+              <mrow>t\amp=-\frac{7\pi}{6}</mrow>
+            </md>
+          </p>
+
+          <p>
+            <md>
+              <mrow>t\amp=-\frac{\pi}{2}+\frac{\pi}{3}</mrow>
+              <mrow>t\amp=-\frac{\pi}{6}</mrow>
+            </md>
+          </p>
+
+        </sidebyside>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            <md>
+              <mrow>t\amp=-\frac{\pi}{2}+\frac{\pi}{3}</mrow>
+              <mrow>t\amp=-\frac{5\pi}{6}</mrow>
+            </md>
+          </p>
+
+          <p>
+            <md>
+              <mrow>t\amp=-\frac{\pi}{2}+\frac{\pi}{3}</mrow>
+              <mrow>t\amp=-\frac{11\pi}{6}</mrow>
+            </md>
+          </p>
+
+        </sidebyside>
+        <p>
+          Another way we could have figured out the location of these vertical asymptotes is to have applied the shift to <m>t=\frac{\pi}{2}</m> (resulting in <m>t=\frac{5\pi}{6})</m> and then repeatedly adding or subtracting a full period (in this case <m>\pi</m>) to <m>\frac{5\pi}{6}</m>.
+        </p>
+        <p>
+          Regardless of the strategy used to identify the vertical asymptotes, in this case they are <m>t=-\frac{7\pi}{6}</m>, <m>t=-\frac{\pi}{6}</m>, <m>t=\frac{5\pi}{6}</m>, and <m>t=\frac{11\pi}{6}</m>.  These asymptotes are shown in <xref ref="trigonometry-tangent-cotangent-graphs-figure-11">Figure</xref>.  Note that the midpoint between each pair of consecutive asymptotes has also been identified.  These are the points where the tangent curves will cross the <m>t</m>-axis.
+        </p>
+
+        <figure xml:id="trigonometry-tangent-cotangent-graphs-figure-11">
+          <caption>Asymptotes for the Graph of <m>y=\tan\left(t-\frac{\pi}{6}\right)</m> </caption>
+          <image width="80%">
+            <description>
+              A graph the interval <m>(-\frac{7\pi}{6},2\pi)</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{7\pi}{6}</m>, <m>t=-\frac{\pi}{6}</m>, <m>t=\frac{5\pi}{6}</m>, and <m>t=\frac{11\pi}{6}</m>. 
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+              \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-240,xmax=360,
+                              ymin=-6.5,ymax=6.5,
+                              xtick={-210,-120,-30,60,150,240,330},
+                              ytick={-6,-5,...,6},
+                              minor xtick={},
+                              minor ytick={},
+                              xticklabels={$-\frac{7\pi}{6}$,$-\frac{2\pi}{3}$,$-\frac{\pi}{6}$,$\frac{\pi}{3}$,$\frac{5\pi}{6}$,$\frac{4\pi}{3}$,$\frac{11\pi}{6}$}]
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-210,-6.48) (-210,6.48)}; 
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-30,-6.48) (-30,6.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(330,-6.48) (330,6.48)}; 
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(150,-6.48) (150,6.48)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+        <p>
+          There is a <m>t</m>-intercept halfway between each pair of asymptotes.  A quarter of a period to the left of each <m>t</m>intercept there is a point with a <m>y</m>-coordinate of <m>-1</m>.  A quarter of a period to the right of each <m>t</m>-intercept there is a point with a <m>y</m>-coordinate of <m>1</m>.  All of these points have been added to the graph in <xref ref="trigonometry-tangent-cotangent-graphs-figure-12">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-tangent-cotangent-graphs-figure-12">
+          <caption>Points on and Asymptotes for the Graph of <m>y=\tan\left(t-\frac{\pi}{6}\right)</m> </caption>
+          <image width="80%">
+            <description>
+              A graph over an interval that is a little wider than interval <m>(-\frac{7\pi}{4},\frac{7\pi}{4})</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{3\pi}{2}</m>, <m>t=-\frac{\pi}{2}</m>, <m>t=\frac{\pi}{2}</m>, and <m>t=\frac{3\pi}{2}</m>.   Nine points are also plotted,  The points are <m>(-\frac{11\pi}{12},-1)</m>, <m>(-\frac{2\pi}{3},0)</m>, <m>(-\frac{5\pi}{12},1)</m>, <m>(\frac{\pi}{12},-1)</m>, <m>(/frac{\pi}{3},0)</m>, <m>(\frac{7\pi}{12},1)</m> <m>(\frac{13\pi}{12},-1)</m>, <m>(\frac{4\pi}{3},0)</m>, and <m>(\frac{19\pi}{412},1)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+              \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-240,xmax=360,
+                              ymin=-6.5,ymax=6.5,
+                              xtick={-210,-120,-30,60,150,240,330},
+                              ytick={-6,-5,...,6},
+                              minor xtick={},
+                              minor ytick={},
+                              xticklabels={$-\frac{7\pi}{6}$,$-\frac{2\pi}{3}$,$-\frac{\pi}{6}$,$\frac{\pi}{3}$,$\frac{5\pi}{6}$,$\frac{4\pi}{3}$,$\frac{11\pi}{6}$}]
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-210,-6.48) (-210,6.48)}; 
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-30,-6.48) (-30,6.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(330,-6.48) (330,6.48)}; 
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(150,-6.48) (150,6.48)};
+                  \addplot [soliddot,color=blue] coordinates {(-165,-1)};
+                  \addplot [soliddot,color=blue] coordinates {(-120,0)};
+                  \addplot [soliddot,color=blue] coordinates {(-75,1)};
+                  \addplot [soliddot,color=blue] coordinates {(15,-1)};
+                  \addplot [soliddot,color=blue] coordinates {(60,0)};
+                  \addplot [soliddot,color=blue] coordinates {(105,1)};
+                  \addplot [soliddot,color=blue] coordinates {(195,-1)};
+                  \addplot [soliddot,color=blue] coordinates {(240,0)};
+                  \addplot [soliddot,color=blue] coordinates {(285,1)};   
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+        <p>
+          All that's left to do is connect the points in a way that demonstrates the asymptotic behavior of the function.  This is done in <xref ref="trigonometry-tangent-cotangent-graphs-figure-13">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-tangent-cotangent-graphs-figure-13">
+          <caption><m>y=\tan\left(t-\frac{\pi}{6}\right)</m> </caption>
+          <image width="80%">
+            <description>A graph the interval <m>(-\frac{7\pi}{6},2\pi)</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{7\pi}{6}</m>, <m>t=-\frac{\pi}{6}</m>, <m>t=\frac{5\pi}{6}</m>, and <m>t=\frac{11\pi}{6}</m>.  Between each consecutive pair of asymptotes there is a curve that is strictly increasing.  The curves are concave down to the left of the midpoint of the interval defined by the asymptotes and they are concave up  to the right of that point.  Each curve crosses the <m>t</m>-axis at the midpoint.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+              \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-240,xmax=360,
+                              ymin=-6.5,ymax=6.5,
+                              xtick={-210,-120,-30,60,150,240,330},
+                              ytick={-6,-5,...,6},
+                              minor xtick={},
+                              minor ytick={},
+                              xticklabels={$-\frac{7\pi}{6}$,$-\frac{2\pi}{3}$,$-\frac{\pi}{6}$,$\frac{\pi}{3}$,$\frac{5\pi}{6}$,$\frac{4\pi}{3}$,$\frac{11\pi}{6}$}]
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-210,-6.48) (-210,6.48)}; 
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-30,-6.48) (-30,6.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(330,-6.48) (330,6.48)}; 
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(150,-6.48) (150,6.48)};
+                  \addplot [domain=-201:-39,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {tan(x-60)};
+                  \addplot [domain=-21:141,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {tan(x-60)};
+                  \addplot [domain=159:321,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {tan(x-60)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Sketch three periods of the function <m>y=\cot\left(2t+\frac{\pi}{2}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's begin by remarking that the period of this function is <m>\frac{\pi}{2}</m>. Before we can state the horizontal shift, we need to factor <m>2</m> away from both <m>t</m> and <m>\frac{\pi}{2}</m>.  This is done below.
+          <me>\cot\left(2t+\frac{\pi}{2}\right)=\cot\left(2\left(t+\frac{\pi}{4}\right)\right)</me>
+          We can now see that there is a leftward shift of <m>\frac{\pi}{4}</m>.
+        </p>
+        <p>
+          The lines <m>t=-\frac{\pi}{2}</m>, <m>t=0</m>, <m>t=\frac{\pi}{2}</m>, and <m>t=\pi</m> are all vertical asymptotes for the function <m>y=\cot(2t)</m>.  The function <m>y=\cot\left(2t+\frac{\pi}{2}\right)</m> lies <m>\frac{\pi}{4}</m> to the left of <m>y=\cot(2t)</m>, so it has the vertical asymptotes <m>t=-\frac{3\pi}{4}</m>, <m>t=-\frac{\pi}{4}</m>, <m>t=\frac{\pi}{4}</m>, and <m>t=\frac{3\pi}{4}</m>.  These asymptotes are shown in <xref ref="trigonometry-tangent-cotangent-graphs-figure-14">Figure</xref>.  Note that the midpoint between each pair of consecutive asymptotes has also been identified.  These are the points where the tangent curves will cross the <m>t</m>-axis.
+        </p>
+        <figure xml:id="trigonometry-tangent-cotangent-graphs-figure-14">
+          <caption>Asymptotes for the Graph of <m>y=\cot\left(2t+\frac{\pi}{2}\right) </m></caption>
+          <image width="80%">
+            <description>
+              A graph the interval <m>(-\frac{7\pi}{8},\frac{7\pi}{8})</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{3\pi}{4}</m>, <m>t=-\frac{\pi}{4}</m>, <m>t=\frac{\pi}{4}</m>, and <m>t=\frac{3\pi}{4}</m>.  
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-157.5,xmax=157.5,
+                              ymin=-6.5,ymax=6.5,
+                              xtick={-135,-90,-45,45,90,135},
+                              ytick={-6,-5,...,6},
+                              minor xtick={},
+                              minor ytick={},
+                              xticklabels={$-\frac{3\pi}{4}$,$-\frac{\pi}{2}$,$-\frac{\pi}{4}$,$\frac{\pi}{4}$,$\frac{\pi}{2}$,$\frac{3\pi}{4}$,}]
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-135,-6.48) (-135,6.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-45,-6.48) (-45,6.48)};  
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(45,-6.48) (45,6.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(135,-6.48) (135,6.48)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+        <p>
+          There is a <m>t</m>-intercept halfway between each pair of asymptotes.  A quarter of a period to the left of each <m>t</m>intercept there is a point with a <m>y</m>-coordinate of <m>-1</m>.  A quarter of a period to the right of each <m>t</m>-intercept there is a point with a <m>y</m>-coordinate of <m>1</m>.  All of these points have been added to the graph in <xref ref="trigonometry-tangent-cotangent-graphs-figure-15">Figure</xref>.
+        </p>
+
+        <figure xml:id="trigonometry-tangent-cotangent-graphs-figure-15">
+          <caption>Points on and Asymptotes for the Graph of <m>y=\cot\left(2t+\frac{\pi}{2}\right) </m></caption>
+          <image width="80%">
+            <description>
+              A graph the interval <m>(-\frac{7\pi}{8},\frac{7\pi}{8})</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{3\pi}{4}</m>, <m>t=-\frac{\pi}{4}</m>, <m>t=\frac{\pi}{4}</m>, and <m>t=\frac{3\pi}{4}</m>. Nine points are also plotted,  The points are <m>(-\frac{5\pi}{8},1)</m>, <m>(-\frac{\pi}{2},0)</m>, <m>(-\frac{3\pi}{8},-1)</m>, <m>(-\frac{\pi}{8},1)</m>, <m>(0,0)</m>, <m>(\frac{\pi}{8},-1)</m>, <m>(\frac{3\pi}{8},1)</m>, <m>(\frac{\pi}{2},0)</m>, and <m>(\frac{5\pi}{8},-1)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-157.5,xmax=157.5,
+                              ymin=-6.5,ymax=6.5,
+                              xtick={-135,-90,-45,45,90,135},
+                              ytick={-6,-5,...,6},
+                              minor xtick={},
+                              minor ytick={},
+                              xticklabels={$-\frac{3\pi}{4}$,$-\frac{\pi}{2}$,$-\frac{\pi}{4}$,$\frac{\pi}{4}$,$\frac{\pi}{2}$,$\frac{3\pi}{4}$,}]
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-135,-6.48) (-135,6.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-45,-6.48) (-45,6.48)};  
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(45,-6.48) (45,6.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(135,-6.48) (135,6.48)};
+                  \addplot [soliddot,color=blue] coordinates {(-112.5,1)};
+                  \addplot [soliddot,color=blue] coordinates {(-90,0)};
+                  \addplot [soliddot,color=blue] coordinates {(-67.5,-1)};
+                  \addplot [soliddot,color=blue] coordinates {(-22.5,1)};
+                  \addplot [soliddot,color=blue] coordinates {(0,0)};
+                  \addplot [soliddot,color=blue] coordinates {(22.5,-1)};
+                  \addplot [soliddot,color=blue] coordinates {(67.5,1)};
+                  \addplot [soliddot,color=blue] coordinates {(90,0)};
+                  \addplot [soliddot,color=blue] coordinates {(112,-1)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+        <p>
+          All that's left to do is connect the points in a way that demonstrates the asymptotic behavior of the function.  This is done in <xref ref="trigonometry-tangent-cotangent-graphs-figure-16">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-tangent-cotangent-graphs-figure-16">
+          <caption><m>y=\cot\left(2t+\frac{\pi}{2}\right) </m></caption>
+          <image width="80%">
+            <description>
+              A graph the interval <m>(-\frac{7\pi}{8},\frac{7\pi}{8})</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{3\pi}{4}</m>, <m>t=-\frac{\pi}{4}</m>, <m>t=\frac{\pi}{4}</m>, and <m>t=\frac{3\pi}{4}</m>.  Between each consecutive pair of asymptotes there is a curve that is strictly decreasing.  The curves are concave up to the left of the midpoint of the interval defined by the asymptotes and they are concave down  to the right of that point.  Each curve crosses the <m>t</m>-axis at the midpoint. 
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-157.5,xmax=157.5,
+                              ymin=-6.5,ymax=6.5,
+                              xtick={-135,-90,-45,45,90,135},
+                              ytick={-6,-5,...,6},
+                              minor xtick={},
+                              minor ytick={},
+                              xticklabels={$-\frac{3\pi}{4}$,$-\frac{\pi}{2}$,$-\frac{\pi}{4}$,$\frac{\pi}{4}$,$\frac{\pi}{2}$,$\frac{3\pi}{4}$,}]
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-135,-6.48) (-135,6.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-45,-6.48) (-45,6.48)};  
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(45,-6.48) (45,6.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(135,-6.48) (135,6.48)};
+                  \addplot [domain=-130.5:-49.5,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {cos(2*x+90)/sin(2*x+90)};
+                  \addplot [domain=-40.5:40.5,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {cos(2*x+90)/sin(2*x+90)};
+                  \addplot [domain=49.5:130.5,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {cos(2*x+90)/sin(2*x+90)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </example>
+  </paragraphs>
+  <paragraphs>
+    <title>Vertical Stretches, Compressions, Reflections, and Shifts</title>
+    <p></p>
+    <p>
+      Vertical stretches, compressions, reflections, and shifts work exactly the same way for the tangent and cotangent functions as they work for any other function.  To wit:
+      <ul>
+        <li>
+          <p>
+            The graph of <m>y=A \tan(t)</m>, <m>A \neq 0</m>, <m>A \neq \pm 1</m>, is either a vertical stretch or a vertical compression of the graph of <m>y=\tan(t)</m>.  If <m>\abs{A} \gt 1</m>, the effect is a stretch away from the <m>t</m>-axis by a factor of <m>A</m>.  If <m>\abs{A} \lt 1</m>, the effect is a vertical compression towards the <m>t</m>-axis by a factor of <m>\abs{A}</m>.  Additionally, if <m>A \lt 0</m>, the curves of <m>y=\tan(t)</m> are reflected across the <m>t</m>-axis.
+          </p>
+        </li>
+        <li>
+          <p>
+            The graph of <m>y=\tan(t)+k</m>, <m>k \neq 0</m>, is a vertical shift of the graph of <m>y=\tan(t)</m>.  When <m>k \gt 0</m>, the shift is upward by <m>k</m>.  When <m>k \lt 0</m>, the shift is downward by <m>\abs{k}</m>.
+          </p>
+        </li>
+      </ul>
+      Let's see an example.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Sketch three periods of the function <m>y=-3\cot(t)+2</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          In words, the graphical transformations affected on the parent function <m>y=\cot(t)</m> are a stretch by a factor of <m>3</m>, a reflection across the <m>t</m>-axis, and lastly an upward shift by <m>2</m>.
+        </p>
+        <p>
+          When graphing <m>y=\cot(t)</m>, between each pair of consecutive pair of asymptotes the are three key points.  The points, from left-to-right, have the form
+          <me>(t,1),\,\,(t,0),\,\,(t,-1).</me>
+          On the graph of <m>y=-3\cot(2)+2</m> those points become
+          <me>(t,3(1)+2),\,\,(t,3(0)+2),\,\,(t,3(-1)+2)</me>
+          which simplify to
+          <me>(t,5),\,\,(t,2),\,\,(t,-2).</me>
+        </p>
+        <p>
+          Because there are no changes in the horizontal direction, we know that <m>t=-\pi</m>, <m>t=0</m>, <m>t=\pi</m>, and <m>t=2\pi</m> are all vertical asymptotes for the function.  Those asymptotes and the aforementioned points are plotted in <xref ref="trigonometry-tangent-cotangent-graphs-figure-17">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-tangent-cotangent-graphs-figure-17">
+          <caption>Points on and Asymptotes for the Graph of <m>y=-3\cot(t)+2</m></caption>
+          <image width="80%">
+            <description>
+             A graph over the interval <m>(-\frac{5\pi}{4},\frac{9\pi}{4})</m>.  There are four vertical asymptotes, specifically <m>t=-\pi</m>, <m>t=0</m>, <m>t=\pi</m>, and <m>t=2\pi</m>.  Nine points are also plotted,  The points are <m>(-\frac{3\pi}{4},5)</m>, <m>(-\frac{\pi}{2},2)</m>, <m>(-\frac{\pi}{4},-1)</m>, <m>(\frac{\pi}{4},5)</m>, <m>(\frac{\pi}{2},2)</m>, <m>(\frac{3\pi}{4},-1)</m>, <m>(\frac{5\pi}{4},5)</m>, <m>(\frac{3\pi}{2},2)</m>, and <m>(\frac{7\pi}{4},-1)</m>.
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-225,xmax=405,
+                              ymin=-4.5,ymax=8.5,
+                              xtick={-180,-90,90,180,270,360},
+                              ytick={-4,-3,...,8},
+                              minor xtick={},
+                              minor ytick={},
+                              xticklabels={$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$,}]
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-360,-4.48) (-360,8.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-180,-4.48) (-180,8.48)}; 
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(180,-4.48) (180,8.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(360,-4.48) (360,8.48)};
+                  \addplot [soliddot,color=blue] coordinates {(-135,5)};
+                  \addplot [soliddot,color=blue] coordinates {(-90,2)};
+                  \addplot [soliddot,color=blue] coordinates {(-45,-1)};
+                  \addplot [soliddot,color=blue] coordinates {(45,5)};
+                  \addplot [soliddot,color=blue] coordinates {(90,2)};
+                  \addplot [soliddot,color=blue] coordinates {(135,-1)};
+                  \addplot [soliddot,color=blue] coordinates {(225,5)};
+                  \addplot [soliddot,color=blue] coordinates {(270,2)};
+                  \addplot [soliddot,color=blue] coordinates {(315,-1)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+        <p>
+          All that's left to do is connect the points in a way that demonstrates the asymptotic behavior of the function.  This is done in <xref ref="trigonometry-tangent-cotangent-graphs-figure-18">Figure</xref>.
+        </p>
+        <figure xml:id="trigonometry-tangent-cotangent-graphs-figure-18">
+          <caption><m>y=-3\cot(t)+2</m></caption>
+          <image width="80%">
+            <description>
+             A graph over the interval <m>(-\frac{5\pi}{4},\frac{9\pi}{4})</m>.  There are four vertical asymptotes, specifically <m>t=-\pi</m>, <m>t=0</m>, <m>t=\pi</m>, and <m>t=2\pi</m>.  Between each consecutive pair of asymptotes there is a curve that is strictly decreasing.  The curves are concave up to the left of the midpoint of the interval defined by the asymptotes and they are concave down  to the right of that point.  The <m>y</m>-coordinate at each midpoint is <m>2</m>. 
+            </description>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                              xlabel={$t$},
+                              xmin=-225,xmax=405,
+                              ymin=-4.5,ymax=8.5,
+                              xtick={-180,-90,90,180,270,360},
+                              ytick={-4,-3,...,8},
+                              minor xtick={},
+                              minor ytick={},
+                              xticklabels={$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$,}]
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-360,-4.48) (-360,8.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-180,-4.48) (-180,8.48)}; 
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(180,-4.48) (180,8.48)};
+                  \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(360,-4.48) (360,8.48)};
+              \addplot [domain=-155.5:-24.5,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {2+3*cos(x)/sin(x)};
+              \addplot [domain=24.5:155.5,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {2+3*cos(x)/sin(x)};
+              \addplot [domain=204.5:335.5,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {2+3*cos(x)/sin(x)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </example>
+  </paragraphs>
+  <exercises>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Sketch three periods of each function.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y=\cot(3t)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The only transformation being affected upon the function <m>y=\cot(t)</m> is a change in the period.  The new period is <m>\frac{\pi}{3}</m>.  The lines <m>t=-\frac{\pi}{3}</m>, <m>t=0</m>, <m>t=\frac{\pi}{3}</m>, and <m>t=\frac{2\pi}{3}</m> will all be vertical asymptotes for the graph.  Halfway between each consecutive pair of asymptotes the curve will cross the <m>t</m>-axis.  One-quarter period to the left of each <m>t</m>-intercept there is a point with a <m>y</m>-coordinate of <m>1</m> and one-quarter-period to the right of each <m>t</m>-intercept there is a point with a <m>y</m>-coordinate of <m>-1</m>.  All of this is plotted in <xref ref="trigonometry-tangent-cotangent-graphs-exercises-figure-1">Figure</xref>. 
+          </p>
+          <figure xml:id="trigonometry-tangent-cotangent-graphs-exercises-figure-1">
+            <caption>Points on and Asymptotes for the Graph of <m>y=\cot(3t)</m></caption>
+            <image width="80%">
+              <description>
+                A graph over the interval <m>(-\frac{5\pi}{12},\frac{3\pi}{4})</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{\pi}{3}</m>, <m>t=0</m>, <m>t=\frac{\pi}{3}</m>, and <m>t=\frac{2\pi}{3}</m>.  Nine points are also plotted,  The points are <m>(-\frac{\pi}{4},1)</m>, <m>(-\frac{\pi}{6},0)</m>, <m>(-\frac{\pi}{12},-1)</m>, <m>(\frac{\pi}{12},1)</m>, <m>(\frac{\pi}{2\6},0)</m>, <m>(\frac{\pi}{4},-1)</m>, <m>(\frac{5\pi}{12},1)</m>, <m>(\frac{\pi}{2},0)</m>, and <m>(\frac{7\pi}{12},-1)</m>.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis} [width=10cm,height=5cm,
+                                xlabel={$t$},
+                                xmin=-75,xmax=135,
+                                ymin=-6.5,ymax=6.5,
+                                xtick={-60,-30,30,60,90,120},
+                                ytick={-6,-5,...,6},
+                                minor xtick={},
+                                minor ytick={},
+                                xticklabels={$-\frac{\pi}{3}$,$-\frac{\pi}{6}$,$\frac{\pi}{6}$,$\frac{\pi}{3}$,$\frac{\pi}{2}$,$\frac{2\pi}{3}$}]
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-120,-6.48) (-120,6.48)};
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-60,-6.48) (-60,6.48)}; 
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(60,-6.48) (60,6.48)};
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(120,-6.48) (120,6.48)};
+                    \addplot [soliddot,color=blue] coordinates {(-45,1)};
+                    \addplot [soliddot,color=blue] coordinates {(-30,0)};
+                    \addplot [soliddot,color=blue] coordinates {(-15,-1)};
+                    \addplot [soliddot,color=blue] coordinates {(15,1)};
+                    \addplot [soliddot,color=blue] coordinates {(30,0)};
+                    \addplot [soliddot,color=blue] coordinates {(45,-1)};
+                    \addplot [soliddot,color=blue] coordinates {(75,1)};
+                    \addplot [soliddot,color=blue] coordinates {(90,0)};
+                    \addplot [soliddot,color=blue] coordinates {(105,-1)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+          <p>
+            All that's left to do is connect the points in a way that demonstrates the asymptotic behavior of the function.  This is done in <xref ref="trigonometry-tangent-cotangent-graphs-exercises-figure-1">Figure</xref>.
+          </p>
+          <figure xml:id="trigonometry-tangent-cotangent-graphs-exercises-figure-2">
+            <caption><m>y=\cot(3t)</m></caption>
+            <image width="80%">
+              <description>
+                A graph over the interval <m>(-\frac{5\pi}{12},\frac{3\pi}{4})</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{\pi}{3}</m>, <m>t=0</m>, <m>t=\frac{\pi}{3}</m>, and <m>t=\frac{2\pi}{3}</m>.   Between each consecutive pair of asymptotes there is a curve that is strictly decreasing.  The curves are concave up to the left of the midpoint of the interval defined by the asymptotes and they are concave down  to the right of that point.  Each curve crosses the <m>t</m>-axis at the midpoint. 
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis} [width=10cm,height=5cm,
+                                xlabel={$t$},
+                                xmin=-75,xmax=135,
+                                ymin=-6.5,ymax=6.5,
+                                xtick={-60,-30,30,60,90,120},
+                                ytick={-6,-5,...,6},
+                                minor xtick={},
+                                minor ytick={},
+                                xticklabels={$-\frac{\pi}{3}$,$-\frac{\pi}{6}$,$\frac{\pi}{6}$,$\frac{\pi}{3}$,$\frac{\pi}{2}$,$\frac{2\pi}{3}$}]
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-120,-6.48) (-120,6.48)};
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-60,-6.48) (-60,6.48)}; 
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(60,-6.48) (60,6.48)};
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(120,-6.48) (120,6.48)};
+                    \addplot [domain=-57:-3,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {cos(3*x)/sin(3*x)};
+                    \addplot [domain=3:57,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {cos(3*x)/sin(3*x)};
+                    \addplot [domain=63:117,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {cos(3*x)/sin(3*x)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y=\tan\left(t-\frac{\pi}{8}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The only transformation being affected on the graph of <m>y=\tan(t)</m> is a rightward shift of <m>\frac{\pi}{8}</m>.  The effect this has upon the vertical asymptotes is computed below. 
+          </p>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              <md>
+                <mrow>t\amp=-\frac{3\pi}{2}+\frac{\pi}{8}</mrow>
+                <mrow>t\amp=-\frac{11\pi}{8}</mrow>
+              </md>
+            </p>
+
+            <p>
+              <md>
+                <mrow>t\amp=-\frac{\pi}{2}+\frac{\pi}{8}</mrow>
+                <mrow>t\amp=-\frac{3\pi}{8}</mrow>
+              </md>
+            </p>
+
+          </sidebyside>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              <md>
+                <mrow>t\amp=\frac{\pi}{2}+\frac{\pi}{8}</mrow>
+                <mrow>t\amp=\frac{5\pi}{8}</mrow>
+              </md>
+            </p>
+
+            <p>
+              <md>
+                <mrow>t\amp=\frac{3\pi}{2}+\frac{\pi}{8}</mrow>
+                <mrow>t\amp=-\frac{13\pi}{8}</mrow>
+              </md>
+            </p>
+
+          </sidebyside>
+          <p>
+            Halfway between each consecutive pair of asymptotes the curve will cross the <m>t</m>-axis.  One-quarter period to the left of each <m>t</m>-intercept there is a point with a <m>y</m>-coordinate of <m>-1</m> and one-quarter-period to the right of each <m>t</m>-intercept there is a point with a <m>y</m>-coordinate of <m>1</m>.  All of this is plotted in <xref ref="trigonometry-tangent-cotangent-graphs-exercises-figure-3">Figure</xref>.
+          </p>
+          <figure xml:id="trigonometry-tangent-cotangent-graphs-exercises-figure-3">
+          <caption>Points on and Asymptotes for the Graph of <m>y=\tan\left(t-\frac{\pi}{8}\right)</m> </caption>
+            <image width="80%">
+              <description>
+                A graph over the interval <m>(-\frac{3\pi}{2},\frac{7\pi}{4})</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{11\pi}{8}</m>, <m>t=-\frac{3\pi}{8}</m>, <m>t=\frac{5\pi}{8}</m>, and <m>t=\frac{13\pi}{8}</m>.  Nine points are also plotted,  The points are <m>(-\frac{9\pi}{8},-1)</m>, <m>(-\frac{7\pi}{8},0)</m>, <m>(-\frac{5\pi}{8},1)</m>, <m>(-\frac{\pi}{8},-1)</m>, <m>(\frac{\pi}{8},0)</m>, <m>(\frac{3\pi}{8},1)</m> <m>(\frac{7\pi}{8},-1)</m>, <m>(\frac{9\pi}{8},0)</m>, and <m>(\frac{11\pi}{8},1)</m>.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                                xlabel={$t$},
+                                xmin=-270,xmax=315,
+                                ymin=-6.5,ymax=6.5,
+                                xtick={-247.5,-157.5,-67.5,22.5,112.5,202.5,292.5},
+                                ytick={-6,-5,...,6},
+                                minor xtick={},
+                                minor ytick={},
+                                xticklabels={$-\frac{11\pi}{8}$,$-\frac{7\pi}{8}$,$-\frac{3\pi}{8}$,$\frac{\pi}{8}$,$\frac{5\pi}{8}$,$\frac{9\pi}{8}$,$\frac{13\pi}{8}$}]
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-247.5,-6.48) (-247.5,6.48)}; 
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-67.5,-6.48) (-67.5,6.48)};
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(292.5,-6.48) (292.5,6.48)}; 
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(112.5,-6.48) (112.5,6.48)};
+                    \addplot [soliddot,color=blue] coordinates {(-202.5,-1)};
+                    \addplot [soliddot,color=blue] coordinates {(-157.5,0)};
+                    \addplot [soliddot,color=blue] coordinates {(-112.5,1)};
+                    \addplot [soliddot,color=blue] coordinates {(-22.5,-1)};
+                    \addplot [soliddot,color=blue] coordinates {(22.5,0)};
+                    \addplot [soliddot,color=blue] coordinates {(67.5,1)};
+                    \addplot [soliddot,color=blue] coordinates {(157.5,-1)};
+                    \addplot [soliddot,color=blue] coordinates {(202.5,0)};
+                    \addplot [soliddot,color=blue] coordinates {(247.5,1)};  
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+          <p>
+            All that's left to do is connect the points in a way that demonstrates the asymptotic behavior of the function.  This is done in <xref ref="trigonometry-tangent-cotangent-graphs-exercises-figure-4">Figure</xref>.
+          </p>
+          <figure xml:id="trigonometry-tangent-cotangent-graphs-exercises-figure-4">
+          <caption><m>y=\tan\left(t-\frac{\pi}{8}\right)</m> </caption>
+            <image width="80%">
+              <description>
+                A graph over the interval <m>(-\frac{3\pi}{2},\frac{7\pi}{4})</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{11\pi}{8}</m>, <m>t=-\frac{3\pi}{8}</m>, <m>t=\frac{5\pi}{8}</m>, and <m>t=\frac{13\pi}{8}</m>. Between each consecutive pair of asymptotes there is a curve that is strictly increasing.  The curves are concave down to the left of the midpoint of the interval defined by the asymptotes and they are concave up  to the right of that point.  Each curve crosses the <m>t</m>-axis at the midpoint.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                \begin{axis} [width=10cm,height=5cm,
+                                xlabel={$t$},
+                                xmin=-270,xmax=315,
+                                ymin=-6.5,ymax=6.5,
+                                xtick={-247.5,-157.5,-67.5,22.5,112.5,202.5,292.5},
+                                ytick={-6,-5,...,6},
+                                minor xtick={},
+                                minor ytick={},
+                                xticklabels={$-\frac{11\pi}{8}$,$-\frac{7\pi}{8}$,$-\frac{3\pi}{8}$,$\frac{\pi}{8}$,$\frac{5\pi}{8}$,$\frac{9\pi}{8}$,$\frac{13\pi}{8}$}]
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-247.5,-6.48) (-247.5,6.48)}; 
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-67.5,-6.48) (-67.5,6.48)};
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(292.5,-6.48) (292.5,6.48)}; 
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(112.5,-6.48) (112.5,6.48)};
+                    \addplot [domain=-238.5:-76.5,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {tan(x-22.5)};
+                    \addplot [domain=-58.5:103.5,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {tan(x-22.5)};
+                    \addplot [domain=121.5:283.5,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {tan(x-22.5)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y=\frac{2}{3}\cot(t)-2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            All of the modifications to the graph of <m>y=\cot(t)</m> are in the vertical direction.  There is a vertical compression by a factor of <m>\frac{2}{3}</m> followed by a downward shift of 2. 
+          </p>
+          <p>
+            When graphing <m>y=\cot(t)</m>, between each pair of consecutive pair of asymptotes the are three key points.  The points, from left-to-right, have the form
+            <me>(t,1),\,\,(t,0),\,\,(t,-1).</me>
+            On the graph of <m>y=y=\frac{2}{3}\cot(t)-2</m> those points become
+            <me>(t,\frac{2}{3}(1)-2),\,\,(t,\frac{2}{3}(0)-2),\,\,(t,\frac{2}{3}(-1)-2)</me>
+            which simplify to
+            <me>(t,-\frac{4}{3}),\,\,(t,-2),\,\,(t,-\frac{8}{3}).</me>
+          </p>
+          <p>
+            Let's go ahead and plot our asymptotes, <m>t=-\pi</m>, <m>t=0</m>, <m>t=\pi</m>, and <m>t=2\pi</m>.  Let's also plot the points discussed above.  This is done in <xref ref="trigonometry-tangent-cotangent-graphs-exercises-figure-5">Figure</xref>.
+          </p>
+          <figure xml:id="trigonometry-tangent-cotangent-graphs-exercises-figure-5">
+              <caption>Points on and Asymptotes for the Graph of <m>y=\frac{2}{3}\cot(t)-2</m></caption>
+              <image width="80%">
+                <description>
+                  A graph the interval <m>(-\frac{9\pi}{8},\frac{17\pi}{8})</m>.  There are four vertical asymptotes, specifically <m>t=-\pi</m>, <m>t=0</m>, <m>t=\pi</m>, and <m>t=2\pi</m>.  Nine points are also plotted,  The points are <m>(-\frac{3\pi}{4},-\frac{4}{3})</m>, <m>(-\frac{\pi}{2},-2)</m>, <m>(-\frac{\pi}{4},-\frac{8}{3})</m>, <m>(\frac{\pi}{4},-\frac{4}{3})</m>, <m>(\frac{\pi}{2},-2)</m>, <m>(\frac{3\pi}{4},-\frac{8}{3})</m>, <m>(\frac{5\pi}{4},-\frac{4}{3})</m>, <m>(\frac{3\pi}{2},-2)</m>, and <m>(\frac{7\pi}{4},-\frac{8}{3})</m>.
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis} [width=10cm,height=5cm,
+                                  xlabel={$t$},
+                                  xmin=-202.5,xmax=382.5,
+                                  ymin=-8.5,ymax=4.5,
+                                  xtick={-180,-90,90,180,270,360},
+                                  ytick={-8,-7,...,4},
+                                  minor xtick={},
+                                  minor ytick={},
+                                  xticklabels={$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$,}]
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-360,-8.48) (-360,4.48)};
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-180,-8.48) (-180,4.48)}; 
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(180,-8.48) (180,4.48)};
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(360,-8.48) (360,4.48)};
+                    \addplot [soliddot,color=blue] coordinates {(-135,-1.33)};
+                    \addplot [soliddot,color=blue] coordinates {(-90,-2)};
+                    \addplot [soliddot,color=blue] coordinates {(-45,-2.67)};
+                    \addplot [soliddot,color=blue] coordinates {(45,-1.33)};
+                    \addplot [soliddot,color=blue] coordinates {(90,-2)};
+                    \addplot [soliddot,color=blue] coordinates {(135,-2.67)};
+                    \addplot [soliddot,color=blue] coordinates {(225,-1.33)};
+                    \addplot [soliddot,color=blue] coordinates {(270,-2)};
+                    \addplot [soliddot,color=blue] coordinates {(315,-2.67)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+          <p>
+            All that's left to do is connect the points in a way that demonstrates the asymptotic behavior of the function.  This is done in <xref ref="trigonometry-tangent-cotangent-graphs-exercises-figure-6">Figure</xref>.
+          </p>
+          <figure xml:id="trigonometry-tangent-cotangent-graphs-exercises-figure-6">
+              <caption><m>y=\frac{2}{3}\cot(t)-2</m></caption>
+              <image width="80%">
+                <description>
+                  A graph the interval <m>(-\frac{9\pi}{8},\frac{17\pi}{8})</m>.  There are four vertical asymptotes, specifically <m>t=-\pi</m>, <m>t=0</m>, <m>t=\pi</m>, and <m>t=2\pi</m>.   Between each consecutive pair of asymptotes there is a curve that is strictly decreasing.  The curves are concave up to the left of the midpoint of the interval defined by the asymptotes and they are concave down  to the right of that point.  Each curve has a <m>y</m>-coordinate of <m>-2</m>  at the midpoint.
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                    \begin{axis} [width=10cm,height=5cm,
+                                  xlabel={$t$},
+                                  xmin=-202.5,xmax=382.5,
+                                  ymin=-8.5,ymax=4.5,
+                                  xtick={-180,-90,90,180,270,360},
+                                  ytick={-8,-7,...,4},
+                                  minor xtick={},
+                                  minor ytick={},
+                                  xticklabels={$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$,}]
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-360,-8.48) (-360,4.48)};
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-180,-8.48) (-180,4.48)}; 
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(180,-8.48) (180,4.48)};
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(360,-8.48) (360,4.48)};
+                    \addplot [domain=-174:-6,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {-2+0.67*cos(x)/sin(x)};
+                    \addplot [domain=6:174,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {-2+0.67*cos(x)/sin(x)};
+                    \addplot [domain=186:354,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {-2+0.67*cos(x)/sin(x)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y=-\tan\left(3\left(t+\frac{\pi}{6}\right)\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by observing that the period is <m>\frac{\pi}{3}</m>.
+          </p>
+          <p>
+            The lines <m>y=-\frac{3\pi}{2}</m>, <m>y=-\frac{\pi}{2}</m>, <m>y=\frac{\pi}{2}</m>, and <m>y=\frac{3\pi}{2}</m> are all vertical asymptotes for a graph of <m>y=\tan(t)</m>. These lines all need to be compressed towards the <m>y</m>-axis by a factor of <m>\frac{1}{3}</m>.  The resultant vertical asymptotes for a graph <m>y=\tan(3t)</m> are <m>y=-\frac{\pi}{2}</m>, <m>y=-\frac{\pi}{6}</m>, <m>y=\frac{\pi}{6}</m>, and <m>y=\frac{\pi}{2}</m>. These lines are all shifted to the left by <m>\frac{\pi}{6}</m> on a graph of <m>y=-\tan\left(3\left(t+\frac{\pi}{6}\right)\right)</m>. The effect this has upon the vertical asymptotes is calculated below. 
+          </p>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              <md>
+                <mrow>t\amp=-\frac{\pi}{2}-\frac{\pi}{6}</mrow>
+                <mrow>t\amp=-\frac{2\pi}{3}</mrow>
+              </md>
+            </p>
+
+            <p>
+              <md>
+                <mrow>t\amp=-\frac{\pi}{6}-\frac{\pi}{6}</mrow>
+                <mrow>t\amp=-\frac{\pi}{3}</mrow>
+              </md>
+            </p>
+
+          </sidebyside>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              <md>
+                <mrow>t\amp=\frac{\pi}{6}-\frac{\pi}{6}</mrow>
+                <mrow>t\amp=0</mrow>
+              </md>
+            </p>
+
+            <p>
+              <md>
+                <mrow>t\amp=\frac{\pi}{2}-\frac{\pi}{6}</mrow>
+                <mrow>t\amp=\frac{\pi}{3}</mrow>
+              </md>
+            </p>
+
+          </sidebyside>
+          <p>
+            Let's go ahead and plot the vertical asymptotes.  This is done in <xref ref="trigonometry-tangent-cotangent-graphs-exercises-figure-7">Figure</xref>.
+          </p>
+          <figure xml:id="trigonometry-tangent-cotangent-graphs-exercises-figure-7">
+            <caption>Asymptotes for the Graph of <m>y=-\tan\left(3\left(t+\frac{\pi}{6}\right)\right)</m></caption>
+            <image width="80%">
+                <description>
+                  A graph over the interval <m>(-\frac{3\pi}{4},\frac{3\pi}{8})</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{2\pi}{3}</m>, <m>t=-\frac{\pi}{3}</m>, <m>t=0</m>, and <m>t=\frac{\pi}{3}</m>.  
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                  \begin{axis} [width=10cm,height=5cm,
+                                xlabel={$t$},
+                                xmin=-135,xmax=75,
+                                ymin=-6.5,ymax=6.5,
+                                xtick={-120,-90,-60,-30,30,60},
+                                ytick={-6,-5,...,6},
+                                minor xtick={},
+                                minor ytick={},
+                                xticklabels={$-\frac{4\pi}{3}$,$-\frac{\pi}{2}$,$-\frac{\pi}{3}$,$-\frac{\pi}{6}$,$\frac{\pi}{6}$,$\frac{\pi}{3}$}]
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-120,-6.48) (-120,6.48)}; 
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-60,-6.48) (-60,6.48)};
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(60,-6.48) (60,6.48)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+          <p>
+            There is a curve that crosses the <m>t</m>-axis halfway between each pair of consecutive asymptotes.  On a graph of <m>y=\tan(t)</m> there is a point one-quarter of a period to the left of each <m>t</m>-intercept with a <m>y</m>-coordinate of <m>1</m> and a point one-quarter of a period to the right of each <m>t</m>-intercept with a <m>y</m>-coordinate of <m>1</m>.  Because the function we are graphing has a negative sign in front of the tangent expression, the points with a <m>y</m>-coordinate of <m>1</m> will fall to the left of the <m>t</m>-intercepts and the points with a <m>y</m>-coordinate of <m>-1</m> will fall to the right of the <m>t</m>-intercepts.  These points have been added to the graph in <xref ref="trigonometry-tangent-cotangent-graphs-exercises-figure-8">Figure</xref>.
+          </p>
+          <figure xml:id="trigonometry-tangent-cotangent-graphs-exercises-figure-8">
+            <caption>Points on and Asymptotes for the Graph of <m>y=-\tan\left(3\left(t+\frac{\pi}{6}\right)\right)</m></caption>
+            <image width="80%">
+                <description>
+                  A graph over the interval <m>(-\frac{3\pi}{4},\frac{3\pi}{8})</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{2\pi}{3}</m>, <m>t=-\frac{\pi}{3}</m>, <m>t=0</m>, and <m>t=\frac{\pi}{3}</m>.  Nine points are also plotted.  The points are <m>(-\frac{7\pi}{12},1)</m>, <m>(-\frac{\pi}{2},0)</m>, <m>(-\frac{5\pi}{12},-1)</m>, <m>(-\frac{\pi}{4},1)</m>, <m>(-\frac{\pi}{6},0)</m>, <m>(-\frac{\pi}{12},-1)</m> <m>(\frac{\pi}{12},1)</m>, <m>(\frac{\pi}{6},0)</m>, and <m>(\frac{\pi}{4},-1)</m>.
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                  \begin{axis} [width=10cm,height=5cm,
+                                xlabel={$t$},
+                                xmin=-135,xmax=75,
+                                ymin=-6.5,ymax=6.5,
+                                xtick={-120,-90,-60,-30,30,60},
+                                ytick={-6,-5,...,6},
+                                minor xtick={},
+                                minor ytick={},
+                                xticklabels={$-\frac{4\pi}{3}$,$-\frac{\pi}{2}$,$-\frac{\pi}{3}$,$-\frac{\pi}{6}$,$\frac{\pi}{6}$,$\frac{\pi}{3}$}]
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-120,-6.48) (-120,6.48)}; 
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-60,-6.48) (-60,6.48)};
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(60,-6.48) (60,6.48)};
+                    \addplot [soliddot,color=blue] coordinates {(-105,1)};
+                    \addplot [soliddot,color=blue] coordinates {(-90,0)};
+                    \addplot [soliddot,color=blue] coordinates {(-75,-1)};
+                    \addplot [soliddot,color=blue] coordinates {(-45,1)};
+                    \addplot [soliddot,color=blue] coordinates {(-30,0)};
+                    \addplot [soliddot,color=blue] coordinates {(-15,-1)};
+                    \addplot [soliddot,color=blue] coordinates {(15,1)};
+                    \addplot [soliddot,color=blue] coordinates {(30,0)};
+                    \addplot [soliddot,color=blue] coordinates {(45,-1)};   
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+          <p>
+            All that's left to do is connect the points in a way that demonstrates the asymptotic behavior of the function.  This is done in <xref ref="trigonometry-tangent-cotangent-graphs-exercises-figure-9">Figure</xref>.
+          </p>
+          <figure xml:id="trigonometry-tangent-cotangent-graphs-exercises-figure-9">
+            <caption>Points on and Asymptotes for the Graph of <m>y=-\tan\left(3\left(t+\frac{\pi}{6}\right)\right)</m></caption>
+            <image width="80%">
+                <description>
+                  A graph over the interval <m>(-\frac{3\pi}{4},\frac{3\pi}{8})</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{2\pi}{3}</m>, <m>t=-\frac{\pi}{3}</m>, <m>t=0</m>, and <m>t=\frac{\pi}{3}</m>.  Between each consecutive pair of asymptotes there is a curve that is strictly decreasing.  The curves are concave up to the left of the midpoint of the interval defined by the asymptotes and they are concave down  to the right of that point.  Each curve has a <m>y</m>-coordinate of <m>-2</m>  at the midpoint.
+                </description>
+                <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
+                  \begin{axis} [width=10cm,height=5cm,
+                                xlabel={$t$},
+                                xmin=-135,xmax=75,
+                                ymin=-6.5,ymax=6.5,
+                                xtick={-120,-90,-60,-30,30,60},
+                                ytick={-6,-5,...,6},
+                                minor xtick={},
+                                minor ytick={},
+                                xticklabels={$-\frac{4\pi}{3}$,$-\frac{\pi}{2}$,$-\frac{\pi}{3}$,$-\frac{\pi}{6}$,$\frac{\pi}{6}$,$\frac{\pi}{3}$}]
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-120,-6.48) (-120,6.48)}; 
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-60,-6.48) (-60,6.48)};
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(60,-6.48) (60,6.48)};
+                    \addplot [domain=-117:-63,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {-tan(90+3*x)};
+                    \addplot [domain=-57:-3,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {-tan(90+3*x)};
+                    \addplot [domain=3:57,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {-tan(90+3*x)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y=\cot\left(\frac{t}{2}-\frac{\pi}{4}\right)-3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's first remark that <m>\frac{t}{2}=\frac{1}{2}t</m>, so the value of <m>\omega</m> is <m>\frac{1}{2}</m>.  The period is calculated below.
+            <md>
+              <mrow>\frac{\pi}{\abs{\omega}}\amp=\frac{\pi}{\frac{1}{2}}</mrow>
+              <mrow>\amp=\frac{\pi}{1} \cdot \frac{2}{1}</mrow>
+              <mrow>\amp=2\pi</mrow>
+            </md>
+            Before we can establish the horizontal shift, we need to factor <m>\frac{1}{2}</m> away from both <m>t</m> and <m>\frac{\pi}{4}</m>.  This is done below.
+            <me>\cot\left(\frac{t}{2}-\frac{\pi}{4}\right)-3=\cot\left(\frac{1}{2}\left(t-\frac{\pi}{2}\right)\right)-3</me>
+            We can now see that there is a rightward shift of <m>\frac{\pi}{2}</m>.
+          </p>
+          <p>
+            The lines <m>y=-2\pi</m>, <m>y=0</m>, <m>y=2\pi</m>, and <m>y=4\pi</m> are all vertical asymptotes on a  graph of <m>y=\cot\left(\frac{t}{2}\right)</m>.  On a graph <m>y=\cot\left(\frac{t}{2}-\frac{\pi}{4}\right)-3</m> those asymptotes all need to shifted to the right by <m>\frac{\pi}{2}</m>.  The resultant asymptotes are <m>y=-\frac{3\pi}{2}</m>, <m>y=\frac{\pi}{2}</m>, <m>y=\frac{5\pi}{2}</m>, and <m>y=\frac{9\pi}{2}</m>.  These asymptotes are plotted in <xref ref="trigonometry-tangent-cotangent-graphs-exercises-figure-10">Figure</xref>.
+          </p>
+          <figure xml:id="trigonometry-tangent-cotangent-graphs-exercises-figure-10">
+            <caption>Asymptotes for the Graph of <m>y=\cot\left(\frac{t}{2}-\frac{\pi}{4}\right)-3</m></caption>
+            <image width="80%">
+              <description>
+                A graph over the interval <m>(-\frac{7\pi}{4},\frac{19\pi}{4})</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{3\pi}{2}</m>, <m>t=\frac{3\pi}{2}</m>, <m>t=\frac{5\pi}{2}</m>, and <m>t=\frac{9\pi}{2}</m>. 
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis} [width=10cm,height=5cm,
+                                xlabel={$t$},
+                                xmin=-315,xmax=855,
+                                ymin=-9.5,ymax=3.5,
+                                xtick={-270,-90,90,270,450,630,810},
+                                ytick={-9,-8,...,3},
+                                minor xtick={},
+                                minor ytick={},
+                                xticklabels={$-\frac{3\pi}{2}$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\frac{3\pi}{2}$,$\frac{5\pi}{2}$,$\frac{7\pi}{2}$,$\frac{9\pi}{2}$}]
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-270,-9.48) (-270,3.48)}; 
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(90,-9.48) (90,3.48)};
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(450,-9.48) (450,3.48)};
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(810,-9.48) (810,3.48)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+          <p>
+            Between the asymptotes, at regular intervals of one-quarter of a period, the <m>y</m>-coordinates of an unmodified cotangent function follow the pattern <m>1</m>, <m>0</m>, <m>-1</m>.  The cotangent function we are graphing has a downward shift of <m>3</m>, so that pattern is shifted downward to <m>-2</m>, <m>-3</m>, <m>-4</m>.  The resultant points have been added to the graph in <xref ref="trigonometry-tangent-cotangent-graphs-exercises-figure-11">Figure</xref>.
+          </p>
+          <figure xml:id="trigonometry-tangent-cotangent-graphs-exercises-figure-11">
+            <caption>Points on and Asymptotes for the Graph of <m>y=\cot\left(\frac{t}{2}-\frac{\pi}{4}\right)-3</m></caption>
+            <image width="80%">
+              <description>
+                A graph over the interval <m>(-\frac{7\pi}{4},\frac{19\pi}{4})</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{3\pi}{2}</m>, <m>t=\frac{3\pi}{2}</m>, <m>t=\frac{5\pi}{2}</m>, and <m>t=\frac{9\pi}{2}</m>.  Nine points are also plotted,  The points are <m>(-\2\pi,-1)</m>, <m>(-\frac{\pi}{2},-2)</m>, <m>(0,-3)</m>, <m>(\pi,-1)</m>, <m>(\frac{3\pi}{2},-2)</m>, <m>(2\pi},-3)</m>, <m>(3\pi},-1)</m>, <m>(\frac{7\pi}{2},-2)</m>, and<m>(4\pi,-3)</m>.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis} [width=10cm,height=5cm,
+                                xlabel={$t$},
+                                xmin=-315,xmax=855,
+                                ymin=-9.5,ymax=3.5,
+                                xtick={-270,-90,90,270,450,630,810},
+                                ytick={-9,-8,...,3},
+                                minor xtick={},
+                                minor ytick={},
+                                xticklabels={$-\frac{3\pi}{2}$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\frac{3\pi}{2}$,$\frac{5\pi}{2}$,$\frac{7\pi}{2}$,$\frac{9\pi}{2}$}]
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-270,-9.48) (-270,3.48)}; 
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(90,-9.48) (90,3.48)};
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(450,-9.48) (450,3.48)};
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(810,-9.48) (810,3.48)};
+                    \addplot [soliddot,color=blue] coordinates {(-180,-1)};
+                    \addplot [soliddot,color=blue] coordinates {(-90,-2)};
+                    \addplot [soliddot,color=blue] coordinates {(0,-3)};
+                    \addplot [soliddot,color=blue] coordinates {(180,-1)};
+                    \addplot [soliddot,color=blue] coordinates {(270,-2)};
+                    \addplot [soliddot,color=blue] coordinates {(360,-3)};
+                    \addplot [soliddot,color=blue] coordinates {(540,-1)};
+                    \addplot [soliddot,color=blue] coordinates {(630,-2)};
+                    \addplot [soliddot,color=blue] coordinates {(720,-3)};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+          <p>
+            All that's left to do is connect the points in a way that demonstrates the asymptotic behavior of the function.  This is done in <xref ref="trigonometry-tangent-cotangent-graphs-exercises-figure-12">Figure</xref>.
+          </p>
+          <figure xml:id="trigonometry-tangent-cotangent-graphs-exercises-figure-12">
+            <caption>Points on and Asymptotes for the Graph of <m>y=\cot\left(\frac{t}{2}-\frac{\pi}{4}\right)-3</m></caption>
+            <image width="80%">
+              <description>
+                A graph over the interval <m>(-\frac{7\pi}{4},\frac{19\pi}{4})</m>.  There are four vertical asymptotes, specifically <m>t=-\frac{3\pi}{2}</m>, <m>t=\frac{3\pi}{2}</m>, <m>t=\frac{5\pi}{2}</m>, and <m>t=\frac{9\pi}{2}</m>.  Between each consecutive pair of asymptotes there is a curve that is strictly decreasing.  The curves are concave up to the left of the midpoint of the interval defined by the asymptotes and they are concave down  to the right of that point.  Each curve has a <m>y</m>-coordinate of <m>-3</m>  at the midpoint.
+              </description>
+              <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                  \begin{axis} [width=10cm,height=5cm,
+                                xlabel={$t$},
+                                xmin=-315,xmax=855,
+                                ymin=-9.5,ymax=3.5,
+                                xtick={-270,-90,90,270,450,630,810},
+                                ytick={-9,-8,...,3},
+                                minor xtick={},
+                                minor ytick={},
+                                xticklabels={$-\frac{3\pi}{2}$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\frac{3\pi}{2}$,$\frac{5\pi}{2}$,$\frac{7\pi}{2}$,$\frac{9\pi}{2}$}]
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-270,-9.48) (-270,3.48)}; 
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(90,-9.48) (90,3.48)};
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(450,-9.48) (450,3.48)};
+                    \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(810,-9.48) (810,3.48)};
+                    \addplot [domain=-252:72,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {cos(x/2-45)/sin(x/2-45)-3};
+                    \addplot [domain=108:432,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {cos(x/2-45)/sin(x/2-45)-3};
+                    \addplot [domain=468:792,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] {cos(x/2-45)/sin(x/2-45)-3};
+                  \end{axis}
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+  </exercises>
+
+
+</section>

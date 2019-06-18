@@ -10,218 +10,253 @@
 <!-- ********************************************************************* -->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="factoring-trinomials-leading-coefficient-not-1">
-    <title>Factoring Trinomials with Leading Coefficients not 1</title>
+  <title>Factoring Trinomials with Leading Coefficients not 1</title>
 
+  <p>
+    When factoring trinomials it is important to first look for factors common to all three terms.  While we won't lead with an example of this type, it's always good to remind ourselves of this.  Some of the problems in the your next problem set are all but impossible to resolve if you omit this step.
+  </p>
+  <p>
+    That said, our first few examples are going to deal with trinomials of form <m>ax^2+bx+c</m> where 
+    <m>a\neq1</m>.  We are going to use what is known as the <m>ac</m>-method to factor.  The initial task is to determine two factors of the product <m>ac</m> that sum to <m>b</m>.  We will then rewrite the expression using that factor pair to split the linear term into two terms and factor the result by grouping.  Hopefully that will make more sense when you see some examples!
+  </p>
+
+  <example xml:id="factoring-trinomials-lctn1-ex-1">
+    <statement>
+      <p>
+        Factor <m>6x^2+7x-5</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>  
+        Our initial task is to find a factor pair of <m>-30</m> <m>(ac)</m> that sums to <m>7</m>.The pair that works is <m>-3</m> and <m>10</m>.  Let's precede with the strategy outlined above.
+        <md>
+          <mrow>6x^2+7x-5\amp=6x^2-3x+10x-5</mrow>
+          <mrow>\amp=\highlightb{3x}\highlight{(2x-1)}\highlightg{+5}\highlight{(2x-1)}</mrow>
+          <mrow>\amp=(\highlightb{3x}\highlightg{+5})\highlight{(2x-1)}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example xml:id="factoring-trinomials-lctn1-ex-2">
+    <statement>
+      <p>
+        Factor <m>3x^2+16xy-12y^2</m>. 
+      </p>
+    </statement>
+    <solution>
+      <p> 
+        Our first objective is to determine two factors of <m>-36</m> that sum to <m>16</m>.  The pair that works is <m>18</m> and <m>-2</m>.  Proceeding to our factoring by grouping we have:
+        <md>
+          <mrow>3x^2+16xy-12y^2\amp=3x^2+18xy-2xy-12y^2</mrow>
+          <mrow>\amp=\highlightb{3x}\highlight{(x+6y)}\highlightg{-2y}\highlight{(x+6y)}</mrow>
+          <mrow>\amp=(\highlightb{3x}\highlightg{-2y})\highlight{(x+6y)}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example xml:id="factoring-trinomials-lctn1-ex-3">
+    <statement>
+      <p>
+        Factor <m>24w^4-42w^3z+9w^2z^2</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The first thing we should notice is that there are common factors to all three terms.  Three evenly divides into each term, and each term contains at least two factors of <m>w</m>, so we can factor <m>3w^2</m> for the expression.  
+        <me>24w^4-42w^3z+9w^2z^2=3w^2(8w^2-14wz+3z^2)</me> 
+      </p>
+      <p>
+        Turning our attention to the expression inside parentheses, we need to determine a factor pair of 24 that sums to -14.  The factor pair is <m>-12</m> and <m>-2</m>.  This gives us:
+        <md>
+          <mrow>24w^4-42w^3z+9w^2z^2\amp=3w^2(8w^2-14wz+3z^2)</mrow>
+          <mrow>\amp=3w^2(8w^2-12wz-2wz+3z^2)</mrow>
+          <mrow>\amp=3w^2[\highlightb{4w}\highlight{(2w-3z)}\highlightg{-z}\highlight{(2w-3z)}]</mrow>
+          <mrow>\amp=3w^2(\highlightb{4w}\highlightg{-z})\highlight{(2w-3z)}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <figure xml:id="factoring-geogebra-2">
+    <caption>Practice Factoring Trinomials with One Variable</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/factor-trinomials-not-1.ggb">
+        setPerspective("G");
+        setAxesVisible(0,0);
+      </slate>
+    </interactive>
+  </figure>
+
+  <figure xml:id="factoring-geogebra-3">
+    <caption>Practice Factoring Trinomials with Two Variable</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/factor-trinomials-multivariable.ggb">
+        setPerspective("G");
+        setAxesVisible(0,0);
+      </slate>
+    </interactive>
+  </figure>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
         <p>
-          When factoring trinomials it is important to first look for factors common to all three terms.  While we won't lead with an example of this type, it's always good to remind ourselves of this.  Some of the problems in the your next problem set are all but impossible to resolve if you omit this step.
+          Completely factor each of the following expressions.  Check each result by expanding the factored form.
         </p>
-        <p>
-          That said, our first few examples are going to deal with trinomials of form <m>ax^2+bx+c</m> where 
-            <m>a\neq1</m>.  We are going to use what is known as the <m>ac</m>-method to factor.  The initial task is to determine two factors of the product <m>ac</m> that sum to <m>b</m>.  We will then rewrite the expression using that factor pair to split the linear term into two terms and factor the result by grouping.  Hopefully that will make more sense when you see some examples!
-        </p>
+      </introduction>
 
-        <example xml:id="factoring-trinomials-lctn1-ex-1">
-          <statement>
-            <p>
-              Factor <m>6x^2+7x-5</m>.
-            </p>
-          </statement>
-          <solution>
-            <p>  
-              Our initial task is to find a factor pair of <m>-30</m> <m>(ac)</m> that sums to <m>7</m>.The pair that works is <m>-3</m> and <m>10</m>.  Let's precede with the strategy outlined above.
-              <md>
-                <mrow>6x^2+7x-5\amp=6x^2-3x+10x-5</mrow>
-                <mrow>\amp=\highlightb{3x}\highlight{(2x-1)}\highlightg{+5}\highlight{(2x-1)}</mrow>
-                <mrow>\amp=(\highlightb{3x}\highlightg{+5})\highlight{(2x-1)}</mrow>
-              </md>
-            </p>
-          </solution>
-        </example>
+      <exercise>
+        <statement>
+          <p>
+            <m>4x^2-11x+6</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              4x^2-11x+6\amp=4x^2-8x-3x+6\\
+              \amp=\highlightb{4x}\highlight{(x-2)}\highlightg{-3}\highlight{(x-2)}\\
+              \amp=(\highlightb{4x}\highlightg{-3})\highlight{(x-2)}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
 
-        <example xml:id="factoring-trinomials-lctn1-ex-2">
-          <statement>
-            <p>
-              Factor <m>3x^2+16xy-12y^2</m>. 
-            </p>
-          </statement>
-          <solution>
-            <p> 
-              Our first objective is to determine two factors of <m>-36</m> that sum to <m>16</m>.  The pair that works is <m>18</m> and <m>-2</m>.  Proceeding to our factoring by grouping we have:
-              <md>
-                <mrow>3x^2+16xy-12y^2\amp=3x^2+18xy-2xy-12y^2</mrow>
-                <mrow>\amp=\highlightb{3x}\highlight{(x+6y)}\highlightg{-2y}\highlight{(x+6y)}</mrow>
-                <mrow>\amp=(\highlightb{3x}\highlightg{-2y})\highlight{(x+6y)}</mrow>
-              </md>
-            </p>
-          </solution>
-        </example>
+      <exercise>
+        <statement>
+          <p>
+            <m>5x^2-2x-7</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              5x^2-2x-7\amp=5x^2-7x+5x-7\\
+              \amp=\highlightb{x}\highlight{(5x-7)}\highlightg{+1}\highlight{(5x-7)}\\
+              \amp=(\highlightb{x}\highlightg{+1})\highlight{(5x-7)}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
 
-        <example xml:id="factoring-trinomials-lctn1-ex-3">
-          <statement>
-            <p>
-              Factor <m>24w^4-42w^3z+9w^2z^2</m>.
-            </p>
-          </statement>
-          <solution>
-            <p>
-              The first thing we should notice is that there are common factors to all three terms.  Three evenly divides into each term, and each term contains at least two factors of <m>w</m>, so we can factor <m>3w^2</m> for the expression.  
-              <me>24w^4-42w^3z+9w^2z^2=3w^2(8w^2-14wz+3z^2)</me> 
-            </p>
-            <p>
-              Turning our attention to the expression inside parentheses, we need to determine a factor pair of 24 that sums to -14.  The factor pair is <m>-12</m> and <m>-2</m>.  This gives us:
-              <md>
-                <mrow>24w^4-42w^3z+9w^2z^2\amp=3w^2(8w^2-14wz+3z^2)</mrow>
-                <mrow>\amp=3w^2(8w^2-12wz-2wz+3z^2)</mrow>
-                <mrow>\amp=3w^2[\highlightb{4w}\highlight{(2w-3z)}\highlightg{-z}\highlight{(2w-3z)}]</mrow>
-                <mrow>\amp=3w^2(\highlightb{4w}\highlightg{-z})\highlight{(2w-3z)}</mrow>
-              </md>
-            </p>
-          </solution>
-        </example>
+      <exercise>
+        <statement>
+          <p>
+            <m>8x^2-14x+3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              8x^2-14x+3\amp=8x^2-12x-2x+3\\
+              \amp=\highlightb{4x}\highlight{(2x-3)}\highlightg{-1}\highlight{(2x-3)}\\
+              \amp=(\highlightb{4x}\highlightg{-1})\highlight{(2x-3)}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
 
-        <exercises>
-          <exercisegroup>
-            <introduction>
-              <p>
-                Completely factor each of the following expressions.  Check each result by expanding the factored form.
-              </p>
-            </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>4x^2y-20xy+24y</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              4x^2y-20xy+24y\amp=4y(x^2-5x+6)\\
+              \amp=4y(x-3)(x-2)
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
 
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>4x^2-11x+6</m>
-                    </p>
-                  </statement>
-                  <solution>
-                    <p><m>
-                      \begin{aligned}[t]
-                      4x^2-11x+6\amp=4x^2-8x-3x+6\\
-                      \amp=\highlightb{4x}\highlight{(x-2)}\highlightg{-3}\highlight{(x-2)}\\
-                      \amp=(\highlightb{4x}\highlightg{-3})\highlight{(x-2)}
-                      \end{aligned}
-                    </m></p>
-                  </solution>
-                </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>36x^2-48xy+15y^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              36x^2-48xy+15y^2\amp=3(12x^2-16xy+5y^2)\\
+              \amp=3(12x^2-10xy-6xy+5y^2\\
+              \amp=3[\highlightb{2x}\highlight{(6x-5y)}\highlightg{-y}\highlight{(6x-5)}]\\
+              \amp=3(\highlightb{2x}\highlightg{-y})\highlight{(6x-5y)}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
 
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>5x^2-2x-7</m>
-                    </p>
-                  </statement>
-                  <solution>
-                    <p><m>
-                      \begin{aligned}[t]
-                      5x^2-2x-7\amp=5x^2-7x+5x-7\\
-                      \amp=\highlightb{x}\highlight{(5x-7)}\highlightg{+1}\highlight{(5x-7)}\\
-                      \amp=(\highlightb{x}\highlightg{+1})\highlight{(5x-7)}
-                      \end{aligned}
-                    </m></p>
-                  </solution>
-                </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>-9t^8+90xt^4-216x^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              -9t^8+90xt^4-216x^2\amp=-9(t^8-10xt^4+24x^2)\\
+              \amp=-9(t^8-4xt^4-6xt^4+24x^2)\\
+              \amp=-9[\highlightb{t^4}\highlight{(t^4-4x)}\highlightg{-6x}\highlight{(t^4-4x)}]\\
+              \amp=-9(\highlightb{t^4}\highlightg{-6x})\highlight{(t^4-4x)}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
 
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>8x^2-14x+3</m>
-                    </p>
-                  </statement>
-                  <solution>
-                    <p><m>
-                      \begin{aligned}[t]
-                      8x^2-14x+3\amp=8x^2-12x-2x+3\\
-                      \amp=\highlightb{4x}\highlight{(2x-3)}\highlightg{-1}\highlight{(2x-3)}\\
-                      \amp=(\highlightb{4x}\highlightg{-1})\highlight{(2x-3)}
-                      \end{aligned}
-                    </m></p>
-                  </solution>
-                </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>9x^6-25x^3y^2-6y^4</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}[t]
+              9x^6-25x^3y^2-6y^4\amp=9x^6-27x^3y^2+2x^3y^2-6y^4\\
+              \amp=\highlightb{9x^3}\highlight{(x^3-3y^2)}\highlightg{+2y^2}\highlight{(x^3-3y^2)}\\
+              \amp=(\highlightb{9x^3}\highlightg{+2y^2})\highlight{(x^3-3y^2)}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </exercise>
 
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>4x^2y-20xy+24y</m>
-                    </p>
-                  </statement>
-                  <solution>
-                    <p><m>
-                      \begin{aligned}[t]
-                      4x^2y-20xy+24y\amp=4y(x^2-5x+6)\\
-                      \amp=4y(x-3)(x-2)
-                      \end{aligned}
-                    </m></p>
-                  </solution>
-                </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>14x^2y^5+56x^2y^4+420x^2y^3</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>14x^2y^5+56x^2y^4+420x^2y^3=14x^2y^3(y^2+4y+30)</m>
+          </p>
+        </solution>
+      </exercise>
 
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>36x^2-48xy+15y^2</m>
-                    </p>
-                  </statement>
-                  <solution>
-                    <p><m>
-                      \begin{aligned}[t]
-                      36x^2-48xy+15y^2\amp=3(12x^2-16xy+5y^2)\\
-                      \amp=3(12x^2-10xy-6xy+5y^2\\
-                      \amp=3[\highlightb{2x}\highlight{(6x-5y)}\highlightg{-y}\highlight{(6x-5)}]\\
-                      \amp=3(\highlightb{2x}\highlightg{-y})\highlight{(6x-5y)}
-                      \end{aligned}
-                    </m></p>
-                  </solution>
-                </exercise>
+    </exercisegroup>
 
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>-9t^8+90xt^4-216x^2</m>
-                    </p>
-                  </statement>
-                  <solution>
-                    <p><m>
-                      \begin{aligned}[t]
-                      -9t^8+90xt^4-216x^2\amp=-9(t^8-10xt^4+24x^2)\\
-                      \amp=-9(t^8-4xt^4-6xt^4+24x^2)\\
-                      \amp=-9[\highlightb{t^4}\highlight{(t^4-4x)}\highlightg{-6x}\highlight{(t^4-4x)}]\\
-                      \amp=-9(\highlightb{t^4}\highlightg{-6x})\highlight{(t^4-4x)}
-                      \end{aligned}
-                    </m></p>
-                  </solution>
-                </exercise>
+  </exercises>
 
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>9x^6-25x^3y^2-6y^4</m>
-                    </p>
-                  </statement>
-                  <solution>
-                    <p><m>
-                      \begin{aligned}[t]
-                      9x^6-25x^3y^2-6y^4\amp=9x^6-27x^3y^2+2x^3y^2-6y^4\\
-                      \amp=\highlightb{9x^3}\highlight{(x^3-3y^2)}\highlightg{+2y^2}\highlight{(x^3-3y^2)}\\
-                      \amp=(\highlightb{9x^3}\highlightg{+2y^2})\highlight{(x^3-3y^2)}
-                      \end{aligned}
-                    </m></p>
-                  </solution>
-                </exercise>
-
-                <exercise>
-                  <statement>
-                    <p>
-                      <m>14x^2y^5+56x^2y^4+420x^2y^3</m>
-                    </p>
-                  </statement>
-                  <solution>
-                    <p>
-                      <m>14x^2y^5+56x^2y^4+420x^2y^3=14x^2y^3(y^2+4y+30)</m>
-                    </p>
-                  </solution>
-                </exercise>
-
-              </exercisegroup>
-
-            </exercises>
-
-          </section>
+</section>

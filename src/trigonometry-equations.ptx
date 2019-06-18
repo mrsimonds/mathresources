@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="trigonometry-equations">
+  <title>Trigonometric Equations</title>
+
+  <paragraphs>
+    <title>Equations of Form trig<m>(u)=C</m> where "trig" is One the Six Standard Trigonometric Functions and <m>C</m> is a real number </title>
+    <p></p>
+    <p>
+      Regardless of the initial form of a trigonometric equation, the solver eventually has to solve one or more equations in the form stated above, so we need to get a good grasp on that type of equation before moving on to other types of equations.  The best method of explanation in this section is to show several examples.  Throughout this section I will be stating solutions in terms of radians.  If you don't have a solid memory of points on the unit circle, you probably want to have a printed copy of the unit circle while reading and working through this section. 
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine all solutions to the equation <m>\sin(t)=-\frac{\sqrt{3}}{2}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Given the definition of the sine function, this equation is analogous to the following question: What are all of the points on the unit circle with a <m>y</m>-coordinate of <m>-\frac{\sqrt{3}}{2}</m>.
+        </p>
+        <p>
+          Over the interval <m>[0,2\pi)</m>, there are two points on the unit circle with a <m>y</m>-coordinate of <m>-\frac{\sqrt{3}}{2}</m>.  The points correspond to <m>t=\frac{4\pi}{3}</m> and <m>t=\frac{5\pi}{3}</m>.  So two solutions to the stated equation occur where <m>t=\frac{4\pi}{3}</m> and <m>t=\frac{5\pi}{3}</m>.  But these are not the only solutions.
+        </p>
+        <p>
+          When drawn in standard position, any two angles whose radian measurements vary by any integer multiple of <m>2\pi</m> are coterminal and, consequently, their six basic trigonometric values are equal.  As such, we can add any integer multiple of <m>2\pi</m> to either of our stated solutions and come up with a another solution to the equation.  This leads to the following conclusion.
+        </p>
+        <p>
+          The solutions to the equation <m>\sin(t)=-\frac{\sqrt{3}}{2}</m> consist of all angles whose radian measurement can be written either in the form 
+          <md>
+            <mrow>t\amp=\frac{4\pi}{3}+2\pi k\amp\amp\,\text{or}\,\amp t=\frac{5\pi}{3}+2\pi k</mrow>
+          </md> 
+          where <m>k</m> can be any integer.
+        </p>
+        <p>
+          The above statement is called <term>the general solution to the equation</term>.
+        </p>
+      </solution>
+    </example>
+
+     <example>
+      <statement>
+        <p>
+          Determine the general solution to the equation <m>\sec(2t)=2</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The secant function is the reciprocal of the cosine function, so the stated equation is equivalent to the equation <m>\cos(2t)=\frac{1}{2}</m>.  The first thing we need to establish are the two angles over the interval <m>[0,2\pi)</m> where the <m>x</m>-coordinate is <m>\frac{1}{2}</m>.  Those two points occur at angles with radian measurement <m>\frac{\pi}{3}</m> and <m>\frac{5\pi}{3}</m>.
+        </p>
+        <p>
+          The period of the cosine function is <m>2\pi</m>, so any integer multiple of <m>2\pi</m> added to either of the stated values results in another point where the <m>x</m>-coordinate is <m>\frac{1}{2}</m>.
+        </p>
+        <p>
+          In the stated equation, the variable <m>t</m> is multiplied by <m>2</m> before the secant function is applied, so our solutions will come from the following equations (where <m>k</m> can be any integer).
+          <md>
+            <mrow>2t\amp=\frac{\pi}{3}+2\pi k\amp\amp\,\text{or}\,\amp 2t\amp=\frac{5\pi}{3}+2\pi k</mrow>
+          </md>
+          Multiplying both sides of both equations by <m>\frac{1}{2}</m> gives us the following.
+          <md>
+            <mrow>t\amp=\frac{\pi}{6}+\pi k\amp\amp\,\text{or}\,\amp t\amp=\frac{5\pi}{6}+\pi k</mrow>
+          </md>
+          In conclusion, the general solution to the equation <m>\sec(2t)=2</m> is 
+          <md>
+            <mrow>t\amp=\frac{\pi}{6}+\pi k\amp\amp\,\text{or}\,\amp t\amp=\frac{5\pi}{6}+\pi k</mrow>
+          </md>
+          where <m>k</m> can be any integer.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine all solutions to the equation <m>\tan\left(\frac{t}{2}\right)=1</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          In terms of a point on the unit circle, the tangent value is determine by the ratio <m>\frac{y}{x}</m>, so solving the stated equation entails, in part, answering the following question: Where on the unit circle are the <m>x</m>-coordinate and the <m>y</m>-coordinate equal to one another?  The two locations over the interval <m>[0,2\pi)</m> where that is true occur at <m>\frac{\pi}{4}</m> and <m>\frac{5\pi}{4}</m>.
+        </p>
+        <p>
+          One way we could state the radian measurement all points where the <m>x</m> and <m>y</m> coordinates are equal is to say that they can be written either in the form <m>\frac{\pi}{4}+2\pi k</m> or in the form <m>\frac{5\pi}{4}+2\pi k</m> where <m>k</m> can be any integer.  But because the period of the basic tangent function is <m>\pi</m>, we can generate all such points by simply stating <m>\frac{\pi}{4}+\pi k</m> where <m>k</m> can be any integer.  As the value of <m>k</m> moves through the sequence <m>0,\,1,\,2,\,3,\,...</m>, this latter formula alternately gives us radian measurements equal to or coterminal with <m>\frac{\pi}{4},\,\frac{5\pi}{4},\,\frac{\pi}{4},\,\frac{5\pi}{4},\,...</m>.
+        </p>
+        <p>
+          Solutions to the stated equation will come from the following equation (where <m>k</m> can be any integer).
+          <me>\frac{t}{2}=\frac{\pi}{4}+\pi k</me>
+          Multiplying both sides of the above equation by <m>2</m> results in the following.
+          <me>t=\frac{\pi}{2}+2\pi k</me>
+          In conclusion, any solution to the equation <m>\tan\left(\frac{t}{2}\right)=1</m> can be written in the form
+          <me>\frac{\pi}{2}+2\pi k</me>
+          where <m>k</m> can be any integer.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine all solutions to the equation <m>\csc(3t)=\frac{2\sqrt{3}}{3}</m> over the interval <m>[0,2\pi)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Because the sine function and the cosecant function are reciprocals, the stated equation is equivalent to the equation <m>\sin(3t)=\frac{3}{2\sqrt{3}}</m>, so we are interested in points along the unit circle where the <m>y</m>-coordinate is <m>\frac{3}{2\sqrt{3}}</m>.  That number is not familiar looking, so let's try rationalizing the denominator to see if something familiar comes about. 
+          <md>
+            <mrow>\frac{3}{2\sqrt{3}}\amp=\frac{3}{2\sqrt{3}} \cdot \frac{\sqrt{3}}{\sqrt{3}}</mrow>
+            <mrow>\amp=\frac{3\sqrt{3}}{6}</mrow>
+            <mrow>\amp=\frac{\sqrt{3}}{2}</mrow>
+          </md>
+          Ah, something familiar.  There are two locations along the unit circle where the <m>y</m>-coordinate is <m>\frac{\sqrt{3}}{2}</m>.  Those locations correspond to the radian measurements of <m>\frac{\pi}{3}</m> and <m>\frac{2\pi}{3}</m>.  If the equation were simply <m>\csc(t)=\frac{2\sqrt{3}}{3}</m> those two values would be the solutions over the interval <m>[0,2\pi)</m>. But, because of the factor of <m>3</m> in the stated equation, we have a bit of work still to do.
+        </p>
+        <p>
+          The general solution to the equation comes from the following two equations (where <m>k</m> can be any integer).
+          <md>
+            <mrow>3t\amp=\frac{\pi}{3}+2\pi k\amp\amp\,\text{or}\,\amp 3t\amp=\frac{2\pi}{3}+2\pi k</mrow>
+          </md>
+          Multiplying both sides of both equations by <m>\frac{1}{3}</m> results in the following.
+          <md>
+            <mrow>t\amp=\frac{\pi}{9}+\frac{2\pi k}{3}\amp\amp\,\text{or}\,\amp t\amp=\frac{2\pi}{9}+\frac{2\pi k}{3}</mrow>
+          </md>
+          We are only looking for solutions that lie over the interval <m>[0,2\pi)</m>.  When you are looking for solutions to an equation of form trig<m>(ct)=</m>number, where <m>c</m> is a positive integer, but you are only interested in solutions that lie over the interval <m>[0,2\pi)</m>, you want to take your general solution and let <m>k</m> assume the values <m>0,\,1,\,2,\,...,c-1</m>. So in our case, we will let <m>k</m> take on the values <m>0</m>, <m>1</m>, and <m>2</m>.
+          <md>
+            <mrow>t\amp=\frac{\pi}{9}+\frac{2\pi \cdot 0}{3}=\frac{\pi}{9}\amp\amp\,\text{or}\,\amp t\amp=\frac{2\pi}{9}+\frac{2\pi \cdot 0}{3}=\frac{2\pi}{3}</mrow>
+            <mrow>t\amp=\frac{\pi}{9}+\frac{2\pi \cdot 1}{3}=\frac{7\pi}{9}\amp\amp\,\text{or}\,\amp t\amp=\frac{2\pi}{9}+\frac{2\pi \cdot 1}{3}=\frac{8\pi}{9}</mrow>
+            <mrow>t\amp=\frac{\pi}{9}+\frac{2\pi \cdot 2}{3}=\frac{13\pi}{9}\amp\amp\,\text{or}\,\amp t\amp=\frac{2\pi}{9}+\frac{2\pi \cdot 2}{3}=\frac{14\pi}{9}</mrow>
+          </md>
+          In conclusion, the solutions to the equation <m>\csc(3t)=\frac{2\sqrt{3}}{3}</m> over the interval <m>[0,2\pi)</m> are stated below.
+          <me>\frac{\pi}{9},\,\frac{2\pi}{9},\,\frac{7\pi}{9},\,\frac{8\pi}{3},\,\frac{13\pi}{9},\,\text{and}\,\frac{14\pi}{9}</me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine all solutions to the equation <m>\cot(2t)=-\sqrt{3}</m> over the interval <m>[0,2\pi)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          In terms of the unit circle, the cotangent value at a given point is equal to the ratio <m>\frac{x}{y}</m>.  So in order for the cotangent function to have a value of <m>-\sqrt{3}</m>, the <m>x</m>-coordinate of the point must be <m>-\sqrt{3}</m> times the <m>y</m>-coordinate of the point.  The two such points that are on the unit circle are <m>\left(-\frac{\sqrt{3}}{2},\frac{1}{2}\right)</m> and <m>\left(\frac{\sqrt{3}}{2},-\frac{1}{2}\right)</m>.  Those two points correspond to the radian measurements of <m>\frac{5\pi}{6}</m> and <m>\frac{11\pi}{6}</m>.
+        </p>
+        <p>
+          The general solution to the stated equation can be written stated below (where <m>k</m> can be any integer).
+          <md>
+            <mrow>2t\amp=\frac{5\pi}{6}+2\pi k\amp\amp\,\text{or}\,\amp 2t\amp=\frac{11\pi}{6}+2\pi k</mrow>
+          </md>
+          As was the case with the tangent equation, we could simplify this to a single equation (because the period of the basic cotangent function is <m>\pi</m>).  However, because we are only looking for solutions over the interval <m>[0,2\pi)</m>, I find it easier to stick with the two equations and let <m>k</m> take on the values <m>0</m> and <m>1</m> (stopping at <m>1</m> because that is one less than the coefficient on <m>t</m> in the original equation, <m>2</m>).  Before doing that, let's isolate <m>t</m> by multiplying both sides of the two equations by <m>\frac{1}{2}</m>.  The result follows.
+          <md>
+            <mrow>t\amp=\frac{5\pi}{12}+\pi k\amp\amp\,\text{or}\,\amp t\amp=\frac{11\pi}{12}+\pi k</mrow>
+          </md>
+          Let's go ahead and replace <m>k</m> with <m>0</m> and <m>1</m>.          
+          <md>
+            <mrow>t\amp=\frac{5\pi}{12}+\pi \cdot 0=\frac{5\pi}{12}\amp\amp\,\text{or}\,\amp t\amp=\frac{11\pi}{12}+\pi \cdot 0=\frac{11\pi}{12}</mrow>
+            <mrow>t\amp=\frac{5\pi}{12}+\pi \cdot 1=\frac{17\pi}{12}\amp\amp\,\text{or}\,\amp t\amp=\frac{11\pi}{12}+\pi \cdot 1=\frac{23\pi}{12}</mrow>
+          </md>
+          In conclusion, the solutions to the equation <m>\cot(2t)=-\sqrt{3}</m> that lie on the interval <m>[0,2\pi)</m> are stated below.
+          <me>\frac{5\pi}{12},\,\frac{11\pi}{12},\,\frac{17\pi}{12},\,\text{and}\,\frac{23\pi}{12}</me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine all solutions to the equation <m>\cos(4t)=-1</m> over the interval <m>[0,2\pi)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Along the unit circle, the cosine value at a given point is equal to the <m>x</m>-coordinate of the point.  There is only one point on the unit circle that has an <m>x</m>-coordinate of <m>-1</m>, the point <m>(-1,0)</m>.  This point occurs at angles with a radian value of <m>\pi</m> or are coterminal with <m>\pi</m>.  So the solutions to the stated equation correspond with the solutions to the following equation (where <m>k</m> can be any integer).
+          <me>4t=\pi+2\pi k</me>
+          Dividing both sides of the last equation by <m>4</m> we get the following.
+          <me>t=\frac{\pi}{4}+\frac{\pi k}{2}</me>
+          Because the coefficient on <m>t</m> in the original equation is <m>4</m>, we can determine all of the solutions to equation that fall over the interval <m>[0,2\pi)</m> by replacing <m>k</m> with <m>0</m>, <m>1</m>, <m>2</m>, and <m>3</m>.  Let's do that.          
+          <me>t=\frac{\pi}{4}+\frac{\pi \cdot 0}{2}=\frac{\pi}{4}</me>          
+          <me>t=\frac{\pi}{4}+\frac{\pi \cdot 1}{2}=\frac{3\pi}{4}</me>          
+          <me>t=\frac{\pi}{4}+\frac{\pi \cdot 2}{2}=\frac{5\pi}{4}</me>          
+          <me>t=\frac{\pi}{4}+\frac{\pi \cdot 3}{2}=\frac{7\pi}{4}</me>
+          In conclusion, the solutions to the equation <m>\cos(4t)=-1</m> that occur on the interval <m>[0,2\pi)</m> are stated below.
+          <me>\frac{\pi}{4},\,\frac{3\pi}{4},\,\frac{5\pi}{4},\,\text{and}\,\frac{7\pi}{4}</me>
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title>More Complicated Trigonometric Equations</title>
+    <p></p>
+    <p>
+      It is frequently the case that a trigonometric equation will have something other than the simplified form discussed in the last section.  As alluded to earlier, though, finding the solution to a complicated trigonometric equation always boils down to finding the solutions to one or more equation of form trig<m>(u)=C</m> where "trig" is one the six standard trigonometric functions and <m>C</m> is a real number.  Let's see several examples.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine the general solution to the equation <m>2\sin^2(t)-2=3\sin(t)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The given equation has the form <m>2u^2-2=3u</m> where <m>u=\sin(t)</m>.  Let's begin by solving the equation <m>2u^2-2=3u</m>.
+          <md>
+            <mrow>2u^2-2\amp=3u</mrow>
+            <mrow>2u^2-3u-2\amp=0</mrow>
+            <mrow>(2u+1)(u-2)\amp=0</mrow>
+          </md>
+          From the last equation we get the following.
+          <md>
+            <mrow>u\amp=-\frac{1}{2}\amp\amp\,\text{or}\,\amp u\amp=2</mrow>
+          </md>
+          Because <m>u</m> was a temporary stand-in for <m>\sin(t)</m>, we have the following.
+          <md>
+            <mrow>\sin(t)\amp=-\frac{1}{2}\amp\amp\,\text{or}\,\amp\sin(t)\amp=2</mrow>
+          </md>
+          The general solution to <m>\sin(t)=-\frac{1}{2}</m> is 
+          <md>
+            <mrow>t\amp=\frac{7\pi}{6}+2\pi k\amp\amp\,\text{or}\,\amp t\amp=\frac{11\pi}{6}+2\pi k</mrow>
+          </md>
+          where <m>k</m> can be any integer.
+        </p>
+        <p>
+          The equation <m>\sin(t)=2</m> has no solutions, because <m>2</m> falls outside of the range of the sine function.
+        </p>
+        <p>
+          In conclusion, the general solution to the equation <m>2\sin^2(t)-2=3\sin(x)</m> is
+          <md>
+            <mrow>t\amp=\frac{7\pi}{6}+2\pi k\amp\amp\,\text{or}\,\amp t\amp=\frac{11\pi}{6}+2\pi k</mrow>
+          </md>
+          where <m>k</m> can be any integer.
+        </p>
+      </solution>
+    </example>
+
+     <example>
+      <statement>
+        <p>
+          Find all of the solutions to the equation <m>\sin(2t)=2\sin(t)</m> that occur over the interval <m>[0,2\pi)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We are not going to be able to solve this equation so long as one of the functions as an argument of <m>2t</m> and the other function has an argument of <m>t</m>.  We can use the identity <m>\sin(2t)=2\sin(t)\cos(t)</m> to resolve that issue.  Let's apply the identity and go ahead and solve the equation.
+          <md>
+            <mrow>\sin(2t)\amp=\sin(t)</mrow>
+            <mrow>2\sin(t)\cos(t)\amp=\sin(t)</mrow>
+            <mrow>2\sin(t)\cos(t)-\sin(t)\amp=0</mrow>
+            <mrow>\sin(t)(2\cos(t)-1)\amp=0</mrow>
+          </md>
+          <md>
+            <mrow>\sin(t)\amp=0\amp\amp\,\text{or}\,\amp2\cos(t)-1\amp=0</mrow>
+            <mrow>\sin(t)\amp=0\amp\amp\,\text{or}\,\amp\cos(t)\amp=\frac{1}{2}</mrow>
+          </md>
+          The solutions to the equation <m>\sin(t)=0</m> that fall on the interval <m>[0,2\pi)</m> are <m>0</m> and <m>\pi</m>.  The solutions to the equation <m>\cos(t)=\frac{1}{2}</m> that fall on the interval <m>[0,2\pi)</m> are <m>\frac{\pi}{3}</m> and <m>\frac{5\pi}{3}</m>.
+        </p>
+        <p>
+          In conclusion, the solutions to the equation <m>\sin(2t)=2\sin(t)</m> that occur over the interval <m>[0,2\pi)</m> are stated below.
+          <me>0,\,\frac{\pi}{3},\,\pi,\,\text{and}\,\frac{5\pi}{3}</me>
+        </p>
+      </solution>
+    </example>
+
+     <example>
+      <statement>
+        <p>
+          Determine the solutions to the equation <m>\cos(2t)+\sin(2t)=1</m> that occur over the interval <m>[0,2\pi)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Because both function arguments are <m>2t</m>, there's no need to apply any double angle identity.  But it the equation's current form, there's certainly no apparent analogous equations of the form trig<m>(2t)=C</m>.
+        </p>
+        <p>
+          When faced with such a situation, we need to "think outside the box."  An idea that occurs to me is that if we were to square both sides of the equation, then we would have (in part) <m>\cos^2(2t)+\sin^2(2t)</m> on the left side of the equation which we could then replace with <m>1</m>.  That would leave us with only one variable term, and our goal of something of the form trig<m>(2t)=C</m> would probably be within sight.  Let's go ahead and do it.
+          <md>
+            <mrow>\cos(2t)+\sin(2t)\amp=1</mrow>
+            <mrow>(\cos(2t)+\sin(2t))^2\amp=1^2</mrow>
+            <mrow>(\cos(2t)+\sin(2t))(\cos(2t)+\sin(2t))\amp=1</mrow>
+            <mrow>\cos^2(2t)+2\cos(2t)\sin(2t)+\sin^2(2t)\amp=1</mrow>
+            <mrow>1+2\cos(2t)\sin(2t)\amp=1</mrow>
+            <mrow>2\cos(2t)\sin(2t)\amp=0</mrow>
+          </md>
+          <md>
+            <mrow>\cos(2t)\amp=0\amp\amp\,\text{or}\,\amp\sin(2t)\amp=0</mrow>
+          </md>
+          For the equation <m>\cos(2t)=0</m> we get the following.
+          <md>
+            <mrow>2t\amp=\frac{\pi}{2}+2\pi k\amp\amp\,\text{or}\,\amp 2t\amp=\frac{3\pi}{2}+2\pi k</mrow>
+            <mrow>t\amp=\frac{\pi}{4}+\pi k\amp\amp\,\text{or}\,\amp t\amp=\frac{3\pi}{4}+\pi k</mrow>
+          </md>
+          For the equation <m>\sin(2t)=0</m> we get the following.
+          <md>
+            <mrow>2t\amp=0+2\pi k\amp\amp\,\text{or}\,\amp 2t\amp=\pi +2\pi k</mrow>
+            <mrow>t\amp=0+\pi k\amp\amp\,\text{or}\,\amp t\amp=\frac{\pi}{2}+\pi k</mrow>
+          </md>
+          Replacing <m>k</m> with <m>0</m> and <m>1</m> will generate all of the solutions that occur over the interval <m>[0,2\pi)</m>.
+          <md>
+            <mrow>t\amp=\frac{\pi}{4}+\pi \cdot 0=\frac{\pi}{4}\amp\amp\,\text{or}\,\amp t\amp=\frac{3\pi}{4}+\pi \cdot 0=\frac{3\pi}{4}</mrow>
+            <mrow>t\amp=0+\pi \cdot 0=0\amp\amp\,\text{or}\,\amp t\amp=\frac{\pi}{2}+\pi \cdot 0=\frac{\pi}{2}</mrow>
+            <mrow>t\amp=\frac{\pi}{4}+\pi \cdot 1=\frac{5\pi}{4}\amp\amp\,\text{or}\,\amp t\amp=\frac{3\pi}{4}+\pi \cdot 1=\frac{7\pi}{4}</mrow>
+            <mrow>t\amp=0+\pi \cdot 1=\pi\amp\amp\,\text{or}\,\amp t\amp=\frac{\pi}{2}+\pi \cdot 1=\frac{3\pi}{2}</mrow>
+          </md>
+          So we have eight potential solutions over the interval <m>[0,2\pi)</m>: <m>0</m>, <m>\frac{\pi}{4}</m>, <m>\frac{\pi}{2}</m>, <m>\frac{3\pi}{4}</m>, <m>\pi</m>, <m>\frac{5\pi}{4}</m>, <m>\frac{3\pi}{2}</m>, and <m>\frac{7\pi}{4}</m>.  However, in the process of determining the solutions to the equation, we squared both sides of the equation, and whenever that action takes place it is very possible that false solutions will arise.  (The technical term for false solutions is <term>extraneous solutions</term>.)  The only option is to check each potential solution to determine whether or not it is extraneous.
+          <md>
+            <mrow>\cos(2 \cdot 0)+\sin(2 \cdot 0)\amp\stackrel{?}{=}1</mrow>
+            <mrow>\cos(0)+\sin(0)\amp\stackrel{?}{=}1</mrow>
+            <mrow>1+0\amp\stackrel{\checkmark}{=}1</mrow>
+          </md>
+          <md>
+            <mrow>\cos\left(2 \cdot \frac{\pi}{4}\right)+\sin\left(2 \cdot \frac{\pi}{4}\right)\amp\stackrel{?}{=}1</mrow>
+            <mrow>\cos\left(\frac{\pi}{2}\right)+\sin\left(\frac{\pi}{2}\right)\amp\stackrel{?}{=}1</mrow>
+            <mrow>0+1\amp\stackrel{\checkmark}{=}1</mrow>
+          </md>
+          <md>
+            <mrow>\cos\left(2 \cdot \frac{\pi}{2}\right)+\sin\left(2 \cdot \frac{\pi}{2}\right)\amp\stackrel{?}{=}1</mrow>
+            <mrow>\cos(\pi)+\sin(\pi)\amp\stackrel{?}{=}1</mrow>
+            <mrow>-1+0\amp\neq 1</mrow>
+          </md>
+          <md>
+            <mrow>\cos\left(2 \cdot \frac{3\pi}{4}\right)+\sin\left(2 \cdot \frac{3\pi}{4}\right)\amp\stackrel{?}{=}1</mrow>
+            <mrow>\cos\left(\frac{3\pi}{2}\right)+\sin\left(\frac{3\pi}{2}\right)\amp\stackrel{?}{=}1</mrow>
+            <mrow>0+(-1)\amp\neq 1</mrow>
+          </md>
+          <md>
+            <mrow>\cos(2 \cdot \pi)+\sin(2 \cdot \pi)\amp\stackrel{?}{=}1</mrow>
+            <mrow>1+0\amp\stackrel{\checkmark}{=}1</mrow>
+          </md>
+          <md>
+            <mrow>\cos\left(2 \cdot \frac{5\pi}{4}\right)+\sin\left(2 \cdot \frac{5\pi}{4}\right)\amp\stackrel{?}{=}1</mrow>
+            <mrow>\cos\left(\frac{5\pi}{2}\right)+\sin\left(\frac{5\pi}{2}\right)\amp\stackrel{?}{=}1</mrow>
+            <mrow>0+1\amp\stackrel{\checkmark}{=}1</mrow>
+          </md>
+          <md>
+            <mrow>\cos\left(2 \cdot \frac{3\pi}{2}\right)+\sin\left(2 \cdot \frac{3\pi}{2}\right)\amp\stackrel{?}{=}1</mrow>
+            <mrow>\cos(3\pi)+\sin(3\pi)\amp\stackrel{?}{=}1</mrow>
+            <mrow>-1+0\amp\neq 1</mrow>
+          </md>
+          <md>
+            <mrow>\cos\left(2 \cdot \frac{7\pi}{4}\right)+\sin\left(2 \cdot \frac{7\pi}{4}\right)\amp\stackrel{?}{=}1</mrow>
+            <mrow>\cos\left(\frac{7\pi}{2}\right)+\sin\left(\frac{7\pi}{2}\right)\amp\stackrel{?}{=}1</mrow>
+            <mrow>0+(-1)\amp\neq 1</mrow>
+          </md>
+        </p>
+        <p>
+          In conclusion, the solutions to the equation <m>\cos(2t)+\sin(2t)=1</m> that occur over the interval <m>[0,2\pi)</m> are stated below. 
+          <me>0,\,\frac{\pi}{4},\,\pi,\,\text{and},\frac{5\pi}{4}</me>.
+        </p>
+      </solution>
+    </example>
+
+     <example>
+      <statement>
+        <p>
+          Determine the solutions to the equation <m>-\sqrt{3}\sin(4t)=\cos(4t)</m> that occur over the interval <m>[0,2\pi)</m>.          
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Because both function arguments are <m>4t</m>, there's no need to apply any double angle identity.  But in the equation's current form, there's certainly no apparent analogous equations of the form trig<m>(2t)=C</m>.  However, if we were to divide both sides of the equation by <m>\cos(4t)</m> and apply the appropriate quotient identity, the only trigonometric function that would remain is a tangent expression, so we would be set to achieve our goal.  Let's do it.
+          <md>
+            <mrow>-\sqrt{3}\sin(t)\amp=\cos(4t)</mrow>
+            <mrow>\divideunder{-\sqrt{3}\sin(t)}{\cos(4t)}\amp=\divideunder{\cos(4t)}{\cos(4t)}</mrow>
+            <mrow>-\sqrt{3}\tan(4t)\amp=1</mrow>
+            <mrow>\tan(4t)\amp=-\frac{1}{\sqrt{3}}</mrow>
+          </md>
+          In terms of the coordinates of points along the unit circle, the tangent value is defined to be the ratio <m>\frac{y}{x}</m>.  This gives us the following.
+          <md>
+            <mrow>\frac{y}{x}\amp=-\frac{1}{\sqrt{3}}</mrow>
+            <mrow>-\sqrt{3}y\amp=x</mrow>
+          </md>
+          There are two points on the unit circle where the <m>x</m>-coordinate is <m>-\sqrt{3}</m> times the <m>y</m>-coordinate: <m>\left(-\frac{\sqrt{3}}{2},\frac{1}{2}\right)</m> and <m>\left(\frac{\sqrt{3}}{2},-\frac{1}{2}\right)</m>.  These points correspond to the radian measurements of <m>\frac{5\pi}{6}</m> and <m>\frac{11\pi}{6}</m>.  The general solution to the equation is derived below (where <m>k</m> represents any integer).
+          <md>
+            <mrow>4t\amp=\frac{5\pi}{6}+2\pi k\amp\amp\,\text{or}\,\amp 4t\amp=\frac{11\pi}{6}+2\pi k</mrow>
+            <mrow>t\amp=\frac{5\pi}{24}+\frac{\pi k}{2}\amp\amp\,\text{or}\,\amp t\amp=\frac{11\pi}{24}+\frac{\pi k}{2}</mrow>
+          </md>
+          Replacing <m>k</m> with <m>0,\,1,\,2</m>, and <m>3</m> will generate all of the solutions that lie on the interval <m>[0,2\pi)</m>.
+          <md>
+            <mrow>t\amp=\frac{5\pi}{24}+\frac{\pi \cdot 0}{2}=\frac{5\pi}{24}\amp\amp\,\text{or}\,\amp t\amp=\frac{11\pi}{24}+\frac{\pi \cdot 0}{2}=\frac{11\pi}{24}</mrow>
+            <mrow>t\amp=\frac{5\pi}{24}+\frac{\pi \cdot 1}{2}=\frac{17\pi}{24}\amp\amp\,\text{or}\,\amp t\amp=\frac{11\pi}{24}+\frac{\pi \cdot 1}{2}=\frac{23\pi}{24}</mrow>
+            <mrow>t\amp=\frac{5\pi}{24}+\frac{\pi \cdot 2}{2}=\frac{29\pi}{24}\amp\amp\,\text{or}\,\amp t\amp=\frac{11\pi}{24}+\frac{\pi \cdot 2}{2}=\frac{35\pi}{24}</mrow>
+            <mrow>t\amp=\frac{5\pi}{24}+\frac{\pi \cdot 3}{2}=\frac{41\pi}{24}\amp\amp\,\text{or}\,\amp t\amp=\frac{11\pi}{24}+\frac{\pi \cdot 3}{2}=\frac{47\pi}{4}</mrow>
+          </md>
+          In conclusion, the solutions to the equation <m>-\sqrt{3}\sin(4t)=\cos(4t)</m> that occur over the interval <m>[0,2\pi)</m> are stated below.
+          <me>\frac{5\pi}{24},\,\frac{11\pi}{24},\,\frac{17\pi}{24},\,\frac{23\pi}{24},\,\frac{29\pi}{24},\,\frac{35\pi}{24},\,\frac{41\pi}{24},\,\text{and}\,\frac{47\pi}{24}</me>
+        </p>
+      </solution>
+    </example>
+
+     <example>
+      <statement>
+        <p>
+          Determine the general solution to the equation <m>\sec(5t)=2\cos(5t)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Because the arguments agree, there's no need to apply any multiple angle identity.  Because the secant function and the cosine function are reciprocals, it should be fairly simple to manipulate the equation into the form <m>\cos(5t)=C</m> where <m>C</m> is a real number.  Let's proceed.
+          <md>
+            <mrow>\sec(5t)\amp=2\cos(5t)</mrow>
+            <mrow>\frac{1}{\cos(5t)}\amp=2\cos(5t)</mrow>
+            <mrow>1\amp=2\cos^2(5t)</mrow>
+            <mrow>\frac{1}{2}\amp=\cos^2(5t)</mrow>
+            <mrow>\pm\sqrt{\frac{1}{2}}\amp=\cos(5t)</mrow>
+            <mrow>\pm\frac{1}{\sqrt{2}}\amp=\cos(5t)</mrow>
+            <mrow>\pm\frac{1}{\sqrt{2}} \cdot \frac{\sqrt{2}}{\sqrt{2}} \amp=\cos(5t)</mrow>
+            <mrow>\pm\frac{\sqrt{2}}{2}\amp=\cos(5t)</mrow>
+          </md>
+          There are four points where the <m>x</m>-coordinate of the point on the unit circle is either <m>\frac{\sqrt{2}}{2}</m> or <m>-\frac{\sqrt{2}}{2}</m>, and those points correspond to the radian measurements of <m>\frac{\pi}{4}</m>, <m>\frac{3\pi}{4}</m>, <m>\frac{5\pi}{4}</m>, and <m>\frac{7\pi}{4}</m>.  If we note that these measurements differ by <m>\frac{\pi}{2}</m> as we move from measurement to the next, we can greatly simplify our statement of the general solution.  Let's go ahead and determine the general solution.
+          <md>
+            <mrow>5t\amp=\frac{\pi}{4}+\frac{\pi k}{2}</mrow>
+            <mrow>t\amp=\frac{\pi}{20}+\frac{\pi k}{10}</mrow>
+          </md>
+          In conclusion, the general solution to the equation <m>\sec(5t)=2\cos(5t)</m> is
+          <me>t=\frac{\pi}{20}+\frac{\pi k}{10}</me>
+          where <m>k</m> can be any integer.
+        </p>
+      </solution>
+    </example>
+
+     <example>
+      <statement>
+        <p>
+          Determine the solutions to the equation <m>5\sin(2t)-2=\cos(4t)</m> that occur over the interval <m>[0,2\pi)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The first issue we need to address is the disparity in the angular arguments.  Let's observe that <m>4t=2 \cdot 2t</m>, so we can use a cosine double-angle identity to resolve the issue.  Because there is a sine expression in the equation, the identity that we want to use is <m>\cos(2t)=1-2\sin^2(t)</m>.  Let's apply the identity and see where to go from there.
+          <md>
+            <mrow>5\sin(2t)-2\amp=\cos(4t)</mrow>
+            <mrow>5\sin(2t)-2\amp=\cos(2 \cdot 2t)</mrow>
+            <mrow>5\sin(2t)-2\amp=1-2\sin^2(2t)</mrow>
+            <mrow>2\sin^2(2t)+5\sin(2t)-3\amp=0</mrow>
+            <mrow>(2\sin(2t)-1)(\sin(2t)+3)\amp=0</mrow>
+          </md>
+          <md>
+            <mrow>2\sin(2t)-1\amp=0\amp\amp\,\text{or}\,\amp\sin(2t)+3\amp=0</mrow>
+            <mrow>2\sin(2t)\amp=1\amp\amp\,\text{or}\,\amp\sin(2t)\amp=-3</mrow>
+            <mrow>\sin(2t)\amp=\frac{1}{2}\amp\amp\,\text{or}\,\amp\sin(2t)\amp=-3</mrow>
+          </md>
+          The equation <m>\sin(2t)=-3</m> clearly has no solutions.  On the other hand, the <m>y</m>-coordinate of the point on the unit circle is <m>\frac{1}{2}</m> at the radian measurements <m>\frac{\pi}{6}</m> and <m>\frac{5\pi}{6}</m>.  We can use this information to derive the general solution to the equation (where <m>k</m> can be any integer).
+          <md>
+            <mrow>2t\amp=\frac{\pi}{6}+2\pi k\amp\amp\,\text{or}\,\amp 2t\amp=\frac{5\pi}{6}+2\pi k</mrow>
+            <mrow>t\amp=\frac{\pi}{12}+\pi k\amp\amp\,\text{or}\,\amp t\amp=\frac{5\pi}{12}+\pi k</mrow>
+          </md>
+          Let's replace <m>k</m> with <m>0</m> and <m>1</m> to generate all of the solutions that occur over the interval <m>[0,2\pi)</m>.
+          <md>
+            <mrow>t\amp=\frac{\pi}{12}+\pi \cdot 0=\frac{\pi}{12}\amp\amp\,\text{or}\,\amp t\amp=\frac{5\pi}{12}+\pi \cdot 0=\frac{5\pi}{12}</mrow>
+            <mrow>t\amp=\frac{\pi}{12}+\pi \cdot 1=\frac{13\pi}{12}\amp\amp\,\text{or}\,\amp t\amp=\frac{5\pi}{12}+\pi \cdot 1=\frac{17\pi}{12}</mrow>
+          </md>
+          In conclusion, the solutions to the equation <m>5\sin(2t)-2=\cos(4t)</m> that occur over the interval <m>[0,2\pi)</m> are stated below.
+          <me>\frac{\pi}{12},\,\frac{5\pi}{12},\,\frac{13\pi}{12},\,\text{and}\,\frac{17\pi}{12}</me>
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Solve each equation as directed.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the general solution to the equation <m>2\sin^2(t)=1</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The solution to this equation is very straight-forward, so let's jump right in.
+            <md>
+              <mrow>2\sin^2(t)\amp=1</mrow>
+              <mrow>\sin^2(t)\amp=\frac{1}{2}</mrow>
+              <mrow>\sin(t)\amp=\pm\sqrt{\frac{1}{2}}</mrow>
+              <mrow>\sin(t)\amp=\pm\frac{1}{\sqrt{2}}</mrow>
+              <mrow>\sin(t)\amp=\pm\frac{1}{\sqrt{2}} \cdot \frac{\sqrt{2}}{\sqrt{2}}</mrow>
+              <mrow>\sin(t)\amp=\pm\frac{\sqrt{2}}{2}</mrow>
+            </md>
+            Over the interval <m>[0,2\pi)</m> sine function has a value of either <m>\frac{\sqrt{2}}{2}</m> or <m>-\frac{\sqrt{2}}{2}</m> at <m>\frac{\pi}{4}</m>, <m>\frac{3\pi}{4}</m>, <m>\frac{5\pi}{4}</m>, and <m>\frac{7\pi}{4}</m>.  Note that each of these can be generated by adding an integer multiple of <m>\frac{\pi}{2}</m> to <m>\frac{\pi}{4}</m>.  This leads us to conclude the the general solution to the equation <m>2\sin^2(t)=1</m> is
+            <me>\frac{\pi}{4}+\frac{\pi k}{2}</me>
+            where <m>k</m> can be any integer.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the general solution to the equation <m>3\tan^2(t)-1=0</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's begin by isolating <m>\tan(t)</m>.
+            <md>
+              <mrow>3\tan^2(t)-1\amp=0</mrow>
+              <mrow>3\tan^2(t)\amp=1</mrow>
+              <mrow>\tan^2(t)\amp=\frac{1}{3}</mrow>
+              <mrow>\tan(t)\amp=\pm \sqrt{\frac{1}{3}}</mrow>
+              <mrow>\tan(t)\amp=\pm \frac{1}{\sqrt{3}}</mrow>
+            </md>
+            In terms of a point on the unit circle, the tangent value is defined as the ratio of the <m>y</m>-coordinate to the <m>x</m>-coordinate.  This gives us the following.
+            <md>
+              <mrow>\frac{y}{x}\amp=\pm \frac{1}{\sqrt{3}}</mrow>
+              <mrow>\pm \sqrt{3}y\amp=x</mrow>
+            </md>
+            So we're looking for points on the unit circle where <m>x=\pm \sqrt{3}y</m>. Said points are <m>\left(\frac{\sqrt{3}}{2},\frac{1}{2}\right)</m>, <m>\left(-\frac{\sqrt{3}}{2},\frac{1}{2}\right)</m>, <m>\left(-\frac{\sqrt{3}}{2},-\frac{1}{2}\right)</m>, and <m>\left(\frac{\sqrt{3}}{2},-\frac{1}{2}\right)</m>.  Over the interval <m>[0,2\pi)</m> the points occur at the radian measurements of
+            <me>\frac{\pi}{6},\,\frac{5\pi}{6},\,\frac{7\pi}{6},\,\text{and}\,\frac{11\pi}{6}.</me>
+            We can simplify our statement of the general solution if we observe that <m>\frac{7\pi}{6}</m> is half a revolution away from <m>\frac{\pi}{6}</m> and that <m>\frac{11\pi}{6}</m> is half a revolution away from <m>\frac{5\pi}{6}</m>.  This leads to the following conclusion.
+          </p>
+          <p>
+            The general solution to the equation <m>3\tan^2(t)-1=0</m> is
+            <md>
+              <mrow>t\amp=\frac{\pi}{6}+\pi k\amp\amp\,\text{or}\,\amp t\amp=\frac{5\pi}{6}+\pi k</mrow>
+            </md>
+            where <m>k</m> can be any integer.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the solutions to the equation <m>\sec^2(2t)-3\sec(2t)+2=0</m> over the interval <m>[0,2\pi)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's begin by factoring the left side of the equation and then set each factor equal to zero.
+            <md>
+              <mrow>\sec^2(2t)-3\sec(2t)+2\amp=0</mrow>
+              <mrow>(\sec(2t)-2)(\sec(2t)-1)\amp=0</mrow>
+            </md>
+            <md>
+              <mrow>\sec(2t)-2\amp=0\amp\amp\,\text{or}\,\amp\sec(2t)-1\amp=0</mrow>
+              <mrow>\sec(2t)\amp=2\amp\amp\,\text{or}\,\amp\sec(2t)\amp=1</mrow>
+              <mrow>\cos(2t)\amp=\frac{1}{2}\amp\amp\,\text{or}\,\amp\cos(2t)\amp=1</mrow>
+            </md>
+            Over the interval <m>[0,2\pi)</m>, the cosine function has a value of <m>\frac{1}{2}</m> at <m>\frac{\pi}{3}</m> and <m>\frac{5\pi}{3}</m> and it has a value of <m>1</m> and <m>0</m>.  The general solution to the equation is derived below.
+            <md>
+              <mrow>2t\amp=0+2\pi k\amp\amp\,\text{or}\,\amp 2t\amp=\frac{\pi}{3}+2\pi k\amp\amp\,\text{or}\,\amp 2t\amp=\frac{5\pi}{3}+2\pi k</mrow>
+              <mrow>t\amp=\pi k\amp\amp\,\text{or}\,\amp 2t\amp=\frac{\pi}{6}+\pi k\amp\amp\,\text{or}\,\amp 2t\amp=\frac{5\pi}{6}+\pi k</mrow>
+            </md>
+            We will generate all of the solution if we replace <m>k</m> with the values of <m>0</m> and <m>1</m>.  Let's do it.
+            <md>
+              <mrow>t\amp=\pi \cdot 0=0\amp\amp\,\text{or}\,\amp t\amp=\pi \cdot 1=\pi</mrow>
+              <mrow>t\amp=\frac{\pi}{6}+\pi \cdot 0=\frac{\pi}{6}\amp\amp\,\text{or}\,\amp t\amp=\frac{\pi}{6}+\pi \cdot 1=\frac{7\pi}{6}</mrow>
+              <mrow>t\amp=\frac{5\pi}{6}+\pi \cdot 0=\frac{5\pi}{6}\amp\amp\,\text{or}\,\amp t\amp=\frac{5\pi}{6}+\pi \cdot 1=\frac{11\pi}{6}</mrow>
+            </md>
+            This leads to the following conclusion.
+          </p>
+          <p>
+            The solutions to the equation <m>\sec^2(2t)-3\sec(2t)+2=0</m> over the interval <m>[0,2\pi)</m> are stated below.
+            <me>0,\,\frac{\pi}{6},\,\frac{5\pi}{6},\,\pi,\,\frac{7\pi}{6},\,\text{and}\,\frac{11\pi}{6}</me>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the general solution to the equation <m>\sin(4t)-\cos(2t)=0</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The first issue that needs our attention is the disagreement in the function arguments.  We can attend to this if we observe that <m>4t=2 \cdot 2t</m> and apply the double angle identity for the sine function.  Let us proceed.
+            <md>
+              <mrow>\sin(4t)-\cos(2t)\amp=0</mrow>
+              <mrow>\sin(2 \cdot 2t)-\cos(2t)\amp=0</mrow>
+              <mrow>2\sin(2t)\cos(2t)-\cos(2t)\amp=0</mrow>
+              <mrow>\cos(2t)(2\sin(2t)-1)\amp=0</mrow>
+            </md>
+            <md>
+              <mrow>\cos(2t)\amp=0\amp\amp\,\text{or}\,\amp 2\sin(2t)-1\amp=0</mrow>
+              <mrow>\cos(2t)\amp=0\amp\amp\,\text{or}\,\amp 2\sin(2t)\amp=1</mrow>
+              <mrow>\cos(2t)\amp=0\amp\amp\,\text{or}\,\amp \sin(2t)\amp=\frac{1}{2}</mrow>
+            </md>
+            Over the interval <m>[0,2\pi)</m>, the cosine function has a value of <m>0</m> at <m>\frac{\pi}{2}</m> and <m>\frac{3\pi}{2}</m>.  Over the interval <m>[0,2\pi)</m>, the sine function has a value of <m>\frac{1}{2}</m> at <m>\frac{\pi}{6}</m> and <m>\frac{5\pi}{6}</m>.
+          </p>
+          <p>
+            Before deriving the general solution, let's observe that <m>\frac{\pi}{2}</m> and <m>\frac{3\pi}{2}</m> are half of a revolution apart, so we can generate those angles and all angles coterminal with either angle using <m>\frac{\pi}{2}+\pi k</m>.
+          </p>
+          <p>
+            The general solution to the equation <m>\sin(4t)-\cos(2t)=0</m> is derived below (where <m>k</m> can be any number).
+            <md>
+              <mrow>2t\amp=\frac{\pi}{2}+\pi k\amp\amp\,\text{or}\,\amp 2t\amp=\frac{\pi}{6}+2\pi k\amp\amp\,\text{or}\,\amp 2t\amp=\frac{5\pi}{6}+2\pi k</mrow>
+              <mrow>t\amp=\frac{\pi}{4}+\frac{\pi k}{2}\amp\amp\,\text{or}\,\amp t\amp=\frac{\pi}{12}+\pi k\amp\amp\,\text{or}\,\amp t\amp=\frac{5\pi}{12}+\pi k</mrow>
+            </md>
+          </p>
+          <p>
+            In conclusion, the general solution to the equation <m>\sin(4t)-\cos(2t)=0</m> is
+            <md>
+              <mrow>t\amp=\frac{\pi}{4}+\frac{\pi k}{2}\amp\amp\,\text{or}\,\amp t\amp=\frac{\pi}{12}+\pi k\amp\amp\,\text{or}\,\amp t\amp=\frac{5\pi}{12}+\pi k</mrow>
+            </md>
+            where <m>k</m> can be any integer.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the solutions to the equation <m>\cos(2t)+\cos(t)=2</m> that occur over the interval <m>[0,2\pi)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by applying the appropriate double-angle identity for the cosine function.  Because the expression <m>\cos(t)</m> also appears in the equation, the identity we will apply is <m>\cos(2t)=2\cos^2(t)-1</m>.
+            <md>
+              <mrow>\cos(2t)+\cos(t)\amp=2</mrow>
+              <mrow>2\cos^2(t)-1+\cos(t)\amp=2</mrow>
+              <mrow>2\cos^2(t)+\cos(t)-3\amp=0</mrow>
+              <mrow>(2\cos(t)+3)(\cos(t)-1)\amp=0</mrow>
+            </md>
+            <md>
+              <mrow>2\cos(t)+3\amp=0\amp\amp\,\text{or}\,\amp\cos(t)-1\amp=0</mrow>
+              <mrow>2\cos(t)\amp=-3\amp\amp\,\text{or}\,\amp\cos(t)\amp=1</mrow>
+              <mrow>2\cos(t)\amp=-\frac{3}{2}\amp\amp\,\text{or}\,\amp\cos(t)\amp=1</mrow>
+            </md>
+            Clearly the cosine function never has a value of <m>-\frac{3}{2}</m>.  Over the interval <m>[0,2\pi)</m>, The cosine function has a value of one at zero.  This leads to the following conclusion.
+          </p>
+          <p>
+            Over the interval <m>[0,2\pi)</m>, the only solution to the equation <m>\cos(2t)+\cos(t)=2</m> is <m>0</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the general solution the equation <m>\sin(7t)=\sin(3t)</m>.
+          </p>
+          <p>
+            Hint:  You'll want to use the following Sum-to-Product identity. 
+            <me>\sin(a)-\sin(b)=2\cos\left(\frac{a+b}{2}\right)\sin\left(\frac{a-b}{2}\right)</me>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's begin by taking advantage of the hint.
+            <md>
+              <mrow>\sin(7t)\amp=\sin(3t)</mrow>
+              <mrow>\sin(7t)-\sin(3t)\amp=0</mrow>
+              <mrow>2\cos\left(\frac{7t+3t}{2}\right)\sin\left(\frac{7t-3t}{2}\right)\amp=0</mrow>
+              <mrow>2\cos(5t)\sin(2t)\amp=0</mrow>
+            </md>
+            <md>
+              <mrow>\cos(5t)\amp=0\amp\amp\,\text{or}\,\amp\sin(2t)\amp=0</mrow>
+            </md>
+            If we begin at the radian measurement <m>\frac{\pi}{2}</m> and repeatedly add or subtract <m>\pi</m>, we generate all of the locations where the cosine function has a value of <m>0</m>.  Similarly, all of the angles that have a sine value of <m>0</m> are generated by the forula <m>\pi</m>. This gives us the following.
+            <md>
+              <mrow>5t\amp=\frac{\pi}{2}+\pi k\amp\amp\,\text{or}\,\amp 2t\amp=\pi k</mrow>
+              <mrow>t\amp=\frac{\pi}{10}+\frac{\pi k}{5}\amp\amp\,\text{or}\,\amp t\amp=\frac{\pi k}{2}</mrow>
+            </md>
+            In conclusion, the general solution to the equation <m>\sin(7t)=\sin(3t)</m> is
+            <md>
+              <mrow>t\amp=\frac{\pi}{10}+\frac{\pi k}{5}\amp\amp\,\text{or}\,\amp t\amp=\frac{\pi k}{2}</mrow>
+            </md>
+            where <m>k</m> can be any integer.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine all solutions to the equation <m>2\cos^2(3t)-\sin(3t)=1</m> that occur over the interval <m>[0,2\pi)</m>.
+          </p>
+          <p>
+            Hint: Begin by applying the appropriate Pythagorean identity.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The angle arguments agree, so we can begin by addressing the fact that we have two different functions in the equation.  We can use the appropriate form of the identity <m>\sin^2(t)+\cos^2(t)=1</m> to resolve that issue and proceed from there.
+            <md>
+              <mrow>2\cos^2(3t)-\sin(3t)\amp=1</mrow>
+              <mrow>2\left(1-\sin^2(3t)\right)-\sin(3t)\amp=1</mrow>
+              <mrow>2-2\sin^2(3t)-\sin(3t)\amp=1</mrow>
+              <mrow>0\amp=2\sin^2(3t)+\sin(3t)-1</mrow>
+              <mrow>0\amp=(2\sin(3t)-1)(\sin(3t)+1)</mrow>
+            </md>
+            <md>
+              <mrow>2\sin(3t)-1\amp=0\amp\amp\,\text{or}\,\amp\sin(3t)+1\amp=0</mrow>
+              <mrow>2\sin(3t)\amp=1\amp\amp\,\text{or}\,\amp\sin(3t)\amp=-1</mrow>
+              <mrow>\sin(3t)\amp=\frac{1}{2}\amp\amp\,\text{or}\,\amp\sin(3t)\amp=-1</mrow>
+            </md>
+            Over the interval <m>[0,2\pi)</m>, the sine function has a value of <m>\frac{1}{2}</m> at <m>\frac{\pi}{6}</m> and <m>\frac{5\pi}{6}</m>.  This gives us the following (where <m>k</m> can be any integer).
+            <md>
+              <mrow>3t\amp=\frac{\pi}{6}+2\pi k\amp\amp\,\text{or}\,\amp 3t\amp=\frac{5\pi}{6}+2\pi k</mrow>
+              <mrow>t\amp=\frac{\pi}{18}+\frac{2\pi k}{3}\amp\amp\,\text{or}\,\amp t\amp=\frac{5\pi}{18}+\frac{2\pi k}{3}</mrow>
+            </md>
+            Replacing <m>k</m> with <m>0</m>, <m>1</m>, and <m>2</m> will generate all of the solutions to <m>\sin(3t)=\frac{1}{2}</m> over <m>[0,2\pi)</m>.  Let's go ahead and do that.
+            <md>
+              <mrow>t\amp=\frac{\pi}{18}+\frac{2\pi \cdot 0}{3}=\frac{\pi}{18}\amp\amp\,\text{or}\,\amp t\amp=\frac{5\pi}{18}+\frac{2\pi \cdot 0}{3}=\frac{5\pi}{18}</mrow>
+              <mrow>t\amp=\frac{\pi}{18}+\frac{2\pi \cdot 1}{3}=\frac{13\pi}{18}\amp\amp\,\text{or}\,\amp t\amp=\frac{5\pi}{18}+\frac{2\pi \cdot 1}{3}=\frac{17\pi}{18}</mrow>
+              <mrow>t\amp=\frac{\pi}{18}+\frac{2\pi \cdot 2}{3}=\frac{25\pi}{18}\amp\amp\,\text{or}\,\amp t\amp=\frac{5\pi}{18}+\frac{2\pi \cdot 2}{3}=\frac{29\pi}{18}</mrow>
+            </md>
+          </p>
+          <p>
+            Over the interval <m>[0,2\pi)</m>, the sine function has a value of <m>-1</m> at <m>\frac{3\pi}{2}</m>.  This gives us the following.
+            <md>
+              <mrow>3t\amp=\frac{3\pi}{2}+2\pi k</mrow>
+              <mrow>t\amp=\frac{\pi}{2}+\frac{2\pi k}{3}</mrow>
+            </md>
+            Replacing <m>k</m> with <m>0</m>, <m>1</m>, and <m>2</m> will generate all of the solutions to <m>\sin(3t)=-1</m> over <m>[0,2\pi)</m>.  Let's do it.
+            <md>
+              <mrow>t\amp=\frac{\pi}{2}+\frac{2\pi \cdot 0}{3}=\frac{\pi}{2}</mrow>
+              <mrow>t\amp=\frac{\pi}{2}+\frac{2\pi \cdot 1}{3}=\frac{7\pi}{6}</mrow>
+              <mrow>t\amp=\frac{\pi}{2}+\frac{2\pi \cdot 2}{3}=\frac{11\pi}{6}</mrow>
+            </md>
+          </p>
+          <p>
+            In conclusion, the solutions to the equation <m>2\cos^2(3t)-\sin(3t)=1</m> that occur over the interval <m>[0,2\pi)</m> are
+            <me>\frac{\pi}{18},\,\frac{5\pi}{18},\,\frac{13\pi}{18},\,\frac{17\pi}{18},\,\frac{25\pi}{18},\,\frac{29\pi}{18},\,\frac{\pi}{2},\,\frac{7\pi}{6}\,\text{and}\,\frac{11\pi}{6}</me>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine all solutions to the equation <m>2\tan(2t)+\sec^2(2t)=0</m> that occur over the interval <m>[0,2\pi)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The angle arguments agree, so we can immediately turn our attention to the fact that there are two different functions is the equation.  We can use the Pythagorean identity <m>\tan^2(t)+1=\sec^2(t)</m> to bring the functions into agreement.
+            <md>
+              <mrow>2\tan(2t)+\sec^2(2t)\amp=0</mrow>
+              <mrow>2\tan(2t)+\tan^2(2t)+1\amp=0</mrow>
+              <mrow>\tan^2(2t)+2\tan(2t)+1\amp=0</mrow>
+              <mrow>(\tan(2t)+1)^2\amp=0</mrow>
+              <mrow>\tan(2t)+1\amp=0</mrow>
+              <mrow>\tan(2t)\amp=-1</mrow>
+            </md>
+            Over the interval <m>[0,2\pi)</m>, the tangent function has a value of <m>-1</m> at <m>\frac{3\pi}{4}</m> and <m>\frac{7\pi}{4}</m>.  We can use that fact to determine the general solution to <m>2\tan(2t)+\sec^2(2t)=4</m>.
+            <md>
+              <mrow>2t\amp=\frac{3\pi}{4}+2\pi k\amp\amp\,\text{or}\,\amp 2t\amp=\frac{7\pi}{4}+2\pi k</mrow>
+              <mrow>t\amp=\frac{3\pi}{8}+\pi k\amp\amp\,\text{or}\,\amp t\amp=\frac{7\pi}{8}+\pi k</mrow>
+            </md>
+            We can generate all of the solutions that fall over the interval <m>[0,2\pi)</m> by replacing <m>k</m> with <m>0</m> and <m>1</m>.  That is done below.
+            <md>
+              <mrow>t\amp=\frac{3\pi}{8}+\pi \cdot 0=\frac{3\pi}{8}\amp\amp\,\text{or}\,\amp t\amp=\frac{7\pi}{8}+\pi \cdot 0=\frac{7\pi}{8}</mrow>
+              <mrow>t\amp=\frac{3\pi}{8}+\pi \cdot 1=\frac{11\pi}{8}\amp\amp\,\text{or}\,\amp t\amp=\frac{7\pi}{8}+\pi \cdot 1=\frac{15\pi}{8}</mrow>
+            </md>
+            In conclusion, the solutions to the equation <m>2\tan(2t)+\sec^2(2t)=0</m> that occur over the interval <m>[0,2\pi)</m> are stated below.
+            <me>\frac{3\pi}{8},\,\frac{7\pi}{8},\,\frac{11\pi}{8},\,\text{and}\,\frac{15\pi}{8}</me>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+
+
+
+
+  
+
+
+</section>

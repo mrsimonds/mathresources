@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="trigonometry-more-identities">
+  <title>Additional Trigonometric Identities</title>
+
+  <paragraphs>
+    <title>Cofunctons and Complementary Angles</title>
+    <p></p>
+    <p>
+      Complimentary angles are pairs of angles who sum is <m>\frac{\pi}{2}</m>.  Cofunctions are equal at their complimentary angles.  This is stated more explicitly below.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        <me>\sin\left(\frac{\pi}{2}-t\right)=\cos(t)</me>
+        <me>\tan\left(\frac{\pi}{2}-t\right)=\cot(t)</me>
+        <me>\sec\left(\frac{\pi}{2}-t\right)=\csc(t)</me>
+      </p>
+
+      <p>
+        <me>\sin(t)=\cos\left(\frac{\pi}{2}-t\right)</me>
+        <me>\tan(t)=\cot\left(\frac{\pi}{2}-t\right)</me>
+        <me>\sec(t)=\csc\left(\frac{\pi}{2}-t\right)</me>
+      </p>
+
+    </sidebyside>
+    
+    <p>
+      The equivalence of the sine and cosine function at complementary angles can be established using the appropriate difference identities.  Because the other four basic trigonometric functions can be expressed in terms of the sine and/or cosine functions, their cofunction equivalence at complimentary angles is an immediate consequence of that of the sine and cosine function.  Let's establish the equivalences for the sine and cosine function.
+      <md>
+        <mrow>\sin\left(\frac{\pi}{2}-t\right)\amp=\sin\left(\frac{\pi}{2}\right)\cos(t)-\cos\left(\frac{\pi}{2}\right)\sin(t)</mrow>
+        <mrow>\amp=1 \cdot \cos(t)-0 \cdot \sin(t)</mrow>
+        <mrow>\amp=\cos(t)</mrow>
+      </md>
+    </p>
+    <p></p>
+    <p>
+      <md>
+        <mrow>\cos\left(\frac{\pi}{2}-t\right)\amp=\cos\left(\frac{\pi}{2}\right)\cos(t)+\sin\left(\frac{\pi}{2}\right)\sin(t)</mrow>
+        <mrow>\amp=0 \cdot \cos(t)+1 \cdot \sin(t)</mrow>
+        <mrow>\amp=\sin(t)</mrow>
+      </md>
+    </p>
+
+  </paragraphs>
+
+  <paragraphs>
+    <title>Even-Odd Identities</title>
+    <p></p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        The cosine and secant functions are even functions, while the other four trigonometric functions are all odd functions.  The cause for this is illustrated in <xref ref="trigonometry-more-identities-figure-1">Figure</xref>.  Two arcs of equal length are drawn in standard position, one traveling in the counterclockwise direction (which is measured as a positive value we will call <m>t</m>) and one traveling in the clockwise direction that is measured as <m>-t</m>.
+      </p>
+
+      <figure xml:id="trigonometry-more-identities-figure-1">
+        <caption>Arcs with Equal Length but Opposite Measure</caption>
+        <image>
+        <description>
+          The graph of the unit circle with two arcs drawn in standard position.  The arcs have equal length but rotate in the opposite direction from the point <m>(0,1)</m>.  The arc that rotates in the counterclockwise direction is labeled t and terminates at a point labeled <m>(a,b)</m>.  The arc that travels in the clockwise direction is labeled negative t and terminates at a point labeled <m>(a,-b)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          width=8cm,
+                          xmin=-1.5,xmax=1.5,
+                          ymin=-1.5,ymax=1.5,
+                          xtick={-1,1},
+                          ytick={-1,1}]
+              \addplot [domain=0:360,samples=100,color=gray,line width=.75pt] ({cos(x)},{sin(x)});
+              \addplot [domain=0:72,samples=100,color=blue,line width=2.5pt] ({cos(x)},{sin(x)}) node[pos=0.5,above right] {$t$};
+              \addplot [domain=288:360,samples=100,color=red,line width=2.5pt] ({cos(x)},{sin(x)}) node[pos=0.5,below right] {$-t$};
+              \addplot [soliddot,color=blue] coordinates {(0.309,0.951)} node[above right] {$(a,b)$};
+              \addplot [soliddot,color=red] coordinates {(0.309,-0.951)} node[below right] {$(a,-b)$};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+  </sidebyside>
+
+  <p>
+    It is apparent that the terminal points of the two arcs have equal <m>x</m>-coordinates (labeled as <m>a</m>) and opposite <m>y</m>-coordinates (labeled as <m>b</m> and <m>-b</m>).  This gives us the following.
+  </p>
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <p>
+      <md>
+        <mrow>\cos(-t)\amp=a</mrow>
+        <mrow>\amp=\cos(t)</mrow>
+      </md>
+    </p>
+
+     <p>
+      <md>
+        <mrow>\sec(-t)\amp=\frac{1}{a}</mrow>
+        <mrow>\amp=\sec(t)</mrow>
+      </md>
+    </p>
+
+  </sidebyside>
+  <p>
+    This establishes that the cosine and secant functions are even functions.  Next we establish that the other four functions are odd functions.
+  </p>
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <p>
+      <md>
+        <mrow>\sin(-t)\amp=-b</mrow>
+        <mrow>\amp=-\sin(t)</mrow>
+      </md>
+    </p>
+
+     <p>
+      <md>
+        <mrow>\csc(-t)\amp=\frac{1}{-b}</mrow>
+        <mrow>\amp=-\frac{1}{b}</mrow>
+        <mrow>\amp=-\csc(t)</mrow>
+      </md>
+    </p>
+
+  </sidebyside>
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <p>
+      <md>
+        <mrow>\tan(-t)\amp=\frac{-b}{a}</mrow>
+        <mrow>\amp=-\frac{b}{a}</mrow>
+        <mrow>\amp=-\tan(t)</mrow>
+      </md>
+    </p>
+
+     <p>
+      <md>
+        <mrow>\cot(-t)\amp=\frac{a}{-b}</mrow>
+        <mrow>\amp=-\frac{a}{b}</mrow>
+        <mrow>\amp=-\cot(t)</mrow>
+      </md>
+    </p>
+
+  </sidebyside>
+
+</paragraphs>
+
+<paragraphs>
+  <title>Half-Angle Identities</title>
+  <p></p>
+  <p>
+    In the last section we established three double-angle identities for the cosine function.  Two of these identities can be manipulated into half-angle identities for the sine and cosine functions.
+  </p>
+  <p>
+    We begin the derivation of the half-angle identity for the sine function by isolating the sine term in the identity <m>\cos(2t)=1-2\sin^2(t)</m>.
+    <md>
+      <mrow>\cos(2t)\amp=1-2\sin^2(t)</mrow>
+      <mrow>\cos(2t)-1\amp=-2\sin^2(t)</mrow>
+      <mrow>-\frac{1}{2} \cdot (\cos(2t)-1)\amp=-\frac{1}{2} \cdot -2\sin^2(t)</mrow>
+      <mrow>\frac{1-\cos(2t)}{2}\amp=\sin^2(t)</mrow>
+      <mrow>\pm\sqrt{\frac{1-\cos(2t)}{2}}\amp=\sin(t)</mrow>
+    </md>
+  </p>
+  <p>
+    We now make the substitution <m>u=2t</m> which also gives us <m>\frac{u}{2}</m>.  The resultant half-angle identity is stated below.
+  </p>
+  <sidebyside widths="47% 47%" margins="0%">
+
+    <p>
+      <me>\sin(t)=\pm\sqrt{\frac{1-\cos(2t)}{2}}</me>
+    </p>
+
+    <p>
+      <me>\sin\left(\frac{u}{2}\right)=\pm\sqrt{\frac{1-\cos(u)}{2}}</me>
+    </p>
+
+  </sidebyside>
+
+  <example>
+    <statement>
+      <p>
+        Use the half-angle identity established for the sine function to determine the value of <m>\sin\left(165^{\circ}\right)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Let's first observe that <m>2 \cdot 165^{\circ}=330^{\circ}</m> which gives us <m>165^{\circ}=\frac{330^{\circ}}{2}</m>.  Let's also note that when drawn in standard position, an angle with measurement <m>165^{\circ}</m> terminates in the second quadrant and, consequently, has a positive sine value. We are now ready to determine the sine value.
+        <md>
+          <mrow>\sin\left(165^{\circ}\right)\amp=\sin\left(\frac{330^{\circ}}{2}\right)</mrow>
+          <mrow>\amp=\sqrt{\frac{1-\cos\left(330^{\circ}\right)}{2}}</mrow>
+          <mrow>\amp=\sqrt{\frac{1-\frac{\sqrt{3}}{2}}{2}}</mrow>
+          <mrow>\amp=\sqrt{\frac{1-\frac{\sqrt{3}}{2}}{2} \cdot \frac{2}{2}}</mrow>
+          <mrow>\amp=\sqrt{\frac{2-\sqrt{3}}{4}}</mrow>
+          <mrow>\amp=\frac{\sqrt{2-\sqrt{3}}}{2}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <p>
+    The derivation of the half-angle identity for the cosine function is similar to the derivation shown for the sine function and is left as an exercise.  The result is stated below.
+    <me>\cos\left(\frac{u}{2}\right)=\pm\sqrt{\frac{1+\cos(u)}{2}}</me>
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Use the cosine half-angle identity to determine the exact value of <m>\cos\left(\frac{7\pi}{8}\right)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We'll begin by determining the angle we need to cut in half.
+        <me>2 \cdot \frac{7\pi}{8}=\frac{7\pi}{4}\,\,\Longrightarrow\,\,\frac{7\pi}{8}=\frac{\frac{7\pi}{4}}{2}</me>
+        Before we apply the half-angle identity, let's also acknowledge that when drawn in standard position, an angle of measurement <m>\frac{7\pi}{8}</m> terminates in Quadrant II and, consequently, has a negative cosine value.
+        <md>
+          <mrow>\cos\left(\frac{7\pi}{8}\right)\amp=\cos\left(\frac{\frac{7\pi}{4}}{2}\right)</mrow>
+          <mrow>\amp=-\sqrt{\frac{1+\cos\left(\frac{7\pi}{4}\right)}{2}}</mrow>
+          <mrow>\amp=-\sqrt{\frac{1+\frac{\sqrt{2}}{2}}{2}}</mrow>
+          <mrow>\amp=-\sqrt{\frac{1+\frac{\sqrt{2}}{2}}{2} \cdot \frac{2}{2}}</mrow>
+          <mrow>\amp=-\sqrt{\frac{2+\sqrt{2}}{4}}</mrow>
+          <mrow>\amp=-\frac{\sqrt{2+\sqrt{2}}}{2}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <p>
+    We will now use the half-angle identities for the sine and cosine functions to derive a half-angle identity for the tangent function.
+    <md>
+      <mrow>\tan\left(\frac{\alpha}{2}\right)\amp=\frac{\sin\left(\frac{\alpha}{2}\right)}{\cos\left(\frac{\alpha}{2}\right)}</mrow>
+      <mrow>\amp=\frac{\pm\sqrt{\frac{1-\cos(u)}{2}}}{\pm\sqrt{\frac{1+\cos(u)}{2}}}</mrow>
+      <mrow>\amp=\sqrt{\frac{1-\cos(u)}{2} \cdot \frac{2}{1+\cos(u)}}</mrow>
+      <mrow>\amp=\sqrt{\frac{1-\cos(u)}{1+\cos(u)}}</mrow>
+      <mrow>\amp=\sqrt{\frac{1-\cos(u)}{1+\cos(u)} \cdot \frac{1-\cos(u)}{1-\cos(u)}}</mrow>
+      <mrow>\amp=\sqrt{\frac{(1-\cos(u))^2}{1-\cos^2(u)}}</mrow>
+      <mrow>\amp=\sqrt{\frac{(1-\cos(u))^2}{\sin^2(u)}}</mrow>
+      <mrow>\amp=\frac{\abs{1-\cos(u)}}{\abs{\sin(u)}}</mrow>
+    </md>
+    In order for the expression "<m>1-\cos(u)</m>"" to return a negative value, the cosine of <m>u</m> would have to have a value larger than one, which never happens.  So the absolute value bars in the numerator of the last expression are unnecessary.
+  </p>
+  <p>
+    Now clearly the sine function has negative values as well as positive values, so at first glance the absolute value bars seem necessary.  However, if we keep them then the expression <m>\frac{1-\cos(u)}{\abs{\sin(u)}}</m> will never have a negative value which is problematic in that the value of <m>\tan\left(\frac{\alpha}{2}\right)</m> will surely sometimes be negative.
+  </p>
+  <p>
+    It turns out that there is a remarkably opportune resolution to this seeming dilemma. If 
+    <me>0^{\circ} \lt u \lt 180^{\circ}</me>
+    then the value of <m>\sin(u)</m> is positive.  Also, 
+    <me>0^{\circ} \lt \frac{u}{2} \lt 90^{\circ}</me>
+    so the value of <m>\tan\left(\frac{\alpha}{2}\right)</m> is also positive.  In a similar vein, if
+    <me>180^{\circ} \lt u \lt 360^{\circ}</me>
+    then the value of <m>\sin(u)</m> is negative.  Also, 
+    <me>90^{\circ} \lt \frac{u}{2} \lt 180^{\circ}</me>
+    so the value of <m>\tan\left(\frac{\alpha}{2}\right)</m> is also negative.
+  </p>
+  <p>
+    It is in fact the case that over the domain of the function <m>y=\tan\left(\frac{\alpha}{2}\right)</m>, the values of <m>\sin(u)</m> and <m>\tan\left(\frac{\alpha}{2}\right)</m> always have the same sign (or are both <m>0</m>).  This leads to the following identity.
+    <me>\tan\left(\frac{\alpha}{2}\right)=\frac{1-\cos(u)}{\sin{u}}</me>
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Use the tangent half-angle identity to determine the exact value of <m>\tan\left(165^{\circ}\right)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Twice <m>165^{\circ}</m> is <m>330^{\circ}</m>, which establishes the first equality in the derivation that follows.
+        <md>
+          <mrow>\tan\left(165^{\circ}\right)\amp=\tan\left(\frac{330^{\circ}}{2}\right)</mrow>
+          <mrow>\amp=\frac{1-\cos\left(330^{\circ}\right)}{\sin\left(330^{\circ}\right)}</mrow>
+          <mrow>\amp=\frac{1-\frac{\sqrt{3}}{2}}{-\frac{1}{2}}</mrow>
+          <mrow>\amp=\frac{1-\frac{\sqrt{3}}{2}}{-\frac{1}{2}} \cdot \frac{2}{2}</mrow>
+          <mrow>\amp=\frac{2-\sqrt{3}}{-1}</mrow>
+          <mrow>\amp=\sqrt{3}-2</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+</paragraphs>
+
+  <paragraphs>
+    <title>Product-to-Sum Identities</title>
+    <p></p>
+    <p>
+      In the section covering sum and difference identities, we explored the following two identities (as well as several more).
+      <me>\cos(A+B)=\cos(A)\cos(B)-\sin(A)\sin(B)</me>
+      <me>\cos(A-B)=\cos(A)\cos(B)+\sin(A)\sin(B)</me>
+      Notice that if we add the respective sides of the two identities, the sine expressions  add to zero leaving us with the following.
+      <me>\cos(A+B)+\cos(A-B)=2\cos(A)\cos(B)</me>
+      Multiplying both sides of the last equation by one-half results in the following product-to-sum identity.
+      <me>\cos(A)\cos(B)=\frac{1}{2}[\cos(A+B)+\cos(A-B)]</me>
+      Altogether there are four product-to-sum identities, and they are stated below.
+      <me>\cos(A)\cos(B)=\frac{1}{2}[\cos(A+B)+\cos(A-B)]</me>
+      <me>\sin(A)\sin(B)=\frac{1}{2}[\cos(A-B)-\cos(A+B)]</me>
+      <me>\cos(A)\sin(B)=\frac{1}{2}[\sin(A+B)-\sin(A-B)]</me>
+      <me>\sin(A)\cos(B)=\frac{1}{2}[\sin(A+B)+\sin(A-B)]</me>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Apply the appropriate product-to-sum identity to the expression <m>\sin\left(\frac{5\pi}{24}\right)\cos\left(\frac{\pi}{24}\right)</m>.  Completely simplify the result.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\sin\left(\frac{5\pi}{24}\right)\cos\left(\frac{\pi}{24}\right)\amp=\frac{1}{2}\left[\sin\left(\frac{5\pi}{24}+\frac{\pi}{24}\right)+\sin\left(\frac{5\pi}{24}-\frac{\pi}{24}\right)\right]</mrow>
+            <mrow>\amp=\frac{1}{2}\left[\sin\left(\frac{\pi}{4}\right)+\sin\left(\frac{\pi}{6}\right)\right]</mrow>
+            <mrow>\amp=\frac{1}{2}\left[\frac{\sqrt{2}}{2}+\frac{1}{2}\right]</mrow>
+            <mrow>\amp=\frac{\sqrt{2}+1}{4}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+  <paragraphs>
+    <title>Sum-to-Product Identities</title>
+    <p></p>
+    <p>
+      We can reverse the product-to-sum identities into sum-to-product identities by making the following two substitutions.
+      <md>
+        <mrow>u\amp=A+B\amp\amp\,\text{and}\,\,\amp v\amp=A-B</mrow>
+      </md>
+      Adding the respective sides of our two substitution equations and then dividing both sides by <m>2</m> gives us the following.
+      <me>\frac{u+v}{2}=A</me>
+      Subtracting the respective sides of the substitution equations (in the <m>u-v</m> direction) and then dividing both sides by <m>2</m> results in the following.
+      <me>\frac{u-v}{2}=B</me>
+      Before making any actual substitutions, let's observe the following.
+      <me>\sin(A)\cos(B)=\frac{1}{2}[\sin(A+B)+\sin(A-B)]\,\,\Longrightarrow\,\,\sin(A+B)+\sin(A-B)=2\sin(A)\cos(B)</me>
+      We're now set to state our first sum-to-product identity by making the substitutions specified above.
+      <me>\sin(u)+\sin(v)=2\sin\left(\frac{u+v}{2}\right)\cos\left(\frac{u-v}{2}\right)</me>
+      Each of the product-to-sum identities implies a sum-to-product identity, so there are four sum-to-product identities, and the are stated below.
+      <md>
+        <mrow>\cos(u)+\cos(v)\amp=2\cos\left(\frac{u+v}{2}\right)\cos\left(\frac{u-v}{2}\right)</mrow>
+        <mrow></mrow>
+        <mrow>\cos(u)-\cos(v)\amp=-2\sin\left(\frac{u+v}{2}\right)\sin\left(\frac{u-v}{2}\right)</mrow>
+        <mrow></mrow>
+        <mrow>\sin(u)+\sin(v)\amp=2\sin\left(\frac{u+v}{2}\right)\cos\left(\frac{u-v}{2}\right)</mrow>
+        <mrow></mrow>
+        <mrow>\sin(u)-\sin(v)\amp=2\cos\left(\frac{u+v}{2}\right)\sin\left(\frac{u-v}{2}\right)</mrow>
+      </md>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Apply the appropriate sum-to-product identity to the expression <m>\sin(11x)-\sin(3x)</m> and simplify the result.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\sin(11x)-\sin(3x)\amp=2\cos\left(\frac{11x+3x}{2}\right)\sin\left(\frac{11x-3x}{2}\right)</mrow>
+            <mrow>\amp=2\sin(7x)\cos(4x)</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <exercises>
+
+    <exercise>
+      <statement>
+        <p>
+          Use the double-angle identity <m>\cos(2t)=2\cos^2(t)-1</m> to establish the half-angle identity <m>\cos\left(\frac{\alpha}{2}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by letting <m>t=\frac{\alpha}{2}</m>.  Observe that this implies that <m>2t=\alpha</m>.  Let's make the substitutions and then isolate the <m>\cos\left(\frac{\alpha}{2}\right)</m> term.
+          <md>
+            <mrow>\cos(\alpha)\amp=2\cos^2\left(\frac{\alpha}{2}\right)-1</mrow>
+            <mrow>1+\cos(\alpha)\amp=2\cos^2\left(\frac{\alpha}{2}\right)</mrow>
+            <mrow>\frac{1+\cos(\alpha)}{2}\amp=\cos^2\left(\frac{\alpha}{2}\right)</mrow>
+            <mrow>\pm\sqrt{\frac{1+\cos(\alpha)}{2}}\amp=\cos\left(\frac{\alpha}{2}\right)</mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Apply the appropriate product-to-sum identity to the expression <m>4\cos\left(97.5^{\circ}\right)\cos\left(-52.5^{\circ}\right)</m> and completely simplify the result.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>4\cos\left(97.5^{\circ}\right)\amp\cos\left(-52.5^{\circ}\right)</mrow>
+            <mrow>\amp=4 \cdot \frac{1}{2}\left[\cos\left(97.5^{\circ}+\left(-52.5^{\circ}\right)\right)+\cos\left(97.5^{\circ}-\left(-52.5^{\circ}\right)\right)\right]</mrow>
+            <mrow>\amp=2\left[\cos\left(45^{\circ}\right)+\cos\left(150^{\circ}\right)\right]</mrow>
+            <mrow>\amp=2\left[\frac{\sqrt{2}}{2}+\left(-\frac{\sqrt{3}}{2}\right)\right]</mrow>
+            <mrow>\amp=\sqrt{2}-\sqrt{3}</mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Apply the appropriate product-to-sum identity to the expression <m>20\sin\left(195^{\circ}\right)\cos\left(105^{\circ}\right)</m> and completely simplify the result.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>20\sin\left(195^{\circ}\right)\amp\cos\left(105^{\circ}\right)</mrow>
+            <mrow>\amp=4 \cdot \frac{1}{2}\left[\sin\left(195^{\circ}+105^{\circ}\right)+\sin\left(195^{\circ}-105^{\circ}\right)\right]</mrow>
+            <mrow>\amp=10\left[\sin\left(300^{\circ}\right)+\sin\left(90^{\circ}\right)\right]</mrow>
+            <mrow>\amp=10\left[-\frac{\sqrt{3}}{2}+1\right]</mrow>
+            <mrow>\amp=10-5\sqrt{3}</mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Apply the appropriate sum-to-product identity to the expression <m>\sin\left(\frac{5\pi}{12}\right)-\sin\left(\frac{\pi}{12}\right)</m> and completely simplify the result.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\sin\left(\frac{5\pi}{12}\right)-\sin\left(\frac{\pi}{12}\right)\amp=2\cos\left(\frac{\frac{5\pi}{12}+\frac{\pi}{12}}{2}\right)\sin\left(\frac{\frac{5\pi}{12}-\frac{\pi}{12}}{2}\right)</mrow>
+            <mrow>\amp=2\cos\left(\frac{\pi}{4}\right)\sin\left(\frac{\pi}{6}\right)</mrow>
+            <mrow>\amp=2 \cdot \frac{\sqrt{2}}{2} \cdot \frac{1}{2}</mrow>
+            <mrow>\amp=\frac{\sqrt{2}}{2}</mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Apply the appropriate sum-to-product identity to the expression <m>\cos\left(255^{\circ}\right)+\cos\left(195^{\circ}\right)</m> and completely simplify the result.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\cos\left(255^{\circ}\right)+\cos\left(195^{\circ}\right)\amp=2\cos\left(\frac{255^{\circ}+195^{\circ}}{2}\right)\sin\left(\frac{255^{\circ}-195^{\circ}}{2}\right)</mrow>
+            <mrow>\amp=2\cos\left(225^{\circ}\right)\cos\left(30^{\circ}\right)</mrow>
+            <mrow>\amp=2 \cdot -\frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2}</mrow>
+            <mrow>\amp=-\frac{\sqrt{6}}{2}</mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+     <exercise>
+      <statement>
+        <p>
+          Use the appropriate half-angle identity to determine the exact value of <m>\cos\left(-\frac{\pi}{8}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by observing that <me>-\frac{\pi}{8}=\frac{-\frac{\pi}{4}}{2}</me>.  Also, when drawn in standard position, <m>-\frac{\pi}{4}</m> terminates in Quadrant IV, so its cosine value is positive.  The value is derived below.
+          <md>
+            <mrow>\cos\left(-\frac{\pi}{8}\right)\amp=\cos\left(\frac{-\frac{\pi}{4}}{2}\right) </mrow>
+            <mrow>\amp=\sqrt{\frac{1+\cos\left(-\frac{\pi}{4}\right)}{2}}</mrow>
+            <mrow>\amp=\sqrt{\frac{1+\frac{\sqrt{2}}{2}}{2}}</mrow>
+            <mrow>\amp=\sqrt{\frac{1+\frac{\sqrt{2}}{2}}{2} \cdot \frac{2}{2}}</mrow>
+            <mrow>\amp=\sqrt{\frac{2+\sqrt{2}}{4}}</mrow>
+            <mrow>\amp=\frac{\sqrt{2+\sqrt{2}}}{2}</mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+     <exercise>
+      <statement>
+        <p>
+          Use the appropriate half-angle identity to determine the exact value of <m>\tan\left(122.5^{\circ}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by observing that <m>112.5^{\circ}=\frac{225^{\circ}}{2}</m>.  Because the sign takes care of itself in the tangent half-angle identity,we can proceed directly to the determination of the exact value of <m>\tan\left(122.5^{\circ}\right)</m>.
+          <md>
+            <mrow>\tan\left(122.5^{\circ}\right)\amp=\tan\left(\frac{225^{\circ}}{2}\right)</mrow>
+            <mrow>\amp=\frac{1-\cos\left(225^{\circ}\right)}{\sin\left(225^{\circ}\right)}</mrow>
+            <mrow>\amp=\frac{1-\left(-\frac{\sqrt{2}}{2}\right)}{-\frac{\sqrt{2}}{2}}</mrow>
+            <mrow>\amp=\frac{1+\frac{\sqrt{2}}{2}}{-\frac{\sqrt{2}}{2}} \cdot \frac{-2}{-2}</mrow>
+            <mrow>\amp=\frac{-2-\sqrt{2}}{\sqrt{2}}</mrow>
+            <mrow>\amp=\frac{-2-\sqrt{2}}{\sqrt{2}} \cdot \frac{\sqrt{2}}{\sqrt{2}}</mrow>
+            <mrow>\amp=\frac{-2\sqrt{2}-2}{2}</mrow>
+            <mrow>\amp=\frac{-2(\sqrt{2}+1)}{2}</mrow>
+            <mrow>\amp=-(\sqrt{2}+1)</mrow>
+            <mrow>\amp=-1-\sqrt{2}</mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+  <exercise>
+      <statement>
+        <p>
+          Use the appropriate half-angle identity to determine the exact value of <m>\sin\left(15^{\circ}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by observing that <me>15^{\circ}=30^{\circ}</me>.  Also, when drawn in standard position, <m>15^{\circ}</m> terminates in Quadrant I, so its sine value is positive.  The value is derived below.
+          <md>
+            <mrow>\sin\left(15^{\circ}\right)\amp=\sin\left(\frac{30^{\circ}}{2}\right) </mrow>
+            <mrow>\amp=\sqrt{\frac{1-\cos\left(30^{\circ}\right)}{2}}</mrow>
+            <mrow>\amp=\sqrt{\frac{1-\frac{\sqrt{3}}{2}}{2}}</mrow>
+            <mrow>\amp=\sqrt{\frac{1-\frac{\sqrt{3}}{2}}{2} \cdot \frac{2}{2}}</mrow>
+            <mrow>\amp=\sqrt{\frac{2-\sqrt{3}}{4}}</mrow>
+            <mrow>\amp=\frac{\sqrt{2-\sqrt{3}}}{2}</mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+  </exercises>
+
+
+
+</section>

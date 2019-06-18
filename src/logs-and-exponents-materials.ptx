@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017-2018                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                                                       -->
+<!--                                                                      -->
+<!-- Creative Commons BY 4.0 license                                      -->
+<!-- https://creativecommons.org/licenses/by/4.0/                         -->
+<!-- ********************************************************************* -->
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="logs-and-exponents-materials">
+  <title>Logarithmic and Exponential Functions</title>
+
+  <xi:include href="./logs-and-exponents-videos-111.ptx" />
+  <xi:include href="./logs-and-exponents-exponential-functions-and-graphs.ptx" />
+  <xi:include href="./logs-and-exponents-logarithmic-functions-and-graphs.ptx" />
+  <xi:include href="./logs-and-exponents-logarithms.ptx" />
+  <xi:include href="./logs-and-exponents-log-properties-derivation.ptx" />
+  <xi:include href="./logs-and-exponents-log-properties.ptx" />
+  <xi:include href="./logs-and-exponents-log-equations.ptx" />
+  <xi:include href="./logs-and-exponents-exponential-equations.ptx" />
+  <xi:include href="./logs-and-exponents-e.ptx" />
+  <xi:include href="./logs-and-exponents-growth-and-decay.ptx" />
+  <xi:include href="./logs-and-exponents-additional-practice.ptx" />
+
+</chapter>

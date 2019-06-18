@@ -90,7 +90,7 @@
     <example>
       <statement>
         <p>
-          Simplify> <m>\frac{6}{1+3i}</m>.
+          Simplify <m>\frac{6}{1+3i}</m>.
         </p>
       </statement>
       <solution>
@@ -110,7 +110,7 @@
     <example>
       <statement>
         <p>
-          Simplify> <m>\frac{5i}{1-2i}</m>.
+          Simplify <m>\frac{5i}{1-2i}</m>.
         </p>
       </statement>
       <solution>
@@ -130,7 +130,7 @@
     <example>
       <statement>
         <p>
-          Simplify> <m>\frac{-7+4i}{-7-4i}</m>.
+          Simplify <m>\frac{-7+4i}{-7-4i}</m>.
         </p>
       </statement>
       <solution>

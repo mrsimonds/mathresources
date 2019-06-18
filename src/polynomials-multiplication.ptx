@@ -71,6 +71,9 @@
       </solution>
     </example>
 
+    <paragraphs>
+      <title>FOIL</title>
+      <p></p>
       <p>
         There is one equivalence in the last example towards which we want to shift our focus.  Specifically, let's focus on the following equivalence.
         <me>(\highlightb{y}+\highlight{8})(\highlightg{y}+\highlightr{3})=\highlightb{y} \cdot \highlightg{y}+\highlightb{y} \cdot \highlightr{3}+\highlight{8} \cdot \highlightg{y}+\highlight{8} \cdot \highlightr{3}</me>
@@ -124,6 +127,10 @@
       </solution>
     </example>
 
+  </paragraphs>
+  <paragraphs>
+    <title>Special Products</title>
+    <p></p>
     <p>
       Now let's turn our attention to a special product called "the product of conjugates."  Conjugates are pairs of binomials whose only difference are the operators.  In one expression the operation is addition and in the other expression the operation is subtraction.  Generically, we refer to conjugates as <m>(a+b)</m> and <m>(a-b)</m>.  Let's see what happens when we multiply those two expressions.
       <md>
@@ -165,6 +172,10 @@
       </solution>
     </example>
 
+  </paragraphs>
+  <paragraphs>
+    <title>Products of Polynomials with More than Two Terms</title>
+    <p></p>
     <p>
       As you know, polynomials are not limited to two terms.  For example, consider the following product.
       <me>(x+3)(x^2+7x+2)</me>
@@ -220,6 +231,8 @@
         </p>
       </solution>
     </example>
+
+  </paragraphs>
 
     <exercises>
 

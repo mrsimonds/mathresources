@@ -54,7 +54,7 @@
       Finally, we state our solutions and solution set.
     </p>
     <p>
-      The solutions are <m>-1</m> and <m>\frac{7}{2}</m>.  The solution set is <m>\{-1,\frac{7}{2}\}</m>
+      The solutions are <m>-1</m> and <m>\frac{7}{2}</m>.  The solution set is <m>\left\{-1,\frac{7}{2}\right\}</m>
     </p>
     <p>
       When the square root expression does not simplify to an integer, there's no need to spit the solution into two separate equations, although we do need to make sure that we state the solutions as separate numbers (assuming that there are two solutions).  We also need to make sure that we completely simplify the square root and the fraction.
@@ -185,7 +185,7 @@
               <p>
                 <md>
                   <mrow></mrow>
-                  <mrow>a=1, b=10, c=-10</mrow>
+                  <mrow>a=1, b=10, c=-39</mrow>
                 </md>
               </p>
 
@@ -289,7 +289,7 @@
               The solutions are <m>\frac{5-\sqrt{55}}{6}</m> and <m>\frac{5+\sqrt{55}}{6}</m>.
             </p>
             <p>
-              The solution set is <m>\{\frac{5-\sqrt{55}}{6}, \frac{5+\sqrt{55}}{6}\}</m>.
+              The solution set is <m>\left\{\frac{5-\sqrt{55}}{6}, \frac{5+\sqrt{55}}{6}\right\}</m>.
             </p>
           </solution>
         </exercise>
@@ -335,7 +335,7 @@
               </md>
             </p>
             <p>
-              The only solution is <m>1</m> and the solution set is <m>\{1\}</m>.
+              The only solution is <m>-1</m> and the solution set is <m>\{-1\}</m>.
             </p>
           </solution>
         </exercise>

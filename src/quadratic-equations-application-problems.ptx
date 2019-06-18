@@ -29,7 +29,9 @@
         <figure xml:id="quadratic-equations-applications-figure-1">
           <caption>Variable Diagram</caption>
           <image width="60%">
-            <description></description>
+            <description>
+              A right triangle with one leg labeled <m>x</m>, the other leg labeled <m>x+1</m>, and the hypotenuse labeled <m>x+2</m>.
+            </description>
             <latex-image>
               <![CDATA[
                 \begin{tikzpicture}
@@ -78,7 +80,9 @@
         <figure xml:id="quadratic-equations-applications-figure-2" width="50%">
           <caption>A Trapezoid</caption>
           <image width="60%">
-            <description></description>
+            <description>
+              A four-sided figure.  The top and bottom sides are both horizontal and the two sides both lean inward.  The top side is labeled <m>b_1</m> and the bottom side is labeled <m>b_2</m>.  There is a dotted vertical line between the top and bottom sides that is labeled <m>h</m>. 
+            </description>
             <latex-image>
               <![CDATA[
                 \begin{tikzpicture}
@@ -110,7 +114,9 @@
         <figure xml:id="quadratic-equations-applications-figure-3" width="50%">
           <caption>Variable diagram</caption>
           <image width="60%">
-            <description></description>
+            <description>
+              A four-sided figure.  The top and bottom sides are both horizontal and the two sides both lean inward.  The top side is labeled <m>b_1=x</m> and the bottom side is labeled <m>b_2=2x</m>.  There is a dotted vertical line between the top and bottom sides that is labeled <m>h=2x-5</m>. 
+            </description>
             <latex-image>
               <![CDATA[
                 \begin{tikzpicture}
@@ -242,7 +248,9 @@
             <figure xml:id="quadratic-equations-applications-figure-4" width="50%">
               <caption>A square inside square</caption>
               <image width="60%">
-                <description></description>
+                <description>
+                  A square inside a square.  The distance between the sides of the smaller square and the larger square is indicated to be two meters in all directions.
+                </description>
                 <latex-image>
                   <![CDATA[
                     \begin{tikzpicture}
@@ -299,7 +307,9 @@
             <figure xml:id="quadratic-equations-applications-figure-5">
               <caption>Variable Diagram</caption>
               <image width="80%">
-                <description></description>
+                <description>
+                  A right triangle with one leg labeled <m>x</m>, the other leg labeled <m>x+7</m>, and the hypotenuse labeled <m>x+8</m>
+                </description>
                 <latex-image>
                   <![CDATA[
                     \begin{tikzpicture}

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="logs-and-exponents-growth-and-decay">
+  <title>Exponential Growth and Decay</title>
+
+  <p>
+    Quantities that vary over time according to a formula of form <me>y=y_0b^{kt}</me>, <m>b \gt 0</m>, <m>b \neq 1</m>, <m>y_0 \gt 0</m>, <m>k \neq 0</m>, are said to experience either <term>exponential growth</term> or <term>exponential decay</term>.  Assuming that <m>k \gt 0</m>, the quantity grows exponentially when <m>b \gt 1</m> and decays exponentially when <m>0 \lt b \lt 1</m>.
+  </p>
+  <paragraphs>
+    <title>Half-Life</title>
+    <p></p>
+    <p>
+      Radioactive decay is a process in which unstable atoms eject particles.  Something rather eerie about the decay process is that for any particular decay process, exactly 50% of the atoms will become nonradioactive over a set period of time.  This set period of time is called <term>the half-life</term> of the decay process.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        For example, suppose that you store away 500 grams of a radioactive particle that has a half-life of 75 years.  <xref ref="logs-and-exponents-growth-and-decay-table-1">Table</xref> shows the amount of material that remains radioactive at the end of each half-life. 
+      </p>
+
+      <table xml:id="logs-and-exponents-growth-and-decay-table-1">
+        <caption>Half-Life of 75 Years</caption>
+        <tabular>
+          <col halign="center" />
+          <col halign="center" />
+          <row bottom="medium">
+            <cell><line>Time in Storage (years)</line></cell>
+            <cell><line>Amount Radioactive (g)</line></cell>
+          </row>
+          <row>
+            <cell><m>0</m></cell>
+            <cell><m>500</m></cell>
+          </row>
+          <row>
+            <cell><m>75</m></cell>
+            <cell><m>250</m></cell>
+          </row>
+          <row>
+            <cell><m>150</m></cell>
+            <cell><m>125</m></cell>
+          </row>
+          <row>
+            <cell><m>225</m></cell>
+            <cell><m>62.5</m></cell>
+          </row>
+          <row>
+            <cell><m>300</m></cell>
+            <cell><m>31.25</m></cell>
+          </row>
+        </tabular>
+      </table>
+
+    </sidebyside>
+    <p>
+      At the end of each half-life exactly half as much remains radioactive as was radioactive at the end of the previous half-life.  If we want to find a formula that models the decay process illustrated in <xref ref="logs-and-exponents-growth-and-decay-table-1">Table</xref>, the most straight forward approach is to use a base of <m>\frac{1}{2}</m>.  Every time <m>t</m> increases by 75, the original amount that is radioactive gets multiplied by one-half.  This leads to the following formula.
+      <me>R(t)=500\left(\frac{1}{2}\right)^{t/75}</me>.
+      From this we can infer a general formula for modeling radioactive decay.
+      <me>R(t)=y_0\left(\frac{1}{2}\right)^{t/t_0}</me>
+      <ul>
+        <li>
+          <p>
+            <m>R(t)</m> is the amount that remains radioactive <m>t</m> time units after some specified initial time.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>y_0</m> is the amount that is originally radioactive (at <m>t=0</m>).
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>t_0</m> is the half-life of the radioactive decay process.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          The half-life of Carbon-14 is approximately 5730 years.  For purposes of this example, assume that value is exact.  Suppose that at the beginning of the year 1932 Gustav buried 300 g of Carbon-14.  Suppose further that at the beginning of the year 2155 Helga will dig up the sample.  How mush of the sample will still be radioactive upon Helga's unearthing of the material.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          A model for this decay process is
+          <me>R(t)=300\left(\frac{1}{2}\right)^{t/5730}</me>
+          where <m>t</m> is the number of years that have elapsed since the start of the year 1932.  Helga with unearth the sample 223 years after that date.  This gives us the following.
+          <md>
+            <mrow>R(223)\amp=300\left(\frac{1}{2}\right)^{223/5720}</mrow>
+            <mrow>\amp\approx 292</mrow>
+          </md>
+          About 292 g of the sample will still be radioactive when Helga pulls it from the earth.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          The first day of chemistry lab, Carlota was given a sample of a harmless radioactive sample.  She determined the amount of sample that was radioactive on day 1 and again exactly 10 weeks later.  Carlota determined that 12.7% of the radioactive sample had decayed over the ten week period.  Determine the half-life of the material Carlota was given.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's define <m>t</m> to be the number of weeks that have passed from the moment of Carlota's first measurement.  Since 12.7% of the material decayed over a ten week period, we can state that 87.3% of the original radioactive material was still radioactive at the end of the ten week period.   If we assume that Carlota started with exactly 1 g of radioactive material, then <m>R(10)=0.873</m>.  From this we get
+          <me>1 \cdot \left(\frac{1}{2}\right)^{10/t_0}=0.0873</me>
+          where <m>t_0</m> is the half-life of the substance (in weeks).  Let's solve this last equation for <m>t_0</m>.
+          <md>
+            <mrow>\left(\frac{1}{2}\right)^{10/t_0}\amp=0.873</mrow>
+            <mrow>\ln\left(\left(\frac{1}{2}\right)^{10/t_0}\right)\amp=\ln(0.873)</mrow>
+            <mrow>\frac{10}{t_0}\ln(0.5)\amp=\ln(0.873)</mrow>
+            <mrow>\multiplyleft{t_0}\frac{10}{t_0}\ln(0.5)\amp=\multiplyleft{t_0}\ln(0.873)</mrow>
+            <mrow>10\ln(0.5)\amp=\ln(0.873)t_0</mrow>
+            <mrow>\divideunder{10\ln(0.5)}{\ln(0.873)}\amp=\divideunder{\ln(0.873)t_0}{\ln(0.873)}</mrow>
+            <mrow>\frac{10\ln(0.5)}{\ln(0.873)}\amp=t_0</mrow>
+            <mrow>51.03\amp\approx t_0</mrow>
+          </md>
+          The half-life of the material in Carlota's experiment is a smidge over 51 weeks.
+        </p>
+      </solution>
+    </example>
+    
+  </paragraphs>
+  <paragraphs>
+    <title>Doubling-Time</title>
+    <p></p>
+    <p>
+      Just like any specific radioactive decay process has a fixed half-life, anything that is growing exponentially has a fixed <term>doubling-time</term> and the growth can be modeled using the following formula.
+      <me>P(t)=y_0 \cdot 2^{t/t_0}</me>
+      <ul>
+        <li>
+          <p>
+            <m>P(t)</m> is the amount present (often a population) <m>t</m> time units after some specified initial time.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>y_0</m> is the amount that is originally present (at <m>t=0</m>).
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>t_0</m> is the doubling-time of the growth process.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          The Blob was a cheesy science fiction film shot in the 1950s.  The basic premise was that an alien life form that was a big blob fell to Earth and started eating everything and - horrors - everyone in its path.  As the Blob consumed everything in sight, it's size and weight grew exponentially.  At the start of the film the Blob weighed a measly 10 lb.  At the end of the film (88 minutes later), the Blob weighed 50,000 lb!  Determine, from the viewer's perspective, the doubling-time of the Blob's weight. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          From the given information we can determine that the weight function for the Blob (in lbs) <m>t</m>minutes after the beginning of the film is
+          <me>W(t)=10 \cdot 2^{t/t_0}</me>
+          where <m>t_0</m> is the doubling time for the Blob's weight.  We also know that <m>W(88)=50,000</m> from which we get the following.
+          <md>
+            <mrow>W(88)\amp=50,000</mrow>
+            <mrow>10 \cdot 2^{88/t_0}\amp=50,000</mrow>
+            <mrow>\divideunder{10 \cdot 2^{88/t_0}}{10}\amp=\divideunder{50,000}{10}</mrow>
+            <mrow>2^{88/t_0}\amp=5,000</mrow>
+            <mrow>\ln\left(2^{88/t_0}\right)\amp=\ln(5,000)</mrow>
+            <mrow>\frac{88}{t_0}\ln(2)\amp=\ln(5,000)</mrow>
+            <mrow>\multiplyleft{t_0}\frac{88}{t_0}\ln(2)\amp=\multiplyleft{t_0}\ln(5,000)</mrow>
+            <mrow>88\ln(2)\amp=\ln(5,000)t_0</mrow>
+            <mrow>\divideunder{88\ln(2)}{\ln(5,000)}\amp=\divideunder{\ln(5,000)t_0}{\ln(5,000)}</mrow>
+            <mrow>\frac{88\ln(2)}{\ln(5,000)}\amp=t_0</mrow>
+            <mrow>7.16 \amp\approx t_0</mrow>
+          </md>
+          From the perspective of the movie viewer, the doubling time for the Blob's weight was about 7.14 minutes.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the doubling time for the function <m>P(t)=2.5 \cdot 1.226^t</m>.  Assume that the time unit is years.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The initial quantity (when <m>t=0</m>) is <m>2.5</m>, so we can determine the doubling time by determining the value of <m>t</m> when <m>P(t)=5</m>.  Let's do it.
+          <md>
+            <mrow>P(t)\amp=5</mrow>
+            <mrow>2.5 \cdot 1.226^t\amp=5</mrow>
+            <mrow>\divideunder{2.5 \cdot 1.226^t}{2.5}\amp=\divideunder{5}{2.5}</mrow>
+            <mrow>1.226^t\amp=2</mrow>
+            <mrow>\ln\left(1.226^t\right)\amp=\ln(2)</mrow>
+            <mrow>t \cdot \ln(1.226)\amp=\ln(2)</mrow>
+            <mrow>\divideunder{t \cdot \ln(1.226)}{\ln(1.226)}\amp=\divideunder{\ln(2)}{\ln(1.226)}</mrow>
+            <mrow>t\amp=\frac{\ln(2)}{\ln(1.226)}</mrow>
+            <mrow>t\amp\approx 3.40</mrow>
+          </md>
+          The doubling time for <m>P</m> is about 3.40 years.
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+  <paragraphs>
+    <title>Modeling Exponential Decay with a Base of <m>e</m></title>
+    <p></p>
+    <p>
+      One branch of calculus deals with rates of change.  A question that arises in the topic called differential equations is the nature of functions whose rate of change at all values of <m>t</m> is proportional to its current value  It turns out that all such functions (other than <m>f(t)=0</m>) are exponential functions and all exponential functions have that property.  It turns out further that the function <m>f(t)=e^t</m> is the unique function with the property that its rate of change at any given value of <m>t</m> is exactly equal to the function value at <m>t</m>.  For this reason, in higher mathematics and in subjects like Physics the number <m>e</m> is the goto base for exponential functions.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Express the function <m>y=\left(\frac{1}{2}\right)^{t/t_0}</m> in the form <m>y=e^{kt}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The unknown in this problem is the variable <m>k</m>.  We need to equate the two function formulas and isolate <m>k</m>.
+          <md>
+            <mrow>e^{kt}\amp=\left(\frac{1}{2}\right)^{t/t_0}</mrow>
+            <mrow>\ln\left(e^{kt}\right)\amp=\ln\left(\left(\frac{1}{2}\right)^{t/t_0}\right)</mrow>
+            <mrow>kt\amp=\frac{t}{t_0}\ln\left(\frac{1}{2}\right)</mrow>
+            <mrow>\divideunder{kt}{t}\amp=\divideunder{\frac{t}{t_0}\ln\left(\frac{1}{2}\right)}{t}</mrow>
+            <mrow>k\amp=\frac{\ln\left(\frac{1}{2}\right)}{t_0}</mrow>
+            <mrow>k\amp=\frac{\ln\left(2^{-1}\right)}{t_0}</mrow>
+            <mrow>k\amp=\frac{-1 \cdot \ln(2)}{t_0}</mrow>
+            <mrow>k\amp=-\frac{\ln(2)}{t_0}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      In the last example we established that the functions
+      <me>y=e^{kt}\,\text{and}\,y=\left(\frac{1}{2}\right)^{t/t_0}</me>
+      are equivalent when
+      <me>k=-\frac{\ln(2)}{t_0}.</me>
+      One thing we can infer from this equivalence is that the decay process for a radioactive element with a half-life of <m>t_0</m>can be modeled with a function of form
+      <me>y=y_0e^{kt}\,\text{,}\,\text{where}\,k=-\frac{\ln(2)}{t_0}.</me>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          The half-life of Cesium-137 is 30 years. Suppose that today we isolate 250 mg of Cesium-137.  Write a model in the form <m>d(t)=y_0e^{kt}</m> for the radioactive decay process of this sample and use that model to determine the amount of the sample that will still be radioactive 20 years from now.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Since the initial weight of the the sample is 250 mg, <m>y_0=250</m>.  Because the half-life is 40 years, <m>k=-\frac{\ln(2)}{30}</m>.  This gives us the model
+          <me>d(t)=250e^{\frac{-\ln(2)t}{30}}.</me>
+          This gives us the following.
+          <md>
+            <mrow>d(20)\amp=250e^{\frac{-20\ln(2)}{30}}</mrow>
+            <mrow>\amp\approx 157.49</mrow>
+          </md>
+          So we conclude that in 20 years about 157.49 mg of the Celsium-137 sample will still be radioactive.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          The decay process for the radioactive element Iodine-131 can be approximated by the function
+          <m>y=y_0e^{-0.0866434t}</m>
+          where <m>t</m> is the number of days that have elapsed since the sample was created.  Determine the half-life of Iodine-131.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          If the half-life (in days) is <m>t_0</m>, the the decay process can be modeled by
+          <me>y=y_0e^{kt}\,\text{,}\,\text{where}\,k=-\frac{\ln(2)}{t_0}.</me>
+          This gives us the following.
+          <md>
+            <mrow>-\frac{\ln(2)}{t_0}\amp=-0.0866434</mrow>
+            <mrow>\multiplyleft{t_0}-\frac{\ln(2)}{t_0}\amp=\multiplyleft{t_0}-0.0866434</mrow>
+            <mrow>-\ln(2)\amp=-0.0866434t_0</mrow>
+            <mrow>\divideunder{-\ln(2)}{-0.0866434}\amp=\divideunder{-0.0866434t_0}{-0.0866434}</mrow>
+            <mrow>\frac{\ln(2)}{0.0866434}\amp=t_0</mrow>
+            <mrow>8\amp\approx t_0</mrow>
+          </md>
+          The half-life of Iodine-131 is approximately eight days.
+        </p>
+      </solution>
+    </example>
+  </paragraphs>
+
+  <exercises>
+
+    <exercise>
+      <statement>
+        <p>
+          A certain Bacterium living in Celine's gut has a current population of 75,128.  The doubling time for this type of Bacterium is 4.7 days.  Assuming that no action is taken to stunt this growth, what will the population be exactly ten days from now?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We can model the Bacterium population with the function
+          <me>B(t)=75,128 \cdot 2^{t/4.7}</me>
+          where <m>t</m> is the number of days from now.  This gives us the following.
+          <md>
+            <mrow>B(10)\amp=75,128 \cdot 2^{10/4.7}</mrow>
+            <mrow>\amp\approx 328,315</mrow>
+          </md>
+          We conclude that left unchecked, the population of this type Bacterium living in Celine's gut exactly ten days from now will be approximately 328,315 Bacteria.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Archie is a nuclear scientist.  One day, just before he left work, Archie stowed away a 55 mg sample of Radon-222.  Exactly 15.5 hours later, Archie took the sample out of storage.  The half-life of Radon-222 is 3.8 days.  Create a model for the decay process of this sample.  Let <m>t=0</m> correspond to the moment Archie stowed the sample and use an exponential base of <m>\frac{1}{2}</m> in your model.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The first decision we have to make is which unit do we want to use for time <mdash/> days or hours?  I'm choosing to use hours, making the half-life 91.2 hours.  So our model for the decay process is
+          <me>R(t)=55\left(\frac{1}{2}\right)^{t/91.2}</me>
+          where <m>t</m> is the number of hours that have elapsed since Archie stowed away the sample.  This gives us the following.
+          <md>
+            <mrow>R(15.5)\amp=55\left(\frac{1}{2}\right)^{15.5/91.2}</mrow>
+            <mrow>\amp\approx 48.89</mrow>
+          </md>Approximately 48.89 mg of the sample was still radioactive when Archie took the sample out of storage.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          The half-life of Thorium-134 is approximately 24.1 days.  At 12:00:01 am on May 1, 2012, a certain sample of Thorium-134 contained 33.86 g of radioactive matter.  How much radioactive matter was in the sample at 12:00:01 pm on June 1,2012?  Use a model with an exponential base of <m>e</m> to solve the problem.  Also, assume that the half-life is exactly 24.1 days.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We can model this situation with the function
+          <me>T(t)=33.86e^{kt}</me>
+          where <m>t</m> is the number of days that have passed since 12:00:01 am on May 1, 2012 and
+          <me>k=-\frac{ln(2)}{24.1}.</me>
+          As for the value of <m>t</m> we should use to determine the answer to the question, 12:00:01 pn June 1, 2012 was exactly 31.5 days after 12:00:01 am May 1, 2012 so we should use 31.5 as our value of <m>t</m> which do right now.
+          <md>
+            <mrow>T(31.5)\amp=33.86e^{-\frac{31.5\ln(2)}{24.1}}</mrow>
+            <mrow>amp\approx 13.68</mrow>
+          </md>
+          Approximately 13.68 g of theThorium-134 sample was still radioactive at 12:00:01 pm on June 1, 2012.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Express the function <m>y=2^{t/t_0}</m> in the form <m>y=e^{kt}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The unknown in this exercise is <m>k</m>.  We need to equate the two formulas and solve for <m>k</m>.
+          <md>
+            <mrow>e^{kt}\amp=2^{t/t_0}</mrow>
+            <mrow>\ln\left(e^{kt}\right)\amp=\ln\left(2^{t/t_0}\right)</mrow>
+            <mrow>kt\amp=\frac{t}{t_0}\ln(2)</mrow>
+            <mrow>\divideunder{kt}{t}\amp=\divideunder{\frac{t}{t_0}\ln(2)}{t}</mrow>
+            <mrow>k\amp=\frac{\ln(2)}{t_0}</mrow>
+          </md>
+          The function <m>y=2^{t/t_0}</m> is equivalent to the function <m>y=e^{kt}</m> where <m>k=\frac{\ln(2)}{t_0}</m>.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Jiminy Cricket!  The Kwan's noticed a few crickets in their lawn when they left for their three week vacation, but when they returned the lawn was overrun with crickets!  Suppose that the cricket population on the day the Kwan's left town was 27 and that the doubling time for this particular population was 2.3 days.  Write a model for this situation using the number <m>e</m> as the exponential base of the model.  Then use your model to determine the cricket population in the Kwan's lawn upon their return three weeks later.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          If we let <m>t</m> be the number of days after the Kwans left for vacation, then we can model the cricket population in their lawn with the function
+          <me>C(t)=27e^{kt}\,\text{where},k=\frac{\ln(2)}{2.3}.</me>
+          This gives us the following.
+          <md>
+            <mrow>C(21)\amp=27e^{\frac{21\ln(2)}{2.3}}</mrow>
+            <mrow>\amp\approx 15,132</mrow>
+          </md>
+          There were 15,132 crickets in the Kwan's lawn upon their return from vacation.  Chirp!
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Mason was born two years to the day after his big sis Mia.  On her third birthday Mia weighed 31 lbs and that same day Mason weighed 21 lb.  For the next dozen years both Mia's weight and Mason's weight grew exponentially.  Over that time period the doubling time for Mia's weight was 6 years while the doubling time for Mason's weight was 4.6 years.  How old was Mason when his weight surpassed Mia's weight?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          If we let <m>t</m> be the number of years that have elapsed since Mia's third birthday. Then we can model her with (in lbs) with the function
+          <me>y=31\cdot 2^{t/6}</me>
+          and we can model Mason's weight (also in lbs) with the function
+          <me>y=21 \cdot 2^{t/4.6}.</me>
+          Mason first outweighed his big sis Mia immediately after their weights were equal.  Let's figure out when that occurred.
+          <md>
+            <mrow>31 \cdot 2^{t/6}\amp=21 \cdot 2^{t/4.6}</mrow>
+            <mrow>\ln\left(31 \cdot 2^{t/6}\right)\amp=\ln\left(21 \cdot 2^{t/4.6}\right)</mrow>
+            <mrow>\ln(31)+\ln\left(2^{t/6}\right)\amp=\ln(21)+\ln\left(2^{t/4.6}\right)</mrow>
+            <mrow>\ln(31)+\frac{t}{6}\ln(2)\amp=\ln(21)+\frac{t}{4.6}\ln(2)</mrow>
+            <mrow>\ln(31)+\frac{t}{6}\ln(2)\subtractright{\ln(31)}\subtractright{\frac{t}{4.6}\ln(2)}\amp=\ln(21)+\frac{t}{4.6}\ln(2)\subtractright{\ln(31)}\subtractright{\frac{t}{4.6}\ln(2)}</mrow>
+            <mrow>\frac{t}{6}\ln(2)-\frac{t}{4.6}\ln(2)\amp=\ln(21)-\ln(31)</mrow>
+            <mrow>\left(\frac{\ln(2)}{6}-\frac{\ln(2)}{4.6}\right)t\amp=\ln(21)-\ln(31)</mrow>
+            <mrow>\divideunder{\left(\frac{\ln(2)}{6}-\frac{\ln(2)}{4.6}\right)t}{\frac{\ln(2)}{6}-\frac{\ln(2)}{4.6}}\amp=\divideunder{\ln(21)-\ln(31)}{\frac{\ln(2)}{6}-\frac{\ln(2)}{4.6}}</mrow>
+            <mrow>t\amp=\frac{\ln(21)-\ln(31)}{\frac{\ln(2)}{6}-\frac{\ln(2)}{4.6}}</mrow>
+            <mrow>t\amp\approx 11.077</mrow>
+          </md>
+          Mason's weight surpassed Mia's weight shortly after his 12th birthday.
+        </p>
+      </solution>
+    </exercise>
+
+  </exercises>
+
+</section>

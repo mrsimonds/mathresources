@@ -1,0 +1,1335 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="trigonometry-inverse-functions">
+  <title>The Inverse Trigonometric Functions</title>
+
+  <paragraphs>
+    <title>The Domain and Range of the Inverse Trigonometric Functions</title>
+    <p></p>
+    <p>
+      Recall that if the function<m>f</m> is the set of ordered pairs <m>\{(a,b)\}</m>, then the inverse function, if it exists, is the set of ordered pairs <m>\{(b,a)\}</m>.  Now suppose that <m>y=f(x)</m>. Because a function cannot have two ordered pairs with the same <m>x</m>-coordinate, <m>f</m> will have an inverse if and only if no two ordered pairs have the same <m>y</m>-coordinate.  Such a function is called a <term>one-to-one function</term> and  function is invertible if and only if it is one-to-one.
+    </p>
+    <p>
+      The concept of one-to-one is not a relative term.  That is, a function is either one-to-one or it's not.  That said, if it were a relative term  then the six basic trigonometric functions would all be not one-to-one in the extreme.  If a number is in the range of a basic trigonometric function, then there are an endless number of ordered pairs in the set with a <m>y</m>-coordinate equal to that value. Equivalently, there are an endless number of of points on a graph of the function with a <m>y</m>-coordinate equal to that number.
+    </p>
+    <p>
+      Since none of the six basic trigonometric functions is one-to-one, none of them have an inverse function unless we restrict the domain of the function. When choosing the domain restrictions, we want to choose domains that cover the entire range of the function.  For example, we don't want to restrict the domain to  <m>\left(0,\frac{\pi}{2}\right)</m>, because that would limit the ranges to subsets of the positive real numbers.
+    </p>
+    <p>
+      Ideally the domain restrictions would be the same for all six basic trigonometric functions, but this simply is not possible.  While its true that all six of the functions are positive for angles that terminate in Quadrant I, there is no Quadrant where all six trigonometric functions are negative.  Also, there are discontinuities in the domains of the tangent, cotangent, secant, and cosecant functions while the same is not true for the sine and cosine functions.
+    </p>
+    <p>
+      Graphs of the six basic trigonometric functions are shown in <xref ref="trigonometry-inverse-functions-figure-1">Figure</xref>-<xref ref="trigonometry-inverse-functions-figure-6">Figure</xref>.  The domain restriction is stated for each function and the resultant restricted portion of the function curve is highlighted.  Notice that each restriction still covers the entire range of the function. Notice as well that over each restricted domain the function is one-to-one.
+    </p>
+
+    <figure xml:id="trigonometry-inverse-functions-figure-1">
+      <caption>The Domain of <m>y=\sin(t)</m> is Restricted to <m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</m></caption>
+      <image width="80%">
+        <description>
+          A graph of the function <m>y=\sin(t)</m> over an interval that is a little longer (on both sides) than <m>(-2\pi,2\pi)</m>.  The portion of the curve between the points <m>(-\frac{\pi}{2},-1)</m> and <m>(\frac{\pi}{2},1)</m> is highlighted, including the endpoints. 
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          xmin=-450,xmax=450,
+                          ymin=-1.5,ymax=1.5,
+                          xtick={-360,-270,-180,-90,90,180,270,360},
+                          ytick={-1,1},
+                          minor xtick={},
+                          xticklabels={$-2\pi$,$-\frac{3\pi}{2}$,$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$}]
+              \addplot [domain=-430:430,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {sin(x)};
+              \addplot [domain=-90:90,samples=200,color=red,line width=2.5pt,-] {sin(x)};
+              \addplot [soliddot,color=red] coordinates {(-90,-1)};
+              \addplot [soliddot,color=red] coordinates {(90,1)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-inverse-functions-figure-2">
+      <caption>The Domain of <m>y=\cos(t)</m> is Restricted to <m>[0,\pi]</m></caption>
+      <image width="80%">
+        <description>
+          A graph of the function <m>y=\cos(t)</m> over an interval that is a little longer (on both sides) than <m>(-2\pi,2\pi)</m>.  The portion of the curve between the points <m>(-\frac{\pi}{2},-1)</m> and <m>(\frac{\pi}{2},1)</m> is highlighted, including the endpoints. 
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          xmin=-450,xmax=450,
+                          ymin=-1.5,ymax=1.5,
+                          xtick={-360,-270,-180,-90,90,180,270,360},
+                          ytick={-1,1},
+                          minor xtick={},
+                          xticklabels={$-2\pi$,$-\frac{3\pi}{2}$,$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$}]
+              \addplot [domain=-430:430,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {cos(x)};
+              \addplot [domain=0:180,samples=200,color=red,line width=2.5pt,-] {cos(x)};
+              \addplot [soliddot,color=red] coordinates {(180,-1)};
+              \addplot [soliddot,color=red] coordinates {(0,1)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-inverse-functions-figure-3">
+      <caption>The Domain of <m>y=\tan(t)</m> is restricted to <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m></caption>
+      <image width="80%">
+        <description>
+          A graph of the function <m>y=\tan(t)</m> over the interval <m>(-\frac{5\pi}{2},\frac{5\pi}{2})</m>.  The curve that falls on the interval <m>(-\frac{\pi}{2},\frac{\pi}{2})</m> is highlighted.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+           \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          xmin=-495,xmax=495,
+                          ymin=-6.5,ymax=6.5,
+                          xtick={-450,-360,-270,-180,-90,90,180,270,360,450},
+                          ytick={-6,-5,...,6},
+                          minor xtick={},
+                          minor ytick={},
+                          xticklabels={$-\frac{5\pi}{2}$,$-2\pi$,$-\frac{3\pi}{2}$,$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$,$\frac{5\pi}{2}$}]
+              \addplot [domain=-480:-459,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {tan(x)};
+              \addplot [domain=-441:-279,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {tan(x)};
+              \addplot [domain=-261:-99,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {tan(x)};
+              \addplot [domain=-81:81,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {tan(x)};
+              \addplot [domain=99:261,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {tan(x)};
+              \addplot [domain=279:441,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {tan(x)};
+              \addplot [domain=459:480,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {tan(x)};
+              \addplot [domain=-81:81,samples=200,color=red,line width=2.5pt,{Stealth}-{Stealth}] {tan(x)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-450,-6.48) (-450,6.48)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-270,-6.48) (-270,6.48)}; 
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-90,-6.48) (-90,6.48)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(450,-6.48) (450,6.48)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(270,-6.48) (270,6.48)}; 
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(90,-6.48) (90,6.48)};    
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-inverse-functions-figure-4">
+      <caption>The Domain of <m>y=\cot(t)</m> is Restricted to <m>(0,\pi)</m></caption>
+      <image width="80%">
+        <description>
+          A graph of the function and <m>y=\cot(t)</m> over the interval <m>(-\frac{5\pi}{2},\frac{5\pi}{2})</m>.  The curve that falls ofnthe interval <m>(0,\pi)</m> is highlighted.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          xmin=-495,xmax=495,
+                          ymin=-6.5,ymax=6.5,
+                          xtick={-450,-360,-270,-180,-90,90,180,270,360,450},
+                          ytick={-6,-5,...,6},
+                          minor xtick={},
+                          minor ytick={},
+                          xticklabels={$-\frac{5\pi}{2}$,$-2\pi$,$-\frac{3\pi}{2}$,$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$,$\frac{5\pi}{2}$}]
+              \addplot [domain=-480:-369,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {cos(x)/sin(x)};
+              \addplot [domain=-351:-189,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {cos(x)/sin(x)};
+              \addplot [domain=-171:-9,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {cos(x)/sin(x)};
+              \addplot [domain=9:171,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {cos(x)/sin(x)};
+              \addplot [domain=189:351,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {cos(x)/sin(x)};
+              \addplot [domain=369:480,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {cos(x)/sin(x)};
+              \addplot [domain=9:171,samples=200,color=red,line width=2.5pt,{Stealth}-{Stealth}] {cos(x)/sin(x)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-360,-6.48) (-360,6.48)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-180,-6.48) (-180,6.48)}; 
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(180,-6.48) (180,6.48)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(360,-6.48) (360,6.48)};   
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-inverse-functions-figure-5">
+      <caption>The Domain of <m>y=\sec(t)</m> is restricted to <m>\left[0,\frac{\pi}{2}\right) \cup \left(\frac{\pi}{2},\pi\right]</m></caption>
+      <image width="80%">
+        <description>
+          A graph of the function <m>y=\sec(t)</m> over the interval <m>(-\frac{5\pi}{2},\frac{5\pi}{2})</m>.  The curves that fall on the intervals <m>[0,\frac{\pi}{2})</m> and <m>(\frac{\pi}{2},\pi]</m> are highlighted.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+           \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          xmin=-495,xmax=495,
+                          ymin=-6.5,ymax=6.5,
+                          xtick={-450,-360,-270,-180,-90,90,180,270,360,450},
+                          ytick={-6,-5,...,6},
+                          minor xtick={},
+                          minor ytick={},
+                          xticklabels={$-\frac{5\pi}{2}$,$-2\pi$,$-\frac{3\pi}{2}$,$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$,$\frac{5\pi}{2}$}]
+              \addplot [domain=-480:-459,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {sec(x)};
+              \addplot [domain=-441:-279,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {sec(x)};
+              \addplot [domain=-261:-99,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {sec(x)};
+              \addplot [domain=-81:81,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {sec(x)};
+              \addplot [domain=99:261,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {sec(x)};
+              \addplot [domain=279:441,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {sec(x)};
+              \addplot [domain=459:480,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {sec(x)};
+              \addplot [domain=0:81,samples=200,color=red,line width=2.5pt,-{Stealth}] {sec(x)};
+              \addplot [domain=99:180,samples=200,color=red,line width=2.5pt,{Stealth}-] {sec(x)};
+              \addplot [soliddot,color=red] coordinates {(180,-1)};
+              \addplot [soliddot,color=red] coordinates {(0,1)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-450,-6.48) (-450,6.48)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-270,-6.48) (-270,6.48)}; 
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-90,-6.48) (-90,6.48)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(450,-6.48) (450,6.48)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(270,-6.48) (270,6.48)}; 
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(90,-6.48) (90,6.48)};    
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-inverse-functions-figure-6">
+      <caption>The Domain of <m>y=\csc(t)</m> is Restricted to <m>\left[-\frac{\pi}{2},0\right) \cup \left(0,\frac{\pi}{2}\right]</m></caption>
+      <image width="80%">
+        <description>
+          A graph of the function and <m>y=\csc(t)</m> over the interval <m>(-\frac{5\pi}{2},\frac{5\pi}{2})</m>.  The curves that fall on the intervals <m>(-\frac{\pi}{2},0)</m> and <m>(0,\frac{\pi}{2})</m> are highlighted.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          xmin=-495,xmax=495,
+                          ymin=-6.5,ymax=6.5,
+                          xtick={-450,-360,-270,-180,-90,90,180,270,360,450},
+                          ytick={-6,-5,...,6},
+                          minor xtick={},
+                          minor ytick={},
+                          xticklabels={$-\frac{5\pi}{2}$,$-2\pi$,$-\frac{3\pi}{2}$,$-\pi$,$-\frac{\pi}{2}$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$,$\frac{5\pi}{2}$}]
+              \addplot [domain=-480:-369,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {1/sin(x)};
+              \addplot [domain=-351:-189,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {1/sin(x)};
+              \addplot [domain=-171:-9,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {1/sin(x)};
+              \addplot [domain=9:171,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {1/sin(x)};
+              \addplot [domain=189:351,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {1/sin(x)};
+              \addplot [domain=369:480,samples=200,color=gray,line width=.25pt,{Stealth}-{Stealth}] {1/sin(x)};
+              \addplot [domain=-90:-9,samples=200,color=red,line width=2.5pt,-{Stealth}] {1/sin(x)};
+              \addplot [domain=9:90,samples=200,color=red,line width=2.5pt,{Stealth}-] {1/sin(x)};
+              \addplot [soliddot,color=red] coordinates {(-90,-1)};
+              \addplot [soliddot,color=red] coordinates {(90,1)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-360,-6.48) (-360,6.48)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(-180,-6.48) (-180,6.48)}; 
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(180,-6.48) (180,6.48)};
+              \addplot[interval,thin,black,style=dashed,{Stealth}-{Stealth}] coordinates {(360,-6.48) (360,6.48)};   
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      Recall that the domain and range of a function, <m>f</m>, are, respectively the range and domain of of its inverse function (assuming that an inverse function exists).  The restricted domains and the ranges of the six basic trigonometric functions and the domains and ranges of their inverse functions are stated below (and graphically implied above).  It's important to remember that these domain restrictions are only applicable in this context of inverse functions.
+    </p>
+    <p>
+      The domain of the function <m>y=\sin(t)</m> is restricted to <m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</m> and the range of the function <m>y=\sin(t)</m> is <m>[-1,1]</m>.  The domain of the function <m>y=\sin^{-1}(t)</m> (read either as "y equals the inverse sine of t" or as "y equals the arcsine of t") is <m>[-1,1]</m> and the range of the function <m>y=\sin^{-1}(t)</m> is <m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</m>.
+    </p>
+    <p>
+      The domain of the function <m>y=\cos(t)</m> is restricted to <m>[0,\pi]</m> and the range of the function <m>y=\cos(t)</m> is <m>[-1,1]</m>.  The domain of the function <m>y=\cos^{-1}(t)</m> is <m>[-1,1]</m> and the range of the function <m>y=\cos^{-1}(t)</m> is <m>[0,\pi]</m>.
+    </p>
+    <p>
+      The domain of the function <m>y=\tan(t)</m> is restricted to <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> and the range of the function <m>y=\tan(t)</m> is <m>(-\infty,\infty)</m>.  The domain of the function <m>y=\tan^{-1}(t)</m> is <m>(-\infty,\infty)</m> and the range of the function <m>y=\tan^{-1}(t)</m> is <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m>.
+    </p>
+    <p>
+      The domain of the function <m>y=\cot(t)</m> is restricted to <m>(0,\pi)</m> and the range of the function <m>y=\cot(t)</m> is <m>(-\infty,\infty)</m>.  The domain of the function <m>y=\cot^{-1}(t)</m> is <m>(-\infty,\infty)</m> and the range of the function <m>y=\cot^{-1}(t)</m> is <m>(0,\pi)</m>.
+    </p>
+    <p>
+      The domain of the function <m>y=\sec(t)</m> is restricted to <m>\left[0,\frac{\pi}{2}\right) \cup \left(\frac{\pi}{2},\pi\right]</m> and the range of the function <m>y=\sec(t)</m> is <m>(-\infty,1] \cup [1,\infty)</m>.  The domain of the function <m>y=\sec^{-1}(t)</m> is <m>(-\infty,1] \cup [1,\infty)</m> and the range of the function <m>y=\sec^{-1}(t)</m> is <m>\left[0,\frac{\pi}{2}\right) \cup \left(\frac{\pi}{2},\pi\right]</m>.
+    </p>
+    <p>
+      The domain of the function <m>y=\csc(t)</m> is restricted to <m>\left[-\frac{\pi}{2},0\right) \cup \left(0,\frac{\pi}{2}\right]</m> and the range of the function <m>y=\csc(t)</m> is <m>(-\infty,1] \cup [1,\infty)</m>.  The domain of the function <m>y=\csc^{-1}(t)</m> is <m>(-\infty,1] \cup [1,\infty)</m> and the range of the function <m>y=\csc^{-1}(t)</m> is <m>\left[-\frac{\pi}{2},0\right) \cup \left(0,\frac{\pi}{2}\right]</m>.
+    </p>
+  </paragraphs>
+  <paragraphs>
+    <title>Determining Inverse Trigonometric Values</title>
+    <p></p>
+    <p>
+      When asked to determine and state an inverse trigonometric value, it can be useful to give the expression a variable name.  In that way you can turn the question int a trigonometric equation and you can also narrow the range of possible values.  Let's see several examples.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine the exact value of <m>\sin^{-1}\left(-\frac{\sqrt{2}}{2}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's define the variable <m>\theta</m> by the equation <m>\theta=\sin^{-1}\left(-\frac{\sqrt{2}}{2}\right)</m>.  Then the point <m>\left(-\frac{\sqrt{2}}{2},\theta\right)</m> is on the graph of <m>y=\sin^{-1}(t)</m> and, consequently, the point <m>\left(\theta,-\frac{\sqrt{2}}{2}\right)</m> is on the graph of <m>\theta=\sin(t)</m>.  That is, <m>\sin(\theta)=-\frac{\sqrt{2}}{2}</m>.
+        </p>
+        <p>
+          Also, because the range of the inverse sine function is <m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</m>, and we're finding the inverse sign of a negative number, we can limit our search further to <m>\left[-\frac{\pi}{2},0\right)</m>.  The angle in standard position that has a sine value of <m>-\frac{\sqrt{2}}{2}</m> and that also falls on the interval <m>\left[-\frac{\pi}{2},0\right)</m> is <m>-\frac{\pi}{4}</m>.
+        </p>
+        <p>
+          On conclusion,
+          <me>\sin^{-1}\left(-\frac{\sqrt{2}}{2}\right)=-\frac{\pi}{4}.</me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the exact value of <m>\tan^{-1}\left(\frac{\sqrt{3}}{3}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's define the variable <m>\theta</m> by the equation <m>y=\tan^{-1}\left(\frac{\sqrt{3}}{3}\right)</m>.  Then <m>\tan(\theta)=\frac{\sqrt{3}}{3}</m> and <m>-\frac{\pi}{2} \lt \theta \lt \frac{\pi}{2}</m>.  Because we're finding the inverse tangent of a positive number, we can further limit the range to <m>0 \lt \theta \lt \frac{\pi}{2}</m>.
+        </p>
+        <p>
+          From a unit circle perspective, we're looking for a point where the ratio <m>\frac{y}{x}</m> is equal to <m>\frac{\sqrt{3}}{3}</m>.  That point is not immediately obvious, at least not to the author.  If we rationalize the numerator of the expression <m>\frac{\sqrt{3}}{3}</m>, perhaps things will be a little more clear.  Let's do that.
+          <md>
+            <mrow>\frac{\sqrt{3}}{3}\amp=\frac{\sqrt{3}}{3} \cdot \frac{\sqrt{3}}{\sqrt{3}}</mrow>
+            <mrow>\amp=\frac{3}{3\sqrt{3}}</mrow>
+            <mrow>\amp=\frac{1}{\sqrt{3}}</mrow>
+          </md>
+          Now, from a unit circle perspective, we have the following.
+          <me>\frac{y}{x}=\frac{1}{\sqrt{3}}\,\,\Longrightarrow\,\,\sqrt{3}y=x</me>
+          The point on the unit circle in Quadrant I where <m>x=\sqrt{3}y</m> is <m>\left(\frac{\sqrt{3}}{2},\frac{1}{2}\right)</m>.  This point corresponds to an angle of measure <m>\frac{\pi}{6}</m>.
+        </p>
+        <p>
+          In summary,
+          <me>\tan^{-1}\left(\frac{\sqrt{3}}{3}\right)=\frac{\pi}{6}.</me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the exact value of <m>\csc^{-1}(-1)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's define <m>\theta</m> by the equation <m>\theta=\csc^{-1}(-1)</m>.  Then <m>\csc(\theta)=-1</m> and <m>-\frac{\pi}{2} \le \theta \lt 0\,\text{or}\,0 \lt \theta \le \frac{\pi}{2}</m>.
+        </p>
+        <p>
+          If <m>\csc(\theta)=-1</m>, the it is also the case that <m>\sin(\theta)=-1</m>.  The angle on the interval  <m>\left[-\frac{\pi}{2},0\right)</m> where <m>\sin(\theta)=-1</m> is <m>-\frac{\pi}{2}</m>.  Therefore, <me>\csc^{-1}(-1)=-\frac{\pi}{2}.</me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the exact value of <m>\cos^{-1}\left(-\frac{1}{2}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's define <m>\theta</m> by the equation <m>\theta=\cos^{-1}\left(-\frac{1}{2}\right)</m>.  Then <m>\cos(\theta)=-\frac{1}{2}</m> and <m>0 \le \theta \le \pi</m>. The angle that satisfies both conditions of <m>\theta</m> is <m>\frac{2\pi}{3}</m>.  Consequently, <me>\cos^{-1}\left(-\frac{1}{2}\right)=\frac{2\pi}{3}.</me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the exact value of <m>\sec^{-1}\left(\frac{1}{2}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The domain of the inverse secant function is <m>(-\infty,1] \cup [1,\infty)</m>.  The value <m>\frac{1}{2}</m> falls outside of that domain, consequently  <m>\sec^{-1}\left(\frac{1}{2}\right)</m> is undefined.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the exact value of <m>\cot^{-1}(-1)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's define <m>\theta</m> by the equation <m>y=\cot^{-1}(-1)</m>.  Then <m>\cot(\theta)=-1</m> and <m>0 \lt  \theta \lt \pi</m>.
+        </p>
+        <p>
+          From a unit circle perspective the cotangent value is the ratio <m>\frac{x}{y}</m>. So we're looking for a point on the unit circle on the interval <m>(0,\pi)</m> where the <m>x</m> and <m>y</m> coordinates are opposite numbers.  That point is <m>\left(-\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)</m> which corresponds to an angle of measure <m>\frac{3\pi}{4}</m>.  Therefore,
+          <me>\cot^{-1}(-1)=\frac{3\pi}{4}.</me>
+        </p>
+      </solution>
+    </example>
+  </paragraphs>
+  <paragraphs>
+    <title>The Graphs of the Inverse Trigonometric Functions</title>
+    <p></p>
+    <p>
+      Recall that the graphs of inverse functions are reflections of one another across the line <m>y=x</m>.  This is a direct consequence of the swapping of coordinates that transpires between the two functions.
+    </p>
+    <p>
+      Several ordered pairs that lie on a graph of the function <m>y=\sin(t)</m> are shown in <xref ref="trigonometry-inverse-functions-table-1">Table</xref> and the implied points that lie on a graph of a <m>y=\sin^{-1}(t)</m> are shown in <xref ref="trigonometry-inverse-functions-table-2">Table</xref>.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        <table xml:id="trigonometry-inverse-functions-table-1">
+          <caption><m>y=\sin(t)</m></caption>
+          <tabular>
+            <col halign="center" />
+            <col halign="center"/>
+            <row bottom="medium">
+              <cell>
+                <line><m>t</m></line>
+              </cell>
+              <cell>
+                <line><m>y</m></line>
+              </cell>
+            </row>
+            <row>
+              <cell><m>-\frac{\pi}{2}</m></cell>
+              <cell><m>-1</m></cell>
+            </row>
+            <row>
+              <cell><m>-\frac{\pi}{3}</m></cell>
+              <cell><m>-\frac{\sqrt{3}}{2}</m></cell>
+            </row>
+            <row>
+              <cell><m>-\frac{\pi}{4}</m></cell>
+              <cell><m>-\frac{\sqrt{2}}{2}</m></cell>
+            </row>
+            <row>
+              <cell><m>-\frac{\pi}{6}</m></cell>
+              <cell><m>-\frac{1}{2}</m></cell>
+            </row>
+            <row>
+              <cell><m>0</m></cell>
+              <cell><m>0</m></cell>
+            </row>
+            <row>
+              <cell><m>\frac{\pi}{6}</m></cell>
+              <cell><m>\frac{1}{2}</m></cell>
+            </row>
+            <row>
+              <cell><m>\frac{\pi}{4}</m></cell>
+              <cell><m>\frac{\sqrt{2}}{2}</m></cell>
+            </row>
+            <row>
+              <cell><m>\frac{\pi}{3}</m></cell>
+              <cell><m>\frac{\sqrt{3}}{2}</m></cell>
+            </row>
+            <row>
+              <cell><m>\frac{\pi}{2}</m></cell>
+              <cell><m>1</m></cell>
+            </row>
+          </tabular>
+        </table>
+      </p>
+
+      <p>
+        <table xml:id="trigonometry-inverse-functions-table-2">
+          <caption><m>y=\sin^{-1}(t)</m></caption>
+          <tabular>
+            <col halign="center" />
+            <col halign="center"/>
+            <row bottom="medium">
+              <cell>
+                <line><m>t</m></line>
+              </cell>
+              <cell>
+                <line><m>y</m></line>
+              </cell>
+            </row>
+            <row>
+              <cell><m>-1</m></cell>
+              <cell><m>-\frac{\pi}{2}</m></cell>
+            </row>
+            <row>
+              <cell><m>-\frac{\sqrt{3}}{2}</m></cell>
+              <cell><m>-\frac{\pi}{3}</m></cell>
+            </row>
+            <row>
+              <cell><m>-\frac{\sqrt{2}}{2}</m></cell>
+              <cell><m>-\frac{\pi}{4}</m></cell>
+            </row>
+            <row>
+              <cell><m>-\frac{1}{2}</m></cell>
+              <cell><m>-\frac{\pi}{6}</m></cell>
+            </row>
+            <row>
+              <cell><m>0</m></cell>
+              <cell><m>0</m></cell>
+            </row>
+            <row>
+              <cell><m>\frac{1}{2}</m></cell>
+              <cell><m>\frac{\pi}{6}</m></cell>
+            </row>
+            <row>
+              <cell><m>\frac{\sqrt{2}}{2}</m></cell>
+              <cell><m>\frac{\pi}{4}</m></cell>
+            </row>
+            <row>
+              <cell><m>\frac{\sqrt{3}}{2}</m></cell>
+              <cell><m>\frac{\pi}{3}</m></cell>
+            </row>
+            <row>
+              <cell><m>1</m></cell>
+              <cell><m>\frac{\pi}{2}</m></cell>
+            </row>
+          </tabular>
+        </table>
+      </p>
+
+    </sidebyside>
+    <p>
+      The points shown in the tables above are plotted in <xref ref="trigonometry-inverse-functions-figure-7">Figure</xref> along with the line <m>y=x</m>.  Notice the reflection of the two sets of points across the line <m>y=x</m>.
+    </p>
+    <figure xml:id="trigonometry-inverse-functions-figure-7">
+      <caption>Points on <m>y=\sin(t)</m> (hollow and black) and <m>y=\sin^{-1}(t)</m> (solid and blue)</caption>
+      <image width="60%">
+        <description>
+          A graph showing the points from the last two tables.  The points on the inverse sine function are reflections across the line <m>y=x</m> of the points on the sine function.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [axis equal image,
+                          xlabel={$t$},
+                          xmin=-1.75,xmax=1.75,
+                          ymin=-1.75,ymax=1.75,
+                          xtick={-1,1},
+                          ytick={-1,1}]
+              \addplot [hollowdot,color=black,fill=yellow!30] coordinates {(-1.571,-1)};
+              \addplot [hollowdot,color=black,fill=yellow!30] coordinates {(-1.047,-0.866)};
+              \addplot [hollowdot,color=black,fill=yellow!30] coordinates {(-0.785,-0.707)};
+              \addplot [hollowdot,color=black,fill=yellow!30] coordinates {(-0.524,-0.5)};
+              \addplot [hollowdot,color=black,fill=yellow!30] coordinates {(0,0)};
+              \addplot [hollowdot,color=black,fill=yellow!30] coordinates {(0.524,0.5)};
+              \addplot [hollowdot,color=black,fill=yellow!30] coordinates {(0.785,0.707)};
+              \addplot [hollowdot,color=black,fill=yellow!30] coordinates {(1.047,0.866)};
+              \addplot [hollowdot,color=black,fill=yellow!30] coordinates {(1.571,1)};
+              \addplot [soliddot,color=blue] coordinates {(-1,-1.571)};
+              \addplot [soliddot,color=blue] coordinates {(-0.866,-1.047)};
+              \addplot [soliddot,color=blue] coordinates {(-0.707,-0.785)};
+              \addplot [soliddot,color=blue] coordinates {(-0.5,-0.524)};
+              \addplot [soliddot,color=blue] coordinates {(0,0)};
+              \addplot [soliddot,color=blue] coordinates {(0.5,0.524)};
+              \addplot [soliddot,color=blue] coordinates {(0.707,0.785)};
+              \addplot [soliddot,color=blue] coordinates {(0.866,1.047)};
+              \addplot [soliddot,color=blue] coordinates {(1,1.571)};
+              \addplot [domain=-1.73:1.73,color=gray,line width=.25pt,{Stealth}-{Stealth}] {x};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      The graphs of the six inverse trigonometric functions are shown in <xref ref="trigonometry-inverse-functions-figure-8">Figure</xref>-<xref ref="trigonometry-inverse-functions-figure-9">Figure</xref>.  Note that the vertical asymptotes on the graphs of the basic trigonometric functions become horizontal asymptotes on the graphs of the inverse trigonometric functions.  For example, the lines <m>y=-\frac{\pi}{2}</m> and <m>y=\frac{\pi}{2}</m> are vertical asymptotes on the graph of <m>y=\tan(t)</m> whereas the lines <m>x=-\frac{\pi}{2}</m> and <m>x=\frac{\pi}{2}</m> are the horizontal asymptotes on the graph of <m>y=\tan^{-1}(t)</m>.
+    </p>
+    <sidebyside widths="40% 40%" margins="0%">
+
+      <figure xml:id="trigonometry-inverse-functions-figure-8">
+        <caption><m>y=\sin^{-1}(t)</m></caption>
+        <image>
+          <description>
+            A graph of the function <m>y=\sin^{-1}(t)</m>.  The function increases concave down from the point <m>(-1,-\frac{\pi}{2})</m> to the point <m>(0,0)</m> and then increases concave up from the point <m>(0,0)</m> to the point <m>(1,\frac{\pi}{2})</m>. 
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis} [width=5cm,height=10cm,
+                            xlabel={$t$},
+                            ymin=-135,ymax=135,
+                            xmin=-1.5,xmax=1.5,
+                            ytick={-90,-45,45,90},
+                            xtick={-1,1},
+                            minor ytick={},
+                            yticklabels={$-\frac{\pi}{2}$,$-\frac{\pi}{4}$,$\frac{\pi}{4}$,$\frac{\pi}{2}$}]
+                \addplot [domain=-90:90,samples=200,color=blue,line width=2pt,-] ({sin(x)},{x});
+                \addplot [soliddot,color=blue] coordinates {(-1,-90)};
+                \addplot [soliddot,color=blue] coordinates {(1,90)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+      <figure xml:id="trigonometry-inverse-functions-figure-9">
+        <caption><m>y=\cos^{-1}(t)</m></caption>
+        <image>
+          <description>
+            A graph of the function <m>y=\cos^{-1}(t)</m>.  The function decreases concave up from the point <m>(-1,\pi)</m> to the point <m>(0,\frac{\pi}{2})</m> and then decreases concave down from the point <m>(0,\frac{\pi}{2})</m> to the point <m>(1,0)</m> 
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis} [width=5cm,height=10cm,
+                            xlabel={$t$},
+                            ymin=-45,ymax=225,
+                            xmin=-1.5,xmax=1.5,
+                            ytick={45,90,135,180},
+                            xtick={-1,1},
+                            minor ytick={},
+                            yticklabels={$\frac{\pi}{4}$,$\frac{\pi}{2}$,$\frac{3\pi}{4}$,$\pi$}]
+                \addplot [domain=0:180,samples=200,color=blue,line width=2pt,-] ({cos(x)},{x});
+                \addplot [soliddot,color=blue] coordinates {(-1,180)};
+                \addplot [soliddot,color=blue] coordinates {(1,0)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <figure xml:id="trigonometry-inverse-functions-figure-10">
+      <caption><m>y=\tan^{-1}(t)</m></caption>
+      <image width="80%">
+        <description>
+          A graph of the function <m>y=\tan^{-1}(t)</m>.  The line <m>y=-\frac{pi}{2}</m> acts as a horizontal asymptote on the left side of the graph and the line <m>y=\frac{\pi}</m> acts as a horizontal asymptote on the right side of the graph.  The curve passes through the point <m>(0,0)</m>.  The curve increases concave up on the interval <m>(-\infty,0)</m> and the curve increases concave down on the interval <m>(0,\infty)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          ymin=-135,ymax=135,
+                          xmin=-6,xmax=6,
+                          ytick={-90,-45,45,90},
+                          xtick={-5,-4,...,5},
+                          minor ytick={},
+                          yticklabels={$-\frac{\pi}{2}$,$-\frac{\pi}{4}$,$\frac{\pi}{4}$,$\frac{\pi}{2}$}]
+              \addplot [domain=-80:80,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] ({tan(x)},{x});
+              \addplot [domain=-5.9:5.9,color=gray,style=dashed,line width=0.75pt,{Stealth}-{Stealth}] {90};
+              \addplot [domain=-5.9:5.9,color=gray,style=dashed,line width=0.75pt,{Stealth}-{Stealth}] {-90};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-inverse-functions-figure-11">
+      <caption><m>y=\cot^{-1}(t)</m></caption>
+      <image width="80%">
+        <description>
+          A graph of the function <m>y=\cot^{-1}(t)</m>.  The line <m>y=\pi</m> acts as a horizontal asymptote on the left side of the graph and the line <m>y=0</m> acts as a horizontal asymptote on the right side of the graph.  The curve passes through the point <m>(0,\frac{\pi}{2})</m>.  The curve decreases concave down on the interval <m>(-\infty,0)</m> and the curve decreases concave up on the interval <m>(0,\infty)</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          ymin=-45,ymax=225,
+                          xmin=-6,xmax=6,
+                          ytick={45,90,135,180},
+                          xtick={-5,-4,...,5},
+                          minor ytick={},
+                          yticklabels={$\frac{\pi}{4}$,$\frac{\pi}{2}$,$\frac{3\pi}{4}$,$\pi$}]
+              \addplot [domain=10:170,samples=200,color=blue,line width=2pt,{Stealth}-{Stealth}] ({1/tan(x)},{x});
+              \addplot [domain=-5.9:5.9,color=gray,style=dashed,line width=0.75pt,{Stealth}-{Stealth}] {180};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-inverse-functions-figure-12">
+      <caption><m>y=\sec^{-1}(t)</m></caption>
+      <image width="80%">
+        <description>
+          A graph of the function <m>y=\sec^{-1}(t)</m>.  There are curves over the intervals <m>(-\infty,-1]</m> and <m>[1,\infty)</m>.  Over the interval <m>(-\infty,-1]</m>, the curve increases concave up from the horizontal asymptote <m>y=\frac{\pi}{2}</m> terminating at the point <m>(-1,\pi)</m> (inclusive).  Over the interval <m>[1,\infty]</m> the curve increases concave down originating at the point <m>(1,0)</m> ( inclusive) and then approaching the horizontal asymptote <m>y=\frac{\pi}{2}</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          ymin=-45,ymax=225,
+                          xmin=-6,xmax=6,
+                          ytick={45,90,135,180},
+                          xtick={-5,-4,...,5},
+                          minor ytick={},
+                          yticklabels={$\frac{\pi}{4}$,$\frac{\pi}{2}$,$\frac{3\pi}{4}$,$\pi$}]
+              \addplot [domain=100:180,samples=200,color=blue,line width=2pt,{Stealth}-] ({1/cos(x)},{x});
+              \addplot [domain=0:80,samples=200,color=blue,line width=2pt,-{Stealth}] ({1/cos(x)},{x});
+              \addplot [domain=-5.9:5.9,color=gray,style=dashed,line width=0.75pt,{Stealth}-{Stealth}] {90};
+              \addplot [soliddot,color=blue] coordinates {(1,0)};
+              \addplot [soliddot,color=blue] coordinates {(-1,180)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <figure xml:id="trigonometry-inverse-functions-figure-13">
+      <caption><m>y=\csc^{-1}(t)</m></caption>
+      <image width="80%">
+        <description>
+          A graph of the function <m>y=\csc^{-1}(t)</m>.  There are curves over the intervals <m>(-\infty,-1]</m> and <m>[1,\infty)</m>.  Over the interval <m>(-\infty,-1]</m>, the curve decreases concave down from the horizontal asymptote <m>y=0</m> terminating at the point <m>(-1,2\frac{\pi}{2})</m> (inclusive).  Over the interval <m>[1,\infty]</m> the curve decreases concave up originating at the point <m>(1,\frac{\pi}{2})</m> (inclusive) and then approaching the horizontal asymptote <m>y=0</m>.
+        </description>
+        <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis} [width=10cm,height=5cm,
+                          xlabel={$t$},
+                          ymin=-135,ymax=135,
+                          xmin=-6,xmax=6,
+                          ytick={-90,-45,45,90},
+                          xtick={-5,-4,...,5},
+                          minor ytick={},
+                          yticklabels={$-\frac{\pi}{2}$,$-\frac{\pi}{4}$,$\frac{\pi}{4}$,$\frac{\pi}{2}$}]
+              \addplot [domain=-90:-10,samples=200,color=blue,line width=2pt,-{Stealth}] ({1/sin(x)},{x});
+              \addplot [domain=10:90,samples=200,color=blue,line width=2pt,{Stealth}-] ({1/sin(x)},{x});
+              \addplot [soliddot,color=blue] coordinates {(1,90)};
+              \addplot [soliddot,color=blue] coordinates {(-1,-90)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </figure>
+  </paragraphs>
+  <paragraphs>
+    <title>Domain Issues in the Inverse Relationships of Trigonometric Functions</title>
+    <p></p>
+    <p>
+      In general, if <m>f</m> and <m>f^{-1}</m> are inverse functions, the <m>f\left(f^{-1}(x)\right)=x</m> for all values of <m>x</m> in the domain of <m>f^{-1}</m> and <m>f^{-1}(f(x))=x</m> for all values of <m>x</m> in the domain of <m>f</m>.  However, when the domain of one or both functions has been artificially restricted, the equalities are only valid over the restricted domain(s).
+    </p>
+    <p>
+      For example, consider the expression 
+      <me>\sin^{-1}\left(\sin\left(\frac{\pi}{10}\right)\right).</me>
+      In this case, the initial input, <m>\frac{\pi}{10}</m>, is in the (contextually) restricted domain of the sine function, so it is the case that
+      <me>\sin^{-1}\left(\sin\left(\frac{\pi}{10}\right)\right)=\frac{\pi}{10}.</me>
+      However, when we consider the expression 
+      <me>\sin^{-1}\left(\sin\left(\frac{7\pi}{5}\right)\right),</me>
+      we realize there is no way its value is <m>\frac{7\pi}{5}</m>, because <m>\frac{7\pi}{5}</m> is not in the range of the inverse sine function: <m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</m>.
+    </p>
+    <p>
+      So what is the value of <m>\sin^{-1}\left(\sin\left(\frac{7\pi}{5}\right)\right)</m>?  Let's begin our search for the answer to that question by defining <m>\theta</m> by the equation <m>\theta=\sin^{-1}\left(\sin\left(\frac{7\pi}{5}\right)\right)</m>.  Then <m>\sin(\theta)=\sin\left(\frac{7\pi}{5}\right)</m> and <m>-\frac{\pi}{2} \le \theta \le \frac{\pi}{2}</m>.
+    </p>
+    <p>
+      Because, when drawn in standard position, <m>\frac{7\pi}{5}</m> terminates in Quadrant III, its sine value is negative.
+    </p>
+    <p>
+      Because <m>\sin(\theta)=\sin\left(\frac{7\pi}{5}\right)</m>, <m>\theta</m> and <m>\frac{7\pi}{5}</m> share the same reference angle. The reference angle for <m>\frac{7\pi}{5}</m> is derived below.
+      <me>\frac{7\pi}{5}-\pi=\frac{2\pi}{5}</me>
+      So the question now becomes: what angle on the interval <m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</m> has a negative sine value and a reference angle of <m>\frac{2\pi}{5}</m>?  The answer is <m>-\frac{2\pi}{5}</m>.  In conclusion,
+      <me>\sin^{-1}\left(\sin\left(\frac{7\pi}{5}\right)\right)=-\frac{2\pi}{5}.</me>
+    </p>
+    <p>
+      Let's see several more examples.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine the exact value of <m>\cos^{-1}\left(\cos\left(\frac{8\pi}{5}\right)\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\cos^{-1}\left(\cos\left(\frac{8\pi}{5}\right)\right)\neq\frac{8\pi}{5}</m> because <m>\frac{8\pi}{5}</m> is not on <m>[0,\pi]</m>, the range of the inverse cosine function.
+        </p>
+        <p>
+          Let's define <m>\theta</m> by the equation <m>\theta=\cos^{-1}\left(\cos\left(\frac{8\pi}{5}\right)\right)</m>.  Then <m>\cos(\theta)=\cos\left(\frac{8\pi}{5}\right)</m> and <m>0 \le \theta \le \pi</m>.
+        </p>
+        <p>
+          When drawn in standard position, the angle <m>\frac{8\pi}{5}</m> terminates in Quadrant IV, so its cosine value is positive.
+        </p>
+        <p>
+          Because <m>\cos(\theta)=\cos\left(\frac{8\pi}{5}\right)</m>, <m>\theta</m> and <m>\frac{8\pi}{5}</m> share the same reference angle. The reference angle for <m>\frac{8\pi}{5}</m> is calculated below.
+          <me>2\pi-\frac{8\pi}{5}=\frac{2\pi}{5}</me>
+        </p>
+        <p>
+          The question now becomes: what angle on the interval <m>[0,\pi]</m> has a positive cosine value and a reference angle of <m>\frac{2\pi}{5}</m>?  The answer to that question is <m>\frac{2\pi}{5}</m>. In conclusion,
+          <me>\cos^{-1}\left(\cos\left(\frac{8\pi}{5}\right)\right)=\frac{2\pi}{5}.</me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the exact value of <m>\tan^{-1}\left(\tan\left(\frac{11\pi}{7}\right)\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\tan^{-1}\left(\tan\left(\frac{11\pi}{7}\right)\right)\neq\frac{11\pi}{7}</m> because <m>\frac{11\pi}{7}</m> does not lie on the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m>, the range of the inverse tangent function.
+        </p>
+        <p>
+          Let's define <m>\theta</m> by the equation <m>\theta=\tan^{-1}\left(\tan\left(\frac{11\pi}{7}\right)\right)</m>.  Then <m>\tan(\theta)=\tan\left(\frac{11\pi}{7}\right)</m> and <m>-\frac{\pi}{2} \lt \theta \lt \frac{\pi}{2}</m>.
+        </p>
+        <p>
+          When drawn in standard position, the angle <m>\frac{12\pi}{7}</m> terminates in Quadrant IV, so its tangent value is negative.
+        </p>
+        <p>
+          Because <m>\tan(\theta)=\tan\left(\frac{11\pi}{7}\right)</m>, <m>\theta</m> and <m>\frac{11\pi}{7}</m> share the same reference angle. The reference angle for <m>\frac{11\pi}{7}</m> is calculated below.
+          <me>2\pi-\frac{11\pi}{7}=\frac{3\pi}{7}</me>
+        </p>
+        <p>
+          The question now becomes; what angle on the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> has a negative tangent value and a reference angle of <m>\frac{3\pi}{7}</m>?  The answer to that question is <m>-\frac{3\pi}{7}</m>.  In conclusion,
+          <me>\tan^{-1}\left(\tan\left(\frac{11\pi}{7}\right)\right)=-\frac{3\pi}{7}.</me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the exact value of <m>\sec^{-1}\left(\sec\left(\frac{15\pi}{8}\right)\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\sec^{-1}\left(\sec\left(\frac{15\pi}{8}\right)\right)\neq\frac{15\pi}{8}</m> because <m>\frac{15\pi}{8}</m> is not on the interval <m>\left[0,\frac{\pi}{2}\right) \cup \left(\frac{\pi}{2},\pi\right]</m>, the range of the inverse secant function.
+        </p>
+        <p>
+          Let's define <m>\theta</m> by the equation <m>\theta=\sec^{-1}\left(\sec\left(\frac{15\pi}{8}\right)\right)</m>.  Then <m>\sec(\theta)=\sec\left(\frac{15\pi}{8}\right)</m> and <m>0 \le \theta \lt \frac{\pi}{2}\,\text{or}\,\frac{\pi}{2} \lt \theta \le \pi</m>.
+        </p> 
+        <p>
+          When drawn in standard position, <m>\frac{15\pi}{8}</m> terminates in Quadrant IV, so its secant value is positive.
+        </p>
+        <p>
+          Because <m>\sec(\theta)=\sec\left(\frac{15\pi}{8}\right)</m>, <m>\theta</m> and <m>\frac{5\pi}{8}</m> share the same reference angle. The reference angle for <m>\frac{15\pi}{8}</m> is calculated below.
+          <me>2\pi-\frac{15\pi}{8}=\frac{\pi}{8}</me>
+        </p>
+        <p>
+          The question now becomes: what angle on the interval <m>\left[0,\frac{\pi}{2}\right) \cup \left(\frac{\pi}{2},\pi\right]</m> has a positive secant value and a reference angle of <m>\frac{\pi}{8}</m>?  The answer to that question is <m>\frac{\pi}{8}</m>. In summary,
+          <me>\sec^{-1}\left(\sec\left(\frac{15\pi}{8}\right)\right)=\frac{\pi}{8}.</me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the exact value of <m>\csc\left(\csc^{-1}\left(\frac{131}{17}\right)\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The domain of the inverse cosecant function is not artificially restricted, so as long as <m>\frac{131}{17}</m> is in the function's domain, which it is, we are good to go with the following conclusion.
+          <me>\csc\left(\csc^{-1}\left(\frac{131}{17}\right)\right)=\frac{131}{17}</me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the exact value of <m>\cos\left(\cos^{-1}\left(\frac{31}{17}\right)\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The domain of the inverse cosine function is not artificially restricted, so no issues there.  However, <m>\frac{31}{17}</m> is not in the domain of the inverse cosine function, so <m>\cos\left(\cos^{-1}\left(\frac{31}{17}\right)\right)</m> is undefined.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the exact value of <m>\cot^{-1}\left(\cot\left(-\frac{7\pi}{5}\right)\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\cot^{-1}\left(\cot\left(-\frac{7\pi}{5}\right)\right)\neq-\frac{7\pi}{5}</m> because <m>-\frac{7\pi}{5}</m> does not fall on the interval <m>(0,\pi)</m>, the range of the inverse cotangent function.
+        </p>
+        <p>
+          Let's define <m>\theta</m> by the equation <m>\theta=\cot^{-1}\left(\cot\left(-\frac{7\pi}{5}\right)\right)</m>.  Then <m>\cot(\theta)=\cot\left(-\frac{7\pi}{5}\right)</m> and <m>0 \lt \theta \lt \pi</m>.
+        </p>
+        <p>
+          When drawn in standard position, <m>-\frac{7\pi}{5}</m> terminates in Quadrant II, so its cotangent value is negative.
+        </p>
+        <p>
+          Because <m>\cot(\theta)=\cot\left(-\frac{7\pi}{5}\right)</m>, <m>\theta</m> and <m>-\frac{7\pi}{5}</m> share the same reference angle.  The reference angle for <m>-\frac{7\pi}{5}</m> is calculated below.
+          <me>\frac{7\pi}{5}-\pi=\frac{2\pi}{5}</me>
+        </p>
+        <p>
+          The question can now be reframed as follows: what angle on the interval <m>(0,\pi)</m> has a negative cotangent value and a reference angle of <m>\frac{2\pi}{5}</m>.  The answer to that question is calculated below.
+          <me>\pi-\frac{2\pi}{5}=\frac{3\pi}{5}</me>
+          In conclusion,
+          <me>\cot^{-1}\left(\cot\left(-\frac{7\pi}{5}\right)\right)=\frac{3\pi}{5}</me>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Let's finish up with a few examples that mix the the functions up.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine the value of <m>\sin\left(\cos^{-1}\left(-\frac{3}{5}\right)\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's define <m>\theta</m> by the equation <m>\theta=\cos^{-1}\left(-\frac{3}{5}\right)</m>.  Then <m>\cos(\theta)=-\frac{3}{5}</m> and <m>0 \le \theta \le \pi</m>.  Because the cosine value is negative, we can further restrict the value of <m>\theta</m> to the interval <m>\left(\frac{\pi}{2},\pi\right]</m>. so we know that it's sine value is positive.  We can now use a Pythagorean identity to determine the value of <m>\sin(\theta)</m>.
+          <md>
+            <mrow>\sin^2(\theta)+\cos^2(\theta)\amp=1</mrow>
+            <mrow>\sin^2(\theta)+\left(-\frac{3}{5}\right)^2\amp=1</mrow>
+            <mrow>\sin^2(\theta)+\frac{9}{25}\amp=1</mrow>
+            <mrow>\sin^2(\theta)\amp=\frac{16}{25}</mrow>
+            <mrow>\sin(\theta)\amp=\pm\frac{4}{5}</mrow>
+          </md>
+          As already stated, the sine value is positive and consequently <m>\sin(\theta)=\frac{4}{5}</m>.  We conclude with the following derivation.
+          <md>
+            <mrow>\sin\left(\cos^{-1}\left(-\frac{3}{5}\right)\right)\amp=\sin(\theta)</mrow>
+            <mrow>\amp=\frac{4}{5}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the value of <m>\csc\left(\sin^{-1}\left(\frac{7}{9}\right)\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's define <m>\theta</m> by the equation <m>\theta=\sin^{-1}\left(\frac{7}{9}\right)</m>.  Then <m>\sin(\theta)=\frac{7}{9}</m> and because the sine function and the cosecant function are reciprocal functions, <m>\csc(\theta)=\frac{9}{7}</m>.  In conclusion,
+          <me>\csc\left(\sin^{-1}\left(\frac{7}{9}\right)\right)=\frac{9}{7}.</me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the value of <m>\sec\left(\tan^{-1}\left(-\frac{5}{12}\right)\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's define <m>\theta</m> by the equation <m>\theta=\tan^{-1}\left(-\frac{5}{12}\right)</m>.  Then <m>\tan(\theta)=-\frac{5}{12}</m> and <m>-\frac{\pi}{2} \lt \theta \lt \frac{\pi}{2}</m>.  Because the tangent value is negative, we can further restrict the range of <m>\theta</m> to <m>\left(-\frac{\pi}{2},0\right)</m> over which the secant function is always positive. We can use a Pythagorean identity to derive the secant value, and that is done below.
+          <md>
+            <mrow>1+\tan^2(\theta)\amp=1\sec^2(\theta)</mrow>
+            <mrow>1+\left(-\frac{5}{12}\right)^2\amp=1\sec^2(\theta)</mrow>
+            <mrow>1+\frac{25}{144}\amp=\sec^2(\theta)</mrow>
+            <mrow>\frac{169}{144}\amp=\sec^2(\theta)</mrow>
+            <mrow>\pm\frac{13}{12}\amp=\sec(\theta)</mrow>
+          </md>
+        </p>
+        <p>
+          As stated above we know that the secant value is positive.  In conclusion,
+          <md>
+            <mrow>\sec\left(\tan^{-1}\left(-\frac{5}{12}\right)\right)\amp=\sec(\theta)</mrow>
+            <mrow>\amp=\frac{13}{12}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <exercises>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine the exact value of each of the following expressions.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos^{-1}\left(-\frac{\sqrt{3}}{2}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's define <m>\theta</m> by the equation <m>\theta=\cos^{-1}\left(-\frac{\sqrt{3}}{2}\right)</m>.  Then <m>\cos(\theta)=-\frac{\sqrt{3}}{2}</m> and <m>0 \le \theta \le \pi</m>.  The angle that meets both of those requirements is <m>\frac{5\pi}{6}</m>.  So in conclusion,
+            <me>\cos^{-1}\left(-\frac{\sqrt{3}}{2}\right)=\frac{5\pi}{6}.</me>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\csc^{-1}(2)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's define <m>\theta</m> by the equation <m>\theta=\csc^{-1}(2)</m>.  Then <m>\csc(\theta)=2</m> and  <m>-\frac{\pi}{2} \le \theta \lt 0\,\text{or}\,0 \lt \theta \le \frac{\pi}{2}</m>.  Since <m>\csc(\theta) \gt 0</m>, we can further restrict the range for <m>\theta</m> to <m>0 \lt \theta \le \frac{\pi}{2}</m>.
+          </p>
+          <p>
+            Let's observe that
+            <me>\csc(\theta)=2\,\,\Longrightarrow\,\,\sin(\theta)=\frac{1}{2}.</me>
+            So we can reframe the question as follows: what angle on the interval <m>\left(0,\frac{\pi}{2}\right]</m> has a sine value of <m>\frac{1}{2}</m>?  That angle is <m>\frac{\pi}{6}</m>.  In conclusion,
+            <me>\csc^{-1}(2)=\frac{\pi}{6}.</me>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan^{-1}\left(-\sqrt{3}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's define <m>\theta</m> by the equation <m>\theta=\tan^{-1}\left(-\sqrt{3}\right)</m>.  Then <m>\tan(\theta)=-\sqrt{3}</m> and <m>-\frac{\pi}{2} \lt \theta \le \frac{\pi}{2}</m>.  Because <m>\tan(\theta) \lt 0</m>, we can further restrict the range for <m>\theta</m> to <m>\left(-\frac{\pi}{2},0\right)</m>.  Now let's make the following observation.
+            <md>
+              <mrow>\tan(\theta)=-\sqrt{3}\,\,\amp\Longrightarrow\,\,\frac{\sin(\theta)}{\cos(\theta)}=-\sqrt{3}</mrow>
+              <mrow>\amp\Longrightarrow\,\,\,\,\,\sin(\theta)=-\sqrt{3}\cos(\theta)</mrow>
+            </md>
+            We can now reframe the question in this way: where on the interval <m>\left(-\frac{\pi}{2},0\right)</m> is there a point where the <m>y</m>-coordinate is <m>-\sqrt{3}</m> times the <m>x</m>-coordinate?  Said point is <m>\left(\frac{1}{2},-\frac{\sqrt{3}}{2}\right)</m> which occurs at the angle <m>-\frac{\pi}{3}</m>  To summarize:
+            <me>\tan^{-1}\left(-\sqrt{3}\right)=-\frac{\pi}{3}</me>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\sec^{-1}\left(-\frac{2\sqrt{3}}{3}\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's define <m>\theta</m> by the equation <m>\theta=\sec^{-1}\left(-\frac{2\sqrt{3}}{3}\right)</m>.  Then <m>\sec(\theta)=-\frac{2\sqrt{3}}{3}</m> and <m>0 \le \theta \lt \frac{\pi}{2}\,\text{or}\,\,\frac{\pi}{2} \lt \theta \le \pi</m>.  Since <m>\sec(\theta) \lt 0</m>, we can further restrict the range of <m>\theta</m> to <m>\left(\frac{\pi}{2},\pi\right)</m>.
+          </p>
+          <p>
+            It's not immediately apparent to the author where <m>\sec(\theta)=-\frac{2\sqrt{3}}{3}</m>, so I'm going to make the following observation.
+            <md>
+              <mrow>\sec(\theta)=-\frac{2\sqrt{3}}{3}\,\,\amp\Longrightarrow\,\,\cos(\theta)=-\frac{3}{2\sqrt{3}}</mrow>
+              <mrow>\amp\Longrightarrow\,\,\cos(\theta)=-\frac{3}{2\sqrt{3}} \cdot \frac{\sqrt{3}}{\sqrt{3}}</mrow>
+              <mrow>\amp\Longrightarrow\,\,\cos(\theta)=-\frac{3\sqrt{3}}{6}</mrow>
+              <mrow>\amp\Longrightarrow\,\,\cos(\theta)=-\frac{\sqrt{3}}{2}</mrow>
+            </md>
+            We can now reframe the question thus: where on the interval <m>\left(\frac{\pi}{2},\pi\right)</m> does the cosine function have a value of <m>-\frac{\sqrt{3}}{2}</m>?  The answer is <m>\frac{5\pi}{6}</m>.  So, in conclusion,
+            <me>\sec^{-1}\left(-\frac{2\sqrt{3}}{3}\right)=\frac{5\pi}{6}.</me>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin^{-1}(2)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's define <m>\theta</m> by the equation <m>\theta=\sin^{-1}(2)</m>.  Then <m>\sin(\theta)=2</m> and we can stop.  No angle has a sine value of <m>2</m>, so <m>\sin^{-1}(2)</m> is undefined.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan^{-1}(-1)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's define <m>\theta</m> by the equation <m>\theta=\tan^{-1}(-1)</m>.  Then <m>\tan(\theta)=-1</m> and <m>-\frac{\pi}{2} \lt \theta \lt \frac{\pi}{2}</m>.  Since <m>\tan(\theta) \lt 0</m>, we can further restrict the range for <m>\theta</m> to <m>\left(-\frac{\pi}{2},0\right)</m>.  Now let's observe the following.
+            <md>
+              <mrow>\tan(\theta)=-1\,\,\amp\Longrightarrow\,\,\frac{\sin(\theta)}{\cos(\theta)}=-1</mrow>
+              <mrow>\amp\Longrightarrow\,\,\,\,\,\sin(\theta)=-\cos(\theta)</mrow>
+            </md>
+            We can now reframe the question as follows: where on the interval <m>\left(-\frac{\pi}{2},0\right)</m> do the sine and cosine functions have opposite values?  The answer is <m>-\frac{\pi}{4}</m>.  So in conclusion,
+            <me>\tan^{-1}(-1)=-\frac{\pi}{4}.</me>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan^{-1}\left(\tan\left(\frac{21\pi}{11}\right)\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\tan^{-1}\left(\tan\left(\frac{21\pi}{11}\right)\right)\neq\frac{21\pi}{11}</m>, because <m>\frac{21\pi}{11}</m> does not fall on the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m>, the range for the inverse tangent function.
+          </p>
+          <p>
+            Let's define <m>\theta</m> by the equation <m>\theta=\tan^{-1}\left(\tan\left(\frac{21\pi}{11}\right)\right)</m>.  Then <m>\tan(\theta)=\tan\left(\frac{21\pi}{11}\right)</m> and <m>-\frac{\pi}{2} \lt \theta \lt \frac{\pi}{2}</m>.
+          </p>
+          <p>
+            When drawn in standard position, an angle of measurement <m>\frac{21\pi}{11}</m> terminates in Quadrant IV, so the value of <m>\tan\left(\frac{21\pi}{11}\right)</m> is negative.
+          </p>
+          <p>
+            Because <m>\tan(\theta)=\tan\left(\frac{21\pi}{11}\right)</m>, they share the same reference angle.  The reference angle for <m>\frac{21\pi}{11}</m> is calculated below.
+            <me>2\pi-\frac{21\pi}{11}=\frac{\pi}{11}</me>
+            We can thus reframe the question as follows: what angle on the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> has a negative tangent value and a reference angle of <m>\frac{\pi}{11}</m>.  The answer to that question is <m>-\frac{\pi}{11}</m>.  So, in conclusion,
+            <me>\tan^{-1}\left(\tan\left(\frac{21\pi}{11}\right)\right)=-\frac{\pi}{11}.</me>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos^{-1}\left(\cos\left(-\frac{5\pi}{12}\right)\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\cos^{-1}\left(\cos\left(-\frac{5\pi}{12}\right)\right)\neq-\frac{5\pi}{12}</m> because <m>-\frac{5\pi}{12}</m> does not fall on the interval <m>[0,\pi]</m>, the range for the inverse cosine function.
+          </p>
+          <p>
+            Let's define <m>\theta</m> by the equation <m>\theta=\cos^{-1}\left(\cos\left(-\frac{5\pi}{12}\right)\right)</m>.  Then <m>\cos(\theta)=\cos\left(-\frac{5\pi}{12}\right)</m> and <m>0 \le \theta \le \pi</m>.
+          </p>
+          <p>
+            When drawn in standard position, an angle of measurement <m>-\frac{5\pi}{12}</m> terminate is Quadrant IV, so it has a positive cosine value.
+          </p>
+          <p>
+            Because <m>\cos(\theta)=\cos\left(-\frac{5\pi}{12}\right)</m>, <m>\theta</m> and <m>-\frac{5\pi}{12}</m> share the same reference angle.  The reference angle for <m>-\frac{5\pi}{12}</m> is <m>\frac{5\pi}{12}</m>, so the question at hand can be restated as follows.  What angle on the interval <m>[0,\pi]</m> has a positive cosine value and a reference angle of <m>\frac{5\pi}{12}</m>?  The answer to that question is <m>\frac{5\pi}{12}</m>.  Thus,
+            <me>\cos^{-1}\left(\cos\left(-\frac{5\pi}{12}\right)\right)=\frac{5\pi}{12}.</me>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\csc^{-1}(\csc(\pi))</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\pi</m> is not in the domain of the cosecant function, so <m>\csc(\pi)</m> is not defined.  As a result, <m>\csc^{-1}(\csc(\pi))</m> is also not defined.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin\left(\sin^{-1}\left(-\frac{22}{39}\right)\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            There are no artificial restrictions on the domain of the inverse sine function, so as long as <m>-\frac{22}{29}</m> is in the domain of the inverse sine function (it is), we can immediately jump to the following conclusion.
+            <me>\sin\left(\sin^{-1}\left(-\frac{22}{39}\right)\right)=-\frac{22}{39}</me>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\sec^{-1}\left(\sec\left(-\frac{22\pi}{15}\right)\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\sec^{-1}\left(\sec\left(-\frac{22\pi}{15}\right)\right)\neq-\frac{22\pi}{15}</m>, because <m>-\frac{22\pi}{15}</m> does not fall on <m>\left[0,\frac{\pi}{2}\right) \cup \left(\frac{\pi}{2},\pi\right]</m>, the domain of the secant function.
+          </p>
+          <p>
+            Let's define <m>\theta</m> by the equation <m>\theta=\sec^{-1}\left(\sec\left(-\frac{22\pi}{15}\right)\right)</m>.  Then <m>\sec(\theta)=\sec\left(-\frac{22\pi}{15}\right)</m> and <m>0 \le \theta \lt \frac{\pi}{2}\,\text{or}\,\frac{\pi}{2} \lt \theta \le \pi</m>.
+          </p>
+          <p>
+            Let's observe that the range of the inverse secant function include angles in the second quadrant and that <m>-\frac{22\pi}{15}</m> terminates in the second quadrant.  Thus, since <m>\sec(\theta)=\sec\left(-\frac{22\pi}{15}\right)</m>, <m>\theta</m> and <m>-\frac{22\pi}{15}</m> must be coterminal.  The value of <m>\theta</m> is calculated below.
+            <md>
+              <mrow>\theta\amp=-\frac{22\pi}{15}+2\pi</mrow>
+              <mrow>\amp=\frac{8\pi}{15}</mrow>
+            </md>
+            In conclusion,
+            <me>\sec^{-1}\left(\sec\left(-\frac{22\pi}{15}\right)\right)=\frac{8\pi}{15}.</me>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos\left(\sin^{-1}\left(\frac{15}{17}\right)\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's define <m>\theta</m> by the equation <m>\theta=\sin{-1}\left(\frac{15}{17}\right)</m>.  Then <m>\sin(\theta)=\frac{15}{17}</m> and <m>-\frac{\pi}{2} \le \theta \le \frac{\pi}{2}</m>.  Because <m>\sin(\theta) \gt 0</m>, we can further narrow the range of <m>\theta</m> to <m>\left(0,\frac{\pi}{2}\right)</m> and, consequently, conclude that the value of <m>\cos(\theta)</m> is also positive.
+          </p>
+          <p>
+            We can use a Pythagorean identity to determine the value of <m>\cos(\theta)</m>.  Let's do it.
+            <md>
+              <mrow>\sin^2(\theta)+\cos^2(\theta)\amp=1</mrow>
+              <mrow>\left(\frac{15}{17}\right)^2+\cos^2(\theta)\amp=1</mrow>
+              <mrow>\frac{225}{289}+\cos^2(\theta)\amp=1</mrow>
+              <mrow>\cos^2(\theta)\amp=\frac{64}{289}</mrow>
+              <mrow>\cos(\theta)\amp=\pm\frac{8}{17}</mrow>
+            </md>
+            As previous mentioned, we know that the cosine value is positive.  Summing up,
+            <md>
+              <mrow>\cos\left(\sin^{-1}\left(\frac{15}{17}\right)\right)\amp=\cos(\theta)</mrow>
+              <mrow>\amp=\frac{8}{17}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan\left(\csc^{-1}\left(-\frac{25}{24}\right)\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's define <m>\theta</m> by the equation <m>\theta=\csc^{-1}\left(-\frac{25}{24}\right)</m>.  Then <m>\csc(\theta)=-\frac{25}{24}</m> and <m>-\frac{\pi}{2} \le \theta \lt 0\,\text{or}\,0 \lt \theta \le \frac{\pi}{2}</m>.  Because <m>\csc(\theta) \lt 0</m>, we can further restrict the range for <m>\theta</m> to <m>\left[-\frac{\pi}{2},0\right)</m> from which we conclude that <m>\tan(\theta)</m> is also negative.
+          </p>
+          <p>
+            We can use a Pythagorean identity to determine the value of <m>\cot(\theta)</m> and then reciprocate that value to determine the value of <m>\tan(\theta)</m>.  Let's go ahead and do those two things.
+            <md>
+              <mrow>\cot^2(\theta)+1\amp=\csc^2(\theta)</mrow>
+              <mrow>\cot^2(\theta)+1\amp=\left(-\frac{25}{24}\right)^2</mrow>
+              <mrow>\cot^2(\theta)+1\amp=\frac{625}{576}</mrow>
+              <mrow>\cot^2(\theta)\amp=\frac{49}{576}</mrow>
+              <mrow>\cot(\theta)\amp\pm\frac{7}{24}</mrow>
+            </md>
+            As mentioned before, the cotangent value is negative, so <m>\cot(\theta)=-\frac{7}{24}</m> and as a result <m>\tan(\theta)=-\frac{24}{7}</m>.  So, in conclusion
+            <me>\tan\left(\csc^{-1}\left(-\frac{25}{24}\right)\right)=-\frac{24}{7}.</me>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\csc(\cot^{-1}(2))</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's define <m>\theta</m> by the equation <m>\theta=\cot^{-1}(2)</m>.  Then <m>\cot(\theta)=2</m> and <m>0 \lt \theta \lt \pi</m>.  Because <m>\cot(\theta)>0</m>, we can further restrict the range for <m>\theta</m> to <m>\left(0,\frac{\pi}{2}\right)</m> and as a consequence conclude that the value of <m>\csc(t)</m> is also positive. 
+          </p>
+          <p>
+            We will now use a Pythagorean identity to determine the value of <m>\csc(\theta)</m>.
+            <md>
+              <mrow>\cot^2(\theta)+1\amp=\csc^2(\theta)</mrow>
+              <mrow>2^2+1\amp=\csc^2(\theta)</mrow>
+              <mrow>5\amp=\csc^2(\theta)</mrow>
+              <mrow>\pm\sqrt{5}\amp=\csc(\theta)</mrow>
+            </md>
+            Putting all of the pieces together, we arrive at the following conclusion.
+            <md>
+              <mrow>\csc(\cot^{-1}(2))\amp=\csc(\theta)</mrow>
+              <mrow>\amp=\sqrt{5}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin\left(2\cos^{-1}\left(-\frac{12}{13}\right)\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's define <m>\theta</m> by the equation <m>\theta=\cos^{-1}\left(-\frac{12}{13}\right)</m>.  Then <m>\cos(\theta)=-\frac{12}{13}</m> and <m>0 \le \theta \le \pi</m>.  Because the cosine value is negative, we can further restrict the range for <m>\theta</m> to the interval <m>\left(\frac{\pi}{2},\pi\right]</m>.
+          </p>
+          <p>
+            To determine the value of <m>\sin(2\theta)</m>, we will need to apply the double-angle identity <m>\sin(2\theta)=2\sin(\theta)\cos(\theta)</m>.  We already know the value of <m>\cos(\theta)</m>, but we have yet to determine the value of <m>\sin(\theta)</m>.  Let's use the appropriate Pythagorean identity to determine the latter value.
+            <md>
+              <mrow>\sin^2(\theta)+\cos^2(\theta)\amp=1</mrow>
+              <mrow>\sin^2(\theta)+\left(-\frac{12}{13}\right)^2\amp=1</mrow>
+              <mrow>\sin^2(\theta)+\frac{144}{169}\amp=1</mrow>
+              <mrow>\sin^2(\theta)\amp=\frac{25}{169}</mrow>
+              <mrow>\sin(\theta)\amp=\pm\frac{5}{13}</mrow>
+            </md>
+            Because <m>\theta</m> falls on the interval <m>\left(\frac{\pi}{2},\pi\right]</m>, it's sine value is positive.  We are now prepared to make our conclusion, and do so below.
+            <md>
+              <mrow>\sin\left(2\cos^{-1}\left(-\frac{12}{13}\right)\right)\amp=\sin(2\theta)</mrow>
+              <mrow>\amp=2\sin(\theta)\cos(\theta)</mrow>
+              <mrow>\amp=\frac{2}{1} \cdot \frac{5}{13} \cdot -\frac{12}{13}</mrow>
+              <mrow>\amp=-\frac{120}{169}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos\left(\tan^{-1}\left(\frac{3}{4}\right)+\csc^{-1}\left(-\frac{17}{8}\right)\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's define <m>\alpha</m> by the equation <m>\alpha=\tan^{-1}\left(\frac{3}{4}\right)</m> and <m>\beta</m> by the equation <m>\beta=\csc^{-1}\left(-\frac{17}{8}\right)</m>.  We then have the following.
+            <md>
+              <mrow>\cos\left(\tan^{-1}\left(\frac{3}{4}\right)+\csc^{-1}\left(-\frac{17}{8}\right)\right)\amp=\cos(\alpha+\beta)</mrow>
+              <mrow>\amp=\cos(\alpha)\cos(\beta)-\sin(\alpha)\sin(\beta)</mrow>
+            </md>
+          </p>
+          <p>
+            Since <m>\alpha=\tan^{-1}\left(\frac{3}{4}\right)</m>, <m>\tan(\alpha)=\frac{3}{4}</m> and <m>-\frac{\pi}{2} \lt \alpha \lt \frac{\pi}{2}</m>.  Because <m>\tan(\alpha) \gt 0</m>, we can further restrict the range for <m>\theta</m> to <m>\left(0,\frac{\pi}{2}\right)</m>.  Consequently, we know that both <m>\sin(\alpha) \gt 0</m> and <m>\cos(\alpha) \gt 0</m>.
+          </p>
+          <p>
+            We can use a Pythagorean identity to determine the value of <m>\sec(\alpha)</m> and then reciprocate that value to determine the value of <m>\cos(\alpha)</m>.  We can then use a quotient identity to determine the value of <m>\sin(\alpha)</m>.  Lets do it.
+            <md>
+              <mrow>1+\tan^2(\alpha)\amp=\sec^2(\alpha)</mrow>
+              <mrow>1+\left(\frac{3}{4}\right)^2\amp=\sec^2(\alpha)</mrow>
+              <mrow>1+\frac{9}{16}\amp=\sec^2(\alpha)</mrow>
+              <mrow>\frac{25}{16}\amp=\sec^2(\alpha)</mrow>
+              <mrow>\pm\frac{5}{4}\amp=\sec(\alpha)</mrow>
+            </md>
+            As previously noted, <m>\cos(\alpha) \gt 0</m>, so it must be the case that <m>\sec(\alpha)=\frac{5}{4}</m> and, consequently, <m>\cos(\alpha)=\frac{4}{5}</m>.  Let's now determine the value of <m>\sin(\alpha)</m>
+            <md>
+              <mrow>\tan(\alpha)\amp=\frac{\sin(\alpha)}{\cos(\alpha)}</mrow>
+              <mrow>\tan(\alpha)\cos(\alpha)\amp=\sin(\alpha)</mrow>
+              <mrow>\frac{3}{4} \cdot \frac{4}{5}\amp=\sin(\alpha)</mrow>
+              <mrow>\frac{3}{5}\amp=\sin(\alpha)</mrow>
+            </md>
+          </p>
+          <p>
+            Since <m>\beta=\csc^{-1}\left(-\frac{17}{8}\right)</m>, <m>\csc(\beta)=-\frac{17}{8}</m> and <m>-\frac{\pi}{2} \le \beta \lt 0\,\text{or}\,0 \lt \beta \le \frac{\pi}{2}</m>.  Because <m>\csc(\beta) \lt 0</m>, we can further restrict the range for <m>\beta</m> to <m>\left[-\frac{\pi}{2},0\right)</m> and conclude that <m>\cos(\beta) \gt 0</m>.
+          </p>
+          <p>
+            Because <m>\csc(\beta)=\frac{17}{8}</m> we know from a reciprocal identity that <m>\sin(\beta)=\frac{8}{17}</m>.  We will now use a Pythagorean identity to determine the value of <m>\cos(\beta)</m>.
+            <md>
+              <mrow>\sin^2(\beta)+\cos^2(\beta)\amp=1</mrow>
+              <mrow>\left(-\frac{8}{17}\right)^2+\cos^2(\beta)=1</mrow>
+              <mrow>\frac{64}{289}+\cos^2(\beta)=1</mrow>
+              <mrow>\cos^2(\beta)=\frac{225}{289}</mrow>
+              <mrow>\cos(\beta)=\pm\frac{15}{17}</mrow>
+            </md>
+            As previously mentioned, the cosine value is positive, so we conclude that <m>\cos(\beta)=\frac{15}{17}</m>.
+          </p>
+          <p>
+            We can now put all the pieces together to make our final conclusion.
+            <md>
+              <mrow>\cos\left(\tan^{-1}\left(\frac{3}{4}\right)+\csc^{-1}\left(-\frac{17}{8}\right)\right)\amp=\cos(\alpha)\cos(\beta)-\sin(\alpha)\sin(\beta)</mrow>
+              <mrow>\amp=\frac{4}{5} \cdot \frac{15}{17}-\frac{3}{5} \cdot -\frac{8}{17}</mrow>
+              <mrow>\amp=\frac{84}{85}</mrow>
+            </md>
+          </p>s
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+  </exercises>
+
+
+</section>

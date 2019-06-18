@@ -10,276 +10,360 @@
 <!-- ********************************************************************* -->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="parabolas-completing-the-square">
-    <title>Completing the Square</title>
+  <title>Completing the Square</title>
   
+  <p>
+    It is possible to manipulate a parabolic equation presented into standard form into graphing form.  The process used to make this transformation is called "completing the square."  The steps used in the process when <m>a=1</m> are as follows
+    <ol label="1">
+      <li>
+        <p>
+          Write the squared and linear terms in a set of parentheses with space to add another number inside the parentheses.
+        </p>
+      </li>
+      <li>
+        <p>
+          Inside the parentheses, add <m>\left(\frac{b}{2}\right)^2</m>.  Subtract that same number outside the parentheses.
+        </p>
+      </li>
+      <li>
+        <p>
+          The trinomial in the parentheses now factors as <m>\left(x+\frac{b}{2}\right)^2</m>.  Note that if <m>b</m> is a negative number, then the operation between <m>x</m> and the the number in the factored expression is ultimately subtraction.  Go ahead and factor the trinomial in the parentheses and at the same time combine the numbers outside of the parentheses.
+        </p>
+      </li>
+    </ol>
+  </p>
+
+  <example xml:id="parabolas-completing-the-square-ex-1">
+    <statement>
+      <p>
+        State the vertex of the parabola with equation <m>y=x^2-16x+15</m> after first manipulating the equation into graphing form. 
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The number which completes the square is determined as follows.
+        <md>
+          <mrow>\left(\frac{b}{2}\right)^2\amp=\left(\frac{-16}{2}\right)^2</mrow>
+          <mrow>\amp=(-8)^2</mrow>
+          <mrow>\amp=64</mrow>
+        </md>
+        Let's go ahead and complete the square.
+        <md>y\amp=x^2-16x+15
+          <mrow>y\amp=x^2-16x+15</mrow>
+          <mrow>y\amp=(x^2-16x\addright{64})+15\subtractright{64}</mrow>
+          <mrow>y\amp=(x-8)^2-49</mrow>
+        </md>
+        The vertex of the parabola is the point <m>(8,-49)</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example xml:id="parabolas-completing-the-square-ex-2">
+    <statement>
+      <p>
+        State the vertex of the parabola with equation <m>y=x^2+9x+21</m> after first manipulating the equation into graphing form. 
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The number which completes the square is determined as follows.
+        <md>
+          <mrow>\left(\frac{b}{2}\right)^2\amp=\left(\frac{9}{2}\right)^2</mrow>
+          <mrow>\amp=\frac{81}{4}</mrow>
+        </md>
+        Let's go ahead and complete the square.
+        <md>
+          <mrow>y\amp=x^2+9x+21</mrow>
+          <mrow>y\amp=\left(x^2+9x+\frac{81}{4}\right)+21-\frac{81}{4}</mrow>
+          <mrow>y\amp=\left(x+\frac{9}{2}\right)^2+\frac{3}{4}</mrow>
+        </md>
+        The vertex of the parabola is <m>\left(-\frac{9}{2},\frac{3}{4}\right)</m>.
+      </p>
+    </solution>
+  </example>
+
+  <p>
+    You can practice determining the vertex of a parabola after completing the square using <xref ref="parabolas-completing-the-square-geogebra-1">Figure</xref>.
+  </p>
+
+  <figure xml:id="parabolas-completing-the-square-geogebra-1">
+    <caption>Complete the square for the given equation.  Then drag the vertex of the parabola to the point that matches the vertex of the stated equation. A message will appear when you are correct.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/paraola-vertex-a-1.ggb">
+        setPerspective("G");
+        setGridVisible(1);         
+        setAxisLabels(1,"x","y","z");
+      </slate>
+    </interactive>
+  </figure>
+
+  <p>
+    When the value of <m>a</m> in the equation <m>y=ax^2+bx+c</m> is not one, the process of completing the square is quite a bit more complicated.  The steps are as follows.
+    <ol label="1">
+      <li>
+        <p>
+          Factor <m>a</m> away from both the squared term and the linear term, leaving enough room in the parentheses to add another number.  he form  of the equation is now <m>y=a\left(x^2+\frac{b}{a}\right)+c</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Add <m>\left(\frac{b}{2a}\right)^2</m> inside the parentheses.  Add or subtract what is necessary to balance this action.  Remember, since the number was added inside the parentheses, it is multiplied by <m>a</m>, so the amount you added was actual <m>a \cdot \left(\frac{b}{2a}\right)^2</m> which must be subtracted outside the parentheses.  What's tricky is that if <m>a</m> is negative, you actually end up adding both inside and outside the parentheses.  Just make sure that your net addition is zero.
+        </p>
+      </li>
+      <li>
+        <p>
+          The trinomial inside the parentheses now factors to <m>\left(x+\frac{b}{2a}\right)^2</m>.  Note that if <m>b</m> is a negative number, then the operation between <m>x</m> and the the number in the factored expression is ultimately subtraction.  Go ahead and factor the trinomial in the parentheses and at the same time combine the numbers outside of the parentheses.
+        </p>
+      </li>
+    </ol>
+  </p>
+
+  <example xml:id="parabolas-completing-the-square-ex-3">
+    <statement>
+      <p>
+        State the vertex of the parabola with equation <m>y=2x^2-12x+19</m> after first manipulating the equation into graphing form. 
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by factoring <m>2</m> away from both the squared and the linear term.
+        <md>
+          <mrow>y\amp=2x^2-12x+19</mrow>
+          <mrow>y\amp=2(x^2-6x)+19</mrow>
+        </md>
+        The number which completes the square is determined as follows.
+        <md>
+          <mrow>\left(\frac{-6}{2}\right)\amp=(-3)^2</mrow>
+          <mrow>\amp=9</mrow>
+        </md>
+        Because everything inside the parentheses is multiplied by <m>2</m>, we need to compensate for the addition of <m>9</m> inside the parentheses by subtracting 18 outside the parentheses so that the net addition is zero..  The process in total is shown below.
+        <md>
+          <mrow>y\amp=2x^2-12x+19</mrow>
+          <mrow>y\amp=2(x^2-6x\addright{9})+19\subtractright{18}</mrow>
+          <mrow>y\amp=2(x-3)^2+1</mrow>
+        </md>
+        The vertex of the parabola is the point <m>(3,1)</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example xml:id="parabolas-completing-the-square-ex-4">
+    <statement>
+      <p>
+        State the vertex of the parabola with equation <m>y=-3x^2-24x+7</m> after first manipulating the equation into graphing form. 
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by factoring <m>-3</m> away from both the squared and the linear term.
+        <md>
+          <mrow>y\amp=-3x^2-24x+7</mrow>
+          <mrow>y\amp=-3(x^2+8x)+7</mrow>
+        </md>
+        The number which completes the square is determined as follows.
+        <md>
+          <mrow>\left(\frac{8}{2}\right)\amp=4^2</mrow>
+          <mrow>\amp=16</mrow>
+        </md>
+        Because everything inside the parentheses is multiplied by <m>-3</m>, we need to compensate for the addition of <m>16</m> inside the parentheses by adding <m>48</m> outside the parentheses so that the net addition is zero.  The process in total is shown below.
+        <md>
+          <mrow>y\amp=-3x^2-24x+7</mrow>
+          <mrow>y\amp=-3(x^2+8x\addright{16})+7\addright{48}</mrow>
+          <mrow>y\amp=-3(x+4)^2+55</mrow>
+        </md>
+        The vertex of the parabola is the point <m>(-4,55)</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example xml:id="parabolas-completing-the-square-ex-5">
+    <statement>
+      <p>
+        State the vertex of the parabola with equation <m>y=-x^2+5x</m> after first manipulating the equation into graphing form. 
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by factoring <m>-1</m> away from both the squared and the linear term.
+        <md>
+          <mrow>y\amp=-x^2+5x</mrow>
+          <mrow>y\amp=-1 \cdot (x^2-5x)</mrow>
+        </md>
+        The number which completes the square is determined as follows.
+        <me>\left(\frac{-5}{2}\right)^2=\frac{25}{4}</me>
+        Because everything inside the parentheses is multiplied by <m>-1</m>, we need to compensate for the addition of <m>\frac{25}{4}</m> inside the parentheses by adding <m>\frac{25}{4}</m> again outside the parentheses so that the net addition is zero.  The process in total is shown below.
+        <md>
+          <mrow>y\amp=-x^2+5x</mrow>
+          <mrow>y\amp=-1 \cdot (x^2-5x)</mrow>
+          <mrow>y\amp=-1 \cdot \left(x^2-5x\addright{\frac{25}{4}}\right)\addright{\frac{25}{4}}</mrow>
+          <mrow>y\amp=-\left(x-\frac{5}{2}\right)^2+\frac{25}{4}</mrow>
+        </md>
+        The vertex of the parabola is the point <m>\left(\frac{5}{2},\frac{25}{4}\right)</m>.
+      </p>
+    </solution>
+  </example>
+
+  <p>
+    You can practice determining the vertex of a parabola after completing the square using <xref ref="parabolas-completing-the-square-geogebra-2">Figure</xref> and <xref ref="parabolas-completing-the-square-geogebra-neg">Figure</xref>.
+  </p>
+
+  <figure xml:id="parabolas-completing-the-square-geogebra-2">
+    <caption>Complete the square for the given equation.  Then drag the vertex of the parabola to the point that matches the vertex of the stated equation. A message will appear when you are correct. A message will appear when you are correct.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/paraola-vertex-a-2.ggb">
+        setPerspective("G");
+        setGridVisible(1);         
+        setAxisLabels(1,"x","y","z");
+      </slate>
+    </interactive>
+  </figure>
+
+  <figure xml:id="parabolas-completing-the-square-geogebra-neg">
+    <caption>Complete the square for the given equation.  Then drag the vertex of the parabola to the point that matches the vertex of the stated equation. A message will appear when you are correct.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/paraola-vertex-a-neg.ggb">
+        setPerspective("G");
+        setGridVisible(1);         
+        setAxisLabels(1,"x","y","z");
+      </slate>
+    </interactive>
+  </figure>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine the vertex of each parabola after first completing the square to determine the graphing form of the equation.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
           <p>
-            It is possible to manipulate a parabolic equation presented into standard form into graphing form.  The process used to make this transformation is called "completing the square."  The steps used in the process when <m>a=1</m> are as follows
-            <ol label="1">
-              <li>
-                Write the squared and linear terms in a set of parentheses with space to add another number inside the parentheses.
-              </li>
-              <li>
-                Inside the parentheses, add <m>\left(\frac{b}{2}\right)^2</m>.  Subtract that same number outside the parentheses.
-              </li>
-              <li>
-                The trinomial in the parentheses now factors as <m>\left(x+\frac{b}{2}\right)^2</m>.  Note that if <m>b</m> is a negative number, then the operation between <m>x</m> and the the number in the factored expression is ultimately subtraction.  Go ahead and factor the trinomial in the parentheses and at the same time combine the numbers outside of the parentheses.
-              </li>
-            </ol>
+            <m>
+              y=x^2-12x+11
+            </m>
           </p>
-          <example xml:id="parabolas-completing-the-square-ex-1">
-            <statement>
-              <p>
-                State the vertex of the parabola with equation <m>y=x^2-16x+15</m> after first manipulating the equation into graphing form. 
-              </p>
-            </statement>
-            <solution>
-              <p>
-                The number which completes the square is determined as follows.
-                <md>
-                  <mrow>\left(\frac{b}{2}\right)^2\amp=\left(\frac{-16}{2}\right)^2</mrow>
-                  <mrow>\amp=(-8)^2</mrow>
-                  <mrow>\amp=64</mrow>
-                </md>
-                Let's go ahead and complete the square.
-                <md>y\amp=x^2-16x+15
-                  <mrow>y\amp=x^2-16x+15</mrow>
-                  <mrow>y\amp=(x^2-16x\addright{64})+15\subtractright{64}</mrow>
-                  <mrow>y\amp=(x-8)^2-49</mrow>
-                </md>
-                The vertex of the parabola is the point <m>(8,-49)</m>.
-              </p>
-            </solution>
-          </example>
-          <example xml:id="parabolas-completing-the-square-ex-2">
-            <statement>
-              <p>
-                State the vertex of the parabola with equation <m>y=x^2+9x+21</m> after first manipulating the equation into graphing form. 
-              </p>
-            </statement>
-            <solution>
-              <p>
-                The number which completes the square is determined as follows.
-                <md>
-                  <mrow>\left(\frac{b}{2}\right)^2\amp=\left(\frac{9}{2}\right)^2</mrow>
-                  <mrow>\amp=\frac{81}{4}</mrow>
-                </md>
-                Let's go ahead and complete the square.
-                <md>
-                  <mrow>y\amp=x^2+9x+21</mrow>
-                  <mrow>y\amp=\left(x^2+9x+\frac{81}{4}\right)+21-\frac{81}{4}</mrow>
-                  <mrow>y\amp=\left(x+\frac{9}{2}\right)^2+\frac{3}{4}</mrow>
-                </md>
-                The vertex of the parabola is <m>\left(-\frac{9}{2},\frac{3}{4}\right)</m>.
-              </p>
-            </solution>
-          </example>
+        </statement>
+        <solution>
           <p>
-            When the value of <m>a</m> in the equation <m>y=ax^2+bx+c</m> is not one, the process of completing the square is quite a bit more complicated.  The steps are as follows.
-            <ol label="1">
-              <li>
-                Factor <m>a</m> away from both the squared term and the linear term, leaving enough room in the parentheses to add another number.  he form  of the equation is now <m>y=a\left(x^2+\frac{b}{a}\right)+c</m>
-              </li>
-              <li>
-                Add <m>\left(\frac{b}{2a}\right)^2</m> inside the parentheses.  Add or subtract what is necessary to balance this action.  Remember, since the number was added inside the parentheses, it is multiplied by <m>a</m>, so the amount you added was actual <m>a \cdot \left(\frac{b}{2a}\right)^2</m> which must be subtracted outside the parentheses.  What's tricky is that if <m>a</m> is negative, you actually end up adding both inside and outside the parentheses.  Just make sure that your net addition is zero.
-              </li>
-              <li>
-                The trinomial inside the parentheses now factors to <m>\left(x+\frac{b}{2a}\right)^2</m>.  Note that if <m>b</m> is a negative number, then the operation between <m>x</m> and the the number in the factored expression is ultimately subtraction.  Go ahead and factor the trinomial in the parentheses and at the same time combine the numbers outside of the parentheses.
-              </li>
-            </ol>
+            We begin by completing the square to determine the graphing form of the equation.
+            <md>
+              <mrow>y\amp=x^2-12x+11</mrow>
+              <mrow>y\amp=(x^2-12x\addright{36})+11\subtractright{36}</mrow>
+              <mrow>y\amp=(x-6)^2-25</mrow>
+            </md>
+            The vertex of the parabola is <m>(6,-25)</m>.                 
           </p>
-          <example xml:id="parabolas-completing-the-square-ex-3">
-            <statement>
-              <p>
-                State the vertex of the parabola with equation <m>y=2x^2-12x+19</m> after first manipulating the equation into graphing form. 
-              </p>
-            </statement>
-            <solution>
-              <p>
-                We begin by factoring <m>2</m> away from both the squared and the linear term.
-                <md>
-                  <mrow>y\amp=2x^2-12x+19</mrow>
-                  <mrow>y\amp=2(x^2-6x)+19</mrow>
-                </md>
-                The number which completes the square is determined as follows.
-                <md>
-                  <mrow>\left(\frac{-6}{2}\right)\amp=(-3)^2</mrow>
-                  <mrow>\amp=9</mrow>
-                </md>
-                Because everything inside the parentheses is multiplied by <m>2</m>, we need to compensate for the addition of <m>9</m> inside the parentheses by subtracting 18 outside the parentheses so that the net addition is zero..  The process in total is shown below.
-                <md>
-                  <mrow>y\amp=2x^2-12x+19</mrow>
-                  <mrow>y\amp=2(x^2-6x\addright{9})+19\subtractright{18}</mrow>
-                  <mrow>y\amp=2(x-3)^2+1</mrow>
-                </md>
-                The vertex of the parabola is the point <m>(3,1)</m>.
-              </p>
-            </solution>
-          </example>
-          <example xml:id="parabolas-completing-the-square-ex-4">
-            <statement>
-              <p>
-                State the vertex of the parabola with equation <m>y=-3x^2-24x+7</m> after first manipulating the equation into graphing form. 
-              </p>
-            </statement>
-            <solution>
-              <p>
-                We begin by factoring <m>-3</m> away from both the squared and the linear term.
-                <md>
-                  <mrow>y\amp=-3x^2-24x+7</mrow>
-                  <mrow>y\amp=-3(x^2+8x)+7</mrow>
-                </md>
-                The number which completes the square is determined as follows.
-                <md>
-                  <mrow>\left(\frac{8}{2}\right)\amp=4^2</mrow>
-                  <mrow>\amp=16</mrow>
-                </md>
-                Because everything inside the parentheses is multiplied by <m>-3</m>, we need to compensate for the addition of <m>16</m> inside the parentheses by adding <m>48</m> outside the parentheses so that the net addition is zero.  The process in total is shown below.
-                <md>
-                  <mrow>y\amp=-3x^2-24x+7</mrow>
-                  <mrow>y\amp=-3(x^2+8x\addright{16})+7\addright{48}</mrow>
-                  <mrow>y\amp=-3(x+4)^2+55</mrow>
-                </md>
-                The vertex of the parabola is the point <m>(-4,55)</m>.
-              </p>
-            </solution>
-          </example>
-          <example xml:id="parabolas-completing-the-square-ex-5">
-            <statement>
-              <p>
-                State the vertex of the parabola with equation <m>y=-x^2+5x</m> after first manipulating the equation into graphing form. 
-              </p>
-            </statement>
-            <solution>
-              <p>
-                We begin by factoring <m>-1</m> away from both the squared and the linear term.
-                <md>
-                  <mrow>y\amp=-x^2+5x</mrow>
-                  <mrow>y\amp=-1 \cdot (x^2-5x)</mrow>
-                </md>
-                The number which completes the square is determined as follows.
-                <me>\left(\frac{-5}{2}\right)^2=\frac{25}{4}</me>
-                Because everything inside the parentheses is multiplied by <m>-1</m>, we need to compensate for the addition of <m>\frac{25}{4}</m> inside the parentheses by adding <m>\frac{25}{4}</m> again outside the parentheses so that the net addition is zero.  The process in total is shown below.
-                <md>
-                  <mrow>y\amp=-x^2+5x</mrow>
-                  <mrow>y\amp=-1 \cdot (x^2-5x)</mrow>
-                  <mrow>y\amp=-1 \cdot \left(x^2-5x\addright{\frac{25}{4}}\right)\addright{\frac{25}{4}}</mrow>
-                  <mrow>y\amp=-\left(x-\frac{5}{2}\right)^2+\frac{25}{4}</mrow>
-                </md>
-                The vertex of the parabola is the point <m>\left(\frac{5}{2},\frac{25}{4}\right)</m>.
-              </p>
-            </solution>
-          </example>
+        </solution>
+      </exercise>
 
-      <exercises>
+      <exercise>
+        <statement>
+          <p>
+            <m>
+              y=x^2+9x+\frac{77}{4}
+            </m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by completing the square to determine the graphing form of the equation.
+            <md>
+              <mrow>y\amp=x^2+9x+\frac{77}{4}</mrow>
+              <mrow>y\amp=\left(x^2+9x\addright{\frac{81}{4}}\right)+\frac{77}{4}\subtractright{\frac{81}{4}}</mrow>
+              <mrow>y\amp=\left(x+\frac{9}{2}\right)-1</mrow>
+            </md>
+            The vertex of the parabola is <m>\left(-\frac{9}{2},-1\right)</m>
+          </p>
+        </solution>
+      </exercise>
 
-        <exercisegroup>
-          <introduction>
-            <p>
-              Determine the vertex of each parabola after first completing the square to determine the graphing form of the equation.
-            </p>
-          </introduction>
-              <exercise>
-                <statement>
-                  <m>y=x^2-12x+11</m>
-                </statement>
-                <solution>
-                  <p>
-                    We begin by completing the square to determine the graphing form of the equation.
-                    <md>
-                      <mrow>y\amp=x^2-12x+11</mrow>
-                      <mrow>y\amp=(x^2-12x\addright{36})+11\subtractright{36}</mrow>
-                      <mrow>y\amp=(x-6)^2-25</mrow>
-                    </md>
-                    The vertex of the parabola is <m>(6,-25)</m>.                 
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>
+              y=4x^2-80x+410
+            </m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by completing the square to determine the graphing form of the equation.
+            <md>
+              <mrow>y\amp=4x^2-80x+100</mrow>
+              <mrow>y\amp=4(x^2-20x\addright{100})+410\subtractright{400}</mrow>
+              <mrow>y\amp=4(x-10)^2+10</mrow>
+            </md>
+            The vertex of the parabola is <m>(10,10)</m>. 
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <m>y=x^2+9x+\frac{77}{4}</m>
-                </statement>
-                <solution>
-                  <p>
-                    We begin by completing the square to determine the graphing form of the equation.
-                    <md>
-                      <mrow>y\amp=x^2+9x+\frac{77}{4}</mrow>
-                      <mrow>y\amp=\left(x^2+9x\addright{\frac{81}{4}}\right)+\frac{77}{4}\subtractright{\frac{81}{4}}</mrow>
-                      <mrow>y\amp=\left(x+\frac{9}{2}\right)-1</mrow>
-                    </md>
-                    The vertex of the parabola is <m>\left(-\frac{9}{2},-1\right)</m>
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>
+              y=-3x^2+6x
+            </m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by completing the square to determine the graphing form of the equation.
+            <md>
+              <mrow>y\amp=-3x^2+6x</mrow>
+              <mrow>y\amp=-3(x^2-2x\addright{1})\addright{3}</mrow>
+              <mrow>y\amp=3(x-1)^2+3</mrow>
+            </md>
+            The vertex of the parabola is <m>(1,3)</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <m>y=4x^2-80x+410</m>
-                </statement>
-                <solution>
-                  <p>
-                    We begin by completing the square to determine the graphing form of the equation.
-                    <md>
-                      <mrow>y\amp=4x^2-80x+100</mrow>
-                      <mrow>y\amp=4(x^2-20x\addright{100})+410\subtractright{400}</mrow>
-                      <mrow>y\amp=4(x-10)^2+10</mrow>
-                    </md>
-                    The vertex of the parabola is <m>(10,10)</m>. 
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>
+              y=-1.5x^2-4.5x+2
+            </m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by completing the square to determine the graphing form of the equation.
+            <md>
+              <mrow>y\amp=-1.5x^2-4.5x+2</mrow>
+              <mrow>y\amp=-1.5(x^2+3x\addright{2.25})+2\addright{3.375}</mrow>
+              <mrow>y\amp=-1.5(x+1.5)^2+5.375</mrow>
+            </md>
+            The vertex of the parabola is <m>(-1.5,5.375)</m>.
+          </p>
+        </solution>
+      </exercise>
 
-              <exercise>
-                <statement>
-                  <m>y=-3x^2+6x</m>
-                </statement>
-                <solution>
-                  <p>
-                    We begin by completing the square to determine the graphing form of the equation.
-                    <md>
-                      <mrow>y\amp=-3x^2+6x</mrow>
-                      <mrow>y\amp=-3(x^2-2x\addright{1})\addright{3}</mrow>
-                      <mrow>y\amp=3(x-1)^2+3</mrow>
-                    </md>
-                    The vertex of the parabola is <m>(1,3)</m>.
-                  </p>
-                </solution>
-              </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>
+              y=-x^2+20x-101
+            </m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by completing the square to determine the graphing form of the equation.
+            <md>
+              <mrow>y\amp=-x^2+20x-101</mrow>
+              <mrow>y\amp=-(x^2-20x\addright{100})-101\addright{100}</mrow>
+              <mrow>y\amp=-(x-10)^2-1</mrow>
+            </md>
+            The vertex of the parabola is <m>(10,-1)</m>.
+          </p>
+        </solution>
+      </exercise>
+    </exercisegroup>
 
-              <exercise>
-                <statement>
-                  <m>y=-1.5x^2-4.5x+2</m>
-                </statement>
-                <solution>
-                  <p>
-                    We begin by completing the square to determine the graphing form of the equation.
-                    <md>
-                      <mrow>y\amp=-1.5x^2-4.5x+2</mrow>
-                      <mrow>y\amp=-1.5(x^2+3x\addright{2.25})+2\addright{3.375}</mrow>
-                      <mrow>y\amp=-1.5(x+1.5)^2+5.375</mrow>
-                    </md>
-                    The vertex of the parabola is <m>(-1.5,5.375)</m>.
-                  </p>
-                </solution>
-              </exercise>
-
-              <exercise>
-                <statement>
-                  <m>y=-x^2+20x-101</m>
-                </statement>
-                <solution>
-                  <p>
-                    We begin by completing the square to determine the graphing form of the equation.
-                    <md>
-                      <mrow>y\amp=-x^2+20x-101</mrow>
-                      <mrow>y\amp=-(x^2-20x\addright{100})-101\addright{100}</mrow>
-                      <mrow>y\amp=-(x-10)^2-1</mrow>
-                    </md>
-                    The vertex of the parabola is <m>(10,-1)</m>.
-                  </p>
-                </solution>
-              </exercise>
-            </exercisegroup>
-
-     </exercises>
-    </section>
+  </exercises>
+</section>

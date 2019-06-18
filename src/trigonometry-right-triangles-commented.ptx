@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="trigonometry-right-triagles">
+  <title>Right Triangle Trigonometry</title>
+
+  
+
+  <paragraphs>
+    <title>Inverse Trigonometric Functions and Right Triangles</title>
+    <p>
+      In the section titled "The Inverse Trigonometric Functions,"  trigonometric identities are used to determine the value of expressions such as <m>\cos\left(\tan^{-1}\left(\frac{4}{3}\right)\right)</m>.  In this section we will explore an alternative strategy that makes use of right triangle trigonometry.  Let's see a couple of examples.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Use a right triangle to determine the value of <m>\cos\left(\tan^{-1}\left(\frac{4}{3}\right)\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's define <m>\theta</m> using the equation <m>\theta=\tan^{-1}\left(\frac{4}{3}\right)</m>.  We immediately know two things about <m>\theta</m>.
+          <me>\tan(\theta)=\frac{4}{3}</me>
+          <me>0^\circ \le \theta \le 180^{\circ}</me>
+          Since <m>\tan(\theta) \gt 0</m>, we can further restrict the range of  <m>\theta</m> as follows.
+          <me>0^{\circ} \lt \theta \lt 90^{\circ}</me>
+          Because the value of <m>\theta</m> must fall strictly between <m>0^{\circ}</m> and <m>90^{\circ}</m>, we can think of it as the angle of a right triangle.  We can diagram said triangle in such a way that the ratio of the side opposite to <m>\theta</m> and the side adjacent to <m>\theta</m> is <m>\frac{4}{3}</m>, that is
+          <me>\frac{\text{OPP}}{\text{ADJ}}=\frac{4}{3}.</me>
+          The most straight forward way to create that ratio is to simply assign the value of <m>4</m> to <m>\text{OPP}</m> and the value of <m>3</m> to <m>\text{ADJ}</m>.  This is done in <xref ref="trigonometry-right-triangles-figure-9">Figure</xref>.  The value assigned to the hypotenuse was calculated using the Pythagorean theorem.  That calculation is shown below.  
+          <md>
+            <mrow>\text{HYP}^2\amp=3^2+4^2</mrow>
+            <mrow>\text{HYP}^2\amp=9+16</mrow>
+            <mrow>\text{HYP}^2\amp=25</mrow>
+            <mrow>\text{HYP}\amp=5</mrow>
+          </md>
+          We now have all of the necessary information to determine the value of <m>\cos\left(\tan^{-1}\left(\frac{4}{3}\right)\right)</m> and we do so below.
+        </p>
+        <sidebyside widths="57% 37%" margins="0%">
+
+          <p>
+            <md>
+              <mrow>\cos\left(\tan^{-1}\left(\frac{4}{3}\right)\right)\amp=\cos(\theta)</mrow>
+              <mrow>\amp=\frac{\text{ADJ}}{\text{HYP}}</mrow>
+              <mrow>\amp=\frac{3}{5}</mrow>
+            </md>
+          </p>
+
+          <figure xml:id="trigonometry-right-triangles-figure-9">
+            <caption>SOH CAH TOA</caption>
+            <image>
+              <description>
+                  A right triangle with one of the acute angles labeled <m>\theta</m>.  The side opposite of <m>\theta</m> is labeled <m>4</m>.  The side adjacent to <m>\theta</m> is labeled <m>3</m>.  The hypotenuse is labeled <m>5</m>.
+              </description>
+              <latex-image-code>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \draw (0,0) -- (6,0) node[midway, below] {$3$} -- (6,8) node[midway, right] {$4$} -- (0,0) node[midway, above left] {$5$};
+                    \draw (0.5,0) arc (0:55.13:.5);
+                    \draw (0.95,0.5) node{$\theta$};
+                    \draw (5.5,0) -- (5.5,0.5) -- (6,0.5);
+                  \end{tikzpicture}
+                ]]>
+              </latex-image-code>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Use a right triangle to determine the value of <m>\tan\left(\sin^{-1}\left(\frac{3}{7}\right)\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's define <m>\theta</m> using the equation <m>\theta=\sin^{-1}\left(\frac{3}{7}\right)</m>.  We immediately know two things about <m>\theta</m>.
+          <me>\sin(\theta)=\frac{3}{7}</me>
+          <me>0^\circ \le \theta \le 180^{\circ}</me>
+          Since <m>\sin(\theta) \gt 0</m>, we can further restrict the range of  <m>\theta</m> as follows.
+          <me>0^{\circ} \lt \theta \lt 90^{\circ}</me>
+          Because the value of <m>\theta</m> must fall strictly between <m>0^{\circ}</m> and <m>90^{\circ}</m>, we can think of it as the angle of a right triangle.  We can diagram said triangle in such a way that the ratio of the side opposite to <m>\theta</m> and the hypotenuse is <m>\frac{3}{7}</m>, that is
+          <me>\frac{\text{OPP}}{\text{HYP}}=\frac{3}{7}.</me>
+          The most straight forward way to create that ratio is to simply assign the value of <m>3</m> to <m>\text{OPP}</m> and the value of <m>7</m> to <m>\text{HYP}</m>.  This is done in <xref ref="trigonometry-right-triangles-figure-10">Figure</xref>.  The value assigned to the adjacent side was calculated using the Pythagorean theorem.  That calculation is shown below.  
+          <md>
+            <mrow>\text{ADJ}^2+3^2\amp=7^2</mrow>
+            <mrow>\text{ADJ}^2+9\amp=49</mrow>
+            <mrow>\text{ADJ}^2\amp=40</mrow>
+            <mrow>\text{ADJ}\amp=\sqrt{40}</mrow>
+            <mrow>\text{ADJ}\amp=2\sqrt{10}</mrow>
+          </md>
+          We now have all of the necessary information to determine the value of <m>\tan\left(\sin^{-1}\left(\frac{3}{7}\right)\right)</m> and we do so below.
+        </p>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            <md>
+              <mrow>\tan\left(\sin^{-1}\left(\frac{3}{7}\right)\right)\amp=\tan(\theta)</mrow>
+              <mrow>\amp=\frac{\text{OPP}}{\text{ADJ}}</mrow>
+              <mrow>\amp=\frac{3}{2\sqrt{10}}</mrow>
+              <mrow>\amp=\frac{3}{2\sqrt{10}} \cdot \frac{\sqrt{10}}{\sqrt{10}}</mrow>
+              <mrow>\amp=\frac{3\sqrt{10}}{20}</mrow>
+            </md>
+          </p>
+
+          <figure xml:id="trigonometry-right-triangles-figure-10">
+            <caption>SOH CAH TOA</caption>
+            <image>
+              <description>
+                  A right triangle with one of the acute angles labeled <m>\theta</m>.  The side opposite of <m>\theta</m> is labeled <m>3</m>.  The side adjacent to <m>\theta</m> is labeled <m>2\sqrt{10}</m>.  The hypotenuse is labeled <m>7</m>.
+              </description>
+              <latex-image-code>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \draw (0,0) -- (6.32,0) node[midway, below] {$2\sqrt{10}$} -- (6.32,3) node[midway, right] {$3$} -- (0,0) node[midway, above left] {$7$};
+                    \draw (0.5,0) arc (0:25.78:.5);
+                    \draw (0.95,0.25) node{$\theta$};
+                    \draw (5.82,0) -- (5.82,0.5) -- (6.32,0.5);
+                  \end{tikzpicture}
+                ]]>
+              </latex-image-code>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <exercises>
+    
+    <exercisegroup>
+      <introduction>
+        <p>
+          Use right triangle trigonometry to determine the value of each of the following expressions.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            Use a right triangle to determine the value of <m>\cos\left(\tan^{-1}\left(\frac{15}{8}\right)\right)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's define <m>\theta</m> using the equation <m>\theta=\cos\left(\tan^{-1}\left(\frac{15}{8}\right)\right)</m>.  We immediately know two things about <m>\theta</m>.
+            <me>\tan(\theta)=\frac{15}{8}</me>
+            <me>0^\circ \le \theta \le 180^{\circ}</me>
+            Since <m>\tan(\theta) \gt 0</m>, we can further restrict the range of  <m>\theta</m> as follows.
+            <me>0^{\circ} \lt \theta \lt 90^{\circ}</me>
+            Because the value of <m>\theta</m> must fall strictly between <m>0^{\circ}</m> and <m>90^{\circ}</m>, we can think of it as the angle of a right triangle.  We can diagram said triangle in such a way that the ratio of the side opposite to <m>\theta</m> and the side adjacent to <m>\theta</m> is <m>\frac{15}{8}</m>, that is
+            <me>\frac{\text{OPP}}{\text{ADJ}}=\frac{15}{8}.</me>
+            The most straight forward way to create that ratio is to simply assign the value of <m>15</m> to <m>\text{OPP}</m> and the value of <m>8</m> to <m>\text{ADJ}</m>.  This is done in <xref ref="trigonometry-right-triangles-exercises-figure-5">Figure</xref>.  The value assigned to the hypotenuse was calculated using the Pythagorean theorem.  That calculation is shown below.  
+            <md>
+              <mrow>\text{HYP}^2\amp=8^2+15^2</mrow>
+              <mrow>\text{HYP}^2\amp=64+225</mrow>
+              <mrow>\text{HYP}^2\amp=289</mrow>
+              <mrow>\text{HYP}\amp=17</mrow>
+            </md>
+            We now have all of the necessary information to determine the value of <m>\cos\left(\tan^{-1}\left(\frac{15}{8}\right)\right)</m> and we do so below.
+          </p>
+          <sidebyside widths="67% 27%" margins="0%">
+
+            <p>
+              <md>
+                <mrow>\cos\left(\tan^{-1}\left(\frac{15}{8}\right)\right)\amp=\cos(\theta)</mrow>
+                <mrow>\amp=\frac{\text{ADJ}}{\text{HYP}}</mrow>
+                <mrow>\amp=\frac{8}{17}</mrow>
+              </md>
+            </p>
+
+            <figure xml:id="trigonometry-right-triangles-exercises-figure-5">
+              <caption>SOH CAH TOA</caption>
+              <image>
+                <description>
+                  A right triangle with one of the acute angles labeled <m>\theta</m>.  The side opposite of <m>\theta</m> is labeled <m>15</m>.  The side adjacent to <m>\theta</m> is labeled <m>8</m>.  The hypotenuse is labeled <m>17</m>.
+                </description>
+                <latex-image-code>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \draw (0,0) -- (4,0) node[midway, below] {$8$} -- (4,8.5) node[midway, right] {$15$} -- (0,0) node[midway, above left] {$17$};
+                      \draw (0.5,0) arc (0:61.93:.5);
+                      \draw (0.95,0.5) node{$\theta$};
+                      \draw (3.5,0) -- (3.5,0.5) -- (4,0.5);
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image-code>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Use a right triangle to determine the value of <m>\sin\left(\cos^{-1}\left(\frac{2}{3}\right)\right)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's define <m>\theta</m> using the equation <m>\theta=\cos^{-1}\left(\frac{2}{3}\right)</m>.  We immediately know two things about <m>\theta</m>.
+            <me>\cos(\theta)=\frac{2}{3}</me>
+            <me>0^\circ \le \theta \le 180^{\circ}</me>
+            Since <m>\cos(\theta) \gt 0</m>, we can further restrict the range of  <m>\theta</m> as follows.
+            <me>0^{\circ} \lt \theta \lt 90^{\circ}</me>
+            Because the value of <m>\theta</m> must fall strictly between <m>0^{\circ}</m> and <m>90^{\circ}</m>, we can think of it as the angle of a right triangle.  We can diagram said triangle in such a way that the ratio of the side adjacent to <m>\theta</m> and the hypotenuse is <m>\frac{2}{3}</m>, that is
+            <me>\frac{\text{ADJ}}{\text{HYP}}=\frac{2}{3}.</me>
+            The most straight forward way to create that ratio is to simply assign the value of <m>2</m> to <m>\text{ADJ}</m> and the value of <m>3</m> to <m>\text{HYP}</m>.  This is done in <xref ref="trigonometry-right-triangles-exercises-figure-6">Figure</xref>.  The value assigned to the opposite side was calculated using the Pythagorean theorem.  That calculation is shown below.  
+            <md>
+              <mrow>\text{OPP}^2+2^2\amp=3^2</mrow>
+              <mrow>\text{OPP}^2+4\amp=9</mrow>
+              <mrow>\text{OPP}^2\amp=5</mrow>
+              <mrow>\text{OPP}\amp=\sqrt{5}</mrow>
+            </md>
+            We now have all of the necessary information to determine the value of <m>\sin\left(\cos^{-1}\left(\frac{2}{3}\right)\right)</m> and we do so below.
+          </p>
+          <sidebyside widths="57% 37%" margins="0%">
+
+            <p>
+              <md>
+                <mrow>\sin\left(\cos^{-1}\left(\frac{2}{3}\right)\right)\amp=\sin(\theta)</mrow>
+                <mrow>\amp=\frac{\text{OPP}}{\text{HYP}}</mrow>
+                <mrow>\amp=\frac{\sqrt{5}}{3}</mrow>
+              </md>
+            </p>
+
+            <figure xml:id="trigonometry-right-triangles-exercises-figure-6">
+              <caption>SOH CAH TOA</caption>
+              <image>
+                <description>
+                  A right triangle with one of the acute angles labeled <m>\theta</m>.  The side opposite of <m>\theta</m> is labeled <m>\sqrt{5}</m>.  The side adjacent to <m>\theta</m> is labeled <m>2</m>.  The hypotenuse is labeled <m>3</m>.
+                </description>
+                <latex-image-code>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \draw (0,0) -- (8,0) node[midway, below] {$2$} -- (8,8.94) node[midway, right] {$\sqrt{5}$} -- (0,0) node[midway, above left] {$3$};
+                      \draw (0.5,0) arc (0:48.19:.5);
+                      \draw (0.95,0.5) node{$\theta$};
+                      \draw (7.5,0) -- (7.5,0.5) -- (8,0.5);
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image-code>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+</section>

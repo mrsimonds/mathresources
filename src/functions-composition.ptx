@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="functions-compositions">
+  <title>Function Composition</title>
+
+  <p>
+    The symbols <m>(f \circ g)(x)</m> are read as "<m>f</m> composed with <m>g</m> at <m>x</m>" or "<m>f</m> composed with <m>g</m> of <m>x</m>."  The meaning of the symbols follows.  <me>(f \circ g)(x)=f(g(x))</me>.  For example, suppose that <me>f(x)=2x+7\,\,\text{and}\,\,g(x)=3x-8</me>.Then we would evaluate <m>(f \circ g)(5)</m> as follows.
+    <md>
+      <mrow>(f \circ g)(5)\amp=f(\highlight{g(5)})</mrow>
+      <mrow>\amp=f(\highlight{3 \cdot 5-8})</mrow>
+      <mrow>\amp=f(\highlight{7})</mrow>
+      <mrow>\amp=2 \cdot \highlight{7}+7</mrow>
+      <mrow>\amp=21</mrow>
+    </md>
+    The function <m>f</m> does not need to come first in the composition.  Using the same two functions as the last example, let's evaluate <m>(g \circ f)(-4)</m>.
+    <md>
+      <mrow>(g \circ f)(-4)\amp=g(\highlight{f(-4)})</mrow>
+      <mrow>\amp=g(\highlight{2 \cdot -4+7})</mrow>
+      <mrow>\amp=g(\highlight{-1})</mrow>
+      <mrow>\amp=3 \cdot \highlight{-1} -8</mrow>
+      <mrow>\amp=-11</mrow>
+    </md>
+            We can even compose a function with itself.  For example, let's evaluate <m>(h \circ h)(9)</m> where <m>h(x)=x^2-71</m>.
+    <md>
+      <mrow>(h \circ h)(9)\amp=h(\highlight{h(9)})</mrow>
+      <mrow>\amp=h(\highlight{9^2-71})</mrow>
+      <mrow>\amp=h(\highlight{10})</mrow>
+      <mrow>\amp=\highlight{10}^2-71</mrow>
+      <mrow>\amp=29</mrow>
+    </md>
+    In most cases, when working with function composition we are more interested in the function formula than in any one specific function value.  Finding the formula for the composition of two functions is very similar to some of the advanced function notation discussed in the last section.  
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Determine <m>(f \circ g)(x)</m>, where <me>f(x)=x^2+3x\,\,\text{and}\,\,g(x)=4-x^2</me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+          <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+          <mrow>\amp=f(\highlight{4-x^2})</mrow>
+          <mrow>\amp=(\highlight{4-x^2})^2+3(\highlight{4-x^2})</mrow>
+          <mrow>\amp=(4-x^2)(4-x^2)+12-3x^2</mrow>
+          <mrow>\amp=16-8x^2+x^4+12-3x^2</mrow>
+          <mrow>\amp=x^4-11x^2+28</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Determine <m>(g \circ f)(x)</m> where <me>f(x)=x^2+3x\,\,\text{and}\,\,g(x)=4-x^2</me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+          <mrow>(g \circ f)(x)\amp=g(\highlight{f(x)})</mrow>
+          <mrow>\amp=g(\highlight{x^2+3x})</mrow>
+          <mrow>\amp=4-(\highlight{x^2+3x})^2</mrow>
+          <mrow>\amp=4-(x^2+3x)(x^2+3x)</mrow>
+          <mrow>\amp=4-(x^4+3x^3+3x^3+9x^2)</mrow>
+          <mrow>\amp=4-x^4-3x^3-3x^3-9x^2</mrow>
+          <mrow>\amp=-x^4-6x^3-9x^2+4</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p><m>(f \circ f)(x)</m>where <me>f(x)=x^2+3x</me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+          <mrow>(f \circ f)(x)\amp=f(\highlight{f(x)})</mrow>
+          <mrow>\amp=f(\highlight{x^2+3x})</mrow>
+          <mrow>\amp=(\highlight{x^2+3x})^2+3(\highlight{x^2+3x})</mrow>
+          <mrow>\amp=(x^2+3x)(x^2+3x)+3x^2+9x</mrow>
+          <mrow>\amp=x^4+3x^3+3x^3+9x^2+3x^2+9x</mrow>
+          <mrow>\amp=x^4+6x^3+12x^2+9x</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Determine <m>(g \circ g)(x)</m> where <me>g(x)=4-x^2</me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+          <mrow>(g \circ g)(x)\amp=g(\highlight{g(x)})</mrow>
+          <mrow>\amp=g(\highlight{4-x^2})</mrow>
+          <mrow>\amp=4-(\highlight{4-x^2})^2</mrow>
+          <mrow>\amp=4-(4-x^2)(4-x^2)</mrow>
+          <mrow>\amp=4-(16-8x^2+x^4)</mrow>
+          <mrow>\amp=4-16+8x^2-x^4</mrow>
+          <mrow>\amp=-x^4+8x^2-12</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Determine <m>(f \circ g)(x)</m>, where <me>f(x)=\frac{5-7x}{3}\,\,\text{and}\,\,g(x)=\frac{5-3x}{7}</me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+          <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+          <mrow>\amp=f\left(\highlight{\frac{5-3x}{7}}\right)</mrow>
+          <mrow>\amp=\frac{5-\frac{7}{1} \cdot \highlight{\frac{5-3x}{7}}}{3}</mrow>
+          <mrow>\amp=\frac{5-(5-3x)}{3}</mrow>
+          <mrow>\amp=\frac{5-5+3x}{3}</mrow>
+          <mrow>\amp=\frac{3x}{3}</mrow>
+          <mrow>\amp=x</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Determine <m>(g \circ f)(x)</m> where <me>f(x)=\frac{5-7x}{3}\,\,\text{and}\,\,g(x)=\frac{5-3x}{7}</me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+          <mrow>(g \circ f)(x)\amp=g(\highlight{f(x)})</mrow>
+          <mrow>\amp=\frac{5-\frac{3}{1} \cdot \highlight{\frac{5-7x}{3}}}{7}</mrow>
+          <mrow>\amp=\frac{5-(5-7x)}{7}</mrow>
+          <mrow>\amp=\frac{5-5+7x}{7}</mrow>
+          <mrow>\amp=\frac{7x}{7}</mrow>
+          <mrow>\amp=x</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <p>
+    In the last example, the functions <m>f</m> and <m>g</m> are called inverse functions.  Two functions are inverses of one another when the result of applying them in succession, in either order, is that the value input  (from the domain) is returned at the end of the composition. That is, <m>f</m> and <m>g</m> are inverse functions if and only if
+    <me>(f \circ g)(x)=x\,\,\text{and}\,\,(g \circ f)(x)=x</me> for all <m>x</m> in the appropriate domain.
+  </p>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine both <m>(f \circ g)(x)</m> and <m>(g \circ f)(x)</m> for each of the following function pairs.  Completely simplify each expression.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=2x-7</m> and <m>g(x)=8-x</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+              <mrow>\amp=f(\highlight{8-x})</mrow>
+              <mrow>\amp=2(\highlight{8-x})-7</mrow>
+              <mrow>\amp=16-2x-7</mrow>
+              <mrow>\amp=9-2x</mrow>
+            </md>
+            <md>
+              <mrow>(g \circ f)(x)\amp=g(\highlightr{f(x)})</mrow>
+              <mrow>\amp=g(\highlightr{2x-7})</mrow>
+              <mrow>\amp=8-(\highlightr{2x-7})</mrow>
+              <mrow>\amp=8-2x+7</mrow>
+              <mrow>\amp=15-2x</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=x^2+7x</m> and <m>g(x)=3x+1</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We are given <m>f(x)=x^2+7x</m> and <m>g(x)=3x+1</m>. The composite function formulas are derived below.
+            <md>
+              <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+              <mrow>\amp=f(\highlight{3x+1})</mrow>
+              <mrow>\amp=(\highlight{3x+1})^2+7(\highlight{3x+1})</mrow>
+              <mrow>\amp=(3x+1)(3x+1)+7(3x+1)</mrow>
+              <mrow>\amp=9x^2+3x+3x+1+21x+7</mrow>
+              <mrow>\amp=9x^2+27x+8</mrow>
+            </md>
+            <md>
+              <mrow>(g \circ f)(x)\amp=g(\highlightr{f(x)})</mrow>
+              <mrow>\amp=g(\highlightr{x^2+7x})</mrow>
+              <mrow>\amp=3(\highlightr{x^2+7x})+1</mrow>
+              <mrow>\amp=3x^2+21x+1</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=\sqrt{x+4}</m> and <m>g(x)=-3x^2</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We are given <m>f(x)=\sqrt{x+4}</m> and <m>g(x)=-3x^2</m>. The composite function formulas are derived below.
+            <md>
+              <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+              <mrow>\amp=f(\highlight{-3x^2})</mrow>
+              <mrow>\amp=\sqrt{-3x^2+4}</mrow>
+            </md>
+            <md>
+              <mrow>(g \circ f)(x)\amp=g(\highlightr{f(x)})</mrow>
+              <mrow>\amp=g(\highlightr{\sqrt{x+4}})</mrow>
+              <mrow>\amp=-3(\highlightr{\sqrt{x+4}})^2</mrow>
+              <mrow>\amp=-3(x+4)</mrow>
+              <mrow>\amp=-3x-12</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=2x+6</m> and <m>g(x)=\frac{x-8}{2x+1}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+              <mrow>\amp=f\left(\highlight{\frac{x-8}{2x+1}}\right)</mrow>
+              <mrow>\amp=2\left(\highlight{\frac{x-8}{2x+1}}\right)+6</mrow>
+              <mrow>\amp=\frac{2}{1} \cdot \frac{x-8}{2x+1}+\frac{6}{1} \cdot \frac{2x+1}{2x+1}</mrow>
+              <mrow>\amp=\frac{2x-16}{2x+1}+\frac{12x+6}{2x+1}</mrow>
+              <mrow>\amp=\frac{2x-16+12x+6}{2x+1}</mrow>
+              <mrow>\amp=\frac{14x-10}{2x+1}</mrow>
+            </md>
+            <md>
+              <mrow>(g \circ f)(x)\amp=g(\highlightr{f(x)})</mrow>
+              <mrow>\amp=g(\highlightr{2x+6})</mrow>
+              <mrow>\amp=\frac{\highlightr{2x+6}-8}{2(\highlightr{2x+6})+1}</mrow>
+              <mrow>\amp=\frac{2x-2}{4x+12+1}</mrow>
+              <mrow>\amp=\frac{2x-2}{4x+13}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=x^2+3</m> and <m>g(x)=2x^2+3x</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+              <mrow>\amp=f(\highlight{2x^2+3x})</mrow>
+              <mrow>\amp=(\highlight{2x^2+3x})^2+3</mrow>
+              <mrow>\amp=(2x^2+3x)(2x^2+3x)+3</mrow>
+              <mrow>\amp=4x^4+6x^3+6x^3+9x^2+3</mrow>
+              <mrow>\amp=4x^4+12x^3+9x^2+3</mrow>
+            </md>
+            <md>
+              <mrow>(g \circ f)(x)\amp=g(\highlightr{f(x)})</mrow>
+              <mrow>\amp=g(\highlightr{x^2+3})</mrow>
+              <mrow>\amp=2(\highlightr{x^2+3})^2+3(\highlightr{x^2+3})</mrow>
+              <mrow>\amp=2(x^2+3)(x^2+3)+3x^2+9</mrow>
+              <mrow>\amp=2(x^4+3x^2+3x^2+9)+3x^2+9</mrow>
+              <mrow>\amp=2(x^4+6x^2+9)+3x^2+9</mrow>
+              <mrow>\amp=2x^4+12x^2+18+3x^2+9</mrow>
+              <mrow>\amp=2x^4+15x^2+27</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=\frac{1}{x}</m> and <m>g(x)=\frac{x-4}{x+5}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We are given <m>f(x)=\frac{1}{x}</m> and <m>g(x)=\frac{x-4}{x+5}</m>. The composite function formulas are derived below.
+            <md>
+              <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+              <mrow>\amp=f\left(\highlight{\frac{x-4}{x+5}}\right)</mrow>
+              <mrow>\amp=\frac{1}{\highlight{\frac{x-4}{x+5}}}</mrow>
+              <mrow>\amp=\frac{\frac{1}{1}}{\frac{x-4}{x+5}}</mrow>
+              <mrow>\amp=\frac{1}{1} \cdot \frac{x+5}{x-4}</mrow>
+              <mrow>\amp=\frac{x+5}{x-4}</mrow>
+            </md>
+            <md>
+              <mrow>(g \circ f)(x)\amp=g(\highlightr{f(x)})</mrow>
+              <mrow>\amp=g\left(\highlightr{\frac{1}{x}}\right)</mrow>
+              <mrow>\amp=\frac{\highlightr{\frac{1}{x}}-4}{\highlightr{\frac{1}{x}}+5}</mrow>
+              <mrow>\amp=\frac{\frac{1}{x}-\frac{4x}{x}}{\frac{1}{x}+\frac{5x}{x}}</mrow>
+              <mrow>\amp=\frac{\frac{1-4x}{x}}{\frac{1+5x}{x}}</mrow>
+              <mrow>\amp=\frac{1-4x}{x} \cdot \frac{x}{1+5x}</mrow>
+              <mrow>\amp=\frac{x \cdot (1-4x)}{x \cdot (1+5x)}</mrow>
+              <mrow>\amp=\frac{1-4x}{1+5x}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=6-5x</m> and <m>g(x)=\frac{6-x}{5}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We are given <m>f(x)=6-5x</m> and <m>g(x)=\frac{6-x}{5}</m>. The composite function formulas are derived below.
+            <md>
+              <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+              <mrow>\amp=f\mathopen{}\left(\highlight{\frac{6-x}{5}}\right)\mathclose{}</mrow>
+              <mrow>\amp=6-5\left(\highlight{\frac{6-x}{5}}\right)</mrow>
+              <mrow>\amp=6-\frac{5}{1} \cdot \frac{6-x}{5}</mrow>
+              <mrow>\amp=6-\frac{5(6-x)}{5}</mrow>
+              <mrow>\amp=6-(6-x)</mrow>
+              <mrow>\amp=6-6+x</mrow>
+              <mrow>\amp=x</mrow>
+            </md>
+            <md>
+              <mrow>(g \circ f)(x)\amp=g(\highlightr{f(x)})</mrow>
+              <mrow>\amp=g(\highlightr{6-5x})</mrow>
+              <mrow>\amp=\frac{6-(\highlightr{6-5x})}{5}</mrow>
+              <mrow>\amp=\frac{6-6+5x}{5}</mrow>
+              <mrow>\amp=\frac{5x}{5}</mrow>
+              <mrow>\amp=x</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>f(x)=x^2-16</m> and <m>g(x)=\sqrt{x+16}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>(f \circ g)(x)\amp=f(\highlight{g(x)})</mrow>
+              <mrow>\amp=f(\highlight{\sqrt{x+16}})</mrow>
+              <mrow>\amp=(\highlight{\sqrt{x+16}})^2-16</mrow>
+              <mrow>\amp=x+16-16</mrow>
+              <mrow>\amp=x</mrow>
+            </md>
+            <md>
+              <mrow>(g \circ f)(x)\amp=g(\highlightr{f(x)})</mrow>
+              <mrow>\amp=g(\highlightr{x^2-16})</mrow>
+              <mrow>\amp=\sqrt{\highlightr{x^2-16}+16}</mrow>
+              <mrow>\amp=\sqrt{x^2}</mrow>
+              <mrow>\amp=\abs{x}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+</section>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="exponents-summary">
+  <title>Summary of the Rules of Exponents</title>
+  <p>
+    <ul>
+      <li>
+        <p>
+          The Product Rule for Exponents:  <me>x^m \cdot x^n=x^{m+n}</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          The Power to a Power Rule for Exponents: <me>(x^m)^n=x^{mn}</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          The Product to a Power Rule for Exponents: <me>(xy)^n=x^ny^n</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          The Quotient to a Power Rule for Exponents: <me>\left(\frac{x}{y}\right)^n=\frac{x^n}{y^n}</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          The Quotient Rules for Exponents: <me>\frac{x^m}{x^n}=x^{m-n} \text{ and } \frac{x^m}{x^n}=\frac{1}{x^{n-m}}</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          Zero Exponent: <me>x^0=1 \text{ for } x \neq 0</me>
+        </p>
+     </li>
+      <li>
+        <p>
+          Negative Exponents: <me>x^{-n}=\frac{1}{x^n}</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          Properties if Negative Exponents: <me>\frac{1}{x^{-n}}=x^n \text{ and } \left(\frac{x}{y}\right)^{-n}=\left(\frac{y}{x}\right)^n</me>
+        </p>
+      </li>
+    </ul>
+  </p>
+
+</section>

@@ -9,16 +9,14 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="parabola-materials">
-    <title>Systems of Linear Equations</title>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="systems-materials">
+  <title>Systems of Linear Equations</title>
 
-      <xi:include href="./systems-videos.ptx" />
-      <xi:include href="./systems-graphs.ptx" />
-      <xi:include href="./systems-substitution-method.ptx" />
-      <xi:include href="./systems-elimination-method.ptx" />
-      <xi:include href="./systems-applications.ptx" />
-      <xi:include href="./systems-additional-practice.ptx" />
-
-
+  <xi:include href="./systems-videos.ptx" />
+  <xi:include href="./systems-graphs.ptx" />
+  <xi:include href="./systems-substitution-method.ptx" />
+  <xi:include href="./systems-elimination-method.ptx" />
+  <xi:include href="./systems-applications.ptx" />
+  <xi:include href="./systems-additional-practice.ptx" />
 
 </chapter>

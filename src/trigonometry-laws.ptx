@@ -1,0 +1,1472 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="trigonometry-laws">
+  <title>The Law of Sines and The Law of Cosines</title>
+
+   <paragraphs>
+    <title>The Law of Sines</title>
+    <p></p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        The <term>law of sines</term> is a proportionality law relating the various parts of a triangle.  The law is stated below.  The variables reference the parts of the triangle shown in <xref ref="trigonometry-laws-figure-1">Figure</xref>.  Note that angle <m>\alpha</m> is opposite side <m>a</m>, angle <m>\beta</m> is opposite side <m>b</m>, and angle <m>\gamma</m> is opposite side <m>c</m>.
+        <me>\frac{\sin(\alpha)}{a}=\frac{\sin(\beta)}{b}=\frac{\sin(\gamma)}{c}</me>
+      </p>
+
+      <figure xml:id="trigonometry-laws-figure-1">
+        <caption>Parts for the Law of Sines</caption>
+        <image>
+          <description>
+            A  triangle with angles <m>\alpha</m>, <m>\beta</m>, and <m>\gamma</m>.  The side opposite <m>\alpha</m> is labeled <m>a</m>, the side opposite <m>\beta</m> is labeled <m>b</m>, the side opposite <m>\gamma</m> is labeled <m>c</m>.
+          </description>
+          <latex-image-code>
+            <![CDATA[
+              \begin{tikzpicture}
+                \draw (0,0) -- (8,0) node[midway, below]{$a$} -- (5,6) node[midway, above right] {$b$} -- (0,0) node[midway, above left] {$c$};
+                \draw (4.67,5.63) arc (243:302:.5);
+                \draw (4.9,5.3) node{$\alpha$};
+                \draw (0.5,0) arc (0:50:.5);
+                \draw (0.75,0.35) node{$\beta$};
+                \draw (7.77,0.45) arc (120:180:.5);
+                \draw (7.3,0.35) node{$\gamma$};
+              \end{tikzpicture}
+            ]]>
+          </latex-image-code>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <p>
+      The law can also be stated as follows.
+      <me>\frac{a}{\sin(\alpha)}=\frac{b}{\sin(\beta)}=\frac{c}{\sin(\gamma)}</me>
+      The algebra associate with the law is a little bit easier if the use the form of the law that puts the variable you are solving for in the numerator.
+    </p>
+    <example>
+      <statement>
+        <sidebyside>
+
+          <p>
+            Use the law of sines to determine the value of <m>b</m> in <xref ref="trigonometry-laws-figure-2">Figure</xref>.  Round the value to the nearest hundredth.
+          </p>
+
+          <figure xml:id="trigonometry-laws-figure-2">
+            <caption>Determine the Value of <m>b</m></caption>
+            <image>
+              <description>
+                A  triangle with one angle <m>70.5^{\circ}</m> and a second angle labeled <m>52.2^{\circ}</m>. The side opposite the <m>52.2^{\circ}</m> angle is labeled <m>b</m> and the side opposite the <m>70.5^{\circ}</m> angle is labeled <m>8</m>.
+              </description>
+              <latex-image-code>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \draw (0,0) -- (8,0) node[midway, below]{$8.0$} -- (5,6) node[midway, above right] {$b$} -- (0,0);
+                    \draw (4.67,5.63) arc (243:302:.5);
+                    \draw (4.9,5) node{$70.5^{\circ}$};
+                    \draw (0.5,0) arc (0:50:.5);
+                    \draw (1.3,0.45) node{$52.2^{\circ}$};
+                  \end{tikzpicture}
+                ]]>
+              </latex-image-code>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </statement>
+      <solution>
+        <p>
+          From the law of sines we get the following.
+          <me>\frac{b}{\sin\left(52.2^{\circ}\right)}=\frac{8.0}{\sin\left(70.5^{\circ}\right)}</me>
+          Solving for <m>b</m>, we get the following.
+          <md>
+            <mrow>b\amp=\frac{8.0\sin\left(52.2^{\circ}\right)}{\sin\left(70.5^{\circ}\right)}</mrow>
+            <mrow>\amp\approx 6.71</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <sidebyside>
+
+          <p>
+            Use the law of sines to determine the value of <m>\gamma</m> in <xref ref="trigonometry-laws-figure-3">Figure</xref>.  Round the value to the nearest hundredth degree.
+          </p>
+
+          <figure xml:id="trigonometry-laws-figure-3">
+            <caption>Determine the Value of <m>\gamma</m></caption>
+            <image>
+              <description>
+                A  triangle with one angle labeled <m>\gamma</m> and a second angle labeled <m>52.2^{\circ}</m>.  The side opposite <m>\gamma</m> is labeled <m>7.1</m> and the side opposite the <m>52.2^{\circ}</m> angle is labeled <m>6.7</m>.
+              </description>
+              <latex-image-code>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \draw (0,0) -- (8,0) -- (5,6) node[midway, above right] {$6.7$} -- (0,0) node[midway, above left] {$7.1$};
+                    \draw (0.5,0) arc (0:50:.5);
+                    \draw (1.3,0.45) node{$52.2^{\circ}$};
+                    \draw (7.77,0.45) arc (120:180:.5);
+                    \draw (7.3,0.35) node{$\gamma$};
+                  \end{tikzpicture}
+                ]]>
+              </latex-image-code>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </statement>
+      <solution>
+        <p>
+          From the law of sines we get the following.
+          <me>\frac{\sin(\gamma)}{7.1}=\frac{\sin\left(52.2^{\circ}\right)}{6.7}</me>
+          We now solve for <m>\gamma</m>. Note that it is visually apparent that <m>0^{\circ} \lt \beta \lt 90^{\circ}</m>, so we can be confident that the inverse sine function will return the value we are looking for.
+          <md>
+            <mrow>sin(\gamma)\amp=\frac{7.1\sin\left(52.2^{\circ}\right)}{6.7}</mrow>
+            <mrow>\gamma\amp=\sin^{-1}\left(\frac{7.1\sin\left(52.2^{\circ}\right)}{6.7}\right)</mrow>
+            <mrow>\gamma\amp\approx 56.86^{\circ}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+
+  </paragraphs>
+
+  <paragraphs>
+    <title>The Law of Cosines</title>
+    <p></p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        The <term>law of cosines</term> is a law similar to the Pythagorean theorem that has an added term to adjust for situations where the triangle in question is not a right triangle.   The law is stated three times below.  The variables reference the parts of the triangle shown in <xref ref="trigonometry-laws-figure-51">Figure</xref>.  Note that angle <m>\alpha</m> is opposite side <m>a</m>, angle <m>\beta</m> is opposite side <m>b</m>, and angle <m>\gamma</m> is opposite side <m>c</m>.
+      </p>
+
+      <figure xml:id="trigonometry-laws-figure-51">
+        <caption>Parts for the Law of Cosines</caption>
+        <image>
+          <description>
+            A  triangle with angles <m>\alpha</m>, <m>\beta</m>, and <m>\gamma</m>.  The side opposite <m>\alpha</m> is labeled <m>a</m>, the side opposite <m>\beta</m> is labeled <m>b</m>, the side opposite <m>\gamma</m> is labeled <m>c</m>.
+          </description>
+          <latex-image-code>
+            <![CDATA[
+              \begin{tikzpicture}
+                \draw (0,0) -- (8,0) node[midway, below]{$a$} -- (5,6) node[midway, above right] {$b$} -- (0,0) node[midway, above left] {$c$};
+                \draw (4.67,5.63) arc (243:302:.5);
+                \draw (4.9,5.3) node{$\alpha$};
+                \draw (0.5,0) arc (0:50:.5);
+                \draw (0.75,0.35) node{$\beta$};
+                \draw (7.77,0.45) arc (120:180:.5);
+                \draw (7.3,0.35) node{$\gamma$};
+              \end{tikzpicture}
+            ]]>
+          </latex-image-code>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <p>
+      <me>c^2=a^2+b^2-2ab\cos(\gamma)</me>
+      <me>b^2=a^2+c^2-2ac\cos(\beta)</me>
+      <me>a^2=b^2+c^2-2bc\cos(\alpha)</me>
+      Note that the side of the triangle that appears on the left side of each equation resides on the opposite side of the triangle from the angle that appears on the right side of the equation. 
+    </p>
+
+    <example>
+      <statement>
+        <sidebyside>
+
+          <p>
+            Use the law of cosines to determine the value of <m>b</m> in <href ref="trigonometry-laws-figure-52">Figure</href>.  Round the value to the nearest tenth.
+          </p>
+
+          <figure xml:id="trigonometry-laws-figure-52">
+            <caption>Determine the Value of <m>b</m></caption>
+            <image>
+              <description>
+                A  triangle with one angle marked <m>52.2^{\circ}</m>.  The side opposite the <m>52.2^{\circ}</m> is labeled <m>b</m>.  The other two sides are marked <m>7.1</m> and <m>8.0</m>.
+              </description>
+              <latex-image-code>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \draw (0,0) -- (8,0) node[midway, below] {$8.0$} -- (5,6) node[midway, above right] {$b$} -- (0,0) node[midway, above left] {$7.1$};
+                    \draw (0.5,0) arc (0:50:.5);
+                    \draw (1.3,0.45) node{$52.2^{\circ}$};
+                  \end{tikzpicture}
+                ]]>
+              </latex-image-code>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </statement>
+      <solution>
+        <p>
+          From the law of cosines we get the following.
+          <md>
+            <mrow>b^2\amp=7.1^2+8.0^2-2(7.1)(8.0)\cos\left(52.2^{\circ}\right)</mrow>
+            <mrow>b\amp=\sqrt{7.1^2+8.0^2-2(7.1)(8.0)\cos\left(52.2^{\circ}\right)}</mrow>
+            <mrow>b\amp\approx 6.7</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <sidebyside>
+
+          <p>
+            Use the law of cosines to determine the value of <m>\alpha</m> in <xref ref="trigonometry-laws-figure-53">Figure</xref>.  Round the value to the nearest tenth of a degree.
+          </p>
+
+          <figure xml:id="trigonometry-laws-figure-53">
+            <caption>Determine the Value of <m>\alpha</m></caption>
+            <image>
+              <description>
+                A  triangle with sides labeled <m>6.7</m>, <m>7.1</m>, and <m>8.0</m>.  The angle opposite the side labeled <m>8.0</m> is labeled <m>\alpha</m>.
+              </description>
+              <latex-image-code>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \draw (0,0) -- (8,0) node[midway, below]{$8.0$} -- (5,6) node[midway, above right] {$6.7$} -- (0,0) node[midway, above left] {$7.1$};
+                    \draw (4.67,5.63) arc (243:302:.5);
+                    \draw (4.9,5.3) node{$\alpha$};
+                  \end{tikzpicture}
+                ]]>
+              </latex-image-code>
+            </image>
+          </figure>
+
+        </sidebyside>
+      </statement>
+      <solution>
+        <p>
+          We get the following from the law of cosines.  Note that the left side of the equation is <m>8.0^2</m> because the side labeled <m>8.0</m> is opposite the angle we are solving for. Note that we can rest assured that the inverse cosine function will give us the correct angle because the range of the function is <m>\left[0^{\circ},180^{\circ}\right]</m> and the value of <m>\alpha</m> definitely falls on  <m>\left(0^{\circ},180^{\circ}\right)</m>.
+          <md>
+            <mrow>8.0^2\amp=6.7^2+7.1^2-2(6.7)(7.1)\cos(\alpha)</mrow>
+            <mrow>64\amp=95.3-95.14\cos(\alpha)</mrow>
+            <mrow>-31.3\amp=-95.14\cos(\alpha)</mrow>
+            <mrow>\alpha\amp=\cos^{-1}\left(\frac{31.3}{95.14}\right)</mrow>
+            <mrow>\alpha\amp\approx 70.8^{\circ}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+  </paragraphs>
+  <paragraphs>
+    <title>Congruent Triangles</title>
+    <p></p>
+    <p>
+      Using Euclidean geometry, it is fairly easy to prove several triangle congruency theorems.  The laws state that if three specific parts of two triangles have equal measure, then the remaining three parts also have equal measure.  Now that we have the law of sines and the law of cosines in our tool kit, we can determine the values of the missing three parts of a triangle whose other three parts are given in one of the following ways.
+    </p>
+  </paragraphs>
+  <paragraphs>
+    <title>Side-Angle-Side (SAS)</title>
+    <p></p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        In this situation, the length of two sides of the triangle are given as is the angle between those two sides.  As illustrated in <xref ref="trigonometry-laws-figure-61">Figure</xref>, it is pretty clear that the only way we can complete the triangle in a way that preserves <m>a</m>, <m>b</m>, and <m>\gamma</m> is to connect the hanging ends of the two sides with a line segment.
+      </p>
+
+      <figure xml:id="trigonometry-laws-figure-61">
+        <caption>Side-Angle-Side</caption>
+        <image>
+          <description>
+            An angle labeled <m>\alpha</m> with sides labeled <m>a</m> and <m>b</m>.  A triangle is formed by connecting the ends of the angle with a dashed line.
+          </description>
+          <latex-image-code>
+            <![CDATA[
+              \begin{tikzpicture}
+                \draw (0,0) -- (8,0) node[midway, below]{$a$} -- (5,6) node[midway, above right] {$b$};
+                \draw (5,6) -- (0,0) [dashed];
+                \draw (7.77,0.45) arc (120:180:.5);
+                \draw (7.3,0.35) node{$\gamma$};
+              \end{tikzpicture}
+            ]]>
+          </latex-image-code>
+        </image>
+      </figure>
+
+    </sidebyside>
+  </paragraphs>
+  <paragraphs>
+    <title>Angle-Side-Angle (ASA)</title>
+    <p></p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        In this situation, two angles (whose sum is less than <m>180^{\circ}</m>) are given as well as the side between the angles.  As illustrated in <xref ref="trigonometry-laws-figure-62">Figure</xref>, the two unknown sides are going to intersect in a unique spot, those completing the triangle in only on possible way.
+      </p>
+
+      <figure xml:id="trigonometry-laws-figure-62">
+        <caption>Angle-Side-Angle</caption>
+        <image>
+          <description>
+            A line segment labeled <m>a</m>.  At both ends of the line segment there is an angle drawn above the line segment with the send side lying above the ling segment.  One angle is labeled <m>\beta</m> and the other angle is labeled <m>\gamma</m>.  Dashed lines have been drawn that follow the paths of the second sides of <m>\beta</m> and <m>\gamma</m>.  The dashed line segments eventually meet creating a unique triangle. 
+          </description>
+          <latex-image-code>
+            <![CDATA[
+              \begin{tikzpicture}
+                \draw (0,0) -- (8,0) node[midway, below]{$a$};
+                \draw (8,0) -- (5,6) -- (0,0) [dashed];
+                \draw (0.5,0) arc (0:50:.5);
+                \draw (0.75,0.35) node{$\beta$};
+                \draw (7.77,0.45) arc (120:180:.5);
+                \draw (7.3,0.35) node{$\gamma$};
+              \end{tikzpicture}
+            ]]>
+          </latex-image-code>
+        </image>
+      </figure>
+
+    </sidebyside>
+  </paragraphs>
+  <paragraphs>
+    <title>Angle-Angle-Side (AAS) and Side-Side-Side (SSS)</title>
+    <p></p>
+    <p>
+      In the case of Angle-Angle-Side, two consecutive angles are given as well as one of the sides that is not between the two angles.  It's a little more difficult to visualize why this determines a unique triangle, but we don't need to.  If two of the angle measurements are known, the measurement of the third angle immediately follows as the three angles' measurements must sum to <m>180^{\circ}</m>.  Thus, Angle-Angle-Side is essentially the same as Angle-Side-Angle, which is fairly easy to visualize.
+    </p>
+    <p>
+      In the case of Side-Side-Side, the measurement of each side is given.  It's difficult establish with a picture why this information establishes a unique triangle.  If you have trouble visualizing it in your head, just gather a few thin straight objects.  Mix and match the objects into triads, and see that there is always only one way to connect the three pieces into a triangle.
+    </p>
+
+    <example>
+      <statement>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            Determine all of the angle measurements for the triangle shown in <xref ref="trigonometry-laws-figure-63">Figure</xref>.  Round each value to the nearest hundredth degree.
+          </p>
+
+          <figure xml:id="trigonometry-laws-figure-63">
+            <caption>Determine the Measurement of Each Angle</caption>
+            <image>
+              <description>
+                A  triangle with the sides labeled as <m>4.00</m>, <m>2.61</m>, and <m>5.14</m>.  The angle opposite the side labeled <m>4.00</m> is labeled <m>\beta</m>.  The angle opposite the side labeled 2.61 is labeled <m>\alpha</m>.  The side opposite the side labeled <m>5.14</m> is labeled <m>\gamma</m>.
+              </description>
+              <latex-image-code>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \draw (0,0) -- (4,0) node[midway, below] {$4.00$} -- (4.45,2.57) node[midway, below right] {$2.61$} -- (0,0) node[midway, above left] {$5.14$};
+                    \draw (0.5,0) arc (0:30:.5);
+                    \draw (0.8,0.2) node{$\alpha$};
+                    \draw (4.03,2.34) arc (210:260:.5);
+                    \draw (3.95,1.9) node{$\beta$};
+                    \draw (4.1,0.5) arc (80:180:.5);
+                    \draw (3.5,0.55) node{$\gamma$};
+                  \end{tikzpicture}
+                ]]>
+              </latex-image-code>
+            </image>
+          </figure>
+
+        </sidebyside>
+        
+      </statement>
+      <solution>
+        <p>
+          Because we don't know any of the angle measurements, we cannot begin with the law of sines.  Because the range of the inverse cosine function is <m>[0^{\circ},180^{\circ}]</m>, we can use that law with confidence to determine any of the angles.  I choose to first find the measurement of <m>\gamma</m>.  Since <m>5.14</m> is the label opposite <m>\gamma</m>, that is the figure that goes on the left side of the equation in the law of cosines.
+          <md>
+            <mrow>5.14^2\amp=4.00^2+2.61^2-2(4.00)(2.61)\cos(\gamma)</mrow>
+            <mrow>26.4196\amp=22.8121-20.88\cos(\gamma)</mrow>
+            <mrow>3.6075\amp=-20.88\cos(\gamma)</mrow>
+            <mrow>\gamma\amp=\cos^{-1}\left(-\frac{3.6075}{20.88}\right)</mrow>
+            <mrow>\gamma\amp\approx 99.95^{\circ}</mrow>
+          </md>
+        </p>
+        <p>
+          Because no more than one angle in the triangle can have a measurement greater than <m>90^{\circ}</m>, we can safely use the law of sines to determine the measurement of either of the other two angles.  I choose to determine the measurement of <m>\beta</m> next.
+          <md>
+            <mrow>\frac{\sin(\beta)}{4.00}\amp=\frac{\sin\left(99.95^{\circ}\right)}{5.14}</mrow>
+            <mrow>\sin(\beta)\amp=\frac{4.00\sin\left(99.95^{\circ}\right)}{5.14}</mrow>
+            <mrow>\beta\amp=\sin^{-1}\left(\frac{4.00\sin\left(99.95^{\circ}\right)}{5.14}\right)</mrow>
+            <mrow>\beta\amp\approx 50.04^{\circ}</mrow>
+          </md>
+          We can now use the fact that the angles of a (Euclidean) triangle must sum to <m>180^{\circ}</m> to determine the value of <m>\alpha</m>.
+          <md>
+            <mrow>\alpha\amp\approx 180^{\circ}-99.95^{\circ}-50.04^{\circ}</mrow>
+            <mrow>\amp=30.01^{\circ}</mrow>
+          </md>
+          Please note that we could check our work by also using the law of sines or law of cosines to determine the value of <m>\alpha</m>.  Being cautious, I choose to use the law of sines to check and do so below.
+          <md>
+            <mrow>\frac{\sin(\alpha)}{2.61}\amp=\frac{\sin\left(99.95^{\circ}\right)}{5.14}</mrow>
+            <mrow>\sin(\alpha)\amp=\frac{2.61\sin\left(99.95^{\circ}\right)}{5.14}</mrow>
+            <mrow>\alpha\amp=\sin^{-1}\left(\frac{2.61\sin\left(99.95^{\circ}\right)}{5.14}\right)</mrow>
+            <mrow>\alpha\amp\approx 30.01^{\circ}\,\,\checkmark</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            Determine all of the missing measurements for the triangle shown in <xref ref="trigonometry-laws-figure-64">Figure</xref>.  Round each angular value to the nearest hundredth degree and each side value to the nearest hundredth.
+          </p>
+
+          <figure xml:id="trigonometry-laws-figure-64">
+            <caption>Determine the Missing Measurements</caption>
+            <image>
+              <description>
+                A  triangle with one angle labeled <m>55^{\circ}</m>, a second angle labeled <m>80^{\circ}</m>, and the third angle labeled <m>\gamma</m>.  The side opposite the <m>55^{\circ}</m> angle is labeled <m>5.00</m>, the side opposite the <m>80^{\circ}</m> angle is labeled <m>b</m>, and the side opposite <m>\gamma</m> is labeled <m>c</m>.
+              </description>
+              <latex-image-code>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \draw (4,0) -- (6.48,3.53) node[midway, right] {$c$} -- (0.46,3.53) node[midway, above] {$b$} -- (4,0) node[midway, below left] {$5.00$};
+                    \draw (4.28,0.42) arc (55:135:.5);
+                    \draw (4.05,1) node{$80^{\circ}$};
+                    \draw (0.82,3.17) arc (315:360:.5);
+                    \draw (1.6,3.1) node{$\gamma$};
+                    \draw (5.98,3.53) arc (180:235:.5);
+                    \draw (5.3,3) node{$55^{\circ$};
+                  \end{tikzpicture}
+                ]]>
+              </latex-image-code>
+            </image>
+          </figure>
+
+        </sidebyside>
+        
+      </statement>
+      <solution>
+        <p>
+          Let's begin by using the fact that the angles must sum to <m>180^{\circ}</m> to determine the value of <m>\gamma</m>.
+          <md>
+            <mrow>\gamma\amp=180^{\circ}-80^{\circ}-55^{\circ}</mrow>
+            <mrow>\amp=45^{\circ}</mrow>
+          </md>
+          We can now use the law of sines to determine the two missing side measurements.  We begin with <m>b</m>.
+          <md>
+            <mrow>\frac{b}{\sin\left(80^{\circ}\right)}\amp=\frac{5.00}{\sin\left(55^{\circ}\right)}</mrow>
+            <mrow>b\amp=\frac{5.00\sin\left(80^{\circ}\right)}{\sin\left(55^{\circ}\right)}</mrow>
+            <mrow>b\amp\approx 6.01</mrow>
+          </md>
+          We now move on to <m>c</m>.  Since we've already rounded the value of <m>b</m>, we are better off using the given side of 5.00 in this calculation.
+          <md>
+            <mrow>\frac{c}{\sin\left(45^{\circ}\right)}\amp=\frac{5.00}{\sin\left(55^{\circ}\right)}</mrow>
+            <mrow>c\amp=\frac{5.00\sin\left(45^{\circ}\right)}{\sin\left(55^{\circ}\right)}</mrow>
+            <mrow>c\amp\approx 4.32</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+    
+  </paragraphs>
+  <paragraphs>
+    <title>Side-Side-Angle (SSA): The Ambiguous Case</title>
+    <p></p>
+    <p>
+      When two sides of a triangle are given as well as one of the angles that is not between the two stated sides, the situation is called Side-Side-Angle and is also called <term>the ambiguous case</term>.  It turns out that in this situation, there can be no triangle that fits the stated parameters, exactly one triangle that fits the stated parameters, or exactly two triangles that fit the stated parameters.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        The Side-Side-Angle correspondence in <xref ref="trigonometry-laws-figure-71">Figure</xref> is labeled <m>c-a-\gamma</m> .  This is an illustration of a case where there is no triangle that fits the given parameters.  Clearly there is no way that the side labeled <m>c</m> can meet up with the far edge of the angle labeled <m>\gamma</m>.
+      </p>
+
+      <figure xml:id="trigonometry-laws-figure-71">
+        <caption>An SSA Triangle With No Solution</caption>
+        <image>
+          <description>
+            A  would be triangle with an angle labeled <m>\gamma</m>.  One side of <m>\gamma</m> is labeled <m>a</m>. At the end <m>a</m> opposite the vertex at <m>\gamma</m> there is an attached side labeled <m>c</m>.  It is visually apparent that is too short to meet up with the far side of <m>\gamma</m>.
+          </description>
+          <latex-image-code>
+            <![CDATA[
+              \begin{tikzpicture}
+                \draw (8,0) -- (0,0) -- (3,6) node[midway, above left] {$a$};
+                \draw (3,6) -- (3,3) [dashed] node[midway, right] {$c$};
+                \draw (0.5,0) arc (0:63.4:.5);
+                \draw (0.75,0.35) node{$\gamma$};
+              \end{tikzpicture}
+            ]]>
+          </latex-image-code>
+        </image>
+      </figure>
+    </sidebyside>
+    <p>
+      There are two ways that there is exactly one triangle that satisfies the parameters in an SSA situation.  Sticking with the <m>c-a-\gamma</m> arrangement shown in <xref ref="trigonometry-laws-figure-71">Figure</xref>, one way there can be exactly one solution is for side <m>c</m> to form a right angle with the far side of angle <m>\gamma</m>.  This is illustrated in <xref ref="trigonometry-laws-figure-72">Figure</xref>. The other way for there to be a unique solution is for side <m>c</m> to be longer than side <m>a</m>.  This is illustrated in <xref ref="trigonometry-laws-figure-73">Figure</xref>.
+    </p>
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <figure xml:id="trigonometry-laws-figure-72">
+        <caption>An SSA Triangle With Exactly One Solution</caption>
+        <image>
+          <description>
+            An angle labeled <m>\gamma</m>that opens to the right.  The top side of the angle is labeled <m>a</m>.  A dashed line segment labeled <m>c</m> drops from the right endpoint of the side labeled <m>a</m>.  That dashed line segment terminates in a right angle at the bottom side of the angle labeled <m>\gamma</m>.
+          </description>
+          <latex-image-code>
+            <![CDATA[
+              \begin{tikzpicture}
+                \draw (8,0) -- (0,0) -- (3,6) node[midway, above left] {$a$};
+                \draw  (3,6) -- (3,0) [dashed] node[midway, right] {$c$};
+                \draw (0.5,0) arc (0:63.4:.5);
+                \draw (0.75,0.35) node{$\gamma$};
+                \draw (2.5,0) -- (2.5,0.5) -- (3,0.5);
+              \end{tikzpicture}
+            ]]>
+          </latex-image-code>
+        </image>
+      </figure>
+
+      <figure xml:id="trigonometry-laws-figure-73">
+        <caption>An SSA Triangle With Exactly One Solution</caption>
+        <image>
+          <description>
+            An angle labeled <m>\gamma</m>that opens to the right.  The top side of the angle is labeled <m>a</m>.  A dashed line segment labeled <m>c</m> drops from the right endpoint of the side labeled <m>a</m>.  The bashed line segment labeled <m>c</m> is clearly longer than <m>b</m> and clearly intersects the bottom side of the angle <m>\gamma</m> in a unique point.
+          </description>
+          <latex-image-code>
+            <![CDATA[
+              \begin{tikzpicture}
+                \draw (8,0) -- (0,0) -- (3,6) node[midway, above left] {$a$};
+                \draw (3,6) -- (8,0) [dashed] node[midway, above right] {$c$};
+                \draw (0.5,0) arc (0:63.4:.5);
+                \draw (0.75,0.35) node{$\gamma$};
+              \end{tikzpicture}
+            ]]>
+          </latex-image-code>
+        </image>
+      </figure>
+
+    </sidebyside>
+
+    <sidebyside widths="47% 47%" margins="0%">
+
+      <p>
+        Again staying with the <m>c-a-\gamma</m> schema used in the last three figures, when the length of <m>c</m> is between the length of <m>a</m> and the length of <m>c</m> in the right triangle diagram (<xref ref="trigonometry-laws-figure-72">Figure</xref>), there are two solutions for the triangle with the stated parameters.  This is illustrated in <xref ref="trigonometry-laws-figure-74">Figure</xref>.
+      </p>
+
+      <figure xml:id="trigonometry-laws-figure-74">
+        <caption>An SSA Triangle With Two Solutions</caption>
+        <image>
+          <description>
+            An angle labeled <m>\gamma</m>that opens to the right.  The top side of the angle is labeled <m>a</m>.  Two dashed line segments of equal length, both labeled <m>c</m>, drop from the right endpoint of the side labeled <m>a</m>.  The dashed line segments both intersect with the bottom side <m>\gamma</m>.  One of the sides labeled <m>c</m> lies to the left of the point from which it dropped and the other lies to the right of the point from which it dropped.
+          </description>
+          <latex-image-code>
+            <![CDATA[
+              \begin{tikzpicture}
+                \draw (8,0) -- (0,0) -- (3,6) node[midway, above left] {$a$};
+                \draw (3,6) -- (4,0) [dashed] node[midway, above right] {$c$};
+                \draw (3,6) -- (2,0) [dashed] node[midway, above left] {$c$};
+                \draw (0.5,0) arc (0:63.4:.5);
+                \draw (0.75,0.35) node{$\gamma$};
+              \end{tikzpicture}
+            ]]>
+          </latex-image-code>
+        </image>
+      </figure>
+
+    </sidebyside>
+    <p>
+      Mathematically, the source of the ambiguous case are equations of form
+      <me>\sin(\theta)=k,\,\,k \gt 0.</me>
+      Over the interval <m>\left(0^{\circ}, 180^{\circ}\right)</m>, equations of that form always have exactly zero solutions or exactly two solutions.  If there are two solutions, one is an angle whose measurement is less than <m>90^{\circ}</m> (an acute angle) and the other is an angle whose measurement is greater than <m>90^{\circ}</m> (an obtuse angle).  If the sum of the obtuse solution and the known angle is greater than or equal to <m>180^{\circ}</m>, then the SSA triangle has only one solution.  However, if the sum of the obtuse solution and the known angle is less than <m>180^{\circ}</m>, then the SSA triangle has two solutions.
+    </p>
+    <p>
+      Please note that in the following examples and in the exercises related to this topic you will have to draw your own diagrams so that a to-scale diagram doesn't reveal the number of solutions.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Determine all solutions, if any, to the SSA triangle where <m>a=8</m>, <m>c=3</m>, and <m>\gamma=62^{\circ}</m>.  Round all values to the nearest hundredth. 
+        </p>
+      </statement>
+      <solution>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            Please note that the triangle in <xref ref="trigonometry-laws-figure-75">Figure</xref> is not drawn to scale, it is presented just to help us visualize the relationship of the parts of the triangle.  At this point the only action we can take is to use the law of sines to solve for <m>\alpha</m>, which is done below.
+          </p>
+
+          <figure xml:id="trigonometry-laws-figure-75">
+            <caption>Solve the SSA Triangle</caption>
+            <image>
+              <description>
+                A  triangle with angles labeled <m>\alpha</m> and <m>\beta</m> as well as one labeled <m>62^{|circ}</m>.  The top side of the <m>62^{\circ}</m> is labeled <m>8</m>; this side is also opposite the angle labeled <m>\alpha</m>. The side opposite the <m>62^{\circ}</m> angle is labeled <m>3</m>.   The side opposite <m>\beta</m> is labeled <m>b</m>.
+              </description>
+              <latex-image-code>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \draw (0,0) -- (8,0) node[midway, below] {$b$} -- (5,6) node[midway, above right] {$3$} -- (0,0) node[midway, above left] {$8$};
+                    \draw (4.67,5.63) arc (243:302:.5);
+                    \draw (4.9,5.15) node{$\beta$};
+                    \draw (0.5,0) arc (0:50:.5);
+                    \draw (1.3,0.45) node{$62^{\circ}$};
+                    \draw (7.77,0.45) arc (120:180:.5);
+                    \draw (7.3,0.35) node{$\alpha$};
+                  \end{tikzpicture}
+                ]]>
+              </latex-image-code>
+            </image>
+          </figure>
+
+        </sidebyside>
+        <p>
+          <md>
+            <mrow>\frac{\sin(\alpha)}{8}\amp=\frac{\sin\left(62^{\circ}\right)}{3}</mrow>
+            <mrow>\sin(\alpha)\amp=\frac{8\sin\left(62^{\circ}\right)}{3}</mrow>
+            <mrow>\sin(\alpha)\amp\approx 2.35</mrow>
+          </md>
+          This last equation clearly has no solution, as the value of the sine function never exceeds <m>1</m>.
+        </p>
+        <p>
+          In conclusion, there is no triangle with the stated parts.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine all solutions, if any, to the SSA triangle where <m>a=4</m>, <m>c=3</m>, and <m>\gamma=35^{\circ}</m>.  Round all values to the nearest hundredth. 
+        </p>
+      </statement>
+      <solution>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            Please note that the triangle in <xref ref="trigonometry-laws-figure-76">Figure</xref> is not drawn to scale, it is presented just to help us visualize the relationship of the parts of the triangle.  At this point the only action we can take is to use the law of sines to solve for <m>\alpha</m>.   We find the solution that falls between <m>0^{\circ}</m> and <m>90^{\circ}</m> below.
+          </p>
+
+          <figure xml:id="trigonometry-laws-figure-76">
+            <caption>Solve the SSA Triangle</caption>
+            <image>
+              <description>
+                A triangle with angles labeled <m>\alpha</m> and <m>\beta</m> as well as one labeled <m>35^{|circ}</m>.  The top side of the <m>35^{\circ}</m> is labeled <m>4</m>; this side is also opposite the angle labeled <m>\alpha</m>. The side opposite the <m>35^{\circ}</m> angle is labeled <m>3</m>.   The side opposite <m>\beta</m> is labeled <m>b</m>.
+              </description>
+              <latex-image-code>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \draw (0,0) -- (8,0) node[midway, below] {$b$} -- (5,6) node[midway, above right] {$3$} -- (0,0) node[midway, above left] {$4$};
+                    \draw (4.67,5.63) arc (243:302:.5);
+                    \draw (4.9,5.15) node{$\beta$};
+                    \draw (0.5,0) arc (0:50:.5);
+                    \draw (1.3,0.45) node{$35^{\circ}$};
+                    \draw (7.77,0.45) arc (120:180:.5);
+                    \draw (7.3,0.35) node{$\alpha$};
+                  \end{tikzpicture}
+                ]]>
+              </latex-image-code>
+            </image>
+          </figure>
+
+        </sidebyside>
+        <p>
+          <md>
+            <mrow>\frac{\sin(\alpha)}{4}\amp=\frac{\sin\left(35^{\circ}\right)}{3}</mrow>
+            <mrow>\sin(\alpha)\amp=\frac{4\sin\left(35^{\circ}\right)}{3}</mrow>
+            <mrow>\alpha\amp=\sin^{-1}\left(\frac{4\sin\left(35^{\circ}\right)}{3}\right)</mrow>
+            <mrow>\alpha\amp\approx 49.89^{\circ}</mrow>
+          </md>
+          There is another solution to the initial equation that is potentially relevant - the solution that lies between <m>90^{\circ}</m> and <m>180^{\circ}</m>.  That solution has a reference angle of <m>48.89^{\circ}</m> and is calculated below.
+          <me>180^{\circ}-48.89^{\circ}=130.11^{\circ}</me>
+          We now need to determine whether or not <m>\alpha\approx 130.11^{\circ}</m> is also a viable solution to the SSA triangle.  To do this we add it to the given angle: <m>35^{\circ}</m>.
+          <me>35^{\circ}+130.11^{\circ}=165.11^{\circ}</me>
+          Because that sum is less than <m>180^{\circ}</m>, the solution is viable, because there is "room" for <m>\alpha</m>.  Let's explore the two solutions separately.
+        </p>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            In <xref ref="trigonometry-laws-figure-77">Figure</xref> the solution with <m>\alpha\approx 49.89^{\circ}</m> is shown to scale.  We can use the fact that the angles sum to <m>180^{\circ}</m> to determine the value of <m>\beta</m>.
+            <md>
+              <mrow>\beta\amp\approx 180^{\circ}-35^{\circ}-48.89^{\circ}</mrow>
+              <mrow>\amp=96.02^{\circ}</mrow>
+            </md>
+          </p>
+
+          <figure xml:id="trigonometry-laws-figure-77">
+            <caption>Solve the SSA Triangle</caption>
+            <image>
+              <description>
+                A triangle with angles labeled <m>35^{|circ}</m> and <m>49.89^{\circ}</m> as well as one labeled <m>beta</m>.  The top side of the <m>35^{\circ}</m> is labeled <m>4</m>; this side is also opposite the <m>49.89^{\circ}</m> angle. The side opposite the <m>35^{\circ}</m> angle is labeled <m>3</m>.   The side opposite <m>\beta</m> is labeled <m>b</m>.
+              </description>
+              <latex-image-code>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \draw (0,0) -- (5.21,0) node[midway, below] {$b$} -- (3.28,2.29) node[midway, above right] {$3$} -- (0,0) node[midway, above left] {$4$};
+                    \draw (2.88,2) arc (215:310:.5);
+                    \draw (3.2,1.45) node{$\beta$};
+                    \draw (0.5,0) arc (0:35:.5);
+                    \draw (1.2,0.4) node{$35^{\circ}$};
+                    \draw (4.9,0.38) arc (130:180:.5);
+                    \draw (4,0.35) node{$48.89^{\circ$};
+                  \end{tikzpicture}
+                ]]>
+              </latex-image-code>
+            </image>
+          </figure>
+
+        </sidebyside>
+        <p>
+          We can now use the law of cosines or law of sines to determine the value of <m>b</m>.  I choose to use the law of cosines.
+          <md>
+            <mrow>b^2\amp=4^2+3^2-2(4)(3)\cos\left(95.11^{\circ}\right)</mrow>
+            <mrow>b\amp=\sqrt{4^2+3^2-2(4)(3)\cos\left(95.11^{\circ}\right)}</mrow>
+            <mrow>b\amp\approx 5.21</mrow>
+          </md>
+        </p>
+        <p>
+          Let's now move on to the solution where <m>\alpha\approx 130.11^{\circ}</m>.
+        </p>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            In <xref ref="trigonometry-laws-figure-78">Figure</xref> the solution with <m>\alpha\approx 130.11^{\circ}</m> is shown to scale.  We can use the fact that the angles sum to <m>180^{\circ}</m> to determine the value of <m>\beta</m>.
+            <md>
+              <mrow>\beta\amp\approx 180^{\circ}-35^{\circ}-130.11^{\circ}</mrow>
+              <mrow>\amp=14.49^{\circ}</mrow>
+            </md>
+          </p>
+
+          <figure xml:id="trigonometry-laws-figure-78">
+            <caption>Solve the SSA Triangle</caption>
+            <image>
+              <description>
+                A triangle with angles labeled <m>35^{|circ}</m> and <m>130.11^{\circ}</m> as well as one labeled <m>beta</m>.  The top side of the <m>35^{\circ}</m> is labeled <m>4</m>; this side is also opposite the <m>130.11^{\circ}</m> angle. The side opposite the <m>35^{\circ}</m> angle is labeled <m>3</m>.   The side opposite <m>\beta</m> is labeled <m>b</m>.
+              </description>
+              <latex-image-code>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \draw (0,0) -- (1.33,0) node[midway, below] {$b$} -- (3.28,2.29) node[midway, right] {$3$} -- (0,0) node[midway, above left] {$4$};
+                    \draw (2.88,2) arc (215:229.49:.5);
+                    \draw (2.9,2.35) node{$\beta$};
+                    \draw (0.5,0) arc (0:35:.5);
+                    \draw (0,0.4) node{$35^{\circ}$};
+                    \draw (1.65,0.38) arc (50:180:.5);
+                    \draw (2.2,0) node{$130.11^{\circ}$};
+                  \end{tikzpicture}
+                ]]>
+              </latex-image-code>
+            </image>
+          </figure>
+
+        </sidebyside>
+        <p>
+          We can now use the law of cosines or law of sines to determine the value of <m>b</m>.  I choose to use the law of cosines.
+          <md>
+            <mrow>b^2\amp=4^2+3^2-2(4)(3)\cos\left(14.9^{\circ}\right)</mrow>
+            <mrow>b\amp=\sqrt{4^2+3^2-2(4)(3)\cos\left(14.9^{\circ}\right)}</mrow>
+            <mrow>b\amp\approx 1.33</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine all solutions, if any, to the SSA triangle where <m>b=4</m>, <m>c=4</m>, and <m>\beta=53^{\circ}</m>.  Round all values to the nearest hundredth. 
+        </p>
+      </statement>
+      <solution>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            Please note that the triangle in <xref ref="trigonometry-laws-figure-79">Figure</xref> is not drawn to scale, it is presented just to help us visualize the relationship of the parts of the triangle.  At this point the only action we can take is to use the law of sines to solve for <m>\gamma</m>.  The solution which falls between <m>0^{\circ}</m> and <m>90^{\circ}</m> is found below.
+          </p>
+
+          <figure xml:id="trigonometry-laws-figure-79">
+            <caption>Solve the SSA Triangle</caption>
+            <image>
+              <description>
+                A  triangle with angles labeled <m>\alpha</m> and <m>\beta</m> as well as one labeled <m>62^{\circ}</m>.  The side top side of the <m>62^{\circ}</m> is labeled <m>8</m>m; this side is also opposite the angle labeled <m>\alpha</m>. The side opposite the <m>62^{\circ}</m> angle is labeled <m>3</m>.   The side opposite <m>\beta</m> is labeled <m>b</m>.
+              </description>
+              <latex-image-code>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \draw (0,0) -- (8,0) node[midway, below] {$6$} -- (5,6) node[midway, above right] {$4$} -- (0,0) node[midway, above left] {$a$};
+                    \draw (4.67,5.63) arc (243:302:.5);
+                    \draw (4.9,5.15) node{$53^{\circ}$};
+                    \draw (0.5,0) arc (0:50:.5);
+                    \draw (1.3,0.45) node{$\gamma$};
+                    \draw (7.77,0.45) arc (120:180:.5);
+                    \draw (7.3,0.35) node{$\alpha$};
+                  \end{tikzpicture}
+                ]]>
+              </latex-image-code>
+            </image>
+          </figure>
+
+        </sidebyside>
+        <p>
+          <md>
+            <mrow>\frac{\sin(\gamma)}{4}\amp=\frac{\sin\left(53^{\circ}\right)}{6}</mrow>
+            <mrow>\sin(\gamma)\amp=\frac{4\sin\left(53^{\circ}\right)}{6}</mrow>
+            <mrow>\gamma\amp=\sin^{-1}\left(\frac{4\sin\left(53^{\circ}\right)}{6}\right)</mrow>
+            <mrow>\gamma\amp\approx 32.17^{\circ}</mrow> 
+          </md>
+          There is also a solution to the initial equation that falls between <m>90^{\circ}</m> and <m>180^{\circ}</m>.  It is the angle that falls within that window that has a reference angle of <m>32.17^{\circ}</m>.  The solution is calculated below.
+          <me>180^{\circ}-32.17^{\circ}=147.83^{\circ}</me>
+          While <m>147.83^{\circ}</m> is a valid solution to those equations, it is not a valid solution to the stated SSA problem.  When we add that measurement to the given angle measurement of <m>53^{\circ}</m>, the total is <m>200.03^{\circ}</m>.  This brings the sum of the three angles over the known <m>180^{\circ}</m> without even taking into account the third angle!  Not a viable result.
+        </p>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <p>
+            The triangle is shown to scale in <xref ref="trigonometry-laws-figure-80">Figure</xref>.  We can use the fact that the angles sum to <m>180^{\circ}</m> to determine the value of <m>\alpha</m>.
+            <md>
+              <mrow>\alpha\amp\approx 180^{\circ}-53^{\circ}-32.17^{\circ}</mrow>
+              <mrow>\amp=94.83^{\circ}</mrow>
+            </md>
+          </p>
+
+          <figure xml:id="trigonometry-laws-figure-80">
+            <caption>Solve the SSA Triangle</caption>
+            <image>
+              <description>
+                A triangle with angles labeled <m>53^{\circ}</m> and <m>32.17^{\circ}</m> as well as one labeled <m>\alpha</m>.  The right side of the <m>53^{\circ}</m> is labeled <m>4</m>; this side is also opposite the <m>32.17^{\circ}</m> angle. The side opposite the <m>53^{\circ}</m> angle is labeled <m>6</m>.   The side opposite <m>\alpha</m> is labeled <m>a</m>.
+              </description>
+              <latex-image-code>
+                <![CDATA[
+                  \begin{tikzpicture}
+                    \draw (0,0) -- (6,0) node[midway, below] {$6$} -- (6.33,3.48) node[midway, below right] {$4$} -- (0,0) node[midway, above left] {$a$};
+                    \draw (5.9,3.25) arc (212.17:265.17:.5);
+                    \draw (5.8,2.7) node{$53^{\circ}$};
+                    \draw (0.54,0) arc (0:32.17:.5);
+                    \draw (1.4,0.25) node{$32.17^{\circ}$};
+                    \draw (6.05,0.5) arc (85.17:180:.5);
+                    \draw (5.2,0.45) node{$\alpha$};
+                  \end{tikzpicture}
+                ]]>
+              </latex-image-code>
+            </image>
+          </figure>
+
+        </sidebyside>
+          <p>
+            We can now use either the law of sines or the law of cosines to determine the value of <m>a</m>.  I chose to use the law of sines.
+            <md>
+              <mrow>\frac{a}{\sin\left(94.83^{\circ}\right)}\amp=\frac{6}{\sin\left(53^{\circ}\right)}</mrow>
+              <mrow>a\amp=\frac{6\sin\left(94.83^{\circ}\right)}{\sin\left(53^{\circ}\right)}</mrow>
+              <mrow>a\amp\approx 7.49</mrow>
+            </md>
+          </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <exercises>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Solve each triangle as directed.  If the parts stated create a Side-Side-Angle triangle, do not assume that the diagram is drawn to scale.  Even if the diagram is drawn to scale, don't assume that the diagrammed triangle is the only solution to the Side-Side-Angle triangle.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Classify the triangle shown in <xref ref="trigonometry-laws-exercises-figure-1">Figure</xref> as a SSS, SAS, ASA, AAS, or SSA triangle.  Then determine all possible values for the missing parts.  Round all values to the nearest hundredth. 
+            </p>
+
+            <figure xml:id="trigonometry-laws-exercises-figure-1">
+              <caption>Determine the Values of the Missing Parts</caption>
+              <image>
+                <description>
+                  A triangle with angles labeled <m>31^{|circ}</m> and <m>72^{\circ}</m> as well as one labeled <m>\beta</m>.  The top side of the <m>31^{\circ}</m> is labeled <m>14.64</m>; this side is also opposite the <m>72^{\circ}</m> angle. The side opposite the <m>31^{\circ}</m> angle is labeled <m>c</m>.   The side opposite <m>\beta</m> is labeled <m>b</m>.
+                </description>
+                <latex-image-code>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \draw (0,0) -- (8,0) node[midway, below] {$b$} -- (6.69,4.02) node[midway, above right] {$c$} -- (0,0) node[midway, above left] {$14.64$};
+                      \draw (6.1,3.65) arc (211:310:.5);
+                      \draw (6.25,3.05) node{$\beta$};
+                      \draw (0.54,0) arc (0:31:.5);
+                      \draw (1.4,0.35) node{$31^{\circ}$};
+                      \draw (7.85,0.47) arc (108:180:.5);
+                      \draw (7.1,0.5) node{$72^{\circ}$};
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image-code>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </statement>
+        <solution>
+          <p>
+            The given parts of the triangle create an Angle-Angle-Side triangle, so there will be unique solutions for the remaining parts.
+          </p>
+          <p>
+            We can use the fact that the angles must sum to <m>180^{\circ}</m> to determine the value of <m>\beta</m> and we do so below.
+            <md>
+              <mrow>\beta\amp=180^{\circ}-31^{\circ}-72^{\circ}</mrow>
+              <mrow>\amp=77^{\circ}</mrow>
+            </md>
+            We can now use the law of sines to determine the lengths of the remaining two sides and we do so below.
+          </p>
+            <sidebyside widths="47% 47%" margins="0%">
+
+              <p>
+                <md>
+                  <mrow>\frac{b}{\sin\left(77^{\circ}\right)}\amp=\frac{14.64}{\sin\left(72^{\circ}\right)}</mrow>
+                  <mrow>b\amp=\frac{14.64\sin\left(77^{\circ}\right)}{\sin\left(72^{\circ}\right)}</mrow>
+                  <mrow>b\amp\approx 15.00</mrow>
+                </md>
+              </p>
+
+              <p>
+                <md>
+                  <mrow>\frac{c}{\sin\left(31^{\circ}\right)}\amp=\frac{14.64}{\sin\left(72^{\circ}\right)}</mrow>
+                  <mrow>c\amp=\frac{14.64\sin\left(31^{\circ}\right)}{\sin\left(72^{\circ}\right)}</mrow>
+                  <mrow>c\amp\approx 7.93</mrow>
+                </md>
+              </p>
+
+            </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Classify the triangle shown in <xref ref="trigonometry-laws-exercises-figure-2">Figure</xref> as a SSS, SAS, ASA, AAS, or SSA triangle.  Then determine all possible values for the missing parts.  Round all values to the nearest hundredth. 
+            </p>
+
+            <figure xml:id="trigonometry-laws-exercises-figure-2">
+              <caption>Determine the Values of the Missing Parts</caption>
+              <image>
+                <description>
+                  A triangle with angles labeled <m>\alpha</m> and <m>\gamma</m> as well as one labeled <m>43.89^{\circ}</m>.  The side opposite <m>\alpha</m> is labeled <m>6</m>, the side opposite <m>\gamma</m> is labeled <m>10</m> and the side opposite <m>43.98^{\circ}</m> is labeled <m>b</m>. 
+                </description>
+                <latex-image-code>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \draw (0,1) -- (5,0) node[midway, below left] {$6$} -- (7.18,5.59) node[midway, below right] {$b$} -- (0,1) node[midway, above left] {$10$};
+                      \draw (6.55,5.2) arc (212.17:265.17:.5);
+                      \draw (6.55,4.8) node{$\alpha$};
+                      \draw (0.51,0.9) arc (348.7:392.59:.5);
+                      \draw (1.4,1.25) node{$43.89^{\circ}$};
+                      \draw (5.18,0.46) arc (68.7:168.7:.5);
+                      \draw (4.72,0.7) node{$\gamma$};
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image-code>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </statement>
+        <solution>
+          <p>
+            The given parts of the triangle create an Side-Angle-Side triangle, so there will be unique solutions for the remaining parts.
+          </p>
+          <p>
+            Right now our only option is to use the law of cosines to determine the value of <m>b</m>, so let's do it.
+            <md>
+              <mrow>b^2\amp=6^2+10^2-2(6)(10)\cos\left(43.89^{\circ}\right)</mrow>
+              <mrow>b^2\amp=136-120\cos\left(43.89^{\circ}\right)</mrow>
+              <mrow>b\amp=\sqrt{136-120\cos\left(43.89^{\circ}\right)}</mrow>
+              <mrow>b\amp\approx 7.04</mrow>
+            </md>
+          </p>
+
+            <p>
+              The next thing we want to do is use the law of sines to determine the value of <m>\alpha</m>.  We do not want to use the law of sines to determine the value of <m>\gamma</m>, because <m>\gamma</m> is opposite the longest side and consequently may be greater than <m>180^{\circ}</m>.  The inverse sine function never returns a value greater than <m>90^{\circ}</m>, so we don't use the law of sines to find the largest angle unless there's no other choice. 
+              <md>
+                <mrow>\frac{\sin(\alpha)}{6}\amp=\frac{\sin\left(43.89^{\circ}\right)}{7.04}</mrow>
+                <mrow>\sin(\alpha)\amp=\frac{6\sin\left(43.89^{\circ}\right)}{7.04}</mrow>
+                <mrow>\alpha\amp=\sin^{-1}\left(\frac{6\sin\left(43.89^{\circ}\right)}{7.04}\right)</mrow>
+                <mrow>\alpha\amp\approx 36.22^{\circ}</mrow>
+              </md>
+              We can now use the fact that the angles must sum to <m>180^{\circ}</m> to determine the value of <m>\gamma</m>.
+              <md>
+                <mrow>\gamma\amp\approx 180^{\circ}-43.89^{\circ}-36.22^{\circ}</mrow>
+                <mrow>\amp=99.89^{\circ}</mrow>
+              </md>
+            </p>
+
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Classify the triangle shown in <xref ref="trigonometry-laws-exercises-figure-3">Figure</xref> as a SSS, SAS, ASA, AAS, or SSA triangle.  Then determine all possible values for the missing parts.  Round all values to the nearest hundredth. 
+            </p>
+
+            <figure xml:id="trigonometry-laws-exercises-figure-3">
+              <caption>Determine the Values of the Missing Parts</caption>
+              <image>
+                <description>
+                  A triangle with angles labeled <m>\alpha</m> and <m>\beta</m> as well as one labeled <m>59.04^{\circ}</m>.  The top side of the <m>59.04^{\circ}</m> angle is labeled <m>5.50</m>; this side is also opposite the angle labeled <m>\beta</m>. The side opposite the angle labeled <m>\alpha</m> is labeled <m>a</m>.   The side opposite the <m>59.04^{\circ}</m> angle is labeled <m>7.01</m>.
+                </description>
+                <latex-image-code>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \draw (0,0) -- (8,2) node[midway, below] {$a$} -- (4,6) node[midway, above right] {$5.50$} -- (0,0) node[midway, above left] {$7.01$};
+                      \draw (3.72,5.6) arc (236.31:315:.5);
+                      \draw (4.05,5.2) node{$\alpha$};
+                      \draw (0.47,0.12) arc (14.04:56.31:.5);
+                      \draw (0.9,0.58) node{$\beta$};
+                      \draw (7.64,2.35) arc (135:194.04:.5);
+                      \draw (6.5,2.25) node{$59.04^{\circ}$};
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image-code>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </statement>
+        <solution>
+          <p>
+            This is a Side-Side-Angle triangle, so it has no solution, exactly one solution, or exactly two solutions.
+          </p>
+          <p>
+            The only part we can solve for right now is <m>\beta</m> whose acute value we determine below using the law of sines.
+            <md>
+              <mrow>\frac{\sin(\beta)}{5.50}\amp=\frac{\sin\left(59.04^{\circ}\right)}{7.01}</mrow>
+              <mrow>\sin(\beta)\amp=\frac{5.50\sin\left(59.04^{\circ}\right)}{7.01}</mrow>
+              <mrow>\beta\amp=\sin^{-1}\left(\frac{5.50\sin\left(59.04^{\circ}\right)}{7.01}\right)</mrow>
+              <mrow>\beta\amp\approx 42.28^{\circ}</mrow>
+            </md>
+            The initial equation also has a solution between <m>90^{\circ}</m> and <m>180^{\circ}</m>.  That angle has a reference angle of <m>42.28^{\circ}</m> and the angle is calculated below.
+            <me>180^{\circ}-42.28^{\circ}=137.72^{\circ}</me>
+            The SSA triangle has a second solution if and only if the sum of the given angle and <m>137.72^{\circ}</m> is less than <m>180^{\circ}</m>.  Let's check.
+            <me>59.09^{\circ}+137.72^{\circ}=196.81^{\circ}</me>
+            So there is not a second solution for the SSA triangle.
+          </p>
+          <p>
+            We can use the fact that the three angles of the triangle need to sum to <m>180^{\circ}</m> to determine the value of <m>\alpha</m>.
+            <md>
+              <mrow>\alpha\amp\approx 180^{\circ}-59.09^{\circ}-42.28^{\circ}</mrow>
+              <mrow>\amp=78.63^{\circ}</mrow>
+            </md>
+            Finally, we can use the law of sines to determine the value of <m>a</m>.
+            <md>
+              <mrow>\frac{a}{\sin\left(78.63^{\circ}\right)}\amp=\frac{7.01}{\sin\left(59.04^{\circ}\right)}</mrow>
+              <mrow>a\amp=\frac{7.01\sin\left(78.63^{\circ}\right)}{\sin\left(59.04^{\circ}\right)}</mrow>
+              <mrow>a\amp\approx 8.01</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Classify the triangle shown in <xref ref="trigonometry-laws-exercises-figure-4">Figure</xref> as a SSS, SAS, ASA, AAS, or SSA triangle.  Then determine all possible values for the missing parts.  Round all values to the nearest hundredth. 
+            </p>
+
+            <figure xml:id="trigonometry-laws-exercises-figure-4">
+              <caption>Determine the Values of the Missing Parts</caption>
+              <image>
+                <description>
+                  A triangle with sides labeled <m>2.76</m>, <m>2.37</m>, and <m>2.55</m>.  The side labeled <m>2.76</m> is opposite and angle labeled <m>\alpha</m>. The side labeled <m>2.37</m> is opposite and angle labeled <m>\beta</m>. The side labeled <m>2.55</m> is opposite and angle labeled <m>\gamma</m>.
+                </description>
+                <latex-image-code>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \draw (0,5) -- (5,0) node[midway, below left] {$2.37$} -- (7,8) node[midway, below right] {$2.67$} -- (0,5) node[midway, above left] {$2.55$};
+                      \draw (0.35,4.65) arc (314.1:382.3:.5);
+                      \draw (1,4.8) node{$\alpha$};
+                      \draw (6.5,7.8) arc (195:257:.5);
+                      \draw (6.37,7.2) node{$\beta$};
+                      \draw (5.12,0.52) arc (80.48:139.52:.5);
+                      \draw (4.8,1) node{$\gamma$};
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image-code>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </statement>
+        <solution>
+          <p>
+            This is a Side-Side-Side triangle, so there will be a unique solution.  Before we dig in, let's observe that the sides of the triangle are relatively equal, which means that the angles will be as well.
+          </p>
+          <p>
+            We can use the law of cosines to solve for any of the angles.  In the SSS situation it is best to use the law of cosines to determine the largest angle, as that is the only one that can be larger than <m>90^{\circ}</m>.  That being the case, let's go ahead and determine the value of <m>\alpha</m>, since it is opposite the longest side.
+            <md>
+              <mrow>2.76^2\amp=2.37^2+2.55^2-2(2.37)(2.55)\cos(\alpha)</mrow>
+              <mrow>7.6176\amp=12.1194-12.087\cos(\alpha)</mrow>
+              <mrow>-4.5018\amp=-12.087\cos(\alpha)</mrow>
+              <mrow>\alpha\amp=\cos^{-1}\left(\frac{4.5018}{12.087}\right)</mrow>
+              <mrow>\alpha\amp\approx 68.13^{\circ}</mrow>
+            </md>
+            We can now use the law of sines to determine the other two angles. Then we can check to make sure that the sum of the three angles is <m>180^{\circ}</m>.
+          </p>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              <md>
+                <mrow>\frac{\sin(\beta)}{2.37}\amp=\frac{\sin\left(68.13^{\circ}\right)}{2.76}</mrow>
+                <mrow>\sin(\beta)\amp=\frac{2.37\sin\left(68.13^{\circ}\right)}{2.76}</mrow>
+                <mrow>\beta\amp=\sin^{-1}\left(\frac{2.37\sin\left(68.13^{\circ}\right)}{2.76}\right)</mrow>
+                <mrow>\beta\amp\approx 52.83^{\circ}</mrow>
+              </md>
+            </p>
+
+            <p>
+              <md>
+                <mrow>\frac{\sin(\gamma)}{2.55}\amp=\frac{\sin\left(68.13^{\circ}\right)}{2.76}</mrow>
+                <mrow>\sin(\gamma)\amp=\frac{2.55\sin\left(68.13^{\circ}\right)}{2.76}</mrow>
+                <mrow>\gamma\amp=\sin^{-1}\left(\frac{2.55\sin\left(68.13^{\circ}\right)}{2.76}\right)</mrow>
+                <mrow>\gamma\amp\approx 59.03^{\circ}</mrow>
+              </md>
+            </p>
+
+          </sidebyside>
+          <p>
+            Let's check the sum of the angles.
+            <me>68.13^{\circ}+52.83^{\circ}+59.03^{\circ}=179.99^{\circ}\,\,\checkmark</me>
+            An insignificant round-off error is a frequent occurrence when rounded values are used in subsequent calculations.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Classify the triangle shown in <xref ref="trigonometry-laws-exercises-figure-5">Figure</xref> as a SSS, SAS, ASA, AAS, or SSA triangle.  Then determine all possible values for the missing parts.  Round all values to the nearest hundredth. 
+            </p>
+
+            <figure xml:id="trigonometry-laws-exercises-figure-5">
+              <caption>Determine the Values of the Missing Parts</caption>
+              <image>
+                <description>
+                  A triangle with an angle labeled <m>50^{\circ}</m> as well as angles labeled <m>\alpha</m> and <m>\beta</m>.  The top side of the <m>50^{\circ}</m> angle is labeled <m>6</m>; this side is also opposite the angle labeled <m>\alpha</m>. The side opposite the <m>50^{\circ}</m> angle is labeled <m>4</m>.   The side opposite <m>\beta</m> is labeled <m>b</m>.
+                </description>
+                <latex-image-code>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \draw (0,0) -- (8,0) node[midway, below] {$b$} -- (6,7) node[midway, above right] {$4$} -- (0,0) node[midway, above left] {$6$};
+                      \draw (5.67,6.62) arc (229.4:285.95:.5);
+                      \draw (5.8,6) node{$\beta$};
+                      \draw (0.54,0) arc (0:49.04:.5);
+                      \draw (1.2,0.5) node{$50^{\circ}$};
+                      \draw (7.86,0.48) arc (105.94:180:.5);
+                      \draw (7.3,0.5) node{$\alpha$};
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image-code>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </statement>
+        <solution>
+          <p>
+            This is a Side-Side-Angle triangle, so it has no solution, exactly one solution, or exactly two solutions.
+          </p>
+          <p>
+            To begin the solution, our only option is to use the law of sines to determine <m>\alpha</m>.  We do this below.
+            <md>
+              <mrow>\frac{\sin(\alpha)}{6}\amp=\frac{\sin\left(50^{\circ}\right)}{4}</mrow>
+              <mrow>\sin(\alpha)\amp=\frac{6\sin\left(50^{\circ}\right)}{4}</mrow>
+              <mrow>\sin(\alpha)\amp\approx 1.15</mrow>
+            </md>
+            Since the sine value is never greater than <m>1</m>, we conclude that the last equation has no solution and that no triangle has the parts indicated in <xref ref="trigonometry-laws-exercises-figure-5">Figure</xref>.
+          </p>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Your initial reaction might be "but what about the triangle in <xref ref="trigonometry-laws-exercises-figure-5">Figure</xref>?"  The resolution is that the triangle is a sham.  A picture that is drawn to scale is shown in <xref ref="trigonometry-laws-exercises-figure-5a">Figure</xref>.  That picture accurately represents the lack of solution.
+            </p>
+
+            <figure xml:id="trigonometry-laws-exercises-figure-5a">
+              <caption>No Such Triangle</caption>
+              <image>
+                <description>
+                  An angle that opens to the right that is labeled <m>50^{\circ}</m>.  The top side of the angle is labeled <m>6</m>. At the right end of the top side of the angle a dashed line is dropped vertically.  This hanging side is labeled <m>4</m>.  It is visually apparent that the hanging dashed line can never meet the bottom side of the <m>50^{\circ}</m> angle.
+                </description>
+                <latex-image-code>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \draw (8,0) -- (0,0) -- (6,7) node[midway, above left] {$6$};
+                      \draw (6,7) -- (6,1.5) [dashed] node[midway, right] {$4$};
+                      \draw (0.54,0) arc (0:49.04:.5);
+                      \draw (1.2,0.5) node{$50^{\circ}$};
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image-code>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Classify the triangle shown in <xref ref="trigonometry-laws-exercises-figure-6">Figure</xref> as a SSS, SAS, ASA, AAS, or SSA triangle.  Then determine the degree measurement of each angle.  Round all values to the nearest tenth of a degree. 
+            </p>
+
+            <figure xml:id="trigonometry-laws-exercises-figure-6">
+              <caption>Determine the Values of the Missing Parts</caption>
+              <image>
+                <description>
+                  A triangle with labeled as <m>8.3</m>, <m>5</m>, and <m>5</m>.  The angle opposite <m>8.3</m> is labeled <m>\beta</m>.  The angles opposite the sides labeled <m>5</m> are labeled <m>\alpha</m> and <m>\gamma</m>.
+                </description>
+                <latex-image-code>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \draw (0,0) -- (7.8,2.6) node[midway, below] {$8.3$} -- (3,4) node[midway, above right] {$5$} -- (0,0) node[midway, above left] {$5$};
+                      \draw (7.32,2.75) arc (162.35:197.65:.5);
+                      \draw (6.5,2.55) node{$\alpha$};
+                      \draw (2.7,3.58) arc (235.3:344.7:.5);
+                      \draw (3.25,3.2) node{$\beta$};
+                      \draw (0.47,0.15) arc (27.25:62.55:.5);
+                      \draw (0.7,0.45) node{$\gamma$};
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image-code>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </statement>
+        <solution>
+          <p>
+            This is a Side-Side-Side triangle, so it will have a unique solution.
+          </p>
+          <p>
+            We can find any of the angles using the law of cosines, but there are two reasons to find <m>\beta</m> first.  One reason is that the law of cosines will give us the obtuse angle directly whereas a latter application of the law of sines would not.  The second reason will be discussed after we determine the value of <m>\beta</m>.
+            <md>
+              <mrow>8.3^2\amp=5^2+5^2-2(5)(5)\cos(\beta)</mrow>
+              <mrow>68.89\amp=50-50\cos(\beta)</mrow>
+              <mrow>18.89\amp=-50\cos(\beta)</mrow>
+              <mrow>\beta\amp=\cos^{-1}\left(-\frac{18.89}{50}\right)</mrow>
+              <mrow>\beta\amp\approx 112.2^{\circ}</mrow>
+            </md>
+            Because the remaining two angles are opposite sides of equal measurement, they too have equal measurement.  So the measurements can be calculated with simple arithmetic.  We conclude with that calculation.
+            <me>\alpha=\gamma=\frac{180^{\circ}-112.2^{\circ}}{2}=33.9^{\circ}</me>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Classify the triangle shown in <xref ref="trigonometry-laws-exercises-figure-7">Figure</xref> as a SSS, SAS, ASA, AAS, or SSA triangle.  Then determine all possible values for the missing parts.  Round all values to the nearest hundredth. 
+            </p>
+
+            <figure xml:id="trigonometry-laws-exercises-figure-7">
+              <caption>Determine the Values of the Missing Parts</caption>
+              <image>
+                <description>
+                  A triangle with angles labeled <m>\alpha</m> and <m>\beta</m> as well as one labeled <m>41.41^{\circ}</m>.  The bottom side of the <m>41.41^{\circ}</m> angle is labeled <m>5</m>; this side is also opposite  <m>\beta</m> angle. The side opposite the <m>41.41^{\circ}</m> angle is labeled <m>4</m>.   The side opposite <m>\alpha</m> is labeled <m>a</m>.
+                </description>
+                <latex-image-code>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \draw (0,8) -- (3.83,4.79) node[midway, below left] {$5$} -- (6.21,8) node[midway, below right] {$4$} -- (0,8) node[midway, above] {$a$};
+                      \draw (0.39,7.67) arc (318.6:360:.5);
+                      \draw (1.25,7.67) node{$41.41^{\circ}$};
+                      \draw (5.53,8) arc (180:250:.5);
+                      \draw (5,7.5) node{$\beta$};
+                      \draw (4.12,5.17) arc (55.77:138.6:.5);
+                      \draw (3.8,5.65) node{$\alpha$};
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image-code>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </statement>
+        <solution>
+          <p>
+            This is a Side-Side-Angle triangle and as such has no solution, exactly one solution, or exactly two solutions.
+          </p>
+          <p>
+            At present, the only piece we can solve for is <m>\beta</m>, and we do so below using the law of sines to establish the acute value of <m>\beta</m>.
+            <md>
+              <mrow>\frac{\sin(\beta)}{5}\amp=\frac{\sin\left(41.41^{\circ}\right)}{4}</mrow>
+              <mrow>\sin(\beta)\amp=\frac{5\sin\left(41.41^{\circ}\right)}{4}</mrow>
+              <mrow>\beta\amp=\sin^{-1}\left(\frac{5\sin\left(41.41^{\circ}\right)}{4}\right)</mrow>
+              <mrow>\beta\amp\approx 55.77^{\circ}</mrow>
+            </md>
+            The initial equation has a second solution whose value falls between <m>90^{\circ}</m> and <m>180^{\circ}</m>.  That angle has a reference angle of <m>55.77^{\circ}</m> and its value is found below.
+            <me>180^{\circ}-55.77^{\circ}=124.23^{\circ}</me>
+            We need to add this angle to the given angle to determine whether or not there is a second solution to the given triangle.
+            <me>124.23^{\circ}+41.41^{\circ}=165.64^{\circ}</me>
+            Because that sum is less than <m>180^{\circ}</m>, there is indeed a second solution to the triangle.  The two solutions are completed below.
+          </p>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              We can use the fact that the angles sum to <m>180^{\circ}</m> to determine the value of <m>\alpha</m>.
+              <md>
+                <mrow>\alpha\amp=180^{\circ}-41.41^{\circ}-55.77^{\circ}</mrow>
+                <mrow>\amp=82.82^{\circ}</mrow>
+              </md>
+            </p>
+
+            <figure xml:id="trigonometry-laws-exercises-figure-7a">
+              <caption>The Solution with an Acute Angle</caption>
+              <image>
+                <description>
+                  A triangle with angles labeled <m>\alpha</m>, <m>55.77^{\circ}</m>, and <m>41.41^{\circ}</m>.  The side opposite the <m>55.77^{\circ}</m> angle is labeled <m>5</m>.  The side opposite the <m>41.41^{\circ}</m> angle is labeled <m>4</m>.  The side opposite <m>\alpha</m> is labeled <m>a</m>.
+                </description>
+                <latex-image-code>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \draw (0,8) -- (3.83,4.79) node[midway, below left] {$5$} -- (6.21,8) node[midway, below right] {$4$} -- (0,8) node[midway, above] {$a$};
+                      \draw (0.39,7.67) arc (318.6:360:.5);
+                      \draw (1.25,7.67) node{$41.41^{\circ}$};
+                      \draw (5.53,8) arc (180:250:.5);
+                      \draw (5,7.5) node{$55.77^{\circ}$};
+                      \draw (4.12,5.17) arc (55.77:138.6:.5);
+                      \draw (3.8,5.65) node{$\alpha$};
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image-code>
+              </image>
+            </figure>
+
+          </sidebyside>
+          <p>
+            We can now use the law of sines to determine the value of <m>a</m>.
+            <md>
+              <mrow>\frac{a}{\sin\left(82.82^{\circ}\right)}\amp=\frac{4}{\sin\left(41.41^{\circ}\right)}</mrow>
+              <mrow>a\amp=\frac{4\sin\left(82.82^{\circ}\right)}{\sin\left(41.41^{\circ}\right)}</mrow>
+              <mrow>a\amp\approx 6.00</mrow>
+            </md>
+          </p>
+          <sidebyside withs="47% 47%" margins="0%">
+
+            <p>
+              We can use the fact that the angles sum to <m>180^{\circ}</m> to determine the value of <m>\alpha</m>.
+              <md>
+                <mrow>\alpha\amp=180^{\circ}-41.41^{\circ}-124.23^{\circ}</mrow>
+                <mrow>\amp=14.36^{\circ}</mrow>
+              </md>
+            </p>
+
+            <figure xml:id="trigonometry-laws-exercises-figure-7b">
+              <caption>The Solution with an Obtuse Angle</caption>
+              <image>
+                <description>
+                  A triangle with angles labeled <m>\alpha</m>, <m>124.23^{\circ}</m>, and <m>41.41^{\circ}</m>.  The side opposite the <m>124.23^{\circ}</m> angle is labeled <m>5</m>.  The side opposite the <m>41.41^{\circ}</m> angle is labeled <m>4</m>.  The side opposite <m>\alpha</m> is labeled <m>a</m>.
+                </description>
+                <latex-image-code>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \draw (0,8) -- (3.83,4.79) node[midway, below left] {$5$} -- (1.44,8) node[midway, above right] {$4$} -- (0,8) node[midway, above] {$a$};
+                      \draw (0.39,7.67) arc (318.6:360:.5);
+                      \draw (0.25,7) node{$41.41^{\circ}$};
+                      \draw (0.98,8) arc (180:304.23:.5);
+                      \draw (2.5,7.75) node{$124.23^{\circ$};
+                      \draw (3.5,5.22) arc (124.23:138.59:.5);
+                      \draw (3.8,5.5) node{$\alpha$};
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image-code>
+              </image>
+            </figure>
+
+          </sidebyside>
+          <p>
+            We can now use the law of sines to determine the value of <m>a</m>.
+            <md>
+              <mrow>\frac{a}{\sin\left(14.36^{\circ}\right)}\amp=\frac{4}{\sin\left(41.41^{\circ}\right)}</mrow>
+              <mrow>a\amp=\frac{4\sin\left(14.36^{\circ}\right)}{\sin\left(41.41^{\circ}\right)}</mrow>
+              <mrow>a\amp\approx 1.50</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              Classify the triangle shown in <xref ref="trigonometry-laws-exercises-figure-8">Figure</xref> as a SSS, SAS, ASA, AAS, or SSA triangle.  Then determine all possible values for the missing parts.  Round all values to the nearest hundredth. 
+            </p>
+
+            <figure xml:id="trigonometry-laws-exercises-figure-8">
+              <caption>Determine the Values of the Missing Parts</caption>
+              <image>
+                <description>
+                  A triangle with angles labeled <m>60^{|circ}</m> and <m>70^{\circ}</m> as well as one labeled <m>\beta</m>.  The side opposite the <m>60^{\circ}</m> angle is labeled <m>a</m>. The side opposite the <m>70^{\circ}</m> angle is labeled <m>c</m>.   The side opposite <m>\beta</m> is labeled <m>12</m>.
+                </description>
+                <latex-image-code>
+                  <![CDATA[
+                    \begin{tikzpicture}
+                      \draw (0,0.66) -- (10.95,0) node[midway, below] {$c$} -- (6.95,8) node[midway, above right] {$12$} -- (0,0.66) node[midway, above left] {$a$};
+                      \draw (6.57,7.6) arc (235:305:.5);
+                      \draw (6.85,7) node{$70^{\circ}$};
+                      \draw (0.48,0.64) arc (350:400:.5);
+                      \draw (1,1) node{$\beta$};
+                      \draw (10.75,0.43) arc (110:170:.5);
+                      \draw (9.9,0.7) node{$60^{\circ}$};
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image-code>
+              </image>
+            </figure>
+
+          </sidebyside>
+        </statement>
+        <solution>
+          <p>
+            This is an Angle-Side-Angle triangle and, thus, has a unique solution.
+          </p>
+          <p>
+            We'll begin by using the fact that the angles sum to <m>180^{\circ}</m> to determine the measurement of <m>\beta</m>.
+            <md>
+              <mrow>\beta\amp=180^{\circ}-60^{\circ}-70^{\circ}</mrow>
+              <mrow>\amp=50^{\circ}</mrow>
+            </md>
+            We can now use the law of sines to determine the lengths of the two unknown sides.  We do so below.
+          </p>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <p>
+              <md>
+                <mrow>\frac{a}{\sin\left(60^{\circ}\right)}\amp=\frac{12}{\sin\left(50^{\circ}\right)}</mrow>
+                <mrow>a\amp=\frac{12{\sin\left(60^{\circ}\right)}}{\sin\left(50^{\circ}\right)}</mrow>
+                <mrow>a\amp\approx 13.57</mrow>
+              </md>
+            </p>
+
+            <p>
+              <md>
+                <mrow>\frac{c}{\sin\left(70^{\circ}\right)}\amp=\frac{12}{\sin\left(50^{\circ}\right)}</mrow>
+                <mrow>c\amp=\frac{12{\sin\left(70^{\circ}\right)}}{\sin\left(50^{\circ}\right)}</mrow>
+                <mrow>c\amp\approx 14.72</mrow>
+              </md>
+            </p>
+
+          </sidebyside>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+
+</section>
