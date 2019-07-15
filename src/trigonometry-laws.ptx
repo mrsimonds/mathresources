@@ -48,7 +48,7 @@
     <p>
       The law can also be stated as follows.
       <me>\frac{a}{\sin(\alpha)}=\frac{b}{\sin(\beta)}=\frac{c}{\sin(\gamma)}</me>
-      The algebra associate with the law is a little bit easier if the use the form of the law that puts the variable you are solving for in the numerator.
+      The algebra associate with the law is a little bit easier if you use the form of the law that puts the unknown variable in the numerator.
     </p>
     <example>
       <statement>
@@ -337,8 +337,18 @@
       In the case of Angle-Angle-Side, two consecutive angles are given as well as one of the sides that is not between the two angles.  It's a little more difficult to visualize why this determines a unique triangle, but we don't need to.  If two of the angle measurements are known, the measurement of the third angle immediately follows as the three angles' measurements must sum to <m>180^{\circ}</m>.  Thus, Angle-Angle-Side is essentially the same as Angle-Side-Angle, which is fairly easy to visualize.
     </p>
     <p>
-      In the case of Side-Side-Side, the measurement of each side is given.  It's difficult establish with a picture why this information establishes a unique triangle.  If you have trouble visualizing it in your head, just gather a few thin straight objects.  Mix and match the objects into triads, and see that there is always only one way to connect the three pieces into a triangle.
+      In the case of Side-Side-Side, the measurement of each side is given.  It's difficult to establish with a static picture why this information establishes a unique triangle.  We can explore it, however, using the movable pieces in <xref ref="trigonometry-laws-geogebra-1">Figure</xref>.  All three pieces are of fixed length (unless you press "New Example" so that new fixed lengths are established).  The position of the brown line segment is fixed.  You can move the blue line segments by grabbing and dragging the hollow dots.  No matter the lengths of the three line segments, there is always exactly one way you can create a triangle with the brown line segment as the left most line segment.
     </p>
+
+    <figure xml:id="trigonometry-laws-geogebra-1">
+      <caption>See directions in the paragraph immediately above.</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/trigonometry-SSS.ggb">
+          setPerspective("G");
+          setAxesVisible(0,0);
+        </slate>
+      </interactive>
+    </figure>
 
     <example>
       <statement>

@@ -158,7 +158,7 @@
       <p>
         <md>
           <mrow>4x^2-28x\amp=-11</mrow>
-              <mrow>\multiplyleft{\frac{1}{4}}(4x^2-28x)\amp=\multiplyleft{\frac{1}{4}}-11</mrow>
+          <mrow>\multiplyleft{\frac{1}{4}}(4x^2-28x)\amp=\multiplyleft{\frac{1}{4}}-11</mrow>
           <mrow>x^2-7x\amp=-\frac{11}{4}</mrow>
           <mrow>x^2-7x\addright{\frac{49}{4}}\amp=-\frac{11}{4}\addright{\frac{49}{4}}\text{   (completing the square)}</mrow>
           <mrow>\left(x-\frac{7}{2}\right)^2\amp=\frac{38}{4}</mrow>
@@ -177,6 +177,20 @@
       </p>
     </solution>
   </example>
+
+  <p>
+    You can use <xref ref="radicals-quadratic-equations-square-root-method-geogebra-1">Figure</xref> to generate several more examples/practice problems. You'll need to write the steps down, because only one step is shown at a tie.
+  </p>
+
+  <figure xml:id="radicals-quadratic-equations-square-root-method-geogebra-1">
+    <caption>Solve quadratic equations by first completing the square.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/quadratic-equations-complete-square.ggb">
+        setPerspective("G");
+        setAxesVisible(0,0);
+      </slate>
+    </interactive>
+  </figure>
 
   </paragraphs>
 

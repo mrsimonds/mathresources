@@ -72,6 +72,19 @@
   <p>
     Just as noteworthy, since the factor pairs shown in <xref ref="factoring-trinomial-lc1-table-1">Table</xref> form an exhaustive list, we cannot factor any trinomial of form <m>x^2+bx+6</m> where b is not one of the four numbers shown in the sum column.  Such trinomials are said to be prime.  For example, <m>x^2+3x+6</m> is prime.
   </p>
+  <p>
+    A common strategy for organizing the work associated with factoring trinomials with a leading coefficient of <m>1</m> is to write the constant term at the top of a large X and the linear coefficient at the bottom of the X.  Go ahead and press "Show Goal" in <xref ref="factoring-leading-coefficient-1-geogebra-1">Figure</xref> to see what I mean.  Now we can focus on determining the two numerical factors.  I find it useful to first establish the signs on the two factors.  If the number at the top of the X is negative, then we need one positive numerical factor and one negative numerical factor.  If the number at the top of the X is positive, then both numerical factors have the same sign, and that sign agrees with the number at the bottom of the X.  Go ahead and press "Show Numerical Factors" and "Show Factorization" to see the remainder of the process.  Go through a few examples and then try doing it on your own before you see the steps on the computer.
+  </p>
+
+  <figure xml:id="factoring-leading-coefficient-1-geogebra-1">
+    <caption>Practice Factoring Trinomials with a Leading Coefficient of One</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/factoring-ac-method-1.ggb">
+        setPerspective("G");
+        setAxesVisible(0,0);
+      </slate>
+    </interactive>
+  </figure>
 
   <example xml:is="factoring-trinomial-lc1-ex-1">
     <statement>
@@ -100,7 +113,12 @@
       </p>
     </solution>
   </example>
-  <figure xml:id="factoring-leading-coefficient-1-geogebra-1">
+
+  <p>
+    <xref ref="factoring-leading-coefficient-1-geogebra-2">Figure</xref> gives you another opportunity to generate random practice exercises.
+  </p>
+
+  <figure xml:id="factoring-leading-coefficient-1-geogebra-2">
     <caption>Practice Factoring Trinomials with a Leading Coefficient of One</caption>
     <interactive platform="geogebra" width="100%" aspect="9:5">
       <slate surface="geogebra" aspect="9:5" source="geogebra/factor-trinomials-1.ggb">

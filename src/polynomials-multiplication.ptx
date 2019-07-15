@@ -126,6 +126,19 @@
         </p>
       </solution>
     </example>
+    <p>
+      You can use <xref ref="polynomials-multiplication-geogebra-1">Figure</xref> to generate random FOIL problem.  Watch the steps for several examples and then start working the problems yourself and use the app to check your work.
+    </p>
+
+    <figure xml:id="polynomials-multiplication-geogebra-1">
+      <caption>Click on "F", "O", "I", "L" in that order.  After click on "Combine Like Terms" which appears after you click "L".  After looking at a few examples try to FOIL yourself and then click through the steps to check your answer.</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/polynomial-FOIL.ggb">
+          setPerspective("G");
+          setAxesVisible(0,0);
+        </slate>
+      </interactive>
+    </figure>
 
   </paragraphs>
   <paragraphs>
