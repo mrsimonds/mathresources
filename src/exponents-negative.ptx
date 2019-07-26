@@ -208,11 +208,22 @@
     </example>
 
     <p>
-      You can use <xref ref="exponents-negative-geogebra-2">Figure</xref> to generate random practice exercises.
+      You can use <xref ref="exponents-negative-geogebra-2">Figure</xref> and <xref ref="exponents-negative-geogebra-3">Figure</xref> to generate random practice exercises.
     </p>
 
     <figure xml:id="exponents-negative-geogebra-2">
-      <caption>Make sure that your simplification does ot include any negative exponents.</caption>
+      <caption>Enter the letter that corresponds to the correct simplification.</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-negative-simple.ggb">
+          setPerspective("G");
+          setGridVisible(0); 
+          setAxesVisible(0,0);        
+        </slate>
+      </interactive>
+    </figure>
+
+    <figure xml:id="exponents-negative-geogebra-3">
+      <caption>Make sure that your simplification does not include any negative exponents.</caption>
       <interactive platform="geogebra" width="100%" aspect="9:5">
         <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-all-properties.ggb">
           setPerspective("G");

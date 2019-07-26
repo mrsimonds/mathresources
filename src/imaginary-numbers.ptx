@@ -73,9 +73,24 @@
     </solution>
   </example>
 
-   <p>
-      When multiplying two or more imaginary numbers, you want to use the associative and commutative properties of multiplication; this allows you to multiply the real number coefficients followed by the product of the <m>i</m> factors.  Then all occurrences of <m>i^2</m> are replaced by <m>-1</m>and the expression is further simplified.  
-   </p>
+  <p>
+    You can use <xref ref="imaginary-numbers-geogebra-1">Figure</xref> to generate practice problems for simplifying imaginary numbers.  Try each step yourself before revealing the step in the applet.
+  </p>
+
+  <figure xml:id="imaginary-numbers-geogebra-1">
+    <caption>Use the slider to change the exponents on 10.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/imaginary-numbers.ggb">
+        setPerspective("G");
+        setGridVisible(0); 
+        setAxesVisible(0,0);        
+      </slate>
+    </interactive>
+  </figure>
+
+  <p>
+    When multiplying two or more imaginary numbers, you want to use the associative and commutative properties of multiplication; this allows you to multiply the real number coefficients followed by the product of the <m>i</m> factors.  Then all occurrences of <m>i^2</m> are replaced by <m>-1</m>and the expression is further simplified.  
+  </p>
 
   <example>
     <statement>

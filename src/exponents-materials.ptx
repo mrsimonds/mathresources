@@ -10,7 +10,7 @@
 <!-- ********************************************************************* -->
 
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="exponents-materials">
-    <title>Exponents</title>
+    <title>Exponents and Scientific Notation</title>
 
       <xi:include href="./exponents-videos.ptx" />
       <xi:include href="./exponents-properties.ptx" />

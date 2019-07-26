@@ -13,7 +13,7 @@
   <title>Scientific Notation</title>
 
   <p>
-    Numbers written in scientific notation have the form <m>a \times 10^n</m> where <m>1 \leq \abs a \lt 10</m>.  The value of <m>m</m> is always an integer.  Two simple examples of numbers written using both standard notation and scientific notation are shown below
+    Numbers written in scientific notation have the form <m>a \times 10^n</m> where <m>1 \leq \abs a \lt 10</m>.  The value of <m>m</m> is always an integer.   The number <m>a</m> is called the coefficient.  Two simple examples of numbers written using both standard notation and scientific notation are shown below.
   </p>
   <sidebyside widths="47% 47%" margins="0%">
     <p>
@@ -23,6 +23,32 @@
       <me>0.45=4.5 \times 10^{-1}</me>
     </p>
   </sidebyside>
+  <p>
+    You can use <xref ref="scientific-notation-geogebra-1">Figure</xref> to explore the effect of changing the exponent on 10. Make sure that you keep track of the number of digits you have to cross to get back to 3.2. You can use <xref ref="scientific-notation-geogebra-2">Figure</xref> to practice rewriting numbers using scientific notation.
+  </p>
+
+  <figure xml:id="scientific-notation-geogebra-1">
+    <caption>Use the slider to change the exponents on 10.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/scientific-notation-slider.ggb">
+        setPerspective("G");
+        setGridVisible(0); 
+        setAxesVisible(0,0);        
+      </slate>
+    </interactive>
+  </figure>
+
+  <figure xml:id="scientific-notation-geogebra-2">
+    <caption>Rewrite the given number using scientific notation.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/scientific-notation-to-scientific.ggb">
+        setPerspective("G");
+        setGridVisible(0); 
+        setAxesVisible(0,0);        
+      </slate>
+    </interactive>
+  </figure>
+
   <p>
     The basic concept behind conversion between standard notation and scientific notation is that every action requires an equal but opposite action.  To wit:
   </p>
@@ -131,6 +157,21 @@
       </p>
     </solution>
   </example>
+
+  <p>
+    You can use <xref ref="scientific-notation-geogebra-3">Figure</xref> to practice multiplying numbers stated in scientific notation.  Make sure that the coefficient in our answer lies between one and ten.
+  </p>
+
+  <figure xml:id="scientific-notation-geogebra-3">
+    <caption>Positive integer exponents keep track of the number of factors in the expression.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/scientific-notation-product.ggb">
+        setPerspective("G");
+        setGridVisible(0); 
+        setAxesVisible(0,0);        
+      </slate>
+    </interactive>
+  </figure>
 
   <exercises>
 

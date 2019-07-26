@@ -475,6 +475,20 @@
       </solution>
     </example>
 
+    <p>
+      You can use <xref ref="systems-substitution-geogebra-1">Figure</xref> to generate random practice problems.  In each case both coordinates of the correct solution are integers. 
+    </p>
+
+    <figure xml:id="systems-substitution-geogebra-1">
+      <caption>Solve the system of equations using the substitution method.</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/systems-substitution.ggb">
+          setPerspective("G");
+          setAxesVisible(0,0);
+        </slate>
+      </interactive>
+    </figure>
+
     <exercises>
 
       <exercisegroup>

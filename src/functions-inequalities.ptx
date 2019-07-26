@@ -81,6 +81,36 @@
 
     </sidebyside>
 
+    <p>
+    You can use <xref ref="functions-inequalities-geogebra-figure-1">Figure</xref> and <xref ref="functions-inequalities-geogebra-figure-2">Figure</xref> to investigate these idea in an interactive manner.
+  </p>
+
+  <figure xml:id="functions-inequalities-geogebra-figure-1">
+    <caption>The parabola is the function <m>f</m>.  Drag the button labeled "up/down" - umm... - up and down to change the problem and solution.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/functions-less-than.ggb">
+            setPerspective("G");
+            setAxisSteps(1, 1, 1, 1);
+            setCoordSystem(-8, 8, -2, 14);
+            setGridVisible(1);         
+            setAxisLabels(1,"x","y","z");
+      </slate>
+    </interactive>
+  </figure>
+
+  <figure xml:id="functions-inequalities-geogebra-figure-2">
+    <caption>The parabola is the function <m>f</m>.  Drag the button labeled "up/down" - umm... - up and down to change the problem and solution.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/functions-greater-than.ggb">
+            setPerspective("G");
+            setAxisSteps(1, 1, 1, 1);
+            setCoordSystem(-8, 8, -2, 14);
+            setGridVisible(1);         
+            setAxisLabels(1,"x","y","z");
+      </slate>
+    </interactive>
+  </figure>
+
     <exercises>
 
       <exercisegroup>

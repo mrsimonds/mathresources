@@ -414,6 +414,20 @@
         </solution>
       </example>
 
+      <p>
+        You can use <xref ref="systemes-elimination-geogebra-1">Figure</xref> to generate random practice problems.  In each case both coordinates of the correct solution are integers.  Note that you can access a graphing calculator by clicking the "Calc" button at the top left side of the screen.
+      </p>
+
+      <figure xml:id="systemes-elimination-geogebra-1">
+        <caption>Solve the system of equations using the graphing method.</caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/systems-elimination.ggb">
+            setPerspective("G");
+            setAxesVisible(0,0);
+          </slate>
+        </interactive>
+      </figure>
+
       <exercises>
 
         <exercisegroup>
