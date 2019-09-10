@@ -13,7 +13,7 @@
   <title>Graphical Transformations - <m>g(x)=a \cdot f(b x \pm h) \pm k</m></title>
 
   <figure xml:id="geogebra-transformations-b-distributed-geogebra">
-    <caption>Practice Transformations based upon <m>y=A f(Bx-h)+k</m>:  Enter the coordinates for the shifted points A, B, C and then click "Show Transformed Curve" to check your answer.</caption>
+    <caption>Practice Transformations based upon <m>y=a \cdot f(bx-h)+k</m>:  Enter the coordinates for the shifted points A, B, C and then click "Show Transformed Curve" to check your answer.</caption>
     <interactive platform="geogebra" width="100%" aspect="9:5">
       <slate surface="geogebra" aspect="9:5" source="geogebra/transformation-quiz-1.ggb">
         setPerspective("G");

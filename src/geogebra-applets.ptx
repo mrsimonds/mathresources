@@ -357,7 +357,7 @@
       <ul>
         <li>
           <p>
-            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-advanced-function-notation.html" target="blank">Simplifying <m>f(x+y</m> for a quadratic expression <m>f</m>.  (Exploration and Drill Applet)</url>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-advanced-function-notation.html" target="blank">Simplifying <m>f(x+y)</m> for a quadratic expression <m>f</m>.  (Exploration and Drill Applet)</url>
           </p>
         </li>
         <li>
@@ -397,12 +397,12 @@
         </li>
         <li>
           <p>
-            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-transformations-b-factored.html" target="blank">Graphical transformations - <m>g(x)=a \cdot f(b(x \pm h)) \pm k</m>. (Drill Applet)</url>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-transformations-b-factored.html" target="blank">Graphical transformations - <m>g(x)=a \cdot f(b(x - h)) + k</m>. (Drill Applet)</url>
           </p>
         </li>
         <li>
           <p>
-            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-transformations-b-distributed.html" target="blank">Graphical transformations - <m>g(x)=a \cdot f(b x \pm h) \pm k</m>. (Drill Applet)</url>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-transformations-b-distributed.html" target="blank">Graphical transformations - <m>g(x)=a \cdot f(b x - h) + k</m>. (Drill Applet)</url>
           </p>
         </li>
       </ul>

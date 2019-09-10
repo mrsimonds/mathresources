@@ -10,10 +10,10 @@
 <!-- ********************************************************************* -->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="geogebra-SSS">
-  <title>The Unit Circle and the Graph of the Sine Function</title>
+  <title>Unique Triangle - the Case of Side, Side, Side</title>
 
   <figure xml:id="geogebra-SSS-geogebra">
-    <caption>See directions in the paragraph immediately above.</caption>
+    <caption>Drag the hollow dots to create the unique triangle that has sides of the given lengths.  Keep the brown side (the side with the solid dot) as the left side of the triangle.</caption>
     <interactive platform="geogebra" width="100%" aspect="9:5">
       <slate surface="geogebra" aspect="9:5" source="geogebra/trigonometry-SSS.ggb">
         setPerspective("G");
