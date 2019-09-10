@@ -98,9 +98,9 @@
       <exercise>
         <statement>
           <p>
-            The points given in <xref ref="parabolas-additional-practice-table-1">Table</xref> all lie on the same parabola.  Determine the axis-of-symmetry for the parabola and complete the missing entries in the table.
+            The points given in <xref ref="parabolas-additional-practice-table-1">Figure</xref> all lie on the same parabola.  Determine the axis-of-symmetry for the parabola and complete the missing entries in the table.
 
-            <table xml:id="parabolas-additional-practice-table-1">
+            <figure xml:id="parabolas-additional-practice-table-1">
               <caption>Points from a parabola</caption>
               <tabular>
                 <col halign="center" />
@@ -154,7 +154,7 @@
                   <cell><m></m></cell>
                 </row>
               </tabular>
-            </table>
+            </figure>
           </p>
         </statement>
         <solution>
@@ -162,7 +162,7 @@
             The axis of symmetry is the line with equation <m>x=1.5</m>.
           </p>
           <p>
-          <table xml:id="wparabolas-additional-practice-table-1-solution">
+          <figure xml:id="wparabolas-additional-practice-table-1-solution">
             <caption>Points from a parabola</caption>
             <tabular>
               <col halign="center" />
@@ -216,7 +216,7 @@
                 <cell><m>-28</m></cell>
               </row>
             </tabular>
-          </table>
+          </figure>
           </p>
         </solution>
       </exercise>

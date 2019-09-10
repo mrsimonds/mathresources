@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="linear-equations-inequalities">
+    <title>Linear inequalities in One Variable</title>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution set for the inequality <m>2x-7 \lt 17</m>.  State the solution set using both set builder notation and interval notation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>2x-7 \lt 17</mrow>
+            <mrow>2x-7addright{7} \lt 17addright{7}</mrow>
+            <mrow>2x \lt 24</mrow>
+            <mrow>\divideunder{2x}{2} \lt \divideunder{24}{2}</mrow>
+            <mrow>x \lt 12</mrow>
+          </md>
+          If our solution is correct, the two sides are equal at the endpoint if the solution set.  Let's check.
+          <md>
+            <mrow>2x-7\amp=17</mrow>
+            <mrow>2 \cdot 12-7\amp\stackrel{?}{=}17</mrow>
+            <mrow>24-7\amp\stackrel{?}{=}17</mrow>
+            <mrow>17\amp\stackrel{\checkmark}{=}17</mrow>
+          </md>
+          We can check to make sure that the inequality sign is pointed in the roper direction by testing any number on the interval other than the endpoint of the interval.  Make sure that you check the value in the original inequality.  I'm going to check <m>10</m>.
+          <md>
+            <mrow>2x-7 \amp\lt 17</mrow>
+            <mrow>2 \cdot 10-7 \amp\stackrel{?}{\lt}17</mrow>
+            <mrow>20-7\amp\stackrel{?}{\lt}17</mrow>
+            <mrow>13\amp\stackrel{\checkmark}{\lt}17</mrow>
+          </md>
+
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution set for the inequality <m>5-3y \ge 17</m>.  State the solution set using both set builder notation and interval notation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution set for the inequality <m>x-14 \le 3x-16</m>.  State the solution set using both set builder notation and interval notation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution set for the inequality <m>\frac{2}{5}t+\frac{1}{2} \gt \frac{3}{19}</m>.  State the solution set using both set builder notation and interval notation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution set for the inequality <m>3(x-2) \lt 3x+2</m>.  State the solution set using both set builder notation and interval notation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution set for the inequality <m>2(x-2) \ge 3x+2</m>.  State the solution set using both set builder notation and interval notation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>>/
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution set for the inequality <m>5(x+1) \ge 5x+7</m>.  State the solution set using both set builder notation and interval notation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+      </solution>
+    </example>
+
+
+        <figure xml:id="linear-equations-inequalitie-figure-1">
+            <caption><m>x \le 2</m></caption>
+            <image width="60%">
+                <description>a number line labeled <m>x</m>; a thick line overlays the number line to the left of 2 with an arrow pointing left; there is a right bracket at 2</description>
+                <latex-image-code>
+                    \usetikzlibrary{arrows}
+                    \begin{document}
+                    \begin{tikzpicture}
+                    \draw[latex-latex] (-8.5,0) -- (8.5,0) node[pos=.985,below right] {$x$}; %edit here for the axis
+                    \foreach \x in  {-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8} % edit here for the vertical lines
+                    \draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+                    \foreach \x in {-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8} % edit here for the numbers
+                    \draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+                    {$\x$};
+                    \draw[blue,ultra thick,{Stealth}-{Bracket}] (-8.2,0) -- (2,0);
+                    \end{tikzpicture}
+                    \end{document}
+                </latex-image-code>
+            </image>
+        </figure>
+
+
+                 
+
+      
+
+</section>

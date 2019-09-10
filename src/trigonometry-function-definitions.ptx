@@ -261,10 +261,10 @@
   <p></p>
 
   <p>
-    All together the are six basic trigonometric functions: <term>sine</term>, <term>cosine</term>, <term>tangent</term>, <term>cotangent</term>, <term>secant</term>, and <term>cosecant</term>.  In terms of the <m>x</m> and <m>y</m> coordinates at the end of the arc <m>t</m> (drawn along the unit circle in standard position), the functions are defined as shown in <xref ref="trigonometry-function-definitions-table-1">Table</xref>.  In each case, we treat the values of <m>x</m> and <m>y</m> as unitless and consider the unit on <m>t</m> to be radians.
+    All together the are six basic trigonometric functions: <term>sine</term>, <term>cosine</term>, <term>tangent</term>, <term>cotangent</term>, <term>secant</term>, and <term>cosecant</term>.  In terms of the <m>x</m> and <m>y</m> coordinates at the end of the arc <m>t</m> (drawn along the unit circle in standard position), the functions are defined as shown in <xref ref="trigonometry-function-definitions-table-1">Figures</xref>.  In each case, we treat the values of <m>x</m> and <m>y</m> as unitless and consider the unit on <m>t</m> to be radians.
   </p>
 
-  <table xml:id="trigonometry-function-definitions-table-1">
+  <figure xml:id="trigonometry-function-definitions-table-1">
     <caption>The Six Standard Trigonometric Functions</caption>
     <tabular>
       <col halign="center"/>
@@ -307,7 +307,7 @@
           </cell>
         </row>
       </tabular>
-    </table>
+    </figure>
                
 
   <example>
@@ -363,9 +363,9 @@
     Note that in the last example, we rationalized the denominator in the values of <m>\csc\left(\frac{5\pi}{3}\right)</m> and <m>\cot\left(\frac{5\pi}{3}\right)</m>.  It is customary to rationalize denominators whenever an irrational square root naturally appears in the denominator.
   </p>
   <p>
-    We can define the six basic trigonometric functions in terms of angle measurements as well arc lengths.  If, when drawn in standard position, the angle of measurement <m>\theta</m> intersects the unit circle at the point <m>(x,y)</m>, then we define the six primary trigonometric functions as shown in <xref ref="trigonometry-function-definitions-table-2">Table</xref>. In each case, we treat the values of <m>x</m> and <m>y</m> as unitless.
+    We can define the six basic trigonometric functions in terms of angle measurements as well arc lengths.  If, when drawn in standard position, the angle of measurement <m>\theta</m> intersects the unit circle at the point <m>(x,y)</m>, then we define the six primary trigonometric functions as shown in <xref ref="trigonometry-function-definitions-table-2">Figures</xref>. In each case, we treat the values of <m>x</m> and <m>y</m> as unitless.
   </p>
-  <table xml:id="trigonometry-function-definitions-table-2">
+  <figure xml:id="trigonometry-function-definitions-table-2">
     <caption>The Six Standard Trigonometric Functions</caption>
     <tabular>
       <col halign="center"/>
@@ -408,7 +408,7 @@
           </cell>
         </row>
       </tabular>
-    </table> 
+    </figure> 
 
 
   <example>

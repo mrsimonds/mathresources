@@ -31,8 +31,8 @@
       <p>
         We need to simplify the formula for <m>f(-x)</m>.  If it is identical to the formula for <m>f(x)</m>, we can declare that <m>f</m> is an even function.  If not, we need to simplify the formula for <m>-f(x)</m> and compare that to the simplified formula for <m>f(-x)</m>.  If the two formulas are the same, we can state that <m>f</m> is an odd function.  If those last two formulas are not identical, we state that <m>f</m> is neither an even function nor an odd function.
         <md>
-          <mrow>f(-x)\amp=(-x)^4+(-x)^2+7</mrow>
-          <mrow>\amp=x^4+x^2+7</mrow>
+          <mrow>f(-x)\amp=(-x)^4-3(-x)^2+7</mrow>
+          <mrow>\amp=x^4-3x^2+7</mrow>
         </md>
         We compare the formula we just simplified to the stated formula for <m>f(x)</m> and observe that they are identical. Because <m>f(-x)</m> and <m>f(x)</m> have the same formula, <m>f</m> is an even function.
       </p>

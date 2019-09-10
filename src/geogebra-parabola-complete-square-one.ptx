@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="geogebra-parabola-complete-square-one">
+  <title>Graphing Parabolas After Completing the Square when the Leading Coefficient is One</title>
+
+  <figure xml:id="geogebra-parabola-complete-square-one-geogebra">
+    <caption>Complete the square for the given equation.  Then drag the vertex of the parabola to the point that matches the vertex of the stated equation. A message will appear when you are correct.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/paraola-vertex-a-1.ggb">
+        setPerspective("G");
+        setGridVisible(1);         
+        setAxisLabels(1,"x","y","z");
+      </slate>
+    </interactive>
+  </figure>
+
+
+</section>

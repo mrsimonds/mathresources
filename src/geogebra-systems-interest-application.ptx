@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="geogebra-systems-interest-application">
+  <title>Explore an Interest Systems Problem Numerically.</title>
+  
+      <p>
+        Suppose that at the beginning of 2018 Damien had a balance of exactly $9000 in an IRA account.  Part of the money was invested in a safe bond that earned 3% interest over the course of 2018.  The remaining money was invested in a mutual fund (consisting of stocks) that earned 11% "interest" over the course of 2018.  Over the course of that year Damien's IRA account earned a total of $694 in "interest".  
+      </p>
+      <p>
+        Let's explore the problem numerically using <xref ref="geogebra-systems-interest-application-geogebra">Figure</xref>.The slider in the application controls how much money is invested in the bond account.  Before changing the value, get out your calculator and make sure that you understand how all of the figures in the table are derived.  For example, the value found in the position that corresponds to the bond interest is 0.03 times the value the corresponds to the bond's initial balance.  How are the other figures in the table derived?  Once you've got that figured out, go ahead and use the slider to determine how much is invested in each account if the total amount of interest earned over 2018 was $694.
+      </p>
+
+      <figure xml:id="geogebra-systems-interest-application-geogebra">
+        <caption>Explore Scenarios for Damien's IRA account</caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/systems-interest-problem.ggb">
+            setPerspective("G");
+            setAxesVisible(0,0);
+          </slate>
+        </interactive>
+      </figure>
+
+</section>

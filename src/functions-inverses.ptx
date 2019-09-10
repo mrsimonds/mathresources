@@ -22,11 +22,11 @@
   <example>
     <statement>
       <p>
-        Determine whether or note the functions described in <xref ref="functions-inverses-table-1">Table</xref> and <xref ref="functions-inverses-table-2">Table</xref> are one-to-one functions.
+        Determine whether or note the functions described in <xref ref="functions-inverses-table-1">Figure</xref> and <xref ref="functions-inverses-table-2">Figure</xref> are one-to-one functions.
       </p>
       <sidebyside widths="47% 47%" margins="0%">
 
-        <table xml:id="functions-inverses-table-1">
+        <figure xml:id="functions-inverses-table-1">
           <caption><m>y=f(x)</m></caption>
           <tabular>
             <col halign="center" />
@@ -60,9 +60,9 @@
               <cell><m>0</m></cell>
             </row>
           </tabular>
-        </table>
+        </figure>
 
-        <table xml:id="functions-inverses-table-2">
+        <figure xml:id="functions-inverses-table-2">
           <caption><m>y=g(x)</m></caption>
           <tabular>
             <col halign="center" />
@@ -96,13 +96,13 @@
               <cell><m>-2</m></cell>
             </row>
           </tabular>
-        </table>
+        </figure>
 
       </sidebyside>
     </statement>
     <solution>
       <p>
-        The function <m>f</m> described in <xref ref="functions-inverses-table-1">Table</xref> is not one-to-one.  There are two different ordered pairs with <m>y</m>-coordinates equal to <m>6</m>.  The function <m>g</m> described in <xref ref="functions-inverses-table-2">Table</xref> is one-to-one. The <m>y</m>-coordinate of each ordered pair in the table is distinct from every other <m>y</m>-coordinate in the table.
+        The function <m>f</m> described in <xref ref="functions-inverses-table-1">Figure</xref> is not one-to-one.  There are two different ordered pairs with <m>y</m>-coordinates equal to <m>6</m>.  The function <m>g</m> described in <xref ref="functions-inverses-table-2">Figure</xref> is one-to-one. The <m>y</m>-coordinate of each ordered pair in the table is distinct from every other <m>y</m>-coordinate in the table.
       </p>
     </solution>
   </example>
@@ -583,11 +583,11 @@
     </statement>
     <solution>
       <p>
-        We begin by noting several points on <m>g</m> and the implied points on <m>g^{-1}</m>.  These are shown in <href ref="functions-inverses-table-3">Table</href> and <href ref="functions-inverses-table-4">Table</href>.
+        We begin by noting several points on <m>g</m> and the implied points on <m>g^{-1}</m>.  These are shown in <href ref="functions-inverses-table-3">Figure</href> and <href ref="functions-inverses-table-4">Figure</href>.
       </p>
       <sidebyside>
 
-        <table xml:id="functions-inverses-table-3">
+        <figure xml:id="functions-inverses-table-3">
           <caption><m>y=g(x)</m></caption>
           <tabular>
             <col halign="center" />
@@ -621,9 +621,9 @@
               <cell><m>3</m></cell>
             </row>
           </tabular>
-        </table>
+        </figure>
 
-        <table xml:id="functions-inverses-table-4">
+        <figure xml:id="functions-inverses-table-4">
           <caption><m>y=g(x)</m></caption>
           <tabular>
             <col halign="center" />
@@ -657,7 +657,7 @@
               <cell><m>3</m></cell>
             </row>
           </tabular>
-        </table>
+        </figure>
 
       </sidebyside>
 

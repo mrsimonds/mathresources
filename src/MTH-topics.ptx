@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017-2018                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                                                       -->
+<!--                                                                      -->
+<!-- Creative Commons BY 4.0 license                                      -->
+<!-- https://creativecommons.org/licenses/by/4.0/                         -->
+<!-- ********************************************************************* -->
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="MTH-topics">
+  <title>Material Sorted by PCC Course Numbers</title>
+
+  <xi:include href="./MTH-60-materials.ptx" />
+  <xi:include href="./MTH-65-materials.ptx" />
+  <xi:include href="./MTH-95-materials.ptx" />
+  <xi:include href="./MTH-111-materials.ptx" />
+  <xi:include href="./MTH-112-materials.ptx" />
+
+</chapter>

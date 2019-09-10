@@ -30,7 +30,7 @@
         </md>
       </p>
 
-      <table xml:id="functions-introduction-table-1">
+      <figure xml:id="functions-introduction-table-1">
         <caption>The ordered pairs in <m>f</m></caption>
         <tabular>
           <col halign="center" />
@@ -56,7 +56,7 @@
             <cell><m>7</m></cell>
           </row>
         </tabular>
-      </table>
+      </figure>
     </sidebyside>
     <p>
       Using words, we say that the value of <m>f</m> at <m>0</m> is <m>7</m>, the value of <m>f</m> at <m>1</m> is <m>-3</m>, the value of <m>f</m> at <m>2</m> is <m>11</m>, and the value of <m>f</m> at <m>3</m> is <m>7</m>.
@@ -148,7 +148,7 @@
       <p>
         Let's consider the equation <m>g(x)=-8</m>.  We can't draw the line <m>y=-8</m> onto <xref ref="functions-introduction-table-2">Table</xref>, nor can we see a point with an <m>y</m>-coordinate of <m>10</m>,so we'll have to take a different tact.  The arrow on the left side of <m>g</m> implies that <m>g</m> continues forever in the leftward direction with the same slope.  So one strategy we can employ is to use that slope to make a table for <m>g</m> until we find the point that has a <m>y</m>-coordinate of <m>-8</m>.  I've done that in <xref ref="functions-introduction-table-2">Table</xref>, and we can see that the relevant ordered pair is <m>(-8,-9)</m>.  From this we know that the solution to the equation <m>g(x)=-8</m> is <m>-9</m>.
       </p>
-      <table xml:id="functions-introduction-table-2">
+      <figure xml:id="functions-introduction-table-2">
         <caption><m>y=g(x)</m></caption>
         <tabular>
           <col halign="center" />
@@ -182,7 +182,7 @@
             <cell><m>-8</m></cell>
           </row>
         </tabular>
-      </table>
+      </figure>
 
     </sidebyside>
   </paragraphs>

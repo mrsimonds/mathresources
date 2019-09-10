@@ -36,9 +36,9 @@
       </figure>
 
       <p>
-        OK, let's now solve the problem using a system of linear equations.  Let's let <m>x</m>represent the amount ($) that Damion invested  in the bond and <m>y</m> represent the amount that was invested in the mutual fund account.  The the amount's ($) of interest earned by the two accounts were <m>0.03x</m> and <m>0.11y</m>.  This information is summarized in <xref ref="systems-applications-table-damien">Table</xref>.
+        OK, let's now solve the problem using a system of linear equations.  Let's let <m>x</m>represent the amount ($) that Damion invested  in the bond and <m>y</m> represent the amount that was invested in the mutual fund account.  The the amount's ($) of interest earned by the two accounts were <m>0.03x</m> and <m>0.11y</m>.  This information is summarized in <xref ref="systems-applications-table-damien">Figure</xref>.
       </p>
-      <table xml:id="systems-applications-table-damien">
+      <figure xml:id="systems-applications-table-damien">
         <caption>Damien's IRA Account</caption>
         <tabular>
         <col halign="left"/>
@@ -87,10 +87,10 @@
           </cell>
         </row>
       </tabular>
-    </table>
+    </figure>
 
     <p>
-      In each row of <xref ref="systems-applications-table-damien">Table</xref>, the amounts in the first two columns need to sum to the amount in the third column.  This gives us the following system of equations.
+      In each row of <xref ref="systems-applications-table-damien">Figure</xref>, the amounts in the first two columns need to sum to the amount in the third column.  This gives us the following system of equations.
       <me>
         \left\{
           \begin{aligned}
@@ -142,10 +142,10 @@
         </statement>
         <solution>
           <p>
-            Let's begin by defining <m>x</m> to be the amount ($) that Mohamed had invested in the safe account at the beginning of 2017 and <m>y</m> the amount he had invested in the speculative account at the beginning of 2017.  Let's also note that the total growth in the balance of the two accounts over the course of 2017 was $8,072.26 (the difference between $34,966.26 and $27,872.00).  The information we know about the accounts is summarized in <xref ref="systems-applications-table-1">Table</xref>.
+            Let's begin by defining <m>x</m> to be the amount ($) that Mohamed had invested in the safe account at the beginning of 2017 and <m>y</m> the amount he had invested in the speculative account at the beginning of 2017.  Let's also note that the total growth in the balance of the two accounts over the course of 2017 was $8,072.26 (the difference between $34,966.26 and $27,872.00).  The information we know about the accounts is summarized in <xref ref="systems-applications-table-1">Figure</xref>.
           </p>
           <p>
-          <table xml:id="systems-applications-table-1">
+          <figure xml:id="systems-applications-table-1">
             <caption>Mohamed's Retirement Accounts</caption>
             <tabular>
             <col halign="left"/>
@@ -194,7 +194,7 @@
                 </cell>
               </row>
             </tabular>
-          </table>
+          </figure>
         </p>
         <p></p>
         <p>
@@ -277,9 +277,9 @@
       OK, let's get to creating and solving an algebraic model for the problem.
     </p>      
     <p>
-      Let's define <m>x</m> to be the amount (liters) of 40% acid solution that should be used and <m>y</m> be the amount (liters) of 28% acid solution that should be used.  Let's note that the amount of acid in the final solution is 35.3% of 3 liters which is 1.056 liters.  The information in the problem is summarized in <xref ref="systems-applications-table-2">Table</xref>.
+      Let's define <m>x</m> to be the amount (liters) of 40% acid solution that should be used and <m>y</m> be the amount (liters) of 28% acid solution that should be used.  Let's note that the amount of acid in the final solution is 35.3% of 3 liters which is 1.056 liters.  The information in the problem is summarized in <xref ref="systems-applications-table-2">Figure</xref>.
     </p>
-    <table xml:id="systems-applications-table-2">
+    <figure xml:id="systems-applications-table-2">
       <caption>Jim and Jim are fixin' to do some mixin'</caption>
         <tabular>
           <col halign="left"/>
@@ -328,7 +328,7 @@
             </cell>
           </row>
         </tabular>
-      </table>
+      </figure>
       <p></p>
       <p>
         In both rows of the table, the amounts of the two existing solutions need to sum to the amount in the new solution.  This leads to the following system of equations.
@@ -371,9 +371,9 @@
       </statement>
       <solution>
         <p>
-          Let's let <m>x</m> represent the amount (liters) of the 40% acid solution used and <m>y</m> represent the amount (liters) of 10% acid solution used.  Let's note that the amount of acid in the mixture needs to be 23.5% of 4 liters which is 0.94 liters. The information in the problem is summarized in <xref ref="systems-applications-table-22">Table</xref>.
+          Let's let <m>x</m> represent the amount (liters) of the 40% acid solution used and <m>y</m> represent the amount (liters) of 10% acid solution used.  Let's note that the amount of acid in the mixture needs to be 23.5% of 4 liters which is 0.94 liters. The information in the problem is summarized in <xref ref="systems-applications-table-22">Figure</xref>.
         </p>
-        <table xml:id="systems-applications-table-22">
+        <figure xml:id="systems-applications-table-22">
           <caption>Nahid and Clarises' Solution</caption>
             <tabular>
               <col halign="left"/>
@@ -422,7 +422,7 @@
                   </cell>
                 </row>
               </tabular>
-            </table>
+            </figure>
             <p></p>
             <p>
               For each row, the figures in the first two columns need to sum to the figure in the third column.  This leads to the following system of equations.
@@ -491,7 +491,7 @@
       Chao and Elyse are in separate cars both driving on I-65.  At noon one day Elyse (driving north) passes Chao (driving south).  For the next 15 minutes each car maintains the exact speed they were traveling at noon.  By 12:15 pm that day the distance (along the highway) between the two cars was 33.75 miles.  During those 15 minutes Elyse's constant speed was 9 mph faster than Chao's constant speed.  Determine the constant speeds that  were maintained by the two drivers over those 15 minutes.
     </p>
     <p>
-      Before jumping into the algebra, let's use <xref ref="systems-applications-geogebra-4">Figure</xref> to numerically explore the problem.  Notice that the ime unit is hours to agree with the time component of the rate unit (miles/hour).  In each row the distance is simply the product of the rate and time.  Finally, the distance stated at the top is the sum of the two distances found in the table.
+      Before jumping into the algebra, let's use <xref ref="systems-applications-geogebra-4">Figure</xref> to numerically explore the problem.  Notice that the time unit is hours to agree with the time component of the rate unit (miles/hour).  In each row the distance is simply the product of the rate and time.  Finally, the distance stated at the top is the sum of the two distances found in the table.
     </p>
 
     <figure xml:id="systems-applications-geogebra-4">
@@ -508,9 +508,9 @@
       Time to set about using algebra to determine the solution tot he problem.
     </p>
     <p>
-      Let <m>x</m> represent the constant speed (mph) maintained by Elyse and <m>y</m> represent the constant speed (mph) maintained by Chao.  Some of the information relevant to solution is shown in <xref ref="systems-applications-table-3">Table</xref>.  In each row of the table, the expression found in the Distance column was determined using <m>D=rt</m>.
+      Let <m>x</m> represent the constant speed (mph) maintained by Elyse and <m>y</m> represent the constant speed (mph) maintained by Chao.  Some of the information relevant to solution is shown in <xref ref="systems-applications-table-3">Figure</xref>.  In each row of the table, the expression found in the Distance column was determined using <m>D=rt</m>.
     </p>
-    <table xml:id="systems-applications-table-3">
+    <figure xml:id="systems-applications-table-3">
     <caption>Elyse passes Chao</caption>
       <tabular>
         <col halign="left"/>
@@ -559,7 +559,7 @@
           </cell>
         </row>
       </tabular>
-    </table>
+    </figure>
     <p></p>
     <p>
       The fact that Elyse's constant speed was 9 mph greater than Chao's speed gives us <me>x=y+9</me>.  The fact that that the distance betweens the two cars was 33.75 miles after 15 minutes gives us <me>.25x+.25y=33.75</me>.  Let's substitute <m>y+9</m> for <m>x</m> in the second equation and then solve for <m>y</m>.
@@ -593,10 +593,10 @@
       </statement>
       <solution>
         <p>
-          Define <m>x</m> to be the (still water) cruising speed (mph) of the boat and <m>y</m> to be the speed of the current.  The information from the problem is summarized in <xref ref="systems-applications-table-4">Table</xref>.
+          Define <m>x</m> to be the (still water) cruising speed (mph) of the boat and <m>y</m> to be the speed of the current.  The information from the problem is summarized in <xref ref="systems-applications-table-4">Figure</xref>.
         </p>
         <p>
-          <table xml:id="systems-applications-table-4">
+          <figure xml:id="systems-applications-table-4">
           <caption>Cisco goes fishing</caption>
             <tabular>
               <col halign="left"/>
@@ -645,7 +645,7 @@
                 </cell>
               </row>
             </tabular>
-          </table>
+          </figure>
         </p>
         <p></p>
         <p>
@@ -745,10 +745,10 @@
           <solution>
             <p>
               Let <m>x</m> represent the amount ($) Francisco had invested in the savings account at the beginning of of 1982 and <m>y</m> represent the amount Francisco had invested in the stock market account at the beginning of 1982.  The information given in the problem is summarized in 
-              <xref ref="systems-spplications-exercises-table-1">Table</xref>.
+              <xref ref="systems-spplications-exercises-table-1">Figure</xref>.
             </p>
 
-            <table xml:id="systems-spplications-exercises-table-1">
+            <figure xml:id="systems-spplications-exercises-table-1">
               <caption>Francisco's Investment Accounts</caption>
               <tabular>
                 <col halign="left"/>
@@ -797,7 +797,7 @@
                   </cell>
                 </row>
               </tabular>
-            </table>
+            </figure>
             <p></p>
             <p>
               In both the investment and interest rows, the individual amounts from the two accounts must sum to the total.  This gives us the following system of equations.
@@ -840,9 +840,9 @@
             </p>
             <p></p>
             <p>
-              We can solve the problem two different ways - by focusing on her goal that 50% of the beans are red or by focusing on her goal that 50% of the beans are green.  Below I focus on the goal of 50% red beans.  You should also work the problem focusing on the goal that 50% of the beans are green and see that you get the same result.  The information given in the problems is summarized in <xref ref="systems-application-exercises-table-2">Table</xref>
+              We can solve the problem two different ways - by focusing on her goal that 50% of the beans are red or by focusing on her goal that 50% of the beans are green.  Below I focus on the goal of 50% red beans.  You should also work the problem focusing on the goal that 50% of the beans are green and see that you get the same result.  The information given in the problems is summarized in <xref ref="systems-application-exercises-table-2">Figure</xref>
             </p>
-              <table xml:id="systems-application-exercises-table-2">
+              <figure xml:id="systems-application-exercises-table-2">
                 <caption>Monica's Accounting of Jelly Beans</caption>
                 <tabular>
                   <col halign="left"/>
@@ -891,10 +891,10 @@
                     </cell>
                   </row>
                 </tabular>
-              </table>
+              </figure>
             <p></p>
             <p>
-              In both variable rows of <xref ref="systems-application-exercises-table-2">Table</xref>, the sum of the two individual purchases needs to equal the total purchase.  This gives us the following system of equations.
+              In both variable rows of <xref ref="systems-application-exercises-table-2">Figure</xref>, the sum of the two individual purchases needs to equal the total purchase.  This gives us the following system of equations.
               <me>
                 \left\{
                   \begin{aligned}
@@ -932,10 +932,10 @@
           </statement>
           <solution>
             <p>
-              Let <m>x</m> represent the amount (liters) of 20% solutions Calvin should use and <m>y</m> represent the amount (liters) of 45% HCl solution Calvin should use.  The information given in the problem is summarized in <xref ref="systems-applications-exercises-table-3">Table</xref>.  The figure of <m>.60</m> in the table comes from the fact that there are two liters of new solution and 30% of that solutions is HCl; <m>30</m>% of <m>2</m> is <m>.60</m>.
+              Let <m>x</m> represent the amount (liters) of 20% solutions Calvin should use and <m>y</m> represent the amount (liters) of 45% HCl solution Calvin should use.  The information given in the problem is summarized in <xref ref="systems-applications-exercises-table-3">Figure</xref>.  The figure of <m>.60</m> in the table comes from the fact that there are two liters of new solution and 30% of that solutions is HCl; <m>30</m>% of <m>2</m> is <m>.60</m>.
             </p>
             <p>
-              <table xml:id="systems-applications-exercises-table-3">
+              <figure xml:id="systems-applications-exercises-table-3">
                 <caption>Calvin has Chemistry to do</caption>
                 <tabular>
                   <col halign="left"/>
@@ -984,11 +984,11 @@
                     </cell>
                   </row>
                 </tabular>
-              </table>
+              </figure>
             </p>
             <p></p>
             <p>
-              In both rows of <xref ref="systems-applications-exercises-table-3">Table</xref>, the amounts contributed by the 20% HCl solution and the 45% HCl solution need to total to the amount of 30% solution.  This gives us the following system of equations.
+              In both rows of <xref ref="systems-applications-exercises-table-3">Figure</xref>, the amounts contributed by the 20% HCl solution and the 45% HCl solution need to total to the amount of 30% solution.  This gives us the following system of equations.
               <me>
                 \left\{
                   \begin{aligned}
@@ -1053,11 +1053,11 @@
             </statement>
             <solution>
               <p>
-                  Define <m>x</m> to be the constant speed (mi/hr) of the jet in still air and <m>y</m> to be the constant speed (mi/hr) of the wind.  The information stated in the problem is summarized in <xref ref="systems-applications-exercises-table-4">Table</xref>.  Note that 40 minutes is two-thirds of an hour.
+                  Define <m>x</m> to be the constant speed (mi/hr) of the jet in still air and <m>y</m> to be the constant speed (mi/hr) of the wind.  The information stated in the problem is summarized in <xref ref="systems-applications-exercises-table-4">Figure</xref>.  Note that 40 minutes is two-thirds of an hour.
               </p>
               <p></p>
               <p>
-                <table xml:id="systems-applications-exercises-table-4">
+                <figure xml:id="systems-applications-exercises-table-4">
                   <caption></caption>
                   <tabular>
                     <col halign="left"/>
@@ -1106,7 +1106,7 @@
                       </cell>
                     </row>
                   </tabular>
-                </table>
+                </figure>
               </p>
               <p></p>
               <p>

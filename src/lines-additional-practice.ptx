@@ -27,10 +27,10 @@
           <sidebyside widths="78% 18%" margins="0%">
 
             <p>
-              Complete the entries in <xref ref="lines-ap-table-1">Table</xref> for the line with equation <m>2x-5y=10</m>.  Also, state the <m>x</m> and <m>y</m> intercepts of the line.
+              Complete the entries in <xref ref="lines-ap-table-1">Figure</xref> for the line with equation <m>2x-5y=10</m>.  Also, state the <m>x</m> and <m>y</m> intercepts of the line.
             </p>
 
-            <table xml:id="lines-ap-table-1">
+            <figure xml:id="lines-ap-table-1">
               <caption><m>2x-5y=10</m></caption>
               <tabular>
                 <col halign="center" />
@@ -64,7 +64,7 @@
                   <cell></cell>
                 </row>
               </tabular>
-            </table>
+            </figure>
 
           </sidebyside>
         </statement>
@@ -76,7 +76,7 @@
               The <m>x</m>-intercept is <m>(5,0)</m> and the <m>y</m>-intercept is <m>(0,-2)</m>.
             </p>
 
-            <table xml:id="lines-ap-table-1-solution">
+            <figure xml:id="lines-ap-table-1-solution">
               <caption><m>2x-5y=10</m></caption>
               <tabular>
                 <col halign="center" />
@@ -110,7 +110,7 @@
                   <cell><m>2</m></cell>
                 </row>
               </tabular>
-            </table>
+            </figure>
 
           </sidebyside>
         </solution>
@@ -124,10 +124,10 @@
           <sidebyside widths="78% 18%" margins="0%">
 
             <p>
-              Complete the entries in <xref ref="lines-ap-table-2">Table</xref> for the line with equation <m>-x-7y=3</m>.  Also, state the <m>x</m> and <m>y</m> intercepts of the line.
+              Complete the entries in <xref ref="lines-ap-table-2">Figure</xref> for the line with equation <m>-x-7y=3</m>.  Also, state the <m>x</m> and <m>y</m> intercepts of the line.
             </p>
 
-            <table xml:id="lines-ap-table-2">
+            <figure xml:id="lines-ap-table-2">
               <caption><m>-x-7y=3</m></caption>
               <tabular>
                 <col halign="center" />
@@ -161,7 +161,7 @@
                   <cell><m>-\frac{5}{14}</m></cell>
                 </row>
               </tabular>
-            </table>
+            </figure>
 
             </sidebyside>
           </statement>
@@ -173,7 +173,7 @@
                 The <m>x</m>-intercept is <m>(-3,0)</m> and the <m>y</m>-intercept is <m>\left(0,-\frac{3}{7}\right)</m>.
               </p>
 
-              <table xml:id="lines-ap-table-2-solution">
+              <figure xml:id="lines-ap-table-2-solution">
                 <caption><m>-x-7y=3</m></caption>
                 <tabular>
                   <col halign="center" />
@@ -207,7 +207,7 @@
                     <cell><m>-\frac{5}{14}</m></cell>
                   </row>
                 </tabular>
-              </table>
+              </figure>
 
             </sidebyside>
           </solution>

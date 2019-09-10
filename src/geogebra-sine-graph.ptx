@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="geogebra-sine-graph">
+  <title>The Unit Circle and the Graph of the Sine Function</title>
+
+  <figure xml:id="geogebra-sine-graph-geogebra">
+    <caption>Drag the slider to the relationship between the <m>y</m>-coordinates of the point on the unit circle and the point on <m>y=\sin(t)</m>. .</caption>
+    <interactive platform="geogebra" width="100%" aspect="6:5">
+      <slate surface="geogebra" aspect="6:5" source="geogebra/sine-graph.ggb">
+        setPerspective("G");
+        setGridVisible(1);         
+        setAxisLabels(1,"x","y","z");
+      </slate>
+    </interactive>
+  </figure>
+
+</section>

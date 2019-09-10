@@ -288,10 +288,10 @@
         <sidebyside widths="67% 27%" margins="0%">
 
           <p>
-            Use the concept of slope to determine whether or not the points given in <xref ref="lines-slope-same-line">Table</xref> all lie on the same line.
+            Use the concept of slope to determine whether or not the points given in <xref ref="lines-slope-same-line">Figure</xref> all lie on the same line.
           </p>
 
-          <table xml:id="lines-slope-same-line">
+          <figure xml:id="lines-slope-same-line">
             <caption>Points from a line?</caption>
             <tabular>
               <col halign="center" />
@@ -317,7 +317,7 @@
                 <cell><m>-3</m></cell>
               </row>
             </tabular>
-          </table>
+          </figure>
 
         </sidebyside>
 
@@ -509,10 +509,10 @@
           <sidebyside widths="67% 27%" margins="0%">
 
             <p>
-              Determine whether or not the points listed in <xref ref="lines-exercises-slope-table">Table</xref> all lie on the same line.
+              Determine whether or not the points listed in <xref ref="lines-exercises-slope-table">Figure</xref> all lie on the same line.
             </p>
 
-            <table xml:id="lines-exercises-slope-table">
+            <figure xml:id="lines-exercises-slope-table">
               <caption>Points from a line?</caption>
               <tabular>
                 <col halign="center" />
@@ -538,7 +538,7 @@
                     <cell><m>-6</m></cell>
                   </row> 
                 </tabular>
-              </table>
+              </figure>
 
             </sidebyside>
           </statement>

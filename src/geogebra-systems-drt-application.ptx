@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="geogebra-systems-drt-application">
+  <title>Explore a Distance/Rate/Time Systems Problem Numerically.</title>
+  
+    <p>
+      Chao and Elyse are in separate cars both driving on I-65.  At noon one day Elyse (driving north) passes Chao (driving south).  For the next 15 minutes each car maintains the exact speed they were traveling at noon.  By 12:15 pm that day the distance (along the highway) between the two cars was 33.75 miles.  During those 15 minutes Elyse's constant speed was 9 mph faster than Chao's constant speed.  Determine the constant speeds that  were maintained by the two drivers over those 15 minutes.
+    </p>
+    <p>
+      Let's use <xref ref="geogebra-systems-drt-application-geogebra">Figure</xref> to numerically explore the problem.  Notice that the time unit is hours to agree with the time component of the rate unit (miles/hour).  In each row the distance is simply the product of the rate and time.  Finally, the distance stated at the top is the sum of the two distances found in the table.
+    </p>
+
+    <figure xml:id="geogebra-systems-drt-application-geogebra">
+      <caption>Two Drives along I-65</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/systems-drt-problem.ggb">
+          setPerspective("G");
+          setAxesVisible(0,0);
+        </slate>
+      </interactive>
+    </figure>
+
+</section>

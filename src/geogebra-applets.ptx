@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="geogebra-applets">
+  <title>GeoGebra Applets Master List</title>
+
+  <p>
+    Please note that the Applets open in new windows.
+  </p>
+  <paragraphs>
+    <title>Applets for PCC MTH 60</title>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-intercepts-of-a-line.html" target="blank">Determine the intercepts of the line whose equation is stated in standard form. (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-graph-lines-standard-form.html" target="blank">Graph a line given the standard form of the equation of the line.  (Graphing Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-graph-a-given-slope.html" target="blank">Graph a line with a fixed <m>y</m>-intercept and a given slope. (Graphing Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-determine-the-slope-two-points.html" target="blank">Determine the slope of a line given two points on the line. (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-lines-graph-slope-intercept.html" target="blank">Graph a line given the slope-intercept form of the equation of the line.  (Graphing Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-lines-slope-y-int-from-standard.html" target="blank">Determine the Slope and <m>y</m>-intercept of a line whose equation is stated in standard form.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-equation-from-two-points.html" target="blank">Determine the equation of a line given two points on a line.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-systems-graphical.html" target="blank">Solve a system of equations graphically.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-systems-sustitution.html" target="blank">Solve a system of equations by substitution.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-systems-elimination.html" target="blank">Solve a system of equations by elimination.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-systems-interest-application.html" target="blank">Explore a systems-based interest application numerically.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-systems-mixture-application.html" target="blank">Explore a systems-based acid mixture application numerically.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-systems-drt-application.html" target="blank">Explore a systems-based distance/rate/time application numerically.  (Exploration Applet)</url>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </paragraphs>
+  <paragraphs>
+    <title>Applets for PCC MTH 65</title>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-positive-integer-exponents.html" target="blank">The meaning of positive integer exponents (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-product-rule-exponents.html" target="blank">The product rule of exponents. (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-power-to-a-power-rule-exponents.html" target="blank">The power-to-a-power rule of exponents.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-product-and-ptap-rules-exponents.html" target="blank">Practice problems combining the product rule and the power-to-a-power rule.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-quotient-rule-part-one-exponents.html" target="blank">The quotient rule of exponents - Part I.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-quotient-rule-part-two-exponents.html" target="blank">The quotient rule of exponents - Part II.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-quotient-rule-part-three-exponents.html" target="blank">Which version of the quotient rule should be used?  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-postive-exponent-rules.html" target="blank">Applying the exponent rules applied to non-negative integer exponents.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-negative-exponents.html" target="blank">What's the meaning of negative exponents?  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-negative-exponents-affect-what.html" target="blank">Which factors move when there's a negative exponent?  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-integer-exponent-drill.html" target="blank">Applying the rules of exponents to integer exponents. (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-scientific-notation.html" target="blank">The meaning of scientific notation. (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-conversion-to-scientific-notation.html" target="blank">Convert from Standard Notation to Scientific Notation. (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-scientific-notation-multiplication.html" target="blank">Multiplying numbers expressed using scientific notation. (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-FOIL.html" target="blank">FOIL (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-simplifying-square-roots.html" target="blank">Simplifying square root expressions (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-rationalize-monomial-denominators.html" target="blank">Rationalizing monomial square root denominators.  (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-rationalize-binomial-denominators.html" target="blank">Rationalizing binomial denominators that have a square root term.  (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-rational-exponents.html" target="blank">What is the meaning of a rational exponent?  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-imaginary-numbers.html" target="blank">Simplifying square roots of negative integers.  (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-multiply-complex-numbers.html" target="blank">Multiplying complex numbers. (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-parabola-standard-form-one.html" target="blank">Determining the vertex of a parabola whose equation is stated in standard form - part one.  (Graphing Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-parabola-standard-form-two.html" target="blank">Determining the vertex of a parabola whose equation is stated in standard form - part two.  (Graphing Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-parabola-standard-form-three.html" target="blank">Determining the vertex of a parabola whose equation is stated in standard form - part three.  (Graphing Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-solving-inequalities-graphically-one.html" target="blank">Using a graph to solve an inequality - part one.  (Graphing Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-solving-inequalities-graphically-two.html" target="blank">Using a graph to solve an inequality - part two.  (Graphing Applet)</url>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </paragraphs>
+  <paragraphs>
+    <title>Applets for PCC MTH 95</title>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-determine-GCF.html" target="blank">Determining the Greatest Common Factor.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-GCF.html" target="blank">Factoring the Greatest Common Factor.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-leading-coefficient-one-one.html" target="blank">Factoring trinomials with a leading coefficient of one - part one.  (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-leading-coefficient-one-two.html" target="blank">Factoring trinomials with a leading coefficient of one - part two.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-by-grouping.html" target="blank">Factoring by Grouping.  (Drill Application)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-leading-coefficient-not-one-one.html" target="blank">Factoring trinomials with a leading coefficient that is not one - part one.  (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-leading-coefficient-not-one-two.html" target="blank">Factoring trinomials with a leading coefficient that is not one - part two.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-leading-coefficient-not-one-three.html" target="blank">Factoring trinomials with a leading coefficient that is not one - part three.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-difference-of-squares-one-variable.html" target="blank">Factoring difference of squares that have one variable.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-difference-of-squares-two-variables.html" target="blank">Factoring difference of squares that have two variables.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-sum-difference-of-cubes-one-variable.html" target="blank">Factoring sum and difference of cubes that have one variable.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-sum-difference-of-cubes-two-variables.html" target="blank">Factoring sum and difference of cubes that have two variables.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-intro-to-function-notation-one.html" target="blank">Introduction to Function Notation - Part One.  (Graphical Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-intro-to-function-notation-two.html" target="blank">Introduction to Function Notation - Part Two.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-advanced-function-notation.html" target="blank">Simplifying <m>f(x+y)</m> for a quadratic expression <m>f</m>.  (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-addition-of-rational-expressions.html" target="blank">Adding Rational expressions.  (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-solving-rational-equations.html" target="blank">Solving Rational Equations (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-quadratic-equation-complete-the-square.html" target="blank">Solving quadratic equations after first completing the square.  (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-vertex-form.html" target="blank">Graphing parabolas when the equation is stated in vertex form.  (Graphing Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-parabola-complete-square-one.html" target="blank">Graphing a parabola after completing the square when the leading coefficient is one.  (Graphing and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-parabola-complete-square-two.html" target="blank">Graphing a parabola after completing the square when the leading coefficient is two.  (Graphing and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-parabola-complete-square-negative-one.html" target="blank">Graphing a parabola after completing the square when the leading coefficient is negative one.  (Graphing and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-solving-inequalities-graphically-one.html" target="blank">Using a graph to solve an inequality - part one.  (Graphing Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-solving-inequalities-graphically-two.html" target="blank">Using a graph to solve an inequality - part two.  (Graphing Applet)</url>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </paragraphs>
+  <paragraphs>
+    <title>Applets for PCC MTH 111</title>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-advanced-function-notation.html" target="blank">Simplifying <m>f(x+y</m> for a quadratic expression <m>f</m>.  (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-horizontal-shifts.html" target="blank">Graphical transformations - horizontal shifts.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-vertical-shifts.html" target="blank">Graphical transformations - vertical shifts.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-horizontal-and-vertical-shifts.html" target="blank">Graphical transformations - horizontal and vertical shifts.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-axis-reflection.html" target="blank">Graphical transformations - reflections across the axes.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-horizontal-stretch-and-squish.html" target="blank">Graphical transformations - horizontal stretches and compressions.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-vertical-stretch-and-squish.html" target="blank">Graphical transformations - vertical stretches and compressions.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-stretch-squish-and-reflect.html" target="blank">Graphical transformations - stretches/compressions/reflections.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-transformations-b-factored.html" target="blank">Graphical transformations - <m>g(x)=a \cdot f(b(x \pm h)) \pm k</m>. (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-transformations-b-distributed.html" target="blank">Graphical transformations - <m>g(x)=a \cdot f(b x \pm h) \pm k</m>. (Drill Applet)</url>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </paragraphs>
+  <paragraphs>
+    <title>Applets for PCC MTH 112</title>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-sine-graph.html" target="blank">The unit circle and the graph of the sine function.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-SSS.html" target="blank">Unique triangle - the case of sine, side, side.  (Exploration Applet)</url>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </paragraphs>
+
+</section>

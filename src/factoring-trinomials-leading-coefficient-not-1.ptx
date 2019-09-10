@@ -80,11 +80,11 @@
   </example>
 
   <p>
-    As with factoring trinomials with one variable, a large X can be helpful for organizing our work.  In this new case, the number that goes on top of the X is the product, <m>ac</m>, while <m>b</m> is still the number that goes on the bottom of the X.  Watch several examples of the process using <xref ref="factoring-trinomials-not-1geogebra-1">Figure</xref>, and then try working the problems yourself before watching the app go through the steps.
+    As with factoring trinomials with one variable, a large X can be helpful for organizing our work.  In this new case, the number that goes on top of the X is the product, <m>ac</m>, while <m>b</m> is still the number that goes on the bottom of the X.  Watch several examples of the process using <xref ref="factoring-trinomials-not-1-geogebra-1">Figure</xref>, and then try working the problems yourself before watching the app go through the steps.
   </p>
 
-  <figure xml:id="factoring-trinomials-not-1geogebra-1">
-    <caption>Practice Factoring Trinomials with Two Variable</caption>
+  <figure xml:id="factoring-trinomials-not-1-geogebra-1">
+    <caption>Show the Steps Factoring Trinomials with a Leading Coefficient that is not One</caption>
     <interactive platform="geogebra" width="100%" aspect="9:5">
       <slate surface="geogebra" aspect="9:5" source="geogebra/factoring-ac-method-2.ggb">
         setPerspective("G");
@@ -94,11 +94,11 @@
   </figure>
 
   <p>
-    You can use <xref ref="factoring-trinomials-not-1geogebra-2">Figure</xref> and <xref ref="factoring-trinomials-not-1geogebra-3">Figure</xref> to generate more random practice problems.  Don't for to look for the greatest common factor before jumping into the ac-method.
+    You can use <xref ref="factoring-trinomials-not-1-geogebra-2">Figure</xref> and <xref ref="factoring-trinomials-not-1-geogebra-3">Figure</xref> to generate more random practice problems.  Don't for to look for the greatest common factor before jumping into the ac-method.
   </p>
 
-  <figure xml:id="factoring-trinomials-not-1geogebra-2">
-    <caption>Practice Factoring Trinomials with Two Variables</caption>
+  <figure xml:id="factoring-trinomials-not-1-geogebra-2">
+    <caption>Practice Factoring Trinomials when the Leading Coefficient is not One</caption>
     <interactive platform="geogebra" width="100%" aspect="9:5">
       <slate surface="geogebra" aspect="9:5" source="geogebra/factor-trinomials-not-1.ggb">
         setPerspective("G");
@@ -107,7 +107,7 @@
     </interactive>
   </figure>
 
-  <figure xml:id="factoring-trinomials-not-1geogebra-3">
+  <figure xml:id="factoring-trinomials-not-1-geogebra-3">
     <caption>Practice Factoring Trinomials with Two Variable</caption>
     <interactive platform="geogebra" width="100%" aspect="9:5">
       <slate surface="geogebra" aspect="9:5" source="geogebra/factor-trinomials-multivariable.ggb">

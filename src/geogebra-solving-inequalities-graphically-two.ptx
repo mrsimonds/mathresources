@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="geogebra-solving-inequalities-graphically-two">
+  <title>Using a Graph to Solve an Inequality - Part II</title>
+
+  <figure xml:id="geogebra-solving-inequalities-graphically-two-geogebra">
+    <caption>The parabola is the function <m>f</m>.  Drag the button labeled "up/down" - umm... - up and down to change the problem and solution.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/functions-greater-than.ggb">
+            setPerspective("G");
+            setAxisSteps(1, 1, 1, 1);
+            setCoordSystem(-8, 8, -2, 14);
+            setGridVisible(1);         
+            setAxisLabels(1,"x","y","z");
+      </slate>
+    </interactive>
+  </figure>
+
+</section>

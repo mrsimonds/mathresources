@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="geogebra-FOIL">
+  <title>FOIL</title>
+
+  <figure xml:id="geogebra-FOIL-geogebra">
+    <caption>Click on "F", "O", "I", "L" in that order.  After click on "Combine Like Terms" which appears after you click "L".  After looking at a few examples try to FOIL yourself and then click through the steps to check your answer.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/polynomial-FOIL.ggb">
+        setPerspective("G");
+        setAxesVisible(0,0);
+      </slate>
+    </interactive>
+  </figure>
+
+</section>

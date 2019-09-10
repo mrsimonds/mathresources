@@ -12,7 +12,8 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="functions-materials">
     <title>Functions</title>
 
-      <xi:include href="./functions-videos.ptx" />
+      <xi:include href="./functions-videos-95.ptx" />
+      <xi:include href="./functions-videos-111.ptx" />
       <xi:include href="./functions-introduction.ptx" />
       <xi:include href="./functions-domain-and-range.ptx" />
       <xi:include href="./functions-advanced-notation.ptx" />

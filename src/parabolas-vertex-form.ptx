@@ -35,6 +35,7 @@
       <mrow>\amp=-7</mrow>
     </md>
   </p>
+
   <figure xml:id="parabolas-vertex-form-geogebra-1">
     <caption>Drag the vertex of the parabola to the point that matches the vertex of the stated equation. A message will appear when you are correct.</caption>
     <interactive platform="geogebra" width="100%" aspect="9:5">
@@ -45,6 +46,7 @@
       </slate>
     </interactive>
   </figure>
+  
   <p>
     The other information about the parabola is determined in the same way that it was determined when we worked with the standard form of the equation.  To summarize:
   </p>      

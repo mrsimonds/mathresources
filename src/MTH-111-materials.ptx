@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="MTH-111-materials" target="blank">
+  <title>Topics Covered in MTH 111</title>
+
+  <p>
+    Please note that the documents will open in new windows.
+    <ul>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/functions-advanced-notation.html" target="blank">Advanced Function Notation</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/functions-difference-quotient.html" target="blank">Difference Quotients</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/functions-even-odd.html" target="blank">Even Functions and Odd Functions</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/functions-compositions.html" target="blank">Function Composition</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/functions-inverses.html" target="blank">Inverse Functions</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/functions-graphical-transformations.html" target="blank">Graphical Transformations</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/logs-and-exponent-exponential-functions-and-graphs.html" target="blank">Exponential Functions and their Graphs</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/logs-and-exponent-logarithmic-functions-and-graphs.html" target="blank">Logarithmic Functions ad their Graphs</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/logs-and-exponents-logarithms.html" target="blank">Interpreting Logarithms as Exponents</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/logs-and-exponents-log-properies-derivation.html" target="blank">Derivation of the Properties of Exponents</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/logs-and-exponents-log-properties.html" target="blank">Application of the Properties of Exponents</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/logs-and-exponents-exponential-equations.html" target="blank">Exponential Equations</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/logs-and-exponents-log-equations.html" target="blank">Logarithmic Equations</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/logs-and-exponents-e.html" target="blank">The Number e and Compound Interest</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/logs-and-exponents-growth-and-decay.html" target="blank">Exponential Growth and Decay</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/rationals-functions-and-graphs.html" target="blank">Rational Functions and their Graphs</url>
+      </li>
+    </ul>
+  </p>
+
+</section>

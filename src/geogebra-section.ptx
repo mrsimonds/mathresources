@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="Appendices">
+    <title>GeoGebra Applets</title>
+
+      <xi:include href="./geogebra-applets.ptx" />
+      <xi:include href="./geogebra-intercepts-of-a-line.ptx" />
+      <xi:include href="./geogebra-graph-lines-standard-form.ptx" />
+      <xi:include href="./geogebra-graph-a-given-slope.ptx" />
+      <xi:include href="./geogebra-determine-the-slope-two-points.ptx" />
+      <xi:include href="./geogebra-lines-graph-slope-intercept.ptx" />
+      <xi:include href="./geogebra-lines-slope-y-int-from-standard.ptx" />
+      <xi:include href="./geogebra-equation-from-two-points.ptx" />
+      <xi:include href="./geogebra-systems-graphical.ptx" />
+      <xi:include href="./geogebra-systems-sustitution.ptx" />
+      <xi:include href="./geogebra-systems-elimination.ptx" />
+      <xi:include href="./geogebra-systems-interest-application.ptx" />
+      <xi:include href="./geogebra-systems-mixture-application.ptx" />
+      <xi:include href="./geogebra-systems-drt-application.ptx" />
+      <xi:include href="./geogebra-positive-integer-exponents.ptx" />
+      <xi:include href="./geogebra-product-rule-exponents.ptx" />
+      <xi:include href="./geogebra-power-to-a-power-rule-exponents.ptx" />
+      <xi:include href="./geogebra-product-and-ptap-rules-exponents.ptx" />
+      <xi:include href="./geogebra-quotient-rule-part-one-exponents.ptx" />
+      <xi:include href="./geogebra-quotient-rule-part-two-exponents.ptx" />
+      <xi:include href="./geogebra-quotient-rule-part-three-exponents.ptx" />
+      <xi:include href="./geogebra-postive-exponent-rules.ptx" />
+      <xi:include href="./geogebra-negative-exponents.ptx" />
+      <xi:include href="./geogebra-negative-exponents-affect-what.ptx" />
+      <xi:include href="./geogebra-integer-exponent-drill.ptx" />
+      <xi:include href="./geogebra-scientific-notation.ptx" />
+      <xi:include href="./geogebra-conversion-to-scientific-notation.ptx" />
+      <xi:include href="./geogebra-scientific-notation-multiplication.ptx" />
+      <xi:include href="./geogebra-FOIL.ptx" />
+      <xi:include href="./geogebra-simplifying-square-roots.ptx" />
+      <xi:include href="./geogebra-rationalize-monomial-denominators.ptx" />
+      <xi:include href="./geogebra-rationalize-binomial-denominators.ptx" />
+      <xi:include href="./geogebra-rational-exponents.ptx" />
+      <xi:include href="./geogebra-imaginary-numbers.ptx" />
+      <xi:include href="./geogebra-multiply-complex-numbers.ptx" />
+      <xi:include href="./geogebra-parabola-standard-form-one.ptx" />
+      <xi:include href="./geogebra-parabola-standard-form-two.ptx" />
+      <xi:include href="./geogebra-parabola-standard-form-three.ptx" />
+      <xi:include href="./geogebra-solving-inequalities-graphically-one.ptx" />
+      <xi:include href="./geogebra-solving-inequalities-graphically-two.ptx" />
+      <xi:include href="./geogebra-determine-GCF.ptx" />
+      <xi:include href="./geogebra-factor-GCF.ptx" />
+      <xi:include href="./geogebra-factor-leading-coefficient-one-one.ptx" />
+      <xi:include href="./geogebra-factor-leading-coefficient-one-two.ptx" />
+      <xi:include href="./geogebra-factor-by-grouping.ptx" />
+      <xi:include href="./geogebra-factor-leading-coefficient-not-one-one.ptx" />
+      <xi:include href="./geogebra-factor-leading-coefficient-not-one-two.ptx" />
+      <xi:include href="./geogebra-factor-leading-coefficient-not-one-three.ptx" />
+      <xi:include href="./geogebra-factor-difference-of-squares-one-variable.ptx" />
+      <xi:include href="./geogebra-factor-difference-of-squares-two-variables.ptx" />
+      <xi:include href="./geogebra-factor-sum-difference-of-cubes-one-variable.ptx" />
+      <xi:include href="./geogebra-factor-sum-difference-of-cubes-two-variables.ptx" />
+      <xi:include href="./geogebra-intro-to-function-notation-one.ptx" />
+      <xi:include href="./geogebra-intro-to-function-notation-two.ptx" />
+      <xi:include href="./geogebra-advanced-function-notation.ptx" />
+      <xi:include href="./geogebra-addition-of-rational-expressions.ptx" />
+      <xi:include href="./geogebra-solving-rational-equations.ptx" />
+      <xi:include href="./geogebra-quadratic-equation-complete-the-square.ptx" />
+      <xi:include href="./geogebra-vertex-form.ptx" />
+      <xi:include href="./geogebra-parabola-complete-square-one.ptx" />
+      <xi:include href="./geogebra-parabola-complete-square-two.ptx" />
+      <xi:include href="./geogebra-parabola-complete-square-negative-one.ptx" />
+      <xi:include href="./geogebra-horizontal-shifts.ptx" />
+      <xi:include href="./geogebra-vertical-shifts.ptx" />
+      <xi:include href="./geogebra-horizontal-and-vertical-shifts.ptx" />
+      <xi:include href="./geogebra-axis-reflection.ptx" />
+      <xi:include href="./geogebra-horizontal-stretch-and-squish.ptx" />
+      <xi:include href="./geogebra-vertical-stretch-and-squish.ptx" />
+      <xi:include href="./geogebra-stretch-squish-and-reflect.ptx" />
+      <xi:include href="./geogebra-transformations-b-factored.ptx" />
+      <xi:include href="./geogebra-transformations-b-distributed.ptx" />
+      <xi:include href="./geogebra-sine-graph.ptx" />
+      <xi:include href="./geogebra-SSS.ptx" />
+
+ </chapter>

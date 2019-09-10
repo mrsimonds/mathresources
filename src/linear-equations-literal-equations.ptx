@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="linear-equations-literal-equations">
+  <title>Literal Equations</title>
+  <paragraphs>
+    <title>What is a Literal Equation?</title>
+
+  </paragraphs>
+  <paragraphs>
+    <title>Isolating a Given Variable in a Literal Equation</title>
+
+    <example>
+      <statement>
+        <p>
+          The equation <m>V=\pi r^2 h</m> finds the volume of a right circular cylinder whose base has a radius of <m>r</m> and height of <m>h</m>.  Solve this equation for <m>h</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We want to isolate the variable <m>h</m>.  We can do this by dividing both sides of the equation by <m>\pi r^2</m>.
+          <md>
+            <mrow>V\amp=\pi r^2 h</mrow>
+            <mrow>\divideunder{V}{\pi r^2}\amp=\divideunder{\pi r^2 h}{\pi r^2}</mrow>
+            <mrow>\frac{V}{\pi r^2}\amp=h</mrow>
+          </md>
+          We conclude by formally stating the following.
+          <me>h=\frac{V}{\pi r^2} </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Solve the equation <m>y=m x+b</m> for the variable <m>x</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to isolate the variable <m>x</m>.  In this context the other variables all represent real numbers, so the given equation, from this perspective, is similar to the equation <m>15=2x+3</m>.
+        </p>
+        <p>
+          Now suppose that you were going through the steps to solve the equation <m>15=2x+3</m>.  What would the steps be?  They're stated below.
+          <ol>
+            <li>
+              <p>Subtract <m>3</m> from both sides of the equation and simplify.</p>
+            </li>
+            <li>
+              <p>Divide both sides of the equation by <m>2</m> and simplify.</p>
+            </li>
+          </ol>
+        </p>
+        <p>
+          Similarly, the steps when solving the equation <m>y=m x+b</m> for <m>x</m> are as follows.
+          <ol>
+            <li>
+              <p>Subtract <m>b</m> from both sides of the equation and simplify.</p>
+            </li>
+            <li>
+              <p>Divide both sides of the equation by <m>m</m> and simplify.</p>
+            </li>
+          </ol>
+        </p>
+        <p>
+          There is one big difference in the two processes.  In the first case the left side of the equation simplifies on each step.  In the second case the left side of the equation never simplifies.  Let's go ahead and solve <m>y=mx +b</m> for <m>x</m>.
+          <md>
+            <mrow>y\amp=m x+b</mrow>
+            <mrow>y\subtractright{b}\amp=m x+b\subtractright{b}</mrow>
+            <mrow>y-b\amp=m x</mrow>
+            <mrow>\divideunder{y-b}{m}\amp=\divideunder{m x}{m}</mrow>
+            <mrow>\frac{y-b}{m}\amp=x</mrow>
+          </md>
+          We conclude by stating the relationship between <m>x</m> and the other variables in the given equation.
+          <me>x=\frac{y-b}{m}</me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Solve the equation <m>a x+b y=c</m> for <m>y</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to first isolate the term <m>b y</m> which we do by subtracting <m>a x</m> from both sides of the equation.  We then need to fully isolate <m>y</m> by dividing both sides of the equation by <m>b</m>.  Let's go ahead and do it.
+          <md>
+            <mrow>a x+b y\amp=c</mrow>
+            <mrow>a x+b y\subtractright{a x}\amp=c\subtractright{a x}</mrow>
+            <mrow>b y\amp=c-a x</mrow>
+            <mrow>\divideunder{b y}{b}\amp=\divideunder{c-a x}{b}</mrow>
+            <mrow>y\amp=\frac{c-a x}{b}</mrow>
+          </md>
+          We conclude by formally stating that
+          <me>y=\frac{c-a x}{b}</me>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Solve the equation <m>y-b=m(x-a)</m> for <m>x</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The first thing we need to do is get <m>x</m> out from inside those parentheses.  We do that by distributing <m>m</m> through the parentheses.
+          <md>
+            <mrow>y-b\amp=m(x-a)</mrow>
+            <mrow>y-b\amp=m x-m a</mrow>
+          </md>
+          We can now isolate the term <m>m a</m> by adding <m>a x</m> to both sides of the equation.  We can finish up by dividing both sides of the equation by <m>m</m> (to fully isolate <m>x</m>).
+          <md>
+            <mrow>y-b\amp=m x-m a</mrow>
+            <mrow>y-b\addright{m a}\amp=m x-m a\addright{m a}</mrow>
+            <mrow>y-b+m a\amp=m x</mrow>
+            <mrow>\divideunder{y-b+m a}{m}\amp=\divideunder{m x}{m}</mrow>
+            <mrow>\frac{y-b+m a}{m}\amp=x</mrow>
+          </md>
+          We conclude with a formal declaration.
+          <me>x=\frac{y-b+m a}{m}</me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          The formula <m>C=\frac{5}{9}(F-32)</m> determines the Celsius temperature, <m>C</m>, that corresponds to a given Fahrenheit temperature, F.  Solve this equation for <m>F</m>.You don't need to state a formal conclusion - once you've isolated <m>F</m> you are done.
+        </p>
+      </statement>
+      <solution>
+        <p>The quickest and least messy way to isolate <m>F</m> is to begin by multiplying both sides of the equation by <m>\frac{9}{5}</m>.  If you can't see why, you will once we've done it.
+          <md>
+            <mrow>C\amp=\frac{5}{9}(F-32)</mrow>
+            <mrow>\multiplyleft{\frac{5}{9}}{C}\amp=\multiplyleft{\frac{5}{9}}{\frac{5}{9}(F-32)}</mrow>
+            <mrow>\frac{5}{9}C\amp=F-32</mrow>
+            <mrow>\frac{5}{9}C\addright{32}\amp=F-32\addright{32}</mrow>
+            <mrow>\frac{5}{9}C+32\amp=F</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+  </paragraphs>
+
+  <exercises>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Solve each equation for the stated variable.  You do not need to state a formal conclusion - once you've isolated the stated variable you are done.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            The formula <m>V=l w h</m> determines the volume of a box whose sides have the lengths <m>l</m>, <m>w</m>, and <m>h</m>.  Solve this equation for <m>w</m>.. 
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>V\amp=l w h</mrow>
+              <mrow>\divideunder{V}{l h}\amp=\divideunder{l w h}{l h}</mrow>
+              <mrow>\frac{V}{l h}\amp=w</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            The formula <m>A=2l+2w</m> finds the perimeter of a rectangle where <m>l</m> represents the lengths of one pair of parallel sides of the rectangle and <m>w</m> represents the lengths of the other pair of parallel sides.  Solve this equation for <m>w</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>A\amp=2l+2w</mrow>
+              <mrow>A\subtractright{2l}\amp=2l+2w\subtractright{2l}</mrow>
+              <mrow>A-2l\amp=2w</mrow>
+              <mrow>\divideunder{A-2l}{2}\amp=\divideunder{2w}{2}</mrow>
+              <mrow>\frac{A-2l}{2}\amp=w</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Solve the equation <m>\frac{5}{9}C+32=F</m> for <m>C</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\frac{5}{9}C+32\amp=F</mrow>
+              <mrow>\frac{5}{9}C+32\subtractright{32}\amp=F\subtractright{32}</mrow>
+              <mrow>\frac{5}{9}C\amp=F-32</mrow>
+              <mrow>\multiplyleft{\frac{9}{5}}\frac{5}{9}C\amp=\multiplyleft{\frac{9}{5}}(F-32)</mrow>
+              <mrow>C\amp=\frac{9}{5}(F-32)</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Solve the equation <m>y-b=m(x-a)</m> for <m>b</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Please note that on the third line I have distributed the factor of <m>m</m>.  I did this because it's not usually seen fit to have an expression that is partially factored, which is what happened to the right side of the equation when we subtractced <m>y</m>.
+            <md>
+              <mrow>y-b\amp=m(x-a)</mrow>
+              <mrow>y-b\subtractright{y}\amp=m(x-1)\subtractright{y}</mrow>
+              <mrow>-b\amp=m x-m-y</mrow>
+              <mrow>\divideunder{-b}{-1}\amp=\divideunder{m x-m-y}{-1}</mrow>
+              <mrow>b\amp=-m x+m+y</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Solve the equation <m>y-b=m(x-a)</m> for <m>m</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>y-b\amp=m(x-a)</mrow>
+              <mrow>\divideunder{y-b}{x-a}\amp=\divideunder{m(x-a)}{x-a}</mrow>
+              <mrow>\frac{y-b}{x-a}\amp=m</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Solve the equation <m>y-b=m(x-a)</m> for <m>a</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We need to begin by distributing the factor of <m>m</m> so that the variable we are solving for, <m>a</m>, is not inside parentheses.  Towards the end I chose to multiply the numerator and the denominator by <m>-1</m>.  I did that to remove the unnecessary negative sign in the denominator.
+            <md>
+              <mrow>y-b\amp=m(x-a)</mrow>
+              <mrow>y-b\amp=m x-m a</mrow>
+              <mrow>y-b\subtractright{m x}\amp=m x-m a\subtractright{m x}</mrow>
+              <mrow>y-b-m x\amp=-m a</mrow>
+              <mrow>\divideunder{y-b-m x}{-m}\amp=\divideunder{-m a}{-m}</mrow>
+              <mrow>\frac{y-b-m x}{-m}\amp=a</mrow>
+              <mrow>\frac{y-b-m x}{-m} \cdot \frac{-1}{-1}\amp=a</mrow>
+              <mrow>\frac{-y+b+m x}{m}\amp=a</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Solve the equation <m>y=m x+b</m> for <m>b</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>y\amp=m x+b</mrow>
+              <mrow>y\subtractright{m x}\amp=m x+b\subtractright{m x}</mrow>
+              <mrow>y-m x\amp=b</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Solve the equation <m>\frac{P V}{T N}=k</m> for the variable <m>V</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Let's begin by clearing away the fraction.
+            <md>
+              <mrow>\frac{P V}{T N}\amp=k</mrow>
+              <mrow>\multiplyleft{T N}\frac{P V}{T N}\amp=\multiplyleft{T N}k</mrow>
+              <mrow>P V\amp=k T N</mrow>
+              <mrow>\divideunder{P V}{P}\amp=\divideunder{k T N}{P}</mrow>
+              <mrow>V\amp=\frac{k T N}{P}</mrow>
+            </md>
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+  </exercises>
+
+    
+
+      
+
+</section>

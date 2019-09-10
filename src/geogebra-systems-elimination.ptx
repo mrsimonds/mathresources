@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="geogebra-systems-elimination">
+  <title>Solve a System of Equations by Elimination.</title>
+
+  <figure xml:id="geogebra-systems-elimination-geogebra">
+    <caption>Solve the system of equations using the elimination method.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/systems-elimination.ggb">
+        setPerspective("G");
+        setAxesVisible(0,0);
+      </slate>
+    </interactive>
+  </figure>
+
+</section>

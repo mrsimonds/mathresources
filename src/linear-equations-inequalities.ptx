@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="linear-equations-inequalities">
+    <title>Linear Inequalities in One Variable</title>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution set for the inequality <m>2x-7 \lt 17</m>.  State the solution set using both set builder notation and interval notation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>2x-7 \lt 17</mrow>
+            <mrow>2x-7\addright{7} \lt 17\addright{7}</mrow>
+            <mrow>2x \lt 24</mrow>
+            <mrow>\divideunder{2x}{2} \lt \divideunder{24}{2}</mrow>
+            <mrow>x \lt 12</mrow>
+          </md>
+          If our solution is correct, the two sides are equal at the endpoint if the solution set.  Let's check.
+          <md>
+            <mrow>2x-7\amp=17</mrow>
+            <mrow>2 \cdot 12-7\amp\stackrel{?}{=}17</mrow>
+            <mrow>24-7\amp\stackrel{?}{=}17</mrow>
+            <mrow>17\amp\stackrel{\checkmark}{=}17</mrow>
+          </md>
+          We can check to make sure that the inequality sign is pointed in the proper direction by testing any number on the interval other than the endpoint of the interval.  Make sure that you check the value in the original inequality.  I'm going to check <m>10</m>.
+          <md>
+            <mrow>2x-7 \amp\lt 17</mrow>
+            <mrow>2 \cdot 10-7 \amp\stackrel{?}{\lt}17</mrow>
+            <mrow>20-7\amp\stackrel{?}{\lt}17</mrow>
+            <mrow>13\amp\stackrel{\checkmark}{\lt}17</mrow>
+          </md>
+          The solution set is <m>\{x|x \lt 12\}</m> which is equivalent to <m>(-\infty,12)</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution set for the inequality <m>5-3y \ge 17</m>.  State the solution set using both set builder notation and interval notation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>5-3y \amp\ge 17</mrow>
+            <mrow>5-3y\subtractright{5} \amp\ge 17\subtractright{5}</mrow>
+            <mrow>-3y \amp\ge 12</mrow>
+          </md>
+          At this point we need to divide both sides of the inequality by a negative number.  As discussed before this example, this will reverse the direction of the inequality.  We need to reverse the sign in the step where we indicate that we are dividing by a negative number.  Picking up where we left off...
+          <md>
+            <mrow>-3y \amp\ge 12</mrow>
+            <mrow>\divideunder{-3y}{-3} \amp\le \divideunder{12}{-3}</mrow>
+            <mrow>y \amp\le -4</mrow>
+          </md>
+          Let's check to make sure that the two sides are equal at the endpoint of the interval.
+          <md>
+            <mrow>5-3y\amp=17</mrow>
+            <mrow>5-3 \cdot-4\amp\stackrel{?}{=}17</mrow>
+            <mrow>5+12\amp\stackrel{?}{=}17</mrow>
+            <mrow>17\amp\stackrel{\checkmark}{=}17</mrow>
+          </md>
+          Let's test <m>-6</m> in the original inequality.
+          <md>
+            <mrow>5-3y \amp\ge 17</mrow>
+            <mrow>5-3 \cdot -6 \amp\stackrel{?}{\ge} 17</mrow>
+            <mrow>5+18\amp\stackrel{?}{\ge}17</mrow>
+            <mrow>23\amp\stackrel{\checkmark}{\ge}17</mrow>
+          </md>
+          The solution set is <m>\{y|y \le -4\}</m> which is equivalent to <m>(-\infty,-4]</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution set for the inequality <m>x-14 \le 3x-16</m>.  State the solution set using both set builder notation and interval notation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>x-14 \amp\le 3x-16</mrow>
+            <mrow>x-14\addright{14}\subtractright{3x} \amp\le 3x-16\addright{14}\subtractright{3x}</mrow>
+            <mrow>-2x \amp\le -2</mrow>
+            <mrow>\divideunder{-2x}{-2} \amp\ge \divideunder{-2}{-2}</mrow>
+            <mrow>x \amp\ge 1</mrow>
+          </md>
+          We need to check that the two sides are equal at the endpoint, <m>1</m>.
+          <md>
+            <mrow>x-14\amp=3x-16</mrow>
+            <mrow>1-14\amp\stackrel{?}{=}3 \cdot 1-16</mrow>
+            <mrow>-13\amp\stackrel{?}{=}3-16</mrow>
+            <mrow>-13\amp\stackrel{\checkmark}{=}-13</mrow>
+          </md>
+          Let's check <m>2</m> in the original inequality.
+          <md>
+            <mrow>x-14 \amp\le 3x-16</mrow>
+            <mrow>2-14\amp\stackrel{?}{\le}3 \cdot 2-16</mrow>
+            <mrow>-12\amp\stackrel{?}{\le}6-16</mrow>
+            <mrow>-12\amp\stackrel{\checkmark}{\le}-10</mrow>
+          </md>
+          The solution set is <m>\{x|x \ge 1\}</m> which is equivalent to <m>[1,\infty)</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution set for the inequality <m>\frac{2}{5}t+\frac{1}{2} \gt \frac{3}{19}</m>.  State the solution set using both set builder notation and interval notation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's begin by clearing the fractions from the inequality.  The least common denominator of all of the fractions in the inequality is <m>10</m>, so we'll multiply both sides of the inequality by <m>10</m>.  Since we are multiplying by a positive number, the direction of the inequality sign is not effected.
+          <md>
+            <mrow>\frac{2}{5}t+\frac{1}{2} \amp\gt \frac{3}{10}</mrow>
+            <mrow>\multiplyleft{10}\left(\frac{2}{5}t+\frac{1}{2}\right) \amp\gt \multiplyleft{10}\frac{3}{10}</mrow>
+            <mrow>\frac{10}{1} \cdot \frac{2}{5}t+\frac{10}{1} \cdot \frac{1}{2} \amp\gt \frac{10}{1} \cdot \frac{3}{10}</mrow>
+            <mrow>4t+5 \amp\gt 3</mrow>
+            <mrow>4t+5\subtractright{5} \amp\gt 3\subtractright{5}</mrow>
+            <mrow>4t \amp\gt -2</mrow>
+            <mrow>\divideunder{4t}{4} \amp\gt \divideunder{-2}{4}</mrow>
+            <mrow>t \amp\gt -\frac{1}{2}</mrow>
+          </md>
+          Let's check that the two sides are equal at <m>-\frac{1}{2}</m>.
+          <md>
+            <mrow>\frac{2}{5}t+\frac{1}{2} \amp= \frac{3}{10}</mrow>
+            <mrow>\frac{2}{5} \cdot -\frac{1}{2}+\frac{1}{2} \amp\stackrel{?}{=} \frac{3}{10}</mrow>
+            <mrow>-\frac{1}{5}+\frac{1}{2} \amp\stackrel{?}{=} \frac{3}{10}</mrow>
+            <mrow>-\frac{2}{10}+\frac{5}{10} \amp\stackrel{?}{=} \frac{3}{10}</mrow>
+            <mrow>\frac{3}{10} \amp\stackrel{\checkmark}{=} \frac{3}{10}</mrow>
+          </md>
+          Let's test <m>0</m> in the original inequality.
+          <md>
+            <mrow>\frac{2}{5}t+\frac{1}{2} \amp\gt \frac{3}{10}</mrow>
+            <mrow>\frac{2}{5} \cdot 0+\frac{1}{2} \amp\stackrel{?}{\gt} \frac{3}{10}</mrow>
+            <mrow>0+\frac{1}{2} \amp\stackrel{?}{\gt} \frac{3}{10}</mrow>
+            <mrow>\frac{1}{2} \amp\stackrel{?}{\gt} \frac{3}{10}</mrow>
+            <mrow>\frac{5}{10} \amp\stackrel{\checkmark}{\gt} \frac{3}{10}</mrow>
+          </md>
+        </p>
+        The solution set is <m>\left\{t|t \gt -\frac{1}{2}\right\}</m> which is equivalent to <m>\left(-\frac{1}{2},\infty\right)</m>.
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution set for the inequality <m>3(x-2) \lt 3x+2</m>.  State the solution set using both set builder notation and interval notation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>3(x-2) \amp\lt 3x+2</mrow>
+            <mrow>3x-6 \amp\lt 3x+1</mrow>
+            <mrow>3x-6\addright{6}\subtractright{3x} \amp\lt 3x+1\addright{6}\subtractright{3x}</mrow>
+            <mrow>0 \amp\lt 6</mrow>
+          </md>
+          The final inequality is an identity - a true mathematical statement.  Since the original inequality is equivalent to an identity, it is true no matter the value of <m>t</m>.  The solution set is <m>\left\{x|x \in \mathbb{R}\right\}</m> which is equivalent to <m>(-\infty,\infty)</m>. 
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution set for the inequality <m>2(x-2) \ge 3x+2</m>.  State the solution set using both set builder notation and interval notation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>2(x-2) \amp\ge 3x+2</mrow>
+            <mrow>2x-4 \amp\ge 3x+2</mrow>
+            <mrow>2x-4\addright{4}\subtractright{3x} \amp\ge 3x+2\addright{4}\subtractright{3x}</mrow>
+            <mrow>-x \amp\ge 6</mrow>
+            <mrow>\divideunder{-x}{-1} \amp\le \divideunder{6}{-1}</mrow>
+            <mrow>x \amp\le -6</mrow>
+          </md>
+          Let's check that the two sides are equal at <m>-6</m>.
+          <md>
+            <mrow>2(x-2) \amp= 3x+2</mrow>
+            <mrow>2(-6-2) \amp\stackrel{?}{=} 3 \cdot -6+2</mrow>
+            <mrow>2 \cdot -8 \amp\stackrel{?}{=} -18+2</mrow>
+            <mrow>-16 \amp\stackrel{\checkmark}{=} -16</mrow>
+          </md>
+          Let's test <m>-10</m> in the original inequality.
+          <md>
+            <mrow>2(x-2) \amp\ge 3x+2</mrow>
+            <mrow>2(-10-2) \amp\stackrel{?}{\ge} 3 \cdot-10+2</mrow>
+            <mrow>2 \cdot -12 \amp\stackrel{?}{\ge} -30+2</mrow>
+            <mrow>-24 \amp\stackrel{\checkmark}{\ge} -28</mrow>
+          </md>
+          The solution set is <m>\{x|x \le -6\}</m> which is equivalent to <m>(-\infty,-6]</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Determine the solution set for the inequality <m>5(x+1) \ge 5x+7</m>.  State the solution set using both set builder notation and interval notation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>5(x+1) \amp\ge 5x+7</mrow>
+            <mrow>5x+5 \amp\ge 5x+7</mrow>
+            <mrow>5x+5\subtractright{5}\subtractright{5x} \amp\ge 5x+7\subtractright{5}\subtractright{5x}</mrow>
+            <mrow>0 \amp\ge 2</mrow>
+          </md>
+          The final inequality is a contradiction - a false mathematical statement.  Because the given inequality is equivalent to a contradiction, no value of <m>x</m> makes it true.  Regardless of the notational context, the solution set is <m>\emptyset</m>. 
+        </p>
+      </solution>
+    </example>
+
+    <exercises>
+      <exercisegroup>
+        <introduction>
+          <p>
+            Determine the solution set for each of the given inequalities.  In each case, state the solution set using both set builder notation and interval notation.
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine the solution set for <m>3-5t \lt 7-6t</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>3-5t \amp\lt 7-6t</mrow>
+                <mrow>3-5t\subtractright{3}\addright{6t} \amp\lt 7-6t\subtractright{3}\addright{6t}</mrow>
+                <mrow>t \amp\lt 4</mrow>
+              </md>
+              Let's check that the two sides are equal at <m>4</m>.
+              <md>
+                <mrow>3-5t \amp= 7-6t</mrow>
+                <mrow>3-5 \cdot 4 \amp\stackrel{?}{=} 7-6 \cdot 4</mrow>
+                <mrow>3-20 \amp\stackrel{?}{=} 7-24</mrow>
+                <mrow>-17 \amp\stackrel{\checkmark}{=} -17</mrow>
+              </md>
+              Let's test <m>0</m> in the original inequality.
+              <md>
+                <mrow>3-5t \amp\lt 7-6t</mrow>
+                <mrow>3-5 \cdot 0 \amp\stackrel{?}{\lt} 7-6 \cdot 0</mrow>
+                <mrow>3-0 \amp\stackrel{?}{\lt} 7-0</mrow>
+                <mrow>2 \amp\stackrel{\checkmark}{\lt} 7</mrow>
+              </md>
+              The solution set is <m>\{t|t \lt 4\}</m> which is equivalent to <m>(-\infty,4)</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine the solution set for <m>11-2x \ge 17</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>11-2x \amp\ge 17</mrow>
+                <mrow>11-2x\subtractright{11} \amp\ge 17\subtractright{11}</mrow>
+                <mrow>-2x \amp\ge 6</mrow>
+                <mrow>\divideunder{-2x}{-2} \amp\le \divideunder{6}{-2}</mrow>
+                <mrow>x \amp\le -3</mrow>
+              </md>
+              Let's check that the two sides are equal at <m>-3</m>.
+              <md>
+                <mrow>11-2x\amp=17</mrow>
+                <mrow>11-2 \cdot -3 \amp\stackrel{?}{=} 17</mrow>
+                <mrow>11+6 \amp\stackrel{?}{=} 17</mrow>
+                <mrow>17 \amp\stackrel{\checkmark}{=} 17</mrow>
+              </md>
+              Let's test <m>-5</m> in the original inequality.
+              <md>
+                <mrow>11-2x \amp\ge 17</mrow>
+                <mrow>11-2 \cdot -5 \amp\stackrel{?}{\ge} 17</mrow>
+                <mrow>11+10 \amp\stackrel{?}{\ge} 17</mrow>
+                <mrow>21 \amp\stackrel{\checkmark}{\ge} 17</mrow>
+              </md>
+              The solution set is <m>\{x|x \le -3\}</m> which is equivalent to <m>(-\infty,-3]</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine the solution set for <m>3(y+1) \gt 4(y-2)</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>3(y+1) \amp\gt 4(y-2)</mrow>
+                <mrow>3y+3 \amp\gt 4y-8</mrow>
+                <mrow>3y+3\subtractright{3}\subtractright{4y} \amp\gt 4y-8\subtractright{3}\subtractright{4y}</mrow>
+                <mrow>-y \amp\gt -11</mrow>
+                <mrow>\divideunder{-y}{-1} \amp\lt \divideunder{-11}{-1}</mrow>
+                <mrow>y \amp\lt 11</mrow>
+              </md>
+              Lets make sure that the two sides are equal at <m>11</m>.
+              <md>
+                <mrow>3(y+1) \amp= 4(y-2)</mrow>
+                <mrow>3(11+1) \amp\stackrel{?}{=} 4(11-2)</mrow>
+                <mrow>3 \cdot 12 \amp\stackrel{?}{=} 4 \cdot 9</mrow>
+                <mrow>36 \amp\stackrel{\checkmark}{=} 36</mrow>
+              </md>
+              Let's test 0 in the original inequality.
+              <md>
+                <mrow>3(y+1) \amp\gt 4(y-2)</mrow>
+                <mrow>3(0+1) \amp\stackrel{?}{\gt} 4(0-2)</mrow>
+                <mrow>3 \cdot 1 \amp\stackrel{?}{\gt} 4 \cdot -2</mrow>
+                <mrow>12 \amp\stackrel{\checkmark}{\gt} -8</mrow>
+              </md>
+              The solution set is <m>\{y|y \lt 11\}</m> which is equivalent to <m>(-\infty,11)</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine the solution set for <m>\frac{1}{3}x+\frac{1}{2} \le \frac{2}{3}x+\frac{7}{6}</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Let's start by clearing the fractions from the inequality.  The least common denominator of all of the fractions in the inequality is <m>6</m>, so let's multiply both sides of the inequality by <m>6</m>.
+              <md>
+                <mrow>\frac{1}{3}x+\frac{1}{2} \amp\le \frac{2}{3}x+\frac{7}{6}</mrow>
+                <mrow>\multiplyleft{6}\left(\frac{1}{3}x+\frac{1}{2}\right) \amp\le \multiplyleft{6}\left(\frac{2}{3}x+\frac{7}{6}\right)</mrow>
+                <mrow>\frac{6}{1} \cdot \frac{1}{3}x+\frac{6}{1} \cdot \frac{1}{2} \amp\le \frac{6}{1} \cdot \frac{2}{3}x+\frac{6}{1} \cdot \frac{7}{6}</mrow>
+                <mrow>2x+3 \amp\le 4x+7</mrow>
+                <mrow>2x+3\subtractright{3}\subtractright{4x} \amp\le 4x+7\subtractright{3}\subtractright{4x}</mrow>
+                <mrow>-2x \amp\le 4</mrow>
+                <mrow>\divideunder{-2x}{-2} \amp\ge \divideunder{4}{-2}</mrow>
+                <mrow>x \amp\ge -2</mrow>
+              </md>
+              Let's be sure that the two sides are equal at <m>-2</m>.
+              <md>
+                <mrow>\frac{1}{3}x+\frac{1}{2} \amp\le \frac{2}{3}x+\frac{7}{6}</mrow>
+                <mrow>\frac{1}{3} \cdot -\frac{2}{1}+\frac{1}{2} \amp\stackrel{?}{=}\frac{2}{3} \cdot -\frac{2}{1}+\frac{7}{6}</mrow>
+                <mrow>-\frac{2}{3}+\frac{1}{2} \amp\stackrel{?}{=} -\frac{4}{3}+\frac{7}{6}</mrow>
+                <mrow>-\frac{4}{6}+\frac{3}{6} \amp\stackrel{?}{=} -\frac{8}{6}+\frac{7}{6}</mrow>
+                <mrow>-\frac{1}{6} \amp\stackrel{\checkmark}{=} -\frac{1}{6}</mrow>
+              </md>
+              Let's test <m>0</m> in the original inequality.
+              <md>
+                <mrow>\frac{1}{3}x+\frac{1}{2} \amp\le \frac{2}{3}x+\frac{7}{6}</mrow>
+                <mrow>\frac{1}{3} \cdot 0+\frac{1}{2} \amp\stackrel{?}{\le} \frac{2}{3} \cdot 0+\frac{7}{6}</mrow>
+                <mrow>0+\frac{1}{2} \amp\stackrel{?}{\le} 0+\frac{7}{6}</mrow>
+                <mrow>\frac{1}{2} \amp\stackrel{\checkmark}{\le} \frac{7}{6}</mrow>
+              </md>
+              The solution set is <m>\{x|x \ge -2\}</m> which is equivalent to <m>[-2,\infty)</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine the solution set for <m>2(5-3w) \gt 8-6w</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>2(5-3w) \amp\gt 8-6w</mrow>
+                <mrow>10-6w \amp\gt 8-6w</mrow>
+                <mrow>10-6w\subtractright{10}\addright{6w} \amp\gt 8-6w\subtractright{10}\addright{6w}</mrow>
+                <mrow>0 \amp\gt -2</mrow>
+              </md>
+              The last inequality is an identity which tells us that every real number is a solution to the stated inequality.  The solution set is <m>\{x|x \in \mathbb{R}\}</m> which is equivalent to <m>(-\infty,\infty)</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine the solution set for <m>7(x-4) \lt 9x-29</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>7(x-4) \amp\lt 9x-29</mrow>
+                <mrow>7x-28 \amp\lt 9x-29</mrow>
+                <mrow>7x-28\addright{28}\subtractright{9x} \amp\lt 9x-29\addright{28}\subtractright{9x}</mrow>
+                <mrow>-2x \amp\lt -1</mrow>
+                <mrow>\divideunder{-2x}{-2} \amp\gt \divideunder{-1}{-2}</mrow>
+                <mrow>x \amp\gt \frac{1}{2}</mrow>
+              </md>
+              Let's check to see that the two sides are equal at <m>\frac{1}{2}</m>.
+              <md>
+                <mrow>7(x-4) \amp\lt 9x-29</mrow>
+                <mrow>7\left(\frac{1}{2}-4\right) \amp\stackrel{?}{=} 9 \cdot \frac{1}{2}-29</mrow>
+                <mrow>7\left(\frac{1}{2}-\frac{8}{2}\right) \amp\stackrel{?}{=} \frac{9}{2}-\frac{58}{2}</mrow>
+                <mrow>\frac{7}{1} \cdot -\frac{7}{2} \amp\stackrel{?}{=} -\frac{49}{2}</mrow>
+                <mrow>-\frac{49}{2} \amp\stackrel{\checkmark}{=} -\frac{49}{2}</mrow>
+              </md>
+              Let's test <m>1</m> in the original inequality.
+              <md>
+                <mrow>7(x-4) \amp\lt 9x-29</mrow>
+                <mrow>7(1-4) \amp\stackrel{?}{\lt} 9 \cdot 1-29</mrow>
+                <mrow>7 \cdot -3 \amp\stackrel{?}{\lt} 9-29</mrow>
+                <mrow>-21 \amp\stackrel{\checkmark}{\lt} -20</mrow>
+              </md>
+              The solution set is <m>\left\{x|x \gt \frac{1}{2}\right\}</m> which is equivalent to <m>\left(\frac{1}{2},\infty\right)</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine the solution set for <m>3(2x+4) \ge 2(3x-5)</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>3(2x+4) \amp\ge 2(3x-5)</mrow>
+                <mrow>6x+12 \amp\ge 6x-10</mrow>
+                <mrow>6x+12\subtractright{12}\subtractright{6x} \amp\ge 6x-10\subtractright{12}\subtractright{6x}</mrow>
+                <mrow>0 \amp\ge -22</mrow>
+              </md>
+              The last inequality statement is a contradiction. This indicates that no value of <m>x</m> makes the original inequality true.  The solution set is <m>\emptyset</m>.
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              Determine the solution set for <m>\frac{2}{5}y-\frac{1}{2} \le \frac{1}{2}y+\frac{2}{5}</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Let's start of by eliminating the fractions from the inequality.  The least common denominator of all of the fractions i the inequality is <m>10</m>, so we'll kick off by multiplying both sides of the inequality by <m>10</m>.
+              <md>
+                <mrow>\frac{2}{5}y-\frac{1}{2} \amp\le \frac{1}{2}y+\frac{2}{5}</mrow>
+                <mrow>\multiplyleft{10}\left(\frac{2}{5}y-\frac{1}{2}\right) \amp\le \multiplyleft{10}\left(\frac{1}{2}y+\frac{2}{5}\right)</mrow>
+                <mrow>\frac{10}{1} \cdot \frac{2}{5}y-\frac{10}{1} \cdot \frac{1}{2} \amp\le \frac{10}{1} \cdot \frac{1}{2}y+\frac{10}{1} \cdot \frac{2}{5}</mrow>
+                <mrow>4y-5 \amp\le 5y+4</mrow>
+                <mrow>4y-5\addright{5}\subtractright{5x} \amp\le 5y+4\addright{5}\subtractright{5x}</mrow>
+                <mrow>-y \amp\le 9</mrow>
+                <mrow>\divideunder{-y}{-1} \amp\ge \divideunder{9}{-1}</mrow>
+                <mrow>y \amp\ge -9</mrow>
+              </md>
+              Let's ensure that the two sides are equal at <m>-9</m>.
+              <md>
+                <mrow>\frac{2}{5}y-\frac{1}{2} \amp= \frac{1}{2}y+\frac{2}{5}</mrow>
+                <mrow>\frac{2}{5} \cdot -\frac{9}{1}-\frac{1}{2} \amp\stackrel{?}{=} \frac{1}{2} \cdot -\frac{9}{1}+\frac{2}{5}</mrow>
+                <mrow>-\frac{18}{5}-\frac{1}{2} \amp\stackrel{?}{=} -\frac{9}{2}+\frac{2}{5}</mrow>
+                <mrow>-\frac{36}{10}-\frac{5}{10} \amp\stackrel{?}{=} -\frac{45}{10}+\frac{4}{10}</mrow>
+                <mrow>-\frac{41}{10} \amp\stackrel{\checkmark}{=} -\frac{41}{10}</mrow>
+              </md>
+              Let's test <m>0</m> in the original inequality.
+              <md>
+                <mrow>\frac{2}{5}y-\frac{1}{2} \amp\le \frac{1}{2}y+\frac{2}{5}</mrow>
+                <mrow>\frac{2}{5} \cdot 0-\frac{1}{2} \amp\stackrel{?}{\le} \frac{1}{2} \cdot 0+\frac{2}{5}</mrow>
+                <mrow>0-\frac{1}{2} \amp\stackrel{?}{\le} 0+\frac{2}{5}</mrow>
+                <mrow>-\frac{1}{2} \amp\stackrel{\checkmark}{\le} \frac{2}{5}</mrow>
+              </md>
+              The solution set is <m>\{y|y \ge -9\}</m> which is equivalent to <m>[-9,\infty)</m>.
+            </p>
+          </solution>
+        </exercise>
+
+
+
+      </exercisegroup>
+    </exercises>
+
+
+
+                 
+
+      
+
+</section>

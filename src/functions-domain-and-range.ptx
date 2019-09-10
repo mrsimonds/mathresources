@@ -21,10 +21,10 @@
   <sidebyside widths="73% 23%" margins="0%">
 
     <p>
-      For example, the domain of the function <m>f</m> whose ordered pairs are shown in <xref ref="functions-domain-and-range-table-1">Table</xref> is <m>\{-1,3,6,-7,2,-5\}</m>.  The range of <m>f</m> is <m>\{7,-1,4,0\}</m>.  Notice that <m>7</m> was listed only once in the range even though it is the <m>y</m>-coordinate of more than one point in the set.  Either <m>7</m> is an element of the range or it is not <mdash/> it can't be be an element multiple times (even though it can be the <m>y</m>-coordinate of multiple ordered pairs in the function).
+      For example, the domain of the function <m>f</m> whose ordered pairs are shown in <xref ref="functions-domain-and-range-table-1">Figure</xref> is <m>\{-1,3,6,-7,2,-5\}</m>.  The range of <m>f</m> is <m>\{7,-1,4,0\}</m>.  Notice that <m>7</m> was listed only once in the range even though it is the <m>y</m>-coordinate of more than one point in the set.  Either <m>7</m> is an element of the range or it is not <mdash/> it can't be be an element multiple times (even though it can be the <m>y</m>-coordinate of multiple ordered pairs in the function).
     </p>
 
-    <table xml:id="functions-domain-and-range-table-1">
+    <figure xml:id="functions-domain-and-range-table-1">
       <caption><m>y=f(x)</m></caption>
       <tabular>
         <col halign="center" />
@@ -58,11 +58,11 @@
           <cell><m>0</m></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
 
   </sidebyside>
   <p>
-    The function <m>f</m> described in <xref ref="functions-domain-and-range-table-1">Table</xref> is called a discrete function.  A discrete function is a function where both the domain and range can be listed as distinct elements in a set.  This is in comparison to a continuous function like a line. The domain of a linear function is all real numbers, and it's not possible to write every real number in a list. 
+    The function <m>f</m> described in <xref ref="functions-domain-and-range-table-1">Figure</xref> is called a discrete function.  A discrete function is a function where both the domain and range can be listed as distinct elements in a set.  This is in comparison to a continuous function like a line. The domain of a linear function is all real numbers, and it's not possible to write every real number in a list. 
   </p>
   <p>
     Discrete functions are very common in real life.  For example, suppose that are taking a psychology class.  Consider all of the students present the first day of class.  We could define a function where the <m>x</m>-coordinates are made up the students' ages and the <m>y</m>-coordinates are made up by the corresponding student's credit-load. In this case, the domain of the function would be the set of all of the students' ages and the range would be the set of all of the students' credit-loads.  This type of function is frequently analyzed in the field of statistics.

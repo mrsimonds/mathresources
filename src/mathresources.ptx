@@ -19,7 +19,8 @@
         <cross-references text="global" />
 
         <latex-preamble>
-            <package>cancel</package>
+            <package>
+                \usepackage{color,soul}</package>
         </latex-preamble>
 
     <macros>
@@ -256,6 +257,8 @@
                 
         
         <xi:include href="./frontmatter.ptx" />
+        <xi:include href="./MTH-topics.ptx" />
+        <xi:include href="./linear-equations-one-variable-materials.ptx" />
         <xi:include href="./absolute-value-materials.ptx" />
         <xi:include href="./exponents-materials.ptx" />
         <xi:include href="./factoring-materials.ptx" />
@@ -270,6 +273,7 @@
         <xi:include href="./rationals-materials.ptx" />
         <xi:include href="./systems-materials.ptx" /> 
         <xi:include href="./trigonometry-materials.ptx" />
+        <xi:include href="./geogebra-section.ptx" />
 
     </book>
 </pretext>

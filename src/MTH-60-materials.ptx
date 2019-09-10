@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="MTH-60-materials" target="blank">
+  <title>Topics Covered in MTH 60</title>
+
+  <p>
+    Please note that the documents will open in new windows.
+    <ul>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/lines-standard-form.html" target="blank">Intercepts and the Standard Form of the Equation of a Line</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/lines-slope.html" target="blank">Slope of a Line</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/lines-slope-intercept.html" target="blank">The Slope-Intercept Form of the Equation of a Line</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/lines-point-slope.html" target="blank">The Point-Slope Form of the Equation of a Line</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/lines-special-lines.html" target="blank">Parallel Lines, Perpendicular Lines, Horizontal Lines, and Vertical Lines</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/systems-graphs.html" target="blank">Graphing Systems of Linear Equations</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/systems-subsitution-method.html" target="blank">Solving Systems of Equation Using the Method of Substitution</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/systems-elimination-method.html" target="blank">Solving Systems of Equation Using the Method of Addition/Elimination</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/systems-applications.html" target="blank">Application Problems that can be Solved Using Systems of Equations</url>
+      </li>
+    </ul>
+  </p>
+
+</section>

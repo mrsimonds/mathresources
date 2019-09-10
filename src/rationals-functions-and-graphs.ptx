@@ -78,10 +78,10 @@
     <sidebyside widths="57% 37%" margins="0%">
 
       <p>
-        We see in <xref ref="rationals-functions-and-graphs-table-1">Table</xref> the cause of the asymptotic behavior.  As the value of <m>x</m> approaches 3 from either side of 3, the absolute value of the expression <m>x-3</m> gets closer and closer to zero which causes the absolute value of <m>\frac{2}{x-3}</m> to grow and grow with limit.
+        We see in <xref ref="rationals-functions-and-graphs-table-1">Figure</xref> the cause of the asymptotic behavior.  As the value of <m>x</m> approaches 3 from either side of 3, the absolute value of the expression <m>x-3</m> gets closer and closer to zero which causes the absolute value of <m>\frac{2}{x-3}</m> to grow and grow with limit.
       </p>
 
-      <table xml:id="rationals-functions-and-graphs-table-1">
+      <figure xml:id="rationals-functions-and-graphs-table-1">
         <caption><m>y=2\frac{2}{x-3}</m></caption>
         <tabular>
           <col halign="center" />
@@ -123,7 +123,7 @@
             <cell><m>20</m></cell>
           </row>
         </tabular>
-      </table>
+      </figure>
 
     </sidebyside>
 
@@ -147,9 +147,9 @@
           </md>
         </p>
         <p>
-          The vertical asymptotes are the lines <m>x=-5</m> and <m>x=-2</m>.  We can determine whether the function soars upward or plunges to the depths by testing values of <m>x</m> a tenth of a unit to the left and right of each asymptote.  Specifically, we are only interested in the signs of each of the factors in <m>f</m> from wish we can infer the over all sign for <m>f</m>.  This is down in <xref ref="rationals-functions-and-graphs-table-2">Table</xref>.
+          The vertical asymptotes are the lines <m>x=-5</m> and <m>x=-2</m>.  We can determine whether the function soars upward or plunges to the depths by testing values of <m>x</m> a tenth of a unit to the left and right of each asymptote.  Specifically, we are only interested in the signs of each of the factors in <m>f</m> from wish we can infer the over all sign for <m>f</m>.  This is down in <xref ref="rationals-functions-and-graphs-table-2">Figure</xref>.
         </p>
-        <table xml:id="rationals-functions-and-graphs-table-2">
+        <figure xml:id="rationals-functions-and-graphs-table-2">
           <caption>Sign and Limit Table for <m>f</m></caption>
           <tabular>
             <col halign="center" />
@@ -198,9 +198,9 @@
               <cell><m>\lim_{x \to -2^+}f(x)=-\infty</m></cell>
             </row>
           </tabular>
-        </table>
+        </figure>
         <p>
-          From the sign analysis in <xref ref="rationals-functions-and-graphs-table-2">Table</xref> we can infer the following for limits.
+          From the sign analysis in <xref ref="rationals-functions-and-graphs-table-2">Figure</xref> we can infer the following for limits.
         </p>
         <sidebyside widths="47% 47%" margins="0%">
           <p>
@@ -380,9 +380,9 @@
       </statement>
       <solution>
         <p>
-          We begin by observing that neither function simplifies in any way, because <m>x^2+4</m> is prime (i.e., does not factor).  We also observe that the equation <m>x^2+4=0</m> has no real number solutions, because there are no real numbers that satisfy the equation <m>x^2=-4</m>.  The answers to the stated questions are presented in <xref ref="rationals-functions-and-graphs-table-3">Table</xref> and the bonus graphs of the functions are shown in <xref ref="rationals-functions-and-graphs-figure-5">Figure</xref> and <xref ref="rationals-functions-and-graphs-figure-6">Figure</xref>.
+          We begin by observing that neither function simplifies in any way, because <m>x^2+4</m> is prime (i.e., does not factor).  We also observe that the equation <m>x^2+4=0</m> has no real number solutions, because there are no real numbers that satisfy the equation <m>x^2=-4</m>.  The answers to the stated questions are presented in <xref ref="rationals-functions-and-graphs-table-3">Figure</xref> and the bonus graphs of the functions are shown in <xref ref="rationals-functions-and-graphs-figure-5">Figure</xref> and <xref ref="rationals-functions-and-graphs-figure-6">Figure</xref>.
         </p>
-        <table xml:id="rationals-functions-and-graphs-table-3">
+        <figure xml:id="rationals-functions-and-graphs-table-3">
           <caption>Sign and Limit Table for <m>f</m></caption>
           <tabular>
             <col halign="center" />
@@ -412,7 +412,7 @@
               <cell>none</cell>
             </row>
           </tabular>
-        </table>
+        </figure>
         <sidebyside widths="47% 47%" margins="0%">
 
           <figure xml:id="rationals-functions-and-graphs-figure-5">

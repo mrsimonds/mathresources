@@ -18,11 +18,11 @@
     which is read aloud as "f-inverse of x equals the log-base-b of x."
   </p>
   <p>
-    Let's consider the function <m>f(x)=2^x</m> and its inverse <m>f^{-1}(x)=\log_2(x)</m>.  Recall that if <m>(a,b)</m> is an ordered pair on <m>f</m>, then <m>(b,a)</m> is an ordered pair on <m>f^{-1}</m>. Several function values for <m>f</m> are shown in <xref ref="logarithmic-functions-and-graphs-table-1">Table</xref> and several function values for <m>f^{-1}</m> are shown in <xref ref="logarithmic-functions-and-graphs-table-2">Table</xref>
+    Let's consider the function <m>f(x)=2^x</m> and its inverse <m>f^{-1}(x)=\log_2(x)</m>.  Recall that if <m>(a,b)</m> is an ordered pair on <m>f</m>, then <m>(b,a)</m> is an ordered pair on <m>f^{-1}</m>. Several function values for <m>f</m> are shown in <xref ref="logarithmic-functions-and-graphs-table-1">Figure</xref> and several function values for <m>f^{-1}</m> are shown in <xref ref="logarithmic-functions-and-graphs-table-2">Figure</xref>
   </p>
   <sidebyside widths="47% 47%" margins="0%">
 
-    <table xml:id="logarithmic-functions-and-graphs-table-1">
+    <figure xml:id="logarithmic-functions-and-graphs-table-1">
       <caption><m>y=2^x</m></caption>
       <tabular>
         <col halign="center" />
@@ -64,9 +64,9 @@
           <cell><m>16</m></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
 
-    <table xml:id="logarithmic-functions-and-graphs-table-2">
+    <figure xml:id="logarithmic-functions-and-graphs-table-2">
       <caption><m>y=\log_2(x)</m></caption>
       <tabular>
         <col halign="center" />
@@ -108,12 +108,12 @@
           <cell><m>4</m></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
 
   </sidebyside>
 
   <p>
-    Let's observe that every ordered pair in <xref ref="logarithmic-functions-and-graphs-table-2">Table</xref> satisfies the <m>2^y=x</m>.  It follows that 
+    Let's observe that every ordered pair in <xref ref="logarithmic-functions-and-graphs-table-2">Figure</xref> satisfies the <m>2^y=x</m>.  It follows that 
     <me>y=\log_2(x)\,\,\text{if and only if}\,\,2^y=x.</me>
     This relationship is explored in depth in the section about logarithms as exponents.  In the current context, the relationship is a direct result of the inverse function relationship between exponential and logarithmic functions.  For the function <m>f(x)=2^x</m>, the ordered pairs satisfy the equation <m>y=2^x</m>.  It immediately follows that the ordered pairs on <m>f^{-1}</m> satisfy the equation <m>2^y=x</m>.
   </p>

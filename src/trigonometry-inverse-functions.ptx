@@ -380,12 +380,12 @@
       Recall that the graphs of inverse functions are reflections of one another across the line <m>y=x</m>.  This is a direct consequence of the swapping of coordinates that transpires between the two functions.
     </p>
     <p>
-      Several ordered pairs that lie on a graph of the function <m>y=\sin(t)</m> are shown in <xref ref="trigonometry-inverse-functions-table-1">Table</xref> and the implied points that lie on a graph of a <m>y=\sin^{-1}(t)</m> are shown in <xref ref="trigonometry-inverse-functions-table-2">Table</xref>.
+      Several ordered pairs that lie on a graph of the function <m>y=\sin(t)</m> are shown in <xref ref="trigonometry-inverse-functions-table-1">Figure</xref> and the implied points that lie on a graph of a <m>y=\sin^{-1}(t)</m> are shown in <xref ref="trigonometry-inverse-functions-table-2">Figure</xref>.
     </p>
     <sidebyside widths="47% 47%" margins="0%">
 
       <p>
-        <table xml:id="trigonometry-inverse-functions-table-1">
+        <figure xml:id="trigonometry-inverse-functions-table-1">
           <caption><m>y=\sin(t)</m></caption>
           <tabular>
             <col halign="center" />
@@ -435,11 +435,11 @@
               <cell><m>1</m></cell>
             </row>
           </tabular>
-        </table>
+        </figure>
       </p>
 
       <p>
-        <table xml:id="trigonometry-inverse-functions-table-2">
+        <figure xml:id="trigonometry-inverse-functions-table-2">
           <caption><m>y=\sin^{-1}(t)</m></caption>
           <tabular>
             <col halign="center" />
@@ -489,7 +489,7 @@
               <cell><m>\frac{\pi}{2}</m></cell>
             </row>
           </tabular>
-        </table>
+        </figure>
       </p>
 
     </sidebyside>

@@ -23,7 +23,7 @@
     Let's observe that the linear coefficient, <m>10</m>, is the sum of <m>4</m> and <m>6</m> whereas the constant term, <m>24</m>, is the product of <m>4</m> and <m>6</m>.  Since we expanded <m>(x+4)(x+6)</m>, we can infer that finding the constants in a factorization of trinomials of form <m>x^2+bx+c</m> is dependent upon determining two numbers that sum to <m>b</m> and multiply to <m>c</m>.
   </p>
   <p>
-    From the factor pairs and sums shown in <xref ref="factoring-trinomial-lc1-table-1">Table</xref>, we can infer the following factorizations. 
+    From the factor pairs and sums shown in <xref ref="factoring-trinomial-lc1-table-1">Figure</xref>, we can infer the following factorizations. 
   </p>
   <sidebyside widths="48% 48%" margins="0%">
 
@@ -36,7 +36,7 @@
       </md> 
     </p>
 
-    <table xml:id="factoring-trinomial-lc1-table-1">
+    <figure xml:id="factoring-trinomial-lc1-table-1">
       <caption>Factor pairs of <m>6</m></caption>
       <tabular>
         <col halign="center" />
@@ -66,11 +66,11 @@
           <cell><m>-5</m></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
 
   </sidebyside> 
   <p>
-    Just as noteworthy, since the factor pairs shown in <xref ref="factoring-trinomial-lc1-table-1">Table</xref> form an exhaustive list, we cannot factor any trinomial of form <m>x^2+bx+6</m> where b is not one of the four numbers shown in the sum column.  Such trinomials are said to be prime.  For example, <m>x^2+3x+6</m> is prime.
+    Just as noteworthy, since the factor pairs shown in <xref ref="factoring-trinomial-lc1-table-1">Figure</xref> form an exhaustive list, we cannot factor any trinomial of form <m>x^2+bx+6</m> where b is not one of the four numbers shown in the sum column.  Such trinomials are said to be prime.  For example, <m>x^2+3x+6</m> is prime.
   </p>
   <p>
     A common strategy for organizing the work associated with factoring trinomials with a leading coefficient of <m>1</m> is to write the constant term at the top of a large X and the linear coefficient at the bottom of the X.  Go ahead and press "Show Goal" in <xref ref="factoring-leading-coefficient-1-geogebra-1">Figure</xref> to see what I mean.  Now we can focus on determining the two numerical factors.  I find it useful to first establish the signs on the two factors.  If the number at the top of the X is negative, then we need one positive numerical factor and one negative numerical factor.  If the number at the top of the X is positive, then both numerical factors have the same sign, and that sign agrees with the number at the bottom of the X.  Go ahead and press "Show Numerical Factors" and "Show Factorization" to see the remainder of the process.  Go through a few examples and then try doing it on your own before you see the steps on the computer.

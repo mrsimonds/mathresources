@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="geogebra-stretch-squish-and-reflect">
+  <title>Graphical Transformations - Stretches, Compressions, and Reflections</title>
+
+  <figure xml:id="geogebra-stretch-squish-and-reflect-geogebra">
+    <caption>Practice Stretch/Compress/Reflect Transformations:  Enter the coordinates for the shifted points A, B, C and then click "Show Transformed Curve" to check your answer.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/transformation-reflect-stretch-quiz.ggb">
+        setPerspective("G");
+        setGridVisible(1);         
+      </slate>
+    </interactive>
+  </figure>
+
+</section>

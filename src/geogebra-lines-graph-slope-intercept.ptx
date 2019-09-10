@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="geogebra-lines-graph-slope-intercept">
+  <title>Graph a Line Given in Slope-Intercept Format</title>
+
+  <figure xml:id="geogebra-lines-graph-slope-intercept-geogebra">
+    <caption>Drag the points so that the line matches the given equation.  A message appears when you are correct.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/slope-intercept.ggb">
+          setPerspective("G");
+          setAxisSteps(1, 1, 1, 1);
+          setCoordSystem(-6, 6, -6, 6);
+          setGridVisible(1);         
+          setAxisLabels(1,"x","y","z");
+        </slate>
+    </interactive>
+  </figure>    
+
+</section>

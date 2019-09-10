@@ -21,6 +21,7 @@
     <p>
       A graph of <m>y=\sin(t)</m> is shown in <xref ref="trigonometry-sine-cosine-graphs-geogebra-1">Figure</xref>.  We are going to develop this graph, but I first want to help you understand the relationship between the <m>y</m>-coordinate of the point on the  unit circle and the corresponding point on the graph of <m>y=\sin(t)</m>; the relationship is that they are the same!  Go ahead and drag the slider.  note that as the point on the unit circle goes round and round, the graph of <m>y=\sin(t)</m> is traced and at all times the <m>y</m>-coordinates on the unit circle and <m>y=\sin(t)</m> are the same.
     </p>
+
     <figure xml:id="trigonometry-sine-cosine-graphs-geogebra-1">
       <caption>Drag the slider to the relationship between the <m>y</m>-coordinates of the point on the unit circle and the point on <m>y=\sin(t)</m>. .</caption>
       <interactive platform="geogebra" width="100%" aspect="6:5">
@@ -31,6 +32,7 @@
           </slate>
       </interactive>
     </figure>
+    
     <p>
       Several pairs of graphs are about to be presented.  It is important that you are mindful of the fact that the variables on the horizontal axes in the graphs of the unit circle are <m>x</m> whereas the variables on the horizontal axes in the graphs of <m>y=\sin(t)</m> are <m>t</m>.
     </p>
@@ -1548,7 +1550,7 @@
         <p>
           Before making the table, let's expand the expression inside the sine function to determine the value of <m>\phi</m>.
           <me>1.5\cos(3(t+\pi))=1.5\cos(3t+3\pi)</me>
-          <table xml:id="trigonometry-sine-cosine-graphs-table-ex-4">
+          <figure xml:id="trigonometry-sine-cosine-graphs-table-ex-4">
             <caption>Graphing Variables</caption>
             <tabular>
               <col halign="center" />
@@ -1578,7 +1580,7 @@
                   <cell><m>0</m></cell>
                 </row>
             </tabular>
-          </table>
+          </figure>
         </p>
         <p>
           The amplitude is <m>\abs{A}</m>, which in this case is <m>1.5</m>.  The period is determined as follows.
@@ -1596,7 +1598,7 @@
       </statement>
       <solution>
         <p>
-          <table xml:id="trigonometry-sine-cosine-graphs-table-ex-2">
+          <figure xml:id="trigonometry-sine-cosine-graphs-table-ex-2">
             <caption>Graphing Variables</caption>
             <tabular>
               <col halign="center" />
@@ -1626,7 +1628,7 @@
                   <cell><m>4</m></cell>
                 </row>
             </tabular>
-          </table>
+          </figure>
         </p>
         <p>
           The amplitude is <m>\abs{A}</m>, which in this case is <m>1</m>.  The period is determined as follows.
@@ -1651,7 +1653,7 @@
         <p>
           Before making the table, let's expand the expression inside the sine function to determine the value of <m>\phi</m>.
           <me>-3\sin(\pi(t-2))-2.5=-3\sin(\pi t-2\pi)-2.5</me>
-          <table xml:id="trigonometry-sine-cosine-graphs-table-ex-3">
+          <figure xml:id="trigonometry-sine-cosine-graphs-table-ex-3">
             <caption>Graphing Variables</caption>
             <tabular>
               <col halign="center" />
@@ -1681,7 +1683,7 @@
                   <cell><m>-2.5</m></cell>
                 </row>
             </tabular>
-          </table>
+          </figure>
         </p>
         <p>
           The amplitude is <m>\abs{A}</m>, which in this case is <m>3</m>.  The period is determined as follows.
@@ -1702,7 +1704,7 @@
       </statement>
       <solution>
         <p>
-          <table xml:id="trigonometry-sine-cosine-graphs-table-ex-1">
+          <figure xml:id="trigonometry-sine-cosine-graphs-table-ex-1">
             <caption>Graphing Variables</caption>
             <tabular>
               <col halign="center" />
@@ -1732,7 +1734,7 @@
                   <cell><m>0</m></cell>
                 </row>
             </tabular>
-          </table>
+          </figure>
         </p>
         <p>
           The amplitude is <m>\abs{A}</m>, which in this case is <m>1</m>.  The period is determined as follows.

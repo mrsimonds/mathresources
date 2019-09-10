@@ -24,10 +24,10 @@
     <sidebyside widths="47% 47%" margins="0%">
 
       <p>
-        For example, suppose that you store away 500 grams of a radioactive particle that has a half-life of 75 years.  <xref ref="logs-and-exponents-growth-and-decay-table-1">Table</xref> shows the amount of material that remains radioactive at the end of each half-life. 
+        For example, suppose that you store away 500 grams of a radioactive particle that has a half-life of 75 years.  <xref ref="logs-and-exponents-growth-and-decay-table-1">Figure</xref> shows the amount of material that remains radioactive at the end of each half-life. 
       </p>
 
-      <table xml:id="logs-and-exponents-growth-and-decay-table-1">
+      <figure xml:id="logs-and-exponents-growth-and-decay-table-1">
         <caption>Half-Life of 75 Years</caption>
         <tabular>
           <col halign="center" />
@@ -57,11 +57,11 @@
             <cell><m>31.25</m></cell>
           </row>
         </tabular>
-      </table>
+      </figure>
 
     </sidebyside>
     <p>
-      At the end of each half-life exactly half as much remains radioactive as was radioactive at the end of the previous half-life.  If we want to find a formula that models the decay process illustrated in <xref ref="logs-and-exponents-growth-and-decay-table-1">Table</xref>, the most straight forward approach is to use a base of <m>\frac{1}{2}</m>.  Every time <m>t</m> increases by 75, the original amount that is radioactive gets multiplied by one-half.  This leads to the following formula.
+      At the end of each half-life exactly half as much remains radioactive as was radioactive at the end of the previous half-life.  If we want to find a formula that models the decay process illustrated in <xref ref="logs-and-exponents-growth-and-decay-table-1">Figure</xref>, the most straight forward approach is to use a base of <m>\frac{1}{2}</m>.  Every time <m>t</m> increases by 75, the original amount that is radioactive gets multiplied by one-half.  This leads to the following formula.
       <me>R(t)=500\left(\frac{1}{2}\right)^{t/75}</me>.
       From this we can infer a general formula for modeling radioactive decay.
       <me>R(t)=y_0\left(\frac{1}{2}\right)^{t/t_0}</me>

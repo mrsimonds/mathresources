@@ -31,10 +31,10 @@
   <sidebyside widths="55% 42%" margines="0%">
 
     <p>
-      Several ordered pairs that satisfy the equation <m>y=\frac{2}{3}x+4</m> are shown in <xref ref="lines-slope-intercept-tabel-1">Table</xref>.  Note that the third ordered pair in the table is the <m>y</m>-intercept of the line.  Also note that as you read from one row to the next, the value of <m>x</m> increases by <m>3</m> and the value of <m>y</m> increases by <m>2</m>.  
+      Several ordered pairs that satisfy the equation <m>y=\frac{2}{3}x+4</m> are shown in <xref ref="lines-slope-intercept-tabel-1">Figure</xref>.  Note that the third ordered pair in the table is the <m>y</m>-intercept of the line.  Also note that as you read from one row to the next, the value of <m>x</m> increases by <m>3</m> and the value of <m>y</m> increases by <m>2</m>.  
     </p>
 
-    <table xml:id="lines-slope-intercept-tabel-1">
+    <figure xml:id="lines-slope-intercept-tabel-1">
       <caption><m>y=\frac{2}{3}x+4</m></caption>
       <tabular>
         <col halign="center" />
@@ -72,7 +72,7 @@
           <cell><m>10</m></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
 
   </sidebyside>
 
@@ -182,10 +182,10 @@
       <sidebyside widths="70% 27%" margins="0%">
 
         <p>
-          Determine the slope-intercept equation of the line that passes through the two points indicated in <xref ref="lines-slope-intercept-table-2">Table</xref>. 
+          Determine the slope-intercept equation of the line that passes through the two points indicated in <xref ref="lines-slope-intercept-table-2">Figure</xref>. 
         </p>
 
-        <table xml:id="lines-slope-intercept-table-2">
+        <figure xml:id="lines-slope-intercept-table-2">
           <caption>Points on a line</caption>
           <tabular>
             <col halign="center" />
@@ -207,7 +207,7 @@
               <cell><m>1</m></cell>
             </row>
           </tabular>
-        </table>
+        </figure>
 
       </sidebyside>
     </statement>

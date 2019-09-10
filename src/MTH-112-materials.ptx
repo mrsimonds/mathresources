@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="MTH-112-materials" target="blank">
+  <title>Topics Covered in MTH 112</title>
+
+  <p>
+    Please note that the documents will open in new windows.
+    <ul>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-the-unit-circle.html" target="blank">The Unit Circle, Angles in Standard Position, and Arc Length</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-function-defintions.html" target="blank">The Six Basic Trigonometric Functions</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-special-angles.html" target="blank">Special Angles and Reference Angles</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-sine-cosine-graphs.html" target="blank">The Graphs of the Since and Cosine Functions</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-tangent-cotangent-graphs.html" target="blank">The Graphs of the Tangent and Cotangent Functions</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-secant-cosecant-graphs.html" target="blank">The Graphs of the Secant and Cosecant Functions</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-fundamental-identities.html" target="blank">The Fundamental Trigonometrical Identities</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-multi-angle-identities.html" target="blank">Multi-Angle Identities</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-more-identities.html" target="blank">Additional Trigonometric Identities</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-equations.html" target="blank">Trigonometric Equations</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-inverse-functions.html" target="blank">Inverse Trigonometric Functions</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-right-triangles.html" target="blank">Right Triangle Trigonometry</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-laws.html" target="blank">The Law of Sines and The Law of Cosines</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-polar-coordinates.html" target="blank">Polar Coordinates</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-complex-numbers.html" target="blank">The Complex Number Plane, de Moivre's Theorem, and Euler's Formula</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-vectors.html" target="blank">Vectors in Two-Dimensions</url>
+      </li>
+    </ul>
+  </p>
+
+</section>

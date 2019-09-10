@@ -31,7 +31,7 @@
         <md>
           <mrow>\frac{\highlight{f(x+h)}-\highlightr{f(x)}}{x}\amp=\frac{(\highlight{8(x+h)-7})-(\highlightr{8x-7})}{h}</mrow>
           <mrow>\amp=\frac{8x+8h-7-8x+7}{h}</mrow>
-          <mrow>\amp=\frac{8h}{8}</mrow>
+          <mrow>\amp=\frac{8h}{h}</mrow>
           <mrow>\amp=8,\,\,h \neq 0</mrow>
         </md>
       </p>

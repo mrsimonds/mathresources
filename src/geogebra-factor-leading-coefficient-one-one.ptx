@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="geogebra-factor-leading-coefficient-one-one">
+  <title>Show the Process of Factoring a Trinomial With a Leading Coefficient of One</title>
+
+  <figure xml:id="geogebra-factor-leading-coefficient-one-one-geogebra-2">
+    <caption>Practice Factoring Trinomials with a Leading Coefficient of One</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/factoring-ac-method-1.ggb">
+        setPerspective("G");
+        setAxesVisible(0,0);
+      </slate>
+    </interactive>
+  </figure>
+
+</section>

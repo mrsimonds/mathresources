@@ -78,7 +78,7 @@
   </p>
 
   <figure xml:id="imaginary-numbers-geogebra-1">
-    <caption>Use the slider to change the exponents on 10.</caption>
+    <caption>Go through the steps of simplifying square roots of negative integers.</caption>
     <interactive platform="geogebra" width="100%" aspect="9:5">
       <slate surface="geogebra" aspect="9:5" source="geogebra/imaginary-numbers.ggb">
         setPerspective("G");
@@ -89,7 +89,7 @@
   </figure>
 
   <p>
-    When multiplying two or more imaginary numbers, you want to use the associative and commutative properties of multiplication; this allows you to multiply the real number coefficients followed by the product of the <m>i</m> factors.  Then all occurrences of <m>i^2</m> are replaced by <m>-1</m>and the expression is further simplified.  
+    When multiplying two or more imaginary numbers, you want to use the associative and commutative properties of multiplication; this allows you to multiply the real number coefficients followed by the product of the <m>i</m> factors.  Then all occurrences of <m>i^2</m> are replaced by <m>-1</m> and the expression is further simplified.  
   </p>
 
   <example>
@@ -165,7 +165,7 @@
   <p>
     If we examine the last two examples carefully, an interesting fact about powers of <m>i</m> might emerge.  We already knew that <m>i^1=i</m> and <m>i^2=-1</m>.  What became apparent in the last two examples is that <m>i^3=-1</m> and <m>i^4=1</m>.  This further implies that <m>i^5</m>, which is equivalent to <m>i^4 \cdot i</m>, is equal to <m>i</m>.  This pattern continues ... positive integer powers of <m>i</m> continuously cycle through the pattern <m>i, -1, -i, 1, i, -1, -i, 1, ...</m>.  This is illustrated below up through <m>i^{20}</m>.
   </p>
-  <table xml:id="imaginary-numbers-table-1" halign="left">
+  <figure xml:id="imaginary-numbers-table-1" halign="left">
     <caption>Powers of <m>i</m></caption>
     <tabular>                    
       <col halign="center"/>
@@ -203,7 +203,7 @@
         <cell><m>i^{20}=1</m></cell>
       </row>
     </tabular>
-  </table>
+  </figure>
   <p>
     Let's note that the exponents in the far right column are all divisible by <m>4</m> and the results of <m>i</m> raised to those powers are always <m>1</m>.
   </p>

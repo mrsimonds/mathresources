@@ -469,7 +469,7 @@
     </figure>
 
     <figure xml:id="exponents-properties-geogebra-8">
-      <caption>Practice the product-to-a-power rule coupled with the power-to-a-power rule.</caption>
+      <caption>Practice the rules of positive exponents.</caption>
       <interactive platform="geogebra" width="100%" aspect="9:5">
         <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-positive-properties.ggb">
           setPerspective("G");

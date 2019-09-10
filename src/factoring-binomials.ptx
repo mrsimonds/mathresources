@@ -30,6 +30,7 @@
     <m>x^{10}-16</m>.  Hopefully we are quick to see that <m>16</m> is the square of <m>4</m>.  To use our factor pattern successfully, we need to also recognize that <m>x^{10}</m> is a perfect square, as is any even power of <m>x</m>.  The power-to-a-power rule of exponents relates that <m>(x^m)^n=x^{mn}</m>.  So the power of <m>x</m> we square that results in <m>x^{10}</m> must be half of <m>10</m>, i.e. <m>5</m>.  Putting it all together we have: <me>x^{10}-16=(x^5+4)(x^5-4)</me> Similar examples follow.
     <me>y^8-9=(y^4+3)(y^4-3)</me><me>x^{46}-1=(x^{23}+1)(x^{23}-1)</me><me>100-w^{12}=(10+w^6)(10-w^6)</me>
   </p>
+
   <figure xml:id="factoring-geogebra-5">
     <caption>Practice Factoring Difference of Squares with One Variable</caption>
     <interactive platform="geogebra" width="100%" aspect="9:5">
@@ -39,6 +40,7 @@
       </slate>
     </interactive>
   </figure>
+
    <figure xml:id="factoring-geogebra-6">
     <caption>Practice Factoring Difference of Squares with Two Variables</caption>
     <interactive platform="geogebra" width="100%" aspect="9:5">
@@ -48,6 +50,7 @@
       </slate>
     </interactive>
   </figure>
+  
   </paragraphs>
   <paragraphs>
     <title>Sum and Difference of Cubes</title>
@@ -76,7 +79,7 @@
     </statement>
     <solution>
       <p>  
-        For both binomials, <m>8x^3</m> corresponds to what is identified in the patterns as <m>a^3</m> and <m>27</m> corresponds to what is identified in the pattern as <m>b</m>.  The resultant expressions for <m>a</m>, <m>b</m>, <m>a^2</m>, and <m>b^2</m> and shown in <xref ref="factoring-binomials-table-1">Table</xref> and the factorizations are shown to the left of the table.
+        For both binomials, <m>8x^3</m> corresponds to what is identified in the patterns as <m>a^3</m> and <m>27</m> corresponds to what is identified in the pattern as <m>b</m>.  The resultant expressions for <m>a</m>, <m>b</m>, <m>a^2</m>, and <m>b^2</m> and shown in <xref ref="factoring-binomials-table-1">Figure</xref> and the factorizations are shown to the left of the table.
       </p> 
       <sidebyside widths="68% 28%" margins="0%">
 
@@ -88,7 +91,7 @@
           </md>
         </p>
 
-        <table xml:id="factoring-binomials-table-1">
+        <figure xml:id="factoring-binomials-table-1">
           <caption></caption>
           <tabular>
             <col halign="center" />
@@ -113,7 +116,7 @@
               <cell><m>ab=6x</m></cell>
             </row>
           </tabular>
-        </table>
+        </figure>
 
       </sidebyside>
     </solution>
@@ -139,7 +142,7 @@
           </md>
         </p>
 
-        <table xml:id="factoring-binomials-table-2">
+        <figure xml:id="factoring-binomials-table-2">
           <caption></caption>
           <tabular>
             <col halign="center" />
@@ -164,7 +167,7 @@
               <cell><m>ab=4x^5</m></cell>
             </row>
           </tabular>
-        </table>
+        </figure>
       </sidebyside>
     </solution>
   </example>
@@ -231,10 +234,10 @@
             <sidebyside widths="70% 30%" margins="0%">
 
               <p>
-                Use the factor pattern <m>a^2-b^2=(a+b)(a-b)</m> to factor <m>x^{10}-25y^4</m> after first completing the entries in <xref ref="factoring-binomials-exercise-table-1">Table</xref>
+                Use the factor pattern <m>a^2-b^2=(a+b)(a-b)</m> to factor <m>x^{10}-25y^4</m> after first completing the entries in <xref ref="factoring-binomials-exercise-table-1">Figure</xref>
               </p>
                       
-              <table xml:id="factoring-binomials-exercise-table-1">
+              <figure xml:id="factoring-binomials-exercise-table-1">
                 <caption></caption>
                 <tabular>
                   <col halign="center" />
@@ -252,7 +255,7 @@
                     <cell><m>b=</m></cell>
                   </row>
                 </tabular>
-              </table>
+              </figure>
 
             </sidebyside> 
           </statement>
@@ -264,7 +267,7 @@
                 <m>x^{10}-25y^4=(x^5+5y^2)(x^5-5y^2)</m> 
               </p>
 
-              <table xml:id="factoring-binomials-solution-table-1-ans">
+              <figure xml:id="factoring-binomials-solution-table-1-ans">
                 <caption></caption>
                 <tabular>
                   <col halign="center" />
@@ -285,7 +288,7 @@
                     <cell><m>ab=5x^5y^2</m></cell>
                   </row>
                 </tabular>
-              </table>
+              </figure>
             </sidebyside> 
           </solution>
 
@@ -297,10 +300,10 @@
             <sidebyside widths="78% 18%" margins="0%">
 
               <p>
-                Use the factor pattern <m>a^3-b^3=(a-b)(a^2+ab+b^2)</m> to factor <m>8x^3-y^6</m> after first completing the entries in <xref ref="factoring-binomials-exercise-table-2">Table</xref>
+                Use the factor pattern <m>a^3-b^3=(a-b)(a^2+ab+b^2)</m> to factor <m>8x^3-y^6</m> after first completing the entries in <xref ref="factoring-binomials-exercise-table-2">Figure</xref>
               </p>
 
-              <table xml:id="factoring-binomials-exercise-table-2">
+              <figure xml:id="factoring-binomials-exercise-table-2">
                 <caption></caption>
                 <tabular>
                   <col halign="center" />
@@ -325,7 +328,7 @@
                     <cell><m>ab=</m></cell>
                   </row>
                 </tabular>
-              </table>
+              </figure>
 
             </sidebyside> 
           </statement>
@@ -337,7 +340,7 @@
               </p>
                         
 
-              <table xml:id="factoring-binomials-solution-table-1">
+              <figure xml:id="factoring-binomials-solution-table-1">
                 <caption></caption>
                 <tabular>
                   <col halign="center" />
@@ -362,7 +365,7 @@
                     <cell><m>ab=2xy^2</m></cell>
                   </row>
                 </tabular>
-              </table>
+              </figure>
             </sidebyside> 
           </solution>
 
@@ -373,10 +376,10 @@
             <sidebyside widths="78% 18%" margins="0%">
 
               <p>
-                Use the factor pattern <m>a^3+b^3=(a+b)(a^2-ab+b^2)</m> to factor <m>125t^{12}+27x^9</m> after first completing the entries in <xref ref="factoring-binomials-exercise-table-3">Table</xref>
+                Use the factor pattern <m>a^3+b^3=(a+b)(a^2-ab+b^2)</m> to factor <m>125t^{12}+27x^9</m> after first completing the entries in <xref ref="factoring-binomials-exercise-table-3">Figure</xref>
               </p>
 
-              <table xml:id="factoring-binomials-exercise-table-3">
+              <figure xml:id="factoring-binomials-exercise-table-3">
                 <caption></caption>
                 <tabular>
                   <col halign="center" />
@@ -401,13 +404,13 @@
                     <cell><m>ab=</m></cell>
                   </row>
                 </tabular>
-              </table>
+              </figure>
 
             </sidebyside>  
           </statement>
           <solution>
             <sidebyside widths="38% 58%" margins="0%">
-              <table xml:id="factoring-binomials-solution-table-3">
+              <figure xml:id="factoring-binomials-solution-table-3">
                 <caption></caption>
                 <tabular>
                   <col halign="center" />
@@ -432,7 +435,7 @@
                     <cell><m>ab=15t^4x^3</m></cell>
                   </row>
                 </tabular>
-              </table>
+              </figure>
 
               <p>
               </p>

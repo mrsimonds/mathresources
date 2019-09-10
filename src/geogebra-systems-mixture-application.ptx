@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="geogebra-systems-mixture-application">
+  <title>Explore an Acid Mixture Systems Problem Numerically.</title>
+  
+    <p>
+      Jim and Jim are lab partners in chemistry class.  The two Jim's are tasked with the creation of 3 liters of a solution that is 35.2% acid and 64.8% water.  They have two solutions to work with.  One of the existing solutions is 40% acid (and 60% water) while the other is 28% acid (and 72% water).  How much of each solution should the Jim's use in their mixture?
+    </p>
+    <p>
+      Let's use <xref ref="geogebra-systems-mixture-application-geogebra">Figure</xref> to explore what happens when we change the amount of each solution used.
+    </p>
+    <p>
+      Do you see how we calculate the amount of acid in the two given acid solutions based upon the amount of solution added to he mixture?  In the case of the 40% acid solution, we multiply the amount of solution used by 0.40.  In both rows the figures in the mixture column are just the sums of the first two columns in that row.  Finally, the percentage at the top is determined by dividing the amount of acid in the mixture by the total amount of solution (3 liters) and then multiplying by 100.
+    </p>
+
+    <figure xml:id="geogebra-systems-mixture-application-geogebra">
+      <caption>Explore Scenarios for the Jim's Mixture Problem</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/systems-acid-problem.ggb">
+          setPerspective("G");
+          setAxesVisible(0,0);
+        </slate>
+      </interactive>
+    </figure>
+
+</section>

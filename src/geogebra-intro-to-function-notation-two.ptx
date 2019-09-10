@@ -9,16 +9,18 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="functions-videos">
-  <title>Videos Created by Ann Cary and Scot Leavitt</title>
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="geogebra-intro-to-function-notation-two">
+  <title>Introduction to Function Notation - Part Two</title>
 
-  <p>
-    The links take you to YouTube Playlists or Videos which will open either in a new window or in a Youtube App.
-    <ul>
-      <li>
-        <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-ew2emPlQnzedzJQHwsMOFV" target="blank">Introduction to Functions</url>
-      </li>
-    </ul>
-  </p>
+  <figure xml:id="geogebra-intro-to-function-notation-two-geogebra">
+    <caption>Use the slider to change the value of <m>x</m>.</caption>
+    <interactive platform="geogebra" width="100%" aspect="9:5">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/function-intro-formula.ggb">
+        setPerspective("G");
+        setAxesVisible(0,0);
+      </slate>
+    </interactive>
+  </figure>
+
 
 </section>

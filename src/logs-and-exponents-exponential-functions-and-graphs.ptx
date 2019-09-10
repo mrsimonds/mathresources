@@ -16,11 +16,11 @@
     A simple <term>exponential function</term>, <m>f</m>, is a function that can be expressed as <me>f(x)=b^x</me> where <m>b \gt 0,\,\,b \neq 1</m>.
   </p>
   <p>
-    Let's consider the function <m>f(x)=2^x</m>.  Several function values are shown in <xref ref="exponential-functions-and-graphs-table-1">Table</xref> and the corresponding ordered pairs are plotted in <xref ref="exponential-functions-and-graphs-figure-1">Figure</xref>.  The function is continuous, and we can infer it's shape from the points plotted in <xref ref="exponential-functions-and-graphs-figure-1">Figure</xref>.  The continuous function is shown in <xref ref="exponential-functions-and-graphs-figure-2">Figure</xref>.
+    Let's consider the function <m>f(x)=2^x</m>.  Several function values are shown in <xref ref="exponential-functions-and-graphs-table-1">Figure</xref> and the corresponding ordered pairs are plotted in <xref ref="exponential-functions-and-graphs-figure-1">Figure</xref>.  The function is continuous, and we can infer it's shape from the points plotted in <xref ref="exponential-functions-and-graphs-figure-1">Figure</xref>.  The continuous function is shown in <xref ref="exponential-functions-and-graphs-figure-2">Figure</xref>.
   </p>
   <sidebyside widths="47% 47%" margins="0%">
 
-    <table xml:id="exponential-functions-and-graphs-table-1">
+    <figure xml:id="exponential-functions-and-graphs-table-1">
       <caption><m>y=2^x</m></caption>
       <tabular>
         <col halign="center" />
@@ -62,7 +62,7 @@
           <cell><m>16</m></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
 
     <figure xml:id="exponential-functions-and-graphs-figure-1">
       <caption>Points on <m>y=2^x</m></caption>
@@ -161,11 +161,11 @@
     The average distance between the Earth and its moon is 238,900 miles which, in turn, is a little more than <m>1.5 \times 10^{10}</m> inches.  On the other hand, <m>2^{34}</m> is a little more than <m>1.7 \times 10^{10}</m>, so on our Empire State Building Grid we've moved less than three feet to the right of the origin and the <m>y</m>-coordinate on the graph of <m>y=2^x</m> has already blown past the Moon!  To infinity and beyond, indeed.
   </p>
   <p>
-    Now let's consider the graph of <m>g(x)=\left(\frac{1}{2}\right)^x</m>.  Several function values are shown in <xref ref="exponential-functions-and-graphs-table-2">Table</xref> and the function is graphed in <xref ref="exponential-functions-and-graphs-figure-4">Figure</xref>.
+    Now let's consider the graph of <m>g(x)=\left(\frac{1}{2}\right)^x</m>.  Several function values are shown in <xref ref="exponential-functions-and-graphs-table-2">Figure</xref> and the function is graphed in <xref ref="exponential-functions-and-graphs-figure-4">Figure</xref>.
   </p>
   <sidebyside widths="47% 47%" margins="0%">
 
-    <table xml:id="exponential-functions-and-graphs-table-2">
+    <figure xml:id="exponential-functions-and-graphs-table-2">
       <caption><m>y=\left(\frac{1}{2}\right)^x</m></caption>
       <tabular>
         <col halign="center" />
@@ -207,7 +207,7 @@
           <cell><m>0.125</m></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
 
     <figure xml:id="exponential-functions-and-graphs-figure-4">
       <caption><m>y=\left(\frac{1}{2}\right)^x</m></caption>

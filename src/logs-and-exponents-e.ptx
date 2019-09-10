@@ -17,10 +17,10 @@
     <p></p>
 
     <p>
-      Most savings accounts which accrue interest accrue the interest in a compounding way.  The simplest example of compounding interest is a one-time deposit that accrues interest on the current balance at the end of each year.  Suppose that you deposit $100 in an account that applies 4% interest to the current balance at the end of each year.  This process is illustrated in <xref ref="logs-and-exponents-e-table-1">Table</xref>.
+      Most savings accounts which accrue interest accrue the interest in a compounding way.  The simplest example of compounding interest is a one-time deposit that accrues interest on the current balance at the end of each year.  Suppose that you deposit $100 in an account that applies 4% interest to the current balance at the end of each year.  This process is illustrated in <xref ref="logs-and-exponents-e-table-1">Figure</xref>.
     </p>
 
-    <table xml:id="logs-and-exponents-e-table-1">
+    <figure xml:id="logs-and-exponents-e-table-1">
       <caption>4% Interest Compounding Annually</caption>
       <tabular>
         <col halign="center" />
@@ -58,7 +58,7 @@
           <cell><m>116.99</m></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
 
     <p>
       If we let <m>x</m> represent the balance at the start of any year, then the balance at the end of that year is given by the formula derived below.
@@ -67,10 +67,10 @@
         <mrow>\amp=(1+0.04)x</mrow>
         <mrow>\amp=1.04x</mrow>
       </md>
-      In <xref ref="logs-and-exponents-e-table-2">Table</xref> the formula has applied for several years.
+      In <xref ref="logs-and-exponents-e-table-2">Figure</xref> the formula has applied for several years.
     </p>
 
-    <table xml:id="logs-and-exponents-e-table-2">
+    <figure xml:id="logs-and-exponents-e-table-2">
       <caption>4% Interest Compounding Annually</caption>
       <tabular>
         <col halign="center" />
@@ -102,15 +102,15 @@
           <cell><m>1.04 \cdot 1.04^3(100)=1.04^4(100)</m></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
 
     <p>
       It's easy to see that if we let <m>B(t)</m> represent the balance of the account after the account has earned interest for <m>t</m> years, then 
       <me>B(t)=100 \cdot 1.04^t.</me>
-      For most savings accounts, the  interest is applied more than once per year.  Suppose, for example, that in the account above instead of 4% interest being applied at the end of each year, 1% interest is applied at the end of each quarter (March 31, June 30, September 30, and December 31).  This scenario is illustrated in <xref ref="logs-and-exponents-e-table-3">Table</xref>.
+      For most savings accounts, the  interest is applied more than once per year.  Suppose, for example, that in the account above instead of 4% interest being applied at the end of each year, 1% interest is applied at the end of each quarter (March 31, June 30, September 30, and December 31).  This scenario is illustrated in <xref ref="logs-and-exponents-e-table-3">Figure</xref>.
     </p>
 
-    <table xml:id="logs-and-exponents-e-table-3">
+    <figure xml:id="logs-and-exponents-e-table-3">
       <caption>4% Interest Compounding Quarterly</caption>
       <tabular>
         <col halign="center" />
@@ -148,7 +148,7 @@
           <cell><m>104.06</m></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
 
     <p>
       We can see that at the end of one year (end of the fourth quarter), the amount of interest that was earned was not 4%, but instead was actually 4.06%.  The annual interest before the compounding effect is called <term>the nominal interest rate</term>.  The interest rate after the compounding effect is called <term>the effective interest rate</term>.  In our current scenario, 1% interest is applied four times per year, so the balance at the end of <m>t</m> years is given by the formula
@@ -226,10 +226,10 @@
     <title>Continuous Interest Rates and the Number e</title>
     <p></p>
     <p>
-      Suppose that you open a savings account with a nominal interest rate of 4%. (Good luck with that.)  As illustrated in <xref ref="logs-and-exponents-e-table-4">Table</xref>, the effective interest rate increases as the number of compounding events per year increases.
+      Suppose that you open a savings account with a nominal interest rate of 4%. (Good luck with that.)  As illustrated in <xref ref="logs-and-exponents-e-table-4">Figure</xref>, the effective interest rate increases as the number of compounding events per year increases.
     </p>
 
-    <table xml:id="logs-and-exponents-e-table-4">
+    <figure xml:id="logs-and-exponents-e-table-4">
       <caption>Effective Interest Rate When the Nominal Interest Rate is 4%</caption>
       <tabular>
         <col halign="center" />
@@ -255,7 +255,7 @@
           <cell>4.08%</cell>
         </row>
       </tabular>
-    </table>
+    </figure>
 
     <p>
       Now suppose that the number of compounding events per year keeps growing:   a thousand times per year, a million times per year, a billion times per year!  The more and more times the interest compounds per year, the closer the account comes to having the interest compound at a <term>continuous interest rate</term>.  We could use our established interest rate formula with <m>n=1,000,000</m> to get a pretty darn good estimation of the effective continuous interest rate, but there's another option.  Before coming up with the other option, we need to manipulate our existing interest formula into another form.
@@ -269,10 +269,10 @@
     <sidebyside widths="47% 47%" margins="0%">
 
       <p>
-         In <xref ref="logs-and-exponents-e-table-5">Table</xref> we see the effect that increasing the value of <m>x</m> has on the value of <m>\left(1+\frac{1}{x}\right)^x</m>.  The larger the value of <m>x</m>, the closer the expression <m>\left(1+\frac{1}{x}\right)^x</m> gets to <term>the irrational number e</term>.
+         In <xref ref="logs-and-exponents-e-table-5">Figure</xref> we see the effect that increasing the value of <m>x</m> has on the value of <m>\left(1+\frac{1}{x}\right)^x</m>.  The larger the value of <m>x</m>, the closer the expression <m>\left(1+\frac{1}{x}\right)^x</m> gets to <term>the irrational number e</term>.
        </p>
 
-      <table xml:id="logs-and-exponents-e-table-5">
+      <figure xml:id="logs-and-exponents-e-table-5">
         <caption>Values of <m>\left(1+\frac{1}{x}\right)^x</m></caption>
         <tabular>
           <col halign="center" />
@@ -306,7 +306,7 @@
             <cell><m>2.71828</m></cell>
           </row>
         </tabular>
-      </table>
+      </figure>
 
     </sidebyside>
     <p>

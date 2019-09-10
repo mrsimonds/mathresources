@@ -9,11 +9,11 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="trigonometry-vectors">
-  <title>Vectors in 2-Dimensions</title>
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="trigonometry-multi-angle-identities">
+  <title>Multi-Angle Identities</title>
 
   <paragraphs>
-    <title></title>
+    <title>Sum and Difference Identities</title>
     <p></p>
     <p>
       The following identities are presented without proof.  The proofs are not at all trivial, and in the author's opinion have no value in helping students either apply or memorize these identities.  If you want to read a proof, you can find many written examples and videos online.

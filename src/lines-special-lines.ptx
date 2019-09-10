@@ -58,10 +58,10 @@
       <sidebyside widths="67% 27%" margins="0%">
 
         <p>
-          Let's determine the slope-intercept equation of the line that passes through the point <m>(-8,16)</m> that is perpendicular to the line that passes through the points shown in <xref ref="lines-special-lines-table-1">Table</xref>.
+          Let's determine the slope-intercept equation of the line that passes through the point <m>(-8,16)</m> that is perpendicular to the line that passes through the points shown in <xref ref="lines-special-lines-table-1">Figure</xref>.
         </p>
 
-        <table xml:id="lines-special-lines-table-1">
+        <figure xml:id="lines-special-lines-table-1">
           <caption>Points on a line</caption>
           <tabular>
             <col halign="center" />
@@ -83,13 +83,13 @@
               <cell><m>-5</m></cell>
             </row>
           </tabular>
-        </table>
+        </figure>
 
       </sidebyside>
     </statement>
     <solution>
       <p>
-        We begin by determining the slope of the line that passes through the points shown in <xref ref="lines-special-lines-table-1">Table</xref>.  Letting <m>(x_1,y_1)</m> be the ordered pair <m>(-4,7)</m> and <m>(x_2,y_2)</m> be the ordered <m>(10,-5)</m>, we calculate the slope as follows.
+        We begin by determining the slope of the line that passes through the points shown in <xref ref="lines-special-lines-table-1">Figure</xref>.  Letting <m>(x_1,y_1)</m> be the ordered pair <m>(-4,7)</m> and <m>(x_2,y_2)</m> be the ordered <m>(10,-5)</m>, we calculate the slope as follows.
         <md>
           <mrow>m\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
           <mrow>\amp=\frac{-5-7}{10-(-4)}</mrow>

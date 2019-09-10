@@ -20,10 +20,10 @@
       </statement>
       <solution>
         <p>
-          Let <m>t</m> represent the amount of time it takes them to swap out the tires on <m>40</m> bicycles when they work together.  The information given in the problem is summarized in <xref ref="rationals-applications-table-1">Table</xref>.  In each row, the rate expression was derived using:<me>\text{rate}=\frac{\text{swaps completed}}{\text{time}}</me>.
+          Let <m>t</m> represent the amount of time it takes them to swap out the tires on <m>40</m> bicycles when they work together.  The information given in the problem is summarized in <xref ref="rationals-applications-table-1">Figure</xref>.  In each row, the rate expression was derived using:<me>\text{rate}=\frac{\text{swaps completed}}{\text{time}}</me>.
         </p>
         <p>
-          <table xml:id="rationals-applications-table-1">
+          <figure xml:id="rationals-applications-table-1">
             <caption>Joaquin and Abraham swap out bicycle tires</caption>
             <tabular>
               <col halign="left"/>
@@ -86,7 +86,7 @@
                 </cell>
               </row>
             </tabular>
-          </table>
+          </figure>
         </p>
         <p>        
           The equation we need to solve comes from the fact that the two individual rates sum to the rate at which they work together.  To wit:
@@ -120,10 +120,10 @@
       </statement>
       <solution>
         <p>
-          Let <m>x</m> represent the constant rate (mph) at which the current flowed during the canoe trip.  The information given in the problem is summarized in <xref ref="rationals-applications-table-2">Table</xref>.  In each row, the time expression was derived using:<me>\text{time}=\frac{\text{distance}}{\text{rate}}</me>.
+          Let <m>x</m> represent the constant rate (mph) at which the current flowed during the canoe trip.  The information given in the problem is summarized in <xref ref="rationals-applications-table-2">Figure</xref>.  In each row, the time expression was derived using:<me>\text{time}=\frac{\text{distance}}{\text{rate}}</me>.
         </p>
         <p>
-          <table xml:id="rationals-applications-table-2">
+          <figure xml:id="rationals-applications-table-2">
             <caption>You and a partner go canoeing</caption>
             <tabular>
               <col halign="left"/>
@@ -172,7 +172,7 @@
                 </cell>
               </row>
             </tabular>
-          </table>
+          </figure>
         </p>
         <p>        
           The equation we need to solve comes from the fact that you spent a total of two on the river, so the two time expressions need to sum to two.  Let's write and solve that equation.
@@ -212,8 +212,8 @@
           </statement>
           <solution>
             <p>
-              Define <m>x</m> to be the constant speed (km/hr) of the current. The information stated in the problem is summarized in <xref ref="rationals-applications-exercises-table-1">Table</xref>.  In both rows the expression for time was determined by <m>t=\frac{D}{r}</m>.
-              <table xml:id="rationals-applications-exercises-table-1">
+              Define <m>x</m> to be the constant speed (km/hr) of the current. The information stated in the problem is summarized in <xref ref="rationals-applications-exercises-table-1">Figure</xref>.  In both rows the expression for time was determined by <m>t=\frac{D}{r}</m>.
+              <figure xml:id="rationals-applications-exercises-table-1">
                 <caption>Yoshi's kayak adventure</caption>
                 <tabular>
                   <col halign="left"/>
@@ -262,7 +262,7 @@
                     </cell>
                   </row>
                 </tabular>
-              </table>
+              </figure>
             </p>
             <p>
               Because Yoshi spent a total of 2.5 hours on the river, the sum of the two time expressions needs to total 2.5.  Lets state and solve that equation.
@@ -291,10 +291,10 @@
           </statement>
           <solution>
             <p>
-              Define <m>x</m> to be the pace (mph) of the at which Marcie sets her treadmill. The information stated in the problem is summarized in <xref ref="rationals-applications-exercises-table-2">Table</xref>.  In both rows the expression for time was determined by <m>t=\frac{D}{r}</m>.
+              Define <m>x</m> to be the pace (mph) of the at which Marcie sets her treadmill. The information stated in the problem is summarized in <xref ref="rationals-applications-exercises-table-2">Figure</xref>.  In both rows the expression for time was determined by <m>t=\frac{D}{r}</m>.
             </p>
             <p>
-              <table xml:id="rationals-applications-exercises-table-2">
+              <figure xml:id="rationals-applications-exercises-table-2">
                 <caption>Patty and Marcie jog</caption>
                 <tabular>
                   <col halign="left"/>
@@ -343,7 +343,7 @@
                     </cell>
                   </row>
                 </tabular>
-              </table>
+              </figure>
             </p>
             <p>
               Because Patty and Marcie were on their treadmills for an equal period of time, the two time expressions in the table must be equal.  Let's write an equation that reflects that fact and then go ahead and solve that equation.
@@ -371,10 +371,10 @@
           <solution>
             <p>
               We can determine Ali's rate by deducing how long it takes him to complete one kit. Define <m>x</m> to be the time it takes Ali to assemble one kit. The information stated in the problem is summarized in 
-              <xref ref="rationals-applications-exercises-table-3">Table</xref>.    In each row, the expression in the rate column comes from the equation <m>\text{rate}=\frac{\text{# of kits}}{\text{time}}</m>.
+              <xref ref="rationals-applications-exercises-table-3">Figure</xref>.    In each row, the expression in the rate column comes from the equation <m>\text{rate}=\frac{\text{# of kits}}{\text{time}}</m>.
             </p>
             <p>
-              <table xml:id="rationals-applications-exercises-table-3">
+              <figure xml:id="rationals-applications-exercises-table-3">
                 <caption>Sylvia and Ali assemble IKEA furniture kits</caption>
                 <tabular>
                   <col halign="left"/>
@@ -437,7 +437,7 @@
                     </cell>
                   </row>
                 </tabular>
-              </table>
+              </figure>
             </p>
             <p>
               Our equation comes from the fact that the rate at which they work together is the sum of the individual rates.  Let's write an equation that reflects that fact and then solve that equation.
