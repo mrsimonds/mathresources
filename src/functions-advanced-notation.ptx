@@ -78,15 +78,19 @@
       You can see several more examples by entering difference second degree polynomial formulas (<m>ax^2+bx+c</m>) into <xref ref="functions-advanced-notation-geogebra-1">Figure</xref>.  After a few examples, try working yourself first before putting the formula into the app.
     </p>
 
-    <figure xml:id="functions-advanced-notation-geogebra-1">
-      <caption>Practice expanding <m>f(x+y)</m></caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/functions-advanced.ggb">
-          setPerspective("G");
-          setAxesVisible(0,0);
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="functions-advanced-notation-geogebra-1">
+        <caption>
+          Practice expanding <m>f(x+y)</m>.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/functions-advanced.ggb">
+            setPerspective("G");
+            setAxesVisible(0,0);
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
     <p>
       Of course, "<m>x+h</m>" isn't the only variable expression that we use as an input for a function.  Let's see several other examples.

@@ -16,7 +16,7 @@
     The expressions that are factored in this set of examples are not trinomials - they all have one too many terms.  The reason we are exploring this skill is that it is a useful process when factoring trinomials where the leading coefficients isn't <m>1</m>.
   </p>
   <p>
-    Let's consider the expression <m>10xy+15x-6y^2-9y</m>.  The factoring by grouping method begins by considering only the first two terms and factoring from them any and all common factors.  In this case we could factor out <m>5x</m> leaving the residual factor <m>(2y+3)</m>.  We now consider the final two terms.  Our goal is to factor out something that also leaves the residual factor <m>(2y+3)</m>.  While it's true that we could factor out <m>3y</m>, that would leave behind <m>(-2y-3)</m>.  What we want to factor out is <m>-3y</m> so that the residual factor is the desired <m>(2y+3)</m>.  Altogether, then, the first step in the process is:<me>10xy+15x-6xy-9y=\highlightb{5x}\highlight{(2y+3)}\highlightg{-3y}\highlight{(2y+3)}</me>.
+    Let's consider the expression <m>10xy+15x-6y^2-9y</m>.  The factoring by grouping method begins by considering only the first two terms and factoring from them any and all common factors.  In this case we could factor out <m>5x</m> leaving the residual factor <m>(2y+3)</m>.  We now consider the final two terms.  Our goal is to factor out something that also leaves the residual factor <m>(2y+3)</m>.  While it's true that we could factor out <m>3y</m>, that would leave behind <m>(-2y-3)</m>.  What we want to factor out is <m>-3y</m> so that the residual factor is the desired <m>(2y+3)</m>.  Altogether, then, the first step in the process is:<me>10xy+15x-6y^2-9y=\highlightb{5x}\highlight{(2y+3)}\highlightg{-3y}\highlight{(2y+3)}</me>.
   </p>
   <p>
     The expression now has two terms, with the terms delineated by the subtraction sign.  Each of the terms has a factor of <m>(2y+3)</m>.  Just like we can factor (on the right), say, <m>z</m> from the expression 
@@ -69,15 +69,19 @@
     </solution>
   </example>
 
-  <figure xml:id="factoring-grouping-geogebra-1">
-    <caption>Practice Factoring by Grouping</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/factor-grouping.ggb">
-        setPerspective("G");
-        setAxesVisible(0,0);
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+    <figure xml:id="factoring-grouping-geogebra-1">
+      <caption>
+        Practice Factoring by Grouping.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/factor-grouping.ggb">
+          setPerspective("G");
+          setAxesVisible(0,0);
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
   <exercises>
     

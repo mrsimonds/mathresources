@@ -317,15 +317,19 @@
      You can use <xref ref="rationals-addition-and-subtraction-geogebra-1">Figure</xref> to generate several more examples/practice problems.  You'll need to write the steps down, because only one step is shown at a tie.
     </p>
 
-    <figure xml:id="rationals-addition-and-subtraction-geogebra-1">
-      <caption>Combine rational expressions.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/rationals-addition.ggb">
-          setPerspective("G");
-          setAxesVisible(0,0);
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="rationals-addition-and-subtraction-geogebra-1">
+        <caption>
+          Combine rational expressions.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/rationals-addition.ggb">
+            setPerspective("G");
+            setAxesVisible(0,0);
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
     <exercises>
 

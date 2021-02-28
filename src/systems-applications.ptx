@@ -25,15 +25,19 @@
         The slider in the application controls how much money is invested in the bond account.  Before changing the value, get out your calculator and make sure that you understand how all of the figures in the table are derived.  For example, the value found in the position that corresponds to the bond interest is 0.03 times the value the corresponds to the bond's initial balance.  How are the other figures in the table derived?  Once you've got that figured out, go ahead and use the slider to determine how much is invested in each account if the total amount of interest earned over 2018 was $694.
       </p>
 
-      <figure xml:id="systems-applications-geogebra-1">
-        <caption>Explore Scenarios for Damien's IRA account</caption>
-        <interactive platform="geogebra" width="100%" aspect="9:5">
-          <slate surface="geogebra" aspect="9:5" source="geogebra/systems-interest-problem.ggb">
-            setPerspective("G");
-            setAxesVisible(0,0);
-          </slate>
-        </interactive>
-      </figure>
+      <exploration>
+        <figure xml:id="systems-applications-geogebra-1">
+          <caption>
+            Explore Scenarios for Damien's IRA account.
+          </caption>
+          <interactive platform="geogebra" width="100%" aspect="9:5">
+            <slate surface="geogebra" aspect="9:5" source="geogebra/systems-interest-problem.ggb">
+              setPerspective("G");
+              setAxesVisible(0,0);
+            </slate>
+          </interactive>
+        </figure>
+      </exploration>
 
       <p>
         OK, let's now solve the problem using a system of linear equations.  Let's let <m>x</m>represent the amount ($) that Damion invested  in the bond and <m>y</m> represent the amount that was invested in the mutual fund account.  The the amount's ($) of interest earned by the two accounts were <m>0.03x</m> and <m>0.11y</m>.  This information is summarized in <xref ref="systems-applications-table-damien">Figure</xref>.
@@ -263,15 +267,19 @@
       Do you see how we calculate the amount of acid in the two given acid solutions based upon the amount of solution added to he mixture?  In the case of the 40% acid solution, we multiply the amount of solution used by 0.40.  In both rows the figures in the mixture column are just the sums of the first two columns in that row.  Finally, the percentage at the top is determined by dividing the amount of acid in the mixture by the total amount of solution (3 liters) and then multiplying by 100.
     </p>
 
-    <figure xml:id="systems-applications-geogebra-2">
-      <caption>Explore Scenarios for the Jim's Mixture Problem</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/systems-acid-problem.ggb">
-          setPerspective("G");
-          setAxesVisible(0,0);
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="systems-applications-geogebra-2">
+        <caption>
+          Explore Scenarios for the Jim's Mixture Problem.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/systems-acid-problem.ggb">
+            setPerspective("G");
+            setAxesVisible(0,0);
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
     <p>
       OK, let's get to creating and solving an algebraic model for the problem.
@@ -494,15 +502,19 @@
       Before jumping into the algebra, let's use <xref ref="systems-applications-geogebra-4">Figure</xref> to numerically explore the problem.  Notice that the time unit is hours to agree with the time component of the rate unit (miles/hour).  In each row the distance is simply the product of the rate and time.  Finally, the distance stated at the top is the sum of the two distances found in the table.
     </p>
 
-    <figure xml:id="systems-applications-geogebra-4">
-      <caption>Two Drives along I-65</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/systems-drt-problem.ggb">
-          setPerspective("G");
-          setAxesVisible(0,0);
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="systems-applications-geogebra-4">
+        <caption>
+          Two Drives along I-65.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/systems-drt-problem.ggb">
+            setPerspective("G");
+            setAxesVisible(0,0);
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
     <p>
       Time to set about using algebra to determine the solution tot he problem.

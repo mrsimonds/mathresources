@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="linear-equations-not-simple">
+  <title>Linear Equations in One Variable - Part II</title>
+  <p>
+    In the previous section, we discussed solving equations of form <m>a x+b=c</m> and <m>a x+b=c x+d</m>.  Sometimes some preliminary work needs to be done before the equation is in one of those two forms.  Specifically, one or both of the following two steps may be necessary.  If both steps are necessary, they should be performed in the indicted order.
+    <ol label="1">
+      <li>
+        <p>
+          Completely expand both sides of the equation.
+        </p>
+      </li>
+      <li>
+        <p>
+          Combine all like terms on each side of the equation.
+        </p>
+      </li>
+    </ol>
+    At this point you should have an equation of one of the two previously mentioned types and the remaining steps follow what was discussed in the previous section.  Several examples follow.
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Determine the solution and solution set for the equation <m>3(x-5)=-7(x+5)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We'll begin by expanding both sides of the equation.
+        <md>
+          <mrow>3(x-5)\amp=-7(x+5)</mrow>
+          <mrow>3x-15\amp=-7x-35</mrow>
+        </md>
+        There are no like terms on either side of the equal sign, so we can go ahead and employ the solution process discussed and illustrated in the previous section.
+        <md>
+          <mrow>3x-15\amp=-7x-35</mrow>
+          <mrow>3x-15\addright{15+7x}\amp=-7x-35\addright{15+7x}</mrow>
+          <mrow>10x\amp=-20</mrow>
+          <mrow>\divideunder{10x}{10}\amp=\divideunder{-20}{10}</mrow>
+          <mrow>x\amp=-2</mrow>
+        </md>
+        Let's check our proposed solution of <m>-2</m>.
+        <md>
+          <mrow>3(x-5)\amp=-7(x+5)</mrow>
+          <mrow>3(\highlight{-2}-5)\amp\stackrel{?}{=}-7(\highlight{-2}+5)</mrow>
+          <mrow>3 \cdot -7\amp\stackrel{?}{=}-7 \cdot 3</mrow>
+          <mrow>-21\amp\stackrel{\checkmark}{=}-21</mrow>
+        </md>
+        The solution to the stated equation is <m>-2</m> and the solution set is <m>\{-2\}</m>.
+      </p>
+    </solution>
+  </example>
+  
+  <example>
+    <statement>
+      <p>
+        Determine the solution and solution set for the equation <m>3w+7-8w=5+8w+2-5w</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by combining the like terms on the left side of the equation and the like terms on the right side of the equation.
+        <md>
+          <mrow>3w+7-8w\amp=5+8w+2-5w</mrow>
+          <mrow>-5w+7\amp=3w+7</mrow>
+        </md>
+        We can proceed to isolating <m>w</m>.
+        <md>
+          <mrow>-5w+7\amp=3w+7</mrow>
+          <mrow>-5w+7\subtractright{7}\subtractright{3w}\amp=3w+7\subtractright{7}\subtractright{3w}</mrow>
+          <mrow>-8w\amp=0</mrow>
+          <mrow>\divideunder{-8w}{-8}\amp=\divideunder{0}{-8}</mrow>
+          <mrow>w\amp=0</mrow>
+        </md>
+        Let's check <m>0</m> in the original equation.
+        <md>
+          <mrow>3w+7-8w\amp=5+8w+2-5w</mrow>
+          <mrow>3 \cdot \highlight{0}+7-8 \cdot \highlight{0}\amp\stackrel{?}{=}5+8 \cdot \highlight{0}+2-5 \cdot \highlight{0}</mrow>
+          <mrow>0+7-0\amp\stackrel{?}{=}5+0+2-0</mrow>
+          <mrow>7\amp\stackrel{\checkmark}{=}7</mrow>
+        </md>
+        The solution is <m>0</m> and the solution set is <m>\{0\}</m>.
+      </p>
+    </solution>
+  </example>
+  
+  <example>
+    <statement>
+      <p>
+        Determine the solution and solution set for the equation <m>x-2(x-3)=4(2x+3)-12</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We need to expand both sides of the equation and combine the like terms on each side of the equation.  We can then proceed to isolate <m>x</m>.
+        <md>
+          <mrow>x-2(x-3)\amp=4(2x+3)-12</mrow>
+          <mrow>x-2x+6\amp=8x+12-12</mrow>
+          <mrow>-x+6\amp=8x</mrow>
+          <mrow>-x+6\addright{x}\amp=8x\addright{x}</mrow>
+          <mrow>6\amp=9x</mrow>
+          <mrow>\divideunder{6}{9}\amp=\divideunder{9x}{9}</mrow>
+          <mrow>\frac{2}{3}\amp=x</mrow>
+        </md>
+        Let's check the apparent solution in the original equation.
+        <md>
+          <mrow>x-2(x-3)\amp=4(2x+3)-12</mrow>
+          <mrow>\highlight{\frac{2}{3}}-2\left(\highlight{\frac{2}{3}}-3\right)\amp\stackrel{?}{=}4\left(\frac{2}{1} \cdot \highlight{\frac{2}{3}}+3\right)-12</mrow>
+          <mrow>\frac{2}{3}-2\left(\frac{2}{3}-\frac{9}{3}\right)\amp\stackrel{?}{=}4\left(\frac{4}{3}+\frac{9}{3}\right)-12</mrow>
+          <mrow>\frac{2}{3}-\frac{2}{1} \cdot -\frac{7}{3})\amp\stackrel{?}{=}\frac{4}{1} \cdot \frac{13}{3})-12</mrow>
+          <mrow>\frac{2}{3}+\frac{14}{3}\amp\stackrel{?}{=}\frac{52}{3}-\frac{36}{3}</mrow>
+          <mrow>\frac{16}{3}\amp\stackrel{\checkmark}{=}\frac{16}{3}</mrow>
+        </md>
+        The solution to the given equation is <m>\frac{2}{3}</m> and the solution set is <m>\left\{\frac{2}{3}\right\}</m>.
+      </p>
+    </solution>
+  </example>
+  
+  <example>
+    <statement>
+      <p>
+        Determine the solution and solution set for the equation <m>3(6t-5)+5(2-4t)=3-2t</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Before focusing on isolating <m>t</m>, we need to expand the left side of the equation and add the like terms on that side of the equation.
+        <md>
+          <mrow>3(6t-5)+5(2-4t)\amp=3-2t</mrow>
+          <mrow>18t-15+10-20t\amp=3-2t</mrow>
+          <mrow>-2t-5\amp=3-2t</mrow>
+          <mrow>-2t-5\addright{5+2t}\amp=3-2t\addright{5+2t}</mrow>
+          <mrow>0\amp=8</mrow>
+        </md>
+        The last equation is a contradiction, which indicates that the given equation has no solutions.  The solution set for the given equation is <m>\emptyset</m>.
+      </p>
+    </solution>
+  </example>
+  
+  <example>
+    <statement>
+      <p>
+        Determine the solution and solution set for the equation <m>\frac{3}{2}(5y+2)=2-2\left(\frac{2}{3}y-\frac{1}{2}\right)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We'll begin by clearing the fractions away from the equation.  The least common denominator of all of the fractions in the equation is <m>6</m>, so we'll begin by multiplying both sides of the equation by <m>6</m>.  We'll then simplify each side of the equation before focusing our attention on isolating <m>y</m>.
+        <md>
+          <mrow>\frac{3}{2}(5y+2)\amp=2-2\left(\frac{2}{3}y-\frac{1}{2}\right)</mrow>
+          <mrow>\multiplyleft{6}\left(\frac{3}{2}(5y+2)\right)\amp=\multiplyleft{6}\left(2-2\left(\frac{2}{3}y-\frac{1}{2}\right)\right)</mrow>
+          <mrow>\frac{6}{1} \cdot \frac{3}{2}(5y+2)\amp=6 \cdot 2 - \frac{6}{1} \cdot \frac{2}{1} \left(\frac{2}{3}y-\frac{1}{2}\right)</mrow>
+          <mrow>9(5y+2)\amp=12 - \frac{12}{1} \left(\frac{2}{3}y-\frac{1}{2}\right)</mrow>
+          <mrow>9(5y+2)\amp=12 - \frac{12}{1} \cdot\frac{2}{3}y-\frac{12}{1} \cdot \frac{1}{2}</mrow>
+          <mrow>45y+18\amp=12-8y+6</mrow>
+          <mrow>45y+18\amp=18-8y</mrow>
+          <mrow>45y+18\subtractright{18}\addright{8y}\amp=18-8y\subtractright{18}\addright{8y}</mrow>
+          <mrow>53y\amp=0</mrow>
+          <mrow>\divideunder{53y}{53}\amp=\divideunder{0}{53}</mrow>
+          <mrow>y\amp=0</mrow>
+        </md>
+        Let's check <m>0</m> in the original equation.
+        <md>
+          <mrow>\frac{3}{2}(5y+2)\amp=2-2\left(\frac{2}{3}y-\frac{1}{2}\right)</mrow>
+          <mrow>\frac{3}{2}(5 \cdot \highlight{0}+2)\amp\stackrel{?}{=}2-2\left(\frac{2}{3} \cdot \highlight{0}-\frac{1}{2}\right)</mrow>
+          <mrow>\frac{3}{2}(0+2)\amp\stackrel{?}{=}2-2\left(0-\frac{1}{2}\right)</mrow>
+          <mrow>\frac{3}{2} \cdot \frac{2}{1}\amp\stackrel{?}{=}2-\frac{2}{1} \cdot -\frac{1}{2}</mrow>
+          <mrow>3\amp\stackrel{?}{=}2+1</mrow>
+          <mrow>3\amp\stackrel{\checkmark}{=}3</mrow>
+        </md>
+        The solution to the stated equation is <m>0</m> and the solution set is <m>\{0\}</m>.
+      </p>
+    </solution>
+  </example>
+
+  <exercises>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine the solution and solution set for each of the following equations
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the solution and solution set for the equation <m>2(t-3)-4(2-t)=4</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We'll begin by expanding on the left side of the equation and combing the like terms on that side of the equation.  We'll then turn our attention to isolating the variable <m>t</m>.
+            <md>
+              <mrow>2(t-3)-4(2-t)\amp=4</mrow>
+              <mrow>2t-6-8+4t\amp=4</mrow>
+              <mrow>6t-14\amp=4</mrow>
+              <mrow>6t-14\addright{14}\amp=4\addright{14}</mrow>
+              <mrow>6t\amp=18</mrow>
+              <mrow>\divideunder{6t}{6}\amp=\divideunder{18}{6}</mrow>
+              <mrow>t\amp=3</mrow>
+            </md>
+            Let's check the value of <m>3</m> in the stated equation.
+            <md>
+              <mrow>2(t-3)-4(2-t)\amp=4</mrow>
+              <mrow>2(\highlight{3}-3)-4(2-\highlight{3})\amp\stackrel{?}{=}4</mrow>
+              <mrow>2 \cdot 0-4 \cdot -1\amp\stackrel{?}{=}4</mrow>
+              <mrow>0+4\amp\stackrel{?}{=}4</mrow>
+              <mrow>4\amp\stackrel{\checkmark}{=}4</mrow>
+            </md>
+            The solution to the stated equation is <m>3</m> and the solution set is <m>\{3\}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the solution and solution set for the equation <m>-8-7x=2(4+3x)-(13x+16)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We'll begin by expanding on the right side of the equation and combing the like terms on that side of the equation.  We'll then turn our attention to isolating the variable <m>x</m>.
+          </p>
+          <md>
+            <mrow>-8-7x\amp=2(4+3x)-(13x+16)</mrow>
+            <mrow>-8-7x\amp=8+6x-13x-16</mrow>
+            <mrow>-8-7x\amp=-7x-8</mrow>
+            <mrow>-8-7x\addright{8+7x}\amp=-7x-8\addright{8+7x}</mrow>
+            <mrow>0\amp=0</mrow>
+          </md>
+          The last equation is an identity.  This tells us that every real number is a solution to the given equation and that the solution set for the equation is <m>\mathbb{R}</m>.
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the solution and solution set for the equation <m>\frac{w-1}{2}=\frac{w+1}{3}-\frac{1}{2}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We'll begin by clearing the equation of fractions.  The least common denominator of the fractions in the equation is <m>6</m>, so we'll begin by multiplying both sides of the equation by <m>6</m>.  We'll then expand and combine the like terms on the both sides of the equation and finally turn our attention to isolating <m>w</m>.
+          </p>
+          <md>
+            <mrow>\frac{w-1}{2}\amp=\frac{w+1}{3}-\frac{1}{2}</mrow>
+            <mrow>\multiplyleft{6}\left(\frac{w-1}{2}\right)\amp=\multiplyleft{6}\left(\frac{w+1}{3}-\frac{1}{2}\right)</mrow>
+            <mrow>\frac{6}{1} \cdot \frac{w-1}{2}\amp=\frac{6}{1} \cdot \frac{w+1}{3}-\frac{6}{1} \cdot \frac{1}{2}</mrow>
+            <mrow>3(w-1)\amp=2(w+1)-3</mrow>
+            <mrow>3w-3\amp=2w+2-3</mrow>
+            <mrow>3w-3\amp=2w-1</mrow>
+            <mrow>3w-3\addright{3}\subtractright{w}\amp=2w-1\addright{3}\subtractright{w}</mrow>
+            <mrow>w\amp=2</mrow>
+          </md>
+          Lets check our potential solution, <m>2</m>, in the original equation.
+          <md>
+            <mrow>\frac{w-1}{2}\amp=\frac{w+1}{3}-\frac{1}{2}</mrow>
+            <mrow>\frac{\highlight{2}-1}{2}\amp\stackrel{?}{=}\frac{\highlight{2}+1}{3}-\frac{1}{2}</mrow>
+            <mrow>\frac{1}{2}\amp\stackrel{?}{=}\frac{3}{3}-\frac{1}{2}</mrow>
+            <mrow>\frac{1}{2}\amp\stackrel{?}{=}1-\frac{1}{2}</mrow>
+            <mrow>\frac{1}{2}\amp\stackrel{\checkmark}{=}\frac{1}{2}</mrow>
+          </md>
+          The solution is <m>2</m> and the solution set is <m>\{2\}</m>.
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the solution and solution set for the equation <m>4=2(x-1)+\frac{1}{2}(x+4)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We'll begin by multiplying both sides of the equation by <m>2</m> to eliminate the fraction from the equation.  We'll then expand the left side of the equation and combine the like terms.  Finally, we'll isolate <m>x</m> on the right side of the equation (since that is the only side on which the variable appears).
+            <md>
+              <mrow>4\amp=2(x-1)+\frac{1}{2}(x+4)</mrow>
+              <mrow>\multiplyleft{2}4\amp=\multiplyleft{2}\left(2(x-1)+\frac{1}{2}(x+4)\right)</mrow>
+              <mrow>8\amp=2 \cdot 2(x-1)+\frac{2}{1} \cdot \frac{1}{2} (x+4)</mrow>
+              <mrow>8\amp=4(x-1)+1(x+4)</mrow>
+              <mrow>8\amp=4x-4+x+4</mrow>
+              <mrow>8\amp=5x</mrow>
+              <mrow>\divideunder{8}{5}\amp=\divideunder{5x}{5}</mrow>
+              <mrow>\frac{8}{5}\amp=x</mrow>
+            </md>
+            Let's check <m>\frac{8}{5}</m> in the stated equation.
+            <md>
+              <mrow>4\amp=2(x-1)+\frac{1}{2}(x+4)</mrow>
+              <mrow>4\amp\stackrel{?}{=}2\left(\highlight{\frac{8}{5}}-1\right)+\frac{1}{2}\left(\highlight{\frac{8}{5}}+4\right)</mrow>
+              <mrow>4\amp\stackrel{?}{=}2\left(\frac{8}{5}-\frac{5}{5}\right)+\frac{1}{2}\left(\frac{8}{5}+\frac{20}{5}\right)</mrow>
+              <mrow>4\amp\stackrel{?}{=}\frac{2}{1} \cdot \frac{3}{5}+\frac{1}{2} \cdot \frac{28}{5}</mrow>
+              <mrow>4\amp\stackrel{?}{=}\frac{6}{5}+\frac{14}{5}</mrow>
+              <mrow>4\amp\stackrel{?}{=}\frac{20}{5}</mrow>
+              <mrow>4\amp\stackrel{\checkmark}{=}4</mrow>
+            </md>
+            The solution to the stated equation is <m>\frac{8}{5}</m> and the solution set is <m>\left\{\frac{8}{5}\right\}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the solution and solution set for the equation <m>\frac{6y+3}{5}+\frac{4y-7}{3}+3=0</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We'll begin by multiplying both sides of the equation by <m>15</m> - this will clear away the fractions from the equation.  We will then expand the left side of the equation and combine the like terms.  We'll finish up by isolating <m>y</m> on the left side of the equation.
+            <md>
+              <mrow>\frac{6y+3}{5}+\frac{4y-7}{3}+3\amp=0</mrow>
+              <mrow>\multiplyleft{15}\left(\frac{6y+3}{5}+\frac{4y-7}{3}+3\right)\amp=\multiplyleft{15}0</mrow>
+              <mrow>\frac{15}{1} \cdot \frac{6y+3}{5}+\frac{15}{1} \cdot \frac{4y-7}{3}+15 \cdot 3\amp=15 \cdot 0</mrow>
+              <mrow>3(6y+3)+5(4y-7)+45\amp=0</mrow>
+              <mrow>18y+9+20y-35+45\amp=0</mrow>
+              <mrow>38y+19\amp=0</mrow>
+              <mrow>38y+19\subtractright{19}\amp=0\subtractright{19}</mrow>
+              <mrow>38y\amp=-19</mrow>
+              <mrow>\divideunder{38y}{38}\amp=\divideunder{-19}{38}</mrow>
+              <mrow>y\amp=-\frac{1}{2}</mrow>
+            </md>
+            Let's check <m>-\frac{1}{2}</m> in the given equation.
+            <md>
+              <mrow>\frac{6y+3}{5}+\frac{4y-7}{3}+3\amp=0</mrow>
+              <mrow>\frac{6 \cdot \highlight{-\frac{1}{2}}+3}{5}+\frac{4 \cdot \highlight{-\frac{1}{2}}-7}{3}+3\amp\stackrel{?}{=}0</mrow>
+              <mrow>\frac{-3+3}{5}+\frac{-2-7}{3}+3\amp\stackrel{?}{=}0</mrow>
+              <mrow>\frac{0}{5}+\frac{-9}{3}+3\amp\stackrel{?}{=}0</mrow>
+              <mrow>0-3+3\amp\stackrel{?}{=}0</mrow>
+              <mrow>0\amp\stackrel{\checkmark}{=}0</mrow>
+            </md>
+          </p>
+          The solution to the given equation is <m>-\frac{1}{2}</m> and the solution set is <m>\left\{-\frac{1}{2}\right\}</m>.
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the solution and solution set for the equation <m>4[2-4(x-1)]=9-(6x-35)</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We'll begin by expanding and combining like terms inside the square brackets.  We'll then expand both sides of the equation and combine like terms on each side of the equation.  We'll finish up by isolating <m>x</m> on the left side of the equation.
+            <md>
+              <mrow>4[2-4(x-1)]\amp=9-(6x-35)</mrow>
+              <mrow>4[2-4x+4]\amp=9-(6x-35)</mrow>
+              <mrow>4[-4x+6]\amp=9-(6x-35)</mrow>
+              <mrow>-16x+24\amp=9-6x+35</mrow>
+              <mrow>-16x+24\amp=-6x+44</mrow>
+              <mrow>-16x+24\subtractright{24}\addright{6x}\amp=-6x+44\subtractright{24}\addright{6x}</mrow>
+              <mrow>-10x\amp=20</mrow>
+              <mrow>\divideunder{-10x}{-10}\amp=\divideunder{20}{-10}</mrow>
+              <mrow>x\amp=-2</mrow>
+            </md>
+            Let's check <m>-2</m> in the original equation.
+            <md>
+              <mrow>4[2-4(x-1)]\amp=9-(6x-35)</mrow>
+              <mrow>4[2-4(\highlight{-2}-1)]\amp\stackrel{?}{=}9-(6 \cdot \highlight{-2}-35)</mrow>
+              <mrow>4[2-4 \cdot -3]\amp\stackrel{?}{=}9-(-12-35)</mrow>
+              <mrow>4[2+12]\amp\stackrel{?}{=}9-(-47)</mrow>
+              <mrow>4 \cdot 14\amp\stackrel{?}{=}9+47</mrow>
+              <mrow>56\amp\stackrel{\checkmark}{=}56</mrow>
+            </md>
+            The solution to the stated equation is <m>-2</m> and the solution set is <m>\{-2\}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+  </exercises>
+
+
+  
+</section>

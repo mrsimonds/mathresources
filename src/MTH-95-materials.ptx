@@ -12,8 +12,11 @@
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="MTH-95-materials" target="blank">
   <title>Topics Covered in MTH 95</title>
 
-  <p>
-    Please note that the documents will open in new windows.
+  <paragraphs>
+    <title>Explanations, Examples, and Exercises</title>
+    <p></p>
+    <p>
+      Please note that the documents open in new windows.
     <ul>
       <li>
         <url href="https://spot.pcc.edu/slc/mathresources/output/html/factoring-greatest-factor.html" target="blank">Factoring the Greatest Common Factor</url>
@@ -67,7 +70,7 @@
         <url href="https://spot.pcc.edu/slc/mathresources/output/html/parabolas-vertex-form.html" target="blank">The Vertex Form of the Equation of a Parabola</url>
       </li>
       <li>
-        <url href="https://spot.pcc.edu/slc/mathresources/output/html/quadratic-equationssquare-root-method.html" target="blank">Solving Quadratic Equations by Completing the Square</url>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/quadratic-equations-completing-the-square.html" target="blank">Solving Quadratic Equations by Completing the Square</url>
       </li>
       <li>
         <url href="https://spot.pcc.edu/slc/mathresources/output/html/parabolas-completing-the-square.html" target="blank">Graphing Parabolas by Completing the Square</url>
@@ -85,6 +88,213 @@
         <url href="https://spot.pcc.edu/slc/mathresources/output/html/functions-inequalities.html" target="blank">Using Graphs to Determine the Solutions to Inequalities</url>
       </li>
     </ul>
-  </p>
+    </p>
+  </paragraphs>
+  <paragraphs>
+    <title>GeoGebra Applets</title>
+    <p></p>
+    <p>
+      Please note that the Applets open in new windows.
+      <ul>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-determine-GCF.html" target="blank">Determining the Greatest Common Factor.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-GCF.html" target="blank">Factoring the Greatest Common Factor.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-leading-coefficient-one-one.html" target="blank">Factoring trinomials with a leading coefficient of one - part one.  (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-leading-coefficient-one-two.html" target="blank">Factoring trinomials with a leading coefficient of one - part two.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-by-grouping.html" target="blank">Factoring by Grouping.  (Drill Application)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-leading-coefficient-not-one-one.html" target="blank">Factoring trinomials with a leading coefficient that is not one - part one.  (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-leading-coefficient-not-one-two.html" target="blank">Factoring trinomials with a leading coefficient that is not one - part two.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-leading-coefficient-not-one-three.html" target="blank">Factoring trinomials with a leading coefficient that is not one - part three.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-difference-of-squares-one-variable.html" target="blank">Factoring difference of squares that have one variable.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-difference-of-squares-two-variables.html" target="blank">Factoring difference of squares that have two variables.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-sum-difference-of-cubes-one-variable.html" target="blank">Factoring sum and difference of cubes that have one variable.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-factor-sum-difference-of-cubes-two-variables.html" target="blank">Factoring sum and difference of cubes that have two variables.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-intro-to-function-notation-one.html" target="blank">Introduction to Function Notation - Part One.  (Graphical Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-intro-to-function-notation-two.html" target="blank">Introduction to Function Notation - Part Two.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-advanced-function-notation.html" target="blank">Simplifying <m>f(x+y)</m> for a quadratic expression <m>f</m>.  (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-addition-of-rational-expressions.html" target="blank">Adding Rational expressions.  (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-solving-rational-equations.html" target="blank">Solving Rational Equations (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-quadratic-equation-complete-the-square.html" target="blank">Solving quadratic equations after first completing the square.  (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-vertex-form.html" target="blank">Graphing parabolas when the equation is stated in vertex form.  (Graphing Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-parabola-complete-square-one.html" target="blank">Graphing a parabola after completing the square when the leading coefficient is one.  (Graphing and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-parabola-complete-square-two.html" target="blank">Graphing a parabola after completing the square when the leading coefficient is two.  (Graphing and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-parabola-complete-square-negative-one.html" target="blank">Graphing a parabola after completing the square when the leading coefficient is negative one.  (Graphing and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-solving-inequalities-graphically-one.html" target="blank">Using a graph to solve an inequality - part one.  (Graphing Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-solving-inequalities-graphically-two.html" target="blank">Using a graph to solve an inequality - part two.  (Graphing Applet)</url>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </paragraphs>
+  <paragraphs>
+    <title>Videos Created by Ann Cary, Scot Leavitt, and Emily Nelson</title>
+    <p></p>
+
+    <p>
+      The links take you to YouTube Playlists which will open either in a new window or in a Youtube App.
+      <ul>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-dPuberyCYlTysUnhyan6TA" target="blank">Greatest common factor</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-fl9lK9reavn63xu4Uu1hHT" target="blank">Factoring by grouping</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-fLNMTmn2iG3E5n-aYciDx0" target="blank">Factoring trinomials with leading coefficients of <m>1</m></url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-fGEM55QCpmQXunxIbtfL69" target="blank">Factoring trinomials where the leading coefficients are not <m>1</m></url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-eKorFL2thBlq6MadwRc0F2" target="blank">Factoring special polynomials</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-dmLIf3S5QjgZTOq6000psK" target="blank">Factoring strategies</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-eVVT6gBsJq_o7NFyUGC8BY" target="blank">Solving quadratic equations by factoring</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PL2qOxw8-rmqbrhb7lhsmId3_DcMAkM7eX" target="blank">Completing the Square</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PL2qOxw8-rmqalGHspbEL95UxzLO7f6-P8" target="blank">More on Complex Solutions to Quadratic Equations</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PL2qOxw8-rmqbg2ONVwhgUwzSOvn-flxxM" target="blank">Function Basics</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PL2qOxw8-rmqZL32FLoEt4KHfZoNFhHwql" target="blank">Domain and Range</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PL2qOxw8-rmqbHBOL9kGQIeEhHOdq4Xho-" target="blank">Using Technology to Explore Functions</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PL2qOxw8-rmqZEdd4ZZCSoSmvUWy3rmc3f" target="blank">Simplifying Expressions using Function Notation</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PL2qOxw8-rmqavlviYhgi6WCnEZqjj_t_I" target="blank">Technical Definition of a Function</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PL2qOxw8-rmqbD97B34ahIC3GZuCbOsuv0" target="blank">Introduction to Rational Functions</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PL2qOxw8-rmqY1UWaEwopWox0VTCUpMu-_" target="blank">Multiplication and Division of Rational Expressions</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PL2qOxw8-rmqZzni6YF-PmBJ4coE0q6fsL" target="blank">Addition and Subtraction of Rational Expressions</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PL2qOxw8-rmqaDfcaElR-6aXCgl1UX0eFD" target="blank">Complex Fractions</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PL2qOxw8-rmqa2z-INm-8ydWX1AaVX24dW" target="blank">Solving Rational Equations</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PL2qOxw8-rmqY6R0_4zoXCO07Yq0c0SRkH" target="blank">Introduction to Absolute Value</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PL2qOxw8-rmqbmvkqHOj6b9nynKxgvcIQF" target="blank">Compound Inequalities</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PL2qOxw8-rmqZFDElVz4I9UQf9TtDoDdm4" target="blank">Absolute Value Equations and Inequalities</url>
+        </li>
+      </ul>
+      
+    </p>
+  </paragraphs>
 
 </section>

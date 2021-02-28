@@ -85,15 +85,19 @@
     You can use <xref ref="radicals-simplifying-square-roots-geogebra-figure-1">Figure</xref> to generate several more examples/practice problems with step by step solutions.
   </p>
 
-  <figure xml:id="radicals-simplifying-square-roots-geogebra-figure-1">
-    <caption>Show the steps of simplifying square roots.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/radicals-simplify-square-roots.ggb">
-        setPerspective("G");
-        setAxesVisible(0,0);
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+    <figure xml:id="radicals-simplifying-square-roots-geogebra-figure-1">
+      <caption>
+        Show the steps of simplifying square roots.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/radicals-simplify-square-roots.ggb">
+          setPerspective("G");
+          setAxesVisible(0,0);
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
   <p>
     For a square root expression to be fully simplified, we need to identify the greatest perfect square that divides evenly into the radicand.  Consider, for example, <m>\sqrt{48}</m>.  The work below is correct, but the square root is not fully simplified <mdash/> can you see why?

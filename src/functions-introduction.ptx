@@ -98,18 +98,22 @@
       If we were asked to evaluate the function at <m>4</m>, we would first locate the point with an <m>x</m>-coordinate of <m>4</m>.  Then the function value would be the corresponding <m>y</m>-coordinate.  In this case the relevant point is <m>(4,0)</m> and we would report the function value by writing <m>f(4)=0</m>. You can use <xref ref="functions-introduction-1">Figure</xref> to explore this idea further.
     </p>
 
-    <figure xml:id="functions-introduction-1">
-      <caption>Click and drag the point along the curve.  Note the correspondence between the coordinates of the point and the function value at the <m>x</m>-coordinate of the point.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/function-intro-graph.ggb">
-          setPerspective("G");
-          setAxisSteps(1, 1, 1, 1);
-          setCoordSystem(-6, 6, -6, 6);
-          setGridVisible(1);         
-          setAxisLabels(1,"x","y","z");
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="functions-introduction-1">
+        <caption>
+          Click and drag the point along the curve.  Note the correspondence between the coordinates of the point and the function value at the <m>x</m>-coordinate of the point.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/function-intro-graph.ggb">
+            setPerspective("G");
+            setAxisSteps(1, 1, 1, 1);
+            setCoordSystem(-6, 6, -6, 6);
+            setGridVisible(1);         
+            setAxisLabels(1,"x","y","z");
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
     <p>
       Now suppose that we were asked to solve the equation <m>g(x)=4</m>.  Just like any other equation with the variable <m>x</m>, we are looking for all values that we could substitute for <m>x</m> that would result in a true statement.  In words, the equation <m>g(x)=4</m> could be stated as "determine the values of <m>x</m> for which the value of the function<m>g</m> is <m>2</m>."  Since the function value corresponds the to the <m>y</m>-coordinate, we can further refine the charge as follows: "locate the points on the curve <m>y=g(x)</m> with <m>y</m>-coordinates equal to <m>4</m>, then the solutions to <m>g(x)=4</m> are the <m>x</m>-coordinates of those points"
@@ -117,7 +121,7 @@
     <sidebyside widths="48% 48%" margins="0%">
 
       <p>
-        In <xref ref="functions-introduction-figure-2">Figure</xref> I've added the line <m>y=4</m> to a graph of <m>y=g(x)</m>.  We can see that the line intersects the function <m>g</m> at the points <m>(-3,4)</m> and <m>(0,4)</m>, so the solutions to the equation <m>g(x)=4</m> are <m>-3</m> and <m>4</m>.  Similarly, if we drew the line <m>y=1</m>, we see that is would intersect <m>g</m> at the points <m>(-4.5,1)</m> and <m>(3,1)</m>, so the solutions to the equation <m>g(x)=1</m> are <m>-4.5</m> and <m>1</m>.
+        In <xref ref="functions-introduction-figure-2">Figure</xref> I've added the line <m>y=4</m> to a graph of <m>y=g(x)</m>.  We can see that the line intersects the function <m>g</m> at the points <m>(-3,4)</m> and <m>(0,4)</m>, so the solutions to the equation <m>g(x)=4</m> are <m>-3</m> and <m>0</m>.  Similarly, if we drew the line <m>y=1</m>, we see that is would intersect <m>g</m> at the points <m>(-4.5,1)</m> and <m>(3,1)</m>, so the solutions to the equation <m>g(x)=1</m> are <m>-4.5</m> and <m>3</m>.
       </p>
 
       <figure xml:id="functions-introduction-figure-2">
@@ -146,7 +150,7 @@
     </sidebyside>
     <sidebyside widths="73% 23%" margins="0%">
       <p>
-        Let's consider the equation <m>g(x)=-8</m>.  We can't draw the line <m>y=-8</m> onto <xref ref="functions-introduction-table-2">Table</xref>, nor can we see a point with an <m>y</m>-coordinate of <m>10</m>,so we'll have to take a different tact.  The arrow on the left side of <m>g</m> implies that <m>g</m> continues forever in the leftward direction with the same slope.  So one strategy we can employ is to use that slope to make a table for <m>g</m> until we find the point that has a <m>y</m>-coordinate of <m>-8</m>.  I've done that in <xref ref="functions-introduction-table-2">Table</xref>, and we can see that the relevant ordered pair is <m>(-8,-9)</m>.  From this we know that the solution to the equation <m>g(x)=-8</m> is <m>-9</m>.
+        Let's consider the equation <m>g(x)=-8</m>.  We can't draw the line <m>y=-8</m> onto <xref ref="functions-introduction-table-2">Table</xref>, nor can we see a point with an <m>y</m>-coordinate of <m>10</m>,so we'll have to take a different tact.  The arrow on the left side of <m>g</m> implies that <m>g</m> continues forever in the leftward direction with the same slope.  So one strategy we can employ is to use that slope to make a table for <m>g</m> until we find the point that has a <m>y</m>-coordinate of <m>-8</m>.  I've done that in <xref ref="functions-introduction-table-2">Table</xref>, and we can see that the relevant ordered pair is <m>(-9,-8)</m>.  From this we know that the solution to the equation <m>g(x)=-8</m> is <m>-9</m>.
       </p>
       <figure xml:id="functions-introduction-table-2">
         <caption><m>y=g(x)</m></caption>
@@ -204,15 +208,19 @@
       You can use <xref ref="functions-introduction-geogebra-2">Figure</xref> to further explore the replacement of <m>x</m> with a numerical value.  Notice that the value of <m>x</m> changes on both sides of the equal sign.
     </p>
 
-    <figure xml:id="functions-introduction-geogebra-2">
-      <caption>Use the slider to change the value of <m>x</m>.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/function-intro-formula.ggb">
-          setPerspective("G");
-          setAxesVisible(0,0);
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="functions-introduction-geogebra-2">
+        <caption>
+          Use the slider to change the value of <m>x</m>.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/function-intro-formula.ggb">
+            setPerspective("G");
+            setAxesVisible(0,0);
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
     <p>
       Let's see several more examples.

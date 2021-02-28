@@ -126,15 +126,19 @@
     </solution>
   </example>
 
-  <figure xml:id="absolute-value-isolation-geogebra-1">
-    <caption>Determine the solution set to the given equation.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/abs-value-equations.ggb">
-        setPerspective("G");
-        setAxesVisible(0,0);
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+    <figure xml:id="absolute-value-isolation-geogebra-1">
+      <caption>
+        Determine the solution set to the given equation.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/abs-value-equations.ggb">
+          setPerspective("G");
+          setAxesVisible(0,0);
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
   <exercises>
 

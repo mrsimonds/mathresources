@@ -16,16 +16,20 @@
       Let's begin with a discovery activity.  Move the slider in <xref ref="exponents-negative-geogebra-1">Figure</xref>  so that the exponent becomes negative.  What happens to the expression on the other side of the equal sign?  Can you make a guess as to the rule for negative exponents?
     </p>
 
-    <figure xml:id="exponents-negative-geogebra-1">
-      <caption>Make a conjecture on the meaning of a negative exponent.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-negative-discovery.ggb">
-          setPerspective("G");
-          setGridVisible(0); 
-          setAxesVisible(0,0);        
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="exponents-negative-geogebra-1">
+        <caption>
+          Make a conjecture on the meaning of a negative exponent.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-negative-discovery.ggb">
+            setPerspective("G");
+            setGridVisible(0); 
+            setAxesVisible(0,0);        
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
     <p>
       OK, let's dig into the mathematics of negative exponents.
@@ -211,27 +215,35 @@
       You can use <xref ref="exponents-negative-geogebra-2">Figure</xref> and <xref ref="exponents-negative-geogebra-3">Figure</xref> to generate random practice exercises.
     </p>
 
-    <figure xml:id="exponents-negative-geogebra-2">
-      <caption>Enter the letter that corresponds to the correct simplification.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-negative-simple.ggb">
-          setPerspective("G");
-          setGridVisible(0); 
-          setAxesVisible(0,0);        
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="exponents-negative-geogebra-2">
+        <caption>
+          Enter the letter that corresponds to the correct simplification.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-negative-simple.ggb">
+            setPerspective("G");
+            setGridVisible(0); 
+            setAxesVisible(0,0);        
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
-    <figure xml:id="exponents-negative-geogebra-3">
-      <caption>Make sure that your simplification does not include any negative exponents.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-all-properties.ggb">
-          setPerspective("G");
-          setGridVisible(0); 
-          setAxesVisible(0,0);        
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="exponents-negative-geogebra-3">
+        <caption>
+          Make sure that your simplification does not include any negative exponents.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-all-properties.ggb">
+            setPerspective("G");
+            setGridVisible(0); 
+            setAxesVisible(0,0);        
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
     <exercises>
 

@@ -13,10 +13,10 @@
   <title>Imaginary Numbers</title>
 
   <p>
-    When two numbers of the same sign are multiplied the result is always positive, and when zero is multiplied by itself the result is zero. Consequently, there is no real number that when squared results in <m>-1</m>.  However, the fact that a number does not reside on the real number line does not imply that it doesn't exist - the number simply does not reside on the real number line.
+    When two real numbers of the same sign are multiplied the result is always positive, and when zero is multiplied by itself the result is zero. Consequently, there is no real number that when squared results in <m>-1</m>.  However, the fact that a number does not reside on the real number line does not imply that it doesn't exist - the number simply does not reside on the real number line.
   </p>
   <p>
-    There is a number that you square with a result of <m>-1</m>, and the one symbol for that number is <m>\sqrt{-1}</m>.  As suggested, the number does not reside on the real number line.  However, it does exist on what we (unfortunately) call the imaginary number line.  Numbers on the imaginary number line always consist of two factors, a real number (called the imaginary coefficient) and "<m>i</m>" which is the name we assign to <m>\sqrt{-1}</m>.
+    There is a positive number that you square with a result of <m>-1</m>, and one symbol for that number is <m>\sqrt{-1}</m>.  Another symbol for the that number is <m>i</m>. More precisely, <m>i</m> is defined to be the positive number with the property that it squares to <m>-1</m>.  That is, <me>i^2=-1</me>. As suggested, the number <m>i</m> does not reside on the real number line.  However, it does exist on what we (unfortunately) call the imaginary number line.  Numbers on the imaginary number line always consist of two factors, a real number (called the imaginary coefficient) and "<m>i</m>".  The number <m>i</m> can be thought of as the positive square root of <m>-1</m>; i.e. <me>\sqrt{-1}=i</me>.
   </p>
   <p>
     So long as at last one of the factors is not negative, <m>\sqrt{ab}=\sqrt{a}\sqrt{b}</m>.  We can use this fact to find square roots of negative numbers other than <m>-1</m>.  
@@ -77,16 +77,20 @@
     You can use <xref ref="imaginary-numbers-geogebra-1">Figure</xref> to generate practice problems for simplifying imaginary numbers.  Try each step yourself before revealing the step in the applet.
   </p>
 
-  <figure xml:id="imaginary-numbers-geogebra-1">
-    <caption>Go through the steps of simplifying square roots of negative integers.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/imaginary-numbers.ggb">
-        setPerspective("G");
-        setGridVisible(0); 
-        setAxesVisible(0,0);        
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+    <figure xml:id="imaginary-numbers-geogebra-1">
+      <caption>
+        Go through the steps of simplifying square roots of negative integers.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/imaginary-numbers.ggb">
+          setPerspective("G");
+          setGridVisible(0); 
+          setAxesVisible(0,0);        
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
   <p>
     When multiplying two or more imaginary numbers, you want to use the associative and commutative properties of multiplication; this allows you to multiply the real number coefficients followed by the product of the <m>i</m> factors.  Then all occurrences of <m>i^2</m> are replaced by <m>-1</m> and the expression is further simplified.  

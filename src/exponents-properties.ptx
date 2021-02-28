@@ -16,16 +16,20 @@
     Recall that positive integer exponents keep track of the number of factors in an expression.  This is illustrated in <xref ref="exponents-properties-geogebra-1">Figure</xref>.
   </p>
 
-  <figure xml:id="exponents-properties-geogebra-1">
-    <caption>Positive integer exponents keep track of the number of factors in the expression.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-positive.ggb">
-        setPerspective("G");
-        setGridVisible(0); 
-        setAxesVisible(0,0);        
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+    <figure xml:id="exponents-properties-geogebra-1">
+      <caption>
+        Positive integer exponents keep track of the number of factors in the expression.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-positive.ggb">
+          setPerspective("G");
+          setGridVisible(0); 
+          setAxesVisible(0,0);        
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
   <p>
     The remainder of this age is concerned with several properties of exponents.  While you are learning these properties in the context of positive exponents, they also apply when the exponents are negative, rational (basically fractional), irrational, or even imaginary!
@@ -64,16 +68,20 @@
       You can see several more examples of the product-rule-of-exponents using <xref ref="exponents-properties-geogebra-2">Figure</xref>.
     </p>
 
-    <figure xml:id="exponents-properties-geogebra-2">
-      <caption>Look at several examples of the product rule of exponents.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-product-rule.ggb">
-          setPerspective("G");
-          setGridVisible(0); 
-          setAxesVisible(0,0);        
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="exponents-properties-geogebra-2">
+        <caption>
+          Look at several examples of the product rule of exponents.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-product-rule.ggb">
+            setPerspective("G");
+            setGridVisible(0); 
+            setAxesVisible(0,0);        
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
     <p>
        While you may very well be able to just count factors in your head without writing out the rule, I suggest that you write out the rule, at least at first.  Down the road you will likely encounter negative exponents and even fractional exponents, and when you get there counting factors won't work.  The good news is that the rules of exponents stay the same, no matter how bizarre the exponents become.  So if you do forget a rule, you can recreate the rule using small positive exponents and then apply that rule to your strange exponents.
@@ -115,16 +123,20 @@
       </p>
     </sidebyside>
 
-    <figure xml:id="exponents-properties-geogebra-7">
-      <caption>Look at several examples of the power-to-a-power rule of exponents.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-power-power-rule.ggb">
-          setPerspective("G");
-          setGridVisible(0); 
-          setAxesVisible(0,0);        
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="exponents-properties-geogebra-7">
+        <caption>
+          Look at several examples of the power-to-a-power rule of exponents.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-power-power-rule.ggb">
+            setPerspective("G");
+            setGridVisible(0); 
+            setAxesVisible(0,0);        
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
   </paragraphs>
 
@@ -191,16 +203,20 @@
       You can use <xref ref="exponents-properties-geogebra-6">Figure</xref> to practice these two rules in tandem.
     </p>
 
-    <figure xml:id="exponents-properties-geogebra-6">
-      <caption>Practice the product-to-a-power rule coupled with the power-to-a-power rule.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-product-to-a-power.ggb">
-          setPerspective("G");
-          setGridVisible(0); 
-          setAxesVisible(0,0);        
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="exponents-properties-geogebra-6">
+        <caption>
+          Practice the product-to-a-power rule coupled with the power-to-a-power rule.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-product-to-a-power.ggb">
+            setPerspective("G");
+            setGridVisible(0); 
+            setAxesVisible(0,0);        
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
   </paragraphs>
 
@@ -392,16 +408,20 @@
       You can see many more examples of this quotient-rule-of-exponents using <xref ref="exponents-properties-geogebra-3">Figure</xref>.
     </p>
 
-    <figure xml:id="exponents-properties-geogebra-3">
-      <caption>Look at several examples of this quotient rule of exponents.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-quotient-rule-1.ggb">
-          setPerspective("G");
-          setGridVisible(0); 
-          setAxesVisible(0,0);        
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="exponents-properties-geogebra-3">
+        <caption>
+          Look at several examples of this quotient rule of exponents.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-quotient-rule-1.ggb">
+            setPerspective("G");
+            setGridVisible(0); 
+            setAxesVisible(0,0);        
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
   </paragraphs>
   <paragraphs>
@@ -411,16 +431,20 @@
       You can see several examples of this rule using <xref ref="exponents-properties-geogebra-4">Figure</xref>.
     </p>
 
-    <figure xml:id="exponents-properties-geogebra-4">
-      <caption>Look at several examples of this quotient rule of exponents.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-quotient-rule-2.ggb">
-          setPerspective("G");
-          setGridVisible(0); 
-          setAxesVisible(0,0);        
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="exponents-properties-geogebra-4">
+        <caption>
+          Look at several examples of this quotient rule of exponents.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-quotient-rule-2.ggb">
+            setPerspective("G");
+            setGridVisible(0); 
+            setAxesVisible(0,0);        
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
     <p>
       One obvious issue is knowing when to use which quotient rule.  At the precalculus level the consensus is that we use whichever rule results in a positive exponent (assuming the two original exponents are not equal).
@@ -457,27 +481,35 @@
       You can practice the two quotient-rules-for-exponents using <xref ref="exponents-properties-geogebra-5">Figure</xref>.  You can practice combining the rules of exponents using <xref ref="exponents-properties-geogebra-8">Figure</xref>.
     </p>
 
-    <figure xml:id="exponents-properties-geogebra-5">
-      <caption>We use the property that results in a positive exponent (unless the factors divide to one).</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-quotient-rule-which.ggb">
-          setPerspective("G");
-          setGridVisible(0); 
-          setAxesVisible(0,0);        
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="exponents-properties-geogebra-5">
+        <caption>
+          We use the property that results in a positive exponent (unless the factors divide to one).
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-quotient-rule-which.ggb">
+            setPerspective("G");
+            setGridVisible(0); 
+            setAxesVisible(0,0);        
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
-    <figure xml:id="exponents-properties-geogebra-8">
-      <caption>Practice the rules of positive exponents.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-positive-properties.ggb">
-          setPerspective("G");
-          setGridVisible(0); 
-          setAxesVisible(0,0);        
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="exponents-properties-geogebra-8">
+        <caption>
+          Practice the rules of positive exponents.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/exponents-positive-properties.ggb">
+            setPerspective("G");
+            setGridVisible(0); 
+            setAxesVisible(0,0);        
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
   </paragraphs>
   <paragraphs>

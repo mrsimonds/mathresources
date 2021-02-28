@@ -68,15 +68,19 @@
     You can use <xref ref="factoring-gcf-geogebra-1">Figure</xref> to get some practice at determining the greatest common factor of several expressions.
   </p>
 
-  <figure xml:id="factoring-gcf-geogebra-1">
-    <caption>Practice Determining the Greatest Common Factor of Multiple Expressions</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/factor-greatest-factor.ggb">
-        setPerspective("G");
-        setAxesVisible(0,0);
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+    <figure xml:id="factoring-gcf-geogebra-1">
+      <caption>
+        Practice Determining the Greatest Common Factor of Multiple Expressions
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/factor-greatest-factor.ggb">
+          setPerspective("G");
+          setAxesVisible(0,0);
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
   <p>
     Let's determine and take out the GCF of the expression <me>x^3y^3z^7+x^4y-x^7yz</me>.  The variables that occur in all three terms are <m>x</m> and <m>y</m>.  The smallest exponent on <m>x</m> is <m>3</m> and the smallest exponent on <m>y</m> is (the hidden) <m>1</m>, so the GCF is <m>x^3y</m>.  Taking out the GCF we have <me>x^3y^3z^7+x^4y-x^7yz=x^3y(y^2z^7+x-x^4z)</me>.
@@ -132,15 +136,19 @@
     You can use <xref ref="factoring-gcf-geogebra-2">Figure</xref> to generate random factoring exercises.
   </p>
 
+  <exploration>
    <figure xml:id="factoring-gcf-geogebra-2">
-    <caption>Factoring Practice</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/factor-gcf.ggb">
-        setPerspective("G");
-        setAxesVisible(0,0);
-      </slate>
-    </interactive>
-  </figure>
+      <caption>
+        Factoring Practice
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/factor-gcf.ggb">
+          setPerspective("G");
+          setAxesVisible(0,0);
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
   <exercises>
 

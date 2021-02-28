@@ -43,9 +43,11 @@
         </md>
         We now check the solution of <m>-36</m> in the original equation.
         <md>
-          <mrow>\sqrt[4]{9-2 \cdot \highlight{-36}}\amp=3\text{ ?}</mrow>
-          <mrow>\sqrt[4]{9+72}\amp=81\text{ ?}</mrow>
-          <mrow>\sqrt[4]{81}\amp=3\,\checkmark</mrow>
+          <mrow>\sqrt[4]{9-2x}\amp=3</mrow>
+          <mrow>\sqrt[4]{9-2 \cdot \highlight{-36}}\amp\stackrel{?}{=}3</mrow>
+          <mrow>\sqrt[4]{9+72}\amp\stackrel{?}{=}81</mrow>
+          <mrow>\sqrt[4]{81}\amp\stackrel{?}{=}3</mrow>
+          <mrow>3\amp\stackrel{\checkmark}{=}3</mrow>
         </md>
         The solution set to the equation <m>\sqrt[4]{9-2x}=3</m> is <m>\{-36\}</m>.
       </p>
@@ -100,12 +102,14 @@
         </md>
         Let's check our solution.
         <md>
-          <mrow>3\sqrt{\frac{\highlight{-\frac{13}{9}}+7}{2}}\amp=5\text{ ?}</mrow>
-          <mrow>3\sqrt{\frac{-\frac{13}{9}+\frac{63}{9}}{2}}\amp=5\text{ ?}</mrow>
-          <mrow>3\sqrt{\frac{\frac{50}{9}}{\frac{2}{1}}}\amp=5\text{ ?}</mrow>
-          <mrow>3\sqrt{\frac{50}{9} \cdot \frac{1}{2}}\amp=5\text{ ?}</mrow>
-          <mrow>3\sqrt{\frac{25}{9}}\amp=5\text{ ?}</mrow>
-          <mrow>3 \cdot \frac{5}{3}\amp=5\,\checkmark</mrow>
+          <mrow>3\sqrt{\frac{x+7}{2}}\amp=5</mrow>
+          <mrow>3\sqrt{\frac{\highlight{-\frac{13}{9}}+7}{2}}\amp\stackrel{?}{=}5</mrow>
+          <mrow>3\sqrt{\frac{-\frac{13}{9}+\frac{63}{9}}{2}}\amp\stackrel{?}{=}5</mrow>
+          <mrow>3\sqrt{\frac{\frac{50}{9}}{\frac{2}{1}}}\amp\stackrel{?}{=}5</mrow>
+          <mrow>3\sqrt{\frac{50}{9} \cdot \frac{1}{2}}\amp\stackrel{?}{=}5</mrow>
+          <mrow>3\sqrt{\frac{25}{9}}\amp\stackrel{?}{=}5</mrow>
+          <mrow>3 \cdot \frac{5}{3}\amp\stackrel{?}{=}5</mrow>
+          <mrow>5\amp\stackrel{\checkmark}{=}5</mrow>
         </md>
         The solution set is <m>\{-\frac{13}{9}\}</m>.
       </p>
@@ -134,9 +138,11 @@
         </md>
         Let's check the value of <m>-39</m> in the original equation.
         <md>
-          <mrow>4\sqrt[5]{\frac{2 \cdot \highlight{-39}}{3}-6}\amp=-8\text{ ?}</mrow>
-          <mrow>4\sqrt[5]{-32}\amp=-8\text{ ?}</mrow>
-          <mrow>4 \cdot -2\amp=-8\,\checkmark</mrow>
+          <mrow>4\sqrt[5]{\frac{2x}{3}-6}\amp=-8</mrow>
+          <mrow>4\sqrt[5]{\frac{2 \cdot \highlight{-39}}{3}-6}\amp\stackrel{?}{=}-8</mrow>
+          <mrow>4\sqrt[5]{-32}\amp\stackrel{?}{=}-8</mrow>
+          <mrow>4 \cdot -2\amp\stackrel{?}{=}-8</mrow>
+          <mrow>-8\amp\stackrel{\checkmark}{=}-8</mrow>
         </md>
         The solution set to the stated equation is <m>\{-39\}</m>.
       </p>
@@ -172,11 +178,13 @@
         </md>
         We now check the potential solution in the original equation.
         <md>
-          <mrow>\frac{\sqrt{18+2 \cdot \highlight{\frac{63}{2}}}}{3}-7\amp=-4\text{ ?}</mrow>
-          <mrow>\frac{\sqrt{18+63}}{3}-7\amp=-4\text{ ?}</mrow>
-          <mrow>\frac{\sqrt{81}}{3}-7\amp=4\text{ ?}</mrow>
-          <mrow>\frac{9}{3}-7\amp=-4\text{ ?}</mrow>
-          <mrow>3-7\amp=-4\,\checkmark</mrow>
+          <mrow>\frac{\sqrt{18+2x}}{3}-7\amp=-4</mrow>
+          <mrow>\frac{\sqrt{18+2 \cdot \highlight{\frac{63}{2}}}}{3}-7\amp\stackrel{?}{=}-4</mrow>
+          <mrow>\frac{\sqrt{18+63}}{3}-7\amp\stackrel{?}{=}-4</mrow>
+          <mrow>\frac{\sqrt{81}}{3}-7\amp\stackrel{?}{=}-4</mrow>
+          <mrow>\frac{9}{3}-7\amp\stackrel{?}{=}-4</mrow>
+          <mrow>3-7\amp\stackrel{?}{=}-4</mrow>
+          <mrow>-4\amp\stackrel{\checkmark}{=}-4</mrow>
         </md>
         The solution set to the given equation is <m>\frac{63}{2}</m>.
       </p>
@@ -207,11 +215,12 @@
         </md>
         We now check our potential solution in the original equation.
         <md>
-          <mrow>2-3\sqrt[3]{4-5 \cdot \highlight{1}}\amp=7+2\sqrt[3]{4-5 \cdot \highlight{1}}\text{ ?}</mrow>
-          <mrow>2-3\sqrt[3]{-1}\amp=7+2\sqrt[3]{-1}\text{ ?}</mrow>
-          <mrow>2-3 \cdot -1\amp=7+2 \cdot -1\text{ ?}</mrow>
-          <mrow>2+3\amp=7-2\text{ ?}</mrow>
-          <mrow>5\amp=5\,\checkmark</mrow>
+          <mrow>2-3\sqrt[3]{4-5x}\amp=7+2\sqrt[3]{4-5x}</mrow>
+          <mrow>2-3\sqrt[3]{4-5 \cdot \highlight{1}}\amp\stackrel{?}{=}7+2\sqrt[3]{4-5 \cdot \highlight{1}}</mrow>
+          <mrow>2-3\sqrt[3]{-1}\amp\stackrel{?}{=}7+2\sqrt[3]{-1}</mrow>
+          <mrow>2-3 \cdot -1\amp\stackrel{?}{=}7+2 \cdot -1</mrow>
+          <mrow>2+3\amp\stackrel{?}{=}7-2</mrow>
+          <mrow>5\amp\stackrel{\checkmark}{=}5</mrow>
         </md>
         The solution set is <m>\{1\}</m>.
       </p>
@@ -248,14 +257,16 @@
         </md>
         We now check each potential solution in the original equation.
         <md>
-          <mrow>3 \cdot \highlight{\frac{4}{9}}+\sqrt{\highlight{\frac{4}{9}}}-2\amp=0\text{ ?}</mrow>
-          <mrow>\frac{4}{3}+\frac{2}{3}-2\amp=0\text{ ?}</mrow>
-          <mrow>0\amp=0\,\checkmark</mrow>
+          <mrow>3y+\sqrt{y}-2\amp=0</mrow>
+          <mrow>3 \cdot \highlight{\frac{4}{9}}+\sqrt{\highlight{\frac{4}{9}}}-2\amp\stackrel{?}{=}0</mrow>
+          <mrow>\frac{4}{3}+\frac{2}{3}-2\amp\stackrel{?}{=}0</mrow>
+          <mrow>0\amp\stackrel{\checkmark}{=}0</mrow>
         </md>
         <md>
-          <mrow>3 \cdot \highlight{1}+\sqrt{\highlight{1}}-2\amp=0\text{ ?}</mrow>
-          <mrow>3 \cdot 1 +1-2\amp=0\text{ ?}</mrow>
-          <mrow>2\amp=0 \text{ false}</mrow>
+          <mrow>3y+\sqrt{y}-2\amp=0</mrow>
+          <mrow>3 \cdot \highlight{1}+\sqrt{\highlight{1}}-2\amp\stackrel{?}{=}0</mrow>
+          <mrow>3 \cdot 1 +1-2\amp\stackrel{?}{=}0</mrow>
+          <mrow>2\amp \neq 0</mrow>
         </md>
         The solution set is <m>\{\frac{4}{9}\}</m>.
       </p>
@@ -296,10 +307,12 @@
         </md>
         Let's check our potential solution in our original equation.
         <md>
-          <mrow>\sqrt{1-7 \cdot \highlight{-5}}-2\sqrt{-6-3 \cdot \highlight{-5}}\amp=0\text{ ?}</mrow>
-          <mrow>\sqrt{36}-2\sqrt{9}\amp=0\text{ ?}</mrow>
-          <mrow>6-2 \cdot 3\amp=0\text{ ?}</mrow>
-          <mrow>6-6\amp=0\,\checkmark</mrow>
+          <mrow>\sqrt{1-7x}-2\sqrt{-6-3x}\amp=0</mrow>
+          <mrow>\sqrt{1-7 \cdot \highlight{-5}}-2\sqrt{-6-3 \cdot \highlight{-5}}\amp\stackrel{?}{=}0</mrow>
+          <mrow>\sqrt{36}-2\sqrt{9}\amp\stackrel{?}{=}0</mrow>
+          <mrow>6-2 \cdot 3\amp\stackrel{?}{=}0</mrow>
+          <mrow>6-6\amp\stackrel{?}{=}0</mrow>
+          <mrow>0\amp\stackrel{\checkmark}{=}0</mrow>
         </md>
         The solution set is <m>\{-5\}</m>.
       </p>
@@ -333,9 +346,11 @@
         </md>
         Let's check our potential solution in the original equation.
         <md>
-          <mrow>\sqrt{\highlight{16}}-\sqrt{\highlight{16}-7}\amp=1\text{ ?}</mrow>
-          <mrow>\sqrt{16}-\sqrt{9}\amp=1\text{ ?}</mrow>
-          <mrow>4-3\amp=a\,\checkmark</mrow>
+          <mrow>\sqrt{x}-\sqrt{x-7}\amp=1</mrow>
+          <mrow>\sqrt{\highlight{16}}-\sqrt{\highlight{16}-7}\amp\stackrel{?}{=}1</mrow>
+          <mrow>\sqrt{16}-\sqrt{9}\amp\stackrel{?}{=}1</mrow>
+          <mrow>4-3\amp\stackrel{?}{=}1</mrow>
+          <mrow>1\amp\stackrel{\checkmark}{=}1</mrow>
         </md>
         The solution set is <m>\{16\}</m>.
       </p>
@@ -376,9 +391,12 @@
         </md>
         Let's check our potential solution in the original equation.
         <md>
-          <mrow>\sqrt{2 \cdot \highlight{\frac{7}{2}}-3}-\sqrt{4 \cdot \highlight{\frac{7}{2}}+2}\amp=-2\text{ ?}</mrow>
-          <mrow>\sqrt{4}-\sqrt{16}\amp-2\text{ ?}</mrow>
-          <mrow>2-4\amp=-2\,\checkmark</mrow>
+          <mrow>\sqrt{2x-3}-\sqrt{4x+2}\amp=-2</mrow>
+          <mrow>\sqrt{2 \cdot \highlight{\frac{7}{2}}-3}-\sqrt{4 \cdot \highlight{\frac{7}{2}}+2}\amp\stackrel{?}{=}-2</mrow>
+          <mrow>\sqrt{7-3}-\sqrt{14+2}\amp\stackrel{?}{=}-2</mrow>
+          <mrow>\sqrt{4}-\sqrt{16}\amp\stackrel{?}{=}-2</mrow>
+          <mrow>2-4\amp\stackrel{?}{=}-2</mrow>
+          <mrow>-2\amp\stackrel{\checkmark}{=}-2</mrow>
         </md>
         The solution set is <m>\{\frac{7}{2}\}</m>.
       </p>
@@ -414,8 +432,10 @@
             </md>
             We now check the potential solution in the original equation.
             <md>
-              <mrow>\sqrt[5]{2 \cdot \highlight{122}-1}\amp=3\text{ ?}</mrow>
-              <mrow>\sqrt[5]{243}\amp=3\,\checkmark</mrow>
+              <mrow>\sqrt[5]{2x-1}\amp=3</mrow>
+              <mrow>\sqrt[5]{2 \cdot \highlight{122}-1}\amp\stackrel{?}{=}3</mrow>
+              <mrow>\sqrt[5]{243}\amp\stackrel{?}{=}3</mrow>
+              <mrow>3\amp\stackrel{\checkmark}{=}3</mrow>
             </md>
             The solution set is <m>\{122\}</m>.
           </p>
@@ -443,9 +463,11 @@
             </md>
             We now check the potential solution in the original equation.
             <md>
-              <mrow>4\sqrt{2-\highlight{\frac{7}{16}}}\amp=5\text{ ?}</mrow>
-              <mrow>4\sqrt{\frac{25}{16}}\amp=5\text{ ?}</mrow>
-              <mrow>4 \cdot \frac{5}{4}\amp=5\,\checkmark</mrow>
+              <mrow>4\sqrt{2-x}\amp=5</mrow>
+              <mrow>4\sqrt{2-\highlight{\frac{7}{16}}}\amp\stackrel{?}{=}5</mrow>
+              <mrow>4\sqrt{\frac{25}{16}}\amp\stackrel{?}{=}5</mrow>
+              <mrow>4 \cdot \frac{5}{4}\amp\stackrel{?}{=}5</mrow>
+              <mrow>5\amp\stackrel{\checkmark}{=}5</mrow>
             </md>
             The solution set is <m>\{\frac{7}{16}\}</m>  
           </p>
@@ -472,9 +494,11 @@
             </md>
             We now check the potential solution in the original equation.
             <md>
-              <mrow>\sqrt[3]{\frac{\highlight{-264}}{4}+2}\amp=-4\text{ ?}</mrow>
-              <mrow>\sqrt[3]{-66+2}\amp=-4\text{ ?}</mrow>
-              <mrow>\sqrt[3]{-64}\amp=-4\,\checkmark</mrow>
+              <mrow>\sqrt[3]{\frac{x}{4}+2}\amp=-4</mrow>
+              <mrow>\sqrt[3]{\frac{\highlight{-264}}{4}+2}\amp\stackrel{?}{=}-4</mrow>
+              <mrow>\sqrt[3]{-66+2}\amp\stackrel{?}{=}-4</mrow>
+              <mrow>\sqrt[3]{-64}\amp\stackrel{?}{=}-4</mrow>
+              <mrow>-4\amp\stackrel{\checkmark}{=}-4</mrow>
             </md>
             The solution set is <m>\{-264\}</m>.
           </p>
@@ -501,9 +525,11 @@
             </md>
             We now check the potential solution in the original equation.
             <md>
-              <mrow>3\sqrt[4]{\highlight{-8}+9}\amp=3\text{ ?}</mrow>
-              <mrow>3\sqrt{1}\amp=3\text{ ?}</mrow>
-              <mrow> 3 \cdot 1\amp=3\,\checkmark</mrow>
+              <mrow>3\sqrt[4]{x+9}\amp=3</mrow>
+              <mrow>3\sqrt[4]{\highlight{-8}+9}\amp\stackrel{?}{=}3</mrow>
+              <mrow>3\sqrt{1}\amp\stackrel{?}{=}3</mrow>
+              <mrow> 3 \cdot 1\amp\stackrel{?}{=}3</mrow>
+              <mrow>3\amp\stackrel{\checkmark}{=}3</mrow>
             </md>
             The solution set is <m>\{-8\}</m>.
           </p>
@@ -534,10 +560,12 @@
             </md>
             We now check our potential solution.
             <md>
-              <mrow>3\sqrt{2 \cdot \highlight{1}+7}-2\amp=7\text{ ?}</mrow>
-              <mrow>3\sqrt{9}-2\amp=7\text{ ?}</mrow>
-              <mrow>3 \cdot 3-2\amp=7\text{ ?}</mrow>
-              <mrow>9-2\amp=7\,\checkmark</mrow>
+              <mrow>3\sqrt{2y+7}-2\amp=7</mrow>
+              <mrow>3\sqrt{2 \cdot \highlight{1}+7}-2\amp\stackrel{?}{=}7</mrow>
+              <mrow>3\sqrt{9}-2\amp\stackrel{?}{=}7</mrow>
+              <mrow>3 \cdot 3-2\amp\stackrel{?}{=}7</mrow>
+              <mrow>9-2\amp\stackrel{?}{=}7</mrow>
+              <mrow>7\amp\stackrel{\checkmark}{=}7</mrow>
             </md>
             The solution set is <m>\{1\}</m>
           </p>
@@ -565,11 +593,12 @@
               <mrow>x\amp=-70</mrow>
             </md>
             We now check our potential solution.
-            <md>                  
-              <mrow>5-\sqrt[4]{11-(\highlight{-70})}\amp=8\text{ ?}</mrow>
-              <mrow>5-\sqrt[4]{81}\amp=8\text{ ?}</mrow>
-              <mrow>5-3\amp=8\text{ ?}</mrow>
-              <mrow>2\amp=8\text{ no siree!}</mrow>
+            <md>
+              <mrow>5-\sqrt[4]{11-x}\amp=8</mrow>                
+              <mrow>5-\sqrt[4]{11-(\highlight{-70})}\amp\stackrel{?}{=}8</mrow>
+              <mrow>5-\sqrt[4]{81}\amp\stackrel{?}{=}8</mrow>
+              <mrow>5-3\amp\stackrel{?}{=}8</mrow>
+              <mrow>2\amp \neq 8</mrow>
             </md>
             Since our only potential solution turned out to be extraneous, the solution set is <m>\emptyset</m>.
           </p>
@@ -598,9 +627,11 @@
             </md>
             We now check our potential solution.
             <md>
-              <mrow>\sqrt[3]{\highlight{10}+17}-\sqrt[3]{4 \cdot \highlight{10}-13}\amp=0\text{ ?}</mrow>
-              <mrow>\sqrt[3]{27}-\sqrt[3]{27}\amp=0\text{ ?}</mrow>
-              <mrow>3-3\amp=0\,\checkmark</mrow>
+              <mrow>\sqrt[3]{x+17}-\sqrt[3]{4x-13}\amp=0</mrow>
+              <mrow>\sqrt[3]{\highlight{10}+17}-\sqrt[3]{4 \cdot \highlight{10}-13}\amp\stackrel{?}{=}0</mrow>
+              <mrow>\sqrt[3]{27}-\sqrt[3]{27}\amp\stackrel{?}{=}0</mrow>
+              <mrow>3-3\amp\stackrel{?}{=}0</mrow>
+              <mrow>0\amp\stackrel{\checkmark}{=}0</mrow>
             </md>
             The solution set is <m>\{10\}</m>
           </p>
@@ -633,13 +664,17 @@
             </md>
             We now check our potential solutions.
             <md>
-              <mrow>\highlight{16}+3\sqrt{\highlight{16}}-4\amp=0\text{ ?}</mrow>
-              <mrow>16+3 \cdot 4-4\amp=0\text{ ?}</mrow>
-              <mrow>24\amp=0\text{ not true!}</mrow>
+              <mrow>x+3\sqrt{x}-4\amp=0</mrow>
+              <mrow>\highlight{16}+3\sqrt{\highlight{16}}-4\amp\stackrel{?}{=}0</mrow>
+              <mrow>16+3 \cdot 4-4\amp\stackrel{?}{=}0</mrow>
+              <mrow>24\amp \neq 0</mrow>
             </md>
             <md>
-              <mrow>\highlight{1}+3\sqrt{\highlight{1}}-4\amp=0\text{ ?}</mrow>
-              <mrow>1+3 \cdot 1-4\amp=0\,\checkmark</mrow>
+              <mrow>x+3\sqrt{x}-4\amp=0</mrow>
+              <mrow>\highlight{1}+3\sqrt{\highlight{1}}-4\amp\stackrel{?}{=}0</mrow>
+              <mrow>1+3 \cdot 1-4\amp\stackrel{?}{=}0</mrow>
+              <mrow>1+3-4\amp\stackrel{?}{=}0</mrow>
+              <mrow>0\amp\stackrel{\checkmark}{=}0</mrow>
             </md>
             The solution set is <m>\{1\}</m>.
           </p>
@@ -676,14 +711,17 @@
             </md>
             We now check our potential solutions.
             <md>
-              <mrow>2 \cdot \highlight{\frac{9}{4}}+\sqrt{\highlight{\frac{9}{4}}}-3\amp=0\text{ ?}</mrow>
-              <mrow>\frac{9}{2}+\frac{3}{2}-3\amp=0\text{ ?}</mrow>
-              <mrow>6-3\amp=0\text{ ?}</mrow>
-              <mrow>3\amp=0\text{ untrue}</mrow>
+              <mrow>2x+\sqrt{x}-3\amp=0</mrow>
+              <mrow>2 \cdot \highlight{\frac{9}{4}}+\sqrt{\highlight{\frac{9}{4}}}-3\amp\stackrel{?}{=}0</mrow>
+              <mrow>\frac{9}{2}+\frac{3}{2}-3\amp\stackrel{?}{=}0</mrow>
+              <mrow>6-3\amp\stackrel{?}{=}0</mrow>
+              <mrow>3\amp \neq 0</mrow>
             </md>
             <md>
-              <mrow>2 \cdot \highlight{1}+\sqrt{\highlight{1}}-3\amp=0\text{ ?}</mrow>
-              <mrow>2+1-3\amp=0\,\checkmark</mrow>
+              <mrow>2x+\sqrt{x}-3\amp=0</mrow>
+              <mrow>2 \cdot \highlight{1}+\sqrt{\highlight{1}}-3\amp\stackrel{?}{=}0</mrow>
+              <mrow>2+1-3\amp\stackrel{?}{=}0</mrow>
+              <mrow>0\amp\stackrel{\checkmark}{=}0</mrow>
             </md>
             The solution set is <m>\{1\}</m>.
           </p>
@@ -716,11 +754,13 @@
             </md>
             Let's go ahead and check the value of  <m>0</m> in the original equation.
             <md>
-              <mrow>\sqrt{1+\sqrt{9-\highlight{0}}}+7\amp=9\text{ ?}</mrow>
-              <mrow>\sqrt{1+\sqrt{9}}+7\amp=9\text{ ?}</mrow>
-              <mrow>\sqrt{4}+7\amp=9\text{ ?}</mrow>
-              <mrow>\sqrt{1+3}+7\amp=9\text{ ?}</mrow>
-              <mrow>2+7\amp=9\,\checkmark</mrow>
+              <mrow>\sqrt{1+\sqrt{9-x}}+7\amp=9</mrow>
+              <mrow>\sqrt{1+\sqrt{9-\highlight{0}}}+7\amp\stackrel{?}{=}9</mrow>
+              <mrow>\sqrt{1+\sqrt{9}}+7\amp\stackrel{?}{=}9</mrow>
+              <mrow>\sqrt{4}+7\amp\stackrel{?}{=}9</mrow>
+              <mrow>\sqrt{1+3}+7\amp\stackrel{?}{=}9</mrow>
+              <mrow>2+7\amp\stackrel{?}{=}9</mrow>
+              <mrow>9\amp\stackrel{\checkmark}{=}9</mrow>
             </md>
             The solution set is <m>\{0\}</m>.
           </p>
@@ -750,10 +790,12 @@
             </md>
             We now check.
             <md>
-              <mrow>2\sqrt{\highlight{22}-8}-\sqrt{2(\highlight{22})+12}\amp=0\text{ ?}</mrow>
-              <mrow>2\sqrt{14}-\sqrt{56}\amp=0\text{ ?}</mrow>
-              <mrow>2\sqrt{14}-\sqrt{4 \cdot 14}\amp=0\text{ ?}</mrow>
-              <mrow>2\sqrt{14}-2\sqrt{14}\amp=0\,\checkmark</mrow>
+              <mrow>2\sqrt{y-8}-\sqrt{2y+12}\amp=0</mrow>
+              <mrow>2\sqrt{\highlight{22}-8}-\sqrt{2(\highlight{22})+12}\amp\stackrel{?}{=}0</mrow>
+              <mrow>2\sqrt{14}-\sqrt{56}\amp\stackrel{?}{=}0</mrow>
+              <mrow>2\sqrt{14}-\sqrt{4 \cdot 14}\amp\stackrel{?}{=}0</mrow>
+              <mrow>2\sqrt{14}-2\sqrt{14}\amp\stackrel{?}{=}0</mrow>
+              <mrow>0\amp\stackrel{\checkmark}{=}0</mrow>
             </md>
             The solution set is <m>\{22\}</m>.
           </p>
@@ -781,10 +823,11 @@
               <mrow>x\amp=9</mrow>
             </md>
             We now check.
-            <md>                  
-              <mrow>1-\sqrt{\highlight{9}}\amp=\sqrt{\highlight{9}-5}\text{ ?}</mrow>
-              <mrow>1-3\amp=2\text{ ?}</mrow>
-              <mrow>-2\amp=2\text{ nope!}</mrow>
+            <md>
+              <mrow>1-\sqrt{x}\amp=\sqrt{x-5}</mrow>               
+              <mrow>1-\sqrt{\highlight{9}}\amp\stackrel{?}{=}\sqrt{\highlight{9}-5}</mrow>
+              <mrow>1-3\amp\stackrel{?}{=}2</mrow>
+              <mrow>-2\amp \neq 2</mrow>
             </md>
             The solution set is <m>\emptyset</m>.
           </p>
@@ -831,17 +874,21 @@
             </md>
             Let's now check <m>-\frac{5}{4}</m>.
             <md>
-              <mrow>2\sqrt{3 \cdot \highlight{-\frac{5}{4}}+6}-\sqrt{4 \cdot \highlight{-\frac{5}{4}}+9}\amp=5\text{ ?}</mrow>
-              <mrow>2\sqrt{\frac{9}{4}}-\sqrt{4}\amp=5\text{ ?}</mrow>
-              <mrow>2 \cdot \frac{3}{2}-2\amp=5\text{ ?}</mrow>
-              <mrow>3-2\amp=5\text{ :(}</mrow>
+              <mrow>2\sqrt{3x+6}-\sqrt{4x+9}\amp=5</mrow>
+              <mrow>2\sqrt{3 \cdot \highlight{-\frac{5}{4}}+6}-\sqrt{4 \cdot \highlight{-\frac{5}{4}}+9}\amp\stackrel{?}{=}5</mrow>
+              <mrow>2\sqrt{\frac{9}{4}}-\sqrt{4}\amp\stackrel{?}{=}5</mrow>
+              <mrow>2 \cdot \frac{3}{2}-2\amp\stackrel{?}{=}5</mrow>
+              <mrow>3-2\amp\stackrel{?}{=}5</mrow>
+              <mrow>1 \amp \neq 5</mrow>
             </md>
             Seriously?  Hmm ... let's check <m>10</m>.
             <md>
-              <mrow>2\sqrt{3 \cdot \highlight{10}+6}-\sqrt{4 \cdot \highlight{10}+9}\amp=5\text{ ?}</mrow>
-              <mrow>2\sqrt{36}-\sqrt{49}\amp=5\text{ ?}</mrow>
-              <mrow>2 \cdot 6-7\amp=5\text{ ?}</mrow>
-              <mrow>12-7\amp=5\,\checkmark</mrow>
+              <mrow>2\sqrt{3x+6}-\sqrt{4x+9}\amp=5</mrow>
+              <mrow>2\sqrt{3 \cdot \highlight{10}+6}-\sqrt{4 \cdot \highlight{10}+9}\amp\stackrel{?}{=}5</mrow>
+              <mrow>2\sqrt{36}-\sqrt{49}\amp\stackrel{?}{=}5</mrow>
+              <mrow>2 \cdot 6-7\amp\stackrel{?}{=}5</mrow>
+              <mrow>12-7\amp\stackrel{?}{=}5</mrow>
+              <mrow>5\amp\stackrel{\checkmark}{=}5</mrow>
             </md>
             The solution set is <m>\{10\}</m>.
           </p>
@@ -877,10 +924,11 @@
             </md>
             Let's check our answer.
             <md>
-              <mrow>\sqrt{24-\highlight{8}}+8\amp=\sqrt{9-\highlight{8}}+11\text{ ?}</mrow>
-              <mrow>\sqrt{16}+8\amp=\sqrt{1}+11\text{ ?}</mrow>
-              <mrow>4+8\amp=1+11\text{ ?}</mrow>
-              <mrow>12\amp=12\,\checkmark</mrow>
+              <mrow>\sqrt{24-x}+8\amp=\sqrt{9-x}+11</mrow>
+              <mrow>\sqrt{24-\highlight{8}}+8\amp\stackrel{?}{=}\sqrt{9-\highlight{8}}+11</mrow>
+              <mrow>\sqrt{16}+8\amp\stackrel{?}{=}\sqrt{1}+11</mrow>
+              <mrow>4+8\amp\stackrel{?}{=}1+11</mrow>
+              <mrow>12\amp\stackrel{\checkmark}{=}12</mrow>
             </md>
             The solution set is <m>\{8\}</m>.
           </p>

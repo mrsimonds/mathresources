@@ -70,7 +70,7 @@
   </paragraphs>
 
   <paragraphs>
-    <title><m>\highlight{log_{b}\left(A^{n}\right)=n \cdot \log_{b}(A)}</m></title>
+    <title><m>\highlight{\log_{b}\left(A^{n}\right)=n \cdot \log_{b}(A)}</m></title>
 
     <p></p>
     <p>
@@ -88,7 +88,7 @@
       Since <m>A^n=b^{nx}</m>, it follow that <m>\log_b\left(A^n\right)=nx</m>.  Putting it all together we reach our conclusion.
       <md>
         <mrow>\log_b\left(A^n\right)\amp=nx</mrow>
-        <mrow>\amp=n \cdot \log(A)</mrow>
+        <mrow>\amp=n \cdot \log_b(A)</mrow>
       </md>
     </p>
 

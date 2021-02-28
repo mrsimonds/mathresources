@@ -103,16 +103,18 @@
     </solution>
   </example>
 
-  <figure xml:id="lines-standard-form-geogebra-1">
-    <caption>Determine the <m>x</m>-intercept and <m>y</m>-intercept of the line with the given equation.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/line-intercepts.ggb">
-        setPerspective("G");
-        setGridVisible(0); 
-        setAxesVisible(0,0);        
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+    <figure xml:id="lines-standard-form-geogebra-1">
+      <caption>Determine the <m>x</m>-intercept and <m>y</m>-intercept of the line with the given equation.</caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/line-intercepts.ggb">
+          setPerspective("G");
+          setGridVisible(0); 
+          setAxesVisible(0,0);        
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
   <example>
     <statement>
@@ -170,18 +172,22 @@
     </solution>
   </example>
 
-  <figure xml:id="lines-standard-form-geogebra-2">
-    <caption>Drag the points so that the line matches the given equation. A message appears when you are correct.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/standard-line.ggb">
-        setPerspective("G");
-        setAxisSteps(1, 1, 1, 1);
-        setCoordSystem(-6, 6, -6, 6);
-        setGridVisible(1);         
-        setAxisLabels(1,"x","y","z");
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+   <figure xml:id="lines-standard-form-geogebra-2">
+      <caption>
+        Drag the points so that the line matches the given equation. A message appears when you are correct.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/standard-line.ggb">
+          setPerspective("G");
+          setAxisSteps(1, 1, 1, 1);
+          setCoordSystem(-6, 6, -6, 6);
+          setGridVisible(1);         
+          setAxisLabels(1,"x","y","z");
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
   </paragraphs>
 

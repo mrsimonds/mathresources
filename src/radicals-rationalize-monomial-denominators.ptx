@@ -115,15 +115,19 @@
     You can use <xref ref="radicals-rationalize-monomial-denominators-geogebra-figure-1">Figure</xref> to generate several more examples/practice problems with step by step solutions.
   </p>
 
-  <figure xml:id="radicals-rationalize-monomial-denominators-geogebra-figure-1">
-    <caption>Show the steps of rationalizing monomial square root denominators.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/radicals-monomial-denominator.ggb">
-        setPerspective("G");
-        setAxesVisible(0,0);
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+    <figure xml:id="radicals-rationalize-monomial-denominators-geogebra-figure-1">
+      <caption>
+        Show the steps of rationalizing monomial square root denominators.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/radicals-monomial-denominator.ggb">
+          setPerspective("G");
+          setAxesVisible(0,0);
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
   <exercises>
 

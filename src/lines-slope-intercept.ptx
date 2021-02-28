@@ -93,9 +93,12 @@
     For example, when presented with the equation <m>y=-2x+7</m> we can immediately conclude that the slope of the line is <m>-2</m> and that the <m>y</m>-intercept of the line is <m>(0,7)</m>.
   </p>
 
-  <figure xml:id="lines-slope-intercept-geogebra-1">
-    <caption>Drag the points so that the line matches the given equation.  A message appears when you are correct.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
+  <exploration>
+    <figure xml:id="lines-slope-intercept-geogebra-1">
+      <caption>
+        Drag the points so that the line matches the given equation.  A message appears when you are correct.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
         <slate surface="geogebra" aspect="9:5" source="geogebra/slope-intercept.ggb">
           setPerspective("G");
           setAxisSteps(1, 1, 1, 1);
@@ -103,8 +106,9 @@
           setGridVisible(1);         
           setAxisLabels(1,"x","y","z");
         </slate>
-    </interactive>
-  </figure>
+      </interactive>
+    </figure>
+  </exploration>
 
   <example>
     <statement>
@@ -127,16 +131,20 @@
     </solution>
   </example>
 
-  <figure xml:id="lines-slope-intercept-2">
-    <caption>State the slope and <m>y</m>-intercept of the line that corresponds to the given equation after first isolating <m>y</m>.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/lines-slope-from-equation.ggb">
-        setPerspective("G");
-        setGridVisible(0); 
-        setAxesVisible(0,0);        
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+    <figure xml:id="lines-slope-intercept-2">
+      <caption>
+        State the slope and <m>y</m>-intercept of the line that corresponds to the given equation after first isolating <m>y</m>.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/lines-slope-from-equation.ggb">
+          setPerspective("G");
+          setGridVisible(0); 
+          setAxesVisible(0,0);        
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
   <sidebyside widths="50% 47%" margins="0%">
 
@@ -235,16 +243,20 @@
     </solution>
   </example>
 
-  <figure xml:id="lines-slope-intercept-geogebra-3">
-    <caption>Determine the equation of a line given two points on the line.  State the equation in slope-intercept form.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
+  <exploration>
+    <figure xml:id="lines-slope-intercept-geogebra-3">
+      <caption>
+        Determine the equation of a line given two points on the line.  State the equation in slope-intercept form.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
         <slate surface="geogebra" aspect="9:5" source="geogebra/line-equation-two-points.ggb">
           setPerspective("G");
           setGridVisible(0); 
           setAxesVisible(0,0);        
         </slate>
-    </interactive>
-  </figure>
+      </interactive>
+    </figure>
+  </exploration>
 
   <exercises>
 

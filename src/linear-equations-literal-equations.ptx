@@ -13,10 +13,54 @@
   <title>Literal Equations</title>
   <paragraphs>
     <title>What is a Literal Equation?</title>
+    <p></p>
+
+    <p>
+      A <term>literal equation</term> is an equation that contains two or more variables.  The equations usually represent some type of formula.  For example, the volume of a rectangular box (<m>V</m>) whose sides have measurements referred to as length (<m>l</m>), width (<m>w</m>), and height(<m>h</m>) is given by the literal equation
+      <me>V=lwh</me>.
+    </p>
+    <p>
+      We frequently want to isolate one of the variables in a literal equation that is not isolated in the customary statement of the equation.  For example, we might know the length and width of a box we intend to create as well as the needed volume.  In this case, the unknown is the height of the box, so we would want to manipulate the equation <m>V=lwh</m> so that the variable <m>h</m> is isolated.  To do this, we would reverse the fact that <m>h</m> is multiplied by <m>lw</m> by dividing both sides of the equation by <m>lw</m>.  This is shown below.
+      <md>
+        <mrow>V\amp=lwh</mrow>
+        <mrow>\divideunder{V}{lw}\amp=\divideunder{lwh}{lw}</mrow>
+        <mrow>\frac{V}{lw}\amp=h</mrow>
+      </md>
+    </p>
 
   </paragraphs>
   <paragraphs>
-    <title>Isolating a Given Variable in a Literal Equation</title>
+    <title>Isolating a Given Linear Variable in a Literal Equation</title>
+    <p></p>
+
+    <p>
+      When solving a literal equation, we treat every variable other than one we wish to isolate as if they were numbers.  Suppose, for example, that you want to isolate the variable <m>x</m> in the equation
+      <me>a x+b y=c</me>.
+      Treating every variable other than <m>x</m> as if they were numbers, that literal equation is analogous to the equation
+      <me>5x+12=22</me>.
+      To be clear, I picked the numbers <m>5</m>, <m>12</m>, and <m>22</m> completely at random.  I could just as easily have used as my analogy the equation
+      <me>7x+43=85</me>.
+      Also, while the second term of the literal equation has two variables, if I think of them each as numbers, then their product is a single number.
+    </p>
+    <p>
+      When solving the equation <m>5x+12=22</m> for <m>x</m>, I first subtract <m>12</m> from both sides of the equation and then divide both sides of the equation by <m>5</m>,
+    </p>
+    <p>
+      Similarly, when solving the equation <m>7x+43=85</m> for <m>x</m>, I fist subtract <m>43</m> from both sides of the equation and then divide both sides of the equation by <m>7</m>.
+    </p>
+    <p>
+      Using the last two equations as our guide to solve the equation <m>a x+b y=c</m> for <m>x</m>, we need to first subtract <m>by</m> from both sides of the equation and then divide both sides of the equation by <m>a</m>.  This is shown below.
+      <md>
+        <mrow>a x+b y\amp=c</mrow>
+        <mrow>a x+b y\subtractright{b y}\amp=c\subtractright{b y}</mrow>
+        <mrow>a x\amp=c-b y</mrow>
+        <mrow>\divideunder{a x}{a}\amp=\divideunder{c-b y}{a}</mrow>
+        <mrow>x\amp=\frac{c-b y}{a}</mrow>
+      </md>
+    </p>
+    <p>
+      Several more examples follow.
+    </p>
 
     <example>
       <statement>

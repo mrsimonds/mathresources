@@ -186,9 +186,13 @@
         <mrow>\amp=-\frac{1}{2}</mrow>
       </md>
     </p>
-    <figure xml:id="lines-slope-geogebra-1">
-      <caption>Drag the point labeled A so that the line has the given slope.   A message will appear when you are correct.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
+
+    <exploration>
+      <figure xml:id="lines-slope-geogebra-1">
+        <caption>
+          Drag the point labeled A so that the line has the given slope.   A message will appear when you are correct.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
           <slate surface="geogebra" aspect="9:5" source="geogebra/slope.ggb">
             setPerspective("G");
             setAxisSteps(1, 1, 1, 1);
@@ -196,8 +200,10 @@
             setGridVisible(1);         
             setAxisLabels(1,"x","y","z");
           </slate>
-      </interactive>
-    </figure>
+        </interactive>
+      </figure>
+    </exploration>
+
     <p>
       When looking at the graph of a line that passes through points which have integer coordinates, it's fairly easy to determine the rise and the run between two points on the line by counting.  We just have to keep in mind that we count upward or rightward movement as positive whereas we count downward or leftward movement as negative.  When dealing with points that are not presented graphically, it's useful to have a formula that alleviates the need for counting.
     </p>
@@ -270,16 +276,20 @@
 
     </example>
 
-    <figure xml:id="lines-slope-geogebra-2">
-      <caption>Determine the slope of a line given two points on the line.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/lines-slope-two-points.ggb">
-          setPerspective("G");
-          setGridVisible(0); 
-          setAxesVisible(0,0);        
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="lines-slope-geogebra-2">
+        <caption>
+          Determine the slope of a line given two points on the line.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/lines-slope-two-points.ggb">
+            setPerspective("G");
+            setGridVisible(0); 
+            setAxesVisible(0,0);        
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
     <example xml:id="lines-slope-ex-2">
 

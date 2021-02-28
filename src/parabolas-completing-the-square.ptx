@@ -86,23 +86,27 @@
     You can practice determining the vertex of a parabola after completing the square using <xref ref="parabolas-completing-the-square-geogebra-1">Figure</xref>.
   </p>
 
-  <figure xml:id="parabolas-completing-the-square-geogebra-1">
-    <caption>Complete the square for the given equation.  Then drag the vertex of the parabola to the point that matches the vertex of the stated equation. A message will appear when you are correct.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/paraola-vertex-a-1.ggb">
-        setPerspective("G");
-        setGridVisible(1);         
-        setAxisLabels(1,"x","y","z");
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+    <figure xml:id="parabolas-completing-the-square-geogebra-1">
+      <caption>
+        Complete the square for the given equation.  Then drag the vertex of the parabola to the point that matches the vertex of the stated equation. A message will appear when you are correct.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/paraola-vertex-a-1.ggb">
+          setPerspective("G");
+          setGridVisible(1);         
+          setAxisLabels(1,"x","y","z");
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
   <p>
     When the value of <m>a</m> in the equation <m>y=ax^2+bx+c</m> is not one, the process of completing the square is quite a bit more complicated.  The steps are as follows.
     <ol label="1">
       <li>
         <p>
-          Factor <m>a</m> away from both the squared term and the linear term, leaving enough room in the parentheses to add another number.  he form  of the equation is now <m>y=a\left(x^2+\frac{b}{a}\right)+c</m>.
+          Factor <m>a</m> away from both the squared term and the linear term, leaving enough room in the parentheses to add another number.  he form  of the equation is now <m>y=a\left(x^2+\frac{b}{a}x\right)+c</m>.
         </p>
       </li>
       <li>
@@ -207,27 +211,35 @@
     You can practice determining the vertex of a parabola after completing the square using <xref ref="parabolas-completing-the-square-geogebra-2">Figure</xref> and <xref ref="parabolas-completing-the-square-geogebra-neg">Figure</xref>.
   </p>
 
-  <figure xml:id="parabolas-completing-the-square-geogebra-2">
-    <caption>Complete the square for the given equation.  Then drag the vertex of the parabola to the point that matches the vertex of the stated equation. A message will appear when you are correct. A message will appear when you are correct.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/paraola-vertex-a-2.ggb">
-        setPerspective("G");
-        setGridVisible(1);         
-        setAxisLabels(1,"x","y","z");
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+    <figure xml:id="parabolas-completing-the-square-geogebra-2">
+      <caption>
+        Complete the square for the given equation.  Then drag the vertex of the parabola to the point that matches the vertex of the stated equation. A message will appear when you are correct. A message will appear when you are correct.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/paraola-vertex-a-2.ggb">
+          setPerspective("G");
+          setGridVisible(1);         
+          setAxisLabels(1,"x","y","z");
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
-  <figure xml:id="parabolas-completing-the-square-geogebra-neg">
-    <caption>Complete the square for the given equation.  Then drag the vertex of the parabola to the point that matches the vertex of the stated equation. A message will appear when you are correct.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/paraola-vertex-a-neg.ggb">
-        setPerspective("G");
-        setGridVisible(1);         
-        setAxisLabels(1,"x","y","z");
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+    <figure xml:id="parabolas-completing-the-square-geogebra-neg">
+      <caption>
+        Complete the square for the given equation.  Then drag the vertex of the parabola to the point that matches the vertex of the stated equation. A message will appear when you are correct.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/paraola-vertex-a-neg.ggb">
+          setPerspective("G");
+          setGridVisible(1);         
+          setAxisLabels(1,"x","y","z");
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
   <exercises>
 

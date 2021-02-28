@@ -11,9 +11,11 @@
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="MTH-65-materials" target="blank">
   <title>Topics Covered in MTH 65</title>
-
-  <p>
-    Please note that the documents will open in new windows.
+  <paragraphs>
+    <title>Explanations, Examples, and Exercises</title>
+    <p></p>
+    <p>
+      Please note that the documents open in new windows.
     <ul>
       <li>
         <url href="https://spot.pcc.edu/slc/mathresources/output/html/exponents-properties.html" target="blank">Properties of Exponents</url>
@@ -55,7 +57,7 @@
         <url href="https://spot.pcc.edu/slc/mathresources/output/html/radicals-equations.html" target="blank">Equations with Radical Expressions</url>
       </li>
       <li>
-        <url href="https://spot.pcc.edu/slc/mathresources/output/html/quadratic-equationssquare-root-method.html" target="blank">Solving a Quadratic Equation by the Square Root Method</url>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/quadratic-equations-square-root-method.html" target="blank">Solving a Quadratic Equation by the Square Root Method</url>
       </li>
       <li>
         <url href="https://spot.pcc.edu/slc/mathresources/output/html/quadratic-equations-quadratic-formula-application.html" target="blank">Solving a Quadratic Equation using the Quadratic Formula</url>
@@ -82,6 +84,199 @@
         <url href="https://spot.pcc.edu/slc/mathresources/output/html/functions-inequalities.html" target="blank">Using Graphs to Solve Inequalities</url>
       </li>
     </ul>
-  </p>
+    
+    </p>
+  </paragraphs>
+  <paragraphs>
+    <title>GeoGebra Applets</title>
+    <p></p>
+    <p>
+      Please note that the Applets open in new windows.
+      <ul>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-positive-integer-exponents.html" target="blank">The meaning of positive integer exponents (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-product-rule-exponents.html" target="blank">The product rule of exponents. (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-power-to-a-power-rule-exponents.html" target="blank">The power-to-a-power rule of exponents.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-product-and-ptap-rules-exponents.html" target="blank">Practice problems combining the product rule and the power-to-a-power rule.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-quotient-rule-part-one-exponents.html" target="blank">The quotient rule of exponents - Part I.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-quotient-rule-part-two-exponents.html" target="blank">The quotient rule of exponents - Part II.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-quotient-rule-part-three-exponents.html" target="blank">Which version of the quotient rule should be used?  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-postive-exponent-rules.html" target="blank">Applying the exponent rules applied to non-negative integer exponents.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-negative-exponents.html" target="blank">What's the meaning of negative exponents?  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-negative-exponents-affect-what.html" target="blank">Which factors move when there's a negative exponent?  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-integer-exponent-drill.html" target="blank">Applying the rules of exponents to integer exponents. (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-scientific-notation.html" target="blank">The meaning of scientific notation. (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-conversion-to-scientific-notation.html" target="blank">Convert from Standard Notation to Scientific Notation. (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-scientific-notation-multiplication.html" target="blank">Multiplying numbers expressed using scientific notation. (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-FOIL.html" target="blank">FOIL (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-simplifying-square-roots.html" target="blank">Simplifying square root expressions (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-rationalize-monomial-denominators.html" target="blank">Rationalizing monomial square root denominators.  (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-rationalize-binomial-denominators.html" target="blank">Rationalizing binomial denominators that have a square root term.  (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-rational-exponents.html" target="blank">What is the meaning of a rational exponent?  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-imaginary-numbers.html" target="blank">Simplifying square roots of negative integers.  (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-multiply-complex-numbers.html" target="blank">Multiplying complex numbers. (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-parabola-standard-form-one.html" target="blank">Determining the vertex of a parabola whose equation is stated in standard form - part one.  (Graphing Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-parabola-standard-form-two.html" target="blank">Determining the vertex of a parabola whose equation is stated in standard form - part two.  (Graphing Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-parabola-standard-form-three.html" target="blank">Determining the vertex of a parabola whose equation is stated in standard form - part three.  (Graphing Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-solving-inequalities-graphically-one.html" target="blank">Using a graph to solve an inequality - part one.  (Graphing Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-solving-inequalities-graphically-two.html" target="blank">Using a graph to solve an inequality - part two.  (Graphing Applet)</url>
+          </p>
+        </li>
+      </ul>
+    </p>
+    
+  </paragraphs>
+  <paragraphs>
+    <title>Videos Created by Ann Cary, Scot Leavitt, and Emily Nelson</title>
+    <p></p>
+
+    <p>
+      The links take you to YouTube Playlists which will open either in a new window or in a Youtube App.
+      <ul>
+        <li>
+         <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-eUYq3sBms_5CaAqWvayULV" target="blank">Exponents and scientific notation</url>
+        </li>
+        <li>
+        <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-ef9FnOLhpBG_Z0sQd6-7s-" target="blank">Addition and subtraction of polynomials</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-f68uz_9tWNiLf9GRkurveh" target="blank">Multiplication of polynomials</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-cl21nlu-cPnDREmZnzNvOg" target="blank">Special cases of polynomial multiplication</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-dvZk2B452d9mN6V6DIHx_s" target="blank">Division of polynomials by monomials</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-ef9FnOLhpBG_Z0sQd6-7s-" target="blank">Addition and subtraction of polynomials</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-f68uz_9tWNiLf9GRkurveh" target="blank">Multiplication of polynomials</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-cl21nlu-cPnDREmZnzNvOg" target="blank">Special cases of polynomial multiplication</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-dvZk2B452d9mN6V6DIHx_s" target="blank">Division of polynomials by monomials</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-ex0-JuRQ4P920Qz1x5LwUO" target="blank">Square root properties</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-fBul1o0Y4RxNEI5C1mE2lz" target="blank">Solving quadratic equations by using a square root</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-e22-Ev-CeAYps78s4qREon" target="blank">The quadratic formula</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-c189pInY_ddsbonNff6axR" target="blank">Complex solutions to quadratic equations</url>
+        </li>
+      </ul>
+    </p>
+  </paragraphs>
+
+  
 
 </section>

@@ -9,16 +9,18 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="geogebra-determine-the-slope-two-points">
-  <title>Determine the Slope of a Line Given Two Points on the Line.</title>
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="geogebra-graph-a-given-slope">
+  <title>Create a Line with a Given Slope</title>
 
     <figure xml:id="geogebra-determine-the-slope-two-points-geogebra">
-      <caption>Determine the slope of a line given two points on the line.</caption>
+      <caption>Drag the point labeled A so that the line has the stated slope.</caption>
       <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/lines-slope-two-points.ggb">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/slope.ggb">
           setPerspective("G");
-          setGridVisible(0); 
-          setAxesVisible(0,0);        
+          setAxisSteps(1, 1, 1, 1);
+          setCoordSystem(-6, 6, -6, 6);
+          setGridVisible(1);         
+          setAxisLabels(1,"x","y","z");
         </slate>
       </interactive>
     </figure>

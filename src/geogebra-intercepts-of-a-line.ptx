@@ -13,14 +13,12 @@
   <title>Determine the Intercepts of a Line Stated in Standard Form</title>
 
   <figure xml:id="geogebra-intercepts-of-a-line-geogebra">
-    <caption>Determine the intercepts of the line with the given equation.</caption>
+    <caption>Determine the <m>x</m>-intercept and <m>y</m>-intercept of the line with the given equation.</caption>
     <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/standard-line.ggb">
+      <slate surface="geogebra" aspect="9:5" source="geogebra/line-intercepts.ggb">
         setPerspective("G");
-        setAxisSteps(1, 1, 1, 1);
-        setCoordSystem(-6, 6, -6, 6);
-        setGridVisible(1);         
-        setAxisLabels(1,"x","y","z");
+        setGridVisible(0); 
+        setAxesVisible(0,0);        
       </slate>
     </interactive>
   </figure>

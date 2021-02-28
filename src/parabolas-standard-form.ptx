@@ -408,38 +408,48 @@
     </solution>
   </example>
 
-  <figure xml:id="parabolas--standard-form-geogebra-1">
-    <caption>Determine the vertex of the parabola that arises from the given equation.  Then drag the vertex of the parabola to the point that matches that vertex. A message will appear when you are correct.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/paraola-vertex-a-1.ggb">
-        setPerspective("G");
-        setGridVisible(1);         
-        setAxisLabels(1,"x","y","z");
-      </slate>
-    </interactive>
-  </figure>
-
-  <figure xml:id="parabolas-standard-form-geogebra-2">
-    <caption>Determine the vertex of the parabola that arises from the given equation.  Then drag the vertex of the parabola to the point that matches that vertex. A message will appear when you are correct. A message will appear when you are correct.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/paraola-vertex-a-2.ggb">
-        setPerspective("G");
-        setGridVisible(1);         
-        setAxisLabels(1,"x","y","z");
-      </slate>
-    </interactive>
-  </figure>
-
-  <figure xml:id="parabolas-standard-form-geogebra-3">
-    <caption>Determine the vertex of the parabola that arises from the given equation.  Then drag the vertex of the parabola to the point that matches that vertex. A message will appear when you are correct.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/paraola-vertex-a-neg.ggb">
-        setPerspective("G");
-        setGridVisible(1);         
-        setAxisLabels(1,"x","y","z");
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+    <figure xml:id="parabolas-standard-form-geogebra-1">
+      <caption>
+        Determine the vertex of the parabola that arises from the given equation.  Then drag the vertex of the parabola to the point that matches that vertex. A message will appear when you are correct.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/paraola-vertex-a-1.ggb">
+          setPerspective("G");
+          setGridVisible(1);         
+          setAxisLabels(1,"x","y","z");
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
+  
+  <exploration>
+    <figure xml:id="parabolas-standard-form-geogebra-2">
+      <caption>Determine the vertex of the parabola that arises from the given equation.  Then drag the vertex of the parabola to the point that matches that vertex. A message will appear when you are correct. A message will appear when you are correct.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/paraola-vertex-a-2.ggb">
+          setPerspective("G");
+          setGridVisible(1);         
+          setAxisLabels(1,"x","y","z");
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
+  
+  <exploration>
+    <figure xml:id="parabolas-standard-form-geogebra-3">
+      <caption>Determine the vertex of the parabola that arises from the given equation.  Then drag the vertex of the parabola to the point that matches that vertex. A message will appear when you are correct.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/paraola-vertex-a-neg.ggb">
+          setPerspective("G");
+          setGridVisible(1);         
+          setAxisLabels(1,"x","y","z");
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
   <exercises>
 

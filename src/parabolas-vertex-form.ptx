@@ -36,16 +36,20 @@
     </md>
   </p>
 
-  <figure xml:id="parabolas-vertex-form-geogebra-1">
-    <caption>Drag the vertex of the parabola to the point that matches the vertex of the stated equation. A message will appear when you are correct.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/parabola-completed-square.ggb">
-        setPerspective("G");
-        setGridVisible(1);         
-        setAxisLabels(1,"x","y","z");
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+    <figure xml:id="parabolas-vertex-form-geogebra-1">
+      <caption>
+        Drag the vertex of the parabola to the point that matches the vertex of the stated equation. A message will appear when you are correct.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/parabola-completed-square.ggb">
+          setPerspective("G");
+          setGridVisible(1);         
+          setAxisLabels(1,"x","y","z");
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
   
   <p>
     The other information about the parabola is determined in the same way that it was determined when we worked with the standard form of the equation.  To summarize:

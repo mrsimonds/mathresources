@@ -12,8 +12,11 @@
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="MTH-112-materials" target="blank">
   <title>Topics Covered in MTH 112</title>
 
-  <p>
-    Please note that the documents will open in new windows.
+  <paragraphs>
+    <title>Explanations, Examples, and Exercises</title>
+    <p></p>
+    <p>
+      Please note that the documents open in new windows.
     <ul>
       <li>
         <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-the-unit-circle.html" target="blank">The Unit Circle, Angles in Standard Position, and Arc Length</url>
@@ -25,7 +28,7 @@
         <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-special-angles.html" target="blank">Special Angles and Reference Angles</url>
       </li>
       <li>
-        <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-sine-cosine-graphs.html" target="blank">The Graphs of the Since and Cosine Functions</url>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-sine-cosine-graphs.html" target="blank">The Graphs of the Sine and Cosine Functions</url>
       </li>
       <li>
         <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-tangent-cotangent-graphs.html" target="blank">The Graphs of the Tangent and Cotangent Functions</url>
@@ -64,6 +67,26 @@
         <url href="https://spot.pcc.edu/slc/mathresources/output/html/trigonometry-vectors.html" target="blank">Vectors in Two-Dimensions</url>
       </li>
     </ul>
-  </p>
+    </p>
+  </paragraphs>
+  <paragraphs>
+    <title>GeoGebra Applets</title>
+    <p></p>
+    <p>
+      Please note that the Applets open in new windows.
+      <ul>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-sine-graph.html" target="blank">The unit circle and the graph of the sine function.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-SSS.html" target="blank">Unique triangle - the case of sine, side, side.  (Exploration Applet)</url>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </paragraphs>
 
 </section>

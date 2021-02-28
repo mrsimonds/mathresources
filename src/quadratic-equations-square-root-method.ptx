@@ -9,191 +9,182 @@
 <!-- This file is part of PCC SLC Math Resources.                          -->
 <!-- ********************************************************************* -->
 
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="quadratic-equationssquare-root-method">
-    <title>Solving Quadratic Equations by the Square Root Method</title>
-
-    <p>
-      If <m>k</m> is a positive number and <m>u^2=k</m>, then:<me>u=\sqrt{k}\text{ or } u=-\sqrt{k}</me>.  The latter set of equations is frequently abbreviate as <me>u= \pm \sqrt{k}</me> which is read aloud as "<m>u</m> is equal to plus or minus the square root of <m>k</m>."
-    </p>
-    <p>
-      For example, if <m>x^2=64</m>, then <m>x= \pm \sqrt{64}</m> which, of course, simplifies to <m>x= \pm 8</m>.  So the original equation has two solutions: <m>-8</m> and <m>8</m>.
-    </p>
-    <p>
-      Another example follows.  Solve <m>(3x+5)^2=16</m>.
-    </p>
-    <p>
-      <md>
-        <mrow>(3x+5)^2\amp=16</mrow>
-        <mrow>3x+5\amp=\pm \sqrt{16}</mrow>
-        <mrow>3x+5\amp=\pm 4</mrow>
-      </md>
-      <md>
-        <mrow>3x+5\amp=-4\amp\amp\text{or}\amp 3x+5\amp=4</mrow>
-        <mrow>3x+5\subtractright{5}\amp=-4\subtractright{5}\amp\amp\text{or}\amp 3x+5\subtractright{5}\amp=4\subtractright{5}</mrow>
-        <mrow>3x\amp=-9\amp\amp\text{or}\amp 3x\amp=-1</mrow>
-        <mrow>\divideunder{3x}{3}\amp=\divideunder{-9}{3}\amp\amp\text{or}\amp \divideunder{3x}{3}\amp=\divideunder{-1}{3}</mrow>
-        <mrow>x\amp=-3\amp\amp\text{or}\amp x\amp=-\frac{1}{3}</mrow>
-      </md>
-    </p>
-    <p>
-      The solutions are <m>-3</m> and <m>-\frac{1}{3}</m>.  The solution set is <m>\left\{-3, -\frac{1}{3}\right\}</m>.
-    </p>
-    <paragraphs>
-      <title>Completing the Square</title>
-      <p></p>
-    <p>
-      We frequently have to do some preliminary work to have an equation of form <m>u^2=k</m>.  The process involves completing the square.  Completing the square entails adding a number to an expression of form <m>x^2+bx</m> so that the resultant trinomial factors into a perfect square.  The number that complete the square is always the square of half of <m>b</m>.
-    </p>
-    <p>
-      For example, the number that completes the square for <m>x^2+10x</m> is <m>5^2</m> which is <m>25</m>.  Note:
-      <md>
-        <mrow>x^2+10x+25\amp=(x+5)(x+5)</mrow>
-        <mrow>\amp=(x+5)^2</mrow>
-      </md>
-    </p>
-    <p>
-      The steps followed when using the square root method are listed below.
-      <ol label="1">
-        <li>Perform any and all manipulations so that the equation has the form <m>x^2+bx=c</m>.</li>
-        <li>Complete the square by adding <m>\left(\frac{b}{2}\right)^2</m>.  Note that to keep the equation in balance <m>\left(\frac{b}{2}\right)^2</m> also needs to be added to the other side of the equation.</li>
-        <li>Factor the non-constant side of the equation.  The equation should now have form <m>u^2=k</m>.</li>
-        <li>If the constant, <m>k</m>, is negative, then the equation has no solution.  If <m>k</m> is zero, then the equation has one solution which is determined by solving <m>u=0</m>.  Step 5 is written under the assumption that <m>k</m> is a positive number.</li>
-        <li>Invoke the square root property, i.e. <m>u=\pm \sqrt{k}</m>.  If <m>k</m> is a perfect square, you need to write out and solve two equations.
-        <me>u=-\sqrt{k}\text{ or }u=\sqrt{k}</me>.  If <m>k</m> is not a perfect square, you may solve for <m>u</m> maintaining the plus/minus sign.  Make sure to simplify the square root should it simplify.</li>
-        <li>State your solutions and/or solution set.</li>
-      </ol>
-    Several examples follow.
-  </p>
-
-  <example>
-    <statement>
-      <p>
-        Solve <m>x^2-6x-7=0</m> by the square root method after first completing the square.
-      </p>
-    </statement>
-    <solution>
-      <p>
-        <md>
-          <mrow>x^2-6x-7\amp=0</mrow>
-          <mrow>x^2-6x-7\addright{7}\amp=0\addright{7}</mrow>
-          <mrow>x^2-6x\amp=7</mrow>
-          <mrow>x^2-6x\addright{9}\amp=7\addright{9}\text{   (completing the square)}</mrow>
-          <mrow>(x-3)^2\amp=16</mrow>
-          <mrow>x-3\amp=\pm \sqrt{16}</mrow>
-          <mrow>x-3\amp=\pm 4</mrow>
-        </md>
-        <md>
-          <mrow>x-3\addright{3}\amp=-4\addright{3}\amp\amp\text{or}\amp x-3\addright{3}\amp=4\addright{3}</mrow>
-          <mrow>x\amp=-1\amp\amp\text{or}\amp x\amp=7</mrow>
-        </md>
-        The solutions are <m>-1</m> and <m>7</m>.  The solution set is <m>\{-1, 7\}</m>.
-      </p>
-    </solution>
-  </example>
-
-  <example>
-    <statement>
-      <p>
-        Solve <m>(2x-1)(2x+1)=7-32x</m> by the square root method after first completing the square.
-      </p>
-    </statement>
-    <solution>
-      <p>
-        <md>
-          <mrow>(2x-1)(2x+1)\amp=7-32x</mrow>
-          <mrow>4x^2-1\amp=7-32x</mrow>
-          <mrow>4x^2-1\addright{32x}\addright{1}\amp=7-32x\addright{32x}\addright{1}</mrow>
-          <mrow>4x^2+32x\amp=8</mrow>
-          <mrow>\multiplyleft{\frac{1}{4}}(4x^2+32x)\amp=\multiplyleft{\frac{1}{4}}8</mrow>
-          <mrow>x^2+8x\amp=2</mrow>
-          <mrow>x^2+8x\addright{16}\amp=2\addright{16}\text{   (completing the square)}</mrow>
-          <mrow>(x+4)^2\amp=18</mrow>
-          <mrow>x+4\amp=\pm \sqrt{18}</mrow>
-          <mrow>x+4\amp=\pm 3\sqrt{2}</mrow>
-          <mrow>x+4\amp\subtractright{4}=\pm 3\sqrt{2}\subtractright{4}</mrow>
-          <mrow>x\amp=-4\pm 3\sqrt{2}</mrow>
-        </md>
-      </p>
-      <p>
-        The solutions are <m>-4-3\sqrt{2}</m> and <m>-4+3\sqrt{2}</m>.  
-      </p>
-      <p>
-        The solutions set is <m>\{-4-3\sqrt{2}, -4+3\sqrt{2}\}</m>.
-      </p>
-    </solution>
-  </example>
-
-  <example>
-    <statement>
-      <p>
-        Solve <m>x^2+9x+25=0</m> by the square root method after first completing the square.
-      </p>
-    </statement>
-    <solution>
-      <p>
-        <md>
-          <mrow>x^2+9x+25\amp=0</mrow>
-          <mrow>x^2+9x+25\subtractright{25}\amp=0\subtractright{25}</mrow>
-          <mrow>x^2+9x\amp=-25</mrow>
-          <mrow>x^2+9x\addright{\frac{81}{4}}\amp=-25\addright{\frac{81}{4}}\text{   (completing the square)}</mrow>
-          <mrow>\left(x+\frac{9}{2}\right)^2\amp=-\frac{19}{4}</mrow>
-        </md>
-      </p>
-      <p>
-        The equation has no real number solutions.
-      </p>
-      <p>
-        Over the real numbers, the solution set is <m>\emptyset</m>.
-      </p>
-    </solution>
-  </example>
-
-  <example>
-    <statement>
-      <p>
-        Solve <m>4x^2-28x=-11</m> by the square root method after first completing the square.
-      </p>
-    </statement>
-    <solution>
-      <p>
-        <md>
-          <mrow>4x^2-28x\amp=-11</mrow>
-          <mrow>\multiplyleft{\frac{1}{4}}(4x^2-28x)\amp=\multiplyleft{\frac{1}{4}}-11</mrow>
-          <mrow>x^2-7x\amp=-\frac{11}{4}</mrow>
-          <mrow>x^2-7x\addright{\frac{49}{4}}\amp=-\frac{11}{4}\addright{\frac{49}{4}}\text{   (completing the square)}</mrow>
-          <mrow>\left(x-\frac{7}{2}\right)^2\amp=\frac{38}{4}</mrow>
-          <mrow>x-\frac{7}{2}\amp=\pm \sqrt{\frac{38}{4}}</mrow>
-          <mrow>x-\frac{7}{2}\amp=\pm \frac{\sqrt{38}}{2}</mrow>
-          <mrow>x-\frac{7}{2}\addright{\frac{7}{2}}\amp=\pm \frac{\sqrt{38}}{2}\addright{\frac{7}{2}}</mrow>
-          <mrow>x\amp=\frac{7}{2} \pm \frac{\sqrt{38}}{2}</mrow>
-          <mrow>x\amp=\frac{7 \pm \sqrt{38}}{2}</mrow>
-        </md>
-      </p>
-      <p>
-        The solutions are <m>\frac{7-\sqrt{38}}{2}</m> and <m>\frac{7+\sqrt{38}}{2}</m>.
-      </p>
-      <p>
-        The solution set is <m>\left\{\frac{7-\sqrt{38}}{2}, \frac{7+\sqrt{38}}{2}\right\}</m>.
-      </p>
-    </solution>
-  </example>
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="quadratic-equations-square-root-method">
+  <title>Solving Quadratic Equations by the Square Root Method</title>
 
   <p>
-    You can use <xref ref="radicals-quadratic-equations-square-root-method-geogebra-1">Figure</xref> to generate several more examples/practice problems. You'll need to write the steps down, because only one step is shown at a time.
+    If <m>k</m> is a positive number and <m>u^2=k</m>, then:<me>u=\sqrt{k}\text{ or } u=-\sqrt{k}</me>.  The latter set of equations is frequently abbreviated as <me>u= \pm \sqrt{k}</me> which is read aloud as "<m>u</m> is equal to plus or minus the square root of <m>k</m>."
+  </p>
+  <p>
+    For example, if <m>x^2=64</m>, then <m>x= \pm \sqrt{64}</m> which, of course, simplifies to <m>x= \pm 8</m>.  So the original equation has two solutions: <m>-8</m> and <m>8</m>.
+  </p>
+  <p>
+    Frequently there are additional steps that need to be applied to completely isolate the variable.
   </p>
 
-  <figure xml:id="radicals-quadratic-equations-square-root-method-geogebra-1">
-    <caption>Solve quadratic equations by first completing the square.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/quadratic-equations-complete-square.ggb">
-        setPerspective("G");
-        setAxesVisible(0,0);
-      </slate>
-    </interactive>
-  </figure>
+  <example>
+    <statement>
+      <p>
+        Determine the solutions and the solution set to the equation <m>(3x+5)^2=16</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+          <mrow>(3x+5)^2\amp=16</mrow>
+          <mrow>3x+5\amp=\pm \sqrt{16}</mrow>
+          <mrow>3x+5\amp=\pm 4</mrow>
+        </md>
+        When the square root term simplifies to an integer, we split the equation into two separate equations, one using the positive square root and one using the negative square root.
+        <md>
+          <mrow>3x+5\amp=-4\amp\amp\text{or}\amp 3x+5\amp=4</mrow>
+          <mrow>3x+5\subtractright{5}\amp=-4\subtractright{5}\amp\amp\text{or}\amp 3x+5\subtractright{5}\amp=4\subtractright{5}</mrow>
+          <mrow>3x\amp=-9\amp\amp\text{or}\amp 3x\amp=-1</mrow>
+          <mrow>\divideunder{3x}{3}\amp=\divideunder{-9}{3}\amp\amp\text{or}\amp \divideunder{3x}{3}\amp=\divideunder{-1}{3}</mrow>
+          <mrow>x\amp=-3\amp\amp\text{or}\amp x\amp=-\frac{1}{3}</mrow>
+        </md>
+      </p>
+      <p>
+        The solutions are <m>-3</m> and <m>-\frac{1}{3}</m>.  The solution set is <m>\left\{-3, -\frac{1}{3}\right\}</m>.
+      </p>
+    </solution>
+  </example>
 
-  </paragraphs>
+  <example>
+    <statement>
+      <p>
+        Determine the solutions and solution set for the equation <m>\left(-\frac{3}{2}w+7\right)^2=12</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We being by applying the square root method.
+        <md>
+          <mrow>\left(-\frac{3}{2}w+7\right)^2\amp=12</mrow>
+          <mrow>-\frac{3}{2}w+7\amp=\pm\sqrt{12}</mrow>
+        </md>
+        Because <m>\sqrt{12}</m> is not an integer, there is no reason to split the equation into two equations.  We do need to simplify <m>\sqrt{12}</m>.  Let's do that and also isolate <m>w</m>.
+        <md>
+          <mrow>-\frac{3}{2}w+7\amp=\pm\sqrt{12}</mrow>
+          <mrow>-\frac{3}{2}w+7\amp=\pm 2\sqrt{3}</mrow>
+          <mrow>-\frac{3}{2}w+7\subtractright{7}\amp=\pm 2\sqrt{3}\subtractright{7}</mrow>
+        </md>
+        It is customary to have the square root term at the back end of the expression.
+        <md>
+          <mrow>-\frac{3}{2}w\amp=-7\pm 2\sqrt{3}</mrow>
+          <mrow>\multiplyleft{-\frac{2}{3}}-\frac{3}{2}w\amp=\multiplyleft{-\frac{2}{3}}\left(-7\pm 2\sqrt{3}\right)</mrow>
+          <mrow>w\amp=-\frac{2}{3} \cdot -\frac{7}{1} \pm -\frac{2}{3} \cdot \frac{2\sqrt{3}}{1}</mrow>
+          <mrow>w\amp=-\frac{14}{3} \pm \frac{4\sqrt{3}}{3}</mrow>
+        </md>
+        Technically the expression after the plus/minus sign should be negative. However, because the term is being both added and subtracted, we can achieve the same effect by adding and subtracting the positive expression. In that sense the negative sign is redundant and is always omitted in this situation.  It is customary to go ahead and write the two terms over one denominator.
+        <md>
+          <mrow>w\amp=-\frac{14}{3} \pm \frac{4\sqrt{3}}{3}</mrow>
+          <mrow>w\amp=\frac{-14\pm 4\sqrt{3}}{3}</mrow>
+        </md>
+        When stating the solutions and solution set, we detach the solution with the addition sign from the solution with the subtraction sign.
+      </p>
+      <p>
+        The solutions are <m>\frac{-14-4\sqrt{3}}{3}</m> and <m>\frac{-14+4\sqrt{3}}{3}</m>.
+      </p>
+      <p>
+        The solution set is <m>\left\{\frac{-14-4\sqrt{3}}{3},\frac{-14+4\sqrt{3}}{3}\right\}</m>.
+      </p>
+    </solution>
+  </example>
 
+  <example>
+    <statement>
+      <p>
+        Determine the solutions and solution set to the equation <m>(5x-2)^2=-25</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        There is no real number that squares to <m>-25</m>.  Unless otherwise stated, the assumption is that we are solving the equation over the real numbers.  As such, the stated equation has no solutions (over the real numbers) and the solution set is <m>\emptyset</m> (the empty set).
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Determine the solutions and solution set to the equation <m>3(5-6y)^2=25</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Before applying the square root method, we need to isolate the square root expression by dividing both sides of the equation by <m>3</m>.
+        <md>
+          <mrow>3(5-6y)^2\amp=25</mrow>
+          <mrow>\divideunder{(5-6y)^2}{3}\amp=\divideunder{25}{3}</mrow>
+          <mrow>(5-6y)^2\amp=\frac{25}{3}</mrow>
+          <mrow>5-6y\amp=\pm\sqrt{\frac{25}{3}}</mrow>
+        </md>
+        We need to simplify the square root expression.  This includes rationalizing the denominator.  Let's do that and continue to isolate <m>y</m>.
+        <md>
+          <mrow>5-6y\amp=\pm\sqrt{\frac{25}{3}}</mrow>
+          <mrow>5-6y\amp=\pm\frac{\sqrt{25}}{\sqrt{3}}</mrow>
+          <mrow>5-6y\amp=\pm\frac{5}{\sqrt{3}}</mrow>
+          <mrow>5-6y\amp=\pm\frac{5}{\sqrt{3}}\multiplyright{\frac{\sqrt{3}}{\sqrt{3}}}</mrow>
+          <mrow>5-6y\amp=\pm\frac{5\sqrt{3}}{3}</mrow>
+          <mrow>5-6y\subtractright{5}\amp=\pm\frac{5\sqrt{3}}{3}\subtractright{5}</mrow>
+        </md>
+        As in a previous example, we want the plus/minus expression at the rear.  We also need to establish a common denominator on the right side of the equation and combine those two terms.
+        <md>
+          <mrow>-6y\amp=-5\pm\frac{5\sqrt{3}}{3}</mrow>
+          <mrow>-6y\amp=-\frac{15}{3}\pm\frac{5\sqrt{3}}{3}</mrow>
+          <mrow>-6y\amp=\frac{-15\pm 5\sqrt{3}}{3}</mrow>
+        </md>
+        We're going to finish up by multiplying both sides of the equation by <m>-\frac{1}{6}</m>.  We'll distribute the negative sign through the numerator on the right side of the equation.  However, as discussed in a previous example, there's no need to make the expression after the plus/minus sign negative.
+        <md>
+          <mrow>\multiplyleft{-\frac{1}{6}}(-6y)\amp=\multiplyleft{-\frac{1}{6}}\frac{-15\pm 5\sqrt{3}}{3}</mrow>
+          <mrow>y\amp=\frac{15\pm 5\sqrt{3}}{18}</mrow>
+        </md>
+      </p>
+      <p>
+        The solutions are <m>\frac{15-5\sqrt{3}}{18}</m> and <m>\frac{15+5\sqrt{3}}{18}</m>.
+      </p>
+      <p>
+        The solution set is <m>\left\{\frac{15-5\sqrt{3}}{18},\frac{15+5\sqrt{3}}{18}\right\}</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Determine the solutions and the solutions set for the equation <m>7-9(8-t)^2=7</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by isolating the square root expression.
+        <md>
+          <mrow>7-9(8-t)^2\amp=7</mrow>
+          <mrow>7-9(8-t)^2\subtractright{7}\amp=7\subtractright{7}</mrow>
+          <mrow>-9(8-t)^2\amp=0</mrow>
+          <mrow>\divideunder{-9(8-t)^2}{-9}\amp=\divideunder{0}{-9}</mrow>
+          <mrow>(8-t)^2\amp=0</mrow>
+          <mrow>8-t\amp=\pm\sqrt{0}</mrow>
+        </md>
+        Because there is only one square root of zero (that being zero), this equation has only one solution.
+        <md>
+          <mrow>8-t\amp=0</mrow>
+          <mrow>8-t\subtractright{8}\amp=0\subtractright{8}</mrow>
+          <mrow>-t\amp=-8</mrow>
+          <mrow>\divideunder{-t}{-1}\amp=\divideunder{-8}{-1}</mrow>
+          <mrow>t\amp=8</mrow>
+        </md>
+      </p>
+      <p>
+        The only solution is <m>8</m>.
+      </p>
+      <p>
+        The solution set is <m>\{8\}</m>.
+      </p>
+    </solution>
+  </example>
+    
   <exercises>
 
     <exercisegroup>
@@ -206,7 +197,7 @@
       <exercise>
         <statement>
           <p>
-            <m>(2t-1)^2=9</m>
+            Determine the solutions and the solution set to the equation <m>(2t-1)^2=9</m>.
           </p>
         </statement>
         <solution>
@@ -217,12 +208,13 @@
               <mrow>2t-1\amp=\pm \sqrt{9}</mrow>
               <mrow>2t-1\amp=\pm 3</mrow>
             </md>
+            Because the square root expression simplified to an iteger.  We split the equation into two separate equations.
             <md>
               <mrow>2t-1\amp =-3\amp\amp\text{ or }\amp 2t-1\amp=3</mrow>
-              <mrow>2t-1\addright{1}\amp =-3\addright{1}\amp\amp\text{ or }\amp 2t-1\addright{1}\amp=3\addright{1}</mrow>
-              <mrow>2t\amp =-2\amp\amp\text{ or }\amp 2t\amp=4</mrow>
-              <mrow>\divideunder{2t}{2}\amp =\divideunder{-2}{2}\amp\amp\text{ or }\amp \divideunder{2t}{2}\amp=\divideunder{4}{2}</mrow>
-              <mrow>t\amp =-1\amp\amp\text{ or }\amp t\amp=2</mrow>
+              <mrow>2t-1\addright{1}\amp =-3\addright{1}\amp\amp\text{or}\amp 2t-1\addright{1}\amp=3\addright{1}</mrow>
+              <mrow>2t\amp =-2\amp\amp\text{or}\amp 2t\amp=4</mrow>
+              <mrow>\divideunder{2t}{2}\amp =\divideunder{-2}{2}\amp\amp\text{or}\amp \divideunder{2t}{2}\amp=\divideunder{4}{2}</mrow>
+              <mrow>t\amp =-1\amp\amp\text{or}\amp t\amp=2</mrow>
             </md>
           </p>
           <p>
@@ -237,7 +229,7 @@
       <exercise>
         <statement>
           <p>
-            <m>(3x-2)^2=72</m>
+            Determine the solutions and the solution set to the equation <m>(3x-2)^2=72</m>.
           </p>
         </statement>
         <solution>
@@ -265,27 +257,20 @@
       <exercise>
         <statement>
           <p>
-            <m>x^2-8x+16=12</m>
+            Determine the solution and solution set to the equation <m>5-3(x+8)^2=17</m>.
           </p>
         </statement>
         <solution>
           <p>
-            We begin by factoring the perfect-square trinomial <m>x^2-8x+16</m>.
+            We begin by isolating the square root expression.
             <md>
-              <mrow>x^2-8x+16\amp=12</mrow>
-              <mrow>(x-4)^2\amp=12</mrow>
-              <mrow>x-4\amp=\pm \sqrt{12}</mrow>
-              <mrow>x-4\amp=\pm \sqrt{4 \cdot 3}</mrow>
-              <mrow>x-4\amp=\pm 2\sqrt{3}</mrow>
-              <mrow>x-4\addright{4}\amp=\pm 2\sqrt{3}\addright{4}</mrow>
-              <mrow>x\amp=4\pm 2\sqrt{3}</mrow>
+              <mrow>5-3(x+8)^2\amp=17</mrow>
+              <mrow>5-3(x+8)^2\subtractright{5}\amp=17\subtractright{5}</mrow>
+              <mrow>-3(x+8)^2\amp=12</mrow>
+              <mrow>\divideunder{-3(x+8)^2}{-3}\amp=\divideunder{12}{-3}</mrow>
+              <mrow>(x+8)^2\amp=-4</mrow>
             </md>
-          </p>
-          <p>
-            The solutions are <m>4-2\sqrt{3}</m> and <m>4+2\sqrt{3}</m>.
-          </p>
-          <p>  
-            The solution set is <m>\{4-2\sqrt{3}, 4+2\sqrt{3}\}</m>.
+            There is no real number that squares to <m>-4</m>.  As such, the stated equation has no solutions over the real numbers and its solution set is <m>\emptyset</m>.
           </p>
         </solution>
       </exercise>
@@ -293,30 +278,40 @@
       <exercise>
         <statement>
           <p>
-            <m>y^2+20y+80=0</m>
+            Determine the solution and solution set to the equation <m>5(2t-3)^2-9=15</m>.
           </p>
         </statement>
         <solution>
           <p>
-            We begin by moving the constant term to the right side of the equation and then completing the square on the left side of the equation.
+            We begin by isolating the square root expression.
             <md>
-              <mrow>y^2+20y+80\amp=0</mrow>
-              <mrow>y^2+20y+80\subtractright{80}\amp=0\subtractright{80}</mrow>
-              <mrow>y^2+20y\amp=-80</mrow>
-              <mrow>y^2+20y+100\amp=-80+100</mrow>
-              <mrow>(y+10)^2\amp=20</mrow>
-              <mrow>y+10\amp=\pm \sqrt{20}</mrow>
-              <mrow>y+10\amp=\pm \sqrt{4 \cdot 5}</mrow>
-              <mrow>y+10\amp=\pm 2\sqrt{5}</mrow>
-              <mrow>y+10\subtractright{10}\amp=\pm 2\sqrt{5}\subtractright{10}</mrow>
-              <mrow>y\amp=-10\pm 2\sqrt{5}</mrow>
+              <mrow>5(2t-3)^2-9\amp=15</mrow>
+              <mrow>5(2t-3)^2-9\addright{9}\amp=15\addright{9}</mrow>
+              <mrow>5(2t-3)^2\amp=24</mrow>
+              <mrow>\divideunder{5(2t-3)^2}{5}\amp=\divideunder{24}{5}</mrow>
+              <mrow>(2t-3)^2\amp=\frac{24}{5}</mrow>
+            </md>
+            We can now apply the square root method and then isolate <m>t</m>.  We need to be mindful to completely simplify the square root expression and to establish a common denominator in our final expression.
+            <md>
+              <mrow>(2t-3)^2\amp=\frac{24}{5}</mrow>
+              <mrow>2t-3\amp=\pm\sqrt{\frac{24}{5}}</mrow>
+              <mrow>2t-3\amp=\pm\frac{\sqrt{24}}{\sqrt{5}}</mrow>
+              <mrow>2t-3\amp=\frac{2\sqrt{6}}{\sqrt{5}}</mrow>
+              <mrow>2t-3\amp=\frac{2\sqrt{6}}{\sqrt{5}}\multiplyright{\frac{\sqrt{5}}{\sqrt{5}}}</mrow>
+              <mrow>2t-3\amp=\pm\frac{2\sqrt{30}}{5}</mrow>
+              <mrow>2t-3\addright{3}\amp=\pm\frac{2\sqrt{30}}{5}\addright{3}</mrow>
+              <mrow>2t\amp=3\pm\frac{2\sqrt{30}}{5}</mrow>
+              <mrow>2t\amp=\frac{15}{3}\pm\frac{2\sqrt{30}}{5}</mrow>
+              <mrow>2t\amp=\frac{15\pm 2\sqrt{30}}{5}</mrow>
+              <mrow>\multiplyleft{\frac{1}{2}}2t\amp=\multiplyleft{\frac{1}{2}}\frac{15\pm 2\sqrt{30}}{5}</mrow>
+              <mrow>y\amp=\frac{15 \pm 2\sqrt{30}}{10}</mrow>
             </md>
           </p>
           <p>
-            The solutions are <m>-10-2\sqrt{5}</m> and <m>-10+2\sqrt{5}</m>.
+            The solutions are <m>\frac{15-2\sqrt{30}}{10}</m> and <m>\frac{15+2\sqrt{30}}{10}</m>.
           </p>
-          <p>  
-            The solution set is <m>\{-10-2\sqrt{5}, -10+2\sqrt{5}\}</m>.
+          <p>
+            The solutions set is <m>\left\{\frac{15-2\sqrt{30}}{10},\frac{15+2\sqrt{30}}{10}\right\}</m>.
           </p>
         </solution>
       </exercise>
@@ -324,25 +319,37 @@
       <exercise>
         <statement>
           <p>
-            <m>x^2+4x+7=0</m>
+            Determine the solution and solution set to the equation <m>\frac{(8-y)^2}{3}=6</m>
           </p>
         </statement>
         <solution>
           <p>
-            We begin by moving the constant term to the right side of the equation and then completing the square on the left side of the equation.
+            We begin by isolating the square root expression.
             <md>
-              <mrow>x^2+4x+7\amp=0</mrow>
-              <mrow>x^2+4x+7\subtractright{7}\amp=0\subtractright{7}</mrow>
-              <mrow>x^2+4x\amp=-7</mrow>
-              <mrow>x^2+4x\addright{4}\amp=-7\addright{4}\text{ (completing the square)}</mrow>
-              <mrow>(x+2)^2\amp=-3</mrow>
+              <mrow>\frac{(8-y)^2}{3}\amp=6</mrow>
+              <mrow>\multiplyleft{3}\frac{(8-y)^2}{3}\amp=\multiplyleft{3}6</mrow>
+              <mrow>(8-y)^2\amp=18</mrow>
+            </md>
+            We can now apply the square root method.  We will then simplify the square root expression and work towards isolating <m>y</m>.
+            <md>
+              <mrow>(8-y)^2\amp=18</mrow>
+              <mrow>8-y\amp=\pm\sqrt{18}</mrow>
+              <mrow>8-y\amp=\pm 3\sqrt{2}</mrow>
+              <mrow>8-y\subtractright{8}\amp=\pm 3\sqrt{2}\subtractright{8}</mrow>
+              <mrow>-y\amp=-8\pm 3\sqrt{2}</mrow>
+            </md>
+            At this point we can isolation <m>y</m> by multiplying both sides of the equation by <m>-1</m>.  Technically we need to distribute the negative sign to the two terms on the right side of the equation.  But as previously discussed, having a negative sign after a plus/minus sign is redundant and, hence, not done.
+            <md>
+              <mrow>-y\amp=-8\pm 3\sqrt{2}</mrow>
+              <mrow>\multiplyleft{-1}-y\amp=\multiplyleft{-1}\left(-8\pm 3\sqrt{2}\right)</mrow>
+              <mrow>y\amp=8\pm 3\sqrt{2}</mrow>
             </md>
           </p>
           <p>
-            The equation <m>x^2+4x+7=0</m> has no real number solutions.
+            The solutions are <m>8-3\sqrt{2}</m> and <m>8+3\sqrt{2}</m>.
           </p>
-          <p>  
-            Over the real numbers the solution set is <m>\emptyset</m>.
+          <p>
+            The solution set is <m>\left\{8-3\sqrt{2},8+3\sqrt{2}\right\}</m>.
           </p>
         </solution>
       </exercise>
@@ -350,33 +357,42 @@
       <exercise>
         <statement>
           <p>
-            <m>w^2-7w+7=0</m>
+            Determine the solution and solution set to the equation <m>2(3w+8)^2+1=33</m>.
           </p>
         </statement>
         <solution>
           <p>
-            We begin by moving the constant term to the right side of the equation and then completing the square on the left side of the equation.
+            We begin by isolating the square root expression.
             <md>
-              <mrow>w^2-7w+7\amp=0</mrow>
-              <mrow>w^2-7w+7\subtractright{7}\amp=0\subtractright{7}</mrow>
-              <mrow>w^2-7w\amp=-7</mrow>
-              <mrow>w^2-7w\addright{\frac{49}{4}}\amp=-7\addright{\frac{49}{4}}\text{ (completing the square)}</mrow>
-              <mrow>\left(w-\frac{7}{2}\right)^2\amp=\frac{21}{4}</mrow>
-              <mrow>w-\frac{7}{2}\amp=\pm \sqrt{\frac{21}{4}}</mrow>
-              <mrow>w-\frac{7}{2}\amp=\pm \frac{\sqrt{21}}{2}</mrow>
-              <mrow>w-\frac{7}{2}\addright{\frac{7}{2}}\amp=\pm \frac{\sqrt{21}}{2}\addright{\frac{7}{2}}</mrow>
-              <mrow>w\amp=\frac{7}{2}\pm \frac{\sqrt{21}}{2}</mrow>
-              <mrow>w\amp=\frac{7\pm \sqrt{21}}{2}</mrow>
+              <mrow>2(3w+8)^2+1\amp=33</mrow>
+              <mrow>2(3w+8)^2+1\subtractright{1}\amp=33\subtractright{1}</mrow>
+              <mrow>2(3w+8)^2\amp=32</mrow>
+              <mrow>\divideunder{2(3w+8)^2}{2}\amp=\divideunder{32}{2}</mrow>
+              <mrow>(3w+8)^2\amp=16</mrow>
+            </md>
+            We can now apply the square root method.
+            <md>
+              <mrow>(3w+8)^2\amp=16</mrow>
+              <mrow>3w+8\amp=\pm\sqrt{16}</mrow>
+              <mrow>3w+8\amp=\pm 4</mrow>
+            </md>
+            Because the square root expression simplified to an integer, we split the equation into two separate equations.
+            <md>
+              <mrow>3w+8\amp=-4\amp\amp\text{or}\amp 3w+8\amp=4</mrow>
+              <mrow>3w+8\subtractright{8}\amp=-4\subtractright{8}\amp\amp\text{or}\amp 3w+8\subtractright{8}\amp=4\subtractright{8}</mrow>
+              <mrow>3w\amp=-12\amp\amp\text{or}\amp 3w\amp=-4</mrow>
+              <mrow>\divideunder{3w}{3}\amp=\divideunder{-12}{3}\amp\amp\text{or}\amp \divideunder{3w}{3}\amp=\divideunder{-4}{3}</mrow>
+              <mrow>w\amp-4\amp\amp\text{or}\amp w\amp=-\frac{4}{3}</mrow>
             </md>
           </p>
           <p>
-            The solutions are <m>\frac{7-\sqrt{21}}{2}</m> and <m>\frac{7+\sqrt{21}}{2}</m>.
+            The solutions are <m>-4</m> and <m>-\frac{4}{3}</m>.
           </p>
-          <p>  
-            The solution set is <m>\left\{\frac{7-\sqrt{21}}{2}, \frac{7+\sqrt{21}}{2}\right\}</m>.
+          <p>
+            The solution set is <m>\left\{-4,-\frac{4}{3}\right\}</m>.
           </p>
         </solution>
-      </exercise>
+      </exercise>v
 
     </exercisegroup>
 

@@ -12,9 +12,24 @@
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="MTH-60-materials" target="blank">
   <title>Topics Covered in MTH 60</title>
 
+  <paragraphs>
+    <title>Explanations, Examples, and Exercises</title>
+    <p></p>
   <p>
-    Please note that the documents will open in new windows.
+    Please note that the documents open in new windows.
     <ul>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/linear-equations-simple.html" target="blank">Introduction to linear equations in one variable</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/linear-equations-not-simple.html" target="blank">Linear equations in one variable - Part II</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/linear-equations-literal-equations.html" target="blank">Literal equations</url>
+      </li>
+      <li>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/linear-equations-inequalities.html" target="blank">Linear inequalities in one variable</url>
+      </li>
       <li>
         <url href="https://spot.pcc.edu/slc/mathresources/output/html/lines-standard-form.html" target="blank">Intercepts and the Standard Form of the Equation of a Line</url>
       </li>
@@ -44,5 +59,122 @@
       </li>
     </ul>
   </p>
+  </paragraphs>
+  <paragraphs>
+    <title>GeoGebra Applets</title>
+    <p></p>
+    <p>
+      Please note that the Applets open in new windows.
+    </p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-intercepts-of-a-line.html" target="blank">Determine the intercepts of the line whose equation is stated in standard form. (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-graph-lines-standard-form.html" target="blank">Graph a line given the standard form of the equation of the line.  (Graphing Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-graph-a-given-slope.html" target="blank">Graph a line with a fixed <m>y</m>-intercept and a given slope. (Graphing Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-determine-the-slope-two-points.html" target="blank">Determine the slope of a line given two points on the line. (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-lines-graph-slope-intercept.html" target="blank">Graph a line given the slope-intercept form of the equation of the line.  (Graphing Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-lines-slope-y-int-from-standard.html" target="blank">Determine the Slope and <m>y</m>-intercept of a line whose equation is stated in standard form.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-equation-from-two-points.html" target="blank">Determine the equation of a line given two points on a line.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-systems-graphical.html" target="blank">Solve a system of equations graphically.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-systems-sustitution.html" target="blank">Solve a system of equations by substitution.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-systems-elimination.html" target="blank">Solve a system of equations by elimination.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-systems-interest-application.html" target="blank">Explore a systems-based interest application numerically.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-systems-mixture-application.html" target="blank">Explore a systems-based acid mixture application numerically.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-systems-drt-application.html" target="blank">Explore a systems-based distance/rate/time application numerically.  (Exploration Applet)</url>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </paragraphs>
+  <paragraphs>
+    <title>Videos Created by Ann Cary and Scot Leavitt</title>
+    <p></p>
+
+    <p>
+      The links take you to YouTube Playlists which will open either in a new window or in a Youtube App.
+      <ul>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-fY732-8tex6rx7xNEar3TO" target="blank">The Cartesian coordinate system</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-e4BPQL-CTfUR7abqP1MlHx" target="blank">Graphing linear equations on the Cartesian coordinate system</url> 
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-f8cnTX8Fv82mnDxfGtuNF6" target="blank">The standard Form of the equation of a line/Intercepts</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-egOM3nFkifyG8kzF1PA46D" target="blank">Slope of a line</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-e5tfdgFM8gL44XS1TxKQcf" target="blank">The slope-intercept form of the equation of a line</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-e3HVQTn7ysJcPB_-5mUO5O" target="blank">The point-slope form of the equation of a line</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-dAFOej6LZ7akWnP1saiC_w" target="blank">Parallel lines/Perpendicular lines/Vertical and horizontal lines</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-cVXXDS3q3MLeYAC9rz4TGX" target="blank">Solving systems of equations by graphing</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-f-72s-L0ZpS4K8B86jMm1i" target="blank">Solving systems of equations by substitution</url>
+        </li>
+        <li>
+          <url href="https://www.youtube.com/playlist?list=PLmuZCPhWPt-db09h4ugJEcflfcwm94aNB" target="blank">Solving systems of equations by variable elimination</url>
+        </li>
+      </ul>
+    </p>
+  </paragraphs>
 
 </section>

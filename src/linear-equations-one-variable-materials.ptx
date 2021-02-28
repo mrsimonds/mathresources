@@ -13,6 +13,7 @@
     <title>Linear Equations and Linear Inequalities in One Variable</title>
 
       <xi:include href="./linear-equations-simple.ptx" />
+      <xi:include href="./linear-equations-not-simple.ptx" />
       <xi:include href="./linear-equations-literal-equations.ptx" />
       <xi:include href="./linear-equations-inequalities.ptx" />
 

@@ -340,15 +340,19 @@
       In the case of Side-Side-Side, the measurement of each side is given.  It's difficult to establish with a static picture why this information establishes a unique triangle.  We can explore it, however, using the movable pieces in <xref ref="trigonometry-laws-geogebra-1">Figure</xref>.  All three pieces are of fixed length (unless you press "New Example" so that new fixed lengths are established).  The position of the brown line segment is fixed.  You can move the blue line segments by grabbing and dragging the hollow dots.  No matter the lengths of the three line segments, there is always exactly one way you can create a triangle with the brown line segment as the left most line segment.
     </p>
 
-    <figure xml:id="trigonometry-laws-geogebra-1">
-      <caption>See directions in the paragraph immediately above.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/trigonometry-SSS.ggb">
-          setPerspective("G");
-          setAxesVisible(0,0);
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="trigonometry-laws-geogebra-1">
+        <caption>
+          See directions in the paragraph immediately above.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/trigonometry-SSS.ggb">
+            setPerspective("G");
+            setAxesVisible(0,0);
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
     <example>
       <statement>

@@ -11,6 +11,32 @@
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="linear-equations-inequalities">
     <title>Linear Inequalities in One Variable</title>
+    <p>
+      The process of solving a linear equality in one variable is very similar to solving a linear equation  in one variable.  In fact, other than the presence of an inequality symbol (in place of an equal sign), the steps are identical with one major caveat.  The direction of the inequality sign remains consistent from  step to step unless you multiply or divide both sides of the inequality by a negative number.  If you multiply or divide both sides of the equation by a negative number, the direction of the inequality sign reverses. 
+    </p>
+    <p>
+      Consider what happens when we divide both <m>-10</m> and <m>15</m> by <m>-5</m>.  Before the division occurs, we have the inequality pointing to the left, i.e.
+      <me>-10 \lt 15</me>.
+      After the division, the inequality points to the right, i.e.
+      <me>2 \gt -3</me>.
+      Suppose that we are tasked with solving the inequality 
+      <me>-5x \lt 15</me>.
+      In order to isolate <m>x</m>, we need to divide both sides of the inequality by <m>-5</m>.  When we do this, we need to reverse the direction of the inequality sign.  This is illustrated below.
+      <md>
+        <mrow>-5x \amp\lt 15</mrow>
+        <mrow>\divideunder{-5x}{-5} \amp\gt \divideunder{15}{-5}</mrow>
+        <mrow>x \amp\gt -3</mrow>
+      </md>
+      Note that the two sides are equal at the the endpoint of the solution interval.  Note too that if we replace <m>x</m> with a value greater than <m>-3</m> (say <m>6</m>), the resultant inequality is true.
+      <md>
+        <mrow>-5x \amp\lt 15</mrow>
+        <mrow>-5 \cdot 6\amp\stackrel{?}{\lt}15</mrow>
+        <mrow>-30\amp\stackrel{\checkmark}{\lt}15</mrow>
+      </md>
+    </p>
+    <p>
+      The direction of the inequality reverses only when we multiply or divide both sides of the inequality by a negative number.  In all other cases the direction of the inequality remains the same. Several examples follow.
+    </p>
 
     <example>
       <statement>
@@ -21,23 +47,23 @@
       <solution>
         <p>
           <md>
-            <mrow>2x-7 \lt 17</mrow>
-            <mrow>2x-7\addright{7} \lt 17\addright{7}</mrow>
-            <mrow>2x \lt 24</mrow>
-            <mrow>\divideunder{2x}{2} \lt \divideunder{24}{2}</mrow>
-            <mrow>x \lt 12</mrow>
+            <mrow>2x-7 \amp\lt 17</mrow>
+            <mrow>2x-7\addright{7} \amp\lt 17\addright{7}</mrow>
+            <mrow>2x \amp\lt 24</mrow>
+            <mrow>\divideunder{2x}{2} \amp\lt \divideunder{24}{2}</mrow>
+            <mrow>x \amp\lt 12</mrow>
           </md>
           If our solution is correct, the two sides are equal at the endpoint if the solution set.  Let's check.
           <md>
             <mrow>2x-7\amp=17</mrow>
-            <mrow>2 \cdot 12-7\amp\stackrel{?}{=}17</mrow>
+            <mrow>2 \cdot \highlight{12}-7\amp\stackrel{?}{=}17</mrow>
             <mrow>24-7\amp\stackrel{?}{=}17</mrow>
             <mrow>17\amp\stackrel{\checkmark}{=}17</mrow>
           </md>
           We can check to make sure that the inequality sign is pointed in the proper direction by testing any number on the interval other than the endpoint of the interval.  Make sure that you check the value in the original inequality.  I'm going to check <m>10</m>.
           <md>
             <mrow>2x-7 \amp\lt 17</mrow>
-            <mrow>2 \cdot 10-7 \amp\stackrel{?}{\lt}17</mrow>
+            <mrow>2 \cdot \highlight{10}-7 \amp\stackrel{?}{\lt}17</mrow>
             <mrow>20-7\amp\stackrel{?}{\lt}17</mrow>
             <mrow>13\amp\stackrel{\checkmark}{\lt}17</mrow>
           </md>
@@ -68,14 +94,14 @@
           Let's check to make sure that the two sides are equal at the endpoint of the interval.
           <md>
             <mrow>5-3y\amp=17</mrow>
-            <mrow>5-3 \cdot-4\amp\stackrel{?}{=}17</mrow>
+            <mrow>5-3 \cdot \highlight{-4}\amp\stackrel{?}{=}17</mrow>
             <mrow>5+12\amp\stackrel{?}{=}17</mrow>
             <mrow>17\amp\stackrel{\checkmark}{=}17</mrow>
           </md>
           Let's test <m>-6</m> in the original inequality.
           <md>
             <mrow>5-3y \amp\ge 17</mrow>
-            <mrow>5-3 \cdot -6 \amp\stackrel{?}{\ge} 17</mrow>
+            <mrow>5-3 \cdot \highlight{-6} \amp\stackrel{?}{\ge} 17</mrow>
             <mrow>5+18\amp\stackrel{?}{\ge}17</mrow>
             <mrow>23\amp\stackrel{\checkmark}{\ge}17</mrow>
           </md>
@@ -102,14 +128,14 @@
           We need to check that the two sides are equal at the endpoint, <m>1</m>.
           <md>
             <mrow>x-14\amp=3x-16</mrow>
-            <mrow>1-14\amp\stackrel{?}{=}3 \cdot 1-16</mrow>
+            <mrow>\highlight{1}-14\amp\stackrel{?}{=}3 \cdot \highlight{1}-16</mrow>
             <mrow>-13\amp\stackrel{?}{=}3-16</mrow>
             <mrow>-13\amp\stackrel{\checkmark}{=}-13</mrow>
           </md>
           Let's check <m>2</m> in the original inequality.
           <md>
             <mrow>x-14 \amp\le 3x-16</mrow>
-            <mrow>2-14\amp\stackrel{?}{\le}3 \cdot 2-16</mrow>
+            <mrow>\highlight{2}-14\amp\stackrel{?}{\le}3 \cdot \highlight{2}-16</mrow>
             <mrow>-12\amp\stackrel{?}{\le}6-16</mrow>
             <mrow>-12\amp\stackrel{\checkmark}{\le}-10</mrow>
           </md>
@@ -140,7 +166,7 @@
           Let's check that the two sides are equal at <m>-\frac{1}{2}</m>.
           <md>
             <mrow>\frac{2}{5}t+\frac{1}{2} \amp= \frac{3}{10}</mrow>
-            <mrow>\frac{2}{5} \cdot -\frac{1}{2}+\frac{1}{2} \amp\stackrel{?}{=} \frac{3}{10}</mrow>
+            <mrow>\frac{2}{5} \cdot \highlight{-\frac{1}{2}}+\frac{1}{2} \amp\stackrel{?}{=} \frac{3}{10}</mrow>
             <mrow>-\frac{1}{5}+\frac{1}{2} \amp\stackrel{?}{=} \frac{3}{10}</mrow>
             <mrow>-\frac{2}{10}+\frac{5}{10} \amp\stackrel{?}{=} \frac{3}{10}</mrow>
             <mrow>\frac{3}{10} \amp\stackrel{\checkmark}{=} \frac{3}{10}</mrow>
@@ -148,7 +174,7 @@
           Let's test <m>0</m> in the original inequality.
           <md>
             <mrow>\frac{2}{5}t+\frac{1}{2} \amp\gt \frac{3}{10}</mrow>
-            <mrow>\frac{2}{5} \cdot 0+\frac{1}{2} \amp\stackrel{?}{\gt} \frac{3}{10}</mrow>
+            <mrow>\frac{2}{5} \cdot \highlight{0}+\frac{1}{2} \amp\stackrel{?}{\gt} \frac{3}{10}</mrow>
             <mrow>0+\frac{1}{2} \amp\stackrel{?}{\gt} \frac{3}{10}</mrow>
             <mrow>\frac{1}{2} \amp\stackrel{?}{\gt} \frac{3}{10}</mrow>
             <mrow>\frac{5}{10} \amp\stackrel{\checkmark}{\gt} \frac{3}{10}</mrow>
@@ -196,14 +222,14 @@
           Let's check that the two sides are equal at <m>-6</m>.
           <md>
             <mrow>2(x-2) \amp= 3x+2</mrow>
-            <mrow>2(-6-2) \amp\stackrel{?}{=} 3 \cdot -6+2</mrow>
+            <mrow>2(\highlight{-6}-2) \amp\stackrel{?}{=} 3 \cdot \highlight{-6}+2</mrow>
             <mrow>2 \cdot -8 \amp\stackrel{?}{=} -18+2</mrow>
             <mrow>-16 \amp\stackrel{\checkmark}{=} -16</mrow>
           </md>
           Let's test <m>-10</m> in the original inequality.
           <md>
             <mrow>2(x-2) \amp\ge 3x+2</mrow>
-            <mrow>2(-10-2) \amp\stackrel{?}{\ge} 3 \cdot-10+2</mrow>
+            <mrow>2(\highlight{-10}-2) \amp\stackrel{?}{\ge} 3 \cdot\highlight{-10}+2</mrow>
             <mrow>2 \cdot -12 \amp\stackrel{?}{\ge} -30+2</mrow>
             <mrow>-24 \amp\stackrel{\checkmark}{\ge} -28</mrow>
           </md>
@@ -255,14 +281,14 @@
               Let's check that the two sides are equal at <m>4</m>.
               <md>
                 <mrow>3-5t \amp= 7-6t</mrow>
-                <mrow>3-5 \cdot 4 \amp\stackrel{?}{=} 7-6 \cdot 4</mrow>
+                <mrow>3-5 \cdot \highlight{4} \amp\stackrel{?}{=} 7-6 \cdot \highlight{4}</mrow>
                 <mrow>3-20 \amp\stackrel{?}{=} 7-24</mrow>
                 <mrow>-17 \amp\stackrel{\checkmark}{=} -17</mrow>
               </md>
               Let's test <m>0</m> in the original inequality.
               <md>
                 <mrow>3-5t \amp\lt 7-6t</mrow>
-                <mrow>3-5 \cdot 0 \amp\stackrel{?}{\lt} 7-6 \cdot 0</mrow>
+                <mrow>3-5 \cdot \highlight{0} \amp\stackrel{?}{\lt} 7-6 \cdot \highlight{0}</mrow>
                 <mrow>3-0 \amp\stackrel{?}{\lt} 7-0</mrow>
                 <mrow>2 \amp\stackrel{\checkmark}{\lt} 7</mrow>
               </md>
@@ -289,14 +315,14 @@
               Let's check that the two sides are equal at <m>-3</m>.
               <md>
                 <mrow>11-2x\amp=17</mrow>
-                <mrow>11-2 \cdot -3 \amp\stackrel{?}{=} 17</mrow>
+                <mrow>11-2 \cdot \highlight{-3} \amp\stackrel{?}{=} 17</mrow>
                 <mrow>11+6 \amp\stackrel{?}{=} 17</mrow>
                 <mrow>17 \amp\stackrel{\checkmark}{=} 17</mrow>
               </md>
               Let's test <m>-5</m> in the original inequality.
               <md>
                 <mrow>11-2x \amp\ge 17</mrow>
-                <mrow>11-2 \cdot -5 \amp\stackrel{?}{\ge} 17</mrow>
+                <mrow>11-2 \cdot \highlight{-5} \amp\stackrel{?}{\ge} 17</mrow>
                 <mrow>11+10 \amp\stackrel{?}{\ge} 17</mrow>
                 <mrow>21 \amp\stackrel{\checkmark}{\ge} 17</mrow>
               </md>
@@ -324,14 +350,14 @@
               Lets make sure that the two sides are equal at <m>11</m>.
               <md>
                 <mrow>3(y+1) \amp= 4(y-2)</mrow>
-                <mrow>3(11+1) \amp\stackrel{?}{=} 4(11-2)</mrow>
+                <mrow>3(\highlight{11}+1) \amp\stackrel{?}{=} 4(\highlight{11}-2)</mrow>
                 <mrow>3 \cdot 12 \amp\stackrel{?}{=} 4 \cdot 9</mrow>
                 <mrow>36 \amp\stackrel{\checkmark}{=} 36</mrow>
               </md>
               Let's test 0 in the original inequality.
               <md>
                 <mrow>3(y+1) \amp\gt 4(y-2)</mrow>
-                <mrow>3(0+1) \amp\stackrel{?}{\gt} 4(0-2)</mrow>
+                <mrow>3(\highlight{0}+1) \amp\stackrel{?}{\gt} 4(\highlight{0}-2)</mrow>
                 <mrow>3 \cdot 1 \amp\stackrel{?}{\gt} 4 \cdot -2</mrow>
                 <mrow>12 \amp\stackrel{\checkmark}{\gt} -8</mrow>
               </md>
@@ -362,7 +388,7 @@
               Let's be sure that the two sides are equal at <m>-2</m>.
               <md>
                 <mrow>\frac{1}{3}x+\frac{1}{2} \amp\le \frac{2}{3}x+\frac{7}{6}</mrow>
-                <mrow>\frac{1}{3} \cdot -\frac{2}{1}+\frac{1}{2} \amp\stackrel{?}{=}\frac{2}{3} \cdot -\frac{2}{1}+\frac{7}{6}</mrow>
+                <mrow>\frac{1}{3} \cdot \highlight{-\frac{2}{1}}+\frac{1}{2} \amp\stackrel{?}{=}\frac{2}{3} \cdot \highlight{-\frac{2}{1}}+\frac{7}{6}</mrow>
                 <mrow>-\frac{2}{3}+\frac{1}{2} \amp\stackrel{?}{=} -\frac{4}{3}+\frac{7}{6}</mrow>
                 <mrow>-\frac{4}{6}+\frac{3}{6} \amp\stackrel{?}{=} -\frac{8}{6}+\frac{7}{6}</mrow>
                 <mrow>-\frac{1}{6} \amp\stackrel{\checkmark}{=} -\frac{1}{6}</mrow>
@@ -370,7 +396,7 @@
               Let's test <m>0</m> in the original inequality.
               <md>
                 <mrow>\frac{1}{3}x+\frac{1}{2} \amp\le \frac{2}{3}x+\frac{7}{6}</mrow>
-                <mrow>\frac{1}{3} \cdot 0+\frac{1}{2} \amp\stackrel{?}{\le} \frac{2}{3} \cdot 0+\frac{7}{6}</mrow>
+                <mrow>\frac{1}{3} \cdot \highlight{0}+\frac{1}{2} \amp\stackrel{?}{\le} \frac{2}{3} \cdot \highlight{0}+\frac{7}{6}</mrow>
                 <mrow>0+\frac{1}{2} \amp\stackrel{?}{\le} 0+\frac{7}{6}</mrow>
                 <mrow>\frac{1}{2} \amp\stackrel{\checkmark}{\le} \frac{7}{6}</mrow>
               </md>
@@ -417,7 +443,7 @@
               Let's check to see that the two sides are equal at <m>\frac{1}{2}</m>.
               <md>
                 <mrow>7(x-4) \amp\lt 9x-29</mrow>
-                <mrow>7\left(\frac{1}{2}-4\right) \amp\stackrel{?}{=} 9 \cdot \frac{1}{2}-29</mrow>
+                <mrow>7\left(\highlight{\frac{1}{2}}-4\right) \amp\stackrel{?}{=} 9 \cdot \highlight{\frac{1}{2}}-29</mrow>
                 <mrow>7\left(\frac{1}{2}-\frac{8}{2}\right) \amp\stackrel{?}{=} \frac{9}{2}-\frac{58}{2}</mrow>
                 <mrow>\frac{7}{1} \cdot -\frac{7}{2} \amp\stackrel{?}{=} -\frac{49}{2}</mrow>
                 <mrow>-\frac{49}{2} \amp\stackrel{\checkmark}{=} -\frac{49}{2}</mrow>
@@ -425,7 +451,7 @@
               Let's test <m>1</m> in the original inequality.
               <md>
                 <mrow>7(x-4) \amp\lt 9x-29</mrow>
-                <mrow>7(1-4) \amp\stackrel{?}{\lt} 9 \cdot 1-29</mrow>
+                <mrow>7(\highlight{1}-4) \amp\stackrel{?}{\lt} 9 \cdot \highlight{1}-29</mrow>
                 <mrow>7 \cdot -3 \amp\stackrel{?}{\lt} 9-29</mrow>
                 <mrow>-21 \amp\stackrel{\checkmark}{\lt} -20</mrow>
               </md>
@@ -475,7 +501,7 @@
               Let's ensure that the two sides are equal at <m>-9</m>.
               <md>
                 <mrow>\frac{2}{5}y-\frac{1}{2} \amp= \frac{1}{2}y+\frac{2}{5}</mrow>
-                <mrow>\frac{2}{5} \cdot -\frac{9}{1}-\frac{1}{2} \amp\stackrel{?}{=} \frac{1}{2} \cdot -\frac{9}{1}+\frac{2}{5}</mrow>
+                <mrow>\frac{2}{5} \cdot \highlight{-\frac{9}{1}}-\frac{1}{2} \amp\stackrel{?}{=} \frac{1}{2} \cdot \highlight{-\frac{9}{1}}+\frac{2}{5}</mrow>
                 <mrow>-\frac{18}{5}-\frac{1}{2} \amp\stackrel{?}{=} -\frac{9}{2}+\frac{2}{5}</mrow>
                 <mrow>-\frac{36}{10}-\frac{5}{10} \amp\stackrel{?}{=} -\frac{45}{10}+\frac{4}{10}</mrow>
                 <mrow>-\frac{41}{10} \amp\stackrel{\checkmark}{=} -\frac{41}{10}</mrow>
@@ -483,7 +509,7 @@
               Let's test <m>0</m> in the original inequality.
               <md>
                 <mrow>\frac{2}{5}y-\frac{1}{2} \amp\le \frac{1}{2}y+\frac{2}{5}</mrow>
-                <mrow>\frac{2}{5} \cdot 0-\frac{1}{2} \amp\stackrel{?}{\le} \frac{1}{2} \cdot 0+\frac{2}{5}</mrow>
+                <mrow>\frac{2}{5} \cdot \highlight{0}-\frac{1}{2} \amp\stackrel{?}{\le} \frac{1}{2} \cdot \highlight{0}+\frac{2}{5}</mrow>
                 <mrow>0-\frac{1}{2} \amp\stackrel{?}{\le} 0+\frac{2}{5}</mrow>
                 <mrow>-\frac{1}{2} \amp\stackrel{\checkmark}{\le} \frac{2}{5}</mrow>
               </md>

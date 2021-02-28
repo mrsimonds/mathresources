@@ -34,18 +34,22 @@
       Before telling you the graphical effect of adding or subtracting a positive number to <m>x</m>, explore the effect yourself using <xref ref="functions-graphical-transformations-geogebra-1x">Figure</xref>.  Can you describe the effect using your own words?
     </p>
 
-    <figure xml:id="functions-graphical-transformations-geogebra-1x">
-      <caption>Add or subtract a positive number to <m>x</m> by dragging the slider.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/function-horizontal-shifts.ggb">
+    <exploration>
+      <figure xml:id="functions-graphical-transformations-geogebra-1x">
+        <caption>
+          Add or subtract a positive number to <m>x</m> by dragging the slider.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/function-horizontal-shifts.ggb">
               setPerspective("G");
               setAxisSteps(1, 1, 1, 1);
               setCoordSystem(-8, 8, -8, 8);
               setGridVisible(1);         
               setAxisLabels(1,"x","y","z");
-        </slate>
-      </interactive>
-    </figure>
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
     <p>
       Assuming that <m>h</m> is a positive number, the graph of <m>y=f(x-h)</m> shifts every point on <m>y=f(x)</m> rightward by <m>h</m> units while the graph of <m>y=f(x+h)</m> shifts every point on <m>y=f(x)</m> leftward by <m>h</m> units.
@@ -122,18 +126,22 @@
       Before telling you the graphical effect of adding or subtracting a positive number to <m>f(x)</m>, explore the effect yourself using <xref ref="functions-graphical-transformations-geogebra-2x">Figure</xref>.  Can you describe the effect using your own words?
     </p>
 
-    <figure xml:id="functions-graphical-transformations-geogebra-2x">
-      <caption>Add or subtract a positive number to <m>f(x)</m> by dragging the slider.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/function-vertical-shifts.ggb">
+    <exploration>
+      <figure xml:id="functions-graphical-transformations-geogebra-2x">
+        <caption>
+          Add or subtract a positive number to <m>f(x)</m> by dragging the slider.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/function-vertical-shifts.ggb">
               setPerspective("G");
               setAxisSteps(1, 1, 1, 1);
               setCoordSystem(-8, 8, -8, 8);
               setGridVisible(1);         
               setAxisLabels(1,"x","y","z");
-        </slate>
-      </interactive>
-    </figure>
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
     <p>
       Assuming that <m>k</m> is a positive number, the graph of <m>y=f(x)+k</m> shifts every point on <m>y=f(x)</m> upward by <m>hk</m> units while the graph of <m>y=f(x)-k</m> shifts every point on <m>y=f(x)</m> downward by <m>k</m> units.
@@ -201,15 +209,19 @@
 
     </sidebyside>
 
-    <figure xml:id="functions-graphical-transformations-geogebra-1">
-      <caption>Practice Shift Transformations:  Enter the coordinates for the shifted points A, B, C and then click "Show Transformed Curve" to check your answer.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/transformation-shift-quiz.ggb">
-          setPerspective("G");
-          setGridVisible(1);         
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="functions-graphical-transformations-geogebra-1">
+        <caption>
+          Practice Shift Transformations:  Enter the coordinates for the shifted points A, B, C and then click "Show Transformed Curve" to check your answer.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/transformation-shift-quiz.ggb">
+            setPerspective("G");
+            setGridVisible(1);         
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
     
   </paragraphs>
 
@@ -221,18 +233,22 @@
       Before telling you the graphical effects of having a negative coefficient on <m>x</m> and/or <m>f(x)</m>, explore the effect yourself using <xref ref="functions-graphical-transformations-geogebra-3x">Figure</xref>.  Can you describe the effect using your own words?
     </p>
 
-    <figure xml:id="functions-graphical-transformations-geogebra-3x">
-      <caption>Use the buttons to change the sign on <m>x</m> or <m>f(x)</m>.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/function-reflections.ggb">
+    <exploration>
+      <figure xml:id="functions-graphical-transformations-geogebra-3x">
+        <caption>
+          Use the buttons to change the sign on <m>x</m> or <m>f(x)</m>.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/function-reflections.ggb">
               setPerspective("G");
               setAxisSteps(1, 1, 1, 1);
               setCoordSystem(-8, 8, -8, 8);
               setGridVisible(1);         
               setAxisLabels(1,"x","y","z");
-        </slate>
-      </interactive>
-    </figure>
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
     
     <p>
       The graph of <m>y=f(-x)</m> is a reflection of the graph of <m>y=f(x)</m> across the <m>y</m>-axis. The graph of <m>y=-f(x)</m> is a reflection of the graph of <m>y=f(x)</m> across the <m>x</m>-axis.
@@ -303,18 +319,22 @@
       Before telling you the graphical effect of multiplying <m>x</m> by a positive number other than one, explore the effect yourself using <xref ref="functions-graphical-transformations-geogebra-4x">Figure</xref>.  Can you describe the effect using your own words?
     </p>
 
-    <figure xml:id="functions-graphical-transformations-geogebra-4x">
-      <caption>Multiply <m>x</m> by a positive number other than one by dragging the slider.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/function-horizontal-stretch.ggb">
+    <exploration>
+      <figure xml:id="functions-graphical-transformations-geogebra-4x">
+        <caption>
+          Multiply <m>x</m> by a positive number other than one by dragging the slider.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/function-horizontal-stretch.ggb">
               setPerspective("G");
               setAxisSteps(1, 1, 1, 1);
               setCoordSystem(-8, 8, -8, 8);
               setGridVisible(1);         
               setAxisLabels(1,"x","y","z");
-        </slate>
-      </interactive>
-    </figure>
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
     
     <p>
       The graph of <m>y=f(bx), b \gt 0</m> moves the <m>x</m>-coordinate of every point on <m>f</m> by the factor of <m>\frac{1}{b}</m>.  When <m>b \gt 1</m> the result is a horizontal compression.  When <m>0 \lt b \lt 1</m>, the result is a horizontal stretch.
@@ -409,18 +429,22 @@
       Before telling you the graphical effect of multiplying <m>x</m> by a positive number other than one, explore the effect yourself using <xref ref="functions-graphical-transformations-geogebra-5x">Figure</xref>.  Can you describe the effect using your own words?
     </p>
 
-    <figure xml:id="functions-graphical-transformations-geogebra-5x">
-      <caption>Multiply <m>f(x)</m> by a positive number other than one by dragging the slider.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/function-vertical-stretch.ggb">
+    <exploration>
+      <figure xml:id="functions-graphical-transformations-geogebra-5x">
+        <caption>
+          Multiply <m>f(x)</m> by a positive number other than one by dragging the slider.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/function-vertical-stretch.ggb">
               setPerspective("G");
               setAxisSteps(1, 1, 1, 1);
               setCoordSystem(-8, 8, -8, 8);
               setGridVisible(1);         
               setAxisLabels(1,"x","y","z");
-        </slate>
-      </interactive>
-    </figure>
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
     
     <p>
       The graph of <m>y=a \cdot f(x), a \gt 0</m> moves the <m>y</m>-coordinate of every point on <m>f</m> by the factor of <m>a</m>.  When <m>a \gt 1</m> the result is a vertical stretch.  When <m>0 \lt a \lt 1</m>, the result is a vertical compression.
@@ -504,15 +528,19 @@
 
     </sidebyside>
 
-    <figure xml:id="functions-graphical-transformations-geogebra-2">
-      <caption>Practice Stretch/Compress/Reflect Transformations:  Enter the coordinates for the shifted points A, B, C and then click "Show Transformed Curve" to check your answer.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/transformation-reflect-stretch-quiz.ggb">
-          setPerspective("G");
-          setGridVisible(1);         
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="functions-graphical-transformations-geogebra-2">
+        <caption>
+          Practice Stretch/Compress/Reflect Transformations:  Enter the coordinates for the shifted points A, B, C and then click "Show Transformed Curve" to check your answer.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/transformation-reflect-stretch-quiz.ggb">
+            setPerspective("G");
+            setGridVisible(1);         
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
   </paragraphs>
   <paragraphs>
@@ -1039,25 +1067,33 @@
     </solution>
   </example>
 
-  <figure xml:id="functions-graphical-transformations-geogebra-3">
-    <caption>Practice Transformations based upon <m>y=a \cdot f(b(x-h))+k</m>:  Enter the coordinates for the shifted points A, B, C and then click "Show Transformed Curve" to check your answer.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/transformation-quiz-2.ggb">
-        setPerspective("G");
-        setGridVisible(1);         
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+    <figure xml:id="functions-graphical-transformations-geogebra-3">
+      <caption>
+        Practice Transformations based upon <m>y=a \cdot f(b(x-h))+k</m>:  Enter the coordinates for the shifted points A, B, C and then click "Show Transformed Curve" to check your answer.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/transformation-quiz-2.ggb">
+          setPerspective("G");
+          setGridVisible(1);         
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
-  <figure xml:id="functions-graphical-transformations-geogebra-4">
-    <caption>Practice Transformations based upon <m>y=a \cdot f(bx-h)+k</m>:  Enter the coordinates for the shifted points A, B, C and then click "Show Transformed Curve" to check your answer.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/transformation-quiz-1.ggb">
-        setPerspective("G");
-        setGridVisible(1);         
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+    <figure xml:id="functions-graphical-transformations-geogebra-4">
+      <caption>
+        Practice Transformations based upon <m>y=a \cdot f(bx-h)+k</m>:  Enter the coordinates for the shifted points A, B, C and then click "Show Transformed Curve" to check your answer.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/transformation-quiz-1.ggb">
+          setPerspective("G");
+          setGridVisible(1);         
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
   </paragraphs>
 

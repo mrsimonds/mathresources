@@ -31,25 +31,33 @@
     <me>y^8-9=(y^4+3)(y^4-3)</me><me>x^{46}-1=(x^{23}+1)(x^{23}-1)</me><me>100-w^{12}=(10+w^6)(10-w^6)</me>
   </p>
 
-  <figure xml:id="factoring-geogebra-5">
-    <caption>Practice Factoring Difference of Squares with One Variable</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/factor-difference-of-squares-basic.ggb">
-        setPerspective("G");
-        setAxesVisible(0,0);
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+    <figure xml:id="factoring-geogebra-5">
+      <caption>
+        Practice Factoring Difference of Squares with One Variable.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/factor-difference-of-squares-basic.ggb">
+          setPerspective("G");
+          setAxesVisible(0,0);
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
-   <figure xml:id="factoring-geogebra-6">
-    <caption>Practice Factoring Difference of Squares with Two Variables</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/factor-difference-of-squares-multivariable.ggb">
-        setPerspective("G");
-        setAxesVisible(0,0);
-      </slate>
-    </interactive>
-  </figure>
+   <exploration>
+    <figure xml:id="factoring-geogebra-6">
+      <caption>
+        Practice Factoring Difference of Squares with Two Variables.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/factor-difference-of-squares-multivariable.ggb">
+          setPerspective("G");
+          setAxesVisible(0,0);
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
   
   </paragraphs>
   <paragraphs>
@@ -172,25 +180,33 @@
     </solution>
   </example>
 
-  <figure xml:id="factoring-geogebra-7">
-    <caption>Practice Factoring Sum or Difference of Cubes with one variable</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/factor-sum-difference-of-cubes-basic.ggb">
-        setPerspective("G");
-        setAxesVisible(0,0);
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+    <figure xml:id="factoring-geogebra-7">
+      <caption>
+        Practice Factoring Sum or Difference of Cubes with one variable.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/factor-sum-difference-of-cubes-basic.ggb">
+          setPerspective("G");
+          setAxesVisible(0,0);
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
-  <figure xml:id="factoring-geogebra-8">
-    <caption>Practice Factoring Sum or Difference of Cubes with two variables</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
-      <slate surface="geogebra" aspect="9:5" source="geogebra/factor-sum-difference-of-cubes-multivariable.ggb">
-        setPerspective("G");
-        setAxesVisible(0,0);
-      </slate>
-    </interactive>
-  </figure>
+  <exploration>
+    <figure xml:id="factoring-geogebra-8">
+      <caption>
+        Practice Factoring Sum or Difference of Cubes with two variables.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/factor-sum-difference-of-cubes-multivariable.ggb">
+          setPerspective("G");
+          setAxesVisible(0,0);
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
 
   </paragraphs>
   <paragraphs>

@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ********************************************************************* -->
+<!-- Copyright 2017                                                        -->
+<!-- Portland Community College                                            -->
+<!--                                                                       -->
+<!-- Author                                                                -->
+<!-- Steve Simonds                                                         -->
+<!-- This file is part of PCC SLC Math Resources.                          -->
+<!-- ********************************************************************* -->
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="quadratic-equations-completing-the-square">
+    <title>Solving Quadratic Equations by Completing the Square</title>
+
+    <p>
+      We have previously talked about using the square root method to solve quadratic equations.  In that section one side of the equation was already a perfect square.  We frequently have to do some preliminary work to make one side of the equation  perfect square.  This preliminary work is a process called  "completing the square".  Completing the square entails adding a number to an expression of form <m>x^2+bx</m> so that the resultant trinomial factors into a perfect square.  The number that complete the square is always the square of half of <m>b</m>.
+    </p>
+    <p>
+      For example, the number that completes the square for <m>x^2+10x</m> is <m>5^2</m> which is <m>25</m>.  Note:
+      <md>
+        <mrow>x^2+10x+25\amp=(x+5)(x+5)</mrow>
+        <mrow>\amp=(x+5)^2</mrow>
+      </md>
+    </p>
+    <p>
+      The steps followed when using the square root method are listed below.
+      <ol label="1">
+        <li>Perform any and all manipulations so that the equation has the form <m>x^2+bx=c</m>.</li>
+        <li>Complete the square by adding <m>\left(\frac{b}{2}\right)^2</m>.  Note that to keep the equation in balance <m>\left(\frac{b}{2}\right)^2</m> also needs to be added to the other side of the equation.</li>
+        <li>Factor the non-constant side of the equation.  The equation should now have form <m>u^2=k</m>.</li>
+        <li>If the constant, <m>k</m>, is negative, then the equation has no solution.  If <m>k</m> is zero, then the equation has one solution which is determined by solving <m>u=0</m>.  Step 5 is written under the assumption that <m>k</m> is a positive number.</li>
+        <li>Invoke the square root property, i.e. <m>u=\pm \sqrt{k}</m>.  If <m>k</m> is a perfect square, you need to write out and solve two equations.
+        <me>u=-\sqrt{k}\text{ or }u=\sqrt{k}</me>.  If <m>k</m> is not a perfect square, you may solve for <m>u</m> maintaining the plus/minus sign.  Make sure to simplify the square root should it simplify.</li>
+        <li>State your solutions and/or solution set.</li>
+      </ol>
+    Several examples follow.
+  </p>
+
+  <example>
+    <statement>
+      <p>
+        Solve <m>x^2-6x-7=0</m> by the square root method after first completing the square.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We'll begin by adding <m>7</m> to both sides of the equation.
+        <md>
+          <mrow>x^2-6x-7\amp=0</mrow>
+          <mrow>x^2-6x-7\addright{7}\amp=0\addright{7}</mrow>
+          <mrow>x^2-6x\amp=7</mrow>
+        </md>
+        Let's determine the value that will complete the square.
+        <md>
+          <mrow>\left(-\frac{b}{2}\right)^2\amp=\left(-\frac{-6}{2}\right)^2</mrow>
+          <mrow>\amp=3^2</mrow>
+          <mrow>\amp=9</mrow>
+        </md>
+        Let's complete the square, factor, and apply the square root method.
+        <md>
+          <mrow>x^2-6x\amp=7</mrow>
+          <mrow>x^2-6x\addright{9}\amp=7\addright{9}</mrow>
+          <mrow>(x-3)^2\amp=16</mrow>
+          <mrow>x-3\amp=\pm \sqrt{16}</mrow>
+          <mrow>x-3\amp=\pm 4</mrow>
+        </md>
+        Because the square root expression simplified to an integer, we split the equation into two separate equations.
+        <md>
+          <mrow>x-3\amp=-4\amp\amp\text{or}\amp x-3\amp=4</mrow>
+          <mrow>x-3\addright{3}\amp=-4\addright{3}\amp\amp\text{or}\amp x-3\addright{3}\amp=4\addright{3}</mrow>
+          <mrow>x\amp=-1\amp\amp\text{or}\amp x\amp=7</mrow>
+        </md>
+        The solutions are <m>-1</m> and <m>7</m>.  The solution set is <m>\{-1, 7\}</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Solve <m>(2x-1)(2x+1)=7-32x</m> by the square root method after first completing the square.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We'll begin by expanding the left side of the equation and combining the like terms.  We'll then move terms as necessary to obtain and equation of form <m>x^2+bx=c</m>.
+        <md>
+          <mrow>(2x-1)(2x+1)\amp=7-32x</mrow>
+          <mrow>4x^2-1\amp=7-32x</mrow>
+          <mrow>4x^2-1\addright{32x}\addright{1}\amp=7-32x\addright{32x}\addright{1}</mrow>
+          <mrow>4x^2+32x\amp=8</mrow>
+          <mrow>\multiplyleft{\frac{1}{4}}(4x^2+32x)\amp=\multiplyleft{\frac{1}{4}}8</mrow>
+          <mrow>x^2+8x\amp=2</mrow>
+        </md>
+        We can determine the value that completes the square.
+        <md>
+          <mrow>\left(-\frac{b}{2}\right)^2\amp=\left(-\frac{8}{2}\right)^2</mrow>
+          <mrow>\amp=(-4)^2</mrow>
+          <mrow>\amp=16</mrow>
+        </md>
+        Let's go ahead and compete the square and continue to determine the solutions.
+        <md>
+          <mrow>x^2+8x\amp=2</mrow>
+          <mrow>x^2+8x\addright{16}\amp=2\addright{16}</mrow>
+          <mrow>(x+4)^2\amp=18</mrow>
+          <mrow>x+4\amp=\pm \sqrt{18}</mrow>
+          <mrow>x+4\amp=\pm 3\sqrt{2}</mrow>
+        </md>
+        Because the square root expression did not simplify to an integer, there is no reason to split the equation into two separate equations.
+        <md>
+          <mrow>x+4\amp\subtractright{4}=\pm 3\sqrt{2}\subtractright{4}</mrow>
+          <mrow>x\amp=-4\pm 3\sqrt{2}</mrow>
+        </md>
+      </p>
+      <p>
+        The solutions are <m>-4-3\sqrt{2}</m> and <m>-4+3\sqrt{2}</m>.  
+      </p>
+      <p>
+        The solutions set is <m>\{-4-3\sqrt{2}, -4+3\sqrt{2}\}</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Solve <m>x^2+9x+25=0</m> by the square root method after first completing the square.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We'll begin by subtracting <m>25</m> from both sides of the equation.
+        <md>
+          <mrow>x^2+9x+25\amp=0</mrow>
+          <mrow>x^2+9x+25\subtractright{25}\amp=0\subtractright{25}</mrow>
+          <mrow>x^2+9x\amp=-25</mrow>
+        </md>
+        Let's determine the value that will complete the square.
+        <md>
+          <mrow>\left(-\frac{b}{2}\right)^2\amp=\left(-\frac{9}{2}\right)^2</mrow>
+          <mrow>\amp=\frac{81}{4}</mrow>
+        </md>
+        Let's complete the square and continue solving.
+        <md>
+          <mrow>x^2+9x\amp=-25</mrow>
+          <mrow>x^2+9x\addright{\frac{81}{4}}\amp=-25\addright{\frac{81}{4}}</mrow>
+          <mrow>x^2+9x+\frac{81}{4}\amp=-\frac{100}{4}+\frac{81}{4}</mrow>
+          <mrow>\left(x+\frac{9}{2}\right)^2\amp=-\frac{19}{4}</mrow>
+        </md>
+      </p>
+      <p>
+        There is no real number that squares to <m>-\frac{19}{4}</m>.  Consequently, the equation has no real number solutions.
+      </p>
+      <p>
+        Over the real numbers, the solution set is <m>\emptyset</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Solve <m>4x^2-28x=-11</m> by the square root method after first completing the square.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by multiplying both sides of the equation by <m>\frac{1}{4}</m>.
+        <md>
+          <mrow>4x^2-28x\amp=-11</mrow>
+          <mrow>\multiplyleft{\frac{1}{4}}(4x^2-28x)\amp=\multiplyleft{\frac{1}{4}}-11</mrow>
+          <mrow>x^2-7x\amp=-\frac{11}{4}</mrow>
+        </md>
+        Let's determine the value that will complete the square.
+        <md>
+          <mrow>\left(-\frac{b}{2}\right)^2\amp=\left(-\frac{-7}{2}\right)^2</mrow>
+          <mrow>\amp=\frac{49}{4}</mrow>
+        </md>
+        Let's complete the square and finish solving the problem.
+        <md>
+          <mrow>x^2-7x\amp=-\frac{11}{4}</mrow>
+          <mrow>x^2-7x\addright{\frac{49}{4}}\amp=-\frac{11}{4}\addright{\frac{49}{4}}</mrow>
+          <mrow>\left(x-\frac{7}{2}\right)^2\amp=\frac{38}{4}</mrow>
+          <mrow>x-\frac{7}{2}\amp=\pm \sqrt{\frac{38}{4}}</mrow>
+          <mrow>x-\frac{7}{2}\amp=\pm \frac{\sqrt{38}}{2}</mrow>
+          <mrow>x-\frac{7}{2}\addright{\frac{7}{2}}\amp=\pm \frac{\sqrt{38}}{2}\addright{\frac{7}{2}}</mrow>
+          <mrow>x\amp=\frac{7}{2} \pm \frac{\sqrt{38}}{2}</mrow>
+          <mrow>x\amp=\frac{7 \pm \sqrt{38}}{2}</mrow>
+        </md>
+      </p>
+      <p>
+        The solutions are <m>\frac{7-\sqrt{38}}{2}</m> and <m>\frac{7+\sqrt{38}}{2}</m>.
+      </p>
+      <p>
+        The solution set is <m>\left\{\frac{7-\sqrt{38}}{2}, \frac{7+\sqrt{38}}{2}\right\}</m>.
+      </p>
+    </solution>
+  </example>
+
+  <p>
+    You can use <xref ref="radicals-quadratic-equations-square-root-method-geogebra-1">Figure</xref> to generate several more examples/practice problems. You'll need to write the steps down, because only one step is shown at a time.
+  </p>
+
+  <exploration>
+    <figure xml:id="radicals-quadratic-equations-square-root-method-geogebra-1">
+      <caption>
+        Solve quadratic equations by first completing the square.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
+        <slate surface="geogebra" aspect="9:5" source="geogebra/quadratic-equations-complete-square.ggb">
+          setPerspective("G");
+          setAxesVisible(0,0);
+        </slate>
+      </interactive>
+    </figure>
+  </exploration>
+
+  <exercises>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Use the square root method to solve each of the following quadratic equations over the real numbers.  You will first need to complete the square.  Make sure that all solutions are completely simplified.  State the solutions to each equation as well as the solution set to each equation.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the solutions and the the solution set for the equation <m>y^2+20y+80=0</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by moving the constant term to the right side of the equation.
+            <md>
+              <mrow>y^2+20y+80\amp=0</mrow>
+              <mrow>y^2+20y+80\subtractright{80}\amp=0\subtractright{80}</mrow>
+              <mrow>y^2+20y\amp=-80</mrow>
+            </md>
+            We can now determine the value that completes the square.
+            <md>
+              <mrow>\left(-\frac{b}{2}\right)^2\amp=\left(-\frac{20}{2}\right)^2</mrow>
+              <mrow>\amp=(-10)^2</mrow>
+              <mrow>\amp=100</mrow>
+            </md>
+            Let's go ahead and complete the square.
+            <md>
+              <mrow>y^2+20y\amp=-80</mrow>
+              <mrow>y^2+20y\addright{100}\amp=-80\addright{100}</mrow>
+              <mrow>(y+10)^2\amp=20</mrow>
+              <mrow>y+10\amp=\pm \sqrt{20}</mrow>
+              <mrow>y+10\amp=\pm \sqrt{4 \cdot 5}</mrow>
+              <mrow>y+10\amp=\pm 2\sqrt{5}</mrow>
+              <mrow>y+10\subtractright{10}\amp=\pm 2\sqrt{5}\subtractright{10}</mrow>
+              <mrow>y\amp=-10\pm 2\sqrt{5}</mrow>
+            </md>
+          </p>
+          <p>
+            The solutions are <m>-10-2\sqrt{5}</m> and <m>-10+2\sqrt{5}</m>.
+          </p>
+          <p>  
+            The solution set is <m>\{-10-2\sqrt{5}, -10+2\sqrt{5}\}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the solutions and the the solution set for the equation <m>x^2+4x+7=0</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by moving the constant term to the right side of the equation.
+            <md>
+              <mrow>x^2+4x+7\amp=0</mrow>
+              <mrow>x^2+4x+7\subtractright{7}\amp=0\subtractright{7}</mrow>
+              <mrow>x^2+4x\amp=-7</mrow>
+            </md>
+            Let's determine the value that will complete the square.
+            <md>
+              <mrow>\left(-\frac{b}{2}\right)^2\amp=\left(-\frac{4}{2}\right)^2</mrow>
+              <mrow>\amp=(-2)^2</mrow>
+              <mrow>\amp=4</mrow>
+            </md>
+            Let's complete the square and continue to the end.
+            <md>
+              <mrow>x^2+4x\amp=-7</mrow>
+              <mrow>x^2+4x\addright{4}\amp=-7\addright{4}</mrow>
+              <mrow>(x+2)^2\amp=-3</mrow>
+            </md>
+          </p>
+          <p>
+            The equation <m>x^2+4x+7=0</m> has no real number solutions.
+          </p>
+          <p>  
+            Over the real numbers the solution set is <m>\emptyset</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the solutions and the the solution set for the equation <m>w^2-7w+7=0</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by moving the constant term to the right side of the equation.
+            <md>
+              <mrow>w^2-7w+7\amp=0</mrow>
+              <mrow>w^2-7w+7\subtractright{7}\amp=0\subtractright{7}</mrow>
+              <mrow>w^2-7w\amp=-7</mrow>
+            </md>
+            Let's determine the value that will complete the square.
+            <md>
+              <mrow>\left(-\frac{b}{2}\right)^2\amp=\left(-\frac{-7}{2}\right)^2</mrow>
+              <mrow>\amp=\frac{49}{4}</mrow>
+            </md>
+            Let's complete the square and proceed to wrap this up.
+            <md>
+              <mrow>w^2-7w\amp=-7</mrow>
+              <mrow>w^2-7w\addright{\frac{49}{4}}\amp=-7\addright{\frac{49}{4}}</mrow>
+              <mrow>\left(w-\frac{7}{2}\right)^2\amp=\frac{21}{4}</mrow>
+              <mrow>w-\frac{7}{2}\amp=\pm \sqrt{\frac{21}{4}}</mrow>
+              <mrow>w-\frac{7}{2}\amp=\pm \frac{\sqrt{21}}{2}</mrow>
+              <mrow>w-\frac{7}{2}\addright{\frac{7}{2}}\amp=\pm \frac{\sqrt{21}}{2}\addright{\frac{7}{2}}</mrow>
+              <mrow>w\amp=\frac{7}{2}\pm \frac{\sqrt{21}}{2}</mrow>
+              <mrow>w\amp=\frac{7\pm \sqrt{21}}{2}</mrow>
+            </md>
+          </p>
+          <p>
+            The solutions are <m>\frac{7-\sqrt{21}}{2}</m> and <m>\frac{7+\sqrt{21}}{2}</m>.
+          </p>
+          <p>  
+            The solution set is <m>\left\{\frac{7-\sqrt{21}}{2}, \frac{7+\sqrt{21}}{2}\right\}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the solutions and the the solution set for the equation <m>-2w^2+12w-10=-12</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We'll begin by adding <m>10</m> to both sides of the equation and then dividing both sides of the equation by <m>-2</m>.
+            <md>
+              <mrow>-2w^2+12w-10\amp=-12</mrow>
+              <mrow>-2w^2+12w-10\addright{10}\amp=-12\addright{10}</mrow>
+              <mrow>-2w^2+12w\amp=-2</mrow>
+              <mrow>\divideunder{-2w^2+12w}{-2}\amp=\divideunder{-2}{-2}</mrow>
+              <mrow>w^2-6w\amp=1</mrow>
+            </md>
+            Let's determine the value that completes the square.
+            <md>
+              <mrow>\left(-\frac{b}{2}\right)^2\amp=\left(-\frac{-6}{2}\right)^2</mrow>
+              <mrow>\amp=3^2</mrow>
+              <mrow>\amp=9</mrow>
+            </md>
+            We can now complete the square an apply the square root method.
+            <md>
+              <mrow>w^2-6w\amp=1</mrow>
+              <mrow>w^2-6w\addright{9}\amp=1\addright{9}</mrow>
+              <mrow>w^2-6w+9\amp=10</mrow>
+              <mrow>(w-3)^2\amp=10</mrow>
+              <mrow>w-3\amp= \pm \sqrt{10}</mrow>
+              <mrow>w-3\addright{3}\amp= \pm \sqrt{10}\addright{3}</mrow>
+              <mrow>w\amp=3\pm\sqrt{10}</mrow>
+            </md>
+          </p>
+          <p>
+            The solutions are <m>3-\sqrt{10}</m> and <m>3+\sqrt{10}</m>.
+          </p>
+          <p>
+            The solution set is <m>\{3-\sqrt{10},3+\sqrt{10}\}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the solutions and the solution set for the equation <m>16t^2+24t-27=0</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We begin by adding <m>27</m> to both sides of the equation and then dividing both sides of the equation by <m>16</m>.
+            <md>
+              <mrow>16t^2+24t-27\amp=0</mrow>
+              <mrow>16t^2+24t-27\addright{27}\amp=0\addright{27}</mrow>
+              <mrow>16t^2+24t\amp=27</mrow>
+              <mrow>\divideunder{16t^2+24t}{16}\amp=\divideunder{27}{16}</mrow>
+              <mrow>t^2+\frac{3}{2}t\amp=\frac{27}{16}</mrow>
+            </md>
+            We can now determine the value that completes the square.
+            <md>
+              <mrow>\left(-\frac{b}{2}\right)^2\amp=\left(-\frac{1}{2}b\right)^2</mrow>
+              <mrow>\amp=\left(-\frac{1}{2} \cdot \frac{3}{2}\right)^2</mrow>
+              <mrow>\amp=\left(-\frac{3}{4}\right)^2</mrow>
+              <mrow>\amp=\frac{9}{16}</mrow>
+            </md>
+            Let's go ahead and complete the square and finish solving the equation.
+            <md>
+              <mrow>t^2+\frac{3}{2}t\amp=\frac{27}{16}</mrow>
+              <mrow>t^2+\frac{3}{2}t\addright{\frac{9}{16}}\amp=\frac{27}{16}\addright{\frac{9}{16}}</mrow>
+              <mrow>\left(t+\frac{3}{4}\right)^2\amp=\frac{36}{16}</mrow>
+              <mrow>\left(t+\frac{3}{4}\right)^2\amp=\frac{9}{4}</mrow>
+              <mrow>t+\frac{3}{4}\amp=\pm\sqrt{\frac{9}{4}}</mrow>
+              <mrow>t+\frac{3}{4}\amp=\pm \frac{3}{2}</mrow>
+            </md>
+            <md>
+              <mrow>t+\frac{3}{4}\amp=-\frac{3}{2}\amp\amp\,\text{or}\amp t+\frac{3}{4}\amp=\frac{3}{2}</mrow>
+              <mrow>t+\frac{3}{4}\subtractright{\frac{3}{4}}\amp=-\frac{3}{2}\subtractright{\frac{3}{4}}\amp\amp\,\text{or}\amp t+\frac{3}{4}\subtractright{\frac{3}{4}}\amp=\frac{3}{2}\subtractright{\frac{3}{4}}</mrow>
+              <mrow>t\amp=-\frac{6}{4}-\frac{3}{4}\amp\amp\,\text{or}\amp t\amp=\frac{6}{4}-\frac{3}{4}</mrow>
+              <mrow>t\amp=-\frac{9}{4}\amp\amp\,\text{or}\amp t\amp=\frac{3}{4}</mrow>
+            </md>
+          </p>
+            <p>
+              The solutions are <m>\frac{3}{4}</m> and <m>-\frac{9}{4}</m>.
+            </p>
+            <p>
+              The solution set is <m>\left\{\frac{3}{4},-\frac{9}{4}\right\}</m>.
+            </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Determine the solutions and the solution set for the equation <m>-3x^2=24x+48</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We'll begin by subtracting <m>24x</m> from both sides of the equation and then dividing both sides of the equation by <m>-3</m>.
+            <md>
+              <mrow>-3x^2\amp=24x+48</mrow>
+              <mrow>-3x^2\subtractright{24x}\amp=24x+48\subtractright{24x}</mrow>
+              <mrow>-3x^2-24x\amp=48</mrow>
+              <mrow>\divideunder{-3x^2-24x}{-3}\amp=\divideunder{48}{-3}</mrow>
+              <mrow>x^2+8x\amp=-16</mrow>
+            </md>
+            Let's determine the value that completes the square.
+            <md>
+              <mrow>\left(-\frac{b}{2}\right)^2\amp=\left(-\frac{8}{2}\right)^2</mrow>
+              <mrow>\amp=(-4)^2</mrow>
+              <mrow>\amp=16</mrow>
+            </md>
+            Let's add <m>16</m> to both sides of the equation and finish this thing up.
+            <md>
+              <mrow>x^2+8x\amp=-16</mrow>
+              <mrow>x^2+8x\addright{16}\amp=-16\addright{16}</mrow>
+              <mrow>x^2+8x+16\amp=0</mrow>
+              <mrow>(x+4)^2\amp=0</mrow>
+              <mrow>x+4\amp=\pm\sqrt{0}</mrow>
+              <mrow>x+4\amp=0</mrow>
+              <mrow>x+4\subtractright{4}\amp=0\subtractright{4}</mrow>
+              <mrow>x\amp=-4</mrow>
+            </md>
+          </p>
+          <p>
+            The only solution is <m>-4</m>.
+          </p>
+          <p>
+            The solution set is <m>\{-4\}</m>.
+          </p>
+        </solution>
+      </exercise>
+
+    </exercisegroup>
+
+  </exercises>
+
+</section>

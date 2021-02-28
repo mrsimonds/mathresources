@@ -12,8 +12,11 @@
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="MTH-111-materials" target="blank">
   <title>Topics Covered in MTH 111</title>
 
-  <p>
-    Please note that the documents will open in new windows.
+  <paragraphs>
+    <title>Explanations, Examples, and Exercises</title>
+    <p></p>
+    <p>
+      Please note that the documents open in new windows.
     <ul>
       <li>
         <url href="https://spot.pcc.edu/slc/mathresources/output/html/functions-advanced-notation.html" target="blank">Advanced Function Notation</url>
@@ -37,16 +40,16 @@
         <url href="https://spot.pcc.edu/slc/mathresources/output/html/logs-and-exponent-exponential-functions-and-graphs.html" target="blank">Exponential Functions and their Graphs</url>
       </li>
       <li>
-        <url href="https://spot.pcc.edu/slc/mathresources/output/html/logs-and-exponent-logarithmic-functions-and-graphs.html" target="blank">Logarithmic Functions ad their Graphs</url>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/logs-and-exponent-logarithmic-functions-and-graphs.html" target="blank">Logarithmic Functions and their Graphs</url>
       </li>
       <li>
         <url href="https://spot.pcc.edu/slc/mathresources/output/html/logs-and-exponents-logarithms.html" target="blank">Interpreting Logarithms as Exponents</url>
       </li>
       <li>
-        <url href="https://spot.pcc.edu/slc/mathresources/output/html/logs-and-exponents-log-properies-derivation.html" target="blank">Derivation of the Properties of Exponents</url>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/logs-and-exponents-log-properies-derivation.html" target="blank">Derivation of the Properties of Logarithms</url>
       </li>
       <li>
-        <url href="https://spot.pcc.edu/slc/mathresources/output/html/logs-and-exponents-log-properties.html" target="blank">Application of the Properties of Exponents</url>
+        <url href="https://spot.pcc.edu/slc/mathresources/output/html/logs-and-exponents-log-properties.html" target="blank">Application of the Properties of Logarithms</url>
       </li>
       <li>
         <url href="https://spot.pcc.edu/slc/mathresources/output/html/logs-and-exponents-exponential-equations.html" target="blank">Exponential Equations</url>
@@ -64,6 +67,203 @@
         <url href="https://spot.pcc.edu/slc/mathresources/output/html/rationals-functions-and-graphs.html" target="blank">Rational Functions and their Graphs</url>
       </li>
     </ul>
-  </p>
+    </p>
+  </paragraphs>
+  <paragraphs>
+    <title>GeoGebra Applets</title>
+    <p></p>
+    <p>
+      Please note that the Applets open in new windows.
+      <ul>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-advanced-function-notation.html" target="blank">Simplifying <m>f(x+y)</m> for a quadratic expression <m>f</m>.  (Exploration and Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-horizontal-shifts.html" target="blank">Graphical transformations - horizontal shifts.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-vertical-shifts.html" target="blank">Graphical transformations - vertical shifts.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-horizontal-and-vertical-shifts.html" target="blank">Graphical transformations - horizontal and vertical shifts.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-axis-reflection.html" target="blank">Graphical transformations - reflections across the axes.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-horizontal-stretch-and-squish.html" target="blank">Graphical transformations - horizontal stretches and compressions.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-vertical-stretch-and-squish.html" target="blank">Graphical transformations - vertical stretches and compressions.  (Exploration Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-stretch-squish-and-reflect.html" target="blank">Graphical transformations - stretches/compressions/reflections.  (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-transformations-b-factored.html" target="blank">Graphical transformations - <m>g(x)=a \cdot f(b(x - h)) + k</m>. (Drill Applet)</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            <url href="https://spot.pcc.edu/slc/mathresources/output/html/geogebra-transformations-b-distributed.html" target="blank">Graphical transformations - <m>g(x)=a \cdot f(b x - h) + k</m>. (Drill Applet)</url>
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      
+    </p>
+  </paragraphs>
+  <paragraphs>
+    <title>Videos Created by Ann Cary</title>
+    <p></p>
+
+    <p>
+      The links take you to YouTube Playlists which will open either in a new window or in a Youtube App.
+    <ul>
+      <li>
+        <url href="https://www.youtube.com/watch?v=35o6fS-qhfw" target="blank">Algebraically Finding the Domain of a Function (Radical Example)</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=gjz2Q4CLoaU" target="blank">Algebraically Finding the Domain of a Function (Rational Example)</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=Vg_JxImTjtQ" target="blank">Algebraically Finding the Domain of a Function (Composite Example)</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=MqhTjNlVxX4" target="blank">Evaluating Expressions Using Function Notation</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=D57-U1mCnS8" target="blank">Finding and Simplifying the Difference Quotient for a Quadratic Function</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=2_LbCUnSzcI" target="blank">Reading the Graph of a Function (Part 1)</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=181VOFefmV0" target="blank">Reading the Graph of a Function (Part 2)</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=GHcsDsPFfos" target="blank">Algebraically Determining Even/Odd Function (Polynomial Example)</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=3Ejzhs3r5vc" target="blank">Algebraically Determining Even/Odd Function (Rational Example)</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=RIQnwRpIt_g" target="blank">Graphical Properties of a Function</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=GoeLyOb0KqE" target="blank">Evaluating a Piecewise-Defined Function</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=g00Ssj0fP00" target="blank">Graphing a Piecewise-Defined Function</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=-7nS8NvoNSg" target="blank">Find the Formula/Definition for a Piecewise-Defined Function</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=OcQQd-ndpRw" target="blank">Horizontal and Vertical Shift Example</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=yBysFyyJr1A" target="blank">Vertical Stretch/Compression and Reflection Example</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=_wOmV4pg68Y" target="blank">Horizontal Stretch/Compression and Reflection Example</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=UDmiECaIBXk" target="blank">Comprehensive Transformation Example</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=O0zRTfVoO64" target="blank">Composing Functions Represented Numerically (in a Table)</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=huj-FxJpB-0" target="blank"> Composing Functions Represented Graphically</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=tvEor5MaXVg" target="blank">Composing Functions Algebraically</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=-lN-BwzXaVY" target="blank">Composing Rational Functions Algebraically; Finding the Domain</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=M624yVbQZTY" target="blank">Finding the Inverse Function of a Rational Function</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=gUyW9TLGLtU" target="blank">Graphing Inverse Functions and Finding Their Domain and Range</url>
+      </li>
+      <li>
+        <url href="http://www.youtube.com/watch?v=-lN-BwzXaVY" target="blank">Composing Rational Functions Algebraically; Finding the Domain</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=g-VBaBvXoIA" target="blank">Determining Zeros, Asymptotes, and Holes of a Rational Function (Example 1)</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=tZZJyCTcY2c" target="blank">Determining Zeros, Asymptotes, and Holes of a Rational Function (Example 2)</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=N3Mte4bOvp8" target="blank">Graphing a Rational Function</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=ctrCbPu8cRc" target="blank">Find the Formula of a Rational Function</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=ynySI9k67Lk" target="blank">Solving an Exponential Equation (Introduction)</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=0u_MCWHO2bU" target="blank">Finding the Formula for an Exponential Function Given Two Points</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=PgS49UfF-jI" target="blank">Evaluating Simple Logarithmic Expressions</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=hcyCZozpxpw" target="blank">Solving a Simple Exponential Equation</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=Iad7oYe2SRg" target="blank">Solving a Simple Logarithmic Equation</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=RFtNdv5ZniY" target="blank">Evaluating Logarithmic Expressions Using Logarithm Properties</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=SBu-BpmQ_YM" target="blank">Expanding an Exponential Expression Using Logarithm Properties</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=UUJmnkk6IMw" target="blank">Combining Multiple Logarithmic Expressions Into a Single Logarithm</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=XkZREFAgg5M" target="blank">Solving an Exponential Equation (Another Example)</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=dguTQPVNXIE" target="blank">Solving Logarithmic Equation Using the Difference Property of Logarithms</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=U-wGuSrOOUc" target="blank">Solving Logarithmic Equation Using the Sum Property of Logarithms</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=5qUjuUDD_pU" target="blank">Compound Interest Example</url>
+      </li>
+      <li>
+        <url href="https://www.youtube.com/watch?v=Pw_DjvjaIpk" target="blank">Radioactive Decay Example</url>
+      </li>
+    </ul>
+    </p>
+  </paragraphs>
+
 
 </section>

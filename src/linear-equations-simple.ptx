@@ -11,8 +11,189 @@
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="linear-equations-simple">
     <title>Introduction to Linear Equations in One Variable</title>
+
+    <paragraphs>
+      <title>What is an Equation and What Constitutes a Solution to an Equation?</title>
+      <p></p>
+      <p>
+        The word equation has more than one meaning in mathematics, but one common element to all equations is the presence of an equal sign, with mathematical expressions on either side of each equal sign (either explicitly or implicitly).
+      </p>
+      <p>
+        The most common use of the term "equation" is in the form of a question.  For example, when presented with the equation
+        <me>2x+7=3x-1</me>
+        there is an implicit question: with what value can <m>x</m> be replaced that would make the expressions on either side of the equal sign simplify to to a common value?  In this case, that value is <m>8</m>, because if <m>x=8</m> we have both
+        <md>
+          <mrow>2x+7\amp=2 \cdot 8+7</mrow>
+          <mrow>\amp=16+7</mrow>
+          <mrow>\amp=23</mrow>
+        </md>
+        and
+        <md>
+          <mrow>3x-1\amp=3 \cdot 8-1</mrow>
+          <mrow>\amp=24-1</mrow>
+          <mrow>\amp=23.</mrow>
+        </md>
+      </p>
+      <p>
+        Because <m>8</m> causes the expressions on either side of the equal sign n the equation <m>2x+7=3x-1</m> to evaluate to a common value (in this case <m>23</m>), we say that <m>8</m> is <term>a solution</term> to the equation <m>2x+7=3x-1</m>.  Had the two expressions not evaluated to a common value, then <m>8</m> would not be a solution to the equation. 
+      </p>
+
+      <example>
+        <statement>
+          <p>
+            For each equation, determine whether or not <m>5</m> is a solution to the equation.
+            <ol label="1">
+              <li>
+                <m>7x-3=4x+12</m>
+              </li>
+              <li>
+                <m>-2x+40=45-x</m>
+              </li>
+              <li>
+                <m>12x-30=6x</m>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The protocol we will follow to determine whether or not a given value is a solution to a given equation is to simplify each side of the equation, separated by questioning equality signs, until we can say with certainty whether or not the two sides are equal.  This is most easily clarified by just showing you some examples.
+            <ol laabel="1">
+              <li>
+                <p>
+                  <md>
+                    <mrow>7x-3\amp=4x+12</mrow>
+                    <mrow>7 \cdot 5-3\amp\stackrel{?}{=}4 \cdot 5+12</mrow>
+                    <mrow>35-3\amp\stackrel{?}{=}20+12</mrow>
+                    <mrow>32\amp\stackrel{\checkmark}{=}32</mrow>
+                  </md>
+                  Because the two sides evaluate to a common value when <m>x=5</m>, <m>5</m> is a solution to the equation <m>7x-3=4x+12</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <md>
+                    <mrow>-2x+40\amp=45-x</mrow>
+                    <mrow>-2 \cdot 5+40\amp\stackrel{?}{=}45-5</mrow>
+                    <mrow>-10+40\amp\stackrel{?}{=}40</mrow>
+                    <mrow>30 \neq 40</mrow>
+                  </md>
+                  Because the two sides evaluate to two different values when <m>x=5</m>, <m>5</m> is not  solution tot he equation <m>-2x+40=45-x</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <md>
+                    <mrow>12x-30\amp=6x</mrow>
+                    <mrow>12 \cdot 5-30\amp\stackrel{?}{=}6 \cdot 5</mrow>
+                    <mrow>60-30\amp\stackrel{?}{=}30</mrow>
+                    <mrow>30\amp\stackrel{\checkmark}{=}30</mrow>
+                  </md>
+                  Because the two sides evaluate to a common value when <m>x=5</m>, <m>5</m> is a solution to the equation <m>12x-30=6x</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </example>
+
+      <p>
+        Two equations that have exactly the same solutions are said to be <term>equivalent equations</term>.  In the last example, the equations <m>7x-3=4x+12</m> and <m>12x-30=6x</m> are equivalent because <m>5</m> is the only solution for each of those equations.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>What is a Linear Equation in One Variable?</title>
+      <p></p>
+      <p>
+        A <term>linear equation in one variable</term>, (specifically the variable <m>x</m>), is an equation that is equivalent to an equation of form
+        <me>ax+b=c</me>
+        where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers and <m>a \neq 0</m>.
+      </p>
+      <p>
+        Several examples of linear equations in one variable are shown below.  Note that the variable is not always <m>x</m>.  Note also that the variable may occur more than once in a given equation - we will later establish how those equations are equivalent to equations of the form stated above.  The thing to note above all else is that no exponents appear on the variables, nor are mathematical operations such as square roots or absolute values applied to the variables.
+        <ul>
+          <li>
+            <m>9x+8=17</m>
+          </li>
+          <li>
+            <p>
+              <m>3t-7=4</m> (In this case the variable is <m>t</m>.)
+            </p>
+          </li>
+          <li>
+            <m>x+12=19</m>
+          </li>
+          <li>
+            <p>
+              <m>12w=97</m> (In this case the variable is <m>w</m>.)
+            </p>
+          </li>
+          <li>
+            <m>6x-12=20x+5</m>
+          </li>
+          <li>
+            <m>2(3x+3)-7=5-(2-8x)</m>
+          </li>
+        </ul>
+      </p>
+    </paragraphs>
+
     <paragraphs>
       <title>Linear Equations/Keeping Equations in Balance</title>
+      <p></p>
+      <p>
+        When solving a linear equation whose only variable is <m>x</m>, our objective is to determine (if possible) an equivalent equation of form 
+        <me>x=k\,\,\text{or}\,\,k=x</me>
+        where <m>k</m> is a real number.  It is apparent that <m>k</m> is the only value of <m>x</m> that will make the two sides of either of those two equations the same, so <m>k</m> is the only solution to either of those equations.  Since our given equation is equivalent to one of those two equations, <m>k</m> is also the only solution to our given equation.
+      </p>
+      <p>
+        The trick to establishing an equivalent equation of one of those two forms, is to take steps to the given equation that keep the two sides <term>in balance</term>.  Let's start with an analogy.
+      </p>
+      <p>
+        Suppose that at birth two kittens, Paco and Squirtz, each weight exactly 4 oz and that over the next two months each kitty puts on exactly 30 oz. Then the weight of the two kittens is sill in balance at the end of those two months.
+      </p>
+      <p>
+        We can use a similar idea to help us determine the solution to the equation 
+        <me>x-30=7</me>.
+        When solving the equation, we make the assumption that <m>x</m> already has the value that makes the two sides equal.  So if we add 30 to both sides of the equation, the two sides will still be in balance.  As an added bonus, we will have <term>isolated the variable</term> which reveals the solution to the equation.  Let's do it.
+        <md>
+          <mrow>x-30\amp=7</mrow>
+          <mrow>x-30\addright{30}\amp=7\addright{30}</mrow>
+          <mrow>x\amp=37</mrow>
+        </md>
+        Since it is apparent that the only solution to the last equation is <m>37</m>, and the last equation is equivalent to the given equation, <m>37</m> must be the only solution to the given equation as well.  We say the the <term>solution set</term> to the given equation is <m>\{37\}</m>.  Lets verify that <m>37</m> is a solution to the given equation.
+        <md>
+          <mrow>x-30\amp=7</mrow>
+          <mrow>37-30\amp\stackrel{?}{=}7</mrow>
+          <mrow>7\amp\stackrel{\checkmark}{=}7</mrow>
+        </md>
+      </p>
+      <p>
+        When solving one-step linear equations, there are four actions that we can apply to both sides of the equation.  Remember that whatever action we take on one side of the equation, we need to take exactly the same action on the other side of the equation.  The actions follow.
+        <ul>
+          <li>
+            We can add the same real number to both sides of the equation.
+          </li>
+          <li>
+            We can subtract the same real number from both sides of the equation.
+          </li>
+          <li>
+            We can multiply both sides of the equation by the same non-zero real number.
+          </li>
+          <li>
+            We can divide both sides of the equation by the same nonzero real number.
+          </li>
+        </ul>
+        In general, subtraction reverses addition and addition reverses subtraction.  For example, to isolate <m>t</m> in the equation
+        <me>t+10=14</me>
+        we reverse the addition by subtracting <m>10</m> from both sides of the equation whereas to isolate <m>t</m> in the equation
+        <me>t-10=14</me>  
+        we reverse the addition by adding <m>10</m> to both sides of the equation.
+      </p>
+      <p>
+        Let's see a couple of examples carried out to completion.
+      </p>
 
       <example>
         <statement>
@@ -31,7 +212,7 @@
             Because the original equation is equivalent to the equation <m>x=14</m>, it apparent that the solution to the original equation is <m>14</m>. Let's check our solution.
             <md>
               <mrow>x+18\amp=32</mrow>
-              <mrow>14+18\amp\stackrel{?}{=}32</mrow>
+              <mrow>\highlight{14}+18\amp\stackrel{?}{=}32</mrow>
               <mrow>32\amp\stackrel{\checkmark}{=}32</mrow>
             </md>
             Great,our solution checks.  The solution to the given equation is <m>14</m>and the solution set is <m>{14}</m>.
@@ -56,13 +237,17 @@
             Because the given equation is equivalent to the equation <m>t=-8</m>, it is apparent that the solution to the given equation is <m>-8</m>.  Before stating our formal conclusion, let's make sure that we're correct.
             <md>
               <mrow>t-54\amp=-62</mrow>
-              <mrow>-8-52\amp\stackrel{?}{=}-62</mrow>
+              <mrow>\highlight{-8}-52\amp\stackrel{?}{=}-62</mrow>
               <mrow>-62\amp\stackrel{\checkmark}{=}-62</mrow>
             </md>
             Our answer checks, so we an go ahead and state that the solution to the given equation is <m>-8</m> and the solution set is <m>{-8}</m>. 
           </p>
         </solution>
       </example>
+      
+      <p>
+        There are two options to reverse multiplication: we can divide both sides of the equation by the coefficient of the variable term or we can multiply both sides of the equation by the reciprocal of the coefficient of the variable term.  In general, the reciprocal of the coefficient is used when the equation contains fractions, and division is used otherwise.  A few examples follow.
+      </p>
 
       <example>
         <statement>
@@ -81,7 +266,7 @@
             Because the original equation is equivalent to the equation <m>x=-6</m>, the solution to the original equation is <m>-6</m>. Let's check our solution.
             <md>
               <mrow>7x\amp=42</mrow>
-              <mrow>7 \cdot -6\amp\stackrel{?}{=}-42</mrow>
+              <mrow>7 \cdot \highlight{-6}\amp\stackrel{?}{=}-42</mrow>
               <mrow>-42\amp\stackrel{\checkmark}{=}-42</mrow>
             </md>
             The solution to the given equation is -6 and the solution set is <m>\{-6\}.</m>
@@ -107,7 +292,7 @@
             Our proposed solution is <m>15</m>.  Let's check it.
             <md>
               <mrow>\frac{7}{5}x\amp=21</mrow>
-              <mrow>\frac{7}{5} \cdot \frac{15}{1}\amp\stackrel{?}{=}21</mrow>
+              <mrow>\frac{7}{5} \cdot \highlight{\frac{15}{1}}\amp\stackrel{?}{=}21</mrow>
               <mrow>21\amp\stackrel{\checkmark}{=}21</mrow>
             </md>
             The solution to the given equation is <m>15</m> and the solution set is <m>{15}</m>.
@@ -132,7 +317,7 @@
             The solution appears to be <m>-\frac{3}{5}</m>.  Let's double check.
             <md>
               <mrow>-2y\amp=-\frac{6}{5}</mrow>
-              <mrow>-\frac{2}{1} \cdot -\frac{3}{5}\amp\stackrel{?}{=}\frac{6}{5}</mrow>
+              <mrow>-\frac{2}{1} \cdot \highlight{-\frac{3}{5}}\amp\stackrel{?}{=}\frac{6}{5}</mrow>
               <mrow>\frac{6}{5}\amp\stackrel{\checkmark}{=}\frac{6}{5}</mrow>
             </md>
             The solution to the stated equation is <m>-\frac{3}{5}</m> and the solution set is <m>\left\{-\frac{3}{5}\right\}</m>.
@@ -157,7 +342,7 @@
             Let's check the apparent solution, <m>\frac{2}{3}</m>.
             <md>
               <mrow>12\amp=18t</mrow>
-              <mrow>12\amp\stackrel{?}{=}\frac{18}{1} \cdot \frac{2}{3}</mrow>
+              <mrow>12\amp\stackrel{?}{=}\frac{18}{1} \cdot \highlight{\frac{2}{3}}</mrow>
               <mrow>12\amp\stackrel{\checkmark}{=}12</mrow>
             </md>
             The solution to the stated equation is <m>\frac{2}{3}</m> and the solution set is <m>\left\{\frac{2}{3}\right\}</m>.
@@ -168,6 +353,11 @@
     </paragraphs>
     <paragraphs>
       <title>Multi-Step linear Equations in One Variable</title>
+      <p></p>
+
+      <p>
+        It is frequently the case that both addition/subtraction and division/multiplication need to be executed in order to isolate the variable.  Unless fractions are involved, we always perform the addition or subtraction before we perform the division or multiplication.  When the equation contains fractions we sometimes first perform multiplication with the specific intent of clearing the fractions from the equation - this maneuver is discussed in the next section.  As mentioned, unless the equation contains fractions, we always perform the addition/subtraction step before the division/multiplication step.  Several examples follow.
+      </p>
 
       <example>
         <statement>
@@ -188,7 +378,7 @@
             The apparent solution is <m>8</m>.  Let's check it.
             <md>
               <mrow>3x-7\amp=17</mrow>
-              <mrow>3 \cdot 8-7\amp\stackrel{?}{=}17</mrow>
+              <mrow>3 \cdot \highlight{8}-7\amp\stackrel{?}{=}17</mrow>
               <mrow>24-7\amp\stackrel{?}{=}17</mrow>
               <mrow>17\amp\stackrel{\checkmark}{=}17</mrow>
             </md>
@@ -216,7 +406,7 @@
             Let's check the apparent solution, <m>-57</m>.
             <md>
               <mrow>13\amp=-\frac{2}{3}y-25</mrow>
-              <mrow>13\amp\stackrel{?}{=}-\frac{2}{3} \cdot -\frac{57}{1}-25</mrow>
+              <mrow>13\amp\stackrel{?}{=}-\frac{2}{3} \cdot \highlight{-\frac{57}{1}}-25</mrow>
               <mrow>13\amp\stackrel{?}{=}38-25</mrow>
               <mrow>13\amp\stackrel{\checkmark}{=}13</mrow>
             </md>
@@ -246,7 +436,7 @@
             The proposed solution is <m>0</m>.  Let's check that.
             <md>
               <mrow>12y-8\amp=-8+15y</mrow>
-              <mrow>12 \cdot 0-8\amp\stackrel{?}{=}-8+15 \cdot 0</mrow>
+              <mrow>12 \cdot \highlight{0}-8\amp\stackrel{?}{=}-8+15 \cdot \highlight{0}</mrow>
               <mrow>0-8\amp\stackrel{?}{=}-8+0</mrow>
               <mrow>-8\amp\stackrel{\checkmark}{=}-8</mrow>
             </md>
@@ -276,7 +466,7 @@
             Let's check <m>\frac{5}{4}</m> is the stated equation.
             <md>
               <mrow>x+12\amp=5x+7</mrow>
-              <mrow>\frac{5}{4}+12\amp\stackrel{?}{=}\frac{5}{1} \cdot \frac{5}{4}+7</mrow>
+              <mrow>\highlight{\frac{5}{4}}+12\amp\stackrel{?}{=}\frac{5}{1} \cdot \highlight{\frac{5}{4}}+7</mrow>
               <mrow>\frac{5}{4}+\frac{12}{1} \cdot \frac{4}{4}\amp\stackrel{?}{=}\frac{25}{4}+\frac{7}{1} \cdot \frac{4}{4}</mrow>
               <mrow>\frac{5}{4}+\frac{48}{4}\amp\stackrel{?}{=}\frac{25}{4}+\frac{28}{4}</mrow>
               <mrow>\frac{5+48}{4}\amp\stackrel{?}{=}\frac{25+28}{4}</mrow>
@@ -309,7 +499,7 @@
             Let's check <m>7</m> in the original equation.
             <md>
               <mrow>12-3x\amp=5-2x</mrow>
-              <mrow>12-3 \cdot 7\amp\stackrel{?}{=}5-2 \cdot 7</mrow>
+              <mrow>12-3 \cdot \highlight{7}\amp\stackrel{?}{=}5-2 \cdot \highlight{7}</mrow>
               <mrow>12-21\amp\stackrel{?}{=}5-14</mrow>
               <mrow>-9\amp\stackrel{\checkmark}{=}-9</mrow>
             </md>
@@ -320,7 +510,21 @@
 
     </paragraphs>
     <paragraphs>
-      <title>When Strange Thing Turn Up</title>
+      <title>When Strange Things Turn Up</title>
+      <p></p>
+
+      <p>
+        Most linear equations we encounter have exactly one solution.  However, sometimes  the variable disappears during the solution process.  When that happens we are left either with a <term>contradiction</term> (e.g. <m>0=6</m>) or an <term>identity</term> (e.g. <m>0=0</m>).
+      </p>
+      <p>
+        Since no value of the variable can make a contradiction true (zero does not equal six under any circumstance), when an equation turns out to be equivalent to a contradiction the given equation has no solutions and the solution set is the empty set (denoted by <m>\emptyset</m> or <m>\{\,\}</m>).
+      </p>
+      <p>
+        Since every value of the variable results in a value of true for an identity (zero equals zero under all circumstances), every real number is a solution to an equation that is equivalent to an identity.  In this case, the solution set is all real numbers (denoted by <m>\mathbb{R}</m>).
+      </p>
+      <p>
+        These strange events are illustrated in the next two examples.
+      </p>
 
       <example>
         <statement>
@@ -357,6 +561,13 @@
     </paragraphs>
     <paragraphs>
       <title>An Option for Dealing with Equations that Contain Fractions</title>
+      <p></p>
+      <p>
+        When given an equation that contains fractions, one option is to slog through the solution working with the fractions.  We can avoid that, though, by first multiplying both sides of the equation by the least common denominator of all the fractions that appear in the equation.  This maneuver eliminates the fractions and can make the entire solution process much less arduous.  A couple of things to keep in mind.  First, the LCD needs to be distributed to every term in the equation, regardless of whether or not a given term is a fraction.  Second, the solution may turn out to be a fraction - the solution is what it is ... there is nothing we can do to change that.
+      </p>
+      <p>
+        Several example follow.
+      </p>
 
       <example>
         <statement>
@@ -380,7 +591,7 @@
             We have a collective need to check.
             <md>
               <mrow>\frac{2}{3}x-1\amp=\frac{3}{2}+4x</mrow>
-              <mrow>\frac{2}{3} \cdot -\frac{3}{4}-1\amp\stackrel{?}{=}\frac{3}{2}+4 \cdot -\frac{3}{4}</mrow>
+              <mrow>\frac{2}{3} \cdot \highlight{-\frac{3}{4}}-1\amp\stackrel{?}{=}\frac{3}{2}+4 \cdot \highlight{-\frac{3}{4}}</mrow>
               <mrow>-\frac{1}{2}-1\amp\stackrel{?}{=}\frac{3}{2}-3</mrow>
               <mrow>-\frac{1}{2}-\frac{2}{2}\amp\stackrel{?}{=}\frac{3}{2}-\frac{6}{2}</mrow>
               <mrow>-\frac{3}{2}\amp\stackrel{\checkmark}{=}-\frac{3}{2}</mrow>
@@ -412,7 +623,8 @@
             Time to check.
             <md>
               <mrow>-\frac{x}{3}+\frac{1}{4}\amp=\frac{x}{12}+\frac{2}{3}</mrow>
-              <mrow>-\frac{-1}{3}+\frac{1}{4}\amp\stackrel{?}{=}\frac{-1}{12}+\frac{2}{3}</mrow>
+              <mrow>-\frac{\highlight{-1}}{3}+\frac{1}{4}\amp\stackrel{?}{=}\frac{\highlight{-1}}{12}+\frac{2}{3}</mrow>
+              <mrow>\frac{1}{3}+\frac{1}{4}\amp\stackrel{?}{=}-\frac{1}{12}+\frac{2}{3}</mrow>
               <mrow>\frac{4}{12}+\frac{3}{12}\amp\stackrel{?}{=}-\frac{1}{12}+\frac{8}{12}</mrow>
               <mrow>\frac{7}{12}\amp\stackrel{\checkmark}{=}-\frac{7}{12}</mrow>
             </md>
@@ -443,7 +655,7 @@
             Let's get to checking.
             <md>
               <mrow>\frac{1}{3}-\frac{2}{3}x\amp=-\frac{x}{5}-\frac{16}{15}</mrow>
-              <mrow>\frac{1}{3}-\frac{2}{3} \cdot 3\amp\stackrel{?}{=}-\frac{3}{5}-\frac{16}{15}</mrow>
+              <mrow>\frac{1}{3}-\frac{2}{3} \cdot \highlight{3}\amp\stackrel{?}{=}-\frac{\highlight{3}}{5}-\frac{16}{15}</mrow>
               <mrow>\frac{1}{3}-2\amp\stackrel{?}{=}-\frac{x}{5}-\frac{16}{15}</mrow>
               <mrow>\frac{5}{15}-\frac{30}{15}\amp\stackrel{?}{=}-\frac{9}{15}-\frac{16}{15}</mrow>
               <mrow>-\frac{25}{15}\amp\stackrel{\checkmark}{=}-\frac{25}{15}</mrow>
@@ -480,7 +692,7 @@
               Let's check the solution.
               <md>
                 <mrow>-9x\amp=42</mrow>
-                <mrow>-\frac{9}{1} \cdot -\frac{14}{3}\amp\stackrel{?}{=}42</mrow>
+                <mrow>-\frac{9}{1} \cdot \highlight{-\frac{14}{3}}\amp\stackrel{?}{=}42</mrow>
                 <mrow>42\amp\stackrel{\checkmark}{=}42</mrow>
               </md>
               The solution is <m>-\frac{14}{3}</m> and the solution set is <m>\left\{-\frac{14}{3}\right\}</m>. 
@@ -506,7 +718,7 @@
               Checking ...
               <md>
                 <mrow>t+11\amp=\frac{33}{2}</mrow>
-                <mrow>\frac{11}{2}+11\amp\stackrel{?}{=}\frac{33}{2}</mrow>
+                <mrow>\highlight{\frac{11}{2}}+11\amp\stackrel{?}{=}\frac{33}{2}</mrow>
                 <mrow>\frac{11}{2}+\frac{22}{2}\amp\stackrel{?}{=}\frac{33}{2}</mrow>
                 <mrow>\frac{33}{2}\amp\stackrel{\checkmark}{=}\frac{33}{2}</mrow>
               </md>
@@ -532,7 +744,7 @@
               Time to check.
               <md>
                 <mrow>\frac{7}{2}y\amp=35</mrow>
-                <mrow>\frac{7}{2} \cdot \frac{10}{1}\amp\stackrel{?}{=}35</mrow>
+                <mrow>\frac{7}{2} \cdot \highlight{\frac{10}{1}}\amp\stackrel{?}{=}35</mrow>
                 <mrow>35\amp\stackrel{\checkmark}{=}35</mrow>
               </md>
               The solution is <m>10</m> and the solution set is <m>\{10\}</m>.
@@ -559,7 +771,7 @@
               On to the check.
               <md>
                 <mrow>-33\amp=5x+2</mrow>
-                <mrow>-33\amp\stackrel{?}{=}5 \cdot -7+2</mrow>
+                <mrow>-33\amp\stackrel{?}{=}5 \cdot \highlight{-7}+2</mrow>
                 <mrow>-33\amp\stackrel{?}{=}-35+2</mrow>
                 <mrow>-33\amp\stackrel{\checkmark}{=}-33</mrow>
               </md>
@@ -587,7 +799,7 @@
               Gotta check.
               <md>
                 <mrow>4-x\amp=6</mrow>
-                <mrow>4-(-2)\amp\stackrel{?}{=}6</mrow>
+                <mrow>4-(\highlight{-2})\amp\stackrel{?}{=}6</mrow>
                 <mrow>4+2\amp\stackrel{?}{=}6</mrow>
                 <mrow>6\amp\stackrel{\checkmark}{=}6</mrow>
               </md>
@@ -615,7 +827,7 @@
               Let's check.
               <md>
                 <mrow>4x+3\amp=12-x</mrow>
-                <mrow>\frac{4}{1} \cdot \frac{9}{5}+3\amp\stackrel{?}{=}12-\frac{9}{5}</mrow>
+                <mrow>\frac{4}{1} \cdot \highlight{\frac{9}{5}}+3\amp\stackrel{?}{=}12-\highlight{\frac{9}{5}}</mrow>
                 <mrow>\frac{36}{5}+\frac{15}{5}\amp\stackrel{?}{=}\frac{60}{5}-\frac{9}{5}</mrow>
                 <mrow>\frac{51}{5}\amp\stackrel{\checkmark}{=}\frac{51}{5}</mrow>
               </md>
@@ -665,7 +877,7 @@
               Whew!  Let's check to make sure that we're correct.
               <md>
                 <mrow>\frac{2}{3}x+\frac{1}{5}\amp=\frac{x}{5}-\frac{4}{15}</mrow>
-                <mrow>\frac{2}{3} \cdot -1+\frac{1}{5}\amp\stackrel{?}{=}\frac{-1}{5}-\frac{4}{15}</mrow>
+                <mrow>\frac{2}{3} \cdot \highlight{-1}+\frac{1}{5}\amp\stackrel{?}{=}\frac{\highlight{-1}}{5}-\frac{4}{15}</mrow>
                 <mrow>-\frac{10}{15}+\frac{3}{15}\amp\stackrel{?}{=}-\frac{3}{15}-\frac{4}{15}</mrow>
                 <mrow>-\frac{7}{15}\amp\stackrel{\checkmark}{=}-\frac{7}{15}</mrow>
               </md>
@@ -715,7 +927,7 @@
               Definitely going to check this one (not that I'd even think about not checking any equation :). While we check, let's make use of the fact that diving by <m>2</m> is equivalent multiplying by <m>\frac{1}{2}</m> and that diving by <m>3</m> is equivalent to multiplying by <m>\frac{1}{3}</m>.
               <md>
                 <mrow>\frac{t}{2}-\frac{3}{4}\amp=\frac{13}{6}-\frac{t}{3}</mrow>
-                <mrow>\frac{1}{2} \cdot \frac{7}{2}-\frac{3}{4}\amp\stackrel{?}{=}\frac{13}{6}-\frac{1}{3} \cdot \frac{7}{2}</mrow>
+                <mrow>\frac{1}{2} \cdot \highlight{\frac{7}{2}}-\frac{3}{4}\amp\stackrel{?}{=}\frac{13}{6}-\frac{1}{3} \cdot \highlight{\frac{7}{2}}</mrow>
                 <mrow>\frac{7}{4}-\frac{3}{4}\amp\stackrel{?}{=}\frac{13}{6}-\frac{7}{6}</mrow>>
                 <mrow>1\amp\stackrel{\checkmark}{=}1</mrow>
               </md>

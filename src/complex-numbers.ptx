@@ -84,16 +84,20 @@
       You can generate random practice practice problems that let you check step by step using <xref ref="complex-numbers-geogebra-1">Figure</xref>.
     </p>
 
-    <figure xml:id="complex-numbers-geogebra-1">
-      <caption>Practice simplifying the product of complex numbers.</caption>
-      <interactive platform="geogebra" width="100%" aspect="9:5">
-        <slate surface="geogebra" aspect="9:5" source="geogebra/complex-number-multiplication.ggb">
-          setPerspective("G");
-          setGridVisible(0); 
-          setAxesVisible(0,0);        
-        </slate>
-      </interactive>
-    </figure>
+    <exploration>
+      <figure xml:id="complex-numbers-geogebra-1">
+        <caption>
+          Practice simplifying the product of complex numbers.
+        </caption>
+        <interactive platform="geogebra" width="100%" aspect="9:5">
+          <slate surface="geogebra" aspect="9:5" source="geogebra/complex-number-multiplication.ggb">
+            setPerspective("G");
+            setGridVisible(0); 
+            setAxesVisible(0,0);        
+          </slate>
+        </interactive>
+      </figure>
+    </exploration>
 
     <p>
       The fact that <m>(1+i)^4=-4</m> implies that a fourth root of <m>-4</m> is <m>1+i</m>.  So we now not only have square roots of negative numbers, we also have fourth roots of negative numbers!  In fact, the introduction of complex numbers allows us to take any root of any number.  You should keep in mind, however, that while square roots of negative real numbers are imaginary numbers, higher order even roots of real numbers, for example <m>\sqrt[6]{-64}</m>, are complex numbers with both real number parts and imaginary number parts.  In fact, the principle sixth root of <m>-64</m> is <m>\sqrt{3}+i</m>.  That is, <m>(\sqrt{3}+i)^6=-64</m>.  It turns out that there are in fact six sixth roots of <m>-64</m>, but that's a subject for another class (trigonometry).

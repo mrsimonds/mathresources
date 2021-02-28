@@ -46,16 +46,20 @@
     So we conclude that the slope-intercept equation of the line that passes through the points <m>(-5,20)</m> and <m>(15,12)</m> is <me>y=-\frac{2}{5}x+18</me>.
   </p>
 
-  <figure xml:id="lines-point-slope-geogebra-1">
-    <caption>Determine the equation of a line given two points on the line.  State the equation in slope-intercept form.</caption>
-    <interactive platform="geogebra" width="100%" aspect="9:5">
+  <exploration>
+    <figure xml:id="lines-point-slope-geogebra-1">
+      <caption>
+        Determine the equation of a line given two points on the line.  State the equation in slope-intercept form.
+      </caption>
+      <interactive platform="geogebra" width="100%" aspect="9:5">
         <slate surface="geogebra" aspect="9:5" source="geogebra/line-equation-two-points.ggb">
           setPerspective("G");
           setGridVisible(0); 
           setAxesVisible(0,0);        
         </slate>
-    </interactive>
-  </figure>
+      </interactive>
+    </figure>
+  </exploration>
 
   <exercises>
 
